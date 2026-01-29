@@ -1,6 +1,6 @@
 import { Component, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterLink, RouterLinkActive } from '@angular/router';
+import { Router, RouterLink, RouterLinkActive } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -12,6 +12,8 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
 export class HeaderComponent {
   isCourtDropdownOpen = signal(false);
   isStepsDropdownOpen = signal(false);
+
+  constructor(private router: Router) {}
 
   toggleCourtDropdown() {
     this.isCourtDropdownOpen.set(!this.isCourtDropdownOpen());
@@ -26,5 +28,10 @@ export class HeaderComponent {
   closeDropdowns() {
     this.isCourtDropdownOpen.set(false);
     this.isStepsDropdownOpen.set(false);
+  }
+
+  navigateToAppointment() {
+    this.closeDropdowns();
+    this.router.navigate(['/appointment']);
   }
 }
