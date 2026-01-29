@@ -1,0 +1,114 @@
+<section class="hero">
+  <div class="hero-container">
+    <div class="hero-content">
+      <!-- Left Content -->
+      <div class="hero-text">
+        <span class="hero-category">{{ slides[currentSlide].category }}</span>
+        <h1 class="hero-title">{{ slides[currentSlide].title }}</h1>
+        <p class="hero-description">
+          {{ slides[currentSlide].description }}
+          <a [href]="slides[currentSlide].buttonUrl" class="hero-link">{{ slides[currentSlide].link }}</a>
+        </p>
+        <button class="hero-btn" [routerLink]="[slides[currentSlide].buttonUrl]">
+          {{ slides[currentSlide].buttonText }}
+        </button>
+
+        <!-- Carousel Navigation -->
+        <div class="carousel-nav">
+          <button class="nav-arrow" (click)="previousSlide()" aria-label="Previous slide">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+          </button>
+          <div class="carousel-dots">
+            @for (slide of slides; track $index) {
+              <button
+                class="dot"
+                [class.active]="currentSlide === $index"
+                (click)="goToSlide($index)"
+                [attr.aria-label]="'Go to slide ' + ($index + 1)">
+              </button>
+            }
+          </div>
+          <button class="nav-arrow" (click)="nextSlide()" aria-label="Next slide">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Right Images -->
+      <div class="hero-images">
+        <div class="image-top">
+          <div class="court-seal">
+            <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 100 100" fill="none">
+              <circle cx="50" cy="50" r="45" stroke="#8B6914" stroke-width="2" fill="rgba(139, 105, 20, 0.1)"/>
+              <path d="M50 20 L60 35 L75 35 L62 45 L68 60 L50 50 L32 60 L38 45 L25 35 L40 35 Z" fill="#8B6914"/>
+              <text x="50" y="75" font-size="10" text-anchor="middle" fill="#8B6914" font-weight="bold">JUSTICE</text>
+            </svg>
+          </div>
+        </div>
+        <div class="image-bottom"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Info Cards Section -->
+<section class="info-cards">
+  <div class="container">
+    <div class="cards-grid">
+      <div class="info-card">
+        <div class="card-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+          </svg>
+        </div>
+        <h3>NEWS</h3>
+        <p>Discover the latest news from the Court of Cassation and stay informed about key decisions and events.</p>
+      </div>
+
+      <div class="info-card">
+        <div class="card-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+            <polyline points="14 2 14 8 20 8"></polyline>
+            <line x1="16" y1="13" x2="8" y2="13"></line>
+            <line x1="16" y1="17" x2="8" y2="17"></line>
+            <polyline points="10 9 9 9 8 9"></polyline>
+          </svg>
+        </div>
+        <h3>EXCERPTS FROM ROLES</h3>
+        <p>Consult the court docket with key excerpts of cases and pending cases.</p>
+      </div>
+
+      <div class="info-card">
+        <div class="card-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+            <polyline points="14 2 14 8 20 8"></polyline>
+            <line x1="12" y1="18" x2="12" y2="12"></line>
+            <line x1="9" y1="15" x2="15" y2="15"></line>
+          </svg>
+        </div>
+        <h3>REPORT</h3>
+        <p>Report any suspicious or illegal activity confidentially and securely.</p>
+      </div>
+
+      <div class="info-card">
+        <div class="card-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+            <line x1="16" y1="2" x2="16" y2="6"></line>
+            <line x1="8" y1="2" x2="8" y2="6"></line>
+            <line x1="3" y1="10" x2="21" y2="10"></line>
+          </svg>
+        </div>
+        <h3>BOOK APPOINTMENT</h3>
+        <p>Report any suspicious or illegal activity confidentially and securely.</p>
+      </div>
+    </div>
+  </div>
+</section>
