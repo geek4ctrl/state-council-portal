@@ -1,0 +1,232 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Top Bar */
+.top-bar {
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #e9ecef;
+  font-size: 0.875rem;
+  color: #6c757d;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.top-bar-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+}
+
+.contact-info {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.contact-item svg {
+  flex-shrink: 0;
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.social-link {
+  color: #6c757d;
+  transition: color 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-link:hover {
+  color: #8B6914;
+}
+
+/* Main Navigation */
+.main-nav {
+  background: white;
+  padding: 1rem 0;
+}
+
+.nav-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.logo svg {
+  width: 50px;
+  height: 50px;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 2rem;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-item {
+  position: relative;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+  padding: 0.5rem 0;
+  transition: color 0.2s;
+  cursor: pointer;
+  background: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #8B6914;
+}
+
+.dropdown-toggle svg {
+  transition: transform 0.2s;
+}
+
+.dropdown-toggle svg.rotated {
+  transform: rotate(180deg);
+}
+
+/* Dropdown Menu */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin-top: 0.5rem;
+  background: white;
+  border: 1px solid #e9ecef;
+  border-radius: 4px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  list-style: none;
+  padding: 0.5rem 0;
+  min-width: 200px;
+  z-index: 100;
+}
+
+.dropdown-link {
+  display: block;
+  padding: 0.75rem 1.5rem;
+  color: #333;
+  text-decoration: none;
+  transition: background-color 0.2s, color 0.2s;
+  font-size: 0.9rem;
+}
+
+.dropdown-link:hover {
+  background-color: #f8f9fa;
+  color: #8B6914;
+}
+
+/* Book Appointment Button */
+.btn-appointment {
+  background-color: white;
+  color: #333;
+  border: 2px solid #8B6914;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  white-space: nowrap;
+}
+
+.btn-appointment:hover {
+  background-color: #8B6914;
+  color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .nav-menu {
+    gap: 1rem;
+  }
+
+  .contact-info {
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .top-bar-content {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+
+  .contact-info {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .nav-content {
+    flex-wrap: wrap;
+  }
+
+  .nav-menu {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    font-size: 0.85rem;
+  }
+
+  .btn-appointment {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-menu {
+    display: none; /* You may want to implement a mobile menu here */
+  }
+
+  .logo svg {
+    width: 40px;
+    height: 40px;
+  }
+}
