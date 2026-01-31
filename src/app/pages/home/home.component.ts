@@ -220,7 +220,15 @@ import { HeroComponent } from '../../components/hero/hero.component';
       <div class="container">
         <div class="president-content">
           <div class="president-image">
-            <img src="assets/images/president.jpg" alt="First President of the Court of Cassation">
+            <div class="president-placeholder">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" fill="none">
+                <rect width="400" height="500" fill="#e8eef7"/>
+                <circle cx="200" cy="180" r="70" fill="#c4c4c4"/>
+                <path d="M80 420 Q200 350 320 420" fill="#c4c4c4"/>
+                <rect x="160" y="130" width="80" height="100" rx="40" fill="#c4c4c4"/>
+                <text x="200" y="470" font-family="Arial, sans-serif" font-size="14" fill="#666" text-anchor="middle">First President of the Court of Cassation</text>
+              </svg>
+            </div>
           </div>
           <div class="president-text">
             <h2>THE FIRST PRESIDENT OF THE COURT OF CASSATION</h2>
@@ -439,6 +447,19 @@ import { HeroComponent } from '../../components/hero/hero.component';
       border-radius: 12px;
       overflow: hidden;
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+      background-color: #e8eef7;
+    }
+
+    .president-placeholder {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .president-placeholder svg {
+      width: 100%;
+      height: auto;
+      display: block;
     }
 
     .president-image img {
