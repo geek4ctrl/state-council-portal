@@ -14,9 +14,9 @@ export class HeroComponent {
 
   slides = [
     {
-      category: 'HOME OF LAW & ORDER',
+      category: 'HOME OF ADMINISTRATIVE JUSTICE',
       title: 'DRC: JUDICIAL YEAR BEGINS AT THE STATE COUNCIL FOR THE 2025-2026 TERM',
-      description: 'This video covers the formal opening of the judicial year for 2025-2026 . In the presence of President Félix Tshisekedi, magistrates resumed their duties after the judicial recess.',
+      description: 'This video covers the formal opening of the judicial year for 2025-2026. In the presence of President Félix Tshisekedi, counselors and magistrates resumed their duties after the judicial recess, marking a new era of administrative justice.',
       link: 'OPENING OF THE JUDICIAL YEAR AT THE STATE COUNCIL - YouTube',
       buttonText: 'Watch Live Proceeding on Youtube',
       buttonUrl: '#'

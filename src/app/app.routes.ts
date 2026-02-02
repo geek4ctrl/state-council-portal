@@ -10,13 +10,17 @@ import { ProcessComponent } from './pages/process/process.component';
 import { ProceduresComponent } from './pages/procedures/procedures.component';
 import { NewsComponent } from './pages/news/news.component';
 import { AppointmentComponent } from './pages/appointment/appointment.component';
+import { ReformsComponent } from './pages/reforms/reforms.component';
+import { InternationalRelationsComponent } from './pages/international-relations/international-relations.component';
 
 export const routes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'about', component: AboutComponent },
+  { path: 'presentation', component: AboutComponent },
   { path: 'judges', component: JudgesComponent },
   { path: 'organization', component: OrganizationComponent },
   { path: 'history', component: HistoryComponent },
+  { path: 'reforms', component: ReformsComponent },
+  { path: 'international-relations', component: InternationalRelationsComponent },
   { path: 'audiences', component: AudiencesComponent },
   { path: 'filing', component: FilingComponent },
   { path: 'process', component: ProcessComponent },

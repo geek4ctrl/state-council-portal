@@ -27,8 +27,8 @@ import { HeroComponent } from '../../components/hero/hero.component';
                 <circle cx="32" cy="38" r="6" fill="#FFD700" opacity="0.5"/>
               </svg>
             </div>
-            <h3>Supreme Judicial Authority</h3>
-            <p>As the highest court in the ordinary judicial system, the Court of Cassation ensures final appeals and ensures uniform interpretation and application of law throughout the Democratic Republic of Congo.</p>
+            <h3>Supreme Administrative Authority</h3>
+            <p>As the highest court in the administrative judicial system, the State Council ensures final appeals in administrative matters and ensures uniform interpretation and application of administrative law throughout the Democratic Republic of Congo.</p>
           </div>
 
           <div class="expertise-card">
@@ -53,8 +53,8 @@ import { HeroComponent } from '../../components/hero/hero.component';
                 <circle cx="32" cy="50" r="4" fill="#C41E3A" opacity="0.5"/>
               </svg>
             </div>
-            <h3>Judicial Excellence</h3>
-            <p>Our magistrates and counselors are selected based on merit, ensuring the highest standards of legal expertise, integrity, and commitment to justice.</p>
+            <h3>Administrative Excellence</h3>
+            <p>Our counselors and magistrates are selected based on merit, ensuring the highest standards of legal expertise, integrity, and commitment to justice in administrative matters.</p>
           </div>
 
           <div class="expertise-card">
@@ -70,7 +70,7 @@ import { HeroComponent } from '../../components/hero/hero.component';
               </svg>
             </div>
             <h3>International Cooperation</h3>
-            <p>We actively participate in dialogue with international judicial bodies and maintain cooperation with French-speaking and African supreme courts through AHJUCAF and IIHF.</p>
+            <p>We actively participate in dialogue with international administrative judicial bodies and maintain cooperation with French-speaking and African supreme administrative courts.</p>
           </div>
         </div>
       </div>
@@ -81,7 +81,7 @@ import { HeroComponent } from '../../components/hero/hero.component';
       <div class="container">
         <h2 class="section-title">FIELDS OF EXPERTISE</h2>
         <p class="section-subtitle">
-          The Court of Cassation exercises jurisdiction over various legal matters as the supreme court of the ordinary judicial system.
+          The State Council exercises jurisdiction over various administrative and constitutional matters as the supreme court of the administrative judicial system.
         </p>
 
         <div class="practice-grid">
@@ -91,12 +91,12 @@ import { HeroComponent } from '../../components/hero/hero.component';
                 <path d="M12 2L2 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-10-5z"/>
               </svg>
             </div>
-            <h3>Civil & Commercial Law</h3>
+            <h3>Administrative Law</h3>
             <ul>
-              <li>Appeals from Courts of Appeal</li>
-              <li>Commercial disputes and contracts</li>
-              <li>Property and inheritance matters</li>
-              <li>Civil liability cases</li>
+              <li>Appeals from Administrative Tribunals</li>
+              <li>Government disputes and contracts</li>
+              <li>Public service matters</li>
+              <li>Administrative liability cases</li>
             </ul>
           </div>
 
@@ -106,12 +106,12 @@ import { HeroComponent } from '../../components/hero/hero.component';
                 <path d="M12 7V3H2v18h20V7H12zM6 19H4v-2h2v2zm0-4H4v-2h2v2zm0-4H4V9h2v2zm0-4H4V5h2v2zm4 12H8v-2h2v2zm0-4H8v-2h2v2zm0-4H8V9h2v2zm0-4H8V5h2v2zm10 12h-8v-2h2v-2h-2v-2h2v-2h-2V9h8v10zm-2-8h-2v2h2v-2zm0 4h-2v2h2v-2z"/>
               </svg>
             </div>
-            <h3>Criminal Law</h3>
+            <h3>Constitutional Law</h3>
             <ul>
-              <li>Criminal appeals in cassation</li>
-              <li>Procedural error reviews</li>
-              <li>Application of criminal law</li>
-              <li>Sentencing interpretations</li>
+              <li>Constitutional appeals and reviews</li>
+              <li>Electoral disputes</li>
+              <li>Application of constitutional provisions</li>
+              <li>Fundamental rights protection</li>
             </ul>
           </div>
 
@@ -136,12 +136,12 @@ import { HeroComponent } from '../../components/hero/hero.component';
                 <path d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-6 0h-4V4h4v2z"/>
               </svg>
             </div>
-            <h3>Labor & Employment</h3>
+            <h3>Public Service Law</h3>
             <ul>
-              <li>Labor dispute appeals</li>
+              <li>Civil servant disputes</li>
               <li>Employment contract matters</li>
-              <li>Workers' rights protection</li>
-              <li>Workplace regulations</li>
+              <li>Public workers' rights protection</li>
+              <li>Government regulations</li>
             </ul>
           </div>
 
@@ -151,12 +151,12 @@ import { HeroComponent } from '../../components/hero/hero.component';
                 <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/>
               </svg>
             </div>
-            <h3>Public Law</h3>
+            <h3>Public Law & Regulation</h3>
             <ul>
-              <li>Jurisdictional privilege cases</li>
-              <li>Prosecution of high officials</li>
-              <li>Constitutional matters</li>
-              <li>Public interest litigation</li>
+              <li>Regulatory compliance cases</li>
+              <li>Public authority oversight</li>
+              <li>Administrative procedures</li>
+              <li>Government accountability</li>
             </ul>
           </div>
 
@@ -166,12 +166,12 @@ import { HeroComponent } from '../../components/hero/hero.component';
                 <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
               </svg>
             </div>
-            <h3>Property Rights</h3>
+            <h3>Government Property</h3>
             <ul>
-              <li>Real estate disputes</li>
-              <li>Land ownership matters</li>
-              <li>Property transactions</li>
-              <li>Intellectual property cases</li>
+              <li>Public domain disputes</li>
+              <li>State property matters</li>
+              <li>Government contracts</li>
+              <li>Public procurement cases</li>
             </ul>
           </div>
         </div>
@@ -209,7 +209,7 @@ import { HeroComponent } from '../../components/hero/hero.component';
               </svg>
             </div>
             <h3>Office Email</h3>
-            <p>info@courtofcassation.cd</p>
+            <p>info@statecouncil.cd</p>
           </div>
         </div>
       </div>
@@ -229,22 +229,22 @@ import { HeroComponent } from '../../components/hero/hero.component';
                 <circle cx="200" cy="140" r="25" fill="#8B6914" opacity="0.7"/>
               </g>
               <text x="200" y="470" font-family="Arial" font-size="14" fill="#666" text-anchor="middle" font-weight="bold">First President</text>
-              <text x="200" y="490" font-family="Arial" font-size="12" fill="#999" text-anchor="middle">Court of Cassation</text>
+              <text x="200" y="490" font-family="Arial" font-size="12" fill="#999" text-anchor="middle">State Council</text>
             </svg>
           </div>
           <div class="president-text">
-            <h2>THE FIRST PRESIDENT OF THE COURT OF CASSATION</h2>
+            <h2>THE FIRST PRESIDENT OF THE STATE COUNCIL</h2>
             <p>
-              As the first-ranking member of the DRC's High Council of the Judiciary, the First President of the Court of Cassation,
-              Professor N'SONGO MUKE N'SI Dr. LÉON, elected back on Thursday, February 27th, in Kinshasa, and is in charge of coordinating
-              the entire Supreme Court College and Clerck's office.
+              As the first-ranking member of the DRC's High Council of the Judiciary, the First President of the State Council,
+              elected in Kinshasa, is in charge of coordinating the entire Administrative Supreme Court College and Clerk's office.
             </p>
             <p>
-              For every democratic Congolese citizen, contributing to the life effort is a civic duty. The pathway is no exception.
+              For every democratic Congolese citizen, contributing to good governance and the rule of law is a civic duty. 
+              The State Council plays a vital role in ensuring administrative justice and protecting citizens' rights against government overreach.
             </p>
             <p>
-              In public functions, the DRC has suffered aggressive persecution by financial education militants and youth through
-              armed groups, resulting in millions of deaths, tens of thousands of displaced persons, and a considerable humanitarian situation.
+              The State Council has been instrumental in establishing precedents for administrative law, ensuring transparency in government operations,
+              and maintaining the balance of power between the executive branch and the citizens of the Democratic Republic of Congo.
             </p>
             <button class="learn-more-btn">Learn More</button>
           </div>
@@ -279,7 +279,7 @@ import { HeroComponent } from '../../components/hero/hero.component';
                 <g transform="translate(200, 150)">
                   <rect x="-60" y="-40" width="120" height="80" rx="8" fill="white" opacity="0.9"/>
                   <path d="M-40,-20 L-30,-10 L-20,-20 M0,-20 L0,20 M20,-20 L20,20 M-40,0 L-20,0 M-40,20 L-20,20" stroke="#c41e3a" stroke-width="3" fill="none"/>
-                  <text x="0" y="50" font-family="Arial" font-size="14" fill="white" text-anchor="middle" font-weight="bold">APPEALS & LEGAL ADVICE</text>
+                  <text x="0" y="50" font-family="Arial" font-size="14" fill="white" text-anchor="middle" font-weight="bold">ADMINISTRATIVE APPEALS</text>
                 </g>
               </svg>
             </div>
@@ -288,7 +288,7 @@ import { HeroComponent } from '../../components/hero/hero.component';
                 <span class="news-date">15 Nov 2025</span>
                 <span class="news-category">Decision Report</span>
               </div>
-              <h3>Navigating Appeals: Legal Advice for a Smooth Process</h3>
+              <h3>Navigating Administrative Appeals: Legal Advice for a Smooth Process</h3>
               <a href="#" class="read-more-link">
                 Read More
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -316,7 +316,7 @@ import { HeroComponent } from '../../components/hero/hero.component';
                   <circle cx="0" cy="0" r="70" fill="white" opacity="0.9"/>
                   <path d="M-25,-15 L-10,0 L25,-35" stroke="#8B6914" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
                   <circle cx="0" cy="0" r="65" stroke="#8B6914" stroke-width="3" fill="none"/>
-                  <text x="0" y="95" font-family="Arial" font-size="14" fill="white" text-anchor="middle" font-weight="bold">CASSATION PROCEEDINGS</text>
+                  <text x="0" y="95" font-family="Arial" font-size="14" fill="white" text-anchor="middle" font-weight="bold">ADMINISTRATIVE REVIEW</text>
                 </g>
               </svg>
             </div>
@@ -325,7 +325,7 @@ import { HeroComponent } from '../../components/hero/hero.component';
                 <span class="news-date">22 Oct 2025</span>
                 <span class="news-category">Court Update</span>
               </div>
-              <h3>Key Considerations in Cassation Proceedings</h3>
+              <h3>Key Considerations in Administrative Review Proceedings</h3>
               <a href="#" class="read-more-link">
                 Read More
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -356,7 +356,7 @@ import { HeroComponent } from '../../components/hero/hero.component';
                   <line x1="-30" y1="0" x2="30" y2="0" stroke="#4169E1" stroke-width="3"/>
                   <line x1="-30" y1="20" x2="30" y2="20" stroke="#4169E1" stroke-width="3"/>
                   <line x1="-30" y1="40" x2="20" y2="40" stroke="#4169E1" stroke-width="3"/>
-                  <text x="0" y="85" font-family="Arial" font-size="14" fill="white" text-anchor="middle" font-weight="bold">PROCEDURAL LAW</text>
+                  <text x="0" y="85" font-family="Arial" font-size="14" fill="white" text-anchor="middle" font-weight="bold">ADMINISTRATIVE LAW</text>
                 </g>
               </svg>
             </div>
@@ -365,7 +365,7 @@ import { HeroComponent } from '../../components/hero/hero.component';
                 <span class="news-date">18 Oct 2025</span>
                 <span class="news-category">Judicial Ruling</span>
               </div>
-              <h3>Recent Changes in Procedural Law</h3>
+              <h3>Recent Changes in Administrative Procedural Law</h3>
               <a href="#" class="read-more-link">
                 Read More
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -393,7 +393,7 @@ import { HeroComponent } from '../../components/hero/hero.component';
                   <polygon points="0,-60 15,-20 55,-20 25,5 40,45 0,20 -40,45 -25,5 -55,-20 -15,-20" fill="white" opacity="0.9"/>
                   <circle cx="0" cy="0" r="50" stroke="#FFD700" stroke-width="3" fill="none"/>
                   <path d="M-15,-10 L-5,0 L15,-20" stroke="#FFD700" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-                  <text x="0" y="85" font-family="Arial" font-size="14" fill="white" text-anchor="middle" font-weight="bold">YOUR APPEAL RIGHTS</text>
+                  <text x="0" y="85" font-family="Arial" font-size="14" fill="white" text-anchor="middle" font-weight="bold">CITIZENS' RIGHTS</text>
                 </g>
               </svg>
             </div>
@@ -402,7 +402,7 @@ import { HeroComponent } from '../../components/hero/hero.component';
                 <span class="news-date">12 Oct 2025</span>
                 <span class="news-category">Legal Update</span>
               </div>
-              <h3>Understanding Your Rights in the Appeals Process</h3>
+              <h3>Understanding Your Rights Against Administrative Actions</h3>
               <a href="#" class="read-more-link">
                 Read More
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -424,13 +424,13 @@ import { HeroComponent } from '../../components/hero/hero.component';
             <p>No. 3 Avenue de la Justice in the Gombe district of Kinshasa,</p>
             <p>Democratic Republic of Congo</p>
             <p class="footer-contact">Tel: +243 (81) 0000000</p>
-            <p class="footer-contact">Email: info@courtecassation.cd</p>
+            <p class="footer-contact">Email: info@statecouncil.cd</p>
           </div>
 
           <div class="footer-column">
             <h3>Quick Links</h3>
             <ul>
-              <li><a href="#">About the Court</a></li>
+              <li><a href="#">About the Council</a></li>
               <li><a href="#">Jurisprudence</a></li>
               <li><a href="#">Filing Procedures</a></li>
               <li><a href="#">Contact Us</a></li>
@@ -441,7 +441,7 @@ import { HeroComponent } from '../../components/hero/hero.component';
             <h3>Resources</h3>
             <ul>
               <li><a href="#">Legal Documents</a></li>
-              <li><a href="#">Court Decisions</a></li>
+              <li><a href="#">Council Decisions</a></li>
               <li><a href="#">Annual Reports</a></li>
               <li><a href="#">FAQs</a></li>
             </ul>
