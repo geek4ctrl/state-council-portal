@@ -264,7 +264,24 @@ import { HeroComponent } from '../../components/hero/hero.component';
         <div class="newsletter-grid">
           <article class="news-card">
             <div class="news-image">
-              <img src="assets/images/news-appeal.jpg" alt="Navigating Appeals">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="100%" height="100%" preserveAspectRatio="xMidYMid slice">
+                <defs>
+                  <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#1a2942;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#2c3e50;stop-opacity:1" />
+                  </linearGradient>
+                </defs>
+                <rect fill="url(#grad1)" width="400" height="300"/>
+                <g opacity="0.3">
+                  <circle cx="320" cy="80" r="60" fill="#c41e3a"/>
+                  <circle cx="100" cy="200" r="80" fill="#8B6914"/>
+                </g>
+                <g transform="translate(200, 150)">
+                  <rect x="-60" y="-40" width="120" height="80" rx="8" fill="white" opacity="0.9"/>
+                  <path d="M-40,-20 L-30,-10 L-20,-20 M0,-20 L0,20 M20,-20 L20,20 M-40,0 L-20,0 M-40,20 L-20,20" stroke="#c41e3a" stroke-width="3" fill="none"/>
+                  <text x="0" y="50" font-family="Arial" font-size="14" fill="white" text-anchor="middle" font-weight="bold">APPEALS & LEGAL ADVICE</text>
+                </g>
+              </svg>
             </div>
             <div class="news-content">
               <div class="news-meta">
@@ -272,12 +289,36 @@ import { HeroComponent } from '../../components/hero/hero.component';
                 <span class="news-category">Decision Report</span>
               </div>
               <h3>Navigating Appeals: Legal Advice for a Smooth Process</h3>
+              <a href="#" class="read-more-link">
+                Read More
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+              </a>
             </div>
           </article>
 
           <article class="news-card">
             <div class="news-image">
-              <img src="assets/images/news-cassation.jpg" alt="Key Considerations in Cassation">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="100%" height="100%" preserveAspectRatio="xMidYMid slice">
+                <defs>
+                  <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#2c3e50;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#34495e;stop-opacity:1" />
+                  </linearGradient>
+                </defs>
+                <rect fill="url(#grad2)" width="400" height="300"/>
+                <g opacity="0.3">
+                  <circle cx="80" cy="100" r="70" fill="#8B6914"/>
+                  <circle cx="320" cy="220" r="90" fill="#c41e3a"/>
+                </g>
+                <g transform="translate(200, 150)">
+                  <circle cx="0" cy="0" r="70" fill="white" opacity="0.9"/>
+                  <path d="M-25,-15 L-10,0 L25,-35" stroke="#8B6914" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                  <circle cx="0" cy="0" r="65" stroke="#8B6914" stroke-width="3" fill="none"/>
+                  <text x="0" y="95" font-family="Arial" font-size="14" fill="white" text-anchor="middle" font-weight="bold">CASSATION PROCEEDINGS</text>
+                </g>
+              </svg>
             </div>
             <div class="news-content">
               <div class="news-meta">
@@ -285,12 +326,39 @@ import { HeroComponent } from '../../components/hero/hero.component';
                 <span class="news-category">Court Update</span>
               </div>
               <h3>Key Considerations in Cassation Proceedings</h3>
+              <a href="#" class="read-more-link">
+                Read More
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+              </a>
             </div>
           </article>
 
           <article class="news-card">
             <div class="news-image">
-              <img src="assets/images/news-procedural.jpg" alt="Recent Changes in Procedural Law">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="100%" height="100%" preserveAspectRatio="xMidYMid slice">
+                <defs>
+                  <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#34495e;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#1a2942;stop-opacity:1" />
+                  </linearGradient>
+                </defs>
+                <rect fill="url(#grad3)" width="400" height="300"/>
+                <g opacity="0.3">
+                  <circle cx="320" cy="100" r="80" fill="#4169E1"/>
+                  <circle cx="80" cy="220" r="70" fill="#c41e3a"/>
+                </g>
+                <g transform="translate(200, 150)">
+                  <rect x="-50" y="-60" width="100" height="120" rx="4" fill="white" opacity="0.9"/>
+                  <line x1="-30" y1="-40" x2="30" y2="-40" stroke="#4169E1" stroke-width="3"/>
+                  <line x1="-30" y1="-20" x2="30" y2="-20" stroke="#4169E1" stroke-width="3"/>
+                  <line x1="-30" y1="0" x2="30" y2="0" stroke="#4169E1" stroke-width="3"/>
+                  <line x1="-30" y1="20" x2="30" y2="20" stroke="#4169E1" stroke-width="3"/>
+                  <line x1="-30" y1="40" x2="20" y2="40" stroke="#4169E1" stroke-width="3"/>
+                  <text x="0" y="85" font-family="Arial" font-size="14" fill="white" text-anchor="middle" font-weight="bold">PROCEDURAL LAW</text>
+                </g>
+              </svg>
             </div>
             <div class="news-content">
               <div class="news-meta">
@@ -298,12 +366,36 @@ import { HeroComponent } from '../../components/hero/hero.component';
                 <span class="news-category">Judicial Ruling</span>
               </div>
               <h3>Recent Changes in Procedural Law</h3>
+              <a href="#" class="read-more-link">
+                Read More
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+              </a>
             </div>
           </article>
 
           <article class="news-card">
             <div class="news-image">
-              <img src="assets/images/news-rights.jpg" alt="Understanding Your Rights">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="100%" height="100%" preserveAspectRatio="xMidYMid slice">
+                <defs>
+                  <linearGradient id="grad4" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#2c3e50;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#1a2942;stop-opacity:1" />
+                  </linearGradient>
+                </defs>
+                <rect fill="url(#grad4)" width="400" height="300"/>
+                <g opacity="0.3">
+                  <circle cx="100" cy="80" r="70" fill="#FFD700"/>
+                  <circle cx="300" cy="230" r="80" fill="#c41e3a"/>
+                </g>
+                <g transform="translate(200, 150)">
+                  <polygon points="0,-60 15,-20 55,-20 25,5 40,45 0,20 -40,45 -25,5 -55,-20 -15,-20" fill="white" opacity="0.9"/>
+                  <circle cx="0" cy="0" r="50" stroke="#FFD700" stroke-width="3" fill="none"/>
+                  <path d="M-15,-10 L-5,0 L15,-20" stroke="#FFD700" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                  <text x="0" y="85" font-family="Arial" font-size="14" fill="white" text-anchor="middle" font-weight="bold">YOUR APPEAL RIGHTS</text>
+                </g>
+              </svg>
             </div>
             <div class="news-content">
               <div class="news-meta">
@@ -311,6 +403,12 @@ import { HeroComponent } from '../../components/hero/hero.component';
                 <span class="news-category">Legal Update</span>
               </div>
               <h3>Understanding Your Rights in the Appeals Process</h3>
+              <a href="#" class="read-more-link">
+                Read More
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+              </a>
             </div>
           </article>
         </div>
@@ -735,8 +833,23 @@ import { HeroComponent } from '../../components/hero/hero.component';
     /* Newsletter Section */
     .newsletter-section {
       padding: 80px 0;
-      background-color: #2c3e50;
+      background: linear-gradient(135deg, #1a2942 0%, #2c3e50 50%, #34495e 100%);
       color: white;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .newsletter-section::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: 
+        radial-gradient(circle at 20% 50%, rgba(196, 30, 58, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(139, 105, 20, 0.1) 0%, transparent 50%);
+      pointer-events: none;
     }
 
     .newsletter-header {
@@ -745,6 +858,8 @@ import { HeroComponent } from '../../components/hero/hero.component';
       justify-content: center;
       gap: 30px;
       margin-bottom: 60px;
+      position: relative;
+      z-index: 1;
     }
 
     .newsletter-header h2 {
@@ -766,19 +881,23 @@ import { HeroComponent } from '../../components/hero/hero.component';
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 30px;
+      position: relative;
+      z-index: 1;
     }
 
     .news-card {
       background-color: white;
-      border-radius: 8px;
+      border-radius: 12px;
       overflow: hidden;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
       cursor: pointer;
+      display: flex;
+      flex-direction: column;
     }
 
     .news-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+      transform: translateY(-8px);
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
     }
 
     .news-image {
@@ -812,6 +931,9 @@ import { HeroComponent } from '../../components/hero/hero.component';
     .news-content {
       padding: 20px;
       color: #1a1a1a;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
     }
 
     .news-meta {
@@ -838,7 +960,35 @@ import { HeroComponent } from '../../components/hero/hero.component';
       font-weight: 600;
       line-height: 1.5;
       color: #1a1a1a;
-      margin: 0;
+      margin: 0 0 15px 0;
+      flex-grow: 1;
+    }
+
+    .read-more-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: #c41e3a;
+      font-size: 0.9rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      margin-top: auto;
+    }
+
+    .read-more-link svg {
+      width: 16px;
+      height: 16px;
+      transition: transform 0.3s ease;
+    }
+
+    .read-more-link:hover {
+      color: #a01729;
+      gap: 12px;
+    }
+
+    .read-more-link:hover svg {
+      transform: translateX(4px);
     }
 
     /* Footer Section */
