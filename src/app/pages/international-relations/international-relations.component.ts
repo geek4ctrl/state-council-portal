@@ -6,85 +6,83 @@ import { Component } from '@angular/core';
   template: `
     <div class="page-container">
       <section class="hero-section">
-        <div class="hero-content">
-          <h1>International Relations</h1>
-          <p class="subtitle">Global Cooperation in the Pursuit of Justice</p>
+        <div class="container">
+          <div class="hero-grid">
+            <div class="hero-title">
+              <h1>INTERNATIONAL<br>RELATIONS</h1>
+            </div>
+            <div class="hero-description">
+              <p>
+                In the context of the internationalization of law and justice, the Court of Cassation of the Democratic Republic of Congo
+                is not isolated from this environment. It actively participates in the dialogue of judges by maintaining a high level of
+                cooperation within the frameworks of the Association of Supreme Courts of Cassation of French-speaking countries (AHJUCAF)
+                and the African Association of Francophone Supreme Courts (AA-JHCF).
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
       <section class="content-section">
         <div class="container">
-          <div class="intro">
-            <h2>International Cooperation</h2>
-            <p>
-              In the context of the internationalization of law and justice, the Court of Cassation of the Democratic Republic of Congo
-              is not isolated from this environment. It actively participates in the dialogue of judges by maintaining a high level of
-              cooperation within the frameworks of the Association of High Judicial Courts of Francophone Countries (AHJUCAF) and
-              the African Association of Francophone Supreme Courts (AAJHF).
-            </p>
-          </div>
 
           <div class="stats-section">
-            <div class="stat-card">
+            <div class="stat-item">
               <div class="stat-number">2</div>
+              <div class="stat-divider"></div>
               <div class="stat-label">Major International Judicial Associations</div>
             </div>
-            <div class="stat-card">
+            <div class="stat-item">
               <div class="stat-number">50+</div>
-              <div class="stat-label">Partner Courts Worldwide</div>
+              <div class="stat-divider"></div>
+              <div class="stat-label">Partner Countries & Supreme Courts</div>
             </div>
-            <div class="stat-card">
+            <div class="stat-item">
               <div class="stat-number">100+</div>
+              <div class="stat-divider"></div>
               <div class="stat-label">Annual Judicial Exchanges & Conferences</div>
             </div>
           </div>
 
           <div class="networks-section">
-            <h2>International Judicial Networks</h2>
-            <p class="section-description">
-              The Court maintains privileged relationships with the leading associations of Francophone and African supreme courts.
+            <div class="section-header">
+              <div class="header-line"></div>
+              <h2>INTERNATIONAL JUDICIAL NETWORKS</h2>
+              <div class="header-line"></div>
+            </div>
+            <p class="section-subtitle">
+              The Court maintains privileged relationships with the leading associations of Francophone and African supreme courts
             </p>
 
             <div class="network-cards">
               <div class="network-card">
-                <div class="network-header">
-                  <div class="network-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-                    </svg>
-                  </div>
-                  <h3>AHJUCAF</h3>
-                  <p class="network-full-name">Association of Supreme Courts of Francophone Countries Using French</p>
-                </div>
+                <h3>AHJUCAF</h3>
+                <p class="network-full-name">Association of Supreme Courts of Cassation Using French</p>
                 <p class="network-description">
-                  A platform to encourage and collaborate between Francophone supreme courts, facilitating the exchange of legal precedents
-                  that guide lower courts and ensure consistency in the application of justice across the nation.
+                  A platform to encourage and collaborate between Francophone supreme courts, sharing of jurisprudence, sharing
+                  of information, and strengthening institutional capacities. French-speaking superior courts for quality justice.
                 </p>
               </div>
 
               <div class="network-card">
-                <div class="network-header">
-                  <div class="network-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                      <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"/>
-                      <path d="M12 2 L12 12 L20 12" stroke="currentColor" stroke-width="2" fill="none"/>
-                    </svg>
-                  </div>
-                  <h3>AAJHF</h3>
-                  <p class="network-full-name">African Association of Francophone Supreme Courts</p>
-                </div>
+                <h3>AA-JHCF</h3>
+                <p class="network-full-name">African Association of Francophone Supreme Courts</p>
                 <p class="network-description">
-                  A regional bridge link along cooperation lines for Francophone countries, working actively to strengthen judicial systems
-                  through joint training, research collaboration and mutual legal assistance mechanisms throughout Africa.
+                  A regional bridge along cooperation for the Francophone judicial system, sharing best practices, sharing of education,
+                  and strengthening of capacity of justice systems Africa through judicial cooperation.
                 </p>
               </div>
             </div>
           </div>
 
           <div class="cooperation-domains">
-            <h2>International Cooperation Domains</h2>
-            <p class="section-description">
-              Our international engagement spans multiple active partnerships in various legal and institutional development domains.
+            <div class="section-header">
+              <div class="header-line"></div>
+              <h2>INTERNATIONAL COOPERATION DOMAINS</h2>
+              <div class="header-line"></div>
+            </div>
+            <p class="section-subtitle">
+              Our international engagement translates into active participation in various initiatives aimed at strengthening the quality of justice and the rule of law
             </p>
 
             <div class="domain-grid">
@@ -94,10 +92,9 @@ import { Component } from '@angular/core';
                     <path d="M12 3L1 9l4 2.18v6L12 21l7-3.82v-6l2-1.09V17h2V9L12 3zm6.82 6L12 12.72 5.18 9 12 5.28 18.82 9zM17 15.99l-5 2.73-5-2.73v-3.72L12 15l5-2.73v3.72z"/>
                   </svg>
                 </div>
-                <h3>Judicial Education</h3>
+                <h3>Judicial Challenges</h3>
                 <p>
-                  Regular seminars and training exchanges with partner courts to enhance judicial techniques and keep abreast of
-                  international legal trends and best practices.
+                  Regular coordination and education workshops with higher and lower courts to exchange best practices and development mechanisms.
                 </p>
               </div>
 
@@ -109,7 +106,8 @@ import { Component } from '@angular/core';
                 </div>
                 <h3>Technical Assistance</h3>
                 <p>
-                  Technical cooperation for infrastructure building, adaptation of best practices and sharing experience on judicial reforms and court management.
+                  Financial and technical cooperation to infrastructure development, judicial reforms, adaptation of best practices,
+                  and mutual assistance through international legal cooperation.
                 </p>
               </div>
 
@@ -121,7 +119,8 @@ import { Component } from '@angular/core';
                 </div>
                 <h3>Capacity Building</h3>
                 <p>
-                  Joint training, advanced courses and workshops to strengthen expertise of our magistrates and court staff in international law and comparative jurisprudence.
+                  Ongoing training and professional development for magistrates, the development of legal expertise, and training to
+                  better serve the Court and operate the centers.
                 </p>
               </div>
 
@@ -133,19 +132,18 @@ import { Component } from '@angular/core';
                 </div>
                 <h3>International Forums</h3>
                 <p>
-                  Active participation in dialogue with international judicial bodies and organizations to promote legal cooperation and exchange of best practices in jurisprudence.
+                  Active participation in international conferences and debates to promote dialogue, share legal expertise, and develop regional and international cooperation.
                 </p>
               </div>
             </div>
           </div>
 
-          <div class="collaboration-cta">
+          <div class="collaboration-section">
             <h2>Interested in Collaboration?</h2>
             <p>
-              We are open to new partnerships with other supreme courts, judicial training institutions and organizations committed to
-              strengthening justice systems.
+              We are open to new partnerships with courts, international and intergovernmental institutions committed to strengthening justice systems.
             </p>
-            <button class="contact-btn">Contact Us</button>
+            <button class="contact-btn">CONTACT US</button>
           </div>
         </div>
       </section>
@@ -157,133 +155,137 @@ import { Component } from '@angular/core';
     }
 
     .hero-section {
-      background: linear-gradient(135deg, #2c5f7c 0%, #1a3d52 100%);
+      background: linear-gradient(135deg, #2c3e50 0%, #1a2938 100%);
       color: white;
       padding: 100px 20px 80px;
-      text-align: center;
     }
 
-    .hero-content h1 {
-      font-size: 2.8rem;
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .hero-title h1 {
+      font-size: 3.5rem;
       font-weight: 700;
-      margin-bottom: 20px;
+      line-height: 1.1;
       color: white;
+      margin: 0;
     }
 
-    .subtitle {
-      font-size: 1.3rem;
-      color: rgba(255, 255, 255, 0.9);
-      font-weight: 300;
+    .hero-description p {
+      font-size: 1rem;
+      line-height: 1.8;
+      color: rgba(255, 255, 255, 0.95);
     }
 
     .content-section {
-      padding: 80px 20px;
+      padding: 0;
+      background-color: #f8f9fa;
     }
 
     .container {
       max-width: 1200px;
       margin: 0 auto;
-    }
-
-    .intro {
-      margin-bottom: 60px;
-      text-align: center;
-    }
-
-    .intro h2 {
-      font-size: 2.2rem;
-      color: #2c3e50;
-      margin-bottom: 20px;
-    }
-
-    .intro p {
-      font-size: 1.1rem;
-      line-height: 1.8;
-      color: #555;
-      max-width: 900px;
-      margin: 0 auto;
+      padding: 0 20px;
     }
 
     .stats-section {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 30px;
-      margin-bottom: 80px;
-      text-align: center;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background: white;
+      padding: 60px 20px;
+      margin-bottom: 0;
     }
 
-    .stat-card {
-      background: linear-gradient(135deg, #c41e3a 0%, #a01729 100%);
-      color: white;
-      padding: 40px 20px;
-      border-radius: 12px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    .stat-item {
+      text-align: center;
+      position: relative;
     }
 
     .stat-number {
       font-size: 3rem;
       font-weight: 700;
+      color: #2c3e50;
       margin-bottom: 10px;
     }
 
+    .stat-divider {
+      width: 60px;
+      height: 2px;
+      background: #c41e3a;
+      margin: 15px auto;
+    }
+
     .stat-label {
-      font-size: 1rem;
+      font-size: 0.9rem;
+      color: #555;
       line-height: 1.4;
+      max-width: 200px;
     }
 
     .networks-section, .cooperation-domains {
-      margin-bottom: 80px;
+      padding: 80px 20px;
+      background: white;
     }
 
-    .networks-section h2, .cooperation-domains h2 {
-      font-size: 2rem;
+    .cooperation-domains {
+      background: #f8f9fa;
+    }
+
+    .section-header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+      margin-bottom: 20px;
+    }
+
+    .section-header h2 {
+      font-size: 1.8rem;
+      font-weight: 700;
       color: #2c3e50;
-      margin-bottom: 15px;
-      text-align: center;
+      margin: 0;
+      white-space: nowrap;
     }
 
-    .section-description {
+    .header-line {
+      flex: 1;
+      max-width: 200px;
+      height: 2px;
+      background: linear-gradient(to right, transparent, #c9a961, transparent);
+    }
+
+    .section-subtitle {
       text-align: center;
-      font-size: 1.05rem;
-      color: #555;
-      margin-bottom: 40px;
-      max-width: 800px;
+      font-size: 1rem;
+      color: #c9a961;
+      margin-bottom: 50px;
+      max-width: 900px;
       margin-left: auto;
       margin-right: auto;
+      line-height: 1.6;
     }
 
     .network-cards {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
       gap: 40px;
     }
 
     .network-card {
       background: white;
-      padding: 40px;
-      border-radius: 12px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      border-left: 5px solid #c41e3a;
-    }
-
-    .network-header {
-      margin-bottom: 20px;
-    }
-
-    .network-icon {
-      width: 50px;
-      height: 50px;
-      color: #c41e3a;
-      margin-bottom: 15px;
-    }
-
-    .network-icon svg {
-      width: 100%;
-      height: 100%;
+      padding: 35px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      border: 1px solid #e0e0e0;
     }
 
     .network-card h3 {
-      font-size: 1.6rem;
+      font-size: 1.4rem;
       color: #2c3e50;
       margin-bottom: 8px;
       font-weight: 700;
@@ -291,41 +293,43 @@ import { Component } from '@angular/core';
 
     .network-full-name {
       font-size: 0.9rem;
-      color: #c41e3a;
-      font-style: italic;
-      margin-bottom: 15px;
+      color: #666;
+      margin-bottom: 20px;
+      display: block;
     }
 
     .network-description {
       line-height: 1.8;
       color: #555;
+      font-size: 0.95rem;
     }
 
     .domain-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
       gap: 30px;
     }
 
     .domain-card {
-      background: #f8f9fa;
+      background: white;
       padding: 35px 25px;
-      border-radius: 12px;
+      border-radius: 8px;
       text-align: center;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+      border: 1px solid #e0e0e0;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
     .domain-card:hover {
       transform: translateY(-5px);
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
-      background: white;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
     }
 
     .domain-icon {
-      width: 60px;
-      height: 60px;
+      width: 50px;
+      height: 50px;
       margin: 0 auto 20px;
-      color: #2c5f7c;
+      color: #c9a961;
     }
 
     .domain-icon svg {
@@ -334,7 +338,7 @@ import { Component } from '@angular/core';
     }
 
     .domain-card h3 {
-      font-size: 1.3rem;
+      font-size: 1.2rem;
       color: #2c3e50;
       margin-bottom: 15px;
       font-weight: 600;
@@ -343,76 +347,229 @@ import { Component } from '@angular/core';
     .domain-card p {
       line-height: 1.7;
       color: #555;
-      font-size: 0.95rem;
+      font-size: 0.9rem;
     }
 
-    .collaboration-cta {
-      background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
-      color: white;
+    .collaboration-section {
+      background: #f0f0f0;
       padding: 60px 40px;
-      border-radius: 12px;
       text-align: center;
+      margin: 80px 20px 0;
     }
 
-    .collaboration-cta h2 {
-      font-size: 2rem;
-      margin-bottom: 20px;
-      color: white;
+    .collaboration-section h2 {
+      font-size: 1.8rem;
+      margin-bottom: 15px;
+      color: #2c3e50;
+      font-weight: 600;
     }
 
-    .collaboration-cta p {
-      font-size: 1.1rem;
-      line-height: 1.8;
+    .collaboration-section p {
+      font-size: 1rem;
+      line-height: 1.6;
       margin-bottom: 30px;
       max-width: 700px;
       margin-left: auto;
       margin-right: auto;
+      color: #555;
     }
 
     .contact-btn {
-      background-color: #c41e3a;
+      background-color: #2c3e50;
       color: white;
       border: none;
-      padding: 15px 40px;
-      font-size: 1.1rem;
+      padding: 12px 35px;
+      font-size: 0.95rem;
       font-weight: 600;
-      border-radius: 6px;
+      border-radius: 4px;
       cursor: pointer;
       transition: background-color 0.3s ease, transform 0.2s ease;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
     }
 
     .contact-btn:hover {
-      background-color: #a01729;
+      background-color: #1a2938;
       transform: translateY(-2px);
     }
 
-    @media (max-width: 768px) {
-      .hero-content h1 {
-        font-size: 2rem;
+    @media (max-width: 1024px) {
+      .hero-grid {
+        gap: 40px;
       }
 
-      .subtitle {
-        font-size: 1.1rem;
-      }
-
-      .intro h2, .networks-section h2, .cooperation-domains h2 {
-        font-size: 1.6rem;
-      }
-
-      .content-section {
-        padding: 50px 20px;
+      .hero-title h1 {
+        font-size: 3rem;
       }
 
       .network-cards {
         grid-template-columns: 1fr;
       }
+    }
+
+    @media (max-width: 768px) {
+      .hero-section {
+        padding: 80px 20px 60px;
+      }
+
+      .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+
+      .hero-title h1 {
+        font-size: 2.5rem;
+      }
+
+      .hero-description p {
+        font-size: 0.95rem;
+      }
+
+      .stats-section {
+        flex-direction: column;
+        gap: 40px;
+        padding: 50px 20px;
+      }
+
+      .stat-item {
+        padding: 0 20px;
+      }
+
+      .stat-number {
+        font-size: 2.5rem;
+      }
+
+      .section-header {
+        gap: 15px;
+      }
+
+      .section-header h2 {
+        font-size: 1.4rem;
+      }
+
+      .header-line {
+        max-width: 40px;
+      }
+
+      .section-subtitle {
+        font-size: 0.95rem;
+        padding: 0 10px;
+      }
+
+      .network-cards {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+
+      .network-card {
+        padding: 25px;
+      }
+
+      .network-card h3 {
+        font-size: 1.2rem;
+      }
 
       .domain-grid {
         grid-template-columns: 1fr;
+        gap: 25px;
       }
 
-      .collaboration-cta {
+      .domain-card {
+        padding: 30px 20px;
+      }
+
+      .collaboration-section {
         padding: 40px 20px;
+        margin: 60px 15px 0;
+      }
+
+      .collaboration-section h2 {
+        font-size: 1.5rem;
+      }
+
+      .collaboration-section p {
+        font-size: 0.95rem;
+      }
+
+      .networks-section, .cooperation-domains {
+        padding: 60px 20px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .hero-title h1 {
+        font-size: 2rem;
+      }
+
+      .hero-description p {
+        font-size: 0.9rem;
+      }
+
+      .stats-section {
+        padding: 40px 15px;
+      }
+
+      .stat-number {
+        font-size: 2rem;
+      }
+
+      .stat-label {
+        font-size: 0.85rem;
+      }
+
+      .section-header {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .section-header h2 {
+        font-size: 1.2rem;
+      }
+
+      .header-line {
+        display: none;
+      }
+
+      .network-card {
+        padding: 20px;
+      }
+
+      .network-card h3 {
+        font-size: 1.1rem;
+      }
+
+      .network-full-name {
+        font-size: 0.85rem;
+      }
+
+      .network-description {
+        font-size: 0.9rem;
+      }
+
+      .domain-card h3 {
+        font-size: 1.1rem;
+      }
+
+      .domain-card p {
+        font-size: 0.85rem;
+      }
+
+      .collaboration-section {
+        margin: 40px 10px 0;
+        padding: 30px 15px;
+      }
+
+      .collaboration-section h2 {
+        font-size: 1.3rem;
+      }
+
+      .contact-btn {
+        padding: 10px 25px;
+        font-size: 0.85rem;
+      }
+
+      .networks-section, .cooperation-domains {
+        padding: 40px 15px;
       }
     }
   `]
