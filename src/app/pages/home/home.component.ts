@@ -220,15 +220,17 @@ import { HeroComponent } from '../../components/hero/hero.component';
       <div class="container">
         <div class="president-content">
           <div class="president-image">
-            <div class="president-placeholder">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" fill="none">
-                <rect width="400" height="500" fill="#e8eef7"/>
-                <circle cx="200" cy="180" r="70" fill="#c4c4c4"/>
-                <path d="M80 420 Q200 350 320 420" fill="#c4c4c4"/>
-                <rect x="160" y="130" width="80" height="100" rx="40" fill="#c4c4c4"/>
-                <text x="200" y="470" font-family="Arial, sans-serif" font-size="14" fill="#666" text-anchor="middle">First President of the Court of Cassation</text>
-              </svg>
-            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" width="100%" height="100%">
+              <rect fill="#e8eef7" width="400" height="500"/>
+              <g opacity="0.6">
+                <circle cx="200" cy="180" r="70" fill="#1a2942"/>
+                <ellipse cx="200" cy="420" rx="120" ry="80" fill="#1a2942"/>
+                <rect x="160" y="130" width="80" height="100" rx="40" fill="#1a2942"/>
+                <circle cx="200" cy="140" r="25" fill="#8B6914" opacity="0.7"/>
+              </g>
+              <text x="200" y="470" font-family="Arial" font-size="14" fill="#666" text-anchor="middle" font-weight="bold">First President</text>
+              <text x="200" y="490" font-family="Arial" font-size="12" fill="#999" text-anchor="middle">Court of Cassation</text>
+            </svg>
           </div>
           <div class="president-text">
             <h2>THE FIRST PRESIDENT OF THE COURT OF CASSATION</h2>
@@ -383,13 +385,47 @@ import { HeroComponent } from '../../components/hero/hero.component';
     </footer>
   `,
   styles: [`
+    /* Keyframe Animations */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes scaleIn {
+      from {
+        opacity: 0;
+        transform: scale(0.9);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+
     .expertise-section, .practice-areas-section {
-      padding: 80px 0;
+      padding: 100px 0;
       background-color: #f8f9fa;
+      margin-bottom: 40px;
     }
 
     .practice-areas-section {
       background-color: #ffffff;
+      margin-top: 40px;
     }
 
     .container {
@@ -405,6 +441,18 @@ import { HeroComponent } from '../../components/hero/hero.component';
       margin-bottom: 20px;
       color: #1a1a1a;
       letter-spacing: 1px;
+      animation: fadeInUp 0.8s ease-out;
+      position: relative;
+    }
+
+    .section-title::after {
+      content: '';
+      display: block;
+      width: 80px;
+      height: 4px;
+      background: linear-gradient(90deg, #c41e3a, #8B6914);
+      margin: 20px auto 0;
+      border-radius: 2px;
     }
 
     .section-subtitle {
@@ -414,36 +462,57 @@ import { HeroComponent } from '../../components/hero/hero.component';
       max-width: 800px;
       margin: 0 auto 60px;
       line-height: 1.6;
+      animation: fadeInUp 0.8s ease-out 0.2s backwards;
     }
 
     .expertise-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 30px;
-      margin-top: 50px;
+      gap: 40px;
+      margin-top: 60px;
     }
 
     .expertise-card {
       background: white;
       border-radius: 12px;
-      padding: 40px 30px;
+      padding: 50px 35px;
       text-align: center;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      transition: transform 0.4s ease, box-shadow 0.4s ease, background-color 0.3s ease;
+      cursor: pointer;
+      animation: fadeInUp 0.6s ease-out forwards;
+      opacity: 0;
     }
 
+    .expertise-card:nth-child(1) { animation-delay: 0.1s; }
+    .expertise-card:nth-child(2) { animation-delay: 0.2s; }
+    .expertise-card:nth-child(3) { animation-delay: 0.3s; }
+    .expertise-card:nth-child(4) { animation-delay: 0.4s; }
+
     .expertise-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+      transform: translateY(-10px);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+      background-color: #fafbfc;
+    }
+
+    .expertise-card:hover .card-icon {
+      transform: scale(1.1) rotateY(10deg);
+      animation: float 2s ease-in-out infinite;
+    }
+
+    .expertise-card:hover h3 {
+      color: #c41e3a;
     }
 
     .card-icon {
-      width: 80px;
-      height: 80px;
-      margin: 0 auto 20px;
+      width: 100px;
+      height: 100px;
+      margin: 0 auto 25px;
       display: flex;
       align-items: center;
       justify-content: center;
+      transition: transform 0.4s ease;
+      transform-style: preserve-3d;
     }
 
     .card-icon img {
@@ -453,10 +522,11 @@ import { HeroComponent } from '../../components/hero/hero.component';
     }
 
     .expertise-card h3 {
-      font-size: 1.4rem;
+      font-size: 1.5rem;
       font-weight: 600;
-      margin-bottom: 15px;
+      margin-bottom: 18px;
       color: #1a1a1a;
+      transition: color 0.3s ease;
     }
 
     .expertise-card p {
@@ -468,20 +538,48 @@ import { HeroComponent } from '../../components/hero/hero.component';
     .practice-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 40px;
-      margin-top: 50px;
+      gap: 50px;
+      margin-top: 60px;
     }
 
     .practice-card {
       text-align: center;
-      padding: 30px 20px;
+      padding: 35px 25px;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+      border-radius: 8px;
+      animation: scaleIn 0.5s ease-out forwards;
+      opacity: 0;
+    }
+
+    .practice-card:nth-child(1) { animation-delay: 0.1s; }
+    .practice-card:nth-child(2) { animation-delay: 0.2s; }
+    .practice-card:nth-child(3) { animation-delay: 0.3s; }
+    .practice-card:nth-child(4) { animation-delay: 0.4s; }
+    .practice-card:nth-child(5) { animation-delay: 0.5s; }
+    .practice-card:nth-child(6) { animation-delay: 0.6s; }
+
+    .practice-card:hover {
+      transform: translateY(-8px);
+      background-color: #f8f9fa;
+    }
+
+    .practice-card:hover .practice-icon {
+      transform: scale(1.15);
+      color: #a01729;
+      animation: float 2s ease-in-out infinite;
+    }
+
+    .practice-card:hover h3 {
+      color: #c41e3a;
     }
 
     .practice-icon {
-      width: 60px;
-      height: 60px;
-      margin: 0 auto 20px;
+      width: 75px;
+      height: 75px;
+      margin: 0 auto 25px;
       color: #c41e3a;
+      transition: transform 0.3s ease, color 0.3s ease;
     }
 
     .practice-icon svg {
@@ -490,10 +588,11 @@ import { HeroComponent } from '../../components/hero/hero.component';
     }
 
     .practice-card h3 {
-      font-size: 1.3rem;
+      font-size: 1.4rem;
       font-weight: 600;
-      margin-bottom: 15px;
+      margin-bottom: 18px;
       color: #1a1a1a;
+      transition: color 0.3s ease;
     }
 
     .practice-card ul {
@@ -582,13 +681,7 @@ import { HeroComponent } from '../../components/hero/hero.component';
       background-color: #e8eef7;
     }
 
-    .president-placeholder {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
-
-    .president-placeholder svg {
+    .president-image svg {
       width: 100%;
       height: auto;
       display: block;
@@ -693,6 +786,15 @@ import { HeroComponent } from '../../components/hero/hero.component';
       height: 200px;
       overflow: hidden;
       background-color: #e0e0e0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .news-image svg {
+      width: 100%;
+      height: 100%;
+      display: block;
     }
 
     .news-image img {
@@ -702,7 +804,8 @@ import { HeroComponent } from '../../components/hero/hero.component';
       transition: transform 0.3s ease;
     }
 
-    .news-card:hover .news-image img {
+    .news-card:hover .news-image img,
+    .news-card:hover .news-image svg {
       transform: scale(1.05);
     }
 
@@ -853,11 +956,27 @@ import { HeroComponent } from '../../components/hero/hero.component';
       .expertise-grid,
       .practice-grid {
         grid-template-columns: 1fr;
+        gap: 30px;
       }
 
       .expertise-section,
       .practice-areas-section {
-        padding: 50px 0;
+        padding: 60px 0;
+        margin-bottom: 20px;
+      }
+
+      .practice-areas-section {
+        margin-top: 20px;
+      }
+
+      .card-icon {
+        width: 90px;
+        height: 90px;
+      }
+
+      .practice-icon {
+        width: 65px;
+        height: 65px;
       }
 
       .contact-grid {
