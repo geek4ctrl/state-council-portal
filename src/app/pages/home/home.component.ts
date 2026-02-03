@@ -2,11 +2,12 @@ import { Component, signal, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HeroComponent } from '../../components/hero/hero.component';
 import { SkeletonLoaderComponent } from '../../components/skeleton-loader/skeleton-loader.component';
+import { IconComponent } from '../../components/icon/icon.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule, HeroComponent, SkeletonLoaderComponent],
+  imports: [CommonModule, HeroComponent, SkeletonLoaderComponent, IconComponent],
   template: `
     <app-hero></app-hero>
 

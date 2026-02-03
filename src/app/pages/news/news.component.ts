@@ -1,11 +1,12 @@
 import { Component, signal, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SkeletonLoaderComponent } from '../../components/skeleton-loader/skeleton-loader.component';
+import { IconComponent } from '../../components/icon/icon.component';
 
 @Component({
   selector: 'app-news',
   standalone: true,
-  imports: [CommonModule, SkeletonLoaderComponent],
+  imports: [CommonModule, SkeletonLoaderComponent, IconComponent],
   template: `
     <div class="page-container">
       <!-- Hero Section -->
@@ -49,7 +50,10 @@ import { SkeletonLoaderComponent } from '../../components/skeleton-loader/skelet
                     </div>
                     <h3 class="news-title">{{ article.title }}</h3>
                     <p class="news-excerpt">{{ article.excerpt }}</p>
-                    <a href="#" class="read-more">Read more</a>
+                    <a href="#" class="read-more">
+                      Read more
+                      <app-icon name="arrow-right" [size]="16"></app-icon>
+                    </a>
                   </div>
                 </article>
               }
@@ -59,13 +63,14 @@ import { SkeletonLoaderComponent } from '../../components/skeleton-loader/skelet
           <!-- Pagination -->
           <div class="pagination">
             <button class="pagination-btn" [disabled]="currentPage() === 1">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <polyline points="15 18 9 12 15 6"></polyline>
-              </svg>
+              <app-icon name="chevron-right" [size]="20" [customClass]="'rotate-180'"></app-icon>
             </button>
             <button class="pagination-number" [class.active]="currentPage() === 2">2</button>
             <button class="pagination-number" [class.active]="currentPage() === 3">3</button>
-            <button class="pagination-btn next">Next</button>
+            <button class="pagination-btn next">
+              Next
+              <app-icon name="chevron-right" [size]="16"></app-icon>
+            </button>
           </div>
         </div>
       </section>

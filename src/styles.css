@@ -24,3 +24,22 @@ body {
 main {
   min-height: calc(100vh - 150px);
 }
+
+/* Icon Utilities */
+.icon.rotated,
+.icon.rotate-180 {
+  transform: rotate(180deg);
+}
+
+.icon.rotate-90 {
+  transform: rotate(90deg);
+}
+
+.icon.rotate-270 {
+  transform: rotate(270deg);
+}
+
+/* Icon Transitions */
+.icon {
+  transition: transform 0.2s ease;
+}
