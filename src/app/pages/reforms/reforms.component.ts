@@ -485,10 +485,10 @@ import { CommonModule } from '@angular/common';
 })
 export class ReformsComponent {
   stakeholders = [
-    { name: 'BAYONA NSOMWE', image: 'https://placehold.co/300x400/1a2942/ffffff?text=BAYONA+NSOMWE' },
-    { name: 'NGOMBA KABEYYA', image: 'https://placehold.co/300x400/c41e3a/ffffff?text=NGOMBA+KABEYYA' },
-    { name: 'CHRISTINA MWALE', image: 'https://placehold.co/300x400/8B6914/ffffff?text=CHRISTINA+MWALE' },
-    { name: 'BUKENGELA MUGDERINA', image: 'https://placehold.co/300x400/2c3e50/ffffff?text=BUKENGELA' }
+    { name: 'BAYONA NSOMWE', image: 'https://placehold.co/300x400' },
+    { name: 'NGOMBA KABEYYA', image: 'https://placehold.co/300x400' },
+    { name: 'CHRISTINA MWALE', image: 'https://placehold.co/300x400' },
+    { name: 'BUKENGELA MUGDERINA', image: 'https://placehold.co/300x400' }
   ];
 }
 
