@@ -3,11 +3,12 @@ import { CommonModule } from '@angular/common';
 import { HeroComponent } from '../../components/hero/hero.component';
 import { SkeletonLoaderComponent } from '../../components/skeleton-loader/skeleton-loader.component';
 import { IconComponent } from '../../components/icon/icon.component';
+import { LazyLoadDirective } from '../../directives/lazy-load.directive';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule, HeroComponent, SkeletonLoaderComponent, IconComponent],
+  imports: [CommonModule, HeroComponent, SkeletonLoaderComponent, IconComponent, LazyLoadDirective],
   template: `
     <app-hero></app-hero>
 
@@ -27,7 +28,7 @@ import { IconComponent } from '../../components/icon/icon.component';
           } @else {
             <div class="offer-card">
               <div class="card-header">
-                <img src="https://placehold.co/60x60/2c3e50/white?text=SC" alt="Supreme Judicial Authority" class="card-image">
+                <img src="https://placehold.co/60x60/2c3e50/white?text=SC" alt="Supreme Judicial Authority" class="card-image" loading="lazy">
               <h3>Supreme Judicial Authority</h3>
             </div>
             <p>As the highest court in the ordinary judicial system, the Court of Cassation ensures uniform interpretation and application of laws throughout the Democratic Republic of Congo.</p>
@@ -35,7 +36,7 @@ import { IconComponent } from '../../components/icon/icon.component';
 
           <div class="offer-card">
             <div class="card-header">
-              <img src="https://placehold.co/60x60/8B6914/white?text=LC" alt="Legal Certainty" class="card-image">
+              <img src="https://placehold.co/60x60/8B6914/white?text=LC" alt="Legal Certainty" class="card-image" loading="lazy">
               <h3>Legal Certainty</h3>
             </div>
             <p>Through our jurisprudence and decisions, we establish legal precedents that guide lower courts and ensure consistency in the application of justice across the nation.</p>
@@ -43,7 +44,7 @@ import { IconComponent } from '../../components/icon/icon.component';
 
           <div class="offer-card">
             <div class="card-header">
-              <img src="https://placehold.co/60x60/c41e3a/white?text=JE" alt="Judicial Excellence" class="card-image">
+              <img src="https://placehold.co/60x60/c41e3a/white?text=JE" alt="Judicial Excellence" class="card-image" loading="lazy">
               <h3>Judicial Excellence</h3>
             </div>
             <p>Our magistrates and counselors are selected based on merit, ensuring the highest standards of legal expertise, integrity, and commitment to justice.</p>
@@ -51,7 +52,7 @@ import { IconComponent } from '../../components/icon/icon.component';
 
           <div class="offer-card">
             <div class="card-header">
-              <img src="https://placehold.co/60x60/34495e/white?text=IC" alt="International Cooperation" class="card-image">
+              <img src="https://placehold.co/60x60/34495e/white?text=IC" alt="International Cooperation" class="card-image" loading="lazy">
               <h3>International Cooperation</h3>
             </div>
             <p>We actively participate in dialogue with international judicial bodies and maintain cooperation with French-speaking and African courts. HJF.</p>
@@ -196,7 +197,7 @@ import { IconComponent } from '../../components/icon/icon.component';
       <div class="container">
         <div class="president-content">
           <div class="president-image">
-            <img src="https://placehold.co/400x500/d4b5a1/ffffff?text=President" alt="First President of the Court of Cassation">
+            <img src="https://placehold.co/400x500/d4b5a1/ffffff?text=President" alt="First President of the Court of Cassation" loading="lazy">
           </div>
           <div class="president-text">
             <h2>THE FIRST PRESIDENT OF THE COURT OF CASSATION</h2>

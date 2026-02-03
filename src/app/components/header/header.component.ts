@@ -2,11 +2,12 @@ import { Component, signal, HostListener } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Router, RouterLink, RouterLinkActive } from '@angular/router';
 import { IconComponent } from '../icon/icon.component';
+import { PreloadOnHoverDirective } from '../../directives/preload-on-hover.directive';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [CommonModule, RouterLink, RouterLinkActive, IconComponent],
+  imports: [CommonModule, RouterLink, RouterLinkActive, IconComponent, PreloadOnHoverDirective],
   templateUrl: './header.component.html',
   styleUrl: './header.component.css'
 })

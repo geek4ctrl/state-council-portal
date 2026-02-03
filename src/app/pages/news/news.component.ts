@@ -2,11 +2,12 @@ import { Component, signal, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SkeletonLoaderComponent } from '../../components/skeleton-loader/skeleton-loader.component';
 import { IconComponent } from '../../components/icon/icon.component';
+import { LazyLoadDirective } from '../../directives/lazy-load.directive';
 
 @Component({
   selector: 'app-news',
   standalone: true,
-  imports: [CommonModule, SkeletonLoaderComponent, IconComponent],
+  imports: [CommonModule, SkeletonLoaderComponent, IconComponent, LazyLoadDirective],
   template: `
     <div class="page-container">
       <!-- Hero Section -->
@@ -40,7 +41,7 @@ import { IconComponent } from '../../components/icon/icon.component';
               @for (article of newsArticles; track article.id) {
                 <article class="news-card">
                   <div class="news-image">
-                    <img [src]="article.image" [alt]="article.title">
+                    <img [src]="article.image" [alt]="article.title" loading="lazy">
                   </div>
                   <div class="news-content">
                     <div class="news-meta">

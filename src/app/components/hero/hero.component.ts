@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterLink } from '@angular/router';
+import { LazyLoadDirective } from '../../directives/lazy-load.directive';
 
 @Component({
   selector: 'app-hero',
   standalone: true,
-  imports: [CommonModule, RouterLink],
+  imports: [CommonModule, RouterLink, LazyLoadDirective],
   templateUrl: './hero.component.html',
   styleUrl: './hero.component.css'
 })

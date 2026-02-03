@@ -1,11 +1,12 @@
 import { Component, signal, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SkeletonLoaderComponent } from '../../components/skeleton-loader/skeleton-loader.component';
+import { LazyLoadDirective } from '../../directives/lazy-load.directive';
 
 @Component({
   selector: 'app-organization',
   standalone: true,
-  imports: [CommonModule, SkeletonLoaderComponent],
+  imports: [CommonModule, SkeletonLoaderComponent, LazyLoadDirective],
   template: `
     <div class="page-container">
       <!-- Hero Section -->
@@ -20,7 +21,7 @@ import { SkeletonLoaderComponent } from '../../components/skeleton-loader/skelet
         <div class="container">
           <div class="president-card-large">
             <div class="president-image-large">
-              <img src="https://placehold.co/400x500/8B6914/ffffff?text=First+President" alt="The First President">
+              <img src="https://placehold.co/400x500/8B6914/ffffff?text=First+President" alt="The First President" loading="lazy">
             </div>
             <div class="president-info-large">
               <h2>The First President</h2>
@@ -52,7 +53,7 @@ import { SkeletonLoaderComponent } from '../../components/skeleton-loader/skelet
             } @else {
               <div class="member-card" *ngFor="let president of presidents">
                 <div class="member-image">
-                  <img [src]="president.image" [alt]="president.name">
+                  <img [src]="president.image" [alt]="president.name" loading="lazy">
                 </div>
                 <div class="member-info">
                   <h3>{{ president.name }}</h3>
@@ -76,7 +77,7 @@ import { SkeletonLoaderComponent } from '../../components/skeleton-loader/skelet
             } @else {
               <div class="member-card" *ngFor="let advisor of advisors">
                 <div class="member-image">
-                  <img [src]="advisor.image" [alt]="advisor.name">
+                  <img [src]="advisor.image" [alt]="advisor.name" loading="lazy">
                 </div>
                 <div class="member-info">
                   <h3>{{ advisor.name }}</h3>
