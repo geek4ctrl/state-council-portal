@@ -303,7 +303,22 @@
   font-size: 0.8125rem;
   line-height: 1.4;
   color: rgba(255, 255, 255, 0.7);
-  margin: 0;
+  margin: 0 0 0.75rem 0;
+}
+
+.card-link {
+  display: inline-block;
+  font-size: 0.8125rem;
+  color: #FFD700;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border-bottom: 1px solid transparent;
+}
+
+.card-link:hover {
+  color: #c41e3a;
+  border-bottom-color: #c41e3a;
 }
 
 /* Responsive Design */

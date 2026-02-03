@@ -63,23 +63,23 @@ import { HeroComponent } from '../../components/hero/hero.component';
         <div class="practice-grid">
           <div class="practice-card">
             <div class="practice-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12 2L2 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-10-5z"/>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M32 8 L16 16 L16 32 C16 44 24 52 32 56 C40 52 48 44 48 32 L48 16 Z" fill="currentColor"/>
               </svg>
             </div>
-            <h3>Civil & Commercial Law</h3>
+            <h3>Civil & Commercial<br>Law</h3>
             <ul>
               <li>Appeals from Courts of Appeal</li>
               <li>Commercial disputes and contracts</li>
               <li>Property and inheritance matters</li>
-              <li>Civil liability cases</li>
             </ul>
           </div>
 
           <div class="practice-card">
             <div class="practice-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="currentColor">
+                <path d="M32 8 L18 14 L18 28 C18 38 24 46 32 50 C40 46 46 38 46 28 L46 14 Z"/>
+                <path d="M28 34 L22 28 L24 26 L28 30 L38 20 L40 22 Z" fill="white"/>
               </svg>
             </div>
             <h3>Criminal Law</h3>
@@ -87,14 +87,16 @@ import { HeroComponent } from '../../components/hero/hero.component';
               <li>Criminal appeals in cassation</li>
               <li>Procedural error reviews</li>
               <li>Application of criminal law</li>
-              <li>Sentencing considerations</li>
             </ul>
           </div>
 
           <div class="practice-card">
             <div class="practice-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="currentColor">
+                <circle cx="24" cy="20" r="6"/>
+                <circle cx="40" cy="20" r="6"/>
+                <path d="M24 28 C18 28 12 30 12 34 L12 38 L36 38 L36 34 C36 30 30 28 24 28 Z"/>
+                <path d="M40 28 C38 28 36 28.2 34 28.5 C36 30 37 32 37 34 L37 38 L52 38 L52 34 C52 30 46 28 40 28 Z"/>
               </svg>
             </div>
             <h3>Family Law</h3>
@@ -102,14 +104,15 @@ import { HeroComponent } from '../../components/hero/hero.component';
               <li>Marriage and divorce appeals</li>
               <li>Child custody disputes</li>
               <li>Succession matters</li>
-              <li>Family property rights</li>
             </ul>
           </div>
 
           <div class="practice-card">
             <div class="practice-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-6 0h-4V4h4v2z"/>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="currentColor">
+                <rect x="20" y="24" width="24" height="28" rx="2"/>
+                <rect x="24" y="16" width="16" height="10" rx="2"/>
+                <path d="M28 16 L28 20 L36 20 L36 16" fill="white"/>
               </svg>
             </div>
             <h3>Labor & Employment</h3>
@@ -117,14 +120,13 @@ import { HeroComponent } from '../../components/hero/hero.component';
               <li>Labor dispute appeals</li>
               <li>Employment contract matters</li>
               <li>Workers' rights protection</li>
-              <li>Workplace regulations</li>
             </ul>
           </div>
 
           <div class="practice-card">
             <div class="practice-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="currentColor">
+                <path d="M32 44 L32 28 L40 28 L40 44 L48 44 L48 24 L54 24 L32 8 L10 24 L16 24 L16 44 Z"/>
               </svg>
             </div>
             <h3>Public Law</h3>
@@ -132,14 +134,19 @@ import { HeroComponent } from '../../components/hero/hero.component';
               <li>Jurisdictional privilege cases</li>
               <li>Prosecution of high officials</li>
               <li>Constitutional matters</li>
-              <li>Public interest litigation</li>
             </ul>
           </div>
 
           <div class="practice-card">
             <div class="practice-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12 7V3H2v18h20V7H12zM6 19H4v-2h2v2zm0-4H4v-2h2v2zm0-4H4V9h2v2zm0-4H4V5h2v2zm4 12H8v-2h2v2zm0-4H8v-2h2v2zm0-4H8V9h2v2zm0-4H8V5h2v2zm10 12h-8v-2h2v-2h-2v-2h2v-2h-2V9h8v10zm-2-8h-2v2h2v-2zm0 4h-2v2h2v-2z"/>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="currentColor">
+                <rect x="16" y="12" width="32" height="40" rx="2"/>
+                <rect x="20" y="16" width="4" height="4" fill="white"/>
+                <rect x="20" y="24" width="4" height="4" fill="white"/>
+                <rect x="20" y="32" width="4" height="4" fill="white"/>
+                <rect x="28" y="16" width="16" height="4" fill="white"/>
+                <rect x="28" y="24" width="16" height="4" fill="white"/>
+                <rect x="28" y="32" width="12" height="4" fill="white"/>
               </svg>
             </div>
             <h3>Property Rights</h3>
@@ -147,7 +154,6 @@ import { HeroComponent } from '../../components/hero/hero.component';
               <li>Real estate disputes</li>
               <li>Land ownership matters</li>
               <li>Property transactions</li>
-              <li>Intellectual property cases</li>
             </ul>
           </div>
         </div>
@@ -715,7 +721,7 @@ import { HeroComponent } from '../../components/hero/hero.component';
 
     .practice-grid {
       display: grid;
-      grid-template-columns: repeat(5, 1fr);
+      grid-template-columns: repeat(4, 1fr);
       gap: 30px;
       margin-top: 60px;
     }
@@ -730,10 +736,6 @@ import { HeroComponent } from '../../components/hero/hero.component';
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
       animation: scaleIn 0.5s ease-out forwards;
       opacity: 0;
-    }
-
-    .practice-grid .practice-card:nth-child(6) {
-      grid-column: 2 / 3;
     }
 
     .practice-card:nth-child(1) { animation-delay: 0.1s; }
@@ -772,11 +774,14 @@ import { HeroComponent } from '../../components/hero/hero.component';
     }
 
     .practice-card h3 {
-      font-size: 1.4rem;
+      font-size: 1.1rem;
       font-weight: 600;
       margin-bottom: 18px;
       color: #1a1a1a;
       transition: color 0.3s ease;
+      padding-bottom: 12px;
+      border-bottom: 2px solid #c8956b;
+      line-height: 1.4;
     }
 
     .practice-card ul {
@@ -1317,8 +1322,22 @@ import { HeroComponent } from '../../components/hero/hero.component';
       }
 
       .practice-icon {
-        width: 65px;
-        height: 65px;
+        width: 70px;
+        height: 70px;
+        flex-shrink: 0;
+      }
+
+      .practice-icon svg {
+        width: 100%;
+        height: 100%;
+      }
+
+      .practice-card {
+        padding: 30px 20px;
+      }
+
+      .practice-card h3 {
+        font-size: 1.05rem;
       }
 
       .contact-bar {
@@ -1433,8 +1452,24 @@ import { HeroComponent } from '../../components/hero/hero.component';
         padding: 25px 20px;
       }
 
+      .practice-icon {
+        width: 60px;
+        height: 60px;
+        flex-shrink: 0;
+        margin: 0 auto 20px;
+      }
+
+      .practice-icon svg {
+        width: 100%;
+        height: 100%;
+      }
+
       .practice-card h3 {
-        font-size: 1.1rem;
+        font-size: 1rem;
+      }
+
+      .practice-card ul {
+        font-size: 0.85rem;
       }
 
       .expertise-title::before,
