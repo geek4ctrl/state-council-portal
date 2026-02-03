@@ -5,19 +5,109 @@ import { Component } from '@angular/core';
   standalone: true,
   template: `
     <div class="page-container">
-      <h1>Procedures</h1>
-      <p>Review court procedures and requirements.</p>
+      <section class="hero-section">
+        <div class="hero-content">
+          <h1>Appeal to the State</h1>
+          <p class="subtitle">Procedures for Filing an Appeal with the Court of Cassation</p>
+        </div>
+      </section>
+
+      <section class="content-section">
+        <div class="container">
+          <div class="intro">
+            <h2>Appeal Procedures</h2>
+            <p>
+              Learn about the procedures and requirements for filing an appeal to the Court of Cassation,
+              including necessary documentation, timelines, and legal processes.
+            </p>
+          </div>
+        </div>
+      </section>
     </div>
   `,
   styles: [`
     .page-container {
+      padding-top: 80px;
+    }
+
+    .hero-section {
+      background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+      color: white;
+      padding: 120px 20px;
+      text-align: center;
+    }
+
+    .hero-content h1 {
+      font-size: 3.5rem;
+      font-weight: bold;
+      margin: 0 0 20px 0;
+      letter-spacing: 2px;
+    }
+
+    .subtitle {
+      font-size: 1.5rem;
+      opacity: 0.9;
+      font-weight: 300;
+    }
+
+    .content-section {
+      padding: 80px 20px;
+    }
+
+    .container {
       max-width: 1200px;
       margin: 0 auto;
-      padding: 3rem 1rem;
     }
-    h1 {
-      color: #8B6914;
-      margin-bottom: 1rem;
+
+    .intro {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    .intro h2 {
+      font-size: 2.2rem;
+      color: #2c3e50;
+      margin-bottom: 20px;
+    }
+
+    .intro p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      color: #555;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    @media (max-width: 768px) {
+      .hero-content h1 {
+        font-size: 2.5rem;
+      }
+
+      .subtitle {
+        font-size: 1.2rem;
+      }
+
+      .content-section {
+        padding: 60px 15px;
+      }
+
+      .intro h2 {
+        font-size: 1.6rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .hero-section {
+        padding: 80px 15px;
+      }
+
+      .hero-content h1 {
+        font-size: 2rem;
+      }
+
+      .subtitle {
+        font-size: 1rem;
+      }
     }
   `]
 })

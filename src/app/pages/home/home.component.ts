@@ -8,69 +8,45 @@ import { HeroComponent } from '../../components/hero/hero.component';
   template: `
     <app-hero></app-hero>
 
-    <!-- Fields of Expertise Section 1 -->
+    <!-- What We Offer Section -->
     <section class="expertise-section">
       <div class="container">
-        <h2 class="section-title">FIELDS OF EXPERTISE</h2>
-        <p class="section-subtitle">
+        <h2 class="section-title offer-title">WHAT WE OFFER</h2>
+        <p class="section-subtitle offer-subtitle">
           We provide tailored legal solutions to meet your unique needs, ensuring your rights are protected and justice is served.
         </p>
 
-        <div class="expertise-grid">
-          <div class="expertise-card">
-            <div class="card-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
-                <rect x="8" y="12" width="48" height="44" rx="2" stroke="#8B4513" stroke-width="2" fill="#D2691E" opacity="0.2"/>
-                <path d="M32 8 L28 12 L36 12 Z" fill="#8B4513"/>
-                <rect x="16" y="20" width="32" height="28" fill="#8B4513" opacity="0.3"/>
-                <path d="M24 28 L28 32 L36 24" stroke="#8B4513" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-                <circle cx="32" cy="38" r="6" fill="#FFD700" opacity="0.5"/>
-              </svg>
+        <div class="offer-grid">
+          <div class="offer-card">
+            <div class="card-header">
+              <img src="https://placehold.co/60x60/2c3e50/white?text=SC" alt="Supreme Judicial Authority" class="card-image">
+              <h3>Supreme Judicial Authority</h3>
             </div>
-            <h3>Supreme Administrative Authority</h3>
-            <p>As the highest court in the administrative judicial system, the State Council ensures final appeals in administrative matters and ensures uniform interpretation and application of administrative law throughout the Democratic Republic of Congo.</p>
+            <p>As the highest court in the ordinary judicial system, the Court of Cassation ensures uniform interpretation and application of laws throughout the Democratic Republic of Congo.</p>
           </div>
 
-          <div class="expertise-card">
-            <div class="card-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
-                <path d="M32 8 L44 20 L44 52 L20 52 L20 20 Z" stroke="#4169E1" stroke-width="2" fill="#87CEEB" opacity="0.3"/>
-                <path d="M26 26 H38 M26 32 H38 M26 38 H34" stroke="#4169E1" stroke-width="2" stroke-linecap="round"/>
-                <circle cx="48" cy="16" r="8" fill="#FFD700" opacity="0.6"/>
-                <path d="M46 16 L47.5 18 L50 15" stroke="#8B4513" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
+          <div class="offer-card">
+            <div class="card-header">
+              <img src="https://placehold.co/60x60/8B6914/white?text=LC" alt="Legal Certainty" class="card-image">
+              <h3>Legal Certainty</h3>
             </div>
-            <h3>Legal Certainty</h3>
             <p>Through our jurisprudence and decisions, we establish legal precedents that guide lower courts and ensure consistency in the application of justice across the nation.</p>
           </div>
 
-          <div class="expertise-card">
-            <div class="card-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
-                <polygon points="32,12 36,24 48,24 38,32 42,44 32,36 22,44 26,32 16,24 28,24" fill="#FFD700" opacity="0.7"/>
-                <circle cx="32" cy="32" r="10" stroke="#8B4513" stroke-width="2" fill="none"/>
-                <path d="M32 26 L32 32 L36 36" stroke="#8B4513" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                <circle cx="32" cy="50" r="4" fill="#C41E3A" opacity="0.5"/>
-              </svg>
+          <div class="offer-card">
+            <div class="card-header">
+              <img src="https://placehold.co/60x60/c41e3a/white?text=JE" alt="Judicial Excellence" class="card-image">
+              <h3>Judicial Excellence</h3>
             </div>
-            <h3>Administrative Excellence</h3>
-            <p>Our counselors and magistrates are selected based on merit, ensuring the highest standards of legal expertise, integrity, and commitment to justice in administrative matters.</p>
+            <p>Our magistrates and counselors are selected based on merit, ensuring the highest standards of legal expertise, integrity, and commitment to justice.</p>
           </div>
 
-          <div class="expertise-card">
-            <div class="card-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
-                <circle cx="32" cy="32" r="20" stroke="#228B22" stroke-width="2" fill="#90EE90" opacity="0.3"/>
-                <ellipse cx="32" cy="32" rx="20" ry="10" stroke="#228B22" stroke-width="1.5" fill="none"/>
-                <ellipse cx="32" cy="32" rx="10" ry="20" stroke="#228B22" stroke-width="1.5" fill="none"/>
-                <path d="M12 32 H52 M32 12 V52" stroke="#228B22" stroke-width="1.5"/>
-                <circle cx="20" cy="24" r="3" fill="#4169E1"/>
-                <circle cx="44" cy="28" r="3" fill="#C41E3A"/>
-                <circle cx="32" cy="44" r="3" fill="#FFD700"/>
-              </svg>
+          <div class="offer-card">
+            <div class="card-header">
+              <img src="https://placehold.co/60x60/34495e/white?text=IC" alt="International Cooperation" class="card-image">
+              <h3>International Cooperation</h3>
             </div>
-            <h3>International Cooperation</h3>
-            <p>We actively participate in dialogue with international administrative judicial bodies and maintain cooperation with French-speaking and African supreme administrative courts.</p>
+            <p>We actively participate in dialogue with international judicial bodies and maintain cooperation with French-speaking and African courts. HJF.</p>
           </div>
         </div>
       </div>
@@ -239,7 +215,7 @@ import { HeroComponent } from '../../components/hero/hero.component';
               elected in Kinshasa, is in charge of coordinating the entire Administrative Supreme Court College and Clerk's office.
             </p>
             <p>
-              For every democratic Congolese citizen, contributing to good governance and the rule of law is a civic duty. 
+              For every democratic Congolese citizen, contributing to good governance and the rule of law is a civic duty.
               The State Council plays a vital role in ensuring administrative justice and protecting citizens' rights against government overreach.
             </p>
             <p>
@@ -518,12 +494,12 @@ import { HeroComponent } from '../../components/hero/hero.component';
     .expertise-section, .practice-areas-section {
       padding: 100px 0;
       background-color: #f8f9fa;
-      margin-bottom: 40px;
+      margin-bottom: 0;
     }
 
     .practice-areas-section {
       background-color: #ffffff;
-      margin-top: 40px;
+      margin-top: 0;
     }
 
     .container {
@@ -553,6 +529,26 @@ import { HeroComponent } from '../../components/hero/hero.component';
       border-radius: 2px;
     }
 
+    .offer-title {
+      text-align: left;
+      margin-left: 0;
+    }
+
+    .offer-title::before {
+      content: '';
+      position: absolute;
+      left: -70px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 60px;
+      height: 3px;
+      background: #c41e3a;
+    }
+
+    .offer-title::after {
+      display: none;
+    }
+
     .section-subtitle {
       text-align: center;
       font-size: 1.1rem;
@@ -563,11 +559,67 @@ import { HeroComponent } from '../../components/hero/hero.component';
       animation: fadeInUp 0.8s ease-out 0.2s backwards;
     }
 
+    .offer-subtitle {
+      text-align: left;
+      color: #c8956b;
+      font-size: 0.95rem;
+      margin: 0 0 50px 0;
+      max-width: 100%;
+    }
+
     .expertise-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 40px;
       margin-top: 60px;
+    }
+
+    .offer-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .offer-card {
+      background: white;
+      border-left: 3px solid #c41e3a;
+      padding: 20px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .offer-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .card-header {
+      display: flex;
+      align-items: flex-start;
+      gap: 15px;
+      margin-bottom: 15px;
+    }
+
+    .card-image {
+      width: 60px;
+      height: 60px;
+      flex-shrink: 0;
+      object-fit: cover;
+    }
+
+    .offer-card h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: #1a1a1a;
+      margin: 0;
+      line-height: 1.3;
+    }
+
+    .offer-card p {
+      font-size: 0.9rem;
+      color: #666;
+      line-height: 1.6;
+      margin: 0;
     }
 
     .expertise-card {
@@ -846,7 +898,7 @@ import { HeroComponent } from '../../components/hero/hero.component';
       left: 0;
       right: 0;
       bottom: 0;
-      background: 
+      background:
         radial-gradient(circle at 20% 50%, rgba(196, 30, 58, 0.1) 0%, transparent 50%),
         radial-gradient(circle at 80% 80%, rgba(139, 105, 20, 0.1) 0%, transparent 50%);
       pointer-events: none;
