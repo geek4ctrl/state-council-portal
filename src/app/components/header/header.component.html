@@ -44,7 +44,7 @@
     <div class="container">
       <div class="nav-content">
         <!-- Logo -->
-        <a href="/" class="logo" (click)="closeDropdowns()">
+        <a href="/" class="logo" (click)="closeMobileMenu()">
           <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 100 100" fill="none">
             <path d="M50 10 L15 30 L15 50 L50 90 L85 50 L85 30 Z" fill="#8B6914"/>
             <path d="M50 25 L30 35 L30 50 L50 70 L70 50 L70 35 Z" fill="#C8956B"/>
@@ -52,10 +52,17 @@
           </svg>
         </a>
 
+        <!-- Hamburger Menu Button -->
+        <button class="hamburger" (click)="toggleMobileMenu()" [class.active]="isMobileMenuOpen()" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
         <!-- Navigation Menu -->
-        <ul class="nav-menu">
+        <ul class="nav-menu" [class.mobile-open]="isMobileMenuOpen()">
           <li class="nav-item">
-            <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="nav-link">
+            <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="nav-link" (click)="closeMobileMenu()">
               HOME
             </a>
           </li>
@@ -71,15 +78,15 @@
             </button>
             @if (isCourtDropdownOpen()) {
               <ul class="dropdown-menu">
-                <li><a routerLink="/presentation" class="dropdown-link">Presentation</a></li>
-                <li><a routerLink="/organization" class="dropdown-link">Organization</a></li>
-                <li><a routerLink="/reforms" class="dropdown-link">Reforms</a></li>
-                <li><a routerLink="/international-relations" class="dropdown-link">International Relations</a></li>
+                <li><a routerLink="/presentation" class="dropdown-link" (click)="closeMobileMenu()">Presentation</a></li>
+                <li><a routerLink="/organization" class="dropdown-link" (click)="closeMobileMenu()">Organization</a></li>
+                <li><a routerLink="/reforms" class="dropdown-link" (click)="closeMobileMenu()">Reforms</a></li>
+                <li><a routerLink="/international-relations" class="dropdown-link" (click)="closeMobileMenu()">International Relations</a></li>
               </ul>
             }
           </li>
           <li class="nav-item">
-            <a routerLink="/audiences" routerLinkActive="active" class="nav-link">
+            <a routerLink="/audiences" routerLinkActive="active" class="nav-link" (click)="closeMobileMenu()">
               AUDIENCES
             </a>
           </li>
@@ -95,21 +102,26 @@
             </button>
             @if (isStepsDropdownOpen()) {
               <ul class="dropdown-menu">
-                <li><a routerLink="/steps" [queryParams]="{tab: 'report'}" class="dropdown-link">Report</a></li>
-                <li><a routerLink="/steps" [queryParams]="{tab: 'appointment'}" class="dropdown-link">Book Appointment</a></li>
-                <li><a routerLink="/steps" [queryParams]="{tab: 'appeal'}" class="dropdown-link">File an Appeal</a></li>
+                <li><a routerLink="/steps" [queryParams]="{tab: 'report'}" class="dropdown-link" (click)="closeMobileMenu()">Report</a></li>
+                <li><a routerLink="/steps" [queryParams]="{tab: 'appointment'}" class="dropdown-link" (click)="closeMobileMenu()">Book Appointment</a></li>
+                <li><a routerLink="/steps" [queryParams]="{tab: 'appeal'}" class="dropdown-link" (click)="closeMobileMenu()">File an Appeal</a></li>
               </ul>
             }
           </li>
           <li class="nav-item">
-            <a routerLink="/news" routerLinkActive="active" class="nav-link">
+            <a routerLink="/news" routerLinkActive="active" class="nav-link" (click)="closeMobileMenu()">
               NEWS
             </a>
           </li>
+          <li class="nav-item mobile-only">
+            <button class="btn-appointment mobile" (click)="navigateToAppointment()">
+              Book Appointment
+            </button>
+          </li>
         </ul>
 
-        <!-- Book Appointment Button -->
-        <button class="btn-appointment" (click)="navigateToAppointment()">
+        <!-- Book Appointment Button (Desktop Only) -->
+        <button class="btn-appointment desktop-only" (click)="navigateToAppointment()">
           Book Appointment
         </button>
       </div>
