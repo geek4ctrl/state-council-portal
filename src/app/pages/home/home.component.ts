@@ -52,12 +52,12 @@ import { HeroComponent } from '../../components/hero/hero.component';
       </div>
     </section>
 
-    <!-- Fields of Expertise Section 2 -->
+    <!-- Fields of Expertise Section -->
     <section class="practice-areas-section">
       <div class="container">
-        <h2 class="section-title">FIELDS OF EXPERTISE</h2>
-        <p class="section-subtitle">
-          The State Council exercises jurisdiction over various administrative and constitutional matters as the supreme court of the administrative judicial system.
+        <h2 class="section-title expertise-title">FIELDS OF EXPERTISE</h2>
+        <p class="section-subtitle expertise-subtitle">
+          The Court of Cassation exercises jurisdiction over various legal matters as the supreme court of the ordinary judicial system.
         </p>
 
         <div class="practice-grid">
@@ -67,27 +67,27 @@ import { HeroComponent } from '../../components/hero/hero.component';
                 <path d="M12 2L2 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-10-5z"/>
               </svg>
             </div>
-            <h3>Administrative Law</h3>
+            <h3>Civil & Commercial Law</h3>
             <ul>
-              <li>Appeals from Administrative Tribunals</li>
-              <li>Government disputes and contracts</li>
-              <li>Public service matters</li>
-              <li>Administrative liability cases</li>
+              <li>Appeals from Courts of Appeal</li>
+              <li>Commercial disputes and contracts</li>
+              <li>Property and inheritance matters</li>
+              <li>Civil liability cases</li>
             </ul>
           </div>
 
           <div class="practice-card">
             <div class="practice-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12 7V3H2v18h20V7H12zM6 19H4v-2h2v2zm0-4H4v-2h2v2zm0-4H4V9h2v2zm0-4H4V5h2v2zm4 12H8v-2h2v2zm0-4H8v-2h2v2zm0-4H8V9h2v2zm0-4H8V5h2v2zm10 12h-8v-2h2v-2h-2v-2h2v-2h-2V9h8v10zm-2-8h-2v2h2v-2zm0 4h-2v2h2v-2z"/>
+                <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/>
               </svg>
             </div>
-            <h3>Constitutional Law</h3>
+            <h3>Criminal Law</h3>
             <ul>
-              <li>Constitutional appeals and reviews</li>
-              <li>Electoral disputes</li>
-              <li>Application of constitutional provisions</li>
-              <li>Fundamental rights protection</li>
+              <li>Criminal appeals in cassation</li>
+              <li>Procedural error reviews</li>
+              <li>Application of criminal law</li>
+              <li>Sentencing considerations</li>
             </ul>
           </div>
 
@@ -112,27 +112,12 @@ import { HeroComponent } from '../../components/hero/hero.component';
                 <path d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-6 0h-4V4h4v2z"/>
               </svg>
             </div>
-            <h3>Public Service Law</h3>
+            <h3>Labor & Employment</h3>
             <ul>
-              <li>Civil servant disputes</li>
+              <li>Labor dispute appeals</li>
               <li>Employment contract matters</li>
-              <li>Public workers' rights protection</li>
-              <li>Government regulations</li>
-            </ul>
-          </div>
-
-          <div class="practice-card">
-            <div class="practice-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/>
-              </svg>
-            </div>
-            <h3>Public Law & Regulation</h3>
-            <ul>
-              <li>Regulatory compliance cases</li>
-              <li>Public authority oversight</li>
-              <li>Administrative procedures</li>
-              <li>Government accountability</li>
+              <li>Workers' rights protection</li>
+              <li>Workplace regulations</li>
             </ul>
           </div>
 
@@ -142,12 +127,27 @@ import { HeroComponent } from '../../components/hero/hero.component';
                 <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
               </svg>
             </div>
-            <h3>Government Property</h3>
+            <h3>Public Law</h3>
             <ul>
-              <li>Public domain disputes</li>
-              <li>State property matters</li>
-              <li>Government contracts</li>
-              <li>Public procurement cases</li>
+              <li>Jurisdictional privilege cases</li>
+              <li>Prosecution of high officials</li>
+              <li>Constitutional matters</li>
+              <li>Public interest litigation</li>
+            </ul>
+          </div>
+
+          <div class="practice-card">
+            <div class="practice-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 7V3H2v18h20V7H12zM6 19H4v-2h2v2zm0-4H4v-2h2v2zm0-4H4V9h2v2zm0-4H4V5h2v2zm4 12H8v-2h2v2zm0-4H8v-2h2v2zm0-4H8V9h2v2zm0-4H8V5h2v2zm10 12h-8v-2h2v-2h-2v-2h2v-2h-2V9h8v10zm-2-8h-2v2h2v-2zm0 4h-2v2h2v-2z"/>
+              </svg>
+            </div>
+            <h3>Property Rights</h3>
+            <ul>
+              <li>Real estate disputes</li>
+              <li>Land ownership matters</li>
+              <li>Property transactions</li>
+              <li>Intellectual property cases</li>
             </ul>
           </div>
         </div>
@@ -157,35 +157,20 @@ import { HeroComponent } from '../../components/hero/hero.component';
     <!-- Contact Information Section -->
     <section class="contact-info-section">
       <div class="container">
-        <div class="contact-grid">
-          <div class="contact-card">
-            <div class="contact-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
-              </svg>
-            </div>
+        <div class="contact-bar">
+          <div class="contact-item">
             <h3>Office Address</h3>
             <p>No. 2 Avenue de la Justice in the Gombe district of Kinshasa.</p>
           </div>
-
-          <div class="contact-card">
-            <div class="contact-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
-              </svg>
-            </div>
+          <div class="contact-divider"></div>
+          <div class="contact-item">
             <h3>Office Number</h3>
-            <p>+243 1000000000</p>
+            <p>+243 000000000</p>
           </div>
-
-          <div class="contact-card">
-            <div class="contact-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
-              </svg>
-            </div>
+          <div class="contact-divider"></div>
+          <div class="contact-item">
             <h3>Office Email</h3>
-            <p>info@statecouncil.cd</p>
+            <p>info@coneildetat.cd</p>
           </div>
         </div>
       </div>
@@ -196,33 +181,30 @@ import { HeroComponent } from '../../components/hero/hero.component';
       <div class="container">
         <div class="president-content">
           <div class="president-image">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" width="100%" height="100%">
-              <rect fill="#e8eef7" width="400" height="500"/>
-              <g opacity="0.6">
-                <circle cx="200" cy="180" r="70" fill="#1a2942"/>
-                <ellipse cx="200" cy="420" rx="120" ry="80" fill="#1a2942"/>
-                <rect x="160" y="130" width="80" height="100" rx="40" fill="#1a2942"/>
-                <circle cx="200" cy="140" r="25" fill="#8B6914" opacity="0.7"/>
-              </g>
-              <text x="200" y="470" font-family="Arial" font-size="14" fill="#666" text-anchor="middle" font-weight="bold">First President</text>
-              <text x="200" y="490" font-family="Arial" font-size="12" fill="#999" text-anchor="middle">State Council</text>
-            </svg>
+            <img src="https://placehold.co/400x500/d4b5a1/ffffff?text=President" alt="First President of the Court of Cassation">
           </div>
           <div class="president-text">
-            <h2>THE FIRST PRESIDENT OF THE STATE COUNCIL</h2>
+            <h2>THE FIRST PRESIDENT OF THE COURT OF CASSATION</h2>
             <p>
-              As the first-ranking member of the DRC's High Council of the Judiciary, the First President of the State Council,
-              elected in Kinshasa, is in charge of coordinating the entire Administrative Supreme Court College and Clerk's office.
+              As the third-ranking member of the DRC's High Council of the Judiciary, the First President of the Court of
+              Cassation, Professor NGOMBA KABEYYA ELIE LEON, elected blood in Thursday, February 29th,
+              2024, is in charge of coordinating the entire High Court College and Clerk's office.
             </p>
             <p>
-              For every democratic Congolese citizen, contributing to good governance and the rule of law is a civic duty.
-              The State Council plays a vital role in ensuring administrative justice and protecting citizens' rights against government overreach.
+              For every democratic Congolese citizen, contributing to the war effort is a civic duty. The judiciary is no
+              exception.
             </p>
             <p>
-              The State Council has been instrumental in establishing precedents for administrative law, ensuring transparency in government operations,
-              and maintaining the balance of power between the executive branch and the citizens of the Democratic Republic of Congo.
+              Since decades, the DRC has suffered aggression perpetuated by Rwanda and other negative
+              armed groups, resulting in millions of deaths, tens of thousands of displaced persons, and a precarious
+              humanitarian situation.
             </p>
-            <button class="learn-more-btn">Learn More</button>
+            <button class="learn-more-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
+                <path d="M19 12H5M12 19l-7-7 7-7"/>
+              </svg>
+              Learn More
+            </button>
           </div>
         </div>
       </div>
@@ -264,7 +246,7 @@ import { HeroComponent } from '../../components/hero/hero.component';
                 <span class="news-date">15 Nov 2025</span>
                 <span class="news-category">Decision Report</span>
               </div>
-              <h3>Navigating Administrative Appeals: Legal Advice for a Smooth Process</h3>
+              <h3>Navigating Appeals: Legal Advice for a Smooth Process</h3>
               <a href="#" class="read-more-link">
                 Read More
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -301,7 +283,7 @@ import { HeroComponent } from '../../components/hero/hero.component';
                 <span class="news-date">22 Oct 2025</span>
                 <span class="news-category">Court Update</span>
               </div>
-              <h3>Key Considerations in Administrative Review Proceedings</h3>
+              <h3>Key Considerations in Cassation Proceedings</h3>
               <a href="#" class="read-more-link">
                 Read More
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -341,7 +323,7 @@ import { HeroComponent } from '../../components/hero/hero.component';
                 <span class="news-date">18 Oct 2025</span>
                 <span class="news-category">Judicial Ruling</span>
               </div>
-              <h3>Recent Changes in Administrative Procedural Law</h3>
+              <h3>Recent Changes in Procedural Law</h3>
               <a href="#" class="read-more-link">
                 Read More
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -378,7 +360,7 @@ import { HeroComponent } from '../../components/hero/hero.component';
                 <span class="news-date">12 Oct 2025</span>
                 <span class="news-category">Legal Update</span>
               </div>
-              <h3>Understanding Your Rights Against Administrative Actions</h3>
+              <h3>Understanding Your Rights in the Appeals Process</h3>
               <a href="#" class="read-more-link">
                 Read More
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -387,6 +369,10 @@ import { HeroComponent } from '../../components/hero/hero.component';
               </a>
             </div>
           </article>
+        </div>
+
+        <div class="newsletter-actions">
+          <button class="learn-more-btn">Learn More</button>
         </div>
       </div>
     </section>
@@ -549,6 +535,48 @@ import { HeroComponent } from '../../components/hero/hero.component';
       display: none;
     }
 
+    .expertise-title {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .expertise-title::before,
+    .expertise-title::after {
+      content: '';
+      flex: 0 0 100px;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, #c8956b 50%, transparent);
+    }
+
+    .expertise-subtitle {
+      color: #c8956b;
+      font-size: 0.95rem;
+    }
+
+    .expertise-title {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .expertise-title::before,
+    .expertise-title::after {
+      content: '';
+      flex: 0 0 100px;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, #c8956b 50%, transparent);
+    }
+
+    .expertise-subtitle {
+      color: #c8956b;
+      font-size: 0.95rem;
+    }
+
     .section-subtitle {
       text-align: center;
       font-size: 1.1rem;
@@ -687,19 +715,25 @@ import { HeroComponent } from '../../components/hero/hero.component';
 
     .practice-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 50px;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 30px;
       margin-top: 60px;
     }
 
     .practice-card {
       text-align: center;
       padding: 35px 25px;
-      transition: transform 0.3s ease;
+      background: white;
+      border-top: 3px solid #c8956b;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
       cursor: pointer;
-      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
       animation: scaleIn 0.5s ease-out forwards;
       opacity: 0;
+    }
+
+    .practice-grid .practice-card:nth-child(6) {
+      grid-column: 2 / 3;
     }
 
     .practice-card:nth-child(1) { animation-delay: 0.1s; }
@@ -770,50 +804,71 @@ import { HeroComponent } from '../../components/hero/hero.component';
 
     /* Contact Information Section */
     .contact-info-section {
-      padding: 60px 0;
+      padding: 0;
+      background-color: #e8eef7;
+      border-top: 3px solid #4a90e2;
+      border-bottom: 1px solid #d0d7e0;
+    }
+
+    .contact-bar {
+      display: flex;
+      align-items: stretch;
+      justify-content: space-between;
       background-color: #e8eef7;
     }
 
-    .contact-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 40px;
-    }
-
-    .contact-card {
+    .contact-item {
+      flex: 1;
       text-align: center;
-      padding: 20px;
+      padding: 30px 20px;
+      position: relative;
     }
 
-    .contact-icon {
-      width: 50px;
-      height: 50px;
-      margin: 0 auto 15px;
-      color: #c41e3a;
-    }
-
-    .contact-icon svg {
-      width: 100%;
-      height: 100%;
-    }
-
-    .contact-card h3 {
-      font-size: 1.2rem;
+    .contact-item h3 {
+      font-size: 0.9rem;
       font-weight: 600;
-      margin-bottom: 10px;
+      margin-bottom: 8px;
       color: #1a1a1a;
+      text-transform: capitalize;
     }
 
-    .contact-card p {
-      font-size: 1rem;
+    .contact-item p {
+      font-size: 0.85rem;
       color: #666;
-      line-height: 1.6;
+      line-height: 1.5;
+      margin: 0;
+    }
+
+    .contact-divider {
+      width: 2px;
+      background: linear-gradient(to bottom, transparent, #c8956b, transparent);
+      position: relative;
+    }
+
+    .contact-divider::before,
+    .contact-divider::after {
+      content: '';
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 8px;
+      height: 8px;
+      background-color: #c8956b;
+      border-radius: 50%;
+    }
+
+    .contact-divider::before {
+      top: 20px;
+    }
+
+    .contact-divider::after {
+      bottom: 20px;
     }
 
     /* President Section */
     .president-section {
       padding: 80px 0;
-      background: linear-gradient(135deg, #e8eef7 0%, #f8f9fa 100%);
+      background: #ffffff;
     }
 
     .president-content {
@@ -825,10 +880,8 @@ import { HeroComponent } from '../../components/hero/hero.component';
 
     .president-image {
       position: relative;
-      border-radius: 12px;
       overflow: hidden;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-      background-color: #e8eef7;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     }
 
     .president-image svg {
@@ -864,22 +917,31 @@ import { HeroComponent } from '../../components/hero/hero.component';
       text-align: justify;
     }
 
-    .learn-more-btn {
+    .president-text .learn-more-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 12px 35px;
       background-color: #c41e3a;
       color: white;
       border: none;
-      padding: 12px 32px;
       font-size: 1rem;
       font-weight: 600;
-      border-radius: 6px;
       cursor: pointer;
-      transition: background-color 0.3s ease, transform 0.2s ease;
-      margin-top: 15px;
+      transition: all 0.3s ease;
+      margin-top: 10px;
     }
 
-    .learn-more-btn:hover {
+    .president-text .learn-more-btn svg {
+      transition: transform 0.3s ease;
+    }
+
+    .president-text .learn-more-btn:hover {
       background-color: #a01729;
-      transform: translateY(-2px);
+    }
+
+    .president-text .learn-more-btn:hover svg {
+      transform: translateX(-4px);
     }
 
     /* Newsletter Section */
@@ -931,20 +993,22 @@ import { HeroComponent } from '../../components/hero/hero.component';
 
     .newsletter-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      grid-template-columns: repeat(4, 1fr);
       gap: 30px;
       position: relative;
       z-index: 1;
+      margin-bottom: 40px;
     }
 
     .news-card {
       background-color: white;
-      border-radius: 12px;
+      border-radius: 0;
       overflow: hidden;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
       cursor: pointer;
       display: flex;
       flex-direction: column;
+      border-bottom: 4px solid #c8956b;
     }
 
     .news-card:hover {
@@ -994,17 +1058,16 @@ import { HeroComponent } from '../../components/hero/hero.component';
       align-items: center;
       margin-bottom: 15px;
       font-size: 0.85rem;
-      padding-bottom: 15px;
-      border-bottom: 2px solid #c41e3a;
     }
 
     .news-date {
-      color: #666;
+      color: #c8956b;
+      font-weight: 500;
     }
 
     .news-category {
-      color: #c41e3a;
-      font-weight: 600;
+      color: #c8956b;
+      font-weight: 500;
     }
 
     .news-content h3 {
@@ -1041,6 +1104,31 @@ import { HeroComponent } from '../../components/hero/hero.component';
 
     .read-more-link:hover svg {
       transform: translateX(4px);
+    }
+
+    .newsletter-actions {
+      text-align: center;
+      margin-top: 40px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .newsletter-actions .learn-more-btn {
+      padding: 12px 40px;
+      background: transparent;
+      color: white;
+      border: 2px solid white;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .newsletter-actions .learn-more-btn:hover {
+      background: white;
+      color: #2c3e50;
     }
 
     /* Footer Section */
@@ -1150,15 +1238,67 @@ import { HeroComponent } from '../../components/hero/hero.component';
       color: #c41e3a;
     }
 
+    @media (max-width: 1024px) {
+      .offer-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+      }
+
+      .practice-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+      }
+
+      .practice-grid .practice-card:nth-child(6) {
+        grid-column: 2 / 3;
+      }
+
+      .newsletter-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+      }
+
+      .offer-title::before {
+        left: -50px;
+        width: 40px;
+      }
+    }
+
     @media (max-width: 768px) {
       .section-title {
         font-size: 2rem;
+      }
+
+      .offer-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+
+      .offer-title {
+        text-align: center;
+      }
+
+      .offer-title::before {
+        display: none;
+      }
+
+      .offer-subtitle {
+        text-align: center;
+      }
+
+      .expertise-title::before,
+      .expertise-title::after {
+        flex: 0 0 50px;
       }
 
       .expertise-grid,
       .practice-grid {
         grid-template-columns: 1fr;
         gap: 30px;
+      }
+
+      .practice-grid .practice-card:nth-child(6) {
+        grid-column: 1 / 2;
       }
 
       .expertise-section,
@@ -1181,9 +1321,23 @@ import { HeroComponent } from '../../components/hero/hero.component';
         height: 65px;
       }
 
-      .contact-grid {
-        grid-template-columns: 1fr;
-        gap: 30px;
+      .contact-bar {
+        flex-direction: column;
+      }
+
+      .contact-divider {
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(to right, transparent, #c8956b, transparent);
+      }
+
+      .contact-divider::before,
+      .contact-divider::after {
+        display: none;
+      }
+
+      .contact-item {
+        padding: 20px;
       }
 
       .president-content {
@@ -1196,7 +1350,7 @@ import { HeroComponent } from '../../components/hero/hero.component';
       }
 
       .contact-info-section {
-        padding: 40px 0;
+        padding: 0;
       }
 
       .president-section {
@@ -1237,6 +1391,68 @@ import { HeroComponent } from '../../components/hero/hero.component';
 
       .social-icons {
         justify-content: center;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .section-title {
+        font-size: 1.5rem;
+      }
+
+      .offer-subtitle,
+      .section-subtitle,
+      .expertise-subtitle {
+        font-size: 0.85rem;
+      }
+
+      .offer-card {
+        padding: 15px;
+      }
+
+      .card-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+      }
+
+      .card-image {
+        width: 50px;
+        height: 50px;
+      }
+
+      .offer-card h3 {
+        font-size: 0.95rem;
+      }
+
+      .offer-card p {
+        font-size: 0.85rem;
+      }
+
+      .practice-card {
+        padding: 25px 20px;
+      }
+
+      .practice-card h3 {
+        font-size: 1.1rem;
+      }
+
+      .expertise-title::before,
+      .expertise-title::after {
+        flex: 0 0 30px;
+      }
+
+      .newsletter-header h2 {
+        font-size: 1.5rem;
+      }
+
+      .news-card h3 {
+        font-size: 1rem;
+      }
+
+      .newsletter-actions .learn-more-btn {
+        padding: 10px 30px;
+        font-size: 0.9rem;
       }
     }
   `]
