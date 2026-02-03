@@ -1,10 +1,12 @@
-import { Component } from '@angular/core';
+import { Component, signal, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { SkeletonLoaderComponent } from '../../components/skeleton-loader/skeleton-loader.component';
+import { LazyLoadDirective } from '../../directives/lazy-load.directive';
 
 @Component({
   selector: 'app-organization',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, SkeletonLoaderComponent, LazyLoadDirective],
   template: `
     <div class="page-container">
       <!-- Hero Section -->
@@ -19,7 +21,7 @@ import { CommonModule } from '@angular/common';
         <div class="container">
           <div class="president-card-large">
             <div class="president-image-large">
-              <img src="https://placehold.co/400x500/8B6914/ffffff?text=First+President" alt="The First President">
+              <img src="https://placehold.co/400x500/8B6914/ffffff?text=First+President" alt="The First President" loading="lazy">
             </div>
             <div class="president-info-large">
               <h2>The First President</h2>
@@ -44,15 +46,21 @@ import { CommonModule } from '@angular/common';
         <div class="container">
           <h2 class="section-title">THE PRESIDENTS</h2>
           <div class="members-grid">
-            <div class="member-card" *ngFor="let president of presidents">
-              <div class="member-image">
-                <img [src]="president.image" [alt]="president.name">
+            @if (isLoading()) {
+              @for (item of [1, 2, 3, 4, 5, 6, 7, 8]; track item) {
+                <app-skeleton-loader type="profile-card"></app-skeleton-loader>
+              }
+            } @else {
+              <div class="member-card" *ngFor="let president of presidents">
+                <div class="member-image">
+                  <img [src]="president.image" [alt]="president.name" loading="lazy">
+                </div>
+                <div class="member-info">
+                  <h3>{{ president.name }}</h3>
+                  <p>{{ president.title }}</p>
+                </div>
               </div>
-              <div class="member-info">
-                <h3>{{ president.name }}</h3>
-                <p>{{ president.title }}</p>
-              </div>
-            </div>
+            }
           </div>
         </div>
       </section>
@@ -62,15 +70,21 @@ import { CommonModule } from '@angular/common';
         <div class="container">
           <h2 class="section-title">THE ADVISORS</h2>
           <div class="members-grid">
-            <div class="member-card" *ngFor="let advisor of advisors">
-              <div class="member-image">
-                <img [src]="advisor.image" [alt]="advisor.name">
+            @if (isLoading()) {
+              @for (item of [1, 2, 3, 4, 5, 6, 7, 8]; track item) {
+                <app-skeleton-loader type="profile-card"></app-skeleton-loader>
+              }
+            } @else {
+              <div class="member-card" *ngFor="let advisor of advisors">
+                <div class="member-image">
+                  <img [src]="advisor.image" [alt]="advisor.name" loading="lazy">
+                </div>
+                <div class="member-info">
+                  <h3>{{ advisor.name }}</h3>
+                  <p>{{ advisor.title }}</p>
+                </div>
               </div>
-              <div class="member-info">
-                <h3>{{ advisor.name }}</h3>
-                <p>{{ advisor.title }}</p>
-              </div>
-            </div>
+            }
           </div>
         </div>
       </section>
@@ -549,7 +563,16 @@ import { CommonModule } from '@angular/common';
     }
   `]
 })
-export class OrganizationComponent {
+export class OrganizationComponent implements OnInit {
+  isLoading = signal(true);
+
+  ngOnInit() {
+    // Simulate loading data
+    setTimeout(() => {
+      this.isLoading.set(false);
+    }, 1500);
+  }
+
   presidents = [
     { name: 'LUBOYA ILUNGA JOSEPH', title: 'President of the Criminal Chamber', image: 'https://placehold.co/300x300/c41e3a/ffffff?text=LUBOYA' },
     { name: 'KAMANDA KAZADI', title: 'President of the Civil Chamber', image: 'https://placehold.co/300x300/6c757d/ffffff?text=Placeholder' },

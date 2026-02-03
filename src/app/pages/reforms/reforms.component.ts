@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { LazyLoadDirective } from '../../directives/lazy-load.directive';
 
 @Component({
   selector: 'app-reforms',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, LazyLoadDirective],
   template: `
     <div class="page-container">
       <!-- Hero Section -->
@@ -128,7 +129,7 @@ import { CommonModule } from '@angular/common';
           <div class="stakeholders-grid">
             <div class="stakeholder-card" *ngFor="let stakeholder of stakeholders">
               <div class="stakeholder-image">
-                <img [src]="stakeholder.image" [alt]="stakeholder.name">
+                <img [src]="stakeholder.image" [alt]="stakeholder.name" loading="lazy">
               </div>
               <h3>{{ stakeholder.name }}</h3>
             </div>

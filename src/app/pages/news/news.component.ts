@@ -1,10 +1,13 @@
-import { Component, signal } from '@angular/core';
+import { Component, signal, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { SkeletonLoaderComponent } from '../../components/skeleton-loader/skeleton-loader.component';
+import { IconComponent } from '../../components/icon/icon.component';
+import { LazyLoadDirective } from '../../directives/lazy-load.directive';
 
 @Component({
   selector: 'app-news',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, SkeletonLoaderComponent, IconComponent, LazyLoadDirective],
   template: `
     <div class="page-container">
       <!-- Hero Section -->
@@ -30,35 +33,45 @@ import { CommonModule } from '@angular/common';
           </div>
 
           <div class="news-grid">
-            @for (article of newsArticles; track article.id) {
-              <article class="news-card">
-                <div class="news-image">
-                  <img [src]="article.image" [alt]="article.title">
-                </div>
-                <div class="news-content">
-                  <div class="news-meta">
-                    <span class="news-date">{{ article.date }}</span>
-                    <span class="news-divider">|</span>
-                    <span class="news-category">{{ article.category }}</span>
+            @if (isLoading()) {
+              @for (item of [1, 2, 3]; track item) {
+                <app-skeleton-loader type="news-card"></app-skeleton-loader>
+              }
+            } @else {
+              @for (article of newsArticles; track article.id) {
+                <article class="news-card">
+                  <div class="news-image">
+                    <img [src]="article.image" [alt]="article.title" loading="lazy">
                   </div>
-                  <h3 class="news-title">{{ article.title }}</h3>
-                  <p class="news-excerpt">{{ article.excerpt }}</p>
-                  <a href="#" class="read-more">Read more</a>
-                </div>
-              </article>
+                  <div class="news-content">
+                    <div class="news-meta">
+                      <span class="news-date">{{ article.date }}</span>
+                      <span class="news-divider">|</span>
+                      <span class="news-category">{{ article.category }}</span>
+                    </div>
+                    <h3 class="news-title">{{ article.title }}</h3>
+                    <p class="news-excerpt">{{ article.excerpt }}</p>
+                    <a href="#" class="read-more">
+                      Read more
+                      <app-icon name="arrow-right" [size]="16"></app-icon>
+                    </a>
+                  </div>
+                </article>
+              }
             }
           </div>
 
           <!-- Pagination -->
           <div class="pagination">
             <button class="pagination-btn" [disabled]="currentPage() === 1">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <polyline points="15 18 9 12 15 6"></polyline>
-              </svg>
+              <app-icon name="chevron-right" [size]="20" [customClass]="'rotate-180'"></app-icon>
             </button>
             <button class="pagination-number" [class.active]="currentPage() === 2">2</button>
             <button class="pagination-number" [class.active]="currentPage() === 3">3</button>
-            <button class="pagination-btn next">Next</button>
+            <button class="pagination-btn next">
+              Next
+              <app-icon name="chevron-right" [size]="16"></app-icon>
+            </button>
           </div>
         </div>
       </section>
@@ -347,8 +360,16 @@ import { CommonModule } from '@angular/common';
     }
   `]
 })
-export class NewsComponent {
+export class NewsComponent implements OnInit {
   currentPage = signal(2);
+  isLoading = signal(true);
+
+  ngOnInit() {
+    // Simulate loading data
+    setTimeout(() => {
+      this.isLoading.set(false);
+    }, 1500);
+  }
 
   newsArticles = [
     {
