@@ -1,10 +1,11 @@
-import { Component, signal } from '@angular/core';
+import { Component, signal, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { SkeletonLoaderComponent } from '../../components/skeleton-loader/skeleton-loader.component';
 
 @Component({
   selector: 'app-news',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, SkeletonLoaderComponent],
   template: `
     <div class="page-container">
       <!-- Hero Section -->
@@ -30,22 +31,28 @@ import { CommonModule } from '@angular/common';
           </div>
 
           <div class="news-grid">
-            @for (article of newsArticles; track article.id) {
-              <article class="news-card">
-                <div class="news-image">
-                  <img [src]="article.image" [alt]="article.title">
-                </div>
-                <div class="news-content">
-                  <div class="news-meta">
-                    <span class="news-date">{{ article.date }}</span>
-                    <span class="news-divider">|</span>
-                    <span class="news-category">{{ article.category }}</span>
+            @if (isLoading()) {
+              @for (item of [1, 2, 3]; track item) {
+                <app-skeleton-loader type="news-card"></app-skeleton-loader>
+              }
+            } @else {
+              @for (article of newsArticles; track article.id) {
+                <article class="news-card">
+                  <div class="news-image">
+                    <img [src]="article.image" [alt]="article.title">
                   </div>
-                  <h3 class="news-title">{{ article.title }}</h3>
-                  <p class="news-excerpt">{{ article.excerpt }}</p>
-                  <a href="#" class="read-more">Read more</a>
-                </div>
-              </article>
+                  <div class="news-content">
+                    <div class="news-meta">
+                      <span class="news-date">{{ article.date }}</span>
+                      <span class="news-divider">|</span>
+                      <span class="news-category">{{ article.category }}</span>
+                    </div>
+                    <h3 class="news-title">{{ article.title }}</h3>
+                    <p class="news-excerpt">{{ article.excerpt }}</p>
+                    <a href="#" class="read-more">Read more</a>
+                  </div>
+                </article>
+              }
             }
           </div>
 
@@ -347,8 +354,16 @@ import { CommonModule } from '@angular/common';
     }
   `]
 })
-export class NewsComponent {
+export class NewsComponent implements OnInit {
   currentPage = signal(2);
+  isLoading = signal(true);
+
+  ngOnInit() {
+    // Simulate loading data
+    setTimeout(() => {
+      this.isLoading.set(false);
+    }, 1500);
+  }
 
   newsArticles = [
     {

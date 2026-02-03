@@ -1,10 +1,12 @@
-import { Component } from '@angular/core';
+import { Component, signal, OnInit } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { HeroComponent } from '../../components/hero/hero.component';
+import { SkeletonLoaderComponent } from '../../components/skeleton-loader/skeleton-loader.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [HeroComponent],
+  imports: [CommonModule, HeroComponent, SkeletonLoaderComponent],
   template: `
     <app-hero></app-hero>
 
@@ -17,9 +19,14 @@ import { HeroComponent } from '../../components/hero/hero.component';
         </p>
 
         <div class="offer-grid">
-          <div class="offer-card">
-            <div class="card-header">
-              <img src="https://placehold.co/60x60/2c3e50/white?text=SC" alt="Supreme Judicial Authority" class="card-image">
+          @if (isLoadingOffers()) {
+            @for (item of [1, 2, 3, 4]; track item) {
+              <app-skeleton-loader type="card"></app-skeleton-loader>
+            }
+          } @else {
+            <div class="offer-card">
+              <div class="card-header">
+                <img src="https://placehold.co/60x60/2c3e50/white?text=SC" alt="Supreme Judicial Authority" class="card-image">
               <h3>Supreme Judicial Authority</h3>
             </div>
             <p>As the highest court in the ordinary judicial system, the Court of Cassation ensures uniform interpretation and application of laws throughout the Democratic Republic of Congo.</p>
@@ -48,6 +55,7 @@ import { HeroComponent } from '../../components/hero/hero.component';
             </div>
             <p>We actively participate in dialogue with international judicial bodies and maintain cooperation with French-speaking and African courts. HJF.</p>
           </div>
+          }
         </div>
       </div>
     </section>
@@ -1492,4 +1500,13 @@ import { HeroComponent } from '../../components/hero/hero.component';
     }
   `]
 })
-export class HomeComponent {}
+export class HomeComponent implements OnInit {
+  isLoadingOffers = signal(true);
+
+  ngOnInit() {
+    // Simulate loading data
+    setTimeout(() => {
+      this.isLoadingOffers.set(false);
+    }, 1200);
+  }
+}
