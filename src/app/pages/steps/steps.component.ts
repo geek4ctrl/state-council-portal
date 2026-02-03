@@ -1,0 +1,543 @@
+import { Component, signal, OnInit } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { ActivatedRoute } from '@angular/router';
+
+@Component({
+  selector: 'app-steps',
+  standalone: true,
+  imports: [CommonModule],
+  template: `
+    <div class="page-container">
+      <!-- Hero Section - Changes based on active tab -->
+      @if (activeTab() === 'report') {
+        <section class="hero-section">
+          <div class="container">
+            <div class="hero-grid">
+              <div class="hero-left">
+                <h1>REPORT</h1>
+              </div>
+              <div class="hero-right">
+                <p>Injustice can manifest itself in many ways in our society. We give you the opportunity to report all forms abuse.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      }
+
+      @if (activeTab() === 'appointment') {
+        <section class="hero-section">
+          <div class="container">
+            <div class="hero-grid">
+              <div class="hero-left">
+                <h1>BOOK<br>APPOINTMENT</h1>
+              </div>
+              <div class="hero-right">
+                <p>To arrange a meeting with the State Council, please complete the following appointment request form. Ensure all required fields are filled out accurately so we can process your request efficiently. You'll receive a confirmation email or phone call with the scheduled date and time.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      }
+
+      @if (activeTab() === 'appeal') {
+        <section class="hero-section">
+          <div class="container">
+            <div class="hero-grid">
+              <div class="hero-left">
+                <h1>APPEAL TO THE<br>COURT OF<br>CASSATION</h1>
+              </div>
+              <div class="hero-right">
+                <p>
+                  An appeal to the Court of Cassation is an extraordinary legal remedy allowing a party to challenge a final decision before the Court of Appeal. The Court of Cassation verifies whether the law was correctly applied and whether the procedures were followed.
+                </p>
+                <p>
+                  The Court of Cassation is seized by a request from the parties or by a declaration filed with the Court attached to that Court. In criminal matters, an appeal to the Court of Cassation may also be lodged by an oral or written declaration to the secretary of the registry of the court that rendered the decision under appeal. In this case, the appeal to the Court of Cassation must be confirmed, within three months, by a petition.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      }
+
+      <!-- Tab Navigation -->
+      <section class="tabs-section">
+        <div class="container">
+          <div class="tabs">
+            <button
+              (click)="activeTab.set('report')"
+              [class.active]="activeTab() === 'report'"
+              class="tab">
+              Report
+            </button>
+            <button
+              (click)="activeTab.set('appointment')"
+              [class.active]="activeTab() === 'appointment'"
+              class="tab">
+              Book An Appointment
+            </button>
+            <button
+              (click)="activeTab.set('appeal')"
+              [class.active]="activeTab() === 'appeal'"
+              class="tab">
+              File An Appeal
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Form Section -->
+      <section class="form-section">
+        <div class="container">
+          <!-- Report Form -->
+          @if (activeTab() === 'report') {
+            <div class="form-header">
+              <h2>COMPLAINT FORM</h2>
+              <p class="form-subtitle">WE WOULD LOVE TO HEAR YOUR ISSUES</p>
+            </div>
+
+            <form class="complaint-form">
+              <div class="form-row">
+                <div class="form-group">
+                  <input type="text" placeholder="Full Name *" required>
+                </div>
+                <div class="form-group">
+                  <input type="email" placeholder="E-mail *" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <select required>
+                  <option value="">Department</option>
+                  <option value="criminal">Criminal Chamber</option>
+                  <option value="civil">Civil Chamber</option>
+                  <option value="social">Social Chamber</option>
+                  <option value="commercial">Commercial Chamber</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <textarea placeholder="Message *" rows="6" required></textarea>
+              </div>
+
+              <div class="form-submit">
+                <button type="submit">SEND MESSAGE</button>
+              </div>
+            </form>
+          }
+
+          <!-- Appointment Form -->
+          @if (activeTab() === 'appointment') {
+            <div class="form-header">
+              <h2>MAKE AN APPOINTMENT</h2>
+              <p class="form-subtitle">WE WOULD LOVE TO ASSIST YOU WITH YOUR ISSUE</p>
+            </div>
+
+            <form class="appointment-form">
+              <div class="form-row">
+                <div class="form-group">
+                  <input type="text" placeholder="Full Name *" required>
+                </div>
+                <div class="form-group">
+                  <input type="email" placeholder="E-mail *" required>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <select required>
+                    <option value="">Department</option>
+                    <option value="criminal">Criminal Chamber</option>
+                    <option value="civil">Civil Chamber</option>
+                    <option value="social">Social Chamber</option>
+                    <option value="commercial">Commercial Chamber</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <select required>
+                    <option value="">Who do you want to meet ? *</option>
+                    <option value="first-president">First President</option>
+                    <option value="chamber-president">Chamber President</option>
+                    <option value="legal-advisor">Legal Advisor</option>
+                    <option value="clerk">Clerk of the Court</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <select required>
+                  <option value="">When do you plan to come ?</option>
+                  <option value="this-week">This Week</option>
+                  <option value="next-week">Next Week</option>
+                  <option value="this-month">This Month</option>
+                  <option value="next-month">Next Month</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <textarea placeholder="Message *" rows="6" required></textarea>
+              </div>
+
+              <div class="form-submit">
+                <button type="submit">SEND MESSAGE</button>
+              </div>
+            </form>
+          }
+
+          <!-- Appeal Form -->
+          @if (activeTab() === 'appeal') {
+            <div class="form-header">
+              <h2>APPEAL FORM</h2>
+              <p class="form-subtitle">WE WOULD LOVE TO HEAR YOUR ISSUES</p>
+            </div>
+
+            <form class="appeal-form">
+              <div class="form-row">
+                <div class="form-group">
+                  <input type="text" placeholder="Full Name *" required>
+                </div>
+                <div class="form-group">
+                  <input type="email" placeholder="E-mail *" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <select required>
+                  <option value="">Department</option>
+                  <option value="criminal">Criminal Chamber</option>
+                  <option value="civil">Civil Chamber</option>
+                  <option value="social">Social Chamber</option>
+                  <option value="commercial">Commercial Chamber</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <textarea placeholder="Message *" rows="6" required></textarea>
+              </div>
+
+              <div class="form-submit">
+                <button type="submit">SEND MESSAGE</button>
+              </div>
+            </form>
+          }
+        </div>
+      </section>
+
+      <!-- Map Section - Only for appointment -->
+      @if (activeTab() === 'appointment') {
+        <section class="map-section">
+          <div class="map-container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3978.8158168478994!2d15.313!3d-4.322!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNMKwMTknMTkuMiJTIDE1wrAxOCc0Ni44IkU!5e0!3m2!1sen!2s!4v1234567890"
+              width="100%"
+              height="400"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </section>
+      }
+    </div>
+  `,
+  styles: [`
+    .page-container {
+      padding-top: 80px;
+      background: white;
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* Hero Section */
+    .hero-section {
+      background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+      color: white;
+      padding: 100px 0;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.5fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .hero-left h1 {
+      font-size: 4rem;
+      font-weight: 700;
+      margin: 0;
+      letter-spacing: 3px;
+      line-height: 1.1;
+    }
+
+    .hero-right p {
+      font-size: 1.05rem;
+      line-height: 1.8;
+      margin: 0 0 20px 0;
+      opacity: 0.95;
+    }
+
+    .hero-right p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* Tabs Section */
+    .tabs-section {
+      background: white;
+      border-bottom: 1px solid #e0e0e0;
+    }
+
+    .tabs {
+      display: flex;
+      gap: 0;
+    }
+
+    .tab {
+      flex: 1;
+      text-align: center;
+      padding: 20px 30px;
+      font-size: 0.95rem;
+      font-weight: 500;
+      color: #666;
+      background: transparent;
+      border: none;
+      border-bottom: 3px solid transparent;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .tab:hover {
+      color: #2c3e50;
+      background: #f8f8f8;
+    }
+
+    .tab.active {
+      color: #2c3e50;
+      border-bottom-color: #8B6914;
+      font-weight: 600;
+    }
+
+    /* Form Section */
+    .form-section {
+      padding: 80px 0 100px;
+      background: white;
+    }
+
+    .form-header {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    .form-header h2 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: #1a1a1a;
+      margin: 0 0 15px 0;
+      letter-spacing: 2px;
+    }
+
+    .form-subtitle {
+      font-size: 0.9rem;
+      color: #c9a961;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin: 0;
+    }
+
+    .complaint-form,
+    .appointment-form,
+    .appeal-form {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      margin-bottom: 20px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      padding: 15px 20px;
+      border: 1px solid #ddd;
+      border-radius: 0;
+      font-size: 0.95rem;
+      font-family: inherit;
+      transition: border-color 0.3s ease;
+    }
+
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      outline: none;
+      border-color: #8B6914;
+    }
+
+    .form-group input::placeholder,
+    .form-group textarea::placeholder {
+      color: #999;
+    }
+
+    .form-group select {
+      color: #999;
+      cursor: pointer;
+    }
+
+    .form-group textarea {
+      resize: vertical;
+      min-height: 150px;
+    }
+
+    .form-submit {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .form-submit button {
+      background: white;
+      color: #1a1a1a;
+      border: 1px solid #1a1a1a;
+      padding: 15px 50px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .form-submit button:hover {
+      background: #1a1a1a;
+      color: white;
+    }
+
+    /* Map Section */
+    .map-section {
+      background: #f5f5f5;
+    }
+
+    .map-container {
+      width: 100%;
+      height: 400px;
+    }
+
+    .map-container iframe {
+      display: block;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 1024px) {
+      .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        text-align: center;
+      }
+
+      .hero-left h1 {
+        font-size: 3rem;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .hero-section {
+        padding: 80px 0;
+      }
+
+      .hero-left h1 {
+        font-size: 2.5rem;
+      }
+
+      .hero-right p {
+        font-size: 1rem;
+      }
+
+      .tabs {
+        flex-direction: column;
+      }
+
+      .tab {
+        border-bottom: 1px solid #e0e0e0;
+        border-right: none;
+      }
+
+      .tab.active {
+        border-bottom-color: #8B6914;
+      }
+
+      .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+      }
+
+      .form-header h2 {
+        font-size: 2rem;
+      }
+
+      .form-section {
+        padding: 60px 0 80px;
+      }
+
+      .map-container {
+        height: 300px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .hero-section {
+        padding: 60px 0;
+      }
+
+      .hero-left h1 {
+        font-size: 2rem;
+        letter-spacing: 2px;
+      }
+
+      .hero-right p {
+        font-size: 0.95rem;
+      }
+
+      .form-header h2 {
+        font-size: 1.6rem;
+      }
+
+      .form-subtitle {
+        font-size: 0.8rem;
+      }
+
+      .form-submit button {
+        padding: 12px 40px;
+        font-size: 0.85rem;
+      }
+
+      .map-container {
+        height: 250px;
+      }
+    }
+  `]
+})
+export class StepsComponent implements OnInit {
+  activeTab = signal<'report' | 'appointment' | 'appeal'>('report');
+
+  constructor(private route: ActivatedRoute) {}
+
+  ngOnInit() {
+    this.route.queryParams.subscribe(params => {
+      const tab = params['tab'];
+      if (tab === 'report' || tab === 'appointment' || tab === 'appeal') {
+        this.activeTab.set(tab);
+      }
+    });
+  }
+}

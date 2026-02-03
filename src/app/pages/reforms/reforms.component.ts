@@ -1,17 +1,20 @@
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-reforms',
   standalone: true,
+  imports: [CommonModule],
   template: `
     <div class="page-container">
+      <!-- Hero Section -->
       <section class="hero-section">
         <div class="container">
           <div class="hero-grid">
-            <div class="hero-title">
+            <div class="hero-content-left">
               <h1>SUGGESTED<br>REFORMS</h1>
             </div>
-            <div class="hero-description">
+            <div class="hero-content-right">
               <p>
                 Modernizing the judicial system through strategic reforms that enhance efficiency, transparency, and access to justice
                 for all Congolese citizens.
@@ -21,16 +24,23 @@ import { Component } from '@angular/core';
         </div>
       </section>
 
-      <section class="content-section">
+      <!-- Building Section -->
+      <section class="building-section">
         <div class="container">
           <h2 class="section-title">BUILDING A STRONGER JUSTICE SYSTEM</h2>
           <p class="section-description">
-            Through a comprehensive reform agenda, we are committed to creating a modern, accessible, and efficient judicial system that upholds the
-            rule of law and delivers justice to all citizens of the Democratic Republic of Congo.
+            Anchoring the State Constitution, the Court of Justice as the supreme court in the ordinary judicial system is committed to
+            transforming into a modern, accessible, and efficient justice system for achieving a full scale rule of law that delivers
+            justice in the Democratic Republic of Congo.
           </p>
+        </div>
+      </section>
 
+      <!-- Strategic Reform Initiatives -->
+      <section class="initiatives-section">
+        <div class="container">
           <h2 class="section-title">STRATEGIC REFORM INITIATIVES</h2>
-          <p class="section-subtitle">Modernizing Justice</p>
+          <p class="section-subtitle">KEY PRIORITY AREAS</p>
 
           <div class="diagram-container">
             <div class="reform-circle">
@@ -38,122 +48,89 @@ import { Component } from '@angular/core';
               <div class="reform-card card-1">
                 <div class="card-icon beige">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/>
+                    <path d="M7 14v-2h10v2H7z"/>
+                    <path d="M20 8h-3V6c0-1.1-.9-2-2-2H9c-1.1 0-2 .9-2 2v2H4c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zM9 6h6v2H9V6zm11 14H4V10h16v10z"/>
+                    <path d="M12 12c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/>
                   </svg>
                 </div>
                 <h3>Institutional<br>Independence</h3>
-                <p>Strengthening judicial autonomy and ensuring the independence of the judiciary from external pressures for the Court.</p>
+                <p>Strengthening judicial independence through constitutional safeguards and financial autonomy for the Court.</p>
               </div>
 
-              <!-- Top Right -->
+              <!-- Top Center -->
               <div class="reform-card card-2">
                 <div class="card-icon dark-blue">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M12 7V3H2v18h20V7H12zM6 19H4v-2h2v2zm0-4H4v-2h2v2zm0-4H4V9h2v2zm0-4H4V5h2v2zm4 12H8v-2h2v2zm0-4H8v-2h2v2zm0-4H8V9h2v2zm0-4H8V5h2v2zm10 12h-8v-2h2v-2h-2v-2h2v-2h-2V9h8v10zm-2-8h-2v2h2v-2zm0 4h-2v2h2v-2z"/>
+                    <rect x="2" y="2" width="20" height="20" rx="2" fill="none" stroke="currentColor" stroke-width="2"/>
+                    <path d="M8 10h8M8 14h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    <circle cx="12" cy="7" r="1.5"/>
                   </svg>
                 </div>
                 <h3>Access to Justice</h3>
-                <p>Expanding legal aid services and mobile courts to ensure justice is accessible to the farthest corners of the nation.</p>
+                <p>Ensuring digital and physical access points, establishing regional service points, and reducing barriers for litigants.</p>
               </div>
 
-              <!-- Right -->
+              <!-- Top Right -->
               <div class="reform-card card-3">
                 <div class="card-icon black">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M21 11h-3.17l2.54-2.54-1.41-1.41L15 11h-2V9l3.95-3.95-1.41-1.41L13 6.17V3h-2v3.17L8.46 3.63 7.05 5.05 11 9v2H9L5.05 7.05 3.63 8.46 6.17 11H3v2h3.17l-2.54 2.54 1.41 1.41L9 13h2v2l-3.95 3.95 1.41 1.41L11 17.83V21h2v-3.17l2.54 2.54 1.41-1.41L13 15v-2h2l3.95 3.95 1.41-1.41L17.83 13H21v-2z"/>
+                    <path d="M12 2L3 7v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-9-5zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V9h7V6.3l5 2.42V12z"/>
                   </svg>
                 </div>
                 <h3>International<br>Cooperation</h3>
-                <p>Strengthening ties with foreign judicial systems and international organizations to share best practices.</p>
-              </div>
-
-              <!-- Bottom Right -->
-              <div class="reform-card card-4">
-                <div class="card-icon gray">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1c-1.3 0-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 0c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm2 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/>
-                  </svg>
-                </div>
-                <h3>Digital<br>Transformation</h3>
-                <p>Implementing a modern case management system with electronic filing and online access to enhance efficiency.</p>
+                <p>Deepening partnerships with AU-COMJE, ACALAN and other international judicial bodies and courts.</p>
               </div>
 
               <!-- Bottom Left -->
+              <div class="reform-card card-4">
+                <div class="card-icon gray">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14z"/>
+                    <path d="M7 10h2v7H7zm4-3h2v10h-2zm4 6h2v4h-2z"/>
+                  </svg>
+                </div>
+                <h3>Digital<br>Transformation</h3>
+                <p>Implementing modern case management systems, online filing capabilities, and database for enhanced efficiency.</p>
+              </div>
+
+              <!-- Bottom Right -->
               <div class="reform-card card-5">
                 <div class="card-icon orange">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z"/>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="white">
+                    <text x="10" y="45" font-size="18" font-weight="bold">CAPACITY</text>
+                    <text x="15" y="65" font-size="18" font-weight="bold">BUILDING</text>
                   </svg>
                 </div>
                 <h3>Capacity Building</h3>
-                <p>Continuous training and professional development for magistrates and court staff to strengthen expertise.</p>
+                <p>Continuous training for magistrates, international judicial exchanges, and advanced legal training programs.</p>
               </div>
 
-              <!-- Connector Badges -->
-              <div class="connector badge-l badge-1">L</div>
-              <div class="connector badge-l badge-2">L</div>
-              <div class="connector badge-h badge-3">H</div>
-
               <!-- Dotted Lines -->
-              <svg class="dotted-lines" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                <path d="M 150 150 Q 100 300 150 450" stroke="#ddd" stroke-width="2" stroke-dasharray="5,5" fill="none"/>
-                <path d="M 450 150 Q 500 300 450 450" stroke="#ddd" stroke-width="2" stroke-dasharray="5,5" fill="none"/>
-                <path d="M 150 150 Q 300 100 450 150" stroke="#ddd" stroke-width="2" stroke-dasharray="5,5" fill="none"/>
-                <path d="M 150 450 Q 300 500 450 450" stroke="#ddd" stroke-width="2" stroke-dasharray="5,5" fill="none"/>
+              <svg class="dotted-lines" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+                <!-- Pentagon shape connecting all 5 points -->
+                <path d="M 400 80 L 650 250 L 550 520 L 250 520 L 150 250 Z"
+                      stroke="#c0c0c0"
+                      stroke-width="2"
+                      stroke-dasharray="8,6"
+                      fill="none"/>
               </svg>
             </div>
           </div>
         </div>
       </section>
 
+      <!-- Key Stakeholders Section -->
       <section class="stakeholders-section">
         <div class="container">
           <h2 class="section-title">KEY STAKEHOLDERS</h2>
           <p class="section-subtitle">DRIVING LEADERSHIP</p>
 
           <div class="stakeholders-grid">
-            <div class="stakeholder-card">
+            <div class="stakeholder-card" *ngFor="let stakeholder of stakeholders">
               <div class="stakeholder-image">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 250" fill="none">
-                  <rect width="200" height="250" fill="#ddd"/>
-                  <circle cx="100" cy="90" r="35" fill="#999"/>
-                  <ellipse cx="100" cy="180" rx="60" ry="40" fill="#999"/>
-                </svg>
+                <img [src]="stakeholder.image" [alt]="stakeholder.name">
               </div>
-              <h3>BAYONA NSOMWE</h3>
-            </div>
-
-            <div class="stakeholder-card">
-              <div class="stakeholder-image">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 250" fill="none">
-                  <rect width="200" height="250" fill="#ddd"/>
-                  <circle cx="100" cy="90" r="35" fill="#999"/>
-                  <ellipse cx="100" cy="180" rx="60" ry="40" fill="#999"/>
-                </svg>
-              </div>
-              <h3>NGOMBE KABETA</h3>
-            </div>
-
-            <div class="stakeholder-card">
-              <div class="stakeholder-image">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 250" fill="none">
-                  <rect width="200" height="250" fill="#ddd"/>
-                  <circle cx="100" cy="90" r="35" fill="#999"/>
-                  <ellipse cx="100" cy="180" rx="60" ry="40" fill="#999"/>
-                </svg>
-              </div>
-              <h3>Christina Mwale</h3>
-            </div>
-
-            <div class="stakeholder-card">
-              <div class="stakeholder-image">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 250" fill="none">
-                  <rect width="200" height="250" fill="#ddd"/>
-                  <circle cx="100" cy="90" r="35" fill="#999"/>
-                  <ellipse cx="100" cy="180" rx="60" ry="40" fill="#999"/>
-                </svg>
-              </div>
-              <h3>MUANGILA MUKONDA</h3>
+              <h3>{{ stakeholder.name }}</h3>
             </div>
           </div>
         </div>
@@ -162,18 +139,21 @@ import { Component } from '@angular/core';
   `,
   styles: [`
     .page-container {
-      padding-top: 80px;
-    }
-
-    .hero-section {
-      background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%);
-      color: white;
-      padding: 100px 20px;
+      min-height: 100vh;
+      background: white;
     }
 
     .container {
       max-width: 1200px;
       margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* Hero Section */
+    .hero-section {
+      background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+      color: white;
+      padding: 100px 0;
     }
 
     .hero-grid {
@@ -183,7 +163,7 @@ import { Component } from '@angular/core';
       align-items: center;
     }
 
-    .hero-title h1 {
+    .hero-content-left h1 {
       font-size: 3rem;
       font-weight: 700;
       line-height: 1.2;
@@ -191,64 +171,75 @@ import { Component } from '@angular/core';
       letter-spacing: 2px;
     }
 
-    .hero-description p {
+    .hero-content-right p {
       font-size: 1rem;
       line-height: 1.8;
       opacity: 0.95;
       margin: 0;
     }
 
-    .content-section {
-      padding: 80px 20px;
+    /* Building Section */
+    .building-section {
       background: white;
+      padding: 80px 0;
     }
 
     .section-title {
       font-size: 2rem;
-      color: #2c3e50;
-      margin-bottom: 20px;
-      font-weight: 600;
-      letter-spacing: 0.5px;
+      font-weight: 700;
+      color: #1a1a1a;
+      text-align: center;
+      margin: 0 0 25px 0;
+      letter-spacing: 1px;
     }
 
     .section-description {
-      font-size: 1.05rem;
+      font-size: 1rem;
       line-height: 1.8;
       color: #666;
-      margin-bottom: 60px;
+      text-align: center;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    /* Initiatives Section */
+    .initiatives-section {
+      background: white;
+      padding: 60px 0 100px;
     }
 
     .section-subtitle {
       text-align: center;
-      font-size: 0.9rem;
+      font-size: 0.85rem;
       color: #999;
-      margin-bottom: 60px;
       text-transform: uppercase;
-      letter-spacing: 1px;
+      letter-spacing: 2px;
+      margin: 0 0 60px 0;
     }
 
     .diagram-container {
       position: relative;
-      padding: 100px 20px;
+      padding: 80px 20px;
+      max-width: 1000px;
+      margin: 0 auto;
     }
 
     .reform-circle {
       position: relative;
       width: 100%;
-      max-width: 900px;
-      height: 600px;
+      height: 700px;
       margin: 0 auto;
     }
 
     .reform-card {
       position: absolute;
-      width: 240px;
+      width: 260px;
       text-align: center;
     }
 
     .card-icon {
-      width: 80px;
-      height: 80px;
+      width: 100px;
+      height: 100px;
       margin: 0 auto 20px;
       display: flex;
       align-items: center;
@@ -257,8 +248,8 @@ import { Component } from '@angular/core';
     }
 
     .card-icon svg {
-      width: 40px;
-      height: 40px;
+      width: 50px;
+      height: 50px;
       color: white;
     }
 
@@ -275,7 +266,7 @@ import { Component } from '@angular/core';
     }
 
     .card-icon.gray {
-      background: #5d6d7e;
+      background: #7d8a96;
     }
 
     .card-icon.orange {
@@ -283,108 +274,72 @@ import { Component } from '@angular/core';
     }
 
     .reform-card h3 {
-      font-size: 1.2rem;
-      color: #2c3e50;
+      font-size: 1.1rem;
+      color: #1a1a1a;
       margin-bottom: 15px;
-      font-weight: 600;
+      font-weight: 700;
       line-height: 1.3;
     }
 
     .reform-card p {
-      font-size: 0.9rem;
+      font-size: 0.85rem;
       color: #666;
       line-height: 1.6;
     }
 
-    /* Position cards in circle */
+    /* Position cards in pentagon shape */
     .card-1 {
-      top: 0;
+      top: 50px;
       left: 50px;
     }
 
     .card-2 {
       top: 0;
-      right: 50px;
+      left: 50%;
+      transform: translateX(-50%);
     }
 
     .card-3 {
-      top: 50%;
-      right: 0;
-      transform: translateY(-50%);
-    }
-
-    .card-4 {
-      bottom: 0;
+      top: 50px;
       right: 50px;
     }
 
+    .card-4 {
+      bottom: 50px;
+      left: 80px;
+    }
+
     .card-5 {
-      bottom: 0;
-      left: 50px;
-    }
-
-    /* Connector badges */
-    .connector {
-      position: absolute;
-      width: 50px;
-      height: 50px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: bold;
-      font-size: 1.3rem;
-      color: white;
-      z-index: 10;
-    }
-
-    .badge-l {
-      background: linear-gradient(135deg, #e91e63 0%, #c2185b 100%);
-    }
-
-    .badge-h {
-      background: linear-gradient(135deg, #9c27b0 0%, #7b1fa2 100%);
-    }
-
-    .badge-1 {
-      top: 28%;
-      left: 50%;
-      transform: translateX(-50%);
-    }
-
-    .badge-2 {
-      bottom: 28%;
-      left: 50%;
-      transform: translateX(-50%);
-    }
-
-    .badge-3 {
-      top: 50%;
-      right: 22%;
-      transform: translateY(-50%);
+      bottom: 50px;
+      right: 80px;
     }
 
     .dotted-lines {
       position: absolute;
-      top: 0;
+      top: 50%;
       left: 50%;
-      transform: translateX(-50%);
-      width: 600px;
-      height: 600px;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      height: 100%;
       pointer-events: none;
-      z-index: 1;
+      z-index: 0;
     }
 
+    /* Stakeholders Section */
     .stakeholders-section {
-      padding: 80px 20px;
-      background: #f8f8f8;
+      background: #e8e8e8;
+      padding: 80px 0;
+    }
+
+    .stakeholders-section .section-title {
+      color: #1a1a1a;
     }
 
     .stakeholders-grid {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: 30px;
-      margin-top: 40px;
+      margin-top: 50px;
     }
 
     .stakeholder-card {
@@ -394,37 +349,55 @@ import { Component } from '@angular/core';
     .stakeholder-image {
       width: 100%;
       aspect-ratio: 4/5;
-      background: #e0e0e0;
+      background: #d0d0d0;
       margin-bottom: 15px;
       border-radius: 4px;
       overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     }
 
-    .stakeholder-image svg {
+    .stakeholder-image img {
       width: 100%;
       height: 100%;
+      object-fit: cover;
       display: block;
     }
 
     .stakeholder-card h3 {
-      font-size: 1rem;
-      color: #2c3e50;
-      font-weight: 600;
+      font-size: 0.95rem;
+      color: #1a1a1a;
+      font-weight: 700;
       margin: 0;
+      text-transform: uppercase;
     }
 
+    /* Responsive Design */
     @media (max-width: 1024px) {
       .hero-grid {
         grid-template-columns: 1fr;
         gap: 40px;
       }
 
+      .hero-content-left h1 {
+        font-size: 2.5rem;
+      }
+
       .reform-circle {
-        height: 500px;
+        height: 600px;
       }
 
       .reform-card {
-        width: 200px;
+        width: 220px;
+      }
+
+      .card-icon {
+        width: 80px;
+        height: 80px;
+      }
+
+      .card-icon svg {
+        width: 40px;
+        height: 40px;
       }
 
       .stakeholders-grid {
@@ -433,8 +406,22 @@ import { Component } from '@angular/core';
     }
 
     @media (max-width: 768px) {
-      .hero-title h1 {
-        font-size: 2.5rem;
+      .hero-section {
+        padding: 80px 0;
+      }
+
+      .hero-content-left h1 {
+        font-size: 2rem;
+      }
+
+      .building-section,
+      .initiatives-section,
+      .stakeholders-section {
+        padding: 60px 0;
+      }
+
+      .section-title {
+        font-size: 1.6rem;
       }
 
       .diagram-container {
@@ -455,7 +442,6 @@ import { Component } from '@angular/core';
         transform: none !important;
       }
 
-      .connector,
       .dotted-lines {
         display: none;
       }
@@ -468,26 +454,41 @@ import { Component } from '@angular/core';
 
     @media (max-width: 480px) {
       .hero-section {
-        padding: 80px 15px;
+        padding: 60px 0;
       }
 
-      .hero-title h1 {
-        font-size: 2rem;
-      }
-
-      .content-section {
-        padding: 60px 15px;
-      }
-
-      .section-title {
+      .hero-content-left h1 {
         font-size: 1.6rem;
       }
 
-      .stakeholders-section {
-        padding: 60px 15px;
+      .hero-content-right p {
+        font-size: 0.9rem;
+      }
+
+      .section-title {
+        font-size: 1.4rem;
+      }
+
+      .section-description {
+        font-size: 0.9rem;
+      }
+
+      .reform-card h3 {
+        font-size: 1rem;
+      }
+
+      .reform-card p {
+        font-size: 0.8rem;
       }
     }
   `]
 })
-export class ReformsComponent {}
+export class ReformsComponent {
+  stakeholders = [
+    { name: 'BAYONA NSOMWE', image: 'https://placehold.co/300x400' },
+    { name: 'NGOMBA KABEYYA', image: 'https://placehold.co/300x400' },
+    { name: 'CHRISTINA MWALE', image: 'https://placehold.co/300x400' },
+    { name: 'BUKENGELA MUGDERINA', image: 'https://placehold.co/300x400' }
+  ];
+}
 

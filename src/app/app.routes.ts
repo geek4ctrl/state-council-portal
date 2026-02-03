@@ -5,13 +5,11 @@ import { JudgesComponent } from './pages/judges/judges.component';
 import { OrganizationComponent } from './pages/organization/organization.component';
 import { HistoryComponent } from './pages/history/history.component';
 import { AudiencesComponent } from './pages/audiences/audiences.component';
-import { FilingComponent } from './pages/filing/filing.component';
 import { ProcessComponent } from './pages/process/process.component';
-import { ProceduresComponent } from './pages/procedures/procedures.component';
 import { NewsComponent } from './pages/news/news.component';
-import { AppointmentComponent } from './pages/appointment/appointment.component';
 import { ReformsComponent } from './pages/reforms/reforms.component';
 import { InternationalRelationsComponent } from './pages/international-relations/international-relations.component';
+import { StepsComponent } from './pages/steps/steps.component';
 
 export const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -22,10 +20,11 @@ export const routes: Routes = [
   { path: 'reforms', component: ReformsComponent },
   { path: 'international-relations', component: InternationalRelationsComponent },
   { path: 'audiences', component: AudiencesComponent },
-  { path: 'filing', component: FilingComponent },
+  { path: 'steps', component: StepsComponent },
+  { path: 'filing', redirectTo: 'steps', pathMatch: 'full' },
+  { path: 'appointment', redirectTo: 'steps', pathMatch: 'full' },
+  { path: 'procedures', redirectTo: 'steps', pathMatch: 'full' },
   { path: 'process', component: ProcessComponent },
-  { path: 'procedures', component: ProceduresComponent },
   { path: 'news', component: NewsComponent },
-  { path: 'appointment', component: AppointmentComponent },
   { path: '**', redirectTo: '' }
 ];
