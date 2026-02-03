@@ -95,9 +95,9 @@
             </button>
             @if (isStepsDropdownOpen()) {
               <ul class="dropdown-menu">
-                <li><a routerLink="/filing" class="dropdown-link">Report</a></li>
-                <li><a routerLink="/appointment" class="dropdown-link">Book Appointment</a></li>
-                <li><a routerLink="/procedures" class="dropdown-link">Appeal to the State</a></li>
+                <li><a routerLink="/steps" [queryParams]="{tab: 'report'}" class="dropdown-link">Report</a></li>
+                <li><a routerLink="/steps" [queryParams]="{tab: 'appointment'}" class="dropdown-link">Book Appointment</a></li>
+                <li><a routerLink="/steps" [queryParams]="{tab: 'appeal'}" class="dropdown-link">File an Appeal</a></li>
               </ul>
             }
           </li>
