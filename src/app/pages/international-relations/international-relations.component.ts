@@ -13,9 +13,9 @@ import { Component } from '@angular/core';
             </div>
             <div class="hero-description">
               <p>
-                In the context of the internationalization of law and justice, the Court of Cassation of the Democratic Republic of Congo
+                In the context of the internationalization of law and justice, the State Council of the Democratic Republic of Congo
                 is not isolated from this environment. It actively participates in the dialogue of judges by maintaining a high level of
-                cooperation within the frameworks of the Association of Supreme Courts of Cassation of French-speaking countries (AHJUCAF)
+                cooperation within the frameworks of the Association of Supreme Administrative Courts of French-speaking countries (AHJUCAF)
                 and the African Association of Francophone Supreme Courts (AA-JHCF).
               </p>
             </div>

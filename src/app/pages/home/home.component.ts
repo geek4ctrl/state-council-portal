@@ -29,9 +29,9 @@ import { LazyLoadDirective } from '../../directives/lazy-load.directive';
             <div class="offer-card">
               <div class="card-header">
                 <img src="https://placehold.co/60x60/2c3e50/white?text=SC" alt="Supreme Judicial Authority" class="card-image" loading="lazy">
-              <h3>Supreme Judicial Authority</h3>
+              <h3>Supreme Administrative Authority</h3>
             </div>
-            <p>As the highest court in the ordinary judicial system, the Court of Cassation ensures uniform interpretation and application of laws throughout the Democratic Republic of Congo.</p>
+            <p>As the highest administrative court, the State Council ensures uniform interpretation and application of administrative law throughout the Democratic Republic of Congo.</p>
           </div>
 
           <div class="offer-card">
@@ -67,7 +67,7 @@ import { LazyLoadDirective } from '../../directives/lazy-load.directive';
       <div class="container">
         <h2 class="section-title expertise-title">FIELDS OF EXPERTISE</h2>
         <p class="section-subtitle expertise-subtitle">
-          The Court of Cassation exercises jurisdiction over various legal matters as the supreme court of the ordinary judicial system.
+          The State Council exercises jurisdiction over administrative matters as the supreme administrative court.
         </p>
 
         <div class="practice-grid">
@@ -197,13 +197,13 @@ import { LazyLoadDirective } from '../../directives/lazy-load.directive';
       <div class="container">
         <div class="president-content">
           <div class="president-image">
-            <img src="https://placehold.co/400x500/d4b5a1/ffffff?text=President" alt="First President of the Court of Cassation" loading="lazy">
+            <img src="https://placehold.co/400x500/d4b5a1/ffffff?text=President" alt="First President of the State Council" loading="lazy">
           </div>
           <div class="president-text">
-            <h2>THE FIRST PRESIDENT OF THE COURT OF CASSATION</h2>
+            <h2>THE FIRST PRESIDENT OF THE STATE COUNCIL</h2>
             <p>
-              As the third-ranking member of the DRC's High Council of the Judiciary, the First President of the Court of
-              Cassation, Professor NGOMBA KABEYYA ELIE LEON, elected blood in Thursday, February 29th,
+              As the third-ranking member of the DRC's High Council of the Judiciary, the First President of the State
+              Council, Professor NGOMBA KABEYYA ELIE LEON, elected blood in Thursday, February 29th,
               2024, is in charge of coordinating the entire High Court College and Clerk's office.
             </p>
             <p>
