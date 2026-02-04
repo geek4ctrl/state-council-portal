@@ -12,14 +12,14 @@ import { RouterLink } from '@angular/router';
         <div class="container">
           <div class="hero-grid">
             <div class="hero-left">
-              <h1>APPEAL TO THE<br>COURT OF<br>CASSATION</h1>
+              <h1>APPEAL TO THE<br>STATE<br>COUNCIL</h1>
             </div>
             <div class="hero-right">
               <p>
-                An appeal to the Court of Cassation is an extraordinary legal remedy allowing a party to challenge a final decision before the Court of Appeal. The Court of Cassation verifies whether the law was correctly applied and whether the procedures were followed.
+                An appeal to the State Council is an extraordinary legal remedy allowing a party to challenge administrative decisions and acts. The State Council verifies whether administrative law was correctly applied and whether the proper administrative procedures were followed.
               </p>
               <p>
-                The Court of Cassation is seized by a request from the parties or by a declaration filed with the Court attached to that Court. In criminal matters, an appeal to the Court of Cassation may also be lodged by an oral or written declaration to the secretary of the registry of the court that rendered the decision under appeal. In this case, the appeal to the Court of Cassation must be confirmed, within three months, by a petition.
+                The State Council is seized by a request from the parties or by a declaration filed with the administrative registry. An appeal to the State Council may also be lodged by an oral or written declaration to the secretary of the registry. In this case, the appeal must be confirmed, within three months, by a petition.
               </p>
             </div>
           </div>

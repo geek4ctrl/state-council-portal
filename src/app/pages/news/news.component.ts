@@ -375,25 +375,25 @@ export class NewsComponent implements OnInit {
     {
       id: 1,
       date: 'January 30',
-      category: 'Consultants',
-      title: 'The First President of the Court of Cassation urges magistrates to adopt the resolution o...',
-      excerpt: 'Following the closing ceremony of the ordinary general assembly of the High Council of the Judicial...',
+      category: 'Administration',
+      title: 'The First President of the State Council urges magistrates to adopt the resolution o...',
+      excerpt: 'Following the closing ceremony of the ordinary general assembly of the High Council of the Administrative...',
       image: 'https://placehold.co/400x300'
     },
     {
       id: 2,
       date: 'January 30',
-      category: 'Consultants',
-      title: 'ORIENTATION MEETING AT THE COURT OF CASSATION',
-      excerpt: 'Kinshasa, October 18, 2025: The Court of Cassation of the Democratic Republic of Congo informs a pu...',
+      category: 'Administration',
+      title: 'ORIENTATION MEETING AT THE STATE COUNCIL',
+      excerpt: 'Kinshasa, October 18, 2025: The State Council of the Democratic Republic of Congo informs a pu...',
       image: 'https://placehold.co/400x300'
     },
     {
       id: 3,
       date: 'January 30',
-      category: 'Consultants',
-      title: 'ORIENTATION MEETING AT THE COURT OF CASSATION',
-      excerpt: 'Kinshasa, October 18, 2025: The Court of Cassation of the Democratic Republic of Congo informs a pu...',
+      category: 'Administration',
+      title: 'ORIENTATION MEETING AT THE STATE COUNCIL',
+      excerpt: 'Kinshasa, October 18, 2025: The State Council of the Democratic Republic of Congo informs a pu...',
       image: 'https://placehold.co/400x300'
     }
   ];

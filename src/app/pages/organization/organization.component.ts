@@ -12,7 +12,7 @@ import { LazyLoadDirective } from '../../directives/lazy-load.directive';
       <!-- Hero Section -->
       <section class="hero-section">
         <div class="container">
-          <h1 class="hero-title">ORGANIZATION AND FUNCTIONING OF<br>THE COURT OF CASSATION</h1>
+          <h1 class="hero-title">ORGANIZATION AND FUNCTIONING OF<br>THE STATE COUNCIL</h1>
         </div>
       </section>
 
@@ -29,8 +29,8 @@ import { LazyLoadDirective } from '../../directives/lazy-load.directive';
               <p class="president-description">
                 NGOMBA KABEYYA ELIE LEON, First President, elected through a vote on Thursday, February 29th, 2024, is the
                 third-ranking member of the DRC's High Council of the Judiciary. He is in charge of coordinating the entire
-                High Court College and Clerk's office. As the head of the Court of Cassation, he oversees all judicial
-                operations and ensures the proper administration of justice at the highest level of the ordinary judicial system.
+                High Court College and Clerk's office. As the head of the State Council, he oversees all judicial
+                operations and ensures the proper administration of justice at the highest level of the administrative judicial system.
               </p>
               <p class="president-description">
                 His mandate includes supervising the various chambers, presiding over plenary sessions, and maintaining the
@@ -92,11 +92,11 @@ import { LazyLoadDirective } from '../../directives/lazy-load.directive';
       <!-- Services Info Section -->
       <section class="services-info-section">
         <div class="container">
-          <h2 class="section-title-white">THE SERVICES OF THE COURT OF CASSATION</h2>
+          <h2 class="section-title-white">THE SERVICES OF THE STATE COUNCIL</h2>
           <div class="services-intro">
-            <h3>THE SERVICES OF THE COURT OF CASSATION</h3>
+            <h3>THE SERVICES OF THE STATE COUNCIL</h3>
             <p>
-              The organization of the Court of Cassation in its various departments ensures the smooth functioning of
+              The organization of the State Council in its various departments ensures the smooth functioning of
               judicial services. Each service plays a crucial role in supporting the magistrates and ensuring the proper
               administration of justice.
             </p>
@@ -107,7 +107,7 @@ import { LazyLoadDirective } from '../../directives/lazy-load.directive';
       <!-- Services Detail Section -->
       <section class="services-section">
         <div class="container">
-          <h2 class="section-heading">SERVICES OF THE COURT OF CASSATION</h2>
+          <h2 class="section-heading">SERVICES OF THE STATE COUNCIL</h2>
 
           <div class="services-content">
             <!-- Left Column - Service Links -->
@@ -132,7 +132,7 @@ import { LazyLoadDirective } from '../../directives/lazy-load.directive';
               <div class="detail-block">
                 <h4>The role of Report compilation (report registers)</h4>
                 <p>
-                  It is well-known that in a court of law like the Court of Cassation, the documentation service is of particular
+                  It is well-known that in an administrative court like the State Council, the documentation service is of particular
                   importance for the conduct of judicial activities, because it is responsible for the collection, classification,
                   and conservation of all legal documents necessary for the administration of justice.
                 </p>
