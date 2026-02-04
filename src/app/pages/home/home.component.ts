@@ -1,9 +1,10 @@
-import { Component, signal, OnInit } from '@angular/core';
+import { Component, signal, OnInit, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HeroComponent } from '../../components/hero/hero.component';
 import { SkeletonLoaderComponent } from '../../components/skeleton-loader/skeleton-loader.component';
 import { IconComponent } from '../../components/icon/icon.component';
 import { LazyLoadDirective } from '../../directives/lazy-load.directive';
+import { SeoService } from '../../services/seo.service';
 
 @Component({
   selector: 'app-home',
@@ -1503,9 +1504,18 @@ import { LazyLoadDirective } from '../../directives/lazy-load.directive';
   `]
 })
 export class HomeComponent implements OnInit {
+  private seoService = inject(SeoService);
   isLoadingOffers = signal(true);
 
   ngOnInit() {
+    // Set SEO metadata
+    this.seoService.updateMetadata({
+      title: 'Accueil',
+      description: 'Conseil d\'État de la République Démocratique du Congo - Juridiction administrative suprême assurant l\'interprétation uniforme et l\'application du droit administratif sur l\'ensemble du territoire national.',
+      keywords: 'Conseil d\'État, RDC, Congo, juridiction administrative, droit administratif, recours administratif, justice',
+      ogUrl: '/'
+    });
+
     // Simulate loading data
     setTimeout(() => {
       this.isLoadingOffers.set(false);

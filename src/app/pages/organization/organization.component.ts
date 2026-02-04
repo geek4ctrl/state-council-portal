@@ -1,7 +1,8 @@
-import { Component, signal, OnInit } from '@angular/core';
+import { Component, signal, OnInit, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SkeletonLoaderComponent } from '../../components/skeleton-loader/skeleton-loader.component';
 import { LazyLoadDirective } from '../../directives/lazy-load.directive';
+import { SeoService } from '../../services/seo.service';
 
 @Component({
   selector: 'app-organization',
@@ -564,9 +565,18 @@ import { LazyLoadDirective } from '../../directives/lazy-load.directive';
   `]
 })
 export class OrganizationComponent implements OnInit {
+  private seoService = inject(SeoService);
   isLoading = signal(true);
 
   ngOnInit() {
+    // Set SEO metadata
+    this.seoService.updateMetadata({
+      title: 'Organisation et Fonctionnement',
+      description: 'Découvrez l\'organisation, la composition et le fonctionnement du Conseil d\'État de la RDC : Premier Président, présidents de chambres, conseillers et services administratifs.',
+      keywords: 'organisation, structure, magistrats, conseillers, chambres, Conseil d\'État RDC',
+      ogUrl: '/organization'
+    });
+
     // Simulate loading data
     setTimeout(() => {
       this.isLoading.set(false);

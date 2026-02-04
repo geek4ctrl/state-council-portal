@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
+import { SeoService } from '../../services/seo.service';
 
 @Component({
   selector: 'app-about',
@@ -379,4 +380,15 @@ import { Component } from '@angular/core';
     }
   `]
 })
-export class AboutComponent {}
+export class AboutComponent implements OnInit {
+  private seoService = inject(SeoService);
+
+  ngOnInit() {
+    this.seoService.updateMetadata({
+      title: 'Présentation',
+      description: 'Présentation du Conseil d\'État de la RDC : historique, attributions, textes légaux et règlementaires. Accédez aux lois organiques et décrets relatifs au fonctionnement de la juridiction.',
+      keywords: 'présentation, histoire, attributions, lois, décrets, textes légaux, Conseil d\'État',
+      ogUrl: '/presentation'
+    });
+  }
+}
