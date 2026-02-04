@@ -24,34 +24,37 @@ import { RouterLink } from '@angular/router';
       <!-- Tab Navigation -->
       <section class="tabs-section">
         <div class="container">
-          <div class="tabs">
-            <a routerLink="/filing" routerLinkActive="active" class="tab active">Report</a>
-            <a routerLink="/appointment" routerLinkActive="active" class="tab">Book An Appointment</a>
-            <a routerLink="/procedures" routerLinkActive="active" class="tab">File An Appeal</a>
-          </div>
+          <nav class="tabs" role="tablist" aria-label="Form selection">
+            <a routerLink="/filing" routerLinkActive="active" class="tab active" role="tab" aria-selected="true" aria-controls="filing-panel">Report</a>
+            <a routerLink="/appointment" routerLinkActive="active" class="tab" role="tab" aria-selected="false" aria-controls="appointment-panel">Book An Appointment</a>
+            <a routerLink="/procedures" routerLinkActive="active" class="tab" role="tab" aria-selected="false" aria-controls="procedures-panel">File An Appeal</a>
+          </nav>
         </div>
       </section>
 
       <!-- Complaint Form Section -->
-      <section class="form-section">
+      <section class="form-section" id="filing-panel" role="tabpanel" aria-labelledby="filing-tab">
         <div class="container">
           <div class="form-header">
             <h2>COMPLAINT FORM</h2>
             <p class="form-subtitle">WE WOULD LOVE TO HEAR YOUR ISSUES</p>
           </div>
 
-          <form class="complaint-form">
+          <form class="complaint-form" aria-label="Complaint submission form">
             <div class="form-row">
               <div class="form-group">
-                <input type="text" placeholder="Full Name *" required>
+                <label for="filing-name" class="visually-hidden">Full Name (required)</label>
+                <input type="text" id="filing-name" name="name" placeholder="Full Name *" required aria-required="true">
               </div>
               <div class="form-group">
-                <input type="email" placeholder="E-mail *" required>
+                <label for="filing-email" class="visually-hidden">Email address (required)</label>
+                <input type="email" id="filing-email" name="email" placeholder="E-mail *" required aria-required="true">
               </div>
             </div>
 
             <div class="form-group">
-              <select required>
+              <label for="filing-department" class="visually-hidden">Department</label>
+              <select id="filing-department" name="department" required aria-required="true">
                 <option value="">Department</option>
                 <option value="criminal">Criminal Chamber</option>
                 <option value="civil">Civil Chamber</option>
@@ -61,7 +64,8 @@ import { RouterLink } from '@angular/router';
             </div>
 
             <div class="form-group">
-              <textarea placeholder="Message *" rows="6" required></textarea>
+              <label for="filing-message" class="visually-hidden">Message (required)</label>
+              <textarea id="filing-message" name="message" placeholder="Message *" rows="6" required aria-required="true"></textarea>
             </div>
 
             <div class="form-submit">

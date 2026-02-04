@@ -28,6 +28,12 @@ export class HeaderComponent {
     }
   }
 
+  @HostListener('document:keydown.escape')
+  onEscapeKey() {
+    this.closeDropdowns();
+    this.closeMobileMenu();
+  }
+
   toggleCourtDropdown() {
     this.isCourtDropdownOpen.set(!this.isCourtDropdownOpen());
     this.isStepsDropdownOpen.set(false);

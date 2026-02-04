@@ -62,17 +62,17 @@ import { LazyLoadDirective } from '../../directives/lazy-load.directive';
           </div>
 
           <!-- Pagination -->
-          <div class="pagination">
-            <button class="pagination-btn" [disabled]="currentPage() === 1">
-              <app-icon name="chevron-right" [size]="20" [customClass]="'rotate-180'"></app-icon>
+          <nav class="pagination" aria-label="News pagination" role="navigation">
+            <button class="pagination-btn" [disabled]="currentPage() === 1" aria-label="Previous page">
+              <app-icon name="chevron-right" [size]="20" [customClass]="'rotate-180'" [attr.aria-hidden]="true"></app-icon>
             </button>
-            <button class="pagination-number" [class.active]="currentPage() === 2">2</button>
-            <button class="pagination-number" [class.active]="currentPage() === 3">3</button>
-            <button class="pagination-btn next">
+            <button class="pagination-number" [class.active]="currentPage() === 2" [attr.aria-current]="currentPage() === 2 ? 'page' : null" aria-label="Page 2">2</button>
+            <button class="pagination-number" [class.active]="currentPage() === 3" [attr.aria-current]="currentPage() === 3 ? 'page' : null" aria-label="Page 3">3</button>
+            <button class="pagination-btn next" aria-label="Next page">
               Next
-              <app-icon name="chevron-right" [size]="16"></app-icon>
+              <app-icon name="chevron-right" [size]="16" [attr.aria-hidden]="true"></app-icon>
             </button>
-          </div>
+          </nav>
         </div>
       </section>
     </div>

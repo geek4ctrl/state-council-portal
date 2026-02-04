@@ -29,34 +29,37 @@ import { RouterLink } from '@angular/router';
       <!-- Tab Navigation -->
       <section class="tabs-section">
         <div class="container">
-          <div class="tabs">
-            <a routerLink="/filing" routerLinkActive="active" class="tab">Report</a>
-            <a routerLink="/appointment" routerLinkActive="active" class="tab">Book An Appointment</a>
-            <a routerLink="/procedures" routerLinkActive="active" class="tab active">File An Appeal</a>
-          </div>
+          <nav class="tabs" role="tablist" aria-label="Form selection">
+            <a routerLink="/filing" routerLinkActive="active" class="tab" role="tab" aria-selected="false" aria-controls="filing-panel">Report</a>
+            <a routerLink="/appointment" routerLinkActive="active" class="tab" role="tab" aria-selected="false" aria-controls="appointment-panel">Book An Appointment</a>
+            <a routerLink="/procedures" routerLinkActive="active" class="tab active" role="tab" aria-selected="true" aria-controls="procedures-panel">File An Appeal</a>
+          </nav>
         </div>
       </section>
 
       <!-- Appeal Form Section -->
-      <section class="form-section">
+      <section class="form-section" id="procedures-panel" role="tabpanel" aria-labelledby="procedures-tab">
         <div class="container">
           <div class="form-header">
             <h2>APPEAL FORM</h2>
             <p class="form-subtitle">WE WOULD LOVE TO HEAR YOUR ISSUES</p>
           </div>
 
-          <form class="appeal-form">
+          <form class="appeal-form" aria-label="Appeal submission form">
             <div class="form-row">
               <div class="form-group">
-                <input type="text" placeholder="Full Name *" required>
+                <label for="appeal-name" class="visually-hidden">Full Name (required)</label>
+                <input type="text" id="appeal-name" name="name" placeholder="Full Name *" required aria-required="true">
               </div>
               <div class="form-group">
-                <input type="email" placeholder="E-mail *" required>
+                <label for="appeal-email" class="visually-hidden">Email address (required)</label>
+                <input type="email" id="appeal-email" name="email" placeholder="E-mail *" required aria-required="true">
               </div>
             </div>
 
             <div class="form-group">
-              <select required>
+              <label for="appeal-department" class="visually-hidden">Department</label>
+              <select id="appeal-department" name="department" required aria-required="true">
                 <option value="">Department</option>
                 <option value="criminal">Criminal Chamber</option>
                 <option value="civil">Civil Chamber</option>
@@ -66,7 +69,8 @@ import { RouterLink } from '@angular/router';
             </div>
 
             <div class="form-group">
-              <textarea placeholder="Message *" rows="6" required></textarea>
+              <label for="appeal-message" class="visually-hidden">Message (required)</label>
+              <textarea id="appeal-message" name="message" placeholder="Message *" rows="6" required aria-required="true"></textarea>
             </div>
 
             <div class="form-submit">
