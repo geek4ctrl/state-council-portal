@@ -1,8 +1,9 @@
-import { Component, signal, OnInit } from '@angular/core';
+import { Component, signal, OnInit, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SkeletonLoaderComponent } from '../../components/skeleton-loader/skeleton-loader.component';
 import { IconComponent } from '../../components/icon/icon.component';
 import { LazyLoadDirective } from '../../directives/lazy-load.directive';
+import { SeoService } from '../../services/seo.service';
 
 @Component({
   selector: 'app-news',
@@ -361,10 +362,19 @@ import { LazyLoadDirective } from '../../directives/lazy-load.directive';
   `]
 })
 export class NewsComponent implements OnInit {
+  private seoService = inject(SeoService);
   currentPage = signal(2);
   isLoading = signal(true);
 
   ngOnInit() {
+    // Set SEO metadata
+    this.seoService.updateMetadata({
+      title: 'Actualités',
+      description: 'Suivez les dernières actualités, événements et communications officielles du Conseil d\'État de la République Démocratique du Congo.',
+      keywords: 'actualités, nouvelles, Conseil d\'État RDC, événements, communications officielles',
+      ogUrl: '/news'
+    });
+
     // Simulate loading data
     setTimeout(() => {
       this.isLoading.set(false);

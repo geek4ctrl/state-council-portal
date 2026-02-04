@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { SeoService } from '../../services/seo.service';
 
 @Component({
   selector: 'app-appointment',
@@ -396,4 +397,15 @@ import { RouterLink } from '@angular/router';
     }
   `]
 })
-export class AppointmentComponent {}
+export class AppointmentComponent implements OnInit {
+  private seoService = inject(SeoService);
+
+  ngOnInit() {
+    this.seoService.updateMetadata({
+      title: 'Prendre Rendez-vous',
+      description: 'Prenez rendez-vous avec le Conseil d\'État de la RDC. Remplissez le formulaire de demande de rendez-vous en ligne pour organiser une rencontre.',
+      keywords: 'rendez-vous, appointment, consultation, rencontre, Conseil d\'État',
+      ogUrl: '/appointment'
+    });
+  }
+}

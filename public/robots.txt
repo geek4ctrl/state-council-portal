@@ -1,0 +1,26 @@
+# Conseil d'État de la République Démocratique du Congo
+# https://conseildetat.cd/robots.txt
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://conseildetat.cd/sitemap.xml
+
+# Crawl delay (in seconds) - be respectful
+Crawl-delay: 1
+
+# Disallow admin or test pages (if any exist in the future)
+Disallow: /admin/
+Disallow: /test/
+Disallow: /api/
+
+# Allow specific bot crawlers
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /

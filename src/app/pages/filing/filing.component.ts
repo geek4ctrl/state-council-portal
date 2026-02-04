@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { SeoService } from '../../services/seo.service';
 
 @Component({
   selector: 'app-filing',
@@ -333,4 +334,15 @@ import { RouterLink } from '@angular/router';
     }
   `]
 })
-export class FilingComponent {}
+export class FilingComponent implements OnInit {
+  private seoService = inject(SeoService);
+
+  ngOnInit() {
+    this.seoService.updateMetadata({
+      title: 'Signaler un Abus',
+      description: 'Signalez toute forme d\'abus ou d\'injustice au Conseil d\'État de la RDC. Formulaire de plainte en ligne pour dénoncer les violations de droits.',
+      keywords: 'signalement, plainte, abus, injustice, dénonciation, Conseil d\'État',
+      ogUrl: '/filing'
+    });
+  }
+}

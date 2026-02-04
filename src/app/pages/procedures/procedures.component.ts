@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { SeoService } from '../../services/seo.service';
 
 @Component({
   selector: 'app-procedures',
@@ -343,4 +344,15 @@ import { RouterLink } from '@angular/router';
     }
   `]
 })
-export class ProceduresComponent {}
+export class ProceduresComponent implements OnInit {
+  private seoService = inject(SeoService);
+
+  ngOnInit() {
+    this.seoService.updateMetadata({
+      title: 'Interjeter un Recours',
+      description: 'Procédures et modalités pour interjeter un recours administratif devant le Conseil d\'État de la RDC. Formulaire de demande de recours en ligne.',
+      keywords: 'recours administratif, appel, procédure, formulaire, Conseil d\'État',
+      ogUrl: '/procedures'
+    });
+  }
+}
