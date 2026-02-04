@@ -1,8 +1,9 @@
-import { Component, signal, OnInit } from '@angular/core';
+import { Component, signal, OnInit, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SkeletonLoaderComponent } from '../../components/skeleton-loader/skeleton-loader.component';
 import { IconComponent } from '../../components/icon/icon.component';
 import { LazyLoadDirective } from '../../directives/lazy-load.directive';
+import { SeoService } from '../../services/seo.service';
 
 @Component({
   selector: 'app-news',
@@ -62,17 +63,17 @@ import { LazyLoadDirective } from '../../directives/lazy-load.directive';
           </div>
 
           <!-- Pagination -->
-          <div class="pagination">
-            <button class="pagination-btn" [disabled]="currentPage() === 1">
-              <app-icon name="chevron-right" [size]="20" [customClass]="'rotate-180'"></app-icon>
+          <nav class="pagination" aria-label="News pagination" role="navigation">
+            <button class="pagination-btn" [disabled]="currentPage() === 1" aria-label="Previous page">
+              <app-icon name="chevron-right" [size]="20" [customClass]="'rotate-180'" [attr.aria-hidden]="true"></app-icon>
             </button>
-            <button class="pagination-number" [class.active]="currentPage() === 2">2</button>
-            <button class="pagination-number" [class.active]="currentPage() === 3">3</button>
-            <button class="pagination-btn next">
+            <button class="pagination-number" [class.active]="currentPage() === 2" [attr.aria-current]="currentPage() === 2 ? 'page' : null" aria-label="Page 2">2</button>
+            <button class="pagination-number" [class.active]="currentPage() === 3" [attr.aria-current]="currentPage() === 3 ? 'page' : null" aria-label="Page 3">3</button>
+            <button class="pagination-btn next" aria-label="Next page">
               Next
-              <app-icon name="chevron-right" [size]="16"></app-icon>
+              <app-icon name="chevron-right" [size]="16" [attr.aria-hidden]="true"></app-icon>
             </button>
-          </div>
+          </nav>
         </div>
       </section>
     </div>
@@ -361,10 +362,19 @@ import { LazyLoadDirective } from '../../directives/lazy-load.directive';
   `]
 })
 export class NewsComponent implements OnInit {
+  private seoService = inject(SeoService);
   currentPage = signal(2);
   isLoading = signal(true);
 
   ngOnInit() {
+    // Set SEO metadata
+    this.seoService.updateMetadata({
+      title: 'Actualités',
+      description: 'Suivez les dernières actualités, événements et communications officielles du Conseil d\'État de la République Démocratique du Congo.',
+      keywords: 'actualités, nouvelles, Conseil d\'État RDC, événements, communications officielles',
+      ogUrl: '/news'
+    });
+
     // Simulate loading data
     setTimeout(() => {
       this.isLoading.set(false);

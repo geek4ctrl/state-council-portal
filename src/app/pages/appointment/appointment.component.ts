@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { SeoService } from '../../services/seo.service';
 
 @Component({
   selector: 'app-appointment',
@@ -24,35 +25,38 @@ import { RouterLink } from '@angular/router';
       <!-- Tab Navigation -->
       <section class="tabs-section">
         <div class="container">
-          <div class="tabs">
-            <a routerLink="/filing" routerLinkActive="active" class="tab">Report</a>
-            <a routerLink="/appointment" routerLinkActive="active" class="tab active">Book An Appointment</a>
-            <a routerLink="/procedures" routerLinkActive="active" class="tab">File An Appeal</a>
-          </div>
+          <nav class="tabs" role="tablist" aria-label="Form selection">
+            <a routerLink="/filing" routerLinkActive="active" class="tab" role="tab" aria-selected="false" aria-controls="filing-panel">Report</a>
+            <a routerLink="/appointment" routerLinkActive="active" class="tab active" role="tab" aria-selected="true" aria-controls="appointment-panel">Book An Appointment</a>
+            <a routerLink="/procedures" routerLinkActive="active" class="tab" role="tab" aria-selected="false" aria-controls="procedures-panel">File An Appeal</a>
+          </nav>
         </div>
       </section>
 
       <!-- Appointment Form Section -->
-      <section class="form-section">
+      <section class="form-section" id="appointment-panel" role="tabpanel" aria-labelledby="appointment-tab">
         <div class="container">
           <div class="form-header">
             <h2>MAKE AN APPOINTMENT</h2>
             <p class="form-subtitle">WE WOULD LOVE TO ASSIST YOU WITH YOUR ISSUE</p>
           </div>
 
-          <form class="appointment-form">
+          <form class="appointment-form" aria-label="Appointment booking form">
             <div class="form-row">
               <div class="form-group">
-                <input type="text" placeholder="Full Name *" required>
+                <label for="appt-name" class="visually-hidden">Full Name (required)</label>
+                <input type="text" id="appt-name" name="name" placeholder="Full Name *" required aria-required="true">
               </div>
               <div class="form-group">
-                <input type="email" placeholder="E-mail *" required>
+                <label for="appt-email" class="visually-hidden">Email address (required)</label>
+                <input type="email" id="appt-email" name="email" placeholder="E-mail *" required aria-required="true">
               </div>
             </div>
 
             <div class="form-row">
               <div class="form-group">
-                <select required>
+                <label for="appt-department" class="visually-hidden">Department</label>
+                <select id="appt-department" name="department" required aria-required="true">
                   <option value="">Department</option>
                   <option value="criminal">Criminal Chamber</option>
                   <option value="civil">Civil Chamber</option>
@@ -61,7 +65,8 @@ import { RouterLink } from '@angular/router';
                 </select>
               </div>
               <div class="form-group">
-                <select required>
+                <label for="appt-person" class="visually-hidden">Who do you want to meet (required)</label>
+                <select id="appt-person" name="person" required aria-required="true">
                   <option value="">Who do you want to meet ? *</option>
                   <option value="first-president">First President</option>
                   <option value="chamber-president">Chamber President</option>
@@ -72,7 +77,8 @@ import { RouterLink } from '@angular/router';
             </div>
 
             <div class="form-group">
-              <select required>
+              <label for="appt-when" class="visually-hidden">When do you plan to come</label>
+              <select id="appt-when" name="when" required aria-required="true">
                 <option value="">When do you plan to come ?</option>
                 <option value="this-week">This Week</option>
                 <option value="next-week">Next Week</option>
@@ -82,7 +88,8 @@ import { RouterLink } from '@angular/router';
             </div>
 
             <div class="form-group">
-              <textarea placeholder="Message *" rows="6" required></textarea>
+              <label for="appt-message" class="visually-hidden">Message (required)</label>
+              <textarea id="appt-message" name="message" placeholder="Message *" rows="6" required aria-required="true"></textarea>
             </div>
 
             <div class="form-submit">
@@ -93,7 +100,7 @@ import { RouterLink } from '@angular/router';
       </section>
 
       <!-- Map Section -->
-      <section class="map-section">
+      <section class="map-section" aria-label="Location map">
         <div class="map-container">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3978.8158168478994!2d15.313!3d-4.322!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNMKwMTknMTkuMiJTIDE1wrAxOCc0Ni44IkU!5e0!3m2!1sen!2s!4v1234567890"
@@ -102,6 +109,8 @@ import { RouterLink } from '@angular/router';
             style="border:0;"
             allowfullscreen=""
             loading="lazy"
+            title="State Council location on Google Maps"
+            aria-label="Google Maps showing State Council location"
             referrerpolicy="no-referrer-when-downgrade">
           </iframe>
         </div>
@@ -388,4 +397,15 @@ import { RouterLink } from '@angular/router';
     }
   `]
 })
-export class AppointmentComponent {}
+export class AppointmentComponent implements OnInit {
+  private seoService = inject(SeoService);
+
+  ngOnInit() {
+    this.seoService.updateMetadata({
+      title: 'Prendre Rendez-vous',
+      description: 'Prenez rendez-vous avec le Conseil d\'État de la RDC. Remplissez le formulaire de demande de rendez-vous en ligne pour organiser une rencontre.',
+      keywords: 'rendez-vous, appointment, consultation, rencontre, Conseil d\'État',
+      ogUrl: '/appointment'
+    });
+  }
+}

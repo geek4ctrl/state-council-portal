@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
+import { SeoService } from '../../services/seo.service';
 
 @Component({
   selector: 'app-audiences',
@@ -421,4 +422,15 @@ import { Component } from '@angular/core';
     }
   `]
 })
-export class AudiencesComponent {}
+export class AudiencesComponent implements OnInit {
+  private seoService = inject(SeoService);
+
+  ngOnInit() {
+    this.seoService.updateMetadata({
+      title: 'Audiences et Rôles',
+      description: 'Consultez le calendrier des audiences, les extraits de rôles et les listes de causes à plaider devant le Conseil d\'État de la RDC.',
+      keywords: 'audiences, rôles, calendrier, plaidoiries, sessions, Conseil d\'État',
+      ogUrl: '/audiences'
+    });
+  }
+}

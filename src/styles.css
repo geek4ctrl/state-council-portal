@@ -25,6 +25,43 @@ main {
   min-height: calc(100vh - 150px);
 }
 
+/* Accessibility Utilities */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Focus Styles for Keyboard Navigation */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible,
+[tabindex]:focus-visible {
+  outline: 3px solid #8B6914;
+  outline-offset: 2px;
+}
+
+/* Remove default focus outline for mouse users */
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* Ensure interactive elements have visible focus */
+.nav-link:focus-visible,
+.dropdown-link:focus-visible {
+  outline: 3px solid #8B6914;
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
 /* Icon Utilities */
 .icon.rotated,
 .icon.rotate-180 {
