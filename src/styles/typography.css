@@ -1,0 +1,338 @@
+/* ==========================================
+   TYPOGRAPHY SYSTEM
+   ========================================== */
+
+/* Base Typography Settings */
+:root {
+  /* Font Families */
+  --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --font-headings: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  /* Font Weights */
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+
+  /* Font Sizes - Desktop */
+  --font-size-h1: 3.5rem;      /* 56px */
+  --font-size-h2: 2.5rem;      /* 40px */
+  --font-size-h3: 2rem;        /* 32px */
+  --font-size-h4: 1.5rem;      /* 24px */
+  --font-size-h5: 1.25rem;     /* 20px */
+  --font-size-h6: 1.125rem;    /* 18px */
+  --font-size-body: 1rem;      /* 16px */
+  --font-size-small: 0.875rem; /* 14px */
+  --font-size-xs: 0.75rem;     /* 12px */
+
+  /* Line Heights */
+  --line-height-tight: 1.2;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.75;
+
+  /* Letter Spacing */
+  --letter-spacing-tight: -0.025em;
+  --letter-spacing-normal: 0;
+  --letter-spacing-wide: 0.025em;
+  --letter-spacing-wider: 0.05em;
+}
+
+/* ==========================================
+   HEADING HIERARCHY
+   ========================================== */
+
+/* H1 - Page Hero Titles */
+h1, .h1 {
+  font-family: var(--font-headings);
+  font-size: var(--font-size-h1);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-tight);
+  letter-spacing: var(--letter-spacing-tight);
+  margin: 0 0 1.5rem 0;
+  color: #2c3e50;
+}
+
+/* H2 - Section Titles */
+h2, .h2 {
+  font-family: var(--font-headings);
+  font-size: var(--font-size-h2);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-tight);
+  letter-spacing: var(--letter-spacing-normal);
+  margin: 0 0 1.25rem 0;
+  color: #2c3e50;
+}
+
+/* H3 - Subsection Titles */
+h3, .h3 {
+  font-family: var(--font-primary);
+  font-size: var(--font-size-h3);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-normal);
+  letter-spacing: var(--letter-spacing-normal);
+  margin: 0 0 1rem 0;
+  color: #34495e;
+}
+
+/* H4 - Card/Component Titles */
+h4, .h4 {
+  font-family: var(--font-primary);
+  font-size: var(--font-size-h4);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-normal);
+  letter-spacing: var(--letter-spacing-normal);
+  margin: 0 0 0.75rem 0;
+  color: #34495e;
+}
+
+/* H5 - Small Headings */
+h5, .h5 {
+  font-family: var(--font-primary);
+  font-size: var(--font-size-h5);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-normal);
+  letter-spacing: var(--letter-spacing-wide);
+  margin: 0 0 0.5rem 0;
+  color: #34495e;
+  text-transform: uppercase;
+}
+
+/* H6 - Smallest Headings */
+h6, .h6 {
+  font-family: var(--font-primary);
+  font-size: var(--font-size-h6);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-normal);
+  letter-spacing: var(--letter-spacing-wider);
+  margin: 0 0 0.5rem 0;
+  color: #5a6c7d;
+  text-transform: uppercase;
+}
+
+/* ==========================================
+   HEADING VARIANTS
+   ========================================== */
+
+/* Hero Title - Extra Large */
+.hero-title {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: var(--font-weight-extrabold);
+  letter-spacing: var(--letter-spacing-tight);
+  text-transform: uppercase;
+  color: white;
+  margin: 0;
+}
+
+/* Section Title - Uppercase, Spaced */
+.section-title {
+  font-size: var(--font-size-h2);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: var(--letter-spacing-wider);
+  text-transform: uppercase;
+  color: #2c3e50;
+  margin: 0 0 2rem 0;
+  text-align: center;
+}
+
+/* Section Subtitle */
+.section-subtitle {
+  font-size: var(--font-size-h4);
+  font-weight: var(--font-weight-normal);
+  color: #5a6c7d;
+  margin: -1rem 0 2rem 0;
+  text-align: center;
+}
+
+/* Card Title */
+.card-title {
+  font-size: var(--font-size-h4);
+  font-weight: var(--font-weight-semibold);
+  color: #2c3e50;
+  margin: 0 0 0.5rem 0;
+}
+
+/* Section Heading - White */
+.section-title-white {
+  font-size: var(--font-size-h2);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: var(--letter-spacing-wider);
+  text-transform: uppercase;
+  color: white;
+  margin: 0 0 2rem 0;
+  text-align: center;
+}
+
+/* ==========================================
+   BODY TEXT
+   ========================================== */
+
+body {
+  font-family: var(--font-primary);
+  font-size: var(--font-size-body);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--line-height-normal);
+  color: #2c3e50;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+p {
+  margin: 0 0 1rem 0;
+  line-height: var(--line-height-relaxed);
+}
+
+/* Lead Paragraph */
+.lead {
+  font-size: 1.25rem;
+  font-weight: var(--font-weight-normal);
+  line-height: var(--line-height-relaxed);
+  color: #34495e;
+}
+
+/* Small Text */
+small, .small {
+  font-size: var(--font-size-small);
+  line-height: var(--line-height-normal);
+}
+
+/* Extra Small Text */
+.xs {
+  font-size: var(--font-size-xs);
+  line-height: var(--line-height-normal);
+}
+
+/* ==========================================
+   TEXT UTILITIES
+   ========================================== */
+
+.text-uppercase {
+  text-transform: uppercase;
+  letter-spacing: var(--letter-spacing-wider);
+}
+
+.text-bold {
+  font-weight: var(--font-weight-bold);
+}
+
+.text-semibold {
+  font-weight: var(--font-weight-semibold);
+}
+
+.text-medium {
+  font-weight: var(--font-weight-medium);
+}
+
+.text-light {
+  font-weight: var(--font-weight-light);
+}
+
+.text-muted {
+  color: #5a6c7d;
+}
+
+.text-primary {
+  color: #2c3e50;
+}
+
+.text-accent {
+  color: #c41e3a;
+}
+
+.text-gold {
+  color: #8B6914;
+}
+
+.text-white {
+  color: white;
+}
+
+/* ==========================================
+   RESPONSIVE TYPOGRAPHY
+   ========================================== */
+
+@media (max-width: 1024px) {
+  :root {
+    --font-size-h1: 3rem;        /* 48px */
+    --font-size-h2: 2.25rem;     /* 36px */
+    --font-size-h3: 1.75rem;     /* 28px */
+    --font-size-h4: 1.375rem;    /* 22px */
+    --font-size-h5: 1.125rem;    /* 18px */
+    --font-size-h6: 1rem;        /* 16px */
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --font-size-h1: 2.5rem;      /* 40px */
+    --font-size-h2: 2rem;        /* 32px */
+    --font-size-h3: 1.5rem;      /* 24px */
+    --font-size-h4: 1.25rem;     /* 20px */
+    --font-size-h5: 1.125rem;    /* 18px */
+    --font-size-h6: 1rem;        /* 16px */
+  }
+
+  .hero-title {
+    font-size: clamp(1.75rem, 8vw, 2.5rem);
+  }
+
+  .section-title {
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .lead {
+    font-size: 1.125rem;
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --font-size-h1: 2rem;        /* 32px */
+    --font-size-h2: 1.75rem;     /* 28px */
+    --font-size-h3: 1.375rem;    /* 22px */
+    --font-size-h4: 1.125rem;    /* 18px */
+    --font-size-h5: 1rem;        /* 16px */
+    --font-size-h6: 0.875rem;    /* 14px */
+    --font-size-body: 0.9375rem; /* 15px */
+  }
+
+  .hero-title {
+    font-size: clamp(1.5rem, 7vw, 2rem);
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+    margin-bottom: 1.25rem;
+  }
+}
+
+/* ==========================================
+   ACCESSIBILITY
+   ========================================== */
+
+/* Focus visible for keyboard navigation */
+h1:focus-visible,
+h2:focus-visible,
+h3:focus-visible,
+h4:focus-visible,
+h5:focus-visible,
+h6:focus-visible {
+  outline: 2px solid #c41e3a;
+  outline-offset: 4px;
+  border-radius: 4px;
+}
+
+/* Screen reader only text */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}

@@ -1,30 +1,52 @@
 import { Routes } from '@angular/router';
-import { HomeComponent } from './pages/home/home.component';
-import { AboutComponent } from './pages/about/about.component';
-import { JudgesComponent } from './pages/judges/judges.component';
-import { OrganizationComponent } from './pages/organization/organization.component';
-import { HistoryComponent } from './pages/history/history.component';
-import { AudiencesComponent } from './pages/audiences/audiences.component';
-import { ProcessComponent } from './pages/process/process.component';
-import { NewsComponent } from './pages/news/news.component';
-import { ReformsComponent } from './pages/reforms/reforms.component';
-import { InternationalRelationsComponent } from './pages/international-relations/international-relations.component';
-import { StepsComponent } from './pages/steps/steps.component';
 
 export const routes: Routes = [
-  { path: '', component: HomeComponent },
-  { path: 'presentation', component: AboutComponent },
-  { path: 'judges', component: JudgesComponent },
-  { path: 'organization', component: OrganizationComponent },
-  { path: 'history', component: HistoryComponent },
-  { path: 'reforms', component: ReformsComponent },
-  { path: 'international-relations', component: InternationalRelationsComponent },
-  { path: 'audiences', component: AudiencesComponent },
-  { path: 'steps', component: StepsComponent },
+  {
+    path: '',
+    loadComponent: () => import('./pages/home/home.component').then(m => m.HomeComponent)
+  },
+  {
+    path: 'presentation',
+    loadComponent: () => import('./pages/about/about.component').then(m => m.AboutComponent)
+  },
+  {
+    path: 'judges',
+    loadComponent: () => import('./pages/judges/judges.component').then(m => m.JudgesComponent)
+  },
+  {
+    path: 'organization',
+    loadComponent: () => import('./pages/organization/organization.component').then(m => m.OrganizationComponent)
+  },
+  {
+    path: 'history',
+    loadComponent: () => import('./pages/history/history.component').then(m => m.HistoryComponent)
+  },
+  {
+    path: 'reforms',
+    loadComponent: () => import('./pages/reforms/reforms.component').then(m => m.ReformsComponent)
+  },
+  {
+    path: 'international-relations',
+    loadComponent: () => import('./pages/international-relations/international-relations.component').then(m => m.InternationalRelationsComponent)
+  },
+  {
+    path: 'audiences',
+    loadComponent: () => import('./pages/audiences/audiences.component').then(m => m.AudiencesComponent)
+  },
+  {
+    path: 'steps',
+    loadComponent: () => import('./pages/steps/steps.component').then(m => m.StepsComponent)
+  },
   { path: 'filing', redirectTo: 'steps', pathMatch: 'full' },
   { path: 'appointment', redirectTo: 'steps', pathMatch: 'full' },
   { path: 'procedures', redirectTo: 'steps', pathMatch: 'full' },
-  { path: 'process', component: ProcessComponent },
-  { path: 'news', component: NewsComponent },
+  {
+    path: 'process',
+    loadComponent: () => import('./pages/process/process.component').then(m => m.ProcessComponent)
+  },
+  {
+    path: 'news',
+    loadComponent: () => import('./pages/news/news.component').then(m => m.NewsComponent)
+  },
   { path: '**', redirectTo: '' }
 ];

@@ -1,16 +1,18 @@
-import { Component } from '@angular/core';
+import { Component, signal, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { SkeletonLoaderComponent } from '../../components/skeleton-loader/skeleton-loader.component';
+import { LazyLoadDirective } from '../../directives/lazy-load.directive';
 
 @Component({
   selector: 'app-organization',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, SkeletonLoaderComponent, LazyLoadDirective],
   template: `
     <div class="page-container">
       <!-- Hero Section -->
       <section class="hero-section">
         <div class="container">
-          <h1 class="hero-title">ORGANIZATION AND FUNCTIONING OF<br>THE COURT OF CASSATION</h1>
+          <h1 class="hero-title">ORGANIZATION AND FUNCTIONING OF<br>THE STATE COUNCIL</h1>
         </div>
       </section>
 
@@ -19,7 +21,7 @@ import { CommonModule } from '@angular/common';
         <div class="container">
           <div class="president-card-large">
             <div class="president-image-large">
-              <img src="https://placehold.co/400x500/8B6914/ffffff?text=First+President" alt="The First President">
+              <img src="https://placehold.co/400x500/8B6914/ffffff?text=First+President" alt="The First President" loading="lazy">
             </div>
             <div class="president-info-large">
               <h2>The First President</h2>
@@ -27,8 +29,8 @@ import { CommonModule } from '@angular/common';
               <p class="president-description">
                 NGOMBA KABEYYA ELIE LEON, First President, elected through a vote on Thursday, February 29th, 2024, is the
                 third-ranking member of the DRC's High Council of the Judiciary. He is in charge of coordinating the entire
-                High Court College and Clerk's office. As the head of the Court of Cassation, he oversees all judicial
-                operations and ensures the proper administration of justice at the highest level of the ordinary judicial system.
+                High Court College and Clerk's office. As the head of the State Council, he oversees all judicial
+                operations and ensures the proper administration of justice at the highest level of the administrative judicial system.
               </p>
               <p class="president-description">
                 His mandate includes supervising the various chambers, presiding over plenary sessions, and maintaining the
@@ -44,15 +46,21 @@ import { CommonModule } from '@angular/common';
         <div class="container">
           <h2 class="section-title">THE PRESIDENTS</h2>
           <div class="members-grid">
-            <div class="member-card" *ngFor="let president of presidents">
-              <div class="member-image">
-                <img [src]="president.image" [alt]="president.name">
+            @if (isLoading()) {
+              @for (item of [1, 2, 3, 4, 5, 6, 7, 8]; track item) {
+                <app-skeleton-loader type="profile-card"></app-skeleton-loader>
+              }
+            } @else {
+              <div class="member-card" *ngFor="let president of presidents">
+                <div class="member-image">
+                  <img [src]="president.image" [alt]="president.name" loading="lazy">
+                </div>
+                <div class="member-info">
+                  <h3>{{ president.name }}</h3>
+                  <p>{{ president.title }}</p>
+                </div>
               </div>
-              <div class="member-info">
-                <h3>{{ president.name }}</h3>
-                <p>{{ president.title }}</p>
-              </div>
-            </div>
+            }
           </div>
         </div>
       </section>
@@ -62,15 +70,21 @@ import { CommonModule } from '@angular/common';
         <div class="container">
           <h2 class="section-title">THE ADVISORS</h2>
           <div class="members-grid">
-            <div class="member-card" *ngFor="let advisor of advisors">
-              <div class="member-image">
-                <img [src]="advisor.image" [alt]="advisor.name">
+            @if (isLoading()) {
+              @for (item of [1, 2, 3, 4, 5, 6, 7, 8]; track item) {
+                <app-skeleton-loader type="profile-card"></app-skeleton-loader>
+              }
+            } @else {
+              <div class="member-card" *ngFor="let advisor of advisors">
+                <div class="member-image">
+                  <img [src]="advisor.image" [alt]="advisor.name" loading="lazy">
+                </div>
+                <div class="member-info">
+                  <h3>{{ advisor.name }}</h3>
+                  <p>{{ advisor.title }}</p>
+                </div>
               </div>
-              <div class="member-info">
-                <h3>{{ advisor.name }}</h3>
-                <p>{{ advisor.title }}</p>
-              </div>
-            </div>
+            }
           </div>
         </div>
       </section>
@@ -78,11 +92,11 @@ import { CommonModule } from '@angular/common';
       <!-- Services Info Section -->
       <section class="services-info-section">
         <div class="container">
-          <h2 class="section-title-white">THE SERVICES OF THE COURT OF CASSATION</h2>
+          <h2 class="section-title-white">THE SERVICES OF THE STATE COUNCIL</h2>
           <div class="services-intro">
-            <h3>THE SERVICES OF THE COURT OF CASSATION</h3>
+            <h3>THE SERVICES OF THE STATE COUNCIL</h3>
             <p>
-              The organization of the Court of Cassation in its various departments ensures the smooth functioning of
+              The organization of the State Council in its various departments ensures the smooth functioning of
               judicial services. Each service plays a crucial role in supporting the magistrates and ensuring the proper
               administration of justice.
             </p>
@@ -93,7 +107,7 @@ import { CommonModule } from '@angular/common';
       <!-- Services Detail Section -->
       <section class="services-section">
         <div class="container">
-          <h2 class="section-heading">SERVICES OF THE COURT OF CASSATION</h2>
+          <h2 class="section-heading">SERVICES OF THE STATE COUNCIL</h2>
 
           <div class="services-content">
             <!-- Left Column - Service Links -->
@@ -118,7 +132,7 @@ import { CommonModule } from '@angular/common';
               <div class="detail-block">
                 <h4>The role of Report compilation (report registers)</h4>
                 <p>
-                  It is well-known that in a court of law like the Court of Cassation, the documentation service is of particular
+                  It is well-known that in an administrative court like the State Council, the documentation service is of particular
                   importance for the conduct of judicial activities, because it is responsible for the collection, classification,
                   and conservation of all legal documents necessary for the administration of justice.
                 </p>
@@ -549,7 +563,16 @@ import { CommonModule } from '@angular/common';
     }
   `]
 })
-export class OrganizationComponent {
+export class OrganizationComponent implements OnInit {
+  isLoading = signal(true);
+
+  ngOnInit() {
+    // Simulate loading data
+    setTimeout(() => {
+      this.isLoading.set(false);
+    }, 1500);
+  }
+
   presidents = [
     { name: 'LUBOYA ILUNGA JOSEPH', title: 'President of the Criminal Chamber', image: 'https://placehold.co/300x300/c41e3a/ffffff?text=LUBOYA' },
     { name: 'KAMANDA KAZADI', title: 'President of the Civil Chamber', image: 'https://placehold.co/300x300/6c757d/ffffff?text=Placeholder' },

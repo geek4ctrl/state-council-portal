@@ -1,10 +1,14 @@
-import { Component } from '@angular/core';
+import { Component, signal, OnInit } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { HeroComponent } from '../../components/hero/hero.component';
+import { SkeletonLoaderComponent } from '../../components/skeleton-loader/skeleton-loader.component';
+import { IconComponent } from '../../components/icon/icon.component';
+import { LazyLoadDirective } from '../../directives/lazy-load.directive';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [HeroComponent],
+  imports: [CommonModule, HeroComponent, SkeletonLoaderComponent, IconComponent, LazyLoadDirective],
   template: `
     <app-hero></app-hero>
 
@@ -17,17 +21,22 @@ import { HeroComponent } from '../../components/hero/hero.component';
         </p>
 
         <div class="offer-grid">
-          <div class="offer-card">
-            <div class="card-header">
-              <img src="https://placehold.co/60x60/2c3e50/white?text=SC" alt="Supreme Judicial Authority" class="card-image">
-              <h3>Supreme Judicial Authority</h3>
+          @if (isLoadingOffers()) {
+            @for (item of [1, 2, 3, 4]; track item) {
+              <app-skeleton-loader type="card"></app-skeleton-loader>
+            }
+          } @else {
+            <div class="offer-card">
+              <div class="card-header">
+                <img src="https://placehold.co/60x60/2c3e50/white?text=SC" alt="Supreme Judicial Authority" class="card-image" loading="lazy">
+              <h3>Supreme Administrative Authority</h3>
             </div>
-            <p>As the highest court in the ordinary judicial system, the Court of Cassation ensures uniform interpretation and application of laws throughout the Democratic Republic of Congo.</p>
+            <p>As the highest administrative court, the State Council ensures uniform interpretation and application of administrative law throughout the Democratic Republic of Congo.</p>
           </div>
 
           <div class="offer-card">
             <div class="card-header">
-              <img src="https://placehold.co/60x60/8B6914/white?text=LC" alt="Legal Certainty" class="card-image">
+              <img src="https://placehold.co/60x60/8B6914/white?text=LC" alt="Legal Certainty" class="card-image" loading="lazy">
               <h3>Legal Certainty</h3>
             </div>
             <p>Through our jurisprudence and decisions, we establish legal precedents that guide lower courts and ensure consistency in the application of justice across the nation.</p>
@@ -35,7 +44,7 @@ import { HeroComponent } from '../../components/hero/hero.component';
 
           <div class="offer-card">
             <div class="card-header">
-              <img src="https://placehold.co/60x60/c41e3a/white?text=JE" alt="Judicial Excellence" class="card-image">
+              <img src="https://placehold.co/60x60/c41e3a/white?text=JE" alt="Judicial Excellence" class="card-image" loading="lazy">
               <h3>Judicial Excellence</h3>
             </div>
             <p>Our magistrates and counselors are selected based on merit, ensuring the highest standards of legal expertise, integrity, and commitment to justice.</p>
@@ -43,11 +52,12 @@ import { HeroComponent } from '../../components/hero/hero.component';
 
           <div class="offer-card">
             <div class="card-header">
-              <img src="https://placehold.co/60x60/34495e/white?text=IC" alt="International Cooperation" class="card-image">
+              <img src="https://placehold.co/60x60/34495e/white?text=IC" alt="International Cooperation" class="card-image" loading="lazy">
               <h3>International Cooperation</h3>
             </div>
             <p>We actively participate in dialogue with international judicial bodies and maintain cooperation with French-speaking and African courts. HJF.</p>
           </div>
+          }
         </div>
       </div>
     </section>
@@ -57,7 +67,7 @@ import { HeroComponent } from '../../components/hero/hero.component';
       <div class="container">
         <h2 class="section-title expertise-title">FIELDS OF EXPERTISE</h2>
         <p class="section-subtitle expertise-subtitle">
-          The Court of Cassation exercises jurisdiction over various legal matters as the supreme court of the ordinary judicial system.
+          The State Council exercises jurisdiction over administrative matters as the supreme administrative court.
         </p>
 
         <div class="practice-grid">
@@ -187,13 +197,13 @@ import { HeroComponent } from '../../components/hero/hero.component';
       <div class="container">
         <div class="president-content">
           <div class="president-image">
-            <img src="https://placehold.co/400x500/d4b5a1/ffffff?text=President" alt="First President of the Court of Cassation">
+            <img src="https://placehold.co/400x500/d4b5a1/ffffff?text=President" alt="First President of the State Council" loading="lazy">
           </div>
           <div class="president-text">
-            <h2>THE FIRST PRESIDENT OF THE COURT OF CASSATION</h2>
+            <h2>THE FIRST PRESIDENT OF THE STATE COUNCIL</h2>
             <p>
-              As the third-ranking member of the DRC's High Council of the Judiciary, the First President of the Court of
-              Cassation, Professor NGOMBA KABEYYA ELIE LEON, elected blood in Thursday, February 29th,
+              As the third-ranking member of the DRC's High Council of the Judiciary, the First President of the State
+              Council, Professor NGOMBA KABEYYA ELIE LEON, elected blood in Thursday, February 29th,
               2024, is in charge of coordinating the entire High Court College and Clerk's office.
             </p>
             <p>
@@ -1492,4 +1502,13 @@ import { HeroComponent } from '../../components/hero/hero.component';
     }
   `]
 })
-export class HomeComponent {}
+export class HomeComponent implements OnInit {
+  isLoadingOffers = signal(true);
+
+  ngOnInit() {
+    // Simulate loading data
+    setTimeout(() => {
+      this.isLoadingOffers.set(false);
+    }, 1200);
+  }
+}

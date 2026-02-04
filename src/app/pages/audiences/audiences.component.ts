@@ -14,7 +14,7 @@ import { Component } from '@angular/core';
             <div class="hero-description">
               <p>
                 Access hearing schedules, court calendars, and role excerpts for upcoming sessions at
-                the Court of Cassation. Stay informed about scheduled audiences and case listings.
+                the State Council. Stay informed about scheduled audiences and case listings.
               </p>
             </div>
           </div>
@@ -26,7 +26,7 @@ import { Component } from '@angular/core';
           <div class="understanding-section">
             <h2>Understanding Audiences</h2>
             <p>
-              Audiences (or hearings) are organized court sessions where cases are heard before the Court of Cassation. The court publishes role
+              Audiences (or hearings) are organized court sessions where cases are heard before the State Council. The court publishes role
               excerpts (also called role lists) which list the cases scheduled to be heard during specific hearings, including case numbers, parties'
               names, legal representation details, and case types. Visit this page regularly to stay up-to-date on upcoming scheduled audiences and
               case progress.
