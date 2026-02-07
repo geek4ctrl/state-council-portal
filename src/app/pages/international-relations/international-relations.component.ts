@@ -1,189 +1,282 @@
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-international-relations',
   standalone: true,
+  imports: [CommonModule],
   template: `
     <div class="page-container">
+      <!-- Hero Section -->
       <section class="hero-section">
+        <div class="hero-overlay"></div>
         <div class="container">
           <div class="hero-grid">
             <div class="hero-title">
               <h1>INTERNATIONAL<br>RELATIONS</h1>
             </div>
+            <div class="vertical-line"></div>
             <div class="hero-description">
               <p>
-                In the context of the internationalization of law and justice, the State Council of the Democratic Republic of Congo
+                In the context of the internationalization of law and justice, the Court of Cassation of the Democratic Republic of Congo
                 is not isolated from this environment. It actively participates in the dialogue of judges by maintaining a high level of
-                cooperation within the frameworks of the Association of Supreme Administrative Courts of French-speaking countries (AHJUCAF)
-                and the African Association of Francophone Supreme Courts (AA-JHCF).
+                cooperation within the framework of the Association of Supreme Courts of Cassation of French-speaking countries (AHJUCAF)
+                and the African Association of Francophone Supreme Courts (AA-HJF).
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="content-section">
+      <!-- Stats Section -->
+      <section class="stats-section">
         <div class="container">
-
-          <div class="stats-section">
+          <div class="stats-grid">
             <div class="stat-item">
               <div class="stat-number">2</div>
               <div class="stat-divider"></div>
               <div class="stat-label">Major International Judicial Associations</div>
             </div>
+            <div class="stat-separator"></div>
             <div class="stat-item">
               <div class="stat-number">50+</div>
               <div class="stat-divider"></div>
               <div class="stat-label">Partner Countries & Supreme Courts</div>
             </div>
+            <div class="stat-separator"></div>
             <div class="stat-item">
               <div class="stat-number">100+</div>
               <div class="stat-divider"></div>
               <div class="stat-label">Annual Judicial Exchanges & Conferences</div>
             </div>
           </div>
+        </div>
+      </section>
 
-          <div class="networks-section">
-            <div class="section-header">
-              <div class="header-line"></div>
-              <h2>INTERNATIONAL JUDICIAL NETWORKS</h2>
-              <div class="header-line"></div>
-            </div>
-            <p class="section-subtitle">
-              The Court maintains privileged relationships with the leading associations of Francophone and African supreme courts
-            </p>
+      <!-- International Judicial Networks Section -->
+      <section class="networks-section">
+        <div class="container">
+          <div class="section-header">
+            <div class="header-line"></div>
+            <h2>INTERNATIONAL JUDICIAL NETWORKS</h2>
+          </div>
+          <p class="section-subtitle">
+            The Court maintains privileged relationships with the leading associations of Francophone and African supreme courts
+          </p>
 
-            <div class="network-cards">
-              <div class="network-card">
+          <div class="network-cards">
+            <div class="network-card">
+              <div class="card-accent"></div>
+              <div class="card-content">
                 <h3>AHJUCAF</h3>
                 <p class="network-full-name">Association of Supreme Courts of Cassation Using French</p>
                 <p class="network-description">
-                  A platform to encourage and collaborate between Francophone supreme courts, sharing of jurisprudence, sharing
-                  of information, and strengthening institutional capacities. French-speaking superior courts for quality justice.
+                  A platform for exchange and cooperation between Francophone supreme courts, facilitating judicial dialogue, sharing of jurisprudence, and strengthening institutional capacities across French-speaking jurisdictions worldwide.
                 </p>
               </div>
+            </div>
 
-              <div class="network-card">
-                <h3>AA-JHCF</h3>
+            <div class="network-card">
+              <div class="card-accent"></div>
+              <div class="card-content">
+                <h3>AA-HJF</h3>
                 <p class="network-full-name">African Association of Francophone Supreme Courts</p>
                 <p class="network-description">
-                  A regional bridge along cooperation for the Francophone judicial system, sharing best practices, sharing of education,
-                  and strengthening of capacity of justice systems Africa through judicial cooperation.
+                  A platform for exchange and cooperation between Francophone supreme courts, facilitating judicial dialogue, sharing of jurisprudence, and strengthening institutional capacities across French-speaking jurisdictions worldwide.
                 </p>
               </div>
             </div>
           </div>
+        </div>
+      </section>
 
-          <div class="cooperation-domains">
-            <div class="section-header">
-              <div class="header-line"></div>
-              <h2>INTERNATIONAL COOPERATION DOMAINS</h2>
-              <div class="header-line"></div>
-            </div>
-            <p class="section-subtitle">
-              Our international engagement translates into active participation in various initiatives aimed at strengthening the quality of justice and the rule of law
-            </p>
+      <!-- International Cooperation Domains Section -->
+      <section class="cooperation-section">
+        <div class="container">
+          <div class="section-header centered">
+            <div class="header-line-left"></div>
+            <h2>INTERNATIONAL COOPERATION DOMAINS</h2>
+            <div class="header-line-right"></div>
+          </div>
+          <p class="section-subtitle centered">
+            Our international engagement translates into active participation in various initiatives aimed at strengthening the quality of justice and the rule of law
+          </p>
 
-            <div class="domain-grid">
-              <div class="domain-card">
+          <div class="domain-grid">
+            <div class="domain-card">
+              <div class="domain-header">
                 <div class="domain-icon">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M12 3L1 9l4 2.18v6L12 21l7-3.82v-6l2-1.09V17h2V9L12 3zm6.82 6L12 12.72 5.18 9 12 5.28 18.82 9zM17 15.99l-5 2.73-5-2.73v-3.72L12 15l5-2.73v3.72z"/>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
                   </svg>
                 </div>
-                <h3>Judicial Challenges</h3>
-                <p>
-                  Regular coordination and education workshops with higher and lower courts to exchange best practices and development mechanisms.
-                </p>
+                <h3>Judicial Dialogue</h3>
               </div>
+              <p>
+                Regular exchanges on jurisprudence, best practices, and common challenges faced by supreme courts, fostering mutual learning and harmonized legal interpretation.
+              </p>
+            </div>
 
-              <div class="domain-card">
+            <div class="domain-card">
+              <div class="domain-header">
                 <div class="domain-icon">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M12 7V3H2v18h20V7H12zM6 19H4v-2h2v2zm0-4H4v-2h2v2zm0-4H4V9h2v2zm0-4H4V5h2v2zm4 12H8v-2h2v2zm0-4H8v-2h2v2zm0-4H8V9h2v2zm0-4H8V5h2v2zm10 12h-8v-2h2v-2h-2v-2h2v-2h-2V9h8v10zm-2-8h-2v2h2v-2zm0 4h-2v2h2v-2z"/>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M12 20h9"></path>
+                    <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
                   </svg>
                 </div>
                 <h3>Technical Assistance</h3>
-                <p>
-                  Financial and technical cooperation to infrastructure development, judicial reforms, adaptation of best practices,
-                  and mutual assistance through international legal cooperation.
-                </p>
               </div>
+              <p>
+                Technical cooperation for modernization of judicial systems, digitalization, and improvement of access to justice through shared experiences.
+              </p>
+            </div>
 
-              <div class="domain-card">
+            <div class="domain-card">
+              <div class="domain-header">
                 <div class="domain-icon">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="9" cy="7" r="4"></circle>
+                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
                   </svg>
                 </div>
                 <h3>Capacity Building</h3>
-                <p>
-                  Ongoing training and professional development for magistrates, the development of legal expertise, and training to
-                  better serve the Court and operate the centers.
-                </p>
               </div>
+              <p>
+                Training programs, seminars, and workshops for strengthening the skills of magistrates and judicial personnel through international expertise.
+              </p>
+            </div>
 
-              <div class="domain-card">
+            <div class="domain-card">
+              <div class="domain-header">
                 <div class="domain-icon">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="2" y1="12" x2="22" y2="12"></line>
+                    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
                   </svg>
                 </div>
                 <h3>International Forums</h3>
-                <p>
-                  Active participation in international conferences and debates to promote dialogue, share legal expertise, and develop regional and international cooperation.
-                </p>
               </div>
+              <p>
+                Active participation in international forums to contribute to the development of international and regional law and judicial standards.
+              </p>
             </div>
           </div>
+        </div>
+      </section>
 
-          <div class="collaboration-section">
-            <h2>Interested in Collaboration?</h2>
-            <p>
-              We are open to new partnerships with courts, international and intergovernmental institutions committed to strengthening justice systems.
-            </p>
+      <!-- Collaboration Section -->
+      <section class="collaboration-section">
+        <div class="container">
+          <div class="collaboration-content">
+            <div class="collaboration-text">
+              <h2>Interested in Collaboration?</h2>
+              <p>
+                We are open to institutional partnerships and exchanges with other national and international jurisdictions committed to strengthening justice systems.
+              </p>
+            </div>
             <button class="contact-btn">CONTACT US</button>
           </div>
         </div>
       </section>
+
+     <!-- Footer Section -->
+    <footer class="footer-section">
+      <div class="footer-main">
+        <div class="footer-logo-wrapper">
+          <svg width="80" height="80" viewBox="0 0 100 100" fill="none">
+            <path d="M50 15L35 25V50L50 60L65 50V25L50 15Z" fill="#BF9874"/>
+            <path d="M50 30L42 35V50L50 55L58 50V35L50 30Z" fill="white"/>
+            <rect x="48" y="10" width="4" height="8" fill="#BF9874"/>
+            <rect x="46" y="5" width="8" height="4" fill="#BF9874"/>
+          </svg>
+        </div>
+        <div class="container">
+          <div class="footer-grid">
+            <div class="footer-column">
+              <h3>Main Office</h3>
+              <p>No. 3 Avenue de la Justice</p>
+              <p>Central District of Kinshasa</p>
+              <p>Democratic Republic of Congo</p>
+              <p class="footer-contact">Tel: +243 (21) 0000000</p>
+              <p class="footer-contact">Email: info@conseildetat.cd</p>
+            </div>
+
+            <div class="footer-column">
+              <h3>Quick Links</h3>
+              <ul>
+                <li><a href="#">About the Court</a></li>
+                <li><a href="#">Jurisprudence</a></li>
+                <li><a href="#">Filing Procedures</a></li>
+                <li><a href="#">Contact Us</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-column">
+              <h3>Resources</h3>
+              <ul>
+                <li><a href="#">Legal Documents</a></li>
+                <li><a href="#">Court Decisions</a></li>
+                <li><a href="#">Annual Reports</a></li>
+                <li><a href="#">FAQs</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-column">
+              <h3>Connect</h3>
+              <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">LinkedIn</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="footer-bottom-content">
+            <a href="#" class="privacy-link">Privacy</a>
+            <p class="copyright">Copyright State Council. All Rights Reserved</p>
+            <div class="social-icons">
+              <a href="#" class="social-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"/>
+                </svg>
+              </a>
+              <a href="#" class="social-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M22.46 6c-.85.38-1.78.64-2.75.76 1-.6 1.76-1.55 2.12-2.68-.93.55-1.96.95-3.06 1.17-.88-.94-2.13-1.53-3.51-1.53-2.66 0-4.82 2.16-4.82 4.82 0 .38.04.75.13 1.1-4-.2-7.54-2.12-9.91-5.04-.42.72-.66 1.55-.66 2.44 0 1.67.85 3.15 2.14 4.01-.79-.03-1.53-.24-2.18-.6v.06c0 2.34 1.66 4.29 3.87 4.73-.4.11-.83.17-1.27.17-.31 0-.62-.03-.92-.08.63 1.96 2.44 3.38 4.6 3.42-1.68 1.32-3.8 2.1-6.11 2.1-.4 0-.79-.02-1.17-.07 2.18 1.4 4.77 2.21 7.55 2.21 9.06 0 14-7.5 14-14 0-.21 0-.42-.02-.63.96-.69 1.8-1.56 2.46-2.55z"/>
+                </svg>
+              </a>
+              <a href="#" class="social-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8 1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
     </div>
   `,
   styles: [`
-    .page-container {
-      min-height: 100vh;
-    }
-
-    .hero-section {
-      background: linear-gradient(135deg, #2c3e50 0%, #1a2938 100%);
-      color: white;
-      padding: 100px 20px 80px;
-    }
-
-    .hero-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 60px;
-      align-items: center;
-    }
-
-    .hero-title h1 {
-      font-size: 3.5rem;
-      font-weight: 700;
-      line-height: 1.1;
-      color: white;
+    /* General Reset */
+    * {
       margin: 0;
-    }
-
-    .hero-description p {
-      font-size: 1rem;
-      line-height: 1.8;
-      color: rgba(255, 255, 255, 0.95);
-    }
-
-    .content-section {
       padding: 0;
-      background-color: #f8f9fa;
+      box-sizing: border-box;
+    }
+
+    .page-container {
+      background: white;
+      min-height: 100vh;
     }
 
     .container {
@@ -192,384 +285,586 @@ import { Component } from '@angular/core';
       padding: 0 20px;
     }
 
+    /* Hero Section */
+    .hero-section {
+      background-image: url('/assets/images/international-hero.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-color: #2c3e50;
+      color: white;
+      padding: 120px 0;
+      position: relative;
+    }
+
+    .hero-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(135deg, rgba(44, 62, 80, 0.88) 0%, rgba(52, 73, 94, 0.85) 100%);
+      z-index: 1;
+    }
+
+    .hero-section .container {
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1fr auto 1.3fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .hero-title h1 {
+      font-size: 4rem;
+      font-weight: 700;
+      line-height: 1.15;
+      margin: 0;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: white;
+      font-family: 'Playfair Display', serif;
+    }
+
+    .vertical-line {
+      width: 3px;
+      height: 180px;
+      background-color: #ffffff;
+      display: block;
+    }
+
+    .hero-description p {
+      font-size: 1.05rem;
+      line-height: 1.9;
+      opacity: 0.95;
+      margin: 0;
+      font-weight: 300;
+    }
+
+    /* Stats Section */
     .stats-section {
+      background: #e8eef7;
+      padding: 60px 0;
+    }
+
+    .stats-grid {
       display: flex;
       justify-content: space-around;
       align-items: center;
-      background: white;
-      padding: 60px 20px;
-      margin-bottom: 0;
+      gap: 40px;
     }
 
     .stat-item {
       text-align: center;
-      position: relative;
+      flex: 1;
     }
 
     .stat-number {
-      font-size: 3rem;
+      font-size: 3.5rem;
       font-weight: 700;
       color: #2c3e50;
-      margin-bottom: 10px;
+      margin-bottom: 15px;
+      line-height: 1;
     }
 
     .stat-divider {
       width: 60px;
       height: 2px;
-      background: #c41e3a;
+      background: #c9a961;
       margin: 15px auto;
     }
 
     .stat-label {
       font-size: 0.9rem;
-      color: #555;
-      line-height: 1.4;
-      max-width: 200px;
+      color: #666;
+      line-height: 1.5;
+      max-width: 220px;
+      margin: 0 auto;
     }
 
-    .networks-section, .cooperation-domains {
-      padding: 80px 20px;
+    .stat-separator {
+      width: 1px;
+      height: 80px;
+      background: #c9a961;
+      flex-shrink: 0;
+    }
+
+    /* Networks Section */
+    .networks-section {
+      padding: 100px 0;
       background: white;
-    }
-
-    .cooperation-domains {
-      background: #f8f9fa;
     }
 
     .section-header {
       display: flex;
       align-items: center;
-      justify-content: center;
       gap: 30px;
       margin-bottom: 20px;
     }
 
+    .section-header.centered {
+      justify-content: center;
+    }
+
     .section-header h2 {
-      font-size: 1.8rem;
+      font-size: 2.5rem;
       font-weight: 700;
-      color: #2c3e50;
+      color: #1a1a1a;
       margin: 0;
+      letter-spacing: 1px;
+      text-transform: uppercase;
       white-space: nowrap;
     }
 
     .header-line {
-      flex: 1;
-      max-width: 200px;
+      flex: 0 0 60px;
       height: 2px;
-      background: linear-gradient(to right, transparent, #c9a961, transparent);
+      background: #c9a961;
+    }
+
+    .header-line-left,
+    .header-line-right {
+      flex: 0 0 60px;
+      height: 2px;
+      background: #c9a961;
     }
 
     .section-subtitle {
-      text-align: center;
-      font-size: 1rem;
+      font-size: 0.9rem;
       color: #c9a961;
-      margin-bottom: 50px;
-      max-width: 900px;
-      margin-left: auto;
-      margin-right: auto;
-      line-height: 1.6;
+      margin: 0 0 60px 0;
+      line-height: 1.7;
+      letter-spacing: 0.3px;
+    }
+
+    .section-subtitle.centered {
+      text-align: center;
     }
 
     .network-cards {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+      grid-template-columns: repeat(2, 1fr);
       gap: 40px;
     }
 
     .network-card {
       background: white;
-      padding: 35px;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
       border: 1px solid #e0e0e0;
+      position: relative;
+      transition: all 0.3s ease;
+      overflow: hidden;
+    }
+
+    .network-card:hover {
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .card-accent {
+      width: 4px;
+      height: 100%;
+      background: #c9a961;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+
+    .card-content {
+      padding: 30px 30px 30px 40px;
     }
 
     .network-card h3 {
       font-size: 1.4rem;
-      color: #2c3e50;
-      margin-bottom: 8px;
+      color: #1a1a1a;
+      margin: 0 0 10px 0;
       font-weight: 700;
+      letter-spacing: 0.5px;
     }
 
     .network-full-name {
       font-size: 0.9rem;
       color: #666;
-      margin-bottom: 20px;
+      margin: 0 0 20px 0;
       display: block;
+      font-weight: 400;
     }
 
     .network-description {
       line-height: 1.8;
       color: #555;
       font-size: 0.95rem;
+      margin: 0;
+    }
+
+    /* Cooperation Section */
+    .cooperation-section {
+      padding: 100px 0;
+      background: #e8eef7;
     }
 
     .domain-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      grid-template-columns: repeat(4, 1fr);
       gap: 30px;
     }
 
     .domain-card {
-      background: white;
-      padding: 35px 25px;
-      border-radius: 8px;
-      text-align: center;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-      border: 1px solid #e0e0e0;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      background: #f8f8f8;
+      padding: 30px;
+      transition: all 0.3s ease;
+      border: none;
     }
 
     .domain-card:hover {
       transform: translateY(-5px);
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    }
+
+    .domain-header {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      margin-bottom: 20px;
     }
 
     .domain-icon {
       width: 50px;
       height: 50px;
-      margin: 0 auto 20px;
-      color: #c9a961;
+      min-width: 50px;
+      color: #666;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid #BF9874;
+      border-radius: 50%;
     }
 
     .domain-icon svg {
-      width: 100%;
-      height: 100%;
+      width: 24px;
+      height: 24px;
     }
 
     .domain-card h3 {
-      font-size: 1.2rem;
-      color: #2c3e50;
-      margin-bottom: 15px;
+      font-size: 1.1rem;
+      color: #1a1a1a;
+      margin: 0;
       font-weight: 600;
+      letter-spacing: 0.3px;
     }
 
     .domain-card p {
       line-height: 1.7;
-      color: #555;
+      color: #666;
       font-size: 0.9rem;
+      text-align: left;
+      margin: 0;
     }
 
+    /* Collaboration Section */
     .collaboration-section {
-      background: #f0f0f0;
-      padding: 60px 40px;
-      text-align: center;
-      margin: 80px 20px 0;
+      background: #f5f5f5;
+      padding: 60px 0;
     }
 
-    .collaboration-section h2 {
+    .collaboration-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 50px;
+    }
+
+    .collaboration-text h2 {
       font-size: 1.8rem;
       margin-bottom: 15px;
-      color: #2c3e50;
+      color: #1a1a1a;
       font-weight: 600;
-    }
-
-    .collaboration-section p {
-      font-size: 1rem;
-      line-height: 1.6;
-      margin-bottom: 30px;
-      max-width: 700px;
-      margin-left: auto;
-      margin-right: auto;
-      color: #555;
-    }
-
-    .contact-btn {
-      background-color: #2c3e50;
-      color: white;
-      border: none;
-      padding: 12px 35px;
-      font-size: 0.95rem;
-      font-weight: 600;
-      border-radius: 4px;
-      cursor: pointer;
-      transition: background-color 0.3s ease, transform 0.2s ease;
-      text-transform: uppercase;
       letter-spacing: 0.5px;
     }
 
+    .collaboration-text p {
+      font-size: 1rem;
+      line-height: 1.7;
+      margin: 0;
+      color: #666;
+    }
+
+    .contact-btn {
+      background-color: #1a1a1a;
+      color: white;
+      border: none;
+      padding: 16px 40px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      border-radius: 0;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      white-space: nowrap;
+    }
+
     .contact-btn:hover {
-      background-color: #1a2938;
+      background-color: #000;
       transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Footer Section */
+    .footer-section {
+      background-color: transparent;
+    }
+
+    .footer-main {
+      background-color: #2C3E50;
+      color: #b0b0b0;
+      padding: 60px 0 40px;
+      position: relative;
+    }
+
+    .footer-logo-wrapper {
+      position: absolute;
+      top: -40px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: white;
+      width: 120px;
+      height: 120px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 50px;
+      padding-top: 40px;
+    }
+
+    .footer-column h3 {
+      color: white;
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+
+    .footer-column p {
+      font-size: 0.9rem;
+      line-height: 1.8;
+      margin: 5px 0;
+      color: #b0b0b0;
+    }
+
+    .footer-column ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .footer-column ul li {
+      margin-bottom: 12px;
+    }
+
+    .footer-column ul li a {
+      color: #b0b0b0;
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: color 0.3s ease;
+    }
+
+    .footer-column ul li a:hover {
+      color: #BF9874;
+    }
+
+    .footer-bottom {
+      background-color: #EAF1FA;
+      padding: 25px 0;
+    }
+
+    .footer-bottom-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .social-icons {
+      display: flex;
+      gap: 15px;
+    }
+
+    .social-icon {
+      width: 36px;
+      height: 36px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #5A7184;
+      border-radius: 50%;
+      color: white;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .social-icon:hover {
+      background-color: #BF9874;
+    }
+
+    .social-icon svg {
+      width: 16px;
+      height: 16px;
+    }
+
+    .copyright {
+      font-size: 0.85rem;
+      color: #555;
+    }
+
+    .privacy-link {
+      color: #555;
+      text-decoration: none;
+      font-size: 0.85rem;
+      transition: color 0.3s ease;
+    }
+
+    .privacy-link:hover {
+      color: #BF9874;
     }
 
     @media (max-width: 1024px) {
-      .hero-grid {
-        gap: 40px;
+      .offer-grid,
+      .practice-grid,
+      .newsletter-grid {
+        grid-template-columns: repeat(2, 1fr);
       }
 
-      .hero-title h1 {
-        font-size: 3rem;
+      .quick-links-container {
+        flex-wrap: wrap;
       }
 
-      .network-cards {
-        grid-template-columns: 1fr;
+      .president-content {
+        grid-template-columns: 380px 1fr;
+      }
+
+      .info-left {
+        gap: 20px;
+      }
+
+      .info-item span {
+        font-size: 0.75rem;
       }
     }
 
     @media (max-width: 768px) {
-      .hero-section {
-        padding: 80px 20px 60px;
+      .quick-links-container,
+      .offer-grid,
+      .practice-grid,
+      .newsletter-grid {
+        grid-template-columns: 1fr;
       }
 
-      .hero-grid {
+      .president-content {
         grid-template-columns: 1fr;
-        gap: 30px;
+      }
+
+      .contact-bar {
+        flex-direction: column;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+    @media (max-width: 768px) {
+      .hero-section {
+        padding: 80px 0;
       }
 
       .hero-title h1 {
         font-size: 2.5rem;
+        letter-spacing: 2px;
       }
 
       .hero-description p {
         font-size: 0.95rem;
       }
 
-      .stats-section {
+      .stats-grid {
         flex-direction: column;
-        gap: 40px;
-        padding: 50px 20px;
+        gap: 30px;
       }
 
-      .stat-item {
-        padding: 0 20px;
+      .stat-separator {
+        display: none;
+      }
+
+      .section-header {
+        gap: 20px;
+      }
+
+      .section-header h2 {
+        font-size: 2rem;
+      }
+
+      .header-line,
+      .header-line-left,
+      .header-line-right {
+        flex: 0 0 40px;
+      }
+
+      .domain-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 35px;
+      }
+
+      .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .social-icons {
+        justify-content: center;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .hero-section {
+        padding: 60px 0;
+      }
+
+      .hero-title h1 {
+        font-size: 2rem;
+        letter-spacing: 1.5px;
       }
 
       .stat-number {
         font-size: 2.5rem;
+      }
+
+      .section-header h2 {
+        font-size: 1.5rem;
       }
 
       .section-header {
         gap: 15px;
       }
 
-      .section-header h2 {
-        font-size: 1.4rem;
-      }
-
-      .header-line {
-        max-width: 40px;
-      }
-
-      .section-subtitle {
-        font-size: 0.95rem;
-        padding: 0 10px;
-      }
-
-      .network-cards {
-        grid-template-columns: 1fr;
-        gap: 30px;
-      }
-
-      .network-card {
-        padding: 25px;
-      }
-
-      .network-card h3 {
-        font-size: 1.2rem;
-      }
-
-      .domain-grid {
-        grid-template-columns: 1fr;
-        gap: 25px;
-      }
-
-      .domain-card {
-        padding: 30px 20px;
-      }
-
-      .collaboration-section {
-        padding: 40px 20px;
-        margin: 60px 15px 0;
-      }
-
-      .collaboration-section h2 {
-        font-size: 1.5rem;
-      }
-
-      .collaboration-section p {
-        font-size: 0.95rem;
-      }
-
-      .networks-section, .cooperation-domains {
-        padding: 60px 20px;
-      }
-    }
-
-    @media (max-width: 480px) {
-      .hero-title h1 {
-        font-size: 2rem;
-      }
-
-      .hero-description p {
-        font-size: 0.9rem;
-      }
-
-      .stats-section {
-        padding: 40px 15px;
-      }
-
-      .stat-number {
-        font-size: 2rem;
-      }
-
-      .stat-label {
-        font-size: 0.85rem;
-      }
-
-      .section-header {
-        flex-direction: column;
-        gap: 10px;
-      }
-
-      .section-header h2 {
-        font-size: 1.2rem;
-      }
-
-      .header-line {
-        display: none;
-      }
-
-      .network-card {
-        padding: 20px;
-      }
-
-      .network-card h3 {
-        font-size: 1.1rem;
-      }
-
-      .network-full-name {
-        font-size: 0.85rem;
-      }
-
-      .network-description {
-        font-size: 0.9rem;
-      }
-
-      .domain-card h3 {
-        font-size: 1.1rem;
-      }
-
-      .domain-card p {
-        font-size: 0.85rem;
-      }
-
-      .collaboration-section {
-        margin: 40px 10px 0;
-        padding: 30px 15px;
-      }
-
-      .collaboration-section h2 {
-        font-size: 1.3rem;
+      .header-line,
+      .header-line-left,
+      .header-line-right {
+        flex: 0 0 30px;
       }
 
       .contact-btn {
-        padding: 10px 25px;
-        font-size: 0.85rem;
-      }
-
-      .networks-section, .cooperation-domains {
-        padding: 40px 15px;
+        width: 100%;
+        padding: 14px 30px;
       }
     }
   `]
