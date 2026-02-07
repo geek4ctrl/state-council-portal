@@ -242,7 +242,6 @@ import { ActivatedRoute } from '@angular/router';
   `,
   styles: [`
     .page-container {
-      padding-top: 80px;
       background: white;
       min-height: 100vh;
     }
@@ -273,6 +272,7 @@ import { ActivatedRoute } from '@angular/router';
       margin: 0;
       letter-spacing: 3px;
       line-height: 1.1;
+      color: white;
     }
 
     .hero-right p {
