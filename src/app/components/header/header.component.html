@@ -29,12 +29,12 @@
   </div>
 
   <!-- Main Navigation -->
-  <nav class="main-nav" role="navigation" aria-label="Main navigation">
+  <nav class="main-nav">
     <div class="container">
       <div class="nav-content">
         <!-- Logo -->
-        <a href="/" class="logo" (click)="closeMobileMenu()" aria-label="State Council - Home">
-          <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 100 100" fill="none" aria-hidden="true" focusable="false">
+        <a href="/" class="logo" (click)="closeMobileMenu()">
+          <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 100 100" fill="none">
             <path d="M50 10 L15 30 L15 50 L50 90 L85 50 L85 30 Z" fill="#8B6914"/>
             <path d="M50 25 L30 35 L30 50 L50 70 L70 50 L70 35 Z" fill="#C8956B"/>
             <rect x="45" y="40" width="10" height="20" fill="white"/>
@@ -42,39 +42,29 @@
         </a>
 
         <!-- Hamburger Menu Button -->
-        <button
-          class="hamburger"
-          (click)="toggleMobileMenu()"
-          [class.active]="isMobileMenuOpen()"
-          [attr.aria-expanded]="isMobileMenuOpen()"
-          [attr.aria-label]="isMobileMenuOpen() ? 'Close menu' : 'Open menu'">
+        <button class="hamburger" (click)="toggleMobileMenu()" [class.active]="isMobileMenuOpen()" aria-label="Toggle menu">
           <span></span>
           <span></span>
           <span></span>
         </button>
 
         <!-- Navigation Menu -->
-        <ul class="nav-menu" [class.mobile-open]="isMobileMenuOpen()" role="menubar">
-          <li class="nav-item" role="none">
-            <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="nav-link" (click)="closeMobileMenu()" appPreloadOnHover="/" role="menuitem">
+        <ul class="nav-menu" [class.mobile-open]="isMobileMenuOpen()">
+          <li class="nav-item">
+            <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="nav-link" (click)="closeMobileMenu()" appPreloadOnHover="/">
               HOME
             </a>
           </li>
-          <li class="nav-item dropdown" role="none">
+          <li class="nav-item dropdown">
             <button
               class="nav-link dropdown-toggle"
               (click)="toggleCourtDropdown()"
-              (keydown.escape)="closeDropdowns()"
-              [class.active]="isCourtDropdownOpen()"
-              [attr.aria-expanded]="isCourtDropdownOpen()"
-              aria-haspopup="true"
-              aria-label="The Court menu"
-              role="menuitem">
+              [class.active]="isCourtDropdownOpen()">
               THE COURT
-              <app-icon name="chevron-down" [size]="16" [customClass]="isCourtDropdownOpen() ? 'rotated' : ''" [attr.aria-hidden]="true"></app-icon>
+              <app-icon name="chevron-down" [size]="16" [customClass]="isCourtDropdownOpen() ? 'rotated' : ''"></app-icon>
             </button>
             @if (isCourtDropdownOpen()) {
-              <ul class="dropdown-menu" role="menu" aria-label="The Court submenu">
+              <ul class="dropdown-menu">
                 <li><a routerLink="/presentation" class="dropdown-link" (click)="closeMobileMenu()" appPreloadOnHover="/presentation">Presentation</a></li>
                 <li><a routerLink="/organization" class="dropdown-link" (click)="closeMobileMenu()" appPreloadOnHover="/organization">Organization</a></li>
                 <li><a routerLink="/reforms" class="dropdown-link" (click)="closeMobileMenu()" appPreloadOnHover="/reforms">Reforms</a></li>
@@ -87,36 +77,28 @@
               AUDIENCES
             </a>
           </li>
-          <li class="nav-item dropdown">
-            <button
-              class="nav-link dropdown-toggle"
-              (click)="toggleStepsDropdown()"
-              [class.active]="isStepsDropdownOpen()">
+
+          <!-- STEPS now just a link, no dropdown -->
+          <li class="nav-item">
+            <a routerLink="/steps" routerLinkActive="active" class="nav-link" (click)="closeMobileMenu()">
               STEPS
-              <app-icon name="chevron-down" [size]="16" [customClass]="isStepsDropdownOpen() ? 'rotated' : ''"></app-icon>
-            </button>
-            @if (isStepsDropdownOpen()) {
-              <ul class="dropdown-menu">
-                <li><a routerLink="/steps" [queryParams]="{tab: 'report'}" class="dropdown-link" (click)="closeMobileMenu()">Report</a></li>
-                <li><a routerLink="/steps" [queryParams]="{tab: 'appointment'}" class="dropdown-link" (click)="closeMobileMenu()">Book Appointment</a></li>
-                <li><a routerLink="/steps" [queryParams]="{tab: 'appeal'}" class="dropdown-link" (click)="closeMobileMenu()">File an Appeal</a></li>
-              </ul>
-            }
+            </a>
           </li>
-          <li class="nav-item" role="none">
-            <a routerLink="/news" routerLinkActive="active" class="nav-link" (click)="closeMobileMenu()" appPreloadOnHover="/news" role="menuitem">
+
+          <li class="nav-item">
+            <a routerLink="/news" routerLinkActive="active" class="nav-link" (click)="closeMobileMenu()" appPreloadOnHover="/news">
               NEWS
             </a>
           </li>
-          <li class="nav-item mobile-only" role="none">
-            <button class="btn-appointment mobile" (click)="navigateToAppointment()" aria-label="Book an appointment">
+          <li class="nav-item mobile-only">
+            <button class="btn-appointment mobile" (click)="navigateToAppointment()">
               Book Appointment
             </button>
           </li>
         </ul>
 
         <!-- Book Appointment Button (Desktop Only) -->
-        <button class="btn-appointment desktop-only" (click)="navigateToAppointment()" aria-label="Book an appointment">
+        <button class="btn-appointment desktop-only" (click)="navigateToAppointment()">
           Book Appointment
         </button>
       </div>

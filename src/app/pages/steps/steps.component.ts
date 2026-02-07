@@ -16,6 +16,7 @@ import { ActivatedRoute } from '@angular/router';
               <div class="hero-left">
                 <h1>REPORT</h1>
               </div>
+              <div class="vertical-line"></div>
               <div class="hero-right">
                 <p>Injustice can manifest itself in many ways in our society. We give you the opportunity to report all forms abuse.</p>
               </div>
@@ -31,6 +32,7 @@ import { ActivatedRoute } from '@angular/router';
               <div class="hero-left">
                 <h1>BOOK<br>APPOINTMENT</h1>
               </div>
+              <div class="vertical-line"></div>
               <div class="hero-right">
                 <p>To arrange a meeting with the State Council, please complete the following appointment request form. Ensure all required fields are filled out accurately so we can process your request efficiently. You'll receive a confirmation email or phone call with the scheduled date and time.</p>
               </div>
@@ -46,6 +48,7 @@ import { ActivatedRoute } from '@angular/router';
               <div class="hero-left">
                 <h1>APPEAL TO THE<br>STATE<br>COUNCIL</h1>
               </div>
+              <div class="vertical-line"></div>
               <div class="hero-right">
                 <p>
                   An appeal to the State Council is an administrative legal remedy allowing a party to challenge administrative decisions and acts. The State Council verifies whether administrative law was correctly applied and whether proper procedures were followed.
@@ -69,12 +72,14 @@ import { ActivatedRoute } from '@angular/router';
               class="tab">
               Report
             </button>
+            <div class="tab-separator"></div>
             <button
               (click)="activeTab.set('appointment')"
               [class.active]="activeTab() === 'appointment'"
               class="tab">
               Book An Appointment
             </button>
+            <div class="tab-separator"></div>
             <button
               (click)="activeTab.set('appeal')"
               [class.active]="activeTab() === 'appeal'"
@@ -261,7 +266,7 @@ import { ActivatedRoute } from '@angular/router';
 
     .hero-grid {
       display: grid;
-      grid-template-columns: 1fr 1.5fr;
+      grid-template-columns: 1fr auto 1.5fr;
       gap: 60px;
       align-items: center;
     }
@@ -273,6 +278,13 @@ import { ActivatedRoute } from '@angular/router';
       letter-spacing: 3px;
       line-height: 1.1;
       color: white;
+    }
+
+    .vertical-line {
+      width: 3px;
+      height: 180px;
+      background-color: #ffffff;
+      display: block;
     }
 
     .hero-right p {
@@ -295,6 +307,7 @@ import { ActivatedRoute } from '@angular/router';
     .tabs {
       display: flex;
       gap: 0;
+      align-items: center;
     }
 
     .tab {
@@ -320,6 +333,13 @@ import { ActivatedRoute } from '@angular/router';
       color: #2c3e50;
       border-bottom-color: #8B6914;
       font-weight: 600;
+    }
+
+    .tab-separator {
+      width: 1px;
+      height: 30px;
+      background: #d0d0d0;
+      flex-shrink: 0;
     }
 
     /* Form Section */
@@ -445,6 +465,10 @@ import { ActivatedRoute } from '@angular/router';
         text-align: center;
       }
 
+      .vertical-line {
+        display: none;
+      }
+
       .hero-left h1 {
         font-size: 3rem;
       }
@@ -474,6 +498,10 @@ import { ActivatedRoute } from '@angular/router';
 
       .tab.active {
         border-bottom-color: #8B6914;
+      }
+
+      .tab-separator {
+        display: none;
       }
 
       .form-row {

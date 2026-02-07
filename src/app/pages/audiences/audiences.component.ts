@@ -190,8 +190,8 @@ import { CommonModule } from '@angular/common';
         </div>
       </section>
 
-      <!-- Footer Section -->
-        <footer class="footer-section">
+    <!-- Footer Section -->
+    <footer class="footer-section">
       <div class="footer-main">
         <div class="footer-logo-wrapper">
           <svg width="80" height="80" viewBox="0 0 100 100" fill="none">
@@ -322,22 +322,21 @@ import { CommonModule } from '@angular/common';
 
       .hero-grid {
         display: grid;
-        grid-template-columns: 1fr auto 1fr;
-        gap: 0;
+        grid-template-columns: 1fr auto 1.2fr;
+        gap: 60px;
         align-items: center;
       }
 
       .hero-title {
         position: relative;
         text-align: left;
-        padding-right: 50px;
       }
 
       .vertical-line {
-        width: 4px;
-        height: 200px;
-        background: white;
-        margin: 0 50px;
+        width: 3px;
+        height: 180px;
+        background-color: #ffffff;
+        display: block;
       }
 
       .hero-description {
@@ -351,7 +350,7 @@ import { CommonModule } from '@angular/common';
         margin: 0;
         letter-spacing: 3px;
         text-transform: uppercase;
-        color: white;
+        color: #ffffff;
         font-family: 'Playfair Display', serif;
       }
 
@@ -475,7 +474,7 @@ import { CommonModule } from '@angular/common';
         bottom: 0;
         left: 0;
         right: 0;
-  background: transparent !important;
+        background: transparent !important;
         padding: 12px 15px;
         display: flex;
         justify-content: space-between;
@@ -486,7 +485,6 @@ import { CommonModule } from '@angular/common';
 
       .label-text {
         font-weight: 400;
-        // letter-spacing: 0.3px;
       }
 
       .label-date {
@@ -586,8 +584,7 @@ import { CommonModule } from '@angular/common';
       }
 
       /* Footer Section */
-      /* Footer */
-    .footer-section {
+      .footer-section {
       background-color: transparent;
     }
 
@@ -752,35 +749,27 @@ import { CommonModule } from '@angular/common';
         grid-template-columns: 1fr;
       }
 
-      .connector-line {
-        display: none;
-      }
 
-      .section-subtitle {
-        padding-left: 0 !important;
-      }
 
-      .top-info-content {
-        flex-direction: column;
-        gap: 15px;
-      }
+        .section-header {
+          flex-direction: column;
+          align-items: flex-start;
+        }
 
-      .info-left {
-        flex-direction: column;
-        gap: 10px;
-        width: 100%;
-        align-items: flex-start;
-      }
+        .header-line {
+          display: none;
+        }
 
-      .info-item {
-        font-size: 0.75rem;
-      }
+        .assistance-section {
+          flex-direction: column;
+          padding: 40px 30px;
+        }
 
-      .social-links {
-        width: 100%;
-        justify-content: center;
+        .contact-btn {
+          width: 100%;
+        }
       }
-    }
-  `]
+    `
+  ]
 })
 export class AudiencesComponent {}
