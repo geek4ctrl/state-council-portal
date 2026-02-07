@@ -438,7 +438,7 @@ import { CommonModule } from '@angular/common';
       color: #c9a961;
       margin: 0 0 60px 0;
       line-height: 1.7;
-      letter-spacing: 0.3px;
+      letter-spacing: 1.5px;
     }
 
     .section-subtitle.centered {
