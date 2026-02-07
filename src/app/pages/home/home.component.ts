@@ -1504,7 +1504,7 @@ export class HomeComponent implements OnInit {
     {
       id: 2,
       title: 'STRENGTHENING JUDICIAL INDEPENDENCE AND ACCOUNTABILITY',
-      subtitle: 'JUSTICE FOR ALL',
+      subtitle: 'HOME OF LAW & ORDER',
       description: 'The Court of Cassation continues to uphold the principles of justice, fairness, and the rule of law. We are committed to ensuring transparency and integrity.',
       buttonText: 'Learn More About Our Mission',
       image: 'https://images.unsplash.com/photo-1505664194779-8beaceb93744?w=1920&h=1080&fit=crop'
@@ -1512,7 +1512,7 @@ export class HomeComponent implements OnInit {
     {
       id: 3,
       title: 'ADVANCING LEGAL EXCELLENCE IN THE DEMOCRATIC REPUBLIC OF CONGO',
-      subtitle: 'BUILDING A JUST SOCIETY',
+      subtitle: 'HOME OF LAW & ORDER',
       description: 'Through rigorous legal training and adherence to international best practices, we strive to maintain the highest standards of judicial excellence.',
       buttonText: 'Explore Our Initiatives',
       image: 'https://images.unsplash.com/photo-1479142506502-19b3a3b7ff33?w=1920&h=1080&fit=crop'
