@@ -1,11 +1,10 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { LazyLoadDirective } from '../../directives/lazy-load.directive';
 
 @Component({
   selector: 'app-reforms',
   standalone: true,
-  imports: [CommonModule, LazyLoadDirective],
+  imports: [CommonModule],
   template: `
     <div class="page-container">
       <!-- Hero Section -->
@@ -15,6 +14,7 @@ import { LazyLoadDirective } from '../../directives/lazy-load.directive';
             <div class="hero-content-left">
               <h1>SUGGESTED<br>REFORMS</h1>
             </div>
+            <div class="vertical-line"></div>
             <div class="hero-content-right">
               <p>
                 Modernizing the judicial system through strategic reforms that enhance efficiency, transparency, and access to justice
@@ -28,11 +28,16 @@ import { LazyLoadDirective } from '../../directives/lazy-load.directive';
       <!-- Building Section -->
       <section class="building-section">
         <div class="container">
+          <div class="section-tag">
+            <div class="tag-line"></div>
+            <span>JUDICIAL MODERNIZATION</span>
+          </div>
+          
           <h2 class="section-title">BUILDING A STRONGER JUSTICE SYSTEM</h2>
           <p class="section-description">
-            Anchoring the State Constitution, the Court of Justice as the supreme court in the ordinary judicial system is committed to
-            transforming into a modern, accessible, and efficient justice system for achieving a full scale rule of law that delivers
-            justice in the Democratic Republic of Congo.
+            Following the 2006 Constitution, the Court of Cassation has embarked on comprehensive reforms to strengthen judicial
+            independence, improve access to justice, and align with international standards. These initiatives focus on institutional
+            strengthening, digital transformation, and capacity building.
           </p>
         </div>
       </section>
@@ -40,81 +45,146 @@ import { LazyLoadDirective } from '../../directives/lazy-load.directive';
       <!-- Strategic Reform Initiatives -->
       <section class="initiatives-section">
         <div class="container">
+          <div class="section-tag">
+            <div class="tag-line"></div>
+            <span>TRANSFORMATION ROADMAP</span>
+          </div>
+          
           <h2 class="section-title">STRATEGIC REFORM INITIATIVES</h2>
-          <p class="section-subtitle">KEY PRIORITY AREAS</p>
+          <p class="section-description">
+            A comprehensive five-phase approach to modernizing our judicial system, ensuring excellence at every stage of transformation.
+          </p>
 
-          <div class="diagram-container">
-            <div class="reform-circle">
-              <!-- Top Left -->
-              <div class="reform-card card-1">
-                <div class="card-icon beige">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M7 14v-2h10v2H7z"/>
-                    <path d="M20 8h-3V6c0-1.1-.9-2-2-2H9c-1.1 0-2 .9-2 2v2H4c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zM9 6h6v2H9V6zm11 14H4V10h16v10z"/>
-                    <path d="M12 12c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/>
+          <!-- Process Flow -->
+          <div class="process-flow-container">
+            <!-- Step 1 -->
+            <div class="process-step">
+              <div class="step-number">01</div>
+              <div class="step-content">
+                <div class="step-icon-wrapper" style="background: linear-gradient(135deg, #c8956b 0%, #b8865b 100%);">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="9" cy="7" r="4"></circle>
+                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
                   </svg>
                 </div>
-                <h3>Institutional<br>Independence</h3>
-                <p>Strengthening judicial independence through constitutional safeguards and financial autonomy for the Court.</p>
+                <h3>Institutional Independence</h3>
+                <p>Strengthening judicial independence through constitutional safeguards and financial autonomy.</p>
+                <div class="step-badge critical">Critical Priority</div>
               </div>
+              <div class="arrow-connector">
+                <svg viewBox="0 0 100 60" preserveAspectRatio="none">
+                  <defs>
+                    <marker id="arrowhead1" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+                      <polygon points="0 0, 10 3, 0 6" fill="#c8956b"/>
+                    </marker>
+                  </defs>
+                  <path d="M0,30 Q50,10 100,30" stroke="#c8956b" stroke-width="2" fill="none" stroke-dasharray="5,5" marker-end="url(#arrowhead1)"/>
+                </svg>
+              </div>
+            </div>
 
-              <!-- Top Center -->
-              <div class="reform-card card-2">
-                <div class="card-icon dark-blue">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                    <rect x="2" y="2" width="20" height="20" rx="2" fill="none" stroke="currentColor" stroke-width="2"/>
-                    <path d="M8 10h8M8 14h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                    <circle cx="12" cy="7" r="1.5"/>
+            <!-- Step 2 -->
+            <div class="process-step">
+              <div class="step-number">02</div>
+              <div class="step-content">
+                <div class="step-icon-wrapper" style="background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                    <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
                   </svg>
                 </div>
                 <h3>Access to Justice</h3>
-                <p>Ensuring digital and physical access points, establishing regional service points, and reducing barriers for litigants.</p>
+                <p>Expanding legal aid services and establishing regional access points nationwide.</p>
+                <div class="step-badge high">High Priority</div>
               </div>
+              <div class="arrow-connector">
+                <svg viewBox="0 0 100 60" preserveAspectRatio="none">
+                  <defs>
+                    <marker id="arrowhead2" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+                      <polygon points="0 0, 10 3, 0 6" fill="#c8956b"/>
+                    </marker>
+                  </defs>
+                  <path d="M0,30 Q50,50 100,30" stroke="#c8956b" stroke-width="2" fill="none" stroke-dasharray="5,5" marker-end="url(#arrowhead2)"/>
+                </svg>
+              </div>
+            </div>
 
-              <!-- Top Right -->
-              <div class="reform-card card-3">
-                <div class="card-icon black">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M12 2L3 7v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-9-5zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V9h7V6.3l5 2.42V12z"/>
+            <!-- Step 3 -->
+            <div class="process-step">
+              <div class="step-number">03</div>
+              <div class="step-content">
+                <div class="step-icon-wrapper" style="background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="2" y1="12" x2="22" y2="12"></line>
+                    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
                   </svg>
                 </div>
-                <h3>International<br>Cooperation</h3>
-                <p>Deepening partnerships with AU-COMJE, ACALAN and other international judicial bodies and courts.</p>
+                <h3>International Cooperation</h3>
+                <p>Deepening partnerships with international judicial bodies for knowledge exchange.</p>
+                <div class="step-badge medium">Medium Priority</div>
               </div>
+              <div class="arrow-connector">
+                <svg viewBox="0 0 100 60" preserveAspectRatio="none">
+                  <defs>
+                    <marker id="arrowhead3" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+                      <polygon points="0 0, 10 3, 0 6" fill="#c8956b"/>
+                    </marker>
+                  </defs>
+                  <path d="M0,30 Q50,10 100,30" stroke="#c8956b" stroke-width="2" fill="none" stroke-dasharray="5,5" marker-end="url(#arrowhead3)"/>
+                </svg>
+              </div>
+            </div>
 
-              <!-- Bottom Left -->
-              <div class="reform-card card-4">
-                <div class="card-icon gray">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14z"/>
-                    <path d="M7 10h2v7H7zm4-3h2v10h-2zm4 6h2v4h-2z"/>
+            <!-- Step 4 -->
+            <div class="process-step">
+              <div class="step-number">04</div>
+              <div class="step-content">
+                <div class="step-icon-wrapper" style="background: linear-gradient(135deg, #7d8a96 0%, #8d9aa6 100%);">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                    <line x1="8" y1="21" x2="16" y2="21"></line>
+                    <line x1="12" y1="17" x2="12" y2="21"></line>
                   </svg>
                 </div>
-                <h3>Digital<br>Transformation</h3>
-                <p>Implementing modern case management systems, online filing capabilities, and database for enhanced efficiency.</p>
+                <h3>Digital Transformation</h3>
+                <p>Implementing modern case management systems and online jurisprudence databases.</p>
+                <div class="step-badge high">High Priority</div>
               </div>
+              <div class="arrow-connector">
+                <svg viewBox="0 0 100 60" preserveAspectRatio="none">
+                  <defs>
+                    <marker id="arrowhead4" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+                      <polygon points="0 0, 10 3, 0 6" fill="#c8956b"/>
+                    </marker>
+                  </defs>
+                  <path d="M0,30 Q50,50 100,30" stroke="#c8956b" stroke-width="2" fill="none" stroke-dasharray="5,5" marker-end="url(#arrowhead4)"/>
+                </svg>
+              </div>
+            </div>
 
-              <!-- Bottom Right -->
-              <div class="reform-card card-5">
-                <div class="card-icon orange">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="white">
-                    <text x="10" y="45" font-size="18" font-weight="bold">CAPACITY</text>
-                    <text x="15" y="65" font-size="18" font-weight="bold">BUILDING</text>
+            <!-- Step 5 -->
+            <div class="process-step last-step">
+              <div class="step-number">05</div>
+              <div class="step-content">
+                <div class="step-icon-wrapper" style="background: linear-gradient(135deg, #f39c12 0%, #e67e22 100%);">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                    <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
                   </svg>
                 </div>
                 <h3>Capacity Building</h3>
-                <p>Continuous training for magistrates, international judicial exchanges, and advanced legal training programs.</p>
+                <p>Continuous training for magistrates and advanced legal research capabilities.</p>
+                <div class="step-badge medium">Medium Priority</div>
               </div>
-
-              <!-- Dotted Lines -->
-              <svg class="dotted-lines" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
-                <!-- Pentagon shape connecting all 5 points -->
-                <path d="M 400 80 L 650 250 L 550 520 L 250 520 L 150 250 Z"
-                      stroke="#c0c0c0"
-                      stroke-width="2"
-                      stroke-dasharray="8,6"
-                      fill="none"/>
-              </svg>
+              <div class="completion-badge">
+                <svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="30" cy="30" r="28" stroke="#c8956b" stroke-width="2" fill="none"/>
+                  <path d="M18 30l8 8 16-16" stroke="#c8956b" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
             </div>
           </div>
         </div>
@@ -123,22 +193,119 @@ import { LazyLoadDirective } from '../../directives/lazy-load.directive';
       <!-- Key Stakeholders Section -->
       <section class="stakeholders-section">
         <div class="container">
-          <h2 class="section-title">KEY STAKEHOLDERS</h2>
-          <p class="section-subtitle">DRIVING LEADERSHIP</p>
+          <div class="stakeholders-header">
+            <div class="header-line left"></div>
+            <h2 class="section-title-stakeholders">KEY STAKEHOLDERS</h2>
+            <div class="header-line right"></div>
+          </div>
+          <p class="section-subtitle">REFORM LEADERSHIP</p>
 
           <div class="stakeholders-grid">
             <div class="stakeholder-card" *ngFor="let stakeholder of stakeholders">
               <div class="stakeholder-image">
-                <img [src]="stakeholder.image" [alt]="stakeholder.name" loading="lazy">
+                <img [src]="stakeholder.image" [alt]="stakeholder.name">
+                <div class="image-overlay"></div>
               </div>
-              <h3>{{ stakeholder.name }}</h3>
+              <div class="stakeholder-info">
+                <h3>{{ stakeholder.name }}</h3>
+                <p class="stakeholder-role">{{ stakeholder.role }}</p>
+              </div>
             </div>
           </div>
         </div>
       </section>
+
+     <!-- Footer Section -->
+    <footer class="footer-section">
+      <div class="footer-main">
+        <div class="footer-logo-wrapper">
+          <svg width="80" height="80" viewBox="0 0 100 100" fill="none">
+            <path d="M50 15L35 25V50L50 60L65 50V25L50 15Z" fill="#BF9874"/>
+            <path d="M50 30L42 35V50L50 55L58 50V35L50 30Z" fill="white"/>
+            <rect x="48" y="10" width="4" height="8" fill="#BF9874"/>
+            <rect x="46" y="5" width="8" height="4" fill="#BF9874"/>
+          </svg>
+        </div>
+        <div class="container">
+          <div class="footer-grid">
+            <div class="footer-column">
+              <h3>Main Office</h3>
+              <p>No. 3 Avenue de la Justice</p>
+              <p>Central District of Kinshasa</p>
+              <p>Democratic Republic of Congo</p>
+              <p class="footer-contact">Tel: +243 (21) 0000000</p>
+              <p class="footer-contact">Email: info@conseildetat.cd</p>
+            </div>
+
+            <div class="footer-column">
+              <h3>Quick Links</h3>
+              <ul>
+                <li><a href="#">About the Court</a></li>
+                <li><a href="#">Jurisprudence</a></li>
+                <li><a href="#">Filing Procedures</a></li>
+                <li><a href="#">Contact Us</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-column">
+              <h3>Resources</h3>
+              <ul>
+                <li><a href="#">Legal Documents</a></li>
+                <li><a href="#">Court Decisions</a></li>
+                <li><a href="#">Annual Reports</a></li>
+                <li><a href="#">FAQs</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-column">
+              <h3>Connect</h3>
+              <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">LinkedIn</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="footer-bottom-content">
+            <a href="#" class="privacy-link">Privacy</a>
+            <p class="copyright">Copyright State Council. All Rights Reserved</p>
+            <div class="social-icons">
+              <a href="#" class="social-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"/>
+                </svg>
+              </a>
+              <a href="#" class="social-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M22.46 6c-.85.38-1.78.64-2.75.76 1-.6 1.76-1.55 2.12-2.68-.93.55-1.96.95-3.06 1.17-.88-.94-2.13-1.53-3.51-1.53-2.66 0-4.82 2.16-4.82 4.82 0 .38.04.75.13 1.1-4-.2-7.54-2.12-9.91-5.04-.42.72-.66 1.55-.66 2.44 0 1.67.85 3.15 2.14 4.01-.79-.03-1.53-.24-2.18-.6v.06c0 2.34 1.66 4.29 3.87 4.73-.4.11-.83.17-1.27.17-.31 0-.62-.03-.92-.08.63 1.96 2.44 3.38 4.6 3.42-1.68 1.32-3.8 2.1-6.11 2.1-.4 0-.79-.02-1.17-.07 2.18 1.4 4.77 2.21 7.55 2.21 9.06 0 14-7.5 14-14 0-.21 0-.42-.02-.63.96-.69 1.8-1.56 2.46-2.55z"/>
+                </svg>
+              </a>
+              <a href="#" class="social-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8 1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
     </div>
   `,
   styles: [`
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
     .page-container {
       min-height: 100vh;
       background: white;
@@ -147,7 +314,7 @@ import { LazyLoadDirective } from '../../directives/lazy-load.directive';
     .container {
       max-width: 1200px;
       margin: 0 auto;
-      padding: 0 20px;
+      padding: 0 40px;
     }
 
     /* Hero Section */
@@ -155,25 +322,48 @@ import { LazyLoadDirective } from '../../directives/lazy-load.directive';
       background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
       color: white;
       padding: 100px 0;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-section::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><defs><pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255,255,255,0.03)" stroke-width="1"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+      opacity: 0.3;
     }
 
     .hero-grid {
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 80px;
+      grid-template-columns: 1fr auto 1.3fr;
+      gap: 60px;
       align-items: center;
+      position: relative;
+      z-index: 1;
     }
 
     .hero-content-left h1 {
-      font-size: 3rem;
+      font-size: 3.5rem;
       font-weight: 700;
       line-height: 1.2;
       margin: 0;
       letter-spacing: 2px;
+      font-family: 'Playfair Display', serif;
+    }
+
+    .vertical-line {
+      width: 3px;
+      height: 120px;
+      background-color: #ffffff;
+      display: block;
     }
 
     .hero-content-right p {
-      font-size: 1rem;
+      font-size: 1.05rem;
       line-height: 1.8;
       opacity: 0.95;
       margin: 0;
@@ -185,13 +375,40 @@ import { LazyLoadDirective } from '../../directives/lazy-load.directive';
       padding: 80px 0;
     }
 
+    .section-tag {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      margin-bottom: 25px;
+    }
+
+    .section-tag.centered {
+      justify-content: center;
+      margin-bottom: 30px;
+    }
+
+    .tag-line {
+      width: 60px;
+      height: 2px;
+      background: #BF9874;
+    }
+
+    .section-tag span {
+      font-size: 0.75rem;
+      color: #BF9874;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-weight: 600;
+    }
+
     .section-title {
-      font-size: 2rem;
+      font-size: 2.5rem;
       font-weight: 700;
       color: #1a1a1a;
       text-align: center;
       margin: 0 0 25px 0;
       letter-spacing: 1px;
+      font-family: 'Playfair Display', serif;
     }
 
     .section-description {
@@ -200,130 +417,165 @@ import { LazyLoadDirective } from '../../directives/lazy-load.directive';
       color: #666;
       text-align: center;
       max-width: 900px;
-      margin: 0 auto;
-    }
-
-    /* Initiatives Section */
-    .initiatives-section {
-      background: white;
-      padding: 60px 0 100px;
+      margin: 0 auto 60px;
     }
 
     .section-subtitle {
       text-align: center;
       font-size: 0.85rem;
       color: #999;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      margin: 0 0 60px 0;
+      margin: -10px 0 20px 0;
     }
 
-    .diagram-container {
+    /* Initiatives Section */
+    .initiatives-section {
+      background: linear-gradient(180deg, #fafafa 0%, #ffffff 100%);
+      padding: 80px 0 100px;
+    }
+
+    /* Process Flow Container */
+    .process-flow-container {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 3px;
+      margin: 60px 0 80px;
+      align-items: start;
+    }
+
+    .process-step {
       position: relative;
-      padding: 80px 20px;
-      max-width: 1000px;
-      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
 
-    .reform-circle {
-      position: relative;
-      width: 100%;
-      height: 700px;
-      margin: 0 auto;
-    }
-
-    .reform-card {
-      position: absolute;
-      width: 260px;
-      text-align: center;
-    }
-
-    .card-icon {
-      width: 100px;
-      height: 100px;
-      margin: 0 auto 20px;
+    .step-number {
+      width: 50px;
+      height: 50px;
+      background: linear-gradient(135deg, #c8956b 0%, #b8865b 100%);
+      color: white;
+      border-radius: 50%;
       display: flex;
       align-items: center;
       justify-content: center;
-      border-radius: 4px;
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin-bottom: 25px;
+      box-shadow: 0 4px 12px rgba(200, 149, 107, 0.3);
+      z-index: 2;
+      position: relative;
     }
 
-    .card-icon svg {
-      width: 50px;
-      height: 50px;
+    .step-content {
+      background: white;
+      padding: 30px 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      text-align: center;
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .process-step:hover .step-content {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+    }
+
+    .step-icon-wrapper {
+      width: 70px;
+      height: 70px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 20px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .step-icon-wrapper svg {
+      width: 35px;
+      height: 35px;
       color: white;
     }
 
-    .card-icon.beige {
-      background: #c9a961;
-    }
-
-    .card-icon.dark-blue {
-      background: #2c3e50;
-    }
-
-    .card-icon.black {
-      background: #1a1a1a;
-    }
-
-    .card-icon.gray {
-      background: #7d8a96;
-    }
-
-    .card-icon.orange {
-      background: #f39c12;
-    }
-
-    .reform-card h3 {
+    .step-content h3 {
       font-size: 1.1rem;
-      color: #1a1a1a;
-      margin-bottom: 15px;
       font-weight: 700;
+      color: #1a1a1a;
+      margin: 0 0 15px 0;
       line-height: 1.3;
     }
 
-    .reform-card p {
-      font-size: 0.85rem;
+    .step-content p {
+      font-size: 0.9rem;
       color: #666;
-      line-height: 1.6;
+      line-height: 1.7;
+      margin: 0 0 20px 0;
+      flex-grow: 1;
     }
 
-    /* Position cards in pentagon shape */
-    .card-1 {
-      top: 50px;
-      left: 50px;
+    .step-badge {
+      display: inline-block;
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 0.7rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
     }
 
-    .card-2 {
-      top: 0;
-      left: 50%;
-      transform: translateX(-50%);
+    .step-badge.critical {
+      background: #ffebee;
+      color: #c41e3a;
     }
 
-    .card-3 {
-      top: 50px;
-      right: 50px;
+    .step-badge.high {
+      background: #fff3e0;
+      color: #f39c12;
     }
 
-    .card-4 {
-      bottom: 50px;
-      left: 80px;
+    .step-badge.medium {
+      background: #e8f5e9;
+      color: #4caf50;
     }
 
-    .card-5 {
-      bottom: 50px;
-      right: 80px;
-    }
-
-    .dotted-lines {
+    .arrow-connector {
       position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 100%;
-      height: 100%;
+      top: 25px;
+      left: calc(100% - 25px);
+      width: 100px;
+      height: 60px;
+      z-index: 1;
       pointer-events: none;
-      z-index: 0;
+    }
+
+    .process-step.last-step .arrow-connector {
+      display: none;
+    }
+
+    .completion-badge {
+      position: absolute;
+      top: 25px;
+      left: calc(100% - 5px);
+      width: 60px;
+      height: 60px;
+      animation: checkmark-pop 0.6s ease-out 0.5s both;
+    }
+
+    @keyframes checkmark-pop {
+      0% {
+        opacity: 0;
+        transform: scale(0);
+      }
+      50% {
+        transform: scale(1.1);
+      }
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
     }
 
     /* Stakeholders Section */
@@ -332,29 +584,74 @@ import { LazyLoadDirective } from '../../directives/lazy-load.directive';
       padding: 80px 0;
     }
 
-    .stakeholders-section .section-title {
+    .stakeholders-header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+      margin-bottom: 15px;
+    }
+
+    .header-line {
+      height: 2px;
+      width: 120px;
+      background: linear-gradient(90deg, transparent, #c8956b);
+    }
+
+    .header-line.left {
+      background: linear-gradient(90deg, transparent, #c8956b);
+    }
+
+    .header-line.right {
+      background: linear-gradient(90deg, #c8956b, transparent);
+    }
+
+    .section-title-stakeholders {
+      font-size: 2.5rem;
+      font-weight: 700;
       color: #1a1a1a;
+      text-align: center;
+      margin: 0;
+      letter-spacing: 3px;
+      font-family: 'Playfair Display', serif;
+      text-transform: uppercase;
+    }
+
+    .section-subtitle {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #c8956b;
+      margin: 0 0 50px 0;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      font-weight: 500;
     }
 
     .stakeholders-grid {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      gap: 30px;
+      gap: 40px;
       margin-top: 50px;
     }
 
     .stakeholder-card {
-      text-align: center;
+      background: white;
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .stakeholder-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
     }
 
     .stakeholder-image {
+      position: relative;
       width: 100%;
-      aspect-ratio: 4/5;
+      aspect-ratio: 3/4;
       background: #d0d0d0;
-      margin-bottom: 15px;
-      border-radius: 4px;
       overflow: hidden;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     }
 
     .stakeholder-image img {
@@ -362,57 +659,227 @@ import { LazyLoadDirective } from '../../directives/lazy-load.directive';
       height: 100%;
       object-fit: cover;
       display: block;
+      transition: transform 0.4s ease;
     }
 
-    .stakeholder-card h3 {
-      font-size: 0.95rem;
+    .image-overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 100px;
+      background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, transparent 100%);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .stakeholder-card:hover .image-overlay {
+      opacity: 1;
+    }
+
+    .stakeholder-card:hover .stakeholder-image img {
+      transform: scale(1.05);
+    }
+
+    .stakeholder-info {
+      padding: 25px 20px;
+      text-align: center;
+      background: white;
+    }
+
+    .stakeholder-info h3 {
+      font-size: 1rem;
       color: #1a1a1a;
       font-weight: 700;
-      margin: 0;
+      margin: 0 0 8px 0;
       text-transform: uppercase;
+      letter-spacing: 0.5px;
     }
 
-    /* Responsive Design */
+    .stakeholder-role {
+      font-size: 0.85rem;
+      color: #c8956b;
+      font-weight: 500;
+      margin: 0;
+    }
+
+    /* Footer Section */
+     .footer-section {
+      background-color: transparent;
+    }
+
+    .footer-main {
+      background-color: #2C3E50;
+      color: #b0b0b0;
+      padding: 60px 0 40px;
+      position: relative;
+    }
+
+    .footer-logo-wrapper {
+      position: absolute;
+      top: -40px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: white;
+      width: 120px;
+      height: 120px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 50px;
+      padding-top: 40px;
+    }
+
+    .footer-column h3 {
+      color: white;
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+
+    .footer-column p {
+      font-size: 0.9rem;
+      line-height: 1.8;
+      margin: 5px 0;
+      color: #b0b0b0;
+    }
+
+    .footer-column ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .footer-column ul li {
+      margin-bottom: 12px;
+    }
+
+    .footer-column ul li a {
+      color: #b0b0b0;
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: color 0.3s ease;
+    }
+
+    .footer-column ul li a:hover {
+      color: #BF9874;
+    }
+
+    .footer-bottom {
+      background-color: #EAF1FA;
+      padding: 25px 0;
+    }
+
+    .footer-bottom-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .social-icons {
+      display: flex;
+      gap: 15px;
+    }
+
+    .social-icon {
+      width: 36px;
+      height: 36px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #5A7184;
+      border-radius: 50%;
+      color: white;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .social-icon:hover {
+      background-color: #BF9874;
+    }
+
+    .social-icon svg {
+      width: 16px;
+      height: 16px;
+    }
+
+    .copyright {
+      font-size: 0.85rem;
+      color: #555;
+    }
+
+    .privacy-link {
+      color: #555;
+      text-decoration: none;
+      font-size: 0.85rem;
+      transition: color 0.3s ease;
+    }
+
+    .privacy-link:hover {
+      color: #BF9874;
+    }
+
     @media (max-width: 1024px) {
-      .hero-grid {
-        grid-template-columns: 1fr;
-        gap: 40px;
-      }
-
-      .hero-content-left h1 {
-        font-size: 2.5rem;
-      }
-
-      .reform-circle {
-        height: 600px;
-      }
-
-      .reform-card {
-        width: 220px;
-      }
-
-      .card-icon {
-        width: 80px;
-        height: 80px;
-      }
-
-      .card-icon svg {
-        width: 40px;
-        height: 40px;
-      }
-
-      .stakeholders-grid {
+      .offer-grid,
+      .practice-grid,
+      .newsletter-grid {
         grid-template-columns: repeat(2, 1fr);
+      }
+
+      .quick-links-container {
+        flex-wrap: wrap;
+      }
+
+      .president-content {
+        grid-template-columns: 380px 1fr;
+      }
+
+      .info-left {
+        gap: 20px;
+      }
+
+      .info-item span {
+        font-size: 0.75rem;
       }
     }
 
     @media (max-width: 768px) {
+      .quick-links-container,
+      .offer-grid,
+      .practice-grid,
+      .newsletter-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .president-content {
+        grid-template-columns: 1fr;
+      }
+
+      .contact-bar {
+        flex-direction: column;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+      
+    @media (max-width: 768px) {
+      .container {
+        padding: 0 25px;
+      }
+
       .hero-section {
         padding: 80px 0;
       }
 
       .hero-content-left h1 {
-        font-size: 2rem;
+        font-size: 2.25rem;
       }
 
       .building-section,
@@ -422,34 +889,45 @@ import { LazyLoadDirective } from '../../directives/lazy-load.directive';
       }
 
       .section-title {
-        font-size: 1.6rem;
+        font-size: 2rem;
       }
 
-      .diagram-container {
-        padding: 60px 20px;
-      }
-
-      .reform-circle {
-        position: static;
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        gap: 40px;
-      }
-
-      .reform-card {
-        position: static !important;
-        width: 100%;
-        transform: none !important;
-      }
-
-      .dotted-lines {
-        display: none;
+      .process-flow-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
       }
 
       .stakeholders-grid {
         grid-template-columns: 1fr;
-        gap: 30px;
+        gap: 25px;
+      }
+
+      .stakeholders-header {
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      .header-line {
+        width: 60px;
+      }
+
+      .section-title-stakeholders {
+        font-size: 1.75rem;
+        letter-spacing: 2px;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 35px;
+      }
+
+      .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .social-icons {
+        justify-content: center;
       }
     }
 
@@ -459,37 +937,36 @@ import { LazyLoadDirective } from '../../directives/lazy-load.directive';
       }
 
       .hero-content-left h1 {
-        font-size: 1.6rem;
-      }
-
-      .hero-content-right p {
-        font-size: 0.9rem;
+        font-size: 1.75rem;
       }
 
       .section-title {
-        font-size: 1.4rem;
-      }
-
-      .section-description {
-        font-size: 0.9rem;
-      }
-
-      .reform-card h3 {
-        font-size: 1rem;
-      }
-
-      .reform-card p {
-        font-size: 0.8rem;
+        font-size: 1.6rem;
       }
     }
   `]
 })
 export class ReformsComponent {
   stakeholders = [
-    { name: 'BAYONA NSOMWE', image: 'https://placehold.co/300x400' },
-    { name: 'NGOMBA KABEYYA', image: 'https://placehold.co/300x400' },
-    { name: 'CHRISTINA MWALE', image: 'https://placehold.co/300x400' },
-    { name: 'BUKENGELA MUGDERINA', image: 'https://placehold.co/300x400' }
+    { 
+      name: 'BAGUNDA NSIMIRE', 
+      role: 'President',
+      image: 'https://i.pravatar.cc/400?img=12' 
+    },
+    { 
+      name: 'NDOMBA KABEYA', 
+      role: 'Vice President',
+      image: 'https://i.pravatar.cc/400?img=33' 
+    },
+    { 
+      name: 'CHRISTINA WOCIN', 
+      role: 'Chief Magistrate',
+      image: 'https://i.pravatar.cc/400?img=47' 
+    },
+    { 
+      name: 'MUKENGULE MUDERHWA', 
+      role: 'International Relations',
+      image: 'https://i.pravatar.cc/400?img=56' 
+    }
   ];
 }
-
