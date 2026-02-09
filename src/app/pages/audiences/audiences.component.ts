@@ -481,6 +481,8 @@ import { CommonModule } from '@angular/common';
         align-items: center;
         color: black;
         font-size: 0.8rem;
+        gap: 8px;
+        flex-wrap: wrap;
       }
 
       .label-text {
@@ -727,6 +729,14 @@ import { CommonModule } from '@angular/common';
       .info-item span {
         font-size: 0.75rem;
       }
+
+      .documents-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .document-preview {
+        height: 280px;
+      }
     }
 
     @media (max-width: 768px) {
@@ -747,6 +757,23 @@ import { CommonModule } from '@angular/common';
 
       .footer-grid {
         grid-template-columns: 1fr;
+      }
+
+      .documents-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+      }
+
+      .document-preview {
+        height: 240px;
+      }
+
+      .document-info {
+        padding: 20px 18px;
+      }
+
+      .document-info h3 {
+        min-height: auto;
       }
 
 
