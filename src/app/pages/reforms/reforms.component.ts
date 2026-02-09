@@ -35,7 +35,7 @@ import { CommonModule } from '@angular/common';
           
           <h2 class="section-title">BUILDING A STRONGER JUSTICE SYSTEM</h2>
           <p class="section-description">
-            Following the 2006 Constitution, the Court of Cassation has embarked on comprehensive reforms to strengthen judicial
+            Following the 2006 Constitution, the STATE COUNCIL has embarked on comprehensive reforms to strengthen judicial
             independence, improve access to justice, and align with international standards. These initiatives focus on institutional
             strengthening, digital transformation, and capacity building.
           </p>

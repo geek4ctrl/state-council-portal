@@ -199,7 +199,7 @@ interface PresidentSlide {
           <h2 class="section-title">FIELDS OF EXPERTISE</h2>
           <div class="expertise-line"></div>
         </div>
-        <p class="section-subtitle">The Court of Cassation exercises jurisdiction over various legal matters as the supreme court of the ordinary judicial system.</p>
+        <p class="section-subtitle">The STATE COUNCIL exercises jurisdiction over various legal matters as the supreme court of the ordinary judicial system.</p>
         
         <div class="practice-grid">
           <div class="practice-card">
@@ -285,7 +285,7 @@ interface PresidentSlide {
             <div class="practice-content">
               <h3>Criminal Law</h3>
               <ul>
-                <li>Criminal appeals in cassation</li>
+                <li>Criminal appeals to the State Council</li>
                 <li>Procedural error reviews</li>
                 <li>Application of criminal law</li>
               </ul>
@@ -394,11 +394,11 @@ interface PresidentSlide {
 
           <div class="news-card">
             <div class="news-image">
-              <img src="https://images.unsplash.com/photo-1505664194779-8beaceb93744?w=800&h=600&fit=crop" alt="Cassation">
+              <img src="https://images.unsplash.com/photo-1505664194779-8beaceb93744?w=800&h=600&fit=crop" alt="State Council proceedings">
             </div>
             <div class="news-content">
               <p class="news-date">22 Oct 2025 | Court Update</p>
-              <h3>Key Considerations in Cassation Proceedings</h3>
+              <h3>Key Considerations in State Council Proceedings</h3>
               <a href="#" class="read-more-link">
                 Read More
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -1495,7 +1495,7 @@ export class HomeComponent implements OnInit {
   heroSlides: HeroSlide[] = [
     {
       id: 1,
-      title: 'DRC: JUDICIAL YEAR BEGINS AT THE COURT OF CASSATION FOR THE 2025-2026 TERM',
+      title: 'DRC: JUDICIAL YEAR BEGINS AT THE STATE COUNCIL FOR THE 2025-2026 TERM',
       subtitle: 'HOME OF LAW & ORDER',
       description: 'This video covers the formal opening of the judicial year for 2025-2026. In the presence of President Felix Tshisekedi, the session brought together senior judges and legal officials.',
       buttonText: 'Watch Live Proceeding on Youtube',
@@ -1505,7 +1505,7 @@ export class HomeComponent implements OnInit {
       id: 2,
       title: 'STRENGTHENING JUDICIAL INDEPENDENCE AND ACCOUNTABILITY',
       subtitle: 'HOME OF LAW & ORDER',
-      description: 'The Court of Cassation continues to uphold the principles of justice, fairness, and the rule of law. We are committed to ensuring transparency and integrity.',
+      description: 'The STATE COUNCIL continues to uphold the principles of justice, fairness, and the rule of law. We are committed to ensuring transparency and integrity.',
       buttonText: 'Learn More About Our Mission',
       image: 'https://images.unsplash.com/photo-1505664194779-8beaceb93744?w=1920&h=1080&fit=crop'
     },
@@ -1522,10 +1522,10 @@ export class HomeComponent implements OnInit {
   presidentSlides: PresidentSlide[] = [
     {
       id: 1,
-      title: 'THE FIRST PRESIDENT OF THE COURT OF CASSATION',
+      title: 'THE FIRST PRESIDENT OF THE STATE COUNCIL',
       image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=800&h=1000&fit=crop',
       paragraphs: [
-        'As the third-ranking member of the DRC\'s High Council of the Judiciary, the First President of the Court of Cassation, Professor NGOMBA KABEYYA ELIE LEON, donated blood on Thursday, February 27th, in solidarity with the victims of the Rwandan aggression in the eastern part of the country.',
+        'As the third-ranking member of the DRC\'s High Council of the Judiciary, the First President of the STATE COUNCIL, Professor NGOMBA KABEYYA ELIE LEON, donated blood on Thursday, February 27th, in solidarity with the victims of the Rwandan aggression in the eastern part of the country.',
         'For every democratic Congolese citizen, contributing to the war effort is a civic duty. The judiciary is no exception.',
         'For over three decades, the DRC has suffered aggression perpetrated by Rwanda and other negative armed groups, resulting in millions of deaths, tens of thousands of displaced persons, and a deplorable humanitarian situation.'
       ]
@@ -1535,7 +1535,7 @@ export class HomeComponent implements OnInit {
       title: 'JUDICIAL LEADERSHIP AND REFORM',
       image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&h=1000&fit=crop',
       paragraphs: [
-        'Under the leadership of the First President, the Court of Cassation has embarked on comprehensive judicial reforms aimed at modernizing the judicial system.',
+        'Under the leadership of the First President, the STATE COUNCIL has embarked on comprehensive judicial reforms aimed at modernizing the judicial system.',
         'The reforms include the digitalization of court records, implementation of case management systems, and training programs for judges and court staff.',
         'These initiatives reflect the Court\'s commitment to transparency, efficiency, and accountability in the administration of justice.'
       ]
@@ -1545,7 +1545,7 @@ export class HomeComponent implements OnInit {
       title: 'INTERNATIONAL COLLABORATION',
       image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&h=1000&fit=crop',
       paragraphs: [
-        'The Court of Cassation actively engages with international judicial institutions and participates in global forums to share experiences.',
+        'The STATE COUNCIL actively engages with international judicial institutions and participates in global forums to share experiences.',
         'Through partnerships with courts in France, Belgium, and other Francophone countries, the Court ensures it remains at the forefront of legal developments.',
         'This international engagement strengthens the DRC\'s judicial system and enhances its capacity to deliver justice in accordance with international standards.'
       ]
@@ -1588,3 +1588,4 @@ export class HomeComponent implements OnInit {
     this.currentPresidentSlide.set(index);
   }
 }
+
