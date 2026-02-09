@@ -18,9 +18,9 @@ import { CommonModule } from '@angular/common';
             <div class="vertical-line"></div>
             <div class="hero-description">
               <p>
-                In the context of the internationalization of law and justice, the Court of Cassation of the Democratic Republic of Congo
+                In the context of the internationalization of law and justice, the STATE COUNCIL of the Democratic Republic of Congo
                 is not isolated from this environment. It actively participates in the dialogue of judges by maintaining a high level of
-                cooperation within the framework of the Association of Supreme Courts of Cassation of French-speaking countries (AHJUCAF)
+                cooperation within the framework of the Association of Supreme Courts of French-speaking countries (AHJUCAF)
                 and the African Association of Francophone Supreme Courts (AA-HJF).
               </p>
             </div>
@@ -69,7 +69,7 @@ import { CommonModule } from '@angular/common';
               <div class="card-accent"></div>
               <div class="card-content">
                 <h3>AHJUCAF</h3>
-                <p class="network-full-name">Association of Supreme Courts of Cassation Using French</p>
+                <p class="network-full-name">Association of Supreme Courts Using French</p>
                 <p class="network-description">
                   A platform for exchange and cooperation between Francophone supreme courts, facilitating judicial dialogue, sharing of jurisprudence, and strengthening institutional capacities across French-speaking jurisdictions worldwide.
                 </p>

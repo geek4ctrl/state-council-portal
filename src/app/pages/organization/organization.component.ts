@@ -14,7 +14,7 @@ import type { Member, MemberRole, RoleFilter } from '../../services/members.serv
       <!-- Hero Section -->
       <section class="hero-section">
         <div class="container">
-          <h1 class="hero-title">ORGANIZATION AND FUNCTIONING OF<br>THE COURT OF CASSATION</h1>
+          <h1 class="hero-title">ORGANIZATION AND FUNCTIONING OF<br>THE STATE COUNCIL</h1>
         </div>
       </section>
 
@@ -28,9 +28,9 @@ import type { Member, MemberRole, RoleFilter } from '../../services/members.serv
             <div class="president-info-large">
               <h2 class="president-title-underlined">The First President</h2>
               <p class="president-description">
-                <strong>NDOMBA KABEYA Elie-Léon</strong> First President premier-president-ndomba@cassation.cd
+                <strong>NDOMBA KABEYA Elie-Léon</strong> First President premier-president-ndomba@conseildetat.cd
                 Designated by decree under number 23/169 of August 15, 2023, Elie-Léon
-                NDOMBA KABEYA was installed in his capacity as First President of the Court of Cassation, officially took
+                NDOMBA KABEYA was installed in his capacity as First President of the STATE COUNCIL, officially took
                 his oath on Thursday, September 14, 2023 in the presence of the President of the
                 Republic, Félix Antoine Tshisekedi.
               </p>
@@ -145,7 +145,7 @@ import type { Member, MemberRole, RoleFilter } from '../../services/members.serv
       <!-- Services Info Section -->
       <section class="services-info-section">
         <div class="container">
-          <h2 class="section-title-white">THE SERVICES OF THE COURT OF CASSATION</h2>
+          <h2 class="section-title-white">THE SERVICES OF THE STATE COUNCIL</h2>
           <div class="services-grid">
             <div class="service-box">
               <h3>The Registry</h3>
@@ -169,7 +169,7 @@ import type { Member, MemberRole, RoleFilter } from '../../services/members.serv
       <!-- Services Detail Section -->
       <section class="services-section">
         <div class="container">
-          <h2 class="section-heading">SERVICES OF THE COURT OF CASSATION</h2>
+          <h2 class="section-heading">SERVICES OF THE STATE COUNCIL</h2>
           <p class="section-subheading">Primary sessions and training</p>
 
           <div class="services-content">
@@ -180,7 +180,7 @@ import type { Member, MemberRole, RoleFilter } from '../../services/members.serv
                    (click)="selectService('divisions')">
                 <span class="service-icon">📋</span>
                 <div class="service-text">
-                  <h4>The Court of Cassation comprises three divisions:</h4>
+                  <h4>The STATE COUNCIL comprises three divisions:</h4>
                   <ol>
                     <li>The rooms</li>
                     <li>A council of justice</li>
@@ -226,18 +226,18 @@ import type { Member, MemberRole, RoleFilter } from '../../services/members.serv
                 <div class="detail-box active">
                   <span class="detail-icon">📋</span>
                   <div class="detail-content">
-                    <h4>The Court of Cassation comprises four chambers</h4>
+                    <h4>The STATE COUNCIL comprises four chambers</h4>
                     <ol>
                       <li>The chamber of appeal in criminal as well court cases.</li>
                       <li>The chamber of appeal in correction for minor incidents as well as special procedures stipulated under exceptional laws</li>
-                      <li>The chamber of appeal in judicial failures civil all appeals against judgments rendered at first instance by the courts of peace of cassation before courts</li>
-                      <li>The chamber of appeal in commercial failures of law all cassations against decisions rendered in commercial matters before the commercial Court of justice and Arbitration, CCJA territory.</li>
+                      <li>The chamber of appeal in civil matters, handling appeals against judgments rendered at first instance by courts of peace and lower courts.</li>
+                      <li>The chamber of appeal in commercial matters, handling appeals against decisions rendered by the Commercial Court of Justice and Arbitration (CCJA).</li>
                     </ol>
                     <p>
-                      In addition to these four chambers, there exists a chamber on extraordinary instance of all the judges of the Court of Cassation, competent to handle cases referred to it by the President as public cassation, it can be referred before all the proceedings or when contradictory decisions have been rendered by the various chambers of the Court of Cassation.
+                      In addition to these four chambers, an extraordinary chamber composed of all State Council judges hears cases referred by the President for public review. It may be seized before proceedings or when contradictory decisions have been rendered by the various chambers of the State Council.
                     </p>
                     <p>
-                      Executive orders will determine all by the Prime Minister on the jurisdiction of all the chambers of the Court of Cassation.
+                      Executive orders will determine all by the Prime Minister on the jurisdiction of all the chambers of the STATE COUNCIL.
                     </p>
                   </div>
                 </div>
@@ -249,7 +249,7 @@ import type { Member, MemberRole, RoleFilter } from '../../services/members.serv
                   <div class="detail-content">
                     <h4>The Rooms - Restricted Chambers</h4>
                     <p>
-                      The rooms of the Court of Cassation are specialized chambers where judicial proceedings are conducted with strict adherence to procedural rules and regulations. These restricted chambers are designed to ensure the proper administration of justice at the highest level of the judicial system.
+                      The rooms of the STATE COUNCIL are specialized chambers where judicial proceedings are conducted with strict adherence to procedural rules and regulations. These restricted chambers are designed to ensure the proper administration of justice at the highest level of the judicial system.
                     </p>
                     <p>
                       Each room is equipped with modern facilities to facilitate hearings, deliberations, and the rendering of judgments. The chambers maintain strict security protocols to protect the integrity of judicial proceedings and ensure confidentiality where required by law.
@@ -270,7 +270,7 @@ import type { Member, MemberRole, RoleFilter } from '../../services/members.serv
                   <div class="detail-content">
                     <h4>A Council of Justice</h4>
                     <p>
-                      The Council of Justice serves as an essential oversight body within the Court of Cassation, responsible for ensuring the proper administration of justice and maintaining the highest standards of judicial conduct and performance.
+                      The Council of Justice serves as an essential oversight body within the STATE COUNCIL, responsible for ensuring the proper administration of justice and maintaining the highest standards of judicial conduct and performance.
                     </p>
                     <p>
                       This council is composed of senior magistrates who bring extensive experience and expertise to their supervisory role. They meet regularly to review judicial operations, address procedural concerns, and ensure consistency in the application of law across all chambers.
@@ -279,7 +279,7 @@ import type { Member, MemberRole, RoleFilter } from '../../services/members.serv
                       The Council of Justice plays a crucial role in judicial appointments, promotions, and disciplinary matters affecting members of the court. It ensures that all magistrates maintain the independence, integrity, and competence required for their positions.
                     </p>
                     <p>
-                      Additionally, the council provides guidance on complex legal matters, reviews proposed reforms to judicial procedures, and serves as a liaison between the Court of Cassation and other branches of government on matters affecting the administration of justice.
+                      Additionally, the council provides guidance on complex legal matters, reviews proposed reforms to judicial procedures, and serves as a liaison between the STATE COUNCIL and other branches of government on matters affecting the administration of justice.
                     </p>
                   </div>
                 </div>
@@ -291,7 +291,7 @@ import type { Member, MemberRole, RoleFilter } from '../../services/members.serv
                   <div class="detail-content">
                     <h4>The Minister's Oversight Registers</h4>
                     <p>
-                      The Minister's Oversight Registers constitute a comprehensive documentation system that maintains detailed records of all judicial activities, decisions, and administrative actions undertaken by the Court of Cassation.
+                      The Minister's Oversight Registers constitute a comprehensive documentation system that maintains detailed records of all judicial activities, decisions, and administrative actions undertaken by the STATE COUNCIL.
                     </p>
                     <p>
                       These registers serve multiple critical functions: they provide a permanent record of court proceedings, ensure transparency and accountability in judicial operations, and facilitate oversight by appropriate governmental authorities while respecting judicial independence.
@@ -1178,3 +1178,5 @@ export class OrganizationComponent implements OnInit {
   readonly filteredPresidents = computed(() => this.filterMembers(this.memberService.presidents, 'president'));
   readonly filteredAdvisors = computed(() => this.filterMembers(this.memberService.advisors, 'advisor'));
 }
+
+
