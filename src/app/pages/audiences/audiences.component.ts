@@ -19,7 +19,7 @@ import { CommonModule } from '@angular/common';
             <div class="hero-description">
               <p>
                 Access hearing schedules, court calendars, and role excerpts for upcoming sessions
-                at the Court of Cassation. Stay informed about scheduled audiences and case
+                at the STATE COUNCIL. Stay informed about scheduled audiences and case
                 listings.
               </p>
             </div>
@@ -34,12 +34,12 @@ import { CommonModule } from '@angular/common';
           <div class="understanding-section">
             <h2>Understanding Audiences</h2>
             <p>
-              "Audiences" refer to the formal court sessions where cases are heard before the Court
-              of Cassation. The court publishes role excerpts (extraits de rôle) which list the
+              "Audiences" refer to the formal court sessions where cases are heard before the State
+              Council. The State Council publishes role excerpts (extraits de rôle) which list the
               cases scheduled for hearing, including case numbers, parties' names, legal
               representatives' names, case types, and hearing dates. These documents help lawyers,
-              litigants, and the public stay informed about upcoming proceedings. The Court hears
-              matters organized by chambers: Civil, Criminal, Commercial, and Social matters.
+              litigants, and the public stay informed about upcoming proceedings. The State Council
+              hears matters organized by chambers: Civil, Criminal, Commercial, and Social matters.
               Schedules are published in advance to ensure transparency and allow parties to prepare
               appropriately.
             </p>
