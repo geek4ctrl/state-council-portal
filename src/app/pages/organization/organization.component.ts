@@ -1,12 +1,14 @@
-import { Component, signal, OnInit } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { ChangeDetectionStrategy, Component, computed, inject, OnInit, signal } from '@angular/core';
+import { CommonModule, NgOptimizedImage } from '@angular/common';
+import { RouterLink } from '@angular/router';
 import { SkeletonLoaderComponent } from '../../components/skeleton-loader/skeleton-loader.component';
-import { LazyLoadDirective } from '../../directives/lazy-load.directive';
+import { MemberService } from '../../services/members.service';
+import type { Member, MemberRole, RoleFilter } from '../../services/members.service';
 
 @Component({
   selector: 'app-organization',
-  standalone: true,
-  imports: [CommonModule, SkeletonLoaderComponent, LazyLoadDirective],
+  imports: [CommonModule, RouterLink, SkeletonLoaderComponent, NgOptimizedImage],
+  changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <div class="page-container">
       <!-- Hero Section -->
@@ -21,7 +23,7 @@ import { LazyLoadDirective } from '../../directives/lazy-load.directive';
         <div class="container">
           <div class="president-card-large">
             <div class="president-image-large">
-              <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=500&fit=crop" alt="The First President" loading="lazy">
+              <img ngSrc="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=500&fit=crop" alt="The First President" width="400" height="500">
             </div>
             <div class="president-info-large">
               <h2 class="president-title-underlined">The First President</h2>
@@ -44,6 +46,35 @@ import { LazyLoadDirective } from '../../directives/lazy-load.directive';
         </div>
       </section>
 
+      <!-- Members Filter Section -->
+      <section class="members-filter-section">
+        <div class="container">
+          <div class="members-filter">
+            <div class="filter-group">
+              <label for="member-search">Search members</label>
+              <input
+                id="member-search"
+                type="search"
+                placeholder="Search by name, title, or email"
+                [value]="searchTerm()"
+                (input)="onSearch($event)"
+              />
+            </div>
+            <div class="filter-group">
+              <label for="member-role">Filter by role</label>
+              <select id="member-role" [value]="roleFilter()" (change)="onRoleFilterChange($event)">
+                <option value="all">All members</option>
+                <option value="president">Presidents</option>
+                <option value="advisor">Advisors</option>
+              </select>
+            </div>
+            <div class="filter-summary" aria-live="polite">
+              Showing {{ filteredPresidents().length }} presidents and {{ filteredAdvisors().length }} advisors
+            </div>
+          </div>
+        </div>
+      </section>
+
       <!-- The Presidents Section -->
       <section class="members-section presidents-section">
         <div class="container">
@@ -54,17 +85,23 @@ import { LazyLoadDirective } from '../../directives/lazy-load.directive';
                 <app-skeleton-loader type="profile-card"></app-skeleton-loader>
               }
             } @else {
-              <div class="member-card" *ngFor="let president of presidents">
-                <div class="member-image">
-                  <img [src]="president.image" [alt]="president.name" loading="lazy">
-                </div>
-                <div class="member-info">
-                  <h3>{{ president.name }}</h3>
-                  <p class="member-title">{{ president.title }}</p>
-                  <p class="member-email">{{ president.email }}</p>
-                  <a href="#" class="learn-more">LEARN MORE →</a>
-                </div>
-              </div>
+              @if (filteredPresidents().length === 0) {
+                <div class="no-results">No presidents match your search.</div>
+              } @else {
+                @for (president of filteredPresidents(); track president.email) {
+                  <div class="member-card">
+                    <div class="member-image">
+                      <img [ngSrc]="president.image" [alt]="president.name" width="300" height="350">
+                    </div>
+                    <div class="member-info">
+                      <h3>{{ president.name }}</h3>
+                      <p class="member-title">{{ president.title }}</p>
+                      <p class="member-email">{{ president.email }}</p>
+                      <a [routerLink]="['/organization/member', president.slug]" class="learn-more">LEARN MORE →</a>
+                    </div>
+                  </div>
+                }
+              }
             }
           </div>
         </div>
@@ -80,17 +117,23 @@ import { LazyLoadDirective } from '../../directives/lazy-load.directive';
                 <app-skeleton-loader type="profile-card"></app-skeleton-loader>
               }
             } @else {
-              <div class="member-card" *ngFor="let advisor of advisors">
-                <div class="member-image">
-                  <img [src]="advisor.image" [alt]="advisor.name" loading="lazy">
-                </div>
-                <div class="member-info">
-                  <h3>{{ advisor.name }}</h3>
-                  <p class="member-title">{{ advisor.title }}</p>
-                  <p class="member-email">{{ advisor.email }}</p>
-                  <a href="#" class="learn-more">LEARN MORE →</a>
-                </div>
-              </div>
+              @if (filteredAdvisors().length === 0) {
+                <div class="no-results">No advisors match your search.</div>
+              } @else {
+                @for (advisor of filteredAdvisors(); track advisor.email) {
+                  <div class="member-card">
+                    <div class="member-image">
+                      <img [ngSrc]="advisor.image" [alt]="advisor.name" width="300" height="350">
+                    </div>
+                    <div class="member-info">
+                      <h3>{{ advisor.name }}</h3>
+                      <p class="member-title">{{ advisor.title }}</p>
+                      <p class="member-email">{{ advisor.email }}</p>
+                      <a [routerLink]="['/organization/member', advisor.slug]" class="learn-more">LEARN MORE →</a>
+                    </div>
+                  </div>
+                }
+              }
             }
           </div>
           <div class="load-more-container">
@@ -132,7 +175,7 @@ import { LazyLoadDirective } from '../../directives/lazy-load.directive';
           <div class="services-content">
             <!-- Left Column - Service Links -->
             <div class="service-links">
-              <div class="service-item" 
+              <div class="service-item"
                    [class.active]="selectedService() === 'divisions'"
                    (click)="selectService('divisions')">
                 <span class="service-icon">📋</span>
@@ -146,7 +189,7 @@ import { LazyLoadDirective } from '../../directives/lazy-load.directive';
                 </div>
               </div>
 
-              <div class="service-item" 
+              <div class="service-item"
                    [class.active]="selectedService() === 'rooms'"
                    (click)="selectService('rooms')">
                 <span class="service-icon">🏛️</span>
@@ -156,7 +199,7 @@ import { LazyLoadDirective } from '../../directives/lazy-load.directive';
                 </div>
               </div>
 
-              <div class="service-item" 
+              <div class="service-item"
                    [class.active]="selectedService() === 'council'"
                    (click)="selectService('council')">
                 <span class="service-icon">⚖️</span>
@@ -166,7 +209,7 @@ import { LazyLoadDirective } from '../../directives/lazy-load.directive';
                 </div>
               </div>
 
-              <div class="service-item" 
+              <div class="service-item"
                    [class.active]="selectedService() === 'registers'"
                    (click)="selectService('registers')">
                 <span class="service-icon">📚</span>
@@ -469,6 +512,55 @@ import { LazyLoadDirective } from '../../directives/lazy-load.directive';
       padding: 20px 0 60px 0;
     }
 
+    .members-filter-section {
+      background: #0a1929;
+      padding: 20px 0 10px 0;
+    }
+
+    .members-filter {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr 1fr;
+      gap: 20px;
+      align-items: end;
+    }
+
+    .filter-group {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .filter-group label {
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: #8b7355;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .filter-group input,
+    .filter-group select {
+      background: #1a2942;
+      color: white;
+      border: 1px solid rgba(139, 115, 85, 0.4);
+      padding: 12px 14px;
+      font-size: 0.9rem;
+      outline: none;
+      transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .filter-group input:focus,
+    .filter-group select:focus {
+      border-color: #8b7355;
+      box-shadow: 0 0 0 3px rgba(139, 115, 85, 0.2);
+    }
+
+    .filter-summary {
+      font-size: 0.85rem;
+      color: rgba(255, 255, 255, 0.7);
+      padding-bottom: 12px;
+    }
+
     .advisors-section {
       padding-top: 40px;
     }
@@ -487,6 +579,15 @@ import { LazyLoadDirective } from '../../directives/lazy-load.directive';
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: 20px;
+    }
+
+    .no-results {
+      grid-column: 1 / -1;
+      background: #1a2942;
+      padding: 20px;
+      color: rgba(255, 255, 255, 0.75);
+      font-size: 0.9rem;
+      border-left: 3px solid #8b7355;
     }
 
     .member-card {
@@ -985,6 +1086,10 @@ import { LazyLoadDirective } from '../../directives/lazy-load.directive';
         gap: 15px;
         text-align: center;
       }
+
+      .members-filter {
+        grid-template-columns: 1fr;
+      }
     }
 
     @media (max-width: 480px) {
@@ -1013,8 +1118,13 @@ import { LazyLoadDirective } from '../../directives/lazy-load.directive';
   `]
 })
 export class OrganizationComponent implements OnInit {
-  isLoading = signal(true);
-  selectedService = signal<string>('divisions');
+  private readonly memberService = inject(MemberService);
+
+  readonly isLoading = signal(true);
+  readonly selectedService = signal<string>('divisions');
+  readonly searchTerm = signal('');
+  readonly roleFilter = signal<RoleFilter>('all');
+  readonly normalizedSearchTerm = computed(() => this.searchTerm().trim().toLowerCase());
 
   ngOnInit() {
     // Simulate loading data
@@ -1027,105 +1137,44 @@ export class OrganizationComponent implements OnInit {
     this.selectedService.set(service);
   }
 
-  presidents = [
-    { 
-      name: 'KAZADI WALUMBILE', 
-      title: 'President',
-      email: 'kazadi@cassation.cd',
-      image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=350&fit=crop' 
-    },
-    { 
-      name: 'MUKENGELI MUKENGELI', 
-      title: 'President',
-      email: 'mukengeli@cassation.cd',
-      image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=300&h=350&fit=crop' 
-    },
-    { 
-      name: 'MWANGALWA MUSALI', 
-      title: 'President',
-      email: 'mwangalwa@cassation.cd',
-      image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&h=350&fit=crop' 
-    },
-    { 
-      name: 'UBULU MPINGU', 
-      title: 'President',
-      email: 'ubulu@cassation.cd',
-      image: 'https://images.unsplash.com/photo-1519345182560-3f2917c472ef?w=300&h=350&fit=crop' 
-    },
-    { 
-      name: 'KABEYELE NZEMBELE', 
-      title: 'President',
-      email: 'kabeyele@cassation.cd',
-      image: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=300&h=350&fit=crop' 
-    },
-    { 
-      name: 'MATHE KYALIRE', 
-      title: 'President',
-      email: 'mathe@cassation.cd',
-      image: 'https://images.unsplash.com/photo-1480429370139-e0132c086e2a?w=300&h=350&fit=crop' 
-    },
-    { 
-      name: 'KOLOMUNA JITSA PASCAL', 
-      title: 'President',
-      email: 'kolomuna@cassation.cd',
-      image: 'https://images.unsplash.com/photo-1463453091185-61582044d556?w=300&h=350&fit=crop' 
-    },
-    { 
-      name: 'BAKINENGAYI BOLOKO', 
-      title: 'President',
-      email: 'bakinengayi@cassation.cd',
-      image: 'https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?w=300&h=350&fit=crop' 
-    }
-  ];
+  onSearch(event: Event) {
+    const value = (event.target as HTMLInputElement | null)?.value ?? '';
+    this.searchTerm.set(value);
+  }
 
-  advisors = [
-    { 
-      name: 'MASHCI MIPIA TORIISIA', 
-      title: 'Advisor',
-      email: 'mashci@cassation.cd',
-      image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=300&h=350&fit=crop' 
-    },
-    { 
-      name: 'IBONIKA NGAMOLO', 
-      title: 'Advisor',
-      email: 'ibonika@cassation.cd',
-      image: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=300&h=350&fit=crop' 
-    },
-    { 
-      name: 'ILUNG TAMIN', 
-      title: 'Advisor',
-      email: 'ilung@cassation.cd',
-      image: 'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=300&h=350&fit=crop' 
-    },
-    { 
-      name: 'ZAISNE ZINALIBWA', 
-      title: 'Advisor',
-      email: 'zaisne@cassation.cd',
-      image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=300&h=350&fit=crop' 
-    },
-    { 
-      name: 'OTHUNGU WONGOZI OGYTA', 
-      title: 'Advisor',
-      email: 'othungu@cassation.cd',
-      image: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=300&h=350&fit=crop' 
-    },
-    { 
-      name: 'LOHOTA IITUMBA', 
-      title: 'Advisor',
-      email: 'lohota@cassation.cd',
-      image: 'https://images.unsplash.com/photo-1517841905240-472988babdf9?w=300&h=350&fit=crop' 
-    },
-    { 
-      name: 'KALUMBA KAMPATA', 
-      title: 'Advisor',
-      email: 'kalumba@cassation.cd',
-      image: 'https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=300&h=350&fit=crop' 
-    },
-    { 
-      name: 'BAKUNGA NGIMBE', 
-      title: 'Advisor',
-      email: 'bakunga@cassation.cd',
-      image: 'https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=300&h=350&fit=crop' 
+  onRoleFilterChange(event: Event) {
+    const value = (event.target as HTMLSelectElement | null)?.value ?? 'all';
+    if (this.isRoleFilter(value)) {
+      this.roleFilter.set(value);
     }
-  ];
+  }
+
+  private isRoleFilter(value: string): value is RoleFilter {
+    return value === 'all' || value === 'president' || value === 'advisor';
+  }
+
+  private filterMembers(members: Member[], role: MemberRole): Member[] {
+    const roleFilter = this.roleFilter();
+    if (roleFilter !== 'all' && roleFilter !== role) {
+      return [];
+    }
+
+    const term = this.normalizedSearchTerm();
+    if (!term) {
+      return members;
+    }
+
+    return members.filter((member) => this.matchesSearch(member, term));
+  }
+
+  private matchesSearch(member: Member, term: string): boolean {
+    return (
+      member.name.toLowerCase().includes(term) ||
+      member.title.toLowerCase().includes(term) ||
+      member.email.toLowerCase().includes(term)
+    );
+  }
+
+  readonly filteredPresidents = computed(() => this.filterMembers(this.memberService.presidents, 'president'));
+  readonly filteredAdvisors = computed(() => this.filterMembers(this.memberService.advisors, 'advisor'));
 }
