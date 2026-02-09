@@ -1421,7 +1421,13 @@ interface PresidentSlide {
       }
 
       .quick-links-container {
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 24px 30px;
+      }
+
+      .quick-link-item {
+        gap: 16px;
       }
 
       .president-content {
@@ -1438,7 +1444,19 @@ interface PresidentSlide {
     }
 
     @media (max-width: 768px) {
-      .quick-links-container,
+      .quick-links-container {
+        grid-template-columns: 1fr;
+      }
+
+      .quick-link-item {
+        align-items: flex-start;
+      }
+
+      .quick-link-icon {
+        width: 44px;
+        height: 44px;
+      }
+
       .offer-grid,
       .practice-grid,
       .newsletter-grid {
