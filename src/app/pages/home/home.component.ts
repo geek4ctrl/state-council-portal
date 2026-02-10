@@ -960,75 +960,108 @@ interface PresidentSlide {
 
     /* Fields of Expertise */
     .expertise-section {
-      padding: 80px 0;
-      background-color: #000000;
+      position: relative;
+      padding: 90px 0;
+      background: radial-gradient(1200px 600px at 50% -200px, rgba(191, 152, 116, 0.18), transparent 60%),
+                  linear-gradient(180deg, #050505 0%, #0b0b0b 50%, #050505 100%);
+      overflow: hidden;
+    }
+
+    .expertise-section::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: repeating-linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 0.04) 0,
+        rgba(255, 255, 255, 0.04) 1px,
+        transparent 1px,
+        transparent 120px
+      );
+      opacity: 0.25;
+      pointer-events: none;
     }
 
     .expertise-header {
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 30px;
-      margin-bottom: 15px;
+      gap: 24px;
+      margin-bottom: 12px;
+      text-transform: uppercase;
     }
 
     .expertise-line {
-      width: 150px;
+      width: 180px;
       height: 1px;
-      background: linear-gradient(90deg, transparent, #666, transparent);
+      background: linear-gradient(90deg, transparent, rgba(191, 152, 116, 0.5), transparent);
     }
 
     .expertise-section .section-title {
       color: white;
-      font-size: 2.2rem;
+      font-size: clamp(1.8rem, 2.2vw, 2.6rem);
+      letter-spacing: 3px;
+      font-weight: 700;
     }
 
     .expertise-section .section-subtitle {
       text-align: center;
-      color: #999;
-      font-size: 0.9rem;
-      margin: 15px auto 60px;
-      max-width: 850px;
+      color: rgba(255, 255, 255, 0.65);
+      font-size: 0.95rem;
+      line-height: 1.7;
+      margin: 12px auto 52px;
+      max-width: 720px;
       margin-left: 0;
     }
 
     .practice-grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 0;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
       max-width: 1200px;
       margin: 0 auto;
-      border-left: 1px solid #000;
-      border-top: 1px solid #000;
     }
 
     .practice-card {
-      padding: 40px 35px;
+      padding: 34px 30px;
       background: white;
       display: flex;
-      gap: 20px;
+      gap: 18px;
       align-items: flex-start;
-      border-right: 1px solid #000;
-      border-bottom: 1px solid #000;
-      min-height: 220px;
+      border: 1px solid rgba(15, 15, 15, 0.08);
+      border-radius: 14px;
+      min-height: 210px;
+      box-shadow: 0 10px 26px rgba(0, 0, 0, 0.12);
+      transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
+    }
+
+    .practice-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 16px 36px rgba(0, 0, 0, 0.18);
+      border-color: rgba(191, 152, 116, 0.55);
     }
 
     .practice-icon {
-      width: 50px;
-      height: 50px;
+      width: 54px;
+      height: 54px;
       color: #1a1a1a;
       flex-shrink: 0;
+      border-radius: 12px;
+      background: linear-gradient(135deg, rgba(191, 152, 116, 0.18), rgba(15, 15, 15, 0.04));
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
     .practice-icon svg {
-      width: 100%;
-      height: 100%;
+      width: 32px;
+      height: 32px;
     }
 
     .practice-content h3 {
       font-size: 1.05rem;
       font-weight: 700;
-      margin-bottom: 18px;
+      margin-bottom: 14px;
       color: #1a1a1a;
       line-height: 1.3;
     }
@@ -1039,19 +1072,19 @@ interface PresidentSlide {
     }
 
     .practice-content li {
-      padding: 7px 0;
-      color: #666;
-      font-size: 0.88rem;
+      padding: 6px 0;
+      color: #5b5b5b;
+      font-size: 0.9rem;
       position: relative;
       padding-left: 18px;
-      line-height: 1.5;
+      line-height: 1.55;
     }
 
     .practice-content li::before {
       content: "•";
       position: absolute;
       left: 0;
-      color: #1a1a1a;
+      color: #8b7355;
       font-weight: bold;
       font-size: 1.2rem;
     }
