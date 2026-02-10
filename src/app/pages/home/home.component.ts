@@ -37,7 +37,7 @@ interface PresidentSlide {
             </div>
           </div>
         </div>
-        
+
         <!-- Carousel Navigation -->
         <div class="carousel-nav">
           <div class="container">
@@ -47,17 +47,17 @@ interface PresidentSlide {
                   <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
                 </svg>
               </button>
-              
+
               <div class="carousel-indicators">
                 @for (slide of heroSlides; track slide.id; let i = $index) {
-                  <button 
-                    class="indicator" 
+                  <button
+                    class="indicator"
                     [class.active]="i === currentSlide()"
                     (click)="goToSlide(i)">
                   </button>
                 }
               </div>
-              
+
               <button class="nav-arrow" (click)="nextSlide()">
                 <svg viewBox="0 0 24 24" fill="currentColor">
                   <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
@@ -131,7 +131,7 @@ interface PresidentSlide {
           <h2 class="section-title">WHAT WE OFFER</h2>
         </div>
         <p class="section-subtitle">We provide tailored legal solutions to meet your unique needs, ensuring your rights are protected and justice is served.</p>
-        
+
         <div class="offer-grid">
           <div class="offer-card">
             <div class="offer-card-header">
@@ -200,7 +200,7 @@ interface PresidentSlide {
           <div class="expertise-line"></div>
         </div>
         <p class="section-subtitle">The STATE COUNCIL exercises jurisdiction over various legal matters as the supreme court of the ordinary judicial system.</p>
-        
+
         <div class="practice-grid">
           <div class="practice-card">
             <div class="practice-icon">
@@ -342,7 +342,7 @@ interface PresidentSlide {
           <div class="president-image-wrapper">
             <img [src]="presidentSlides[currentPresidentSlide()].image" alt="President">
           </div>
-          
+
           <div class="president-text">
             <h2>{{ presidentSlides[currentPresidentSlide()].title }}</h2>
             @for (paragraph of presidentSlides[currentPresidentSlide()].paragraphs; track paragraph) {
@@ -351,11 +351,11 @@ interface PresidentSlide {
             <button class="president-learn-btn">
               Learn More
             </button>
-            
+
             <div class="president-pagination">
               @for (slide of presidentSlides; track slide.id; let i = $index) {
-                <button 
-                  class="pagination-dot" 
+                <button
+                  class="pagination-dot"
                   [class.active]="i === currentPresidentSlide()"
                   (click)="goToPresidentSlide(i)">
                 </button>
@@ -374,7 +374,7 @@ interface PresidentSlide {
           <h2>NEWSLETTER</h2>
           <div class="header-line"></div>
         </div>
-        
+
         <div class="newsletter-grid">
           <div class="news-card">
             <div class="news-image">
@@ -908,7 +908,7 @@ interface PresidentSlide {
   margin-bottom: 50px;
   line-height: 1.6;
   max-width: 820px;         /* optional for readability */
-  
+
   /* ALIGN WITH TITLE */
   margin-left: calc(60px + 20px);  /* offer-line width + gap from .offer-header */
 }
@@ -1581,13 +1581,13 @@ export class HomeComponent implements OnInit {
   }
 
   nextSlide() {
-    this.currentSlide.update(current => 
+    this.currentSlide.update(current =>
       current === this.heroSlides.length - 1 ? 0 : current + 1
     );
   }
 
   previousSlide() {
-    this.currentSlide.update(current => 
+    this.currentSlide.update(current =>
       current === 0 ? this.heroSlides.length - 1 : current - 1
     );
   }
@@ -1597,7 +1597,7 @@ export class HomeComponent implements OnInit {
   }
 
   nextPresidentSlide() {
-    this.currentPresidentSlide.update(current => 
+    this.currentPresidentSlide.update(current =>
       current === this.presidentSlides.length - 1 ? 0 : current + 1
     );
   }
