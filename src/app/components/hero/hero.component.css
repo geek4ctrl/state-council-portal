@@ -184,8 +184,6 @@
 .image-main::after {
   display: none;
 }
-  pointer-events: none;
-}
 
 .image-main img,
 .image-main svg {

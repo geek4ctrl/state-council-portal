@@ -755,6 +755,8 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
         grid-template-columns: 1fr;
       }
 
+    }
+
     @media (max-width: 768px) {
       .hero-section {
         padding: 80px 0;
