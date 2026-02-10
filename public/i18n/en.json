@@ -40,5 +40,129 @@
       "title": "Page Not Found",
       "message": "The page you are looking for does not exist or has been moved."
     }
+  },
+  "history": {
+    "title": "History",
+    "body": "Discover the rich history of the State Council."
+  },
+  "process": {
+    "title": "Court Process",
+    "body": "Understand the court process and what to expect."
+  },
+  "judges": {
+    "title": "The Judges",
+    "body": "Meet the distinguished judges of the State Council."
+  },
+  "memberDetail": {
+    "back": "← Back to Organization",
+    "title": "Member Profile",
+    "subtitle": "Detailed profile and contact information.",
+    "office": "Office",
+    "email": "Email",
+    "notFound": {
+      "title": "Member not found",
+      "body": "The requested profile could not be located.",
+      "cta": "Return to Organization"
+    }
+  },
+  "news": {
+    "hero": {
+      "title": "NEWS",
+      "body": "Injustice can manifest itself in many ways in our society. We give you the opportunity to report all forms abuse."
+    },
+    "section": {
+      "title": "OUR NEWSFEEDS",
+      "subtitle": "VISION MAKES US WHO WE ARE"
+    },
+    "actions": {
+      "readMore": "Read more"
+    },
+    "pagination": {
+      "label": "News pagination",
+      "previous": "Previous page",
+      "next": "Next",
+      "pageLabel": "Page {{page}}"
+    },
+    "articles": {
+      "1": {
+        "date": "January 30",
+        "category": "Administration",
+        "title": "The First President of the State Council urges magistrates to adopt the resolution o...",
+        "excerpt": "Following the closing ceremony of the ordinary general assembly of the High Council of the Administrative..."
+      },
+      "2": {
+        "date": "January 30",
+        "category": "Administration",
+        "title": "ORIENTATION MEETING AT THE STATE COUNCIL",
+        "excerpt": "Kinshasa, October 18, 2025: The State Council of the Democratic Republic of Congo informs a pu..."
+      },
+      "3": {
+        "date": "January 30",
+        "category": "Administration",
+        "title": "ORIENTATION MEETING AT THE STATE COUNCIL",
+        "excerpt": "Kinshasa, October 18, 2025: The State Council of the Democratic Republic of Congo informs a pu..."
+      }
+    }
+  },
+  "steps": {
+    "hero": {
+      "report": {
+        "title": "REPORT",
+        "body": "Injustice can manifest itself in many ways in our society. We give you the opportunity to report all forms abuse."
+      },
+      "appointment": {
+        "title": "BOOK<br>APPOINTMENT",
+        "body": "To arrange a meeting with the State Council, please complete the following appointment request form. Ensure all required fields are filled out accurately so we can process your request efficiently. You'll receive a confirmation email or phone call with the scheduled date and time."
+      },
+      "appeal": {
+        "title": "APPEAL TO THE<br>STATE<br>COUNCIL",
+        "body1": "An appeal to the State Council is an administrative legal remedy allowing a party to challenge administrative decisions and acts. The State Council verifies whether administrative law was correctly applied and whether proper procedures were followed.",
+        "body2": "The State Council is seized by a request from the parties or by a declaration filed with the Council. Appeals must be filed within the prescribed legal timeframes and must be confirmed by a petition with supporting documents."
+      }
+    },
+    "tabs": {
+      "report": "Report",
+      "appointment": "Book An Appointment",
+      "appeal": "File An Appeal"
+    },
+    "forms": {
+      "report": {
+        "title": "COMPLAINT FORM",
+        "subtitle": "WE WOULD LOVE TO HEAR YOUR ISSUES"
+      },
+      "appointment": {
+        "title": "MAKE AN APPOINTMENT",
+        "subtitle": "WE WOULD LOVE TO ASSIST YOU WITH YOUR ISSUE"
+      },
+      "appeal": {
+        "title": "APPEAL FORM",
+        "subtitle": "WE WOULD LOVE TO HEAR YOUR ISSUES"
+      },
+      "fullName": "Full Name *",
+      "email": "E-mail *",
+      "department": "Department",
+      "chambers": {
+        "criminal": "Criminal Chamber",
+        "civil": "Civil Chamber",
+        "social": "Social Chamber",
+        "commercial": "Commercial Chamber"
+      },
+      "meeting": {
+        "placeholder": "Who do you want to meet ? *",
+        "firstPresident": "First President",
+        "chamberPresident": "Chamber President",
+        "legalAdvisor": "Legal Advisor",
+        "clerk": "Clerk of the Court"
+      },
+      "visit": {
+        "placeholder": "When do you plan to come ?",
+        "thisWeek": "This Week",
+        "nextWeek": "Next Week",
+        "thisMonth": "This Month",
+        "nextMonth": "Next Month"
+      },
+      "message": "Message *",
+      "submit": "SEND MESSAGE"
+    }
   }
 }

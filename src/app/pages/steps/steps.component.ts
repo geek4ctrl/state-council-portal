@@ -1,11 +1,11 @@
 import { Component, signal, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ActivatedRoute } from '@angular/router';
+import { I18nPipe } from '../../i18n/i18n.pipe';
 
 @Component({
   selector: 'app-steps',
-  standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, I18nPipe],
   template: `
     <div class="page-container">
       <!-- Hero Section - Changes based on active tab -->
@@ -14,11 +14,11 @@ import { ActivatedRoute } from '@angular/router';
           <div class="container">
             <div class="hero-grid">
               <div class="hero-left">
-                <h1>REPORT</h1>
+                <h1>{{ 'steps.hero.report.title' | i18n }}</h1>
               </div>
               <div class="vertical-line"></div>
               <div class="hero-right">
-                <p>Injustice can manifest itself in many ways in our society. We give you the opportunity to report all forms abuse.</p>
+                <p>{{ 'steps.hero.report.body' | i18n }}</p>
               </div>
             </div>
           </div>
@@ -30,11 +30,11 @@ import { ActivatedRoute } from '@angular/router';
           <div class="container">
             <div class="hero-grid">
               <div class="hero-left">
-                <h1>BOOK<br>APPOINTMENT</h1>
+                <h1 [innerHTML]="'steps.hero.appointment.title' | i18n"></h1>
               </div>
               <div class="vertical-line"></div>
               <div class="hero-right">
-                <p>To arrange a meeting with the State Council, please complete the following appointment request form. Ensure all required fields are filled out accurately so we can process your request efficiently. You'll receive a confirmation email or phone call with the scheduled date and time.</p>
+                <p>{{ 'steps.hero.appointment.body' | i18n }}</p>
               </div>
             </div>
           </div>
@@ -46,16 +46,12 @@ import { ActivatedRoute } from '@angular/router';
           <div class="container">
             <div class="hero-grid">
               <div class="hero-left">
-                <h1>APPEAL TO THE<br>STATE<br>COUNCIL</h1>
+                <h1 [innerHTML]="'steps.hero.appeal.title' | i18n"></h1>
               </div>
               <div class="vertical-line"></div>
               <div class="hero-right">
-                <p>
-                  An appeal to the State Council is an administrative legal remedy allowing a party to challenge administrative decisions and acts. The State Council verifies whether administrative law was correctly applied and whether proper procedures were followed.
-                </p>
-                <p>
-                  The State Council is seized by a request from the parties or by a declaration filed with the Council. Appeals must be filed within the prescribed legal timeframes and must be confirmed by a petition with supporting documents.
-                </p>
+                <p>{{ 'steps.hero.appeal.body1' | i18n }}</p>
+                <p>{{ 'steps.hero.appeal.body2' | i18n }}</p>
               </div>
             </div>
           </div>
@@ -70,21 +66,21 @@ import { ActivatedRoute } from '@angular/router';
               (click)="activeTab.set('report')"
               [class.active]="activeTab() === 'report'"
               class="tab">
-              Report
+              {{ 'steps.tabs.report' | i18n }}
             </button>
             <div class="tab-separator"></div>
             <button
               (click)="activeTab.set('appointment')"
               [class.active]="activeTab() === 'appointment'"
               class="tab">
-              Book An Appointment
+              {{ 'steps.tabs.appointment' | i18n }}
             </button>
             <div class="tab-separator"></div>
             <button
               (click)="activeTab.set('appeal')"
               [class.active]="activeTab() === 'appeal'"
               class="tab">
-              File An Appeal
+              {{ 'steps.tabs.appeal' | i18n }}
             </button>
           </div>
         </div>
@@ -96,36 +92,36 @@ import { ActivatedRoute } from '@angular/router';
           <!-- Report Form -->
           @if (activeTab() === 'report') {
             <div class="form-header">
-              <h2>COMPLAINT FORM</h2>
-              <p class="form-subtitle">WE WOULD LOVE TO HEAR YOUR ISSUES</p>
+              <h2>{{ 'steps.forms.report.title' | i18n }}</h2>
+              <p class="form-subtitle">{{ 'steps.forms.report.subtitle' | i18n }}</p>
             </div>
 
             <form class="complaint-form">
               <div class="form-row">
                 <div class="form-group">
-                  <input type="text" placeholder="Full Name *" required>
+                  <input type="text" [placeholder]="'steps.forms.fullName' | i18n" required>
                 </div>
                 <div class="form-group">
-                  <input type="email" placeholder="E-mail *" required>
+                  <input type="email" [placeholder]="'steps.forms.email' | i18n" required>
                 </div>
               </div>
 
               <div class="form-group">
                 <select required>
-                  <option value="">Department</option>
-                  <option value="criminal">Criminal Chamber</option>
-                  <option value="civil">Civil Chamber</option>
-                  <option value="social">Social Chamber</option>
-                  <option value="commercial">Commercial Chamber</option>
+                  <option value="">{{ 'steps.forms.department' | i18n }}</option>
+                  <option value="criminal">{{ 'steps.forms.chambers.criminal' | i18n }}</option>
+                  <option value="civil">{{ 'steps.forms.chambers.civil' | i18n }}</option>
+                  <option value="social">{{ 'steps.forms.chambers.social' | i18n }}</option>
+                  <option value="commercial">{{ 'steps.forms.chambers.commercial' | i18n }}</option>
                 </select>
               </div>
 
               <div class="form-group">
-                <textarea placeholder="Message *" rows="6" required></textarea>
+                <textarea [placeholder]="'steps.forms.message' | i18n" rows="6" required></textarea>
               </div>
 
               <div class="form-submit">
-                <button type="submit">SEND MESSAGE</button>
+                <button type="submit">{{ 'steps.forms.submit' | i18n }}</button>
               </div>
             </form>
           }
@@ -133,57 +129,57 @@ import { ActivatedRoute } from '@angular/router';
           <!-- Appointment Form -->
           @if (activeTab() === 'appointment') {
             <div class="form-header">
-              <h2>MAKE AN APPOINTMENT</h2>
-              <p class="form-subtitle">WE WOULD LOVE TO ASSIST YOU WITH YOUR ISSUE</p>
+              <h2>{{ 'steps.forms.appointment.title' | i18n }}</h2>
+              <p class="form-subtitle">{{ 'steps.forms.appointment.subtitle' | i18n }}</p>
             </div>
 
             <form class="appointment-form">
               <div class="form-row">
                 <div class="form-group">
-                  <input type="text" placeholder="Full Name *" required>
+                  <input type="text" [placeholder]="'steps.forms.fullName' | i18n" required>
                 </div>
                 <div class="form-group">
-                  <input type="email" placeholder="E-mail *" required>
+                  <input type="email" [placeholder]="'steps.forms.email' | i18n" required>
                 </div>
               </div>
 
               <div class="form-row">
                 <div class="form-group">
                   <select required>
-                    <option value="">Department</option>
-                    <option value="criminal">Criminal Chamber</option>
-                    <option value="civil">Civil Chamber</option>
-                    <option value="social">Social Chamber</option>
-                    <option value="commercial">Commercial Chamber</option>
+                    <option value="">{{ 'steps.forms.department' | i18n }}</option>
+                    <option value="criminal">{{ 'steps.forms.chambers.criminal' | i18n }}</option>
+                    <option value="civil">{{ 'steps.forms.chambers.civil' | i18n }}</option>
+                    <option value="social">{{ 'steps.forms.chambers.social' | i18n }}</option>
+                    <option value="commercial">{{ 'steps.forms.chambers.commercial' | i18n }}</option>
                   </select>
                 </div>
                 <div class="form-group">
                   <select required>
-                    <option value="">Who do you want to meet ? *</option>
-                    <option value="first-president">First President</option>
-                    <option value="chamber-president">Chamber President</option>
-                    <option value="legal-advisor">Legal Advisor</option>
-                    <option value="clerk">Clerk of the Court</option>
+                    <option value="">{{ 'steps.forms.meeting.placeholder' | i18n }}</option>
+                    <option value="first-president">{{ 'steps.forms.meeting.firstPresident' | i18n }}</option>
+                    <option value="chamber-president">{{ 'steps.forms.meeting.chamberPresident' | i18n }}</option>
+                    <option value="legal-advisor">{{ 'steps.forms.meeting.legalAdvisor' | i18n }}</option>
+                    <option value="clerk">{{ 'steps.forms.meeting.clerk' | i18n }}</option>
                   </select>
                 </div>
               </div>
 
               <div class="form-group">
                 <select required>
-                  <option value="">When do you plan to come ?</option>
-                  <option value="this-week">This Week</option>
-                  <option value="next-week">Next Week</option>
-                  <option value="this-month">This Month</option>
-                  <option value="next-month">Next Month</option>
+                  <option value="">{{ 'steps.forms.visit.placeholder' | i18n }}</option>
+                  <option value="this-week">{{ 'steps.forms.visit.thisWeek' | i18n }}</option>
+                  <option value="next-week">{{ 'steps.forms.visit.nextWeek' | i18n }}</option>
+                  <option value="this-month">{{ 'steps.forms.visit.thisMonth' | i18n }}</option>
+                  <option value="next-month">{{ 'steps.forms.visit.nextMonth' | i18n }}</option>
                 </select>
               </div>
 
               <div class="form-group">
-                <textarea placeholder="Message *" rows="6" required></textarea>
+                <textarea [placeholder]="'steps.forms.message' | i18n" rows="6" required></textarea>
               </div>
 
               <div class="form-submit">
-                <button type="submit">SEND MESSAGE</button>
+                <button type="submit">{{ 'steps.forms.submit' | i18n }}</button>
               </div>
             </form>
           }
@@ -191,36 +187,36 @@ import { ActivatedRoute } from '@angular/router';
           <!-- Appeal Form -->
           @if (activeTab() === 'appeal') {
             <div class="form-header">
-              <h2>APPEAL FORM</h2>
-              <p class="form-subtitle">WE WOULD LOVE TO HEAR YOUR ISSUES</p>
+              <h2>{{ 'steps.forms.appeal.title' | i18n }}</h2>
+              <p class="form-subtitle">{{ 'steps.forms.appeal.subtitle' | i18n }}</p>
             </div>
 
             <form class="appeal-form">
               <div class="form-row">
                 <div class="form-group">
-                  <input type="text" placeholder="Full Name *" required>
+                  <input type="text" [placeholder]="'steps.forms.fullName' | i18n" required>
                 </div>
                 <div class="form-group">
-                  <input type="email" placeholder="E-mail *" required>
+                  <input type="email" [placeholder]="'steps.forms.email' | i18n" required>
                 </div>
               </div>
 
               <div class="form-group">
                 <select required>
-                  <option value="">Department</option>
-                  <option value="criminal">Criminal Chamber</option>
-                  <option value="civil">Civil Chamber</option>
-                  <option value="social">Social Chamber</option>
-                  <option value="commercial">Commercial Chamber</option>
+                  <option value="">{{ 'steps.forms.department' | i18n }}</option>
+                  <option value="criminal">{{ 'steps.forms.chambers.criminal' | i18n }}</option>
+                  <option value="civil">{{ 'steps.forms.chambers.civil' | i18n }}</option>
+                  <option value="social">{{ 'steps.forms.chambers.social' | i18n }}</option>
+                  <option value="commercial">{{ 'steps.forms.chambers.commercial' | i18n }}</option>
                 </select>
               </div>
 
               <div class="form-group">
-                <textarea placeholder="Message *" rows="6" required></textarea>
+                <textarea [placeholder]="'steps.forms.message' | i18n" rows="6" required></textarea>
               </div>
 
               <div class="form-submit">
-                <button type="submit">SEND MESSAGE</button>
+                <button type="submit">{{ 'steps.forms.submit' | i18n }}</button>
               </div>
             </form>
           }

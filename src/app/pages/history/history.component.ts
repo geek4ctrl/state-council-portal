@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
+import { I18nPipe } from '../../i18n/i18n.pipe';
 
 @Component({
   selector: 'app-history',
-  standalone: true,
+  imports: [I18nPipe],
   template: `
     <div class="page-container">
-      <h1>History</h1>
-      <p>Discover the rich history of the State Council.</p>
+      <h1>{{ 'history.title' | i18n }}</h1>
+      <p>{{ 'history.body' | i18n }}</p>
     </div>
   `,
   styles: [`

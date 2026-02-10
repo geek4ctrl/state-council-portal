@@ -40,5 +40,129 @@
       "title": "Page introuvable",
       "message": "La page que vous recherchez n'existe pas ou a ete deplacee."
     }
+  },
+  "history": {
+    "title": "Histoire",
+    "body": "Decouvrez la riche histoire du Conseil d'Etat."
+  },
+  "process": {
+    "title": "Processus judiciaire",
+    "body": "Comprenez le processus judiciaire et ce a quoi vous attendre."
+  },
+  "judges": {
+    "title": "Les juges",
+    "body": "Rencontrez les juges distingues du Conseil d'Etat."
+  },
+  "memberDetail": {
+    "back": "← Retour a l'organisation",
+    "title": "Profil du membre",
+    "subtitle": "Profil detaille et informations de contact.",
+    "office": "Bureau",
+    "email": "Email",
+    "notFound": {
+      "title": "Membre introuvable",
+      "body": "Le profil demande est introuvable.",
+      "cta": "Retour a l'organisation"
+    }
+  },
+  "news": {
+    "hero": {
+      "title": "ACTUALITES",
+      "body": "L'injustice peut se manifester de nombreuses facons dans notre societe. Nous vous offrons la possibilite de signaler toutes formes d'abus."
+    },
+    "section": {
+      "title": "NOS ACTUALITES",
+      "subtitle": "LA VISION FAIT QUI NOUS SOMMES"
+    },
+    "actions": {
+      "readMore": "Lire la suite"
+    },
+    "pagination": {
+      "label": "Pagination des actualites",
+      "previous": "Page precedente",
+      "next": "Suivant",
+      "pageLabel": "Page {{page}}"
+    },
+    "articles": {
+      "1": {
+        "date": "30 janvier",
+        "category": "Administration",
+        "title": "Le Premier President du Conseil d'Etat appelle les magistrats a adopter la resolution o...",
+        "excerpt": "A l'issue de la ceremonie de cloture de l'assemblee generale ordinaire du Conseil superieur de l'Administr..."
+      },
+      "2": {
+        "date": "30 janvier",
+        "category": "Administration",
+        "title": "REUNION D'ORIENTATION AU CONSEIL D'ETAT",
+        "excerpt": "Kinshasa, 18 octobre 2025 : Le Conseil d'Etat de la Republique democratique du Congo informe le pu..."
+      },
+      "3": {
+        "date": "30 janvier",
+        "category": "Administration",
+        "title": "REUNION D'ORIENTATION AU CONSEIL D'ETAT",
+        "excerpt": "Kinshasa, 18 octobre 2025 : Le Conseil d'Etat de la Republique democratique du Congo informe le pu..."
+      }
+    }
+  },
+  "steps": {
+    "hero": {
+      "report": {
+        "title": "SIGNALEMENT",
+        "body": "L'injustice peut se manifester de nombreuses facons dans notre societe. Nous vous offrons la possibilite de signaler toutes formes d'abus."
+      },
+      "appointment": {
+        "title": "PRENDRE<br>RENDEZ-VOUS",
+        "body": "Pour organiser une rencontre avec le Conseil d'Etat, veuillez remplir le formulaire de demande ci-dessous. Assurez-vous que tous les champs obligatoires sont remplis correctement afin que nous puissions traiter votre demande efficacement. Vous recevrez un email ou un appel de confirmation avec la date et l'heure prevues."
+      },
+      "appeal": {
+        "title": "RECOURS AU<br>CONSEIL<br>D'ETAT",
+        "body1": "Un recours devant le Conseil d'Etat est une voie de droit administrative permettant a une partie de contester des decisions et actes administratifs. Le Conseil d'Etat verifie si le droit administratif a ete correctement applique et si les procedures adequates ont ete suivies.",
+        "body2": "Le Conseil d'Etat est saisi par une requete des parties ou par une declaration deposee au Conseil. Les recours doivent etre introduits dans les delais legaux prescrits et confirmes par une requete accompagnee de pieces justificatives."
+      }
+    },
+    "tabs": {
+      "report": "Signaler",
+      "appointment": "Prendre rendez-vous",
+      "appeal": "Deposer un recours"
+    },
+    "forms": {
+      "report": {
+        "title": "FORMULAIRE DE PLAINTE",
+        "subtitle": "NOUS SOUHAITONS CONNAITRE VOS PROBLEMES"
+      },
+      "appointment": {
+        "title": "PRENDRE RENDEZ-VOUS",
+        "subtitle": "NOUS SOMMES LA POUR VOUS AIDER"
+      },
+      "appeal": {
+        "title": "FORMULAIRE DE RECOURS",
+        "subtitle": "NOUS SOUHAITONS CONNAITRE VOS PROBLEMES"
+      },
+      "fullName": "Nom complet *",
+      "email": "E-mail *",
+      "department": "Departement",
+      "chambers": {
+        "criminal": "Chambre criminelle",
+        "civil": "Chambre civile",
+        "social": "Chambre sociale",
+        "commercial": "Chambre commerciale"
+      },
+      "meeting": {
+        "placeholder": "Qui souhaitez-vous rencontrer ? *",
+        "firstPresident": "Premier president",
+        "chamberPresident": "President de chambre",
+        "legalAdvisor": "Conseiller juridique",
+        "clerk": "Greffier de la cour"
+      },
+      "visit": {
+        "placeholder": "Quand comptez-vous venir ?",
+        "thisWeek": "Cette semaine",
+        "nextWeek": "Semaine prochaine",
+        "thisMonth": "Ce mois-ci",
+        "nextMonth": "Le mois prochain"
+      },
+      "message": "Message *",
+      "submit": "ENVOYER LE MESSAGE"
+    }
   }
 }
