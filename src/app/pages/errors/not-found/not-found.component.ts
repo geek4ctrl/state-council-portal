@@ -1,22 +1,20 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterLink } from '@angular/router';
+import { I18nPipe } from '../../../i18n/i18n.pipe';
 
 @Component({
   selector: 'app-not-found',
-  standalone: true,
-  imports: [CommonModule, RouterLink],
+  imports: [CommonModule, RouterLink, I18nPipe],
   template: `
     <main class="error-page">
       <section class="error-card">
-        <p class="error-code">404</p>
-        <h1 class="error-title">Page Not Found</h1>
-        <p class="error-message">
-          The page you are looking for does not exist or has been moved.
-        </p>
+        <p class="error-code">{{ 'errors.notFound.code' | i18n }}</p>
+        <h1 class="error-title">{{ 'errors.notFound.title' | i18n }}</h1>
+        <p class="error-message">{{ 'errors.notFound.message' | i18n }}</p>
         <div class="error-actions">
-          <a routerLink="/" class="primary-btn">Return Home</a>
-          <a routerLink="/news" class="secondary-btn">View Updates</a>
+          <a routerLink="/" class="primary-btn">{{ 'errors.generic.primary' | i18n }}</a>
+          <a routerLink="/news" class="secondary-btn">{{ 'errors.generic.secondary' | i18n }}</a>
         </div>
       </section>
     </main>

@@ -6,23 +6,45 @@
         <div class="contact-info">
           <span class="contact-item">
             <app-icon name="phone" [size]="16"></app-icon>
-            + 243 (21) 00000000
+            {{ 'header.contact.phone' | i18n }}
           </span>
           <span class="contact-item">
             <app-icon name="clock" [size]="16"></app-icon>
-            MONDAY - FRIDAY 7:30AM - 6:30PM
+            {{ 'header.contact.hours' | i18n }}
           </span>
         </div>
-        <div class="social-links">
-          <a href="#" aria-label="Facebook" class="social-link">
-            <app-icon name="facebook" [size]="18" fill="currentColor" stroke="none"></app-icon>
-          </a>
-          <a href="#" aria-label="Twitter" class="social-link">
-            <app-icon name="twitter" [size]="18" fill="currentColor" stroke="none"></app-icon>
-          </a>
-          <a href="#" aria-label="Instagram" class="social-link">
-            <app-icon name="instagram" [size]="18" fill="currentColor" stroke="none"></app-icon>
-          </a>
+        <div class="top-actions">
+          <div class="social-links">
+            <a href="#" [attr.aria-label]="'header.social.facebook' | i18n" class="social-link">
+              <app-icon name="facebook" [size]="18" fill="currentColor" stroke="none"></app-icon>
+            </a>
+            <a href="#" [attr.aria-label]="'header.social.twitter' | i18n" class="social-link">
+              <app-icon name="twitter" [size]="18" fill="currentColor" stroke="none"></app-icon>
+            </a>
+            <a href="#" [attr.aria-label]="'header.social.instagram' | i18n" class="social-link">
+              <app-icon name="instagram" [size]="18" fill="currentColor" stroke="none"></app-icon>
+            </a>
+          </div>
+          <div class="lang-toggle" role="group" [attr.aria-label]="'header.lang.label' | i18n">
+            <button
+              type="button"
+              class="lang-btn"
+              [class.active]="activeLang() === 'en'"
+              [attr.aria-pressed]="activeLang() === 'en'"
+              [attr.aria-label]="'header.lang.switchToEnglish' | i18n"
+              (click)="setLanguage('en')">
+              EN
+            </button>
+            <button
+              type="button"
+              class="lang-btn"
+              [class.active]="activeLang() === 'fr'"
+              [attr.aria-pressed]="activeLang() === 'fr'"
+              [attr.aria-label]="'header.lang.switchToFrench' | i18n"
+              (click)="setLanguage('fr')">
+              FR
+            </button>
+          </div>
         </div>
       </div>
     </div>
@@ -52,7 +74,7 @@
         <ul class="nav-menu" [class.mobile-open]="isMobileMenuOpen()">
           <li class="nav-item">
             <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="nav-link" (click)="closeMobileMenu()" appPreloadOnHover="/">
-              HOME
+              {{ 'header.nav.home' | i18n }}
             </a>
           </li>
           <li class="nav-item dropdown">
@@ -60,46 +82,46 @@
               class="nav-link dropdown-toggle"
               (click)="toggleCourtDropdown()"
               [class.active]="isCourtDropdownOpen()">
-              THE COURT
+              {{ 'header.nav.court' | i18n }}
               <app-icon name="chevron-down" [size]="16" [customClass]="isCourtDropdownOpen() ? 'rotated' : ''"></app-icon>
             </button>
             @if (isCourtDropdownOpen()) {
               <ul class="dropdown-menu">
-                <li><a routerLink="/presentation" class="dropdown-link" (click)="closeMobileMenu()" appPreloadOnHover="/presentation">Presentation</a></li>
-                <li><a routerLink="/organization" class="dropdown-link" (click)="closeMobileMenu()" appPreloadOnHover="/organization">Organization</a></li>
-                <li><a routerLink="/reforms" class="dropdown-link" (click)="closeMobileMenu()" appPreloadOnHover="/reforms">Reforms</a></li>
-                <li><a routerLink="/international-relations" class="dropdown-link" (click)="closeMobileMenu()" appPreloadOnHover="/international-relations">International Relations</a></li>
+                <li><a routerLink="/presentation" class="dropdown-link" (click)="closeMobileMenu()" appPreloadOnHover="/presentation">{{ 'header.nav.presentation' | i18n }}</a></li>
+                <li><a routerLink="/organization" class="dropdown-link" (click)="closeMobileMenu()" appPreloadOnHover="/organization">{{ 'header.nav.organization' | i18n }}</a></li>
+                <li><a routerLink="/reforms" class="dropdown-link" (click)="closeMobileMenu()" appPreloadOnHover="/reforms">{{ 'header.nav.reforms' | i18n }}</a></li>
+                <li><a routerLink="/international-relations" class="dropdown-link" (click)="closeMobileMenu()" appPreloadOnHover="/international-relations">{{ 'header.nav.international' | i18n }}</a></li>
               </ul>
             }
           </li>
           <li class="nav-item">
             <a routerLink="/audiences" routerLinkActive="active" class="nav-link" (click)="closeMobileMenu()" appPreloadOnHover="/audiences">
-              AUDIENCES
+              {{ 'header.nav.audiences' | i18n }}
             </a>
           </li>
 
           <!-- STEPS now just a link, no dropdown -->
           <li class="nav-item">
             <a routerLink="/steps" routerLinkActive="active" class="nav-link" (click)="closeMobileMenu()">
-              STEPS
+              {{ 'header.nav.steps' | i18n }}
             </a>
           </li>
 
           <li class="nav-item">
             <a routerLink="/news" routerLinkActive="active" class="nav-link" (click)="closeMobileMenu()" appPreloadOnHover="/news">
-              NEWS
+              {{ 'header.nav.news' | i18n }}
             </a>
           </li>
           <li class="nav-item mobile-only">
             <button class="btn-appointment mobile" (click)="navigateToAppointment()">
-              Book Appointment
+              {{ 'header.nav.bookAppointment' | i18n }}
             </button>
           </li>
         </ul>
 
         <!-- Book Appointment Button (Desktop Only) -->
         <button class="btn-appointment desktop-only" (click)="navigateToAppointment()">
-          Book Appointment
+          {{ 'header.nav.bookAppointment' | i18n }}
         </button>
       </div>
     </div>
