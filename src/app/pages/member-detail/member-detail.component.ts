@@ -4,18 +4,19 @@ import { ActivatedRoute, RouterLink } from '@angular/router';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { map } from 'rxjs/operators';
 import { MemberService } from '../../services/members.service';
+import { I18nPipe } from '../../i18n/i18n.pipe';
 
 @Component({
   selector: 'app-member-detail',
-  imports: [CommonModule, RouterLink, NgOptimizedImage],
+  imports: [CommonModule, RouterLink, NgOptimizedImage, I18nPipe],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <div class="member-page">
       <section class="member-hero">
         <div class="container">
-          <a routerLink="/organization" class="back-link">← Back to Organization</a>
-          <h1 class="member-title">Member Profile</h1>
-          <p class="member-subtitle">Detailed profile and contact information.</p>
+          <a routerLink="/organization" class="back-link">{{ 'memberDetail.back' | i18n }}</a>
+          <h1 class="member-title">{{ 'memberDetail.title' | i18n }}</h1>
+          <p class="member-subtitle">{{ 'memberDetail.subtitle' | i18n }}</p>
         </div>
       </section>
 
@@ -37,11 +38,11 @@ import { MemberService } from '../../services/members.service';
 
                 <dl class="member-meta">
                   <div>
-                    <dt>Office</dt>
+                    <dt>{{ 'memberDetail.office' | i18n }}</dt>
                     <dd>{{ member()!.office }}</dd>
                   </div>
                   <div>
-                    <dt>Email</dt>
+                    <dt>{{ 'memberDetail.email' | i18n }}</dt>
                     <dd><a [href]="'mailto:' + member()!.email">{{ member()!.email }}</a></dd>
                   </div>
                 </dl>
@@ -49,9 +50,9 @@ import { MemberService } from '../../services/members.service';
             </article>
           } @else {
             <div class="not-found" role="status" aria-live="polite">
-              <h2>Member not found</h2>
-              <p>The requested profile could not be located.</p>
-              <a routerLink="/organization" class="back-link">Return to Organization</a>
+              <h2>{{ 'memberDetail.notFound.title' | i18n }}</h2>
+              <p>{{ 'memberDetail.notFound.body' | i18n }}</p>
+              <a routerLink="/organization" class="back-link">{{ 'memberDetail.notFound.cta' | i18n }}</a>
             </div>
           }
         </div>
