@@ -202,8 +202,25 @@ interface PresidentSlide {
         </div>
         <p class="section-subtitle">{{ 'home.expertise.subtitle' | i18n }}</p>
 
+        <div class="expertise-stats">
+          <div class="stat-item">
+            <span class="stat-value">{{ 'home.expertise.stats.domains.value' | i18n }}</span>
+            <span class="stat-label">{{ 'home.expertise.stats.domains.label' | i18n }}</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-value">{{ 'home.expertise.stats.decisions.value' | i18n }}</span>
+            <span class="stat-label">{{ 'home.expertise.stats.decisions.label' | i18n }}</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-value">{{ 'home.expertise.stats.magistrates.value' | i18n }}</span>
+            <span class="stat-label">{{ 'home.expertise.stats.magistrates.label' | i18n }}</span>
+          </div>
+        </div>
+
         <div class="practice-grid">
-          <div class="practice-card">
+          <a class="practice-card accent-civil" href="#">
             <div class="practice-icon">
               <svg viewBox="0 0 64 64" fill="currentColor">
                 <path d="M38 8L26 8C24 8 22 10 22 12L22 52C22 54 24 56 26 56L38 56C40 56 42 54 42 52L42 12C42 10 40 8 38 8Z"/>
@@ -212,15 +229,17 @@ interface PresidentSlide {
             </div>
             <div class="practice-content">
               <h3>{{ 'home.expertise.areas.civil.title' | i18n }}</h3>
+              <p class="practice-desc">{{ 'home.expertise.areas.civil.desc' | i18n }}</p>
               <ul>
                 <li>{{ 'home.expertise.areas.civil.items.1' | i18n }}</li>
                 <li>{{ 'home.expertise.areas.civil.items.2' | i18n }}</li>
                 <li>{{ 'home.expertise.areas.civil.items.3' | i18n }}</li>
               </ul>
+              <span class="practice-cta">{{ 'home.expertise.cta' | i18n }}</span>
             </div>
-          </div>
+          </a>
 
-          <div class="practice-card">
+          <a class="practice-card accent-family" href="#">
             <div class="practice-icon">
               <svg viewBox="0 0 64 64" fill="currentColor">
                 <path d="M24 40C16 40 10 44 10 50V56H38V50C38 44 32 40 24 40Z"/>
@@ -231,15 +250,17 @@ interface PresidentSlide {
             </div>
             <div class="practice-content">
               <h3>{{ 'home.expertise.areas.family.title' | i18n }}</h3>
+              <p class="practice-desc">{{ 'home.expertise.areas.family.desc' | i18n }}</p>
               <ul>
                 <li>{{ 'home.expertise.areas.family.items.1' | i18n }}</li>
                 <li>{{ 'home.expertise.areas.family.items.2' | i18n }}</li>
                 <li>{{ 'home.expertise.areas.family.items.3' | i18n }}</li>
               </ul>
+              <span class="practice-cta">{{ 'home.expertise.cta' | i18n }}</span>
             </div>
-          </div>
+          </a>
 
-          <div class="practice-card">
+          <a class="practice-card accent-public" href="#">
             <div class="practice-icon">
               <svg viewBox="0 0 64 64" fill="currentColor">
                 <path d="M32 8L18 14V28C18 40 26 48 32 52C38 48 46 40 46 28V14L32 8Z M32 12L42 16V28C42 38 36 44 32 48C28 44 22 38 22 28V16L32 12Z"/>
@@ -249,15 +270,17 @@ interface PresidentSlide {
             </div>
             <div class="practice-content">
               <h3>{{ 'home.expertise.areas.public.title' | i18n }}</h3>
+              <p class="practice-desc">{{ 'home.expertise.areas.public.desc' | i18n }}</p>
               <ul>
                 <li>{{ 'home.expertise.areas.public.items.1' | i18n }}</li>
                 <li>{{ 'home.expertise.areas.public.items.2' | i18n }}</li>
                 <li>{{ 'home.expertise.areas.public.items.3' | i18n }}</li>
               </ul>
+              <span class="practice-cta">{{ 'home.expertise.cta' | i18n }}</span>
             </div>
-          </div>
+          </a>
 
-          <div class="practice-card">
+          <a class="practice-card accent-labor" href="#">
             <div class="practice-icon">
               <svg viewBox="0 0 64 64" fill="currentColor">
                 <rect x="22" y="28" width="20" height="20" rx="2"/>
@@ -267,15 +290,17 @@ interface PresidentSlide {
             </div>
             <div class="practice-content">
               <h3>{{ 'home.expertise.areas.labor.title' | i18n }}</h3>
+              <p class="practice-desc">{{ 'home.expertise.areas.labor.desc' | i18n }}</p>
               <ul>
                 <li>{{ 'home.expertise.areas.labor.items.1' | i18n }}</li>
                 <li>{{ 'home.expertise.areas.labor.items.2' | i18n }}</li>
                 <li>{{ 'home.expertise.areas.labor.items.3' | i18n }}</li>
               </ul>
+              <span class="practice-cta">{{ 'home.expertise.cta' | i18n }}</span>
             </div>
-          </div>
+          </a>
 
-          <div class="practice-card">
+          <a class="practice-card accent-criminal" href="#">
             <div class="practice-icon">
               <svg viewBox="0 0 64 64" fill="currentColor">
                 <path d="M32 8C24 8 18 14 18 22C18 30 24 36 32 36C40 36 46 30 46 22C46 14 40 8 32 8Z"/>
@@ -285,15 +310,17 @@ interface PresidentSlide {
             </div>
             <div class="practice-content">
               <h3>{{ 'home.expertise.areas.criminal.title' | i18n }}</h3>
+              <p class="practice-desc">{{ 'home.expertise.areas.criminal.desc' | i18n }}</p>
               <ul>
                 <li>{{ 'home.expertise.areas.criminal.items.1' | i18n }}</li>
                 <li>{{ 'home.expertise.areas.criminal.items.2' | i18n }}</li>
                 <li>{{ 'home.expertise.areas.criminal.items.3' | i18n }}</li>
               </ul>
+              <span class="practice-cta">{{ 'home.expertise.cta' | i18n }}</span>
             </div>
-          </div>
+          </a>
 
-          <div class="practice-card">
+          <a class="practice-card accent-property" href="#">
             <div class="practice-icon">
               <svg viewBox="0 0 64 64" fill="currentColor">
                 <rect x="16" y="32" width="32" height="20"/>
@@ -303,13 +330,15 @@ interface PresidentSlide {
             </div>
             <div class="practice-content">
               <h3>{{ 'home.expertise.areas.property.title' | i18n }}</h3>
+              <p class="practice-desc">{{ 'home.expertise.areas.property.desc' | i18n }}</p>
               <ul>
                 <li>{{ 'home.expertise.areas.property.items.1' | i18n }}</li>
                 <li>{{ 'home.expertise.areas.property.items.2' | i18n }}</li>
                 <li>{{ 'home.expertise.areas.property.items.3' | i18n }}</li>
               </ul>
+              <span class="practice-cta">{{ 'home.expertise.cta' | i18n }}</span>
             </div>
-          </div>
+          </a>
         </div>
       </div>
     </section>
@@ -1014,6 +1043,46 @@ interface PresidentSlide {
       margin-left: 0;
     }
 
+    .expertise-stats {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 24px;
+      margin: 0 auto 40px;
+      color: rgba(255, 255, 255, 0.85);
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      font-size: 0.7rem;
+      position: relative;
+      z-index: 1;
+      flex-wrap: wrap;
+    }
+
+    .stat-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+      min-width: 120px;
+    }
+
+    .stat-value {
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: #ffffff;
+      letter-spacing: 1px;
+    }
+
+    .stat-label {
+      color: rgba(255, 255, 255, 0.6);
+    }
+
+    .stat-divider {
+      width: 1px;
+      height: 36px;
+      background: linear-gradient(180deg, transparent, rgba(191, 152, 116, 0.6), transparent);
+    }
+
     .practice-grid {
       display: grid;
       grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -1023,6 +1092,7 @@ interface PresidentSlide {
     }
 
     .practice-card {
+      --accent: #8b7355;
       padding: 34px 30px;
       background: white;
       display: flex;
@@ -1030,9 +1100,16 @@ interface PresidentSlide {
       align-items: flex-start;
       border: 1px solid rgba(15, 15, 15, 0.08);
       border-radius: 14px;
+      border-top: 3px solid var(--accent);
       min-height: 210px;
       box-shadow: 0 10px 26px rgba(0, 0, 0, 0.12);
       transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
+      text-decoration: none;
+      color: inherit;
+      position: relative;
+      opacity: 0;
+      transform: translateY(12px);
+      animation: expertise-rise 0.6s ease forwards;
     }
 
     .practice-card:hover {
@@ -1041,13 +1118,22 @@ interface PresidentSlide {
       border-color: rgba(191, 152, 116, 0.55);
     }
 
+    .practice-card:focus-visible {
+      outline: 2px solid rgba(191, 152, 116, 0.9);
+      outline-offset: 3px;
+    }
+
+    .practice-card.featured {
+      background: linear-gradient(135deg, #ffffff 0%, #f6f2ec 100%);
+    }
+
     .practice-icon {
       width: 54px;
       height: 54px;
-      color: #1a1a1a;
+      color: var(--accent);
       flex-shrink: 0;
       border-radius: 12px;
-      background: linear-gradient(135deg, rgba(191, 152, 116, 0.18), rgba(15, 15, 15, 0.04));
+      background: linear-gradient(135deg, rgba(191, 152, 116, 0.18), rgba(15, 15, 15, 0.02));
       display: flex;
       align-items: center;
       justify-content: center;
@@ -1061,9 +1147,28 @@ interface PresidentSlide {
     .practice-content h3 {
       font-size: 1.05rem;
       font-weight: 700;
-      margin-bottom: 14px;
+      margin-bottom: 8px;
       color: #1a1a1a;
       line-height: 1.3;
+    }
+
+    .practice-desc {
+      font-size: 0.88rem;
+      color: #6a6a6a;
+      line-height: 1.6;
+      margin: 0 0 12px 0;
+    }
+
+    .practice-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+      color: #8b7355;
+      text-transform: uppercase;
+      margin-bottom: 8px;
     }
 
     .practice-content ul {
@@ -1084,9 +1189,57 @@ interface PresidentSlide {
       content: "•";
       position: absolute;
       left: 0;
-      color: #8b7355;
+      color: var(--accent);
       font-weight: bold;
       font-size: 1.2rem;
+    }
+
+    .practice-cta {
+      margin-top: 14px;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .practice-cta::after {
+      content: "→";
+      font-size: 0.95rem;
+    }
+
+    .accent-featured { --accent: #8b7355; }
+    .accent-civil { --accent: #6b5a41; }
+    .accent-family { --accent: #b8754d; }
+    .accent-public { --accent: #4e6a8a; }
+    .accent-labor { --accent: #a45858; }
+    .accent-criminal { --accent: #7a4d66; }
+    .accent-property { --accent: #7f6b4a; }
+
+    .practice-grid .practice-card:nth-child(1) { animation-delay: 0.05s; }
+    .practice-grid .practice-card:nth-child(2) { animation-delay: 0.12s; }
+    .practice-grid .practice-card:nth-child(3) { animation-delay: 0.19s; }
+    .practice-grid .practice-card:nth-child(4) { animation-delay: 0.26s; }
+    .practice-grid .practice-card:nth-child(5) { animation-delay: 0.33s; }
+    .practice-grid .practice-card:nth-child(6) { animation-delay: 0.4s; }
+    .practice-grid .practice-card:nth-child(7) { animation-delay: 0.47s; }
+
+    @keyframes expertise-rise {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .practice-card {
+        animation: none;
+        opacity: 1;
+        transform: none;
+      }
     }
 
     /* Contact Info */
@@ -1495,6 +1648,14 @@ interface PresidentSlide {
       .practice-grid,
       .newsletter-grid {
         grid-template-columns: 1fr;
+      }
+
+      .expertise-stats {
+        gap: 16px;
+      }
+
+      .stat-divider {
+        display: none;
       }
 
       .president-content {
