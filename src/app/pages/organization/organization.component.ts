@@ -1043,6 +1043,18 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
     }
 
     @media (max-width: 768px) {
+      .president-card-large {
+        grid-template-columns: 1fr;
+      }
+
+      .president-image-large {
+        min-height: 320px;
+      }
+
+      .president-info-large {
+        min-height: auto;
+      }
+
       .quick-links-container,
       .offer-grid,
       .practice-grid,
