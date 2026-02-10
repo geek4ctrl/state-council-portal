@@ -4,11 +4,12 @@ import { SkeletonLoaderComponent } from '../../components/skeleton-loader/skelet
 import { IconComponent } from '../../components/icon/icon.component';
 import { LazyLoadDirective } from '../../directives/lazy-load.directive';
 import { SeoService } from '../../services/seo.service';
+import { I18nPipe } from '../../i18n/i18n.pipe';
 
 @Component({
   selector: 'app-news',
   standalone: true,
-  imports: [CommonModule, SkeletonLoaderComponent, IconComponent, LazyLoadDirective],
+  imports: [CommonModule, SkeletonLoaderComponent, IconComponent, LazyLoadDirective, I18nPipe],
   template: `
     <div class="page-container">
       <!-- Hero Section -->
@@ -16,10 +17,10 @@ import { SeoService } from '../../services/seo.service';
         <div class="container">
           <div class="hero-grid">
             <div class="hero-left">
-              <h1>NEWS</h1>
+              <h1>{{ 'news.hero.title' | i18n }}</h1>
             </div>
             <div class="hero-right">
-              <p>Injustice can manifest itself in many ways in our society. We give you the opportunity to report all forms abuse.</p>
+              <p>{{ 'news.hero.body' | i18n }}</p>
             </div>
           </div>
         </div>
@@ -29,8 +30,8 @@ import { SeoService } from '../../services/seo.service';
       <section class="news-section">
         <div class="container">
           <div class="section-header">
-            <h2>OUR NEWSFEEDS</h2>
-            <p class="section-subtitle">VISION MAKES US WHO WE ARE</p>
+            <h2>{{ 'news.section.title' | i18n }}</h2>
+            <p class="section-subtitle">{{ 'news.section.subtitle' | i18n }}</p>
           </div>
 
           <div class="news-grid">
@@ -42,18 +43,18 @@ import { SeoService } from '../../services/seo.service';
               @for (article of newsArticles; track article.id) {
                 <article class="news-card">
                   <div class="news-image">
-                    <img [src]="article.image" [alt]="article.title" loading="lazy">
+                    <img [src]="article.image" [alt]="article.titleKey | i18n" loading="lazy">
                   </div>
                   <div class="news-content">
                     <div class="news-meta">
-                      <span class="news-date">{{ article.date }}</span>
+                      <span class="news-date">{{ article.dateKey | i18n }}</span>
                       <span class="news-divider">|</span>
-                      <span class="news-category">{{ article.category }}</span>
+                      <span class="news-category">{{ article.categoryKey | i18n }}</span>
                     </div>
-                    <h3 class="news-title">{{ article.title }}</h3>
-                    <p class="news-excerpt">{{ article.excerpt }}</p>
+                    <h3 class="news-title">{{ article.titleKey | i18n }}</h3>
+                    <p class="news-excerpt">{{ article.excerptKey | i18n }}</p>
                     <a href="#" class="read-more">
-                      Read more
+                      {{ 'news.actions.readMore' | i18n }}
                       <app-icon name="arrow-right" [size]="16"></app-icon>
                     </a>
                   </div>
@@ -63,14 +64,29 @@ import { SeoService } from '../../services/seo.service';
           </div>
 
           <!-- Pagination -->
-          <nav class="pagination" aria-label="News pagination" role="navigation">
-            <button class="pagination-btn" [disabled]="currentPage() === 1" aria-label="Previous page">
+          <nav class="pagination" [attr.aria-label]="'news.pagination.label' | i18n" role="navigation">
+            <button
+              class="pagination-btn"
+              [disabled]="currentPage() === 1"
+              [attr.aria-label]="'news.pagination.previous' | i18n">
               <app-icon name="chevron-right" [size]="20" [customClass]="'rotate-180'" [attr.aria-hidden]="true"></app-icon>
             </button>
-            <button class="pagination-number" [class.active]="currentPage() === 2" [attr.aria-current]="currentPage() === 2 ? 'page' : null" aria-label="Page 2">2</button>
-            <button class="pagination-number" [class.active]="currentPage() === 3" [attr.aria-current]="currentPage() === 3 ? 'page' : null" aria-label="Page 3">3</button>
-            <button class="pagination-btn next" aria-label="Next page">
-              Next
+            <button
+              class="pagination-number"
+              [class.active]="currentPage() === 2"
+              [attr.aria-current]="currentPage() === 2 ? 'page' : null"
+              [attr.aria-label]="'news.pagination.pageLabel' | i18n : { page: 2 }">
+              2
+            </button>
+            <button
+              class="pagination-number"
+              [class.active]="currentPage() === 3"
+              [attr.aria-current]="currentPage() === 3 ? 'page' : null"
+              [attr.aria-label]="'news.pagination.pageLabel' | i18n : { page: 3 }">
+              3
+            </button>
+            <button class="pagination-btn next" [attr.aria-label]="'news.pagination.next' | i18n">
+              {{ 'news.pagination.next' | i18n }}
               <app-icon name="chevron-right" [size]="16" [attr.aria-hidden]="true"></app-icon>
             </button>
           </nav>
@@ -384,26 +400,26 @@ export class NewsComponent implements OnInit {
   newsArticles = [
     {
       id: 1,
-      date: 'January 30',
-      category: 'Administration',
-      title: 'The First President of the State Council urges magistrates to adopt the resolution o...',
-      excerpt: 'Following the closing ceremony of the ordinary general assembly of the High Council of the Administrative...',
+      dateKey: 'news.articles.1.date',
+      categoryKey: 'news.articles.1.category',
+      titleKey: 'news.articles.1.title',
+      excerptKey: 'news.articles.1.excerpt',
       image: 'https://placehold.co/400x300'
     },
     {
       id: 2,
-      date: 'January 30',
-      category: 'Administration',
-      title: 'ORIENTATION MEETING AT THE STATE COUNCIL',
-      excerpt: 'Kinshasa, October 18, 2025: The State Council of the Democratic Republic of Congo informs a pu...',
+      dateKey: 'news.articles.2.date',
+      categoryKey: 'news.articles.2.category',
+      titleKey: 'news.articles.2.title',
+      excerptKey: 'news.articles.2.excerpt',
       image: 'https://placehold.co/400x300'
     },
     {
       id: 3,
-      date: 'January 30',
-      category: 'Administration',
-      title: 'ORIENTATION MEETING AT THE STATE COUNCIL',
-      excerpt: 'Kinshasa, October 18, 2025: The State Council of the Democratic Republic of Congo informs a pu...',
+      dateKey: 'news.articles.3.date',
+      categoryKey: 'news.articles.3.category',
+      titleKey: 'news.articles.3.title',
+      excerptKey: 'news.articles.3.excerpt',
       image: 'https://placehold.co/400x300'
     }
   ];

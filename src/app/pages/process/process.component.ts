@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
+import { I18nPipe } from '../../i18n/i18n.pipe';
 
 @Component({
   selector: 'app-process',
-  standalone: true,
+  imports: [I18nPipe],
   template: `
     <div class="page-container">
-      <h1>Court Process</h1>
-      <p>Understand the court process and what to expect.</p>
+      <h1>{{ 'process.title' | i18n }}</h1>
+      <p>{{ 'process.body' | i18n }}</p>
     </div>
   `,
   styles: [`

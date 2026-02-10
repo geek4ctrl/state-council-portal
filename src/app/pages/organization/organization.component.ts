@@ -4,17 +4,18 @@ import { RouterLink } from '@angular/router';
 import { SkeletonLoaderComponent } from '../../components/skeleton-loader/skeleton-loader.component';
 import { MemberService } from '../../services/members.service';
 import type { Member, MemberRole, RoleFilter } from '../../services/members.service';
+import { I18nPipe } from '../../i18n/i18n.pipe';
 
 @Component({
   selector: 'app-organization',
-  imports: [CommonModule, RouterLink, SkeletonLoaderComponent, NgOptimizedImage],
+  imports: [CommonModule, RouterLink, SkeletonLoaderComponent, NgOptimizedImage, I18nPipe],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <div class="page-container">
       <!-- Hero Section -->
       <section class="hero-section">
         <div class="container">
-          <h1 class="hero-title">ORGANIZATION AND FUNCTIONING OF<br>THE STATE COUNCIL</h1>
+          <h1 class="hero-title" [innerHTML]="'organization.hero.title' | i18n"></h1>
         </div>
       </section>
 
@@ -23,17 +24,15 @@ import type { Member, MemberRole, RoleFilter } from '../../services/members.serv
         <div class="container">
           <div class="president-card-large">
             <div class="president-image-large">
-              <img ngSrc="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=500&fit=crop" alt="The First President" width="400" height="500">
+              <img
+                ngSrc="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=500&fit=crop"
+                [attr.alt]="'organization.firstPresident.alt' | i18n"
+                width="400"
+                height="500">
             </div>
             <div class="president-info-large">
-              <h2 class="president-title-underlined">The First President</h2>
-              <p class="president-description">
-                <strong>NDOMBA KABEYA Elie-Léon</strong> First President premier-president-ndomba@conseildetat.cd
-                Designated by decree under number 23/169 of August 15, 2023, Elie-Léon
-                NDOMBA KABEYA was installed in his capacity as First President of the STATE COUNCIL, officially took
-                his oath on Thursday, September 14, 2023 in the presence of the President of the
-                Republic, Félix Antoine Tshisekedi.
-              </p>
+              <h2 class="president-title-underlined">{{ 'organization.firstPresident.title' | i18n }}</h2>
+              <p class="president-description" [innerHTML]="'organization.firstPresident.body' | i18n"></p>
             </div>
           </div>
         </div>
@@ -42,7 +41,7 @@ import type { Member, MemberRole, RoleFilter } from '../../services/members.serv
       <!-- Senior Magistrates Label -->
       <section class="senior-label-section">
         <div class="container">
-          <div class="senior-label">SENIOR MAGISTRATES</div>
+          <div class="senior-label">{{ 'organization.seniorLabel' | i18n }}</div>
         </div>
       </section>
 
@@ -51,25 +50,32 @@ import type { Member, MemberRole, RoleFilter } from '../../services/members.serv
         <div class="container">
           <div class="members-filter">
             <div class="filter-group">
-              <label for="member-search">Search members</label>
+              <label for="member-search">{{ 'organization.filters.searchLabel' | i18n }}</label>
               <input
                 id="member-search"
                 type="search"
-                placeholder="Search by name, title, or email"
+                [placeholder]="'organization.filters.searchPlaceholder' | i18n"
                 [value]="searchTerm()"
                 (input)="onSearch($event)"
               />
             </div>
             <div class="filter-group">
-              <label for="member-role">Filter by role</label>
+              <label for="member-role">{{ 'organization.filters.roleLabel' | i18n }}</label>
               <select id="member-role" [value]="roleFilter()" (change)="onRoleFilterChange($event)">
-                <option value="all">All members</option>
-                <option value="president">Presidents</option>
-                <option value="advisor">Advisors</option>
+                <option value="all">{{ 'organization.filters.all' | i18n }}</option>
+                <option value="president">{{ 'organization.filters.presidents' | i18n }}</option>
+                <option value="advisor">{{ 'organization.filters.advisors' | i18n }}</option>
               </select>
             </div>
             <div class="filter-summary" aria-live="polite">
-              Showing {{ filteredPresidents().length }} presidents and {{ filteredAdvisors().length }} advisors
+              {{
+                'organization.filters.summary'
+                  | i18n
+                    : {
+                        presidents: filteredPresidents().length,
+                        advisors: filteredAdvisors().length
+                      }
+              }}
             </div>
           </div>
         </div>
@@ -78,7 +84,7 @@ import type { Member, MemberRole, RoleFilter } from '../../services/members.serv
       <!-- The Presidents Section -->
       <section class="members-section presidents-section">
         <div class="container">
-          <h2 class="section-title">THE PRESIDENTS</h2>
+          <h2 class="section-title">{{ 'organization.presidents.title' | i18n }}</h2>
           <div class="members-grid">
             @if (isLoading()) {
               @for (item of [1, 2, 3, 4, 5, 6, 7, 8]; track item) {
@@ -86,7 +92,7 @@ import type { Member, MemberRole, RoleFilter } from '../../services/members.serv
               }
             } @else {
               @if (filteredPresidents().length === 0) {
-                <div class="no-results">No presidents match your search.</div>
+                <div class="no-results">{{ 'organization.presidents.empty' | i18n }}</div>
               } @else {
                 @for (president of filteredPresidents(); track president.email) {
                   <div class="member-card">
@@ -97,7 +103,9 @@ import type { Member, MemberRole, RoleFilter } from '../../services/members.serv
                       <h3>{{ president.name }}</h3>
                       <p class="member-title">{{ president.title }}</p>
                       <p class="member-email">{{ president.email }}</p>
-                      <a [routerLink]="['/organization/member', president.slug]" class="learn-more">LEARN MORE →</a>
+                      <a [routerLink]="['/organization/member', president.slug]" class="learn-more">
+                        {{ 'organization.members.learnMore' | i18n }}
+                      </a>
                     </div>
                   </div>
                 }
@@ -110,7 +118,7 @@ import type { Member, MemberRole, RoleFilter } from '../../services/members.serv
       <!-- The Advisors Section -->
       <section class="members-section advisors-section">
         <div class="container">
-          <h2 class="section-title">THE ADVISORS</h2>
+          <h2 class="section-title">{{ 'organization.advisors.title' | i18n }}</h2>
           <div class="members-grid">
             @if (isLoading()) {
               @for (item of [1, 2, 3, 4, 5, 6, 7, 8]; track item) {
@@ -118,7 +126,7 @@ import type { Member, MemberRole, RoleFilter } from '../../services/members.serv
               }
             } @else {
               @if (filteredAdvisors().length === 0) {
-                <div class="no-results">No advisors match your search.</div>
+                <div class="no-results">{{ 'organization.advisors.empty' | i18n }}</div>
               } @else {
                 @for (advisor of filteredAdvisors(); track advisor.email) {
                   <div class="member-card">
@@ -129,7 +137,9 @@ import type { Member, MemberRole, RoleFilter } from '../../services/members.serv
                       <h3>{{ advisor.name }}</h3>
                       <p class="member-title">{{ advisor.title }}</p>
                       <p class="member-email">{{ advisor.email }}</p>
-                      <a [routerLink]="['/organization/member', advisor.slug]" class="learn-more">LEARN MORE →</a>
+                      <a [routerLink]="['/organization/member', advisor.slug]" class="learn-more">
+                        {{ 'organization.members.learnMore' | i18n }}
+                      </a>
                     </div>
                   </div>
                 }
@@ -137,7 +147,7 @@ import type { Member, MemberRole, RoleFilter } from '../../services/members.serv
             }
           </div>
           <div class="load-more-container">
-            <button class="load-more-btn">LOAD MORE</button>
+            <button class="load-more-btn">{{ 'organization.members.loadMore' | i18n }}</button>
           </div>
         </div>
       </section>
@@ -145,22 +155,22 @@ import type { Member, MemberRole, RoleFilter } from '../../services/members.serv
       <!-- Services Info Section -->
       <section class="services-info-section">
         <div class="container">
-          <h2 class="section-title-white">THE SERVICES OF THE STATE COUNCIL</h2>
+          <h2 class="section-title-white">{{ 'organization.services.overviewTitle' | i18n }}</h2>
           <div class="services-grid">
             <div class="service-box">
-              <h3>The Registry</h3>
-              <p>The registry ensures record-keeping</p>
-              <a href="#" class="service-link">LEARN MORE →</a>
+              <h3>{{ 'organization.services.registry.title' | i18n }}</h3>
+              <p>{{ 'organization.services.registry.body' | i18n }}</p>
+              <a href="#" class="service-link">{{ 'organization.services.learnMore' | i18n }}</a>
             </div>
             <div class="service-box">
-              <h3>The Documentation, Studies and Publication Unit</h3>
-              <p>The documentation service</p>
-              <a href="#" class="service-link">LEARN MORE →</a>
+              <h3>{{ 'organization.services.docs.title' | i18n }}</h3>
+              <p>{{ 'organization.services.docs.body' | i18n }}</p>
+              <a href="#" class="service-link">{{ 'organization.services.learnMore' | i18n }}</a>
             </div>
             <div class="service-box">
-              <h3>The Television Agency</h3>
-              <p>The television agency supports justice</p>
-              <a href="#" class="service-link">LEARN MORE →</a>
+              <h3>{{ 'organization.services.tv.title' | i18n }}</h3>
+              <p>{{ 'organization.services.tv.body' | i18n }}</p>
+              <a href="#" class="service-link">{{ 'organization.services.learnMore' | i18n }}</a>
             </div>
           </div>
         </div>
@@ -169,8 +179,8 @@ import type { Member, MemberRole, RoleFilter } from '../../services/members.serv
       <!-- Services Detail Section -->
       <section class="services-section">
         <div class="container">
-          <h2 class="section-heading">SERVICES OF THE STATE COUNCIL</h2>
-          <p class="section-subheading">Primary sessions and training</p>
+          <h2 class="section-heading">{{ 'organization.services.title' | i18n }}</h2>
+          <p class="section-subheading">{{ 'organization.services.subtitle' | i18n }}</p>
 
           <div class="services-content">
             <!-- Left Column - Service Links -->
@@ -180,11 +190,11 @@ import type { Member, MemberRole, RoleFilter } from '../../services/members.serv
                    (click)="selectService('divisions')">
                 <span class="service-icon">📋</span>
                 <div class="service-text">
-                  <h4>The STATE COUNCIL comprises three divisions:</h4>
+                  <h4>{{ 'organization.services.divisions.title' | i18n }}</h4>
                   <ol>
-                    <li>The rooms</li>
-                    <li>A council of justice</li>
-                    <li>The minister's oversight registers</li>
+                    <li>{{ 'organization.services.divisions.rooms' | i18n }}</li>
+                    <li>{{ 'organization.services.divisions.council' | i18n }}</li>
+                    <li>{{ 'organization.services.divisions.registers' | i18n }}</li>
                   </ol>
                 </div>
               </div>
@@ -194,8 +204,8 @@ import type { Member, MemberRole, RoleFilter } from '../../services/members.serv
                    (click)="selectService('rooms')">
                 <span class="service-icon">🏛️</span>
                 <div class="service-text">
-                  <h4>1. The Rooms</h4>
-                  <p>Restricted rooms and chambers of the Court</p>
+                  <h4>{{ 'organization.services.rooms.title' | i18n }}</h4>
+                  <p>{{ 'organization.services.rooms.body' | i18n }}</p>
                 </div>
               </div>
 
@@ -204,8 +214,8 @@ import type { Member, MemberRole, RoleFilter } from '../../services/members.serv
                    (click)="selectService('council')">
                 <span class="service-icon">⚖️</span>
                 <div class="service-text">
-                  <h4>2. A Council of Justice</h4>
-                  <p>Judicial council and oversight body</p>
+                  <h4>{{ 'organization.services.council.title' | i18n }}</h4>
+                  <p>{{ 'organization.services.council.body' | i18n }}</p>
                 </div>
               </div>
 
@@ -214,8 +224,8 @@ import type { Member, MemberRole, RoleFilter } from '../../services/members.serv
                    (click)="selectService('registers')">
                 <span class="service-icon">📚</span>
                 <div class="service-text">
-                  <h4>3. The Minister's Oversight Registers</h4>
-                  <p>Official documentation and registry system</p>
+                  <h4>{{ 'organization.services.registers.title' | i18n }}</h4>
+                  <p>{{ 'organization.services.registers.body' | i18n }}</p>
                 </div>
               </div>
             </div>
@@ -226,19 +236,15 @@ import type { Member, MemberRole, RoleFilter } from '../../services/members.serv
                 <div class="detail-box active">
                   <span class="detail-icon">📋</span>
                   <div class="detail-content">
-                    <h4>The STATE COUNCIL comprises four chambers</h4>
+                    <h4>{{ 'organization.services.details.chambers.title' | i18n }}</h4>
                     <ol>
-                      <li>The chamber of appeal in criminal as well court cases.</li>
-                      <li>The chamber of appeal in correction for minor incidents as well as special procedures stipulated under exceptional laws</li>
-                      <li>The chamber of appeal in civil matters, handling appeals against judgments rendered at first instance by courts of peace and lower courts.</li>
-                      <li>The chamber of appeal in commercial matters, handling appeals against decisions rendered by the Commercial Court of Justice and Arbitration (CCJA).</li>
+                      <li>{{ 'organization.services.details.chambers.item1' | i18n }}</li>
+                      <li>{{ 'organization.services.details.chambers.item2' | i18n }}</li>
+                      <li>{{ 'organization.services.details.chambers.item3' | i18n }}</li>
+                      <li>{{ 'organization.services.details.chambers.item4' | i18n }}</li>
                     </ol>
-                    <p>
-                      In addition to these four chambers, an extraordinary chamber composed of all State Council judges hears cases referred by the President for public review. It may be seized before proceedings or when contradictory decisions have been rendered by the various chambers of the State Council.
-                    </p>
-                    <p>
-                      Executive orders will determine all by the Prime Minister on the jurisdiction of all the chambers of the STATE COUNCIL.
-                    </p>
+                    <p>{{ 'organization.services.details.chambers.body1' | i18n }}</p>
+                    <p>{{ 'organization.services.details.chambers.body2' | i18n }}</p>
                   </div>
                 </div>
               }
@@ -247,19 +253,11 @@ import type { Member, MemberRole, RoleFilter } from '../../services/members.serv
                 <div class="detail-box active">
                   <span class="detail-icon">🏛️</span>
                   <div class="detail-content">
-                    <h4>The Rooms - Restricted Chambers</h4>
-                    <p>
-                      The rooms of the STATE COUNCIL are specialized chambers where judicial proceedings are conducted with strict adherence to procedural rules and regulations. These restricted chambers are designed to ensure the proper administration of justice at the highest level of the judicial system.
-                    </p>
-                    <p>
-                      Each room is equipped with modern facilities to facilitate hearings, deliberations, and the rendering of judgments. The chambers maintain strict security protocols to protect the integrity of judicial proceedings and ensure confidentiality where required by law.
-                    </p>
-                    <p>
-                      The architectural design of these rooms reflects the dignity and solemnity of the judicial process, featuring traditional judicial furnishings including the bench for magistrates, areas for legal counsel, and public galleries where appropriate.
-                    </p>
-                    <p>
-                      Access to these restricted rooms is carefully controlled and limited to authorized personnel including magistrates, court officers, legal practitioners with matters before the court, and members of the public attending open proceedings.
-                    </p>
+                    <h4>{{ 'organization.services.details.rooms.title' | i18n }}</h4>
+                    <p>{{ 'organization.services.details.rooms.body1' | i18n }}</p>
+                    <p>{{ 'organization.services.details.rooms.body2' | i18n }}</p>
+                    <p>{{ 'organization.services.details.rooms.body3' | i18n }}</p>
+                    <p>{{ 'organization.services.details.rooms.body4' | i18n }}</p>
                   </div>
                 </div>
               }
@@ -268,19 +266,11 @@ import type { Member, MemberRole, RoleFilter } from '../../services/members.serv
                 <div class="detail-box active">
                   <span class="detail-icon">⚖️</span>
                   <div class="detail-content">
-                    <h4>A Council of Justice</h4>
-                    <p>
-                      The Council of Justice serves as an essential oversight body within the STATE COUNCIL, responsible for ensuring the proper administration of justice and maintaining the highest standards of judicial conduct and performance.
-                    </p>
-                    <p>
-                      This council is composed of senior magistrates who bring extensive experience and expertise to their supervisory role. They meet regularly to review judicial operations, address procedural concerns, and ensure consistency in the application of law across all chambers.
-                    </p>
-                    <p>
-                      The Council of Justice plays a crucial role in judicial appointments, promotions, and disciplinary matters affecting members of the court. It ensures that all magistrates maintain the independence, integrity, and competence required for their positions.
-                    </p>
-                    <p>
-                      Additionally, the council provides guidance on complex legal matters, reviews proposed reforms to judicial procedures, and serves as a liaison between the STATE COUNCIL and other branches of government on matters affecting the administration of justice.
-                    </p>
+                    <h4>{{ 'organization.services.details.council.title' | i18n }}</h4>
+                    <p>{{ 'organization.services.details.council.body1' | i18n }}</p>
+                    <p>{{ 'organization.services.details.council.body2' | i18n }}</p>
+                    <p>{{ 'organization.services.details.council.body3' | i18n }}</p>
+                    <p>{{ 'organization.services.details.council.body4' | i18n }}</p>
                   </div>
                 </div>
               }
@@ -289,22 +279,12 @@ import type { Member, MemberRole, RoleFilter } from '../../services/members.serv
                 <div class="detail-box active">
                   <span class="detail-icon">📚</span>
                   <div class="detail-content">
-                    <h4>The Minister's Oversight Registers</h4>
-                    <p>
-                      The Minister's Oversight Registers constitute a comprehensive documentation system that maintains detailed records of all judicial activities, decisions, and administrative actions undertaken by the STATE COUNCIL.
-                    </p>
-                    <p>
-                      These registers serve multiple critical functions: they provide a permanent record of court proceedings, ensure transparency and accountability in judicial operations, and facilitate oversight by appropriate governmental authorities while respecting judicial independence.
-                    </p>
-                    <p>
-                      The registry system maintains various categories of records including case files, judgment registers, appointment records, administrative decisions, and statistical data on court activities. All entries are made according to strict protocols to ensure accuracy and completeness.
-                    </p>
-                    <p>
-                      Modern digital systems have been integrated with traditional paper-based registers to enhance accessibility, security, and preservation of these vital judicial records. The registry staff undergoes specialized training to maintain these important documents according to international archival standards.
-                    </p>
-                    <p>
-                      Regular audits and reviews ensure that the oversight registers remain current, accurate, and properly maintained, serving as an indispensable resource for judicial administration and legal research.
-                    </p>
+                    <h4>{{ 'organization.services.details.registers.title' | i18n }}</h4>
+                    <p>{{ 'organization.services.details.registers.body1' | i18n }}</p>
+                    <p>{{ 'organization.services.details.registers.body2' | i18n }}</p>
+                    <p>{{ 'organization.services.details.registers.body3' | i18n }}</p>
+                    <p>{{ 'organization.services.details.registers.body4' | i18n }}</p>
+                    <p>{{ 'organization.services.details.registers.body5' | i18n }}</p>
                   </div>
                 </div>
               }
@@ -326,41 +306,41 @@ import type { Member, MemberRole, RoleFilter } from '../../services/members.serv
         <div class="container">
           <div class="footer-grid">
             <div class="footer-column">
-              <h3>Main Office</h3>
-              <p>No. 3 Avenue de la Justice</p>
-              <p>Central District of Kinshasa</p>
-              <p>Democratic Republic of Congo</p>
-              <p class="footer-contact">Tel: +243 (21) 0000000</p>
-              <p class="footer-contact">Email: info@conseildetat.cd</p>
+              <h3>{{ 'footer.mainOffice.title' | i18n }}</h3>
+              <p>{{ 'footer.mainOffice.address1' | i18n }}</p>
+              <p>{{ 'footer.mainOffice.address2' | i18n }}</p>
+              <p>{{ 'footer.mainOffice.address3' | i18n }}</p>
+              <p class="footer-contact">{{ 'footer.mainOffice.phone' | i18n }}</p>
+              <p class="footer-contact">{{ 'footer.mainOffice.email' | i18n }}</p>
             </div>
 
             <div class="footer-column">
-              <h3>Quick Links</h3>
+              <h3>{{ 'footer.quickLinks.title' | i18n }}</h3>
               <ul>
-                <li><a href="#">About the Court</a></li>
-                <li><a href="#">Jurisprudence</a></li>
-                <li><a href="#">Filing Procedures</a></li>
-                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">{{ 'footer.quickLinks.about' | i18n }}</a></li>
+                <li><a href="#">{{ 'footer.quickLinks.jurisprudence' | i18n }}</a></li>
+                <li><a href="#">{{ 'footer.quickLinks.filing' | i18n }}</a></li>
+                <li><a href="#">{{ 'footer.quickLinks.contact' | i18n }}</a></li>
               </ul>
             </div>
 
             <div class="footer-column">
-              <h3>Resources</h3>
+              <h3>{{ 'footer.resources.title' | i18n }}</h3>
               <ul>
-                <li><a href="#">Legal Documents</a></li>
-                <li><a href="#">Court Decisions</a></li>
-                <li><a href="#">Annual Reports</a></li>
-                <li><a href="#">FAQs</a></li>
+                <li><a href="#">{{ 'footer.resources.legalDocs' | i18n }}</a></li>
+                <li><a href="#">{{ 'footer.resources.decisions' | i18n }}</a></li>
+                <li><a href="#">{{ 'footer.resources.reports' | i18n }}</a></li>
+                <li><a href="#">{{ 'footer.resources.faqs' | i18n }}</a></li>
               </ul>
             </div>
 
             <div class="footer-column">
-              <h3>Connect</h3>
+              <h3>{{ 'footer.connect.title' | i18n }}</h3>
               <ul>
-                <li><a href="#">Facebook</a></li>
-                <li><a href="#">Twitter</a></li>
-                <li><a href="#">Instagram</a></li>
-                <li><a href="#">LinkedIn</a></li>
+                <li><a href="#">{{ 'footer.connect.facebook' | i18n }}</a></li>
+                <li><a href="#">{{ 'footer.connect.twitter' | i18n }}</a></li>
+                <li><a href="#">{{ 'footer.connect.instagram' | i18n }}</a></li>
+                <li><a href="#">{{ 'footer.connect.linkedin' | i18n }}</a></li>
               </ul>
             </div>
           </div>
@@ -370,8 +350,8 @@ import type { Member, MemberRole, RoleFilter } from '../../services/members.serv
       <div class="footer-bottom">
         <div class="container">
           <div class="footer-bottom-content">
-            <a href="#" class="privacy-link">Privacy</a>
-            <p class="copyright">Copyright State Council. All Rights Reserved</p>
+            <a href="#" class="privacy-link">{{ 'footer.privacy' | i18n }}</a>
+            <p class="copyright">{{ 'footer.copyright' | i18n }}</p>
             <div class="social-icons">
               <a href="#" class="social-icon">
                 <svg viewBox="0 0 24 24" fill="currentColor">

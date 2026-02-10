@@ -1,26 +1,27 @@
 import { Component, signal, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { I18nPipe } from '../../i18n/i18n.pipe';
 
 interface HeroSlide {
   id: number;
-  title: string;
-  subtitle: string;
-  description: string;
-  buttonText: string;
+  titleKey: string;
+  subtitleKey: string;
+  descriptionKey: string;
+  buttonKey: string;
   image: string;
 }
 
 interface PresidentSlide {
   id: number;
-  title: string;
+  titleKey: string;
   image: string;
-  paragraphs: string[];
+  paragraphKeys: string[];
 }
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, I18nPipe],
   template: `
 
     <!-- Hero Carousel Section -->
@@ -30,10 +31,10 @@ interface PresidentSlide {
         <div class="hero-content">
           <div class="container">
             <div class="hero-text">
-              <p class="hero-subtitle">{{ heroSlides[currentSlide()].subtitle }}</p>
-              <h1 class="hero-title">{{ heroSlides[currentSlide()].title }}</h1>
-              <p class="hero-description">{{ heroSlides[currentSlide()].description }}</p>
-              <button class="hero-button">{{ heroSlides[currentSlide()].buttonText }}</button>
+              <p class="hero-subtitle">{{ heroSlides[currentSlide()].subtitleKey | i18n }}</p>
+              <h1 class="hero-title">{{ heroSlides[currentSlide()].titleKey | i18n }}</h1>
+              <p class="hero-description">{{ heroSlides[currentSlide()].descriptionKey | i18n }}</p>
+              <button class="hero-button">{{ heroSlides[currentSlide()].buttonKey | i18n }}</button>
             </div>
           </div>
         </div>
@@ -75,48 +76,48 @@ interface PresidentSlide {
         <div class="quick-links-container">
           <div class="quick-link-item">
             <div class="quick-link-icon">
-              <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=120&h=120&fit=crop" alt="News">
+              <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=120&h=120&fit=crop" [alt]="'home.quickLinks.items.news.alt' | i18n">
             </div>
             <div class="quick-link-content">
-              <h3>NEWS</h3>
-              <p>Stay informed about key decisions and events.</p>
-              <a href="#" class="quick-link-action">Read</a>
+              <h3>{{ 'home.quickLinks.items.news.title' | i18n }}</h3>
+              <p>{{ 'home.quickLinks.items.news.body' | i18n }}</p>
+              <a href="#" class="quick-link-action">{{ 'home.quickLinks.items.news.action' | i18n }}</a>
             </div>
             <div class="connector-line"></div>
           </div>
 
           <div class="quick-link-item">
             <div class="quick-link-icon">
-              <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=120&h=120&fit=crop" alt="Excerpts">
+              <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=120&h=120&fit=crop" [alt]="'home.quickLinks.items.excerpts.alt' | i18n">
             </div>
             <div class="quick-link-content">
-              <h3>EXCERPTS FROM ROLES</h3>
-              <p>Check hearing times and pending cases.</p>
-              <a href="#" class="quick-link-action">Learn More</a>
+              <h3>{{ 'home.quickLinks.items.excerpts.title' | i18n }}</h3>
+              <p>{{ 'home.quickLinks.items.excerpts.body' | i18n }}</p>
+              <a href="#" class="quick-link-action">{{ 'home.quickLinks.items.excerpts.action' | i18n }}</a>
             </div>
             <div class="connector-line"></div>
           </div>
 
           <div class="quick-link-item">
             <div class="quick-link-icon">
-              <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=120&h=120&fit=crop" alt="Report">
+              <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=120&h=120&fit=crop" [alt]="'home.quickLinks.items.report.alt' | i18n">
             </div>
             <div class="quick-link-content">
-              <h3>REPORT</h3>
-              <p>Report suspicious or illegal activity securely.</p>
-              <a href="#" class="quick-link-action">Log A Report</a>
+              <h3>{{ 'home.quickLinks.items.report.title' | i18n }}</h3>
+              <p>{{ 'home.quickLinks.items.report.body' | i18n }}</p>
+              <a href="#" class="quick-link-action">{{ 'home.quickLinks.items.report.action' | i18n }}</a>
             </div>
             <div class="connector-line"></div>
           </div>
 
           <div class="quick-link-item">
             <div class="quick-link-icon">
-              <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=120&h=120&fit=crop" alt="Book">
+              <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=120&h=120&fit=crop" [alt]="'home.quickLinks.items.appointment.alt' | i18n">
             </div>
             <div class="quick-link-content">
-              <h3>BOOK APPOINTMENT</h3>
-              <p>Schedule consultations with court officials.</p>
-              <a href="#" class="quick-link-action">Book Now</a>
+              <h3>{{ 'home.quickLinks.items.appointment.title' | i18n }}</h3>
+              <p>{{ 'home.quickLinks.items.appointment.body' | i18n }}</p>
+              <a href="#" class="quick-link-action">{{ 'home.quickLinks.items.appointment.action' | i18n }}</a>
             </div>
           </div>
         </div>
@@ -128,9 +129,9 @@ interface PresidentSlide {
       <div class="container">
         <div class="offer-header">
           <div class="offer-line"></div>
-          <h2 class="section-title">WHAT WE OFFER</h2>
+          <h2 class="section-title">{{ 'home.offer.title' | i18n }}</h2>
         </div>
-        <p class="section-subtitle">We provide tailored legal solutions to meet your unique needs, ensuring your rights are protected and justice is served.</p>
+        <p class="section-subtitle">{{ 'home.offer.subtitle' | i18n }}</p>
 
         <div class="offer-grid">
           <div class="offer-card">
@@ -140,9 +141,9 @@ interface PresidentSlide {
                   <path d="M32 8L16 16L16 32C16 44 24 52 32 56C40 52 48 44 48 32L48 16L32 8Z"/>
                 </svg>
               </div>
-              <h3>Supreme Judicial Authority</h3>
+              <h3>{{ 'home.offer.cards.1.title' | i18n }}</h3>
             </div>
-            <p>As the highest court of the ordinary judicial system, the State Council ensures uniform interpretation and application of law throughout the Democratic Republic of Congo.</p>
+            <p>{{ 'home.offer.cards.1.body' | i18n }}</p>
           </div>
 
           <div class="offer-card">
@@ -156,9 +157,9 @@ interface PresidentSlide {
                   <rect x="28" y="24" width="14" height="4" fill="white"/>
                 </svg>
               </div>
-              <h3>Legal Certainty</h3>
+              <h3>{{ 'home.offer.cards.2.title' | i18n }}</h3>
             </div>
-            <p>Through our jurisprudence and decisions, we establish legal precedents that guide lower courts and ensure consistency in the application of justice.</p>
+            <p>{{ 'home.offer.cards.2.body' | i18n }}</p>
           </div>
 
           <div class="offer-card">
@@ -170,9 +171,9 @@ interface PresidentSlide {
                   <path d="M26 18L30 22L38 14L40 16L30 26L24 20L26 18Z" fill="white"/>
                 </svg>
               </div>
-              <h3>Judicial Excellence</h3>
+              <h3>{{ 'home.offer.cards.3.title' | i18n }}</h3>
             </div>
-            <p>Our magistrates and counselors are selected based on merit, ensuring the highest standards of legal expertise, integrity, and commitment to justice.</p>
+            <p>{{ 'home.offer.cards.3.body' | i18n }}</p>
           </div>
 
           <div class="offer-card">
@@ -183,9 +184,9 @@ interface PresidentSlide {
                   <path d="M20 28L28 32L38 22L42 26L28 40L16 32L20 28Z" fill="white"/>
                 </svg>
               </div>
-              <h3>International Cooperation</h3>
+              <h3>{{ 'home.offer.cards.4.title' | i18n }}</h3>
             </div>
-            <p>We actively participate in dialogue with international judicial bodies and maintain cooperation with French-speaking and African courts.</p>
+            <p>{{ 'home.offer.cards.4.body' | i18n }}</p>
           </div>
         </div>
       </div>
@@ -196,10 +197,10 @@ interface PresidentSlide {
       <div class="container">
         <div class="expertise-header">
           <div class="expertise-line"></div>
-          <h2 class="section-title">FIELDS OF EXPERTISE</h2>
+          <h2 class="section-title">{{ 'home.expertise.title' | i18n }}</h2>
           <div class="expertise-line"></div>
         </div>
-        <p class="section-subtitle">The STATE COUNCIL exercises jurisdiction over various legal matters as the supreme court of the ordinary judicial system.</p>
+        <p class="section-subtitle">{{ 'home.expertise.subtitle' | i18n }}</p>
 
         <div class="practice-grid">
           <div class="practice-card">
@@ -210,11 +211,11 @@ interface PresidentSlide {
               </svg>
             </div>
             <div class="practice-content">
-              <h3>Civil & Commercial Law</h3>
+              <h3>{{ 'home.expertise.areas.civil.title' | i18n }}</h3>
               <ul>
-                <li>Appeals from Courts of Appeal</li>
-                <li>Commercial disputes and contracts</li>
-                <li>Property and inheritance matters</li>
+                <li>{{ 'home.expertise.areas.civil.items.1' | i18n }}</li>
+                <li>{{ 'home.expertise.areas.civil.items.2' | i18n }}</li>
+                <li>{{ 'home.expertise.areas.civil.items.3' | i18n }}</li>
               </ul>
             </div>
           </div>
@@ -229,11 +230,11 @@ interface PresidentSlide {
               </svg>
             </div>
             <div class="practice-content">
-              <h3>Family Law</h3>
+              <h3>{{ 'home.expertise.areas.family.title' | i18n }}</h3>
               <ul>
-                <li>Marriage and divorce appeals</li>
-                <li>Child custody disputes</li>
-                <li>Succession matters</li>
+                <li>{{ 'home.expertise.areas.family.items.1' | i18n }}</li>
+                <li>{{ 'home.expertise.areas.family.items.2' | i18n }}</li>
+                <li>{{ 'home.expertise.areas.family.items.3' | i18n }}</li>
               </ul>
             </div>
           </div>
@@ -247,11 +248,11 @@ interface PresidentSlide {
               </svg>
             </div>
             <div class="practice-content">
-              <h3>Public Law</h3>
+              <h3>{{ 'home.expertise.areas.public.title' | i18n }}</h3>
               <ul>
-                <li>Jurisdictional privilege cases</li>
-                <li>Prosecution of high officials</li>
-                <li>Constitutional matters</li>
+                <li>{{ 'home.expertise.areas.public.items.1' | i18n }}</li>
+                <li>{{ 'home.expertise.areas.public.items.2' | i18n }}</li>
+                <li>{{ 'home.expertise.areas.public.items.3' | i18n }}</li>
               </ul>
             </div>
           </div>
@@ -265,11 +266,11 @@ interface PresidentSlide {
               </svg>
             </div>
             <div class="practice-content">
-              <h3>Labor & Employment</h3>
+              <h3>{{ 'home.expertise.areas.labor.title' | i18n }}</h3>
               <ul>
-                <li>Labor dispute appeals</li>
-                <li>Employment contract matters</li>
-                <li>Workers' rights protection</li>
+                <li>{{ 'home.expertise.areas.labor.items.1' | i18n }}</li>
+                <li>{{ 'home.expertise.areas.labor.items.2' | i18n }}</li>
+                <li>{{ 'home.expertise.areas.labor.items.3' | i18n }}</li>
               </ul>
             </div>
           </div>
@@ -283,11 +284,11 @@ interface PresidentSlide {
               </svg>
             </div>
             <div class="practice-content">
-              <h3>Criminal Law</h3>
+              <h3>{{ 'home.expertise.areas.criminal.title' | i18n }}</h3>
               <ul>
-                <li>Criminal appeals to the State Council</li>
-                <li>Procedural error reviews</li>
-                <li>Application of criminal law</li>
+                <li>{{ 'home.expertise.areas.criminal.items.1' | i18n }}</li>
+                <li>{{ 'home.expertise.areas.criminal.items.2' | i18n }}</li>
+                <li>{{ 'home.expertise.areas.criminal.items.3' | i18n }}</li>
               </ul>
             </div>
           </div>
@@ -301,11 +302,11 @@ interface PresidentSlide {
               </svg>
             </div>
             <div class="practice-content">
-              <h3>Property Rights</h3>
+              <h3>{{ 'home.expertise.areas.property.title' | i18n }}</h3>
               <ul>
-                <li>Real estate disputes</li>
-                <li>Land ownership matters</li>
-                <li>Property transactions</li>
+                <li>{{ 'home.expertise.areas.property.items.1' | i18n }}</li>
+                <li>{{ 'home.expertise.areas.property.items.2' | i18n }}</li>
+                <li>{{ 'home.expertise.areas.property.items.3' | i18n }}</li>
               </ul>
             </div>
           </div>
@@ -318,18 +319,18 @@ interface PresidentSlide {
       <div class="container">
         <div class="contact-bar">
           <div class="contact-item">
-            <h3>Office Address</h3>
-            <p>No. 2 Avenue de la Justice in the Gombe district of Kinshasa.</p>
+            <h3>{{ 'home.contact.address.title' | i18n }}</h3>
+            <p>{{ 'home.contact.address.body' | i18n }}</p>
           </div>
           <div class="contact-divider"></div>
           <div class="contact-item">
-            <h3>Office Number</h3>
-            <p>+243 000000000</p>
+            <h3>{{ 'home.contact.phone.title' | i18n }}</h3>
+            <p>{{ 'home.contact.phone.body' | i18n }}</p>
           </div>
           <div class="contact-divider"></div>
           <div class="contact-item">
-            <h3>Office Email</h3>
-            <p>info&#64;conseildetat.cd</p>
+            <h3>{{ 'home.contact.email.title' | i18n }}</h3>
+            <p>{{ 'home.contact.email.body' | i18n }}</p>
           </div>
         </div>
       </div>
@@ -340,16 +341,16 @@ interface PresidentSlide {
       <div class="container">
         <div class="president-content">
           <div class="president-image-wrapper">
-            <img [src]="presidentSlides[currentPresidentSlide()].image" alt="President">
+            <img [src]="presidentSlides[currentPresidentSlide()].image" [alt]="'home.president.imageAlt' | i18n">
           </div>
 
           <div class="president-text">
-            <h2>{{ presidentSlides[currentPresidentSlide()].title }}</h2>
-            @for (paragraph of presidentSlides[currentPresidentSlide()].paragraphs; track paragraph) {
-              <p>{{ paragraph }}</p>
+            <h2>{{ presidentSlides[currentPresidentSlide()].titleKey | i18n }}</h2>
+            @for (paragraphKey of presidentSlides[currentPresidentSlide()].paragraphKeys; track paragraphKey) {
+              <p>{{ paragraphKey | i18n }}</p>
             }
             <button class="president-learn-btn">
-              Learn More
+              {{ 'home.president.cta' | i18n }}
             </button>
 
             <div class="president-pagination">
@@ -371,20 +372,20 @@ interface PresidentSlide {
       <div class="container">
         <div class="newsletter-header">
           <div class="header-line"></div>
-          <h2>NEWSLETTER</h2>
+          <h2>{{ 'home.newsletter.title' | i18n }}</h2>
           <div class="header-line"></div>
         </div>
 
         <div class="newsletter-grid">
           <div class="news-card">
             <div class="news-image">
-              <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=800&h=600&fit=crop" alt="Appeals">
+              <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=800&h=600&fit=crop" [alt]="'home.newsletter.items.1.alt' | i18n">
             </div>
             <div class="news-content">
-              <p class="news-date">15 Nov 2025 | Decision Report</p>
-              <h3>Navigating Appeals: Legal Advice for a Smooth Process</h3>
+              <p class="news-date">{{ 'home.newsletter.items.1.date' | i18n }}</p>
+              <h3>{{ 'home.newsletter.items.1.title' | i18n }}</h3>
               <a href="#" class="read-more-link">
-                Read More
+                {{ 'home.newsletter.readMore' | i18n }}
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                   <path d="M5 12h14M12 5l7 7-7 7"/>
                 </svg>
@@ -394,13 +395,13 @@ interface PresidentSlide {
 
           <div class="news-card">
             <div class="news-image">
-              <img src="https://images.unsplash.com/photo-1505664194779-8beaceb93744?w=800&h=600&fit=crop" alt="State Council proceedings">
+              <img src="https://images.unsplash.com/photo-1505664194779-8beaceb93744?w=800&h=600&fit=crop" [alt]="'home.newsletter.items.2.alt' | i18n">
             </div>
             <div class="news-content">
-              <p class="news-date">22 Oct 2025 | Court Update</p>
-              <h3>Key Considerations in State Council Proceedings</h3>
+              <p class="news-date">{{ 'home.newsletter.items.2.date' | i18n }}</p>
+              <h3>{{ 'home.newsletter.items.2.title' | i18n }}</h3>
               <a href="#" class="read-more-link">
-                Read More
+                {{ 'home.newsletter.readMore' | i18n }}
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                   <path d="M5 12h14M12 5l7 7-7 7"/>
                 </svg>
@@ -410,13 +411,13 @@ interface PresidentSlide {
 
           <div class="news-card">
             <div class="news-image">
-              <img src="https://images.unsplash.com/photo-1479142506502-19b3a3b7ff33?w=800&h=600&fit=crop" alt="Procedural">
+              <img src="https://images.unsplash.com/photo-1479142506502-19b3a3b7ff33?w=800&h=600&fit=crop" [alt]="'home.newsletter.items.3.alt' | i18n">
             </div>
             <div class="news-content">
-              <p class="news-date">18 Oct 2025 | Judicial Ruling</p>
-              <h3>Recent Changes in Procedural Law</h3>
+              <p class="news-date">{{ 'home.newsletter.items.3.date' | i18n }}</p>
+              <h3>{{ 'home.newsletter.items.3.title' | i18n }}</h3>
               <a href="#" class="read-more-link">
-                Read More
+                {{ 'home.newsletter.readMore' | i18n }}
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                   <path d="M5 12h14M12 5l7 7-7 7"/>
                 </svg>
@@ -426,13 +427,13 @@ interface PresidentSlide {
 
           <div class="news-card">
             <div class="news-image">
-              <img src="https://images.unsplash.com/photo-1521587760476-6c12a4b040da?w=800&h=600&fit=crop" alt="Rights">
+              <img src="https://images.unsplash.com/photo-1521587760476-6c12a4b040da?w=800&h=600&fit=crop" [alt]="'home.newsletter.items.4.alt' | i18n">
             </div>
             <div class="news-content">
-              <p class="news-date">12 Oct 2025 | Legal Update</p>
-              <h3>Understanding Your Rights in the Appeals Process</h3>
+              <p class="news-date">{{ 'home.newsletter.items.4.date' | i18n }}</p>
+              <h3>{{ 'home.newsletter.items.4.title' | i18n }}</h3>
               <a href="#" class="read-more-link">
-                Read More
+                {{ 'home.newsletter.readMore' | i18n }}
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                   <path d="M5 12h14M12 5l7 7-7 7"/>
                 </svg>
@@ -442,7 +443,7 @@ interface PresidentSlide {
         </div>
 
         <div class="newsletter-actions">
-          <button class="newsletter-learn-btn">Learn More</button>
+          <button class="newsletter-learn-btn">{{ 'home.newsletter.cta' | i18n }}</button>
         </div>
       </div>
     </section>
@@ -461,41 +462,41 @@ interface PresidentSlide {
         <div class="container">
           <div class="footer-grid">
             <div class="footer-column">
-              <h3>Main Office</h3>
-              <p>No. 3 Avenue de la Justice</p>
-              <p>Central District of Kinshasa</p>
-              <p>Democratic Republic of Congo</p>
-              <p class="footer-contact">Tel: +243 (21) 0000000</p>
-              <p class="footer-contact">Email: info@conseildetat.cd</p>
+              <h3>{{ 'footer.mainOffice.title' | i18n }}</h3>
+              <p>{{ 'footer.mainOffice.address1' | i18n }}</p>
+              <p>{{ 'footer.mainOffice.address2' | i18n }}</p>
+              <p>{{ 'footer.mainOffice.address3' | i18n }}</p>
+              <p class="footer-contact">{{ 'footer.mainOffice.phone' | i18n }}</p>
+              <p class="footer-contact">{{ 'footer.mainOffice.email' | i18n }}</p>
             </div>
 
             <div class="footer-column">
-              <h3>Quick Links</h3>
+              <h3>{{ 'footer.quickLinks.title' | i18n }}</h3>
               <ul>
-                <li><a href="#">About the Court</a></li>
-                <li><a href="#">Jurisprudence</a></li>
-                <li><a href="#">Filing Procedures</a></li>
-                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">{{ 'footer.quickLinks.about' | i18n }}</a></li>
+                <li><a href="#">{{ 'footer.quickLinks.jurisprudence' | i18n }}</a></li>
+                <li><a href="#">{{ 'footer.quickLinks.filing' | i18n }}</a></li>
+                <li><a href="#">{{ 'footer.quickLinks.contact' | i18n }}</a></li>
               </ul>
             </div>
 
             <div class="footer-column">
-              <h3>Resources</h3>
+              <h3>{{ 'footer.resources.title' | i18n }}</h3>
               <ul>
-                <li><a href="#">Legal Documents</a></li>
-                <li><a href="#">Court Decisions</a></li>
-                <li><a href="#">Annual Reports</a></li>
-                <li><a href="#">FAQs</a></li>
+                <li><a href="#">{{ 'footer.resources.legalDocs' | i18n }}</a></li>
+                <li><a href="#">{{ 'footer.resources.decisions' | i18n }}</a></li>
+                <li><a href="#">{{ 'footer.resources.reports' | i18n }}</a></li>
+                <li><a href="#">{{ 'footer.resources.faqs' | i18n }}</a></li>
               </ul>
             </div>
 
             <div class="footer-column">
-              <h3>Connect</h3>
+              <h3>{{ 'footer.connect.title' | i18n }}</h3>
               <ul>
-                <li><a href="#">Facebook</a></li>
-                <li><a href="#">Twitter</a></li>
-                <li><a href="#">Instagram</a></li>
-                <li><a href="#">LinkedIn</a></li>
+                <li><a href="#">{{ 'footer.connect.facebook' | i18n }}</a></li>
+                <li><a href="#">{{ 'footer.connect.twitter' | i18n }}</a></li>
+                <li><a href="#">{{ 'footer.connect.instagram' | i18n }}</a></li>
+                <li><a href="#">{{ 'footer.connect.linkedin' | i18n }}</a></li>
               </ul>
             </div>
           </div>
@@ -505,8 +506,8 @@ interface PresidentSlide {
       <div class="footer-bottom">
         <div class="container">
           <div class="footer-bottom-content">
-            <a href="#" class="privacy-link">Privacy</a>
-            <p class="copyright">Copyright State Council. All Rights Reserved</p>
+            <a href="#" class="privacy-link">{{ 'footer.privacy' | i18n }}</a>
+            <p class="copyright">{{ 'footer.copyright' | i18n }}</p>
             <div class="social-icons">
               <a href="#" class="social-icon">
                 <svg viewBox="0 0 24 24" fill="currentColor">
@@ -1513,26 +1514,26 @@ export class HomeComponent implements OnInit {
   heroSlides: HeroSlide[] = [
     {
       id: 1,
-      title: 'DRC: JUDICIAL YEAR BEGINS AT THE STATE COUNCIL FOR THE 2025-2026 TERM',
-      subtitle: 'HOME OF LAW & ORDER',
-      description: 'This video covers the formal opening of the judicial year for 2025-2026. In the presence of President Felix Tshisekedi, the session brought together senior judges and legal officials.',
-      buttonText: 'Watch Live Proceeding on Youtube',
+      titleKey: 'home.hero.slides.1.title',
+      subtitleKey: 'home.hero.slides.1.subtitle',
+      descriptionKey: 'home.hero.slides.1.body',
+      buttonKey: 'home.hero.slides.1.cta',
       image: 'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=1920&h=1080&fit=crop'
     },
     {
       id: 2,
-      title: 'STRENGTHENING JUDICIAL INDEPENDENCE AND ACCOUNTABILITY',
-      subtitle: 'HOME OF LAW & ORDER',
-      description: 'The STATE COUNCIL continues to uphold the principles of justice, fairness, and the rule of law. We are committed to ensuring transparency and integrity.',
-      buttonText: 'Learn More About Our Mission',
+      titleKey: 'home.hero.slides.2.title',
+      subtitleKey: 'home.hero.slides.2.subtitle',
+      descriptionKey: 'home.hero.slides.2.body',
+      buttonKey: 'home.hero.slides.2.cta',
       image: 'https://images.unsplash.com/photo-1505664194779-8beaceb93744?w=1920&h=1080&fit=crop'
     },
     {
       id: 3,
-      title: 'ADVANCING LEGAL EXCELLENCE IN THE DEMOCRATIC REPUBLIC OF CONGO',
-      subtitle: 'HOME OF LAW & ORDER',
-      description: 'Through rigorous legal training and adherence to international best practices, we strive to maintain the highest standards of judicial excellence.',
-      buttonText: 'Explore Our Initiatives',
+      titleKey: 'home.hero.slides.3.title',
+      subtitleKey: 'home.hero.slides.3.subtitle',
+      descriptionKey: 'home.hero.slides.3.body',
+      buttonKey: 'home.hero.slides.3.cta',
       image: 'https://images.unsplash.com/photo-1479142506502-19b3a3b7ff33?w=1920&h=1080&fit=crop'
     }
   ];
@@ -1540,32 +1541,32 @@ export class HomeComponent implements OnInit {
   presidentSlides: PresidentSlide[] = [
     {
       id: 1,
-      title: 'THE FIRST PRESIDENT OF THE STATE COUNCIL',
+      titleKey: 'home.president.slides.1.title',
       image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=800&h=1000&fit=crop',
-      paragraphs: [
-        'As the third-ranking member of the DRC\'s High Council of the Judiciary, the First President of the STATE COUNCIL, Professor NGOMBA KABEYYA ELIE LEON, donated blood on Thursday, February 27th, in solidarity with the victims of the Rwandan aggression in the eastern part of the country.',
-        'For every democratic Congolese citizen, contributing to the war effort is a civic duty. The judiciary is no exception.',
-        'For over three decades, the DRC has suffered aggression perpetrated by Rwanda and other negative armed groups, resulting in millions of deaths, tens of thousands of displaced persons, and a deplorable humanitarian situation.'
+      paragraphKeys: [
+        'home.president.slides.1.paragraphs.1',
+        'home.president.slides.1.paragraphs.2',
+        'home.president.slides.1.paragraphs.3'
       ]
     },
     {
       id: 2,
-      title: 'JUDICIAL LEADERSHIP AND REFORM',
+      titleKey: 'home.president.slides.2.title',
       image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&h=1000&fit=crop',
-      paragraphs: [
-        'Under the leadership of the First President, the STATE COUNCIL has embarked on comprehensive judicial reforms aimed at modernizing the judicial system.',
-        'The reforms include the digitalization of court records, implementation of case management systems, and training programs for judges and court staff.',
-        'These initiatives reflect the Court\'s commitment to transparency, efficiency, and accountability in the administration of justice.'
+      paragraphKeys: [
+        'home.president.slides.2.paragraphs.1',
+        'home.president.slides.2.paragraphs.2',
+        'home.president.slides.2.paragraphs.3'
       ]
     },
     {
       id: 3,
-      title: 'INTERNATIONAL COLLABORATION',
+      titleKey: 'home.president.slides.3.title',
       image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&h=1000&fit=crop',
-      paragraphs: [
-        'The STATE COUNCIL actively engages with international judicial institutions and participates in global forums to share experiences.',
-        'Through partnerships with courts in France, Belgium, and other Francophone countries, the Court ensures it remains at the forefront of legal developments.',
-        'This international engagement strengthens the DRC\'s judicial system and enhances its capacity to deliver justice in accordance with international standards.'
+      paragraphKeys: [
+        'home.president.slides.3.paragraphs.1',
+        'home.president.slides.3.paragraphs.2',
+        'home.president.slides.3.paragraphs.3'
       ]
     }
   ];

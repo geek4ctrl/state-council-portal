@@ -40,5 +40,644 @@
       "title": "Page Not Found",
       "message": "The page you are looking for does not exist or has been moved."
     }
+  },
+  "history": {
+    "title": "History",
+    "body": "Discover the rich history of the State Council."
+  },
+  "process": {
+    "title": "Court Process",
+    "body": "Understand the court process and what to expect."
+  },
+  "judges": {
+    "title": "The Judges",
+    "body": "Meet the distinguished judges of the State Council."
+  },
+  "memberDetail": {
+    "back": "← Back to Organization",
+    "title": "Member Profile",
+    "subtitle": "Detailed profile and contact information.",
+    "office": "Office",
+    "email": "Email",
+    "notFound": {
+      "title": "Member not found",
+      "body": "The requested profile could not be located.",
+      "cta": "Return to Organization"
+    }
+  },
+  "news": {
+    "hero": {
+      "title": "NEWS",
+      "body": "Injustice can manifest itself in many ways in our society. We give you the opportunity to report all forms abuse."
+    },
+    "section": {
+      "title": "OUR NEWSFEEDS",
+      "subtitle": "VISION MAKES US WHO WE ARE"
+    },
+    "actions": {
+      "readMore": "Read more"
+    },
+    "pagination": {
+      "label": "News pagination",
+      "previous": "Previous page",
+      "next": "Next",
+      "pageLabel": "Page {{page}}"
+    },
+    "articles": {
+      "1": {
+        "date": "January 30",
+        "category": "Administration",
+        "title": "The First President of the State Council urges magistrates to adopt the resolution o...",
+        "excerpt": "Following the closing ceremony of the ordinary general assembly of the High Council of the Administrative..."
+      },
+      "2": {
+        "date": "January 30",
+        "category": "Administration",
+        "title": "ORIENTATION MEETING AT THE STATE COUNCIL",
+        "excerpt": "Kinshasa, October 18, 2025: The State Council of the Democratic Republic of Congo informs a pu..."
+      },
+      "3": {
+        "date": "January 30",
+        "category": "Administration",
+        "title": "ORIENTATION MEETING AT THE STATE COUNCIL",
+        "excerpt": "Kinshasa, October 18, 2025: The State Council of the Democratic Republic of Congo informs a pu..."
+      }
+    }
+  },
+  "steps": {
+    "hero": {
+      "report": {
+        "title": "REPORT",
+        "body": "Injustice can manifest itself in many ways in our society. We give you the opportunity to report all forms abuse."
+      },
+      "appointment": {
+        "title": "BOOK<br>APPOINTMENT",
+        "body": "To arrange a meeting with the State Council, please complete the following appointment request form. Ensure all required fields are filled out accurately so we can process your request efficiently. You'll receive a confirmation email or phone call with the scheduled date and time."
+      },
+      "appeal": {
+        "title": "APPEAL TO THE<br>STATE<br>COUNCIL",
+        "body1": "An appeal to the State Council is an administrative legal remedy allowing a party to challenge administrative decisions and acts. The State Council verifies whether administrative law was correctly applied and whether proper procedures were followed.",
+        "body2": "The State Council is seized by a request from the parties or by a declaration filed with the Council. Appeals must be filed within the prescribed legal timeframes and must be confirmed by a petition with supporting documents."
+      }
+    },
+    "tabs": {
+      "report": "Report",
+      "appointment": "Book An Appointment",
+      "appeal": "File An Appeal"
+    },
+    "forms": {
+      "report": {
+        "title": "COMPLAINT FORM",
+        "subtitle": "WE WOULD LOVE TO HEAR YOUR ISSUES"
+      },
+      "appointment": {
+        "title": "MAKE AN APPOINTMENT",
+        "subtitle": "WE WOULD LOVE TO ASSIST YOU WITH YOUR ISSUE"
+      },
+      "appeal": {
+        "title": "APPEAL FORM",
+        "subtitle": "WE WOULD LOVE TO HEAR YOUR ISSUES"
+      },
+      "fullName": "Full Name *",
+      "email": "E-mail *",
+      "department": "Department",
+      "chambers": {
+        "criminal": "Criminal Chamber",
+        "civil": "Civil Chamber",
+        "social": "Social Chamber",
+        "commercial": "Commercial Chamber"
+      },
+      "meeting": {
+        "placeholder": "Who do you want to meet ? *",
+        "firstPresident": "First President",
+        "chamberPresident": "Chamber President",
+        "legalAdvisor": "Legal Advisor",
+        "clerk": "Clerk of the Court"
+      },
+      "visit": {
+        "placeholder": "When do you plan to come ?",
+        "thisWeek": "This Week",
+        "nextWeek": "Next Week",
+        "thisMonth": "This Month",
+        "nextMonth": "Next Month"
+      },
+      "message": "Message *",
+      "submit": "SEND MESSAGE"
+    }
+  },
+  "footer": {
+    "mainOffice": {
+      "title": "Main Office",
+      "address1": "No. 3 Avenue de la Justice",
+      "address2": "Central District of Kinshasa",
+      "address3": "Democratic Republic of Congo",
+      "phone": "Tel: +243 (21) 0000000",
+      "email": "Email: info@conseildetat.cd"
+    },
+    "quickLinks": {
+      "title": "Quick Links",
+      "about": "About the Court",
+      "jurisprudence": "Jurisprudence",
+      "filing": "Filing Procedures",
+      "contact": "Contact Us"
+    },
+    "resources": {
+      "title": "Resources",
+      "legalDocs": "Legal Documents",
+      "decisions": "Court Decisions",
+      "reports": "Annual Reports",
+      "faqs": "FAQs"
+    },
+    "connect": {
+      "title": "Connect",
+      "facebook": "Facebook",
+      "twitter": "Twitter",
+      "instagram": "Instagram",
+      "linkedin": "LinkedIn"
+    },
+    "privacy": "Privacy",
+    "copyright": "Copyright State Council. All Rights Reserved"
+  },
+  "home": {
+    "hero": {
+      "slides": {
+        "1": {
+          "title": "DRC: JUDICIAL YEAR BEGINS AT THE STATE COUNCIL FOR THE 2025-2026 TERM",
+          "subtitle": "HOME OF LAW & ORDER",
+          "body": "This video covers the formal opening of the judicial year for 2025-2026. In the presence of President Felix Tshisekedi, the session brought together senior judges and legal officials.",
+          "cta": "Watch Live Proceeding on Youtube"
+        },
+        "2": {
+          "title": "STRENGTHENING JUDICIAL INDEPENDENCE AND ACCOUNTABILITY",
+          "subtitle": "HOME OF LAW & ORDER",
+          "body": "The STATE COUNCIL continues to uphold the principles of justice, fairness, and the rule of law. We are committed to ensuring transparency and integrity.",
+          "cta": "Learn More About Our Mission"
+        },
+        "3": {
+          "title": "ADVANCING LEGAL EXCELLENCE IN THE DEMOCRATIC REPUBLIC OF CONGO",
+          "subtitle": "HOME OF LAW & ORDER",
+          "body": "Through rigorous legal training and adherence to international best practices, we strive to maintain the highest standards of judicial excellence.",
+          "cta": "Explore Our Initiatives"
+        }
+      }
+    },
+    "quickLinks": {
+      "items": {
+        "news": {
+          "alt": "News",
+          "title": "NEWS",
+          "body": "Stay informed about key decisions and events.",
+          "action": "Read"
+        },
+        "excerpts": {
+          "alt": "Excerpts",
+          "title": "EXCERPTS FROM ROLES",
+          "body": "Check hearing times and pending cases.",
+          "action": "Learn More"
+        },
+        "report": {
+          "alt": "Report",
+          "title": "REPORT",
+          "body": "Report suspicious or illegal activity securely.",
+          "action": "Log A Report"
+        },
+        "appointment": {
+          "alt": "Book appointment",
+          "title": "BOOK APPOINTMENT",
+          "body": "Schedule consultations with court officials.",
+          "action": "Book Now"
+        }
+      }
+    },
+    "offer": {
+      "title": "WHAT WE OFFER",
+      "subtitle": "We provide tailored legal solutions to meet your unique needs, ensuring your rights are protected and justice is served.",
+      "cards": {
+        "1": {
+          "title": "Supreme Judicial Authority",
+          "body": "As the highest court of the ordinary judicial system, the State Council ensures uniform interpretation and application of law throughout the Democratic Republic of Congo."
+        },
+        "2": {
+          "title": "Legal Certainty",
+          "body": "Through our jurisprudence and decisions, we establish legal precedents that guide lower courts and ensure consistency in the application of justice."
+        },
+        "3": {
+          "title": "Judicial Excellence",
+          "body": "Our magistrates and counselors are selected based on merit, ensuring the highest standards of legal expertise, integrity, and commitment to justice."
+        },
+        "4": {
+          "title": "International Cooperation",
+          "body": "We actively participate in dialogue with international judicial bodies and maintain cooperation with French-speaking and African courts."
+        }
+      }
+    },
+    "expertise": {
+      "title": "FIELDS OF EXPERTISE",
+      "subtitle": "The STATE COUNCIL exercises jurisdiction over various legal matters as the supreme court of the ordinary judicial system.",
+      "areas": {
+        "civil": {
+          "title": "Civil & Commercial Law",
+          "items": {
+            "1": "Appeals from Courts of Appeal",
+            "2": "Commercial disputes and contracts",
+            "3": "Property and inheritance matters"
+          }
+        },
+        "family": {
+          "title": "Family Law",
+          "items": {
+            "1": "Marriage and divorce appeals",
+            "2": "Child custody disputes",
+            "3": "Succession matters"
+          }
+        },
+        "public": {
+          "title": "Public Law",
+          "items": {
+            "1": "Jurisdictional privilege cases",
+            "2": "Prosecution of high officials",
+            "3": "Constitutional matters"
+          }
+        },
+        "labor": {
+          "title": "Labor & Employment",
+          "items": {
+            "1": "Labor dispute appeals",
+            "2": "Employment contract matters",
+            "3": "Workers' rights protection"
+          }
+        },
+        "criminal": {
+          "title": "Criminal Law",
+          "items": {
+            "1": "Criminal appeals to the State Council",
+            "2": "Procedural error reviews",
+            "3": "Application of criminal law"
+          }
+        },
+        "property": {
+          "title": "Property Rights",
+          "items": {
+            "1": "Real estate disputes",
+            "2": "Land ownership matters",
+            "3": "Property transactions"
+          }
+        }
+      }
+    },
+    "contact": {
+      "address": {
+        "title": "Office Address",
+        "body": "No. 2 Avenue de la Justice in the Gombe district of Kinshasa."
+      },
+      "phone": {
+        "title": "Office Number",
+        "body": "+243 000000000"
+      },
+      "email": {
+        "title": "Office Email",
+        "body": "info@conseildetat.cd"
+      }
+    },
+    "president": {
+      "imageAlt": "President",
+      "cta": "Learn More",
+      "slides": {
+        "1": {
+          "title": "THE FIRST PRESIDENT OF THE STATE COUNCIL",
+          "paragraphs": {
+            "1": "As the third-ranking member of the DRC's High Council of the Judiciary, the First President of the STATE COUNCIL, Professor NGOMBA KABEYYA ELIE LEON, donated blood on Thursday, February 27th, in solidarity with the victims of the Rwandan aggression in the eastern part of the country.",
+            "2": "For every democratic Congolese citizen, contributing to the war effort is a civic duty. The judiciary is no exception.",
+            "3": "For over three decades, the DRC has suffered aggression perpetrated by Rwanda and other negative armed groups, resulting in millions of deaths, tens of thousands of displaced persons, and a deplorable humanitarian situation."
+          }
+        },
+        "2": {
+          "title": "JUDICIAL LEADERSHIP AND REFORM",
+          "paragraphs": {
+            "1": "Under the leadership of the First President, the STATE COUNCIL has embarked on comprehensive judicial reforms aimed at modernizing the judicial system.",
+            "2": "The reforms include the digitalization of court records, implementation of case management systems, and training programs for judges and court staff.",
+            "3": "These initiatives reflect the Court's commitment to transparency, efficiency, and accountability in the administration of justice."
+          }
+        },
+        "3": {
+          "title": "INTERNATIONAL COLLABORATION",
+          "paragraphs": {
+            "1": "The STATE COUNCIL actively engages with international judicial institutions and participates in global forums to share experiences.",
+            "2": "Through partnerships with courts in France, Belgium, and other Francophone countries, the Court ensures it remains at the forefront of legal developments.",
+            "3": "This international engagement strengthens the DRC's judicial system and enhances its capacity to deliver justice in accordance with international standards."
+          }
+        }
+      }
+    },
+    "newsletter": {
+      "title": "NEWSLETTER",
+      "readMore": "Read More",
+      "cta": "Learn More",
+      "items": {
+        "1": {
+          "alt": "Appeals",
+          "date": "15 Nov 2025 | Decision Report",
+          "title": "Navigating Appeals: Legal Advice for a Smooth Process"
+        },
+        "2": {
+          "alt": "State Council proceedings",
+          "date": "22 Oct 2025 | Court Update",
+          "title": "Key Considerations in State Council Proceedings"
+        },
+        "3": {
+          "alt": "Procedural",
+          "date": "18 Oct 2025 | Judicial Ruling",
+          "title": "Recent Changes in Procedural Law"
+        },
+        "4": {
+          "alt": "Rights",
+          "date": "12 Oct 2025 | Legal Update",
+          "title": "Understanding Your Rights in the Appeals Process"
+        }
+      }
+    }
+  },
+  "about": {
+    "hero": {
+      "title": "UNDERSTANDING THE HIGHEST COURT<br>OF THE JUDICIAL SYSTEM"
+    },
+    "intro": {
+      "title": "UNDERSTANDING THE HIGHEST COURT<br>OF THE JUDICIAL SYSTEM",
+      "body": "Article 151 paragraph 1 of the Constitution of the DRC of February 18, 2006, establishes an administrative judicial system composed of administrative courts and tribunals with the supervision of the State Council. Article 82 of Organic Law No. 13/011-B of April 11, 2013 establishing the organization, composition and functioning of the administrative courts stipulates that there is existence of a State Council whose ordinary seat is located in the capital of the Democratic Republic of Congo. Its jurisdictional capacity can be exercised in another place. Historically, the State Council in this short presentation, traces its history and roots in our judicial institution. Created by Decree-Law on January 31, 1968, the State Council finds its distinct mark more than a century. Indeed, it was eight years after gaining independence in 1960 that the country established this State Council to regulate administrative appeals. It was only after a century in 2015 that the Supreme Administrative Court. This Court ceased to exist in the wake of the 2006 Constitution and its establishment, which declared null and void all provisions contrary and stipulated in its Article 223 that the judgments and orders rendered before the promulgation of the Constitution in force that has passed and tribunals into those passed in extreme by virtue greater specialization, and seated in case precedential, as instrument in the specialization of February 18, 2006, the Supreme Administrative Court ceased to exist definitively on April 11, 2013 when the Organic Law No. 13/011-B of April 11, 2013 establishing the organization, composition and functioning of the administrative courts. Pursuant to Article 151 paragraph 3 of the Constitution which establishes the regulatory authority for exercise of powers of the former Supreme Administrative Court. The administrative courts and tribunals comprising the administrative judicial system of Congo."
+    },
+    "legal": {
+      "title": "ACCESS THE MAIN LEGAL AND REGULATORY<br>TEXTS OF THE STATE COUNCIL",
+      "docs": {
+        "1": "Organic Law N° 13/011-B of April 11, 2013 containing the organization, composition and functioning of the ordinary jurisdictions",
+        "2": "Decree N° 13/046 of September 25, 2013 rules concerning the chambers of State Council",
+        "3": "Decree Law N° 13/018 relative to the remuneration and allowances to the magistrates"
+      },
+      "detail": {
+        "title": "Organic Law N° 13/011-B of April 11, 2013 containing the organization, composition and functioning of the administrative jurisdictions",
+        "paragraph1": "The content of this Law N° 13/011-B of April 11, 2013 containing the organization, composition and functioning of the administrative jurisdictions has been placed in a general administrative judicial context.",
+        "paragraph2": "Each of the articles of the Law is written across the key provisions of the Title I of the magistrates:",
+        "list1": {
+          "1": "CHAPTER I: General provisions",
+          "2": "CHAPTER II: Nomination and installation of the magistrates and clerks",
+          "3": "CHAPTER III: of the legal regime",
+          "4": "CHAPTER IV: Powers, guarantees and limits of the Magistrates",
+          "5": "CHAPTER V: Discipline"
+        },
+        "paragraph3": "It is governed by Title II of the State Council Article 81 to Article 95 that each article deals specifically with the State Council in the following chapters:",
+        "list2": {
+          "1": "CHAPTER I: Legal regime",
+          "2": "CHAPTER II: Installation, composition of the State Council",
+          "3": "CHAPTER III: Different formations, functioning and personnel of the State Council"
+        },
+        "paragraph4": "The composition in article 82 provides how the State Council is composed, and lists the personnel which assists the magistrates and the auxiliary personnel attributions for the achievement of the administrative mandate.",
+        "paragraph5": "Article 83 provided for the attribution of the State Council, one of which is: Appeals in administrative matters; It exercises the discipline of judges and court auxiliaries in its jurisdictional capacity; It receives the oath of magistrates and court officers falling under the administrative jurisdiction; It gives the legal opinion in the presence of judges nominated or the jurisdictional authority. Article 84 provided for the composition of different sections and formation of the State Council; Article 88 provided for the attribution in the deliberation of the chamber, each chamber shall constitute a jurisdictional formation for achievement of the mandate of the State Council as to sit for different attributions only if the quorum is reached.",
+        "paragraph6": "The quorum required in the article is reached, when all chambers are composed as follows: the president or vice-president of chamber and two other magistrates, as well as a legal adviser and the Clerk.",
+        "paragraph7": "With regards to the judicial quorum in Article 89, each chamber may constitute a jurisdictional formation for the achievement of the mandate of the State Council and sit for different attributions only if the quorum is reached.",
+        "paragraph8": "The quorum required in the article is reached, when all chambers are composed as follows: the president or vice-president of chamber and two other magistrates, as well as a legal adviser and the Clerk. With the addition of the concerned interested party seated during the procedure with his assistance if need be and at the time of deliberations at the closed door, with participation of the Attorney General in the deliberations with participation of the clerk is done by the instruction of the matter.",
+        "paragraph9": "After reading and having the legal texts explained to the jurisdictions in this platform, you can request their service directly by contacting us by email or by telephone and therefore receive them."
+      }
+    }
+  },
+  "reforms": {
+    "hero": {
+      "title": "SUGGESTED<br>REFORMS",
+      "body": "Modernizing the judicial system through strategic reforms that enhance efficiency, transparency, and access to justice for all Congolese citizens."
+    },
+    "building": {
+      "tag": "JUDICIAL MODERNIZATION",
+      "title": "BUILDING A STRONGER JUSTICE SYSTEM",
+      "body": "Following the 2006 Constitution, the STATE COUNCIL has embarked on comprehensive reforms to strengthen judicial independence, improve access to justice, and align with international standards. These initiatives focus on institutional strengthening, digital transformation, and capacity building."
+    },
+    "initiatives": {
+      "tag": "TRANSFORMATION ROADMAP",
+      "title": "STRATEGIC REFORM INITIATIVES",
+      "body": "A comprehensive five-phase approach to modernizing our judicial system, ensuring excellence at every stage of transformation.",
+      "badges": {
+        "critical": "Critical Priority",
+        "high": "High Priority",
+        "medium": "Medium Priority"
+      },
+      "steps": {
+        "1": {
+          "title": "Institutional Independence",
+          "body": "Strengthening judicial independence through constitutional safeguards and financial autonomy."
+        },
+        "2": {
+          "title": "Access to Justice",
+          "body": "Expanding legal aid services and establishing regional access points nationwide."
+        },
+        "3": {
+          "title": "International Cooperation",
+          "body": "Deepening partnerships with international judicial bodies for knowledge exchange."
+        },
+        "4": {
+          "title": "Digital Transformation",
+          "body": "Implementing modern case management systems and online jurisprudence databases."
+        },
+        "5": {
+          "title": "Capacity Building",
+          "body": "Continuous training for magistrates and advanced legal research capabilities."
+        }
+      }
+    },
+    "stakeholders": {
+      "title": "KEY STAKEHOLDERS",
+      "subtitle": "REFORM LEADERSHIP",
+      "roles": {
+        "president": "President",
+        "vicePresident": "Vice President",
+        "chiefMagistrate": "Chief Magistrate",
+        "internationalRelations": "International Relations"
+      }
+    }
+  },
+  "international": {
+    "hero": {
+      "title": "INTERNATIONAL<br>RELATIONS",
+      "body": "In the context of the internationalization of law and justice, the STATE COUNCIL of the Democratic Republic of Congo is not isolated from this environment. It actively participates in the dialogue of judges by maintaining a high level of cooperation within the framework of the Association of Supreme Courts of French-speaking countries (AHJUCAF) and the African Association of Francophone Supreme Courts (AA-HJF)."
+    },
+    "stats": {
+      "associations": "Major International Judicial Associations",
+      "partners": "Partner Countries & Supreme Courts",
+      "exchanges": "Annual Judicial Exchanges & Conferences"
+    },
+    "networks": {
+      "title": "INTERNATIONAL JUDICIAL NETWORKS",
+      "subtitle": "The Court maintains privileged relationships with the leading associations of Francophone and African supreme courts",
+      "ahjucaf": {
+        "name": "Association of Supreme Courts Using French",
+        "body": "A platform for exchange and cooperation between Francophone supreme courts, facilitating judicial dialogue, sharing of jurisprudence, and strengthening institutional capacities across French-speaking jurisdictions worldwide."
+      },
+      "aahjf": {
+        "name": "African Association of Francophone Supreme Courts",
+        "body": "A platform for exchange and cooperation between Francophone supreme courts, facilitating judicial dialogue, sharing of jurisprudence, and strengthening institutional capacities across French-speaking jurisdictions worldwide."
+      }
+    },
+    "domains": {
+      "title": "INTERNATIONAL COOPERATION DOMAINS",
+      "subtitle": "Our international engagement translates into active participation in various initiatives aimed at strengthening the quality of justice and the rule of law",
+      "dialogue": {
+        "title": "Judicial Dialogue",
+        "body": "Regular exchanges on jurisprudence, best practices, and common challenges faced by supreme courts, fostering mutual learning and harmonized legal interpretation."
+      },
+      "assistance": {
+        "title": "Technical Assistance",
+        "body": "Technical cooperation for modernization of judicial systems, digitalization, and improvement of access to justice through shared experiences."
+      },
+      "capacity": {
+        "title": "Capacity Building",
+        "body": "Training programs, seminars, and workshops for strengthening the skills of magistrates and judicial personnel through international expertise."
+      },
+      "forums": {
+        "title": "International Forums",
+        "body": "Active participation in international forums to contribute to the development of international and regional law and judicial standards."
+      }
+    },
+    "collaboration": {
+      "title": "Interested in Collaboration?",
+      "body": "We are open to institutional partnerships and exchanges with other national and international jurisdictions committed to strengthening justice systems.",
+      "cta": "CONTACT US"
+    }
+  },
+  "audiences": {
+    "hero": {
+      "title": "AUDIENCES<br>AND HEARING EXCERPTS",
+      "body": "Access schedules and excerpts from recent hearings and decisions."
+    },
+    "understanding": {
+      "title": "UNDERSTANDING AUDIENCES",
+      "body": "Find guidance on how audiences are organized and how to consult recent rolls."
+    },
+    "recent": {
+      "title": "RECENT ROLE EXCERPTS",
+      "subtitle": "LATEST HEARING EXCERPTS"
+    },
+    "documents": {
+      "civil": {
+        "label": "Civil",
+        "title": "Civil Chamber Hearing Excerpts"
+      },
+      "criminal": {
+        "label": "Criminal",
+        "title": "Criminal Chamber Hearing Excerpts"
+      },
+      "social": {
+        "label": "Social",
+        "title": "Social Chamber Hearing Excerpts"
+      },
+      "general": {
+        "label": "General",
+        "title": "General Chamber Hearing Excerpts"
+      }
+    },
+    "actions": {
+      "downloadPdf": "DOWNLOAD PDF"
+    },
+    "assistance": {
+      "title": "Need Assistance?",
+      "body": "Contact the State Council for help accessing documents or schedules.",
+      "cta": "CONTACT US"
+    }
+  },
+  "organization": {
+    "hero": {
+      "title": "ORGANIZATION<br>OF THE STATE COUNCIL"
+    },
+    "firstPresident": {
+      "alt": "First President",
+      "title": "THE FIRST PRESIDENT",
+      "body": "The First President leads the State Council, presides over its sessions, and ensures the proper functioning of the institution."
+    },
+    "seniorLabel": "SENIOR MAGISTRATES",
+    "filters": {
+      "searchLabel": "Search members",
+      "searchPlaceholder": "Search by name or title",
+      "roleLabel": "Role",
+      "all": "All",
+      "presidents": "Presidents",
+      "advisors": "Advisors",
+      "summary": "Showing {{presidents}} presidents and {{advisors}} advisors"
+    },
+    "presidents": {
+      "title": "THE PRESIDENTS",
+      "empty": "No presidents match your search."
+    },
+    "advisors": {
+      "title": "THE ADVISORS",
+      "empty": "No advisors match your search."
+    },
+    "members": {
+      "learnMore": "Learn More",
+      "loadMore": "Load More"
+    },
+    "services": {
+      "overviewTitle": "SERVICES OVERVIEW",
+      "learnMore": "Learn More",
+      "registry": {
+        "title": "Registry",
+        "body": "Access filings, case status, and official records."
+      },
+      "docs": {
+        "title": "Documents",
+        "body": "Find forms, legal texts, and procedural guides."
+      },
+      "tv": {
+        "title": "Council TV",
+        "body": "Watch hearings, announcements, and updates."
+      },
+      "title": "OUR SERVICES",
+      "subtitle": "Explore the divisions and offices that support the work of the State Council.",
+      "divisions": {
+        "title": "Divisions",
+        "rooms": "Rooms and chambers",
+        "council": "Council office",
+        "registers": "Registers and archives"
+      },
+      "rooms": {
+        "title": "Rooms",
+        "body": "Administrative and judicial rooms that organize deliberations and hearings."
+      },
+      "council": {
+        "title": "Council",
+        "body": "The office that coordinates policy and institutional governance."
+      },
+      "registers": {
+        "title": "Registers",
+        "body": "Units that manage records, archives, and official filings."
+      },
+      "details": {
+        "chambers": {
+          "title": "The Chambers",
+          "item1": "Civil Chamber",
+          "item2": "Criminal Chamber",
+          "item3": "Commercial Chamber",
+          "item4": "Social Chamber",
+          "body1": "Each chamber handles specialized matters within its jurisdiction.",
+          "body2": "Chambers sit in formations according to the applicable law."
+        },
+        "rooms": {
+          "title": "Rooms and Chambers",
+          "body1": "Rooms organize hearings and prepare case files.",
+          "body2": "They ensure procedural compliance and scheduling.",
+          "body3": "They support deliberations with administrative coordination.",
+          "body4": "They ensure the smooth flow of cases to final decisions."
+        },
+        "council": {
+          "title": "Council Office",
+          "body1": "The Council Office ensures strategic coordination.",
+          "body2": "It prepares plenary sessions and policy orientations.",
+          "body3": "It oversees implementation of decisions and reforms.",
+          "body4": "It supports communication and institutional relations."
+        },
+        "registers": {
+          "title": "Registers and Archives",
+          "body1": "Registers receive and record filings and decisions.",
+          "body2": "They maintain archives for long-term preservation.",
+          "body3": "They provide certified copies upon request.",
+          "body4": "They manage the indexing and retrieval of case files.",
+          "body5": "They ensure confidentiality and integrity of records."
+        }
+      }
+    }
   }
 }
