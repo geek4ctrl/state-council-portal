@@ -1,0 +1,44 @@
+{
+  "header": {
+    "contact": {
+      "phone": "+ 243 (21) 00000000",
+      "hours": "MONDAY - FRIDAY 7:30AM - 6:30PM"
+    },
+    "social": {
+      "facebook": "Facebook",
+      "twitter": "Twitter",
+      "instagram": "Instagram"
+    },
+    "lang": {
+      "label": "Language",
+      "switchToEnglish": "Switch to English",
+      "switchToFrench": "Switch to French"
+    },
+    "nav": {
+      "home": "HOME",
+      "court": "THE COURT",
+      "presentation": "Presentation",
+      "organization": "Organization",
+      "reforms": "Reforms",
+      "international": "International Relations",
+      "audiences": "AUDIENCES",
+      "steps": "STEPS",
+      "news": "NEWS",
+      "bookAppointment": "Book Appointment"
+    }
+  },
+  "errors": {
+    "generic": {
+      "code": "Error",
+      "title": "Something Went Wrong",
+      "message": "We are having trouble completing your request. Please try again or return to the State Council homepage.",
+      "primary": "Return Home",
+      "secondary": "View Updates"
+    },
+    "notFound": {
+      "code": "404",
+      "title": "Page Not Found",
+      "message": "The page you are looking for does not exist or has been moved."
+    }
+  }
+}

@@ -1,13 +1,18 @@
-import { Component, signal, HostListener } from '@angular/core';
+import { Component, inject, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Router, RouterLink, RouterLinkActive } from '@angular/router';
 import { IconComponent } from '../icon/icon.component';
 import { PreloadOnHoverDirective } from '../../directives/preload-on-hover.directive';
+import { I18nPipe } from '../../i18n/i18n.pipe';
+import { I18nService, LanguageCode } from '../../i18n/i18n.service';
 
 @Component({
   selector: 'app-header',
-  standalone: true,
-  imports: [CommonModule, RouterLink, RouterLinkActive, IconComponent, PreloadOnHoverDirective],
+  imports: [CommonModule, RouterLink, RouterLinkActive, IconComponent, PreloadOnHoverDirective, I18nPipe],
+  host: {
+    'document:click': 'onDocumentClick($event)',
+    'document:keydown.escape': 'onEscapeKey()'
+  },
   templateUrl: './header.component.html',
   styleUrl: './header.component.css'
 })
@@ -15,10 +20,11 @@ export class HeaderComponent {
   isCourtDropdownOpen = signal(false);
   isStepsDropdownOpen = signal(false);
   isMobileMenuOpen = signal(false);
+  private readonly i18n = inject(I18nService);
+  private readonly router = inject(Router);
 
-  constructor(private router: Router) {}
+  constructor() {}
 
-  @HostListener('document:click', ['$event'])
   onDocumentClick(event: MouseEvent) {
     const target = event.target as HTMLElement;
     const clickedInsideDropdown = target.closest('.dropdown');
@@ -28,7 +34,6 @@ export class HeaderComponent {
     }
   }
 
-  @HostListener('document:keydown.escape')
   onEscapeKey() {
     this.closeDropdowns();
     this.closeMobileMenu();
@@ -65,5 +70,13 @@ export class HeaderComponent {
     this.closeDropdowns();
     this.closeMobileMenu();
     this.router.navigate(['/appointment']);
+  }
+
+  setLanguage(lang: LanguageCode) {
+    void this.i18n.setLanguage(lang);
+  }
+
+  activeLang() {
+    return this.i18n.activeLang();
   }
 }
