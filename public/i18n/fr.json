@@ -274,9 +274,25 @@
     "expertise": {
       "title": "DOMAINES D'EXPERTISE",
       "subtitle": "Le CONSEIL D'ETAT exerce sa juridiction sur diverses matieres en tant que juridiction supreme de l'ordre judiciaire.",
+      "stats": {
+        "domains": {
+          "value": "6",
+          "label": "domaines"
+        },
+        "decisions": {
+          "value": "120+",
+          "label": "decisions/an"
+        },
+        "magistrates": {
+          "value": "30+",
+          "label": "magistrats"
+        }
+      },
+      "cta": "Voir details",
       "areas": {
         "civil": {
           "title": "Droit civil et commercial",
+          "desc": "Contrats, obligations et questions de propriete a l'echelle nationale.",
           "items": {
             "1": "Appels des cours d'appel",
             "2": "Litiges commerciaux et contrats",
@@ -285,6 +301,7 @@
         },
         "family": {
           "title": "Droit de la famille",
+          "desc": "Protection des droits familiaux et resolution des litiges sensibles.",
           "items": {
             "1": "Appels en matiere de mariage et divorce",
             "2": "Litiges de garde d'enfants",
@@ -293,6 +310,7 @@
         },
         "public": {
           "title": "Droit public",
+          "desc": "Controle de l'action publique et garanties constitutionnelles.",
           "items": {
             "1": "Affaires de privilege de juridiction",
             "2": "Poursuites des hauts responsables",
@@ -301,6 +319,7 @@
         },
         "labor": {
           "title": "Droit du travail",
+          "desc": "Litiges d'emploi et protection des droits des travailleurs.",
           "items": {
             "1": "Appels en matiere de conflits du travail",
             "2": "Contrats de travail",
@@ -309,6 +328,7 @@
         },
         "criminal": {
           "title": "Droit penal",
+          "desc": "Relecture des decisions penales et garanties procedurales.",
           "items": {
             "1": "Appels criminels devant le Conseil d'Etat",
             "2": "Revisions pour erreurs de procedure",
@@ -317,6 +337,7 @@
         },
         "property": {
           "title": "Droits de propriete",
+          "desc": "Propriete fonciere, immobilier et transactions.",
           "items": {
             "1": "Litiges immobiliers",
             "2": "Questions de propriete fonciere",

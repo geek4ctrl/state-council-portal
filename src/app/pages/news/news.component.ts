@@ -2,14 +2,13 @@ import { Component, signal, OnInit, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SkeletonLoaderComponent } from '../../components/skeleton-loader/skeleton-loader.component';
 import { IconComponent } from '../../components/icon/icon.component';
-import { LazyLoadDirective } from '../../directives/lazy-load.directive';
 import { SeoService } from '../../services/seo.service';
 import { I18nPipe } from '../../i18n/i18n.pipe';
 
 @Component({
   selector: 'app-news',
   standalone: true,
-  imports: [CommonModule, SkeletonLoaderComponent, IconComponent, LazyLoadDirective, I18nPipe],
+  imports: [CommonModule, SkeletonLoaderComponent, IconComponent, I18nPipe],
   template: `
     <div class="page-container">
       <!-- Hero Section -->

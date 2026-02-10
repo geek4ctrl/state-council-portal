@@ -274,9 +274,25 @@
     "expertise": {
       "title": "FIELDS OF EXPERTISE",
       "subtitle": "The STATE COUNCIL exercises jurisdiction over various legal matters as the supreme court of the ordinary judicial system.",
+      "stats": {
+        "domains": {
+          "value": "6",
+          "label": "domains"
+        },
+        "decisions": {
+          "value": "120+",
+          "label": "decisions/yr"
+        },
+        "magistrates": {
+          "value": "30+",
+          "label": "magistrates"
+        }
+      },
+      "cta": "View details",
       "areas": {
         "civil": {
           "title": "Civil & Commercial Law",
+          "desc": "Contracts, obligations, and property matters across the country.",
           "items": {
             "1": "Appeals from Courts of Appeal",
             "2": "Commercial disputes and contracts",
@@ -285,6 +301,7 @@
         },
         "family": {
           "title": "Family Law",
+          "desc": "Protecting family rights and resolving sensitive disputes.",
           "items": {
             "1": "Marriage and divorce appeals",
             "2": "Child custody disputes",
@@ -293,6 +310,7 @@
         },
         "public": {
           "title": "Public Law",
+          "desc": "Oversight of public action and constitutional safeguards.",
           "items": {
             "1": "Jurisdictional privilege cases",
             "2": "Prosecution of high officials",
@@ -301,6 +319,7 @@
         },
         "labor": {
           "title": "Labor & Employment",
+          "desc": "Employment disputes and protection of workers' rights.",
           "items": {
             "1": "Labor dispute appeals",
             "2": "Employment contract matters",
@@ -309,6 +328,7 @@
         },
         "criminal": {
           "title": "Criminal Law",
+          "desc": "Review of criminal decisions and procedural safeguards.",
           "items": {
             "1": "Criminal appeals to the State Council",
             "2": "Procedural error reviews",
@@ -317,6 +337,7 @@
         },
         "property": {
           "title": "Property Rights",
+          "desc": "Land ownership, real estate, and property transactions.",
           "items": {
             "1": "Real estate disputes",
             "2": "Land ownership matters",
