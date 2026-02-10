@@ -834,32 +834,49 @@ interface PresidentSlide {
 
     /* Quick Links Section */
     .quick-links-section {
-      background-color: #2C3E50;
-      padding: 40px 0;
+      background: linear-gradient(135deg, #26384c 0%, #2f4258 55%, #243548 100%);
+      padding: 28px 0;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
     }
 
     .quick-links-container {
       display: flex;
-      align-items: center;
+      align-items: stretch;
       justify-content: space-between;
-      gap: 0;
+      gap: 10px;
     }
 
     .quick-link-item {
       display: flex;
-      align-items: center;
-      gap: 20px;
+      align-items: stretch;
+      gap: 12px;
       flex: 1;
       position: relative;
+      padding: 10px 12px;
+      border-radius: 14px;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
+      transition: transform 0.25s ease, border-color 0.25s ease, background 0.25s ease;
+    }
+
+    .quick-link-item:hover {
+      transform: translateY(-4px);
+      background: rgba(255, 255, 255, 0.08);
+      border-color: rgba(191, 152, 116, 0.35);
     }
 
     .quick-link-icon {
-      width: 50px;
-      height: 50px;
+      width: 64px;
+      height: 100%;
       flex-shrink: 0;
-      border-radius: 8px;
+      border-radius: 14px;
       overflow: hidden;
       background-color: white;
+      align-self: stretch;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     }
 
     .quick-link-icon img {
@@ -870,6 +887,9 @@ interface PresidentSlide {
 
     .quick-link-content {
       flex: 1;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
     }
 
     .quick-link-content h3 {
@@ -878,14 +898,15 @@ interface PresidentSlide {
       color: white;
       margin-bottom: 8px;
       text-transform: uppercase;
-      letter-spacing: 0.5px;
+      letter-spacing: 0.7px;
+      line-height: 1.25;
     }
 
     .quick-link-content p {
       font-size: 0.78rem;
       color: rgba(255, 255, 255, 0.85);
-      line-height: 1.5;
-      margin-bottom: 8px;
+      line-height: 1.55;
+      margin-bottom: 6px;
     }
 
     .quick-link-action {
@@ -893,15 +914,21 @@ interface PresidentSlide {
       font-size: 0.75rem;
       font-weight: 700;
       text-decoration: underline;
+      text-decoration-thickness: 2px;
+      text-underline-offset: 4px;
       text-transform: capitalize;
+      margin-top: auto;
+      padding-top: 8px;
+      line-height: 1.2;
     }
 
     .connector-line {
       width: 1px;
-      height: 80px;
-      background: linear-gradient(to bottom, transparent, #BF9874, transparent);
-      margin: 0 30px;
+      height: 70px;
+      background: linear-gradient(to bottom, transparent, rgba(191, 152, 116, 0.6), transparent);
+      margin: 0 12px;
       flex-shrink: 0;
+      opacity: 0.35;
     }
 
     /* What We Offer */
