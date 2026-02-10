@@ -164,5 +164,520 @@
       "message": "Message *",
       "submit": "ENVOYER LE MESSAGE"
     }
+  },
+  "footer": {
+    "mainOffice": {
+      "title": "Bureau principal",
+      "address1": "No. 3 Avenue de la Justice",
+      "address2": "Quartier central de Kinshasa",
+      "address3": "Republique democratique du Congo",
+      "phone": "Tel: +243 (21) 0000000",
+      "email": "Email: info@conseildetat.cd"
+    },
+    "quickLinks": {
+      "title": "Liens rapides",
+      "about": "A propos de la Cour",
+      "jurisprudence": "Jurisprudence",
+      "filing": "Procedures de depot",
+      "contact": "Contactez-nous"
+    },
+    "resources": {
+      "title": "Ressources",
+      "legalDocs": "Documents juridiques",
+      "decisions": "Decisions de justice",
+      "reports": "Rapports annuels",
+      "faqs": "FAQs"
+    },
+    "connect": {
+      "title": "Restez connecte",
+      "facebook": "Facebook",
+      "twitter": "Twitter",
+      "instagram": "Instagram",
+      "linkedin": "LinkedIn"
+    },
+    "privacy": "Confidentialite",
+    "copyright": "Copyright Conseil d'Etat. Tous droits reserves"
+  },
+  "home": {
+    "hero": {
+      "slides": {
+        "1": {
+          "title": "RDC : L'ANNEE JUDICIAIRE S'OUVRE AU CONSEIL D'ETAT POUR LE TERME 2025-2026",
+          "subtitle": "MAISON DU DROIT ET DE L'ORDRE",
+          "body": "Cette video couvre l'ouverture officielle de l'annee judiciaire 2025-2026. En presence du President Felix Tshisekedi, la seance a reuni des hauts magistrats et des responsables juridiques.",
+          "cta": "Regarder la seance en direct sur Youtube"
+        },
+        "2": {
+          "title": "RENFORCER L'INDEPENDANCE ET LA RESPONSABILITE JUDICIAIRES",
+          "subtitle": "MAISON DU DROIT ET DE L'ORDRE",
+          "body": "Le CONSEIL D'ETAT continue de defendre les principes de justice, d'equite et de l'Etat de droit. Nous nous engageons pour la transparence et l'integrite.",
+          "cta": "En savoir plus sur notre mission"
+        },
+        "3": {
+          "title": "PROMOUVOIR L'EXCELLENCE JURIDIQUE EN REPUBLIQUE DEMOCRATIQUE DU CONGO",
+          "subtitle": "MAISON DU DROIT ET DE L'ORDRE",
+          "body": "Grace a une formation juridique rigoureuse et au respect des meilleures pratiques internationales, nous visons les plus hauts standards d'excellence judiciaire.",
+          "cta": "Decouvrir nos initiatives"
+        }
+      }
+    },
+    "quickLinks": {
+      "items": {
+        "news": {
+          "alt": "Actualites",
+          "title": "ACTUALITES",
+          "body": "Restez informe des decisions et evenements cles.",
+          "action": "Lire"
+        },
+        "excerpts": {
+          "alt": "Extraits",
+          "title": "EXTRAITS DES ROLES",
+          "body": "Consultez les heures d'audience et les dossiers en cours.",
+          "action": "En savoir plus"
+        },
+        "report": {
+          "alt": "Signalement",
+          "title": "SIGNALEMENT",
+          "body": "Signalez en toute securite toute activite suspecte ou illegale.",
+          "action": "Deposer un signalement"
+        },
+        "appointment": {
+          "alt": "Rendez-vous",
+          "title": "PRENDRE RENDEZ-VOUS",
+          "body": "Planifiez des consultations avec les responsables de la cour.",
+          "action": "Prendre rendez-vous"
+        }
+      }
+    },
+    "offer": {
+      "title": "CE QUE NOUS OFFRONS",
+      "subtitle": "Nous proposons des solutions juridiques adaptees a vos besoins, afin de proteger vos droits et garantir la justice.",
+      "cards": {
+        "1": {
+          "title": "Autorite judiciaire supreme",
+          "body": "En tant que plus haute juridiction de l'ordre judiciaire, le Conseil d'Etat assure l'interpretation et l'application uniformes du droit en RDC."
+        },
+        "2": {
+          "title": "Securite juridique",
+          "body": "Par notre jurisprudence et nos decisions, nous etablissons des precedents qui guident les juridictions inferieures et assurent la coherence de la justice."
+        },
+        "3": {
+          "title": "Excellence judiciaire",
+          "body": "Nos magistrats et conseillers sont selectionnes sur la base du merite, garantissant expertise, integrite et engagement envers la justice."
+        },
+        "4": {
+          "title": "Cooperation internationale",
+          "body": "Nous participons activement au dialogue avec les instances judiciaires internationales et cooperons avec les cours francophones et africaines."
+        }
+      }
+    },
+    "expertise": {
+      "title": "DOMAINES D'EXPERTISE",
+      "subtitle": "Le CONSEIL D'ETAT exerce sa juridiction sur diverses matieres en tant que juridiction supreme de l'ordre judiciaire.",
+      "areas": {
+        "civil": {
+          "title": "Droit civil et commercial",
+          "items": {
+            "1": "Appels des cours d'appel",
+            "2": "Litiges commerciaux et contrats",
+            "3": "Biens et successions"
+          }
+        },
+        "family": {
+          "title": "Droit de la famille",
+          "items": {
+            "1": "Appels en matiere de mariage et divorce",
+            "2": "Litiges de garde d'enfants",
+            "3": "Successions"
+          }
+        },
+        "public": {
+          "title": "Droit public",
+          "items": {
+            "1": "Affaires de privilege de juridiction",
+            "2": "Poursuites des hauts responsables",
+            "3": "Questions constitutionnelles"
+          }
+        },
+        "labor": {
+          "title": "Droit du travail",
+          "items": {
+            "1": "Appels en matiere de conflits du travail",
+            "2": "Contrats de travail",
+            "3": "Protection des droits des travailleurs"
+          }
+        },
+        "criminal": {
+          "title": "Droit penal",
+          "items": {
+            "1": "Appels criminels devant le Conseil d'Etat",
+            "2": "Revisions pour erreurs de procedure",
+            "3": "Application du droit penal"
+          }
+        },
+        "property": {
+          "title": "Droits de propriete",
+          "items": {
+            "1": "Litiges immobiliers",
+            "2": "Questions de propriete fonciere",
+            "3": "Transactions immobilieres"
+          }
+        }
+      }
+    },
+    "contact": {
+      "address": {
+        "title": "Adresse du bureau",
+        "body": "No. 2 Avenue de la Justice dans la commune de la Gombe a Kinshasa."
+      },
+      "phone": {
+        "title": "Numero du bureau",
+        "body": "+243 000000000"
+      },
+      "email": {
+        "title": "Email du bureau",
+        "body": "info@conseildetat.cd"
+      }
+    },
+    "president": {
+      "imageAlt": "President",
+      "cta": "En savoir plus",
+      "slides": {
+        "1": {
+          "title": "LE PREMIER PRESIDENT DU CONSEIL D'ETAT",
+          "paragraphs": {
+            "1": "En tant que troisieme membre du Conseil superieur de la magistrature, le Premier President du CONSEIL D'ETAT, le Professeur NGOMBA KABEYYA ELIE LEON, a donne son sang le jeudi 27 fevrier, en solidarite avec les victimes de l'agression rwandaise a l'est du pays.",
+            "2": "Pour chaque citoyen congolais democrate, contribuer a l'effort de guerre est un devoir civique. La magistrature ne fait pas exception.",
+            "3": "Depuis plus de trois decennies, la RDC subit des agressions perpetrees par le Rwanda et d'autres groupes armes negatifs, causant des millions de morts, des dizaines de milliers de deplaces et une situation humanitaire deplorable."
+          }
+        },
+        "2": {
+          "title": "LEADERSHIP JUDICIAIRE ET REFORME",
+          "paragraphs": {
+            "1": "Sous la direction du Premier President, le CONSEIL D'ETAT a engage des reformes judiciaires pour moderniser le systeme.",
+            "2": "Les reformes incluent la numerisation des dossiers, la mise en place de systemes de gestion des affaires et des programmes de formation pour les magistrats et le personnel.",
+            "3": "Ces initiatives refletent l'engagement de la Cour pour la transparence, l'efficacite et la responsabilite dans l'administration de la justice."
+          }
+        },
+        "3": {
+          "title": "COLLABORATION INTERNATIONALE",
+          "paragraphs": {
+            "1": "Le CONSEIL D'ETAT s'engage activement avec les institutions judiciaires internationales et participe aux forums mondiaux pour partager les experiences.",
+            "2": "Grace a des partenariats avec les cours en France, en Belgique et dans d'autres pays francophones, la Cour reste a la pointe des evolutions juridiques.",
+            "3": "Cet engagement international renforce le systeme judiciaire de la RDC et sa capacite a rendre justice selon les normes internationales."
+          }
+        }
+      }
+    },
+    "newsletter": {
+      "title": "NEWSLETTER",
+      "readMore": "Lire la suite",
+      "cta": "En savoir plus",
+      "items": {
+        "1": {
+          "alt": "Recours",
+          "date": "15 nov 2025 | Rapport de decision",
+          "title": "Naviguer dans les recours : conseils juridiques pour un processus fluide"
+        },
+        "2": {
+          "alt": "Procedure du Conseil d'Etat",
+          "date": "22 oct 2025 | Mise a jour judiciaire",
+          "title": "Points cles des procedures au Conseil d'Etat"
+        },
+        "3": {
+          "alt": "Procedure",
+          "date": "18 oct 2025 | Decision judiciaire",
+          "title": "Recents changements en droit de procedure"
+        },
+        "4": {
+          "alt": "Droits",
+          "date": "12 oct 2025 | Mise a jour juridique",
+          "title": "Comprendre vos droits dans la procedure de recours"
+        }
+      }
+    }
+  },
+  "about": {
+    "hero": {
+      "title": "COMPRENDRE LA PLUS HAUTE COUR<br>DU SYSTEME JUDICIAIRE"
+    },
+    "intro": {
+      "title": "COMPRENDRE LA PLUS HAUTE COUR<br>DU SYSTEME JUDICIAIRE",
+      "body": "L'article 151 paragraphe 1 de la Constitution de la RDC du 18 fevrier 2006 etablit un ordre de juridictions administratives compose de cours et tribunaux administratifs sous la supervision du Conseil d'Etat. L'article 82 de la Loi organique No 13/011-B du 11 avril 2013 portant organisation, composition et fonctionnement des juridictions administratives stipule qu'il existe un Conseil d'Etat dont le siege ordinaire est situe dans la capitale de la Republique democratique du Congo. Sa competence juridictionnelle peut etre exercee en un autre lieu. Historiquement, le Conseil d'Etat, dans cette breve presentation, retrace son histoire et ses racines dans notre institution judiciaire. Cree par decret-loi du 31 janvier 1968, le Conseil d'Etat trouve sa marque distinctive il y a plus d'un siecle. En effet, c'est huit ans apres l'independance en 1960 que le pays a etabli ce Conseil d'Etat pour regler les recours administratifs. Ce n'est qu'apres un siecle en 2015 que la Cour administrative supreme. Cette Cour a cesse d'exister dans la foulle de la Constitution de 2006 et de son etablissement, qui a declare nulles toutes dispositions contraires et stipule en son article 223 que les jugements et ordonnances rendus avant la promulgation de la Constitution en vigueur qui a passe et tribunaux en ceux passes en extreme par vertu de specialisation accrue, et siegeant en cas precedentiel, comme instrument de la specialisation du 18 fevrier 2006, la Cour administrative supreme a cesse d'exister definitivement le 11 avril 2013 lors de la Loi organique No 13/011-B du 11 avril 2013 etablissant l'organisation, la composition et le fonctionnement des juridictions administratives. Conformement a l'article 151 paragraphe 3 de la Constitution qui etablit l'autorite reglementaire pour l'exercice des attributions de l'ancienne Cour administrative supreme. Les juridictions administratives composant l'ordre juridictionnel administratif du Congo."
+    },
+    "legal": {
+      "title": "ACCEDER AUX PRINCIPAUX TEXTES JURIDIQUES ET REGLEMENTAIRES<br>DU CONSEIL D'ETAT",
+      "docs": {
+        "1": "Loi organique No 13/011-B du 11 avril 2013 portant organisation, composition et fonctionnement des juridictions ordinaires",
+        "2": "Decret No 13/046 du 25 septembre 2013 portant reglement interieur des chambres du Conseil d'Etat",
+        "3": "Decret-loi No 13/018 relatif a la remuneration et aux avantages des magistrats"
+      },
+      "detail": {
+        "title": "Loi organique No 13/011-B du 11 avril 2013 portant organisation, composition et fonctionnement des juridictions administratives",
+        "paragraph1": "Le contenu de cette Loi No 13/011-B du 11 avril 2013 portant organisation, composition et fonctionnement des juridictions administratives a ete place dans un contexte general de justice administrative.",
+        "paragraph2": "Chacun des articles de la Loi est ecrit a travers les dispositions clees du Titre I des magistrats :",
+        "list1": {
+          "1": "CHAPITRE I : Dispositions generales",
+          "2": "CHAPITRE II : Nomination et installation des magistrats et greffiers",
+          "3": "CHAPITRE III : Du regime juridique",
+          "4": "CHAPITRE IV : Pouvoirs, garanties et limites des magistrats",
+          "5": "CHAPITRE V : Discipline"
+        },
+        "paragraph3": "Il est regi par le Titre II du Conseil d'Etat, Article 81 a Article 95, et chaque article traite specifiquement du Conseil d'Etat dans les chapitres suivants :",
+        "list2": {
+          "1": "CHAPITRE I : Regime juridique",
+          "2": "CHAPITRE II : Installation, composition du Conseil d'Etat",
+          "3": "CHAPITRE III : Differentes formations, fonctionnement et personnel du Conseil d'Etat"
+        },
+        "paragraph4": "La composition a l'article 82 precise comment le Conseil d'Etat est compose et liste le personnel qui assiste les magistrats et les auxiliaires pour l'accomplissement de la mission administrative.",
+        "paragraph5": "L'article 83 prevoit les attributions du Conseil d'Etat, dont : les recours en matiere administrative ; il exerce la discipline des juges et auxiliaires de justice dans sa capacite juridictionnelle ; il recoit le serment des magistrats et officiers relevant de la juridiction administrative ; il donne un avis juridique en presence des magistrats nommes ou de l'autorite juridictionnelle. L'article 84 prevoit la composition des differentes sections et la formation du Conseil d'Etat ; l'article 88 prevoit l'attribution dans la deliberation de la chambre, chaque chambre constitue une formation juridictionnelle pour l'accomplissement de la mission du Conseil d'Etat a condition que le quorum soit atteint.",
+        "paragraph6": "Le quorum requis par l'article est atteint lorsque toutes les chambres sont composees comme suit : le president ou vice-president de chambre et deux autres magistrats, ainsi qu'un conseiller juridique et le greffier.",
+        "paragraph7": "En ce qui concerne le quorum judiciaire a l'article 89, chaque chambre peut constituer une formation juridictionnelle pour l'accomplissement de la mission du Conseil d'Etat et sieger pour differentes attributions uniquement si le quorum est atteint.",
+        "paragraph8": "Le quorum requis par l'article est atteint lorsque toutes les chambres sont composees comme suit : le president ou vice-president de chambre et deux autres magistrats, ainsi qu'un conseiller juridique et le greffier. Avec l'ajout de la partie interessee concernee si besoin pendant la procedure et lors des deliberations a huis clos, avec participation du Procureur general aux deliberations, la participation du greffier est faite par l'instruction de l'affaire.",
+        "paragraph9": "Apres lecture et explication des textes juridiques aux juridictions sur cette plateforme, vous pouvez demander leurs services directement par email ou par telephone et les recevoir."
+      }
+    }
+  },
+  "reforms": {
+    "hero": {
+      "title": "REFORMES<br>PROPOSEES",
+      "body": "Moderniser le systeme judiciaire par des reformes strategiques qui renforcent l'efficacite, la transparence et l'acces a la justice pour tous les citoyens congolais."
+    },
+    "building": {
+      "tag": "MODERNISATION JUDICIAIRE",
+      "title": "CONSTRUIRE UN SYSTEME JUDICIAIRE PLUS FORT",
+      "body": "Suite a la Constitution de 2006, le CONSEIL D'ETAT a engage des reformes globales pour renforcer l'independance judiciaire, ameliorer l'acces a la justice et s'aligner sur les normes internationales. Ces initiatives se concentrent sur le renforcement institutionnel, la transformation numerique et le developpement des capacites."
+    },
+    "initiatives": {
+      "tag": "FEUILLE DE ROUTE",
+      "title": "INITIATIVES STRATEGIQUES DE REFORME",
+      "body": "Une approche complete en cinq phases pour moderniser notre systeme judiciaire, garantissant l'excellence a chaque etape de la transformation.",
+      "badges": {
+        "critical": "Priorite critique",
+        "high": "Haute priorite",
+        "medium": "Priorite moyenne"
+      },
+      "steps": {
+        "1": {
+          "title": "Independance institutionnelle",
+          "body": "Renforcer l'independance judiciaire par des garanties constitutionnelles et l'autonomie financiere."
+        },
+        "2": {
+          "title": "Acces a la justice",
+          "body": "Etendre l'aide juridique et etablir des points d'acces regionaux a l'echelle nationale."
+        },
+        "3": {
+          "title": "Cooperation internationale",
+          "body": "Renforcer les partenariats avec les instances judiciaires internationales pour l'echange de connaissances."
+        },
+        "4": {
+          "title": "Transformation numerique",
+          "body": "Mettre en place des systemes modernes de gestion des affaires et des bases de donnees de jurisprudence en ligne."
+        },
+        "5": {
+          "title": "Renforcement des capacites",
+          "body": "Formation continue des magistrats et capacites avancees de recherche juridique."
+        }
+      }
+    },
+    "stakeholders": {
+      "title": "ACTEURS CLES",
+      "subtitle": "LEADERSHIP DE LA REFORME",
+      "roles": {
+        "president": "President",
+        "vicePresident": "Vice-president",
+        "chiefMagistrate": "Magistrat en chef",
+        "internationalRelations": "Relations internationales"
+      }
+    }
+  },
+  "international": {
+    "hero": {
+      "title": "RELATIONS<br>INTERNATIONALES",
+      "body": "Dans le contexte de l'internationalisation du droit et de la justice, le CONSEIL D'ETAT de la Republique democratique du Congo n'est pas isole. Il participe activement au dialogue des juges en maintenant un haut niveau de cooperation dans le cadre de l'Association des hautes juridictions de pays francophones (AHJUCAF) et de l'Association africaine des hautes juridictions francophones (AA-HJF)."
+    },
+    "stats": {
+      "associations": "Principales associations judiciaires internationales",
+      "partners": "Pays partenaires et hautes juridictions",
+      "exchanges": "Echanges et conferences judiciaires annuelles"
+    },
+    "networks": {
+      "title": "RESEAUX JUDICIAIRES INTERNATIONAUX",
+      "subtitle": "La Cour entretient des relations privilegiees avec les principales associations de hautes juridictions francophones et africaines",
+      "ahjucaf": {
+        "name": "Association des hautes juridictions utilisant le francais",
+        "body": "Une plateforme d'echange et de cooperation entre hautes juridictions francophones, facilitant le dialogue judiciaire, le partage de jurisprudence et le renforcement des capacites institutionnelles a l'echelle mondiale."
+      },
+      "aahjf": {
+        "name": "Association africaine des hautes juridictions francophones",
+        "body": "Une plateforme d'echange et de cooperation entre hautes juridictions francophones, facilitant le dialogue judiciaire, le partage de jurisprudence et le renforcement des capacites institutionnelles a l'echelle mondiale."
+      }
+    },
+    "domains": {
+      "title": "DOMAINES DE COOPERATION INTERNATIONALE",
+      "subtitle": "Notre engagement international se traduit par une participation active a diverses initiatives visant a renforcer la qualite de la justice et l'Etat de droit",
+      "dialogue": {
+        "title": "Dialogue judiciaire",
+        "body": "Echanges reguliers sur la jurisprudence, les bonnes pratiques et les defis communs des hautes juridictions, favorisant l'apprentissage mutuel et une interpretation harmonisee du droit."
+      },
+      "assistance": {
+        "title": "Assistance technique",
+        "body": "Cooperation technique pour la modernisation des systemes judiciaires, la numerisation et l'amelioration de l'acces a la justice grace au partage d'experiences."
+      },
+      "capacity": {
+        "title": "Renforcement des capacites",
+        "body": "Programmes de formation, seminaires et ateliers pour renforcer les competences des magistrats et du personnel judiciaire grace a l'expertise internationale."
+      },
+      "forums": {
+        "title": "Forums internationaux",
+        "body": "Participation active aux forums internationaux pour contribuer au developpement du droit et des normes judiciaires internationales et regionales."
+      }
+    },
+    "collaboration": {
+      "title": "Interesse par une collaboration ?",
+      "body": "Nous sommes ouverts aux partenariats institutionnels et aux echanges avec d'autres juridictions nationales et internationales engagees pour renforcer les systemes de justice.",
+      "cta": "CONTACTEZ-NOUS"
+    }
+  },
+  "audiences": {
+    "hero": {
+      "title": "AUDIENCES<br>ET EXTRAITS D'AUDIENCE",
+      "body": "Accedez aux horaires et aux extraits des audiences et decisions recentes."
+    },
+    "understanding": {
+      "title": "COMPRENDRE LES AUDIENCES",
+      "body": "Consultez des informations sur l'organisation des audiences et l'acces aux roles recents."
+    },
+    "recent": {
+      "title": "EXTRAITS DE ROLE RECENTS",
+      "subtitle": "DERNIERS EXTRAITS D'AUDIENCE"
+    },
+    "documents": {
+      "civil": {
+        "label": "Civil",
+        "title": "Extraits d'audience - Chambre civile"
+      },
+      "criminal": {
+        "label": "Criminel",
+        "title": "Extraits d'audience - Chambre criminelle"
+      },
+      "social": {
+        "label": "Social",
+        "title": "Extraits d'audience - Chambre sociale"
+      },
+      "general": {
+        "label": "General",
+        "title": "Extraits d'audience - Chambre generale"
+      }
+    },
+    "actions": {
+      "downloadPdf": "TELECHARGER PDF"
+    },
+    "assistance": {
+      "title": "Besoin d'aide ?",
+      "body": "Contactez le Conseil d'Etat pour obtenir de l'aide sur l'acces aux documents ou aux horaires.",
+      "cta": "CONTACTEZ-NOUS"
+    }
+  },
+  "organization": {
+    "hero": {
+      "title": "ORGANISATION<br>DU CONSEIL D'ETAT"
+    },
+    "firstPresident": {
+      "alt": "Premier President",
+      "title": "LE PREMIER PRESIDENT",
+      "body": "Le Premier President dirige le Conseil d'Etat, preside ses sessions et veille au bon fonctionnement de l'institution."
+    },
+    "seniorLabel": "MAGISTRATS SUPERIEURS",
+    "filters": {
+      "searchLabel": "Rechercher des membres",
+      "searchPlaceholder": "Rechercher par nom ou titre",
+      "roleLabel": "Role",
+      "all": "Tous",
+      "presidents": "Presidents",
+      "advisors": "Conseillers",
+      "summary": "Affichage de {{presidents}} presidents et {{advisors}} conseillers"
+    },
+    "presidents": {
+      "title": "LES PRESIDENTS",
+      "empty": "Aucun president ne correspond a votre recherche."
+    },
+    "advisors": {
+      "title": "LES CONSEILLERS",
+      "empty": "Aucun conseiller ne correspond a votre recherche."
+    },
+    "members": {
+      "learnMore": "En savoir plus",
+      "loadMore": "Charger plus"
+    },
+    "services": {
+      "overviewTitle": "APERCU DES SERVICES",
+      "learnMore": "En savoir plus",
+      "registry": {
+        "title": "Greffe",
+        "body": "Accedez aux depots, a l'etat des dossiers et aux registres officiels."
+      },
+      "docs": {
+        "title": "Documents",
+        "body": "Trouvez les formulaires, textes juridiques et guides proceduraux."
+      },
+      "tv": {
+        "title": "Conseil TV",
+        "body": "Suivez les audiences, annonces et actualites."
+      },
+      "title": "NOS SERVICES",
+      "subtitle": "Explorez les divisions et les bureaux qui soutiennent le travail du Conseil d'Etat.",
+      "divisions": {
+        "title": "Divisions",
+        "rooms": "Salles et chambres",
+        "council": "Bureau du Conseil",
+        "registers": "Registres et archives"
+      },
+      "rooms": {
+        "title": "Salles",
+        "body": "Salles administratives et judiciaires qui organisent les deliberations et les audiences."
+      },
+      "council": {
+        "title": "Conseil",
+        "body": "Le bureau qui coordonne la politique et la gouvernance institutionnelle."
+      },
+      "registers": {
+        "title": "Registres",
+        "body": "Unites qui gerent les dossiers, archives et depots officiels."
+      },
+      "details": {
+        "chambers": {
+          "title": "Les chambres",
+          "item1": "Chambre civile",
+          "item2": "Chambre criminelle",
+          "item3": "Chambre commerciale",
+          "item4": "Chambre sociale",
+          "body1": "Chaque chambre traite des matieres specialisees dans son champ de competence.",
+          "body2": "Les chambres siegent en formation selon la loi applicable."
+        },
+        "rooms": {
+          "title": "Salles et chambres",
+          "body1": "Les salles organisent les audiences et preparent les dossiers.",
+          "body2": "Elles assurent la conformite procedurale et la planification.",
+          "body3": "Elles soutiennent les deliberations par la coordination administrative.",
+          "body4": "Elles assurent la bonne circulation des affaires jusqu'aux decisions finales."
+        },
+        "council": {
+          "title": "Bureau du Conseil",
+          "body1": "Le Bureau du Conseil assure la coordination strategique.",
+          "body2": "Il prepare les sessions plenieres et les orientations.",
+          "body3": "Il supervise la mise en oeuvre des decisions et des reformes.",
+          "body4": "Il soutient la communication et les relations institutionnelles."
+        },
+        "registers": {
+          "title": "Registres et archives",
+          "body1": "Les registres recoivent et enregistrent les depots et decisions.",
+          "body2": "Ils conservent les archives pour la preservation a long terme.",
+          "body3": "Ils delivrent des copies certifiees sur demande.",
+          "body4": "Ils assurent l'indexation et la recherche des dossiers.",
+          "body5": "Ils garantissent la confidentialite et l'integrite des archives."
+        }
+      }
+    }
   }
 }

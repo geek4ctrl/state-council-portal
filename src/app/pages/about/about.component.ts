@@ -1,16 +1,18 @@
 import { Component, inject, OnInit } from '@angular/core';
 import { SeoService } from '../../services/seo.service';
+import { I18nPipe } from '../../i18n/i18n.pipe';
 
 @Component({
   selector: 'app-about',
   standalone: true,
+  imports: [I18nPipe],
   template: `
     <div class="page-container">
       <!-- Hero Section -->
       <section class="hero-section">
         <div class="hero-overlay">
           <div class="container">
-            <h1 class="hero-title">UNDERSTANDING THE HIGHEST COURT<br>OF THE JUDICIAL SYSTEM</h1>
+            <h1 class="hero-title" [innerHTML]="'about.hero.title' | i18n"></h1>
           </div>
         </div>
       </section>
@@ -20,32 +22,15 @@ import { SeoService } from '../../services/seo.service';
         <div class="container">
           <!-- Introduction -->
           <div class="intro-box">
-            <h2 class="section-heading">UNDERSTANDING THE HIGHEST COURT<br>OF THE JUDICIAL SYSTEM</h2>
+            <h2 class="section-heading" [innerHTML]="'about.intro.title' | i18n"></h2>
             <div class="intro-text">
-              <p>
-                Article 151 paragraph 1 of the Constitution of the DRC of February 18, 2006, establishes an administrative judicial system composed of administrative
-                courts and tribunals with the supervision of the State Council. Article 82 of Organic Law No. 13/011-B of
-                April 11, 2013 establishing the organization, composition and functioning of the administrative courts stipulates that « there is
-                existence of a State Council whose ordinary seat is located in the capital of the Democratic Republic of Congo. Its
-                jurisdictional capacity can be exercised in another place». Historically, the State Council in this short presentation, traces its
-                history and roots in our judicial institution. Created by Decree-Law on January 31, 1968, the State Council finds its
-                distinct mark more than a century. Indeed, it was eight years after gaining independence in 1960 that the country established
-                this State Council to regulate administrative appeals. It was only after a century in 2015 that the Supreme Administrative Court. This
-                Court ceased to exist in the wake of the 2006 Constitution and its establishment, which declared null and void all provisions
-                contrary and stipulated in its Article 223 that "The judgments and orders rendered before the promulgation of the Constitution in
-                force that has passed and tribunals into those passed in extreme by virtue greater specialization, and seated in case precedential,
-                as instrument in the specialization of February 18, 2006, the Supreme Administrative Court ceased to exist definitively on April 11,
-                2013 when the Organic Law No. 13/011-B of April 11, 2013 establishing the organization, composition and functioning of the
-                administrative courts. Pursuant to Article 151 paragraph 3 of the Constitution which establishes the regulatory authority for exercise of
-                powers of the former Supreme Administrative Court. The administrative courts and tribunals comprising the administrative judicial system of
-                Congo."
-              </p>
+              <p>{{ 'about.intro.body' | i18n }}</p>
             </div>
           </div>
 
           <!-- Legal Texts Section -->
           <div class="legal-section">
-            <h2 class="section-heading">ACCESS THE MAIN LEGAL AND REGULATORY<br>TEXTS OF THE STATE COUNCIL</h2>
+            <h2 class="section-heading" [innerHTML]="'about.legal.title' | i18n"></h2>
 
             <div class="legal-content">
               <!-- Left Column - Document Links -->
@@ -53,21 +38,21 @@ import { SeoService } from '../../services/seo.service';
                 <div class="doc-item">
                   <span class="doc-number">1</span>
                   <div class="doc-text">
-                    <h3>Organic Law N° 13/011-B of April 11, 2013 containing the organization, composition and functioning of the ordinary jurisdictions</h3>
+                    <h3>{{ 'about.legal.docs.1' | i18n }}</h3>
                   </div>
                 </div>
 
                 <div class="doc-item">
                   <span class="doc-number">2</span>
                   <div class="doc-text">
-                    <h3>Decree N° 13/046 of September 25, 2013 rules concerning the chambers of State Council</h3>
+                    <h3>{{ 'about.legal.docs.2' | i18n }}</h3>
                   </div>
                 </div>
 
                 <div class="doc-item">
                   <span class="doc-number">3</span>
                   <div class="doc-text">
-                    <h3>Decree Law N° 13/018 relative to the remuneration and allowances to the magistrates</h3>
+                    <h3>{{ 'about.legal.docs.3' | i18n }}</h3>
                   </div>
                 </div>
               </div>
@@ -75,28 +60,28 @@ import { SeoService } from '../../services/seo.service';
               <!-- Right Column - Detailed Text -->
               <div class="detailed-text">
                 <div class="text-block">
-                  <h4>Organic Law N° 13/011-B of April 11, 2013 containing the organization, composition and functioning of the administrative jurisdictions</h4>
-                  <p>The content of this Law N° 13/011-B of April 11, 2013 containing the organization, composition and functioning of the administrative jurisdictions has been placed in a general administrative judicial context.</p>
-                  <p>Each of the articles of the Law is written across the key provisions of the Title I of the magistrates:</p>
+                  <h4>{{ 'about.legal.detail.title' | i18n }}</h4>
+                  <p>{{ 'about.legal.detail.paragraph1' | i18n }}</p>
+                  <p>{{ 'about.legal.detail.paragraph2' | i18n }}</p>
                   <ul>
-                    <li>CHAPTER I: General provisions</li>
-                    <li>CHAPTER II: Nomination and installation of the magistrates and clerks</li>
-                    <li>CHAPTER III: of the legal regime</li>
-                    <li>CHAPTER IV: Powers, guarantees and limits of the Magistrates</li>
-                    <li>CHAPTER V: Discipline</li>
+                    <li>{{ 'about.legal.detail.list1.1' | i18n }}</li>
+                    <li>{{ 'about.legal.detail.list1.2' | i18n }}</li>
+                    <li>{{ 'about.legal.detail.list1.3' | i18n }}</li>
+                    <li>{{ 'about.legal.detail.list1.4' | i18n }}</li>
+                    <li>{{ 'about.legal.detail.list1.5' | i18n }}</li>
                   </ul>
-                  <p>It is governed by Title II of the State Council Article 81 to Article 95 that each article deals specifically with the State Council in the following chapters:</p>
+                  <p>{{ 'about.legal.detail.paragraph3' | i18n }}</p>
                   <ul>
-                    <li>CHAPTER I: Legal regime</li>
-                    <li>CHAPTER II: Installation, composition of the State Council</li>
-                    <li>CHAPTER III: Different formations, functioning and personnel of the State Council</li>
+                    <li>{{ 'about.legal.detail.list2.1' | i18n }}</li>
+                    <li>{{ 'about.legal.detail.list2.2' | i18n }}</li>
+                    <li>{{ 'about.legal.detail.list2.3' | i18n }}</li>
                   </ul>
-                  <p>The composition in article 82 provides how the State Council is composed, and lists the personnel which assists the magistrates and the auxiliary personnel attributions for the achievement of the administrative mandate.</p>
-                  <p>Article 83 provided for the attribution of the State Council, one of which is: Appeals in administrative matters; It exercises the discipline of judges and court auxiliaries in its jurisdictional capacity; It receives the oath of magistrates and court officers falling under the administrative jurisdiction; It gives the legal opinion in the presence of judges nominated or the jurisdictional authority. Article 84 provided for the composition of different sections and formation of the State Council; Article 88 provided for the attribution in the deliberation of the chamber, each chamber shall constitute a jurisdictional formation for achievement of the mandate of the State Council as to sit for different attributions only if the quorum is reached.</p>
-                  <p>The quorum required in the article is reached, when all chambers are composed as follows: the president or vice-president of chamber and two other magistrates, as well as a legal adviser and the Clerk.</p>
-                  <p>With regards to the judicial quorum in Article 89, each chamber may constitute a jurisdictional formation for the achievement of the mandate of the State Council and sit for different attributions only if the quorum is reached.</p>
-                  <p>The quorum required in the article is reached, when all chambers are composed as follows: the president or vice-president of chamber and two other magistrates, as well as a legal adviser and the Clerk. With the addition of the concerned interested party seated during the procedure with his assistance if need be and at the time of deliberations at the closed door, with participation of the Attorney General in the deliberations with participation of the clerk is done by the instruction of the matter.</p>
-                  <p>After reading and having the legal texts explained to the jurisdictions in this platform, you can request their service directly by contacting us by email or by telephone and therefore receive them.</p>
+                  <p>{{ 'about.legal.detail.paragraph4' | i18n }}</p>
+                  <p>{{ 'about.legal.detail.paragraph5' | i18n }}</p>
+                  <p>{{ 'about.legal.detail.paragraph6' | i18n }}</p>
+                  <p>{{ 'about.legal.detail.paragraph7' | i18n }}</p>
+                  <p>{{ 'about.legal.detail.paragraph8' | i18n }}</p>
+                  <p>{{ 'about.legal.detail.paragraph9' | i18n }}</p>
                 </div>
               </div>
             </div>

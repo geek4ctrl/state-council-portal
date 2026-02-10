@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { I18nPipe } from '../../i18n/i18n.pipe';
 
 @Component({
   selector: 'app-international-relations',
-  standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, I18nPipe],
   template: `
     <div class="page-container">
       <!-- Hero Section -->
@@ -13,16 +13,11 @@ import { CommonModule } from '@angular/common';
         <div class="container">
           <div class="hero-grid">
             <div class="hero-title">
-              <h1>INTERNATIONAL<br>RELATIONS</h1>
+              <h1 [innerHTML]="'international.hero.title' | i18n"></h1>
             </div>
             <div class="vertical-line"></div>
             <div class="hero-description">
-              <p>
-                In the context of the internationalization of law and justice, the STATE COUNCIL of the Democratic Republic of Congo
-                is not isolated from this environment. It actively participates in the dialogue of judges by maintaining a high level of
-                cooperation within the framework of the Association of Supreme Courts of French-speaking countries (AHJUCAF)
-                and the African Association of Francophone Supreme Courts (AA-HJF).
-              </p>
+              <p>{{ 'international.hero.body' | i18n }}</p>
             </div>
           </div>
         </div>
@@ -35,19 +30,19 @@ import { CommonModule } from '@angular/common';
             <div class="stat-item">
               <div class="stat-number">2</div>
               <div class="stat-divider"></div>
-              <div class="stat-label">Major International Judicial Associations</div>
+              <div class="stat-label">{{ 'international.stats.associations' | i18n }}</div>
             </div>
             <div class="stat-separator"></div>
             <div class="stat-item">
               <div class="stat-number">50+</div>
               <div class="stat-divider"></div>
-              <div class="stat-label">Partner Countries & Supreme Courts</div>
+              <div class="stat-label">{{ 'international.stats.partners' | i18n }}</div>
             </div>
             <div class="stat-separator"></div>
             <div class="stat-item">
               <div class="stat-number">100+</div>
               <div class="stat-divider"></div>
-              <div class="stat-label">Annual Judicial Exchanges & Conferences</div>
+              <div class="stat-label">{{ 'international.stats.exchanges' | i18n }}</div>
             </div>
           </div>
         </div>
@@ -58,21 +53,17 @@ import { CommonModule } from '@angular/common';
         <div class="container">
           <div class="section-header">
             <div class="header-line"></div>
-            <h2>INTERNATIONAL JUDICIAL NETWORKS</h2>
+            <h2>{{ 'international.networks.title' | i18n }}</h2>
           </div>
-          <p class="section-subtitle">
-            The Court maintains privileged relationships with the leading associations of Francophone and African supreme courts
-          </p>
+          <p class="section-subtitle">{{ 'international.networks.subtitle' | i18n }}</p>
 
           <div class="network-cards">
             <div class="network-card">
               <div class="card-accent"></div>
               <div class="card-content">
                 <h3>AHJUCAF</h3>
-                <p class="network-full-name">Association of Supreme Courts Using French</p>
-                <p class="network-description">
-                  A platform for exchange and cooperation between Francophone supreme courts, facilitating judicial dialogue, sharing of jurisprudence, and strengthening institutional capacities across French-speaking jurisdictions worldwide.
-                </p>
+                <p class="network-full-name">{{ 'international.networks.ahjucaf.name' | i18n }}</p>
+                <p class="network-description">{{ 'international.networks.ahjucaf.body' | i18n }}</p>
               </div>
             </div>
 
@@ -80,10 +71,8 @@ import { CommonModule } from '@angular/common';
               <div class="card-accent"></div>
               <div class="card-content">
                 <h3>AA-HJF</h3>
-                <p class="network-full-name">African Association of Francophone Supreme Courts</p>
-                <p class="network-description">
-                  A platform for exchange and cooperation between Francophone supreme courts, facilitating judicial dialogue, sharing of jurisprudence, and strengthening institutional capacities across French-speaking jurisdictions worldwide.
-                </p>
+                <p class="network-full-name">{{ 'international.networks.aahjf.name' | i18n }}</p>
+                <p class="network-description">{{ 'international.networks.aahjf.body' | i18n }}</p>
               </div>
             </div>
           </div>
@@ -95,12 +84,10 @@ import { CommonModule } from '@angular/common';
         <div class="container">
           <div class="section-header centered">
             <div class="header-line-left"></div>
-            <h2>INTERNATIONAL COOPERATION DOMAINS</h2>
+            <h2>{{ 'international.domains.title' | i18n }}</h2>
             <div class="header-line-right"></div>
           </div>
-          <p class="section-subtitle centered">
-            Our international engagement translates into active participation in various initiatives aimed at strengthening the quality of justice and the rule of law
-          </p>
+          <p class="section-subtitle centered">{{ 'international.domains.subtitle' | i18n }}</p>
 
           <div class="domain-grid">
             <div class="domain-card">
@@ -110,11 +97,9 @@ import { CommonModule } from '@angular/common';
                     <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
                   </svg>
                 </div>
-                <h3>Judicial Dialogue</h3>
+                <h3>{{ 'international.domains.dialogue.title' | i18n }}</h3>
               </div>
-              <p>
-                Regular exchanges on jurisprudence, best practices, and common challenges faced by supreme courts, fostering mutual learning and harmonized legal interpretation.
-              </p>
+              <p>{{ 'international.domains.dialogue.body' | i18n }}</p>
             </div>
 
             <div class="domain-card">
@@ -125,11 +110,9 @@ import { CommonModule } from '@angular/common';
                     <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
                   </svg>
                 </div>
-                <h3>Technical Assistance</h3>
+                <h3>{{ 'international.domains.assistance.title' | i18n }}</h3>
               </div>
-              <p>
-                Technical cooperation for modernization of judicial systems, digitalization, and improvement of access to justice through shared experiences.
-              </p>
+              <p>{{ 'international.domains.assistance.body' | i18n }}</p>
             </div>
 
             <div class="domain-card">
@@ -142,11 +125,9 @@ import { CommonModule } from '@angular/common';
                     <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
                   </svg>
                 </div>
-                <h3>Capacity Building</h3>
+                <h3>{{ 'international.domains.capacity.title' | i18n }}</h3>
               </div>
-              <p>
-                Training programs, seminars, and workshops for strengthening the skills of magistrates and judicial personnel through international expertise.
-              </p>
+              <p>{{ 'international.domains.capacity.body' | i18n }}</p>
             </div>
 
             <div class="domain-card">
@@ -158,11 +139,9 @@ import { CommonModule } from '@angular/common';
                     <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
                   </svg>
                 </div>
-                <h3>International Forums</h3>
+                <h3>{{ 'international.domains.forums.title' | i18n }}</h3>
               </div>
-              <p>
-                Active participation in international forums to contribute to the development of international and regional law and judicial standards.
-              </p>
+              <p>{{ 'international.domains.forums.body' | i18n }}</p>
             </div>
           </div>
         </div>
@@ -173,12 +152,10 @@ import { CommonModule } from '@angular/common';
         <div class="container">
           <div class="collaboration-content">
             <div class="collaboration-text">
-              <h2>Interested in Collaboration?</h2>
-              <p>
-                We are open to institutional partnerships and exchanges with other national and international jurisdictions committed to strengthening justice systems.
-              </p>
+              <h2>{{ 'international.collaboration.title' | i18n }}</h2>
+              <p>{{ 'international.collaboration.body' | i18n }}</p>
             </div>
-            <button class="contact-btn">CONTACT US</button>
+            <button class="contact-btn">{{ 'international.collaboration.cta' | i18n }}</button>
           </div>
         </div>
       </section>
@@ -197,41 +174,41 @@ import { CommonModule } from '@angular/common';
         <div class="container">
           <div class="footer-grid">
             <div class="footer-column">
-              <h3>Main Office</h3>
-              <p>No. 3 Avenue de la Justice</p>
-              <p>Central District of Kinshasa</p>
-              <p>Democratic Republic of Congo</p>
-              <p class="footer-contact">Tel: +243 (21) 0000000</p>
-              <p class="footer-contact">Email: info@conseildetat.cd</p>
+              <h3>{{ 'footer.mainOffice.title' | i18n }}</h3>
+              <p>{{ 'footer.mainOffice.address1' | i18n }}</p>
+              <p>{{ 'footer.mainOffice.address2' | i18n }}</p>
+              <p>{{ 'footer.mainOffice.address3' | i18n }}</p>
+              <p class="footer-contact">{{ 'footer.mainOffice.phone' | i18n }}</p>
+              <p class="footer-contact">{{ 'footer.mainOffice.email' | i18n }}</p>
             </div>
 
             <div class="footer-column">
-              <h3>Quick Links</h3>
+              <h3>{{ 'footer.quickLinks.title' | i18n }}</h3>
               <ul>
-                <li><a href="#">About the Court</a></li>
-                <li><a href="#">Jurisprudence</a></li>
-                <li><a href="#">Filing Procedures</a></li>
-                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">{{ 'footer.quickLinks.about' | i18n }}</a></li>
+                <li><a href="#">{{ 'footer.quickLinks.jurisprudence' | i18n }}</a></li>
+                <li><a href="#">{{ 'footer.quickLinks.filing' | i18n }}</a></li>
+                <li><a href="#">{{ 'footer.quickLinks.contact' | i18n }}</a></li>
               </ul>
             </div>
 
             <div class="footer-column">
-              <h3>Resources</h3>
+              <h3>{{ 'footer.resources.title' | i18n }}</h3>
               <ul>
-                <li><a href="#">Legal Documents</a></li>
-                <li><a href="#">Court Decisions</a></li>
-                <li><a href="#">Annual Reports</a></li>
-                <li><a href="#">FAQs</a></li>
+                <li><a href="#">{{ 'footer.resources.legalDocs' | i18n }}</a></li>
+                <li><a href="#">{{ 'footer.resources.decisions' | i18n }}</a></li>
+                <li><a href="#">{{ 'footer.resources.reports' | i18n }}</a></li>
+                <li><a href="#">{{ 'footer.resources.faqs' | i18n }}</a></li>
               </ul>
             </div>
 
             <div class="footer-column">
-              <h3>Connect</h3>
+              <h3>{{ 'footer.connect.title' | i18n }}</h3>
               <ul>
-                <li><a href="#">Facebook</a></li>
-                <li><a href="#">Twitter</a></li>
-                <li><a href="#">Instagram</a></li>
-                <li><a href="#">LinkedIn</a></li>
+                <li><a href="#">{{ 'footer.connect.facebook' | i18n }}</a></li>
+                <li><a href="#">{{ 'footer.connect.twitter' | i18n }}</a></li>
+                <li><a href="#">{{ 'footer.connect.instagram' | i18n }}</a></li>
+                <li><a href="#">{{ 'footer.connect.linkedin' | i18n }}</a></li>
               </ul>
             </div>
           </div>
@@ -241,8 +218,8 @@ import { CommonModule } from '@angular/common';
       <div class="footer-bottom">
         <div class="container">
           <div class="footer-bottom-content">
-            <a href="#" class="privacy-link">Privacy</a>
-            <p class="copyright">Copyright State Council. All Rights Reserved</p>
+            <a href="#" class="privacy-link">{{ 'footer.privacy' | i18n }}</a>
+            <p class="copyright">{{ 'footer.copyright' | i18n }}</p>
             <div class="social-icons">
               <a href="#" class="social-icon">
                 <svg viewBox="0 0 24 24" fill="currentColor">

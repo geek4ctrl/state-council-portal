@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { I18nPipe } from '../../i18n/i18n.pipe';
 
 @Component({
   selector: 'app-reforms',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, I18nPipe],
   template: `
     <div class="page-container">
       <!-- Hero Section -->
@@ -12,14 +13,11 @@ import { CommonModule } from '@angular/common';
         <div class="container">
           <div class="hero-grid">
             <div class="hero-content-left">
-              <h1>SUGGESTED<br>REFORMS</h1>
+              <h1 [innerHTML]="'reforms.hero.title' | i18n"></h1>
             </div>
             <div class="vertical-line"></div>
             <div class="hero-content-right">
-              <p>
-                Modernizing the judicial system through strategic reforms that enhance efficiency, transparency, and access to justice
-                for all Congolese citizens.
-              </p>
+              <p>{{ 'reforms.hero.body' | i18n }}</p>
             </div>
           </div>
         </div>
@@ -30,15 +28,11 @@ import { CommonModule } from '@angular/common';
         <div class="container">
           <div class="section-tag">
             <div class="tag-line"></div>
-            <span>JUDICIAL MODERNIZATION</span>
+            <span>{{ 'reforms.building.tag' | i18n }}</span>
           </div>
-          
-          <h2 class="section-title">BUILDING A STRONGER JUSTICE SYSTEM</h2>
-          <p class="section-description">
-            Following the 2006 Constitution, the STATE COUNCIL has embarked on comprehensive reforms to strengthen judicial
-            independence, improve access to justice, and align with international standards. These initiatives focus on institutional
-            strengthening, digital transformation, and capacity building.
-          </p>
+
+          <h2 class="section-title">{{ 'reforms.building.title' | i18n }}</h2>
+          <p class="section-description">{{ 'reforms.building.body' | i18n }}</p>
         </div>
       </section>
 
@@ -47,13 +41,11 @@ import { CommonModule } from '@angular/common';
         <div class="container">
           <div class="section-tag">
             <div class="tag-line"></div>
-            <span>TRANSFORMATION ROADMAP</span>
+            <span>{{ 'reforms.initiatives.tag' | i18n }}</span>
           </div>
-          
-          <h2 class="section-title">STRATEGIC REFORM INITIATIVES</h2>
-          <p class="section-description">
-            A comprehensive five-phase approach to modernizing our judicial system, ensuring excellence at every stage of transformation.
-          </p>
+
+          <h2 class="section-title">{{ 'reforms.initiatives.title' | i18n }}</h2>
+          <p class="section-description">{{ 'reforms.initiatives.body' | i18n }}</p>
 
           <!-- Process Flow -->
           <div class="process-flow-container">
@@ -69,9 +61,9 @@ import { CommonModule } from '@angular/common';
                     <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
                   </svg>
                 </div>
-                <h3>Institutional Independence</h3>
-                <p>Strengthening judicial independence through constitutional safeguards and financial autonomy.</p>
-                <div class="step-badge critical">Critical Priority</div>
+                <h3>{{ 'reforms.initiatives.steps.1.title' | i18n }}</h3>
+                <p>{{ 'reforms.initiatives.steps.1.body' | i18n }}</p>
+                <div class="step-badge critical">{{ 'reforms.initiatives.badges.critical' | i18n }}</div>
               </div>
               <div class="arrow-connector">
                 <svg viewBox="0 0 100 60" preserveAspectRatio="none">
@@ -95,9 +87,9 @@ import { CommonModule } from '@angular/common';
                     <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
                   </svg>
                 </div>
-                <h3>Access to Justice</h3>
-                <p>Expanding legal aid services and establishing regional access points nationwide.</p>
-                <div class="step-badge high">High Priority</div>
+                <h3>{{ 'reforms.initiatives.steps.2.title' | i18n }}</h3>
+                <p>{{ 'reforms.initiatives.steps.2.body' | i18n }}</p>
+                <div class="step-badge high">{{ 'reforms.initiatives.badges.high' | i18n }}</div>
               </div>
               <div class="arrow-connector">
                 <svg viewBox="0 0 100 60" preserveAspectRatio="none">
@@ -122,9 +114,9 @@ import { CommonModule } from '@angular/common';
                     <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
                   </svg>
                 </div>
-                <h3>International Cooperation</h3>
-                <p>Deepening partnerships with international judicial bodies for knowledge exchange.</p>
-                <div class="step-badge medium">Medium Priority</div>
+                <h3>{{ 'reforms.initiatives.steps.3.title' | i18n }}</h3>
+                <p>{{ 'reforms.initiatives.steps.3.body' | i18n }}</p>
+                <div class="step-badge medium">{{ 'reforms.initiatives.badges.medium' | i18n }}</div>
               </div>
               <div class="arrow-connector">
                 <svg viewBox="0 0 100 60" preserveAspectRatio="none">
@@ -149,9 +141,9 @@ import { CommonModule } from '@angular/common';
                     <line x1="12" y1="17" x2="12" y2="21"></line>
                   </svg>
                 </div>
-                <h3>Digital Transformation</h3>
-                <p>Implementing modern case management systems and online jurisprudence databases.</p>
-                <div class="step-badge high">High Priority</div>
+                <h3>{{ 'reforms.initiatives.steps.4.title' | i18n }}</h3>
+                <p>{{ 'reforms.initiatives.steps.4.body' | i18n }}</p>
+                <div class="step-badge high">{{ 'reforms.initiatives.badges.high' | i18n }}</div>
               </div>
               <div class="arrow-connector">
                 <svg viewBox="0 0 100 60" preserveAspectRatio="none">
@@ -175,9 +167,9 @@ import { CommonModule } from '@angular/common';
                     <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
                   </svg>
                 </div>
-                <h3>Capacity Building</h3>
-                <p>Continuous training for magistrates and advanced legal research capabilities.</p>
-                <div class="step-badge medium">Medium Priority</div>
+                <h3>{{ 'reforms.initiatives.steps.5.title' | i18n }}</h3>
+                <p>{{ 'reforms.initiatives.steps.5.body' | i18n }}</p>
+                <div class="step-badge medium">{{ 'reforms.initiatives.badges.medium' | i18n }}</div>
               </div>
               <div class="completion-badge">
                 <svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
@@ -195,10 +187,10 @@ import { CommonModule } from '@angular/common';
         <div class="container">
           <div class="stakeholders-header">
             <div class="header-line left"></div>
-            <h2 class="section-title-stakeholders">KEY STAKEHOLDERS</h2>
+            <h2 class="section-title-stakeholders">{{ 'reforms.stakeholders.title' | i18n }}</h2>
             <div class="header-line right"></div>
           </div>
-          <p class="section-subtitle">REFORM LEADERSHIP</p>
+          <p class="section-subtitle">{{ 'reforms.stakeholders.subtitle' | i18n }}</p>
 
           <div class="stakeholders-grid">
             <div class="stakeholder-card" *ngFor="let stakeholder of stakeholders">
@@ -208,7 +200,7 @@ import { CommonModule } from '@angular/common';
               </div>
               <div class="stakeholder-info">
                 <h3>{{ stakeholder.name }}</h3>
-                <p class="stakeholder-role">{{ stakeholder.role }}</p>
+                <p class="stakeholder-role">{{ stakeholder.roleKey | i18n }}</p>
               </div>
             </div>
           </div>
@@ -229,41 +221,41 @@ import { CommonModule } from '@angular/common';
         <div class="container">
           <div class="footer-grid">
             <div class="footer-column">
-              <h3>Main Office</h3>
-              <p>No. 3 Avenue de la Justice</p>
-              <p>Central District of Kinshasa</p>
-              <p>Democratic Republic of Congo</p>
-              <p class="footer-contact">Tel: +243 (21) 0000000</p>
-              <p class="footer-contact">Email: info@conseildetat.cd</p>
+              <h3>{{ 'footer.mainOffice.title' | i18n }}</h3>
+              <p>{{ 'footer.mainOffice.address1' | i18n }}</p>
+              <p>{{ 'footer.mainOffice.address2' | i18n }}</p>
+              <p>{{ 'footer.mainOffice.address3' | i18n }}</p>
+              <p class="footer-contact">{{ 'footer.mainOffice.phone' | i18n }}</p>
+              <p class="footer-contact">{{ 'footer.mainOffice.email' | i18n }}</p>
             </div>
 
             <div class="footer-column">
-              <h3>Quick Links</h3>
+              <h3>{{ 'footer.quickLinks.title' | i18n }}</h3>
               <ul>
-                <li><a href="#">About the Court</a></li>
-                <li><a href="#">Jurisprudence</a></li>
-                <li><a href="#">Filing Procedures</a></li>
-                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">{{ 'footer.quickLinks.about' | i18n }}</a></li>
+                <li><a href="#">{{ 'footer.quickLinks.jurisprudence' | i18n }}</a></li>
+                <li><a href="#">{{ 'footer.quickLinks.filing' | i18n }}</a></li>
+                <li><a href="#">{{ 'footer.quickLinks.contact' | i18n }}</a></li>
               </ul>
             </div>
 
             <div class="footer-column">
-              <h3>Resources</h3>
+              <h3>{{ 'footer.resources.title' | i18n }}</h3>
               <ul>
-                <li><a href="#">Legal Documents</a></li>
-                <li><a href="#">Court Decisions</a></li>
-                <li><a href="#">Annual Reports</a></li>
-                <li><a href="#">FAQs</a></li>
+                <li><a href="#">{{ 'footer.resources.legalDocs' | i18n }}</a></li>
+                <li><a href="#">{{ 'footer.resources.decisions' | i18n }}</a></li>
+                <li><a href="#">{{ 'footer.resources.reports' | i18n }}</a></li>
+                <li><a href="#">{{ 'footer.resources.faqs' | i18n }}</a></li>
               </ul>
             </div>
 
             <div class="footer-column">
-              <h3>Connect</h3>
+              <h3>{{ 'footer.connect.title' | i18n }}</h3>
               <ul>
-                <li><a href="#">Facebook</a></li>
-                <li><a href="#">Twitter</a></li>
-                <li><a href="#">Instagram</a></li>
-                <li><a href="#">LinkedIn</a></li>
+                <li><a href="#">{{ 'footer.connect.facebook' | i18n }}</a></li>
+                <li><a href="#">{{ 'footer.connect.twitter' | i18n }}</a></li>
+                <li><a href="#">{{ 'footer.connect.instagram' | i18n }}</a></li>
+                <li><a href="#">{{ 'footer.connect.linkedin' | i18n }}</a></li>
               </ul>
             </div>
           </div>
@@ -273,8 +265,8 @@ import { CommonModule } from '@angular/common';
       <div class="footer-bottom">
         <div class="container">
           <div class="footer-bottom-content">
-            <a href="#" class="privacy-link">Privacy</a>
-            <p class="copyright">Copyright State Council. All Rights Reserved</p>
+            <a href="#" class="privacy-link">{{ 'footer.privacy' | i18n }}</a>
+            <p class="copyright">{{ 'footer.copyright' | i18n }}</p>
             <div class="social-icons">
               <a href="#" class="social-icon">
                 <svg viewBox="0 0 24 24" fill="currentColor">
@@ -868,7 +860,7 @@ import { CommonModule } from '@angular/common';
       .footer-grid {
         grid-template-columns: 1fr;
       }
-      
+
     @media (max-width: 768px) {
       .container {
         padding: 0 25px;
@@ -948,25 +940,25 @@ import { CommonModule } from '@angular/common';
 })
 export class ReformsComponent {
   stakeholders = [
-    { 
-      name: 'BAGUNDA NSIMIRE', 
-      role: 'President',
-      image: 'https://i.pravatar.cc/400?img=12' 
+    {
+      name: 'BAGUNDA NSIMIRE',
+      roleKey: 'reforms.stakeholders.roles.president',
+      image: 'https://i.pravatar.cc/400?img=12'
     },
-    { 
-      name: 'NDOMBA KABEYA', 
-      role: 'Vice President',
-      image: 'https://i.pravatar.cc/400?img=33' 
+    {
+      name: 'NDOMBA KABEYA',
+      roleKey: 'reforms.stakeholders.roles.vicePresident',
+      image: 'https://i.pravatar.cc/400?img=33'
     },
-    { 
-      name: 'CHRISTINA WOCIN', 
-      role: 'Chief Magistrate',
-      image: 'https://i.pravatar.cc/400?img=47' 
+    {
+      name: 'CHRISTINA WOCIN',
+      roleKey: 'reforms.stakeholders.roles.chiefMagistrate',
+      image: 'https://i.pravatar.cc/400?img=47'
     },
-    { 
-      name: 'MUKENGULE MUDERHWA', 
-      role: 'International Relations',
-      image: 'https://i.pravatar.cc/400?img=56' 
+    {
+      name: 'MUKENGULE MUDERHWA',
+      roleKey: 'reforms.stakeholders.roles.internationalRelations',
+      image: 'https://i.pravatar.cc/400?img=56'
     }
   ];
 }

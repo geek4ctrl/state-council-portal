@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { I18nPipe } from '../../i18n/i18n.pipe';
 
 @Component({
   selector: 'app-audiences',
-  standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, I18nPipe],
   template: `
     <div class="page-container">
       <!-- Hero Section -->
@@ -13,15 +13,11 @@ import { CommonModule } from '@angular/common';
         <div class="container">
           <div class="hero-grid">
             <div class="hero-title">
-              <h1>SCHEDULE AND<br />ROLE EXCERPTS</h1>
+              <h1 [innerHTML]="'audiences.hero.title' | i18n"></h1>
             </div>
             <div class="vertical-line"></div>
             <div class="hero-description">
-              <p>
-                Access hearing schedules, court calendars, and role excerpts for upcoming sessions
-                at the STATE COUNCIL. Stay informed about scheduled audiences and case
-                listings.
-              </p>
+              <p>{{ 'audiences.hero.body' | i18n }}</p>
             </div>
           </div>
         </div>
@@ -32,26 +28,17 @@ import { CommonModule } from '@angular/common';
         <div class="container">
           <!-- Understanding Audiences -->
           <div class="understanding-section">
-            <h2>Understanding Audiences</h2>
-            <p>
-              "Audiences" refer to the formal court sessions where cases are heard before the State
-              Council. The State Council publishes role excerpts (extraits de rôle) which list the
-              cases scheduled for hearing, including case numbers, parties' names, legal
-              representatives' names, case types, and hearing dates. These documents help lawyers,
-              litigants, and the public stay informed about upcoming proceedings. The State Council
-              hears matters organized by chambers: Civil, Criminal, Commercial, and Social matters.
-              Schedules are published in advance to ensure transparency and allow parties to prepare
-              appropriately.
-            </p>
+            <h2>{{ 'audiences.understanding.title' | i18n }}</h2>
+            <p>{{ 'audiences.understanding.body' | i18n }}</p>
           </div>
 
           <!-- Recent Role Excerpts Section -->
           <div class="schedules-section">
             <div class="section-header">
               <div class="header-line"></div>
-              <h2>RECENT ROLE EXCERPTS & HEARING</h2>
+              <h2>{{ 'audiences.recent.title' | i18n }}</h2>
             </div>
-            <p class="section-subtitle">PUBLISHED SCHEDULES</p>
+            <p class="section-subtitle">{{ 'audiences.recent.subtitle' | i18n }}</p>
 
             <div class="documents-grid">
               <!-- Document Card 1 -->
@@ -69,14 +56,14 @@ import { CommonModule } from '@angular/common';
                     <rect x="20" y="130" width="140" height="4" fill="#eee" />
                   </svg>
                   <div class="document-label">
-                    <span class="label-text">Role Excerpt - Civil Chamber</span>
+                    <span class="label-text">{{ 'audiences.documents.civil.label' | i18n }}</span>
                     <span class="label-date">18/01/26</span>
                   </div>
                 </div>
                 <div class="document-info">
-                  <h3>Civil Matters Hearing Schedule - January 2026</h3>
+                  <h3>{{ 'audiences.documents.civil.title' | i18n }}</h3>
                   <button class="download-btn">
-                    DOWNLOAD PDF
+                    {{ 'audiences.actions.downloadPdf' | i18n }}
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
                       <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z" />
                     </svg>
@@ -99,14 +86,14 @@ import { CommonModule } from '@angular/common';
                     <rect x="20" y="130" width="140" height="4" fill="#eee" />
                   </svg>
                   <div class="document-label">
-                    <span class="label-text">Role Excerpt - Criminal Chamber</span>
+                    <span class="label-text">{{ 'audiences.documents.criminal.label' | i18n }}</span>
                     <span class="label-date">18/01/26</span>
                   </div>
                 </div>
                 <div class="document-info">
-                  <h3>Criminal Cases Calendar - January 2026</h3>
+                  <h3>{{ 'audiences.documents.criminal.title' | i18n }}</h3>
                   <button class="download-btn">
-                    DOWNLOAD PDF
+                    {{ 'audiences.actions.downloadPdf' | i18n }}
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
                       <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z" />
                     </svg>
@@ -129,14 +116,14 @@ import { CommonModule } from '@angular/common';
                     <rect x="20" y="130" width="140" height="4" fill="#eee" />
                   </svg>
                   <div class="document-label">
-                    <span class="label-text">Role Excerpt - Social Chamber</span>
+                    <span class="label-text">{{ 'audiences.documents.social.label' | i18n }}</span>
                     <span class="label-date">12/01/26</span>
                   </div>
                 </div>
                 <div class="document-info">
-                  <h3>Social & Labor Cases - December 2025</h3>
+                  <h3>{{ 'audiences.documents.social.title' | i18n }}</h3>
                   <button class="download-btn">
-                    DOWNLOAD PDF
+                    {{ 'audiences.actions.downloadPdf' | i18n }}
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
                       <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z" />
                     </svg>
@@ -159,14 +146,14 @@ import { CommonModule } from '@angular/common';
                     <rect x="20" y="130" width="140" height="4" fill="#eee" />
                   </svg>
                   <div class="document-label">
-                    <span class="label-text">General Calendar</span>
+                    <span class="label-text">{{ 'audiences.documents.general.label' | i18n }}</span>
                     <span class="label-date">08/01/26</span>
                   </div>
                 </div>
                 <div class="document-info">
-                  <h3>Complete Court Calendar - Q1 2026</h3>
+                  <h3>{{ 'audiences.documents.general.title' | i18n }}</h3>
                   <button class="download-btn">
-                    DOWNLOAD PDF
+                    {{ 'audiences.actions.downloadPdf' | i18n }}
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
                       <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z" />
                     </svg>
@@ -179,13 +166,10 @@ import { CommonModule } from '@angular/common';
           <!-- Need Assistance Section -->
           <div class="assistance-section">
             <div class="assistance-content">
-              <h2>Need Assistance?</h2>
-              <p>
-                If you cannot find your case on the hearing schedule or have questions about an
-                upcoming audience, please contact the Court Registry for assistance.
-              </p>
+              <h2>{{ 'audiences.assistance.title' | i18n }}</h2>
+              <p>{{ 'audiences.assistance.body' | i18n }}</p>
             </div>
-            <button class="contact-btn">CONTACT REGISTRY</button>
+            <button class="contact-btn">{{ 'audiences.assistance.cta' | i18n }}</button>
           </div>
         </div>
       </section>
@@ -204,41 +188,41 @@ import { CommonModule } from '@angular/common';
         <div class="container">
           <div class="footer-grid">
             <div class="footer-column">
-              <h3>Main Office</h3>
-              <p>No. 3 Avenue de la Justice</p>
-              <p>Central District of Kinshasa</p>
-              <p>Democratic Republic of Congo</p>
-              <p class="footer-contact">Tel: +243 (21) 0000000</p>
-              <p class="footer-contact">Email: info@conseildetat.cd</p>
+              <h3>{{ 'footer.mainOffice.title' | i18n }}</h3>
+              <p>{{ 'footer.mainOffice.address1' | i18n }}</p>
+              <p>{{ 'footer.mainOffice.address2' | i18n }}</p>
+              <p>{{ 'footer.mainOffice.address3' | i18n }}</p>
+              <p class="footer-contact">{{ 'footer.mainOffice.phone' | i18n }}</p>
+              <p class="footer-contact">{{ 'footer.mainOffice.email' | i18n }}</p>
             </div>
 
             <div class="footer-column">
-              <h3>Quick Links</h3>
+              <h3>{{ 'footer.quickLinks.title' | i18n }}</h3>
               <ul>
-                <li><a href="#">About the Court</a></li>
-                <li><a href="#">Jurisprudence</a></li>
-                <li><a href="#">Filing Procedures</a></li>
-                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">{{ 'footer.quickLinks.about' | i18n }}</a></li>
+                <li><a href="#">{{ 'footer.quickLinks.jurisprudence' | i18n }}</a></li>
+                <li><a href="#">{{ 'footer.quickLinks.filing' | i18n }}</a></li>
+                <li><a href="#">{{ 'footer.quickLinks.contact' | i18n }}</a></li>
               </ul>
             </div>
 
             <div class="footer-column">
-              <h3>Resources</h3>
+              <h3>{{ 'footer.resources.title' | i18n }}</h3>
               <ul>
-                <li><a href="#">Legal Documents</a></li>
-                <li><a href="#">Court Decisions</a></li>
-                <li><a href="#">Annual Reports</a></li>
-                <li><a href="#">FAQs</a></li>
+                <li><a href="#">{{ 'footer.resources.legalDocs' | i18n }}</a></li>
+                <li><a href="#">{{ 'footer.resources.decisions' | i18n }}</a></li>
+                <li><a href="#">{{ 'footer.resources.reports' | i18n }}</a></li>
+                <li><a href="#">{{ 'footer.resources.faqs' | i18n }}</a></li>
               </ul>
             </div>
 
             <div class="footer-column">
-              <h3>Connect</h3>
+              <h3>{{ 'footer.connect.title' | i18n }}</h3>
               <ul>
-                <li><a href="#">Facebook</a></li>
-                <li><a href="#">Twitter</a></li>
-                <li><a href="#">Instagram</a></li>
-                <li><a href="#">LinkedIn</a></li>
+                <li><a href="#">{{ 'footer.connect.facebook' | i18n }}</a></li>
+                <li><a href="#">{{ 'footer.connect.twitter' | i18n }}</a></li>
+                <li><a href="#">{{ 'footer.connect.instagram' | i18n }}</a></li>
+                <li><a href="#">{{ 'footer.connect.linkedin' | i18n }}</a></li>
               </ul>
             </div>
           </div>
@@ -248,8 +232,8 @@ import { CommonModule } from '@angular/common';
       <div class="footer-bottom">
         <div class="container">
           <div class="footer-bottom-content">
-            <a href="#" class="privacy-link">Privacy</a>
-            <p class="copyright">Copyright State Council. All Rights Reserved</p>
+            <a href="#" class="privacy-link">{{ 'footer.privacy' | i18n }}</a>
+            <p class="copyright">{{ 'footer.copyright' | i18n }}</p>
             <div class="social-icons">
               <a href="#" class="social-icon">
                 <svg viewBox="0 0 24 24" fill="currentColor">
