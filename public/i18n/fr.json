@@ -1,0 +1,44 @@
+{
+  "header": {
+    "contact": {
+      "phone": "+ 243 (21) 00000000",
+      "hours": "LUNDI - VENDREDI 7H30 - 18H30"
+    },
+    "social": {
+      "facebook": "Facebook",
+      "twitter": "Twitter",
+      "instagram": "Instagram"
+    },
+    "lang": {
+      "label": "Langue",
+      "switchToEnglish": "Passer en anglais",
+      "switchToFrench": "Passer en francais"
+    },
+    "nav": {
+      "home": "ACCUEIL",
+      "court": "LA COUR",
+      "presentation": "Presentation",
+      "organization": "Organisation",
+      "reforms": "Reformes",
+      "international": "Relations internationales",
+      "audiences": "AUDIENCES",
+      "steps": "ETAPES",
+      "news": "ACTUALITES",
+      "bookAppointment": "Prendre rendez-vous"
+    }
+  },
+  "errors": {
+    "generic": {
+      "code": "Erreur",
+      "title": "Un probleme est survenu",
+      "message": "Nous avons des difficultes a traiter votre demande. Veuillez reessayer ou revenir a la page d'accueil du Conseil d'Etat.",
+      "primary": "Retour a l'accueil",
+      "secondary": "Voir les actualites"
+    },
+    "notFound": {
+      "code": "404",
+      "title": "Page introuvable",
+      "message": "La page que vous recherchez n'existe pas ou a ete deplacee."
+    }
+  }
+}
