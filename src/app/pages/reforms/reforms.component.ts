@@ -431,7 +431,7 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
       grid-template-columns: repeat(5, 1fr);
       gap: 3px;
       margin: 60px 0 80px;
-      align-items: start;
+      align-items: stretch;
     }
 
     .process-step {
@@ -439,6 +439,7 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
       display: flex;
       flex-direction: column;
       align-items: center;
+      height: 100%;
     }
 
     .step-number {
@@ -466,6 +467,7 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
       text-align: center;
       transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
       height: 100%;
+      flex: 1;
       display: flex;
       flex-direction: column;
     }

@@ -1152,6 +1152,12 @@ interface PresidentSlide {
       line-height: 1.3;
     }
 
+    .practice-content {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+
     .practice-desc {
       font-size: 0.88rem;
       color: #6a6a6a;
@@ -1174,6 +1180,7 @@ interface PresidentSlide {
     .practice-content ul {
       list-style: none;
       padding: 0;
+      margin: 0;
     }
 
     .practice-content li {
@@ -1195,7 +1202,8 @@ interface PresidentSlide {
     }
 
     .practice-cta {
-      margin-top: 14px;
+      margin-top: auto;
+      padding-top: 16px;
       display: inline-flex;
       align-items: center;
       gap: 6px;
@@ -1420,6 +1428,8 @@ interface PresidentSlide {
       padding: 28px 22px;
       color: #1a1a1a;
       flex: 1;
+      display: flex;
+      flex-direction: column;
     }
 
     .news-date {
@@ -1447,6 +1457,8 @@ interface PresidentSlide {
       font-weight: 700;
       text-decoration: none;
       text-transform: capitalize;
+      margin-top: auto;
+      padding-top: 12px;
     }
 
     .read-more-link svg {
