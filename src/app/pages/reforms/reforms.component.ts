@@ -863,6 +863,8 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
         grid-template-columns: 1fr;
       }
 
+    }
+
     @media (max-width: 768px) {
       .container {
         padding: 0 25px;
