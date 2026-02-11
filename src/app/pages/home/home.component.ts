@@ -191,7 +191,7 @@ interface PresidentSlide {
         </div>
       </div>
     </section>
-
+<hr class="style-hr">
     <!-- Fields of Expertise Section -->
     <section class="expertise-section">
       <div class="container">
@@ -202,7 +202,7 @@ interface PresidentSlide {
         </div>
         <p class="section-subtitle">{{ 'home.expertise.subtitle' | i18n }}</p>
 
-        <div class="expertise-stats">
+        <!-- <div class="expertise-stats">
           <div class="stat-item">
             <span class="stat-value">{{ 'home.expertise.stats.domains.value' | i18n }}</span>
             <span class="stat-label">{{ 'home.expertise.stats.domains.label' | i18n }}</span>
@@ -217,7 +217,7 @@ interface PresidentSlide {
             <span class="stat-value">{{ 'home.expertise.stats.magistrates.value' | i18n }}</span>
             <span class="stat-label">{{ 'home.expertise.stats.magistrates.label' | i18n }}</span>
           </div>
-        </div>
+        </div> -->
 
         <div class="practice-grid">
           <a class="practice-card accent-civil" href="#">
@@ -481,12 +481,7 @@ interface PresidentSlide {
     <footer class="footer-section">
       <div class="footer-main">
         <div class="footer-logo-wrapper">
-          <svg width="80" height="80" viewBox="0 0 100 100" fill="none">
-            <path d="M50 15L35 25V50L50 60L65 50V25L50 15Z" fill="#BF9874"/>
-            <path d="M50 30L42 35V50L50 55L58 50V35L50 30Z" fill="white"/>
-            <rect x="48" y="10" width="4" height="8" fill="#BF9874"/>
-            <rect x="46" y="5" width="8" height="4" fill="#BF9874"/>
-          </svg>
+                <img [src]="logo" alt="Footer Logo">
         </div>
         <div class="container">
           <div class="footer-grid">
@@ -1018,9 +1013,15 @@ interface PresidentSlide {
     .expertise-section {
       position: relative;
       padding: 90px 0;
-      background: radial-gradient(1200px 600px at 50% -200px, rgba(191, 152, 116, 0.18), transparent 60%),
-                  linear-gradient(180deg, #050505 0%, #0b0b0b 50%, #050505 100%);
+      background: white
       overflow: hidden;
+    }
+    .style-hr{
+      background: #BF9874 !important;
+      color: #BF9874 !important;
+      border: none !important;
+      height: 1px !important;
+      width: auto !important;
     }
 
     .expertise-section::before {
@@ -1054,7 +1055,7 @@ interface PresidentSlide {
     }
 
     .expertise-section .section-title {
-      color: white;
+      color: black;
       font-size: clamp(1.8rem, 2.2vw, 2.6rem);
       letter-spacing: 3px;
       font-weight: 700;
@@ -1062,7 +1063,7 @@ interface PresidentSlide {
 
     .expertise-section .section-subtitle {
       text-align: center;
-      color: rgba(255, 255, 255, 0.65);
+      color: #BF9874;
       font-size: 0.95rem;
       line-height: 1.7;
       margin: 12px auto 52px;
@@ -1070,20 +1071,20 @@ interface PresidentSlide {
       margin-left: 0;
     }
 
-    .expertise-stats {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 24px;
-      margin: 0 auto 40px;
-      color: rgba(255, 255, 255, 0.85);
-      text-transform: uppercase;
-      letter-spacing: 1.5px;
-      font-size: 0.7rem;
-      position: relative;
-      z-index: 1;
-      flex-wrap: wrap;
-    }
+    // .expertise-stats {
+    //   display: flex;
+    //   align-items: center;
+    //   justify-content: center;
+    //   gap: 24px;
+    //   margin: 0 auto 40px;
+    //   color: rgba(255, 255, 255, 0.85);
+    //   text-transform: uppercase;
+    //   letter-spacing: 1.5px;
+    //   font-size: 0.7rem;
+    //   position: relative;
+    //   z-index: 1;
+    //   flex-wrap: wrap;
+    // }
 
     .stat-item {
       display: flex;
@@ -1280,7 +1281,7 @@ interface PresidentSlide {
     /* Contact Info */
     .contact-info-section {
       background-color: #EAF1FA;
-      border-top: 3px solid #4a90e2;
+      // border-top: 2px solid #667C99;
     }
 
     .contact-bar {
@@ -1390,7 +1391,7 @@ interface PresidentSlide {
     /* Newsletter */
     .newsletter-section {
       padding: 80px 0;
-      background: #1E1E1E;
+      background: linear-gradient(135deg, #26384c 0%, #2f4258 55%, #243548 100%);
       color: white;
     }
 
@@ -1405,7 +1406,7 @@ interface PresidentSlide {
     .newsletter-header h2 {
       font-size: 2.4rem;
       font-weight: 800;
-      color: #1a1a1a;
+      color: white;
       margin: 0;
       letter-spacing: 4px;
     }
@@ -1414,7 +1415,7 @@ interface PresidentSlide {
       flex: 1;
       max-width: 200px;
       height: 1px;
-      background: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.3), transparent);
+      background-color: #BF9874;
     }
 
     .newsletter-grid {
@@ -1431,7 +1432,7 @@ interface PresidentSlide {
       transition: all 0.3s ease;
       display: flex;
       flex-direction: column;
-      border: 1px solid #e5e5e5;
+      border: 1px solid transparent;
     }
 
     .news-card:hover {
@@ -1689,9 +1690,9 @@ interface PresidentSlide {
         grid-template-columns: 1fr;
       }
 
-      .expertise-stats {
-        gap: 16px;
-      }
+      // .expertise-stats {
+      //   gap: 16px;
+      // }
 
       .stat-divider {
         display: none;
@@ -1743,6 +1744,7 @@ interface PresidentSlide {
 export class HomeComponent implements OnInit {
   currentSlide = signal(0);
   currentPresidentSlide = signal(0);
+  logo = '/src/assets/logo.png';
 
   heroSlides: HeroSlide[] = [
     {
