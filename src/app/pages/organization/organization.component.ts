@@ -1005,6 +1005,7 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
     .copyright {
       font-size: 0.85rem;
       color: #555;
+      margin: 0;
     }
 
     .privacy-link {
@@ -1018,67 +1019,139 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
       color: #BF9874;
     }
 
-    @media (max-width: 1024px) {
-      .offer-grid,
-      .practice-grid,
-      .newsletter-grid {
-        grid-template-columns: repeat(2, 1fr);
+    /* ==================== RESPONSIVE MEDIA QUERIES ==================== */
+
+    /* Large Desktop (1440px and above) */
+    @media (min-width: 1440px) {
+      .container {
+        max-width: 1400px;
       }
 
-      .quick-links-container {
-        flex-wrap: wrap;
-      }
-
-      .president-content {
-        grid-template-columns: 380px 1fr;
-      }
-
-      .info-left {
-        gap: 20px;
-      }
-
-      .info-item span {
-        font-size: 0.75rem;
-      }
-    }
-
-    @media (max-width: 768px) {
-      .quick-links-container,
-      .offer-grid,
-      .practice-grid,
-      .newsletter-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .president-content {
-        grid-template-columns: 1fr;
-      }
-
-      .contact-bar {
-        flex-direction: column;
-      }
-
-      .footer-grid {
-        grid-template-columns: 1fr;
-      }
-      .footer-bottom-content {
-        flex-direction: column;
-        gap: 15px;
-        text-align: center;
-      }
-
-      .members-filter {
-        grid-template-columns: 1fr;
-      }
-    }
-
-    @media (max-width: 480px) {
       .hero-title {
-        font-size: 1.4rem;
+        font-size: 3.5rem;
+      }
+
+      .section-title,
+      .section-title-white,
+      .section-heading {
+        font-size: 3rem;
+      }
+    }
+
+    /* Desktop and Laptop (1024px - 1439px) */
+    @media (max-width: 1439px) {
+      .container {
+        max-width: 1100px;
+      }
+    }
+
+    /* Medium Desktop / Small Laptop (1024px - 1280px) */
+    @media (max-width: 1280px) {
+      .president-card-large {
+        grid-template-columns: 280px 1fr;
       }
 
       .president-info-large {
-        padding: 30px 20px;
+        padding: 40px 50px;
+      }
+
+      .members-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      .services-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      .footer-grid {
+        gap: 40px;
+      }
+    }
+
+    /* Tablet Landscape (900px - 1024px) */
+    @media (max-width: 1024px) {
+      .hero-section {
+        min-height: 300px;
+        padding: 50px 20px;
+      }
+
+      .hero-title {
+        font-size: 2.5rem;
+      }
+
+      .president-card-large {
+        grid-template-columns: 250px 1fr;
+      }
+
+      .president-info-large {
+        padding: 35px 40px;
+        min-height: 350px;
+      }
+
+      .president-title-underlined {
+        font-size: 2rem;
+      }
+
+      .section-title,
+      .section-title-white,
+      .section-heading {
+        font-size: 2rem;
+      }
+
+      .members-filter {
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+      }
+
+      .filter-summary {
+        grid-column: 1 / -1;
+        padding-bottom: 0;
+        padding-top: 10px;
+      }
+
+      .members-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+      }
+
+      .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+      }
+
+      .services-content {
+        gap: 30px;
+      }
+
+      .service-item,
+      .detail-box {
+        padding: 25px;
+      }
+
+      .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+      }
+    }
+
+    /* Tablet Portrait (768px - 900px) */
+    @media (max-width: 900px) {
+      .hero-title {
+        font-size: 2.2rem;
+        letter-spacing: 1px;
+      }
+
+      .president-card-large {
+        grid-template-columns: 1fr;
+      }
+
+      .president-image-large {
+        min-height: 350px;
+      }
+
+      .president-info-large {
+        padding: 40px 30px;
+        min-height: auto;
       }
 
       .president-title-underlined {
@@ -1086,13 +1159,470 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
       }
 
       .members-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .services-grid {
         grid-template-columns: 1fr;
+        gap: 30px;
+      }
+
+      .services-content {
+        grid-template-columns: 1fr;
+      }
+
+      .service-details {
+        order: -1;
+      }
+
+      .services-section {
+        padding: 60px 0;
+      }
+
+      .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 35px;
+      }
+    }
+
+    /* Mobile Landscape / Small Tablet (600px - 768px) */
+    @media (max-width: 768px) {
+      .container {
+        padding: 0 15px;
+      }
+
+      .hero-section {
+        min-height: 250px;
+        padding: 40px 15px;
+      }
+
+      .hero-title {
+        font-size: 1.8rem;
+      }
+
+      .president-image-large {
+        min-height: 300px;
+      }
+
+      .president-info-large {
+        padding: 30px 25px;
+      }
+
+      .president-title-underlined {
+        font-size: 1.6rem;
+      }
+
+      .president-description {
+        font-size: 0.9rem;
+      }
+
+      .senior-label-section {
+        padding: 30px 0 0 0;
+      }
+
+      .members-filter-section {
+        padding: 15px 0 10px 0;
+      }
+
+      .members-filter {
+        grid-template-columns: 1fr;
+        gap: 12px;
+      }
+
+      .filter-summary {
+        grid-column: 1;
+        font-size: 0.8rem;
       }
 
       .section-title,
       .section-title-white,
       .section-heading {
+        font-size: 1.8rem;
+        margin-bottom: 30px;
+      }
+
+      .members-section {
+        padding: 15px 0 50px 0;
+      }
+
+      .advisors-section {
+        padding-top: 30px;
+      }
+
+      .members-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+      }
+
+      .member-image {
+        height: 220px;
+      }
+
+      .member-info {
+        padding: 20px 15px;
+      }
+
+      .member-info h3 {
+        font-size: 0.85rem;
+      }
+
+      .member-title {
+        font-size: 0.75rem;
+      }
+
+      .member-email {
+        font-size: 0.7rem;
+      }
+
+      .services-info-section {
+        padding: 50px 0 60px 0;
+      }
+
+      .service-item,
+      .detail-box {
+        padding: 20px;
+        gap: 15px;
+      }
+
+      .service-icon,
+      .detail-icon {
+        width: 35px;
+        height: 35px;
+        font-size: 1rem;
+      }
+
+      .service-text h4,
+      .detail-content h4 {
+        font-size: 0.95rem;
+      }
+
+      .service-text p,
+      .service-text li,
+      .detail-content p,
+      .detail-content li {
+        font-size: 0.85rem;
+      }
+
+      .footer-main {
+        padding: 50px 0 30px;
+      }
+
+      .footer-logo-wrapper {
+        width: 100px;
+        height: 100px;
+        top: -35px;
+      }
+
+      .footer-logo-wrapper svg {
+        width: 65px;
+        height: 65px;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding-top: 30px;
+      }
+
+      .footer-column h3 {
+        font-size: 1rem;
+        margin-bottom: 15px;
+      }
+
+      .footer-column p,
+      .footer-column ul li a {
+        font-size: 0.85rem;
+      }
+
+      .footer-bottom-content {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+      }
+
+      .social-icons {
+        order: -1;
+      }
+    }
+
+    /* Mobile Portrait (480px - 600px) */
+    @media (max-width: 600px) {
+      .hero-section {
+        min-height: 220px;
+        padding: 35px 15px;
+      }
+
+      .hero-title {
+        font-size: 1.6rem;
+      }
+
+      .president-image-large {
+        min-height: 280px;
+      }
+
+      .president-info-large {
+        padding: 25px 20px;
+      }
+
+      .president-title-underlined {
         font-size: 1.5rem;
+      }
+
+      .section-title,
+      .section-title-white,
+      .section-heading {
+        font-size: 1.6rem;
+      }
+
+      .members-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .member-image {
+        height: 260px;
+      }
+
+      .load-more-btn {
+        padding: 10px 30px;
+        font-size: 0.8rem;
+      }
+
+      .services-grid {
+        gap: 25px;
+      }
+    }
+
+    /* Small Mobile (320px - 480px) */
+    @media (max-width: 480px) {
+      .container {
+        padding: 0 12px;
+      }
+
+      .hero-section {
+        min-height: 200px;
+        padding: 30px 12px;
+      }
+
+      .hero-title {
+        font-size: 1.4rem;
+        letter-spacing: 0.5px;
+      }
+
+      .president-image-large {
+        min-height: 250px;
+      }
+
+      .president-info-large {
+        padding: 20px 15px;
+      }
+
+      .president-title-underlined {
+        font-size: 1.3rem;
+        margin-bottom: 15px;
+        padding-bottom: 10px;
+      }
+
+      .president-description {
+        font-size: 0.85rem;
+        line-height: 1.6;
+      }
+
+      .senior-label {
+        font-size: 0.7rem;
+      }
+
+      .filter-group label {
+        font-size: 0.7rem;
+      }
+
+      .filter-group input,
+      .filter-group select {
+        padding: 10px 12px;
+        font-size: 0.85rem;
+      }
+
+      .section-title,
+      .section-title-white,
+      .section-heading {
+        font-size: 1.4rem;
+        margin-bottom: 25px;
+      }
+
+      .section-subheading {
+        font-size: 0.85rem;
+        margin-bottom: 30px;
+      }
+
+      .member-image {
+        height: 240px;
+      }
+
+      .member-info {
+        padding: 18px 12px;
+      }
+
+      .member-info h3 {
+        font-size: 0.8rem;
+      }
+
+      .member-title {
+        font-size: 0.7rem;
+      }
+
+      .member-email {
+        font-size: 0.65rem;
+        margin-bottom: 12px;
+      }
+
+      .learn-more {
+        font-size: 0.7rem;
+      }
+
+      .load-more-container {
+        margin-top: 30px;
+      }
+
+      .load-more-btn {
+        padding: 10px 25px;
+        font-size: 0.75rem;
+      }
+
+      .services-info-section {
+        padding: 40px 0 50px 0;
+      }
+
+      .service-box h3 {
+        font-size: 1rem;
+      }
+
+      .service-box p {
+        font-size: 0.85rem;
+      }
+
+      .service-link {
+        font-size: 0.7rem;
+      }
+
+      .services-section {
+        padding: 50px 0;
+      }
+
+      .service-item,
+      .detail-box {
+        padding: 18px 15px;
+        gap: 12px;
+      }
+
+      .service-icon,
+      .detail-icon {
+        width: 32px;
+        height: 32px;
+        font-size: 0.95rem;
+      }
+
+      .service-text h4,
+      .detail-content h4 {
+        font-size: 0.9rem;
+        margin-bottom: 12px;
+      }
+
+      .service-text p,
+      .service-text li,
+      .detail-content p,
+      .detail-content li {
+        font-size: 0.8rem;
+        line-height: 1.6;
+      }
+
+      .footer-main {
+        padding: 45px 0 25px;
+      }
+
+      .footer-logo-wrapper {
+        width: 90px;
+        height: 90px;
+        top: -30px;
+      }
+
+      .footer-logo-wrapper svg {
+        width: 55px;
+        height: 55px;
+      }
+
+      .footer-grid {
+        gap: 25px;
+        padding-top: 25px;
+      }
+
+      .footer-column h3 {
+        font-size: 0.95rem;
+        margin-bottom: 12px;
+      }
+
+      .footer-column p,
+      .footer-column ul li a {
+        font-size: 0.8rem;
+        line-height: 1.6;
+      }
+
+      .footer-column ul li {
+        margin-bottom: 10px;
+      }
+
+      .footer-bottom {
+        padding: 20px 0;
+      }
+
+      .copyright,
+      .privacy-link {
+        font-size: 0.75rem;
+      }
+
+      .social-icon {
+        width: 32px;
+        height: 32px;
+      }
+
+      .social-icon svg {
+        width: 14px;
+        height: 14px;
+      }
+    }
+
+    /* Extra Small Mobile (below 375px) */
+    @media (max-width: 375px) {
+      .hero-title {
+        font-size: 1.2rem;
+      }
+
+      .president-title-underlined {
+        font-size: 1.2rem;
+      }
+
+      .section-title,
+      .section-title-white,
+      .section-heading {
+        font-size: 1.3rem;
+      }
+
+      .member-image {
+        height: 220px;
+      }
+    }
+
+    /* Landscape Orientation for Mobile Devices */
+    @media (max-height: 500px) and (orientation: landscape) {
+      .hero-section {
+        min-height: 180px;
+        padding: 25px 15px;
+      }
+
+      .hero-title {
+        font-size: 1.5rem;
+      }
+
+      .president-image-large {
+        min-height: 250px;
       }
     }
   `]
@@ -1158,5 +1688,3 @@ export class OrganizationComponent implements OnInit {
   readonly filteredPresidents = computed(() => this.filterMembers(this.memberService.presidents, 'president'));
   readonly filteredAdvisors = computed(() => this.filterMembers(this.memberService.advisors, 'advisor'));
 }
-
-
