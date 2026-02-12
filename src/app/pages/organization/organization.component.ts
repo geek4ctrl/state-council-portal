@@ -871,14 +871,26 @@ type HighchartsStatic = typeof import('highcharts');
 
     /* Services Info Section */
     .services-info-section {
-      background: #0a1929;
+      background: linear-gradient(180deg, #ffffff 0%, #f4f6fb 100%);
       padding: 60px 0 80px 0;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .services-info-section::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(circle at 15% 20%, rgba(78, 106, 138, 0.08), transparent 45%),
+        radial-gradient(circle at 85% 15%, rgba(191, 152, 116, 0.12), transparent 50%);
+      pointer-events: none;
     }
 
     .section-title-white {
       font-size: 2.5rem;
       font-weight: 300;
-      color: white;
+      color: #1a1a1a;
       text-align: center;
       margin: 0 0 50px 0;
       letter-spacing: 2px;
@@ -888,18 +900,29 @@ type HighchartsStatic = typeof import('highcharts');
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 30px;
+      position: relative;
+      z-index: 1;
     }
 
     .service-box {
-      background: transparent;
-      padding: 0;
+      background: rgba(255, 255, 255, 0.9);
+      padding: 26px 24px 24px;
       text-align: left;
+      border: 1px solid rgba(26, 41, 66, 0.08);
+      box-shadow: 0 14px 30px rgba(20, 28, 40, 0.08);
+      transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+    }
+
+    .service-box:hover {
+      transform: translateY(-6px);
+      border-color: rgba(78, 106, 138, 0.2);
+      box-shadow: 0 18px 36px rgba(20, 28, 40, 0.14);
     }
 
     .service-box h3 {
       font-size: 1.1rem;
       font-weight: 600;
-      color: white;
+      color: #1a1a1a;
       margin: 0 0 10px 0;
       line-height: 1.4;
     }
@@ -907,7 +930,7 @@ type HighchartsStatic = typeof import('highcharts');
     .service-box p {
       font-size: 0.9rem;
       line-height: 1.6;
-      color: rgba(255, 255, 255, 0.6);
+      color: #4b5563;
       margin: 0 0 15px 0;
     }
 
@@ -927,7 +950,7 @@ type HighchartsStatic = typeof import('highcharts');
 
     /* Services Section */
     .services-section {
-      background: white;
+      background: #ECECF1;
       padding: 80px 0;
     }
 

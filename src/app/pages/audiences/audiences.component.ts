@@ -402,7 +402,7 @@ import Highcharts from 'highcharts';
       /* Understanding Audiences Section */
       .understanding-section {
         margin-bottom: 100px;
-        background: white;
+        background: transparent;
         padding: 0;
       }
 

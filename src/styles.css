@@ -58,7 +58,13 @@ button {
 }
 
 ::selection {
-  background: var(--accent-soft);
+  background: rgba(191, 152, 116, 0.35);
+  color: #0f172a;
+}
+
+::-moz-selection {
+  background: rgba(191, 152, 116, 0.35);
+  color: #0f172a;
 }
 
 /* Shared card styling */
