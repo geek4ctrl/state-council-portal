@@ -3,6 +3,22 @@
 /* Import Typography System */
 @import './styles/typography.css';
 
+/* Design Tokens */
+:root {
+  --surface-0: #f6f3ee;
+  --surface-1: #ffffff;
+  --ink-strong: #1f2a24;
+  --ink-muted: #55645c;
+  --accent: #6f7f6d;
+  --accent-strong: #3f5a4a;
+  --accent-soft: rgba(111, 127, 109, 0.18);
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 22px;
+  --shadow-soft: 0 12px 30px rgba(19, 27, 23, 0.08);
+  --shadow-lift: 0 18px 45px rgba(19, 27, 23, 0.12);
+}
+
 /* Global Styles */
 * {
   margin: 0;
@@ -15,10 +31,77 @@ body {
   font-size: var(--font-size-body);
   font-weight: var(--font-weight-normal);
   line-height: var(--line-height-normal);
-  color: #2c3e50;
-  background-color: #fff;
+  color: var(--ink-strong);
+  background-color: var(--surface-0);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: var(--accent-strong);
+  text-decoration: none;
+}
+
+a:hover {
+  color: #2f4a3a;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: var(--font-primary);
+}
+
+button {
+  border-radius: 999px;
+}
+
+::selection {
+  background: var(--accent-soft);
+}
+
+/* Shared card styling */
+:where(
+  .member-card,
+  .news-card,
+  .service-box,
+  .detail-box,
+  .service-item,
+  .offer-card,
+  .practice-card,
+  .quick-link-item,
+  .metrics-card,
+  .document-card,
+  .insight-card,
+  .network-card,
+  .domain-card,
+  .stakeholder-card,
+  .error-card,
+  .president-card-large,
+  .key-fact-card
+) {
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-soft);
+}
+
+:where(
+  .member-card:hover,
+  .news-card:hover,
+  .service-box:hover,
+  .detail-box:hover,
+  .service-item:hover,
+  .offer-card:hover,
+  .practice-card:hover,
+  .quick-link-item:hover,
+  .metrics-card:hover,
+  .document-card:hover,
+  .insight-card:hover,
+  .network-card:hover,
+  .domain-card:hover,
+  .stakeholder-card:hover
+) {
+  box-shadow: var(--shadow-lift);
 }
 
 main {

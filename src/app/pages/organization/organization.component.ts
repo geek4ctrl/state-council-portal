@@ -512,7 +512,6 @@ type HighchartsStatic = typeof import('highcharts');
       letter-spacing: 2px;
       margin: 0;
       text-transform: uppercase;
-      font-family: 'Playfair Display', serif;
     }
 
     /* First President Section */
@@ -555,7 +554,6 @@ type HighchartsStatic = typeof import('highcharts');
       font-weight: 300;
       color: white;
       margin: 0 0 25px 0;
-      font-family: 'Playfair Display', serif;
       letter-spacing: 1px;
       padding-bottom: 15px;
       border-bottom: 2px solid #8b7355;
@@ -752,7 +750,6 @@ type HighchartsStatic = typeof import('highcharts');
       text-align: left;
       margin: 0 0 40px 0;
       letter-spacing: 2px;
-      font-family: 'Playfair Display', serif;
     }
 
     .members-grid {
@@ -875,7 +872,6 @@ type HighchartsStatic = typeof import('highcharts');
       text-align: center;
       margin: 0 0 50px 0;
       letter-spacing: 2px;
-      font-family: 'Playfair Display', serif;
     }
 
     .services-grid {
@@ -932,7 +928,6 @@ type HighchartsStatic = typeof import('highcharts');
       text-align: center;
       margin: 0 0 10px 0;
       letter-spacing: 1px;
-      font-family: 'Playfair Display', serif;
     }
 
     .section-subheading {

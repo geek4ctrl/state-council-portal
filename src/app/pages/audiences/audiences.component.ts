@@ -382,7 +382,6 @@ import Highcharts from 'highcharts';
         letter-spacing: 3px;
         text-transform: uppercase;
         color: #ffffff;
-        font-family: 'Playfair Display', serif;
       }
 
       .hero-description p {

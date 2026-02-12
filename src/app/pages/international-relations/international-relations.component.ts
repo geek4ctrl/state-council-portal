@@ -304,7 +304,6 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
       letter-spacing: 3px;
       text-transform: uppercase;
       color: white;
-      font-family: 'Playfair Display', serif;
     }
 
     .vertical-line {
