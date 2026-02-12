@@ -191,7 +191,7 @@ interface PresidentSlide {
         </div>
       </div>
     </section>
-
+<hr class="style-hr">
     <!-- Fields of Expertise Section -->
     <section class="expertise-section">
       <div class="container">
@@ -201,23 +201,6 @@ interface PresidentSlide {
           <div class="expertise-line"></div>
         </div>
         <p class="section-subtitle">{{ 'home.expertise.subtitle' | i18n }}</p>
-
-        <div class="expertise-stats">
-          <div class="stat-item">
-            <span class="stat-value">{{ 'home.expertise.stats.domains.value' | i18n }}</span>
-            <span class="stat-label">{{ 'home.expertise.stats.domains.label' | i18n }}</span>
-          </div>
-          <div class="stat-divider"></div>
-          <div class="stat-item">
-            <span class="stat-value">{{ 'home.expertise.stats.decisions.value' | i18n }}</span>
-            <span class="stat-label">{{ 'home.expertise.stats.decisions.label' | i18n }}</span>
-          </div>
-          <div class="stat-divider"></div>
-          <div class="stat-item">
-            <span class="stat-value">{{ 'home.expertise.stats.magistrates.value' | i18n }}</span>
-            <span class="stat-label">{{ 'home.expertise.stats.magistrates.label' | i18n }}</span>
-          </div>
-        </div>
 
         <div class="practice-grid">
           <a class="practice-card accent-civil" href="#">
@@ -481,12 +464,7 @@ interface PresidentSlide {
     <footer class="footer-section">
       <div class="footer-main">
         <div class="footer-logo-wrapper">
-          <svg width="80" height="80" viewBox="0 0 100 100" fill="none">
-            <path d="M50 15L35 25V50L50 60L65 50V25L50 15Z" fill="#BF9874"/>
-            <path d="M50 30L42 35V50L50 55L58 50V35L50 30Z" fill="white"/>
-            <rect x="48" y="10" width="4" height="8" fill="#BF9874"/>
-            <rect x="46" y="5" width="8" height="4" fill="#BF9874"/>
-          </svg>
+                <img [src]="logo" alt="Footer Logo">
         </div>
         <div class="container">
           <div class="footer-grid">
@@ -570,131 +548,6 @@ interface PresidentSlide {
       max-width: 1200px;
       margin: 0 auto;
       padding: 0 20px;
-    }
-
-    /* Top Info Bar */
-    .top-info-bar {
-      background-color: #1E2E45;
-      padding: 12px 0;
-      border-bottom: 1px solid rgba(191, 152, 116, 0.2);
-    }
-
-    .top-info-content {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-
-    .info-left {
-      display: flex;
-      align-items: center;
-      gap: 35px;
-    }
-
-    .info-item {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      color: #ffffff;
-      font-size: 0.8rem;
-      font-weight: 500;
-    }
-
-    .info-item svg {
-      flex-shrink: 0;
-    }
-
-    .social-links {
-      display: flex;
-      align-items: center;
-      gap: 15px;
-    }
-
-    .social-link {
-      width: 32px;
-      height: 32px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background-color: rgba(255, 255, 255, 0.1);
-      border-radius: 50%;
-      transition: all 0.3s ease;
-      text-decoration: none;
-    }
-
-    .social-link:hover {
-      background-color: #BF9874;
-      transform: translateY(-2px);
-    }
-
-    .social-link:hover svg {
-      fill: white;
-    }
-
-    /* Navigation */
-    .main-nav {
-      background-color: #ffffff;
-      padding: 18px 0;
-      border-bottom: 1px solid #e5e5e5;
-      position: sticky;
-      top: 0;
-      z-index: 100;
-    }
-
-    .nav-content {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-
-    .logo {
-      flex-shrink: 0;
-    }
-
-    .nav-menu {
-      display: flex;
-      list-style: none;
-      gap: 35px;
-      margin: 0 auto;
-    }
-
-    .nav-item {
-      position: relative;
-    }
-
-    .nav-link {
-      color: #1a1a1a;
-      text-decoration: none;
-      font-size: 0.85rem;
-      font-weight: 600;
-      letter-spacing: 0.5px;
-      display: flex;
-      align-items: center;
-      transition: color 0.3s ease;
-    }
-
-    .nav-item.active .nav-link {
-      color: #BF9874;
-    }
-
-    .nav-link:hover {
-      color: #BF9874;
-    }
-
-    .book-appointment-btn {
-      padding: 12px 28px;
-      background-color: #C82333;
-      color: white;
-      border: none;
-      font-size: 0.85rem;
-      font-weight: 700;
-      cursor: pointer;
-      transition: all 0.3s ease;
-      text-transform: capitalize;
-    }
-
-    .book-appointment-btn:hover {
-      background-color: #A01D29;
     }
 
     /* Hero Carousel */
@@ -937,13 +790,12 @@ interface PresidentSlide {
       background-color: #ffffff;
     }
 
-  .offer-header {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  margin-bottom: 15px;
-}
-
+    .offer-header {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      margin-bottom: 15px;
+    }
 
     .offer-line {
       width: 60px;
@@ -951,24 +803,22 @@ interface PresidentSlide {
       background: #BF9874;
     }
 
-  .section-title {
-  font-size: 2.4rem;
-  font-weight: 700;
-  color: #1a1a1a;
-  margin: 0;
-}
+    .section-title {
+      font-size: 2.4rem;
+      font-weight: 700;
+      color: #1a1a1a;
+      margin: 0;
+    }
 
-   .section-subtitle {
-  font-size: 0.9rem;
-  color: #BF9874;
-  margin-top: 10px;         /* spacing below the title */
-  margin-bottom: 50px;
-  line-height: 1.6;
-  max-width: 820px;         /* optional for readability */
-
-  /* ALIGN WITH TITLE */
-  margin-left: calc(60px + 20px);  /* offer-line width + gap from .offer-header */
-}
+    .section-subtitle {
+      font-size: 0.9rem;
+      color: #BF9874;
+      margin-top: 10px;
+      margin-bottom: 50px;
+      line-height: 1.6;
+      max-width: 820px;
+      margin-left: calc(60px + 20px);
+    }
 
     .offer-grid {
       display: grid;
@@ -1018,9 +868,16 @@ interface PresidentSlide {
     .expertise-section {
       position: relative;
       padding: 90px 0;
-      background: radial-gradient(1200px 600px at 50% -200px, rgba(191, 152, 116, 0.18), transparent 60%),
-                  linear-gradient(180deg, #050505 0%, #0b0b0b 50%, #050505 100%);
+      background: white;
       overflow: hidden;
+    }
+
+    .style-hr {
+      background: #BF9874 !important;
+      color: #BF9874 !important;
+      border: none !important;
+      height: 1px !important;
+      width: auto !important;
     }
 
     .expertise-section::before {
@@ -1054,7 +911,7 @@ interface PresidentSlide {
     }
 
     .expertise-section .section-title {
-      color: white;
+      color: black;
       font-size: clamp(1.8rem, 2.2vw, 2.6rem);
       letter-spacing: 3px;
       font-weight: 700;
@@ -1062,52 +919,12 @@ interface PresidentSlide {
 
     .expertise-section .section-subtitle {
       text-align: center;
-      color: rgba(255, 255, 255, 0.65);
+      color: #BF9874;
       font-size: 0.95rem;
       line-height: 1.7;
       margin: 12px auto 52px;
       max-width: 720px;
       margin-left: 0;
-    }
-
-    .expertise-stats {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 24px;
-      margin: 0 auto 40px;
-      color: rgba(255, 255, 255, 0.85);
-      text-transform: uppercase;
-      letter-spacing: 1.5px;
-      font-size: 0.7rem;
-      position: relative;
-      z-index: 1;
-      flex-wrap: wrap;
-    }
-
-    .stat-item {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 6px;
-      min-width: 120px;
-    }
-
-    .stat-value {
-      font-size: 1.6rem;
-      font-weight: 700;
-      color: #ffffff;
-      letter-spacing: 1px;
-    }
-
-    .stat-label {
-      color: rgba(255, 255, 255, 0.6);
-    }
-
-    .stat-divider {
-      width: 1px;
-      height: 36px;
-      background: linear-gradient(180deg, transparent, rgba(191, 152, 116, 0.6), transparent);
     }
 
     .practice-grid {
@@ -1150,10 +967,6 @@ interface PresidentSlide {
       outline-offset: 3px;
     }
 
-    .practice-card.featured {
-      background: linear-gradient(135deg, #ffffff 0%, #f6f2ec 100%);
-    }
-
     .practice-icon {
       width: 54px;
       height: 54px;
@@ -1190,18 +1003,6 @@ interface PresidentSlide {
       color: #6a6a6a;
       line-height: 1.6;
       margin: 0 0 12px 0;
-    }
-
-    .practice-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      font-size: 0.65rem;
-      font-weight: 700;
-      letter-spacing: 1px;
-      color: #8b7355;
-      text-transform: uppercase;
-      margin-bottom: 8px;
     }
 
     .practice-content ul {
@@ -1246,7 +1047,6 @@ interface PresidentSlide {
       font-size: 0.95rem;
     }
 
-    .accent-featured { --accent: #8b7355; }
     .accent-civil { --accent: #6b5a41; }
     .accent-family { --accent: #b8754d; }
     .accent-public { --accent: #4e6a8a; }
@@ -1260,7 +1060,6 @@ interface PresidentSlide {
     .practice-grid .practice-card:nth-child(4) { animation-delay: 0.26s; }
     .practice-grid .practice-card:nth-child(5) { animation-delay: 0.33s; }
     .practice-grid .practice-card:nth-child(6) { animation-delay: 0.4s; }
-    .practice-grid .practice-card:nth-child(7) { animation-delay: 0.47s; }
 
     @keyframes expertise-rise {
       to {
@@ -1269,18 +1068,9 @@ interface PresidentSlide {
       }
     }
 
-    @media (prefers-reduced-motion: reduce) {
-      .practice-card {
-        animation: none;
-        opacity: 1;
-        transform: none;
-      }
-    }
-
     /* Contact Info */
     .contact-info-section {
       background-color: #EAF1FA;
-      border-top: 3px solid #4a90e2;
     }
 
     .contact-bar {
@@ -1390,7 +1180,7 @@ interface PresidentSlide {
     /* Newsletter */
     .newsletter-section {
       padding: 80px 0;
-      background: #1E1E1E;
+      background: linear-gradient(135deg, #26384c 0%, #2f4258 55%, #243548 100%);
       color: white;
     }
 
@@ -1405,7 +1195,7 @@ interface PresidentSlide {
     .newsletter-header h2 {
       font-size: 2.4rem;
       font-weight: 800;
-      color: #1a1a1a;
+      color: white;
       margin: 0;
       letter-spacing: 4px;
     }
@@ -1414,7 +1204,7 @@ interface PresidentSlide {
       flex: 1;
       max-width: 200px;
       height: 1px;
-      background: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.3), transparent);
+      background-color: #BF9874;
     }
 
     .newsletter-grid {
@@ -1431,7 +1221,7 @@ interface PresidentSlide {
       transition: all 0.3s ease;
       display: flex;
       flex-direction: column;
-      border: 1px solid #e5e5e5;
+      border: 1px solid transparent;
     }
 
     .news-card:hover {
@@ -1639,103 +1429,631 @@ interface PresidentSlide {
       color: #BF9874;
     }
 
-    @media (max-width: 1024px) {
-      .offer-grid,
-      .practice-grid,
+    /* ========================================
+       RESPONSIVE DESIGN - MEDIA QUERIES
+       ======================================== */
+
+    /* Large Tablets & Small Desktops (1024px - 1199px) */
+    @media (max-width: 1199px) {
+      .container {
+        padding: 0 30px;
+      }
+
+      .hero-title {
+        font-size: 2.4rem;
+      }
+
+      .section-title {
+        font-size: 2rem;
+      }
+
+      .offer-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+      }
+
+      .practice-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+      }
+
       .newsletter-grid {
         grid-template-columns: repeat(2, 1fr);
       }
 
-      .quick-links-container {
-        display: grid;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 24px 30px;
-      }
-
-      .quick-link-item {
-        gap: 16px;
-      }
-
       .president-content {
         grid-template-columns: 380px 1fr;
-      }
-
-      .info-left {
-        gap: 20px;
-      }
-
-      .info-item span {
-        font-size: 0.75rem;
+        gap: 50px;
       }
     }
 
-    @media (max-width: 768px) {
+    /* Tablets (768px - 1023px) */
+    @media (max-width: 1023px) {
+      .hero-slide {
+        height: 500px;
+      }
+
+      .hero-title {
+        font-size: 2rem;
+      }
+
+      .hero-description {
+        font-size: 0.9rem;
+      }
+
+      .carousel-controls {
+        gap: 20px;
+      }
+
+      .nav-arrow {
+        width: 42px;
+        height: 42px;
+      }
+
       .quick-links-container {
-        grid-template-columns: 1fr;
-      }
-
-      .quick-link-item {
-        align-items: flex-start;
-      }
-
-      .quick-link-icon {
-        width: 44px;
-        height: 44px;
-      }
-
-      .offer-grid,
-      .practice-grid,
-      .newsletter-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .expertise-stats {
-        gap: 16px;
-      }
-
-      .stat-divider {
-        display: none;
-      }
-
-      .president-content {
-        grid-template-columns: 1fr;
-      }
-
-      .contact-bar {
-        flex-direction: column;
-      }
-
-      .footer-grid {
-        grid-template-columns: 1fr;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
       }
 
       .connector-line {
         display: none;
       }
 
+      .offer-section,
+      .expertise-section,
+      .president-section,
+      .newsletter-section {
+        padding: 60px 0;
+      }
+
+      .section-title {
+        font-size: 1.8rem;
+      }
+
       .section-subtitle {
+        margin-left: 0 !important;
         padding-left: 0 !important;
       }
 
-      .top-info-content {
+      .expertise-line {
+        width: 100px;
+      }
+
+      .practice-card {
+        padding: 28px 24px;
+        min-height: auto;
+      }
+
+      .contact-bar {
         flex-direction: column;
+      }
+
+      .contact-divider {
+        width: 100%;
+        height: 1px;
+        background: linear-gradient(to right, transparent, #BF9874, transparent);
+      }
+
+      .contact-item {
+        padding: 25px 20px;
+      }
+
+      .president-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+
+      .president-image-wrapper {
+        max-width: 400px;
+        margin: 0 auto;
+      }
+
+      .newsletter-header h2 {
+        font-size: 2rem;
+      }
+
+      .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+      }
+    }
+
+    /* Mobile Landscape & Small Tablets (576px - 767px) */
+    @media (max-width: 767px) {
+      .container {
+        padding: 0 20px;
+      }
+
+      .hero-slide {
+        height: 450px;
+      }
+
+      .hero-title {
+        font-size: 1.6rem;
+      }
+
+      .hero-subtitle {
+        font-size: 0.7rem;
+        letter-spacing: 1.5px;
+      }
+
+      .hero-description {
+        font-size: 0.85rem;
+        margin-bottom: 25px;
+      }
+
+      .hero-button {
+        padding: 14px 30px;
+        font-size: 0.85rem;
+      }
+
+      .carousel-nav {
+        bottom: 20px;
+      }
+
+      .carousel-controls {
         gap: 15px;
       }
 
-      .info-left {
-        flex-direction: column;
-        gap: 10px;
-        width: 100%;
-        align-items: flex-start;
+      .nav-arrow {
+        width: 38px;
+        height: 38px;
       }
 
-      .info-item {
+      .nav-arrow svg {
+        width: 22px;
+        height: 22px;
+      }
+
+      .indicator {
+        width: 40px;
+      }
+
+      .quick-links-container {
+        grid-template-columns: 1fr;
+        gap: 15px;
+      }
+
+      .quick-link-icon {
+        width: 60px;
+      }
+
+      .quick-link-content h3 {
+        font-size: 0.7rem;
+      }
+
+      .quick-link-content p {
         font-size: 0.75rem;
       }
 
-      .social-links {
-        width: 100%;
+      .offer-section,
+      .expertise-section,
+      .president-section,
+      .newsletter-section {
+        padding: 50px 0;
+      }
+
+      .section-title {
+        font-size: 1.5rem;
+      }
+
+      .section-subtitle {
+        font-size: 0.85rem;
+      }
+
+      .offer-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+
+      .offer-card {
+        padding: 20px;
+      }
+
+      .expertise-header {
+        gap: 15px;
+        flex-wrap: wrap;
+      }
+
+      .expertise-line {
+        width: 60px;
+      }
+
+      .practice-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+      }
+
+      .practice-card {
+        padding: 24px 20px;
+        gap: 15px;
+      }
+
+      .practice-icon {
+        width: 48px;
+        height: 48px;
+      }
+
+      .practice-content h3 {
+        font-size: 0.95rem;
+      }
+
+      .practice-desc {
+        font-size: 0.85rem;
+      }
+
+      .practice-content li {
+        font-size: 0.85rem;
+      }
+
+      .president-text h2 {
+        font-size: 1.6rem;
+        margin-bottom: 20px;
+      }
+
+      .president-text p {
+        font-size: 0.9rem;
+      }
+
+      .newsletter-header {
+        gap: 20px;
+        flex-direction: column;
+      }
+
+      .header-line {
+        max-width: 100px;
+        display: none;
+      }
+
+      .newsletter-header h2 {
+        font-size: 1.6rem;
+        letter-spacing: 2px;
+      }
+
+      .newsletter-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        margin-top: 40px;
+      }
+
+      .news-content {
+        padding: 22px 18px;
+      }
+
+      .news-content h3 {
+        font-size: 0.95rem;
+      }
+
+      .footer-logo-wrapper {
+        width: 100px;
+        height: 100px;
+        top: -35px;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 35px;
+        padding-top: 30px;
+      }
+
+      .footer-bottom-content {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+      }
+
+      .social-icons {
         justify-content: center;
+      }
+    }
+
+    /* Mobile Portrait (up to 575px) */
+    @media (max-width: 575px) {
+      .container {
+        padding: 0 15px;
+      }
+
+      .hero-slide {
+        height: 400px;
+      }
+
+      .hero-title {
+        font-size: 1.4rem;
+        margin-bottom: 15px;
+      }
+
+      .hero-subtitle {
+        font-size: 0.65rem;
+        margin-bottom: 12px;
+      }
+
+      .hero-description {
+        font-size: 0.8rem;
+        margin-bottom: 20px;
+      }
+
+      .hero-button {
+        padding: 12px 25px;
+        font-size: 0.8rem;
+      }
+
+      .carousel-controls {
+        gap: 12px;
+      }
+
+      .nav-arrow {
+        width: 36px;
+        height: 36px;
+      }
+
+      .indicator {
+        width: 35px;
+        height: 4px;
+      }
+
+      .quick-links-section {
+        padding: 20px 0;
+      }
+
+      .quick-link-item {
+        padding: 12px;
+        gap: 12px;
+      }
+
+      .quick-link-icon {
+        width: 50px;
+      }
+
+      .quick-link-content h3 {
+        font-size: 0.65rem;
+      }
+
+      .quick-link-content p {
+        font-size: 0.7rem;
+      }
+
+      .quick-link-action {
+        font-size: 0.7rem;
+      }
+
+      .offer-section,
+      .expertise-section,
+      .president-section,
+      .newsletter-section {
+        padding: 40px 0;
+      }
+
+      .section-title {
+        font-size: 1.3rem;
+      }
+
+      .section-subtitle {
+        font-size: 0.8rem;
+        margin-bottom: 35px;
+      }
+
+      .offer-header {
+        gap: 12px;
+      }
+
+      .offer-line {
+        width: 40px;
+        height: 2px;
+      }
+
+      .offer-card {
+        padding: 18px;
+      }
+
+      .offer-icon {
+        width: 40px;
+        height: 40px;
+      }
+
+      .offer-card h3 {
+        font-size: 0.85rem;
+      }
+
+      .offer-card p {
+        font-size: 0.8rem;
+      }
+
+      .expertise-header {
+        gap: 12px;
+      }
+
+      .expertise-line {
+        width: 40px;
+      }
+
+      .expertise-section .section-title {
+        font-size: 1.3rem;
+        letter-spacing: 1.5px;
+      }
+
+      .expertise-section .section-subtitle {
+        font-size: 0.85rem;
+        margin-bottom: 35px;
+      }
+
+      .practice-card {
+        padding: 20px 16px;
+      }
+
+      .practice-icon {
+        width: 44px;
+        height: 44px;
+      }
+
+      .practice-icon svg {
+        width: 28px;
+        height: 28px;
+      }
+
+      .practice-content h3 {
+        font-size: 0.9rem;
+      }
+
+      .practice-desc {
+        font-size: 0.8rem;
+      }
+
+      .practice-content li {
+        font-size: 0.8rem;
+      }
+
+      .practice-cta {
+        font-size: 0.75rem;
+      }
+
+      .contact-item {
+        padding: 20px 15px;
+      }
+
+      .contact-item h3 {
+        font-size: 0.85rem;
+      }
+
+      .contact-item p {
+        font-size: 0.8rem;
+      }
+
+      .president-text h2 {
+        font-size: 1.4rem;
+      }
+
+      .president-text p {
+        font-size: 0.85rem;
+        line-height: 1.7;
+      }
+
+      .president-learn-btn {
+        padding: 12px 30px;
+        font-size: 0.85rem;
+      }
+
+      .newsletter-header h2 {
+        font-size: 1.4rem;
+      }
+
+      .newsletter-grid {
+        margin-top: 30px;
+        gap: 20px;
+      }
+
+      .news-image {
+        height: 180px;
+      }
+
+      .news-content {
+        padding: 20px 16px;
+      }
+
+      .news-date {
+        font-size: 0.7rem;
+      }
+
+      .news-content h3 {
+        font-size: 0.9rem;
+      }
+
+      .read-more-link {
+        font-size: 0.8rem;
+      }
+
+      .newsletter-learn-btn {
+        padding: 14px 40px;
+        font-size: 0.85rem;
+      }
+
+      .footer-main {
+        padding: 50px 0 30px;
+      }
+
+      .footer-logo-wrapper {
+        width: 90px;
+        height: 90px;
+        top: -30px;
+      }
+
+      .footer-grid {
+        gap: 30px;
+      }
+
+      .footer-column h3 {
+        font-size: 1rem;
+      }
+
+      .footer-column p,
+      .footer-column ul li a {
+        font-size: 0.85rem;
+      }
+
+      .footer-bottom {
+        padding: 20px 0;
+      }
+
+      .copyright,
+      .privacy-link {
+        font-size: 0.8rem;
+      }
+
+      .social-icon {
+        width: 32px;
+        height: 32px;
+      }
+    }
+
+    /* Extra Small Devices (up to 374px) */
+    @media (max-width: 374px) {
+      .hero-slide {
+        height: 350px;
+      }
+
+      .hero-title {
+        font-size: 1.2rem;
+      }
+
+      .hero-subtitle {
+        font-size: 0.6rem;
+      }
+
+      .hero-description {
+        font-size: 0.75rem;
+      }
+
+      .section-title {
+        font-size: 1.2rem;
+      }
+
+      .practice-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .practice-content li {
+        text-align: left;
+      }
+    }
+
+    /* Reduce Motion for Accessibility */
+    @media (prefers-reduced-motion: reduce) {
+      .practice-card {
+        animation: none;
+        opacity: 1;
+        transform: none;
+      }
+
+      .hero-slide,
+      .quick-link-item,
+      .news-card,
+      .nav-arrow,
+      .hero-button,
+      .president-learn-btn,
+      .newsletter-learn-btn {
+        transition: none;
       }
     }
   `]
@@ -1743,6 +2061,7 @@ interface PresidentSlide {
 export class HomeComponent implements OnInit {
   currentSlide = signal(0);
   currentPresidentSlide = signal(0);
+  logo = '/assets/logo.png';
 
   heroSlides: HeroSlide[] = [
     {
@@ -1840,4 +2159,3 @@ export class HomeComponent implements OnInit {
     this.currentPresidentSlide.set(index);
   }
 }
-
