@@ -545,6 +545,7 @@ type HighchartsStatic = typeof import('highcharts');
       width: 100%;
       height: 100%;
       object-fit: cover;
+      margin-top: 0;
     }
 
     .president-info-large {

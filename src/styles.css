@@ -137,6 +137,12 @@ main {
   min-height: calc(100vh - 150px);
 }
 
+@media (max-width: 768px) {
+  main {
+    padding-bottom: 110px;
+  }
+}
+
 /* Accessibility Utilities */
 .visually-hidden {
   position: absolute;
