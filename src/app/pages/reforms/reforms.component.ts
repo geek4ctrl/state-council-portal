@@ -39,10 +39,10 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
       <!-- Strategic Reform Initiatives -->
       <section class="initiatives-section">
         <div class="container">
-          <div class="section-tag">
+          <!-- <div class="section-tag">
             <div class="tag-line"></div>
             <span>{{ 'reforms.initiatives.tag' | i18n }}</span>
-          </div>
+          </div> -->
 
           <h2 class="section-title">{{ 'reforms.initiatives.title' | i18n }}</h2>
           <p class="section-description">{{ 'reforms.initiatives.body' | i18n }}</p>
@@ -171,12 +171,12 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
                 <p>{{ 'reforms.initiatives.steps.5.body' | i18n }}</p>
                 <div class="step-badge medium">{{ 'reforms.initiatives.badges.medium' | i18n }}</div>
               </div>
-              <div class="completion-badge">
+              <!-- <div class="completion-badge">
                 <svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
                   <circle cx="30" cy="30" r="28" stroke="#c8956b" stroke-width="2" fill="none"/>
                   <path d="M18 30l8 8 16-16" stroke="#c8956b" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
@@ -362,7 +362,7 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
       margin: 0;
     }
 
-    /* Building Section */
+    /* Building Section - UPDATED ALIGNMENT */
     .building-section {
       background: white;
       padding: 80px 0;
@@ -394,7 +394,34 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
       font-weight: 600;
     }
 
-    .section-title {
+    /* Building Section Title - LEFT ALIGNED */
+    .building-section .section-title {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: #1a1a1a;
+      text-align: left;
+      margin: 0 0 25px 0;
+      letter-spacing: 1px;
+      font-family: 'Playfair Display', serif;
+    }
+
+    /* Building Section Description - JUSTIFIED */
+    .building-section .section-description {
+      font-size: 1rem;
+      line-height: 1.8;
+      color: #BF9874;
+      text-align: justify;
+      max-width: 100%;
+      margin: 0 0 60px 0;
+    }
+
+    /* Initiatives Section - Keeping centered alignment */
+    .initiatives-section {
+      background: linear-gradient(180deg, #fafafa 0%, #ffffff 100%);
+      padding: 80px 0 100px;
+    }
+
+    .initiatives-section .section-title {
       font-size: 2.5rem;
       font-weight: 700;
       color: #1a1a1a;
@@ -404,10 +431,10 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
       font-family: 'Playfair Display', serif;
     }
 
-    .section-description {
+    .initiatives-section .section-description {
       font-size: 1rem;
       line-height: 1.8;
-      color: #666;
+      color: #BF9874;
       text-align: center;
       max-width: 900px;
       margin: 0 auto 60px;
@@ -418,12 +445,6 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
       font-size: 0.85rem;
       color: #999;
       margin: -10px 0 20px 0;
-    }
-
-    /* Initiatives Section */
-    .initiatives-section {
-      background: linear-gradient(180deg, #fafafa 0%, #ffffff 100%);
-      padding: 80px 0 100px;
     }
 
     /* Process Flow Container */
@@ -833,7 +854,10 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
         font-size: 4rem;
       }
 
-      .section-title,
+      .building-section .section-title {
+        font-size: 3rem;
+      }
+
       .section-title-stakeholders {
         font-size: 3rem;
       }
@@ -897,13 +921,21 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
         padding: 70px 0;
       }
 
-      .section-title,
+      .building-section .section-title {
+        font-size: 2.2rem;
+      }
+
+      .initiatives-section .section-title,
       .section-title-stakeholders {
         font-size: 2.2rem;
       }
 
-      .section-description {
+      .building-section .section-description,
+      .initiatives-section .section-description {
         font-size: 0.95rem;
+      }
+
+      .initiatives-section .section-description {
         max-width: 800px;
       }
 
@@ -960,7 +992,17 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
         padding: 60px 0;
       }
 
-      .section-title,
+      /* Building section maintains left/justified alignment on tablet */
+      .building-section .section-title {
+        font-size: 2rem;
+        text-align: left;
+      }
+
+      .building-section .section-description {
+        text-align: justify;
+      }
+
+      .initiatives-section .section-title,
       .section-title-stakeholders {
         font-size: 2rem;
       }
@@ -1047,13 +1089,26 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
         font-size: 0.7rem;
       }
 
-      .section-title,
+      /* Building section maintains left/justified alignment on mobile */
+      .building-section .section-title {
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+        text-align: left;
+      }
+
+      .building-section .section-description {
+        font-size: 0.9rem;
+        margin-bottom: 40px;
+        text-align: justify;
+      }
+
+      .initiatives-section .section-title,
       .section-title-stakeholders {
         font-size: 1.8rem;
         margin-bottom: 20px;
       }
 
-      .section-description {
+      .initiatives-section .section-description {
         font-size: 0.9rem;
         margin-bottom: 40px;
       }
@@ -1190,7 +1245,17 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
         padding: 45px 0;
       }
 
-      .section-title,
+      /* Maintaining alignment for building section */
+      .building-section .section-title {
+        font-size: 1.6rem;
+        text-align: left;
+      }
+
+      .building-section .section-description {
+        text-align: justify;
+      }
+
+      .initiatives-section .section-title,
       .section-title-stakeholders {
         font-size: 1.6rem;
       }
@@ -1242,19 +1307,32 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
         font-size: 0.65rem;
       }
 
-      .section-title {
+      /* Maintaining alignment for building section */
+      .building-section .section-title {
         font-size: 1.5rem;
         margin-bottom: 18px;
+        text-align: left;
+      }
+
+      .building-section .section-description {
+        font-size: 0.85rem;
+        margin-bottom: 35px;
+        text-align: justify;
+      }
+
+      .initiatives-section .section-title {
+        font-size: 1.5rem;
+        margin-bottom: 18px;
+      }
+
+      .initiatives-section .section-description {
+        font-size: 0.85rem;
+        margin-bottom: 35px;
       }
 
       .section-title-stakeholders {
         font-size: 1.4rem;
         letter-spacing: 1.5px;
-      }
-
-      .section-description {
-        font-size: 0.85rem;
-        margin-bottom: 35px;
       }
 
       .process-flow-container {
@@ -1387,7 +1465,16 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
         font-size: 1.4rem;
       }
 
-      .section-title {
+      .building-section .section-title {
+        font-size: 1.3rem;
+        text-align: left;
+      }
+
+      .building-section .section-description {
+        text-align: justify;
+      }
+
+      .initiatives-section .section-title {
         font-size: 1.3rem;
       }
 
