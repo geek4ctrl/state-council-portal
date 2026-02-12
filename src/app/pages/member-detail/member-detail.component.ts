@@ -23,7 +23,7 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
       <section class="member-content">
         <div class="container">
           @if (member()) {
-            <article class="member-card">
+            <article class="member-card glass-card">
               <div class="member-photo">
                 <img [ngSrc]="member()!.image" [alt]="member()!.name" width="360" height="420">
               </div>

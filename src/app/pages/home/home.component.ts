@@ -44,7 +44,10 @@ interface PresidentSlide {
             <div class="hero-text">
               <p class="hero-subtitle">{{ heroSlides[currentSlide()].subtitleKey | i18n }}</p>
               <h1 class="hero-title">{{ heroSlides[currentSlide()].titleKey | i18n }}</h1>
-              <button class="hero-button">{{ heroSlides[currentSlide()].buttonKey | i18n }}</button>
+              <div class="hero-actions">
+                <button class="hero-button">{{ heroSlides[currentSlide()].buttonKey | i18n }}</button>
+                <button class="hero-button secondary">Learn more</button>
+              </div>
             </div>
           </div>
         </div>
@@ -90,7 +93,7 @@ interface PresidentSlide {
         <p class="key-facts-subtitle">{{ 'home.keyFacts.subtitle' | i18n }}</p>
 
         <div class="key-facts-grid">
-          <div class="key-fact-card">
+          <div class="key-fact-card glass-card">
             <div class="key-fact-meta">
               <h3>{{ 'home.keyFacts.cards.volume.title' | i18n }}</h3>
               <span class="key-fact-note">{{ 'home.keyFacts.cards.volume.note' | i18n }}</span>
@@ -103,7 +106,7 @@ interface PresidentSlide {
             </div>
           </div>
 
-          <div class="key-fact-card">
+          <div class="key-fact-card glass-card">
             <div class="key-fact-meta">
               <h3>{{ 'home.keyFacts.cards.processing.title' | i18n }}</h3>
               <span class="key-fact-note">{{ 'home.keyFacts.cards.processing.note' | i18n }}</span>
@@ -116,7 +119,7 @@ interface PresidentSlide {
             </div>
           </div>
 
-          <div class="key-fact-card">
+          <div class="key-fact-card glass-card">
             <div class="key-fact-meta">
               <h3>{{ 'home.keyFacts.cards.decisions.title' | i18n }}</h3>
               <span class="key-fact-note">{{ 'home.keyFacts.cards.decisions.note' | i18n }}</span>
@@ -136,7 +139,7 @@ interface PresidentSlide {
     <section class="quick-links-section">
       <div class="container">
         <div class="quick-links-container">
-          <div class="quick-link-item">
+          <div class="quick-link-item glass-card">
             <div class="quick-link-icon">
               <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=120&h=120&fit=crop" [alt]="'home.quickLinks.items.news.alt' | i18n">
             </div>
@@ -148,7 +151,7 @@ interface PresidentSlide {
             <div class="connector-line"></div>
           </div>
 
-          <div class="quick-link-item">
+          <div class="quick-link-item glass-card">
             <div class="quick-link-icon">
               <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=120&h=120&fit=crop" [alt]="'home.quickLinks.items.excerpts.alt' | i18n">
             </div>
@@ -160,7 +163,7 @@ interface PresidentSlide {
             <div class="connector-line"></div>
           </div>
 
-          <div class="quick-link-item">
+          <div class="quick-link-item glass-card">
             <div class="quick-link-icon">
               <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=120&h=120&fit=crop" [alt]="'home.quickLinks.items.report.alt' | i18n">
             </div>
@@ -172,7 +175,7 @@ interface PresidentSlide {
             <div class="connector-line"></div>
           </div>
 
-          <div class="quick-link-item">
+          <div class="quick-link-item glass-card">
             <div class="quick-link-icon">
               <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=120&h=120&fit=crop" [alt]="'home.quickLinks.items.appointment.alt' | i18n">
             </div>
@@ -463,7 +466,7 @@ interface PresidentSlide {
         </div>
 
         <div class="newsletter-grid">
-          <div class="news-card">
+          <div class="news-card glass-card">
             <div class="news-image">
               <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=800&h=600&fit=crop" [alt]="'home.newsletter.items.1.alt' | i18n">
             </div>
@@ -479,7 +482,7 @@ interface PresidentSlide {
             </div>
           </div>
 
-          <div class="news-card">
+          <div class="news-card glass-card">
             <div class="news-image">
               <img src="https://images.unsplash.com/photo-1505664194779-8beaceb93744?w=800&h=600&fit=crop" [alt]="'home.newsletter.items.2.alt' | i18n">
             </div>
@@ -495,7 +498,7 @@ interface PresidentSlide {
             </div>
           </div>
 
-          <div class="news-card">
+          <div class="news-card glass-card">
             <div class="news-image">
               <img src="https://images.unsplash.com/photo-1479142506502-19b3a3b7ff33?w=800&h=600&fit=crop" [alt]="'home.newsletter.items.3.alt' | i18n">
             </div>
@@ -511,7 +514,7 @@ interface PresidentSlide {
             </div>
           </div>
 
-          <div class="news-card">
+          <div class="news-card glass-card">
             <div class="news-image">
               <img src="https://images.unsplash.com/photo-1521587760476-6c12a4b040da?w=800&h=600&fit=crop" [alt]="'home.newsletter.items.4.alt' | i18n">
             </div>
@@ -686,20 +689,42 @@ interface PresidentSlide {
       margin-bottom: 35px;
     }
 
+    .hero-actions {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
     .hero-button {
-      padding: 16px 38px;
+      padding: 18px 46px;
       background-color: #C82333;
       color: white;
-      border: none;
-      font-size: 0.9rem;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      font-size: 1rem;
       font-weight: 700;
+      letter-spacing: 0.5px;
       cursor: pointer;
       transition: all 0.3s ease;
       text-transform: capitalize;
+      box-shadow: 0 12px 26px rgba(12, 18, 40, 0.35);
     }
 
     .hero-button:hover {
       background-color: #A01D29;
+      transform: translateY(-1px);
+    }
+
+    .hero-button.secondary {
+      background-color: transparent;
+      color: #ffffff;
+      border-color: rgba(255, 255, 255, 0.55);
+      box-shadow: 0 8px 18px rgba(12, 18, 40, 0.25);
+    }
+
+    .hero-button.secondary:hover {
+      background-color: rgba(255, 255, 255, 0.12);
+      border-color: rgba(255, 255, 255, 0.75);
     }
 
     .carousel-nav {
@@ -763,8 +788,10 @@ interface PresidentSlide {
     .key-facts-section {
       background: radial-gradient(circle at top left, rgba(191, 152, 116, 0.16), transparent 55%),
         linear-gradient(180deg, #f8f6f2 0%, #ffffff 100%);
-      padding: 50px 0 40px;
+      padding: 64px 0 48px;
       border-bottom: 1px solid rgba(26, 41, 66, 0.08);
+      --glass-bg: linear-gradient(135deg, rgba(255, 255, 255, 0.58), rgba(255, 255, 255, 0.18));
+      --glass-shadow: 0 16px 32px rgba(26, 41, 66, 0.14), inset 0 1px 0 rgba(255, 255, 255, 0.5);
     }
 
     .key-facts-header {
@@ -795,14 +822,17 @@ interface PresidentSlide {
       gap: 18px;
     }
 
+    .glass-card {
+      background: var(--glass-bg, linear-gradient(135deg, rgba(255, 255, 255, 0.62), rgba(255, 255, 255, 0.22)));
+      border: none;
+      box-shadow: var(--glass-shadow, 0 16px 32px rgba(26, 41, 66, 0.14), inset 0 1px 0 rgba(255, 255, 255, 0.5));
+      backdrop-filter: var(--glass-blur, blur(14px) saturate(130%));
+      -webkit-backdrop-filter: var(--glass-blur, blur(14px) saturate(130%));
+    }
+
     .key-fact-card {
-      background: linear-gradient(135deg, rgba(255, 255, 255, 0.62), rgba(255, 255, 255, 0.22));
       border-radius: 16px;
       padding: 18px 18px 12px;
-      border: 1px solid rgba(255, 255, 255, 0.35);
-      box-shadow: 0 16px 32px rgba(26, 41, 66, 0.14), inset 0 1px 0 rgba(255, 255, 255, 0.5);
-      backdrop-filter: blur(14px) saturate(130%);
-      -webkit-backdrop-filter: blur(14px) saturate(130%);
     }
 
     .key-fact-meta {
@@ -836,13 +866,15 @@ interface PresidentSlide {
 
     /* Quick Links Section */
     .quick-links-section {
-      background: linear-gradient(135deg, rgba(47, 63, 88, 0.65), rgba(59, 78, 108, 0.55));
+      background: linear-gradient(90deg, rgba(60, 74, 92, 0.75), rgba(118, 128, 144, 0.55));
       color: black;
-      padding: 28px 0;
+      padding: 32px 0;
       border-top: 1px solid rgba(255, 255, 255, 0.18);
       border-bottom: 1px solid rgba(255, 255, 255, 0.18);
       backdrop-filter: blur(18px) saturate(140%);
       -webkit-backdrop-filter: blur(18px) saturate(140%);
+      --glass-bg: linear-gradient(135deg, rgba(255, 255, 255, 0.24), rgba(255, 255, 255, 0.06));
+      --glass-shadow: 0 14px 28px rgba(9, 16, 40, 0.22), inset 0 1px 0 rgba(255, 255, 255, 0.35);
     }
 
     .quick-links-container {
@@ -860,19 +892,13 @@ interface PresidentSlide {
       position: relative;
       padding: 10px 12px;
       border-radius: 14px;
-      background: linear-gradient(135deg, rgba(255, 255, 255, 0.22), rgba(255, 255, 255, 0.08));
-      border: 1px solid rgba(255, 255, 255, 0.28);
-      box-shadow: 0 16px 32px rgba(9, 16, 40, 0.28), inset 0 1px 0 rgba(255, 255, 255, 0.35);
-      backdrop-filter: blur(16px) saturate(130%);
-      -webkit-backdrop-filter: blur(16px) saturate(130%);
-      transition: transform 0.25s ease, border-color 0.25s ease, background 0.25s ease, box-shadow 0.25s ease;
+      transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
     }
 
     .quick-link-item:hover {
       transform: translateY(-4px);
-      background: linear-gradient(135deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.12));
-      border-color: rgba(191, 152, 116, 0.5);
-      box-shadow: 0 18px 36px rgba(9, 16, 40, 0.32), inset 0 1px 0 rgba(255, 255, 255, 0.45);
+      border-color: rgba(191, 152, 116, 0.4);
+      box-shadow: 0 18px 34px rgba(9, 16, 40, 0.26), inset 0 1px 0 rgba(255, 255, 255, 0.45);
     }
 
     .quick-link-icon {
@@ -921,6 +947,8 @@ interface PresidentSlide {
       color: #ffffff;
       font-size: 0.75rem;
       font-weight: 700;
+      display: inline-flex;
+      align-items: center;
       text-decoration: underline;
       text-decoration-thickness: 2px;
       text-underline-offset: 4px;
@@ -941,8 +969,9 @@ interface PresidentSlide {
 
     /* What We Offer */
     .offer-section {
-      padding: 80px 0;
+      padding: 64px 0;
       background-color: #ffffff;
+      border-bottom: 1px solid rgba(26, 41, 66, 0.08);
     }
 
     .offer-header {
@@ -1233,7 +1262,7 @@ interface PresidentSlide {
 
     /* Contact Info */
     .contact-info-section {
-      background-color: #4b5f7d9c;
+      background: linear-gradient(90deg, rgba(72, 84, 102, 0.85), rgba(142, 150, 164, 0.75));
     }
 
     .contact-bar {
@@ -1266,35 +1295,87 @@ interface PresidentSlide {
 
     /* President Section */
     .president-section {
-      padding: 80px 0;
-      background: #F5F0EB;
+      padding: 90px 0;
+      background: linear-gradient(135deg, #f7f2ee 0%, #f1e7df 55%, #f7f2ee 100%);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .president-section::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(circle at 85% 10%, rgba(191, 152, 116, 0.18), transparent 55%),
+        radial-gradient(circle at 10% 80%, rgba(44, 62, 80, 0.08), transparent 55%);
+      pointer-events: none;
     }
 
     .president-content {
       display: grid;
       grid-template-columns: 420px 1fr;
       gap: 70px;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    .president-image-wrapper {
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 20px 40px rgba(20, 28, 40, 0.2);
+      border: 1px solid rgba(255, 255, 255, 0.7);
+      background: #fff;
+      height: 100%;
     }
 
     .president-image-wrapper img {
       width: 100%;
-      height: auto;
+      height: 100%;
+      object-fit: cover;
       display: block;
+      transform: scale(1.01);
+    }
+
+    .president-text {
+      background: rgba(255, 255, 255, 0.75);
+      border: 1px solid rgba(255, 255, 255, 0.6);
+      box-shadow: 0 18px 36px rgba(26, 41, 66, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.7);
+      border-radius: 18px;
+      padding: 36px 38px;
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      height: 100%;
+      display: flex;
+      flex-direction: column;
     }
 
     .president-text h2 {
-      font-size: 2rem;
+      font-size: 2.1rem;
       font-weight: 800;
       color: #2C3E50;
       margin-bottom: 28px;
       text-transform: uppercase;
-      line-height: 1.3;
+      line-height: 1.2;
+      letter-spacing: 1px;
+      position: relative;
+      padding-bottom: 14px;
+    }
+
+    .president-text h2::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 70px;
+      height: 3px;
+      background: linear-gradient(90deg, #BF9874, transparent);
     }
 
     .president-text p {
       font-size: 0.95rem;
       line-height: 1.8;
-      color: #555;
+      color: #4b5563;
       margin-bottom: 18px;
     }
 
@@ -1312,6 +1393,7 @@ interface PresidentSlide {
       margin-top: 18px;
       text-transform: capitalize;
       transition: all 0.3s ease;
+      border-radius: 999px;
     }
 
     .president-learn-btn:hover {
@@ -1343,8 +1425,28 @@ interface PresidentSlide {
     /* Newsletter */
     .newsletter-section {
       padding: 80px 0;
-      background: #4b5f7d9c;
+      background: linear-gradient(135deg, rgba(78, 90, 110, 0.92), rgba(128, 137, 153, 0.78));
       color: #1a1a1a;
+      position: relative;
+      overflow: hidden;
+      --glass-bg: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.05));
+      --glass-shadow: 0 16px 34px rgba(11, 18, 42, 0.28), inset 0 1px 0 rgba(255, 255, 255, 0.4);
+    }
+
+    .newsletter-section::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.12), transparent 45%),
+        radial-gradient(circle at 80% 10%, rgba(191, 152, 116, 0.2), transparent 55%);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .newsletter-section .container {
+      position: relative;
+      z-index: 1;
     }
 
     .newsletter-header {
@@ -1358,43 +1460,45 @@ interface PresidentSlide {
     .newsletter-header h2 {
       font-size: 2.4rem;
       font-weight: 800;
-      color: white;
+      color: #f8fbff;
       margin: 0;
       letter-spacing: 4px;
+      text-shadow: 0 6px 18px rgba(12, 18, 40, 0.35);
     }
 
     .header-line {
       flex: 1;
       max-width: 200px;
       height: 1px;
-      background-color: #BF9874;
+      background: linear-gradient(90deg, transparent, rgba(191, 152, 116, 0.85), transparent);
     }
 
     .newsletter-grid {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      gap: 30px;
+      gap: 26px;
       margin-bottom: 50px;
       margin-top: 60px;
     }
 
     .news-card {
-      background-color: white;
+      background-color: transparent;
+      border-radius: 18px;
       overflow: hidden;
-      transition: all 0.3s ease;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
       display: flex;
       flex-direction: column;
-      border: 1px solid transparent;
+      border: none;
     }
 
     .news-card:hover {
       transform: translateY(-8px);
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 18px 34px rgba(10, 16, 32, 0.25);
     }
 
     .news-image {
       width: 100%;
-      height: 200px;
+      height: 190px;
       overflow: hidden;
     }
 
@@ -1402,18 +1506,25 @@ interface PresidentSlide {
       width: 100%;
       height: 100%;
       object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+
+    .news-card:hover .news-image img {
+      transform: scale(1.03);
     }
 
     .news-content {
-      padding: 28px 22px;
+      padding: 26px 22px 28px;
       color: #1a1a1a;
       flex: 1;
       display: flex;
       flex-direction: column;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.82), rgba(255, 255, 255, 0.72));
+      border-top: 1px solid rgba(255, 255, 255, 0.4);
     }
 
     .news-date {
-      color: #666;
+      color: #6b5a41;
       font-weight: 600;
       font-size: 0.75rem;
       margin-bottom: 16px;
@@ -1424,7 +1535,7 @@ interface PresidentSlide {
       font-size: 1rem;
       font-weight: 700;
       line-height: 1.5;
-      color: #1a1a1a;
+      color: #1f2937;
       margin: 0 0 20px 0;
     }
 
@@ -1432,7 +1543,7 @@ interface PresidentSlide {
       display: inline-flex;
       align-items: center;
       gap: 8px;
-      color: #BF9874;
+      color: #9b6b3f;
       font-size: 0.85rem;
       font-weight: 700;
       text-decoration: none;
@@ -1476,10 +1587,36 @@ interface PresidentSlide {
     }
 
     .footer-main {
-      background-color: #EAF1FA;
+      background: linear-gradient(180deg, #eef4fb 0%, #e1eaf5 100%);
       color: #55645c;
       padding: 60px 0 40px;
       position: relative;
+      border-top: 1px solid rgba(255, 255, 255, 0.8);
+    }
+
+    .footer-main::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(circle at 50% 0%, rgba(191, 152, 116, 0.22), transparent 55%),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.3), transparent 45%, rgba(255, 255, 255, 0.2));
+      pointer-events: none;
+    }
+
+    .footer-main::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: repeating-linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 0.25) 0,
+        rgba(255, 255, 255, 0.25) 1px,
+        transparent 1px,
+        transparent 140px
+      );
+      opacity: 0.15;
+      pointer-events: none;
     }
 
     .footer-logo-wrapper {
@@ -1487,13 +1624,15 @@ interface PresidentSlide {
       top: -40px;
       left: 50%;
       transform: translateX(-50%);
-      background-color: white;
+      background: linear-gradient(135deg, #ffffff, #f1f5fb);
       width: 120px;
       height: 120px;
       display: flex;
       align-items: center;
       justify-content: center;
       clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+      box-shadow: 0 18px 36px rgba(12, 18, 40, 0.22), inset 0 1px 0 rgba(255, 255, 255, 0.8);
+      border: 1px solid rgba(255, 255, 255, 0.9);
     }
 
     .footer-grid {
@@ -1501,6 +1640,8 @@ interface PresidentSlide {
       grid-template-columns: repeat(4, 1fr);
       gap: 50px;
       padding-top: 40px;
+      position: relative;
+      z-index: 1;
     }
 
     .footer-column h3 {
@@ -1508,13 +1649,28 @@ interface PresidentSlide {
       font-size: 1.1rem;
       font-weight: 600;
       margin-bottom: 20px;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      position: relative;
+      display: inline-flex;
+      padding-bottom: 10px;
+    }
+
+    .footer-column h3::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 36px;
+      height: 2px;
+      background: linear-gradient(90deg, #BF9874, transparent);
     }
 
     .footer-column p {
       font-size: 0.9rem;
       line-height: 1.8;
       margin: 5px 0;
-      color: #55645c;
+      color: #4f5b66;
     }
 
     .footer-column ul {
@@ -1527,7 +1683,7 @@ interface PresidentSlide {
     }
 
     .footer-column ul li a {
-      color: #55645c;
+      color: #4f5b66;
       text-decoration: none;
       font-size: 0.9rem;
       transition: color 0.3s ease;
@@ -1535,11 +1691,14 @@ interface PresidentSlide {
 
     .footer-column ul li a:hover {
       color: #BF9874;
+      text-decoration: underline;
+      text-underline-offset: 4px;
     }
 
     .footer-bottom {
-      background-color: #EAF1FA;
+      background: linear-gradient(180deg, #e1eaf5 0%, #dbe6f3 100%);
       padding: 25px 0;
+      border-top: 1px solid rgba(26, 41, 66, 0.08);
     }
 
     .footer-bottom-content {
@@ -1560,10 +1719,11 @@ interface PresidentSlide {
       display: flex;
       align-items: center;
       justify-content: center;
-      background-color: #EAF1FA;
+      background-color: #ffffff;
       border-radius: 50%;
-      color: #1a1a1a;
-      border: 1px solid #c9d7e8;
+      color: #1f2937;
+      border: 1px solid rgba(191, 152, 116, 0.35);
+      box-shadow: 0 6px 14px rgba(10, 16, 32, 0.12);
       text-decoration: none;
       transition: all 0.3s ease;
     }
@@ -1678,7 +1838,7 @@ interface PresidentSlide {
       .expertise-section,
       .president-section,
       .newsletter-section {
-        padding: 60px 0;
+        padding: 56px 0;
       }
 
       .section-title {
@@ -1768,6 +1928,10 @@ interface PresidentSlide {
       .hero-button {
         padding: 14px 30px;
         font-size: 0.85rem;
+      }
+
+      .hero-actions {
+        gap: 10px;
       }
 
       .carousel-nav {
@@ -1972,6 +2136,10 @@ interface PresidentSlide {
         font-size: 0.8rem;
       }
 
+      .hero-actions {
+        gap: 8px;
+      }
+
       .carousel-controls {
         gap: 12px;
       }
@@ -1988,6 +2156,14 @@ interface PresidentSlide {
 
       .quick-links-section {
         padding: 20px 0;
+      }
+
+      .key-facts-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .quick-links-container {
+        grid-template-columns: 1fr;
       }
 
       .quick-link-item {
@@ -2009,13 +2185,22 @@ interface PresidentSlide {
 
       .quick-link-action {
         font-size: 0.7rem;
+        padding: 8px 12px;
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.12);
+      }
+
+      .read-more-link {
+        padding: 8px 12px;
+        border-radius: 999px;
+        background: rgba(191, 152, 116, 0.12);
       }
 
       .offer-section,
       .expertise-section,
       .president-section,
       .newsletter-section {
-        padding: 40px 0;
+        padding: 36px 0;
       }
 
       .section-title {
@@ -2349,8 +2534,9 @@ export class HomeComponent implements OnInit, AfterViewInit {
 
   private renderKeyFactsCharts() {
     const baseAxisLabelStyle = {
-      color: '#6b5a41',
-      fontSize: '11px'
+      color: '#4b5563',
+      fontSize: '12px',
+      fontWeight: '600'
     };
 
     const caseVolumeOptions: Highcharts.Options = {
@@ -2366,13 +2552,13 @@ export class HomeComponent implements OnInit, AfterViewInit {
       xAxis: {
         categories: ['Sep', 'Oct', 'Nov', 'Dec', 'Jan', 'Feb'],
         labels: { style: baseAxisLabelStyle },
-        lineColor: 'rgba(26, 41, 66, 0.12)',
-        tickColor: 'rgba(26, 41, 66, 0.12)'
+        lineColor: 'rgba(26, 41, 66, 0.2)',
+        tickColor: 'rgba(26, 41, 66, 0.2)'
       },
       yAxis: {
         title: { text: undefined },
         labels: { style: baseAxisLabelStyle },
-        gridLineColor: 'rgba(26, 41, 66, 0.08)'
+        gridLineColor: 'rgba(26, 41, 66, 0.12)'
       },
       tooltip: {
         backgroundColor: '#1a2942',
@@ -2403,13 +2589,13 @@ export class HomeComponent implements OnInit, AfterViewInit {
       xAxis: {
         categories: ['Q1', 'Q2', 'Q3', 'Q4'],
         labels: { style: baseAxisLabelStyle },
-        lineColor: 'rgba(26, 41, 66, 0.12)',
-        tickColor: 'rgba(26, 41, 66, 0.12)'
+        lineColor: 'rgba(26, 41, 66, 0.2)',
+        tickColor: 'rgba(26, 41, 66, 0.2)'
       },
       yAxis: {
         title: { text: undefined },
         labels: { style: baseAxisLabelStyle },
-        gridLineColor: 'rgba(26, 41, 66, 0.08)'
+        gridLineColor: 'rgba(26, 41, 66, 0.12)'
       },
       tooltip: {
         backgroundColor: '#1a2942',
@@ -2440,7 +2626,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
       legend: {
         align: 'center',
         verticalAlign: 'bottom',
-        itemStyle: { color: '#1a1a1a', fontWeight: '600' }
+        itemStyle: { color: '#1f2937', fontWeight: '600', fontSize: '12px' }
       },
       tooltip: {
         backgroundColor: '#1a2942',

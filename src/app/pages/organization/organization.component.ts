@@ -37,7 +37,7 @@ type HighchartsStatic = typeof import('highcharts');
       <!-- First President Section -->
       <section class="first-president-section">
         <div class="container">
-          <div class="president-card-large">
+          <div class="president-card-large glass-card">
             <div class="president-image-large">
               <img
                 ngSrc="https://scontent.fpry2-1.fna.fbcdn.net/v/t39.30808-6/481977439_661094752968468_3580912692254417664_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=833d8c&_nc_ohc=781MphyOZxYQ7kNvwFA72Pl&_nc_oc=AdlS3efGmR2NwVl7AluKnrYklBBqsJYuTlJ2j9PkHSisG9RQ-4n7jDHjPIDmj6En6_w&_nc_zt=23&_nc_ht=scontent.fpry2-1.fna&_nc_gid=ECXY9r39JHQUTs-eZefdrQ&oh=00_AfsTzaj3KdpgLrEjgftG5I3y5wMeOJriKEBVHzCL_mVnRA&oe=69939BC0"
@@ -199,7 +199,7 @@ type HighchartsStatic = typeof import('highcharts');
                 <div class="no-results">{{ 'organization.presidents.empty' | i18n }}</div>
               } @else {
                 @for (president of filteredPresidents(); track president.email) {
-                  <div class="member-card">
+                  <div class="member-card glass-card">
                     <div class="member-image">
                       <img [ngSrc]="president.image" [alt]="president.name" width="300" height="350">
                     </div>
@@ -233,7 +233,7 @@ type HighchartsStatic = typeof import('highcharts');
                 <div class="no-results">{{ 'organization.advisors.empty' | i18n }}</div>
               } @else {
                 @for (advisor of filteredAdvisors(); track advisor.email) {
-                  <div class="member-card">
+                  <div class="member-card glass-card">
                     <div class="member-image">
                       <img [ngSrc]="advisor.image" [alt]="advisor.name" width="300" height="350">
                     </div>

@@ -8,7 +8,7 @@ import { I18nPipe } from '../../../i18n/i18n.pipe';
   imports: [CommonModule, RouterLink, I18nPipe],
   template: `
     <main class="error-page">
-      <section class="error-card">
+      <section class="error-card glass-card">
         <p class="error-code">{{ 'errors.notFound.code' | i18n }}</p>
         <h1 class="error-title">{{ 'errors.notFound.title' | i18n }}</h1>
         <p class="error-message">{{ 'errors.notFound.message' | i18n }}</p>

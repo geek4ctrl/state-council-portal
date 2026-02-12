@@ -52,7 +52,7 @@ import Highcharts from 'highcharts';
             <p class="insights-subtitle">{{ 'news.insights.subtitle' | i18n }}</p>
 
             <div class="insights-grid">
-              <div class="insight-card">
+              <div class="insight-card glass-card">
                 <div class="insight-card-header">
                   <h4>{{ 'news.insights.topics.title' | i18n }}</h4>
                   <span class="insight-note">{{ 'news.insights.topics.note' | i18n }}</span>
@@ -65,7 +65,7 @@ import Highcharts from 'highcharts';
                 </div>
               </div>
 
-              <div class="insight-card">
+              <div class="insight-card glass-card">
                 <div class="insight-card-header">
                   <h4>{{ 'news.insights.cadence.title' | i18n }}</h4>
                   <span class="insight-note">{{ 'news.insights.cadence.note' | i18n }}</span>
@@ -87,7 +87,7 @@ import Highcharts from 'highcharts';
               }
             } @else {
               @for (article of newsArticles; track article.id) {
-                <article class="news-card">
+                <article class="news-card glass-card">
                   <div class="news-image">
                     <img [src]="article.image" [alt]="article.titleKey | i18n" loading="lazy">
                   </div>

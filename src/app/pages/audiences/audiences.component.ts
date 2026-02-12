@@ -51,7 +51,7 @@ import Highcharts from 'highcharts';
             <p class="section-subtitle">{{ 'audiences.metrics.subtitle' | i18n }}</p>
 
             <div class="metrics-grid">
-              <div class="metrics-card">
+              <div class="metrics-card glass-card">
                 <div class="metrics-card-header">
                   <h3>{{ 'audiences.metrics.volume.title' | i18n }}</h3>
                   <span class="metrics-note">{{ 'audiences.metrics.volume.note' | i18n }}</span>
@@ -64,7 +64,7 @@ import Highcharts from 'highcharts';
                 </div>
               </div>
 
-              <div class="metrics-card">
+              <div class="metrics-card glass-card">
                 <div class="metrics-card-header">
                   <h3>{{ 'audiences.metrics.outcomes.title' | i18n }}</h3>
                   <span class="metrics-note">{{ 'audiences.metrics.outcomes.note' | i18n }}</span>
@@ -89,7 +89,7 @@ import Highcharts from 'highcharts';
 
             <div class="documents-grid">
               <!-- Document Card 1 -->
-              <div class="document-card">
+              <div class="document-card glass-card">
                 <div class="document-preview">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 260" fill="none">
                     <rect width="200" height="260" fill="#ffffff" />
@@ -119,7 +119,7 @@ import Highcharts from 'highcharts';
               </div>
 
               <!-- Document Card 2 -->
-              <div class="document-card">
+              <div class="document-card glass-card">
                 <div class="document-preview">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 260" fill="none">
                     <rect width="200" height="260" fill="#ffffff" />
@@ -149,7 +149,7 @@ import Highcharts from 'highcharts';
               </div>
 
               <!-- Document Card 3 -->
-              <div class="document-card">
+              <div class="document-card glass-card">
                 <div class="document-preview">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 260" fill="none">
                     <rect width="200" height="260" fill="#ffffff" />
@@ -179,7 +179,7 @@ import Highcharts from 'highcharts';
               </div>
 
               <!-- Document Card 4 -->
-              <div class="document-card">
+              <div class="document-card glass-card">
                 <div class="document-preview">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 260" fill="none">
                     <rect width="200" height="260" fill="#ffffff" />
