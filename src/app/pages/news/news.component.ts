@@ -142,7 +142,7 @@ import Highcharts from 'highcharts';
   `,
   styles: [`
     .page-container {
-      padding-top: 80px;
+      padding-top: 0;
       background: white;
       min-height: 100vh;
     }
