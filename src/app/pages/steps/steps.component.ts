@@ -258,7 +258,10 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
       background: linear-gradient(135deg, rgba(44, 62, 80, 0.95), rgba(52, 73, 94, 0.95)),
                   url('https://placehold.co/1920x400') center/cover;
       color: white;
-      padding: 100px 0;
+      height: 265px;
+      padding: 0;
+      display: flex;
+      align-items: center;
     }
 
     .hero-grid {
@@ -269,7 +272,7 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
     }
 
     .hero-left h1 {
-      font-size: 5rem;
+      font-size: 3.2rem;
       font-weight: 700;
       margin: 0;
       letter-spacing: 4px;
@@ -298,44 +301,65 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
     /* Tabs Section */
     .tabs-section {
       background: white;
-      border-bottom: 1px solid #e0e0e0;
+      border-bottom: 1px solid rgba(26, 41, 66, 0.08);
+      padding: 20px 0;
     }
 
     .tabs {
       display: flex;
       gap: 0;
       align-items: center;
+      background: #f5f7fb;
+      border: 1px solid rgba(26, 41, 66, 0.12);
+      border-radius: 999px;
+      padding: 6px;
+      box-shadow: 0 12px 30px rgba(26, 41, 66, 0.08);
     }
 
     .tab {
       flex: 1;
       text-align: center;
-      padding: 20px 30px;
-      font-size: 0.95rem;
-      font-weight: 500;
-      color: #666;
+      padding: 14px 28px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: #5b6470;
       background: transparent;
       border: none;
-      border-bottom: 3px solid transparent;
-      transition: all 0.3s ease;
+      border-radius: 999px;
+      transition: color 0.25s ease, background 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
       cursor: pointer;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
     }
 
     .tab:hover {
-      color: #2c3e50;
-      background: #f8f8f8;
+      color: #1a1a1a;
+      background: rgba(255, 255, 255, 0.7);
+      transform: translateY(-1px);
     }
 
     .tab.active {
-      color: #2c3e50;
-      border-bottom-color: #8B6914;
-      font-weight: 600;
+      color: #1a1a1a;
+      background: #ffffff;
+      box-shadow: 0 10px 18px rgba(26, 41, 66, 0.12);
+      position: relative;
+    }
+
+    .tab.active::after {
+      content: '';
+      position: absolute;
+      left: 14px;
+      right: 14px;
+      bottom: -4px;
+      height: 3px;
+      background: linear-gradient(90deg, #8b6914, #d6b56f);
+      border-radius: 999px;
     }
 
     .tab-separator {
-      width: 1px;
-      height: 30px;
-      background: #d0d0d0;
+      width: 0;
+      height: 0;
+      background: transparent;
       flex-shrink: 0;
     }
 
@@ -467,34 +491,44 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
       }
 
       .hero-left h1 {
-        font-size: 4rem;
+        font-size: 2.8rem;
       }
     }
 
     @media (max-width: 768px) {
       .hero-section {
-        padding: 80px 0;
+        height: 265px;
+        padding: 0;
+        overflow: hidden;
       }
 
       .hero-left h1 {
-        font-size: 3rem;
+        font-size: 2.3rem;
       }
 
       .hero-right p {
-        font-size: 1rem;
+        font-size: 0.95rem;
+        line-height: 1.6;
+        margin-bottom: 12px;
       }
 
       .tabs {
         flex-direction: column;
+        border-radius: 18px;
       }
 
       .tab {
-        border-bottom: 1px solid #e0e0e0;
-        border-right: none;
+        width: 100%;
       }
 
       .tab.active {
-        border-bottom-color: #8B6914;
+        box-shadow: 0 8px 16px rgba(26, 41, 66, 0.1);
+      }
+
+      .tab.active::after {
+        left: 24px;
+        right: 24px;
+        bottom: -2px;
       }
 
       .tab-separator {
@@ -521,16 +555,20 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
 
     @media (max-width: 480px) {
       .hero-section {
-        padding: 60px 0;
+        height: 250px;
+        padding: 0;
+        overflow: hidden;
       }
 
       .hero-left h1 {
-        font-size: 2.5rem;
-        letter-spacing: 2px;
+        font-size: 2.1rem;
+        letter-spacing: 1.5px;
       }
 
       .hero-right p {
-        font-size: 0.95rem;
+        font-size: 0.85rem;
+        line-height: 1.5;
+        margin-bottom: 10px;
       }
 
       .form-header h2 {
