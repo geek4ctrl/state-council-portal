@@ -480,8 +480,6 @@ type HighchartsStatic = typeof import('highcharts');
     </div>
   `,
   styles: [`
-    @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Source+Sans+3:wght@300;400;500;600&display=swap');
-
     .page-container {
       min-height: 100vh;
       background: #0a1929;
@@ -877,8 +875,8 @@ type HighchartsStatic = typeof import('highcharts');
 
     /* Services Info Section */
     .services-info-section {
-      --services-heading-font: 'Cormorant Garamond', 'Times New Roman', serif;
-      --services-body-font: 'Source Sans 3', 'Segoe UI', sans-serif;
+      --services-heading-font: 'Georgia', 'Times New Roman', serif;
+      --services-body-font: 'Trebuchet MS', 'Segoe UI', sans-serif;
       background: #ffffff;
       padding: 80px 0 90px 0;
       position: relative;
@@ -977,8 +975,8 @@ type HighchartsStatic = typeof import('highcharts');
 
     /* Services Section */
     .services-section {
-      --services-heading-font: 'Cormorant Garamond', 'Times New Roman', serif;
-      --services-body-font: 'Source Sans 3', 'Segoe UI', sans-serif;
+      --services-heading-font: 'Georgia', 'Times New Roman', serif;
+      --services-body-font: 'Trebuchet MS', 'Segoe UI', sans-serif;
       background: linear-gradient(180deg, #f2f3f7 0%, #ffffff 100%);
       padding: 90px 0 100px;
       position: relative;
