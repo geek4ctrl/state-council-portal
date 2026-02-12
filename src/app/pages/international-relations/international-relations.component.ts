@@ -489,10 +489,11 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
     }
 
     .domain-card {
-      background: #f8f8f8;
+      background: white;
       padding: 30px;
       transition: all 0.3s ease;
-      border: none;
+      border: 1px solid #e0e0e0;
+      border-radius: 8px;
     }
 
     .domain-card:hover {
@@ -553,6 +554,10 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
       gap: 50px;
     }
 
+    .collaboration-text {
+      flex: 1;
+    }
+
     .collaboration-text h2 {
       font-size: 1.8rem;
       margin-bottom: 15px;
@@ -581,6 +586,7 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
       text-transform: uppercase;
       letter-spacing: 1px;
       white-space: nowrap;
+      flex-shrink: 0;
     }
 
     .contact-btn:hover {
@@ -711,55 +717,111 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
       color: #BF9874;
     }
 
-    @media (max-width: 1024px) {
-      .offer-grid,
-      .practice-grid,
-      .newsletter-grid {
+    /* ========================================
+       RESPONSIVE DESIGN - MEDIA QUERIES
+       ======================================== */
+
+    /* Large Tablets & Small Desktops (1024px - 1199px) */
+    @media (max-width: 1199px) {
+      .container {
+        padding: 0 30px;
+      }
+
+      .hero-title h1 {
+        font-size: 3.5rem;
+      }
+
+      .hero-grid {
+        gap: 50px;
+      }
+
+      .vertical-line {
+        height: 150px;
+      }
+
+      .section-header h2 {
+        font-size: 2.2rem;
+      }
+
+      .domain-grid {
         grid-template-columns: repeat(2, 1fr);
-      }
-
-      .quick-links-container {
-        flex-wrap: wrap;
-      }
-
-      .president-content {
-        grid-template-columns: 380px 1fr;
-      }
-
-      .info-left {
-        gap: 20px;
-      }
-
-      .info-item span {
-        font-size: 0.75rem;
+        gap: 25px;
       }
     }
 
-    @media (max-width: 768px) {
-      .quick-links-container,
-      .offer-grid,
-      .practice-grid,
-      .newsletter-grid {
-        grid-template-columns: 1fr;
+    /* Tablets (768px - 1023px) */
+    @media (max-width: 1023px) {
+      .hero-section {
+        padding: 100px 0;
       }
 
-      .president-content {
-        grid-template-columns: 1fr;
+      .hero-title h1 {
+        font-size: 3rem;
+        letter-spacing: 2px;
       }
 
-      .contact-bar {
-        flex-direction: column;
+      .hero-grid {
+        gap: 40px;
+      }
+
+      .vertical-line {
+        height: 130px;
+      }
+
+      .hero-description p {
+        font-size: 1rem;
+      }
+
+      .stats-section,
+      .networks-section,
+      .cooperation-section {
+        padding: 80px 0;
+      }
+
+      .stat-number {
+        font-size: 3rem;
+      }
+
+      .section-header h2 {
+        font-size: 2rem;
+      }
+
+      .network-cards {
+        gap: 30px;
+      }
+
+      .card-content {
+        padding: 25px 25px 25px 35px;
+      }
+
+      .collaboration-content {
+        gap: 40px;
+      }
+
+      .collaboration-text h2 {
+        font-size: 1.6rem;
       }
 
       .footer-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
       }
-
     }
 
-    @media (max-width: 768px) {
+    /* Mobile Landscape & Small Tablets (576px - 767px) */
+    @media (max-width: 767px) {
+      .container {
+        padding: 0 20px;
+      }
+
       .hero-section {
         padding: 80px 0;
+      }
+
+      .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        text-align: center;
       }
 
       .hero-title h1 {
@@ -767,35 +829,122 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
         letter-spacing: 2px;
       }
 
+      .vertical-line {
+        width: 80px;
+        height: 3px;
+        margin: 0 auto;
+      }
+
       .hero-description p {
         font-size: 0.95rem;
+        line-height: 1.7;
+      }
+
+      .stats-section,
+      .networks-section,
+      .cooperation-section {
+        padding: 60px 0;
       }
 
       .stats-grid {
         flex-direction: column;
-        gap: 30px;
+        gap: 35px;
       }
 
       .stat-separator {
         display: none;
       }
 
+      .stat-number {
+        font-size: 2.8rem;
+      }
+
       .section-header {
         gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
       }
 
       .section-header h2 {
-        font-size: 2rem;
+        font-size: 1.8rem;
+        white-space: normal;
+        text-align: center;
+      }
+
+      .section-header.centered {
+        flex-direction: column;
       }
 
       .header-line,
       .header-line-left,
       .header-line-right {
-        flex: 0 0 40px;
+        flex: 0 0 50px;
+      }
+
+      .section-subtitle {
+        font-size: 0.85rem;
+        margin-bottom: 40px;
+      }
+
+      .network-cards {
+        grid-template-columns: 1fr;
+        gap: 25px;
+      }
+
+      .card-content {
+        padding: 25px;
+      }
+
+      .network-card h3 {
+        font-size: 1.3rem;
+      }
+
+      .network-description {
+        font-size: 0.9rem;
       }
 
       .domain-grid {
         grid-template-columns: 1fr;
+        gap: 20px;
+      }
+
+      .domain-card {
+        padding: 25px;
+      }
+
+      .domain-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+      }
+
+      .collaboration-section {
+        padding: 50px 0;
+      }
+
+      .collaboration-content {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+      }
+
+      .collaboration-text h2 {
+        font-size: 1.5rem;
+      }
+
+      .collaboration-text p {
+        font-size: 0.95rem;
+      }
+
+      .contact-btn {
+        width: 100%;
+        padding: 14px 30px;
+      }
+
+      .footer-logo-wrapper {
+        width: 100px;
+        height: 100px;
+        top: -35px;
       }
 
       .footer-grid {
@@ -803,8 +952,9 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
         gap: 35px;
       }
 
-      .footer-bottom {
+      .footer-bottom-content {
         flex-direction: column;
+        gap: 15px;
         text-align: center;
       }
 
@@ -813,7 +963,12 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
       }
     }
 
-    @media (max-width: 480px) {
+    /* Mobile Portrait (up to 575px) */
+    @media (max-width: 575px) {
+      .container {
+        padding: 0 15px;
+      }
+
       .hero-section {
         padding: 60px 0;
       }
@@ -823,16 +978,171 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
         letter-spacing: 1.5px;
       }
 
+      .vertical-line {
+        width: 60px;
+        height: 2px;
+      }
+
+      .hero-description p {
+        font-size: 0.9rem;
+      }
+
+      .stats-section,
+      .networks-section,
+      .cooperation-section {
+        padding: 50px 0;
+      }
+
+      .stats-grid {
+        gap: 30px;
+      }
+
       .stat-number {
         font-size: 2.5rem;
+      }
+
+      .stat-divider {
+        width: 50px;
+      }
+
+      .stat-label {
+        font-size: 0.85rem;
+      }
+
+      .section-header {
+        gap: 15px;
       }
 
       .section-header h2 {
         font-size: 1.5rem;
       }
 
-      .section-header {
-        gap: 15px;
+      .header-line,
+      .header-line-left,
+      .header-line-right {
+        flex: 0 0 40px;
+      }
+
+      .section-subtitle {
+        font-size: 0.8rem;
+        margin-bottom: 35px;
+      }
+
+      .network-cards {
+        gap: 20px;
+      }
+
+      .card-content {
+        padding: 20px;
+      }
+
+      .network-card h3 {
+        font-size: 1.2rem;
+      }
+
+      .network-full-name {
+        font-size: 0.85rem;
+      }
+
+      .network-description {
+        font-size: 0.85rem;
+      }
+
+      .domain-grid {
+        gap: 18px;
+      }
+
+      .domain-card {
+        padding: 20px;
+      }
+
+      .domain-icon {
+        width: 45px;
+        height: 45px;
+        min-width: 45px;
+      }
+
+      .domain-icon svg {
+        width: 22px;
+        height: 22px;
+      }
+
+      .domain-card h3 {
+        font-size: 1rem;
+      }
+
+      .domain-card p {
+        font-size: 0.85rem;
+      }
+
+      .collaboration-section {
+        padding: 40px 0;
+      }
+
+      .collaboration-text h2 {
+        font-size: 1.3rem;
+      }
+
+      .collaboration-text p {
+        font-size: 0.9rem;
+      }
+
+      .contact-btn {
+        padding: 12px 25px;
+        font-size: 0.8rem;
+      }
+
+      .footer-logo-wrapper {
+        width: 90px;
+        height: 90px;
+        top: -30px;
+      }
+
+      .footer-main {
+        padding: 50px 0 30px;
+      }
+
+      .footer-grid {
+        gap: 30px;
+        padding-top: 30px;
+      }
+
+      .footer-column h3 {
+        font-size: 1rem;
+      }
+
+      .footer-column p,
+      .footer-column ul li a {
+        font-size: 0.85rem;
+      }
+
+      .footer-bottom {
+        padding: 20px 0;
+      }
+
+      .copyright,
+      .privacy-link {
+        font-size: 0.8rem;
+      }
+
+      .social-icon {
+        width: 32px;
+        height: 32px;
+      }
+    }
+
+    /* Extra Small Devices (up to 374px) */
+    @media (max-width: 374px) {
+      .hero-title h1 {
+        font-size: 1.8rem;
+      }
+
+      .stat-number {
+        font-size: 2.2rem;
+      }
+
+      .section-header h2 {
+        font-size: 1.3rem;
       }
 
       .header-line,
@@ -841,9 +1151,49 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
         flex: 0 0 30px;
       }
 
+      .network-card h3 {
+        font-size: 1.1rem;
+      }
+
+      .domain-card {
+        padding: 18px;
+      }
+
+      .collaboration-text h2 {
+        font-size: 1.2rem;
+      }
+
       .contact-btn {
-        width: 100%;
-        padding: 14px 30px;
+        padding: 10px 20px;
+        font-size: 0.75rem;
+      }
+    }
+
+    /* Landscape Orientation Fixes */
+    @media (max-height: 600px) and (orientation: landscape) {
+      .hero-section {
+        padding: 50px 0;
+      }
+
+      .stats-section,
+      .networks-section,
+      .cooperation-section {
+        padding: 40px 0;
+      }
+    }
+
+    /* Reduce Motion for Accessibility */
+    @media (prefers-reduced-motion: reduce) {
+      .network-card,
+      .domain-card,
+      .contact-btn,
+      .social-icon {
+        transition: none;
+      }
+
+      .domain-card:hover,
+      .contact-btn:hover {
+        transform: none;
       }
     }
   `]

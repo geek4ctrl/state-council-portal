@@ -345,6 +345,7 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
       margin: 0;
       letter-spacing: 2px;
       font-family: 'Playfair Display', serif;
+     color: #ffffff;
     }
 
     .vertical-line {
@@ -806,6 +807,7 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
     .copyright {
       font-size: 0.85rem;
       color: #555;
+      margin: 0;
     }
 
     .privacy-link {
@@ -819,63 +821,137 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
       color: #BF9874;
     }
 
-    @media (max-width: 1024px) {
-      .offer-grid,
-      .practice-grid,
-      .newsletter-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
+    /* ==================== RESPONSIVE MEDIA QUERIES ==================== */
 
-      .quick-links-container {
-        flex-wrap: wrap;
-      }
-
-      .president-content {
-        grid-template-columns: 380px 1fr;
-      }
-
-      .info-left {
-        gap: 20px;
-      }
-
-      .info-item span {
-        font-size: 0.75rem;
-      }
-    }
-
-    @media (max-width: 768px) {
-      .quick-links-container,
-      .offer-grid,
-      .practice-grid,
-      .newsletter-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .president-content {
-        grid-template-columns: 1fr;
-      }
-
-      .contact-bar {
-        flex-direction: column;
-      }
-
-      .footer-grid {
-        grid-template-columns: 1fr;
-      }
-
-    }
-
-    @media (max-width: 768px) {
+    /* Large Desktop (1440px and above) */
+    @media (min-width: 1440px) {
       .container {
-        padding: 0 25px;
+        max-width: 1400px;
+      }
+
+      .hero-content-left h1 {
+        font-size: 4rem;
+      }
+
+      .section-title,
+      .section-title-stakeholders {
+        font-size: 3rem;
+      }
+    }
+
+    /* Medium Desktop (1024px - 1280px) */
+    @media (max-width: 1280px) {
+      .hero-grid {
+        gap: 45px;
+      }
+
+      .hero-content-left h1 {
+        font-size: 3rem;
+      }
+
+      .process-flow-container {
+        gap: 2px;
+      }
+
+      .arrow-connector {
+        width: 80px;
+        left: calc(100% - 20px);
+      }
+
+      .stakeholders-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+      }
+    }
+
+    /* Tablet Landscape (900px - 1024px) */
+    @media (max-width: 1024px) {
+      .container {
+        padding: 0 30px;
       }
 
       .hero-section {
         padding: 80px 0;
       }
 
+      .hero-grid {
+        grid-template-columns: 1fr auto 1fr;
+        gap: 40px;
+      }
+
       .hero-content-left h1 {
-        font-size: 2.25rem;
+        font-size: 2.5rem;
+      }
+
+      .vertical-line {
+        height: 100px;
+      }
+
+      .hero-content-right p {
+        font-size: 1rem;
+      }
+
+      .building-section,
+      .initiatives-section,
+      .stakeholders-section {
+        padding: 70px 0;
+      }
+
+      .section-title,
+      .section-title-stakeholders {
+        font-size: 2.2rem;
+      }
+
+      .section-description {
+        font-size: 0.95rem;
+        max-width: 800px;
+      }
+
+      .process-flow-container {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        margin: 50px 0 60px;
+      }
+
+      .arrow-connector {
+        display: none;
+      }
+
+      .completion-badge {
+        display: none;
+      }
+
+      .stakeholders-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+      }
+
+      .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+      }
+    }
+
+    /* Tablet Portrait (768px - 900px) */
+    @media (max-width: 900px) {
+      .hero-section {
+        padding: 70px 0;
+      }
+
+      .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        text-align: center;
+      }
+
+      .vertical-line {
+        width: 100px;
+        height: 2px;
+        margin: 0 auto;
+      }
+
+      .hero-content-left h1 {
+        font-size: 2.2rem;
       }
 
       .building-section,
@@ -884,18 +960,146 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
         padding: 60px 0;
       }
 
-      .section-title {
+      .section-title,
+      .section-title-stakeholders {
         font-size: 2rem;
       }
 
       .process-flow-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+      }
+
+      .step-content {
+        padding: 25px 20px;
+      }
+
+      .step-content h3 {
+        font-size: 1rem;
+      }
+
+      .step-content p {
+        font-size: 0.85rem;
+      }
+
+      .stakeholders-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+      }
+
+      .stakeholders-header {
+        gap: 20px;
+      }
+
+      .header-line {
+        width: 80px;
+      }
+
+      .section-title-stakeholders {
+        font-size: 1.8rem;
+        letter-spacing: 2px;
+      }
+
+      .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 35px;
+      }
+    }
+
+    /* Mobile Landscape / Small Tablet (600px - 768px) */
+    @media (max-width: 768px) {
+      .container {
+        padding: 0 25px;
+      }
+
+      .hero-section {
+        padding: 60px 0;
+      }
+
+      .hero-content-left h1 {
+        font-size: 2rem;
+        letter-spacing: 1px;
+      }
+
+      .hero-content-right p {
+        font-size: 0.95rem;
+      }
+
+      .vertical-line {
+        width: 80px;
+      }
+
+      .building-section,
+      .initiatives-section,
+      .stakeholders-section {
+        padding: 50px 0;
+      }
+
+      .section-tag {
+        gap: 12px;
+      }
+
+      .tag-line {
+        width: 50px;
+      }
+
+      .section-tag span {
+        font-size: 0.7rem;
+      }
+
+      .section-title,
+      .section-title-stakeholders {
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+      }
+
+      .section-description {
+        font-size: 0.9rem;
+        margin-bottom: 40px;
+      }
+
+      .process-flow-container {
         grid-template-columns: 1fr;
-        gap: 30px;
+        gap: 20px;
+        margin: 40px 0 50px;
+      }
+
+      .step-number {
+        width: 45px;
+        height: 45px;
+        font-size: 1.1rem;
+        margin-bottom: 20px;
+      }
+
+      .step-icon-wrapper {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 15px;
+      }
+
+      .step-icon-wrapper svg {
+        width: 30px;
+        height: 30px;
+      }
+
+      .step-content h3 {
+        font-size: 0.95rem;
+        margin-bottom: 12px;
+      }
+
+      .step-content p {
+        font-size: 0.8rem;
+        margin-bottom: 15px;
+      }
+
+      .step-badge {
+        padding: 5px 12px;
+        font-size: 0.65rem;
       }
 
       .stakeholders-grid {
         grid-template-columns: 1fr;
-        gap: 25px;
+        gap: 20px;
       }
 
       .stakeholders-header {
@@ -908,36 +1112,313 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
       }
 
       .section-title-stakeholders {
-        font-size: 1.75rem;
-        letter-spacing: 2px;
+        font-size: 1.6rem;
+      }
+
+      .section-subtitle {
+        font-size: 0.8rem;
+        margin-bottom: 30px;
+      }
+
+      .stakeholder-info {
+        padding: 20px 15px;
+      }
+
+      .stakeholder-info h3 {
+        font-size: 0.95rem;
+      }
+
+      .stakeholder-role {
+        font-size: 0.8rem;
+      }
+
+      .footer-main {
+        padding: 50px 0 30px;
+      }
+
+      .footer-logo-wrapper {
+        width: 100px;
+        height: 100px;
+        top: -35px;
+      }
+
+      .footer-logo-wrapper svg {
+        width: 65px;
+        height: 65px;
       }
 
       .footer-grid {
         grid-template-columns: 1fr;
-        gap: 35px;
+        gap: 30px;
+        padding-top: 30px;
       }
 
-      .footer-bottom {
+      .footer-column h3 {
+        font-size: 1rem;
+        margin-bottom: 15px;
+      }
+
+      .footer-column p,
+      .footer-column ul li a {
+        font-size: 0.85rem;
+      }
+
+      .footer-bottom-content {
         flex-direction: column;
+        gap: 15px;
         text-align: center;
       }
 
       .social-icons {
-        justify-content: center;
+        order: -1;
       }
     }
 
-    @media (max-width: 480px) {
+    /* Mobile Portrait (480px - 600px) */
+    @media (max-width: 600px) {
       .hero-section {
-        padding: 60px 0;
+        padding: 50px 0;
       }
 
       .hero-content-left h1 {
-        font-size: 1.75rem;
+        font-size: 1.8rem;
+      }
+
+      .building-section,
+      .initiatives-section,
+      .stakeholders-section {
+        padding: 45px 0;
+      }
+
+      .section-title,
+      .section-title-stakeholders {
+        font-size: 1.6rem;
+      }
+
+      .process-flow-container {
+        margin: 35px 0 40px;
+      }
+
+      .step-content {
+        padding: 20px 18px;
+      }
+    }
+
+    /* Small Mobile (320px - 480px) */
+    @media (max-width: 480px) {
+      .container {
+        padding: 0 20px;
+      }
+
+      .hero-section {
+        padding: 40px 0;
+      }
+
+      .hero-content-left h1 {
+        font-size: 1.6rem;
+        letter-spacing: 0.5px;
+      }
+
+      .hero-content-right p {
+        font-size: 0.9rem;
+        line-height: 1.6;
+      }
+
+      .vertical-line {
+        width: 60px;
+      }
+
+      .building-section,
+      .initiatives-section,
+      .stakeholders-section {
+        padding: 40px 0;
+      }
+
+      .tag-line {
+        width: 40px;
+      }
+
+      .section-tag span {
+        font-size: 0.65rem;
       }
 
       .section-title {
-        font-size: 1.6rem;
+        font-size: 1.5rem;
+        margin-bottom: 18px;
+      }
+
+      .section-title-stakeholders {
+        font-size: 1.4rem;
+        letter-spacing: 1.5px;
+      }
+
+      .section-description {
+        font-size: 0.85rem;
+        margin-bottom: 35px;
+      }
+
+      .process-flow-container {
+        margin: 30px 0 35px;
+        gap: 18px;
+      }
+
+      .step-number {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+        margin-bottom: 18px;
+      }
+
+      .step-content {
+        padding: 18px 15px;
+      }
+
+      .step-icon-wrapper {
+        width: 55px;
+        height: 55px;
+        margin-bottom: 12px;
+      }
+
+      .step-icon-wrapper svg {
+        width: 28px;
+        height: 28px;
+      }
+
+      .step-content h3 {
+        font-size: 0.9rem;
+        margin-bottom: 10px;
+      }
+
+      .step-content p {
+        font-size: 0.75rem;
+        line-height: 1.6;
+        margin-bottom: 12px;
+      }
+
+      .step-badge {
+        padding: 4px 10px;
+        font-size: 0.6rem;
+      }
+
+      .stakeholders-header {
+        gap: 12px;
+      }
+
+      .header-line {
+        width: 50px;
+      }
+
+      .section-subtitle {
+        font-size: 0.75rem;
+        margin-bottom: 25px;
+      }
+
+      .stakeholder-info {
+        padding: 18px 12px;
+      }
+
+      .stakeholder-info h3 {
+        font-size: 0.9rem;
+        margin-bottom: 6px;
+      }
+
+      .stakeholder-role {
+        font-size: 0.75rem;
+      }
+
+      .footer-main {
+        padding: 45px 0 25px;
+      }
+
+      .footer-logo-wrapper {
+        width: 90px;
+        height: 90px;
+        top: -30px;
+      }
+
+      .footer-logo-wrapper svg {
+        width: 55px;
+        height: 55px;
+      }
+
+      .footer-grid {
+        gap: 25px;
+        padding-top: 25px;
+      }
+
+      .footer-column h3 {
+        font-size: 0.95rem;
+        margin-bottom: 12px;
+      }
+
+      .footer-column p,
+      .footer-column ul li a {
+        font-size: 0.8rem;
+        line-height: 1.6;
+      }
+
+      .footer-column ul li {
+        margin-bottom: 10px;
+      }
+
+      .footer-bottom {
+        padding: 20px 0;
+      }
+
+      .copyright,
+      .privacy-link {
+        font-size: 0.75rem;
+      }
+
+      .social-icon {
+        width: 32px;
+        height: 32px;
+      }
+
+      .social-icon svg {
+        width: 14px;
+        height: 14px;
+      }
+    }
+
+    /* Extra Small Mobile (below 375px) */
+    @media (max-width: 375px) {
+      .hero-content-left h1 {
+        font-size: 1.4rem;
+      }
+
+      .section-title {
+        font-size: 1.3rem;
+      }
+
+      .section-title-stakeholders {
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+      }
+
+      .step-content h3 {
+        font-size: 0.85rem;
+      }
+    }
+
+    /* Landscape Orientation for Mobile Devices */
+    @media (max-height: 500px) and (orientation: landscape) {
+      .hero-section {
+        padding: 35px 0;
+      }
+
+      .hero-content-left h1 {
+        font-size: 1.8rem;
+      }
+
+      .vertical-line {
+        height: 60px;
+      }
+
+      .building-section,
+      .initiatives-section,
+      .stakeholders-section {
+        padding: 35px 0;
       }
     }
   `]
