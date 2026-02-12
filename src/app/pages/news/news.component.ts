@@ -52,7 +52,7 @@ import Highcharts from 'highcharts';
             <p class="insights-subtitle">{{ 'news.insights.subtitle' | i18n }}</p>
 
             <div class="insights-grid">
-              <div class="insight-card">
+              <div class="insight-card glass-card">
                 <div class="insight-card-header">
                   <h4>{{ 'news.insights.topics.title' | i18n }}</h4>
                   <span class="insight-note">{{ 'news.insights.topics.note' | i18n }}</span>
@@ -65,7 +65,7 @@ import Highcharts from 'highcharts';
                 </div>
               </div>
 
-              <div class="insight-card">
+              <div class="insight-card glass-card">
                 <div class="insight-card-header">
                   <h4>{{ 'news.insights.cadence.title' | i18n }}</h4>
                   <span class="insight-note">{{ 'news.insights.cadence.note' | i18n }}</span>
@@ -87,7 +87,7 @@ import Highcharts from 'highcharts';
               }
             } @else {
               @for (article of newsArticles; track article.id) {
-                <article class="news-card">
+                <article class="news-card glass-card">
                   <div class="news-image">
                     <img [src]="article.image" [alt]="article.titleKey | i18n" loading="lazy">
                   </div>
@@ -173,6 +173,7 @@ import Highcharts from 'highcharts';
       font-weight: 700;
       margin: 0;
       letter-spacing: 4px;
+      color: #ffffff;
     }
 
     .hero-right p {
@@ -180,6 +181,7 @@ import Highcharts from 'highcharts';
       line-height: 1.8;
       margin: 0;
       opacity: 0.95;
+      color: #ffffff;
     }
 
     /* News Section */
@@ -537,6 +539,12 @@ export class NewsComponent implements OnInit, AfterViewInit {
   private seoService = inject(SeoService);
   private readonly destroyRef = inject(DestroyRef);
   private chartInstances: Highcharts.Chart[] = [];
+  private resizeObserver?: ResizeObserver;
+  private readonly handleVisibilityChange = () => {
+    if (!document.hidden) {
+      this.reflowCharts();
+    }
+  };
 
   @ViewChild('newsCategoryChart', { static: true })
   newsCategoryChart!: ElementRef<HTMLDivElement>;
@@ -564,10 +572,27 @@ export class NewsComponent implements OnInit, AfterViewInit {
 
   ngAfterViewInit() {
     this.renderNewsCharts();
+    this.setupChartObservers([this.newsCategoryChart, this.newsCadenceChart]);
     this.destroyRef.onDestroy(() => {
       this.chartInstances.forEach(chart => chart.destroy());
       this.chartInstances = [];
+      document.removeEventListener('visibilitychange', this.handleVisibilityChange);
+      this.resizeObserver?.disconnect();
+      this.resizeObserver = undefined;
     });
+  }
+
+  private setupChartObservers(containers: ElementRef<HTMLDivElement>[]) {
+    if (typeof ResizeObserver !== 'undefined') {
+      this.resizeObserver = new ResizeObserver(() => this.reflowCharts());
+      containers.forEach(container => this.resizeObserver?.observe(container.nativeElement));
+    }
+
+    document.addEventListener('visibilitychange', this.handleVisibilityChange);
+  }
+
+  private reflowCharts() {
+    this.chartInstances.forEach(chart => chart.reflow());
   }
 
   private renderNewsCharts() {

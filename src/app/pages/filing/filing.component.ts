@@ -105,14 +105,14 @@ import { SeoService } from '../../services/seo.service';
     }
 
     .hero-left h1 {
-      font-size: 4rem;
+      font-size: 5rem;
       font-weight: 700;
       margin: 0;
-      letter-spacing: 3px;
+      letter-spacing: 4px;
     }
 
     .hero-right p {
-      font-size: 1.1rem;
+      font-size: 1.05rem;
       line-height: 1.8;
       margin: 0;
       opacity: 0.95;
@@ -261,7 +261,7 @@ import { SeoService } from '../../services/seo.service';
       }
 
       .hero-left h1 {
-        font-size: 3rem;
+        font-size: 4rem;
       }
     }
 
@@ -271,7 +271,7 @@ import { SeoService } from '../../services/seo.service';
       }
 
       .hero-left h1 {
-        font-size: 2.5rem;
+        font-size: 3rem;
       }
 
       .hero-right p {
@@ -311,7 +311,7 @@ import { SeoService } from '../../services/seo.service';
       }
 
       .hero-left h1 {
-        font-size: 2rem;
+        font-size: 2.5rem;
         letter-spacing: 2px;
       }
 

@@ -51,7 +51,7 @@ import Highcharts from 'highcharts';
             <p class="section-subtitle">{{ 'audiences.metrics.subtitle' | i18n }}</p>
 
             <div class="metrics-grid">
-              <div class="metrics-card">
+              <div class="metrics-card glass-card">
                 <div class="metrics-card-header">
                   <h3>{{ 'audiences.metrics.volume.title' | i18n }}</h3>
                   <span class="metrics-note">{{ 'audiences.metrics.volume.note' | i18n }}</span>
@@ -64,7 +64,7 @@ import Highcharts from 'highcharts';
                 </div>
               </div>
 
-              <div class="metrics-card">
+              <div class="metrics-card glass-card">
                 <div class="metrics-card-header">
                   <h3>{{ 'audiences.metrics.outcomes.title' | i18n }}</h3>
                   <span class="metrics-note">{{ 'audiences.metrics.outcomes.note' | i18n }}</span>
@@ -89,7 +89,7 @@ import Highcharts from 'highcharts';
 
             <div class="documents-grid">
               <!-- Document Card 1 -->
-              <div class="document-card">
+              <div class="document-card glass-card">
                 <div class="document-preview">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 260" fill="none">
                     <rect width="200" height="260" fill="#ffffff" />
@@ -119,7 +119,7 @@ import Highcharts from 'highcharts';
               </div>
 
               <!-- Document Card 2 -->
-              <div class="document-card">
+              <div class="document-card glass-card">
                 <div class="document-preview">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 260" fill="none">
                     <rect width="200" height="260" fill="#ffffff" />
@@ -149,7 +149,7 @@ import Highcharts from 'highcharts';
               </div>
 
               <!-- Document Card 3 -->
-              <div class="document-card">
+              <div class="document-card glass-card">
                 <div class="document-preview">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 260" fill="none">
                     <rect width="200" height="260" fill="#ffffff" />
@@ -179,7 +179,7 @@ import Highcharts from 'highcharts';
               </div>
 
               <!-- Document Card 4 -->
-              <div class="document-card">
+              <div class="document-card glass-card">
                 <div class="document-preview">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 260" fill="none">
                     <rect width="200" height="260" fill="#ffffff" />
@@ -326,13 +326,14 @@ import Highcharts from 'highcharts';
 
       /* Hero Section */
       .hero-section {
-        background-image: url('/assets/images/audience-hero.jpg');
+        background: linear-gradient(135deg, rgba(44, 62, 80, 0.95), rgba(52, 73, 94, 0.95)),
+                  url('https://placehold.co/1920x400') center/cover;
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
         background-color: #2c3e50;
         color: white;
-        padding: 120px 0;
+        padding: 100px 0;
         position: relative;
       }
 
@@ -353,7 +354,7 @@ import Highcharts from 'highcharts';
 
       .hero-grid {
         display: grid;
-        grid-template-columns: 1fr auto 1.2fr;
+        grid-template-columns: 1.6fr auto 1fr;
         gap: 60px;
         align-items: center;
       }
@@ -365,7 +366,7 @@ import Highcharts from 'highcharts';
 
       .vertical-line {
         width: 3px;
-        height: 180px;
+        height: 150px;
         background-color: #ffffff;
         display: block;
       }
@@ -375,11 +376,11 @@ import Highcharts from 'highcharts';
       }
 
       .hero-title h1 {
-        font-size: 4rem;
+        font-size: 3.6rem;
         font-weight: 700;
-        line-height: 1.15;
+        line-height: 1.05;
         margin: 0;
-        letter-spacing: 3px;
+        letter-spacing: 2px;
         text-transform: uppercase;
         color: #ffffff;
       }
@@ -401,7 +402,7 @@ import Highcharts from 'highcharts';
       /* Understanding Audiences Section */
       .understanding-section {
         margin-bottom: 100px;
-        background: white;
+        background: transparent;
         padding: 0;
       }
 
@@ -850,8 +851,8 @@ import Highcharts from 'highcharts';
         }
 
         .hero-title h1 {
-          font-size: 3rem;
-          letter-spacing: 2px;
+          font-size: 3.2rem;
+          letter-spacing: 1.5px;
         }
 
         .hero-grid {
@@ -859,7 +860,7 @@ import Highcharts from 'highcharts';
         }
 
         .vertical-line {
-          height: 130px;
+          height: 120px;
         }
 
         .hero-description p {
@@ -1310,7 +1311,7 @@ import Highcharts from 'highcharts';
       /* Landscape Orientation Fixes */
       @media (max-height: 600px) and (orientation: landscape) {
         .hero-section {
-          padding: 50px 0;
+          padding: 60px 0;
         }
 
         .content-section {
@@ -1348,13 +1349,36 @@ export class AudiencesComponent implements AfterViewInit {
 
   private readonly destroyRef = inject(DestroyRef);
   private chartInstances: Highcharts.Chart[] = [];
+  private resizeObserver?: ResizeObserver;
+  private readonly handleVisibilityChange = () => {
+    if (!document.hidden) {
+      this.reflowCharts();
+    }
+  };
 
   ngAfterViewInit() {
     this.renderAudienceCharts();
+    this.setupChartObservers([this.monthlyVolumeChart, this.outcomesChart]);
     this.destroyRef.onDestroy(() => {
       this.chartInstances.forEach(chart => chart.destroy());
       this.chartInstances = [];
+      document.removeEventListener('visibilitychange', this.handleVisibilityChange);
+      this.resizeObserver?.disconnect();
+      this.resizeObserver = undefined;
     });
+  }
+
+  private setupChartObservers(containers: ElementRef<HTMLDivElement>[]) {
+    if (typeof ResizeObserver !== 'undefined') {
+      this.resizeObserver = new ResizeObserver(() => this.reflowCharts());
+      containers.forEach(container => this.resizeObserver?.observe(container.nativeElement));
+    }
+
+    document.addEventListener('visibilitychange', this.handleVisibilityChange);
+  }
+
+  private reflowCharts() {
+    this.chartInstances.forEach(chart => chart.reflow());
   }
 
   private renderAudienceCharts() {

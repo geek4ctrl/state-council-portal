@@ -58,7 +58,7 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
           <p class="section-subtitle">{{ 'international.networks.subtitle' | i18n }}</p>
 
           <div class="network-cards">
-            <div class="network-card">
+            <div class="network-card glass-card">
               <div class="card-accent"></div>
               <div class="card-content">
                 <h3>AHJUCAF</h3>
@@ -67,7 +67,7 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
               </div>
             </div>
 
-            <div class="network-card">
+            <div class="network-card glass-card">
               <div class="card-accent"></div>
               <div class="card-content">
                 <h3>AA-HJF</h3>
@@ -90,7 +90,7 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
           <p class="section-subtitle centered">{{ 'international.domains.subtitle' | i18n }}</p>
 
           <div class="domain-grid">
-            <div class="domain-card">
+            <div class="domain-card glass-card">
               <div class="domain-header">
                 <div class="domain-icon">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
@@ -102,7 +102,7 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
               <p>{{ 'international.domains.dialogue.body' | i18n }}</p>
             </div>
 
-            <div class="domain-card">
+            <div class="domain-card glass-card">
               <div class="domain-header">
                 <div class="domain-icon">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
@@ -115,7 +115,7 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
               <p>{{ 'international.domains.assistance.body' | i18n }}</p>
             </div>
 
-            <div class="domain-card">
+            <div class="domain-card glass-card">
               <div class="domain-header">
                 <div class="domain-icon">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
@@ -130,7 +130,7 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
               <p>{{ 'international.domains.capacity.body' | i18n }}</p>
             </div>
 
-            <div class="domain-card">
+            <div class="domain-card glass-card">
               <div class="domain-header">
                 <div class="domain-icon">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">

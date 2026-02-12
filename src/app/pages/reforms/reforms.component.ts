@@ -193,7 +193,7 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
           <p class="section-subtitle">{{ 'reforms.stakeholders.subtitle' | i18n }}</p>
 
           <div class="stakeholders-grid">
-            <div class="stakeholder-card" *ngFor="let stakeholder of stakeholders">
+            <div class="stakeholder-card glass-card" *ngFor="let stakeholder of stakeholders">
               <div class="stakeholder-image">
                 <img [src]="stakeholder.image" [alt]="stakeholder.name">
                 <div class="image-overlay"></div>
