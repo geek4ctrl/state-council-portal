@@ -103,19 +103,41 @@ type HighchartsStatic = typeof import('highcharts');
         </div>
       </section>
 
-      <section class="org-chart-highcharts-section" aria-labelledby="org-chart-highcharts-title">
+      <!-- Organization Chart (Names) Section -->
+      <section class="org-chart-section org-chart-names" aria-labelledby="org-chart-names-title">
         <div class="container">
           <div class="org-chart-header">
             <div class="org-chart-line"></div>
-            <h2 id="org-chart-highcharts-title" class="section-title">{{ 'organization.chart.interactiveTitle' | i18n }}</h2>
+            <h2 id="org-chart-names-title" class="section-title">{{ 'organization.chart.peopleTitle' | i18n }}</h2>
           </div>
-          <p class="org-chart-subtitle">{{ 'organization.chart.interactiveSubtitle' | i18n }}</p>
+          <p class="org-chart-subtitle">{{ 'organization.chart.peopleSubtitle' | i18n }}</p>
 
-          <div
-            #orgChartContainer
-            class="org-chart-highcharts"
-            role="img"
-            [attr.aria-label]="'organization.chart.aria' | i18n">
+          <div class="org-chart" role="list">
+            <div class="org-chart-tier" role="listitem">
+              <div class="org-node primary">
+                {{ 'organization.chart.peopleFirstPresidentName' | i18n }}
+              </div>
+            </div>
+
+            <div class="org-chart-connector" aria-hidden="true"></div>
+
+            <div class="org-chart-tier" role="listitem">
+              @for (president of presidents; track president.slug) {
+                <div class="org-node">
+                  {{ president.name }}
+                </div>
+              }
+            </div>
+
+            <div class="org-chart-connector" aria-hidden="true"></div>
+
+            <div class="org-chart-tier" role="listitem">
+              @for (advisor of advisors; track advisor.slug) {
+                <div class="org-node muted">
+                  {{ advisor.name }}
+                </div>
+              }
+            </div>
           </div>
         </div>
       </section>
@@ -490,7 +512,6 @@ type HighchartsStatic = typeof import('highcharts');
       letter-spacing: 2px;
       margin: 0;
       text-transform: uppercase;
-      font-family: 'Playfair Display', serif;
     }
 
     /* First President Section */
@@ -533,7 +554,6 @@ type HighchartsStatic = typeof import('highcharts');
       font-weight: 300;
       color: white;
       margin: 0 0 25px 0;
-      font-family: 'Playfair Display', serif;
       letter-spacing: 1px;
       padding-bottom: 15px;
       border-bottom: 2px solid #8b7355;
@@ -600,112 +620,102 @@ type HighchartsStatic = typeof import('highcharts');
 
     /* Organization Chart */
     .org-chart-section {
-      padding: 70px 0 40px;
-      background: linear-gradient(180deg, #f8f6f2 0%, #ffffff 100%);
-      border-bottom: 1px solid rgba(26, 41, 66, 0.08);
-    }
-
-    .org-chart-highcharts-section {
-      padding: 50px 0 60px;
-      background: #ffffff;
+      padding: 60px 0 50px;
+      background: linear-gradient(180deg, #faf7f2 0%, #ffffff 100%);
+      border-bottom: 1px solid rgba(26, 41, 66, 0.06);
     }
 
     .org-chart-header {
       display: flex;
+      flex-direction: column;
       align-items: center;
-      gap: 18px;
-      margin-bottom: 10px;
+      gap: 10px;
+      margin-bottom: 14px;
     }
 
     .org-chart-line {
-      width: 60px;
-      height: 3px;
+      width: 52px;
+      height: 2px;
       background: #BF9874;
     }
 
     .org-chart-subtitle {
       font-size: 0.95rem;
       color: #6b5a41;
-      margin: 0 0 28px;
-      max-width: 760px;
-      margin-left: 78px;
+      margin: 0 auto 28px;
+      max-width: 680px;
       line-height: 1.7;
+      text-align: center;
     }
 
     .org-chart {
       display: flex;
       flex-direction: column;
-      gap: 20px;
+      gap: 18px;
+      align-items: center;
     }
 
     .org-chart-tier {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 16px;
+      gap: 14px 18px;
     }
 
     .org-node {
       background: #ffffff;
-      border: 1px solid rgba(26, 41, 66, 0.12);
-      padding: 14px 20px;
-      border-radius: 12px;
+      border: 1px solid rgba(26, 41, 66, 0.1);
+      padding: 12px 22px;
+      border-radius: 14px;
       font-weight: 600;
       color: #1a1a1a;
       text-transform: uppercase;
-      letter-spacing: 1px;
-      font-size: 0.75rem;
-      box-shadow: 0 8px 18px rgba(26, 41, 66, 0.12);
+      letter-spacing: 1.2px;
+      font-size: 0.72rem;
+      box-shadow: 0 10px 22px rgba(26, 41, 66, 0.1);
     }
 
     .org-node.primary {
-      background: #1a2942;
+      background: #16243b;
       color: #ffffff;
-      border-color: #1a2942;
+      border-color: #16243b;
+      box-shadow: 0 12px 26px rgba(22, 36, 59, 0.2);
     }
 
     .org-node.muted {
-      background: rgba(191, 152, 116, 0.12);
-      border-color: rgba(191, 152, 116, 0.4);
-      color: #4b3b2a;
+      background: #f6efe7;
+      border-color: #e1c7b2;
+      color: #5a4634;
     }
 
     .org-chart-connector {
-      height: 22px;
+      height: 18px;
       width: 2px;
-      background: rgba(26, 41, 66, 0.2);
+      background: rgba(26, 41, 66, 0.18);
       margin: 0 auto;
     }
 
-    .org-chart-highcharts {
-      width: 100%;
-      min-height: 520px;
-      border: 1px solid rgba(26, 41, 66, 0.08);
-      box-shadow: 0 12px 30px rgba(26, 41, 66, 0.12);
-      background: #ffffff;
-      position: relative;
-      overflow-x: auto;
-      overflow-y: hidden;
+    .org-chart-names .org-chart {
+      gap: 16px;
     }
 
-    .org-chart-highcharts .highcharts-container {
-      margin: 0 auto;
+    .org-chart-names .org-chart-tier {
+      gap: 12px 14px;
     }
 
-    .org-node-label {
-      width: 220px;
+    .org-chart-names .org-node {
+      padding: 10px 16px;
+      font-size: 0.68rem;
+      letter-spacing: 1px;
+      max-width: 220px;
       text-align: center;
-      display: flex;
-      align-items: center;
-      justify-content: center;
       line-height: 1.2;
+      word-break: break-word;
     }
 
-    .org-chart-highcharts .highcharts-data-label > span {
-      width: 220px;
-      text-align: center;
+    .org-chart-names .org-node.primary {
+      font-size: 0.7rem;
     }
-
     .filter-group input,
     .filter-group select {
       background: #1a2942;
@@ -740,7 +750,6 @@ type HighchartsStatic = typeof import('highcharts');
       text-align: left;
       margin: 0 0 40px 0;
       letter-spacing: 2px;
-      font-family: 'Playfair Display', serif;
     }
 
     .members-grid {
@@ -863,7 +872,6 @@ type HighchartsStatic = typeof import('highcharts');
       text-align: center;
       margin: 0 0 50px 0;
       letter-spacing: 2px;
-      font-family: 'Playfair Display', serif;
     }
 
     .services-grid {
@@ -920,7 +928,6 @@ type HighchartsStatic = typeof import('highcharts');
       text-align: center;
       margin: 0 0 10px 0;
       letter-spacing: 1px;
-      font-family: 'Playfair Display', serif;
     }
 
     .section-subheading {
@@ -1225,17 +1232,6 @@ type HighchartsStatic = typeof import('highcharts');
         font-size: 3rem;
       }
 
-      .org-chart-section {
-        padding: 60px 0 30px;
-      }
-
-      .org-chart-header {
-        flex-wrap: wrap;
-      }
-
-      .org-node {
-        font-size: 0.7rem;
-      }
     }
 
     /* Desktop and Laptop (1024px - 1439px) */
@@ -1244,17 +1240,6 @@ type HighchartsStatic = typeof import('highcharts');
         max-width: 1100px;
       }
 
-      .org-chart-section {
-        padding: 50px 0 25px;
-      }
-
-      .org-chart-line {
-        width: 40px;
-      }
-
-      .org-node {
-        padding: 12px 16px;
-      }
     }
 
     /* Medium Desktop / Small Laptop (1024px - 1280px) */
@@ -1273,10 +1258,6 @@ type HighchartsStatic = typeof import('highcharts');
 
       .services-grid {
         grid-template-columns: repeat(3, 1fr);
-      }
-
-      .org-chart-highcharts {
-        min-height: 480px;
       }
 
       .footer-grid {
@@ -1325,15 +1306,6 @@ type HighchartsStatic = typeof import('highcharts');
         padding-top: 10px;
       }
 
-      .org-chart-highcharts .highcharts-container {
-        min-width: 900px;
-      }
-
-      .org-node-label,
-      .org-chart-highcharts .highcharts-data-label > span {
-        width: 200px;
-      }
-
       .members-grid {
         grid-template-columns: repeat(3, 1fr);
         gap: 15px;
@@ -1356,10 +1328,6 @@ type HighchartsStatic = typeof import('highcharts');
       .footer-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 40px;
-      }
-
-      .org-chart-highcharts {
-        min-height: 440px;
       }
     }
 
@@ -1573,41 +1541,6 @@ type HighchartsStatic = typeof import('highcharts');
         order: -1;
       }
 
-      .org-chart-highcharts {
-        min-height: 380px;
-      }
-
-      .org-chart-highcharts::before,
-      .org-chart-highcharts::after {
-        content: '';
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        width: 24px;
-        pointer-events: none;
-        z-index: 2;
-      }
-
-      .org-chart-highcharts::before {
-        left: 0;
-        background: linear-gradient(90deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0));
-      }
-
-      .org-chart-highcharts::after {
-        right: 0;
-        background: linear-gradient(270deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0));
-      }
-
-      .org-chart-highcharts .highcharts-container {
-        min-width: 760px;
-      }
-
-      .org-node-label,
-      .org-chart-highcharts .highcharts-data-label > span {
-        width: 180px;
-        font-size: 0.65rem;
-        padding: 6px 10px;
-      }
     }
 
     /* Mobile Portrait (480px - 600px) */
@@ -1656,16 +1589,6 @@ type HighchartsStatic = typeof import('highcharts');
         gap: 25px;
       }
 
-      .org-chart-highcharts .highcharts-container {
-        min-width: 640px;
-      }
-
-      .org-node-label,
-      .org-chart-highcharts .highcharts-data-label > span {
-        width: 160px;
-        font-size: 0.6rem;
-        padding: 6px 8px;
-      }
     }
 
     /* Small Mobile (320px - 480px) */
@@ -1682,21 +1605,6 @@ type HighchartsStatic = typeof import('highcharts');
       .hero-title {
         font-size: 1.4rem;
         letter-spacing: 0.5px;
-      }
-
-      .org-chart-highcharts {
-        min-height: 320px;
-      }
-
-      .org-chart-highcharts .highcharts-container {
-        min-width: 560px;
-      }
-
-      .org-node-label,
-      .org-chart-highcharts .highcharts-data-label > span {
-        width: 150px;
-        font-size: 0.58rem;
-        padding: 5px 8px;
       }
 
       .president-image-large {
@@ -1927,6 +1835,9 @@ export class OrganizationComponent implements OnInit, AfterViewInit {
   private readonly i18n = inject(I18nService);
   private chartInstance?: Chart;
   private highchartsRoot?: HighchartsStatic;
+
+  readonly presidents = this.memberService.presidents;
+  readonly advisors = this.memberService.advisors;
 
   readonly isLoading = signal(true);
   readonly selectedService = signal<string>('divisions');

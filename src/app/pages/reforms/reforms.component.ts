@@ -344,7 +344,6 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
       line-height: 1.2;
       margin: 0;
       letter-spacing: 2px;
-      font-family: 'Playfair Display', serif;
      color: #ffffff;
     }
 
@@ -401,7 +400,6 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
       text-align: center;
       margin: 0 0 25px 0;
       letter-spacing: 1px;
-      font-family: 'Playfair Display', serif;
     }
 
     .section-description {
@@ -608,7 +606,6 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
       text-align: center;
       margin: 0;
       letter-spacing: 3px;
-      font-family: 'Playfair Display', serif;
       text-transform: uppercase;
     }
 
