@@ -2061,7 +2061,7 @@ interface PresidentSlide {
 export class HomeComponent implements OnInit {
   currentSlide = signal(0);
   currentPresidentSlide = signal(0);
-  logo = '/src/assets/logo.png';
+  logo = '/assets/logo.png';
 
   heroSlides: HeroSlide[] = [
     {
