@@ -404,25 +404,6 @@
     border-bottom: 1px solid rgba(255, 255, 255, 0.14);
   }
 
-  .drawer-actions {
-    display: flex;
-    gap: 10px;
-    align-items: center;
-  }
-
-  .drawer-icon {
-    width: 34px;
-    height: 34px;
-    border-radius: 10px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    color: #eef4ff;
-    background: rgba(255, 255, 255, 0.16);
-    border: 1px solid rgba(255, 255, 255, 0.28);
-  }
-
-  .drawer-icon svg,
   .drawer-close svg {
     width: 16px;
     height: 16px;
@@ -473,6 +454,34 @@
     font-size: 1.2rem;
   }
 
+  .nav-menu .dropdown-toggle {
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 999px;
+    padding-left: 14px;
+    padding-right: 14px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .nav-menu .dropdown-toggle::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 20%;
+    bottom: 20%;
+    width: 3px;
+    background: linear-gradient(180deg, #f7d88b, #ffffff);
+    border-radius: 999px;
+  }
+
+  .nav-menu .dropdown-toggle::after {
+    color: #f7d88b;
+  }
+
+  .nav-menu .dropdown-toggle::marker {
+    content: '';
+  }
+
   .dropdown-menu {
     position: static;
     width: 100%;
@@ -486,9 +495,13 @@
     border-radius: 12px;
     background: rgba(255, 255, 255, 0.12);
     border: 1px solid rgba(255, 255, 255, 0.35);
-    color: #ffffff;
+    color: #ffffff !important;
     letter-spacing: 0.5px;
     font-weight: 600;
+  }
+
+  .nav-menu .btn-appointment {
+    color: #ffffff;
   }
 
   .btn-appointment.mobile-only:hover {
