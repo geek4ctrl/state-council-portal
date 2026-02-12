@@ -1,6 +1,17 @@
-import { Component, signal, OnInit } from '@angular/core';
+import {
+  AfterViewInit,
+  ChangeDetectionStrategy,
+  Component,
+  DestroyRef,
+  ElementRef,
+  OnInit,
+  ViewChild,
+  inject,
+  signal
+} from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { I18nPipe } from '../../i18n/i18n.pipe';
+import Highcharts from 'highcharts';
 
 interface HeroSlide {
   id: number;
@@ -20,8 +31,8 @@ interface PresidentSlide {
 
 @Component({
   selector: 'app-home',
-  standalone: true,
   imports: [CommonModule, I18nPipe],
+  changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
 
     <!-- Hero Carousel Section -->
@@ -33,7 +44,6 @@ interface PresidentSlide {
             <div class="hero-text">
               <p class="hero-subtitle">{{ heroSlides[currentSlide()].subtitleKey | i18n }}</p>
               <h1 class="hero-title">{{ heroSlides[currentSlide()].titleKey | i18n }}</h1>
-              <p class="hero-description">{{ heroSlides[currentSlide()].descriptionKey | i18n }}</p>
               <button class="hero-button">{{ heroSlides[currentSlide()].buttonKey | i18n }}</button>
             </div>
           </div>
@@ -64,6 +74,58 @@ interface PresidentSlide {
                   <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
                 </svg>
               </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Key Facts Section -->
+    <section class="key-facts-section" aria-labelledby="key-facts-title">
+      <div class="container">
+        <div class="key-facts-header">
+          <div class="key-facts-line"></div>
+          <h2 id="key-facts-title" class="section-title">{{ 'home.keyFacts.title' | i18n }}</h2>
+        </div>
+        <p class="key-facts-subtitle">{{ 'home.keyFacts.subtitle' | i18n }}</p>
+
+        <div class="key-facts-grid">
+          <div class="key-fact-card">
+            <div class="key-fact-meta">
+              <h3>{{ 'home.keyFacts.cards.volume.title' | i18n }}</h3>
+              <span class="key-fact-note">{{ 'home.keyFacts.cards.volume.note' | i18n }}</span>
+            </div>
+            <div
+              #caseVolumeChart
+              class="key-fact-chart"
+              role="img"
+              [attr.aria-label]="'home.keyFacts.cards.volume.aria' | i18n">
+            </div>
+          </div>
+
+          <div class="key-fact-card">
+            <div class="key-fact-meta">
+              <h3>{{ 'home.keyFacts.cards.processing.title' | i18n }}</h3>
+              <span class="key-fact-note">{{ 'home.keyFacts.cards.processing.note' | i18n }}</span>
+            </div>
+            <div
+              #processingTimeChart
+              class="key-fact-chart"
+              role="img"
+              [attr.aria-label]="'home.keyFacts.cards.processing.aria' | i18n">
+            </div>
+          </div>
+
+          <div class="key-fact-card">
+            <div class="key-fact-meta">
+              <h3>{{ 'home.keyFacts.cards.decisions.title' | i18n }}</h3>
+              <span class="key-fact-note">{{ 'home.keyFacts.cards.decisions.note' | i18n }}</span>
+            </div>
+            <div
+              #decisionsTypeChart
+              class="key-fact-chart"
+              role="img"
+              [attr.aria-label]="'home.keyFacts.cards.decisions.aria' | i18n">
             </div>
           </div>
         </div>
@@ -695,6 +757,79 @@ interface PresidentSlide {
 
     .indicator.active {
       background-color: #BF9874;
+    }
+
+    /* Key Facts Section */
+    .key-facts-section {
+      background: radial-gradient(circle at top left, rgba(191, 152, 116, 0.16), transparent 55%),
+        linear-gradient(180deg, #f8f6f2 0%, #ffffff 100%);
+      padding: 50px 0 40px;
+      border-bottom: 1px solid rgba(26, 41, 66, 0.08);
+    }
+
+    .key-facts-header {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      margin-bottom: 10px;
+    }
+
+    .key-facts-line {
+      width: 60px;
+      height: 3px;
+      background: #BF9874;
+    }
+
+    .key-facts-subtitle {
+      font-size: 0.9rem;
+      color: #6b5a41;
+      margin: 0 0 28px;
+      max-width: 720px;
+      margin-left: calc(60px + 18px);
+      line-height: 1.6;
+    }
+
+    .key-facts-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .key-fact-card {
+      background: rgba(255, 255, 255, 0.96);
+      border-radius: 16px;
+      padding: 18px 18px 12px;
+      border: 1px solid rgba(26, 41, 66, 0.08);
+      box-shadow: 0 12px 24px rgba(26, 41, 66, 0.12);
+    }
+
+    .key-fact-meta {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+
+    .key-fact-meta h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: #1a1a1a;
+      margin: 0;
+    }
+
+    .key-fact-note {
+      font-size: 0.75rem;
+      color: #8b7355;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+
+    .key-fact-chart {
+      width: 100%;
+      height: 220px;
     }
 
     /* Quick Links Section */
@@ -1467,6 +1602,14 @@ interface PresidentSlide {
         font-size: 2rem;
       }
 
+      .key-facts-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .key-facts-subtitle {
+        margin-left: 0;
+      }
+
       .offer-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 25px;
@@ -1529,6 +1672,14 @@ interface PresidentSlide {
 
       .section-title {
         font-size: 1.8rem;
+      }
+
+      .key-facts-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .key-fact-chart {
+        height: 200px;
       }
 
       .section-subtitle {
@@ -1628,6 +1779,18 @@ interface PresidentSlide {
 
       .indicator {
         width: 40px;
+      }
+
+      .key-facts-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .key-facts-subtitle {
+        margin-left: 0;
+      }
+
+      .key-fact-chart {
+        height: 190px;
       }
 
       .quick-links-container {
@@ -2078,7 +2241,19 @@ interface PresidentSlide {
     }
   `]
 })
-export class HomeComponent implements OnInit {
+export class HomeComponent implements OnInit, AfterViewInit {
+  @ViewChild('caseVolumeChart', { static: true })
+  caseVolumeChart!: ElementRef<HTMLDivElement>;
+
+  @ViewChild('processingTimeChart', { static: true })
+  processingTimeChart!: ElementRef<HTMLDivElement>;
+
+  @ViewChild('decisionsTypeChart', { static: true })
+  decisionsTypeChart!: ElementRef<HTMLDivElement>;
+
+  private readonly destroyRef = inject(DestroyRef);
+  private chartInstances: Highcharts.Chart[] = [];
+
   currentSlide = signal(0);
   currentPresidentSlide = signal(0);
   logo = '/assets/logo.png';
@@ -2114,7 +2289,7 @@ export class HomeComponent implements OnInit {
     {
       id: 1,
       titleKey: 'home.president.slides.1.title',
-      image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=800&h=1000&fit=crop',
+      image: 'https://scontent.fpry2-1.fna.fbcdn.net/v/t39.30808-6/481977439_661094752968468_3580912692254417664_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=833d8c&_nc_ohc=781MphyOZxYQ7kNvwFA72Pl&_nc_oc=AdlS3efGmR2NwVl7AluKnrYklBBqsJYuTlJ2j9PkHSisG9RQ-4n7jDHjPIDmj6En6_w&_nc_zt=23&_nc_ht=scontent.fpry2-1.fna&_nc_gid=ECXY9r39JHQUTs-eZefdrQ&oh=00_AfsTzaj3KdpgLrEjgftG5I3y5wMeOJriKEBVHzCL_mVnRA&oe=69939BC0',
       paragraphKeys: [
         'home.president.slides.1.paragraphs.1',
         'home.president.slides.1.paragraphs.2',
@@ -2124,7 +2299,7 @@ export class HomeComponent implements OnInit {
     {
       id: 2,
       titleKey: 'home.president.slides.2.title',
-      image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&h=1000&fit=crop',
+      image: 'https://scontent.fpry2-1.fna.fbcdn.net/v/t39.30808-6/481977439_661094752968468_3580912692254417664_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=833d8c&_nc_ohc=781MphyOZxYQ7kNvwFA72Pl&_nc_oc=AdlS3efGmR2NwVl7AluKnrYklBBqsJYuTlJ2j9PkHSisG9RQ-4n7jDHjPIDmj6En6_w&_nc_zt=23&_nc_ht=scontent.fpry2-1.fna&_nc_gid=ECXY9r39JHQUTs-eZefdrQ&oh=00_AfsTzaj3KdpgLrEjgftG5I3y5wMeOJriKEBVHzCL_mVnRA&oe=69939BC0',
       paragraphKeys: [
         'home.president.slides.2.paragraphs.1',
         'home.president.slides.2.paragraphs.2',
@@ -2134,7 +2309,7 @@ export class HomeComponent implements OnInit {
     {
       id: 3,
       titleKey: 'home.president.slides.3.title',
-      image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&h=1000&fit=crop',
+      image: 'https://scontent.fpry2-1.fna.fbcdn.net/v/t39.30808-6/481977439_661094752968468_3580912692254417664_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=833d8c&_nc_ohc=781MphyOZxYQ7kNvwFA72Pl&_nc_oc=AdlS3efGmR2NwVl7AluKnrYklBBqsJYuTlJ2j9PkHSisG9RQ-4n7jDHjPIDmj6En6_w&_nc_zt=23&_nc_ht=scontent.fpry2-1.fna&_nc_gid=ECXY9r39JHQUTs-eZefdrQ&oh=00_AfsTzaj3KdpgLrEjgftG5I3y5wMeOJriKEBVHzCL_mVnRA&oe=69939BC0',
       paragraphKeys: [
         'home.president.slides.3.paragraphs.1',
         'home.president.slides.3.paragraphs.2',
@@ -2151,6 +2326,142 @@ export class HomeComponent implements OnInit {
     setInterval(() => {
       this.nextPresidentSlide();
     }, 8000);
+  }
+
+  ngAfterViewInit() {
+    this.renderKeyFactsCharts();
+    this.destroyRef.onDestroy(() => {
+      this.chartInstances.forEach(chart => chart.destroy());
+      this.chartInstances = [];
+    });
+  }
+
+  private renderKeyFactsCharts() {
+    const baseAxisLabelStyle = {
+      color: '#6b5a41',
+      fontSize: '11px'
+    };
+
+    const caseVolumeOptions: Highcharts.Options = {
+      chart: {
+        type: 'column',
+        backgroundColor: 'transparent',
+        height: 220,
+        spacing: [10, 10, 0, 10]
+      },
+      title: { text: undefined },
+      credits: { enabled: false },
+      legend: { enabled: false },
+      xAxis: {
+        categories: ['Sep', 'Oct', 'Nov', 'Dec', 'Jan', 'Feb'],
+        labels: { style: baseAxisLabelStyle },
+        lineColor: 'rgba(26, 41, 66, 0.12)',
+        tickColor: 'rgba(26, 41, 66, 0.12)'
+      },
+      yAxis: {
+        title: { text: undefined },
+        labels: { style: baseAxisLabelStyle },
+        gridLineColor: 'rgba(26, 41, 66, 0.08)'
+      },
+      tooltip: {
+        backgroundColor: '#1a2942',
+        style: { color: '#ffffff' },
+        borderColor: '#1a2942'
+      },
+      series: [
+        {
+          type: 'column',
+          name: 'Cases',
+          data: [420, 460, 510, 470, 530, 590],
+          color: '#6b5a41',
+          borderRadius: 4
+        }
+      ]
+    };
+
+    const processingTimeOptions: Highcharts.Options = {
+      chart: {
+        type: 'line',
+        backgroundColor: 'transparent',
+        height: 220,
+        spacing: [10, 10, 0, 10]
+      },
+      title: { text: undefined },
+      credits: { enabled: false },
+      legend: { enabled: false },
+      xAxis: {
+        categories: ['Q1', 'Q2', 'Q3', 'Q4'],
+        labels: { style: baseAxisLabelStyle },
+        lineColor: 'rgba(26, 41, 66, 0.12)',
+        tickColor: 'rgba(26, 41, 66, 0.12)'
+      },
+      yAxis: {
+        title: { text: undefined },
+        labels: { style: baseAxisLabelStyle },
+        gridLineColor: 'rgba(26, 41, 66, 0.08)'
+      },
+      tooltip: {
+        backgroundColor: '#1a2942',
+        style: { color: '#ffffff' },
+        borderColor: '#1a2942',
+        valueSuffix: ' days'
+      },
+      series: [
+        {
+          type: 'line',
+          name: 'Processing time',
+          data: [92, 84, 76, 68],
+          color: '#b8754d',
+          marker: { radius: 4 }
+        }
+      ]
+    };
+
+    const decisionsTypeOptions: Highcharts.Options = {
+      chart: {
+        type: 'pie',
+        backgroundColor: 'transparent',
+        height: 220,
+        spacing: [10, 10, 0, 10]
+      },
+      title: { text: undefined },
+      credits: { enabled: false },
+      legend: {
+        align: 'center',
+        verticalAlign: 'bottom',
+        itemStyle: { color: '#1a1a1a', fontWeight: '600' }
+      },
+      tooltip: {
+        backgroundColor: '#1a2942',
+        style: { color: '#ffffff' },
+        borderColor: '#1a2942',
+        pointFormat: '<b>{point.percentage:.0f}%</b>'
+      },
+      plotOptions: {
+        pie: {
+          innerSize: '55%',
+          dataLabels: { enabled: false }
+        }
+      },
+      series: [
+        {
+          type: 'pie',
+          name: 'Decisions',
+          data: [
+            { name: 'Civil', y: 38, color: '#6b5a41' },
+            { name: 'Public', y: 27, color: '#4e6a8a' },
+            { name: 'Labor', y: 18, color: '#a45858' },
+            { name: 'Other', y: 17, color: '#7f6b4a' }
+          ]
+        }
+      ]
+    };
+
+    this.chartInstances = [
+      Highcharts.chart(this.caseVolumeChart.nativeElement, caseVolumeOptions),
+      Highcharts.chart(this.processingTimeChart.nativeElement, processingTimeOptions),
+      Highcharts.chart(this.decisionsTypeChart.nativeElement, decisionsTypeOptions)
+    ];
   }
 
   nextSlide() {

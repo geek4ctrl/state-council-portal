@@ -74,6 +74,20 @@
       "title": "NOS ACTUALITES",
       "subtitle": "LA VISION FAIT QUI NOUS SOMMES"
     },
+    "insights": {
+      "title": "INDICATEURS D'ACTUALITE",
+      "subtitle": "Tendances par theme et cadence de publication",
+      "topics": {
+        "title": "Themes par mois",
+        "note": "6 derniers mois",
+        "aria": "Themes d'actualite par mois"
+      },
+      "cadence": {
+        "title": "Cadence de publication",
+        "note": "Articles publies",
+        "aria": "Cadence de publication par mois"
+      }
+    },
     "actions": {
       "readMore": "Lire la suite"
     },
@@ -246,6 +260,27 @@
           "title": "PRENDRE RENDEZ-VOUS",
           "body": "Planifiez des consultations avec les responsables de la cour.",
           "action": "Prendre rendez-vous"
+        }
+      }
+    },
+    "keyFacts": {
+      "title": "Chiffres cles",
+      "subtitle": "Volume des affaires, delais de traitement et repartition des decisions en un coup d'oeil.",
+      "cards": {
+        "volume": {
+          "title": "Volume des affaires",
+          "note": "6 derniers mois",
+          "aria": "Volume des affaires par mois"
+        },
+        "processing": {
+          "title": "Delais de traitement",
+          "note": "Moyenne en jours",
+          "aria": "Delais moyens par trimestre"
+        },
+        "decisions": {
+          "title": "Decisions par type",
+          "note": "Annee en cours",
+          "aria": "Decisions par type"
         }
       }
     },
@@ -569,6 +604,20 @@
       "title": "COMPRENDRE LES AUDIENCES",
       "body": "Consultez des informations sur l'organisation des audiences et l'acces aux roles recents."
     },
+    "metrics": {
+      "title": "INDICATEURS DES AUDIENCES",
+      "subtitle": "Volume mensuel des audiences et evolution des resultats.",
+      "volume": {
+        "title": "Volume mensuel des audiences",
+        "note": "6 derniers mois",
+        "aria": "Volume mensuel des audiences"
+      },
+      "outcomes": {
+        "title": "Resultats dans le temps",
+        "note": "Repartition des decisions",
+        "aria": "Resultats des audiences dans le temps"
+      }
+    },
     "recent": {
       "title": "EXTRAITS DE ROLE RECENTS",
       "subtitle": "DERNIERS EXTRAITS D'AUDIENCE"
@@ -610,6 +659,28 @@
       "body": "Le Premier President dirige le Conseil d'Etat, preside ses sessions et veille au bon fonctionnement de l'institution."
     },
     "seniorLabel": "MAGISTRATS SUPERIEURS",
+    "chart": {
+      "title": "ORGANIGRAMME",
+      "subtitle": "Apercu de la structure de direction et des divisions clefs du Conseil d'Etat.",
+      "interactiveTitle": "ORGANIGRAMME INTERACTIF",
+      "interactiveSubtitle": "Explorez la hierarchie et les liens de reporting.",
+      "aria": "Organigramme interactif",
+      "roles": {
+        "firstPresident": "Premier President",
+        "president": "President",
+        "advisor": "Conseiller"
+      },
+      "nodes": {
+        "firstPresident": "Premier President",
+        "plenary": "Assemblee pleniere",
+        "councilOffice": "Bureau du Conseil",
+        "registry": "Greffe et archives",
+        "civilChamber": "Chambre civile",
+        "criminalChamber": "Chambre criminelle",
+        "commercialChamber": "Chambre commerciale",
+        "socialChamber": "Chambre sociale"
+      }
+    },
     "filters": {
       "searchLabel": "Rechercher des membres",
       "searchPlaceholder": "Rechercher par nom ou titre",

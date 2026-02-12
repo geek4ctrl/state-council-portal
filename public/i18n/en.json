@@ -74,6 +74,20 @@
       "title": "OUR NEWSFEEDS",
       "subtitle": "VISION MAKES US WHO WE ARE"
     },
+    "insights": {
+      "title": "NEWS INSIGHTS",
+      "subtitle": "Trends by topic and publication cadence",
+      "topics": {
+        "title": "Topics by month",
+        "note": "Last 6 months",
+        "aria": "News topics by month"
+      },
+      "cadence": {
+        "title": "Publication cadence",
+        "note": "Articles published",
+        "aria": "Publication cadence by month"
+      }
+    },
     "actions": {
       "readMore": "Read more"
     },
@@ -246,6 +260,27 @@
           "title": "BOOK APPOINTMENT",
           "body": "Schedule consultations with court officials.",
           "action": "Book Now"
+        }
+      }
+    },
+    "keyFacts": {
+      "title": "Key Facts",
+      "subtitle": "Case volume, processing time, and decision mix at a glance.",
+      "cards": {
+        "volume": {
+          "title": "Case Volume",
+          "note": "Last 6 months",
+          "aria": "Case volume by month"
+        },
+        "processing": {
+          "title": "Processing Time",
+          "note": "Average days",
+          "aria": "Average processing time by quarter"
+        },
+        "decisions": {
+          "title": "Decisions by Type",
+          "note": "Current year",
+          "aria": "Decisions by type"
         }
       }
     },
@@ -569,6 +604,20 @@
       "title": "UNDERSTANDING AUDIENCES",
       "body": "Find guidance on how audiences are organized and how to consult recent rolls."
     },
+    "metrics": {
+      "title": "HEARING METRICS",
+      "subtitle": "Monthly hearing volume and outcomes over time.",
+      "volume": {
+        "title": "Monthly hearing volume",
+        "note": "Last 6 months",
+        "aria": "Monthly hearing volume"
+      },
+      "outcomes": {
+        "title": "Outcomes over time",
+        "note": "Decision mix",
+        "aria": "Hearing outcomes over time"
+      }
+    },
     "recent": {
       "title": "RECENT ROLE EXCERPTS",
       "subtitle": "LATEST HEARING EXCERPTS"
@@ -610,6 +659,28 @@
       "body": "The First President leads the State Council, presides over its sessions, and ensures the proper functioning of the institution."
     },
     "seniorLabel": "SENIOR MAGISTRATES",
+    "chart": {
+      "title": "ORGANIZATION CHART",
+      "subtitle": "Overview of the leadership structure and core divisions of the State Council.",
+      "interactiveTitle": "INTERACTIVE ORG CHART",
+      "interactiveSubtitle": "Explore the hierarchy and reporting structure.",
+      "aria": "Interactive organization chart",
+      "roles": {
+        "firstPresident": "First President",
+        "president": "President",
+        "advisor": "Advisor"
+      },
+      "nodes": {
+        "firstPresident": "First President",
+        "plenary": "Plenary Assembly",
+        "councilOffice": "Council Office",
+        "registry": "Registry and Archives",
+        "civilChamber": "Civil Chamber",
+        "criminalChamber": "Criminal Chamber",
+        "commercialChamber": "Commercial Chamber",
+        "socialChamber": "Social Chamber"
+      }
+    },
     "filters": {
       "searchLabel": "Search members",
       "searchPlaceholder": "Search by name or title",
