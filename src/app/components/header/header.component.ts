@@ -51,6 +51,7 @@ export class HeaderComponent {
 
   toggleMobileMenu() {
     this.isMobileMenuOpen.set(!this.isMobileMenuOpen());
+    this.syncBodyMenuState();
     if (!this.isMobileMenuOpen()) {
       this.closeDropdowns();
     }
@@ -63,7 +64,16 @@ export class HeaderComponent {
 
   closeMobileMenu() {
     this.isMobileMenuOpen.set(false);
+    this.syncBodyMenuState();
     this.closeDropdowns();
+  }
+
+  private syncBodyMenuState() {
+    if (typeof document === 'undefined') {
+      return;
+    }
+
+    document.body.classList.toggle('menu-open', this.isMobileMenuOpen());
   }
 
   navigateToAppointment() {

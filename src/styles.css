@@ -45,6 +45,14 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+body.menu-open {
+  overflow: hidden;
+}
+
+body.menu-open .mobile-nav {
+  display: none;
+}
+
 a {
   color: var(--accent-strong);
   text-decoration: none;
