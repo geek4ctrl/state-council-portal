@@ -410,12 +410,24 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
       background: #c9a961;
     }
 
-    .section-subtitle {
+    /* Networks Section Subtitle - LEFT ALIGNED */
+    .networks-section .section-subtitle {
       font-size: 0.9rem;
       color: #c9a961;
       margin: 0 0 60px 0;
       line-height: 1.7;
       letter-spacing: 1.5px;
+      text-align: left;
+    }
+
+    /* Cooperation Section Subtitle - CENTERED */
+    .cooperation-section .section-subtitle {
+      font-size: 0.9rem;
+      color: #c9a961;
+      margin: 0 0 60px 0;
+      line-height: 1.7;
+      letter-spacing: 1.5px;
+      text-align: center;
     }
 
     .section-subtitle.centered {
@@ -786,6 +798,11 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
         font-size: 2rem;
       }
 
+      /* Maintain left alignment on tablets */
+      .networks-section .section-subtitle {
+        text-align: left;
+      }
+
       .network-cards {
         gap: 30px;
       }
@@ -881,9 +898,17 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
         flex: 0 0 50px;
       }
 
-      .section-subtitle {
+      /* Maintain left alignment on mobile */
+      .networks-section .section-subtitle {
         font-size: 0.85rem;
         margin-bottom: 40px;
+        text-align: left;
+      }
+
+      .cooperation-section .section-subtitle {
+        font-size: 0.85rem;
+        margin-bottom: 40px;
+        text-align: center;
       }
 
       .network-cards {
@@ -1023,9 +1048,17 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
         flex: 0 0 40px;
       }
 
-      .section-subtitle {
+      /* Maintain left alignment on small mobile */
+      .networks-section .section-subtitle {
         font-size: 0.8rem;
         margin-bottom: 35px;
+        text-align: left;
+      }
+
+      .cooperation-section .section-subtitle {
+        font-size: 0.8rem;
+        margin-bottom: 35px;
+        text-align: center;
       }
 
       .network-cards {
@@ -1149,6 +1182,11 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
       .header-line-left,
       .header-line-right {
         flex: 0 0 30px;
+      }
+
+      /* Maintain left alignment on extra small devices */
+      .networks-section .section-subtitle {
+        text-align: left;
       }
 
       .network-card h3 {
