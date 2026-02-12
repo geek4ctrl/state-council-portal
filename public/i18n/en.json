@@ -665,6 +665,9 @@
       "interactiveTitle": "INTERACTIVE ORG CHART",
       "interactiveSubtitle": "Explore the hierarchy and reporting structure.",
       "aria": "Interactive organization chart",
+      "peopleTitle": "LEADERSHIP BY NAME",
+      "peopleSubtitle": "Names of the First President, Presidents, and Advisors.",
+      "peopleFirstPresidentName": "PROF. NGOMBA KABEYYA ELIE LEON",
       "roles": {
         "firstPresident": "First President",
         "president": "President",

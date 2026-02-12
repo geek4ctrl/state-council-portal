@@ -665,6 +665,9 @@
       "interactiveTitle": "ORGANIGRAMME INTERACTIF",
       "interactiveSubtitle": "Explorez la hierarchie et les liens de reporting.",
       "aria": "Organigramme interactif",
+      "peopleTitle": "DIRECTION PAR NOM",
+      "peopleSubtitle": "Noms du Premier President, des Presidents et des Conseillers.",
+      "peopleFirstPresidentName": "PROF. NGOMBA KABEYYA ELIE LEON",
       "roles": {
         "firstPresident": "Premier President",
         "president": "President",
