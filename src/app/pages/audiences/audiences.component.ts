@@ -44,23 +44,13 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
               <!-- Document Card 1 -->
               <div class="document-card">
                 <div class="document-preview">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 260" fill="none">
-                    <rect width="200" height="260" fill="#ffffff" />
-                    <rect x="20" y="30" width="160" height="8" fill="#ddd" />
-                    <rect x="20" y="50" width="140" height="6" fill="#eee" />
-                    <rect x="20" y="70" width="160" height="4" fill="#eee" />
-                    <rect x="20" y="80" width="160" height="4" fill="#eee" />
-                    <rect x="20" y="90" width="120" height="4" fill="#eee" />
-                    <rect x="20" y="110" width="160" height="4" fill="#eee" />
-                    <rect x="20" y="120" width="160" height="4" fill="#eee" />
-                    <rect x="20" y="130" width="140" height="4" fill="#eee" />
-                  </svg>
-                  <div class="document-label">
+                  <img src="https://images.unsplash.com/photo-1568667256549-094345857637?w=300&h=400&fit=crop&q=80" alt="PDF Preview">
+                </div>
+                <div class="document-info">
+                  <div class="document-meta">
                     <span class="label-text">{{ 'audiences.documents.civil.label' | i18n }}</span>
                     <span class="label-date">18/01/26</span>
                   </div>
-                </div>
-                <div class="document-info">
                   <h3>{{ 'audiences.documents.civil.title' | i18n }}</h3>
                   <button class="download-btn">
                     {{ 'audiences.actions.downloadPdf' | i18n }}
@@ -74,23 +64,13 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
               <!-- Document Card 2 -->
               <div class="document-card">
                 <div class="document-preview">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 260" fill="none">
-                    <rect width="200" height="260" fill="#ffffff" />
-                    <rect x="20" y="30" width="160" height="8" fill="#ddd" />
-                    <rect x="20" y="50" width="140" height="6" fill="#eee" />
-                    <rect x="20" y="70" width="160" height="4" fill="#eee" />
-                    <rect x="20" y="80" width="160" height="4" fill="#eee" />
-                    <rect x="20" y="90" width="120" height="4" fill="#eee" />
-                    <rect x="20" y="110" width="160" height="4" fill="#eee" />
-                    <rect x="20" y="120" width="160" height="4" fill="#eee" />
-                    <rect x="20" y="130" width="140" height="4" fill="#eee" />
-                  </svg>
-                  <div class="document-label">
+                  <img src="https://images.unsplash.com/photo-1554224311-beee460201f9?w=300&h=400&fit=crop&q=80" alt="PDF Preview">
+                </div>
+                <div class="document-info">
+                  <div class="document-meta">
                     <span class="label-text">{{ 'audiences.documents.criminal.label' | i18n }}</span>
                     <span class="label-date">18/01/26</span>
                   </div>
-                </div>
-                <div class="document-info">
                   <h3>{{ 'audiences.documents.criminal.title' | i18n }}</h3>
                   <button class="download-btn">
                     {{ 'audiences.actions.downloadPdf' | i18n }}
@@ -104,23 +84,13 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
               <!-- Document Card 3 -->
               <div class="document-card">
                 <div class="document-preview">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 260" fill="none">
-                    <rect width="200" height="260" fill="#ffffff" />
-                    <rect x="20" y="30" width="160" height="8" fill="#ddd" />
-                    <rect x="20" y="50" width="140" height="6" fill="#eee" />
-                    <rect x="20" y="70" width="160" height="4" fill="#eee" />
-                    <rect x="20" y="80" width="160" height="4" fill="#eee" />
-                    <rect x="20" y="90" width="120" height="4" fill="#eee" />
-                    <rect x="20" y="110" width="160" height="4" fill="#eee" />
-                    <rect x="20" y="120" width="160" height="4" fill="#eee" />
-                    <rect x="20" y="130" width="140" height="4" fill="#eee" />
-                  </svg>
-                  <div class="document-label">
+                  <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=300&h=400&fit=crop&q=80" alt="PDF Preview">
+                </div>
+                <div class="document-info">
+                  <div class="document-meta">
                     <span class="label-text">{{ 'audiences.documents.social.label' | i18n }}</span>
                     <span class="label-date">12/01/26</span>
                   </div>
-                </div>
-                <div class="document-info">
                   <h3>{{ 'audiences.documents.social.title' | i18n }}</h3>
                   <button class="download-btn">
                     {{ 'audiences.actions.downloadPdf' | i18n }}
@@ -134,23 +104,13 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
               <!-- Document Card 4 -->
               <div class="document-card">
                 <div class="document-preview">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 260" fill="none">
-                    <rect width="200" height="260" fill="#ffffff" />
-                    <rect x="20" y="30" width="160" height="8" fill="#ddd" />
-                    <rect x="20" y="50" width="140" height="6" fill="#eee" />
-                    <rect x="20" y="70" width="160" height="4" fill="#eee" />
-                    <rect x="20" y="80" width="160" height="4" fill="#eee" />
-                    <rect x="20" y="90" width="120" height="4" fill="#eee" />
-                    <rect x="20" y="110" width="160" height="4" fill="#eee" />
-                    <rect x="20" y="120" width="160" height="4" fill="#eee" />
-                    <rect x="20" y="130" width="140" height="4" fill="#eee" />
-                  </svg>
-                  <div class="document-label">
+                  <img src="https://images.unsplash.com/photo-1586075010923-2dd4570fb338?w=300&h=400&fit=crop&q=80" alt="PDF Preview">
+                </div>
+                <div class="document-info">
+                  <div class="document-meta">
                     <span class="label-text">{{ 'audiences.documents.general.label' | i18n }}</span>
                     <span class="label-date">08/01/26</span>
                   </div>
-                </div>
-                <div class="document-info">
                   <h3>{{ 'audiences.documents.general.title' | i18n }}</h3>
                   <button class="download-btn">
                     {{ 'audiences.actions.downloadPdf' | i18n }}
@@ -348,35 +308,40 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
 
       /* Content Section */
       .content-section {
-        padding: 100px 0 80px;
+        padding: 0 0 80px;
         background: #fafafa;
       }
 
       /* Understanding Audiences Section */
       .understanding-section {
-        margin-bottom: 100px;
-        background: white;
-        padding: 0;
+        margin-bottom: 0;
+        background: #f5f5f5;
+        padding: 50px 60px;
+        border-radius: 0;
       }
 
       .understanding-section h2 {
-        font-size: 2rem;
+        font-size: 1.5rem;
         color: #1a1a1a;
-        margin-bottom: 25px;
+        margin-bottom: 20px;
         font-weight: 600;
         letter-spacing: 0.5px;
+        text-align: left;
       }
 
       .understanding-section p {
-        font-size: 1rem;
-        line-height: 1.9;
+        font-size: 0.95rem;
+        line-height: 1.75;
         color: #666;
-        text-align: justify;
+        text-align: left;
+        margin: 0;
       }
 
       /* Schedules Section */
       .schedules-section {
         margin-bottom: 80px;
+        margin-top: 0;
+        padding-top: 60px;
       }
 
       .section-header {
@@ -408,6 +373,7 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
         text-transform: uppercase;
         letter-spacing: 2.5px;
         font-weight: 400;
+        text-align: left;
       }
 
       /* Documents Grid */
@@ -453,34 +419,31 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
         transform: scale(1.05);
       }
 
-      .document-label {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background: transparent !important;
-        padding: 12px 15px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        color: black;
-        font-size: 0.8rem;
-        gap: 8px;
-        flex-wrap: wrap;
-      }
-
-      .label-text {
-        font-weight: 400;
-      }
-
-      .label-date {
-        font-weight: 600;
-        color: #c9a961;
-      }
-
       .document-info {
         padding: 25px 20px;
         background: white;
+      }
+
+      .document-meta {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 15px;
+        padding-bottom: 12px;
+        border-bottom: 1px solid #f0f0f0;
+      }
+
+      .label-text {
+        font-size: 0.85rem;
+        font-weight: 500;
+        color: #1a1a1a;
+        text-transform: capitalize;
+      }
+
+      .label-date {
+        font-size: 0.85rem;
+        font-weight: 600;
+        color: #c9a961;
       }
 
       .document-info h3 {
@@ -490,6 +453,7 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
         font-weight: 600;
         line-height: 1.5;
         min-height: 50px;
+        text-align: left;
       }
 
       .download-btn {
@@ -533,10 +497,6 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
         box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
       }
 
-      .assistance-content {
-        flex: 1;
-      }
-
       .assistance-content h2 {
         font-size: 1.8rem;
         color: #1a1a1a;
@@ -565,7 +525,6 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
         transition: all 0.3s ease;
         letter-spacing: 1px;
         text-transform: uppercase;
-        flex-shrink: 0;
       }
 
       .contact-btn:hover {
@@ -683,6 +642,7 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
       .copyright {
         font-size: 0.85rem;
         color: #555;
+        margin: 0;
       }
 
       .privacy-link {
@@ -696,30 +656,35 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
         color: #BF9874;
       }
 
-      /* ========================================
-         RESPONSIVE DESIGN - MEDIA QUERIES
-         ======================================== */
+      /* ==================== RESPONSIVE MEDIA QUERIES ==================== */
 
-      /* Large Tablets & Small Desktops (1024px - 1199px) */
-      @media (max-width: 1199px) {
+      /* Large Desktop (1440px and above) */
+      @media (min-width: 1440px) {
         .container {
-          padding: 0 30px;
+          max-width: 1400px;
+        }
+
+        .hero-title h1 {
+          font-size: 4.5rem;
+        }
+
+        .schedules-section h2 {
+          font-size: 3rem;
+        }
+      }
+
+      /* Medium Desktop (1024px - 1280px) */
+      @media (max-width: 1280px) {
+        .hero-grid {
+          gap: 50px;
         }
 
         .hero-title h1 {
           font-size: 3.5rem;
         }
 
-        .hero-grid {
-          gap: 50px;
-        }
-
         .vertical-line {
           height: 150px;
-        }
-
-        .schedules-section h2 {
-          font-size: 2.2rem;
         }
 
         .documents-grid {
@@ -727,24 +692,29 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
           gap: 25px;
         }
 
-        .document-preview {
-          height: 280px;
+        .assistance-section {
+          padding: 45px 50px;
         }
       }
 
-      /* Tablets (768px - 1023px) */
-      @media (max-width: 1023px) {
+      /* Tablet Landscape (900px - 1024px) */
+      @media (max-width: 1024px) {
+        .container {
+          padding: 0 30px;
+        }
+
         .hero-section {
           padding: 100px 0;
+        }
+
+        .hero-grid {
+          grid-template-columns: 1fr auto 1fr;
+          gap: 40px;
         }
 
         .hero-title h1 {
           font-size: 3rem;
           letter-spacing: 2px;
-        }
-
-        .hero-grid {
-          gap: 40px;
         }
 
         .vertical-line {
@@ -756,27 +726,23 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
         }
 
         .content-section {
-          padding: 80px 0 60px;
+          padding: 0 0 70px;
         }
 
         .understanding-section {
-          margin-bottom: 80px;
+          margin-bottom: 0;
         }
 
         .understanding-section h2 {
           font-size: 1.8rem;
         }
 
-        .understanding-section p {
-          font-size: 0.95rem;
-        }
-
-        .schedules-section {
-          margin-bottom: 60px;
-        }
-
         .schedules-section h2 {
-          font-size: 2rem;
+          font-size: 2.2rem;
+        }
+
+        .section-subtitle {
+          margin-bottom: 50px;
         }
 
         .documents-grid {
@@ -786,11 +752,11 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
         }
 
         .document-preview {
-          height: 260px;
+          height: 280px;
         }
 
         .assistance-section {
-          padding: 45px 50px;
+          padding: 40px 40px;
           gap: 40px;
         }
 
@@ -804,12 +770,8 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
         }
       }
 
-      /* Mobile Landscape & Small Tablets (576px - 767px) */
-      @media (max-width: 767px) {
-        .container {
-          padding: 0 20px;
-        }
-
+      /* Tablet Portrait (768px - 900px) */
+      @media (max-width: 900px) {
         .hero-section {
           padding: 80px 0;
         }
@@ -820,33 +782,109 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
           text-align: center;
         }
 
-        .hero-title h1 {
-          font-size: 2.5rem;
-          letter-spacing: 2px;
+        .hero-title {
+          text-align: center;
         }
 
         .vertical-line {
-          width: 80px;
-          height: 3px;
+          width: 120px;
+          height: 2px;
           margin: 0 auto;
+        }
+
+        .hero-title h1 {
+          font-size: 2.5rem;
         }
 
         .hero-description p {
           font-size: 0.95rem;
+        }
+
+        .content-section {
+          padding: 0 0 60px;
+        }
+
+        .understanding-section {
+          margin-bottom: 0;
+        }
+
+        .understanding-section h2 {
+          font-size: 1.7rem;
+          margin-bottom: 20px;
+        }
+
+        .understanding-section p {
+          font-size: 0.95rem;
+        }
+
+        .section-header {
+          gap: 25px;
+        }
+
+        .header-line {
+          flex: 0 0 50px;
+        }
+
+        .schedules-section h2 {
+          font-size: 2rem;
+        }
+
+        .schedules-section {
+          padding-top: 50px;
+        }
+
+        .section-subtitle {
+          font-size: 0.75rem;
+          margin-bottom: 45px;
+        }
+
+        .document-preview {
+          height: 260px;
+        }
+
+        .assistance-section {
+          padding: 35px 35px;
+        }
+
+        .footer-grid {
+          gap: 35px;
+        }
+      }
+
+      /* Mobile Landscape / Small Tablet (600px - 768px) */
+      @media (max-width: 768px) {
+        .container {
+          padding: 0 25px;
+        }
+
+        .hero-section {
+          padding: 70px 0;
+        }
+
+        .hero-title h1 {
+          font-size: 2.2rem;
+          letter-spacing: 1.5px;
+        }
+
+        .vertical-line {
+          width: 100px;
+        }
+
+        .hero-description p {
+          font-size: 0.9rem;
           line-height: 1.7;
         }
 
         .content-section {
-          padding: 60px 0 50px;
+          padding: 0 0 50px;
         }
 
         .understanding-section {
-          margin-bottom: 60px;
+          margin-bottom: 0;
         }
 
         .understanding-section h2 {
           font-size: 1.6rem;
-          margin-bottom: 20px;
         }
 
         .understanding-section p {
@@ -854,26 +892,28 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
           text-align: left;
         }
 
-        .schedules-section {
-          margin-bottom: 50px;
+        .section-header {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 15px;
         }
 
-        .section-header {
-          gap: 20px;
-          flex-wrap: wrap;
+        .header-line {
+          display: none;
         }
 
         .schedules-section h2 {
           font-size: 1.8rem;
         }
 
-        .header-line {
-          flex: 0 0 50px;
+        .section-subtitle {
+          font-size: 0.7rem;
+          margin-bottom: 40px;
         }
 
-        .section-subtitle {
-          font-size: 0.75rem;
-          margin-bottom: 40px;
+        .schedules-section {
+          margin-bottom: 60px;
+          padding-top: 45px;
         }
 
         .documents-grid {
@@ -897,19 +937,24 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
         }
 
         .download-btn {
-          padding: 10px 18px;
+          padding: 11px 18px;
           font-size: 0.75rem;
+        }
+
+        .download-btn svg {
+          width: 16px;
+          height: 16px;
         }
 
         .assistance-section {
           flex-direction: column;
-          padding: 40px 30px;
-          gap: 30px;
-          text-align: center;
+          padding: 35px 30px;
+          gap: 25px;
         }
 
         .assistance-content h2 {
           font-size: 1.5rem;
+          margin-bottom: 12px;
         }
 
         .assistance-content p {
@@ -918,7 +963,11 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
 
         .contact-btn {
           width: 100%;
-          padding: 14px 30px;
+          padding: 14px 35px;
+        }
+
+        .footer-main {
+          padding: 50px 0 30px;
         }
 
         .footer-logo-wrapper {
@@ -927,9 +976,25 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
           top: -35px;
         }
 
+        .footer-logo-wrapper svg {
+          width: 65px;
+          height: 65px;
+        }
+
         .footer-grid {
           grid-template-columns: 1fr;
-          gap: 35px;
+          gap: 30px;
+          padding-top: 30px;
+        }
+
+        .footer-column h3 {
+          font-size: 1rem;
+          margin-bottom: 15px;
+        }
+
+        .footer-column p,
+        .footer-column ul li a {
+          font-size: 0.85rem;
         }
 
         .footer-bottom-content {
@@ -939,40 +1004,87 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
         }
 
         .social-icons {
-          justify-content: center;
+          order: -1;
         }
       }
 
-      /* Mobile Portrait (up to 575px) */
-      @media (max-width: 575px) {
-        .container {
-          padding: 0 15px;
-        }
-
+      /* Mobile Portrait (480px - 600px) */
+      @media (max-width: 600px) {
         .hero-section {
           padding: 60px 0;
         }
 
         .hero-title h1 {
           font-size: 2rem;
-          letter-spacing: 1.5px;
         }
 
         .vertical-line {
-          width: 60px;
-          height: 2px;
-        }
-
-        .hero-description p {
-          font-size: 0.9rem;
+          width: 80px;
         }
 
         .content-section {
-          padding: 50px 0 40px;
+          padding: 0 0 45px;
         }
 
         .understanding-section {
-          margin-bottom: 50px;
+          margin-bottom: 0;
+        }
+
+        .understanding-section h2 {
+          font-size: 1.5rem;
+        }
+
+        .schedules-section h2 {
+          font-size: 1.6rem;
+        }
+
+        .section-subtitle {
+          margin-bottom: 35px;
+        }
+
+        .document-preview {
+          height: 220px;
+        }
+
+        .assistance-section {
+          padding: 30px 25px;
+        }
+
+        .assistance-content h2 {
+          font-size: 1.4rem;
+        }
+      }
+
+      /* Small Mobile (320px - 480px) */
+      @media (max-width: 480px) {
+        .container {
+          padding: 0 20px;
+        }
+
+        .hero-section {
+          padding: 50px 0;
+        }
+
+        .hero-title h1 {
+          font-size: 1.8rem;
+          letter-spacing: 1px;
+        }
+
+        .vertical-line {
+          width: 70px;
+        }
+
+        .hero-description p {
+          font-size: 0.85rem;
+          line-height: 1.6;
+        }
+
+        .content-section {
+          padding: 0 0 40px;
+        }
+
+        .understanding-section {
+          margin-bottom: 0;
         }
 
         .understanding-section h2 {
@@ -982,42 +1094,35 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
 
         .understanding-section p {
           font-size: 0.85rem;
-          line-height: 1.8;
+          line-height: 1.7;
         }
 
         .schedules-section {
-          margin-bottom: 40px;
-        }
-
-        .section-header {
-          gap: 15px;
+          margin-bottom: 50px;
+          padding-top: 40px;
         }
 
         .schedules-section h2 {
           font-size: 1.5rem;
         }
 
-        .header-line {
-          flex: 0 0 40px;
-        }
-
         .section-subtitle {
-          font-size: 0.7rem;
+          font-size: 0.65rem;
           letter-spacing: 2px;
-          margin-bottom: 35px;
+          margin-bottom: 30px;
         }
 
         .documents-grid {
           gap: 20px;
-          margin-bottom: 40px;
+          margin-bottom: 45px;
         }
 
         .document-preview {
-          height: 220px;
+          height: 200px;
         }
 
         .document-info {
-          padding: 18px 16px;
+          padding: 18px 15px;
         }
 
         .document-info h3 {
@@ -1028,30 +1133,36 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
         .download-btn {
           padding: 10px 16px;
           font-size: 0.7rem;
-          letter-spacing: 0.5px;
+          letter-spacing: 0.6px;
         }
 
         .download-btn svg {
-          width: 16px;
-          height: 16px;
+          width: 15px;
+          height: 15px;
         }
 
         .assistance-section {
-          padding: 35px 25px;
-          gap: 25px;
+          padding: 25px 20px;
+          gap: 20px;
         }
 
         .assistance-content h2 {
           font-size: 1.3rem;
+          margin-bottom: 10px;
         }
 
         .assistance-content p {
           font-size: 0.9rem;
+          line-height: 1.6;
         }
 
         .contact-btn {
-          padding: 12px 25px;
+          padding: 13px 30px;
           font-size: 0.8rem;
+        }
+
+        .footer-main {
+          padding: 45px 0 25px;
         }
 
         .footer-logo-wrapper {
@@ -1060,22 +1171,29 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
           top: -30px;
         }
 
-        .footer-main {
-          padding: 50px 0 30px;
+        .footer-logo-wrapper svg {
+          width: 55px;
+          height: 55px;
         }
 
         .footer-grid {
-          gap: 30px;
-          padding-top: 30px;
+          gap: 25px;
+          padding-top: 25px;
         }
 
         .footer-column h3 {
-          font-size: 1rem;
+          font-size: 0.95rem;
+          margin-bottom: 12px;
         }
 
         .footer-column p,
         .footer-column ul li a {
-          font-size: 0.85rem;
+          font-size: 0.8rem;
+          line-height: 1.6;
+        }
+
+        .footer-column ul li {
+          margin-bottom: 10px;
         }
 
         .footer-bottom {
@@ -1084,19 +1202,28 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
 
         .copyright,
         .privacy-link {
-          font-size: 0.8rem;
+          font-size: 0.75rem;
         }
 
         .social-icon {
           width: 32px;
           height: 32px;
         }
+
+        .social-icon svg {
+          width: 14px;
+          height: 14px;
+        }
       }
 
-      /* Extra Small Devices (up to 374px) */
-      @media (max-width: 374px) {
+      /* Extra Small Mobile (below 375px) */
+      @media (max-width: 375px) {
         .hero-title h1 {
-          font-size: 1.8rem;
+          font-size: 1.6rem;
+        }
+
+        .vertical-line {
+          width: 60px;
         }
 
         .understanding-section h2 {
@@ -1104,71 +1231,42 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
         }
 
         .schedules-section h2 {
-          font-size: 1.3rem;
-        }
-
-        .header-line {
-          flex: 0 0 30px;
+          font-size: 1.4rem;
         }
 
         .document-preview {
-          height: 200px;
-        }
-
-        .document-info {
-          padding: 16px 14px;
-        }
-
-        .document-info h3 {
-          font-size: 0.9rem;
-        }
-
-        .download-btn {
-          padding: 8px 14px;
-          font-size: 0.65rem;
-        }
-
-        .assistance-section {
-          padding: 30px 20px;
+          height: 180px;
         }
 
         .assistance-content h2 {
           font-size: 1.2rem;
         }
-
-        .contact-btn {
-          padding: 10px 20px;
-          font-size: 0.75rem;
-        }
       }
 
-      /* Landscape Orientation Fixes */
-      @media (max-height: 600px) and (orientation: landscape) {
+      /* Landscape Orientation for Mobile Devices */
+      @media (max-height: 500px) and (orientation: landscape) {
         .hero-section {
-          padding: 50px 0;
+          padding: 40px 0;
+        }
+
+        .hero-title h1 {
+          font-size: 2rem;
+        }
+
+        .vertical-line {
+          height: 60px;
         }
 
         .content-section {
           padding: 40px 0 35px;
         }
-      }
 
-      /* Reduce Motion for Accessibility */
-      @media (prefers-reduced-motion: reduce) {
-        .document-card,
-        .contact-btn,
-        .social-icon,
-        .download-btn {
-          transition: none;
+        .understanding-section {
+          margin-bottom: 40px;
         }
 
-        .document-card:hover,
-        .contact-btn:hover {
-          transform: none;
-        }
-
-        .document-card:hover .document-preview img {
-          transform: none;
+        .schedules-section {
+          margin-bottom: 45px;
         }
       }
     `

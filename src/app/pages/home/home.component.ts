@@ -131,7 +131,7 @@ interface PresidentSlide {
           <div class="offer-line"></div>
           <h2 class="section-title">{{ 'home.offer.title' | i18n }}</h2>
         </div>
-        <p class="section-subtitle">{{ 'home.offer.subtitle' | i18n }}</p>
+        <p class="section-subtitle offer-subtitle">{{ 'home.offer.subtitle' | i18n }}</p>
 
         <div class="offer-grid">
           <div class="offer-card">
@@ -200,7 +200,7 @@ interface PresidentSlide {
           <h2 class="section-title">{{ 'home.expertise.title' | i18n }}</h2>
           <div class="expertise-line"></div>
         </div>
-        <p class="section-subtitle">{{ 'home.expertise.subtitle' | i18n }}</p>
+        <p class="section-subtitle expertise-subtitle">{{ 'home.expertise.subtitle' | i18n }}</p>
 
         <div class="practice-grid">
           <a class="practice-card accent-civil" href="#">
@@ -597,6 +597,7 @@ interface PresidentSlide {
     .hero-text {
       max-width: 650px;
       color: white;
+      text-align: left;
     }
 
     .hero-subtitle {
@@ -606,6 +607,7 @@ interface PresidentSlide {
       color: #BF9874;
       margin-bottom: 18px;
       text-transform: uppercase;
+      text-align: left;
     }
 
     .hero-title {
@@ -615,6 +617,7 @@ interface PresidentSlide {
       margin-bottom: 22px;
       color: white;
       text-transform: uppercase;
+      text-align: left;
     }
 
     .hero-description {
@@ -622,6 +625,7 @@ interface PresidentSlide {
       line-height: 1.7;
       color: rgba(255, 255, 255, 0.95);
       margin-bottom: 35px;
+      text-align: left;
     }
 
     .hero-button {
@@ -755,6 +759,7 @@ interface PresidentSlide {
       display: flex;
       flex-direction: column;
       height: 100%;
+      text-align: left;
     }
 
     .quick-link-content h3 {
@@ -765,6 +770,7 @@ interface PresidentSlide {
       text-transform: uppercase;
       letter-spacing: 0.7px;
       line-height: 1.25;
+      text-align: left;
     }
 
     .quick-link-content p {
@@ -772,6 +778,7 @@ interface PresidentSlide {
       color: rgba(255, 255, 255, 0.85);
       line-height: 1.55;
       margin-bottom: 6px;
+      text-align: left;
     }
 
     .quick-link-action {
@@ -785,6 +792,7 @@ interface PresidentSlide {
       margin-top: auto;
       padding-top: 8px;
       line-height: 1.2;
+      text-align: left;
     }
 
     .connector-line {
@@ -820,17 +828,20 @@ interface PresidentSlide {
       font-weight: 700;
       color: #1a1a1a;
       margin: 0;
+      text-align: left;
     }
 
-    .section-subtitle {
+    /* Offer subtitle - LEFT ALIGNED */
+    .offer-subtitle {
       font-size: 0.9rem;
       color: #BF9874;
       margin-top: 10px;
       margin-bottom: 50px;
       line-height: 1.6;
       max-width: 820px;
-      margin-left: calc(3px + 16px);
-      }
+      text-align: left;
+      margin-left: 0;
+    }
 
     .offer-grid {
       display: grid;
@@ -842,6 +853,7 @@ interface PresidentSlide {
       background: white;
       padding: 25px;
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+      text-align: left;
     }
 
     .offer-card-header {
@@ -869,12 +881,14 @@ interface PresidentSlide {
       color: #1a1a1a;
       margin: 0;
       line-height: 1.2;
+      text-align: left;
     }
 
     .offer-card p {
       font-size: 0.85rem;
       color: #666;
       line-height: 1.7;
+      text-align: left;
     }
 
     /* Fields of Expertise */
@@ -928,17 +942,17 @@ interface PresidentSlide {
       font-size: clamp(1.8rem, 2.2vw, 2.6rem);
       letter-spacing: 3px;
       font-weight: 700;
+      text-align: center;
     }
 
-    .expertise-section .section-subtitle {
+    /* Expertise subtitle - CENTERED */
+    .expertise-subtitle {
       text-align: center;
       color: #BF9874;
       font-size: 0.95rem;
       line-height: 1.7;
       margin: 12px auto 52px;
       max-width: 720px;
-      margin-left: 0;
-      margin-left: calc(119px + 103px);
     }
 
     .practice-grid {
@@ -968,6 +982,7 @@ interface PresidentSlide {
       opacity: 0;
       transform: translateY(12px);
       animation: expertise-rise 0.6s ease forwards;
+      text-align: left;
     }
 
     .practice-card:hover {
@@ -1011,12 +1026,14 @@ interface PresidentSlide {
       margin: 0;
       color: #1a1a1a;
       line-height: 1.2;
+      text-align: left;
     }
 
     .practice-content {
       display: flex;
       flex-direction: column;
       height: 100%;
+      text-align: left;
     }
 
     .practice-desc {
@@ -1024,12 +1041,14 @@ interface PresidentSlide {
       color: #6a6a6a;
       line-height: 1.6;
       margin: 0 0 12px 0;
+      text-align: left;
     }
 
     .practice-content ul {
       list-style: none;
       padding: 0;
       margin: 0;
+      text-align: left;
     }
 
     .practice-content li {
@@ -1039,6 +1058,7 @@ interface PresidentSlide {
       position: relative;
       padding-left: 18px;
       line-height: 1.55;
+      text-align: left;
     }
 
     .practice-content li::before {
@@ -1140,6 +1160,10 @@ interface PresidentSlide {
       display: block;
     }
 
+    .president-text {
+      text-align: left;
+    }
+
     .president-text h2 {
       font-size: 2rem;
       font-weight: 800;
@@ -1147,6 +1171,7 @@ interface PresidentSlide {
       margin-bottom: 28px;
       text-transform: uppercase;
       line-height: 1.3;
+      text-align: left;
     }
 
     .president-text p {
@@ -1154,6 +1179,7 @@ interface PresidentSlide {
       line-height: 1.8;
       color: #555;
       margin-bottom: 18px;
+      text-align: left;
     }
 
     .president-learn-btn {
@@ -1219,6 +1245,7 @@ interface PresidentSlide {
       color: white;
       margin: 0;
       letter-spacing: 4px;
+      text-align: center;
     }
 
     .header-line {
@@ -1243,6 +1270,7 @@ interface PresidentSlide {
       display: flex;
       flex-direction: column;
       border: 1px solid transparent;
+      text-align: left;
     }
 
     .news-card:hover {
@@ -1268,6 +1296,7 @@ interface PresidentSlide {
       flex: 1;
       display: flex;
       flex-direction: column;
+      text-align: left;
     }
 
     .news-date {
@@ -1276,6 +1305,7 @@ interface PresidentSlide {
       font-size: 0.75rem;
       margin-bottom: 16px;
       text-transform: uppercase;
+      text-align: left;
     }
 
     .news-content h3 {
@@ -1284,6 +1314,7 @@ interface PresidentSlide {
       line-height: 1.5;
       color: #1a1a1a;
       margin: 0 0 20px 0;
+      text-align: left;
     }
 
     .read-more-link {
@@ -1361,11 +1392,16 @@ interface PresidentSlide {
       padding-top: 40px;
     }
 
+    .footer-column {
+      text-align: left;
+    }
+
     .footer-column h3 {
       color: white;
       font-size: 1.1rem;
       font-weight: 600;
       margin-bottom: 20px;
+      text-align: left;
     }
 
     .footer-column p {
@@ -1373,15 +1409,18 @@ interface PresidentSlide {
       line-height: 1.8;
       margin: 5px 0;
       color: #b0b0b0;
+      text-align: left;
     }
 
     .footer-column ul {
       list-style: none;
       padding: 0;
+      text-align: left;
     }
 
     .footer-column ul li {
       margin-bottom: 12px;
+      text-align: left;
     }
 
     .footer-column ul li a {
@@ -1389,6 +1428,7 @@ interface PresidentSlide {
       text-decoration: none;
       font-size: 0.9rem;
       transition: color 0.3s ease;
+      text-align: left;
     }
 
     .footer-column ul li a:hover {
@@ -1532,11 +1572,6 @@ interface PresidentSlide {
         font-size: 1.8rem;
       }
 
-      .section-subtitle {
-        margin-left: 0 !important;
-        padding-left: 0 !important;
-      }
-
       .expertise-line {
         width: 100px;
       }
@@ -1659,7 +1694,8 @@ interface PresidentSlide {
         font-size: 1.5rem;
       }
 
-      .section-subtitle {
+      .offer-subtitle,
+      .expertise-subtitle {
         font-size: 0.85rem;
       }
 
@@ -1849,7 +1885,8 @@ interface PresidentSlide {
         font-size: 1.3rem;
       }
 
-      .section-subtitle {
+      .offer-subtitle,
+      .expertise-subtitle {
         font-size: 0.8rem;
         margin-bottom: 35px;
       }
@@ -2051,6 +2088,10 @@ interface PresidentSlide {
       .practice-card {
         flex-direction: column;
         align-items: center;
+        text-align: center;
+      }
+
+      .practice-content {
         text-align: center;
       }
 
