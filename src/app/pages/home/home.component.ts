@@ -1211,21 +1211,24 @@ interface PresidentSlide {
     }
 
     .practice-content li {
+      display: flex;
+      align-items: baseline;
+      gap: 10px;
       padding: 6px 0;
       color: #5b5b5b;
       font-size: 0.9rem;
       position: relative;
-      padding-left: 18px;
       line-height: 1.55;
     }
 
     .practice-content li::before {
       content: "•";
-      position: absolute;
-      left: 0;
+      position: static;
+      flex: 0 0 auto;
       color: var(--accent);
       font-weight: bold;
-      font-size: 1.2rem;
+      font-size: 1rem;
+      line-height: 1;
     }
 
     .practice-cta {

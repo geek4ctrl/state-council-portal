@@ -34,14 +34,14 @@
 .mobile-nav {
   position: fixed;
   left: 50%;
-  bottom: 18px;
+  bottom: 14px;
   transform: translateX(-50%);
   background: #f3f6fb;
   border: 1px solid rgba(60, 90, 120, 0.12);
   border-radius: 999px;
-  padding: 12px 18px;
+  padding: 8px 12px;
   display: none;
-  gap: 26px;
+  gap: 16px;
   align-items: center;
   box-shadow: 0 14px 30px rgba(24, 44, 70, 0.12);
   z-index: 1200;
@@ -51,29 +51,29 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 6px;
+  gap: 4px;
   color: #7b85a0;
   text-decoration: none;
-  font-size: 0.8rem;
+  font-size: 0.72rem;
   font-weight: 600;
   letter-spacing: 0.3px;
-  min-width: 58px;
+  min-width: 46px;
 }
 
 .mobile-nav-icon {
-  width: 30px;
-  height: 30px;
+  width: 26px;
+  height: 26px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  border-radius: 12px;
+  border-radius: 10px;
   background: rgba(255, 255, 255, 0.9);
   box-shadow: 0 6px 14px rgba(24, 44, 70, 0.12);
 }
 
 .mobile-nav-icon svg {
-  width: 18px;
-  height: 18px;
+  width: 16px;
+  height: 16px;
 }
 
 .mobile-nav-item.active {
@@ -88,7 +88,7 @@
 @media (max-width: 768px) {
   .mobile-nav {
     display: flex;
-    width: min(92vw, 520px);
+    width: min(90vw, 460px);
     justify-content: space-between;
   }
 }
