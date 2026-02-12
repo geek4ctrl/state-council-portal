@@ -204,14 +204,16 @@ interface PresidentSlide {
 
         <div class="practice-grid">
           <a class="practice-card accent-civil" href="#">
-            <div class="practice-icon">
-              <svg viewBox="0 0 64 64" fill="currentColor">
-                <path d="M38 8L26 8C24 8 22 10 22 12L22 52C22 54 24 56 26 56L38 56C40 56 42 54 42 52L42 12C42 10 40 8 38 8Z"/>
-                <path d="M32 12L28 16L36 16L32 12Z" fill="white"/>
-              </svg>
-            </div>
             <div class="practice-content">
-              <h3>{{ 'home.expertise.areas.civil.title' | i18n }}</h3>
+              <div class="practice-header">
+                <div class="practice-icon">
+                  <svg viewBox="0 0 64 64" fill="currentColor">
+                    <path d="M38 8L26 8C24 8 22 10 22 12L22 52C22 54 24 56 26 56L38 56C40 56 42 54 42 52L42 12C42 10 40 8 38 8Z"/>
+                    <path d="M32 12L28 16L36 16L32 12Z" fill="white"/>
+                  </svg>
+                </div>
+                <h3>{{ 'home.expertise.areas.civil.title' | i18n }}</h3>
+              </div>
               <p class="practice-desc">{{ 'home.expertise.areas.civil.desc' | i18n }}</p>
               <ul>
                 <li>{{ 'home.expertise.areas.civil.items.1' | i18n }}</li>
@@ -223,16 +225,18 @@ interface PresidentSlide {
           </a>
 
           <a class="practice-card accent-family" href="#">
-            <div class="practice-icon">
-              <svg viewBox="0 0 64 64" fill="currentColor">
-                <path d="M24 40C16 40 10 44 10 50V56H38V50C38 44 32 40 24 40Z"/>
-                <path d="M40 40C38 40 36 40.4 34 41C37 43 38 46 38 50V56H54V50C54 44 48 40 40 40Z"/>
-                <circle cx="24" cy="26" r="10"/>
-                <circle cx="42" cy="24" r="8"/>
-              </svg>
-            </div>
             <div class="practice-content">
-              <h3>{{ 'home.expertise.areas.family.title' | i18n }}</h3>
+              <div class="practice-header">
+                <div class="practice-icon">
+                  <svg viewBox="0 0 64 64" fill="currentColor">
+                    <path d="M24 40C16 40 10 44 10 50V56H38V50C38 44 32 40 24 40Z"/>
+                    <path d="M40 40C38 40 36 40.4 34 41C37 43 38 46 38 50V56H54V50C54 44 48 40 40 40Z"/>
+                    <circle cx="24" cy="26" r="10"/>
+                    <circle cx="42" cy="24" r="8"/>
+                  </svg>
+                </div>
+                <h3>{{ 'home.expertise.areas.family.title' | i18n }}</h3>
+              </div>
               <p class="practice-desc">{{ 'home.expertise.areas.family.desc' | i18n }}</p>
               <ul>
                 <li>{{ 'home.expertise.areas.family.items.1' | i18n }}</li>
@@ -244,15 +248,17 @@ interface PresidentSlide {
           </a>
 
           <a class="practice-card accent-public" href="#">
-            <div class="practice-icon">
-              <svg viewBox="0 0 64 64" fill="currentColor">
-                <path d="M32 8L18 14V28C18 40 26 48 32 52C38 48 46 40 46 28V14L32 8Z M32 12L42 16V28C42 38 36 44 32 48C28 44 22 38 22 28V16L32 12Z"/>
-                <rect x="28" y="24" width="8" height="16" fill="white"/>
-                <rect x="24" y="32" width="16" height="4" fill="white"/>
-              </svg>
-            </div>
             <div class="practice-content">
-              <h3>{{ 'home.expertise.areas.public.title' | i18n }}</h3>
+              <div class="practice-header">
+                <div class="practice-icon">
+                  <svg viewBox="0 0 64 64" fill="currentColor">
+                    <path d="M32 8L18 14V28C18 40 26 48 32 52C38 48 46 40 46 28V14L32 8Z M32 12L42 16V28C42 38 36 44 32 48C28 44 22 38 22 28V16L32 12Z"/>
+                    <rect x="28" y="24" width="8" height="16" fill="white"/>
+                    <rect x="24" y="32" width="16" height="4" fill="white"/>
+                  </svg>
+                </div>
+                <h3>{{ 'home.expertise.areas.public.title' | i18n }}</h3>
+              </div>
               <p class="practice-desc">{{ 'home.expertise.areas.public.desc' | i18n }}</p>
               <ul>
                 <li>{{ 'home.expertise.areas.public.items.1' | i18n }}</li>
@@ -264,15 +270,17 @@ interface PresidentSlide {
           </a>
 
           <a class="practice-card accent-labor" href="#">
-            <div class="practice-icon">
-              <svg viewBox="0 0 64 64" fill="currentColor">
-                <rect x="22" y="28" width="20" height="20" rx="2"/>
-                <rect x="26" y="20" width="12" height="10" rx="2"/>
-                <circle cx="32" cy="38" r="3" fill="white"/>
-              </svg>
-            </div>
             <div class="practice-content">
-              <h3>{{ 'home.expertise.areas.labor.title' | i18n }}</h3>
+              <div class="practice-header">
+                <div class="practice-icon">
+                  <svg viewBox="0 0 64 64" fill="currentColor">
+                    <rect x="22" y="28" width="20" height="20" rx="2"/>
+                    <rect x="26" y="20" width="12" height="10" rx="2"/>
+                    <circle cx="32" cy="38" r="3" fill="white"/>
+                  </svg>
+                </div>
+                <h3>{{ 'home.expertise.areas.labor.title' | i18n }}</h3>
+              </div>
               <p class="practice-desc">{{ 'home.expertise.areas.labor.desc' | i18n }}</p>
               <ul>
                 <li>{{ 'home.expertise.areas.labor.items.1' | i18n }}</li>
@@ -284,15 +292,17 @@ interface PresidentSlide {
           </a>
 
           <a class="practice-card accent-criminal" href="#">
-            <div class="practice-icon">
-              <svg viewBox="0 0 64 64" fill="currentColor">
-                <path d="M32 8C24 8 18 14 18 22C18 30 24 36 32 36C40 36 46 30 46 22C46 14 40 8 32 8Z"/>
-                <path d="M46 18C46 14 43 11 39 11L25 11C21 11 18 14 18 18L18 46C18 50 21 53 25 53L39 53C43 53 46 50 46 46L46 18Z"/>
-                <path d="M28 18L32 24L36 18" stroke="#BF9874" stroke-width="2" fill="none"/>
-              </svg>
-            </div>
             <div class="practice-content">
-              <h3>{{ 'home.expertise.areas.criminal.title' | i18n }}</h3>
+              <div class="practice-header">
+                <div class="practice-icon">
+                  <svg viewBox="0 0 64 64" fill="currentColor">
+                    <path d="M32 8C24 8 18 14 18 22C18 30 24 36 32 36C40 36 46 30 46 22C46 14 40 8 32 8Z"/>
+                    <path d="M46 18C46 14 43 11 39 11L25 11C21 11 18 14 18 18L18 46C18 50 21 53 25 53L39 53C43 53 46 50 46 46L46 18Z"/>
+                    <path d="M28 18L32 24L36 18" stroke="#BF9874" stroke-width="2" fill="none"/>
+                  </svg>
+                </div>
+                <h3>{{ 'home.expertise.areas.criminal.title' | i18n }}</h3>
+              </div>
               <p class="practice-desc">{{ 'home.expertise.areas.criminal.desc' | i18n }}</p>
               <ul>
                 <li>{{ 'home.expertise.areas.criminal.items.1' | i18n }}</li>
@@ -304,15 +314,17 @@ interface PresidentSlide {
           </a>
 
           <a class="practice-card accent-property" href="#">
-            <div class="practice-icon">
-              <svg viewBox="0 0 64 64" fill="currentColor">
-                <rect x="16" y="32" width="32" height="20"/>
-                <polygon points="32,12 16,32 48,32"/>
-                <rect x="28" y="24" width="8" height="8" fill="white"/>
-              </svg>
-            </div>
             <div class="practice-content">
-              <h3>{{ 'home.expertise.areas.property.title' | i18n }}</h3>
+              <div class="practice-header">
+                <div class="practice-icon">
+                  <svg viewBox="0 0 64 64" fill="currentColor">
+                    <rect x="16" y="32" width="32" height="20"/>
+                    <polygon points="32,12 16,32 48,32"/>
+                    <rect x="28" y="24" width="8" height="8" fill="white"/>
+                  </svg>
+                </div>
+                <h3>{{ 'home.expertise.areas.property.title' | i18n }}</h3>
+              </div>
               <p class="practice-desc">{{ 'home.expertise.areas.property.desc' | i18n }}</p>
               <ul>
                 <li>{{ 'home.expertise.areas.property.items.1' | i18n }}</li>
@@ -834,7 +846,7 @@ interface PresidentSlide {
 
     .offer-card-header {
       display: flex;
-      align-items: flex-start;
+      align-items: center;
       gap: 15px;
       margin-bottom: 15px;
     }
@@ -856,6 +868,7 @@ interface PresidentSlide {
       font-weight: 700;
       color: #1a1a1a;
       margin: 0;
+      line-height: 1.2;
     }
 
     .offer-card p {
@@ -984,12 +997,19 @@ interface PresidentSlide {
       height: 32px;
     }
 
+    .practice-header {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 10px;
+    }
+
     .practice-content h3 {
       font-size: 1.05rem;
       font-weight: 700;
-      margin-bottom: 8px;
+      margin: 0;
       color: #1a1a1a;
-      line-height: 1.3;
+      line-height: 1.2;
     }
 
     .practice-content {
