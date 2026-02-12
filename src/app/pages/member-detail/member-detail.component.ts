@@ -97,7 +97,6 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
         font-size: 2.6rem;
         font-weight: 300;
         margin: 20px 0 8px;
-        font-family: 'Playfair Display', serif;
         text-transform: uppercase;
         letter-spacing: 1px;
       }
