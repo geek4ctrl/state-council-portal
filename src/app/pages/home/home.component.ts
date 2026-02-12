@@ -83,7 +83,7 @@ interface PresidentSlide {
               <p>{{ 'home.quickLinks.items.news.body' | i18n }}</p>
               <a href="#" class="quick-link-action">{{ 'home.quickLinks.items.news.action' | i18n }}</a>
             </div>
-            <div class="connector-line"></div>
+            <div class=""></div>
           </div>
 
           <div class="quick-link-item">
@@ -95,7 +95,7 @@ interface PresidentSlide {
               <p>{{ 'home.quickLinks.items.excerpts.body' | i18n }}</p>
               <a href="#" class="quick-link-action">{{ 'home.quickLinks.items.excerpts.action' | i18n }}</a>
             </div>
-            <div class="connector-line"></div>
+            <div class=""></div>
           </div>
 
           <div class="quick-link-item">
@@ -107,7 +107,7 @@ interface PresidentSlide {
               <p>{{ 'home.quickLinks.items.report.body' | i18n }}</p>
               <a href="#" class="quick-link-action">{{ 'home.quickLinks.items.report.action' | i18n }}</a>
             </div>
-            <div class="connector-line"></div>
+            <div class=""></div>
           </div>
 
           <div class="quick-link-item">
@@ -829,8 +829,8 @@ interface PresidentSlide {
       margin-bottom: 50px;
       line-height: 1.6;
       max-width: 820px;
-      margin-left: calc(60px + 20px);
-    }
+      margin-left: calc(3px + 16px);
+      }
 
     .offer-grid {
       display: grid;
@@ -938,6 +938,7 @@ interface PresidentSlide {
       margin: 12px auto 52px;
       max-width: 720px;
       margin-left: 0;
+      margin-left: calc(119px + 103px);
     }
 
     .practice-grid {
