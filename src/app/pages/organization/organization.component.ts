@@ -261,17 +261,17 @@ type HighchartsStatic = typeof import('highcharts');
         <div class="container">
           <h2 class="section-title-white">{{ 'organization.services.overviewTitle' | i18n }}</h2>
           <div class="services-grid">
-            <div class="service-box">
+            <div class="service-box reveal-on-scroll">
               <h3>{{ 'organization.services.registry.title' | i18n }}</h3>
               <p>{{ 'organization.services.registry.body' | i18n }}</p>
               <a href="#" class="service-link">{{ 'organization.services.learnMore' | i18n }}</a>
             </div>
-            <div class="service-box">
+            <div class="service-box reveal-on-scroll">
               <h3>{{ 'organization.services.docs.title' | i18n }}</h3>
               <p>{{ 'organization.services.docs.body' | i18n }}</p>
               <a href="#" class="service-link">{{ 'organization.services.learnMore' | i18n }}</a>
             </div>
-            <div class="service-box">
+            <div class="service-box reveal-on-scroll">
               <h3>{{ 'organization.services.tv.title' | i18n }}</h3>
               <p>{{ 'organization.services.tv.body' | i18n }}</p>
               <a href="#" class="service-link">{{ 'organization.services.learnMore' | i18n }}</a>
@@ -289,7 +289,7 @@ type HighchartsStatic = typeof import('highcharts');
           <div class="services-content">
             <!-- Left Column - Service Links -->
             <div class="service-links">
-              <div class="service-item"
+                  <div class="service-item reveal-on-scroll"
                    [class.active]="selectedService() === 'divisions'"
                    (click)="selectService('divisions')">
                 <span class="service-icon">📋</span>
@@ -303,7 +303,7 @@ type HighchartsStatic = typeof import('highcharts');
                 </div>
               </div>
 
-              <div class="service-item"
+                  <div class="service-item reveal-on-scroll"
                    [class.active]="selectedService() === 'rooms'"
                    (click)="selectService('rooms')">
                 <span class="service-icon">🏛️</span>
@@ -313,7 +313,7 @@ type HighchartsStatic = typeof import('highcharts');
                 </div>
               </div>
 
-              <div class="service-item"
+                  <div class="service-item reveal-on-scroll"
                    [class.active]="selectedService() === 'council'"
                    (click)="selectService('council')">
                 <span class="service-icon">⚖️</span>
@@ -323,7 +323,7 @@ type HighchartsStatic = typeof import('highcharts');
                 </div>
               </div>
 
-              <div class="service-item"
+                  <div class="service-item reveal-on-scroll"
                    [class.active]="selectedService() === 'registers'"
                    (click)="selectService('registers')">
                 <span class="service-icon">📚</span>
@@ -337,7 +337,7 @@ type HighchartsStatic = typeof import('highcharts');
             <!-- Right Column - Detailed Text -->
             <div class="service-details">
               @if (selectedService() === 'divisions') {
-                <div class="detail-box active">
+                <div class="detail-box active reveal-on-scroll">
                   <span class="detail-icon">📋</span>
                   <div class="detail-content">
                     <h4>{{ 'organization.services.details.chambers.title' | i18n }}</h4>
@@ -354,7 +354,7 @@ type HighchartsStatic = typeof import('highcharts');
               }
 
               @if (selectedService() === 'rooms') {
-                <div class="detail-box active">
+                <div class="detail-box active reveal-on-scroll">
                   <span class="detail-icon">🏛️</span>
                   <div class="detail-content">
                     <h4>{{ 'organization.services.details.rooms.title' | i18n }}</h4>
@@ -367,7 +367,7 @@ type HighchartsStatic = typeof import('highcharts');
               }
 
               @if (selectedService() === 'council') {
-                <div class="detail-box active">
+                <div class="detail-box active reveal-on-scroll">
                   <span class="detail-icon">⚖️</span>
                   <div class="detail-content">
                     <h4>{{ 'organization.services.details.council.title' | i18n }}</h4>
@@ -380,7 +380,7 @@ type HighchartsStatic = typeof import('highcharts');
               }
 
               @if (selectedService() === 'registers') {
-                <div class="detail-box active">
+                <div class="detail-box active reveal-on-scroll">
                   <span class="detail-icon">📚</span>
                   <div class="detail-content">
                     <h4>{{ 'organization.services.details.registers.title' | i18n }}</h4>
@@ -516,7 +516,7 @@ type HighchartsStatic = typeof import('highcharts');
 
     /* First President Section */
     .first-president-section {
-      background: #ECECF1;
+      background: #ffffff;
       padding: 0;
     }
 
@@ -525,7 +525,7 @@ type HighchartsStatic = typeof import('highcharts');
       grid-template-columns: 300px 1fr;
       gap: 0;
       align-items: start;
-      background: #1a2942;
+      background: #ffffff;
       border-radius: 0;
     }
 
@@ -558,7 +558,7 @@ type HighchartsStatic = typeof import('highcharts');
     .president-title-underlined {
       font-size: 2.5rem;
       font-weight: 300;
-      color: white;
+      color: #1a1a1a;
       margin: 0 0 25px 0;
       letter-spacing: 1px;
       padding-bottom: 15px;
@@ -569,13 +569,13 @@ type HighchartsStatic = typeof import('highcharts');
     .president-description {
       font-size: 0.95rem;
       line-height: 1.8;
-      color: rgba(255, 255, 255, 0.85);
+      color: #4b5563;
       margin: 0;
       text-align: left;
     }
 
     .president-description strong {
-      color: white;
+      color: #1a1a1a;
       font-weight: 600;
     }
 
@@ -627,8 +627,12 @@ type HighchartsStatic = typeof import('highcharts');
     /* Organization Chart */
     .org-chart-section {
       padding: 60px 0 50px;
-      background: linear-gradient(180deg, #faf7f2 0%, #ffffff 100%);
+      background: linear-gradient(180deg, #f5f7fb 0%, #eef2f7 100%);
       border-bottom: 1px solid rgba(26, 41, 66, 0.06);
+    }
+
+    .org-chart-section.org-chart-names {
+      background: #ffffff;
     }
 
     .org-chart-header {
@@ -871,56 +875,71 @@ type HighchartsStatic = typeof import('highcharts');
 
     /* Services Info Section */
     .services-info-section {
-      background: linear-gradient(180deg, #ffffff 0%, #f4f6fb 100%);
-      padding: 60px 0 80px 0;
+      --services-heading-font: 'Georgia', 'Times New Roman', serif;
+      --services-body-font: 'Trebuchet MS', 'Segoe UI', sans-serif;
+      background: #ffffff;
+      padding: 80px 0 90px 0;
       position: relative;
       overflow: hidden;
     }
 
     .services-info-section::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background:
-        radial-gradient(circle at 15% 20%, rgba(78, 106, 138, 0.08), transparent 45%),
-        radial-gradient(circle at 85% 15%, rgba(191, 152, 116, 0.12), transparent 50%);
-      pointer-events: none;
+      content: none;
+    }
+
+    .services-info-section .container {
+      position: relative;
+      z-index: 1;
     }
 
     .section-title-white {
-      font-size: 2.5rem;
-      font-weight: 300;
+      font-family: var(--services-heading-font);
+      font-size: 2.7rem;
+      font-weight: 600;
       color: #1a1a1a;
       text-align: center;
-      margin: 0 0 50px 0;
+      margin: 0 0 40px 0;
       letter-spacing: 2px;
+      text-transform: uppercase;
     }
 
     .services-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 30px;
-      position: relative;
-      z-index: 1;
+      gap: 28px;
     }
 
     .service-box {
-      background: rgba(255, 255, 255, 0.9);
-      padding: 26px 24px 24px;
+      position: relative;
+      background: linear-gradient(145deg, rgba(255, 255, 255, 0.96), rgba(252, 250, 246, 0.9));
+      padding: 28px 26px 26px;
       text-align: left;
+      border-radius: 18px;
       border: 1px solid rgba(26, 41, 66, 0.08);
-      box-shadow: 0 14px 30px rgba(20, 28, 40, 0.08);
+      box-shadow: 0 18px 40px rgba(20, 28, 40, 0.12);
       transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+      overflow: hidden;
+    }
+
+    .service-box::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, #8b7355, #4e6a8a);
     }
 
     .service-box:hover {
-      transform: translateY(-6px);
+      transform: translateY(-8px);
       border-color: rgba(78, 106, 138, 0.2);
-      box-shadow: 0 18px 36px rgba(20, 28, 40, 0.14);
+      box-shadow: 0 22px 46px rgba(20, 28, 40, 0.18);
     }
 
     .service-box h3 {
-      font-size: 1.1rem;
+      font-family: var(--services-heading-font);
+      font-size: 1.15rem;
       font-weight: 600;
       color: #1a1a1a;
       margin: 0 0 10px 0;
@@ -928,113 +947,144 @@ type HighchartsStatic = typeof import('highcharts');
     }
 
     .service-box p {
+      font-family: var(--services-body-font);
       font-size: 0.9rem;
       line-height: 1.6;
       color: #4b5563;
-      margin: 0 0 15px 0;
+      margin: 0 0 18px 0;
     }
 
     .service-link {
-      font-size: 0.75rem;
-      color: #8b7355;
+      font-family: var(--services-body-font);
+      font-size: 0.7rem;
+      color: #1a1a1a;
       text-decoration: none;
       font-weight: 600;
-      letter-spacing: 1px;
-      display: inline-block;
-      transition: color 0.3s ease;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: color 0.3s ease, transform 0.3s ease;
     }
 
     .service-link:hover {
-      color: #a89070;
+      color: #8b7355;
+      transform: translateX(3px);
     }
 
     /* Services Section */
     .services-section {
-      background: #ECECF1;
-      padding: 80px 0;
+      --services-heading-font: 'Georgia', 'Times New Roman', serif;
+      --services-body-font: 'Trebuchet MS', 'Segoe UI', sans-serif;
+      background: linear-gradient(180deg, #f2f3f7 0%, #ffffff 100%);
+      padding: 90px 0 100px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .services-section::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(circle at 10% 20%, rgba(191, 152, 116, 0.15), transparent 50%),
+        radial-gradient(circle at 90% 10%, rgba(78, 106, 138, 0.12), transparent 45%);
+      pointer-events: none;
     }
 
     .section-heading {
-      font-size: 2.5rem;
-      font-weight: 300;
+      font-family: var(--services-heading-font);
+      font-size: 2.6rem;
+      font-weight: 600;
       color: #1a1a1a;
       text-align: center;
-      margin: 0 0 10px 0;
-      letter-spacing: 1px;
+      margin: 0 0 12px 0;
+      letter-spacing: 2px;
+      text-transform: uppercase;
     }
 
     .section-subheading {
-      font-size: 0.9rem;
-      color: #8b7355;
+      font-family: var(--services-body-font);
+      font-size: 0.95rem;
+      color: #6b5a41;
       text-align: center;
-      margin: 0 0 50px 0;
+      margin: 0 0 60px 0;
       font-style: italic;
     }
 
     .services-content {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 40px;
+      gap: 36px;
+      position: relative;
+      z-index: 1;
     }
 
     /* Service Links */
     .service-links {
       display: flex;
       flex-direction: column;
-      gap: 20px;
+      gap: 18px;
     }
 
     .service-item {
       display: flex;
       gap: 20px;
       align-items: flex-start;
-      padding: 30px;
-      background: #fff9f0;
-      border-left: 4px solid #e0e0e0;
+      padding: 26px 28px;
+      background: linear-gradient(135deg, #ffffff 0%, #f7f1e8 100%);
+      border-radius: 20px;
+      border: 1px solid rgba(26, 41, 66, 0.08);
+      box-shadow: 0 16px 32px rgba(20, 28, 40, 0.1);
       cursor: pointer;
-      transition: all 0.3s ease;
+      transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
     }
 
     .service-item:hover {
-      border-left-color: #8b7355;
-      background: #fff5e6;
+      border-color: rgba(139, 115, 85, 0.35);
+      transform: translateY(-6px);
+      box-shadow: 0 20px 36px rgba(20, 28, 40, 0.14);
     }
 
     .service-item.active {
-      border-left-color: #8b7355;
-      background: #fff5e6;
-      box-shadow: 0 4px 12px rgba(139, 115, 85, 0.2);
+      border-color: rgba(139, 115, 85, 0.6);
+      background: linear-gradient(135deg, #fff8ef 0%, #f3e7d7 100%);
+      box-shadow: 0 22px 40px rgba(139, 115, 85, 0.22);
     }
 
     .service-icon {
       flex-shrink: 0;
-      width: 40px;
-      height: 40px;
-      background: #8b7355;
+      width: 42px;
+      height: 42px;
+      background: radial-gradient(circle at 30% 30%, #d9c2a7, #8b7355);
       color: white;
-      border-radius: 50%;
+      border-radius: 14px;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 1.2rem;
+      font-size: 1.1rem;
+      box-shadow: 0 10px 18px rgba(139, 115, 85, 0.35);
     }
 
     .service-item.active .service-icon {
-      background: #6d5a43;
+      background: radial-gradient(circle at 30% 30%, #b59b7a, #6d5a43);
     }
 
     .service-text h4 {
-      font-size: 1rem;
+      font-family: var(--services-heading-font);
+      font-size: 1.05rem;
       font-weight: 600;
       color: #1a1a1a;
       line-height: 1.5;
-      margin: 0 0 15px 0;
+      margin: 0 0 12px 0;
     }
 
     .service-text p {
+      font-family: var(--services-body-font);
       font-size: 0.9rem;
       line-height: 1.6;
-      color: #666;
+      color: #5b5f66;
       margin: 0;
     }
 
@@ -1045,6 +1095,7 @@ type HighchartsStatic = typeof import('highcharts');
     }
 
     .service-text li {
+      font-family: var(--services-body-font);
       font-size: 0.9rem;
       line-height: 1.8;
       margin-bottom: 8px;
@@ -1054,49 +1105,36 @@ type HighchartsStatic = typeof import('highcharts');
     .service-details {
       display: flex;
       flex-direction: column;
-      gap: 20px;
+      gap: 18px;
     }
 
     .detail-box {
       display: flex;
       gap: 20px;
       align-items: flex-start;
-      padding: 30px;
-      background: #fff9f0;
-      border-left: 4px solid #8b7355;
-      opacity: 0;
-      animation: fadeIn 0.5s ease forwards;
-    }
-
-    .detail-box.active {
-      opacity: 1;
-    }
-
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-        transform: translateY(10px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
+      padding: 28px 30px;
+      background: linear-gradient(140deg, #ffffff 0%, #f8f4ee 100%);
+      border-radius: 22px;
+      border: 1px solid rgba(26, 41, 66, 0.08);
+      box-shadow: 0 18px 36px rgba(20, 28, 40, 0.12);
     }
 
     .detail-icon {
       flex-shrink: 0;
-      width: 40px;
-      height: 40px;
-      background: #8b7355;
+      width: 42px;
+      height: 42px;
+      background: radial-gradient(circle at 30% 30%, #d9c2a7, #8b7355);
       color: white;
-      border-radius: 50%;
+      border-radius: 14px;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 1.2rem;
+      font-size: 1.1rem;
+      box-shadow: 0 10px 18px rgba(139, 115, 85, 0.35);
     }
 
     .detail-content h4 {
+      font-family: var(--services-heading-font);
       font-size: 1rem;
       font-weight: 600;
       color: #1a1a1a;
@@ -1111,12 +1149,14 @@ type HighchartsStatic = typeof import('highcharts');
     }
 
     .detail-content li {
+      font-family: var(--services-body-font);
       font-size: 0.9rem;
       line-height: 1.8;
       margin-bottom: 10px;
     }
 
     .detail-content p {
+      font-family: var(--services-body-font);
       font-size: 0.9rem;
       line-height: 1.8;
       color: #333;
@@ -1124,13 +1164,66 @@ type HighchartsStatic = typeof import('highcharts');
       text-align: justify;
     }
 
+    .reveal-on-scroll {
+      opacity: 0;
+      transform: translateY(16px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+      transition-delay: var(--reveal-delay, 0ms);
+      will-change: opacity, transform;
+    }
+
+    .reveal-on-scroll.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .services-grid .service-box:nth-child(1) {
+      --reveal-delay: 0ms;
+    }
+
+    .services-grid .service-box:nth-child(2) {
+      --reveal-delay: 90ms;
+    }
+
+    .services-grid .service-box:nth-child(3) {
+      --reveal-delay: 180ms;
+    }
+
+    .service-links .service-item:nth-child(1) {
+      --reveal-delay: 40ms;
+    }
+
+    .service-links .service-item:nth-child(2) {
+      --reveal-delay: 120ms;
+    }
+
+    .service-links .service-item:nth-child(3) {
+      --reveal-delay: 200ms;
+    }
+
+    .service-links .service-item:nth-child(4) {
+      --reveal-delay: 280ms;
+    }
+
+    .service-details .detail-box {
+      --reveal-delay: 140ms;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .reveal-on-scroll {
+        opacity: 1;
+        transform: none;
+        transition: none;
+      }
+    }
+
     /* Footer */
     .footer-section {
-      background-color: #F2F3F7;
+      background-color: #ffffff;
     }
 
     .footer-main {
-      background-color: #F2F3F7;
+      background-color: #ffffff;
       color: #b0b0b0;
       padding: 60px 0 40px;
       position: relative;
@@ -1192,7 +1285,7 @@ type HighchartsStatic = typeof import('highcharts');
     }
 
     .footer-bottom {
-      background-color: #EAF1FA;
+      background-color: #ffffff;
       padding: 25px 0;
     }
 
@@ -1869,6 +1962,7 @@ export class OrganizationComponent implements OnInit, AfterViewInit {
   private chartInstance?: Chart;
   private highchartsRoot?: HighchartsStatic;
   private resizeObserver?: ResizeObserver;
+  private scrollObserver?: IntersectionObserver;
   private readonly handleVisibilityChange = () => {
     if (!document.hidden) {
       this.chartInstance?.reflow();
@@ -1892,6 +1986,12 @@ export class OrganizationComponent implements OnInit, AfterViewInit {
   }
 
   ngAfterViewInit() {
+    this.initScrollReveal();
+    this.destroyRef.onDestroy(() => {
+      this.scrollObserver?.disconnect();
+      this.scrollObserver = undefined;
+    });
+
     this.initHighchartsModules().then((Highcharts) => {
       if (!Highcharts) {
         return;
@@ -1916,6 +2016,45 @@ export class OrganizationComponent implements OnInit, AfterViewInit {
     }
 
     document.addEventListener('visibilitychange', this.handleVisibilityChange);
+  }
+
+  private initScrollReveal() {
+    const elements = Array.from(document.querySelectorAll<HTMLElement>('.reveal-on-scroll'));
+    if (elements.length === 0) {
+      return;
+    }
+
+    if (typeof IntersectionObserver === 'undefined') {
+      this.revealAll(elements);
+      return;
+    }
+
+    if (!this.scrollObserver) {
+      this.scrollObserver = new IntersectionObserver(
+        (entries, observer) => {
+          entries.forEach((entry) => {
+            if (!entry.isIntersecting) {
+              return;
+            }
+
+            const target = entry.target as HTMLElement;
+            target.classList.add('is-visible');
+            observer.unobserve(target);
+          });
+        },
+        { threshold: 0.15, rootMargin: '0px 0px -10% 0px' }
+      );
+    }
+
+    elements.forEach((element) => {
+      if (!element.classList.contains('is-visible')) {
+        this.scrollObserver?.observe(element);
+      }
+    });
+  }
+
+  private revealAll(elements: HTMLElement[]) {
+    elements.forEach((element) => element.classList.add('is-visible'));
   }
 
   private async initHighchartsModules(): Promise<HighchartsStatic | null> {
@@ -2047,6 +2186,7 @@ export class OrganizationComponent implements OnInit, AfterViewInit {
 
   selectService(service: string) {
     this.selectedService.set(service);
+    setTimeout(() => this.initScrollReveal(), 0);
   }
 
   onSearch(event: Event) {
