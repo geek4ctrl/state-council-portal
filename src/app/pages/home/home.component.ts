@@ -1211,21 +1211,24 @@ interface PresidentSlide {
     }
 
     .practice-content li {
+      display: flex;
+      align-items: baseline;
+      gap: 10px;
       padding: 6px 0;
       color: #5b5b5b;
       font-size: 0.9rem;
       position: relative;
-      padding-left: 18px;
       line-height: 1.55;
     }
 
     .practice-content li::before {
       content: "•";
-      position: absolute;
-      left: 0;
+      position: static;
+      flex: 0 0 auto;
       color: var(--accent);
       font-weight: bold;
-      font-size: 1.2rem;
+      font-size: 1rem;
+      line-height: 1;
     }
 
     .practice-cta {
@@ -1861,7 +1864,7 @@ interface PresidentSlide {
       }
 
       .key-fact-chart {
-        height: 200px;
+        height: 220px;
       }
 
       .section-subtitle {
@@ -1976,7 +1979,7 @@ interface PresidentSlide {
       }
 
       .key-fact-chart {
-        height: 190px;
+        height: 230px;
       }
 
       .quick-links-container {
@@ -2668,7 +2671,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
         type: 'pie',
         backgroundColor: 'transparent',
         height: 220,
-        spacing: [10, 10, 0, 10]
+        spacing: [10, 10, 10, 10]
       },
       title: { text: undefined },
       credits: { enabled: false },
@@ -2688,6 +2691,25 @@ export class HomeComponent implements OnInit, AfterViewInit {
           innerSize: '55%',
           dataLabels: { enabled: false }
         }
+      },
+      responsive: {
+        rules: [
+          {
+            condition: { maxWidth: 600 },
+            chartOptions: {
+              chart: { height: 240 },
+              legend: {
+                itemStyle: { fontSize: '11px' }
+              },
+              plotOptions: {
+                pie: {
+                  center: ['50%', '45%'],
+                  size: '90%'
+                }
+              }
+            }
+          }
+        ]
       },
       series: [
         {
