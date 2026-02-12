@@ -255,7 +255,8 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
 
     /* Hero Section */
     .hero-section {
-      background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+      background: linear-gradient(135deg, rgba(44, 62, 80, 0.95), rgba(52, 73, 94, 0.95)),
+                  url('https://placehold.co/1920x400') center/cover;
       color: white;
       padding: 100px 0;
     }
@@ -268,10 +269,10 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
     }
 
     .hero-left h1 {
-      font-size: 4rem;
+      font-size: 5rem;
       font-weight: 700;
       margin: 0;
-      letter-spacing: 3px;
+      letter-spacing: 4px;
       line-height: 1.1;
       color: white;
     }
@@ -466,7 +467,7 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
       }
 
       .hero-left h1 {
-        font-size: 3rem;
+        font-size: 4rem;
       }
     }
 
@@ -476,7 +477,7 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
       }
 
       .hero-left h1 {
-        font-size: 2.5rem;
+        font-size: 3rem;
       }
 
       .hero-right p {
@@ -524,7 +525,7 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
       }
 
       .hero-left h1 {
-        font-size: 2rem;
+        font-size: 2.5rem;
         letter-spacing: 2px;
       }
 

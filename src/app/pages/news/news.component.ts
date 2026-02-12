@@ -173,6 +173,7 @@ import Highcharts from 'highcharts';
       font-weight: 700;
       margin: 0;
       letter-spacing: 4px;
+      color: #ffffff;
     }
 
     .hero-right p {
@@ -180,6 +181,7 @@ import Highcharts from 'highcharts';
       line-height: 1.8;
       margin: 0;
       opacity: 0.95;
+      color: #ffffff;
     }
 
     /* News Section */

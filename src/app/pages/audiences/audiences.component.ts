@@ -326,13 +326,14 @@ import Highcharts from 'highcharts';
 
       /* Hero Section */
       .hero-section {
-        background-image: url('/assets/images/audience-hero.jpg');
+        background: linear-gradient(135deg, rgba(44, 62, 80, 0.95), rgba(52, 73, 94, 0.95)),
+                  url('https://placehold.co/1920x400') center/cover;
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
         background-color: #2c3e50;
         color: white;
-        padding: 120px 0;
+        padding: 100px 0;
         position: relative;
       }
 
@@ -353,7 +354,7 @@ import Highcharts from 'highcharts';
 
       .hero-grid {
         display: grid;
-        grid-template-columns: 1fr auto 1.2fr;
+        grid-template-columns: 1.6fr auto 1fr;
         gap: 60px;
         align-items: center;
       }
@@ -365,7 +366,7 @@ import Highcharts from 'highcharts';
 
       .vertical-line {
         width: 3px;
-        height: 180px;
+        height: 150px;
         background-color: #ffffff;
         display: block;
       }
@@ -375,11 +376,11 @@ import Highcharts from 'highcharts';
       }
 
       .hero-title h1 {
-        font-size: 4rem;
+        font-size: 3.6rem;
         font-weight: 700;
-        line-height: 1.15;
+        line-height: 1.05;
         margin: 0;
-        letter-spacing: 3px;
+        letter-spacing: 2px;
         text-transform: uppercase;
         color: #ffffff;
       }
@@ -850,8 +851,8 @@ import Highcharts from 'highcharts';
         }
 
         .hero-title h1 {
-          font-size: 3rem;
-          letter-spacing: 2px;
+          font-size: 3.2rem;
+          letter-spacing: 1.5px;
         }
 
         .hero-grid {
@@ -859,7 +860,7 @@ import Highcharts from 'highcharts';
         }
 
         .vertical-line {
-          height: 130px;
+          height: 120px;
         }
 
         .hero-description p {
@@ -1310,7 +1311,7 @@ import Highcharts from 'highcharts';
       /* Landscape Orientation Fixes */
       @media (max-height: 600px) and (orientation: landscape) {
         .hero-section {
-          padding: 50px 0;
+          padding: 60px 0;
         }
 
         .content-section {
