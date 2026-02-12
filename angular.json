@@ -30,6 +30,11 @@
                 "output": "assets"
               }
             ],
+            "allowedCommonJsDependencies": [
+              "highcharts",
+              "highcharts/modules/organization",
+              "highcharts/modules/sankey"
+            ],
             "styles": [
               "src/styles.css"
             ]
