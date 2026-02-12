@@ -1,10 +1,20 @@
-import { Component } from '@angular/core';
+import {
+  AfterViewInit,
+  ChangeDetectionStrategy,
+  Component,
+  DestroyRef,
+  ElementRef,
+  ViewChild,
+  inject
+} from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { I18nPipe } from '../../i18n/i18n.pipe';
+import Highcharts from 'highcharts';
 
 @Component({
   selector: 'app-audiences',
   imports: [CommonModule, I18nPipe],
+  changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <div class="page-container">
       <!-- Hero Section -->
@@ -30,6 +40,43 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
           <div class="understanding-section">
             <h2>{{ 'audiences.understanding.title' | i18n }}</h2>
             <p>{{ 'audiences.understanding.body' | i18n }}</p>
+          </div>
+
+          <!-- Monthly Hearing Metrics Section -->
+          <div class="metrics-section">
+            <div class="section-header">
+              <div class="header-line"></div>
+              <h2>{{ 'audiences.metrics.title' | i18n }}</h2>
+            </div>
+            <p class="section-subtitle">{{ 'audiences.metrics.subtitle' | i18n }}</p>
+
+            <div class="metrics-grid">
+              <div class="metrics-card">
+                <div class="metrics-card-header">
+                  <h3>{{ 'audiences.metrics.volume.title' | i18n }}</h3>
+                  <span class="metrics-note">{{ 'audiences.metrics.volume.note' | i18n }}</span>
+                </div>
+                <div
+                  #monthlyVolumeChart
+                  class="metrics-chart"
+                  role="img"
+                  [attr.aria-label]="'audiences.metrics.volume.aria' | i18n">
+                </div>
+              </div>
+
+              <div class="metrics-card">
+                <div class="metrics-card-header">
+                  <h3>{{ 'audiences.metrics.outcomes.title' | i18n }}</h3>
+                  <span class="metrics-note">{{ 'audiences.metrics.outcomes.note' | i18n }}</span>
+                </div>
+                <div
+                  #outcomesChart
+                  class="metrics-chart"
+                  role="img"
+                  [attr.aria-label]="'audiences.metrics.outcomes.aria' | i18n">
+                </div>
+              </div>
+            </div>
           </div>
 
           <!-- Recent Role Excerpts Section -->
@@ -372,6 +419,63 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
         line-height: 1.9;
         color: #666;
         text-align: justify;
+      }
+
+      /* Metrics Section */
+      .metrics-section {
+        margin-bottom: 90px;
+      }
+
+      .metrics-section h2 {
+        font-size: 2.5rem;
+        color: #1a1a1a;
+        margin: 0;
+        font-weight: 700;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+      }
+
+      .metrics-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 28px;
+        margin-bottom: 70px;
+      }
+
+      .metrics-card {
+        background: white;
+        border: 1px solid rgba(26, 41, 66, 0.08);
+        box-shadow: 0 12px 26px rgba(26, 41, 66, 0.12);
+        padding: 22px 22px 16px;
+      }
+
+      .metrics-card-header {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        gap: 12px;
+        margin-bottom: 12px;
+      }
+
+      .metrics-card-header h3 {
+        font-size: 1.05rem;
+        font-weight: 600;
+        color: #1a1a1a;
+        margin: 0;
+      }
+
+      .metrics-note {
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: #c9a961;
+        font-weight: 600;
+        white-space: nowrap;
+      }
+
+      .metrics-chart {
+        width: 100%;
+        height: 260px;
       }
 
       /* Schedules Section */
@@ -727,6 +831,14 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
           gap: 25px;
         }
 
+        .metrics-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .metrics-chart {
+          height: 240px;
+        }
+
         .document-preview {
           height: 280px;
         }
@@ -763,6 +875,14 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
           margin-bottom: 80px;
         }
 
+        .metrics-section {
+          margin-bottom: 70px;
+        }
+
+        .metrics-section h2 {
+          font-size: 2rem;
+        }
+
         .understanding-section h2 {
           font-size: 1.8rem;
         }
@@ -782,6 +902,11 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
         .documents-grid {
           grid-template-columns: repeat(2, 1fr);
           gap: 25px;
+          margin-bottom: 60px;
+        }
+
+        .metrics-grid {
+          gap: 22px;
           margin-bottom: 60px;
         }
 
@@ -844,6 +969,14 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
           margin-bottom: 60px;
         }
 
+        .metrics-section {
+          margin-bottom: 60px;
+        }
+
+        .metrics-section h2 {
+          font-size: 1.8rem;
+        }
+
         .understanding-section h2 {
           font-size: 1.6rem;
           margin-bottom: 20px;
@@ -880,6 +1013,14 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
           grid-template-columns: 1fr;
           gap: 24px;
           margin-bottom: 50px;
+        }
+
+        .metrics-card {
+          padding: 20px 18px 14px;
+        }
+
+        .metrics-chart {
+          height: 220px;
         }
 
         .document-preview {
@@ -975,6 +1116,14 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
           margin-bottom: 50px;
         }
 
+        .metrics-section {
+          margin-bottom: 50px;
+        }
+
+        .metrics-section h2 {
+          font-size: 1.5rem;
+        }
+
         .understanding-section h2 {
           font-size: 1.4rem;
           margin-bottom: 18px;
@@ -1010,6 +1159,19 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
         .documents-grid {
           gap: 20px;
           margin-bottom: 40px;
+        }
+
+        .metrics-card-header {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+
+        .metrics-note {
+          white-space: normal;
+        }
+
+        .metrics-chart {
+          height: 200px;
         }
 
         .document-preview {
@@ -1103,6 +1265,10 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
           font-size: 1.3rem;
         }
 
+        .metrics-section h2 {
+          font-size: 1.3rem;
+        }
+
         .schedules-section h2 {
           font-size: 1.3rem;
         }
@@ -1174,4 +1340,131 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
     `
   ]
 })
-export class AudiencesComponent {}
+export class AudiencesComponent implements AfterViewInit {
+  @ViewChild('monthlyVolumeChart', { static: true })
+  monthlyVolumeChart!: ElementRef<HTMLDivElement>;
+
+  @ViewChild('outcomesChart', { static: true })
+  outcomesChart!: ElementRef<HTMLDivElement>;
+
+  private readonly destroyRef = inject(DestroyRef);
+  private chartInstances: Highcharts.Chart[] = [];
+
+  ngAfterViewInit() {
+    this.renderAudienceCharts();
+    this.destroyRef.onDestroy(() => {
+      this.chartInstances.forEach(chart => chart.destroy());
+      this.chartInstances = [];
+    });
+  }
+
+  private renderAudienceCharts() {
+    const axisLabelStyle = {
+      color: '#6b5a41',
+      fontSize: '11px'
+    };
+
+    const months = ['Sep', 'Oct', 'Nov', 'Dec', 'Jan', 'Feb'];
+
+    const volumeOptions: Highcharts.Options = {
+      chart: {
+        type: 'column',
+        backgroundColor: 'transparent',
+        height: 260,
+        spacing: [10, 10, 0, 10]
+      },
+      title: { text: undefined },
+      credits: { enabled: false },
+      legend: { enabled: false },
+      xAxis: {
+        categories: months,
+        labels: { style: axisLabelStyle },
+        lineColor: 'rgba(26, 41, 66, 0.12)',
+        tickColor: 'rgba(26, 41, 66, 0.12)'
+      },
+      yAxis: {
+        title: { text: undefined },
+        labels: { style: axisLabelStyle },
+        gridLineColor: 'rgba(26, 41, 66, 0.08)'
+      },
+      tooltip: {
+        backgroundColor: '#1a1a1a',
+        style: { color: '#ffffff' },
+        borderColor: '#1a1a1a'
+      },
+      series: [
+        {
+          type: 'column',
+          name: 'Hearings',
+          data: [120, 135, 150, 142, 168, 176],
+          color: '#c9a961',
+          borderRadius: 4
+        }
+      ]
+    };
+
+    const outcomesOptions: Highcharts.Options = {
+      chart: {
+        type: 'area',
+        backgroundColor: 'transparent',
+        height: 260,
+        spacing: [10, 10, 0, 10]
+      },
+      title: { text: undefined },
+      credits: { enabled: false },
+      legend: {
+        align: 'center',
+        verticalAlign: 'bottom',
+        itemStyle: { color: '#1a1a1a', fontWeight: '600' }
+      },
+      xAxis: {
+        categories: months,
+        labels: { style: axisLabelStyle },
+        lineColor: 'rgba(26, 41, 66, 0.12)',
+        tickColor: 'rgba(26, 41, 66, 0.12)'
+      },
+      yAxis: {
+        title: { text: undefined },
+        labels: { style: axisLabelStyle },
+        gridLineColor: 'rgba(26, 41, 66, 0.08)'
+      },
+      tooltip: {
+        backgroundColor: '#1a1a1a',
+        style: { color: '#ffffff' },
+        borderColor: '#1a1a1a',
+        shared: true
+      },
+      plotOptions: {
+        area: {
+          stacking: 'normal',
+          marker: { radius: 3 }
+        }
+      },
+      series: [
+        {
+          type: 'area',
+          name: 'Decisions rendered',
+          data: [54, 61, 70, 66, 78, 82],
+          color: 'rgba(26, 41, 66, 0.7)'
+        },
+        {
+          type: 'area',
+          name: 'Adjourned',
+          data: [36, 38, 42, 40, 45, 47],
+          color: 'rgba(191, 152, 116, 0.7)'
+        },
+        {
+          type: 'area',
+          name: 'Dismissed',
+          data: [22, 24, 26, 24, 28, 29],
+          color: 'rgba(90, 113, 132, 0.7)'
+        }
+      ]
+    };
+
+    this.chartInstances = [
+      Highcharts.chart(this.monthlyVolumeChart.nativeElement, volumeOptions),
+      Highcharts.chart(this.outcomesChart.nativeElement, outcomesOptions)
+    ];
+  }
+}

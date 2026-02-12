@@ -1,10 +1,25 @@
-import { ChangeDetectionStrategy, Component, computed, inject, OnInit, signal } from '@angular/core';
+import {
+  AfterViewInit,
+  ChangeDetectionStrategy,
+  Component,
+  DestroyRef,
+  ElementRef,
+  OnInit,
+  ViewChild,
+  computed,
+  inject,
+  signal
+} from '@angular/core';
 import { CommonModule, NgOptimizedImage } from '@angular/common';
 import { RouterLink } from '@angular/router';
 import { SkeletonLoaderComponent } from '../../components/skeleton-loader/skeleton-loader.component';
 import { MemberService } from '../../services/members.service';
 import type { Member, MemberRole, RoleFilter } from '../../services/members.service';
 import { I18nPipe } from '../../i18n/i18n.pipe';
+import { I18nService } from '../../i18n/i18n.service';
+import type { Chart, Options, SeriesOptionsType } from 'highcharts';
+
+type HighchartsStatic = typeof import('highcharts');
 
 @Component({
   selector: 'app-organization',
@@ -25,7 +40,7 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
           <div class="president-card-large">
             <div class="president-image-large">
               <img
-                ngSrc="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=500&fit=crop"
+                ngSrc="https://scontent.fpry2-1.fna.fbcdn.net/v/t39.30808-6/481977439_661094752968468_3580912692254417664_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=833d8c&_nc_ohc=781MphyOZxYQ7kNvwFA72Pl&_nc_oc=AdlS3efGmR2NwVl7AluKnrYklBBqsJYuTlJ2j9PkHSisG9RQ-4n7jDHjPIDmj6En6_w&_nc_zt=23&_nc_ht=scontent.fpry2-1.fna&_nc_gid=ECXY9r39JHQUTs-eZefdrQ&oh=00_AfsTzaj3KdpgLrEjgftG5I3y5wMeOJriKEBVHzCL_mVnRA&oe=69939BC0"
                 [attr.alt]="'organization.firstPresident.alt' | i18n"
                 width="400"
                 height="500">
@@ -34,6 +49,73 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
               <h2 class="president-title-underlined">{{ 'organization.firstPresident.title' | i18n }}</h2>
               <p class="president-description" [innerHTML]="'organization.firstPresident.body' | i18n"></p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Organization Chart Section -->
+      <section class="org-chart-section" aria-labelledby="org-chart-title">
+        <div class="container">
+          <div class="org-chart-header">
+            <div class="org-chart-line"></div>
+            <h2 id="org-chart-title" class="section-title">{{ 'organization.chart.title' | i18n }}</h2>
+          </div>
+          <p class="org-chart-subtitle">{{ 'organization.chart.subtitle' | i18n }}</p>
+
+          <div class="org-chart" role="list">
+            <div class="org-chart-tier" role="listitem">
+              <div class="org-node primary">
+                {{ 'organization.chart.nodes.firstPresident' | i18n }}
+              </div>
+            </div>
+
+            <div class="org-chart-connector" aria-hidden="true"></div>
+
+            <div class="org-chart-tier" role="listitem">
+              <div class="org-node">
+                {{ 'organization.chart.nodes.plenary' | i18n }}
+              </div>
+              <div class="org-node">
+                {{ 'organization.chart.nodes.councilOffice' | i18n }}
+              </div>
+              <div class="org-node">
+                {{ 'organization.chart.nodes.registry' | i18n }}
+              </div>
+            </div>
+
+            <div class="org-chart-connector" aria-hidden="true"></div>
+
+            <div class="org-chart-tier" role="listitem">
+              <div class="org-node muted">
+                {{ 'organization.chart.nodes.civilChamber' | i18n }}
+              </div>
+              <div class="org-node muted">
+                {{ 'organization.chart.nodes.criminalChamber' | i18n }}
+              </div>
+              <div class="org-node muted">
+                {{ 'organization.chart.nodes.commercialChamber' | i18n }}
+              </div>
+              <div class="org-node muted">
+                {{ 'organization.chart.nodes.socialChamber' | i18n }}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="org-chart-highcharts-section" aria-labelledby="org-chart-highcharts-title">
+        <div class="container">
+          <div class="org-chart-header">
+            <div class="org-chart-line"></div>
+            <h2 id="org-chart-highcharts-title" class="section-title">{{ 'organization.chart.interactiveTitle' | i18n }}</h2>
+          </div>
+          <p class="org-chart-subtitle">{{ 'organization.chart.interactiveSubtitle' | i18n }}</p>
+
+          <div
+            #orgChartContainer
+            class="org-chart-highcharts"
+            role="img"
+            [attr.aria-label]="'organization.chart.aria' | i18n">
           </div>
         </div>
       </section>
@@ -514,8 +596,114 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
       font-size: 0.75rem;
       font-weight: 600;
       color: #8b7355;
-      letter-spacing: 1px;
+    }
+
+    /* Organization Chart */
+    .org-chart-section {
+      padding: 70px 0 40px;
+      background: linear-gradient(180deg, #f8f6f2 0%, #ffffff 100%);
+      border-bottom: 1px solid rgba(26, 41, 66, 0.08);
+    }
+
+    .org-chart-highcharts-section {
+      padding: 50px 0 60px;
+      background: #ffffff;
+    }
+
+    .org-chart-header {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      margin-bottom: 10px;
+    }
+
+    .org-chart-line {
+      width: 60px;
+      height: 3px;
+      background: #BF9874;
+    }
+
+    .org-chart-subtitle {
+      font-size: 0.95rem;
+      color: #6b5a41;
+      margin: 0 0 28px;
+      max-width: 760px;
+      margin-left: 78px;
+      line-height: 1.7;
+    }
+
+    .org-chart {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .org-chart-tier {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 16px;
+    }
+
+    .org-node {
+      background: #ffffff;
+      border: 1px solid rgba(26, 41, 66, 0.12);
+      padding: 14px 20px;
+      border-radius: 12px;
+      font-weight: 600;
+      color: #1a1a1a;
       text-transform: uppercase;
+      letter-spacing: 1px;
+      font-size: 0.75rem;
+      box-shadow: 0 8px 18px rgba(26, 41, 66, 0.12);
+    }
+
+    .org-node.primary {
+      background: #1a2942;
+      color: #ffffff;
+      border-color: #1a2942;
+    }
+
+    .org-node.muted {
+      background: rgba(191, 152, 116, 0.12);
+      border-color: rgba(191, 152, 116, 0.4);
+      color: #4b3b2a;
+    }
+
+    .org-chart-connector {
+      height: 22px;
+      width: 2px;
+      background: rgba(26, 41, 66, 0.2);
+      margin: 0 auto;
+    }
+
+    .org-chart-highcharts {
+      width: 100%;
+      min-height: 520px;
+      border: 1px solid rgba(26, 41, 66, 0.08);
+      box-shadow: 0 12px 30px rgba(26, 41, 66, 0.12);
+      background: #ffffff;
+      position: relative;
+      overflow-x: auto;
+      overflow-y: hidden;
+    }
+
+    .org-chart-highcharts .highcharts-container {
+      margin: 0 auto;
+    }
+
+    .org-node-label {
+      width: 220px;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      line-height: 1.2;
+    }
+
+    .org-chart-highcharts .highcharts-data-label > span {
+      width: 220px;
+      text-align: center;
     }
 
     .filter-group input,
@@ -1036,12 +1224,36 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
       .section-heading {
         font-size: 3rem;
       }
+
+      .org-chart-section {
+        padding: 60px 0 30px;
+      }
+
+      .org-chart-header {
+        flex-wrap: wrap;
+      }
+
+      .org-node {
+        font-size: 0.7rem;
+      }
     }
 
     /* Desktop and Laptop (1024px - 1439px) */
     @media (max-width: 1439px) {
       .container {
         max-width: 1100px;
+      }
+
+      .org-chart-section {
+        padding: 50px 0 25px;
+      }
+
+      .org-chart-line {
+        width: 40px;
+      }
+
+      .org-node {
+        padding: 12px 16px;
       }
     }
 
@@ -1061,6 +1273,10 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
 
       .services-grid {
         grid-template-columns: repeat(3, 1fr);
+      }
+
+      .org-chart-highcharts {
+        min-height: 480px;
       }
 
       .footer-grid {
@@ -1109,6 +1325,15 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
         padding-top: 10px;
       }
 
+      .org-chart-highcharts .highcharts-container {
+        min-width: 900px;
+      }
+
+      .org-node-label,
+      .org-chart-highcharts .highcharts-data-label > span {
+        width: 200px;
+      }
+
       .members-grid {
         grid-template-columns: repeat(3, 1fr);
         gap: 15px;
@@ -1131,6 +1356,10 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
       .footer-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 40px;
+      }
+
+      .org-chart-highcharts {
+        min-height: 440px;
       }
     }
 
@@ -1343,6 +1572,42 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
       .social-icons {
         order: -1;
       }
+
+      .org-chart-highcharts {
+        min-height: 380px;
+      }
+
+      .org-chart-highcharts::before,
+      .org-chart-highcharts::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 24px;
+        pointer-events: none;
+        z-index: 2;
+      }
+
+      .org-chart-highcharts::before {
+        left: 0;
+        background: linear-gradient(90deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0));
+      }
+
+      .org-chart-highcharts::after {
+        right: 0;
+        background: linear-gradient(270deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0));
+      }
+
+      .org-chart-highcharts .highcharts-container {
+        min-width: 760px;
+      }
+
+      .org-node-label,
+      .org-chart-highcharts .highcharts-data-label > span {
+        width: 180px;
+        font-size: 0.65rem;
+        padding: 6px 10px;
+      }
     }
 
     /* Mobile Portrait (480px - 600px) */
@@ -1390,6 +1655,17 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
       .services-grid {
         gap: 25px;
       }
+
+      .org-chart-highcharts .highcharts-container {
+        min-width: 640px;
+      }
+
+      .org-node-label,
+      .org-chart-highcharts .highcharts-data-label > span {
+        width: 160px;
+        font-size: 0.6rem;
+        padding: 6px 8px;
+      }
     }
 
     /* Small Mobile (320px - 480px) */
@@ -1406,6 +1682,21 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
       .hero-title {
         font-size: 1.4rem;
         letter-spacing: 0.5px;
+      }
+
+      .org-chart-highcharts {
+        min-height: 320px;
+      }
+
+      .org-chart-highcharts .highcharts-container {
+        min-width: 560px;
+      }
+
+      .org-node-label,
+      .org-chart-highcharts .highcharts-data-label > span {
+        width: 150px;
+        font-size: 0.58rem;
+        padding: 5px 8px;
       }
 
       .president-image-large {
@@ -1627,8 +1918,15 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
     }
   `]
 })
-export class OrganizationComponent implements OnInit {
+export class OrganizationComponent implements OnInit, AfterViewInit {
+  @ViewChild('orgChartContainer', { static: true })
+  orgChartContainer!: ElementRef<HTMLDivElement>;
+
+  private readonly destroyRef = inject(DestroyRef);
   private readonly memberService = inject(MemberService);
+  private readonly i18n = inject(I18nService);
+  private chartInstance?: Chart;
+  private highchartsRoot?: HighchartsStatic;
 
   readonly isLoading = signal(true);
   readonly selectedService = signal<string>('divisions');
@@ -1641,6 +1939,147 @@ export class OrganizationComponent implements OnInit {
     setTimeout(() => {
       this.isLoading.set(false);
     }, 1500);
+  }
+
+  ngAfterViewInit() {
+    this.initHighchartsModules().then((Highcharts) => {
+      if (!Highcharts) {
+        return;
+      }
+
+      this.renderOrganizationChart(Highcharts);
+      this.destroyRef.onDestroy(() => {
+        this.chartInstance?.destroy();
+        this.chartInstance = undefined;
+      });
+    });
+  }
+
+  private async initHighchartsModules(): Promise<HighchartsStatic | null> {
+    if (this.highchartsRoot) {
+      return this.highchartsRoot;
+    }
+
+    const [highchartsModule, sankeyModule, organizationModule] = await Promise.all([
+      import('highcharts'),
+      import('highcharts/modules/sankey'),
+      import('highcharts/modules/organization')
+    ]);
+
+    const Highcharts: HighchartsStatic =
+      (highchartsModule as unknown as { default?: HighchartsStatic }).default ??
+      (highchartsModule as unknown as HighchartsStatic);
+
+    const applyModule = (module: unknown) => {
+      const moduleFn =
+        typeof module === 'function'
+          ? (module as (h: HighchartsStatic) => void)
+          : typeof (module as { default?: unknown }).default === 'function'
+            ? ((module as { default: (h: HighchartsStatic) => void }).default)
+            : null;
+
+      if (moduleFn) {
+        moduleFn(Highcharts);
+      }
+    };
+
+    applyModule(sankeyModule);
+    applyModule(organizationModule);
+    this.highchartsRoot = Highcharts;
+    return Highcharts;
+  }
+
+  private renderOrganizationChart(Highcharts: HighchartsStatic) {
+    const t = (key: string) => this.i18n.translate(key);
+
+    const nodeFormat = '<div class="org-node-label">{point.name}</div>';
+
+    const presidentNodes = this.memberService.presidents.map((member) => ({
+      id: `president-${member.slug}`,
+      name: member.name,
+      color: '#4e6a8a'
+    }));
+
+    const advisorNodes = this.memberService.advisors.map((member) => ({
+      id: `advisor-${member.slug}`,
+      name: member.name,
+      color: '#BF9874'
+    }));
+
+    const presidentLinks = presidentNodes.map(
+      (node) => ['firstPresident', node.id] as [string, string]
+    );
+
+    const advisorLinks = advisorNodes.map((node, index) => {
+      const presidentNode = presidentNodes[index % Math.max(presidentNodes.length, 1)];
+      const parentId = presidentNode ? presidentNode.id : 'firstPresident';
+      return [parentId, node.id] as [string, string];
+    });
+
+    const organizationSeries = {
+      type: 'organization',
+      keys: ['from', 'to'],
+      data: [...presidentLinks, ...advisorLinks],
+      nodeWidth: 220,
+      nodePadding: 18,
+      color: '#1a2942',
+      borderColor: '#1a2942',
+      dataLabels: {
+        useHTML: true,
+        align: 'center',
+        verticalAlign: 'middle',
+        color: '#1a1a1a',
+        nodeFormat,
+        style: {
+          textOutline: 'none',
+          fontWeight: '600',
+          fontSize: '11px',
+          textAlign: 'center'
+        }
+      },
+      linkColor: 'rgba(26, 41, 66, 0.2)',
+      nodes: [
+        {
+          id: 'firstPresident',
+          name: t('organization.chart.nodes.firstPresident'),
+          color: '#1a2942',
+          dataLabels: {
+            useHTML: true,
+            align: 'center',
+            verticalAlign: 'middle',
+            color: '#ffffff',
+            nodeFormat,
+            style: {
+              textOutline: 'none',
+              fontWeight: '600',
+              fontSize: '11px',
+              textAlign: 'center'
+            }
+          }
+        },
+        ...presidentNodes,
+        ...advisorNodes
+      ]
+    } as unknown as SeriesOptionsType;
+
+    const options: Options = {
+      chart: {
+        type: 'organization',
+        backgroundColor: 'transparent',
+        height: 640,
+        spacing: [10, 10, 10, 10]
+      },
+      title: { text: undefined },
+      credits: { enabled: false },
+      tooltip: { enabled: false },
+      accessibility: {
+        enabled: true,
+        description: t('organization.chart.aria')
+      },
+      series: [organizationSeries]
+    };
+
+    this.chartInstance = Highcharts.chart(this.orgChartContainer.nativeElement, options);
   }
 
   selectService(service: string) {
