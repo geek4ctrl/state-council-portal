@@ -1864,7 +1864,7 @@ interface PresidentSlide {
       }
 
       .key-fact-chart {
-        height: 200px;
+        height: 220px;
       }
 
       .section-subtitle {
@@ -1979,7 +1979,7 @@ interface PresidentSlide {
       }
 
       .key-fact-chart {
-        height: 190px;
+        height: 230px;
       }
 
       .quick-links-container {
@@ -2671,7 +2671,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
         type: 'pie',
         backgroundColor: 'transparent',
         height: 220,
-        spacing: [10, 10, 0, 10]
+        spacing: [10, 10, 10, 10]
       },
       title: { text: undefined },
       credits: { enabled: false },
@@ -2691,6 +2691,25 @@ export class HomeComponent implements OnInit, AfterViewInit {
           innerSize: '55%',
           dataLabels: { enabled: false }
         }
+      },
+      responsive: {
+        rules: [
+          {
+            condition: { maxWidth: 600 },
+            chartOptions: {
+              chart: { height: 240 },
+              legend: {
+                itemStyle: { fontSize: '11px' }
+              },
+              plotOptions: {
+                pie: {
+                  center: ['50%', '45%'],
+                  size: '90%'
+                }
+              }
+            }
+          }
+        ]
       },
       series: [
         {
