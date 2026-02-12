@@ -354,25 +354,29 @@ import Highcharts from 'highcharts';
 
       .hero-grid {
         display: grid;
-        grid-template-columns: 1.6fr auto 1fr;
-        gap: 60px;
+        grid-template-columns: 1fr;
+        gap: 28px;
         align-items: center;
+        justify-items: center;
+        text-align: center;
       }
 
       .hero-title {
         position: relative;
-        text-align: left;
+        text-align: center;
       }
 
       .vertical-line {
-        width: 3px;
-        height: 150px;
+        width: 90px;
+        height: 3px;
         background-color: #ffffff;
         display: block;
       }
 
       .hero-description {
         padding-left: 0;
+        text-align: center;
+        max-width: 520px;
       }
 
       .hero-title h1 {
@@ -815,11 +819,12 @@ import Highcharts from 'highcharts';
         }
 
         .hero-grid {
-          gap: 50px;
+          gap: 26px;
         }
 
         .vertical-line {
-          height: 150px;
+          width: 90px;
+          height: 3px;
         }
 
         .schedules-section h2 {
@@ -856,11 +861,12 @@ import Highcharts from 'highcharts';
         }
 
         .hero-grid {
-          gap: 40px;
+          gap: 24px;
         }
 
         .vertical-line {
-          height: 120px;
+          width: 80px;
+          height: 3px;
         }
 
         .hero-description p {
