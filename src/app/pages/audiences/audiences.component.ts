@@ -1349,13 +1349,36 @@ export class AudiencesComponent implements AfterViewInit {
 
   private readonly destroyRef = inject(DestroyRef);
   private chartInstances: Highcharts.Chart[] = [];
+  private resizeObserver?: ResizeObserver;
+  private readonly handleVisibilityChange = () => {
+    if (!document.hidden) {
+      this.reflowCharts();
+    }
+  };
 
   ngAfterViewInit() {
     this.renderAudienceCharts();
+    this.setupChartObservers([this.monthlyVolumeChart, this.outcomesChart]);
     this.destroyRef.onDestroy(() => {
       this.chartInstances.forEach(chart => chart.destroy());
       this.chartInstances = [];
+      document.removeEventListener('visibilitychange', this.handleVisibilityChange);
+      this.resizeObserver?.disconnect();
+      this.resizeObserver = undefined;
     });
+  }
+
+  private setupChartObservers(containers: ElementRef<HTMLDivElement>[]) {
+    if (typeof ResizeObserver !== 'undefined') {
+      this.resizeObserver = new ResizeObserver(() => this.reflowCharts());
+      containers.forEach(container => this.resizeObserver?.observe(container.nativeElement));
+    }
+
+    document.addEventListener('visibilitychange', this.handleVisibilityChange);
+  }
+
+  private reflowCharts() {
+    this.chartInstances.forEach(chart => chart.reflow());
   }
 
   private renderAudienceCharts() {

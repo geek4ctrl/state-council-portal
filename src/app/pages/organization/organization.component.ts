@@ -516,7 +516,7 @@ type HighchartsStatic = typeof import('highcharts');
 
     /* First President Section */
     .first-president-section {
-      background: #0a1929;
+      background: #ECECF1;
       padding: 0;
     }
 
@@ -526,6 +526,12 @@ type HighchartsStatic = typeof import('highcharts');
       gap: 0;
       align-items: start;
       background: #1a2942;
+      border-radius: 0;
+    }
+
+    .president-image-large,
+    .president-info-large {
+      border-radius: 0;
     }
 
     .president-image-large {
@@ -575,7 +581,7 @@ type HighchartsStatic = typeof import('highcharts');
 
     /* Senior Label Section */
     .senior-label-section {
-      background: #0a1929;
+      background: #ECECF1;
       padding: 40px 0 0 0;
     }
 
@@ -590,12 +596,12 @@ type HighchartsStatic = typeof import('highcharts');
 
     /* Members Section (Presidents & Advisors) */
     .members-section {
-      background: #0a1929;
+      background: #ECECF1;
       padding: 20px 0 60px 0;
     }
 
     .members-filter-section {
-      background: #0a1929;
+      background: #ECECF1;
       padding: 20px 0 10px 0;
     }
 
@@ -615,7 +621,7 @@ type HighchartsStatic = typeof import('highcharts');
     .filter-group label {
       font-size: 0.75rem;
       font-weight: 600;
-      color: #8b7355;
+      color: #4b5563;
     }
 
     /* Organization Chart */
@@ -631,6 +637,10 @@ type HighchartsStatic = typeof import('highcharts');
       align-items: center;
       gap: 10px;
       margin-bottom: 14px;
+    }
+
+    .org-chart-section .section-title {
+      color: #1a1a1a;
     }
 
     .org-chart-line {
@@ -718,9 +728,9 @@ type HighchartsStatic = typeof import('highcharts');
     }
     .filter-group input,
     .filter-group select {
-      background: #1a2942;
-      color: white;
-      border: 1px solid rgba(139, 115, 85, 0.4);
+      background: #ffffff;
+      color: #1a1a1a;
+      border: 1px solid rgba(26, 41, 66, 0.18);
       padding: 12px 14px;
       font-size: 0.9rem;
       outline: none;
@@ -729,13 +739,13 @@ type HighchartsStatic = typeof import('highcharts');
 
     .filter-group input:focus,
     .filter-group select:focus {
-      border-color: #8b7355;
-      box-shadow: 0 0 0 3px rgba(139, 115, 85, 0.2);
+      border-color: #4e6a8a;
+      box-shadow: 0 0 0 3px rgba(78, 106, 138, 0.18);
     }
 
     .filter-summary {
       font-size: 0.85rem;
-      color: rgba(255, 255, 255, 0.7);
+      color: #4b5563;
       padding-bottom: 12px;
     }
 
@@ -746,7 +756,7 @@ type HighchartsStatic = typeof import('highcharts');
     .section-title {
       font-size: 2.5rem;
       font-weight: 300;
-      color: white;
+      color: #1a1a1a;
       text-align: left;
       margin: 0 0 40px 0;
       letter-spacing: 2px;
@@ -1093,11 +1103,11 @@ type HighchartsStatic = typeof import('highcharts');
 
     /* Footer */
     .footer-section {
-      background-color: transparent;
+      background-color: #F2F3F7;
     }
 
     .footer-main {
-      background-color: #2C3E50;
+      background-color: #F2F3F7;
       color: #b0b0b0;
       padding: 60px 0 40px;
       position: relative;
@@ -1835,6 +1845,12 @@ export class OrganizationComponent implements OnInit, AfterViewInit {
   private readonly i18n = inject(I18nService);
   private chartInstance?: Chart;
   private highchartsRoot?: HighchartsStatic;
+  private resizeObserver?: ResizeObserver;
+  private readonly handleVisibilityChange = () => {
+    if (!document.hidden) {
+      this.chartInstance?.reflow();
+    }
+  };
 
   readonly presidents = this.memberService.presidents;
   readonly advisors = this.memberService.advisors;
@@ -1859,11 +1875,24 @@ export class OrganizationComponent implements OnInit, AfterViewInit {
       }
 
       this.renderOrganizationChart(Highcharts);
+      this.setupChartObservers(this.orgChartContainer);
       this.destroyRef.onDestroy(() => {
         this.chartInstance?.destroy();
         this.chartInstance = undefined;
+        document.removeEventListener('visibilitychange', this.handleVisibilityChange);
+        this.resizeObserver?.disconnect();
+        this.resizeObserver = undefined;
       });
     });
+  }
+
+  private setupChartObservers(container: ElementRef<HTMLDivElement>) {
+    if (typeof ResizeObserver !== 'undefined') {
+      this.resizeObserver = new ResizeObserver(() => this.chartInstance?.reflow());
+      this.resizeObserver.observe(container.nativeElement);
+    }
+
+    document.addEventListener('visibilitychange', this.handleVisibilityChange);
   }
 
   private async initHighchartsModules(): Promise<HighchartsStatic | null> {

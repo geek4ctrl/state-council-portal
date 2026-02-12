@@ -812,7 +812,9 @@ interface PresidentSlide {
       color: #6b5a41;
       margin: 0 0 28px;
       max-width: 720px;
-      margin-left: calc(60px + 18px);
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
       line-height: 1.6;
     }
 
@@ -866,7 +868,7 @@ interface PresidentSlide {
 
     /* Quick Links Section */
     .quick-links-section {
-      background: linear-gradient(90deg, rgba(60, 74, 92, 0.75), rgba(118, 128, 144, 0.55));
+      background: #ECECF1;
       color: black;
       padding: 32px 0;
       border-top: 1px solid rgba(255, 255, 255, 0.18);
@@ -929,7 +931,7 @@ interface PresidentSlide {
     .quick-link-content h3 {
       font-size: 0.75rem;
       font-weight: 800;
-      color: #ffffff;
+      color: #1a1a1a;
       margin-bottom: 8px;
       text-transform: uppercase;
       letter-spacing: 0.7px;
@@ -938,13 +940,13 @@ interface PresidentSlide {
 
     .quick-link-content p {
       font-size: 0.78rem;
-      color: rgba(255, 255, 255, 0.88);
+      color: #4b5563;
       line-height: 1.55;
       margin-bottom: 6px;
     }
 
     .quick-link-action {
-      color: #ffffff;
+      color: #1a2942;
       font-size: 0.75rem;
       font-weight: 700;
       display: inline-flex;
@@ -1053,7 +1055,7 @@ interface PresidentSlide {
     .expertise-section {
       position: relative;
       padding: 90px 0;
-      background: white;
+      background: #ECECF1;
       overflow: hidden;
     }
 
@@ -1262,7 +1264,7 @@ interface PresidentSlide {
 
     /* Contact Info */
     .contact-info-section {
-      background: linear-gradient(90deg, rgba(72, 84, 102, 0.85), rgba(142, 150, 164, 0.75));
+      background: #ffffff;
     }
 
     .contact-bar {
@@ -1280,23 +1282,23 @@ interface PresidentSlide {
       font-size: 0.9rem;
       font-weight: 600;
       margin-bottom: 10px;
-      color: #ffffff;
+      color: #1a1a1a;
     }
 
     .contact-item p {
       font-size: 0.85rem;
-      color: rgba(255, 255, 255, 0.85);
+      color: #4b5563;
     }
 
     .contact-divider {
       width: 2px;
-      background: linear-gradient(to bottom, transparent, #BF9874, transparent);
+      background: linear-gradient(to bottom, transparent, rgba(191, 152, 116, 0.7), transparent);
     }
 
     /* President Section */
     .president-section {
       padding: 90px 0;
-      background: linear-gradient(135deg, #f7f2ee 0%, #f1e7df 55%, #f7f2ee 100%);
+      background: #ECECF1;
       position: relative;
       overflow: hidden;
     }
@@ -1326,7 +1328,7 @@ interface PresidentSlide {
       box-shadow: 0 20px 40px rgba(20, 28, 40, 0.2);
       border: 1px solid rgba(255, 255, 255, 0.7);
       background: #fff;
-      height: 100%;
+      height: 520px;
     }
 
     .president-image-wrapper img {
@@ -1345,7 +1347,7 @@ interface PresidentSlide {
       padding: 36px 38px;
       backdrop-filter: blur(10px);
       -webkit-backdrop-filter: blur(10px);
-      height: 100%;
+      height: 520px;
       display: flex;
       flex-direction: column;
     }
@@ -1377,6 +1379,10 @@ interface PresidentSlide {
       line-height: 1.8;
       color: #4b5563;
       margin-bottom: 18px;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
     }
 
     .president-learn-btn {
@@ -1425,7 +1431,7 @@ interface PresidentSlide {
     /* Newsletter */
     .newsletter-section {
       padding: 80px 0;
-      background: linear-gradient(135deg, rgba(78, 90, 110, 0.92), rgba(128, 137, 153, 0.78));
+      background: #ffffff;
       color: #1a1a1a;
       position: relative;
       overflow: hidden;
@@ -1438,8 +1444,8 @@ interface PresidentSlide {
       position: absolute;
       inset: 0;
       background:
-        radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.12), transparent 45%),
-        radial-gradient(circle at 80% 10%, rgba(191, 152, 116, 0.2), transparent 55%);
+        radial-gradient(circle at 20% 20%, rgba(191, 152, 116, 0.08), transparent 45%),
+        radial-gradient(circle at 80% 10%, rgba(44, 62, 80, 0.05), transparent 55%);
       pointer-events: none;
       z-index: 0;
     }
@@ -1460,10 +1466,10 @@ interface PresidentSlide {
     .newsletter-header h2 {
       font-size: 2.4rem;
       font-weight: 800;
-      color: #f8fbff;
+      color: #1a1a1a;
       margin: 0;
       letter-spacing: 4px;
-      text-shadow: 0 6px 18px rgba(12, 18, 40, 0.35);
+      text-shadow: none;
     }
 
     .header-line {
@@ -1587,7 +1593,7 @@ interface PresidentSlide {
     }
 
     .footer-main {
-      background: linear-gradient(180deg, #eef4fb 0%, #e1eaf5 100%);
+      background: #ECECF1;
       color: #55645c;
       padding: 60px 0 40px;
       position: relative;
@@ -1696,7 +1702,7 @@ interface PresidentSlide {
     }
 
     .footer-bottom {
-      background: linear-gradient(180deg, #e1eaf5 0%, #dbe6f3 100%);
+      background: #ffffff;
       padding: 25px 0;
       border-top: 1px solid rgba(26, 41, 66, 0.08);
     }
@@ -2438,6 +2444,14 @@ interface PresidentSlide {
   `]
 })
 export class HomeComponent implements OnInit, AfterViewInit {
+  private heroSlideIntervalId?: number;
+  private presidentSlideIntervalId?: number;
+  private resizeObserver?: ResizeObserver;
+  private readonly handleVisibilityChange = () => {
+    if (!document.hidden) {
+      this.reflowCharts();
+    }
+  };
   @ViewChild('caseVolumeChart', { static: true })
   caseVolumeChart!: ElementRef<HTMLDivElement>;
 
@@ -2515,21 +2529,51 @@ export class HomeComponent implements OnInit, AfterViewInit {
   ];
 
   ngOnInit() {
-    setInterval(() => {
+    this.heroSlideIntervalId = window.setInterval(() => {
       this.nextSlide();
     }, 7000);
 
-    setInterval(() => {
+    this.presidentSlideIntervalId = window.setInterval(() => {
       this.nextPresidentSlide();
     }, 8000);
+
+    this.destroyRef.onDestroy(() => {
+      if (this.heroSlideIntervalId !== undefined) {
+        window.clearInterval(this.heroSlideIntervalId);
+      }
+      if (this.presidentSlideIntervalId !== undefined) {
+        window.clearInterval(this.presidentSlideIntervalId);
+      }
+    });
   }
 
   ngAfterViewInit() {
     this.renderKeyFactsCharts();
+    this.setupChartObservers([
+      this.caseVolumeChart,
+      this.processingTimeChart,
+      this.decisionsTypeChart
+    ]);
     this.destroyRef.onDestroy(() => {
       this.chartInstances.forEach(chart => chart.destroy());
       this.chartInstances = [];
+      document.removeEventListener('visibilitychange', this.handleVisibilityChange);
+      this.resizeObserver?.disconnect();
+      this.resizeObserver = undefined;
     });
+  }
+
+  private setupChartObservers(containers: ElementRef<HTMLDivElement>[]) {
+    if (typeof ResizeObserver !== 'undefined') {
+      this.resizeObserver = new ResizeObserver(() => this.reflowCharts());
+      containers.forEach(container => this.resizeObserver?.observe(container.nativeElement));
+    }
+
+    document.addEventListener('visibilitychange', this.handleVisibilityChange);
+  }
+
+  private reflowCharts() {
+    this.chartInstances.forEach(chart => chart.reflow());
   }
 
   private renderKeyFactsCharts() {
