@@ -34,6 +34,18 @@
   box-sizing: border-box;
 }
 
+html {
+  overflow-x: hidden !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+html, body {
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow-x: hidden !important;
+}
+
 body {
   font-family: var(--font-primary);
   font-size: var(--font-size-body);
@@ -43,6 +55,8 @@ body {
   background-color: var(--surface-0);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important;
 }
 
 body.menu-open {
@@ -101,9 +115,10 @@ button {
   .stakeholder-card,
   .error-card,
   .president-card-large,
-  .key-fact-card
+  .key-fact-card,
+  .info-card
 ) {
-  border-radius: var(--radius-lg);
+  border-radius: 6px !important;
   box-shadow: var(--shadow-soft);
 }
 
@@ -120,6 +135,7 @@ button {
   );
   backdrop-filter: var(--glass-blur, blur(14px) saturate(130%));
   -webkit-backdrop-filter: var(--glass-blur, blur(14px) saturate(130%));
+  border-radius: 6px !important;
 }
 
 :where(
@@ -136,7 +152,8 @@ button {
   .insight-card:hover,
   .network-card:hover,
   .domain-card:hover,
-  .stakeholder-card:hover
+  .stakeholder-card:hover,
+  .info-card:hover
 ) {
   box-shadow: var(--shadow-lift);
 }
@@ -147,7 +164,7 @@ main {
 
 @media (max-width: 768px) {
   main {
-    padding-bottom: 110px;
+    padding-bottom: 0;
   }
 }
 
@@ -171,7 +188,7 @@ input:focus-visible,
 textarea:focus-visible,
 select:focus-visible,
 [tabindex]:focus-visible {
-  outline: 3px solid #8B6914;
+  outline: 3px solid #BF9874;
   outline-offset: 2px;
 }
 
@@ -183,7 +200,7 @@ select:focus-visible,
 /* Ensure interactive elements have visible focus */
 .nav-link:focus-visible,
 .dropdown-link:focus-visible {
-  outline: 3px solid #8B6914;
+  outline: 3px solid #BF9874;
   outline-offset: 2px;
   border-radius: 2px;
 }
@@ -248,4 +265,462 @@ img.lazy-error {
 /* Native Lazy Loading Optimization */
 img[loading="lazy"] {
   content-visibility: auto;
+}
+
+.page-container {
+  background: white;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ===== SUBTITLE GOLDISH COLOR ===== */
+.hero-subtitle,
+.key-facts-subtitle,
+.section-subtitle,
+.offer-subtitle,
+.expertise-subtitle,
+.news-date,
+.key-fact-note,
+.form-subtitle,
+.hero-category {
+  color: #001025 !important;
+}
+
+/* ===== ALL ICON STYLING (TRANSPARENT BACKGROUND, GOLDISH BORDER ONLY, 4PX RADIUS) ===== */
+.quick-link-icon,
+.offer-icon,
+.practice-icon,
+.card-icon {
+  background: transparent !important;
+  background-color: transparent !important;
+  border: 1px solid #BF9874 !important;
+  border-radius: 4px !important;
+  overflow: hidden;
+  padding: 8px;
+}
+
+/* ===== REMOVE ALL BORDERS AND BACKGROUNDS FROM IMAGES AND SVG INSIDE ICONS ===== */
+.quick-link-icon img,
+.offer-icon img,
+.practice-icon img,
+.card-icon img,
+.quick-link-icon svg,
+.offer-icon svg,
+.practice-icon svg,
+.card-icon svg {
+  border: none !important;
+  outline: none !important;
+  background: none !important;
+}
+
+/* ===== TEXT LINK BUTTONS (NO BORDERS, UNDERLINED) ===== */
+.quick-link-action,
+.read-more-link,
+.practice-cta,
+.card-link {
+  border: none !important;
+  background: transparent !important;
+  text-decoration: underline !important;
+  text-decoration-thickness: 2px !important;
+  text-underline-offset: 4px !important;
+  padding: 0 !important;
+  font-weight: 700 !important;
+  color: #1a2942 !important;
+  display: inline-flex !important;
+  align-items: center;
+  gap: 6px;
+}
+
+.read-more-link {
+  color: #BF9874 !important;
+}
+
+.practice-cta {
+  color: var(--accent) !important;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.8rem;
+}
+
+.card-link {
+  color: #1a2942 !important;
+  font-size: 0.9rem;
+}
+
+/* ===== ACTUAL BUTTON STYLES (6PX BORDERS FOR HERO) ===== */
+.hero-button,
+.hero-btn {
+  /* border-width: 6px !important; */
+  border-style: solid !important;
+  border-radius: 6px !important;
+  border-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+.hero-button.secondary {
+  border-color: rgba(255, 255, 255, 0.55) !important;
+}
+
+.contact-btn,
+.download-btn,
+button[type="submit"] {
+  /* border-width: 6px !important; */
+  border-style: solid !important;
+  border-radius: 6px !important;
+  /* border-color: #BF9874 !important; */
+}
+
+/* ===== LEARN MORE / APPOINTMENT BUTTONS (1PX BORDER LIKE ICONS) ===== */
+.president-learn-btn,
+.newsletter-learn-btn,
+.btn-appointment {
+  border-width: 1px !important;
+  border-style: solid !important;
+  border-color: #BF9874 !important;
+  border-radius: 6px !important;
+  background: transparent !important;
+  color: #BF9874 !important;
+  padding: 14px 38px !important;
+  font-size: 0.9rem !important;
+  font-weight: 700 !important;
+  cursor: pointer !important;
+  text-transform: capitalize !important;
+  transition: all 0.3s ease !important;
+}
+
+.president-learn-btn:hover,
+.newsletter-learn-btn:hover,
+.btn-appointment:hover {
+  background: #BF9874 !important;
+  color: white !important;
+}
+
+/* ===== REMOVE ALL IMAGE BORDERS GLOBALLY ===== */
+img,
+.news-image img,
+.document-preview img,
+.president-image-wrapper img,
+.image-main img {
+  border: none !important;
+  outline: none !important;
+}
+
+.president-image-wrapper,
+.news-image,
+.document-preview,
+.image-main {
+  border: none !important;
+  outline: none !important;
+}
+
+.president-image-wrapper {
+  border-radius: 6px !important;
+  overflow: hidden;
+}
+
+/* ===== INFO CARDS SECTION - PROPER SPACING ===== */
+.info-cards {
+  padding: 40px 0;
+}
+
+.info-cards .container {
+  padding: 0 20px;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.info-card {
+  padding: 24px 20px;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-icon {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.card-icon svg {
+  width: 100%;
+  height: 100%;
+  stroke: #BF9874;
+}
+
+.info-card h3 {
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+  color: #1a1a1a;
+}
+
+.info-card p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 16px;
+  flex: 1;
+}
+
+/* ===== EXPERTISE SECTION SPACING ===== */
+.expertise-subtitle {
+  margin-bottom: 40px !important;
+}
+
+/* ===== FOOTER - REMOVE ALL WHITE SPACE ===== */
+.footer-section {
+  background-color: transparent !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.footer-main {
+  margin: 0 !important;
+  margin-bottom: 0 !important;
+  padding-bottom: 40px !important;
+}
+
+.footer-bottom {
+  margin: 0 !important;
+  padding: 25px 0 0 0 !important;
+}
+
+.footer-bottom .container {
+  padding: 0 20px !important;
+}
+
+/* ===== FOOTER LOGO (LANGUAGE SUPPORT) ===== */
+.footer-logo-wrapper {
+  border: 1px solid rgba(191, 152, 116, 0.3) !important;
+}
+
+.footer-logo-wrapper img {
+  max-width: 80%;
+  max-height: 80%;
+  object-fit: contain;
+  border: none !important;
+}
+
+/* ===== SOCIAL ICONS - GOLDISH BORDERS WITH SPACING ===== */
+.social-icons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+.social-icon {
+  border: 2px solid #BF9874 !important;
+}
+
+.social-icon:hover {
+  border-color: #BF9874 !important;
+  background-color: #BF9874 !important;
+}
+
+/* ===== NAVIGATION ARROWS ===== */
+.nav-arrow {
+  border-radius: 50%;
+}
+
+.nav-arrow:hover {
+  border-color: rgba(191, 152, 116, 0.8) !important;
+}
+
+/* ===== DECORATIVE LINES - GOLDISH ===== */
+.key-facts-line,
+.offer-line,
+.header-line,
+.expertise-line {
+  background: #BF9874 !important;
+}
+
+/* ===== CONTACT INFO DIVIDERS - GOLDISH ===== */
+.contact-divider {
+  background: linear-gradient(to bottom, transparent, rgba(191, 152, 116, 0.7), transparent) !important;
+}
+
+@media (max-width: 1023px) {
+  .contact-divider {
+    background: linear-gradient(to right, transparent, #BF9874, transparent) !important;
+  }
+
+  .cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ===== MOBILE-SPECIFIC FIXES ===== */
+@media (max-width: 767px) {
+  
+  body {
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+  }
+
+  .footer-section {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+  }
+
+  .footer-main {
+    padding-bottom: 30px !important;
+    margin-bottom: 0 !important;
+  }
+
+  .footer-bottom {
+    padding: 20px 0 0 0 !important;
+    margin-bottom: 0 !important;
+  }
+
+  .footer-bottom .container {
+    padding: 0 16px !important;
+  }
+
+  .social-icons {
+    padding: 0 16px;
+  }
+  
+  .quick-link-action,
+  .read-more-link,
+  .card-link {
+    align-self: flex-start !important;
+    margin-left: 0 !important;
+    text-align: left !important;
+  }
+
+  .quick-link-content {
+    align-items: flex-start !important;
+  }
+
+  .hero-actions {
+    justify-content: flex-start !important;
+  }
+
+  .quick-link-icon,
+  .card-icon {
+    border-width: 1px !important;
+  }
+
+  .hero-button,
+  .hero-btn,
+  .contact-btn {
+    border-width: 1px !important;
+  }
+
+  .president-learn-btn,
+  .newsletter-learn-btn,
+  .btn-appointment {
+    border-width: 1px !important;
+  }
+
+  .cards-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .info-cards {
+    padding: 30px 0;
+  }
+
+  .info-cards .container {
+    padding: 0 16px;
+  }
+
+  .card-icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .expertise-subtitle {
+    margin-bottom: 30px !important;
+  }
+}
+
+@media (max-width: 575px) {
+  body {
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+  }
+
+  .footer-section {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+  }
+  
+  .footer-main {
+    padding-bottom: 25px !important;
+    margin-bottom: 0 !important;
+  }
+
+  .footer-bottom {
+    padding: 20px 0 0 0 !important;
+    margin-bottom: 0 !important;
+  }
+
+  .footer-bottom .container {
+    padding: 0 16px !important;
+  }
+
+  .social-icons {
+    padding: 0 16px;
+  }
+
+  .quick-link-action,
+  .read-more-link,
+  .card-link {
+    align-self: flex-start;
+    text-align: left;
+  }
+
+  .hero-button,
+  .hero-btn {
+    border-width: 5px !important;
+  }
+
+  .president-learn-btn,
+  .newsletter-learn-btn,
+  .btn-appointment {
+    border-width: 1px !important;
+  }
+
+  .info-cards .container {
+    padding: 0 16px;
+  }
+
+  .card-icon {
+    width: 48px;
+    height: 48px;
+  }
+
+  .expertise-subtitle {
+    margin-bottom: 25px !important;
+  }
+}
+
+.quick-link-item {
+  border: 2px solid rgba(191, 152, 116, 0.2);
+}
+
+.quick-link-item:hover {
+  border-color: rgba(191, 152, 116, 0.4);
 }

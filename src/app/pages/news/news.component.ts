@@ -240,7 +240,7 @@ import Highcharts from 'highcharts';
 
     .insights-subtitle {
       font-size: 0.85rem;
-      color: #6b5a41;
+      color: #BF9874;
       margin: 0 0 24px;
       letter-spacing: 1px;
       text-transform: uppercase;
@@ -363,7 +363,7 @@ import Highcharts from 'highcharts';
     }
 
     .read-more {
-      color: #2c3e50;
+      color: #BF9874;
       font-size: 0.9rem;
       font-weight: 500;
       text-decoration: none;
@@ -371,7 +371,7 @@ import Highcharts from 'highcharts';
     }
 
     .read-more:hover {
-      color: #8B6914;
+      color: #BF9874;
     }
 
     /* Pagination */
@@ -415,13 +415,13 @@ import Highcharts from 'highcharts';
     }
 
     .pagination-number:hover:not(.active) {
-      border-color: #8B6914;
-      color: #8B6914;
+      border-color: #BF9874;
+      color: #BF9874;
     }
 
     .pagination-btn:hover:not(:disabled) {
-      border-color: #8B6914;
-      color: #8B6914;
+      border-color: #BF9874;
+      color: #BF9874;
     }
 
     .pagination-btn.next {
@@ -597,7 +597,7 @@ export class NewsComponent implements OnInit, AfterViewInit {
 
   private renderNewsCharts() {
     const axisLabelStyle = {
-      color: '#6b5a41',
+      color: '#BF9874',
       fontSize: '11px'
     };
 

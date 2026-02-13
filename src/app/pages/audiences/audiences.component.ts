@@ -1389,7 +1389,7 @@ export class AudiencesComponent implements AfterViewInit {
 
   private renderAudienceCharts() {
     const axisLabelStyle = {
-      color: '#6b5a41',
+      color: '#BF9874',
       fontSize: '11px'
     };
 

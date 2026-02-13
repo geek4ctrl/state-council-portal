@@ -17,7 +17,7 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
       padding: 3rem 1rem;
     }
     h1 {
-      color: #8B6914;
+      color: #BF9874;
       margin-bottom: 1rem;
     }
   `]

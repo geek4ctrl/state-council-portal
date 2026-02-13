@@ -253,15 +253,32 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
       padding: 0 20px;
     }
 
-    /* Hero Section */
+    /* Hero Section - ONLY THIS SECTION HAS BEEN CHANGED */
     .hero-section {
-      background: linear-gradient(135deg, rgba(44, 62, 80, 0.95), rgba(52, 73, 94, 0.95)),
-                  url('https://placehold.co/1920x400') center/cover;
+      background-image: url('https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1920&h=800&fit=crop&q=80');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-color: #2c3e50;
+      position: relative;
       color: white;
-      height: 265px;
-      padding: 0;
-      display: flex;
-      align-items: center;
+      padding: 100px 0;
+    }
+
+    .hero-section::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(135deg, rgba(44, 62, 80, 0.92) 0%, rgba(52, 73, 94, 0.88) 50%, rgba(30, 46, 68, 0.90) 100%);
+      z-index: 1;
+    }
+
+    .hero-section .container {
+      position: relative;
+      z-index: 2;
     }
 
     .hero-grid {
@@ -272,10 +289,10 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
     }
 
     .hero-left h1 {
-      font-size: 3.2rem;
+      font-size: 4rem;
       font-weight: 700;
       margin: 0;
-      letter-spacing: 4px;
+      letter-spacing: 3px;
       line-height: 1.1;
       color: white;
     }
@@ -301,65 +318,45 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
     /* Tabs Section */
     .tabs-section {
       background: white;
-      border-bottom: 1px solid rgba(26, 41, 66, 0.08);
-      padding: 20px 0;
+      border-bottom: 1px solid #e0e0e0;
     }
 
     .tabs {
       display: flex;
       gap: 0;
       align-items: center;
-      background: #f5f7fb;
-      border: 1px solid rgba(26, 41, 66, 0.12);
-      border-radius: 999px;
-      padding: 6px;
-      box-shadow: 0 12px 30px rgba(26, 41, 66, 0.08);
     }
 
     .tab {
       flex: 1;
       text-align: center;
-      padding: 14px 28px;
-      font-size: 0.9rem;
-      font-weight: 600;
-      color: #5b6470;
+      padding: 20px 30px;
+      font-size: 0.95rem;
+      font-weight: 500;
+      color: #666;
       background: transparent;
       border: none;
-      border-radius: 999px;
-      transition: color 0.25s ease, background 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
+      border-bottom: 3px solid transparent;
+      transition: all 0.3s ease;
       cursor: pointer;
-      letter-spacing: 0.8px;
-      text-transform: uppercase;
+      border-radius: 1px;
     }
 
     .tab:hover {
-      color: #1a1a1a;
-      background: rgba(255, 255, 255, 0.7);
-      transform: translateY(-1px);
+      color: #2c3e50;
+      background: #f8f8f8;
     }
 
     .tab.active {
-      color: #1a1a1a;
-      background: #ffffff;
-      box-shadow: 0 10px 18px rgba(26, 41, 66, 0.12);
-      position: relative;
-    }
-
-    .tab.active::after {
-      content: '';
-      position: absolute;
-      left: 14px;
-      right: 14px;
-      bottom: -4px;
-      height: 3px;
-      background: linear-gradient(90deg, #8b6914, #d6b56f);
-      border-radius: 999px;
+      color: #2c3e50;
+      border-bottom-color: #2c3e50;
+      font-weight: 600;
     }
 
     .tab-separator {
-      width: 0;
-      height: 0;
-      background: transparent;
+      width: 1px;
+      height: 30px;
+      background: #d0d0d0;
       flex-shrink: 0;
     }
 
@@ -384,7 +381,7 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
 
     .form-subtitle {
       font-size: 0.9rem;
-      color: #c9a961;
+      color: #BF9874;
       text-transform: uppercase;
       letter-spacing: 2px;
       margin: 0;
@@ -414,7 +411,7 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
       width: 100%;
       padding: 15px 20px;
       border: 1px solid #ddd;
-      border-radius: 0;
+      border-radius: 3px;
       font-size: 0.95rem;
       font-family: inherit;
       transition: border-color 0.3s ease;
@@ -424,7 +421,7 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
     .form-group select:focus,
     .form-group textarea:focus {
       outline: none;
-      border-color: #8B6914;
+      border-color: #1a1a1a;
     }
 
     .form-group input::placeholder,
@@ -449,8 +446,8 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
 
     .form-submit button {
       background: white;
-      color: #1a1a1a;
-      border: 1px solid #1a1a1a;
+      color: #BF9874;
+      border: 1px solid #BF9874;
       padding: 15px 50px;
       font-size: 0.9rem;
       font-weight: 600;
@@ -460,8 +457,8 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
     }
 
     .form-submit button:hover {
-      background: #1a1a1a;
-      color: white;
+      background: transparent;
+      color: #BF9874;
     }
 
     /* Map Section */
@@ -491,44 +488,34 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
       }
 
       .hero-left h1 {
-        font-size: 2.8rem;
+        font-size: 3rem;
       }
     }
 
     @media (max-width: 768px) {
       .hero-section {
-        height: 265px;
-        padding: 0;
-        overflow: hidden;
+        padding: 80px 0;
       }
 
       .hero-left h1 {
-        font-size: 2.3rem;
+        font-size: 2.5rem;
       }
 
       .hero-right p {
-        font-size: 0.95rem;
-        line-height: 1.6;
-        margin-bottom: 12px;
+        font-size: 1rem;
       }
 
       .tabs {
         flex-direction: column;
-        border-radius: 18px;
       }
 
       .tab {
-        width: 100%;
+        border-bottom: 1px solid #e0e0e0;
+        border-right: none;
       }
 
       .tab.active {
-        box-shadow: 0 8px 16px rgba(26, 41, 66, 0.1);
-      }
-
-      .tab.active::after {
-        left: 24px;
-        right: 24px;
-        bottom: -2px;
+        border-bottom-color: #2c3e50;
       }
 
       .tab-separator {
@@ -555,20 +542,16 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
 
     @media (max-width: 480px) {
       .hero-section {
-        height: 250px;
-        padding: 0;
-        overflow: hidden;
+        padding: 60px 0;
       }
 
       .hero-left h1 {
-        font-size: 2.1rem;
-        letter-spacing: 1.5px;
+        font-size: 2rem;
+        letter-spacing: 2px;
       }
 
       .hero-right p {
-        font-size: 0.85rem;
-        line-height: 1.5;
-        margin-bottom: 10px;
+        font-size: 0.95rem;
       }
 
       .form-header h2 {

@@ -137,7 +137,7 @@
 }
 
 .lang-btn:focus-visible {
-  outline: 3px solid #8B6914;
+  outline: 3px solid #BF9874;
   outline-offset: 2px;
 }
 
@@ -205,11 +205,11 @@
 
 .nav-link:hover,
 .nav-link.active {
-  color: #8B6914;
+  color: #BF9874;
 }
 
 .nav-link:focus-visible {
-  outline: 3px solid #8B6914;
+  outline: 3px solid #BF9874;
   outline-offset: 2px;
   border-radius: 2px;
 }
@@ -253,11 +253,11 @@
 
 .dropdown-link:hover {
   background-color: #f8f9fa;
-  color: #8B6914;
+  color: #BF9874;
 }
 
 .dropdown-link:focus-visible {
-  outline: 3px solid #8B6914;
+  outline: 3px solid #BF9874;
   outline-offset: -3px;
   background-color: #f8f9fa;
 }
@@ -278,7 +278,7 @@
 }
 
 .btn-appointment:focus-visible {
-  outline: 3px solid #8B6914;
+  outline: 3px solid #BF9874;
   outline-offset: 2px;
 }
 

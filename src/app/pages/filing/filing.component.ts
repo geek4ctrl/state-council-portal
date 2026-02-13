@@ -149,7 +149,7 @@ import { SeoService } from '../../services/seo.service';
 
     .tab.active {
       color: #2c3e50;
-      border-bottom-color: #8B6914;
+      border-bottom-color: #BF9874;
       font-weight: 600;
     }
 
@@ -212,7 +212,7 @@ import { SeoService } from '../../services/seo.service';
     .form-group select:focus,
     .form-group textarea:focus {
       outline: none;
-      border-color: #8B6914;
+      border-color: #BF9874;
     }
 
     .form-group input::placeholder,
@@ -288,7 +288,7 @@ import { SeoService } from '../../services/seo.service';
       }
 
       .tab.active {
-        border-bottom-color: #8B6914;
+        border-bottom-color: #BF9874;
       }
 
       .form-row {

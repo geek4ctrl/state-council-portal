@@ -80,13 +80,13 @@ import { I18nPipe } from '../../../i18n/i18n.pipe';
       }
 
       .primary-btn {
-        background: #bf9874;
+        background: #BF9874;
         color: #1a2942;
       }
 
       .secondary-btn {
         border: 1px solid rgba(191, 152, 116, 0.6);
-        color: #bf9874;
+        color: #BF9874;
       }
 
       .secondary-btn:hover {

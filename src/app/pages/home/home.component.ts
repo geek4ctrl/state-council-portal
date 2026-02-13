@@ -7,10 +7,12 @@ import {
   OnInit,
   ViewChild,
   inject,
-  signal
+  signal,
+  computed
 } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { I18nPipe } from '../../i18n/i18n.pipe';
+import { I18nService } from '../../i18n/i18n.service';
 import Highcharts from 'highcharts';
 
 interface HeroSlide {
@@ -196,7 +198,7 @@ interface PresidentSlide {
           <div class="offer-line"></div>
           <h2 class="section-title">{{ 'home.offer.title' | i18n }}</h2>
         </div>
-        <p class="section-subtitle">{{ 'home.offer.subtitle' | i18n }}</p>
+        <p class="offer-subtitle">{{ 'home.offer.subtitle' | i18n }}</p>
 
         <div class="offer-grid">
           <div class="offer-card">
@@ -265,7 +267,7 @@ interface PresidentSlide {
           <h2 class="section-title">{{ 'home.expertise.title' | i18n }}</h2>
           <div class="expertise-line"></div>
         </div>
-        <p class="section-subtitle">{{ 'home.expertise.subtitle' | i18n }}</p>
+        <p class="expertise-subtitle">{{ 'home.expertise.subtitle' | i18n }}</p>
 
         <div class="practice-grid">
           <a class="practice-card accent-civil" href="#">
@@ -541,7 +543,7 @@ interface PresidentSlide {
     <footer class="footer-section">
       <div class="footer-main">
         <div class="footer-logo-wrapper">
-                <img [src]="logo" alt="Footer Logo">
+          <img [src]="footerLogo()" alt="Footer Logo">
         </div>
         <div class="container">
           <div class="footer-grid">
@@ -600,7 +602,7 @@ interface PresidentSlide {
               </a>
               <a href="#" class="social-icon">
                 <svg viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M22.46 6c-.85.38-1.78.64-2.75.76 1-.6 1.76-1.55 2.12-2.68-.93.55-1.96.95-3.06 1.17-.88-.94-2.13-1.53-3.51-1.53-2.66 0-4.82 2.16-4.82 4.82 0 .38.04.75.13 1.1-4-.2-7.54-2.12-9.91-5.04-.42.72-.66 1.55-.66 2.44 0 1.67.85 3.15 2.14 4.01-.79-.03-1.53-.24-2.18-.6v.06c0 2.34 1.66 4.29 3.87 4.73-.4.11-.83.17-1.27.17-.31 0-.62-.03-.92-.08.63 1.96 2.44 3.38 4.6 3.42-1.68 1.32-3.8 2.1-6.11 2.1-.4 0-.79-.02-1.17-.07 2.18 1.4 4.77 2.21 7.55 2.21 9.06 0 14-7.5 14-14 0-.21 0-.42-.02-.63.96-.69 1.8-1.56 2.46-2.55z"/>
+                  <path d="M22.46 6c-.85.38-1.78.64-2.75.76 1-.6 1.76-1.55 2.12-2.68-.93.55-1.96.95-3.06 1.17-.88-.94-2.13-1.53-3.51-1.53-2.66 0-4.82 2.16-4.82 4.82 0 .38.04.75.13 1.10-4-.2-7.54-2.12-9.91-5.04-.42.72-.66 1.55-.66 2.44 0 1.67.85 3.15 2.14 4.01-.79-.03-1.53-.24-2.18-.6v.06c0 2.34 1.66 4.29 3.87 4.73-.4.11-.83.17-1.27.17-.31 0-.62-.03-.92-.08.63 1.96 2.44 3.38 4.6 3.42-1.68 1.32-3.8 2.1-6.11 2.1-.4 0-.79-.02-1.17-.07 2.18 1.4 4.77 2.21 7.55 2.21 9.06 0 14-7.5 14-14 0-.21 0-.42-.02-.63.96-.69 1.8-1.56 2.46-2.55z"/>
                 </svg>
               </a>
               <a href="#" class="social-icon">
@@ -662,15 +664,16 @@ interface PresidentSlide {
     .hero-text {
       max-width: 650px;
       color: white;
+      text-align: left;
     }
 
     .hero-subtitle {
       font-size: 0.75rem;
       font-weight: 700;
       letter-spacing: 2.5px;
-      color: #BF9874;
       margin-bottom: 18px;
       text-transform: uppercase;
+      text-align: left;
     }
 
     .hero-title {
@@ -680,6 +683,7 @@ interface PresidentSlide {
       margin-bottom: 22px;
       color: white;
       text-transform: uppercase;
+      text-align: left;
     }
 
     .hero-description {
@@ -687,6 +691,7 @@ interface PresidentSlide {
       line-height: 1.7;
       color: rgba(255, 255, 255, 0.95);
       margin-bottom: 35px;
+      text-align: left;
     }
 
     .hero-actions {
@@ -694,6 +699,7 @@ interface PresidentSlide {
       align-items: center;
       gap: 14px;
       flex-wrap: wrap;
+      justify-content: flex-start;
     }
 
     .hero-button {
@@ -809,12 +815,10 @@ interface PresidentSlide {
 
     .key-facts-subtitle {
       font-size: 0.9rem;
-      color: #6b5a41;
+      color: #BF9874 !important;
       margin: 0 0 28px;
       max-width: 720px;
-      margin-left: auto;
-      margin-right: auto;
-      text-align: center;
+      text-align: left;
       line-height: 1.6;
     }
 
@@ -850,6 +854,7 @@ interface PresidentSlide {
       font-weight: 700;
       color: #1a1a1a;
       margin: 0;
+      text-align: left;
     }
 
     .key-fact-note {
@@ -931,6 +936,7 @@ interface PresidentSlide {
       display: flex;
       flex-direction: column;
       height: 100%;
+      text-align: left;
     }
 
     .quick-link-content h3 {
@@ -941,6 +947,7 @@ interface PresidentSlide {
       text-transform: uppercase;
       letter-spacing: 0.7px;
       line-height: 1.25;
+      text-align: left;
     }
 
     .quick-link-content p {
@@ -948,6 +955,7 @@ interface PresidentSlide {
       color: #4b5563;
       line-height: 1.55;
       margin-bottom: 6px;
+      text-align: left;
     }
 
     .quick-link-action {
@@ -963,6 +971,7 @@ interface PresidentSlide {
       margin-top: auto;
       padding-top: 8px;
       line-height: 1.2;
+      text-align: left;
     }
 
     .connector-line {
@@ -999,16 +1008,22 @@ interface PresidentSlide {
       font-weight: 700;
       color: #1a1a1a;
       margin: 0;
+      text-align: left;
     }
 
     .section-subtitle {
       font-size: 0.9rem;
-      color: #BF9874;
+      color: #BF9874 !important;
       margin-top: 10px;
       margin-bottom: 50px;
       line-height: 1.6;
       max-width: 820px;
-      margin-left: calc(60px + 20px);
+      text-align: left;
+    }
+
+    .offer-subtitle {
+      margin-left: 0;
+      text-align: left;
     }
 
     .offer-grid {
@@ -1021,6 +1036,7 @@ interface PresidentSlide {
       background: white;
       padding: 25px;
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+      text-align: left;
     }
 
     .offer-card-header {
@@ -1048,12 +1064,14 @@ interface PresidentSlide {
       color: #1a1a1a;
       margin: 0;
       line-height: 1.2;
+      text-align: left;
     }
 
     .offer-card p {
       font-size: 0.85rem;
       color: #666;
       line-height: 1.7;
+      text-align: left;
     }
 
     /* Fields of Expertise */
@@ -1107,16 +1125,21 @@ interface PresidentSlide {
       font-size: clamp(1.8rem, 2.2vw, 2.6rem);
       letter-spacing: 3px;
       font-weight: 700;
+      text-align: center;
     }
 
     .expertise-section .section-subtitle {
       text-align: center;
-      color: #BF9874;
       font-size: 0.95rem;
       line-height: 1.7;
       margin: 12px auto 52px;
       max-width: 720px;
-      margin-left: 0;
+    }
+
+    .expertise-subtitle {
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     .practice-grid {
@@ -1189,12 +1212,14 @@ interface PresidentSlide {
       margin: 0;
       color: #1a1a1a;
       line-height: 1.2;
+      text-align: left;
     }
 
     .practice-content {
       display: flex;
       flex-direction: column;
       height: 100%;
+      text-align: left;
     }
 
     .practice-desc {
@@ -1202,6 +1227,7 @@ interface PresidentSlide {
       color: #6a6a6a;
       line-height: 1.6;
       margin: 0 0 12px 0;
+      text-align: left;
     }
 
     .practice-content ul {
@@ -1219,6 +1245,7 @@ interface PresidentSlide {
       font-size: 0.9rem;
       position: relative;
       line-height: 1.55;
+      text-align: left;
     }
 
     .practice-content li::before {
@@ -1249,7 +1276,7 @@ interface PresidentSlide {
       font-size: 0.95rem;
     }
 
-    .accent-civil { --accent: #6b5a41; }
+    .accent-civil { --accent: #BF9874; }
     .accent-family { --accent: #b8754d; }
     .accent-public { --accent: #4e6a8a; }
     .accent-labor { --accent: #a45858; }
@@ -1291,11 +1318,13 @@ interface PresidentSlide {
       font-weight: 600;
       margin-bottom: 10px;
       color: #1a1a1a;
+      text-align: center;
     }
 
     .contact-item p {
       font-size: 0.85rem;
       color: #4b5563;
+      text-align: center;
     }
 
     .contact-divider {
@@ -1348,16 +1377,14 @@ interface PresidentSlide {
     }
 
     .president-text {
-      background: rgba(255, 255, 255, 0.75);
-      border: 1px solid rgba(255, 255, 255, 0.6);
-      box-shadow: 0 18px 36px rgba(26, 41, 66, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.7);
-      border-radius: 18px;
+      background: transparent;
       padding: 36px 38px;
       backdrop-filter: blur(10px);
       -webkit-backdrop-filter: blur(10px);
       height: 520px;
       display: flex;
       flex-direction: column;
+      text-align: left;
     }
 
     .president-text h2 {
@@ -1370,6 +1397,7 @@ interface PresidentSlide {
       letter-spacing: 1px;
       position: relative;
       padding-bottom: 14px;
+      text-align: left;
     }
 
     .president-text h2::after {
@@ -1391,6 +1419,7 @@ interface PresidentSlide {
       -webkit-line-clamp: 3;
       -webkit-box-orient: vertical;
       overflow: hidden;
+      text-align: left;
     }
 
     .president-learn-btn {
@@ -1408,6 +1437,7 @@ interface PresidentSlide {
       text-transform: capitalize;
       transition: all 0.3s ease;
       border-radius: 999px;
+      align-self: flex-start;
     }
 
     .president-learn-btn:hover {
@@ -1478,6 +1508,7 @@ interface PresidentSlide {
       margin: 0;
       letter-spacing: 4px;
       text-shadow: none;
+      text-align: center;
     }
 
     .header-line {
@@ -1535,14 +1566,16 @@ interface PresidentSlide {
       flex-direction: column;
       background: linear-gradient(180deg, rgba(255, 255, 255, 0.82), rgba(255, 255, 255, 0.72));
       border-top: 1px solid rgba(255, 255, 255, 0.4);
+      text-align: left;
     }
 
     .news-date {
-      color: #6b5a41;
+      color: #001025 !important;
       font-weight: 600;
       font-size: 0.75rem;
       margin-bottom: 16px;
       text-transform: uppercase;
+      text-align: left;
     }
 
     .news-content h3 {
@@ -1551,19 +1584,21 @@ interface PresidentSlide {
       line-height: 1.5;
       color: #1f2937;
       margin: 0 0 20px 0;
+      text-align: left;
     }
 
     .read-more-link {
       display: inline-flex;
       align-items: center;
       gap: 8px;
-      color: #9b6b3f;
+      color: #BF9874;
       font-size: 0.85rem;
       font-weight: 700;
       text-decoration: none;
       text-transform: capitalize;
       margin-top: auto;
       padding-top: 12px;
+      align-self: flex-start;
     }
 
     .read-more-link svg {
@@ -1649,6 +1684,12 @@ interface PresidentSlide {
       border: 1px solid rgba(255, 255, 255, 0.9);
     }
 
+    .footer-logo-wrapper img {
+      max-width: 80%;
+      max-height: 80%;
+      object-fit: contain;
+    }
+
     .footer-grid {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
@@ -1656,6 +1697,10 @@ interface PresidentSlide {
       padding-top: 40px;
       position: relative;
       z-index: 1;
+    }
+
+    .footer-column {
+      text-align: left;
     }
 
     .footer-column h3 {
@@ -1668,6 +1713,7 @@ interface PresidentSlide {
       position: relative;
       display: inline-flex;
       padding-bottom: 10px;
+      text-align: left;
     }
 
     .footer-column h3::after {
@@ -1685,6 +1731,7 @@ interface PresidentSlide {
       line-height: 1.8;
       margin: 5px 0;
       color: #4f5b66;
+      text-align: left;
     }
 
     .footer-column ul {
@@ -1694,6 +1741,7 @@ interface PresidentSlide {
 
     .footer-column ul li {
       margin-bottom: 12px;
+      text-align: left;
     }
 
     .footer-column ul li a {
@@ -1701,6 +1749,7 @@ interface PresidentSlide {
       text-decoration: none;
       font-size: 0.9rem;
       transition: color 0.3s ease;
+      text-align: left;
     }
 
     .footer-column ul li a:hover {
@@ -1756,6 +1805,7 @@ interface PresidentSlide {
     .copyright {
       font-size: 0.85rem;
       color: #555;
+      text-align: center;
     }
 
     .privacy-link {
@@ -1789,10 +1839,6 @@ interface PresidentSlide {
 
       .key-facts-grid {
         grid-template-columns: repeat(2, 1fr);
-      }
-
-      .key-facts-subtitle {
-        margin-left: 0;
       }
 
       .offer-grid {
@@ -1865,11 +1911,6 @@ interface PresidentSlide {
 
       .key-fact-chart {
         height: 220px;
-      }
-
-      .section-subtitle {
-        margin-left: 0 !important;
-        padding-left: 0 !important;
       }
 
       .expertise-line {
@@ -1972,10 +2013,6 @@ interface PresidentSlide {
 
       .key-facts-grid {
         grid-template-columns: 1fr;
-      }
-
-      .key-facts-subtitle {
-        margin-left: 0;
       }
 
       .key-fact-chart {
@@ -2460,6 +2497,10 @@ export class HomeComponent implements OnInit, AfterViewInit {
       this.reflowCharts();
     }
   };
+  
+  private readonly i18n = inject(I18nService);
+  private readonly destroyRef = inject(DestroyRef);
+  
   @ViewChild('caseVolumeChart', { static: true })
   caseVolumeChart!: ElementRef<HTMLDivElement>;
 
@@ -2469,12 +2510,15 @@ export class HomeComponent implements OnInit, AfterViewInit {
   @ViewChild('decisionsTypeChart', { static: true })
   decisionsTypeChart!: ElementRef<HTMLDivElement>;
 
-  private readonly destroyRef = inject(DestroyRef);
   private chartInstances: Highcharts.Chart[] = [];
 
   currentSlide = signal(0);
   currentPresidentSlide = signal(0);
-  logo = '/assets/logo.png';
+  
+  // Computed signal for footer logo based on active language from I18nService
+  footerLogo = computed(() => {
+    return this.i18n.activeLang() === 'fr' ? '/assets/logo-fn.png' : '/assets/logo-en.png';
+  });
 
   heroSlides: HeroSlide[] = [
     {
@@ -2622,7 +2666,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
           type: 'column',
           name: 'Cases',
           data: [420, 460, 510, 470, 530, 590],
-          color: '#6b5a41',
+          color: '#BF9874',
           borderRadius: 4
         }
       ]
@@ -2716,7 +2760,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
           type: 'pie',
           name: 'Decisions',
           data: [
-            { name: 'Civil', y: 38, color: '#6b5a41' },
+            { name: 'Civil', y: 38, color: '#BF9874' },
             { name: 'Public', y: 27, color: '#4e6a8a' },
             { name: 'Labor', y: 18, color: '#a45858' },
             { name: 'Other', y: 17, color: '#7f6b4a' }

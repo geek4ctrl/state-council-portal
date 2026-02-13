@@ -656,7 +656,7 @@ type HighchartsStatic = typeof import('highcharts');
 
     .org-chart-subtitle {
       font-size: 0.95rem;
-      color: #6b5a41;
+      color: #BF9874;
       margin: 0 auto 28px;
       max-width: 680px;
       line-height: 1.7;
@@ -1008,7 +1008,7 @@ type HighchartsStatic = typeof import('highcharts');
     .section-subheading {
       font-family: var(--services-body-font);
       font-size: 0.95rem;
-      color: #6b5a41;
+      color: #BF9874;
       text-align: center;
       margin: 0 0 60px 0;
       font-style: italic;
