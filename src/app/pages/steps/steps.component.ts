@@ -253,11 +253,32 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
       padding: 0 20px;
     }
 
-    /* Hero Section */
+    /* Hero Section - ONLY THIS SECTION HAS BEEN CHANGED */
     .hero-section {
-      background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+      background-image: url('https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1920&h=800&fit=crop&q=80');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-color: #2c3e50;
+      position: relative;
       color: white;
       padding: 100px 0;
+    }
+
+    .hero-section::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(135deg, rgba(44, 62, 80, 0.92) 0%, rgba(52, 73, 94, 0.88) 50%, rgba(30, 46, 68, 0.90) 100%);
+      z-index: 1;
+    }
+
+    .hero-section .container {
+      position: relative;
+      z-index: 2;
     }
 
     .hero-grid {
