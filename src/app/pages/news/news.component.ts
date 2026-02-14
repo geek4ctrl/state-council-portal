@@ -7,7 +7,8 @@ import {
   OnInit,
   ViewChild,
   inject,
-  signal
+  signal,
+  computed
 } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SkeletonLoaderComponent } from '../../components/skeleton-loader/skeleton-loader.component';
@@ -15,10 +16,11 @@ import { IconComponent } from '../../components/icon/icon.component';
 import { SeoService } from '../../services/seo.service';
 import { I18nPipe } from '../../i18n/i18n.pipe';
 import Highcharts from 'highcharts';
+import { FooterComponent } from '../../components/footer/footer.component';
 
 @Component({
   selector: 'app-news',
-  imports: [CommonModule, SkeletonLoaderComponent, IconComponent, I18nPipe],
+  imports: [CommonModule, SkeletonLoaderComponent, IconComponent, I18nPipe, FooterComponent],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <div class="page-container">
@@ -29,6 +31,7 @@ import Highcharts from 'highcharts';
             <div class="hero-left">
               <h1>{{ 'news.hero.title' | i18n }}</h1>
             </div>
+            <div class="vertical-divider"></div>
             <div class="hero-right">
               <p>{{ 'news.hero.body' | i18n }}</p>
             </div>
@@ -40,9 +43,11 @@ import Highcharts from 'highcharts';
       <section class="news-section">
         <div class="container">
           <div class="section-header">
+            <div class="header-decoration-left"></div>
             <h2>{{ 'news.section.title' | i18n }}</h2>
-            <p class="section-subtitle">{{ 'news.section.subtitle' | i18n }}</p>
+            <div class="header-decoration-right"></div>
           </div>
+          <p class="section-subtitle">{{ 'news.section.subtitle' | i18n }}</p>
 
           <div class="insights-section">
             <div class="insights-header">
@@ -86,7 +91,7 @@ import Highcharts from 'highcharts';
                 <app-skeleton-loader type="news-card"></app-skeleton-loader>
               }
             } @else {
-              @for (article of newsArticles; track article.id) {
+              @for (article of getCurrentPageArticles(); track article.id) {
                 <article class="news-card glass-card">
                   <div class="news-image">
                     <img [src]="article.image" [alt]="article.titleKey | i18n" loading="lazy">
@@ -112,14 +117,25 @@ import Highcharts from 'highcharts';
           <!-- Pagination -->
           <nav class="pagination" [attr.aria-label]="'news.pagination.label' | i18n" role="navigation">
             <button
-              class="pagination-btn"
+              class="pagination-btn prev-btn"
               [disabled]="currentPage() === 1"
+              (click)="goToPreviousPage()"
               [attr.aria-label]="'news.pagination.previous' | i18n">
-              <app-icon name="chevron-right" [size]="20" [customClass]="'rotate-180'" [attr.aria-hidden]="true"></app-icon>
+              <app-icon name="chevron-down" [size]="20" [customClass]="'rotate-90'" [attr.aria-hidden]="true"></app-icon>
+              Previous
+            </button>
+            <button
+              class="pagination-number"
+              [class.active]="currentPage() === 1"
+              (click)="goToPage(1)"
+              [attr.aria-current]="currentPage() === 1 ? 'page' : null"
+              [attr.aria-label]="'news.pagination.pageLabel' | i18n : { page: 1 }">
+              1
             </button>
             <button
               class="pagination-number"
               [class.active]="currentPage() === 2"
+              (click)="goToPage(2)"
               [attr.aria-current]="currentPage() === 2 ? 'page' : null"
               [attr.aria-label]="'news.pagination.pageLabel' | i18n : { page: 2 }">
               2
@@ -127,24 +143,38 @@ import Highcharts from 'highcharts';
             <button
               class="pagination-number"
               [class.active]="currentPage() === 3"
+              (click)="goToPage(3)"
               [attr.aria-current]="currentPage() === 3 ? 'page' : null"
               [attr.aria-label]="'news.pagination.pageLabel' | i18n : { page: 3 }">
               3
             </button>
-            <button class="pagination-btn next" [attr.aria-label]="'news.pagination.next' | i18n">
-              {{ 'news.pagination.next' | i18n }}
+            <button 
+              class="pagination-btn next-btn" 
+              [disabled]="currentPage() === totalPages"
+              (click)="goToNextPage()"
+              [attr.aria-label]="'news.pagination.next' | i18n">
+              <span class="next-text">{{ 'news.pagination.next' | i18n }}</span>
               <app-icon name="chevron-right" [size]="16" [attr.aria-hidden]="true"></app-icon>
             </button>
           </nav>
         </div>
       </section>
+
+      <app-footer></app-footer>
     </div>
   `,
   styles: [`
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
     .page-container {
-      padding-top: 0;
       background: white;
       min-height: 100vh;
+      margin: 0;
+      padding: 0;
     }
 
     .container {
@@ -153,17 +183,18 @@ import Highcharts from 'highcharts';
       padding: 0 20px;
     }
 
-    /* Hero Section */
     .hero-section {
-      background: linear-gradient(135deg, rgba(44, 62, 80, 0.95), rgba(52, 73, 94, 0.95)),
-                  url('https://placehold.co/1920x400') center/cover;
+      background: linear-gradient(135deg, rgba(26, 41, 66, 0.92), rgba(44, 62, 80, 0.88)),
+                  url('https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1920&h=600&fit=crop') center/cover;
+      background-color: #2c3e50;
       color: white;
-      padding: 100px 0;
+      padding: 120px 0;
+      position: relative;
     }
 
     .hero-grid {
       display: grid;
-      grid-template-columns: 1fr 1.5fr;
+      grid-template-columns: 1fr 2px 2fr;
       gap: 60px;
       align-items: center;
     }
@@ -172,8 +203,18 @@ import Highcharts from 'highcharts';
       font-size: 5rem;
       font-weight: 700;
       margin: 0;
-      letter-spacing: 4px;
+      letter-spacing: 8px;
       color: #ffffff;
+      text-transform: uppercase;
+      text-align: left;
+    }
+
+    .vertical-divider {
+      width: 2px;
+      height: 140px;
+      background-color: rgba(255, 255, 255, 0.7);
+      display: block;
+      align-self: center;
     }
 
     .hero-right p {
@@ -182,9 +223,10 @@ import Highcharts from 'highcharts';
       margin: 0;
       opacity: 0.95;
       color: #ffffff;
+      font-weight: 300;
+      text-align: left;
     }
 
-    /* News Section */
     .news-section {
       padding: 80px 0 100px;
       background: white;
@@ -192,26 +234,40 @@ import Highcharts from 'highcharts';
 
     .section-header {
       text-align: center;
-      margin-bottom: 60px;
+      margin-bottom: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .header-decoration-left,
+    .header-decoration-right {
+      flex: 0 0 80px;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, #BF9874, transparent);
     }
 
     .section-header h2 {
       font-size: 2.5rem;
       font-weight: 700;
       color: #1a1a1a;
-      margin: 0 0 15px 0;
-      letter-spacing: 2px;
+      margin: 0;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      white-space: nowrap;
     }
 
     .section-subtitle {
-      font-size: 0.9rem;
-      color: #c9a961;
+      font-size: 0.85rem;
+      color: #BF9874 !important;
       text-transform: uppercase;
-      letter-spacing: 2px;
-      margin: 0;
+      letter-spacing: 3px;
+      margin: 0 0 60px 0;
+      text-align: center;
+      font-weight: 400;
     }
 
-    /* Insights Section */
     .insights-section {
       margin-bottom: 50px;
     }
@@ -226,7 +282,7 @@ import Highcharts from 'highcharts';
     .insights-line {
       width: 50px;
       height: 2px;
-      background: #c9a961;
+      background: #BF9874;
     }
 
     .insights-header h3 {
@@ -236,14 +292,16 @@ import Highcharts from 'highcharts';
       color: #1a1a1a;
       letter-spacing: 1px;
       text-transform: uppercase;
+      text-align: left;
     }
 
     .insights-subtitle {
       font-size: 0.85rem;
-      color: #BF9874;
+      color: #BF9874 !important;
       margin: 0 0 24px;
       letter-spacing: 1px;
       text-transform: uppercase;
+      text-align: left;
     }
 
     .insights-grid {
@@ -257,6 +315,7 @@ import Highcharts from 'highcharts';
       border: 1px solid rgba(26, 41, 66, 0.08);
       box-shadow: 0 12px 26px rgba(26, 41, 66, 0.12);
       padding: 22px 22px 16px;
+      border-radius: 6px !important;
     }
 
     .insight-card-header {
@@ -272,13 +331,14 @@ import Highcharts from 'highcharts';
       font-weight: 600;
       margin: 0;
       color: #1a1a1a;
+      text-align: left;
     }
 
     .insight-note {
       font-size: 0.75rem;
       text-transform: uppercase;
       letter-spacing: 1px;
-      color: #c9a961;
+      color: #BF9874 !important;
       font-weight: 600;
       white-space: nowrap;
     }
@@ -288,7 +348,6 @@ import Highcharts from 'highcharts';
       height: 250px;
     }
 
-    /* News Grid */
     .news-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -298,10 +357,12 @@ import Highcharts from 'highcharts';
 
     .news-card {
       background: white;
-      border-radius: 0;
+      border-radius: 6px !important;
       overflow: hidden;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+      display: flex;
+      flex-direction: column;
     }
 
     .news-card:hover {
@@ -313,6 +374,8 @@ import Highcharts from 'highcharts';
       width: 100%;
       height: 250px;
       overflow: hidden;
+      background: #f0f0f0;
+      border: none !important;
     }
 
     .news-image img {
@@ -320,6 +383,7 @@ import Highcharts from 'highcharts';
       height: 100%;
       object-fit: cover;
       transition: transform 0.3s ease;
+      border: none !important;
     }
 
     .news-card:hover .news-image img {
@@ -328,15 +392,25 @@ import Highcharts from 'highcharts';
 
     .news-content {
       padding: 25px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      text-align: left;
     }
 
     .news-meta {
       display: flex;
       align-items: center;
       gap: 8px;
-      font-size: 0.85rem;
+      font-size: 0.8rem;
       color: #999;
       margin-bottom: 15px;
+      text-align: left;
+    }
+
+    .news-date {
+      color: #666;
+      font-weight: 500;
     }
 
     .news-divider {
@@ -345,36 +419,50 @@ import Highcharts from 'highcharts';
 
     .news-category {
       color: #666;
+      font-weight: 500;
     }
 
     .news-title {
-      font-size: 1.1rem;
+      font-size: 1.05rem;
       font-weight: 600;
       color: #1a1a1a;
       margin: 0 0 15px 0;
-      line-height: 1.4;
+      line-height: 1.5;
+      min-height: 50px;
+      text-align: left;
     }
 
     .news-excerpt {
-      font-size: 0.95rem;
+      font-size: 0.9rem;
       color: #666;
-      line-height: 1.6;
+      line-height: 1.7;
       margin: 0 0 15px 0;
+      flex: 1;
+      text-align: left;
     }
 
     .read-more {
-      color: #BF9874;
-      font-size: 0.9rem;
-      font-weight: 500;
-      text-decoration: none;
+      color: #9b6b3f !important;
+      font-size: 0.85rem;
+      font-weight: 600;
+      text-decoration: underline !important;
+      text-decoration-thickness: 2px !important;
+      text-underline-offset: 4px !important;
       transition: color 0.3s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      margin-top: auto;
+      border: none !important;
+      background: transparent !important;
+      padding: 0 !important;
+      align-self: flex-start;
     }
 
     .read-more:hover {
-      color: #BF9874;
+      color: #BF9874 !important;
     }
 
-    /* Pagination */
     .pagination {
       display: flex;
       align-items: center;
@@ -384,19 +472,22 @@ import Highcharts from 'highcharts';
 
     .pagination-btn,
     .pagination-number {
-      background: white;
-      border: 1px solid #ddd;
+      background: transparent;
+      border: 1px solid #BF9874 !important;
+      border-radius: 6px !important;
       color: #666;
-      padding: 8px 12px;
+      padding: 10px 15px;
       cursor: pointer;
       transition: all 0.3s ease;
       font-size: 0.9rem;
+      font-weight: 500;
     }
 
     .pagination-btn {
       display: flex;
       align-items: center;
       justify-content: center;
+      gap: 8px;
     }
 
     .pagination-btn:disabled {
@@ -405,133 +496,146 @@ import Highcharts from 'highcharts';
     }
 
     .pagination-number {
-      min-width: 40px;
+      min-width: 45px;
+      text-align: center;
     }
 
     .pagination-number.active {
-      background: #2c3e50;
+      background: #BF9874;
       color: white;
-      border-color: #2c3e50;
+      border-color: #BF9874 !important;
     }
 
     .pagination-number:hover:not(.active) {
-      border-color: #BF9874;
+      border-color: #BF9874 !important;
       color: #BF9874;
     }
 
     .pagination-btn:hover:not(:disabled) {
-      border-color: #BF9874;
+      border-color: #BF9874 !important;
       color: #BF9874;
     }
 
-    .pagination-btn.next {
-      padding: 8px 20px;
-      font-weight: 500;
+    .pagination-btn.next-btn {
+      padding: 10px 20px;
+      font-weight: 600;
+      text-transform: capitalize;
     }
 
-    /* Responsive Design */
-    @media (max-width: 1024px) {
-      .hero-grid {
-        grid-template-columns: 1fr;
-        gap: 30px;
-        text-align: center;
-      }
-
-      .hero-left h1 {
-        font-size: 4rem;
-      }
-
-      .news-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-
-      .insights-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .insight-chart {
-        height: 230px;
-      }
+    .pagination-btn.prev-btn {
+      padding: 10px 15px;
     }
 
-    @media (max-width: 768px) {
-      .hero-section {
-        padding: 80px 0;
-      }
-
-      .hero-left h1 {
-        font-size: 3rem;
-      }
-
-      .news-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .insights-header h3 {
-        font-size: 1.4rem;
-      }
-
-      .insight-card {
-        padding: 20px 18px 14px;
-      }
-
-      .insight-chart {
-        height: 220px;
-      }
-
-      .section-header h2 {
-        font-size: 2rem;
-      }
-
-      .news-section {
-        padding: 60px 0 80px;
-      }
+    .next-text {
+      font-size: 0.9rem;
     }
 
-    @media (max-width: 480px) {
-      .hero-section {
-        padding: 60px 0;
-      }
+    @media (max-width: 1199px) {
+      .container { padding: 0 30px; }
+      .hero-left h1 { font-size: 4.5rem; letter-spacing: 6px; }
+      .hero-grid { gap: 50px; grid-template-columns: 1fr 2px 2fr; }
+      .vertical-divider { height: 120px; }
+      .section-header h2 { font-size: 2.2rem; }
+      .news-grid { grid-template-columns: repeat(2, 1fr); gap: 25px; }
+      .insights-grid { grid-template-columns: 1fr; }
+    }
 
-      .hero-left h1 {
-        font-size: 2.5rem;
-        letter-spacing: 2px;
-      }
+    @media (max-width: 1023px) {
+      .hero-section { padding: 100px 0; }
+      .hero-left h1 { font-size: 4rem; letter-spacing: 5px; }
+      .hero-grid { gap: 40px; grid-template-columns: 1fr 2px 2fr; }
+      .vertical-divider { height: 110px; }
+      .hero-right p { font-size: 1rem; }
+      .news-section { padding: 70px 0 90px; }
+      .section-header h2 { font-size: 2rem; }
+      .header-decoration-left, .header-decoration-right { flex: 0 0 60px; }
+      .news-image { height: 220px; }
+      .insight-chart { height: 230px; }
+      .footer-grid { grid-template-columns: repeat(2, 1fr); gap: 40px; }
+    }
 
-      .hero-right p {
-        font-size: 0.95rem;
-      }
+    @media (max-width: 767px) {
+      .container { padding: 0 20px; }
+      .hero-section { padding: 80px 0; }
+      .hero-grid { grid-template-columns: 1fr; gap: 30px; text-align: center; }
+      .hero-left h1 { font-size: 3rem; letter-spacing: 4px; text-align: center; }
+      .vertical-divider { width: 120px; height: 2px; margin: 0 auto; }
+      .hero-right p { font-size: 0.95rem; line-height: 1.7; text-align: center; }
+      .news-section { padding: 60px 0 80px; }
+      .section-header { flex-direction: column; gap: 15px; }
+      .section-header h2 { font-size: 1.8rem; letter-spacing: 2px; }
+      .header-decoration-left, .header-decoration-right { width: 80px; flex: 0 0 auto; }
+      .section-subtitle { font-size: 0.8rem; margin-bottom: 40px; }
+      .insights-header h3 { font-size: 1.4rem; }
+      .insight-card { padding: 20px 18px 14px; }
+      .insight-chart { height: 220px; }
+      .news-grid { grid-template-columns: 1fr; gap: 24px; margin-bottom: 40px; }
+      .news-image { height: 200px; }
+      .news-content { padding: 20px; }
+      .news-title { min-height: auto; font-size: 1rem; }
+      .news-excerpt { font-size: 0.85rem; }
+      .read-more { align-self: flex-start !important; text-align: left !important; }
+      .pagination { gap: 8px; flex-wrap: wrap; }
+      .pagination-btn, .pagination-number { padding: 8px 12px; font-size: 0.85rem; border-width: 6px !important; }
+      .pagination-btn.next-btn { padding: 8px 16px; }
+      .next-text { font-size: 0.85rem; }
+      .footer-logo-wrapper { width: 100px; height: 100px; top: -35px; }
+      .footer-main { padding-bottom: 30px !important; }
+      .footer-grid { grid-template-columns: 1fr; gap: 35px; }
+      .footer-bottom { padding: 20px 0 0 0 !important; }
+      .footer-bottom-content { flex-direction: column; gap: 15px; text-align: center; }
+      .social-icons { justify-content: center; }
+    }
 
-      .section-header h2 {
-        font-size: 1.6rem;
-      }
+    @media (max-width: 575px) {
+      .container { padding: 0 15px; }
+      .hero-section { padding: 60px 0; }
+      .hero-left h1 { font-size: 2.5rem; letter-spacing: 3px; }
+      .vertical-divider { width: 100px; height: 2px; }
+      .hero-right p { font-size: 0.9rem; }
+      .news-section { padding: 50px 0 70px; }
+      .section-header h2 { font-size: 1.5rem; letter-spacing: 1.5px; }
+      .header-decoration-left, .header-decoration-right { width: 60px; }
+      .section-subtitle { font-size: 0.75rem; letter-spacing: 2px; margin-bottom: 35px; }
+      .insights-header h3 { font-size: 1.3rem; }
+      .insight-card-header { flex-direction: column; align-items: flex-start; }
+      .insight-note { white-space: normal; }
+      .insight-chart { height: 200px; }
+      .news-grid { gap: 20px; margin-bottom: 35px; }
+      .news-image { height: 180px; }
+      .news-content { padding: 18px; }
+      .news-meta { font-size: 0.75rem; }
+      .news-title { font-size: 0.95rem; margin-bottom: 12px; }
+      .news-excerpt { font-size: 0.8rem; margin-bottom: 12px; }
+      .read-more { font-size: 0.8rem; }
+      .pagination { gap: 6px; }
+      .pagination-btn, .pagination-number { padding: 7px 10px; font-size: 0.8rem; border-width: 5px !important; }
+      .pagination-number { min-width: 38px; }
+      .pagination-btn.next-btn { padding: 7px 14px; }
+      .next-text { font-size: 0.8rem; }
+      .footer-logo-wrapper { width: 90px; height: 90px; top: -30px; }
+      .footer-main { padding: 50px 0 25px !important; }
+      .footer-grid { gap: 30px; padding-top: 30px; }
+      .footer-column h3 { font-size: 1rem; }
+      .footer-column p, .footer-column ul li a { font-size: 0.85rem; }
+      .footer-bottom { padding: 20px 0 0 0 !important; }
+      .copyright, .privacy-link { font-size: 0.8rem; }
+      .social-icon { width: 32px; height: 32px; }
+    }
 
-      .section-subtitle {
-        font-size: 0.8rem;
-      }
+    @media (max-width: 374px) {
+      .hero-left h1 { font-size: 2rem; letter-spacing: 2px; }
+      .vertical-divider { width: 80px; height: 2px; }
+      .section-header h2 { font-size: 1.3rem; }
+      .header-decoration-left, .header-decoration-right { width: 50px; }
+      .news-image { height: 160px; }
+      .pagination-btn, .pagination-number { padding: 6px 8px; font-size: 0.75rem; }
+      .pagination-number { min-width: 35px; }
+    }
 
-      .insight-card-header {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-
-      .insight-note {
-        white-space: normal;
-      }
-
-      .insight-chart {
-        height: 200px;
-      }
-
-      .pagination {
-        gap: 5px;
-      }
-
-      .pagination-btn,
-      .pagination-number {
-        padding: 6px 10px;
-        font-size: 0.85rem;
-      }
+    @media (prefers-reduced-motion: reduce) {
+      .news-card, .social-icon, .pagination-btn, .pagination-number { transition: none; }
+      .news-card:hover, .news-card:hover .news-image img { transform: none; }
     }
   `]
 })
@@ -552,11 +656,12 @@ export class NewsComponent implements OnInit, AfterViewInit {
   @ViewChild('newsCadenceChart', { static: true })
   newsCadenceChart!: ElementRef<HTMLDivElement>;
 
-  currentPage = signal(2);
+  currentPage = signal(1);
   isLoading = signal(true);
+  totalPages = 3;
+  itemsPerPage = 3;
 
   ngOnInit() {
-    // Set SEO metadata
     this.seoService.updateMetadata({
       title: 'Actualités',
       description: 'Suivez les dernières actualités, événements et communications officielles du Conseil d\'État de la République Démocratique du Congo.',
@@ -564,7 +669,6 @@ export class NewsComponent implements OnInit, AfterViewInit {
       ogUrl: '/news'
     });
 
-    // Simulate loading data
     setTimeout(() => {
       this.isLoading.set(false);
     }, 1500);
@@ -693,7 +797,7 @@ export class NewsComponent implements OnInit, AfterViewInit {
           type: 'line',
           name: 'Publications',
           data: [15, 18, 22, 19, 24, 27],
-          color: '#c9a961',
+          color: '#BF9874',
           marker: { radius: 4 }
         }
       ]
@@ -705,14 +809,14 @@ export class NewsComponent implements OnInit, AfterViewInit {
     ];
   }
 
-  newsArticles = [
+  allNewsArticles = [
     {
       id: 1,
       dateKey: 'news.articles.1.date',
       categoryKey: 'news.articles.1.category',
       titleKey: 'news.articles.1.title',
       excerptKey: 'news.articles.1.excerpt',
-      image: 'https://placehold.co/400x300'
+      image: 'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=800&h=600&fit=crop'
     },
     {
       id: 2,
@@ -720,7 +824,7 @@ export class NewsComponent implements OnInit, AfterViewInit {
       categoryKey: 'news.articles.2.category',
       titleKey: 'news.articles.2.title',
       excerptKey: 'news.articles.2.excerpt',
-      image: 'https://placehold.co/400x300'
+      image: 'https://images.unsplash.com/photo-1505664194779-8beaceb93744?w=800&h=600&fit=crop'
     },
     {
       id: 3,
@@ -728,7 +832,80 @@ export class NewsComponent implements OnInit, AfterViewInit {
       categoryKey: 'news.articles.3.category',
       titleKey: 'news.articles.3.title',
       excerptKey: 'news.articles.3.excerpt',
-      image: 'https://placehold.co/400x300'
+      image: 'https://images.unsplash.com/photo-1479142506502-19b3a3b7ff33?w=800&h=600&fit=crop'
+    },
+    {
+      id: 4,
+      dateKey: 'news.articles.1.date',
+      categoryKey: 'news.articles.1.category',
+      titleKey: 'news.articles.1.title',
+      excerptKey: 'news.articles.1.excerpt',
+      image: 'https://images.unsplash.com/photo-1521587760476-6c12a4b040da?w=800&h=600&fit=crop'
+    },
+    {
+      id: 5,
+      dateKey: 'news.articles.2.date',
+      categoryKey: 'news.articles.2.category',
+      titleKey: 'news.articles.2.title',
+      excerptKey: 'news.articles.2.excerpt',
+      image: 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&h=600&fit=crop'
+    },
+    {
+      id: 6,
+      dateKey: 'news.articles.3.date',
+      categoryKey: 'news.articles.3.category',
+      titleKey: 'news.articles.3.title',
+      excerptKey: 'news.articles.3.excerpt',
+      image: 'https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=800&h=600&fit=crop'
+    },
+    {
+      id: 7,
+      dateKey: 'news.articles.1.date',
+      categoryKey: 'news.articles.1.category',
+      titleKey: 'news.articles.1.title',
+      excerptKey: 'news.articles.1.excerpt',
+      image: 'https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=800&h=600&fit=crop'
+    },
+    {
+      id: 8,
+      dateKey: 'news.articles.2.date',
+      categoryKey: 'news.articles.2.category',
+      titleKey: 'news.articles.2.title',
+      excerptKey: 'news.articles.2.excerpt',
+      image: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=800&h=600&fit=crop'
+    },
+    {
+      id: 9,
+      dateKey: 'news.articles.3.date',
+      categoryKey: 'news.articles.3.category',
+      titleKey: 'news.articles.3.title',
+      excerptKey: 'news.articles.3.excerpt',
+      image: 'https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=800&h=600&fit=crop'
     }
   ];
+
+  getCurrentPageArticles() {
+    const startIndex = (this.currentPage() - 1) * this.itemsPerPage;
+    const endIndex = startIndex + this.itemsPerPage;
+    return this.allNewsArticles.slice(startIndex, endIndex);
+  }
+
+  goToPage(page: number) {
+    if (page >= 1 && page <= this.totalPages) {
+      this.currentPage.set(page);
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  }
+
+  goToPreviousPage() {
+    if (this.currentPage() > 1) {
+      this.goToPage(this.currentPage() - 1);
+    }
+  }
+
+  goToNextPage() {
+    if (this.currentPage() < this.totalPages) {
+      this.goToPage(this.currentPage() + 1);
+    }
+  }
 }

@@ -298,12 +298,20 @@ img[loading="lazy"] {
 .offer-icon,
 .practice-icon,
 .card-icon {
-  background: transparent !important;
-  background-color: transparent !important;
-  border: 1px solid #BF9874 !important;
-  border-radius: 4px !important;
-  overflow: hidden;
-  padding: 8px;
+    background: transparent !important;
+    background-color: transparent !important;
+    border: 1px solid #BF9874 !important;
+    border-radius: 4px !important;
+    overflow: hidden;
+    padding: 8px;
+}
+
+.quick-link-icon.non-border,
+.offer-icon.non-border,
+.practice-icon.non-border,
+.card-icon.non-border {
+    border: 1px !important;
+    overflow: hidden;
 }
 
 /* ===== REMOVE ALL BORDERS AND BACKGROUNDS FROM IMAGES AND SVG INSIDE ICONS ===== */

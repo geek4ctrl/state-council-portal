@@ -2,10 +2,11 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterLink } from '@angular/router';
 import { I18nPipe } from '../../../i18n/i18n.pipe';
+import { FooterComponent } from '../../../components/footer/footer.component';
 
 @Component({
   selector: 'app-error-page',
-  imports: [CommonModule, RouterLink, I18nPipe],
+  imports: [CommonModule, RouterLink, I18nPipe, FooterComponent],
   template: `
     <main class="error-page">
       <section class="error-card glass-card">
@@ -17,6 +18,7 @@ import { I18nPipe } from '../../../i18n/i18n.pipe';
           <a routerLink="/news" class="secondary-btn">{{ 'errors.generic.secondary' | i18n }}</a>
         </div>
       </section>
+      <app-footer></app-footer>
     </main>
   `,
   styles: [

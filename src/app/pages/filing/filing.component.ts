@@ -1,11 +1,13 @@
-import { Component, inject, OnInit } from '@angular/core';
+import { Component, inject, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { SeoService } from '../../services/seo.service';
+import { FooterComponent } from '../../components/footer/footer.component';
 
 @Component({
   selector: 'app-filing',
   standalone: true,
-  imports: [RouterLink],
+  imports: [RouterLink, FooterComponent],
+  changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <div class="page-container">
       <!-- Hero Section -->
@@ -75,6 +77,8 @@ import { SeoService } from '../../services/seo.service';
           </form>
         </div>
       </section>
+
+      <app-footer></app-footer>
     </div>
   `,
   styles: [`

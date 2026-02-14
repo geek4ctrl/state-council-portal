@@ -14,6 +14,7 @@ import { CommonModule } from '@angular/common';
 import { I18nPipe } from '../../i18n/i18n.pipe';
 import { I18nService } from '../../i18n/i18n.service';
 import Highcharts from 'highcharts';
+import { FooterComponent } from '../../components/footer/footer.component';
 
 interface HeroSlide {
   id: number;
@@ -33,588 +34,513 @@ interface PresidentSlide {
 
 @Component({
   selector: 'app-home',
-  imports: [CommonModule, I18nPipe],
+  imports: [CommonModule, I18nPipe, FooterComponent],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
+    <div class="page-container">
+      <!-- Hero Carousel Section -->
+      <section class="hero-carousel">
+        <div class="hero-slide" [style.background-image]="'url(' + heroSlides[currentSlide()].image + ')'">
+          <div class="hero-overlay"></div>
+          <div class="hero-content">
+            <div class="container">
+              <div class="hero-text">
+                <p class="hero-subtitle">{{ heroSlides[currentSlide()].subtitleKey | i18n }}</p>
+                <h1 class="hero-title">{{ heroSlides[currentSlide()].titleKey | i18n }}</h1>
+                <div class="hero-actions">
+                  <button class="hero-button">{{ heroSlides[currentSlide()].buttonKey | i18n }}</button>
+                  <button class="hero-button secondary">Learn more</button>
+                </div>
+              </div>
+            </div>
+          </div>
 
-    <!-- Hero Carousel Section -->
-    <section class="hero-carousel">
-      <div class="hero-slide" [style.background-image]="'url(' + heroSlides[currentSlide()].image + ')'">
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-          <div class="container">
-            <div class="hero-text">
-              <p class="hero-subtitle">{{ heroSlides[currentSlide()].subtitleKey | i18n }}</p>
-              <h1 class="hero-title">{{ heroSlides[currentSlide()].titleKey | i18n }}</h1>
-              <div class="hero-actions">
-                <button class="hero-button">{{ heroSlides[currentSlide()].buttonKey | i18n }}</button>
-                <button class="hero-button secondary">Learn more</button>
+          <!-- Carousel Navigation -->
+          <div class="carousel-nav">
+            <div class="container">
+              <div class="carousel-controls">
+                <button class="nav-arrow" (click)="previousSlide()">
+                  <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
+                  </svg>
+                </button>
+
+                <div class="carousel-indicators">
+                  @for (slide of heroSlides; track slide.id; let i = $index) {
+                    <button
+                      class="indicator"
+                      [class.active]="i === currentSlide()"
+                      (click)="goToSlide(i)">
+                    </button>
+                  }
+                </div>
+
+                <button class="nav-arrow" (click)="nextSlide()">
+                  <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
+                  </svg>
+                </button>
               </div>
             </div>
           </div>
         </div>
+      </section>
 
-        <!-- Carousel Navigation -->
-        <div class="carousel-nav">
-          <div class="container">
-            <div class="carousel-controls">
-              <button class="nav-arrow" (click)="previousSlide()">
-                <svg viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
-                </svg>
+      <!-- Key Facts Section -->
+      <section class="key-facts-section" aria-labelledby="key-facts-title">
+        <div class="container">
+          <div class="key-facts-header">
+            <div class="key-facts-line"></div>
+            <h2 id="key-facts-title" class="section-title">{{ 'home.keyFacts.title' | i18n }}</h2>
+          </div>
+          <p class="key-facts-subtitle">{{ 'home.keyFacts.subtitle' | i18n }}</p>
+
+          <div class="key-facts-grid">
+            <div class="key-fact-card glass-card">
+              <div class="key-fact-meta">
+                <h3>{{ 'home.keyFacts.cards.volume.title' | i18n }}</h3>
+                <span class="key-fact-note">{{ 'home.keyFacts.cards.volume.note' | i18n }}</span>
+              </div>
+              <div
+                #caseVolumeChart
+                class="key-fact-chart"
+                role="img"
+                [attr.aria-label]="'home.keyFacts.cards.volume.aria' | i18n">
+              </div>
+            </div>
+
+            <div class="key-fact-card glass-card">
+              <div class="key-fact-meta">
+                <h3>{{ 'home.keyFacts.cards.processing.title' | i18n }}</h3>
+                <span class="key-fact-note">{{ 'home.keyFacts.cards.processing.note' | i18n }}</span>
+              </div>
+              <div
+                #processingTimeChart
+                class="key-fact-chart"
+                role="img"
+                [attr.aria-label]="'home.keyFacts.cards.processing.aria' | i18n">
+              </div>
+            </div>
+
+            <div class="key-fact-card glass-card">
+              <div class="key-fact-meta">
+                <h3>{{ 'home.keyFacts.cards.decisions.title' | i18n }}</h3>
+                <span class="key-fact-note">{{ 'home.keyFacts.cards.decisions.note' | i18n }}</span>
+              </div>
+              <div
+                #decisionsTypeChart
+                class="key-fact-chart"
+                role="img"
+                [attr.aria-label]="'home.keyFacts.cards.decisions.aria' | i18n">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Info Cards Section -->
+      <section class="quick-links-section">
+        <div class="container">
+          <div class="quick-links-container">
+            <div class="quick-link-item glass-card">
+              <div class="quick-link-icon non-border">
+                <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=120&h=120&fit=crop" [alt]="'home.quickLinks.items.news.alt' | i18n">
+              </div>
+              <div class="quick-link-content">
+                <h3>{{ 'home.quickLinks.items.news.title' | i18n }}</h3>
+                <p>{{ 'home.quickLinks.items.news.body' | i18n }}</p>
+                <a href="#" class="quick-link-action">{{ 'home.quickLinks.items.news.action' | i18n }}</a>
+              </div>
+              <div class="connector-line"></div>
+            </div>
+
+            <div class="quick-link-item glass-card">
+              <div class="quick-link-icon non-border">
+                <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=120&h=120&fit=crop" [alt]="'home.quickLinks.items.excerpts.alt' | i18n">
+              </div>
+              <div class="quick-link-content">
+                <h3>{{ 'home.quickLinks.items.excerpts.title' | i18n }}</h3>
+                <p>{{ 'home.quickLinks.items.excerpts.body' | i18n }}</p>
+                <a href="#" class="quick-link-action">{{ 'home.quickLinks.items.excerpts.action' | i18n }}</a>
+              </div>
+              <div class="connector-line"></div>
+            </div>
+
+            <div class="quick-link-item glass-card">
+              <div class="quick-link-icon non-border">
+                <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=120&h=120&fit=crop" [alt]="'home.quickLinks.items.report.alt' | i18n">
+              </div>
+              <div class="quick-link-content">
+                <h3>{{ 'home.quickLinks.items.report.title' | i18n }}</h3>
+                <p>{{ 'home.quickLinks.items.report.body' | i18n }}</p>
+                <a href="#" class="quick-link-action">{{ 'home.quickLinks.items.report.action' | i18n }}</a>
+              </div>
+              <div class="connector-line"></div>
+            </div>
+
+            <div class="quick-link-item glass-card">
+              <div class="quick-link-icon non-border">
+                <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=120&h=120&fit=crop" [alt]="'home.quickLinks.items.appointment.alt' | i18n">
+              </div>
+              <div class="quick-link-content">
+                <h3>{{ 'home.quickLinks.items.appointment.title' | i18n }}</h3>
+                <p>{{ 'home.quickLinks.items.appointment.body' | i18n }}</p>
+                <a href="#" class="quick-link-action">{{ 'home.quickLinks.items.appointment.action' | i18n }}</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- What We Offer Section -->
+      <section class="offer-section">
+        <div class="container">
+          <div class="offer-header">
+            <div class="offer-line"></div>
+            <h2 class="section-title">{{ 'home.offer.title' | i18n }}</h2>
+          </div>
+          <p class="offer-subtitle">{{ 'home.offer.subtitle' | i18n }}</p>
+
+          <div class="offer-grid">
+            <div class="offer-card">
+              <div class="offer-card-header">
+                <div class="offer-icon">
+                  <svg viewBox="0 0 64 64" fill="currentColor">
+                    <path d="M32 8L16 16L16 32C16 44 24 52 32 56C40 52 48 44 48 32L48 16L32 8Z"/>
+                  </svg>
+                </div>
+                <h3>{{ 'home.offer.cards.1.title' | i18n }}</h3>
+              </div>
+              <p>{{ 'home.offer.cards.1.body' | i18n }}</p>
+            </div>
+
+            <div class="offer-card">
+              <div class="offer-card-header">
+                <div class="offer-icon">
+                  <svg viewBox="0 0 64 64" fill="currentColor">
+                    <rect x="18" y="12" width="28" height="40" rx="2"/>
+                    <rect x="22" y="16" width="4" height="4" fill="white"/>
+                    <rect x="22" y="24" width="4" height="4" fill="white"/>
+                    <rect x="28" y="16" width="14" height="4" fill="white"/>
+                    <rect x="28" y="24" width="14" height="4" fill="white"/>
+                  </svg>
+                </div>
+                <h3>{{ 'home.offer.cards.2.title' | i18n }}</h3>
+              </div>
+              <p>{{ 'home.offer.cards.2.body' | i18n }}</p>
+            </div>
+
+            <div class="offer-card">
+              <div class="offer-card-header">
+                <div class="offer-icon">
+                  <svg viewBox="0 0 64 64" fill="currentColor">
+                    <circle cx="32" cy="20" r="8"/>
+                    <path d="M32 30C24 30 16 32 16 36V42H48V36C48 32 40 30 32 30Z"/>
+                    <path d="M26 18L30 22L38 14L40 16L30 26L24 20L26 18Z" fill="white"/>
+                  </svg>
+                </div>
+                <h3>{{ 'home.offer.cards.3.title' | i18n }}</h3>
+              </div>
+              <p>{{ 'home.offer.cards.3.body' | i18n }}</p>
+            </div>
+
+            <div class="offer-card">
+              <div class="offer-card-header">
+                <div class="offer-icon">
+                  <svg viewBox="0 0 64 64" fill="currentColor">
+                    <circle cx="32" cy="32" r="24"/>
+                    <path d="M20 28L28 32L38 22L42 26L28 40L16 32L20 28Z" fill="white"/>
+                  </svg>
+                </div>
+                <h3>{{ 'home.offer.cards.4.title' | i18n }}</h3>
+              </div>
+              <p>{{ 'home.offer.cards.4.body' | i18n }}</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Fields of Expertise Section -->
+      <section class="expertise-section">
+        <div class="container">
+          <div class="expertise-header">
+            <div class="expertise-line"></div>
+            <h2 class="section-title">{{ 'home.expertise.title' | i18n }}</h2>
+            <div class="expertise-line"></div>
+          </div>
+          <p class="expertise-subtitle">{{ 'home.expertise.subtitle' | i18n }}</p>
+
+          <div class="practice-grid">
+            <a class="practice-card accent-civil" href="#">
+              <div class="practice-content">
+                <div class="practice-header">
+                  <div class="practice-icon">
+                    <svg viewBox="0 0 64 64" fill="currentColor">
+                      <path d="M38 8L26 8C24 8 22 10 22 12L22 52C22 54 24 56 26 56L38 56C40 56 42 54 42 52L42 12C42 10 40 8 38 8Z"/>
+                      <path d="M32 12L28 16L36 16L32 12Z" fill="white"/>
+                    </svg>
+                  </div>
+                  <h3>{{ 'home.expertise.areas.civil.title' | i18n }}</h3>
+                </div>
+                <p class="practice-desc">{{ 'home.expertise.areas.civil.desc' | i18n }}</p>
+                <ul>
+                  <li>{{ 'home.expertise.areas.civil.items.1' | i18n }}</li>
+                  <li>{{ 'home.expertise.areas.civil.items.2' | i18n }}</li>
+                  <li>{{ 'home.expertise.areas.civil.items.3' | i18n }}</li>
+                </ul>
+                <span class="practice-cta">{{ 'home.expertise.cta' | i18n }}</span>
+              </div>
+            </a>
+
+            <a class="practice-card accent-family" href="#">
+              <div class="practice-content">
+                <div class="practice-header">
+                  <div class="practice-icon">
+                    <svg viewBox="0 0 64 64" fill="currentColor">
+                      <path d="M24 40C16 40 10 44 10 50V56H38V50C38 44 32 40 24 40Z"/>
+                      <path d="M40 40C38 40 36 40.4 34 41C37 43 38 46 38 50V56H54V50C54 44 48 40 40 40Z"/>
+                      <circle cx="24" cy="26" r="10"/>
+                      <circle cx="42" cy="24" r="8"/>
+                    </svg>
+                  </div>
+                  <h3>{{ 'home.expertise.areas.family.title' | i18n }}</h3>
+                </div>
+                <p class="practice-desc">{{ 'home.expertise.areas.family.desc' | i18n }}</p>
+                <ul>
+                  <li>{{ 'home.expertise.areas.family.items.1' | i18n }}</li>
+                  <li>{{ 'home.expertise.areas.family.items.2' | i18n }}</li>
+                  <li>{{ 'home.expertise.areas.family.items.3' | i18n }}</li>
+                </ul>
+                <span class="practice-cta">{{ 'home.expertise.cta' | i18n }}</span>
+              </div>
+            </a>
+
+            <a class="practice-card accent-public" href="#">
+              <div class="practice-content">
+                <div class="practice-header">
+                  <div class="practice-icon">
+                    <svg viewBox="0 0 64 64" fill="currentColor">
+                      <path d="M32 8L18 14V28C18 40 26 48 32 52C38 48 46 40 46 28V14L32 8Z M32 12L42 16V28C42 38 36 44 32 48C28 44 22 38 22 28V16L32 12Z"/>
+                      <rect x="28" y="24" width="8" height="16" fill="white"/>
+                      <rect x="24" y="32" width="16" height="4" fill="white"/>
+                    </svg>
+                  </div>
+                  <h3>{{ 'home.expertise.areas.public.title' | i18n }}</h3>
+                </div>
+                <p class="practice-desc">{{ 'home.expertise.areas.public.desc' | i18n }}</p>
+                <ul>
+                  <li>{{ 'home.expertise.areas.public.items.1' | i18n }}</li>
+                  <li>{{ 'home.expertise.areas.public.items.2' | i18n }}</li>
+                  <li>{{ 'home.expertise.areas.public.items.3' | i18n }}</li>
+                </ul>
+                <span class="practice-cta">{{ 'home.expertise.cta' | i18n }}</span>
+              </div>
+            </a>
+
+            <a class="practice-card accent-labor" href="#">
+              <div class="practice-content">
+                <div class="practice-header">
+                  <div class="practice-icon">
+                    <svg viewBox="0 0 64 64" fill="currentColor">
+                      <rect x="22" y="28" width="20" height="20" rx="2"/>
+                      <rect x="26" y="20" width="12" height="10" rx="2"/>
+                      <circle cx="32" cy="38" r="3" fill="white"/>
+                    </svg>
+                  </div>
+                  <h3>{{ 'home.expertise.areas.labor.title' | i18n }}</h3>
+                </div>
+                <p class="practice-desc">{{ 'home.expertise.areas.labor.desc' | i18n }}</p>
+                <ul>
+                  <li>{{ 'home.expertise.areas.labor.items.1' | i18n }}</li>
+                  <li>{{ 'home.expertise.areas.labor.items.2' | i18n }}</li>
+                  <li>{{ 'home.expertise.areas.labor.items.3' | i18n }}</li>
+                </ul>
+                <span class="practice-cta">{{ 'home.expertise.cta' | i18n }}</span>
+              </div>
+            </a>
+
+            <a class="practice-card accent-criminal" href="#">
+              <div class="practice-content">
+                <div class="practice-header">
+                  <div class="practice-icon">
+                    <svg viewBox="0 0 64 64" fill="currentColor">
+                      <path d="M32 8C24 8 18 14 18 22C18 30 24 36 32 36C40 36 46 30 46 22C46 14 40 8 32 8Z"/>
+                      <path d="M46 18C46 14 43 11 39 11L25 11C21 11 18 14 18 18L18 46C18 50 21 53 25 53L39 53C43 53 46 50 46 46L46 18Z"/>
+                      <path d="M28 18L32 24L36 18" stroke="#BF9874" stroke-width="2" fill="none"/>
+                    </svg>
+                  </div>
+                  <h3>{{ 'home.expertise.areas.criminal.title' | i18n }}</h3>
+                </div>
+                <p class="practice-desc">{{ 'home.expertise.areas.criminal.desc' | i18n }}</p>
+                <ul>
+                  <li>{{ 'home.expertise.areas.criminal.items.1' | i18n }}</li>
+                  <li>{{ 'home.expertise.areas.criminal.items.2' | i18n }}</li>
+                  <li>{{ 'home.expertise.areas.criminal.items.3' | i18n }}</li>
+                </ul>
+                <span class="practice-cta">{{ 'home.expertise.cta' | i18n }}</span>
+              </div>
+            </a>
+
+            <a class="practice-card accent-property" href="#">
+              <div class="practice-content">
+                <div class="practice-header">
+                  <div class="practice-icon">
+                    <svg viewBox="0 0 64 64" fill="currentColor">
+                      <rect x="16" y="32" width="32" height="20"/>
+                      <polygon points="32,12 16,32 48,32"/>
+                      <rect x="28" y="24" width="8" height="8" fill="white"/>
+                    </svg>
+                  </div>
+                  <h3>{{ 'home.expertise.areas.property.title' | i18n }}</h3>
+                </div>
+                <p class="practice-desc">{{ 'home.expertise.areas.property.desc' | i18n }}</p>
+                <ul>
+                  <li>{{ 'home.expertise.areas.property.items.1' | i18n }}</li>
+                  <li>{{ 'home.expertise.areas.property.items.2' | i18n }}</li>
+                  <li>{{ 'home.expertise.areas.property.items.3' | i18n }}</li>
+                </ul>
+                <span class="practice-cta">{{ 'home.expertise.cta' | i18n }}</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Information Bar -->
+      <section class="contact-info-section">
+        <div class="container">
+          <div class="contact-bar">
+            <div class="contact-item">
+              <h3>{{ 'home.contact.address.title' | i18n }}</h3>
+              <p>{{ 'home.contact.address.body' | i18n }}</p>
+            </div>
+            <div class="contact-divider"></div>
+            <div class="contact-item">
+              <h3>{{ 'home.contact.phone.title' | i18n }}</h3>
+              <p>{{ 'home.contact.phone.body' | i18n }}</p>
+            </div>
+            <div class="contact-divider"></div>
+            <div class="contact-item">
+              <h3>{{ 'home.contact.email.title' | i18n }}</h3>
+              <p>{{ 'home.contact.email.body' | i18n }}</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- President Section -->
+      <section class="president-section">
+        <div class="container">
+          <div class="president-content">
+            <div class="president-image-wrapper">
+              <img [src]="presidentSlides[currentPresidentSlide()].image" [alt]="'home.president.imageAlt' | i18n">
+            </div>
+
+            <div class="president-text">
+              <h2>{{ presidentSlides[currentPresidentSlide()].titleKey | i18n }}</h2>
+              @for (paragraphKey of presidentSlides[currentPresidentSlide()].paragraphKeys; track paragraphKey) {
+                <p>{{ paragraphKey | i18n }}</p>
+              }
+              <button class="president-learn-btn">
+                {{ 'home.president.cta' | i18n }}
               </button>
 
-              <div class="carousel-indicators">
-                @for (slide of heroSlides; track slide.id; let i = $index) {
+              <div class="president-pagination">
+                @for (slide of presidentSlides; track slide.id; let i = $index) {
                   <button
-                    class="indicator"
-                    [class.active]="i === currentSlide()"
-                    (click)="goToSlide(i)">
+                    class="pagination-dot"
+                    [class.active]="i === currentPresidentSlide()"
+                    (click)="goToPresidentSlide(i)">
                   </button>
                 }
               </div>
-
-              <button class="nav-arrow" (click)="nextSlide()">
-                <svg viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
-                </svg>
-              </button>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Key Facts Section -->
-    <section class="key-facts-section" aria-labelledby="key-facts-title">
-      <div class="container">
-        <div class="key-facts-header">
-          <div class="key-facts-line"></div>
-          <h2 id="key-facts-title" class="section-title">{{ 'home.keyFacts.title' | i18n }}</h2>
-        </div>
-        <p class="key-facts-subtitle">{{ 'home.keyFacts.subtitle' | i18n }}</p>
-
-        <div class="key-facts-grid">
-          <div class="key-fact-card glass-card">
-            <div class="key-fact-meta">
-              <h3>{{ 'home.keyFacts.cards.volume.title' | i18n }}</h3>
-              <span class="key-fact-note">{{ 'home.keyFacts.cards.volume.note' | i18n }}</span>
-            </div>
-            <div
-              #caseVolumeChart
-              class="key-fact-chart"
-              role="img"
-              [attr.aria-label]="'home.keyFacts.cards.volume.aria' | i18n">
-            </div>
-          </div>
-
-          <div class="key-fact-card glass-card">
-            <div class="key-fact-meta">
-              <h3>{{ 'home.keyFacts.cards.processing.title' | i18n }}</h3>
-              <span class="key-fact-note">{{ 'home.keyFacts.cards.processing.note' | i18n }}</span>
-            </div>
-            <div
-              #processingTimeChart
-              class="key-fact-chart"
-              role="img"
-              [attr.aria-label]="'home.keyFacts.cards.processing.aria' | i18n">
-            </div>
-          </div>
-
-          <div class="key-fact-card glass-card">
-            <div class="key-fact-meta">
-              <h3>{{ 'home.keyFacts.cards.decisions.title' | i18n }}</h3>
-              <span class="key-fact-note">{{ 'home.keyFacts.cards.decisions.note' | i18n }}</span>
-            </div>
-            <div
-              #decisionsTypeChart
-              class="key-fact-chart"
-              role="img"
-              [attr.aria-label]="'home.keyFacts.cards.decisions.aria' | i18n">
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Info Cards Section -->
-    <section class="quick-links-section">
-      <div class="container">
-        <div class="quick-links-container">
-          <div class="quick-link-item glass-card">
-            <div class="quick-link-icon">
-              <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=120&h=120&fit=crop" [alt]="'home.quickLinks.items.news.alt' | i18n">
-            </div>
-            <div class="quick-link-content">
-              <h3>{{ 'home.quickLinks.items.news.title' | i18n }}</h3>
-              <p>{{ 'home.quickLinks.items.news.body' | i18n }}</p>
-              <a href="#" class="quick-link-action">{{ 'home.quickLinks.items.news.action' | i18n }}</a>
-            </div>
-            <div class="connector-line"></div>
-          </div>
-
-          <div class="quick-link-item glass-card">
-            <div class="quick-link-icon">
-              <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=120&h=120&fit=crop" [alt]="'home.quickLinks.items.excerpts.alt' | i18n">
-            </div>
-            <div class="quick-link-content">
-              <h3>{{ 'home.quickLinks.items.excerpts.title' | i18n }}</h3>
-              <p>{{ 'home.quickLinks.items.excerpts.body' | i18n }}</p>
-              <a href="#" class="quick-link-action">{{ 'home.quickLinks.items.excerpts.action' | i18n }}</a>
-            </div>
-            <div class="connector-line"></div>
-          </div>
-
-          <div class="quick-link-item glass-card">
-            <div class="quick-link-icon">
-              <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=120&h=120&fit=crop" [alt]="'home.quickLinks.items.report.alt' | i18n">
-            </div>
-            <div class="quick-link-content">
-              <h3>{{ 'home.quickLinks.items.report.title' | i18n }}</h3>
-              <p>{{ 'home.quickLinks.items.report.body' | i18n }}</p>
-              <a href="#" class="quick-link-action">{{ 'home.quickLinks.items.report.action' | i18n }}</a>
-            </div>
-            <div class="connector-line"></div>
-          </div>
-
-          <div class="quick-link-item glass-card">
-            <div class="quick-link-icon">
-              <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=120&h=120&fit=crop" [alt]="'home.quickLinks.items.appointment.alt' | i18n">
-            </div>
-            <div class="quick-link-content">
-              <h3>{{ 'home.quickLinks.items.appointment.title' | i18n }}</h3>
-              <p>{{ 'home.quickLinks.items.appointment.body' | i18n }}</p>
-              <a href="#" class="quick-link-action">{{ 'home.quickLinks.items.appointment.action' | i18n }}</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- What We Offer Section -->
-    <section class="offer-section">
-      <div class="container">
-        <div class="offer-header">
-          <div class="offer-line"></div>
-          <h2 class="section-title">{{ 'home.offer.title' | i18n }}</h2>
-        </div>
-        <p class="offer-subtitle">{{ 'home.offer.subtitle' | i18n }}</p>
-
-        <div class="offer-grid">
-          <div class="offer-card">
-            <div class="offer-card-header">
-              <div class="offer-icon">
-                <svg viewBox="0 0 64 64" fill="currentColor">
-                  <path d="M32 8L16 16L16 32C16 44 24 52 32 56C40 52 48 44 48 32L48 16L32 8Z"/>
-                </svg>
-              </div>
-              <h3>{{ 'home.offer.cards.1.title' | i18n }}</h3>
-            </div>
-            <p>{{ 'home.offer.cards.1.body' | i18n }}</p>
-          </div>
-
-          <div class="offer-card">
-            <div class="offer-card-header">
-              <div class="offer-icon">
-                <svg viewBox="0 0 64 64" fill="currentColor">
-                  <rect x="18" y="12" width="28" height="40" rx="2"/>
-                  <rect x="22" y="16" width="4" height="4" fill="white"/>
-                  <rect x="22" y="24" width="4" height="4" fill="white"/>
-                  <rect x="28" y="16" width="14" height="4" fill="white"/>
-                  <rect x="28" y="24" width="14" height="4" fill="white"/>
-                </svg>
-              </div>
-              <h3>{{ 'home.offer.cards.2.title' | i18n }}</h3>
-            </div>
-            <p>{{ 'home.offer.cards.2.body' | i18n }}</p>
-          </div>
-
-          <div class="offer-card">
-            <div class="offer-card-header">
-              <div class="offer-icon">
-                <svg viewBox="0 0 64 64" fill="currentColor">
-                  <circle cx="32" cy="20" r="8"/>
-                  <path d="M32 30C24 30 16 32 16 36V42H48V36C48 32 40 30 32 30Z"/>
-                  <path d="M26 18L30 22L38 14L40 16L30 26L24 20L26 18Z" fill="white"/>
-                </svg>
-              </div>
-              <h3>{{ 'home.offer.cards.3.title' | i18n }}</h3>
-            </div>
-            <p>{{ 'home.offer.cards.3.body' | i18n }}</p>
-          </div>
-
-          <div class="offer-card">
-            <div class="offer-card-header">
-              <div class="offer-icon">
-                <svg viewBox="0 0 64 64" fill="currentColor">
-                  <circle cx="32" cy="32" r="24"/>
-                  <path d="M20 28L28 32L38 22L42 26L28 40L16 32L20 28Z" fill="white"/>
-                </svg>
-              </div>
-              <h3>{{ 'home.offer.cards.4.title' | i18n }}</h3>
-            </div>
-            <p>{{ 'home.offer.cards.4.body' | i18n }}</p>
-          </div>
-        </div>
-      </div>
-    </section>
-<hr class="style-hr">
-    <!-- Fields of Expertise Section -->
-    <section class="expertise-section">
-      <div class="container">
-        <div class="expertise-header">
-          <div class="expertise-line"></div>
-          <h2 class="section-title">{{ 'home.expertise.title' | i18n }}</h2>
-          <div class="expertise-line"></div>
-        </div>
-        <p class="expertise-subtitle">{{ 'home.expertise.subtitle' | i18n }}</p>
-
-        <div class="practice-grid">
-          <a class="practice-card accent-civil" href="#">
-            <div class="practice-content">
-              <div class="practice-header">
-                <div class="practice-icon">
-                  <svg viewBox="0 0 64 64" fill="currentColor">
-                    <path d="M38 8L26 8C24 8 22 10 22 12L22 52C22 54 24 56 26 56L38 56C40 56 42 54 42 52L42 12C42 10 40 8 38 8Z"/>
-                    <path d="M32 12L28 16L36 16L32 12Z" fill="white"/>
-                  </svg>
-                </div>
-                <h3>{{ 'home.expertise.areas.civil.title' | i18n }}</h3>
-              </div>
-              <p class="practice-desc">{{ 'home.expertise.areas.civil.desc' | i18n }}</p>
-              <ul>
-                <li>{{ 'home.expertise.areas.civil.items.1' | i18n }}</li>
-                <li>{{ 'home.expertise.areas.civil.items.2' | i18n }}</li>
-                <li>{{ 'home.expertise.areas.civil.items.3' | i18n }}</li>
-              </ul>
-              <span class="practice-cta">{{ 'home.expertise.cta' | i18n }}</span>
-            </div>
-          </a>
-
-          <a class="practice-card accent-family" href="#">
-            <div class="practice-content">
-              <div class="practice-header">
-                <div class="practice-icon">
-                  <svg viewBox="0 0 64 64" fill="currentColor">
-                    <path d="M24 40C16 40 10 44 10 50V56H38V50C38 44 32 40 24 40Z"/>
-                    <path d="M40 40C38 40 36 40.4 34 41C37 43 38 46 38 50V56H54V50C54 44 48 40 40 40Z"/>
-                    <circle cx="24" cy="26" r="10"/>
-                    <circle cx="42" cy="24" r="8"/>
-                  </svg>
-                </div>
-                <h3>{{ 'home.expertise.areas.family.title' | i18n }}</h3>
-              </div>
-              <p class="practice-desc">{{ 'home.expertise.areas.family.desc' | i18n }}</p>
-              <ul>
-                <li>{{ 'home.expertise.areas.family.items.1' | i18n }}</li>
-                <li>{{ 'home.expertise.areas.family.items.2' | i18n }}</li>
-                <li>{{ 'home.expertise.areas.family.items.3' | i18n }}</li>
-              </ul>
-              <span class="practice-cta">{{ 'home.expertise.cta' | i18n }}</span>
-            </div>
-          </a>
-
-          <a class="practice-card accent-public" href="#">
-            <div class="practice-content">
-              <div class="practice-header">
-                <div class="practice-icon">
-                  <svg viewBox="0 0 64 64" fill="currentColor">
-                    <path d="M32 8L18 14V28C18 40 26 48 32 52C38 48 46 40 46 28V14L32 8Z M32 12L42 16V28C42 38 36 44 32 48C28 44 22 38 22 28V16L32 12Z"/>
-                    <rect x="28" y="24" width="8" height="16" fill="white"/>
-                    <rect x="24" y="32" width="16" height="4" fill="white"/>
-                  </svg>
-                </div>
-                <h3>{{ 'home.expertise.areas.public.title' | i18n }}</h3>
-              </div>
-              <p class="practice-desc">{{ 'home.expertise.areas.public.desc' | i18n }}</p>
-              <ul>
-                <li>{{ 'home.expertise.areas.public.items.1' | i18n }}</li>
-                <li>{{ 'home.expertise.areas.public.items.2' | i18n }}</li>
-                <li>{{ 'home.expertise.areas.public.items.3' | i18n }}</li>
-              </ul>
-              <span class="practice-cta">{{ 'home.expertise.cta' | i18n }}</span>
-            </div>
-          </a>
-
-          <a class="practice-card accent-labor" href="#">
-            <div class="practice-content">
-              <div class="practice-header">
-                <div class="practice-icon">
-                  <svg viewBox="0 0 64 64" fill="currentColor">
-                    <rect x="22" y="28" width="20" height="20" rx="2"/>
-                    <rect x="26" y="20" width="12" height="10" rx="2"/>
-                    <circle cx="32" cy="38" r="3" fill="white"/>
-                  </svg>
-                </div>
-                <h3>{{ 'home.expertise.areas.labor.title' | i18n }}</h3>
-              </div>
-              <p class="practice-desc">{{ 'home.expertise.areas.labor.desc' | i18n }}</p>
-              <ul>
-                <li>{{ 'home.expertise.areas.labor.items.1' | i18n }}</li>
-                <li>{{ 'home.expertise.areas.labor.items.2' | i18n }}</li>
-                <li>{{ 'home.expertise.areas.labor.items.3' | i18n }}</li>
-              </ul>
-              <span class="practice-cta">{{ 'home.expertise.cta' | i18n }}</span>
-            </div>
-          </a>
-
-          <a class="practice-card accent-criminal" href="#">
-            <div class="practice-content">
-              <div class="practice-header">
-                <div class="practice-icon">
-                  <svg viewBox="0 0 64 64" fill="currentColor">
-                    <path d="M32 8C24 8 18 14 18 22C18 30 24 36 32 36C40 36 46 30 46 22C46 14 40 8 32 8Z"/>
-                    <path d="M46 18C46 14 43 11 39 11L25 11C21 11 18 14 18 18L18 46C18 50 21 53 25 53L39 53C43 53 46 50 46 46L46 18Z"/>
-                    <path d="M28 18L32 24L36 18" stroke="#BF9874" stroke-width="2" fill="none"/>
-                  </svg>
-                </div>
-                <h3>{{ 'home.expertise.areas.criminal.title' | i18n }}</h3>
-              </div>
-              <p class="practice-desc">{{ 'home.expertise.areas.criminal.desc' | i18n }}</p>
-              <ul>
-                <li>{{ 'home.expertise.areas.criminal.items.1' | i18n }}</li>
-                <li>{{ 'home.expertise.areas.criminal.items.2' | i18n }}</li>
-                <li>{{ 'home.expertise.areas.criminal.items.3' | i18n }}</li>
-              </ul>
-              <span class="practice-cta">{{ 'home.expertise.cta' | i18n }}</span>
-            </div>
-          </a>
-
-          <a class="practice-card accent-property" href="#">
-            <div class="practice-content">
-              <div class="practice-header">
-                <div class="practice-icon">
-                  <svg viewBox="0 0 64 64" fill="currentColor">
-                    <rect x="16" y="32" width="32" height="20"/>
-                    <polygon points="32,12 16,32 48,32"/>
-                    <rect x="28" y="24" width="8" height="8" fill="white"/>
-                  </svg>
-                </div>
-                <h3>{{ 'home.expertise.areas.property.title' | i18n }}</h3>
-              </div>
-              <p class="practice-desc">{{ 'home.expertise.areas.property.desc' | i18n }}</p>
-              <ul>
-                <li>{{ 'home.expertise.areas.property.items.1' | i18n }}</li>
-                <li>{{ 'home.expertise.areas.property.items.2' | i18n }}</li>
-                <li>{{ 'home.expertise.areas.property.items.3' | i18n }}</li>
-              </ul>
-              <span class="practice-cta">{{ 'home.expertise.cta' | i18n }}</span>
-            </div>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact Information Bar -->
-    <section class="contact-info-section">
-      <div class="container">
-        <div class="contact-bar">
-          <div class="contact-item">
-            <h3>{{ 'home.contact.address.title' | i18n }}</h3>
-            <p>{{ 'home.contact.address.body' | i18n }}</p>
-          </div>
-          <div class="contact-divider"></div>
-          <div class="contact-item">
-            <h3>{{ 'home.contact.phone.title' | i18n }}</h3>
-            <p>{{ 'home.contact.phone.body' | i18n }}</p>
-          </div>
-          <div class="contact-divider"></div>
-          <div class="contact-item">
-            <h3>{{ 'home.contact.email.title' | i18n }}</h3>
-            <p>{{ 'home.contact.email.body' | i18n }}</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- President Section -->
-    <section class="president-section">
-      <div class="container">
-        <div class="president-content">
-          <div class="president-image-wrapper">
-            <img [src]="presidentSlides[currentPresidentSlide()].image" [alt]="'home.president.imageAlt' | i18n">
-          </div>
-
-          <div class="president-text">
-            <h2>{{ presidentSlides[currentPresidentSlide()].titleKey | i18n }}</h2>
-            @for (paragraphKey of presidentSlides[currentPresidentSlide()].paragraphKeys; track paragraphKey) {
-              <p>{{ paragraphKey | i18n }}</p>
-            }
-            <button class="president-learn-btn">
-              {{ 'home.president.cta' | i18n }}
-            </button>
-
-            <div class="president-pagination">
-              @for (slide of presidentSlides; track slide.id; let i = $index) {
-                <button
-                  class="pagination-dot"
-                  [class.active]="i === currentPresidentSlide()"
-                  (click)="goToPresidentSlide(i)">
-                </button>
-              }
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Newsletter Section -->
-    <section class="newsletter-section">
-      <div class="container">
-        <div class="newsletter-header">
-          <div class="header-line"></div>
-          <h2>{{ 'home.newsletter.title' | i18n }}</h2>
-          <div class="header-line"></div>
-        </div>
-
-        <div class="newsletter-grid">
-          <div class="news-card glass-card">
-            <div class="news-image">
-              <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=800&h=600&fit=crop" [alt]="'home.newsletter.items.1.alt' | i18n">
-            </div>
-            <div class="news-content">
-              <p class="news-date">{{ 'home.newsletter.items.1.date' | i18n }}</p>
-              <h3>{{ 'home.newsletter.items.1.title' | i18n }}</h3>
-              <a href="#" class="read-more-link">
-                {{ 'home.newsletter.readMore' | i18n }}
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M5 12h14M12 5l7 7-7 7"/>
-                </svg>
-              </a>
-            </div>
-          </div>
-
-          <div class="news-card glass-card">
-            <div class="news-image">
-              <img src="https://images.unsplash.com/photo-1505664194779-8beaceb93744?w=800&h=600&fit=crop" [alt]="'home.newsletter.items.2.alt' | i18n">
-            </div>
-            <div class="news-content">
-              <p class="news-date">{{ 'home.newsletter.items.2.date' | i18n }}</p>
-              <h3>{{ 'home.newsletter.items.2.title' | i18n }}</h3>
-              <a href="#" class="read-more-link">
-                {{ 'home.newsletter.readMore' | i18n }}
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M5 12h14M12 5l7 7-7 7"/>
-                </svg>
-              </a>
-            </div>
-          </div>
-
-          <div class="news-card glass-card">
-            <div class="news-image">
-              <img src="https://images.unsplash.com/photo-1479142506502-19b3a3b7ff33?w=800&h=600&fit=crop" [alt]="'home.newsletter.items.3.alt' | i18n">
-            </div>
-            <div class="news-content">
-              <p class="news-date">{{ 'home.newsletter.items.3.date' | i18n }}</p>
-              <h3>{{ 'home.newsletter.items.3.title' | i18n }}</h3>
-              <a href="#" class="read-more-link">
-                {{ 'home.newsletter.readMore' | i18n }}
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M5 12h14M12 5l7 7-7 7"/>
-                </svg>
-              </a>
-            </div>
-          </div>
-
-          <div class="news-card glass-card">
-            <div class="news-image">
-              <img src="https://images.unsplash.com/photo-1521587760476-6c12a4b040da?w=800&h=600&fit=crop" [alt]="'home.newsletter.items.4.alt' | i18n">
-            </div>
-            <div class="news-content">
-              <p class="news-date">{{ 'home.newsletter.items.4.date' | i18n }}</p>
-              <h3>{{ 'home.newsletter.items.4.title' | i18n }}</h3>
-              <a href="#" class="read-more-link">
-                {{ 'home.newsletter.readMore' | i18n }}
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M5 12h14M12 5l7 7-7 7"/>
-                </svg>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="newsletter-actions">
-          <button class="newsletter-learn-btn">{{ 'home.newsletter.cta' | i18n }}</button>
-        </div>
-      </div>
-    </section>
-
-    <!-- Footer Section -->
-    <footer class="footer-section">
-      <div class="footer-main">
-        <div class="footer-logo-wrapper">
-          <img [src]="footerLogo()" alt="Footer Logo">
-        </div>
+      <!-- Newsletter Section -->
+      <section class="newsletter-section">
         <div class="container">
-          <div class="footer-grid">
-            <div class="footer-column">
-              <h3>{{ 'footer.mainOffice.title' | i18n }}</h3>
-              <p>{{ 'footer.mainOffice.address1' | i18n }}</p>
-              <p>{{ 'footer.mainOffice.address2' | i18n }}</p>
-              <p>{{ 'footer.mainOffice.address3' | i18n }}</p>
-              <p class="footer-contact">{{ 'footer.mainOffice.phone' | i18n }}</p>
-              <p class="footer-contact">{{ 'footer.mainOffice.email' | i18n }}</p>
+          <div class="newsletter-header">
+            <div class="header-line"></div>
+            <h2>{{ 'home.newsletter.title' | i18n }}</h2>
+            <div class="header-line"></div>
+          </div>
+
+          <div class="newsletter-grid">
+            <div class="news-card glass-card">
+              <div class="news-image">
+                <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=800&h=600&fit=crop" [alt]="'home.newsletter.items.1.alt' | i18n">
+              </div>
+              <div class="news-content">
+                <p class="news-date">{{ 'home.newsletter.items.1.date' | i18n }}</p>
+                <h3>{{ 'home.newsletter.items.1.title' | i18n }}</h3>
+                <a href="#" class="read-more-link">
+                  {{ 'home.newsletter.readMore' | i18n }}
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                  </svg>
+                </a>
+              </div>
             </div>
 
-            <div class="footer-column">
-              <h3>{{ 'footer.quickLinks.title' | i18n }}</h3>
-              <ul>
-                <li><a href="#">{{ 'footer.quickLinks.about' | i18n }}</a></li>
-                <li><a href="#">{{ 'footer.quickLinks.jurisprudence' | i18n }}</a></li>
-                <li><a href="#">{{ 'footer.quickLinks.filing' | i18n }}</a></li>
-                <li><a href="#">{{ 'footer.quickLinks.contact' | i18n }}</a></li>
-              </ul>
+            <div class="news-card glass-card">
+              <div class="news-image">
+                <img src="https://images.unsplash.com/photo-1505664194779-8beaceb93744?w=800&h=600&fit=crop" [alt]="'home.newsletter.items.2.alt' | i18n">
+              </div>
+              <div class="news-content">
+                <p class="news-date">{{ 'home.newsletter.items.2.date' | i18n }}</p>
+                <h3>{{ 'home.newsletter.items.2.title' | i18n }}</h3>
+                <a href="#" class="read-more-link">
+                  {{ 'home.newsletter.readMore' | i18n }}
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                  </svg>
+                </a>
+              </div>
             </div>
 
-            <div class="footer-column">
-              <h3>{{ 'footer.resources.title' | i18n }}</h3>
-              <ul>
-                <li><a href="#">{{ 'footer.resources.legalDocs' | i18n }}</a></li>
-                <li><a href="#">{{ 'footer.resources.decisions' | i18n }}</a></li>
-                <li><a href="#">{{ 'footer.resources.reports' | i18n }}</a></li>
-                <li><a href="#">{{ 'footer.resources.faqs' | i18n }}</a></li>
-              </ul>
+            <div class="news-card glass-card">
+              <div class="news-image">
+                <img src="https://images.unsplash.com/photo-1479142506502-19b3a3b7ff33?w=800&h=600&fit=crop" [alt]="'home.newsletter.items.3.alt' | i18n">
+              </div>
+              <div class="news-content">
+                <p class="news-date">{{ 'home.newsletter.items.3.date' | i18n }}</p>
+                <h3>{{ 'home.newsletter.items.3.title' | i18n }}</h3>
+                <a href="#" class="read-more-link">
+                  {{ 'home.newsletter.readMore' | i18n }}
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                  </svg>
+                </a>
+              </div>
             </div>
 
-            <div class="footer-column">
-              <h3>{{ 'footer.connect.title' | i18n }}</h3>
-              <ul>
-                <li><a href="#">{{ 'footer.connect.facebook' | i18n }}</a></li>
-                <li><a href="#">{{ 'footer.connect.twitter' | i18n }}</a></li>
-                <li><a href="#">{{ 'footer.connect.instagram' | i18n }}</a></li>
-                <li><a href="#">{{ 'footer.connect.linkedin' | i18n }}</a></li>
-              </ul>
+            <div class="news-card glass-card">
+              <div class="news-image">
+                <img src="https://images.unsplash.com/photo-1521587760476-6c12a4b040da?w=800&h=600&fit=crop" [alt]="'home.newsletter.items.4.alt' | i18n">
+              </div>
+              <div class="news-content">
+                <p class="news-date">{{ 'home.newsletter.items.4.date' | i18n }}</p>
+                <h3>{{ 'home.newsletter.items.4.title' | i18n }}</h3>
+                <a href="#" class="read-more-link">
+                  {{ 'home.newsletter.readMore' | i18n }}
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                  </svg>
+                </a>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
 
-      <div class="footer-bottom">
-        <div class="container">
-          <div class="footer-bottom-content">
-            <a href="#" class="privacy-link">{{ 'footer.privacy' | i18n }}</a>
-            <p class="copyright">{{ 'footer.copyright' | i18n }}</p>
-            <div class="social-icons">
-              <a href="#" class="social-icon">
-                <svg viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"/>
-                </svg>
-              </a>
-              <a href="#" class="social-icon">
-                <svg viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M22.46 6c-.85.38-1.78.64-2.75.76 1-.6 1.76-1.55 2.12-2.68-.93.55-1.96.95-3.06 1.17-.88-.94-2.13-1.53-3.51-1.53-2.66 0-4.82 2.16-4.82 4.82 0 .38.04.75.13 1.10-4-.2-7.54-2.12-9.91-5.04-.42.72-.66 1.55-.66 2.44 0 1.67.85 3.15 2.14 4.01-.79-.03-1.53-.24-2.18-.6v.06c0 2.34 1.66 4.29 3.87 4.73-.4.11-.83.17-1.27.17-.31 0-.62-.03-.92-.08.63 1.96 2.44 3.38 4.6 3.42-1.68 1.32-3.8 2.1-6.11 2.1-.4 0-.79-.02-1.17-.07 2.18 1.4 4.77 2.21 7.55 2.21 9.06 0 14-7.5 14-14 0-.21 0-.42-.02-.63.96-.69 1.8-1.56 2.46-2.55z"/>
-                </svg>
-              </a>
-              <a href="#" class="social-icon">
-                <svg viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8 1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z"/>
-                </svg>
-              </a>
-            </div>
+          <div class="newsletter-actions">
+            <button class="newsletter-learn-btn">{{ 'home.newsletter.cta' | i18n }}</button>
           </div>
         </div>
-      </div>
-    </footer>
+      </section>
+
+      <app-footer></app-footer>
+    </div>
   `,
   styles: [`
     * {
@@ -674,6 +600,7 @@ interface PresidentSlide {
       margin-bottom: 18px;
       text-transform: uppercase;
       text-align: left;
+     color: #BF9874 !important;
     }
 
     .hero-title {
@@ -928,7 +855,7 @@ interface PresidentSlide {
     .quick-link-icon img {
       width: 100%;
       height: 100%;
-      object-fit: cover;
+      // object-fit: cover;
     }
 
     .quick-link-content {
@@ -1024,6 +951,10 @@ interface PresidentSlide {
     .offer-subtitle {
       margin-left: 0;
       text-align: left;
+      padding-bottom: 29px;
+      color: #BF9874 !important;
+
+
     }
 
     .offer-grid {
@@ -1078,17 +1009,17 @@ interface PresidentSlide {
     .expertise-section {
       position: relative;
       padding: 90px 0;
-      background: #ECECF1;
+      background: transparent !important;
       overflow: hidden;
     }
 
-    .style-hr {
-      background: #BF9874 !important;
-      color: #BF9874 !important;
-      border: none !important;
-      height: 1px !important;
-      width: auto !important;
-    }
+    // .style-hr {
+    //   background: #BF9874 !important;
+    //   color: #BF9874 !important;
+    //   border: none !important;
+    //   height: 1px !important;
+    //   width: auto !important;
+    // }
 
     .expertise-section::before {
       content: '';
@@ -1140,6 +1071,7 @@ interface PresidentSlide {
       text-align: center;
       margin-left: auto;
       margin-right: auto;
+      color: #BF9874 !important;
     }
 
     .practice-grid {
@@ -1640,7 +1572,7 @@ interface PresidentSlide {
       color: #55645c;
       padding: 60px 0 40px;
       position: relative;
-      border-top: 1px solid rgba(255, 255, 255, 0.8);
+      // border-top: 1px solid rgba(255, 255, 255, 0.8);
     }
 
     .footer-main::before {
@@ -1670,7 +1602,7 @@ interface PresidentSlide {
 
     .footer-logo-wrapper {
       position: absolute;
-      top: -40px;
+      top: -46px;
       left: 50%;
       transform: translateX(-50%);
       background: linear-gradient(135deg, #ffffff, #f1f5fb);
@@ -1685,7 +1617,7 @@ interface PresidentSlide {
     }
 
     .footer-logo-wrapper img {
-      max-width: 80%;
+      max-width: 64%;
       max-height: 80%;
       object-fit: contain;
     }
@@ -1760,7 +1692,7 @@ interface PresidentSlide {
 
     .footer-bottom {
       background: #ffffff;
-      padding: 25px 0;
+      padding: 16px 0 !important;
       border-top: 1px solid rgba(26, 41, 66, 0.08);
     }
 
@@ -2515,11 +2447,6 @@ export class HomeComponent implements OnInit, AfterViewInit {
   currentSlide = signal(0);
   currentPresidentSlide = signal(0);
   
-  // Computed signal for footer logo based on active language from I18nService
-  footerLogo = computed(() => {
-    return this.i18n.activeLang() === 'fr' ? '/assets/logo-fn.png' : '/assets/logo-en.png';
-  });
-
   heroSlides: HeroSlide[] = [
     {
       id: 1,
