@@ -246,17 +246,20 @@ import { FooterComponent } from '../../components/footer/footer.component';
       }
 
       /* Hero Section */
-      .hero-section {
-        background: linear-gradient(135deg, rgba(44, 62, 80, 0.95), rgba(52, 73, 94, 0.95)),
-                  url('https://placehold.co/1920x400') center/cover;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-color: #2c3e50;
-        color: white;
-        padding: 100px 0;
-        position: relative;
-      }
+  .hero-section {
+  position: relative;
+  min-height: 400px;
+  background-image: url('https://plus.unsplash.com/premium_photo-1706546717570-865a9430bb34?q=80&w=2370&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 20px;
+  overflow: hidden;
+}
 
       .hero-overlay {
         position: absolute;
