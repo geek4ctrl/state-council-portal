@@ -155,7 +155,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
           <div class="collaboration-content">
             <div class="collaboration-text">
               <h2>{{ 'international.collaboration.title' | i18n }}</h2>
-              <p>{{ 'international.collaboration.body' | i18n }}</p>
+              <p class="section-subtitle">{{ 'international.collaboration.body' | i18n }}</p>
             </div>
             <button class="contact-btn">{{ 'international.collaboration.cta' | i18n }}</button>
           </div>
@@ -333,7 +333,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
 
     .section-subtitle {
       font-size: 0.9rem;
-      color: #BF9874;
+      color: #BF9874 !important;
       margin: 0 0 60px 0;
       line-height: 1.7;
       letter-spacing: 1.5px;

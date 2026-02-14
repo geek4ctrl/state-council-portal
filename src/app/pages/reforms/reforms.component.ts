@@ -55,7 +55,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
             <div class="process-step">
               <div class="step-number">01</div>
               <div class="step-content">
-                <div class="step-icon-wrapper" style="background: linear-gradient(135deg, #c8956b 0%, #b8865b 100%);">
+                <div class="step-icon-wrapper" style="background: linear-gradient(135deg, #BF9874 !important 0%, #b8865b 100%);">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
                     <circle cx="9" cy="7" r="4"></circle>
@@ -71,10 +71,10 @@ import { FooterComponent } from '../../components/footer/footer.component';
                 <svg viewBox="0 0 100 60" preserveAspectRatio="none">
                   <defs>
                     <marker id="arrowhead1" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
-                      <polygon points="0 0, 10 3, 0 6" fill="#c8956b"/>
+                      <polygon points="0 0, 10 3, 0 6" fill="#BF9874 !important"/>
                     </marker>
                   </defs>
-                  <path d="M0,30 Q50,10 100,30" stroke="#c8956b" stroke-width="2" fill="none" stroke-dasharray="5,5" marker-end="url(#arrowhead1)"/>
+                  <path d="M0,30 Q50,10 100,30" stroke="#BF9874 !important" stroke-width="2" fill="none" stroke-dasharray="5,5" marker-end="url(#arrowhead1)"/>
                 </svg>
               </div>
             </div>
@@ -97,10 +97,10 @@ import { FooterComponent } from '../../components/footer/footer.component';
                 <svg viewBox="0 0 100 60" preserveAspectRatio="none">
                   <defs>
                     <marker id="arrowhead2" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
-                      <polygon points="0 0, 10 3, 0 6" fill="#c8956b"/>
+                      <polygon points="0 0, 10 3, 0 6" fill="#BF9874 !important"/>
                     </marker>
                   </defs>
-                  <path d="M0,30 Q50,50 100,30" stroke="#c8956b" stroke-width="2" fill="none" stroke-dasharray="5,5" marker-end="url(#arrowhead2)"/>
+                  <path d="M0,30 Q50,50 100,30" stroke="#BF9874 !important" stroke-width="2" fill="none" stroke-dasharray="5,5" marker-end="url(#arrowhead2)"/>
                 </svg>
               </div>
             </div>
@@ -124,10 +124,10 @@ import { FooterComponent } from '../../components/footer/footer.component';
                 <svg viewBox="0 0 100 60" preserveAspectRatio="none">
                   <defs>
                     <marker id="arrowhead3" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
-                      <polygon points="0 0, 10 3, 0 6" fill="#c8956b"/>
+                      <polygon points="0 0, 10 3, 0 6" fill="#BF9874 !important"/>
                     </marker>
                   </defs>
-                  <path d="M0,30 Q50,10 100,30" stroke="#c8956b" stroke-width="2" fill="none" stroke-dasharray="5,5" marker-end="url(#arrowhead3)"/>
+                  <path d="M0,30 Q50,10 100,30" stroke="#BF9874 !important" stroke-width="2" fill="none" stroke-dasharray="5,5" marker-end="url(#arrowhead3)"/>
                 </svg>
               </div>
             </div>
@@ -151,10 +151,10 @@ import { FooterComponent } from '../../components/footer/footer.component';
                 <svg viewBox="0 0 100 60" preserveAspectRatio="none">
                   <defs>
                     <marker id="arrowhead4" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
-                      <polygon points="0 0, 10 3, 0 6" fill="#c8956b"/>
+                      <polygon points="0 0, 10 3, 0 6" fill="#BF9874 !important"/>
                     </marker>
                   </defs>
-                  <path d="M0,30 Q50,50 100,30" stroke="#c8956b" stroke-width="2" fill="none" stroke-dasharray="5,5" marker-end="url(#arrowhead4)"/>
+                  <path d="M0,30 Q50,50 100,30" stroke="#BF9874 !important" stroke-width="2" fill="none" stroke-dasharray="5,5" marker-end="url(#arrowhead4)"/>
                 </svg>
               </div>
             </div>
@@ -175,8 +175,8 @@ import { FooterComponent } from '../../components/footer/footer.component';
               </div>
               <div class="completion-badge">
                 <svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="30" cy="30" r="28" stroke="#c8956b" stroke-width="2" fill="none"/>
-                  <path d="M18 30l8 8 16-16" stroke="#c8956b" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                  <circle cx="30" cy="30" r="28" stroke="#BF9874 !important" stroke-width="2" fill="none"/>
+                  <path d="M18 30l8 8 16-16" stroke="#BF9874 !important" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
               </div>
             </div>
@@ -331,6 +331,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
       text-align: center;
       max-width: 900px;
       margin: 0 auto 60px;
+      color: #BF9874 !important;
     }
 
     .section-subtitle {
@@ -338,6 +339,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
       font-size: 0.85rem;
       color: #999;
       margin: -10px 0 20px 0;
+      color: #BF9874 !important;
     }
 
     /* Initiatives Section */
@@ -366,7 +368,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
     .step-number {
       width: 50px;
       height: 50px;
-      background: linear-gradient(135deg, #c8956b 0%, #b8865b 100%);
+      background: linear-gradient(135deg, #BF9874 !important 0%, #b8865b 100%);
       color: white;
       border-radius: 50%;
       display: flex;
@@ -510,15 +512,15 @@ import { FooterComponent } from '../../components/footer/footer.component';
     .header-line {
       height: 2px;
       width: 120px;
-      background: linear-gradient(90deg, transparent, #c8956b);
+      background: linear-gradient(90deg, transparent, #BF9874 !important);
     }
 
     .header-line.left {
-      background: linear-gradient(90deg, transparent, #c8956b);
+      background: linear-gradient(90deg, transparent, #BF9874 !important);
     }
 
     .header-line.right {
-      background: linear-gradient(90deg, #c8956b, transparent);
+      background: linear-gradient(90deg, #BF9874 !important, transparent);
     }
 
     .section-title-stakeholders {
@@ -534,7 +536,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
     .section-subtitle {
       text-align: center;
       font-size: 0.9rem;
-      color: #c8956b;
+      color: #BF9874 !important;
       margin: 0 0 50px 0;
       letter-spacing: 2px;
       text-transform: uppercase;
@@ -612,7 +614,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
 
     .stakeholder-role {
       font-size: 0.85rem;
-      color: #c8956b;
+      color: #BF9874 !important;
       font-weight: 500;
       margin: 0;
     }
@@ -904,6 +906,8 @@ import { FooterComponent } from '../../components/footer/footer.component';
       .section-subtitle {
         font-size: 0.8rem;
         margin-bottom: 30px;
+        color: #BF9874 !important;
+
       }
 
       .stakeholder-info {
@@ -1056,6 +1060,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
       .section-subtitle {
         font-size: 0.75rem;
         margin-bottom: 25px;
+        color: #BF9874 !important;
       }
 
       .stakeholder-info {
