@@ -815,7 +815,7 @@ type HighchartsStatic = typeof import('highcharts');
     }
 
     .section-title-white {
-      font-family: var(--services-heading-font);
+
       font-size: 2.7rem;
       font-weight: 600;
       color: #1a1a1a;
@@ -860,7 +860,7 @@ type HighchartsStatic = typeof import('highcharts');
     }
 
     .service-box h3 {
-      font-family: var(--services-heading-font);
+
       font-size: 1.15rem;
       font-weight: 600;
       color: #1a1a1a;
@@ -869,16 +869,14 @@ type HighchartsStatic = typeof import('highcharts');
     }
 
     .service-box p {
-      font-family: var(--services-body-font);
-      font-size: 0.9rem;
+            font-size: 0.9rem;
       line-height: 1.6;
       color: #4b5563;
       margin: 0 0 18px 0;
     }
 
     .service-link {
-      font-family: var(--services-body-font);
-      font-size: 0.7rem;
+            font-size: 0.7rem;
       color: #1a1a1a;
       text-decoration: none;
       font-weight: 600;
@@ -916,7 +914,7 @@ type HighchartsStatic = typeof import('highcharts');
     }
 
     .section-heading {
-      font-family: var(--services-heading-font);
+
       font-size: 2.6rem;
       font-weight: 600;
       color: #1a1a1a;
@@ -927,8 +925,7 @@ type HighchartsStatic = typeof import('highcharts');
     }
 
     .section-subheading {
-      font-family: var(--services-body-font);
-      font-size: 0.95rem;
+            font-size: 0.95rem;
       color: #BF9874;
       text-align: center;
       margin: 0 0 60px 0;
@@ -994,7 +991,7 @@ type HighchartsStatic = typeof import('highcharts');
     }
 
     .service-text h4 {
-      font-family: var(--services-heading-font);
+
       font-size: 1.05rem;
       font-weight: 600;
       color: #1a1a1a;
@@ -1003,8 +1000,7 @@ type HighchartsStatic = typeof import('highcharts');
     }
 
     .service-text p {
-      font-family: var(--services-body-font);
-      font-size: 0.9rem;
+            font-size: 0.9rem;
       line-height: 1.6;
       color: #5b5f66;
       margin: 0;
@@ -1017,8 +1013,7 @@ type HighchartsStatic = typeof import('highcharts');
     }
 
     .service-text li {
-      font-family: var(--services-body-font);
-      font-size: 0.9rem;
+            font-size: 0.9rem;
       line-height: 1.8;
       margin-bottom: 8px;
     }
@@ -1056,7 +1051,7 @@ type HighchartsStatic = typeof import('highcharts');
     }
 
     .detail-content h4 {
-      font-family: var(--services-heading-font);
+
       font-size: 1rem;
       font-weight: 600;
       color: #1a1a1a;
@@ -1071,15 +1066,13 @@ type HighchartsStatic = typeof import('highcharts');
     }
 
     .detail-content li {
-      font-family: var(--services-body-font);
-      font-size: 0.9rem;
+            font-size: 0.9rem;
       line-height: 1.8;
       margin-bottom: 10px;
     }
 
     .detail-content p {
-      font-family: var(--services-body-font);
-      font-size: 0.9rem;
+            font-size: 0.9rem;
       line-height: 1.8;
       color: #333;
       margin: 0 0 15px 0;
