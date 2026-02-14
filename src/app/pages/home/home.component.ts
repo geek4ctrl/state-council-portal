@@ -145,8 +145,7 @@ interface PresidentSlide {
             <div class="quick-link-item glass-card">
               <div class="quick-link-icon non-border">
                 
-                <img src="assets/news1.png" [alt]="'home.quickLinks.items.news.alt' | i18n">
-              </div>
+                <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=120&h=120&fit=crop" [alt]="'home.quickLinks.items.report.alt' | i18n">              </div>
               <div class="quick-link-content">
                 <h3>{{ 'home.quickLinks.items.news.title' | i18n }}</h3>
                 <p>{{ 'home.quickLinks.items.news.body' | i18n }}</p>
