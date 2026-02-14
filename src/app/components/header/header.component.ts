@@ -28,6 +28,9 @@ export class HeaderComponent {
   logoSrc = computed(() => {
     return this.i18n.activeLang() === 'fr' ? 'assets/logo-fn.png' : 'assets/logo-en.png';
   });
+    logosSrc = computed(() => {
+    return this.i18n.activeLang() === 'fr' ? 'assets/news1.png' : 'assets/logo-en.png';
+  });
 
   constructor() {}
 
