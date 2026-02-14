@@ -679,7 +679,7 @@ interface PresidentSlide {
       width: 48px;
       height: 48px;
       background-color: rgba(255, 255, 255, 0.15);
-      border: 2px solid rgba(255, 255, 255, 0.6);
+      border: 1px solid rgba(255, 255, 255, 0.6);
       border-radius: 50%;
       color: white;
       cursor: pointer;
@@ -786,7 +786,7 @@ interface PresidentSlide {
 
     .key-fact-note {
       font-size: 0.75rem;
-      color: #8b7355;
+      color: #BF9874;
       text-transform: uppercase;
       letter-spacing: 1px;
       font-weight: 600;
@@ -1083,7 +1083,7 @@ interface PresidentSlide {
     }
 
     .practice-card {
-      --accent: #8b7355;
+      --accent: #BF9874;
       padding: 34px 30px;
       background: white;
       display: flex;
@@ -1361,7 +1361,7 @@ interface PresidentSlide {
       padding: 14px 38px;
       background-color: transparent;
       color: #BF9874;
-      border: 2px solid #BF9874;
+      border: 1px solid #BF9874;
       font-size: 0.9rem;
       font-weight: 700;
       cursor: pointer;
@@ -1549,7 +1549,7 @@ interface PresidentSlide {
       padding: 16px 50px;
       background: transparent;
       color: #BF9874;
-      border: 2px solid #BF9874;
+      border: 1px solid #BF9874;
       font-size: 0.95rem;
       font-weight: 700;
       cursor: pointer;

@@ -272,7 +272,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
     .stat-divider {
       width: 60px;
       height: 2px;
-      background: #c9a961;
+      background: #BF9874;
       margin: 15px auto;
     }
 
@@ -287,7 +287,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
     .stat-separator {
       width: 1px;
       height: 80px;
-      background: #c9a961;
+      background: #BF9874;
       flex-shrink: 0;
     }
 
@@ -321,19 +321,19 @@ import { FooterComponent } from '../../components/footer/footer.component';
     .header-line {
       flex: 0 0 60px;
       height: 2px;
-      background: #c9a961;
+      background: #BF9874;
     }
 
     .header-line-left,
     .header-line-right {
       flex: 0 0 60px;
       height: 2px;
-      background: #c9a961;
+      background: #BF9874;
     }
 
     .section-subtitle {
       font-size: 0.9rem;
-      color: #c9a961;
+      color: #BF9874;
       margin: 0 0 60px 0;
       line-height: 1.7;
       letter-spacing: 1.5px;
@@ -364,7 +364,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
     .card-accent {
       width: 4px;
       height: 100%;
-      background: #c9a961;
+      background: #BF9874;
       position: absolute;
       left: 0;
       top: 0;
@@ -437,7 +437,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
       display: flex;
       align-items: center;
       justify-content: center;
-      border: 2px solid #BF9874;
+      border: 1px solid #BF9874;
       border-radius: 50%;
     }
 

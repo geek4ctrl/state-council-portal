@@ -297,7 +297,7 @@ img.lazy-loaded {
 
 img.lazy-error {
   background: #f5f5f5;
-  border: 2px dashed #ddd;
+  border: 1px dashed #ddd;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -596,7 +596,7 @@ img,
 }
 
 .social-icon {
-  border: 2px solid #bf9874 !important;
+  border: 1px solid #bf9874 !important;
 }
 
 .social-icon:hover {
@@ -789,7 +789,7 @@ img,
 }
 
 .quick-link-item {
-  border: 2px solid rgba(191, 152, 116, 0.2);
+  border: 1px solid rgba(191, 152, 116, 0.2);
 }
 
 .quick-link-item:hover {

@@ -484,7 +484,7 @@ type HighchartsStatic = typeof import('highcharts');
       margin: 0 0 25px 0;
       letter-spacing: 1px;
       padding-bottom: 15px;
-      border-bottom: 2px solid #8b7355;
+      border-bottom: 2px solid #BF9874;
       display: inline-block;
     }
 
@@ -510,7 +510,7 @@ type HighchartsStatic = typeof import('highcharts');
     .senior-label {
       font-size: 0.75rem;
       font-weight: 600;
-      color: #8b7355;
+      color: #BF9874;
       letter-spacing: 2px;
       text-transform: uppercase;
       margin-bottom: 10px;
@@ -700,7 +700,7 @@ type HighchartsStatic = typeof import('highcharts');
       padding: 20px;
       color: rgba(255, 255, 255, 0.75);
       font-size: 0.9rem;
-      border-left: 3px solid #8b7355;
+      border-left: 3px solid #BF9874;
     }
 
     .member-card {
@@ -731,7 +731,7 @@ type HighchartsStatic = typeof import('highcharts');
     .member-info {
       padding: 25px 20px;
       background: #1a2942;
-      border-top: 3px solid #8b7355;
+      border-top: 3px solid #BF9874;
     }
 
     .member-info h3 {
@@ -760,7 +760,7 @@ type HighchartsStatic = typeof import('highcharts');
 
     .learn-more {
       font-size: 0.75rem;
-      color: #8b7355;
+      color: #BF9874;
       text-decoration: none;
       font-weight: 600;
       letter-spacing: 1px;
@@ -779,11 +779,12 @@ type HighchartsStatic = typeof import('highcharts');
 
     .load-more-btn {
       background: transparent;
-      border: 2px solid #8b7355;
-      color: #8b7355;
+      border: 1px solid #BF9874;
+      color: #BF9874;
       padding: 12px 40px;
       font-size: 0.85rem;
       font-weight: 600;
+      border-radius: 6px;
       letter-spacing: 1.5px;
       cursor: pointer;
       transition: all 0.3s ease;
@@ -791,7 +792,7 @@ type HighchartsStatic = typeof import('highcharts');
     }
 
     .load-more-btn:hover {
-      background: #8b7355;
+      background: #BF9874;
       color: white;
     }
 
@@ -850,7 +851,7 @@ type HighchartsStatic = typeof import('highcharts');
       left: 0;
       right: 0;
       height: 3px;
-      background: linear-gradient(90deg, #8b7355, #4e6a8a);
+      background: linear-gradient(90deg, #BF9874, #4e6a8a);
     }
 
     .service-box:hover {
@@ -876,7 +877,7 @@ type HighchartsStatic = typeof import('highcharts');
     }
 
     .service-link {
-            font-size: 0.7rem;
+      font-size: 0.7rem;
       color: #1a1a1a;
       text-decoration: none;
       font-weight: 600;
@@ -889,7 +890,7 @@ type HighchartsStatic = typeof import('highcharts');
     }
 
     .service-link:hover {
-      color: #8b7355;
+      color: #BF9874;
       transform: translateX(3px);
     }
 
@@ -976,7 +977,7 @@ type HighchartsStatic = typeof import('highcharts');
       flex-shrink: 0;
       width: 42px;
       height: 42px;
-      background: radial-gradient(circle at 30% 30%, #d9c2a7, #8b7355);
+      background: radial-gradient(circle at 30% 30%, #d9c2a7, #BF9874);
       color: white;
       border-radius: 14px;
       display: flex;
@@ -1040,7 +1041,7 @@ type HighchartsStatic = typeof import('highcharts');
       flex-shrink: 0;
       width: 42px;
       height: 42px;
-      background: radial-gradient(circle at 30% 30%, #d9c2a7, #8b7355);
+      background: radial-gradient(circle at 30% 30%, #d9c2a7, #BF9874);
       color: white;
       border-radius: 14px;
       display: flex;
