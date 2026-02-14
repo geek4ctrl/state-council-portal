@@ -1,5 +1,63 @@
 /* You can add global styles to this file, and also import other style files */
 
+/* Import Inter font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* Apply globally */
+html,
+body,
+p,
+span,
+div,
+small,
+strong,
+em,
+b,
+i,
+u,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+label,
+legend,
+button,
+input,
+select,
+textarea,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+table,
+thead,
+tbody,
+tfoot,
+tr,
+th,
+td,
+blockquote,
+q,
+cite,
+code,
+pre,
+samp,
+kbd,
+figcaption,
+caption {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+    Cantarell, 'Helvetica Neue', sans-serif;
+}
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 /* Import Typography System */
 @import './styles/typography.css';
 
@@ -40,7 +98,8 @@ html {
   padding: 0 !important;
 }
 
-html, body {
+html,
+body {
   margin: 0 !important;
   padding: 0 !important;
   overflow-x: hidden !important;
@@ -99,25 +158,25 @@ button {
 
 /* Shared card styling */
 :where(
-  .member-card,
-  .news-card,
-  .service-box,
-  .detail-box,
-  .service-item,
-  .offer-card,
-  .practice-card,
-  .quick-link-item,
-  .metrics-card,
-  .document-card,
-  .insight-card,
-  .network-card,
-  .domain-card,
-  .stakeholder-card,
-  .error-card,
-  .president-card-large,
-  .key-fact-card,
-  .info-card
-) {
+    .member-card,
+    .news-card,
+    .service-box,
+    .detail-box,
+    .service-item,
+    .offer-card,
+    .practice-card,
+    .quick-link-item,
+    .metrics-card,
+    .document-card,
+    .insight-card,
+    .network-card,
+    .domain-card,
+    .stakeholder-card,
+    .error-card,
+    .president-card-large,
+    .key-fact-card,
+    .info-card
+  ) {
   border-radius: 6px !important;
   box-shadow: var(--shadow-soft);
 }
@@ -139,22 +198,22 @@ button {
 }
 
 :where(
-  .member-card:hover,
-  .news-card:hover,
-  .service-box:hover,
-  .detail-box:hover,
-  .service-item:hover,
-  .offer-card:hover,
-  .practice-card:hover,
-  .quick-link-item:hover,
-  .metrics-card:hover,
-  .document-card:hover,
-  .insight-card:hover,
-  .network-card:hover,
-  .domain-card:hover,
-  .stakeholder-card:hover,
-  .info-card:hover
-) {
+    .member-card:hover,
+    .news-card:hover,
+    .service-box:hover,
+    .detail-box:hover,
+    .service-item:hover,
+    .offer-card:hover,
+    .practice-card:hover,
+    .quick-link-item:hover,
+    .metrics-card:hover,
+    .document-card:hover,
+    .insight-card:hover,
+    .network-card:hover,
+    .domain-card:hover,
+    .stakeholder-card:hover,
+    .info-card:hover
+  ) {
   box-shadow: var(--shadow-lift);
 }
 
@@ -188,7 +247,7 @@ input:focus-visible,
 textarea:focus-visible,
 select:focus-visible,
 [tabindex]:focus-visible {
-  outline: 3px solid #BF9874;
+  outline: 3px solid #bf9874;
   outline-offset: 2px;
 }
 
@@ -200,7 +259,7 @@ select:focus-visible,
 /* Ensure interactive elements have visible focus */
 .nav-link:focus-visible,
 .dropdown-link:focus-visible {
-  outline: 3px solid #BF9874;
+  outline: 3px solid #bf9874;
   outline-offset: 2px;
   border-radius: 2px;
 }
@@ -263,7 +322,7 @@ img.lazy-error {
 }
 
 /* Native Lazy Loading Optimization */
-img[loading="lazy"] {
+img[loading='lazy'] {
   content-visibility: auto;
 }
 
@@ -298,20 +357,20 @@ img[loading="lazy"] {
 .offer-icon,
 .practice-icon,
 .card-icon {
-    background: transparent !important;
-    background-color: transparent !important;
-    border: 1px solid #BF9874 !important;
-    border-radius: 4px !important;
-    overflow: hidden;
-    padding: 8px;
+  background: transparent !important;
+  background-color: transparent !important;
+  border: 1px solid #bf9874 !important;
+  border-radius: 4px !important;
+  overflow: hidden;
+  padding: 8px;
 }
 
 .quick-link-icon.non-border,
 .offer-icon.non-border,
 .practice-icon.non-border,
 .card-icon.non-border {
-    border: 1px !important;
-    overflow: hidden;
+  border: 1px !important;
+  overflow: hidden;
 }
 
 /* ===== REMOVE ALL BORDERS AND BACKGROUNDS FROM IMAGES AND SVG INSIDE ICONS ===== */
@@ -347,7 +406,7 @@ img[loading="lazy"] {
 }
 
 .read-more-link {
-  color: #BF9874 !important;
+  color: #bf9874 !important;
 }
 
 .practice-cta {
@@ -377,7 +436,7 @@ img[loading="lazy"] {
 
 .contact-btn,
 .download-btn,
-button[type="submit"] {
+button[type='submit'] {
   /* border-width: 6px !important; */
   border-style: solid !important;
   border-radius: 6px !important;
@@ -390,10 +449,10 @@ button[type="submit"] {
 .btn-appointment {
   border-width: 1px !important;
   border-style: solid !important;
-  border-color: #BF9874 !important;
+  border-color: #bf9874 !important;
   border-radius: 6px !important;
   background: transparent !important;
-  color: #BF9874 !important;
+  color: #bf9874 !important;
   padding: 14px 38px !important;
   font-size: 0.9rem !important;
   font-weight: 700 !important;
@@ -405,7 +464,7 @@ button[type="submit"] {
 .president-learn-btn:hover,
 .newsletter-learn-btn:hover,
 .btn-appointment:hover {
-  background: #BF9874 !important;
+  background: #bf9874 !important;
   color: white !important;
 }
 
@@ -469,7 +528,7 @@ img,
 .card-icon svg {
   width: 100%;
   height: 100%;
-  stroke: #BF9874;
+  stroke: #bf9874;
 }
 
 .info-card h3 {
@@ -537,12 +596,12 @@ img,
 }
 
 .social-icon {
-  border: 2px solid #BF9874 !important;
+  border: 2px solid #bf9874 !important;
 }
 
 .social-icon:hover {
-  border-color: #BF9874 !important;
-  background-color: #BF9874 !important;
+  border-color: #bf9874 !important;
+  background-color: #bf9874 !important;
 }
 
 /* ===== NAVIGATION ARROWS ===== */
@@ -559,17 +618,22 @@ img,
 .offer-line,
 .header-line,
 .expertise-line {
-  background: #BF9874 !important;
+  background: #bf9874 !important;
 }
 
 /* ===== CONTACT INFO DIVIDERS - GOLDISH ===== */
 .contact-divider {
-  background: linear-gradient(to bottom, transparent, rgba(191, 152, 116, 0.7), transparent) !important;
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    rgba(191, 152, 116, 0.7),
+    transparent
+  ) !important;
 }
 
 @media (max-width: 1023px) {
   .contact-divider {
-    background: linear-gradient(to right, transparent, #BF9874, transparent) !important;
+    background: linear-gradient(to right, transparent, #bf9874, transparent) !important;
   }
 
   .cards-grid {
@@ -579,7 +643,6 @@ img,
 
 /* ===== MOBILE-SPECIFIC FIXES ===== */
 @media (max-width: 767px) {
-  
   body {
     padding-bottom: 0 !important;
     margin-bottom: 0 !important;
@@ -607,7 +670,7 @@ img,
   .social-icons {
     padding: 0 16px;
   }
-  
+
   .quick-link-action,
   .read-more-link,
   .card-link {
@@ -674,7 +737,7 @@ img,
     margin-bottom: 0 !important;
     padding-bottom: 0 !important;
   }
-  
+
   .footer-main {
     padding-bottom: 25px !important;
     margin-bottom: 0 !important;
