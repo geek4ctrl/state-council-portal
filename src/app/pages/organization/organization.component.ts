@@ -415,7 +415,7 @@ type HighchartsStatic = typeof import('highcharts');
       position: relative;
       min-height: 400px;
       background: linear-gradient(135deg, rgba(10, 25, 41, 0.95) 0%, rgba(26, 41, 66, 0.9) 100%),
-                  url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=1920&h=400&fit=crop') center/cover;
+                  url('https://images.unsplash.com/photo-1497366216548-37526070297c?w=1920&h=600&fit=crop&q=80') center/cover;
       display: flex;
       align-items: center;
       justify-content: center;

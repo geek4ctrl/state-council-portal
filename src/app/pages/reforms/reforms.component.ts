@@ -11,6 +11,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
     <div class="page-container">
       <!-- Hero Section -->
       <section class="hero-section">
+        <div class="hero-overlay"></div>
         <div class="container">
           <div class="hero-grid">
             <div class="hero-content-left">
@@ -40,11 +41,6 @@ import { FooterComponent } from '../../components/footer/footer.component';
       <!-- Strategic Reform Initiatives -->
       <section class="initiatives-section">
         <div class="container">
-          <!-- <div class="section-tag">
-            <div class="tag-line"></div>
-            <span>{{ 'reforms.initiatives.tag' | i18n }}</span>
-          </div> -->
-
           <h2 class="section-title">{{ 'reforms.initiatives.title' | i18n }}</h2>
           <p class="section-description">{{ 'reforms.initiatives.body' | i18n }}</p>
 
@@ -172,12 +168,6 @@ import { FooterComponent } from '../../components/footer/footer.component';
                 <p>{{ 'reforms.initiatives.steps.5.body' | i18n }}</p>
                 <div class="step-badge medium">{{ 'reforms.initiatives.badges.medium' | i18n }}</div>
               </div>
-              <!-- <div class="completion-badge">
-                <svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="30" cy="30" r="28" stroke="#c8956b" stroke-width="2" fill="none"/>
-                  <path d="M18 30l8 8 16-16" stroke="#c8956b" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-              </div> -->
             </div>
           </div>
         </div>
@@ -231,22 +221,51 @@ import { FooterComponent } from '../../components/footer/footer.component';
 
     /* Hero Section */
     .hero-section {
-      background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+      background-image: url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1920&h=1080&fit=crop&q=80');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-color: #1E2E45;
       color: white;
       padding: 100px 0;
       position: relative;
       overflow: hidden;
     }
 
-    .hero-section::before {
+    .hero-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(
+        135deg,
+        rgba(30, 46, 69, 0.92) 0%,
+        rgba(44, 62, 80, 0.88) 35%,
+        rgba(52, 73, 94, 0.85) 70%,
+        rgba(30, 46, 69, 0.88) 100%
+      );
+      z-index: 1;
+    }
+
+    .hero-overlay::before {
       content: '';
       position: absolute;
       top: 0;
       left: 0;
       right: 0;
       bottom: 0;
-      background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><defs><pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255,255,255,0.03)" stroke-width="1"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
-      opacity: 0.3;
+      background: 
+        radial-gradient(circle at 20% 30%, rgba(191, 152, 116, 0.18) 0%, transparent 50%),
+        radial-gradient(circle at 80% 70%, rgba(191, 152, 116, 0.15) 0%, transparent 50%),
+        url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><defs><pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255,255,255,0.03)" stroke-width="1"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+      z-index: 2;
+    }
+
+    .hero-section .container {
+      position: relative;
+      z-index: 3;
     }
 
     .hero-grid {
@@ -264,14 +283,23 @@ import { FooterComponent } from '../../components/footer/footer.component';
       line-height: 1.2;
       margin: 0;
       letter-spacing: 2px;
-     color: #ffffff;
+      color: #ffffff;
+      text-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
     }
 
     .vertical-line {
       width: 3px;
       height: 120px;
-      background-color: #ffffff;
+      background: linear-gradient(
+        180deg,
+        transparent 0%,
+        rgba(255, 255, 255, 0.8) 15%,
+        rgba(191, 152, 116, 0.9) 50%,
+        rgba(255, 255, 255, 0.8) 85%,
+        transparent 100%
+      );
       display: block;
+      box-shadow: 0 0 20px rgba(191, 152, 116, 0.4);
     }
 
     .hero-content-right p {
@@ -279,6 +307,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
       line-height: 1.8;
       opacity: 0.95;
       margin: 0;
+      text-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
     }
 
     /* Building Section - UPDATED ALIGNMENT */
@@ -302,7 +331,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
     .tag-line {
       width: 60px;
       height: 2px;
-      background: #BF9874;
+      background: linear-gradient(90deg, transparent, #BF9874);
     }
 
     .section-tag span {
@@ -488,32 +517,9 @@ import { FooterComponent } from '../../components/footer/footer.component';
       display: none;
     }
 
-    .completion-badge {
-      position: absolute;
-      top: 25px;
-      left: calc(100% - 5px);
-      width: 60px;
-      height: 60px;
-      animation: checkmark-pop 0.6s ease-out 0.5s both;
-    }
-
-    @keyframes checkmark-pop {
-      0% {
-        opacity: 0;
-        transform: scale(0);
-      }
-      50% {
-        transform: scale(1.1);
-      }
-      100% {
-        opacity: 1;
-        transform: scale(1);
-      }
-    }
-
     /* Stakeholders Section */
     .stakeholders-section {
-      background: #e8e8e8;
+      background: linear-gradient(180deg, #e8e8e8 0%, #f5f5f5 100%);
       padding: 80px 0;
     }
 
@@ -528,7 +534,6 @@ import { FooterComponent } from '../../components/footer/footer.component';
     .header-line {
       height: 2px;
       width: 120px;
-      background: linear-gradient(90deg, transparent, #c8956b);
     }
 
     .header-line.left {
@@ -635,129 +640,6 @@ import { FooterComponent } from '../../components/footer/footer.component';
       margin: 0;
     }
 
-    /* Footer Section */
-     .footer-section {
-      background-color: transparent;
-    }
-
-    .footer-main {
-      background-color: #2C3E50;
-      color: #b0b0b0;
-      padding: 60px 0 40px;
-      position: relative;
-    }
-
-    .footer-logo-wrapper {
-      position: absolute;
-      top: -40px;
-      left: 50%;
-      transform: translateX(-50%);
-      background-color: white;
-      width: 120px;
-      height: 120px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
-    }
-
-    .footer-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 50px;
-      padding-top: 40px;
-    }
-
-    .footer-column h3 {
-      color: white;
-      font-size: 1.1rem;
-      font-weight: 600;
-      margin-bottom: 20px;
-    }
-
-    .footer-column p {
-      font-size: 0.9rem;
-      line-height: 1.8;
-      margin: 5px 0;
-      color: #b0b0b0;
-    }
-
-    .footer-column ul {
-      list-style: none;
-      padding: 0;
-    }
-
-    .footer-column ul li {
-      margin-bottom: 12px;
-    }
-
-    .footer-column ul li a {
-      color: #b0b0b0;
-      text-decoration: none;
-      font-size: 0.9rem;
-      transition: color 0.3s ease;
-    }
-
-    .footer-column ul li a:hover {
-      color: #BF9874;
-    }
-
-    .footer-bottom {
-      background-color: #EAF1FA;
-      padding: 25px 0;
-    }
-
-    .footer-bottom-content {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 20px;
-    }
-
-    .social-icons {
-      display: flex;
-      gap: 15px;
-    }
-
-    .social-icon {
-      width: 36px;
-      height: 36px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background-color: #5A7184;
-      border-radius: 50%;
-      color: white;
-      text-decoration: none;
-      transition: all 0.3s ease;
-    }
-
-    .social-icon:hover {
-      background-color: #BF9874;
-    }
-
-    .social-icon svg {
-      width: 16px;
-      height: 16px;
-    }
-
-    .copyright {
-      font-size: 0.85rem;
-      color: #555;
-      margin: 0;
-    }
-
-    .privacy-link {
-      color: #555;
-      text-decoration: none;
-      font-size: 0.85rem;
-      transition: color 0.3s ease;
-    }
-
-    .privacy-link:hover {
-      color: #BF9874;
-    }
-
     /* ==================== RESPONSIVE MEDIA QUERIES ==================== */
 
     /* Large Desktop (1440px and above) */
@@ -812,6 +694,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
 
       .hero-section {
         padding: 80px 0;
+        background-attachment: scroll;
       }
 
       .hero-grid {
@@ -865,18 +748,9 @@ import { FooterComponent } from '../../components/footer/footer.component';
         display: none;
       }
 
-      .completion-badge {
-        display: none;
-      }
-
       .stakeholders-grid {
         grid-template-columns: repeat(3, 1fr);
         gap: 25px;
-      }
-
-      .footer-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 40px;
       }
     }
 
@@ -896,6 +770,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
         width: 100px;
         height: 2px;
         margin: 0 auto;
+        background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.8), #BF9874, rgba(255, 255, 255, 0.8), transparent);
       }
 
       .hero-content-left h1 {
@@ -908,7 +783,6 @@ import { FooterComponent } from '../../components/footer/footer.component';
         padding: 60px 0;
       }
 
-      /* Building section maintains left/justified alignment on tablet */
       .building-section .section-title {
         font-size: 2rem;
         text-align: left;
@@ -957,11 +831,6 @@ import { FooterComponent } from '../../components/footer/footer.component';
         font-size: 1.8rem;
         letter-spacing: 2px;
       }
-
-      .footer-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 35px;
-      }
     }
 
     /* Mobile Landscape / Small Tablet (600px - 768px) */
@@ -1005,7 +874,6 @@ import { FooterComponent } from '../../components/footer/footer.component';
         font-size: 0.7rem;
       }
 
-      /* Building section maintains left/justified alignment on mobile */
       .building-section .section-title {
         font-size: 1.8rem;
         margin-bottom: 20px;
@@ -1102,47 +970,6 @@ import { FooterComponent } from '../../components/footer/footer.component';
       .stakeholder-role {
         font-size: 0.8rem;
       }
-
-      .footer-main {
-        padding: 50px 0 30px;
-      }
-
-      .footer-logo-wrapper {
-        width: 100px;
-        height: 100px;
-        top: -35px;
-      }
-
-      .footer-logo-wrapper svg {
-        width: 65px;
-        height: 65px;
-      }
-
-      .footer-grid {
-        grid-template-columns: 1fr;
-        gap: 30px;
-        padding-top: 30px;
-      }
-
-      .footer-column h3 {
-        font-size: 1rem;
-        margin-bottom: 15px;
-      }
-
-      .footer-column p,
-      .footer-column ul li a {
-        font-size: 0.85rem;
-      }
-
-      .footer-bottom-content {
-        flex-direction: column;
-        gap: 15px;
-        text-align: center;
-      }
-
-      .social-icons {
-        order: -1;
-      }
     }
 
     /* Mobile Portrait (480px - 600px) */
@@ -1161,7 +988,6 @@ import { FooterComponent } from '../../components/footer/footer.component';
         padding: 45px 0;
       }
 
-      /* Maintaining alignment for building section */
       .building-section .section-title {
         font-size: 1.6rem;
         text-align: left;
@@ -1223,7 +1049,6 @@ import { FooterComponent } from '../../components/footer/footer.component';
         font-size: 0.65rem;
       }
 
-      /* Maintaining alignment for building section */
       .building-section .section-title {
         font-size: 1.5rem;
         margin-bottom: 18px;
@@ -1319,60 +1144,6 @@ import { FooterComponent } from '../../components/footer/footer.component';
       .stakeholder-role {
         font-size: 0.75rem;
       }
-
-      .footer-main {
-        padding: 45px 0 25px;
-      }
-
-      .footer-logo-wrapper {
-        width: 90px;
-        height: 90px;
-        top: -30px;
-      }
-
-      .footer-logo-wrapper svg {
-        width: 55px;
-        height: 55px;
-      }
-
-      .footer-grid {
-        gap: 25px;
-        padding-top: 25px;
-      }
-
-      .footer-column h3 {
-        font-size: 0.95rem;
-        margin-bottom: 12px;
-      }
-
-      .footer-column p,
-      .footer-column ul li a {
-        font-size: 0.8rem;
-        line-height: 1.6;
-      }
-
-      .footer-column ul li {
-        margin-bottom: 10px;
-      }
-
-      .footer-bottom {
-        padding: 20px 0;
-      }
-
-      .copyright,
-      .privacy-link {
-        font-size: 0.75rem;
-      }
-
-      .social-icon {
-        width: 32px;
-        height: 32px;
-      }
-
-      .social-icon svg {
-        width: 14px;
-        height: 14px;
-      }
     }
 
     /* Extra Small Mobile (below 375px) */
@@ -1422,6 +1193,16 @@ import { FooterComponent } from '../../components/footer/footer.component';
       .initiatives-section,
       .stakeholders-section {
         padding: 35px 0;
+      }
+    }
+
+    /* Reduce Motion for Accessibility */
+    @media (prefers-reduced-motion: reduce) {
+      .process-step:hover .step-content,
+      .stakeholder-card:hover,
+      .stakeholder-image img {
+        transition: none;
+        transform: none;
       }
     }
   `]
