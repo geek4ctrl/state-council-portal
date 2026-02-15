@@ -144,7 +144,7 @@ interface PresidentSlide {
           <div class="quick-links-container">
             <div class="quick-link-item glass-card">
               <div class="quick-link-icon non-border">
-                
+
                 <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=120&h=120&fit=crop" [alt]="'home.quickLinks.items.report.alt' | i18n">              </div>
               <div class="quick-link-content">
                 <h3>{{ 'home.quickLinks.items.news.title' | i18n }}</h3>
@@ -2431,10 +2431,10 @@ export class HomeComponent implements OnInit, AfterViewInit {
       this.reflowCharts();
     }
   };
-  
+
   private readonly i18n = inject(I18nService);
   private readonly destroyRef = inject(DestroyRef);
-  
+
   @ViewChild('caseVolumeChart', { static: true })
   caseVolumeChart!: ElementRef<HTMLDivElement>;
 
@@ -2448,7 +2448,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
 
   currentSlide = signal(0);
   currentPresidentSlide = signal(0);
-  
+
   heroSlides: HeroSlide[] = [
     {
       id: 1,

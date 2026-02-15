@@ -1,4 +1,5 @@
 import { Routes } from '@angular/router';
+import { PresentationComponent } from './pages/presentation/presentation.component';
 
 export const routes: Routes = [
   {
@@ -7,7 +8,7 @@ export const routes: Routes = [
   },
   {
     path: 'presentation',
-    loadComponent: () => import('./pages/about/about.component').then(m => m.AboutComponent)
+    component: PresentationComponent
   },
   {
     path: 'judges',

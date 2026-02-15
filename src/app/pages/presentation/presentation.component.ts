@@ -4,7 +4,7 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
 import { FooterComponent } from '../../components/footer/footer.component';
 
 @Component({
-  selector: 'app-about',
+  selector: 'app-presentation',
   standalone: true,
   imports: [I18nPipe, FooterComponent],
   template: `
@@ -367,7 +367,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
     }
   `]
 })
-export class AboutComponent implements OnInit {
+export class PresentationComponent implements OnInit {
   private seoService = inject(SeoService);
 
   ngOnInit() {

@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
-import { Router, NavigationEnd } from '@angular/router';
+import { Router, NavigationEnd, Routes } from '@angular/router';
+import { isObservable, firstValueFrom } from 'rxjs';
 import { filter } from 'rxjs/operators';
 
 @Injectable({
@@ -7,22 +8,48 @@ import { filter } from 'rxjs/operators';
 })
 export class PreloadService {
   private preloadedRoutes = new Set<string>();
-  private routeModuleMap: Map<string, () => Promise<any>> = new Map([
-    ['/', () => import('../pages/home/home.component').then(m => m.HomeComponent)],
-    ['/presentation', () => import('../pages/about/about.component').then(m => m.AboutComponent)],
-    ['/organization', () => import('../pages/organization/organization.component').then(m => m.OrganizationComponent)],
-    ['/news', () => import('../pages/news/news.component').then(m => m.NewsComponent)],
-    ['/reforms', () => import('../pages/reforms/reforms.component').then(m => m.ReformsComponent)],
-    ['/international-relations', () => import('../pages/international-relations/international-relations.component').then(m => m.InternationalRelationsComponent)],
-    ['/steps', () => import('../pages/steps/steps.component').then(m => m.StepsComponent)],
-    ['/audiences', () => import('../pages/audiences/audiences.component').then(m => m.AudiencesComponent)],
-    ['/judges', () => import('../pages/judges/judges.component').then(m => m.JudgesComponent)],
-    ['/history', () => import('../pages/history/history.component').then(m => m.HistoryComponent)],
-    ['/process', () => import('../pages/process/process.component').then(m => m.ProcessComponent)]
-  ]);
+  private routeModuleMap = new Map<string, () => Promise<unknown>>();
 
   constructor(private router: Router) {
+    this.buildRouteModuleMap(this.router.config);
     this.setupPreloadStrategy();
+  }
+
+  private buildRouteModuleMap(routes: Routes, parentPath: string = '') {
+    routes.forEach(route => {
+      const routePath = route.path ?? '';
+      const fullPath = this.normalizePath(parentPath, routePath);
+
+      if (route.loadComponent && !this.isDynamicPath(routePath) && routePath !== '**') {
+        const loader = route.loadComponent;
+        this.routeModuleMap.set(fullPath, () => {
+          const result = loader();
+
+          if (result instanceof Promise) {
+            return result;
+          }
+
+          if (isObservable(result)) {
+            return firstValueFrom(result);
+          }
+
+          return Promise.resolve(result);
+        });
+      }
+
+      if (route.children?.length) {
+        this.buildRouteModuleMap(route.children, fullPath);
+      }
+    });
+  }
+
+  private normalizePath(parentPath: string, routePath: string): string {
+    const combined = [parentPath, routePath].filter(Boolean).join('/');
+    return combined ? `/${combined}` : '/';
+  }
+
+  private isDynamicPath(routePath: string): boolean {
+    return routePath.includes(':');
   }
 
   /**
