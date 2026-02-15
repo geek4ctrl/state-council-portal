@@ -10,10 +10,11 @@ import {
 import { CommonModule } from '@angular/common';
 import { I18nPipe } from '../../i18n/i18n.pipe';
 import Highcharts from 'highcharts';
+import { FooterComponent } from '../../components/footer/footer.component';
 
 @Component({
   selector: 'app-audiences',
-  imports: [CommonModule, I18nPipe],
+  imports: [CommonModule, I18nPipe, FooterComponent],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <div class="page-container">
@@ -221,87 +222,7 @@ import Highcharts from 'highcharts';
         </div>
       </section>
 
-    <!-- Footer Section -->
-    <footer class="footer-section">
-      <div class="footer-main">
-        <div class="footer-logo-wrapper">
-          <svg width="80" height="80" viewBox="0 0 100 100" fill="none">
-            <path d="M50 15L35 25V50L50 60L65 50V25L50 15Z" fill="#BF9874"/>
-            <path d="M50 30L42 35V50L50 55L58 50V35L50 30Z" fill="white"/>
-            <rect x="48" y="10" width="4" height="8" fill="#BF9874"/>
-            <rect x="46" y="5" width="8" height="4" fill="#BF9874"/>
-          </svg>
-        </div>
-        <div class="container">
-          <div class="footer-grid">
-            <div class="footer-column">
-              <h3>{{ 'footer.mainOffice.title' | i18n }}</h3>
-              <p>{{ 'footer.mainOffice.address1' | i18n }}</p>
-              <p>{{ 'footer.mainOffice.address2' | i18n }}</p>
-              <p>{{ 'footer.mainOffice.address3' | i18n }}</p>
-              <p class="footer-contact">{{ 'footer.mainOffice.phone' | i18n }}</p>
-              <p class="footer-contact">{{ 'footer.mainOffice.email' | i18n }}</p>
-            </div>
-
-            <div class="footer-column">
-              <h3>{{ 'footer.quickLinks.title' | i18n }}</h3>
-              <ul>
-                <li><a href="#">{{ 'footer.quickLinks.about' | i18n }}</a></li>
-                <li><a href="#">{{ 'footer.quickLinks.jurisprudence' | i18n }}</a></li>
-                <li><a href="#">{{ 'footer.quickLinks.filing' | i18n }}</a></li>
-                <li><a href="#">{{ 'footer.quickLinks.contact' | i18n }}</a></li>
-              </ul>
-            </div>
-
-            <div class="footer-column">
-              <h3>{{ 'footer.resources.title' | i18n }}</h3>
-              <ul>
-                <li><a href="#">{{ 'footer.resources.legalDocs' | i18n }}</a></li>
-                <li><a href="#">{{ 'footer.resources.decisions' | i18n }}</a></li>
-                <li><a href="#">{{ 'footer.resources.reports' | i18n }}</a></li>
-                <li><a href="#">{{ 'footer.resources.faqs' | i18n }}</a></li>
-              </ul>
-            </div>
-
-            <div class="footer-column">
-              <h3>{{ 'footer.connect.title' | i18n }}</h3>
-              <ul>
-                <li><a href="#">{{ 'footer.connect.facebook' | i18n }}</a></li>
-                <li><a href="#">{{ 'footer.connect.twitter' | i18n }}</a></li>
-                <li><a href="#">{{ 'footer.connect.instagram' | i18n }}</a></li>
-                <li><a href="#">{{ 'footer.connect.linkedin' | i18n }}</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="footer-bottom">
-        <div class="container">
-          <div class="footer-bottom-content">
-            <a href="#" class="privacy-link">{{ 'footer.privacy' | i18n }}</a>
-            <p class="copyright">{{ 'footer.copyright' | i18n }}</p>
-            <div class="social-icons">
-              <a href="#" class="social-icon">
-                <svg viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"/>
-                </svg>
-              </a>
-              <a href="#" class="social-icon">
-                <svg viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M22.46 6c-.85.38-1.78.64-2.75.76 1-.6 1.76-1.55 2.12-2.68-.93.55-1.96.95-3.06 1.17-.88-.94-2.13-1.53-3.51-1.53-2.66 0-4.82 2.16-4.82 4.82 0 .38.04.75.13 1.1-4-.2-7.54-2.12-9.91-5.04-.42.72-.66 1.55-.66 2.44 0 1.67.85 3.15 2.14 4.01-.79-.03-1.53-.24-2.18-.6v.06c0 2.34 1.66 4.29 3.87 4.73-.4.11-.83.17-1.27.17-.31 0-.62-.03-.92-.08.63 1.96 2.44 3.38 4.6 3.42-1.68 1.32-3.8 2.1-6.11 2.1-.4 0-.79-.02-1.17-.07 2.18 1.4 4.77 2.21 7.55 2.21 9.06 0 14-7.5 14-14 0-.21 0-.42-.02-.63.96-.69 1.8-1.56 2.46-2.55z"/>
-                </svg>
-              </a>
-              <a href="#" class="social-icon">
-                <svg viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8 1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z"/>
-                </svg>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
+      <app-footer></app-footer>
     </div>
   `,
   styles: [
@@ -325,17 +246,20 @@ import Highcharts from 'highcharts';
       }
 
       /* Hero Section */
-      .hero-section {
-        background: linear-gradient(135deg, rgba(44, 62, 80, 0.95), rgba(52, 73, 94, 0.95)),
-                  url('https://placehold.co/1920x400') center/cover;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-color: #2c3e50;
-        color: white;
-        padding: 100px 0;
-        position: relative;
-      }
+  .hero-section {
+  position: relative;
+  min-height: 400px;
+  background-image: url('https://plus.unsplash.com/premium_photo-1706546717570-865a9430bb34?q=80&w=2370&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 20px;
+  overflow: hidden;
+}
 
       .hero-overlay {
         position: absolute;
@@ -352,31 +276,50 @@ import Highcharts from 'highcharts';
         z-index: 2;
       }
 
+      /* VERTICAL LINE HERO GRID - Desktop */
       .hero-grid {
         display: grid;
-        grid-template-columns: 1fr;
-        gap: 28px;
+        grid-template-columns: 1fr auto 1fr;
+        gap: 50px;
         align-items: center;
-        justify-items: center;
-        text-align: center;
       }
 
       .hero-title {
         position: relative;
-        text-align: center;
+        text-align: left;
       }
 
+      /* VERTICAL LINE SEPARATOR */
       .vertical-line {
-        width: 90px;
-        height: 3px;
-        background-color: #ffffff;
-        display: block;
+        width: 2px;
+        height: 180px;
+        background: linear-gradient(to bottom, 
+          transparent 0%, 
+          rgba(255, 255, 255, 0.2) 10%,
+          rgba(255, 255, 255, 0.5) 30%, 
+          rgba(255, 255, 255, 0.8) 50%, 
+          rgba(255, 255, 255, 0.5) 70%, 
+          rgba(255, 255, 255, 0.2) 90%,
+          transparent 100%);
+        position: relative;
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+      }
+
+      .vertical-line::before,
+      .vertical-line::after {
+        content: '';
+        left: 50%;
+        transform: translateX(-50%);
+        width: 10px;
+        height: 10px;
+        background: rgba(255, 255, 255, 0.7);
+        border-radius: 50%;
+        box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
       }
 
       .hero-description {
         padding-left: 0;
-        text-align: center;
-        max-width: 520px;
+        text-align: left;
       }
 
       .hero-title h1 {
@@ -422,7 +365,7 @@ import Highcharts from 'highcharts';
         font-size: 1rem;
         line-height: 1.9;
         color: #666;
-        text-align: justify;
+        text-align: left;
       }
 
       /* Metrics Section */
@@ -511,11 +454,12 @@ import Highcharts from 'highcharts';
 
       .section-subtitle {
         font-size: 0.8rem;
-        color: #c9a961;
+        color: #BF9874 !important;
         margin: 0 0 60px 0;
         text-transform: uppercase;
         letter-spacing: 2.5px;
         font-weight: 400;
+        text-align: left !important;
       }
 
       /* Documents Grid */
@@ -694,6 +638,10 @@ import Highcharts from 'highcharts';
         position: relative;
       }
 
+      .understanding-section p {
+        text-align: left;  /* Changed from 'justify' to 'left' */
+      }
+
       .footer-logo-wrapper {
         position: absolute;
         top: -40px;
@@ -819,12 +767,11 @@ import Highcharts from 'highcharts';
         }
 
         .hero-grid {
-          gap: 26px;
+          gap: 40px;
         }
 
         .vertical-line {
-          width: 90px;
-          height: 3px;
+          height: 160px;
         }
 
         .schedules-section h2 {
@@ -849,24 +796,58 @@ import Highcharts from 'highcharts';
         }
       }
 
-      /* Tablets (768px - 1023px) */
+      /* Tablets (768px - 1023px) - CHANGE TO HORIZONTAL LINE */
       @media (max-width: 1023px) {
         .hero-section {
           padding: 100px 0;
         }
 
+        /* SWITCH TO SINGLE COLUMN + HORIZONTAL LINE */
+        .hero-grid {
+          grid-template-columns: 1fr;
+          gap: 30px;
+          text-align: center;
+        }
+
+        .hero-title {
+          text-align: center;
+        }
+
+        .hero-description {
+          text-align: center;
+        }
+
+        /* HORIZONTAL LINE FOR TABLET/MOBILE */
+        .vertical-line {
+          width: 150px;
+          height: 2px;
+          margin: 0 auto;
+          background: linear-gradient(to right, 
+            transparent 0%, 
+            rgba(255, 255, 255, 0.2) 10%,
+            rgba(255, 255, 255, 0.5) 30%, 
+            rgba(255, 255, 255, 0.8) 50%, 
+            rgba(255, 255, 255, 0.5) 70%, 
+            rgba(255, 255, 255, 0.2) 90%,
+            transparent 100%);
+        }
+
+        .vertical-line::before {
+          top: 50%;
+          left: -5px;
+          transform: translate(0, -50%);
+        }
+
+        .vertical-line::after {
+          top: 50%;
+          left: auto;
+          right: -5px;
+          transform: translate(0, -50%);
+        }
+
         .hero-title h1 {
           font-size: 3.2rem;
           letter-spacing: 1.5px;
-        }
-
-        .hero-grid {
-          gap: 24px;
-        }
-
-        .vertical-line {
-          width: 80px;
-          height: 3px;
         }
 
         .hero-description p {
@@ -946,9 +927,7 @@ import Highcharts from 'highcharts';
         }
 
         .hero-grid {
-          grid-template-columns: 1fr;
-          gap: 30px;
-          text-align: center;
+          gap: 25px;
         }
 
         .hero-title h1 {
@@ -957,9 +936,7 @@ import Highcharts from 'highcharts';
         }
 
         .vertical-line {
-          width: 80px;
-          height: 3px;
-          margin: 0 auto;
+          width: 100px;
         }
 
         .hero-description p {
@@ -1013,6 +990,8 @@ import Highcharts from 'highcharts';
         .section-subtitle {
           font-size: 0.75rem;
           margin-bottom: 40px;
+          text-align: left;
+          color: #BF9874 !important;
         }
 
         .documents-grid {
@@ -1106,8 +1085,7 @@ import Highcharts from 'highcharts';
         }
 
         .vertical-line {
-          width: 60px;
-          height: 2px;
+          width: 80px;
         }
 
         .hero-description p {
@@ -1160,6 +1138,7 @@ import Highcharts from 'highcharts';
           font-size: 0.7rem;
           letter-spacing: 2px;
           margin-bottom: 35px;
+          color: #BF9874 !important;
         }
 
         .documents-grid {
@@ -1389,7 +1368,7 @@ export class AudiencesComponent implements AfterViewInit {
 
   private renderAudienceCharts() {
     const axisLabelStyle = {
-      color: '#6b5a41',
+      color: '#BF9874',
       fontSize: '11px'
     };
 

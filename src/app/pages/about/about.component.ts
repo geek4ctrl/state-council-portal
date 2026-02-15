@@ -1,11 +1,12 @@
 import { Component, inject, OnInit } from '@angular/core';
 import { SeoService } from '../../services/seo.service';
 import { I18nPipe } from '../../i18n/i18n.pipe';
+import { FooterComponent } from '../../components/footer/footer.component';
 
 @Component({
   selector: 'app-about',
   standalone: true,
-  imports: [I18nPipe],
+  imports: [I18nPipe, FooterComponent],
   template: `
     <div class="page-container">
       <!-- Hero Section -->
@@ -88,6 +89,7 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
           </div>
         </div>
       </section>
+      <app-footer></app-footer>
     </div>
   `,
   styles: [`

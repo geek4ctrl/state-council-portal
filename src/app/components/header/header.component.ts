@@ -1,4 +1,4 @@
-import { Component, inject, signal } from '@angular/core';
+import { Component, inject, signal, computed } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Router, RouterLink, RouterLinkActive } from '@angular/router';
 import { IconComponent } from '../icon/icon.component';
@@ -20,15 +20,23 @@ export class HeaderComponent {
   isCourtDropdownOpen = signal(false);
   isStepsDropdownOpen = signal(false);
   isMobileMenuOpen = signal(false);
+  
   private readonly i18n = inject(I18nService);
   private readonly router = inject(Router);
+
+  // Computed signal for header logo based on active language
+  logoSrc = computed(() => {
+    return this.i18n.activeLang() === 'fr' ? 'assets/logo-fn.png' : 'assets/logo-en.png';
+  });
+    logosSrc = computed(() => {
+    return this.i18n.activeLang() === 'fr' ? 'assets/news1.png' : 'assets/logo-en.png';
+  });
 
   constructor() {}
 
   onDocumentClick(event: MouseEvent) {
     const target = event.target as HTMLElement;
     const clickedInsideDropdown = target.closest('.dropdown');
-
     if (!clickedInsideDropdown) {
       this.closeDropdowns();
     }
@@ -72,7 +80,6 @@ export class HeaderComponent {
     if (typeof document === 'undefined') {
       return;
     }
-
     document.body.classList.toggle('menu-open', this.isMobileMenuOpen());
   }
 

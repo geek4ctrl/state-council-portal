@@ -1,23 +1,28 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterLink } from '@angular/router';
 import { I18nPipe } from '../../../i18n/i18n.pipe';
+import { FooterComponent } from '../../../components/footer/footer.component';
 
 @Component({
   selector: 'app-not-found',
-  imports: [CommonModule, RouterLink, I18nPipe],
+  imports: [CommonModule, RouterLink, I18nPipe, FooterComponent],
+  changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
-    <main class="error-page">
-      <section class="error-card glass-card">
-        <p class="error-code">{{ 'errors.notFound.code' | i18n }}</p>
-        <h1 class="error-title">{{ 'errors.notFound.title' | i18n }}</h1>
-        <p class="error-message">{{ 'errors.notFound.message' | i18n }}</p>
-        <div class="error-actions">
-          <a routerLink="/" class="primary-btn">{{ 'errors.generic.primary' | i18n }}</a>
-          <a routerLink="/news" class="secondary-btn">{{ 'errors.generic.secondary' | i18n }}</a>
-        </div>
-      </section>
-    </main>
+    <div class="page-container">
+      <main class="error-page">
+        <section class="error-card glass-card">
+          <p class="error-code">{{ 'errors.notFound.code' | i18n }}</p>
+          <h1 class="error-title">{{ 'errors.notFound.title' | i18n }}</h1>
+          <p class="error-message">{{ 'errors.notFound.message' | i18n }}</p>
+          <div class="error-actions">
+            <a routerLink="/" class="primary-btn">{{ 'errors.generic.primary' | i18n }}</a>
+            <a routerLink="/news" class="secondary-btn">{{ 'errors.generic.secondary' | i18n }}</a>
+          </div>
+        </section>
+      </main>
+      <app-footer></app-footer>
+    </div>
   `,
   styles: [
     `
@@ -45,7 +50,7 @@ import { I18nPipe } from '../../../i18n/i18n.pipe';
       .error-code {
         font-size: 4.5rem;
         font-weight: 700;
-        color: #bf9874;
+        color: #BF9874;
         margin: 0 0 10px 0;
         letter-spacing: 3px;
       }
@@ -80,13 +85,13 @@ import { I18nPipe } from '../../../i18n/i18n.pipe';
       }
 
       .primary-btn {
-        background: #bf9874;
+        background: #BF9874;
         color: #1a2942;
       }
 
       .secondary-btn {
         border: 1px solid rgba(191, 152, 116, 0.6);
-        color: #bf9874;
+        color: #BF9874;
       }
 
       .secondary-btn:hover {

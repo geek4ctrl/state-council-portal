@@ -1,11 +1,13 @@
-import { Component, inject, OnInit } from '@angular/core';
+import { Component, inject, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { SeoService } from '../../services/seo.service';
+import { FooterComponent } from '../../components/footer/footer.component';
 
 @Component({
   selector: 'app-procedures',
   standalone: true,
-  imports: [RouterLink],
+  imports: [RouterLink, FooterComponent],
+  changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <div class="page-container">
       <!-- Hero Section -->
@@ -80,6 +82,8 @@ import { SeoService } from '../../services/seo.service';
           </form>
         </div>
       </section>
+
+      <app-footer></app-footer>
     </div>
   `,
   styles: [`
@@ -159,7 +163,7 @@ import { SeoService } from '../../services/seo.service';
 
     .tab.active {
       color: #2c3e50;
-      border-bottom-color: #8B6914;
+      border-bottom-color: #BF9874;
       font-weight: 600;
     }
 
@@ -222,7 +226,7 @@ import { SeoService } from '../../services/seo.service';
     .form-group select:focus,
     .form-group textarea:focus {
       outline: none;
-      border-color: #8B6914;
+      border-color: #BF9874;
     }
 
     .form-group input::placeholder,
@@ -298,7 +302,7 @@ import { SeoService } from '../../services/seo.service';
       }
 
       .tab.active {
-        border-bottom-color: #8B6914;
+        border-bottom-color: #BF9874;
       }
 
       .form-row {

@@ -1,11 +1,13 @@
-import { Component, signal, OnInit } from '@angular/core';
+import { Component, signal, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ActivatedRoute } from '@angular/router';
 import { I18nPipe } from '../../i18n/i18n.pipe';
+import { FooterComponent } from '../../components/footer/footer.component';
 
 @Component({
   selector: 'app-steps',
-  imports: [CommonModule, I18nPipe],
+  imports: [CommonModule, I18nPipe, FooterComponent],
+  changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <div class="page-container">
       <!-- Hero Section - Changes based on active tab -->
@@ -107,13 +109,32 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
               </div>
 
               <div class="form-group">
-                <select required>
-                  <option value="">{{ 'steps.forms.department' | i18n }}</option>
-                  <option value="criminal">{{ 'steps.forms.chambers.criminal' | i18n }}</option>
-                  <option value="civil">{{ 'steps.forms.chambers.civil' | i18n }}</option>
-                  <option value="social">{{ 'steps.forms.chambers.social' | i18n }}</option>
-                  <option value="commercial">{{ 'steps.forms.chambers.commercial' | i18n }}</option>
-                </select>
+                <div class="custom-select" (click)="toggleDepartment('report')">
+                  <div class="select-trigger">
+                    <span [class.placeholder]="!selectedDepartmentReport()">
+                      {{ selectedDepartmentReport() || ('steps.forms.department' | i18n) }}
+                    </span>
+                    <svg class="dropdown-arrow" [class.open]="departmentOpenReport()" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                  </div>
+                  @if (departmentOpenReport()) {
+                    <div class="select-dropdown">
+                      <div class="dropdown-item" (click)="selectDepartment('report', 'criminal', $event)">
+                        {{ 'steps.forms.chambers.criminal' | i18n }}
+                      </div>
+                      <div class="dropdown-item" (click)="selectDepartment('report', 'civil', $event)">
+                        {{ 'steps.forms.chambers.civil' | i18n }}
+                      </div>
+                      <div class="dropdown-item" (click)="selectDepartment('report', 'social', $event)">
+                        {{ 'steps.forms.chambers.social' | i18n }}
+                      </div>
+                      <div class="dropdown-item" (click)="selectDepartment('report', 'commercial', $event)">
+                        {{ 'steps.forms.chambers.commercial' | i18n }}
+                      </div>
+                    </div>
+                  }
+                </div>
               </div>
 
               <div class="form-group">
@@ -145,33 +166,90 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
 
               <div class="form-row">
                 <div class="form-group">
-                  <select required>
-                    <option value="">{{ 'steps.forms.department' | i18n }}</option>
-                    <option value="criminal">{{ 'steps.forms.chambers.criminal' | i18n }}</option>
-                    <option value="civil">{{ 'steps.forms.chambers.civil' | i18n }}</option>
-                    <option value="social">{{ 'steps.forms.chambers.social' | i18n }}</option>
-                    <option value="commercial">{{ 'steps.forms.chambers.commercial' | i18n }}</option>
-                  </select>
+                  <div class="custom-select" (click)="toggleDepartment('appointment')">
+                    <div class="select-trigger">
+                      <span [class.placeholder]="!selectedDepartmentAppointment()">
+                        {{ selectedDepartmentAppointment() || ('steps.forms.department' | i18n) }}
+                      </span>
+                      <svg class="dropdown-arrow" [class.open]="departmentOpenAppointment()" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                      </svg>
+                    </div>
+                    @if (departmentOpenAppointment()) {
+                      <div class="select-dropdown">
+                        <div class="dropdown-item" (click)="selectDepartment('appointment', 'criminal', $event)">
+                          {{ 'steps.forms.chambers.criminal' | i18n }}
+                        </div>
+                        <div class="dropdown-item" (click)="selectDepartment('appointment', 'civil', $event)">
+                          {{ 'steps.forms.chambers.civil' | i18n }}
+                        </div>
+                        <div class="dropdown-item" (click)="selectDepartment('appointment', 'social', $event)">
+                          {{ 'steps.forms.chambers.social' | i18n }}
+                        </div>
+                        <div class="dropdown-item" (click)="selectDepartment('appointment', 'commercial', $event)">
+                          {{ 'steps.forms.chambers.commercial' | i18n }}
+                        </div>
+                      </div>
+                    }
+                  </div>
                 </div>
                 <div class="form-group">
-                  <select required>
-                    <option value="">{{ 'steps.forms.meeting.placeholder' | i18n }}</option>
-                    <option value="first-president">{{ 'steps.forms.meeting.firstPresident' | i18n }}</option>
-                    <option value="chamber-president">{{ 'steps.forms.meeting.chamberPresident' | i18n }}</option>
-                    <option value="legal-advisor">{{ 'steps.forms.meeting.legalAdvisor' | i18n }}</option>
-                    <option value="clerk">{{ 'steps.forms.meeting.clerk' | i18n }}</option>
-                  </select>
+                  <div class="custom-select" (click)="toggleMeeting()">
+                    <div class="select-trigger">
+                      <span [class.placeholder]="!selectedMeeting()">
+                        {{ selectedMeeting() || ('steps.forms.meeting.placeholder' | i18n) }}
+                      </span>
+                      <svg class="dropdown-arrow" [class.open]="meetingOpen()" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                      </svg>
+                    </div>
+                    @if (meetingOpen()) {
+                      <div class="select-dropdown">
+                        <div class="dropdown-item" (click)="selectMeeting('first-president', $event)">
+                          {{ 'steps.forms.meeting.firstPresident' | i18n }}
+                        </div>
+                        <div class="dropdown-item" (click)="selectMeeting('chamber-president', $event)">
+                          {{ 'steps.forms.meeting.chamberPresident' | i18n }}
+                        </div>
+                        <div class="dropdown-item" (click)="selectMeeting('legal-advisor', $event)">
+                          {{ 'steps.forms.meeting.legalAdvisor' | i18n }}
+                        </div>
+                        <div class="dropdown-item" (click)="selectMeeting('clerk', $event)">
+                          {{ 'steps.forms.meeting.clerk' | i18n }}
+                        </div>
+                      </div>
+                    }
+                  </div>
                 </div>
               </div>
 
               <div class="form-group">
-                <select required>
-                  <option value="">{{ 'steps.forms.visit.placeholder' | i18n }}</option>
-                  <option value="this-week">{{ 'steps.forms.visit.thisWeek' | i18n }}</option>
-                  <option value="next-week">{{ 'steps.forms.visit.nextWeek' | i18n }}</option>
-                  <option value="this-month">{{ 'steps.forms.visit.thisMonth' | i18n }}</option>
-                  <option value="next-month">{{ 'steps.forms.visit.nextMonth' | i18n }}</option>
-                </select>
+                <div class="custom-select" (click)="toggleVisit()">
+                  <div class="select-trigger">
+                    <span [class.placeholder]="!selectedVisit()">
+                      {{ selectedVisit() || ('steps.forms.visit.placeholder' | i18n) }}
+                    </span>
+                    <svg class="dropdown-arrow" [class.open]="visitOpen()" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                  </div>
+                  @if (visitOpen()) {
+                    <div class="select-dropdown">
+                      <div class="dropdown-item" (click)="selectVisit('this-week', $event)">
+                        {{ 'steps.forms.visit.thisWeek' | i18n }}
+                      </div>
+                      <div class="dropdown-item" (click)="selectVisit('next-week', $event)">
+                        {{ 'steps.forms.visit.nextWeek' | i18n }}
+                      </div>
+                      <div class="dropdown-item" (click)="selectVisit('this-month', $event)">
+                        {{ 'steps.forms.visit.thisMonth' | i18n }}
+                      </div>
+                      <div class="dropdown-item" (click)="selectVisit('next-month', $event)">
+                        {{ 'steps.forms.visit.nextMonth' | i18n }}
+                      </div>
+                    </div>
+                  }
+                </div>
               </div>
 
               <div class="form-group">
@@ -202,13 +280,32 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
               </div>
 
               <div class="form-group">
-                <select required>
-                  <option value="">{{ 'steps.forms.department' | i18n }}</option>
-                  <option value="criminal">{{ 'steps.forms.chambers.criminal' | i18n }}</option>
-                  <option value="civil">{{ 'steps.forms.chambers.civil' | i18n }}</option>
-                  <option value="social">{{ 'steps.forms.chambers.social' | i18n }}</option>
-                  <option value="commercial">{{ 'steps.forms.chambers.commercial' | i18n }}</option>
-                </select>
+                <div class="custom-select" (click)="toggleDepartment('appeal')">
+                  <div class="select-trigger">
+                    <span [class.placeholder]="!selectedDepartmentAppeal()">
+                      {{ selectedDepartmentAppeal() || ('steps.forms.department' | i18n) }}
+                    </span>
+                    <svg class="dropdown-arrow" [class.open]="departmentOpenAppeal()" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                  </div>
+                  @if (departmentOpenAppeal()) {
+                    <div class="select-dropdown">
+                      <div class="dropdown-item" (click)="selectDepartment('appeal', 'criminal', $event)">
+                        {{ 'steps.forms.chambers.criminal' | i18n }}
+                      </div>
+                      <div class="dropdown-item" (click)="selectDepartment('appeal', 'civil', $event)">
+                        {{ 'steps.forms.chambers.civil' | i18n }}
+                      </div>
+                      <div class="dropdown-item" (click)="selectDepartment('appeal', 'social', $event)">
+                        {{ 'steps.forms.chambers.social' | i18n }}
+                      </div>
+                      <div class="dropdown-item" (click)="selectDepartment('appeal', 'commercial', $event)">
+                        {{ 'steps.forms.chambers.commercial' | i18n }}
+                      </div>
+                    </div>
+                  }
+                </div>
               </div>
 
               <div class="form-group">
@@ -239,6 +336,8 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
           </div>
         </section>
       }
+
+      <app-footer></app-footer>
     </div>
   `,
   styles: [`
@@ -255,13 +354,30 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
 
     /* Hero Section */
     .hero-section {
-      background: linear-gradient(135deg, rgba(44, 62, 80, 0.95), rgba(52, 73, 94, 0.95)),
-                  url('https://placehold.co/1920x400') center/cover;
+      background-image: url('https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1920&h=800&fit=crop&q=80');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-color: #2c3e50;
+      position: relative;
       color: white;
-      height: 265px;
-      padding: 0;
-      display: flex;
-      align-items: center;
+      padding: 100px 0;
+    }
+
+    .hero-section::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(135deg, rgba(44, 62, 80, 0.92) 0%, rgba(52, 73, 94, 0.88) 50%, rgba(30, 46, 68, 0.90) 100%);
+      z-index: 1;
+    }
+
+    .hero-section .container {
+      position: relative;
+      z-index: 2;
     }
 
     .hero-grid {
@@ -272,10 +388,10 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
     }
 
     .hero-left h1 {
-      font-size: 3.2rem;
+      font-size: 4rem;
       font-weight: 700;
       margin: 0;
-      letter-spacing: 4px;
+      letter-spacing: 3px;
       line-height: 1.1;
       color: white;
     }
@@ -301,65 +417,45 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
     /* Tabs Section */
     .tabs-section {
       background: white;
-      border-bottom: 1px solid rgba(26, 41, 66, 0.08);
-      padding: 20px 0;
+      border-bottom: 1px solid #e0e0e0;
     }
 
     .tabs {
       display: flex;
       gap: 0;
       align-items: center;
-      background: #f5f7fb;
-      border: 1px solid rgba(26, 41, 66, 0.12);
-      border-radius: 999px;
-      padding: 6px;
-      box-shadow: 0 12px 30px rgba(26, 41, 66, 0.08);
     }
 
     .tab {
       flex: 1;
       text-align: center;
-      padding: 14px 28px;
-      font-size: 0.9rem;
-      font-weight: 600;
-      color: #5b6470;
+      padding: 20px 30px;
+      font-size: 0.95rem;
+      font-weight: 500;
+      color: #666;
       background: transparent;
       border: none;
-      border-radius: 999px;
-      transition: color 0.25s ease, background 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
+      border-bottom: 3px solid transparent;
+      transition: all 0.3s ease;
       cursor: pointer;
-      letter-spacing: 0.8px;
-      text-transform: uppercase;
+      border-radius: 1px;
     }
 
     .tab:hover {
-      color: #1a1a1a;
-      background: rgba(255, 255, 255, 0.7);
-      transform: translateY(-1px);
+      color: #2c3e50;
+      background: #f8f8f8;
     }
 
     .tab.active {
-      color: #1a1a1a;
-      background: #ffffff;
-      box-shadow: 0 10px 18px rgba(26, 41, 66, 0.12);
-      position: relative;
-    }
-
-    .tab.active::after {
-      content: '';
-      position: absolute;
-      left: 14px;
-      right: 14px;
-      bottom: -4px;
-      height: 3px;
-      background: linear-gradient(90deg, #8b6914, #d6b56f);
-      border-radius: 999px;
+      color: #2c3e50;
+      border-bottom-color: #2c3e50;
+      font-weight: 600;
     }
 
     .tab-separator {
-      width: 0;
-      height: 0;
-      background: transparent;
+      width: 1px;
+      height: 30px;
+      background: #d0d0d0;
       flex-shrink: 0;
     }
 
@@ -384,7 +480,7 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
 
     .form-subtitle {
       font-size: 0.9rem;
-      color: #c9a961;
+      color: #BF9874 !important;
       text-transform: uppercase;
       letter-spacing: 2px;
       margin: 0;
@@ -406,25 +502,24 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
 
     .form-group {
       margin-bottom: 20px;
+      position: relative;
     }
 
     .form-group input,
-    .form-group select,
     .form-group textarea {
       width: 100%;
       padding: 15px 20px;
       border: 1px solid #ddd;
-      border-radius: 0;
+      border-radius: 3px;
       font-size: 0.95rem;
       font-family: inherit;
       transition: border-color 0.3s ease;
     }
 
     .form-group input:focus,
-    .form-group select:focus,
     .form-group textarea:focus {
       outline: none;
-      border-color: #8B6914;
+      border-color: #1a1a1a;
     }
 
     .form-group input::placeholder,
@@ -432,14 +527,100 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
       color: #999;
     }
 
-    .form-group select {
-      color: #999;
-      cursor: pointer;
-    }
-
     .form-group textarea {
       resize: vertical;
       min-height: 150px;
+    }
+
+    /* Custom Select Dropdown */
+    .custom-select {
+      position: relative;
+      width: 100%;
+      user-select: none;
+    }
+
+    .select-trigger {
+      width: 100%;
+      padding: 15px 20px;
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 3px;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: border-color 0.3s ease;
+    }
+
+    .select-trigger:hover {
+      border-color: #1a1a1a;
+    }
+
+    .select-trigger span {
+      font-size: 0.95rem;
+      color: #333;
+    }
+
+    .select-trigger span.placeholder {
+      color: #999;
+    }
+
+    .dropdown-arrow {
+      width: 16px;
+      height: 16px;
+      transition: transform 0.3s ease;
+      flex-shrink: 0;
+      margin-left: 10px;
+      stroke: #666;
+    }
+
+    .dropdown-arrow.open {
+      transform: rotate(180deg);
+    }
+
+    .select-dropdown {
+      position: absolute;
+      top: calc(100% + 4px);
+      left: 0;
+      right: 0;
+      background: #eaf1f7;
+      border-radius: 8px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+      z-index: 1000;
+      overflow: hidden;
+      animation: dropdownSlide 0.2s ease;
+    }
+
+    @keyframes dropdownSlide {
+      from {
+        opacity: 0;
+        transform: translateY(-10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .dropdown-item {
+      padding: 14px 20px;
+      color: black;
+      font-size: 0.95rem;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+      border-bottom: 1px solid #667C99;
+    }
+
+    .dropdown-item:last-child {
+      border-bottom: none;
+    }
+
+    .dropdown-item:hover {
+      background-color: #6a6a6a;
+    }
+
+    .dropdown-item:active {
+      background-color: #5a5a5a;
     }
 
     .form-submit {
@@ -449,8 +630,8 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
 
     .form-submit button {
       background: white;
-      color: #1a1a1a;
-      border: 1px solid #1a1a1a;
+      color: #BF9874;
+      border: 1px solid #BF9874;
       padding: 15px 50px;
       font-size: 0.9rem;
       font-weight: 600;
@@ -460,8 +641,8 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
     }
 
     .form-submit button:hover {
-      background: #1a1a1a;
-      color: white;
+      background: transparent;
+      color: #BF9874;
     }
 
     /* Map Section */
@@ -491,44 +672,34 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
       }
 
       .hero-left h1 {
-        font-size: 2.8rem;
+        font-size: 3rem;
       }
     }
 
     @media (max-width: 768px) {
       .hero-section {
-        height: 265px;
-        padding: 0;
-        overflow: hidden;
+        padding: 80px 0;
       }
 
       .hero-left h1 {
-        font-size: 2.3rem;
+        font-size: 2.5rem;
       }
 
       .hero-right p {
-        font-size: 0.95rem;
-        line-height: 1.6;
-        margin-bottom: 12px;
+        font-size: 1rem;
       }
 
       .tabs {
         flex-direction: column;
-        border-radius: 18px;
       }
 
       .tab {
-        width: 100%;
+        border-bottom: 1px solid #e0e0e0;
+        border-right: none;
       }
 
       .tab.active {
-        box-shadow: 0 8px 16px rgba(26, 41, 66, 0.1);
-      }
-
-      .tab.active::after {
-        left: 24px;
-        right: 24px;
-        bottom: -2px;
+        border-bottom-color: #2c3e50;
       }
 
       .tab-separator {
@@ -555,20 +726,16 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
 
     @media (max-width: 480px) {
       .hero-section {
-        height: 250px;
-        padding: 0;
-        overflow: hidden;
+        padding: 60px 0;
       }
 
       .hero-left h1 {
-        font-size: 2.1rem;
-        letter-spacing: 1.5px;
+        font-size: 2rem;
+        letter-spacing: 2px;
       }
 
       .hero-right p {
-        font-size: 0.85rem;
-        line-height: 1.5;
-        margin-bottom: 10px;
+        font-size: 0.95rem;
       }
 
       .form-header h2 {
@@ -592,6 +759,19 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
 })
 export class StepsComponent implements OnInit {
   activeTab = signal<'report' | 'appointment' | 'appeal'>('report');
+  
+  // Dropdown states for each form
+  departmentOpenReport = signal(false);
+  departmentOpenAppointment = signal(false);
+  departmentOpenAppeal = signal(false);
+  meetingOpen = signal(false);
+  visitOpen = signal(false);
+  
+  selectedDepartmentReport = signal('');
+  selectedDepartmentAppointment = signal('');
+  selectedDepartmentAppeal = signal('');
+  selectedMeeting = signal('');
+  selectedVisit = signal('');
 
   constructor(private route: ActivatedRoute) {}
 
@@ -602,5 +782,68 @@ export class StepsComponent implements OnInit {
         this.activeTab.set(tab);
       }
     });
+  }
+
+  selectDepartment(form: string, value: string, event: Event) {
+    event.stopPropagation();
+    const label = (event.target as HTMLElement).textContent?.trim() || '';
+    if (form === 'report') {
+      this.selectedDepartmentReport.set(label);
+      this.departmentOpenReport.set(false);
+    } else if (form === 'appointment') {
+      this.selectedDepartmentAppointment.set(label);
+      this.departmentOpenAppointment.set(false);
+    } else if (form === 'appeal') {
+      this.selectedDepartmentAppeal.set(label);
+      this.departmentOpenAppeal.set(false);
+    }
+  }
+
+  selectMeeting(value: string, event: Event) {
+    event.stopPropagation();
+    const label = (event.target as HTMLElement).textContent?.trim() || '';
+    this.selectedMeeting.set(label);
+    this.meetingOpen.set(false);
+  }
+
+  selectVisit(value: string, event: Event) {
+    event.stopPropagation();
+    const label = (event.target as HTMLElement).textContent?.trim() || '';
+    this.selectedVisit.set(label);
+    this.visitOpen.set(false);
+  }
+
+  toggleDepartment(form: string) {
+    if (form === 'report') {
+      this.departmentOpenReport.update(v => !v);
+      this.departmentOpenAppointment.set(false);
+      this.departmentOpenAppeal.set(false);
+    } else if (form === 'appointment') {
+      this.departmentOpenAppointment.update(v => !v);
+      this.departmentOpenReport.set(false);
+      this.departmentOpenAppeal.set(false);
+    } else if (form === 'appeal') {
+      this.departmentOpenAppeal.update(v => !v);
+      this.departmentOpenReport.set(false);
+      this.departmentOpenAppointment.set(false);
+    }
+    this.meetingOpen.set(false);
+    this.visitOpen.set(false);
+  }
+
+  toggleMeeting() {
+    this.meetingOpen.update(v => !v);
+    this.departmentOpenReport.set(false);
+    this.departmentOpenAppointment.set(false);
+    this.departmentOpenAppeal.set(false);
+    this.visitOpen.set(false);
+  }
+
+  toggleVisit() {
+    this.visitOpen.update(v => !v);
+    this.departmentOpenReport.set(false);
+    this.departmentOpenAppointment.set(false);
+    this.departmentOpenAppeal.set(false);
+    this.meetingOpen.set(false);
   }
 }

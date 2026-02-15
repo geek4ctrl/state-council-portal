@@ -1,13 +1,16 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { I18nPipe } from '../../i18n/i18n.pipe';
+import { FooterComponent } from '../../components/footer/footer.component';
 
 @Component({
   selector: 'app-history',
-  imports: [I18nPipe],
+  imports: [I18nPipe, FooterComponent],
+  changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <div class="page-container">
       <h1>{{ 'history.title' | i18n }}</h1>
       <p>{{ 'history.body' | i18n }}</p>
+      <app-footer></app-footer>
     </div>
   `,
   styles: [`
@@ -17,7 +20,7 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
       padding: 3rem 1rem;
     }
     h1 {
-      color: #8B6914;
+      color: #BF9874;
       margin-bottom: 1rem;
     }
   `]

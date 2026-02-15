@@ -5,10 +5,11 @@ import { toSignal } from '@angular/core/rxjs-interop';
 import { map } from 'rxjs/operators';
 import { MemberService } from '../../services/members.service';
 import { I18nPipe } from '../../i18n/i18n.pipe';
+import { FooterComponent } from '../../components/footer/footer.component';
 
 @Component({
   selector: 'app-member-detail',
-  imports: [CommonModule, RouterLink, NgOptimizedImage, I18nPipe],
+  imports: [CommonModule, RouterLink, NgOptimizedImage, I18nPipe, FooterComponent],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <div class="member-page">
@@ -57,6 +58,7 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
           }
         </div>
       </section>
+      <app-footer></app-footer>
     </div>
   `,
   styles: [
@@ -83,7 +85,7 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
         display: inline-flex;
         align-items: center;
         gap: 8px;
-        color: #bf9874;
+        color: #BF9874;
         text-decoration: none;
         font-weight: 600;
         letter-spacing: 0.5px;
@@ -138,7 +140,7 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
       .role-pill {
         display: inline-block;
         background: rgba(191, 152, 116, 0.2);
-        color: #bf9874;
+        color: #BF9874;
         text-transform: uppercase;
         letter-spacing: 1px;
         padding: 4px 10px;
@@ -177,7 +179,7 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
       }
 
       .member-meta a {
-        color: #bf9874;
+        color: #BF9874;
         text-decoration: none;
       }
 
@@ -188,7 +190,7 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
       .not-found {
         background: #1a2942;
         padding: 30px;
-        border-left: 4px solid #bf9874;
+        border-left: 4px solid #BF9874;
       }
 
       .not-found h2 {

@@ -18,12 +18,13 @@ import type { Member, MemberRole, RoleFilter } from '../../services/members.serv
 import { I18nPipe } from '../../i18n/i18n.pipe';
 import { I18nService } from '../../i18n/i18n.service';
 import type { Chart, Options, SeriesOptionsType } from 'highcharts';
+import { FooterComponent } from '../../components/footer/footer.component';
 
 type HighchartsStatic = typeof import('highcharts');
 
 @Component({
   selector: 'app-organization',
-  imports: [CommonModule, RouterLink, SkeletonLoaderComponent, NgOptimizedImage, I18nPipe],
+  imports: [CommonModule, RouterLink, SkeletonLoaderComponent, NgOptimizedImage, I18nPipe, FooterComponent],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <div class="page-container">
@@ -37,7 +38,7 @@ type HighchartsStatic = typeof import('highcharts');
       <!-- First President Section -->
       <section class="first-president-section">
         <div class="container">
-          <div class="president-card-large glass-card">
+          <div class="president-card-large">
             <div class="president-image-large">
               <img
                 ngSrc="https://scontent.fpry2-1.fna.fbcdn.net/v/t39.30808-6/481977439_661094752968468_3580912692254417664_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=833d8c&_nc_ohc=781MphyOZxYQ7kNvwFA72Pl&_nc_oc=AdlS3efGmR2NwVl7AluKnrYklBBqsJYuTlJ2j9PkHSisG9RQ-4n7jDHjPIDmj6En6_w&_nc_zt=23&_nc_ht=scontent.fpry2-1.fna&_nc_gid=ECXY9r39JHQUTs-eZefdrQ&oh=00_AfsTzaj3KdpgLrEjgftG5I3y5wMeOJriKEBVHzCL_mVnRA&oe=69939BC0"
@@ -57,7 +58,6 @@ type HighchartsStatic = typeof import('highcharts');
       <section class="org-chart-section" aria-labelledby="org-chart-title">
         <div class="container">
           <div class="org-chart-header">
-            <div class="org-chart-line"></div>
             <h2 id="org-chart-title" class="section-title">{{ 'organization.chart.title' | i18n }}</h2>
           </div>
           <p class="org-chart-subtitle">{{ 'organization.chart.subtitle' | i18n }}</p>
@@ -107,7 +107,6 @@ type HighchartsStatic = typeof import('highcharts');
       <section class="org-chart-section org-chart-names" aria-labelledby="org-chart-names-title">
         <div class="container">
           <div class="org-chart-header">
-            <div class="org-chart-line"></div>
             <h2 id="org-chart-names-title" class="section-title">{{ 'organization.chart.peopleTitle' | i18n }}</h2>
           </div>
           <p class="org-chart-subtitle">{{ 'organization.chart.peopleSubtitle' | i18n }}</p>
@@ -396,87 +395,7 @@ type HighchartsStatic = typeof import('highcharts');
           </div>
         </div>
       </section>
-  <!-- Footer Section -->
-    <footer class="footer-section">
-      <div class="footer-main">
-        <div class="footer-logo-wrapper">
-          <svg width="80" height="80" viewBox="0 0 100 100" fill="none">
-            <path d="M50 15L35 25V50L50 60L65 50V25L50 15Z" fill="#BF9874"/>
-            <path d="M50 30L42 35V50L50 55L58 50V35L50 30Z" fill="white"/>
-            <rect x="48" y="10" width="4" height="8" fill="#BF9874"/>
-            <rect x="46" y="5" width="8" height="4" fill="#BF9874"/>
-          </svg>
-        </div>
-        <div class="container">
-          <div class="footer-grid">
-            <div class="footer-column">
-              <h3>{{ 'footer.mainOffice.title' | i18n }}</h3>
-              <p>{{ 'footer.mainOffice.address1' | i18n }}</p>
-              <p>{{ 'footer.mainOffice.address2' | i18n }}</p>
-              <p>{{ 'footer.mainOffice.address3' | i18n }}</p>
-              <p class="footer-contact">{{ 'footer.mainOffice.phone' | i18n }}</p>
-              <p class="footer-contact">{{ 'footer.mainOffice.email' | i18n }}</p>
-            </div>
-
-            <div class="footer-column">
-              <h3>{{ 'footer.quickLinks.title' | i18n }}</h3>
-              <ul>
-                <li><a href="#">{{ 'footer.quickLinks.about' | i18n }}</a></li>
-                <li><a href="#">{{ 'footer.quickLinks.jurisprudence' | i18n }}</a></li>
-                <li><a href="#">{{ 'footer.quickLinks.filing' | i18n }}</a></li>
-                <li><a href="#">{{ 'footer.quickLinks.contact' | i18n }}</a></li>
-              </ul>
-            </div>
-
-            <div class="footer-column">
-              <h3>{{ 'footer.resources.title' | i18n }}</h3>
-              <ul>
-                <li><a href="#">{{ 'footer.resources.legalDocs' | i18n }}</a></li>
-                <li><a href="#">{{ 'footer.resources.decisions' | i18n }}</a></li>
-                <li><a href="#">{{ 'footer.resources.reports' | i18n }}</a></li>
-                <li><a href="#">{{ 'footer.resources.faqs' | i18n }}</a></li>
-              </ul>
-            </div>
-
-            <div class="footer-column">
-              <h3>{{ 'footer.connect.title' | i18n }}</h3>
-              <ul>
-                <li><a href="#">{{ 'footer.connect.facebook' | i18n }}</a></li>
-                <li><a href="#">{{ 'footer.connect.twitter' | i18n }}</a></li>
-                <li><a href="#">{{ 'footer.connect.instagram' | i18n }}</a></li>
-                <li><a href="#">{{ 'footer.connect.linkedin' | i18n }}</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="footer-bottom">
-        <div class="container">
-          <div class="footer-bottom-content">
-            <a href="#" class="privacy-link">{{ 'footer.privacy' | i18n }}</a>
-            <p class="copyright">{{ 'footer.copyright' | i18n }}</p>
-            <div class="social-icons">
-              <a href="#" class="social-icon">
-                <svg viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"/>
-                </svg>
-              </a>
-              <a href="#" class="social-icon">
-                <svg viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M22.46 6c-.85.38-1.78.64-2.75.76 1-.6 1.76-1.55 2.12-2.68-.93.55-1.96.95-3.06 1.17-.88-.94-2.13-1.53-3.51-1.53-2.66 0-4.82 2.16-4.82 4.82 0 .38.04.75.13 1.1-4-.2-7.54-2.12-9.91-5.04-.42.72-.66 1.55-.66 2.44 0 1.67.85 3.15 2.14 4.01-.79-.03-1.53-.24-2.18-.6v.06c0 2.34 1.66 4.29 3.87 4.73-.4.11-.83.17-1.27.17-.31 0-.62-.03-.92-.08.63 1.96 2.44 3.38 4.6 3.42-1.68 1.32-3.8 2.1-6.11 2.1-.4 0-.79-.02-1.17-.07 2.18 1.4 4.77 2.21 7.55 2.21 9.06 0 14-7.5 14-14 0-.21 0-.42-.02-.63.96-.69 1.8-1.56 2.46-2.55z"/>
-                </svg>
-              </a>
-              <a href="#" class="social-icon">
-                <svg viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8 1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z"/>
-                </svg>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
+      <app-footer></app-footer>
     </div>
   `,
   styles: [`
@@ -494,51 +413,81 @@ type HighchartsStatic = typeof import('highcharts');
     /* Hero Section */
     .hero-section {
       position: relative;
-      min-height: 350px;
-      background: linear-gradient(rgba(10, 25, 41, 0.7), rgba(10, 25, 41, 0.8)),
-                  url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=1920&h=400&fit=crop') center/cover;
+      min-height: 400px;
+      background: linear-gradient(135deg, rgba(10, 25, 41, 0.95) 0%, rgba(26, 41, 66, 0.9) 100%),
+                  url('https://images.unsplash.com/photo-1497366216548-37526070297c?w=1920&h=600&fit=crop&q=80') center/cover;
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: 60px 20px;
+      padding: 80px 20px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
     }
 
     .hero-title {
-      font-size: 3rem;
+      font-size: 3.5rem;
       font-weight: 300;
       color: white;
       text-align: center;
       line-height: 1.3;
-      letter-spacing: 2px;
+      letter-spacing: 3px;
       margin: 0;
       text-transform: uppercase;
+      text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.4);
     }
 
     /* First President Section */
     .first-president-section {
       background: #ffffff;
       padding: 0;
+      border: none !important;
+      box-shadow: none !important;
+      outline: none !important;
+    }
+
+    .first-president-section .container {
+      border: none !important;
+      box-shadow: none !important;
+      outline: none !important;
     }
 
     .president-card-large {
       display: grid;
-      grid-template-columns: 300px 1fr;
+      grid-template-columns: 350px 1fr;
       gap: 0;
-      align-items: start;
+      align-items: stretch;
       background: #ffffff;
-      border-radius: 0;
+      overflow: hidden;
+      border: none !important;
+      box-shadow: none !important;
+      outline: none !important;
+      border-radius: 0 !important;
     }
 
     .president-image-large,
     .president-info-large {
-      border-radius: 0;
+      border: none !important;
+      box-shadow: none !important;
+      outline: none !important;
+      border-radius: 0 !important;
     }
 
     .president-image-large {
       width: 100%;
       height: 100%;
-      min-height: 400px;
+      min-height: 450px;
       overflow: hidden;
+      position: relative;
+    }
+
+    .president-image-large::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(to right, transparent 0%, rgba(255, 255, 255, 0.1) 100%);
+      pointer-events: none;
     }
 
     .president-image-large img {
@@ -546,30 +495,51 @@ type HighchartsStatic = typeof import('highcharts');
       height: 100%;
       object-fit: cover;
       margin-top: 0;
+      transition: transform 0.6s ease;
+      border: none !important;
+      box-shadow: none !important;
+      outline: none !important;
+      border-radius: 0 !important;
+    }
+
+    .president-card-large:hover .president-image-large img {
+      transform: scale(1.05);
     }
 
     .president-info-large {
-      padding: 50px 60px;
+      padding: 60px 70px;
       display: flex;
       flex-direction: column;
       justify-content: center;
-      min-height: 400px;
+      min-height: 450px;
+      background: #ffffff;
     }
 
     .president-title-underlined {
-      font-size: 2.5rem;
-      font-weight: 300;
+      font-size: 2.8rem;
+      font-weight: 400;
       color: #1a1a1a;
-      margin: 0 0 25px 0;
-      letter-spacing: 1px;
-      padding-bottom: 15px;
-      border-bottom: 2px solid #8b7355;
+      margin: 0 0 30px 0;
+      letter-spacing: 1.5px;
+      padding-bottom: 20px;
+      border-bottom: 3px solid #BF9874;
       display: inline-block;
+      position: relative;
+    }
+
+    .president-title-underlined::after {
+      content: '';
+      position: absolute;
+      bottom: -3px;
+      left: 0;
+      width: 60%;
+      height: 3px;
+      background: linear-gradient(to right, #BF9874, transparent);
     }
 
     .president-description {
-      font-size: 0.95rem;
-      line-height: 1.8;
+      font-size: 1rem;
+      line-height: 1.9;
       color: #4b5563;
       margin: 0;
       text-align: left;
@@ -582,91 +552,104 @@ type HighchartsStatic = typeof import('highcharts');
 
     /* Senior Label Section */
     .senior-label-section {
-      background: #ECECF1;
-      padding: 40px 0 0 0;
+      background: #f5f7fa;
+      padding: 50px 0 0 0;
+      border-top: 1px solid rgba(191, 152, 116, 0.2);
     }
 
     .senior-label {
-      font-size: 0.75rem;
-      font-weight: 600;
-      color: #8b7355;
-      letter-spacing: 2px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: #BF9874;
+      letter-spacing: 3px;
       text-transform: uppercase;
-      margin-bottom: 10px;
+      margin-bottom: 0;
+      padding-bottom: 20px;
     }
 
     /* Members Section (Presidents & Advisors) */
     .members-section {
-      background: #ECECF1;
-      padding: 20px 0 60px 0;
+      background: #f5f7fa;
+      padding: 30px 0 70px 0;
     }
 
     .members-filter-section {
-      background: #ECECF1;
-      padding: 20px 0 10px 0;
+      background: #f5f7fa;
+      padding: 0 0 30px 0;
+      border-bottom: 2px solid rgba(191, 152, 116, 0.15);
     }
 
     .members-filter {
       display: grid;
       grid-template-columns: 1.2fr 0.8fr 1fr;
-      gap: 20px;
+      gap: 25px;
       align-items: end;
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
     }
 
     .filter-group {
       display: flex;
       flex-direction: column;
-      gap: 8px;
+      gap: 10px;
     }
 
     .filter-group label {
-      font-size: 0.75rem;
-      font-weight: 600;
-      color: #4b5563;
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: #374151;
+      text-transform: uppercase;
+      letter-spacing: 1px;
     }
 
     /* Organization Chart */
     .org-chart-section {
-      padding: 60px 0 50px;
-      background: linear-gradient(180deg, #f5f7fb 0%, #eef2f7 100%);
-      border-bottom: 1px solid rgba(26, 41, 66, 0.06);
+      padding: 70px 0 60px;
+      background: linear-gradient(180deg, #f8f9fb 0%, #eef3f8 100%);
+      border-bottom: 1px solid rgba(26, 41, 66, 0.08);
+      box-shadow: inset 0 2px 10px rgba(0, 0, 0, 0.03);
     }
 
     .org-chart-section.org-chart-names {
-      background: #ffffff;
+      background: linear-gradient(180deg, #ffffff 0%, #f8f9fb 100%);
     }
 
     .org-chart-header {
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 10px;
-      margin-bottom: 14px;
+      gap: 15px;
+      margin-bottom: 20px;
     }
 
     .org-chart-section .section-title {
       color: #1a1a1a;
+      font-weight: 400;
     }
 
     .org-chart-line {
-      width: 52px;
-      height: 2px;
-      background: #BF9874;
+      width: 60px;
+      height: 3px;
+      background: linear-gradient(to right, #BF9874, #d4af8e);
+      box-shadow: 0 2px 8px rgba(191, 152, 116, 0.3);
     }
 
     .org-chart-subtitle {
-      font-size: 0.95rem;
-      color: #6b5a41;
-      margin: 0 auto 28px;
-      max-width: 680px;
-      line-height: 1.7;
+      font-size: 1rem;
+      color: #6b7280;
+      margin: 0 auto 35px;
+      max-width: 700px;
+      line-height: 1.8;
       text-align: center;
+      font-style: italic;
     }
 
     .org-chart {
       display: flex;
       flex-direction: column;
-      gap: 18px;
+      gap: 20px;
       align-items: center;
     }
 
@@ -674,204 +657,269 @@ type HighchartsStatic = typeof import('highcharts');
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 14px 18px;
+      gap: 16px 20px;
     }
 
     .org-node {
       background: #ffffff;
-      border: 1px solid rgba(26, 41, 66, 0.1);
-      padding: 12px 22px;
-      border-radius: 14px;
+      border: 1px solid rgba(26, 41, 66, 0.12);
+      padding: 14px 26px;
+      border-radius: 16px;
       font-weight: 600;
       color: #1a1a1a;
       text-transform: uppercase;
-      letter-spacing: 1.2px;
-      font-size: 0.72rem;
-      box-shadow: 0 10px 22px rgba(26, 41, 66, 0.1);
+      letter-spacing: 1.3px;
+      font-size: 0.75rem;
+      box-shadow: 0 8px 20px rgba(26, 41, 66, 0.1);
+      transition: all 0.3s ease;
+    }
+
+    .org-node:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 28px rgba(26, 41, 66, 0.15);
     }
 
     .org-node.primary {
-      background: #16243b;
+      background: linear-gradient(135deg, #16243b 0%, #1a2942 100%);
       color: #ffffff;
       border-color: #16243b;
-      box-shadow: 0 12px 26px rgba(22, 36, 59, 0.2);
+      box-shadow: 0 12px 30px rgba(22, 36, 59, 0.25);
     }
 
     .org-node.muted {
-      background: #f6efe7;
+      background: linear-gradient(135deg, #f9f3ed 0%, #f6efe7 100%);
       border-color: #e1c7b2;
       color: #5a4634;
     }
 
     .org-chart-connector {
-      height: 18px;
+      height: 20px;
       width: 2px;
-      background: rgba(26, 41, 66, 0.18);
+      background: linear-gradient(to bottom, rgba(26, 41, 66, 0.3), rgba(26, 41, 66, 0.1));
       margin: 0 auto;
     }
 
     .org-chart-names .org-chart {
-      gap: 16px;
+      gap: 18px;
     }
 
     .org-chart-names .org-chart-tier {
-      gap: 12px 14px;
+      gap: 14px 16px;
     }
 
     .org-chart-names .org-node {
-      padding: 10px 16px;
-      font-size: 0.68rem;
-      letter-spacing: 1px;
-      max-width: 220px;
+      padding: 12px 18px;
+      font-size: 0.7rem;
+      letter-spacing: 1.1px;
+      max-width: 230px;
       text-align: center;
-      line-height: 1.2;
+      line-height: 1.3;
       word-break: break-word;
     }
 
     .org-chart-names .org-node.primary {
-      font-size: 0.7rem;
+      font-size: 0.72rem;
     }
+    
     .filter-group input,
     .filter-group select {
-      background: #ffffff;
+      background: #fafbfc;
       color: #1a1a1a;
-      border: 1px solid rgba(26, 41, 66, 0.18);
-      padding: 12px 14px;
-      font-size: 0.9rem;
+      border: 2px solid rgba(26, 41, 66, 0.15);
+      padding: 14px 16px;
+      font-size: 0.95rem;
       outline: none;
-      transition: border-color 0.3s ease, box-shadow 0.3s ease;
+      border-radius: 8px;
+      transition: all 0.3s ease;
     }
 
     .filter-group input:focus,
     .filter-group select:focus {
-      border-color: #4e6a8a;
-      box-shadow: 0 0 0 3px rgba(78, 106, 138, 0.18);
+      border-color: #BF9874;
+      box-shadow: 0 0 0 4px rgba(191, 152, 116, 0.15);
+      background: #ffffff;
     }
 
     .filter-summary {
-      font-size: 0.85rem;
-      color: #4b5563;
+      font-size: 0.9rem;
+      color: #6b7280;
       padding-bottom: 12px;
+      font-weight: 500;
     }
 
     .advisors-section {
-      padding-top: 40px;
+      padding-top: 50px;
     }
 
     .section-title {
-      font-size: 2.5rem;
-      font-weight: 300;
+      font-size: 2.8rem;
+      font-weight: 400;
       color: #1a1a1a;
       text-align: left;
-      margin: 0 0 40px 0;
-      letter-spacing: 2px;
+      margin: 0 0 50px 0;
+      letter-spacing: 2.5px;
+      position: relative;
+      padding-bottom: 20px;
+    }
+
+    .section-title::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 80px;
+      height: 3px;
+      background: linear-gradient(to right, #BF9874, transparent);
     }
 
     .members-grid {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      gap: 20px;
+      gap: 25px;
     }
 
     .no-results {
       grid-column: 1 / -1;
-      background: #1a2942;
-      padding: 20px;
-      color: rgba(255, 255, 255, 0.75);
-      font-size: 0.9rem;
-      border-left: 3px solid #8b7355;
+      background: linear-gradient(135deg, #1a2942 0%, #16243b 100%);
+      padding: 30px;
+      color: rgba(255, 255, 255, 0.85);
+      font-size: 1rem;
+      border-left: 4px solid #BF9874;
+      border-radius: 8px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     }
 
     .member-card {
-      background: #1a2942;
-      border-radius: 0;
+      background: #ffffff;
+      border-radius: 12px;
       overflow: hidden;
-      transition: transform 0.3s ease;
+      transition: all 0.4s ease;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      border: 1px solid rgba(191, 152, 116, 0.15);
     }
 
     .member-card:hover {
-      transform: translateY(-5px);
+      transform: translateY(-8px);
+      box-shadow: 0 12px 35px rgba(0, 0, 0, 0.18);
+      border-color: rgba(191, 152, 116, 0.4);
     }
 
     .member-image {
       width: 100%;
-      height: 280px;
+      height: 300px;
       overflow: hidden;
-      background: #2c3e50;
+      background: linear-gradient(135deg, #e5e7eb 0%, #d1d5db 100%);
       position: relative;
+    }
+
+    .member-image::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 50%;
+      background: linear-gradient(to top, rgba(26, 41, 66, 0.4), transparent);
+      opacity: 0;
+      transition: opacity 0.4s ease;
+    }
+
+    .member-card:hover .member-image::after {
+      opacity: 1;
     }
 
     .member-image img {
       width: 100%;
       height: 100%;
       object-fit: cover;
+      transition: transform 0.6s ease;
+    }
+
+    .member-card:hover .member-image img {
+      transform: scale(1.08);
     }
 
     .member-info {
-      padding: 25px 20px;
-      background: #1a2942;
-      border-top: 3px solid #8b7355;
+      padding: 28px 24px;
+      background: #ffffff;
+      border-top: 3px solid #BF9874;
     }
 
     .member-info h3 {
-      font-size: 0.95rem;
+      font-size: 1rem;
       font-weight: 600;
-      color: white;
-      margin: 0 0 8px 0;
+      color: #1a1a1a;
+      margin: 0 0 10px 0;
       line-height: 1.4;
       text-transform: uppercase;
-      letter-spacing: 0.5px;
+      letter-spacing: 0.8px;
     }
 
     .member-title {
-      font-size: 0.8rem;
-      color: rgba(255, 255, 255, 0.6);
-      margin: 0 0 5px 0;
-      line-height: 1.4;
+      font-size: 0.85rem;
+      color: #6b7280;
+      margin: 0 0 6px 0;
+      line-height: 1.5;
+      font-weight: 500;
     }
 
     .member-email {
-      font-size: 0.75rem;
-      color: rgba(255, 255, 255, 0.5);
-      margin: 0 0 15px 0;
+      font-size: 0.8rem;
+      color: #9ca3af;
+      margin: 0 0 18px 0;
       line-height: 1.4;
     }
 
     .learn-more {
-      font-size: 0.75rem;
-      color: #8b7355;
+      font-size: 0.78rem;
+      color: #BF9874;
       text-decoration: none;
-      font-weight: 600;
-      letter-spacing: 1px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
       display: inline-block;
-      transition: color 0.3s ease;
+      transition: all 0.3s ease;
+      text-transform: uppercase;
+      position: relative;
+    }
+
+    .learn-more::after {
+      content: '→';
+      margin-left: 8px;
+      transition: margin-left 0.3s ease;
     }
 
     .learn-more:hover {
-      color: #a89070;
+      color: #a08060;
+    }
+
+    .learn-more:hover::after {
+      margin-left: 12px;
     }
 
     .load-more-container {
       text-align: center;
-      margin-top: 40px;
+      margin-top: 50px;
     }
 
     .load-more-btn {
-      background: transparent;
-      border: 2px solid #8b7355;
-      color: #8b7355;
-      padding: 12px 40px;
-      font-size: 0.85rem;
-      font-weight: 600;
-      letter-spacing: 1.5px;
+      background: linear-gradient(135deg, #BF9874 0%, #a08060 100%);
+      border: none;
+      color: white;
+      padding: 14px 50px;
+      font-size: 0.9rem;
+      font-weight: 700;
+      border-radius: 8px;
+      letter-spacing: 2px;
       cursor: pointer;
       transition: all 0.3s ease;
       text-transform: uppercase;
+      box-shadow: 0 4px 15px rgba(191, 152, 116, 0.3);
     }
 
     .load-more-btn:hover {
-      background: #8b7355;
-      color: white;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(191, 152, 116, 0.4);
+      background: linear-gradient(135deg, #a08060 0%, #8b6f50 100%);
     }
 
     /* Services Info Section */
@@ -894,7 +942,6 @@ type HighchartsStatic = typeof import('highcharts');
     }
 
     .section-title-white {
-      font-family: var(--services-heading-font);
       font-size: 2.7rem;
       font-weight: 600;
       color: #1a1a1a;
@@ -929,7 +976,7 @@ type HighchartsStatic = typeof import('highcharts');
       left: 0;
       right: 0;
       height: 3px;
-      background: linear-gradient(90deg, #8b7355, #4e6a8a);
+      background: linear-gradient(90deg, #BF9874, #4e6a8a);
     }
 
     .service-box:hover {
@@ -939,7 +986,6 @@ type HighchartsStatic = typeof import('highcharts');
     }
 
     .service-box h3 {
-      font-family: var(--services-heading-font);
       font-size: 1.15rem;
       font-weight: 600;
       color: #1a1a1a;
@@ -948,7 +994,6 @@ type HighchartsStatic = typeof import('highcharts');
     }
 
     .service-box p {
-      font-family: var(--services-body-font);
       font-size: 0.9rem;
       line-height: 1.6;
       color: #4b5563;
@@ -956,7 +1001,6 @@ type HighchartsStatic = typeof import('highcharts');
     }
 
     .service-link {
-      font-family: var(--services-body-font);
       font-size: 0.7rem;
       color: #1a1a1a;
       text-decoration: none;
@@ -970,7 +1014,7 @@ type HighchartsStatic = typeof import('highcharts');
     }
 
     .service-link:hover {
-      color: #8b7355;
+      color: #BF9874;
       transform: translateX(3px);
     }
 
@@ -995,7 +1039,6 @@ type HighchartsStatic = typeof import('highcharts');
     }
 
     .section-heading {
-      font-family: var(--services-heading-font);
       font-size: 2.6rem;
       font-weight: 600;
       color: #1a1a1a;
@@ -1006,9 +1049,8 @@ type HighchartsStatic = typeof import('highcharts');
     }
 
     .section-subheading {
-      font-family: var(--services-body-font);
       font-size: 0.95rem;
-      color: #6b5a41;
+      color: #BF9874;
       text-align: center;
       margin: 0 0 60px 0;
       font-style: italic;
@@ -1058,7 +1100,7 @@ type HighchartsStatic = typeof import('highcharts');
       flex-shrink: 0;
       width: 42px;
       height: 42px;
-      background: radial-gradient(circle at 30% 30%, #d9c2a7, #8b7355);
+      background: radial-gradient(circle at 30% 30%, #d9c2a7, #BF9874);
       color: white;
       border-radius: 14px;
       display: flex;
@@ -1073,7 +1115,6 @@ type HighchartsStatic = typeof import('highcharts');
     }
 
     .service-text h4 {
-      font-family: var(--services-heading-font);
       font-size: 1.05rem;
       font-weight: 600;
       color: #1a1a1a;
@@ -1082,7 +1123,6 @@ type HighchartsStatic = typeof import('highcharts');
     }
 
     .service-text p {
-      font-family: var(--services-body-font);
       font-size: 0.9rem;
       line-height: 1.6;
       color: #5b5f66;
@@ -1096,7 +1136,6 @@ type HighchartsStatic = typeof import('highcharts');
     }
 
     .service-text li {
-      font-family: var(--services-body-font);
       font-size: 0.9rem;
       line-height: 1.8;
       margin-bottom: 8px;
@@ -1124,7 +1163,7 @@ type HighchartsStatic = typeof import('highcharts');
       flex-shrink: 0;
       width: 42px;
       height: 42px;
-      background: radial-gradient(circle at 30% 30%, #d9c2a7, #8b7355);
+      background: radial-gradient(circle at 30% 30%, #d9c2a7, #BF9874);
       color: white;
       border-radius: 14px;
       display: flex;
@@ -1135,7 +1174,6 @@ type HighchartsStatic = typeof import('highcharts');
     }
 
     .detail-content h4 {
-      font-family: var(--services-heading-font);
       font-size: 1rem;
       font-weight: 600;
       color: #1a1a1a;
@@ -1150,14 +1188,12 @@ type HighchartsStatic = typeof import('highcharts');
     }
 
     .detail-content li {
-      font-family: var(--services-body-font);
       font-size: 0.9rem;
       line-height: 1.8;
       margin-bottom: 10px;
     }
 
     .detail-content p {
-      font-family: var(--services-body-font);
       font-size: 0.9rem;
       line-height: 1.8;
       color: #333;
@@ -1218,129 +1254,6 @@ type HighchartsStatic = typeof import('highcharts');
       }
     }
 
-    /* Footer */
-    .footer-section {
-      background-color: #ffffff;
-    }
-
-    .footer-main {
-      background-color: #ffffff;
-      color: #b0b0b0;
-      padding: 60px 0 40px;
-      position: relative;
-    }
-
-    .footer-logo-wrapper {
-      position: absolute;
-      top: -40px;
-      left: 50%;
-      transform: translateX(-50%);
-      background-color: white;
-      width: 120px;
-      height: 120px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
-    }
-
-    .footer-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 50px;
-      padding-top: 40px;
-    }
-
-    .footer-column h3 {
-      color: white;
-      font-size: 1.1rem;
-      font-weight: 600;
-      margin-bottom: 20px;
-    }
-
-    .footer-column p {
-      font-size: 0.9rem;
-      line-height: 1.8;
-      margin: 5px 0;
-      color: #b0b0b0;
-    }
-
-    .footer-column ul {
-      list-style: none;
-      padding: 0;
-    }
-
-    .footer-column ul li {
-      margin-bottom: 12px;
-    }
-
-    .footer-column ul li a {
-      color: #b0b0b0;
-      text-decoration: none;
-      font-size: 0.9rem;
-      transition: color 0.3s ease;
-    }
-
-    .footer-column ul li a:hover {
-      color: #BF9874;
-    }
-
-    .footer-bottom {
-      background-color: #ffffff;
-      padding: 25px 0;
-    }
-
-    .footer-bottom-content {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 20px;
-    }
-
-    .social-icons {
-      display: flex;
-      gap: 15px;
-    }
-
-    .social-icon {
-      width: 36px;
-      height: 36px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background-color: #5A7184;
-      border-radius: 50%;
-      color: white;
-      text-decoration: none;
-      transition: all 0.3s ease;
-    }
-
-    .social-icon:hover {
-      background-color: #BF9874;
-    }
-
-    .social-icon svg {
-      width: 16px;
-      height: 16px;
-    }
-
-    .copyright {
-      font-size: 0.85rem;
-      color: #555;
-      margin: 0;
-    }
-
-    .privacy-link {
-      color: #555;
-      text-decoration: none;
-      font-size: 0.85rem;
-      transition: color 0.3s ease;
-    }
-
-    .privacy-link:hover {
-      color: #BF9874;
-    }
-
     /* ==================== RESPONSIVE MEDIA QUERIES ==================== */
 
     /* Large Desktop (1440px and above) */
@@ -1350,15 +1263,14 @@ type HighchartsStatic = typeof import('highcharts');
       }
 
       .hero-title {
-        font-size: 3.5rem;
+        font-size: 4rem;
       }
 
       .section-title,
       .section-title-white,
       .section-heading {
-        font-size: 3rem;
+        font-size: 3.2rem;
       }
-
     }
 
     /* Desktop and Laptop (1024px - 1439px) */
@@ -1366,17 +1278,16 @@ type HighchartsStatic = typeof import('highcharts');
       .container {
         max-width: 1100px;
       }
-
     }
 
     /* Medium Desktop / Small Laptop (1024px - 1280px) */
     @media (max-width: 1280px) {
       .president-card-large {
-        grid-template-columns: 280px 1fr;
+        grid-template-columns: 320px 1fr;
       }
 
       .president-info-large {
-        padding: 40px 50px;
+        padding: 50px 60px;
       }
 
       .members-grid {
@@ -1386,45 +1297,42 @@ type HighchartsStatic = typeof import('highcharts');
       .services-grid {
         grid-template-columns: repeat(3, 1fr);
       }
-
-      .footer-grid {
-        gap: 40px;
-      }
     }
 
     /* Tablet Landscape (900px - 1024px) */
     @media (max-width: 1024px) {
       .hero-section {
-        min-height: 300px;
-        padding: 50px 20px;
+        min-height: 350px;
+        padding: 60px 20px;
       }
 
       .hero-title {
-        font-size: 2.5rem;
+        font-size: 3rem;
       }
 
       .president-card-large {
-        grid-template-columns: 250px 1fr;
+        grid-template-columns: 280px 1fr;
       }
 
       .president-info-large {
-        padding: 35px 40px;
-        min-height: 350px;
+        padding: 40px 50px;
+        min-height: 400px;
       }
 
       .president-title-underlined {
-        font-size: 2rem;
+        font-size: 2.4rem;
       }
 
       .section-title,
       .section-title-white,
       .section-heading {
-        font-size: 2rem;
+        font-size: 2.4rem;
       }
 
       .members-filter {
         grid-template-columns: 1fr 1fr;
-        gap: 15px;
+        gap: 20px;
+        padding: 25px;
       }
 
       .filter-summary {
@@ -1435,7 +1343,7 @@ type HighchartsStatic = typeof import('highcharts');
 
       .members-grid {
         grid-template-columns: repeat(3, 1fr);
-        gap: 15px;
+        gap: 20px;
       }
 
       .services-grid {
@@ -1449,20 +1357,15 @@ type HighchartsStatic = typeof import('highcharts');
 
       .service-item,
       .detail-box {
-        padding: 25px;
-      }
-
-      .footer-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 40px;
+        padding: 24px;
       }
     }
 
     /* Tablet Portrait (768px - 900px) */
     @media (max-width: 900px) {
       .hero-title {
-        font-size: 2.2rem;
-        letter-spacing: 1px;
+        font-size: 2.5rem;
+        letter-spacing: 2px;
       }
 
       .president-card-large {
@@ -1470,16 +1373,16 @@ type HighchartsStatic = typeof import('highcharts');
       }
 
       .president-image-large {
-        min-height: 350px;
+        min-height: 400px;
       }
 
       .president-info-large {
-        padding: 40px 30px;
+        padding: 50px 40px;
         min-height: auto;
       }
 
       .president-title-underlined {
-        font-size: 1.8rem;
+        font-size: 2.2rem;
       }
 
       .members-grid {
@@ -1500,12 +1403,7 @@ type HighchartsStatic = typeof import('highcharts');
       }
 
       .services-section {
-        padding: 60px 0;
-      }
-
-      .footer-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 35px;
+        padding: 70px 0;
       }
     }
 
@@ -1516,90 +1414,91 @@ type HighchartsStatic = typeof import('highcharts');
       }
 
       .hero-section {
-        min-height: 250px;
-        padding: 40px 15px;
+        min-height: 280px;
+        padding: 50px 15px;
       }
 
       .hero-title {
-        font-size: 1.8rem;
+        font-size: 2rem;
       }
 
       .president-image-large {
-        min-height: 300px;
+        min-height: 350px;
       }
 
       .president-info-large {
-        padding: 30px 25px;
+        padding: 35px 30px;
       }
 
       .president-title-underlined {
-        font-size: 1.6rem;
+        font-size: 1.9rem;
       }
 
       .president-description {
-        font-size: 0.9rem;
+        font-size: 0.95rem;
       }
 
       .senior-label-section {
-        padding: 30px 0 0 0;
+        padding: 40px 0 0 0;
       }
 
       .members-filter-section {
-        padding: 15px 0 10px 0;
+        padding: 0 0 25px 0;
       }
 
       .members-filter {
         grid-template-columns: 1fr;
-        gap: 12px;
+        gap: 15px;
+        padding: 20px;
       }
 
       .filter-summary {
         grid-column: 1;
-        font-size: 0.8rem;
+        font-size: 0.85rem;
       }
 
       .section-title,
       .section-title-white,
       .section-heading {
-        font-size: 1.8rem;
-        margin-bottom: 30px;
+        font-size: 2rem;
+        margin-bottom: 35px;
       }
 
       .members-section {
-        padding: 15px 0 50px 0;
+        padding: 25px 0 60px 0;
       }
 
       .advisors-section {
-        padding-top: 30px;
+        padding-top: 40px;
       }
 
       .members-grid {
         grid-template-columns: repeat(2, 1fr);
-        gap: 12px;
+        gap: 15px;
       }
 
       .member-image {
-        height: 220px;
+        height: 240px;
       }
 
       .member-info {
-        padding: 20px 15px;
+        padding: 22px 18px;
       }
 
       .member-info h3 {
-        font-size: 0.85rem;
+        font-size: 0.9rem;
       }
 
       .member-title {
-        font-size: 0.75rem;
+        font-size: 0.8rem;
       }
 
       .member-email {
-        font-size: 0.7rem;
+        font-size: 0.75rem;
       }
 
       .services-info-section {
-        padding: 50px 0 60px 0;
+        padding: 60px 0 70px 0;
       }
 
       .service-item,
@@ -1610,75 +1509,85 @@ type HighchartsStatic = typeof import('highcharts');
 
       .service-icon,
       .detail-icon {
-        width: 35px;
-        height: 35px;
+        width: 36px;
+        height: 36px;
         font-size: 1rem;
       }
 
       .service-text h4,
       .detail-content h4 {
-        font-size: 0.95rem;
+        font-size: 0.98rem;
       }
 
       .service-text p,
       .service-text li,
       .detail-content p,
       .detail-content li {
-        font-size: 0.85rem;
+        font-size: 0.88rem;
       }
-
-      .footer-main {
-        padding: 50px 0 30px;
-      }
-
-      .footer-logo-wrapper {
-        width: 100px;
-        height: 100px;
-        top: -35px;
-      }
-
-      .footer-logo-wrapper svg {
-        width: 65px;
-        height: 65px;
-      }
-
-      .footer-grid {
-        grid-template-columns: 1fr;
-        gap: 30px;
-        padding-top: 30px;
-      }
-
-      .footer-column h3 {
-        font-size: 1rem;
-        margin-bottom: 15px;
-      }
-
-      .footer-column p,
-      .footer-column ul li a {
-        font-size: 0.85rem;
-      }
-
-      .footer-bottom-content {
-        flex-direction: column;
-        gap: 15px;
-        text-align: center;
-      }
-
-      .social-icons {
-        order: -1;
-      }
-
     }
 
     /* Mobile Portrait (480px - 600px) */
     @media (max-width: 600px) {
       .hero-section {
-        min-height: 220px;
-        padding: 35px 15px;
+        min-height: 240px;
+        padding: 40px 15px;
       }
 
       .hero-title {
-        font-size: 1.6rem;
+        font-size: 1.7rem;
+      }
+
+      .president-image-large {
+        min-height: 320px;
+      }
+
+      .president-info-large {
+        padding: 30px 25px;
+      }
+
+      .president-title-underlined {
+        font-size: 1.7rem;
+      }
+
+      .section-title,
+      .section-title-white,
+      .section-heading {
+        font-size: 1.8rem;
+      }
+
+      .members-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .member-image {
+        height: 280px;
+      }
+
+      .load-more-btn {
+        padding: 12px 35px;
+        font-size: 0.85rem;
+      }
+
+      .services-grid {
+        gap: 25px;
+      }
+    }
+
+    /* Small Mobile (320px - 480px) */
+    @media (max-width: 480px) {
+      .container {
+        padding: 0 12px;
+      }
+
+      .hero-section {
+        min-height: 220px;
+        padding: 35px 12px;
+      }
+
+      .hero-title {
+        font-size: 1.5rem;
+        letter-spacing: 1px;
       }
 
       .president-image-large {
@@ -1691,146 +1600,93 @@ type HighchartsStatic = typeof import('highcharts');
 
       .president-title-underlined {
         font-size: 1.5rem;
+        margin-bottom: 20px;
+        padding-bottom: 15px;
+      }
+
+      .president-description {
+        font-size: 0.88rem;
+        line-height: 1.7;
+      }
+
+      .senior-label {
+        font-size: 0.75rem;
+      }
+
+      .filter-group label {
+        font-size: 0.75rem;
+      }
+
+      .filter-group input,
+      .filter-group select {
+        padding: 12px 14px;
+        font-size: 0.88rem;
       }
 
       .section-title,
       .section-title-white,
       .section-heading {
         font-size: 1.6rem;
+        margin-bottom: 30px;
       }
 
-      .members-grid {
-        grid-template-columns: 1fr;
+      .section-subheading {
+        font-size: 0.88rem;
+        margin-bottom: 35px;
       }
 
       .member-image {
         height: 260px;
       }
 
-      .load-more-btn {
-        padding: 10px 30px;
-        font-size: 0.8rem;
-      }
-
-      .services-grid {
-        gap: 25px;
-      }
-
-    }
-
-    /* Small Mobile (320px - 480px) */
-    @media (max-width: 480px) {
-      .container {
-        padding: 0 12px;
-      }
-
-      .hero-section {
-        min-height: 200px;
-        padding: 30px 12px;
-      }
-
-      .hero-title {
-        font-size: 1.4rem;
-        letter-spacing: 0.5px;
-      }
-
-      .president-image-large {
-        min-height: 250px;
-      }
-
-      .president-info-large {
+      .member-info {
         padding: 20px 15px;
       }
 
-      .president-title-underlined {
-        font-size: 1.3rem;
-        margin-bottom: 15px;
-        padding-bottom: 10px;
-      }
-
-      .president-description {
-        font-size: 0.85rem;
-        line-height: 1.6;
-      }
-
-      .senior-label {
-        font-size: 0.7rem;
-      }
-
-      .filter-group label {
-        font-size: 0.7rem;
-      }
-
-      .filter-group input,
-      .filter-group select {
-        padding: 10px 12px;
-        font-size: 0.85rem;
-      }
-
-      .section-title,
-      .section-title-white,
-      .section-heading {
-        font-size: 1.4rem;
-        margin-bottom: 25px;
-      }
-
-      .section-subheading {
-        font-size: 0.85rem;
-        margin-bottom: 30px;
-      }
-
-      .member-image {
-        height: 240px;
-      }
-
-      .member-info {
-        padding: 18px 12px;
-      }
-
       .member-info h3 {
-        font-size: 0.8rem;
+        font-size: 0.85rem;
       }
 
       .member-title {
-        font-size: 0.7rem;
-      }
-
-      .member-email {
-        font-size: 0.65rem;
-        margin-bottom: 12px;
-      }
-
-      .learn-more {
-        font-size: 0.7rem;
-      }
-
-      .load-more-container {
-        margin-top: 30px;
-      }
-
-      .load-more-btn {
-        padding: 10px 25px;
         font-size: 0.75rem;
       }
 
+      .member-email {
+        font-size: 0.7rem;
+        margin-bottom: 15px;
+      }
+
+      .learn-more {
+        font-size: 0.75rem;
+      }
+
+      .load-more-container {
+        margin-top: 35px;
+      }
+
+      .load-more-btn {
+        padding: 11px 30px;
+        font-size: 0.8rem;
+      }
+
       .services-info-section {
-        padding: 40px 0 50px 0;
+        padding: 50px 0 60px 0;
       }
 
       .service-box h3 {
-        font-size: 1rem;
+        font-size: 1.05rem;
       }
 
       .service-box p {
-        font-size: 0.85rem;
+        font-size: 0.88rem;
       }
 
       .service-link {
-        font-size: 0.7rem;
+        font-size: 0.72rem;
       }
 
       .services-section {
-        padding: 50px 0;
+        padding: 60px 0;
       }
 
       .service-item,
@@ -1841,14 +1697,14 @@ type HighchartsStatic = typeof import('highcharts');
 
       .service-icon,
       .detail-icon {
-        width: 32px;
-        height: 32px;
-        font-size: 0.95rem;
+        width: 34px;
+        height: 34px;
+        font-size: 0.98rem;
       }
 
       .service-text h4,
       .detail-content h4 {
-        font-size: 0.9rem;
+        font-size: 0.92rem;
         margin-bottom: 12px;
       }
 
@@ -1856,99 +1712,45 @@ type HighchartsStatic = typeof import('highcharts');
       .service-text li,
       .detail-content p,
       .detail-content li {
-        font-size: 0.8rem;
-        line-height: 1.6;
-      }
-
-      .footer-main {
-        padding: 45px 0 25px;
-      }
-
-      .footer-logo-wrapper {
-        width: 90px;
-        height: 90px;
-        top: -30px;
-      }
-
-      .footer-logo-wrapper svg {
-        width: 55px;
-        height: 55px;
-      }
-
-      .footer-grid {
-        gap: 25px;
-        padding-top: 25px;
-      }
-
-      .footer-column h3 {
-        font-size: 0.95rem;
-        margin-bottom: 12px;
-      }
-
-      .footer-column p,
-      .footer-column ul li a {
-        font-size: 0.8rem;
-        line-height: 1.6;
-      }
-
-      .footer-column ul li {
-        margin-bottom: 10px;
-      }
-
-      .footer-bottom {
-        padding: 20px 0;
-      }
-
-      .copyright,
-      .privacy-link {
-        font-size: 0.75rem;
-      }
-
-      .social-icon {
-        width: 32px;
-        height: 32px;
-      }
-
-      .social-icon svg {
-        width: 14px;
-        height: 14px;
+        font-size: 0.82rem;
+        line-height: 1.7;
       }
     }
 
     /* Extra Small Mobile (below 375px) */
     @media (max-width: 375px) {
       .hero-title {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
       }
 
       .president-title-underlined {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
       }
 
       .section-title,
       .section-title-white,
       .section-heading {
-        font-size: 1.3rem;
+        font-size: 1.4rem;
       }
 
       .member-image {
-        height: 220px;
+        height: 240px;
       }
     }
 
     /* Landscape Orientation for Mobile Devices */
     @media (max-height: 500px) and (orientation: landscape) {
       .hero-section {
-        min-height: 180px;
-        padding: 25px 15px;
+        min-height: 200px;
+        padding: 30px 15px;
       }
 
       .hero-title {
-        font-size: 1.5rem;
+        font-size: 1.6rem;
       }
 
       .president-image-large {
-        min-height: 250px;
+        min-height: 280px;
       }
     }
   `]
