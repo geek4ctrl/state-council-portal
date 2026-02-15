@@ -3,6 +3,9 @@
 /* Import Inter font */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
+/* Import Typography System */
+@import './styles/typography.css';
+
 /* Apply globally */
 html,
 body,
@@ -57,9 +60,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
-/* Import Typography System */
-@import './styles/typography.css';
 
 /* Design Tokens */
 :root {

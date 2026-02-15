@@ -855,7 +855,7 @@ interface PresidentSlide {
     .quick-link-icon img {
       width: 100%;
       height: 100%;
-      // object-fit: cover;
+      /* object-fit: cover; */
     }
 
     .quick-link-content {
@@ -1013,13 +1013,15 @@ interface PresidentSlide {
       overflow: hidden;
     }
 
-    // .style-hr {
-    //   background: #BF9874 !important;
-    //   color: #BF9874 !important;
-    //   border: none !important;
-    //   height: 1px !important;
-    //   width: auto !important;
-    // }
+    /*
+    .style-hr {
+      background: #BF9874 !important;
+      color: #BF9874 !important;
+      border: none !important;
+      height: 1px !important;
+      width: auto !important;
+    }
+    */
 
     .expertise-section::before {
       content: '';
@@ -1572,7 +1574,7 @@ interface PresidentSlide {
       color: #55645c;
       padding: 60px 0 40px;
       position: relative;
-      // border-top: 1px solid rgba(255, 255, 255, 0.8);
+      /* border-top: 1px solid rgba(255, 255, 255, 0.8); */
     }
 
     .footer-main::before {
