@@ -20,7 +20,7 @@ export class MemberService {
     {
       name: 'KAZADI WALUMBILE',
       title: 'President',
-      email: 'kazadi@conseildetat.cd',
+      email: 'kazadi@conseildetatrdc.com',
       image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=350&fit=crop',
       role: 'president',
       slug: 'kazadi-walumbile',
@@ -30,7 +30,7 @@ export class MemberService {
     {
       name: 'MUKENGELI MUKENGELI',
       title: 'President',
-      email: 'mukengeli@conseildetat.cd',
+      email: 'mukengeli@conseildetatrdc.com',
       image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=300&h=350&fit=crop',
       role: 'president',
       slug: 'mukengeli-mukengeli',
@@ -40,7 +40,7 @@ export class MemberService {
     {
       name: 'MWANGALWA MUSALI',
       title: 'President',
-      email: 'mwangalwa@conseildetat.cd',
+      email: 'mwangalwa@conseildetatrdc.com',
       image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&h=350&fit=crop',
       role: 'president',
       slug: 'mwangalwa-musali',
@@ -50,7 +50,7 @@ export class MemberService {
     {
       name: 'UBULU MPINGU',
       title: 'President',
-      email: 'ubulu@conseildetat.cd',
+      email: 'ubulu@conseildetatrdc.com',
       image: 'https://images.unsplash.com/photo-1519345182560-3f2917c472ef?w=300&h=350&fit=crop',
       role: 'president',
       slug: 'ubulu-mpingu',
@@ -60,7 +60,7 @@ export class MemberService {
     {
       name: 'KABEYELE NZEMBELE',
       title: 'President',
-      email: 'kabeyele@conseildetat.cd',
+      email: 'kabeyele@conseildetatrdc.com',
       image: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=300&h=350&fit=crop',
       role: 'president',
       slug: 'kabeyele-nzembele',
@@ -70,7 +70,7 @@ export class MemberService {
     {
       name: 'MATHE KYALIRE',
       title: 'President',
-      email: 'mathe@conseildetat.cd',
+      email: 'mathe@conseildetatrdc.com',
       image: 'https://images.unsplash.com/photo-1480429370139-e0132c086e2a?w=300&h=350&fit=crop',
       role: 'president',
       slug: 'mathe-kyalire',
@@ -80,7 +80,7 @@ export class MemberService {
     {
       name: 'KOLOMUNA JITSA PASCAL',
       title: 'President',
-      email: 'kolomuna@conseildetat.cd',
+      email: 'kolomuna@conseildetatrdc.com',
       image: 'https://images.unsplash.com/photo-1463453091185-61582044d556?w=300&h=350&fit=crop',
       role: 'president',
       slug: 'kolomuna-jitsa-pascal',
@@ -90,7 +90,7 @@ export class MemberService {
     {
       name: 'BAKINENGAYI BOLOKO',
       title: 'President',
-      email: 'bakinengayi@conseildetat.cd',
+      email: 'bakinengayi@conseildetatrdc.com',
       image: 'https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?w=300&h=350&fit=crop',
       role: 'president',
       slug: 'bakinengayi-boloko',
@@ -100,7 +100,7 @@ export class MemberService {
     {
       name: 'MASHCI MIPIA TORIISIA',
       title: 'Advisor',
-      email: 'mashci@conseildetat.cd',
+      email: 'mashci@conseildetatrdc.com',
       image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=300&h=350&fit=crop',
       role: 'advisor',
       slug: 'mashci-mipia-toriisia',
@@ -110,7 +110,7 @@ export class MemberService {
     {
       name: 'IBONIKA NGAMOLO',
       title: 'Advisor',
-      email: 'ibonika@conseildetat.cd',
+      email: 'ibonika@conseildetatrdc.com',
       image: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=300&h=350&fit=crop',
       role: 'advisor',
       slug: 'ibonika-ngamolo',
@@ -120,7 +120,7 @@ export class MemberService {
     {
       name: 'ILUNG TAMIN',
       title: 'Advisor',
-      email: 'ilung@conseildetat.cd',
+      email: 'ilung@conseildetatrdc.com',
       image: 'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=300&h=350&fit=crop',
       role: 'advisor',
       slug: 'ilung-tamin',
@@ -130,7 +130,7 @@ export class MemberService {
     {
       name: 'ZAISNE ZINALIBWA',
       title: 'Advisor',
-      email: 'zaisne@conseildetat.cd',
+      email: 'zaisne@conseildetatrdc.com',
       image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=300&h=350&fit=crop',
       role: 'advisor',
       slug: 'zaisne-zinalibwa',
@@ -140,7 +140,7 @@ export class MemberService {
     {
       name: 'OTHUNGU WONGOZI OGYTA',
       title: 'Advisor',
-      email: 'othungu@conseildetat.cd',
+      email: 'othungu@conseildetatrdc.com',
       image: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=300&h=350&fit=crop',
       role: 'advisor',
       slug: 'othungu-wongozi-ogyta',
@@ -150,7 +150,7 @@ export class MemberService {
     {
       name: 'LOHOTA IITUMBA',
       title: 'Advisor',
-      email: 'lohota@conseildetat.cd',
+      email: 'lohota@conseildetatrdc.com',
       image: 'https://images.unsplash.com/photo-1517841905240-472988babdf9?w=300&h=350&fit=crop',
       role: 'advisor',
       slug: 'lohota-iitumba',
@@ -160,7 +160,7 @@ export class MemberService {
     {
       name: 'KALUMBA KAMPATA',
       title: 'Advisor',
-      email: 'kalumba@conseildetat.cd',
+      email: 'kalumba@conseildetatrdc.com',
       image: 'https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=300&h=350&fit=crop',
       role: 'advisor',
       slug: 'kalumba-kampata',
@@ -170,7 +170,7 @@ export class MemberService {
     {
       name: 'BAKUNGA NGIMBE',
       title: 'Advisor',
-      email: 'bakunga@conseildetat.cd',
+      email: 'bakunga@conseildetatrdc.com',
       image: 'https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=300&h=350&fit=crop',
       role: 'advisor',
       slug: 'bakunga-ngimbe',

@@ -1,11 +1,11 @@
 # Conseil d'État de la République Démocratique du Congo
-# https://conseildetat.cd/robots.txt
+# https://conseildetatrdc.com/robots.txt
 
 User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://conseildetat.cd/sitemap.xml
+Sitemap: https://conseildetatrdc.com/sitemap.xml
 
 # Crawl delay (in seconds) - be respectful
 Crawl-delay: 1

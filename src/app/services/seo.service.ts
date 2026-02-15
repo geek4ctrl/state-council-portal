@@ -22,7 +22,7 @@ export class SeoService {
   private router = inject(Router);
 
   private readonly baseTitle = 'Conseil d\'État - République Démocratique du Congo';
-  private readonly baseUrl = 'https://conseildetat.cd';
+  private readonly baseUrl = 'https://conseildetatrdc.com';
 
   constructor() {
     // Update canonical URL on navigation
