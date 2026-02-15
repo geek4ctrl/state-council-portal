@@ -6,7 +6,7 @@
 
   <!-- Homepage -->
   <url>
-    <loc>https://conseildetat.cd/</loc>
+    <loc>https://conseildetatrdc.com/</loc>
     <lastmod>2026-02-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
@@ -14,7 +14,7 @@
 
   <!-- About / Presentation -->
   <url>
-    <loc>https://conseildetat.cd/presentation</loc>
+    <loc>https://conseildetatrdc.com/presentation</loc>
     <lastmod>2026-02-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
@@ -22,7 +22,7 @@
 
   <!-- Organization -->
   <url>
-    <loc>https://conseildetat.cd/organization</loc>
+    <loc>https://conseildetatrdc.com/organization</loc>
     <lastmod>2026-02-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
@@ -30,7 +30,7 @@
 
   <!-- News -->
   <url>
-    <loc>https://conseildetat.cd/news</loc>
+    <loc>https://conseildetatrdc.com/news</loc>
     <lastmod>2026-02-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
@@ -38,7 +38,7 @@
 
   <!-- Audiences -->
   <url>
-    <loc>https://conseildetat.cd/audiences</loc>
+    <loc>https://conseildetatrdc.com/audiences</loc>
     <lastmod>2026-02-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -46,7 +46,7 @@
 
   <!-- Reforms -->
   <url>
-    <loc>https://conseildetat.cd/reforms</loc>
+    <loc>https://conseildetatrdc.com/reforms</loc>
     <lastmod>2026-02-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -54,7 +54,7 @@
 
   <!-- International Relations -->
   <url>
-    <loc>https://conseildetat.cd/international-relations</loc>
+    <loc>https://conseildetatrdc.com/international-relations</loc>
     <lastmod>2026-02-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -62,7 +62,7 @@
 
   <!-- Steps -->
   <url>
-    <loc>https://conseildetat.cd/steps</loc>
+    <loc>https://conseildetatrdc.com/steps</loc>
     <lastmod>2026-02-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -70,7 +70,7 @@
 
   <!-- Filing (Report) -->
   <url>
-    <loc>https://conseildetat.cd/filing</loc>
+    <loc>https://conseildetatrdc.com/filing</loc>
     <lastmod>2026-02-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -78,7 +78,7 @@
 
   <!-- Appointment -->
   <url>
-    <loc>https://conseildetat.cd/appointment</loc>
+    <loc>https://conseildetatrdc.com/appointment</loc>
     <lastmod>2026-02-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -86,7 +86,7 @@
 
   <!-- Procedures -->
   <url>
-    <loc>https://conseildetat.cd/procedures</loc>
+    <loc>https://conseildetatrdc.com/procedures</loc>
     <lastmod>2026-02-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -94,7 +94,7 @@
 
   <!-- Judges -->
   <url>
-    <loc>https://conseildetat.cd/judges</loc>
+    <loc>https://conseildetatrdc.com/judges</loc>
     <lastmod>2026-02-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
