@@ -27,6 +27,12 @@
       "bookAppointment": "Prendre rendez-vous"
     }
   },
+  "mobileNav": {
+    "home": "Accueil",
+    "organization": "Organisation",
+    "apply": "Deposer",
+    "news": "Actualites"
+  },
   "errors": {
     "generic": {
       "code": "Erreur",
