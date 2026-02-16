@@ -7,14 +7,14 @@ export type LanguageCode = 'en' | 'fr';
 @Injectable({ providedIn: 'root' })
 export class I18nService {
   private readonly http = inject(HttpClient);
-  private readonly lang = signal<LanguageCode>('en');
+  private readonly lang = signal<LanguageCode>('fr');
   private readonly dictionary = signal<Record<string, unknown>>({});
 
   readonly activeLang = this.lang.asReadonly();
 
   init(): Promise<void> {
     const stored = typeof localStorage !== 'undefined' ? localStorage.getItem('lang') : null;
-    const lang = stored === 'fr' ? 'fr' : 'en';
+    const lang = stored === 'en' ? 'en' : 'fr';
     return firstValueFrom(this.loadLanguage(lang));
   }
 
