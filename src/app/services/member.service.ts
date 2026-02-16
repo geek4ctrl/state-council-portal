@@ -21,7 +21,7 @@ export class MemberService {
       name: 'KAZADI WALUMBILE',
       title: 'President',
       email: 'kazadi@conseildetatrdc.com',
-      image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=350&fit=crop',
+      image: 'https://images.unsplash.com/photo-1582233479366-6d38bc390a08?q=80&w=1183&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?w=300&h=350&fit=crop',
       role: 'president',
       slug: 'kazadi-walumbile',
       office: 'STATE COUNCIL',
