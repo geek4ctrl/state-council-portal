@@ -27,6 +27,12 @@
       "bookAppointment": "Book Appointment"
     }
   },
+  "mobileNav": {
+    "home": "Home",
+    "organization": "Org",
+    "apply": "Apply",
+    "news": "News"
+  },
   "errors": {
     "generic": {
       "code": "Error",
