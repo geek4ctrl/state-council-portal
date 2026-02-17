@@ -2480,7 +2480,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
     {
       id: 1,
       titleKey: 'home.president.slides.1.title',
-      image: 'https://scontent.fpry2-1.fna.fbcdn.net/v/t39.30808-6/481977439_661094752968468_3580912692254417664_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=833d8c&_nc_ohc=781MphyOZxYQ7kNvwFA72Pl&_nc_oc=AdlS3efGmR2NwVl7AluKnrYklBBqsJYuTlJ2j9PkHSisG9RQ-4n7jDHjPIDmj6En6_w&_nc_zt=23&_nc_ht=scontent.fpry2-1.fna&_nc_gid=ECXY9r39JHQUTs-eZefdrQ&oh=00_AfsTzaj3KdpgLrEjgftG5I3y5wMeOJriKEBVHzCL_mVnRA&oe=69939BC0',
+      image: 'https://res.cloudinary.com/dhqvb8wbn/image/upload/v1771319774/brigitte_rycfia.jpg',
       paragraphKeys: [
         'home.president.slides.1.paragraphs.1',
         'home.president.slides.1.paragraphs.2',
@@ -2490,7 +2490,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
     {
       id: 2,
       titleKey: 'home.president.slides.2.title',
-      image: 'https://scontent.fpry1-1.fna.fbcdn.net/v/t39.30808-6/599929838_875339684877306_2530911599543204256_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=127cfc&_nc_ohc=rMF9gjx6yfkQ7kNvwEHV-nd&_nc_oc=AdkO4f_L-MfuR0xIA6bNPLKAzxgeFHko4G_3DIQ2GjsM8joG54-eoS5JNp4ows4LVP4&_nc_zt=23&_nc_ht=scontent.fpry1-1.fna&_nc_gid=_KXRF8hxBEJqAkO9PB30NQ&oh=00_Afs2aFzEE-i_zlwMJIGiVbMYAL7KosiOhcp0WA0du9DNFQ&oe=69991D80',
+      image: 'https://res.cloudinary.com/dhqvb8wbn/image/upload/v1771319776/599929838_875339684877306_2530911599543204256_n_fpyzl6.jpg',
       paragraphKeys: [
         'home.president.slides.2.paragraphs.1',
         'home.president.slides.2.paragraphs.2',
@@ -2500,7 +2500,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
     {
       id: 3,
       titleKey: 'home.president.slides.3.title',
-      image: 'https://scontent.fpry2-1.fna.fbcdn.net/v/t39.30808-6/481977439_661094752968468_3580912692254417664_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=833d8c&_nc_ohc=781MphyOZxYQ7kNvwFA72Pl&_nc_oc=AdlS3efGmR2NwVl7AluKnrYklBBqsJYuTlJ2j9PkHSisG9RQ-4n7jDHjPIDmj6En6_w&_nc_zt=23&_nc_ht=scontent.fpry2-1.fna&_nc_gid=ECXY9r39JHQUTs-eZefdrQ&oh=00_AfsTzaj3KdpgLrEjgftG5I3y5wMeOJriKEBVHzCL_mVnRA&oe=69939BC0',
+      image: 'https://res.cloudinary.com/dhqvb8wbn/image/upload/v1771319774/brigitte_rycfia.jpg',
       paragraphKeys: [
         'home.president.slides.3.paragraphs.1',
         'home.president.slides.3.paragraphs.2',
