@@ -41,7 +41,7 @@ type HighchartsStatic = typeof import('highcharts');
           <div class="president-card-large">
             <div class="president-image-large">
               <img
-                ngSrc="https://scontent.fpry2-1.fna.fbcdn.net/v/t39.30808-6/481977439_661094752968468_3580912692254417664_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=833d8c&_nc_ohc=781MphyOZxYQ7kNvwFA72Pl&_nc_oc=AdlS3efGmR2NwVl7AluKnrYklBBqsJYuTlJ2j9PkHSisG9RQ-4n7jDHjPIDmj6En6_w&_nc_zt=23&_nc_ht=scontent.fpry2-1.fna&_nc_gid=ECXY9r39JHQUTs-eZefdrQ&oh=00_AfsTzaj3KdpgLrEjgftG5I3y5wMeOJriKEBVHzCL_mVnRA&oe=69939BC0"
+                ngSrc="https://res.cloudinary.com/dhqvb8wbn/image/upload/v1771319774/brigitte_rycfia.jpg"
                 [attr.alt]="'organization.firstPresident.alt' | i18n"
                 width="400"
                 height="500">
@@ -720,7 +720,7 @@ type HighchartsStatic = typeof import('highcharts');
     .org-chart-names .org-node.primary {
       font-size: 0.72rem;
     }
-    
+
     .filter-group input,
     .filter-group select {
       background: #fafbfc;

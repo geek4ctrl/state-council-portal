@@ -293,12 +293,12 @@ import { FooterComponent } from '../../components/footer/footer.component';
       .vertical-line {
         width: 2px;
         height: 180px;
-        background: linear-gradient(to bottom, 
-          transparent 0%, 
+        background: linear-gradient(to bottom,
+          transparent 0%,
           rgba(255, 255, 255, 0.2) 10%,
-          rgba(255, 255, 255, 0.5) 30%, 
-          rgba(255, 255, 255, 0.8) 50%, 
-          rgba(255, 255, 255, 0.5) 70%, 
+          rgba(255, 255, 255, 0.5) 30%,
+          rgba(255, 255, 255, 0.8) 50%,
+          rgba(255, 255, 255, 0.5) 70%,
           rgba(255, 255, 255, 0.2) 90%,
           transparent 100%);
         position: relative;
@@ -320,6 +320,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
       .hero-description {
         padding-left: 0;
         text-align: left;
+        color: #ffffff;
       }
 
       .hero-title h1 {
@@ -338,6 +339,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
         opacity: 0.95;
         margin: 0;
         font-weight: 300;
+        color: #ffffff;
       }
 
       /* Content Section */
@@ -822,12 +824,12 @@ import { FooterComponent } from '../../components/footer/footer.component';
           width: 150px;
           height: 2px;
           margin: 0 auto;
-          background: linear-gradient(to right, 
-            transparent 0%, 
+          background: linear-gradient(to right,
+            transparent 0%,
             rgba(255, 255, 255, 0.2) 10%,
-            rgba(255, 255, 255, 0.5) 30%, 
-            rgba(255, 255, 255, 0.8) 50%, 
-            rgba(255, 255, 255, 0.5) 70%, 
+            rgba(255, 255, 255, 0.5) 30%,
+            rgba(255, 255, 255, 0.8) 50%,
+            rgba(255, 255, 255, 0.5) 70%,
             rgba(255, 255, 255, 0.2) 90%,
             transparent 100%);
         }
