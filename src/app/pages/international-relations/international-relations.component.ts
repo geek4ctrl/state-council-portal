@@ -376,7 +376,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
       color: #BF9874 !important;
       margin: 0 0 60px 0;
       line-height: 1.7;
-      letter-spacing: 1.5px;
+      letter-spacing: 4.5px;
     }
 
     .section-subtitle.centered {

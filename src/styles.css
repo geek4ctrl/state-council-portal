@@ -795,3 +795,523 @@ img,
 .quick-link-item:hover {
   border-color: rgba(191, 152, 116, 0.4);
 }
+
+/* ═══════════════════════════════════════════════════════════════════
+   GLOBAL 3D ANIMATION SYSTEM
+   Import this file into your global styles.scss or angular.json
+   ═══════════════════════════════════════════════════════════════════ */
+
+/* ━━━━━━━━━━━━━━ KEYFRAMES ━━━━━━━━━━━━━━ */
+
+@keyframes tilt-float {
+  0%, 100% { transform: translateY(0) rotateY(0deg) rotateX(0deg); }
+  50% { transform: translateY(-8px) rotateY(3deg) rotateX(2deg); }
+}
+
+@keyframes icon-bob {
+  0%, 100% { transform: translateY(0) rotateY(0deg); }
+  50% { transform: translateY(-6px) rotateY(12deg); }
+}
+
+@keyframes icon-spin-360 {
+  from { transform: rotateY(0deg); }
+  to { transform: rotateY(360deg); }
+}
+
+@keyframes pulse-ring {
+  0% { transform: scale(1); opacity: 0.7; }
+  100% { transform: scale(2.2); opacity: 0; }
+}
+
+@keyframes shimmer-sweep {
+  from { transform: translateX(-120%) skewX(-20deg); }
+  to { transform: translateX(220%) skewX(-20deg); }
+}
+
+@keyframes card-in-3d {
+  from {
+    opacity: 0;
+    transform: translateY(40px) rotateX(20deg) scale(0.94);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) rotateX(0deg) scale(1);
+  }
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slide-left {
+  from {
+    opacity: 0;
+    transform: translateX(-48px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-right {
+  from {
+    opacity: 0;
+    transform: translateX(48px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes line-expand {
+  from { width: 0; opacity: 0; }
+  to { width: 60px; opacity: 1; }
+}
+
+@keyframes line-expand-center {
+  from { width: 0; opacity: 0; }
+  to { width: 180px; opacity: 1; }
+}
+
+@keyframes glow-pulse {
+  0%, 100% { opacity: 0.6; }
+  50% { opacity: 1; }
+}
+
+@keyframes orbit-dot {
+  from {
+    transform: rotate(0deg) translateX(26px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translateX(26px) rotate(-360deg);
+  }
+}
+
+@keyframes beam-rise {
+  0% { height: 0; opacity: 0; }
+  100% { height: 60%; opacity: 0.4; }
+}
+
+@keyframes dot-wave {
+  from { transform: scale(1); opacity: 0.8; }
+  to { transform: scale(3); opacity: 0; }
+}
+
+@keyframes aurora-shift {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(40px, -30px) scale(1.1); }
+}
+
+@keyframes grid-move {
+  from { background-position: 0 0; }
+  to { background-position: 60px 60px; }
+}
+
+@keyframes scanline {
+  from { background-position: 0 0; }
+  to { background-position: 0 40px; }
+}
+
+@keyframes badge-bob {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-4px); }
+}
+
+@keyframes img-scan-move {
+  from { top: -100%; }
+  to { top: 200%; }
+}
+
+@keyframes neon-flicker {
+  0%, 100% { opacity: 1; }
+  92% { opacity: 1; }
+  93% { opacity: 0.4; }
+  94% { opacity: 1; }
+  96% { opacity: 0.6; }
+  97% { opacity: 1; }
+}
+
+@keyframes ripple-anim {
+  to {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+/* ━━━━━━━━━━━━━━ UTILITY CLASSES ━━━━━━━━━━━━━━ */
+
+/* Entry Animations */
+.anim-fade-in {
+  animation: fade-in 0.7s ease-out both;
+}
+
+.anim-fade-up {
+  opacity: 0;
+  animation: fade-up 0.7s cubic-bezier(0.23, 1, 0.32, 1) both;
+}
+
+.anim-slide-left {
+  opacity: 0;
+  animation: slide-left 0.8s ease-out both;
+}
+
+.anim-slide-right {
+  opacity: 0;
+  animation: slide-right 0.8s ease-out both;
+}
+
+.anim-card-in {
+  opacity: 0;
+  animation: card-in-3d 0.7s cubic-bezier(0.23, 1, 0.32, 1) both;
+}
+
+/* Line Animations */
+.anim-line {
+  animation: line-expand 0.8s ease-out both;
+}
+
+.anim-line-center {
+  animation: line-expand-center 0.8s ease-out both;
+}
+
+/* Delays */
+.anim-delay-1 { animation-delay: 0.15s; }
+.anim-delay-2 { animation-delay: 0.3s; }
+.anim-delay-3 { animation-delay: 0.45s; }
+.anim-delay-4 { animation-delay: 0.6s; }
+
+/* ━━━━━━━━━━━━━━ 3D TILT CARD SYSTEM ━━━━━━━━━━━━━━ */
+
+.tilt-card-3d {
+  transform-style: preserve-3d;
+  will-change: transform;
+  transition: transform 0.5s cubic-bezier(0.23, 1, 0.32, 1),
+              box-shadow 0.5s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.tilt-shine {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  z-index: 10;
+  background: linear-gradient(
+    105deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0) 45%,
+    rgba(255, 255, 255, 0.18) 50%,
+    rgba(255, 255, 255, 0) 55%,
+    transparent 100%
+  );
+  transform: translateX(-120%) skewX(-20deg);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.tilt-card-3d:hover .tilt-shine {
+  opacity: 1;
+  animation: shimmer-sweep 0.7s ease forwards;
+}
+
+/* Apply tilt on mousemove with JS:
+   card.addEventListener('mousemove', (e) => {
+     const rect = card.getBoundingClientRect();
+     const dx = (e.clientX - rect.left - rect.width/2) / (rect.width/2);
+     const dy = (e.clientY - rect.top - rect.height/2) / (rect.height/2);
+     const tiltX = -dy * 14;
+     const tiltY = dx * 14;
+     card.style.transform = `perspective(900px) rotateX(${tiltX}deg) rotateY(${tiltY}deg) translateZ(14px)`;
+   });
+*/
+
+/* ━━━━━━━━━━━━━━ MAGNETIC BUTTON ━━━━━━━━━━━━━━ */
+
+.mag-btn {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.25s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+/* Apply magnetic effect on mousemove with JS:
+   btn.addEventListener('mousemove', (e) => {
+     const rect = btn.getBoundingClientRect();
+     const dx = (e.clientX - rect.left - rect.width/2) * 0.4;
+     const dy = (e.clientY - rect.top - rect.height/2) * 0.4;
+     btn.style.transform = `translate(${dx}px, ${dy}px)`;
+   });
+*/
+
+.mag-btn-ring {
+  position: absolute;
+  inset: -2px;
+  border-radius: inherit;
+  background: linear-gradient(135deg, #BF9874, #d4a06a, #BF9874);
+  opacity: 0;
+  z-index: -1;
+  filter: blur(10px);
+  transition: opacity 0.35s ease;
+  pointer-events: none;
+}
+
+.mag-btn:hover .mag-btn-ring {
+  opacity: 0.7;
+}
+
+/* ━━━━━━━━━━━━━━ 3D PUSH BUTTON ━━━━━━━━━━━━━━ */
+
+.btn-3d {
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.25s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.btn-3d-inner {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.3);
+  transform: translateZ(-8px) translateY(8px);
+  border-radius: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-3d-front {
+  position: relative;
+  z-index: 1;
+  display: block;
+}
+
+.btn-3d:hover {
+  transform: translateY(-4px) rotateX(8deg);
+}
+
+.btn-3d:active {
+  transform: translateY(2px) rotateX(-4deg);
+}
+
+/* ━━━━━━━━━━━━━━ RIPPLE EFFECT ━━━━━━━━━━━━━━ */
+
+.ripple-btn {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.ripple-btn::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.35) 0%,
+    transparent 70%
+  );
+  transform: scale(0);
+  opacity: 0;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  pointer-events: none;
+}
+
+.ripple-btn:active::after {
+  transform: scale(2.5);
+  opacity: 1;
+  transition: 0s;
+}
+
+/* ━━━━━━━━━━━━━━ SHIMMER OVERLAY ━━━━━━━━━━━━━━ */
+
+.shimmer-overlay {
+  position: relative;
+  overflow: hidden;
+}
+
+.shimmer-overlay::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    105deg,
+    transparent 40%,
+    rgba(255, 255, 255, 0.2) 50%,
+    transparent 60%
+  );
+  transform: translateX(-120%) skewX(-20deg);
+  pointer-events: none;
+}
+
+.shimmer-overlay:hover::before {
+  animation: shimmer-sweep 0.6s ease forwards;
+}
+
+/* ━━━━━━━━━━━━━━ FLOATING ELEMENTS ━━━━━━━━━━━━━━ */
+
+.float-icon {
+  animation: icon-bob 3.5s ease-in-out infinite;
+}
+
+.float-icon:nth-child(odd) {
+  animation-delay: 0.5s;
+}
+
+.float-card {
+  animation: tilt-float 5s ease-in-out infinite;
+}
+
+/* ━━━━━━━━━━━━━━ GLASS CARD ━━━━━━━━━━━━━━ */
+
+.glass-card {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.62),
+    rgba(255, 255, 255, 0.22)
+  );
+  backdrop-filter: blur(14px) saturate(130%);
+  -webkit-backdrop-filter: blur(14px) saturate(130%);
+  box-shadow: 0 16px 32px rgba(26, 41, 66, 0.14),
+              inset 0 1px 0 rgba(255, 255, 255, 0.5);
+  border: none;
+}
+
+/* ━━━━━━━━━━━━━━ AURORA BACKGROUNDS ━━━━━━━━━━━━━━ */
+
+.aurora-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  pointer-events: none;
+  animation: aurora-shift 10s ease-in-out infinite;
+}
+
+.aurora-orb-1 {
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(
+    circle,
+    rgba(191, 152, 116, 0.18),
+    transparent 70%
+  );
+  animation-duration: 9s;
+}
+
+.aurora-orb-2 {
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(
+    circle,
+    rgba(44, 62, 80, 0.12),
+    transparent 70%
+  );
+  animation-duration: 12s;
+  animation-direction: reverse;
+}
+
+/* ━━━━━━━━━━━━━━ GRID BACKGROUNDS ━━━━━━━━━━━━━━ */
+
+.grid-bg {
+  background-image: linear-gradient(
+      rgba(191, 152, 116, 0.07) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(191, 152, 116, 0.07) 1px,
+      transparent 1px
+    );
+  background-size: 55px 55px;
+  animation: grid-move 5s linear infinite;
+}
+
+/* ━━━━━━━━━━━━━━ SCANLINES ━━━━━━━━━━━━━━ */
+
+.scanlines {
+  background: repeating-linear-gradient(
+    0deg,
+    rgba(191, 152, 116, 0.03) 0,
+    rgba(191, 152, 116, 0.03) 1px,
+    transparent 1px,
+    transparent 40px
+  );
+  animation: scanline 3s linear infinite;
+}
+
+/* ━━━━━━━━━━━━━━ IMAGE EFFECTS ━━━━━━━━━━━━━━ */
+
+.img-zoom {
+  overflow: hidden;
+}
+
+.img-zoom img {
+  transition: transform 0.5s ease;
+}
+
+.img-zoom:hover img {
+  transform: scale(1.1);
+}
+
+.img-sheen {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.3) 0%,
+    transparent 50%
+  );
+  pointer-events: none;
+}
+
+/* ━━━━━━━━━━━━━━ PULSE ANIMATIONS ━━━━━━━━━━━━━━ */
+
+.pulse-glow {
+  animation: glow-pulse 2s ease-in-out infinite;
+}
+
+.pulse-badge {
+  animation: badge-bob 3s ease-in-out infinite;
+}
+
+/* ━━━━━━━━━━━━━━ NEON EFFECTS ━━━━━━━━━━━━━━ */
+
+.neon-flicker {
+  animation: neon-flicker 4s ease-in-out 1s infinite;
+}
+
+/* ━━━━━━━━━━━━━━ RESPONSIVE ━━━━━━━━━━━━━━ */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+@media (max-width: 767px) {
+  /* Disable complex 3D effects on mobile */
+  .tilt-card-3d {
+    transform: none !important;
+  }
+  
+  .tilt-card-3d:hover {
+    transform: translateY(-4px) !important;
+  }
+}
