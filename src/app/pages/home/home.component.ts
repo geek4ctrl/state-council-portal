@@ -11,6 +11,8 @@ import {
   computed
 } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { HttpClient } from '@angular/common/http';
+import { RouterLink } from '@angular/router';
 import { I18nPipe } from '../../i18n/i18n.pipe';
 import { I18nService } from '../../i18n/i18n.service';
 import Highcharts from 'highcharts';
@@ -34,7 +36,7 @@ interface PresidentSlide {
 
 @Component({
   selector: 'app-home',
-  imports: [CommonModule, I18nPipe, FooterComponent],
+  imports: [CommonModule, I18nPipe, FooterComponent, RouterLink],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <div class="page-container">
@@ -468,73 +470,36 @@ interface PresidentSlide {
           </div>
 
           <div class="newsletter-grid">
-            <div class="news-card glass-card">
-              <div class="news-image">
-                <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=800&h=600&fit=crop" [alt]="'home.newsletter.items.1.alt' | i18n">
+            @for (post of newsletterPosts(); track post.id) {
+              <div class="news-card glass-card">
+                <div class="news-image">
+                  <img [src]="post.image" [alt]="post.title" loading="lazy">
+                </div>
+                <div class="news-content">
+                  <p class="news-date">{{ post.date }} | {{ post.category }}</p>
+                  <h3>{{ post.title }}</h3>
+                  @if (post.link) {
+                    <a [href]="post.link" class="read-more-link" target="_blank" rel="noopener noreferrer">
+                      Lire la suite
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                      </svg>
+                    </a>
+                  } @else {
+                    <span class="read-more-link">
+                      Lire la suite
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                      </svg>
+                    </span>
+                  }
+                </div>
               </div>
-              <div class="news-content">
-                <p class="news-date">{{ 'home.newsletter.items.1.date' | i18n }}</p>
-                <h3>{{ 'home.newsletter.items.1.title' | i18n }}</h3>
-                <a href="#" class="read-more-link">
-                  {{ 'home.newsletter.readMore' | i18n }}
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M5 12h14M12 5l7 7-7 7"/>
-                  </svg>
-                </a>
-              </div>
-            </div>
-
-            <div class="news-card glass-card">
-              <div class="news-image">
-                <img src="https://images.unsplash.com/photo-1505664194779-8beaceb93744?w=800&h=600&fit=crop" [alt]="'home.newsletter.items.2.alt' | i18n">
-              </div>
-              <div class="news-content">
-                <p class="news-date">{{ 'home.newsletter.items.2.date' | i18n }}</p>
-                <h3>{{ 'home.newsletter.items.2.title' | i18n }}</h3>
-                <a href="#" class="read-more-link">
-                  {{ 'home.newsletter.readMore' | i18n }}
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M5 12h14M12 5l7 7-7 7"/>
-                  </svg>
-                </a>
-              </div>
-            </div>
-
-            <div class="news-card glass-card">
-              <div class="news-image">
-                <img src="https://images.unsplash.com/photo-1479142506502-19b3a3b7ff33?w=800&h=600&fit=crop" [alt]="'home.newsletter.items.3.alt' | i18n">
-              </div>
-              <div class="news-content">
-                <p class="news-date">{{ 'home.newsletter.items.3.date' | i18n }}</p>
-                <h3>{{ 'home.newsletter.items.3.title' | i18n }}</h3>
-                <a href="#" class="read-more-link">
-                  {{ 'home.newsletter.readMore' | i18n }}
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M5 12h14M12 5l7 7-7 7"/>
-                  </svg>
-                </a>
-              </div>
-            </div>
-
-            <div class="news-card glass-card">
-              <div class="news-image">
-                <img src="https://images.unsplash.com/photo-1521587760476-6c12a4b040da?w=800&h=600&fit=crop" [alt]="'home.newsletter.items.4.alt' | i18n">
-              </div>
-              <div class="news-content">
-                <p class="news-date">{{ 'home.newsletter.items.4.date' | i18n }}</p>
-                <h3>{{ 'home.newsletter.items.4.title' | i18n }}</h3>
-                <a href="#" class="read-more-link">
-                  {{ 'home.newsletter.readMore' | i18n }}
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M5 12h14M12 5l7 7-7 7"/>
-                  </svg>
-                </a>
-              </div>
-            </div>
+            }
           </div>
 
           <div class="newsletter-actions">
-            <button class="newsletter-learn-btn">{{ 'home.newsletter.cta' | i18n }}</button>
+            <a class="newsletter-learn-btn" routerLink="/news">{{ 'home.newsletter.cta' | i18n }}</a>
           </div>
         </div>
       </section>
@@ -2433,7 +2398,10 @@ export class HomeComponent implements OnInit, AfterViewInit {
   };
 
   private readonly i18n = inject(I18nService);
+  private readonly http = inject(HttpClient);
   private readonly destroyRef = inject(DestroyRef);
+  private readonly apiUrl = 'https://patient-wonder-production.up.railway.app/api/posts';
+  private readonly fallbackImage = 'https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=800&h=600&fit=crop';
 
   @ViewChild('caseVolumeChart', { static: true })
   caseVolumeChart!: ElementRef<HTMLDivElement>;
@@ -2448,6 +2416,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
 
   currentSlide = signal(0);
   currentPresidentSlide = signal(0);
+  readonly newsletterPosts = signal<HomeNewsPost[]>([]);
 
   heroSlides: HeroSlide[] = [
     {
@@ -2517,6 +2486,8 @@ export class HomeComponent implements OnInit, AfterViewInit {
     this.presidentSlideIntervalId = window.setInterval(() => {
       this.nextPresidentSlide();
     }, 8000);
+
+    this.loadNewsletterPosts();
 
     this.destroyRef.onDestroy(() => {
       if (this.heroSlideIntervalId !== undefined) {
@@ -2730,4 +2701,79 @@ export class HomeComponent implements OnInit, AfterViewInit {
   goToPresidentSlide(index: number) {
     this.currentPresidentSlide.set(index);
   }
+
+  private loadNewsletterPosts() {
+    this.http.get<PostsResponse>(this.apiUrl).subscribe({
+      next: (response) => {
+        const posts = (response?.posts ?? [])
+          .sort((a, b) => this.getTimestamp(b.date) - this.getTimestamp(a.date))
+          .slice(0, 4)
+          .map((post) => this.mapPostToHomePost(post));
+        this.newsletterPosts.set(posts);
+      },
+      error: () => {
+        this.newsletterPosts.set([]);
+      }
+    });
+  }
+
+  private mapPostToHomePost(post: ApiPost): HomeNewsPost {
+    const title = post.title?.trim() || 'Untitled';
+    const category = post.category?.trim() || 'General';
+    const image = post.image_url?.trim() || this.fallbackImage;
+    return {
+      id: post.id,
+      title,
+      category,
+      image,
+      date: this.formatDate(post.date),
+      link: post.external_link?.trim() || undefined
+    };
+  }
+
+  private formatDate(dateValue?: string | null): string {
+    if (!dateValue) {
+      return '';
+    }
+    const parsed = new Date(dateValue);
+    if (Number.isNaN(parsed.getTime())) {
+      return '';
+    }
+    const lang = this.i18n.activeLang();
+    return new Intl.DateTimeFormat(lang, {
+      day: '2-digit',
+      month: 'short',
+      year: 'numeric'
+    }).format(parsed);
+  }
+
+  private getTimestamp(dateValue?: string | null): number {
+    if (!dateValue) {
+      return 0;
+    }
+    const parsed = new Date(dateValue);
+    return Number.isNaN(parsed.getTime()) ? 0 : parsed.getTime();
+  }
 }
+
+type ApiPost = {
+  id: number;
+  title?: string | null;
+  category?: string | null;
+  image_url?: string | null;
+  date?: string | null;
+  external_link?: string | null;
+};
+
+type PostsResponse = {
+  posts?: ApiPost[];
+};
+
+type HomeNewsPost = {
+  id: number;
+  title: string;
+  category: string;
+  image: string;
+  date: string;
+  link?: string;
+};
