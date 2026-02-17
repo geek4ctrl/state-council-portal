@@ -11,10 +11,12 @@ import {
   computed
 } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { HttpClient } from '@angular/common/http';
 import { SkeletonLoaderComponent } from '../../components/skeleton-loader/skeleton-loader.component';
 import { IconComponent } from '../../components/icon/icon.component';
 import { SeoService } from '../../services/seo.service';
 import { I18nPipe } from '../../i18n/i18n.pipe';
+import { I18nService } from '../../i18n/i18n.service';
 import Highcharts from 'highcharts';
 import { FooterComponent } from '../../components/footer/footer.component';
 
@@ -94,20 +96,27 @@ import { FooterComponent } from '../../components/footer/footer.component';
               @for (article of getCurrentPageArticles(); track article.id) {
                 <article class="news-card glass-card">
                   <div class="news-image">
-                    <img [src]="article.image" [alt]="article.titleKey | i18n" loading="lazy">
+                    <img [src]="article.image" [alt]="article.title" loading="lazy">
                   </div>
                   <div class="news-content">
                     <div class="news-meta">
-                      <span class="news-date">{{ article.dateKey | i18n }}</span>
+                      <span class="news-date">{{ article.date }}</span>
                       <span class="news-divider">|</span>
-                      <span class="news-category">{{ article.categoryKey | i18n }}</span>
+                      <span class="news-category">{{ article.category }}</span>
                     </div>
-                    <h3 class="news-title">{{ article.titleKey | i18n }}</h3>
-                    <p class="news-excerpt">{{ article.excerptKey | i18n }}</p>
-                    <a href="#" class="read-more">
-                      {{ 'news.actions.readMore' | i18n }}
-                      <app-icon name="arrow-right" [size]="16"></app-icon>
-                    </a>
+                    <h3 class="news-title">{{ article.title }}</h3>
+                    <p class="news-excerpt">{{ article.excerpt }}</p>
+                    @if (article.link) {
+                      <a [href]="article.link" class="read-more" target="_blank" rel="noopener noreferrer">
+                        Lire la suite
+                        <app-icon name="arrow-right" [size]="16"></app-icon>
+                      </a>
+                    } @else {
+                      <span class="read-more">
+                        Lire la suite
+                        <app-icon name="arrow-right" [size]="16"></app-icon>
+                      </span>
+                    }
                   </div>
                 </article>
               }
@@ -122,35 +131,21 @@ import { FooterComponent } from '../../components/footer/footer.component';
               (click)="goToPreviousPage()"
               [attr.aria-label]="'news.pagination.previous' | i18n">
               <app-icon name="chevron-down" [size]="20" [customClass]="'rotate-90'" [attr.aria-hidden]="true"></app-icon>
-              Previous
+              {{ 'news.pagination.previous' | i18n }}
             </button>
+            @for (page of pageNumbers(); track page) {
+              <button
+                class="pagination-number"
+                [class.active]="currentPage() === page"
+                (click)="goToPage(page)"
+                [attr.aria-current]="currentPage() === page ? 'page' : null"
+                [attr.aria-label]="'news.pagination.pageLabel' | i18n : { page }">
+                {{ page }}
+              </button>
+            }
             <button
-              class="pagination-number"
-              [class.active]="currentPage() === 1"
-              (click)="goToPage(1)"
-              [attr.aria-current]="currentPage() === 1 ? 'page' : null"
-              [attr.aria-label]="'news.pagination.pageLabel' | i18n : { page: 1 }">
-              1
-            </button>
-            <button
-              class="pagination-number"
-              [class.active]="currentPage() === 2"
-              (click)="goToPage(2)"
-              [attr.aria-current]="currentPage() === 2 ? 'page' : null"
-              [attr.aria-label]="'news.pagination.pageLabel' | i18n : { page: 2 }">
-              2
-            </button>
-            <button
-              class="pagination-number"
-              [class.active]="currentPage() === 3"
-              (click)="goToPage(3)"
-              [attr.aria-current]="currentPage() === 3 ? 'page' : null"
-              [attr.aria-label]="'news.pagination.pageLabel' | i18n : { page: 3 }">
-              3
-            </button>
-            <button 
-              class="pagination-btn next-btn" 
-              [disabled]="currentPage() === totalPages"
+              class="pagination-btn next-btn"
+              [disabled]="currentPage() === totalPages()"
               (click)="goToNextPage()"
               [attr.aria-label]="'news.pagination.next' | i18n">
               <span class="next-text">{{ 'news.pagination.next' | i18n }}</span>
@@ -641,9 +636,13 @@ import { FooterComponent } from '../../components/footer/footer.component';
 })
 export class NewsComponent implements OnInit, AfterViewInit {
   private seoService = inject(SeoService);
+  private readonly http = inject(HttpClient);
+  private readonly i18n = inject(I18nService);
   private readonly destroyRef = inject(DestroyRef);
   private chartInstances: Highcharts.Chart[] = [];
   private resizeObserver?: ResizeObserver;
+  private readonly apiUrl = 'https://patient-wonder-production.up.railway.app/api/posts';
+  private readonly fallbackImage = 'https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=800&h=600&fit=crop';
   private readonly handleVisibilityChange = () => {
     if (!document.hidden) {
       this.reflowCharts();
@@ -658,8 +657,10 @@ export class NewsComponent implements OnInit, AfterViewInit {
 
   currentPage = signal(1);
   isLoading = signal(true);
-  totalPages = 3;
-  itemsPerPage = 3;
+  itemsPerPage = 6;
+  private readonly articles = signal<NewsArticle[]>([]);
+  readonly totalPages = computed(() => Math.max(1, Math.ceil(this.articles().length / this.itemsPerPage)));
+  readonly pageNumbers = computed(() => Array.from({ length: this.totalPages() }, (_, index) => index + 1));
 
   ngOnInit() {
     this.seoService.updateMetadata({
@@ -669,9 +670,7 @@ export class NewsComponent implements OnInit, AfterViewInit {
       ogUrl: '/news'
     });
 
-    setTimeout(() => {
-      this.isLoading.set(false);
-    }, 1500);
+    this.loadNews();
   }
 
   ngAfterViewInit() {
@@ -809,89 +808,14 @@ export class NewsComponent implements OnInit, AfterViewInit {
     ];
   }
 
-  allNewsArticles = [
-    {
-      id: 1,
-      dateKey: 'news.articles.1.date',
-      categoryKey: 'news.articles.1.category',
-      titleKey: 'news.articles.1.title',
-      excerptKey: 'news.articles.1.excerpt',
-      image: 'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=800&h=600&fit=crop'
-    },
-    {
-      id: 2,
-      dateKey: 'news.articles.2.date',
-      categoryKey: 'news.articles.2.category',
-      titleKey: 'news.articles.2.title',
-      excerptKey: 'news.articles.2.excerpt',
-      image: 'https://images.unsplash.com/photo-1505664194779-8beaceb93744?w=800&h=600&fit=crop'
-    },
-    {
-      id: 3,
-      dateKey: 'news.articles.3.date',
-      categoryKey: 'news.articles.3.category',
-      titleKey: 'news.articles.3.title',
-      excerptKey: 'news.articles.3.excerpt',
-      image: 'https://images.unsplash.com/photo-1479142506502-19b3a3b7ff33?w=800&h=600&fit=crop'
-    },
-    {
-      id: 4,
-      dateKey: 'news.articles.1.date',
-      categoryKey: 'news.articles.1.category',
-      titleKey: 'news.articles.1.title',
-      excerptKey: 'news.articles.1.excerpt',
-      image: 'https://images.unsplash.com/photo-1521587760476-6c12a4b040da?w=800&h=600&fit=crop'
-    },
-    {
-      id: 5,
-      dateKey: 'news.articles.2.date',
-      categoryKey: 'news.articles.2.category',
-      titleKey: 'news.articles.2.title',
-      excerptKey: 'news.articles.2.excerpt',
-      image: 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&h=600&fit=crop'
-    },
-    {
-      id: 6,
-      dateKey: 'news.articles.3.date',
-      categoryKey: 'news.articles.3.category',
-      titleKey: 'news.articles.3.title',
-      excerptKey: 'news.articles.3.excerpt',
-      image: 'https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=800&h=600&fit=crop'
-    },
-    {
-      id: 7,
-      dateKey: 'news.articles.1.date',
-      categoryKey: 'news.articles.1.category',
-      titleKey: 'news.articles.1.title',
-      excerptKey: 'news.articles.1.excerpt',
-      image: 'https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=800&h=600&fit=crop'
-    },
-    {
-      id: 8,
-      dateKey: 'news.articles.2.date',
-      categoryKey: 'news.articles.2.category',
-      titleKey: 'news.articles.2.title',
-      excerptKey: 'news.articles.2.excerpt',
-      image: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=800&h=600&fit=crop'
-    },
-    {
-      id: 9,
-      dateKey: 'news.articles.3.date',
-      categoryKey: 'news.articles.3.category',
-      titleKey: 'news.articles.3.title',
-      excerptKey: 'news.articles.3.excerpt',
-      image: 'https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=800&h=600&fit=crop'
-    }
-  ];
-
   getCurrentPageArticles() {
     const startIndex = (this.currentPage() - 1) * this.itemsPerPage;
     const endIndex = startIndex + this.itemsPerPage;
-    return this.allNewsArticles.slice(startIndex, endIndex);
+    return this.articles().slice(startIndex, endIndex);
   }
 
   goToPage(page: number) {
-    if (page >= 1 && page <= this.totalPages) {
+    if (page >= 1 && page <= this.totalPages()) {
       this.currentPage.set(page);
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
@@ -904,8 +828,95 @@ export class NewsComponent implements OnInit, AfterViewInit {
   }
 
   goToNextPage() {
-    if (this.currentPage() < this.totalPages) {
+    if (this.currentPage() < this.totalPages()) {
       this.goToPage(this.currentPage() + 1);
     }
   }
+
+  private loadNews() {
+    this.isLoading.set(true);
+    this.http.get<PostsResponse>(this.apiUrl).subscribe({
+      next: (response) => {
+        const posts = (response?.posts ?? [])
+          .sort((a, b) => this.getTimestamp(b.date) - this.getTimestamp(a.date))
+          .map((post) => this.mapPostToArticle(post));
+
+        this.articles.set(posts);
+        if (this.currentPage() > this.totalPages()) {
+          this.currentPage.set(1);
+        }
+        this.isLoading.set(false);
+      },
+      error: () => {
+        this.articles.set([]);
+        this.isLoading.set(false);
+      }
+    });
+  }
+
+  private mapPostToArticle(post: ApiPost): NewsArticle {
+    const title = post.title?.trim() || 'Untitled';
+    const excerpt = post.excerpt?.trim() || post.content?.trim() || '';
+    const category = post.category?.trim() || 'General';
+    const image = post.image_url?.trim() || this.fallbackImage;
+    return {
+      id: post.id,
+      title,
+      excerpt,
+      category,
+      image,
+      date: this.formatDate(post.date),
+      link: post.external_link?.trim() || undefined
+    };
+  }
+
+  private formatDate(dateValue?: string | null): string {
+    if (!dateValue) {
+      return '';
+    }
+    const parsed = new Date(dateValue);
+    if (Number.isNaN(parsed.getTime())) {
+      return '';
+    }
+    const lang = this.i18n.activeLang();
+    return new Intl.DateTimeFormat(lang, {
+      day: '2-digit',
+      month: 'short',
+      year: 'numeric'
+    }).format(parsed);
+  }
+
+  private getTimestamp(dateValue?: string | null): number {
+    if (!dateValue) {
+      return 0;
+    }
+    const parsed = new Date(dateValue);
+    return Number.isNaN(parsed.getTime()) ? 0 : parsed.getTime();
+  }
 }
+
+type ApiPost = {
+  id: number;
+  title?: string | null;
+  content?: string | null;
+  excerpt?: string | null;
+  category?: string | null;
+  image_url?: string | null;
+  date?: string | null;
+  external_link?: string | null;
+  status?: string | null;
+};
+
+type PostsResponse = {
+  posts?: ApiPost[];
+};
+
+type NewsArticle = {
+  id: number;
+  title: string;
+  excerpt: string;
+  category: string;
+  image: string;
+  date: string;
+  link?: string;
+};
