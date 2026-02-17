@@ -31,7 +31,7 @@ type HighchartsStatic = typeof import('highcharts');
       <!-- Hero Section -->
       <section class="hero-section">
         <div class="container">
-          <h1 class="hero-title" [innerHTML]="'organization.hero.title' | i18n"></h1>
+          <h1 class="hero-content-left" [innerHTML]="'organization.hero.title' | i18n"></h1>
         </div>
       </section>
 
@@ -403,13 +403,21 @@ type HighchartsStatic = typeof import('highcharts');
       min-height: 100vh;
       background: #0a1929;
     }
-
+  .hero-content-left {
+      font-size: 3.5rem;
+      font-weight: 700 !important;
+      line-height: 1.2;
+      margin: 0;
+      letter-spacing: 2px;
+      color: #ffffff !important;
+      text-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+    }
     .container {
       max-width: 1200px;
       margin: 0 auto;
       padding: 0 20px;
     }
-
+ 
     /* Hero Section */
     .hero-section {
       position: relative;
