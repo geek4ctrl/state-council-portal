@@ -6,7 +6,11 @@
 </main>
 
 <nav class="mobile-nav" aria-label="Mobile navigation">
-  <a class="mobile-nav-item" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+  <a
+    class="mobile-nav-item"
+    routerLink="/"
+    [class.active]="isRouteActive('/')"
+    [attr.aria-current]="isRouteActive('/') ? 'page' : null">
     <span class="mobile-nav-icon" aria-hidden="true">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
         <path d="M3 11.5L12 4l9 7.5" />
@@ -16,7 +20,11 @@
     </span>
     <span class="mobile-nav-label">{{ 'mobileNav.home' | i18n }}</span>
   </a>
-  <a class="mobile-nav-item" routerLink="/organization" routerLinkActive="active">
+  <a
+    class="mobile-nav-item"
+    routerLink="/organization"
+    [class.active]="isRouteActive('/organization')"
+    [attr.aria-current]="isRouteActive('/organization') ? 'page' : null">
     <span class="mobile-nav-icon" aria-hidden="true">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
         <rect x="3" y="3" width="7" height="7" rx="2" />
@@ -30,7 +38,6 @@
   <a
     class="mobile-nav-item"
     routerLink="/filing"
-    routerLinkActive="active"
     [class.active]="isFilingActive()"
     [attr.aria-current]="isFilingActive() ? 'page' : null">
     <span class="mobile-nav-icon" aria-hidden="true">
@@ -42,7 +49,11 @@
     </span>
     <span class="mobile-nav-label">{{ 'mobileNav.apply' | i18n }}</span>
   </a>
-  <a class="mobile-nav-item" routerLink="/news" routerLinkActive="active">
+  <a
+    class="mobile-nav-item"
+    routerLink="/news"
+    [class.active]="isRouteActive('/news')"
+    [attr.aria-current]="isRouteActive('/news') ? 'page' : null">
     <span class="mobile-nav-icon" aria-hidden="true">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
         <path d="M6 4h11a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z" />

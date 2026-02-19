@@ -14,6 +14,15 @@ export class App {
 
   constructor(private readonly router: Router) {}
 
+  isRouteActive(path: string): boolean {
+    return this.router.isActive(path, {
+      paths: 'exact',
+      queryParams: 'ignored',
+      fragment: 'ignored',
+      matrixParams: 'ignored'
+    });
+  }
+
   isFilingActive(): boolean {
     return this.router.url.startsWith('/steps') || this.router.url.startsWith('/filing');
   }
