@@ -808,6 +808,9 @@ interface PresidentSlide {
     .key-fact-card {
       border-radius: 16px;
       padding: 18px 18px 12px;
+      border: 1px solid rgba(26, 41, 66, 0.08);
+      box-shadow: 0 18px 36px rgba(26, 41, 66, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.7);
+      background: linear-gradient(165deg, rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.7));
     }
 
     .key-fact-meta {
@@ -824,13 +827,14 @@ interface PresidentSlide {
       color: #1a1a1a;
       margin: 0;
       text-align: left;
+      letter-spacing: 0.3px;
     }
 
     .key-fact-note {
       font-size: 0.75rem;
       color: #BF9874;
       text-transform: uppercase;
-      letter-spacing: 1px;
+      letter-spacing: 1.5px;
       font-weight: 600;
       white-space: nowrap;
     }
@@ -1031,6 +1035,66 @@ interface PresidentSlide {
       padding: 25px;
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
       text-align: left;
+      position: relative;
+      border-radius: 14px;
+      overflow: hidden;
+    }
+
+    .offer-card::before {
+      content: '';
+      position: absolute;
+      inset: -2px;
+      border-radius: 16px;
+      background:
+        conic-gradient(from 180deg,
+          rgba(191, 152, 116, 0.0),
+          rgba(191, 152, 116, 0.65),
+          rgba(44, 62, 80, 0.85),
+          rgba(191, 152, 116, 0.65),
+          rgba(191, 152, 116, 0.0));
+      opacity: 0.55;
+      filter: blur(6px);
+      animation: lightning-border 7s linear infinite;
+      pointer-events: none;
+    }
+
+    .offer-card:hover::before {
+      opacity: 0.95;
+      filter: blur(3px) saturate(1.15);
+      animation: lightning-border 7s linear infinite, lightning-pulse 1.6s ease-in-out infinite;
+    }
+
+    @keyframes lightning-pulse {
+      0%,
+      100% {
+        opacity: 0.8;
+      }
+      50% {
+        opacity: 1;
+      }
+    }
+
+    .offer-card::after {
+      content: '';
+      position: absolute;
+      inset: 1px;
+      border-radius: 13px;
+      background: white;
+      z-index: 0;
+    }
+
+    .offer-card > * {
+      position: relative;
+      z-index: 1;
+    }
+
+    @keyframes lightning-border {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
     }
 
     .offer-card-header {
@@ -1147,6 +1211,12 @@ interface PresidentSlide {
       margin: 0 auto;
     }
 
+    @property --float-y {
+      syntax: '<length>';
+      inherits: false;
+      initial-value: 0px;
+    }
+
     .practice-card {
       --accent: #BF9874;
       padding: 34px 30px;
@@ -1164,12 +1234,13 @@ interface PresidentSlide {
       color: inherit;
       position: relative;
       opacity: 0;
-      transform: translateY(12px);
-      animation: expertise-rise 0.6s ease forwards;
+      --float-y: 0px;
+      transform: translateY(calc(12px + var(--float-y))) scale(0.96);
+      animation: expertise-rise 0.6s ease forwards, practice-float 6.5s ease-in-out infinite 0.8s;
     }
 
     .practice-card:hover {
-      transform: translateY(-6px);
+      transform: translateY(calc(-6px + var(--float-y))) scale(1.01);
       box-shadow: 0 16px 36px rgba(0, 0, 0, 0.18);
       border-color: rgba(191, 152, 116, 0.55);
     }
@@ -1189,12 +1260,29 @@ interface PresidentSlide {
       display: flex;
       align-items: center;
       justify-content: center;
+      transition: transform 0.35s ease, box-shadow 0.35s ease;
+    }
+
+    .practice-card:hover .practice-icon {
+      transform: translateY(-3px) rotate(-2deg);
+      box-shadow: 0 10px 20px rgba(15, 15, 15, 0.12);
     }
 
     .practice-icon svg {
       width: 32px;
       height: 32px;
     }
+
+    @keyframes practice-float {
+      0%,
+      100% {
+        --float-y: 0px;
+      }
+      50% {
+        --float-y: -6px;
+      }
+    }
+
 
     .practice-header {
       display: flex;
@@ -1290,7 +1378,7 @@ interface PresidentSlide {
     @keyframes expertise-rise {
       to {
         opacity: 1;
-        transform: translateY(0);
+        transform: translateY(0) scale(1);
       }
     }
 
@@ -1363,6 +1451,23 @@ interface PresidentSlide {
       border: 1px solid rgba(255, 255, 255, 0.7);
       background: #fff;
       height: 520px;
+      position: relative;
+    }
+
+    .president-image-wrapper::after {
+      content: '';
+      position: absolute;
+      inset: -40% -80% auto -80%;
+      height: 120%;
+      background: linear-gradient(
+        105deg,
+        transparent 30%,
+        rgba(255, 255, 255, 0.55) 48%,
+        transparent 60%
+      );
+      transform: translateX(-120%);
+      animation: president-sweep 2.8s ease 0.6s 1 both;
+      pointer-events: none;
     }
 
     .president-image-wrapper img {
@@ -1371,6 +1476,7 @@ interface PresidentSlide {
       object-fit: cover;
       display: block;
       transform: scale(1.01);
+      animation: president-image-in 0.7s ease both;
     }
 
     .president-text {
@@ -1395,6 +1501,9 @@ interface PresidentSlide {
       position: relative;
       padding-bottom: 14px;
       text-align: left;
+      opacity: 0;
+      transform: translateY(10px);
+      animation: president-text-in 0.6s ease 0.15s both;
     }
 
     .president-text h2::after {
@@ -1417,6 +1526,21 @@ interface PresidentSlide {
       -webkit-box-orient: vertical;
       overflow: hidden;
       text-align: left;
+      opacity: 0;
+      transform: translateY(10px);
+      animation: president-text-in 0.6s ease both;
+    }
+
+    .president-text p:nth-of-type(1) {
+      animation-delay: 0.25s;
+    }
+
+    .president-text p:nth-of-type(2) {
+      animation-delay: 0.33s;
+    }
+
+    .president-text p:nth-of-type(3) {
+      animation-delay: 0.41s;
     }
 
     .president-learn-btn {
@@ -1435,6 +1559,9 @@ interface PresidentSlide {
       transition: all 0.3s ease;
       border-radius: 999px;
       align-self: flex-start;
+      opacity: 0;
+      transform: translateY(10px);
+      animation: president-text-in 0.6s ease 0.5s both;
     }
 
     .president-learn-btn:hover {
@@ -1446,6 +1573,9 @@ interface PresidentSlide {
       display: flex;
       gap: 12px;
       margin-top: 25px;
+      opacity: 0;
+      transform: translateY(10px);
+      animation: president-text-in 0.6s ease 0.6s both;
     }
 
     .pagination-dot {
@@ -1461,6 +1591,39 @@ interface PresidentSlide {
 
     .pagination-dot.active {
       background-color: #BF9874;
+      transform: scale(1.1);
+    }
+
+    @keyframes president-image-in {
+      from {
+        opacity: 0;
+        transform: scale(1.03);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1.01);
+      }
+    }
+
+    @keyframes president-text-in {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes president-sweep {
+      from {
+        transform: translateX(-140%);
+        opacity: 0;
+      }
+      20% {
+        opacity: 0.6;
+      }
+      to {
+        transform: translateX(140%);
+        opacity: 0;
+      }
     }
 
     /* Newsletter */
@@ -2511,6 +2674,21 @@ interface PresidentSlide {
       .quick-links-container {
         animation: none;
       }
+
+      .offer-card::before {
+        animation: none;
+      }
+
+      .president-image-wrapper::after,
+      .president-image-wrapper img,
+      .president-text h2,
+      .president-text p,
+      .president-learn-btn,
+      .president-pagination {
+        animation: none;
+        opacity: 1;
+        transform: none;
+      }
     }
   `]
 })
@@ -2658,8 +2836,8 @@ export class HomeComponent implements OnInit, AfterViewInit {
 
   private renderKeyFactsCharts() {
     const baseAxisLabelStyle = {
-      color: '#4b5563',
-      fontSize: '12px',
+      color: '#5b6472',
+      fontSize: '11px',
       fontWeight: '600'
     };
 
@@ -2676,18 +2854,30 @@ export class HomeComponent implements OnInit, AfterViewInit {
       xAxis: {
         categories: ['Sep', 'Oct', 'Nov', 'Dec', 'Jan', 'Feb'],
         labels: { style: baseAxisLabelStyle },
-        lineColor: 'rgba(26, 41, 66, 0.2)',
-        tickColor: 'rgba(26, 41, 66, 0.2)'
+        lineColor: 'rgba(26, 41, 66, 0.15)',
+        tickColor: 'rgba(26, 41, 66, 0.15)',
+        tickLength: 0
       },
       yAxis: {
         title: { text: undefined },
         labels: { style: baseAxisLabelStyle },
-        gridLineColor: 'rgba(26, 41, 66, 0.12)'
+        gridLineColor: 'rgba(26, 41, 66, 0.08)'
       },
       tooltip: {
-        backgroundColor: '#1a2942',
-        style: { color: '#ffffff' },
-        borderColor: '#1a2942'
+        backgroundColor: 'rgba(26, 41, 66, 0.95)',
+        style: { color: '#ffffff', fontSize: '12px' },
+        borderColor: 'rgba(26, 41, 66, 0.95)',
+        borderRadius: 10,
+        shadow: true
+      },
+      plotOptions: {
+        series: {
+          animation: { duration: 600 }
+        },
+        column: {
+          borderWidth: 0,
+          borderRadius: 6
+        }
       },
       series: [
         {
@@ -2713,19 +2903,30 @@ export class HomeComponent implements OnInit, AfterViewInit {
       xAxis: {
         categories: ['Q1', 'Q2', 'Q3', 'Q4'],
         labels: { style: baseAxisLabelStyle },
-        lineColor: 'rgba(26, 41, 66, 0.2)',
-        tickColor: 'rgba(26, 41, 66, 0.2)'
+        lineColor: 'rgba(26, 41, 66, 0.15)',
+        tickColor: 'rgba(26, 41, 66, 0.15)',
+        tickLength: 0
       },
       yAxis: {
         title: { text: undefined },
         labels: { style: baseAxisLabelStyle },
-        gridLineColor: 'rgba(26, 41, 66, 0.12)'
+        gridLineColor: 'rgba(26, 41, 66, 0.08)'
       },
       tooltip: {
-        backgroundColor: '#1a2942',
-        style: { color: '#ffffff' },
-        borderColor: '#1a2942',
+        backgroundColor: 'rgba(26, 41, 66, 0.95)',
+        style: { color: '#ffffff', fontSize: '12px' },
+        borderColor: 'rgba(26, 41, 66, 0.95)',
+        borderRadius: 10,
+        shadow: true,
         valueSuffix: ' days'
+      },
+      plotOptions: {
+        series: {
+          animation: { duration: 600 }
+        },
+        line: {
+          lineWidth: 2
+        }
       },
       series: [
         {
@@ -2733,7 +2934,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
           name: 'Processing time',
           data: [92, 84, 76, 68],
           color: '#b8754d',
-          marker: { radius: 4 }
+          marker: { radius: 3 }
         }
       ]
     };
@@ -2753,12 +2954,17 @@ export class HomeComponent implements OnInit, AfterViewInit {
         itemStyle: { color: '#1f2937', fontWeight: '600', fontSize: '12px' }
       },
       tooltip: {
-        backgroundColor: '#1a2942',
-        style: { color: '#ffffff' },
-        borderColor: '#1a2942',
+        backgroundColor: 'rgba(26, 41, 66, 0.95)',
+        style: { color: '#ffffff', fontSize: '12px' },
+        borderColor: 'rgba(26, 41, 66, 0.95)',
+        borderRadius: 10,
+        shadow: true,
         pointFormat: '<b>{point.percentage:.0f}%</b>'
       },
       plotOptions: {
+        series: {
+          animation: { duration: 600 }
+        },
         pie: {
           innerSize: '55%',
           dataLabels: { enabled: false }
@@ -2789,9 +2995,9 @@ export class HomeComponent implements OnInit, AfterViewInit {
           name: 'Decisions',
           data: [
             { name: 'Civil', y: 38, color: '#BF9874' },
-            { name: 'Public', y: 27, color: '#4e6a8a' },
-            { name: 'Labor', y: 18, color: '#a45858' },
-            { name: 'Other', y: 17, color: '#7f6b4a' }
+            { name: 'Public', y: 27, color: '#5b7391' },
+            { name: 'Labor', y: 18, color: '#a96a6a' },
+            { name: 'Other', y: 17, color: '#8b7a5e' }
           ]
         }
       ]
