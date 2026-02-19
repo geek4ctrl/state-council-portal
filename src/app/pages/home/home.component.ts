@@ -2233,7 +2233,25 @@ interface PresidentSlide {
       }
 
       .key-fact-chart {
-        height: 230px;
+        height: 210px;
+      }
+
+      .key-facts-section {
+        padding: 50px 0 36px;
+      }
+
+      .key-fact-card {
+        padding: 16px;
+      }
+
+      .key-fact-meta {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+      }
+
+      .key-fact-note {
+        white-space: normal;
       }
 
       .quick-links-section {
@@ -2430,6 +2448,22 @@ interface PresidentSlide {
 
       .key-facts-grid {
         grid-template-columns: 1fr;
+      }
+
+      .key-fact-card {
+        padding: 14px 14px 10px;
+      }
+
+      .key-fact-meta h3 {
+        font-size: 0.95rem;
+      }
+
+      .key-fact-note {
+        font-size: 0.7rem;
+      }
+
+      .key-fact-chart {
+        height: 190px;
       }
 
       .quick-links-section {
