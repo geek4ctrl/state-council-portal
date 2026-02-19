@@ -143,51 +143,100 @@ interface PresidentSlide {
       <!-- Info Cards Section -->
       <section class="quick-links-section">
         <div class="container">
-          <div class="quick-links-container">
-            <div class="quick-link-item glass-card">
-              <div class="quick-link-icon non-border">
+          <div class="quick-links-marquee">
+            <div class="quick-links-container">
+              <div class="quick-link-item glass-card">
+                <div class="quick-link-icon non-border">
 
-                <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=120&h=120&fit=crop" [alt]="'home.quickLinks.items.report.alt' | i18n">              </div>
-              <div class="quick-link-content">
-                <h3>{{ 'home.quickLinks.items.news.title' | i18n }}</h3>
-                <p>{{ 'home.quickLinks.items.news.body' | i18n }}</p>
-                <a href="#" class="quick-link-action">{{ 'home.quickLinks.items.news.action' | i18n }}</a>
+                  <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=120&h=120&fit=crop" [alt]="'home.quickLinks.items.report.alt' | i18n">              </div>
+                <div class="quick-link-content">
+                  <h3>{{ 'home.quickLinks.items.news.title' | i18n }}</h3>
+                  <p>{{ 'home.quickLinks.items.news.body' | i18n }}</p>
+                  <a href="#" class="quick-link-action">{{ 'home.quickLinks.items.news.action' | i18n }}</a>
+                </div>
+                <div class="connector-line"></div>
               </div>
-              <div class="connector-line"></div>
-            </div>
 
-            <div class="quick-link-item glass-card">
-              <div class="quick-link-icon non-border">
-                <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=120&h=120&fit=crop" [alt]="'home.quickLinks.items.excerpts.alt' | i18n">
+              <div class="quick-link-item glass-card">
+                <div class="quick-link-icon non-border">
+                  <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=120&h=120&fit=crop" [alt]="'home.quickLinks.items.excerpts.alt' | i18n">
+                </div>
+                <div class="quick-link-content">
+                  <h3>{{ 'home.quickLinks.items.excerpts.title' | i18n }}</h3>
+                  <p>{{ 'home.quickLinks.items.excerpts.body' | i18n }}</p>
+                  <a href="#" class="quick-link-action">{{ 'home.quickLinks.items.excerpts.action' | i18n }}</a>
+                </div>
+                <div class="connector-line"></div>
               </div>
-              <div class="quick-link-content">
-                <h3>{{ 'home.quickLinks.items.excerpts.title' | i18n }}</h3>
-                <p>{{ 'home.quickLinks.items.excerpts.body' | i18n }}</p>
-                <a href="#" class="quick-link-action">{{ 'home.quickLinks.items.excerpts.action' | i18n }}</a>
-              </div>
-              <div class="connector-line"></div>
-            </div>
 
-            <div class="quick-link-item glass-card">
-              <div class="quick-link-icon non-border">
-                <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=120&h=120&fit=crop" [alt]="'home.quickLinks.items.report.alt' | i18n">
+              <div class="quick-link-item glass-card">
+                <div class="quick-link-icon non-border">
+                  <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=120&h=120&fit=crop" [alt]="'home.quickLinks.items.report.alt' | i18n">
+                </div>
+                <div class="quick-link-content">
+                  <h3>{{ 'home.quickLinks.items.report.title' | i18n }}</h3>
+                  <p>{{ 'home.quickLinks.items.report.body' | i18n }}</p>
+                  <a href="#" class="quick-link-action">{{ 'home.quickLinks.items.report.action' | i18n }}</a>
+                </div>
+                <div class="connector-line"></div>
               </div>
-              <div class="quick-link-content">
-                <h3>{{ 'home.quickLinks.items.report.title' | i18n }}</h3>
-                <p>{{ 'home.quickLinks.items.report.body' | i18n }}</p>
-                <a href="#" class="quick-link-action">{{ 'home.quickLinks.items.report.action' | i18n }}</a>
-              </div>
-              <div class="connector-line"></div>
-            </div>
 
-            <div class="quick-link-item glass-card">
-              <div class="quick-link-icon non-border">
-                <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=120&h=120&fit=crop" [alt]="'home.quickLinks.items.appointment.alt' | i18n">
+              <div class="quick-link-item glass-card">
+                <div class="quick-link-icon non-border">
+                  <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=120&h=120&fit=crop" [alt]="'home.quickLinks.items.appointment.alt' | i18n">
+                </div>
+                <div class="quick-link-content">
+                  <h3>{{ 'home.quickLinks.items.appointment.title' | i18n }}</h3>
+                  <p>{{ 'home.quickLinks.items.appointment.body' | i18n }}</p>
+                  <a href="#" class="quick-link-action">{{ 'home.quickLinks.items.appointment.action' | i18n }}</a>
+                </div>
               </div>
-              <div class="quick-link-content">
-                <h3>{{ 'home.quickLinks.items.appointment.title' | i18n }}</h3>
-                <p>{{ 'home.quickLinks.items.appointment.body' | i18n }}</p>
-                <a href="#" class="quick-link-action">{{ 'home.quickLinks.items.appointment.action' | i18n }}</a>
+
+              <div class="quick-link-item glass-card" aria-hidden="true">
+                <div class="quick-link-icon non-border">
+
+                  <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=120&h=120&fit=crop" [alt]="''">              </div>
+                <div class="quick-link-content">
+                  <h3>{{ 'home.quickLinks.items.news.title' | i18n }}</h3>
+                  <p>{{ 'home.quickLinks.items.news.body' | i18n }}</p>
+                  <a href="#" class="quick-link-action" tabindex="-1" aria-hidden="true">{{ 'home.quickLinks.items.news.action' | i18n }}</a>
+                </div>
+                <div class="connector-line"></div>
+              </div>
+
+              <div class="quick-link-item glass-card" aria-hidden="true">
+                <div class="quick-link-icon non-border">
+                  <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=120&h=120&fit=crop" [alt]="''">
+                </div>
+                <div class="quick-link-content">
+                  <h3>{{ 'home.quickLinks.items.excerpts.title' | i18n }}</h3>
+                  <p>{{ 'home.quickLinks.items.excerpts.body' | i18n }}</p>
+                  <a href="#" class="quick-link-action" tabindex="-1" aria-hidden="true">{{ 'home.quickLinks.items.excerpts.action' | i18n }}</a>
+                </div>
+                <div class="connector-line"></div>
+              </div>
+
+              <div class="quick-link-item glass-card" aria-hidden="true">
+                <div class="quick-link-icon non-border">
+                  <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=120&h=120&fit=crop" [alt]="''">
+                </div>
+                <div class="quick-link-content">
+                  <h3>{{ 'home.quickLinks.items.report.title' | i18n }}</h3>
+                  <p>{{ 'home.quickLinks.items.report.body' | i18n }}</p>
+                  <a href="#" class="quick-link-action" tabindex="-1" aria-hidden="true">{{ 'home.quickLinks.items.report.action' | i18n }}</a>
+                </div>
+                <div class="connector-line"></div>
+              </div>
+
+              <div class="quick-link-item glass-card" aria-hidden="true">
+                <div class="quick-link-icon non-border">
+                  <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=120&h=120&fit=crop" [alt]="''">
+                </div>
+                <div class="quick-link-content">
+                  <h3>{{ 'home.quickLinks.items.appointment.title' | i18n }}</h3>
+                  <p>{{ 'home.quickLinks.items.appointment.body' | i18n }}</p>
+                  <a href="#" class="quick-link-action" tabindex="-1" aria-hidden="true">{{ 'home.quickLinks.items.appointment.action' | i18n }}</a>
+                </div>
               </div>
             </div>
           </div>
@@ -469,33 +518,61 @@ interface PresidentSlide {
             <div class="header-line"></div>
           </div>
 
-          <div class="newsletter-grid">
-            @for (post of newsletterPosts(); track post.id) {
-              <div class="news-card glass-card">
-                <div class="news-image">
-                  <img [src]="post.image" [alt]="post.title" loading="lazy">
+          <div class="newsletter-grid" role="region" aria-label="Newsletter updates">
+            <div class="newsletter-track">
+              @for (post of newsletterPosts(); track post.id) {
+                <div class="news-card glass-card">
+                  <div class="news-image">
+                    <img [src]="post.image" [alt]="post.title" loading="lazy">
+                  </div>
+                  <div class="news-content">
+                    <p class="news-date">{{ post.date }} | {{ post.category }}</p>
+                    <h3>{{ post.title }}</h3>
+                    @if (post.link) {
+                      <a [href]="post.link" class="read-more-link" target="_blank" rel="noopener noreferrer">
+                        Lire la suite
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                          <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                      </a>
+                    } @else {
+                      <span class="read-more-link">
+                        Lire la suite
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                          <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                      </span>
+                    }
+                  </div>
                 </div>
-                <div class="news-content">
-                  <p class="news-date">{{ post.date }} | {{ post.category }}</p>
-                  <h3>{{ post.title }}</h3>
-                  @if (post.link) {
-                    <a [href]="post.link" class="read-more-link" target="_blank" rel="noopener noreferrer">
-                      Lire la suite
-                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M5 12h14M12 5l7 7-7 7"/>
-                      </svg>
-                    </a>
-                  } @else {
-                    <span class="read-more-link">
-                      Lire la suite
-                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M5 12h14M12 5l7 7-7 7"/>
-                      </svg>
-                    </span>
-                  }
+              }
+              @for (post of newsletterPosts(); track post.id + '-clone') {
+                <div class="news-card glass-card" aria-hidden="true">
+                  <div class="news-image">
+                    <img [src]="post.image" [alt]="''" loading="lazy">
+                  </div>
+                  <div class="news-content">
+                    <p class="news-date">{{ post.date }} | {{ post.category }}</p>
+                    <h3>{{ post.title }}</h3>
+                    @if (post.link) {
+                      <a [href]="post.link" class="read-more-link" tabindex="-1" aria-hidden="true">
+                        Lire la suite
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                          <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                      </a>
+                    } @else {
+                      <span class="read-more-link" aria-hidden="true">
+                        Lire la suite
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                          <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                      </span>
+                    }
+                  </div>
                 </div>
-              </div>
-            }
+              }
+            </div>
           </div>
 
           <div class="newsletter-actions">
@@ -731,6 +808,9 @@ interface PresidentSlide {
     .key-fact-card {
       border-radius: 16px;
       padding: 18px 18px 12px;
+      border: 1px solid rgba(26, 41, 66, 0.08);
+      box-shadow: 0 18px 36px rgba(26, 41, 66, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.7);
+      background: linear-gradient(165deg, rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.7));
     }
 
     .key-fact-meta {
@@ -747,13 +827,14 @@ interface PresidentSlide {
       color: #1a1a1a;
       margin: 0;
       text-align: left;
+      letter-spacing: 0.3px;
     }
 
     .key-fact-note {
       font-size: 0.75rem;
       color: #BF9874;
       text-transform: uppercase;
-      letter-spacing: 1px;
+      letter-spacing: 1.5px;
       font-weight: 600;
       white-space: nowrap;
     }
@@ -770,51 +851,99 @@ interface PresidentSlide {
 
     /* Quick Links Section */
     .quick-links-section {
-      background: #ECECF1;
+      background:
+        radial-gradient(circle at 15% 20%, rgba(255, 255, 255, 0.65), transparent 45%),
+        linear-gradient(180deg, #f2f3f7 0%, #ececf1 100%);
       color: black;
-      padding: 32px 0;
-      border-top: 1px solid rgba(255, 255, 255, 0.18);
-      border-bottom: 1px solid rgba(255, 255, 255, 0.18);
-      backdrop-filter: blur(18px) saturate(140%);
-      -webkit-backdrop-filter: blur(18px) saturate(140%);
-      --glass-bg: linear-gradient(135deg, rgba(255, 255, 255, 0.24), rgba(255, 255, 255, 0.06));
-      --glass-shadow: 0 14px 28px rgba(9, 16, 40, 0.22), inset 0 1px 0 rgba(255, 255, 255, 0.35);
+      padding: 44px 0;
+      border-top: 1px solid rgba(255, 255, 255, 0.35);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.35);
+      backdrop-filter: blur(18px) saturate(135%);
+      -webkit-backdrop-filter: blur(18px) saturate(135%);
+      --glass-bg: linear-gradient(135deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.16));
+      --glass-shadow: 0 10px 22px rgba(9, 16, 40, 0.14), inset 0 1px 0 rgba(255, 255, 255, 0.6);
+      --quick-link-width: 284px;
+    }
+
+    .quick-links-marquee {
+      overflow: hidden;
+      position: relative;
+    }
+
+    .quick-links-marquee::before,
+    .quick-links-marquee::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 40px;
+      z-index: 2;
+      pointer-events: none;
+    }
+
+    .quick-links-marquee::before {
+      left: 0;
+      background: linear-gradient(90deg, #ececf1 0%, rgba(236, 236, 241, 0) 100%);
+    }
+
+    .quick-links-marquee::after {
+      right: 0;
+      background: linear-gradient(270deg, #ececf1 0%, rgba(236, 236, 241, 0) 100%);
     }
 
     .quick-links-container {
       display: flex;
       align-items: stretch;
-      justify-content: space-between;
-      gap: 10px;
+      gap: 18px;
+      width: max-content;
+      animation: quick-links-marquee 30s linear infinite;
+      will-change: transform;
+    }
+
+    .quick-links-marquee:hover .quick-links-container,
+    .quick-links-marquee:focus-within .quick-links-container {
+      animation-play-state: paused;
     }
 
     .quick-link-item {
       display: flex;
       align-items: stretch;
       gap: 12px;
-      flex: 1;
+      flex: 0 0 var(--quick-link-width);
       position: relative;
-      padding: 10px 12px;
-      border-radius: 14px;
-      transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+      padding: 12px 14px;
+      border-radius: 18px;
+      border: 1px solid rgba(26, 41, 66, 0.05);
+      background: linear-gradient(160deg, rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.72));
+      box-shadow: 0 12px 22px rgba(9, 16, 40, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.65);
+      transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .quick-link-item::after {
+      content: '';
+      position: absolute;
+      inset: 0.5px;
+      border-radius: 17px;
+      border: 1px solid rgba(255, 255, 255, 0.7);
+      pointer-events: none;
     }
 
     .quick-link-item:hover {
-      transform: translateY(-4px);
-      border-color: rgba(191, 152, 116, 0.4);
-      box-shadow: 0 18px 34px rgba(9, 16, 40, 0.26), inset 0 1px 0 rgba(255, 255, 255, 0.45);
+      transform: translateY(-3px);
+      border-color: rgba(191, 152, 116, 0.32);
+      box-shadow: 0 18px 30px rgba(9, 16, 40, 0.16), inset 0 1px 0 rgba(255, 255, 255, 0.7);
     }
 
     .quick-link-icon {
-      width: 64px;
+      width: 60px;
       height: 100%;
       flex-shrink: 0;
-      border-radius: 14px;
+      border-radius: 12px;
       overflow: hidden;
-      background-color: rgba(255, 255, 255, 0.6);
+      background: linear-gradient(150deg, rgba(255, 255, 255, 0.96), rgba(255, 255, 255, 0.75));
       align-self: stretch;
-      border: 1px solid rgba(255, 255, 255, 0.35);
-      box-shadow: 0 10px 18px rgba(7, 12, 28, 0.22);
+      border: 1px solid rgba(255, 255, 255, 0.6);
+      box-shadow: 0 8px 14px rgba(7, 12, 28, 0.14);
     }
 
     .quick-link-icon img {
@@ -832,32 +961,32 @@ interface PresidentSlide {
     }
 
     .quick-link-content h3 {
-      font-size: 0.75rem;
+      font-size: 0.72rem;
       font-weight: 800;
-      color: #1a1a1a;
+      color: #273243;
       margin-bottom: 8px;
       text-transform: uppercase;
-      letter-spacing: 0.7px;
+      letter-spacing: 1.1px;
       line-height: 1.25;
       text-align: left;
     }
 
     .quick-link-content p {
-      font-size: 0.78rem;
-      color: #4b5563;
-      line-height: 1.55;
+      font-size: 0.8rem;
+      color: #667085;
+      line-height: 1.6;
       margin-bottom: 6px;
       text-align: left;
     }
 
     .quick-link-action {
-      color: #1a2942;
+      color: #273243;
       font-size: 0.75rem;
-      font-weight: 700;
+      font-weight: 600;
       display: inline-flex;
       align-items: center;
       text-decoration: underline;
-      text-decoration-thickness: 2px;
+      text-decoration-thickness: 1px;
       text-underline-offset: 4px;
       text-transform: capitalize;
       margin-top: auto;
@@ -873,6 +1002,15 @@ interface PresidentSlide {
       margin: 0 12px;
       flex-shrink: 0;
       opacity: 0.35;
+    }
+
+    @keyframes quick-links-marquee {
+      from {
+        transform: translateX(0);
+      }
+      to {
+        transform: translateX(-50%);
+      }
     }
 
     /* What We Offer */
@@ -933,6 +1071,66 @@ interface PresidentSlide {
       padding: 25px;
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
       text-align: left;
+      position: relative;
+      border-radius: 14px;
+      overflow: hidden;
+    }
+
+    .offer-card::before {
+      content: '';
+      position: absolute;
+      inset: -2px;
+      border-radius: 16px;
+      background:
+        conic-gradient(from 180deg,
+          rgba(191, 152, 116, 0.0),
+          rgba(191, 152, 116, 0.65),
+          rgba(44, 62, 80, 0.85),
+          rgba(191, 152, 116, 0.65),
+          rgba(191, 152, 116, 0.0));
+      opacity: 0.55;
+      filter: blur(6px);
+      animation: lightning-border 7s linear infinite;
+      pointer-events: none;
+    }
+
+    .offer-card:hover::before {
+      opacity: 0.95;
+      filter: blur(3px) saturate(1.15);
+      animation: lightning-border 7s linear infinite, lightning-pulse 1.6s ease-in-out infinite;
+    }
+
+    @keyframes lightning-pulse {
+      0%,
+      100% {
+        opacity: 0.8;
+      }
+      50% {
+        opacity: 1;
+      }
+    }
+
+    .offer-card::after {
+      content: '';
+      position: absolute;
+      inset: 1px;
+      border-radius: 13px;
+      background: white;
+      z-index: 0;
+    }
+
+    .offer-card > * {
+      position: relative;
+      z-index: 1;
+    }
+
+    @keyframes lightning-border {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
     }
 
     .offer-card-header {
@@ -1049,6 +1247,12 @@ interface PresidentSlide {
       margin: 0 auto;
     }
 
+    @property --float-y {
+      syntax: '<length>';
+      inherits: false;
+      initial-value: 0px;
+    }
+
     .practice-card {
       --accent: #BF9874;
       padding: 34px 30px;
@@ -1066,12 +1270,13 @@ interface PresidentSlide {
       color: inherit;
       position: relative;
       opacity: 0;
-      transform: translateY(12px);
-      animation: expertise-rise 0.6s ease forwards;
+      --float-y: 0px;
+      transform: translateY(calc(12px + var(--float-y))) scale(0.96);
+      animation: expertise-rise 0.6s ease forwards, practice-float 6.5s ease-in-out infinite 0.8s;
     }
 
     .practice-card:hover {
-      transform: translateY(-6px);
+      transform: translateY(calc(-6px + var(--float-y))) scale(1.01);
       box-shadow: 0 16px 36px rgba(0, 0, 0, 0.18);
       border-color: rgba(191, 152, 116, 0.55);
     }
@@ -1091,12 +1296,29 @@ interface PresidentSlide {
       display: flex;
       align-items: center;
       justify-content: center;
+      transition: transform 0.35s ease, box-shadow 0.35s ease;
+    }
+
+    .practice-card:hover .practice-icon {
+      transform: translateY(-3px) rotate(-2deg);
+      box-shadow: 0 10px 20px rgba(15, 15, 15, 0.12);
     }
 
     .practice-icon svg {
       width: 32px;
       height: 32px;
     }
+
+    @keyframes practice-float {
+      0%,
+      100% {
+        --float-y: 0px;
+      }
+      50% {
+        --float-y: -6px;
+      }
+    }
+
 
     .practice-header {
       display: flex;
@@ -1192,7 +1414,7 @@ interface PresidentSlide {
     @keyframes expertise-rise {
       to {
         opacity: 1;
-        transform: translateY(0);
+        transform: translateY(0) scale(1);
       }
     }
 
@@ -1265,6 +1487,23 @@ interface PresidentSlide {
       border: 1px solid rgba(255, 255, 255, 0.7);
       background: #fff;
       height: 520px;
+      position: relative;
+    }
+
+    .president-image-wrapper::after {
+      content: '';
+      position: absolute;
+      inset: -40% -80% auto -80%;
+      height: 120%;
+      background: linear-gradient(
+        105deg,
+        transparent 30%,
+        rgba(255, 255, 255, 0.55) 48%,
+        transparent 60%
+      );
+      transform: translateX(-120%);
+      animation: president-sweep 2.8s ease 0.6s 1 both;
+      pointer-events: none;
     }
 
     .president-image-wrapper img {
@@ -1273,6 +1512,7 @@ interface PresidentSlide {
       object-fit: cover;
       display: block;
       transform: scale(1.01);
+      animation: president-image-in 0.7s ease both;
     }
 
     .president-text {
@@ -1297,6 +1537,9 @@ interface PresidentSlide {
       position: relative;
       padding-bottom: 14px;
       text-align: left;
+      opacity: 0;
+      transform: translateY(10px);
+      animation: president-text-in 0.6s ease 0.15s both;
     }
 
     .president-text h2::after {
@@ -1319,6 +1562,21 @@ interface PresidentSlide {
       -webkit-box-orient: vertical;
       overflow: hidden;
       text-align: left;
+      opacity: 0;
+      transform: translateY(10px);
+      animation: president-text-in 0.6s ease both;
+    }
+
+    .president-text p:nth-of-type(1) {
+      animation-delay: 0.25s;
+    }
+
+    .president-text p:nth-of-type(2) {
+      animation-delay: 0.33s;
+    }
+
+    .president-text p:nth-of-type(3) {
+      animation-delay: 0.41s;
     }
 
     .president-learn-btn {
@@ -1337,6 +1595,9 @@ interface PresidentSlide {
       transition: all 0.3s ease;
       border-radius: 999px;
       align-self: flex-start;
+      opacity: 0;
+      transform: translateY(10px);
+      animation: president-text-in 0.6s ease 0.5s both;
     }
 
     .president-learn-btn:hover {
@@ -1348,6 +1609,9 @@ interface PresidentSlide {
       display: flex;
       gap: 12px;
       margin-top: 25px;
+      opacity: 0;
+      transform: translateY(10px);
+      animation: president-text-in 0.6s ease 0.6s both;
     }
 
     .pagination-dot {
@@ -1363,6 +1627,39 @@ interface PresidentSlide {
 
     .pagination-dot.active {
       background-color: #BF9874;
+      transform: scale(1.1);
+    }
+
+    @keyframes president-image-in {
+      from {
+        opacity: 0;
+        transform: scale(1.03);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1.01);
+      }
+    }
+
+    @keyframes president-text-in {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes president-sweep {
+      from {
+        transform: translateX(-140%);
+        opacity: 0;
+      }
+      20% {
+        opacity: 0.6;
+      }
+      to {
+        transform: translateX(140%);
+        opacity: 0;
+      }
     }
 
     /* Newsletter */
@@ -1418,11 +1715,24 @@ interface PresidentSlide {
     }
 
     .newsletter-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 26px;
+      --news-card-width: 300px;
+      overflow: hidden;
       margin-bottom: 50px;
       margin-top: 60px;
+      padding-bottom: 10px;
+    }
+
+    .newsletter-track {
+      display: flex;
+      gap: 26px;
+      width: max-content;
+      animation: newsletter-marquee 36s linear infinite;
+      will-change: transform;
+    }
+
+    .newsletter-grid:hover .newsletter-track,
+    .newsletter-grid:focus-within .newsletter-track {
+      animation-play-state: paused;
     }
 
     .news-card {
@@ -1433,6 +1743,16 @@ interface PresidentSlide {
       display: flex;
       flex-direction: column;
       border: none;
+      flex: 0 0 var(--news-card-width);
+    }
+
+    @keyframes newsletter-marquee {
+      from {
+        transform: translateX(0);
+      }
+      to {
+        transform: translateX(-50%);
+      }
     }
 
     .news-card:hover {
@@ -1751,7 +2071,7 @@ interface PresidentSlide {
       }
 
       .newsletter-grid {
-        grid-template-columns: repeat(2, 1fr);
+        --news-card-width: 280px;
       }
 
       .president-content {
@@ -1783,10 +2103,8 @@ interface PresidentSlide {
         height: 42px;
       }
 
-      .quick-links-container {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
+      .quick-links-section {
+        --quick-link-width: 240px;
       }
 
       .connector-line {
@@ -1918,21 +2236,23 @@ interface PresidentSlide {
         height: 230px;
       }
 
-      .quick-links-container {
-        grid-template-columns: 1fr;
-        gap: 15px;
+      .quick-links-section {
+        --quick-link-width: 220px;
       }
 
       .quick-link-icon {
-        width: 60px;
+        width: 54px;
       }
 
       .quick-link-content h3 {
-        font-size: 0.7rem;
+        font-size: 0.68rem;
+        margin-bottom: 6px;
       }
 
       .quick-link-content p {
-        font-size: 0.75rem;
+        font-size: 0.72rem;
+        line-height: 1.45;
+        margin-bottom: 4px;
       }
 
       .offer-section,
@@ -2020,7 +2340,7 @@ interface PresidentSlide {
       }
 
       .newsletter-grid {
-        grid-template-columns: 1fr;
+        --news-card-width: 260px;
         gap: 25px;
         margin-top: 40px;
       }
@@ -2112,25 +2432,28 @@ interface PresidentSlide {
         grid-template-columns: 1fr;
       }
 
-      .quick-links-container {
-        grid-template-columns: 1fr;
+      .quick-links-section {
+        --quick-link-width: 200px;
       }
 
       .quick-link-item {
-        padding: 12px;
-        gap: 12px;
+        padding: 10px 12px;
+        gap: 10px;
       }
 
       .quick-link-icon {
-        width: 50px;
+        width: 46px;
       }
 
       .quick-link-content h3 {
-        font-size: 0.65rem;
+        font-size: 0.62rem;
+        margin-bottom: 5px;
       }
 
       .quick-link-content p {
-        font-size: 0.7rem;
+        font-size: 0.66rem;
+        line-height: 1.4;
+        margin-bottom: 4px;
       }
 
       .quick-link-action {
@@ -2267,6 +2590,7 @@ interface PresidentSlide {
       }
 
       .newsletter-grid {
+        --news-card-width: 230px;
         margin-top: 30px;
         gap: 20px;
       }
@@ -2384,6 +2708,29 @@ interface PresidentSlide {
       .newsletter-learn-btn {
         transition: none;
       }
+
+      .newsletter-track {
+        animation: none;
+      }
+
+      .quick-links-container {
+        animation: none;
+      }
+
+      .offer-card::before {
+        animation: none;
+      }
+
+      .president-image-wrapper::after,
+      .president-image-wrapper img,
+      .president-text h2,
+      .president-text p,
+      .president-learn-btn,
+      .president-pagination {
+        animation: none;
+        opacity: 1;
+        transform: none;
+      }
     }
   `]
 })
@@ -2411,6 +2758,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
 
   @ViewChild('decisionsTypeChart', { static: true })
   decisionsTypeChart!: ElementRef<HTMLDivElement>;
+
 
   private chartInstances: Highcharts.Chart[] = [];
 
@@ -2530,8 +2878,8 @@ export class HomeComponent implements OnInit, AfterViewInit {
 
   private renderKeyFactsCharts() {
     const baseAxisLabelStyle = {
-      color: '#4b5563',
-      fontSize: '12px',
+      color: '#5b6472',
+      fontSize: '11px',
       fontWeight: '600'
     };
 
@@ -2548,18 +2896,30 @@ export class HomeComponent implements OnInit, AfterViewInit {
       xAxis: {
         categories: ['Sep', 'Oct', 'Nov', 'Dec', 'Jan', 'Feb'],
         labels: { style: baseAxisLabelStyle },
-        lineColor: 'rgba(26, 41, 66, 0.2)',
-        tickColor: 'rgba(26, 41, 66, 0.2)'
+        lineColor: 'rgba(26, 41, 66, 0.15)',
+        tickColor: 'rgba(26, 41, 66, 0.15)',
+        tickLength: 0
       },
       yAxis: {
         title: { text: undefined },
         labels: { style: baseAxisLabelStyle },
-        gridLineColor: 'rgba(26, 41, 66, 0.12)'
+        gridLineColor: 'rgba(26, 41, 66, 0.08)'
       },
       tooltip: {
-        backgroundColor: '#1a2942',
-        style: { color: '#ffffff' },
-        borderColor: '#1a2942'
+        backgroundColor: 'rgba(26, 41, 66, 0.95)',
+        style: { color: '#ffffff', fontSize: '12px' },
+        borderColor: 'rgba(26, 41, 66, 0.95)',
+        borderRadius: 10,
+        shadow: true
+      },
+      plotOptions: {
+        series: {
+          animation: { duration: 600 }
+        },
+        column: {
+          borderWidth: 0,
+          borderRadius: 6
+        }
       },
       series: [
         {
@@ -2585,19 +2945,30 @@ export class HomeComponent implements OnInit, AfterViewInit {
       xAxis: {
         categories: ['Q1', 'Q2', 'Q3', 'Q4'],
         labels: { style: baseAxisLabelStyle },
-        lineColor: 'rgba(26, 41, 66, 0.2)',
-        tickColor: 'rgba(26, 41, 66, 0.2)'
+        lineColor: 'rgba(26, 41, 66, 0.15)',
+        tickColor: 'rgba(26, 41, 66, 0.15)',
+        tickLength: 0
       },
       yAxis: {
         title: { text: undefined },
         labels: { style: baseAxisLabelStyle },
-        gridLineColor: 'rgba(26, 41, 66, 0.12)'
+        gridLineColor: 'rgba(26, 41, 66, 0.08)'
       },
       tooltip: {
-        backgroundColor: '#1a2942',
-        style: { color: '#ffffff' },
-        borderColor: '#1a2942',
+        backgroundColor: 'rgba(26, 41, 66, 0.95)',
+        style: { color: '#ffffff', fontSize: '12px' },
+        borderColor: 'rgba(26, 41, 66, 0.95)',
+        borderRadius: 10,
+        shadow: true,
         valueSuffix: ' days'
+      },
+      plotOptions: {
+        series: {
+          animation: { duration: 600 }
+        },
+        line: {
+          lineWidth: 2
+        }
       },
       series: [
         {
@@ -2605,7 +2976,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
           name: 'Processing time',
           data: [92, 84, 76, 68],
           color: '#b8754d',
-          marker: { radius: 4 }
+          marker: { radius: 3 }
         }
       ]
     };
@@ -2625,12 +2996,17 @@ export class HomeComponent implements OnInit, AfterViewInit {
         itemStyle: { color: '#1f2937', fontWeight: '600', fontSize: '12px' }
       },
       tooltip: {
-        backgroundColor: '#1a2942',
-        style: { color: '#ffffff' },
-        borderColor: '#1a2942',
+        backgroundColor: 'rgba(26, 41, 66, 0.95)',
+        style: { color: '#ffffff', fontSize: '12px' },
+        borderColor: 'rgba(26, 41, 66, 0.95)',
+        borderRadius: 10,
+        shadow: true,
         pointFormat: '<b>{point.percentage:.0f}%</b>'
       },
       plotOptions: {
+        series: {
+          animation: { duration: 600 }
+        },
         pie: {
           innerSize: '55%',
           dataLabels: { enabled: false }
@@ -2661,9 +3037,9 @@ export class HomeComponent implements OnInit, AfterViewInit {
           name: 'Decisions',
           data: [
             { name: 'Civil', y: 38, color: '#BF9874' },
-            { name: 'Public', y: 27, color: '#4e6a8a' },
-            { name: 'Labor', y: 18, color: '#a45858' },
-            { name: 'Other', y: 17, color: '#7f6b4a' }
+            { name: 'Public', y: 27, color: '#5b7391' },
+            { name: 'Labor', y: 18, color: '#a96a6a' },
+            { name: 'Other', y: 17, color: '#8b7a5e' }
           ]
         }
       ]
