@@ -2361,6 +2361,34 @@ interface PresidentSlide {
         --news-card-width: 260px;
         gap: 25px;
         margin-top: 40px;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        padding-bottom: 16px;
+        margin-bottom: 30px;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-color: rgba(191, 152, 116, 0.35) transparent;
+      }
+
+      .newsletter-grid::-webkit-scrollbar {
+        height: 6px;
+      }
+
+      .newsletter-grid::-webkit-scrollbar-thumb {
+        background: rgba(191, 152, 116, 0.35);
+        border-radius: 999px;
+      }
+
+      .newsletter-track {
+        animation: none;
+        width: auto;
+      }
+
+      .news-card {
+        scroll-snap-align: start;
+      }
+
+      .news-card[aria-hidden="true"] {
+        display: none;
       }
 
       .news-content {
