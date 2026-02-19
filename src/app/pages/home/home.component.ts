@@ -851,26 +851,50 @@ interface PresidentSlide {
 
     /* Quick Links Section */
     .quick-links-section {
-      background: #ECECF1;
+      background:
+        radial-gradient(circle at 15% 20%, rgba(255, 255, 255, 0.65), transparent 45%),
+        linear-gradient(180deg, #f2f3f7 0%, #ececf1 100%);
       color: black;
-      padding: 32px 0;
-      border-top: 1px solid rgba(255, 255, 255, 0.18);
-      border-bottom: 1px solid rgba(255, 255, 255, 0.18);
-      backdrop-filter: blur(18px) saturate(140%);
-      -webkit-backdrop-filter: blur(18px) saturate(140%);
-      --glass-bg: linear-gradient(135deg, rgba(255, 255, 255, 0.24), rgba(255, 255, 255, 0.06));
-      --glass-shadow: 0 14px 28px rgba(9, 16, 40, 0.22), inset 0 1px 0 rgba(255, 255, 255, 0.35);
-      --quick-link-width: 260px;
+      padding: 44px 0;
+      border-top: 1px solid rgba(255, 255, 255, 0.35);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.35);
+      backdrop-filter: blur(18px) saturate(135%);
+      -webkit-backdrop-filter: blur(18px) saturate(135%);
+      --glass-bg: linear-gradient(135deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.16));
+      --glass-shadow: 0 10px 22px rgba(9, 16, 40, 0.14), inset 0 1px 0 rgba(255, 255, 255, 0.6);
+      --quick-link-width: 284px;
     }
 
     .quick-links-marquee {
       overflow: hidden;
+      position: relative;
+    }
+
+    .quick-links-marquee::before,
+    .quick-links-marquee::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 40px;
+      z-index: 2;
+      pointer-events: none;
+    }
+
+    .quick-links-marquee::before {
+      left: 0;
+      background: linear-gradient(90deg, #ececf1 0%, rgba(236, 236, 241, 0) 100%);
+    }
+
+    .quick-links-marquee::after {
+      right: 0;
+      background: linear-gradient(270deg, #ececf1 0%, rgba(236, 236, 241, 0) 100%);
     }
 
     .quick-links-container {
       display: flex;
       align-items: stretch;
-      gap: 12px;
+      gap: 18px;
       width: max-content;
       animation: quick-links-marquee 30s linear infinite;
       will-change: transform;
@@ -887,27 +911,39 @@ interface PresidentSlide {
       gap: 12px;
       flex: 0 0 var(--quick-link-width);
       position: relative;
-      padding: 10px 12px;
-      border-radius: 14px;
-      transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+      padding: 12px 14px;
+      border-radius: 18px;
+      border: 1px solid rgba(26, 41, 66, 0.05);
+      background: linear-gradient(160deg, rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.72));
+      box-shadow: 0 12px 22px rgba(9, 16, 40, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.65);
+      transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .quick-link-item::after {
+      content: '';
+      position: absolute;
+      inset: 0.5px;
+      border-radius: 17px;
+      border: 1px solid rgba(255, 255, 255, 0.7);
+      pointer-events: none;
     }
 
     .quick-link-item:hover {
-      transform: translateY(-4px);
-      border-color: rgba(191, 152, 116, 0.4);
-      box-shadow: 0 18px 34px rgba(9, 16, 40, 0.26), inset 0 1px 0 rgba(255, 255, 255, 0.45);
+      transform: translateY(-3px);
+      border-color: rgba(191, 152, 116, 0.32);
+      box-shadow: 0 18px 30px rgba(9, 16, 40, 0.16), inset 0 1px 0 rgba(255, 255, 255, 0.7);
     }
 
     .quick-link-icon {
-      width: 64px;
+      width: 60px;
       height: 100%;
       flex-shrink: 0;
-      border-radius: 14px;
+      border-radius: 12px;
       overflow: hidden;
-      background-color: rgba(255, 255, 255, 0.6);
+      background: linear-gradient(150deg, rgba(255, 255, 255, 0.96), rgba(255, 255, 255, 0.75));
       align-self: stretch;
-      border: 1px solid rgba(255, 255, 255, 0.35);
-      box-shadow: 0 10px 18px rgba(7, 12, 28, 0.22);
+      border: 1px solid rgba(255, 255, 255, 0.6);
+      box-shadow: 0 8px 14px rgba(7, 12, 28, 0.14);
     }
 
     .quick-link-icon img {
@@ -925,32 +961,32 @@ interface PresidentSlide {
     }
 
     .quick-link-content h3 {
-      font-size: 0.75rem;
+      font-size: 0.72rem;
       font-weight: 800;
-      color: #1a1a1a;
+      color: #273243;
       margin-bottom: 8px;
       text-transform: uppercase;
-      letter-spacing: 0.7px;
+      letter-spacing: 1.1px;
       line-height: 1.25;
       text-align: left;
     }
 
     .quick-link-content p {
-      font-size: 0.78rem;
-      color: #4b5563;
-      line-height: 1.55;
+      font-size: 0.8rem;
+      color: #667085;
+      line-height: 1.6;
       margin-bottom: 6px;
       text-align: left;
     }
 
     .quick-link-action {
-      color: #1a2942;
+      color: #273243;
       font-size: 0.75rem;
-      font-weight: 700;
+      font-weight: 600;
       display: inline-flex;
       align-items: center;
       text-decoration: underline;
-      text-decoration-thickness: 2px;
+      text-decoration-thickness: 1px;
       text-underline-offset: 4px;
       text-transform: capitalize;
       margin-top: auto;
@@ -2205,15 +2241,18 @@ interface PresidentSlide {
       }
 
       .quick-link-icon {
-        width: 60px;
+        width: 54px;
       }
 
       .quick-link-content h3 {
-        font-size: 0.7rem;
+        font-size: 0.68rem;
+        margin-bottom: 6px;
       }
 
       .quick-link-content p {
-        font-size: 0.75rem;
+        font-size: 0.72rem;
+        line-height: 1.45;
+        margin-bottom: 4px;
       }
 
       .offer-section,
@@ -2398,20 +2437,23 @@ interface PresidentSlide {
       }
 
       .quick-link-item {
-        padding: 12px;
-        gap: 12px;
+        padding: 10px 12px;
+        gap: 10px;
       }
 
       .quick-link-icon {
-        width: 50px;
+        width: 46px;
       }
 
       .quick-link-content h3 {
-        font-size: 0.65rem;
+        font-size: 0.62rem;
+        margin-bottom: 5px;
       }
 
       .quick-link-content p {
-        font-size: 0.7rem;
+        font-size: 0.66rem;
+        line-height: 1.4;
+        margin-bottom: 4px;
       }
 
       .quick-link-action {
