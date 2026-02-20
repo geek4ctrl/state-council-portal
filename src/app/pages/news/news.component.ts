@@ -92,6 +92,11 @@ import { FooterComponent } from '../../components/footer/footer.component';
               @for (item of [1, 2, 3]; track item) {
                 <app-skeleton-loader type="news-card"></app-skeleton-loader>
               }
+            } @else if (articles().length === 0) {
+              <div class="news-empty" role="status" aria-live="polite">
+                <h3>{{ 'news.empty.title' | i18n }}</h3>
+                <p>{{ 'news.empty.body' | i18n }}</p>
+              </div>
             } @else {
               @for (article of getCurrentPageArticles(); track article.id) {
                 <article class="news-card glass-card">
@@ -340,7 +345,8 @@ import { FooterComponent } from '../../components/footer/footer.component';
 
     .insight-chart {
       width: 100%;
-      height: 250px;
+      height: clamp(180px, 45vw, 260px);
+      overflow: hidden;
     }
 
     .news-grid {
@@ -348,6 +354,31 @@ import { FooterComponent } from '../../components/footer/footer.component';
       grid-template-columns: repeat(3, 1fr);
       gap: 30px;
       margin-bottom: 50px;
+    }
+
+    .news-empty {
+      grid-column: 1 / -1;
+      text-align: center;
+      padding: 48px 24px;
+      border: 1px solid rgba(26, 41, 66, 0.12);
+      border-radius: 6px;
+      background: #ffffff;
+      box-shadow: 0 12px 26px rgba(26, 41, 66, 0.12);
+    }
+
+    .news-empty h3 {
+      margin: 0 0 10px 0;
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #1a1a1a;
+      letter-spacing: 0.5px;
+    }
+
+    .news-empty p {
+      margin: 0;
+      font-size: 0.9rem;
+      color: #666;
+      line-height: 1.6;
     }
 
     .news-card {
@@ -483,6 +514,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
       align-items: center;
       justify-content: center;
       gap: 8px;
+      min-width: 160px;
     }
 
     .pagination-btn:disabled {
@@ -511,14 +543,11 @@ import { FooterComponent } from '../../components/footer/footer.component';
       color: #BF9874;
     }
 
-    .pagination-btn.next-btn {
+    .pagination-btn.next-btn,
+    .pagination-btn.prev-btn {
       padding: 10px 20px;
       font-weight: 600;
       text-transform: capitalize;
-    }
-
-    .pagination-btn.prev-btn {
-      padding: 10px 15px;
     }
 
     .next-text {
@@ -545,7 +574,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
       .section-header h2 { font-size: 2rem; }
       .header-decoration-left, .header-decoration-right { flex: 0 0 60px; }
       .news-image { height: 220px; }
-      .insight-chart { height: 230px; }
+      .insight-chart { height: clamp(180px, 48vw, 230px); }
       .footer-grid { grid-template-columns: repeat(2, 1fr); gap: 40px; }
     }
 
@@ -563,7 +592,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
       .section-subtitle { font-size: 0.8rem; margin-bottom: 40px; }
       .insights-header h3 { font-size: 1.4rem; }
       .insight-card { padding: 20px 18px 14px; }
-      .insight-chart { height: 220px; }
+      .insight-chart { height: clamp(180px, 55vw, 220px); }
       .news-grid { grid-template-columns: 1fr; gap: 24px; margin-bottom: 40px; }
       .news-image { height: 200px; }
       .news-content { padding: 20px; }
@@ -572,7 +601,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
       .read-more { align-self: flex-start !important; text-align: left !important; }
       .pagination { gap: 8px; flex-wrap: wrap; }
       .pagination-btn, .pagination-number { padding: 8px 12px; font-size: 0.85rem; border-width: 6px !important; }
-      .pagination-btn.next-btn { padding: 8px 16px; }
+      .pagination-btn.next-btn, .pagination-btn.prev-btn { padding: 8px 16px; }
       .next-text { font-size: 0.85rem; }
       .footer-logo-wrapper { width: 100px; height: 100px; top: -35px; }
       .footer-main { padding-bottom: 30px !important; }
@@ -595,7 +624,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
       .insights-header h3 { font-size: 1.3rem; }
       .insight-card-header { flex-direction: column; align-items: flex-start; }
       .insight-note { white-space: normal; }
-      .insight-chart { height: 200px; }
+      .insight-chart { height: clamp(170px, 60vw, 200px); }
       .news-grid { gap: 20px; margin-bottom: 35px; }
       .news-image { height: 180px; }
       .news-content { padding: 18px; }
@@ -606,7 +635,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
       .pagination { gap: 6px; }
       .pagination-btn, .pagination-number { padding: 7px 10px; font-size: 0.8rem; border-width: 5px !important; }
       .pagination-number { min-width: 38px; }
-      .pagination-btn.next-btn { padding: 7px 14px; }
+      .pagination-btn.next-btn, .pagination-btn.prev-btn { padding: 7px 14px; }
       .next-text { font-size: 0.8rem; }
       .footer-logo-wrapper { width: 90px; height: 90px; top: -30px; }
       .footer-main { padding: 50px 0 25px !important; }
@@ -658,7 +687,7 @@ export class NewsComponent implements OnInit, AfterViewInit {
   currentPage = signal(1);
   isLoading = signal(true);
   itemsPerPage = 6;
-  private readonly articles = signal<NewsArticle[]>([]);
+  protected readonly articles = signal<NewsArticle[]>([]);
   readonly totalPages = computed(() => Math.max(1, Math.ceil(this.articles().length / this.itemsPerPage)));
   readonly pageNumbers = computed(() => Array.from({ length: this.totalPages() }, (_, index) => index + 1));
 
