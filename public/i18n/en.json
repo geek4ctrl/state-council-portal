@@ -103,6 +103,10 @@
       "next": "Next",
       "pageLabel": "Page {{page}}"
     },
+    "empty": {
+      "title": "No news posts yet",
+      "body": "New articles will appear here once they are published."
+    },
     "articles": {
       "1": {
         "date": "January 30",
