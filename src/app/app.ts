@@ -26,4 +26,10 @@ export class App {
   isFilingActive(): boolean {
     return this.router.url.startsWith('/steps') || this.router.url.startsWith('/filing');
   }
+
+  scrollToTop(): void {
+    if (typeof window !== 'undefined') {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  }
 }

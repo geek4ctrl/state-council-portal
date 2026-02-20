@@ -3095,14 +3095,18 @@ export class HomeComponent implements OnInit, AfterViewInit {
           {
             condition: { maxWidth: 600 },
             chartOptions: {
-              chart: { height: 240 },
+              chart: { 
+                height: 280, /* Increased height for mobile */
+                spacing: [15, 5, 15, 5] /* More vertical spacing */
+              },
               legend: {
-                itemStyle: { fontSize: '11px' }
+                itemStyle: { fontSize: '11px' },
+                itemMarginBottom: 8 /* More space between legend items */
               },
               plotOptions: {
                 pie: {
-                  center: ['50%', '45%'],
-                  size: '90%'
+                  center: ['50%', '40%'], /* Move chart up slightly */
+                  size: '80%' /* Slightly smaller to fit better */
                 }
               }
             }
