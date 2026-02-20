@@ -29,7 +29,7 @@ import { FooterComponent } from '../../../components/footer/footer.component';
         align-items: center;
         justify-content: center;
         padding: 60px 20px;
-        background: radial-gradient(circle at top, rgba(191, 152, 116, 0.15), transparent 60%),
+        background: radial-gradient(circle at top, rgba(0, 127, 255, 0.12), transparent 60%),
           #0f1a2b;
         color: #f5f5f5;
       }
@@ -40,7 +40,7 @@ import { FooterComponent } from '../../../components/footer/footer.component';
         text-align: center;
         padding: 40px 32px;
         background: #1a2942;
-        border: 1px solid rgba(191, 152, 116, 0.3);
+        border: 1px solid rgba(0, 127, 255, 0.25);
         box-shadow: 0 18px 30px rgba(0, 0, 0, 0.35);
       }
 
@@ -48,7 +48,7 @@ import { FooterComponent } from '../../../components/footer/footer.component';
         font-size: 1.2rem;
         text-transform: uppercase;
         letter-spacing: 4px;
-        color: rgba(191, 152, 116, 0.9);
+        color: rgba(0, 127, 255, 0.85);
         margin: 0 0 12px 0;
       }
 
@@ -82,17 +82,17 @@ import { FooterComponent } from '../../../components/footer/footer.component';
       }
 
       .primary-btn {
-        background: #BF9874;
+        background: #CE1126;
         color: #1a2942;
       }
 
       .secondary-btn {
-        border: 1px solid rgba(191, 152, 116, 0.6);
-        color: #BF9874;
+        border: 1px solid rgba(0, 127, 255, 0.5);
+        color: #007FFF;
       }
 
       .secondary-btn:hover {
-        background: rgba(191, 152, 116, 0.15);
+        background: rgba(0, 127, 255, 0.12);
       }
 
       @media (max-width: 600px) {

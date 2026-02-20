@@ -456,7 +456,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
 
       .section-subtitle {
         font-size: 0.8rem;
-        color: #BF9874 !important;
+        color: #B8860B !important;
         margin: 0 0 60px 0;
         text-transform: uppercase;
         letter-spacing: 2.5px;
@@ -696,7 +696,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
       }
 
       .footer-column ul li a:hover {
-        color: #BF9874;
+        color: #007FFF;
       }
 
       .footer-bottom {
@@ -730,7 +730,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
       }
 
       .social-icon:hover {
-        background-color: #BF9874;
+        background-color: #007FFF;
       }
 
       .social-icon svg {
@@ -751,7 +751,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
       }
 
       .privacy-link:hover {
-        color: #BF9874;
+        color: #007FFF;
       }
 
       /* ========================================
@@ -993,7 +993,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
           font-size: 0.75rem;
           margin-bottom: 40px;
           text-align: left;
-          color: #BF9874 !important;
+          color: #B8860B !important;
         }
 
         .documents-grid {
@@ -1140,7 +1140,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
           font-size: 0.7rem;
           letter-spacing: 2px;
           margin-bottom: 35px;
-          color: #BF9874 !important;
+          color: #B8860B !important;
         }
 
         .documents-grid {
@@ -1370,7 +1370,7 @@ export class AudiencesComponent implements AfterViewInit {
 
   private renderAudienceCharts() {
     const axisLabelStyle = {
-      color: '#BF9874',
+      color: '#007FFF',
       fontSize: '11px'
     };
 
@@ -1461,7 +1461,7 @@ export class AudiencesComponent implements AfterViewInit {
           type: 'area',
           name: 'Adjourned',
           data: [36, 38, 42, 40, 45, 47],
-          color: 'rgba(191, 152, 116, 0.7)'
+          color: 'rgba(0, 127, 255, 0.7)'
         },
         {
           type: 'area',

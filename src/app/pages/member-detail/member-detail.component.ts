@@ -85,7 +85,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
         display: inline-flex;
         align-items: center;
         gap: 8px;
-        color: #BF9874;
+        color: #007FFF;
         text-decoration: none;
         font-weight: 600;
         letter-spacing: 0.5px;
@@ -139,8 +139,8 @@ import { FooterComponent } from '../../components/footer/footer.component';
 
       .role-pill {
         display: inline-block;
-        background: rgba(191, 152, 116, 0.2);
-        color: #BF9874;
+        background: rgba(0, 127, 255, 0.12);
+        color: #007FFF;
         text-transform: uppercase;
         letter-spacing: 1px;
         padding: 4px 10px;
@@ -179,7 +179,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
       }
 
       .member-meta a {
-        color: #BF9874;
+        color: #007FFF;
         text-decoration: none;
       }
 
@@ -190,7 +190,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
       .not-found {
         background: #1a2942;
         padding: 30px;
-        border-left: 4px solid #BF9874;
+        border-left: 4px solid #007FFF;
       }
 
       .not-found h2 {

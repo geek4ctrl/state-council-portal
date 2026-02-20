@@ -257,8 +257,8 @@ import { FooterComponent } from '../../components/footer/footer.component';
       right: 0;
       bottom: 0;
       background: 
-        radial-gradient(circle at 20% 30%, rgba(191, 152, 116, 0.18) 0%, transparent 50%),
-        radial-gradient(circle at 80% 70%, rgba(191, 152, 116, 0.15) 0%, transparent 50%),
+        radial-gradient(circle at 20% 30%, rgba(0, 127, 255, 0.15) 0%, transparent 50%),
+        radial-gradient(circle at 80% 70%, rgba(252, 209, 22, 0.12) 0%, transparent 50%),
         url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><defs><pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255,255,255,0.03)" stroke-width="1"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
       z-index: 2;
     }
@@ -294,12 +294,12 @@ import { FooterComponent } from '../../components/footer/footer.component';
         180deg,
         transparent 0%,
         rgba(255, 255, 255, 0.8) 15%,
-        rgba(191, 152, 116, 0.9) 50%,
+        rgba(0, 127, 255, 0.85) 50%,
         rgba(255, 255, 255, 0.8) 85%,
         transparent 100%
       );
       display: block;
-      box-shadow: 0 0 20px rgba(191, 152, 116, 0.4);
+      box-shadow: 0 0 20px rgba(0, 127, 255, 0.4);
     }
 
     .hero-content-right p {
@@ -331,12 +331,12 @@ import { FooterComponent } from '../../components/footer/footer.component';
     .tag-line {
       width: 60px;
       height: 2px;
-      background: linear-gradient(90deg, transparent, #BF9874);
+      background: linear-gradient(90deg, transparent, #007FFF);
     }
 
     .section-tag span {
       font-size: 0.75rem;
-      color: #BF9874;
+      color: #007FFF;
       text-transform: uppercase;
       letter-spacing: 2px;
       font-weight: 600;
@@ -356,7 +356,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
     .building-section .section-description {
       font-size: 1rem;
       line-height: 1.8;
-      color: #BF9874;
+      color: #007FFF;
       text-align: justify;
       max-width: 100%;
       margin: 0 0 60px 0;
@@ -380,7 +380,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
     .initiatives-section .section-description {
       font-size: 1rem;
       line-height: 1.8;
-      color: #BF9874;
+      color: #007FFF;
       text-align: center;
       max-width: 900px;
       margin: 0 auto 60px;
@@ -770,7 +770,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
         width: 100px;
         height: 2px;
         margin: 0 auto;
-        background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.8), #BF9874, rgba(255, 255, 255, 0.8), transparent);
+        background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.8), #007FFF, rgba(255, 255, 255, 0.8), transparent);
       }
 
       .hero-content-left h1 {

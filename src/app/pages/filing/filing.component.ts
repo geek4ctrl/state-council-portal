@@ -153,7 +153,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
 
     .tab.active {
       color: #2c3e50;
-      border-bottom-color: #BF9874;
+      border-bottom-color: #007FFF;
       font-weight: 600;
     }
 
@@ -216,7 +216,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
     .form-group select:focus,
     .form-group textarea:focus {
       outline: none;
-      border-color: #BF9874;
+      border-color: #007FFF;
     }
 
     .form-group input::placeholder,
@@ -292,7 +292,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
       }
 
       .tab.active {
-        border-bottom-color: #BF9874;
+        border-bottom-color: #007FFF;
       }
 
       .form-row {
