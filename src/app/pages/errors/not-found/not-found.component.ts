@@ -32,7 +32,7 @@ import { FooterComponent } from '../../../components/footer/footer.component';
         align-items: center;
         justify-content: center;
         padding: 60px 20px;
-        background: radial-gradient(circle at top, rgba(191, 152, 116, 0.15), transparent 60%),
+        background: radial-gradient(circle at top, rgba(0, 127, 255, 0.12), transparent 60%),
           #0f1a2b;
         color: #f5f5f5;
       }
@@ -43,14 +43,14 @@ import { FooterComponent } from '../../../components/footer/footer.component';
         text-align: center;
         padding: 40px 32px;
         background: #1a2942;
-        border: 1px solid rgba(191, 152, 116, 0.3);
+        border: 1px solid rgba(0, 127, 255, 0.25);
         box-shadow: 0 18px 30px rgba(0, 0, 0, 0.35);
       }
 
       .error-code {
         font-size: 4.5rem;
         font-weight: 700;
-        color: #BF9874;
+        color: #007FFF;
         margin: 0 0 10px 0;
         letter-spacing: 3px;
       }
@@ -85,17 +85,17 @@ import { FooterComponent } from '../../../components/footer/footer.component';
       }
 
       .primary-btn {
-        background: #BF9874;
+        background: #CE1126;
         color: #1a2942;
       }
 
       .secondary-btn {
-        border: 1px solid rgba(191, 152, 116, 0.6);
-        color: #BF9874;
+        border: 1px solid rgba(0, 127, 255, 0.5);
+        color: #007FFF;
       }
 
       .secondary-btn:hover {
-        background: rgba(191, 152, 116, 0.15);
+        background: rgba(0, 127, 255, 0.12);
       }
 
       @media (max-width: 600px) {

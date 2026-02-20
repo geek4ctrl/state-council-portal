@@ -416,7 +416,7 @@ interface PresidentSlide {
                     <svg viewBox="0 0 64 64" fill="currentColor">
                       <path d="M32 8C24 8 18 14 18 22C18 30 24 36 32 36C40 36 46 30 46 22C46 14 40 8 32 8Z"/>
                       <path d="M46 18C46 14 43 11 39 11L25 11C21 11 18 14 18 18L18 46C18 50 21 53 25 53L39 53C43 53 46 50 46 46L46 18Z"/>
-                      <path d="M28 18L32 24L36 18" stroke="#BF9874" stroke-width="2" fill="none"/>
+                      <path d="M28 18L32 24L36 18" stroke="#007FFF" stroke-width="2" fill="none"/>
                     </svg>
                   </div>
                   <h3>{{ 'home.expertise.areas.criminal.title' | i18n }}</h3>
@@ -642,7 +642,7 @@ interface PresidentSlide {
       margin-bottom: 18px;
       text-transform: uppercase;
       text-align: left;
-     color: #BF9874 !important;
+     color: #FCD116 !important; /* Bright yellow OK on dark background */
     }
 
     .hero-title {
@@ -673,7 +673,7 @@ interface PresidentSlide {
 
     .hero-button {
       padding: 18px 46px;
-      background-color: #C82333;
+      background-color: #CE1126;
       color: white;
       border: 1px solid rgba(255, 255, 255, 0.2);
       font-size: 1rem;
@@ -686,7 +686,7 @@ interface PresidentSlide {
     }
 
     .hero-button:hover {
-      background-color: #A01D29;
+      background-color: #A00D1E;
       transform: translateY(-1px);
     }
 
@@ -756,12 +756,12 @@ interface PresidentSlide {
     }
 
     .indicator.active {
-      background-color: #BF9874;
+      background-color: #FCD116;
     }
 
     /* Key Facts Section */
     .key-facts-section {
-      background: radial-gradient(circle at top left, rgba(191, 152, 116, 0.16), transparent 55%),
+      background: radial-gradient(circle at top left, rgba(0, 127, 255, 0.12), transparent 55%),
         linear-gradient(180deg, #f8f6f2 0%, #ffffff 100%);
       padding: 64px 0 48px;
       border-bottom: 1px solid rgba(26, 41, 66, 0.08);
@@ -779,12 +779,12 @@ interface PresidentSlide {
     .key-facts-line {
       width: 60px;
       height: 3px;
-      background: #BF9874;
+      background: #FCD116;
     }
 
     .key-facts-subtitle {
       font-size: 0.9rem;
-      color: #BF9874 !important;
+      color: #B8860B !important;
       margin: 0 0 28px;
       max-width: 720px;
       text-align: left;
@@ -832,7 +832,7 @@ interface PresidentSlide {
 
     .key-fact-note {
       font-size: 0.75rem;
-      color: #BF9874;
+      color: #B8860B;
       text-transform: uppercase;
       letter-spacing: 1.5px;
       font-weight: 600;
@@ -930,7 +930,7 @@ interface PresidentSlide {
 
     .quick-link-item:hover {
       transform: translateY(-3px);
-      border-color: rgba(191, 152, 116, 0.32);
+      border-color: rgba(0, 127, 255, 0.32);
       box-shadow: 0 18px 30px rgba(9, 16, 40, 0.16), inset 0 1px 0 rgba(255, 255, 255, 0.7);
     }
 
@@ -998,7 +998,7 @@ interface PresidentSlide {
     .connector-line {
       width: 1px;
       height: 70px;
-      background: linear-gradient(to bottom, transparent, rgba(191, 152, 116, 0.6), transparent);
+      background: linear-gradient(to bottom, transparent, rgba(0, 127, 255, 0.6), transparent);
       margin: 0 12px;
       flex-shrink: 0;
       opacity: 0.35;
@@ -1030,7 +1030,7 @@ interface PresidentSlide {
     .offer-line {
       width: 60px;
       height: 3px;
-      background: #BF9874;
+      background: #FCD116;
     }
 
     .section-title {
@@ -1043,7 +1043,7 @@ interface PresidentSlide {
 
     .section-subtitle {
       font-size: 0.9rem;
-      color: #BF9874 !important;
+      color: #B8860B !important;
       margin-top: 10px;
       margin-bottom: 50px;
       line-height: 1.6;
@@ -1055,7 +1055,7 @@ interface PresidentSlide {
       margin-left: 0;
       text-align: left;
       padding-bottom: 29px;
-      color: #BF9874 !important;
+      color: #B8860B !important;
 
 
     }
@@ -1083,11 +1083,11 @@ interface PresidentSlide {
       border-radius: 16px;
       background:
         conic-gradient(from 180deg,
-          rgba(191, 152, 116, 0.0),
-          rgba(191, 152, 116, 0.65),
-          rgba(44, 62, 80, 0.85),
-          rgba(191, 152, 116, 0.65),
-          rgba(191, 152, 116, 0.0));
+          rgba(0, 127, 255, 0.0),
+          rgba(0, 127, 255, 0.65),
+          rgba(252, 209, 22, 0.85),
+          rgba(0, 127, 255, 0.65),
+          rgba(0, 127, 255, 0.0));
       opacity: 0.55;
       filter: blur(6px);
       animation: lightning-border 7s linear infinite;
@@ -1178,8 +1178,8 @@ interface PresidentSlide {
 
     /*
     .style-hr {
-      background: #BF9874 !important;
-      color: #BF9874 !important;
+      background: #FCD116 !important;
+      color: #B8860B !important;
       border: none !important;
       height: 1px !important;
       width: auto !important;
@@ -1213,7 +1213,7 @@ interface PresidentSlide {
     .expertise-line {
       width: 180px;
       height: 1px;
-      background: linear-gradient(90deg, transparent, rgba(191, 152, 116, 0.5), transparent);
+      background: linear-gradient(90deg, transparent, rgba(252, 209, 22, 0.5), transparent);
     }
 
     .expertise-section .section-title {
@@ -1236,7 +1236,7 @@ interface PresidentSlide {
       text-align: center;
       margin-left: auto;
       margin-right: auto;
-      color: #BF9874 !important;
+      color: #B8860B !important;
     }
 
     .practice-grid {
@@ -1254,7 +1254,7 @@ interface PresidentSlide {
     }
 
     .practice-card {
-      --accent: #BF9874;
+      --accent: #007FFF;
       padding: 34px 30px;
       background: white;
       display: flex;
@@ -1278,11 +1278,11 @@ interface PresidentSlide {
     .practice-card:hover {
       transform: translateY(calc(-6px + var(--float-y))) scale(1.01);
       box-shadow: 0 16px 36px rgba(0, 0, 0, 0.18);
-      border-color: rgba(191, 152, 116, 0.55);
+      border-color: rgba(0, 127, 255, 0.55);
     }
 
     .practice-card:focus-visible {
-      outline: 2px solid rgba(191, 152, 116, 0.9);
+      outline: 2px solid rgba(0, 127, 255, 0.9);
       outline-offset: 3px;
     }
 
@@ -1292,7 +1292,7 @@ interface PresidentSlide {
       color: var(--accent);
       flex-shrink: 0;
       border-radius: 12px;
-      background: linear-gradient(135deg, rgba(191, 152, 116, 0.18), rgba(15, 15, 15, 0.02));
+      background: linear-gradient(135deg, rgba(0, 127, 255, 0.12), rgba(15, 15, 15, 0.02));
       display: flex;
       align-items: center;
       justify-content: center;
@@ -1390,6 +1390,7 @@ interface PresidentSlide {
       color: var(--accent);
       text-transform: uppercase;
       letter-spacing: 1px;
+      text-decoration: none; /* Remove underline */
     }
 
     .practice-cta::after {
@@ -1397,12 +1398,12 @@ interface PresidentSlide {
       font-size: 0.95rem;
     }
 
-    .accent-civil { --accent: #BF9874; }
-    .accent-family { --accent: #b8754d; }
-    .accent-public { --accent: #4e6a8a; }
-    .accent-labor { --accent: #a45858; }
-    .accent-criminal { --accent: #7a4d66; }
-    .accent-property { --accent: #7f6b4a; }
+    .accent-civil { --accent: #007FFF; }
+    .accent-family { --accent: #B8860B; }
+    .accent-public { --accent: #005CBF; }
+    .accent-labor { --accent: #4DA6FF; }
+    .accent-criminal { --accent: #CE1126; }
+    .accent-property { --accent: #B8860B; }
 
     .practice-grid .practice-card:nth-child(1) { animation-delay: 0.05s; }
     .practice-grid .practice-card:nth-child(2) { animation-delay: 0.12s; }
@@ -1450,7 +1451,7 @@ interface PresidentSlide {
 
     .contact-divider {
       width: 2px;
-      background: linear-gradient(to bottom, transparent, rgba(191, 152, 116, 0.7), transparent);
+      background: linear-gradient(to bottom, transparent, rgba(0, 127, 255, 0.7), transparent);
     }
 
     /* President Section */
@@ -1466,8 +1467,8 @@ interface PresidentSlide {
       position: absolute;
       inset: 0;
       background:
-        radial-gradient(circle at 85% 10%, rgba(191, 152, 116, 0.18), transparent 55%),
-        radial-gradient(circle at 10% 80%, rgba(44, 62, 80, 0.08), transparent 55%);
+        radial-gradient(circle at 85% 10%, rgba(0, 127, 255, 0.15), transparent 55%),
+        radial-gradient(circle at 10% 80%, rgba(252, 209, 22, 0.08), transparent 55%);
       pointer-events: none;
     }
 
@@ -1549,7 +1550,7 @@ interface PresidentSlide {
       bottom: 0;
       width: 70px;
       height: 3px;
-      background: linear-gradient(90deg, #BF9874, transparent);
+      background: linear-gradient(90deg, #007FFF, transparent);
     }
 
     .president-text p {
@@ -1585,8 +1586,8 @@ interface PresidentSlide {
       gap: 10px;
       padding: 14px 38px;
       background-color: transparent;
-      color: #BF9874;
-      border: 1px solid #BF9874;
+      color: #007FFF;
+      border: 1px solid #007FFF;
       font-size: 0.9rem;
       font-weight: 700;
       cursor: pointer;
@@ -1601,7 +1602,7 @@ interface PresidentSlide {
     }
 
     .president-learn-btn:hover {
-      background-color: #BF9874;
+      background-color: #FCD116;
       color: white;
     }
 
@@ -1626,7 +1627,7 @@ interface PresidentSlide {
     }
 
     .pagination-dot.active {
-      background-color: #BF9874;
+      background-color: #FCD116;
       transform: scale(1.1);
     }
 
@@ -1678,7 +1679,7 @@ interface PresidentSlide {
       position: absolute;
       inset: 0;
       background:
-        radial-gradient(circle at 20% 20%, rgba(191, 152, 116, 0.08), transparent 45%),
+        radial-gradient(circle at 20% 20%, rgba(0, 127, 255, 0.08), transparent 45%),
         radial-gradient(circle at 80% 10%, rgba(44, 62, 80, 0.05), transparent 55%);
       pointer-events: none;
       z-index: 0;
@@ -1711,7 +1712,7 @@ interface PresidentSlide {
       flex: 1;
       max-width: 200px;
       height: 1px;
-      background: linear-gradient(90deg, transparent, rgba(191, 152, 116, 0.85), transparent);
+      background: linear-gradient(90deg, transparent, rgba(0, 127, 255, 0.75), transparent);
     }
 
     .newsletter-grid {
@@ -1810,7 +1811,7 @@ interface PresidentSlide {
       display: inline-flex;
       align-items: center;
       gap: 8px;
-      color: #BF9874;
+      color: #007FFF;
       font-size: 0.85rem;
       font-weight: 700;
       text-decoration: none;
@@ -1835,8 +1836,8 @@ interface PresidentSlide {
     .newsletter-learn-btn {
       padding: 16px 50px;
       background: transparent;
-      color: #BF9874;
-      border: 1px solid #BF9874;
+      color: #007FFF;
+      border: 1px solid #007FFF;
       font-size: 0.95rem;
       font-weight: 700;
       cursor: pointer;
@@ -1845,7 +1846,7 @@ interface PresidentSlide {
     }
 
     .newsletter-learn-btn:hover {
-      background: #BF9874;
+      background: #FCD116;
       color: white;
     }
 
@@ -1867,7 +1868,7 @@ interface PresidentSlide {
       position: absolute;
       inset: 0;
       background:
-        radial-gradient(circle at 50% 0%, rgba(191, 152, 116, 0.22), transparent 55%),
+        radial-gradient(circle at 50% 0%, rgba(0, 127, 255, 0.18), transparent 55%),
         linear-gradient(90deg, rgba(255, 255, 255, 0.3), transparent 45%, rgba(255, 255, 255, 0.2));
       pointer-events: none;
     }
@@ -1942,7 +1943,7 @@ interface PresidentSlide {
       bottom: 0;
       width: 36px;
       height: 2px;
-      background: linear-gradient(90deg, #BF9874, transparent);
+      background: linear-gradient(90deg, #007FFF, transparent);
     }
 
     .footer-column p {
@@ -1972,7 +1973,7 @@ interface PresidentSlide {
     }
 
     .footer-column ul li a:hover {
-      color: #BF9874;
+      color: #007FFF;
       text-decoration: underline;
       text-underline-offset: 4px;
     }
@@ -2004,15 +2005,15 @@ interface PresidentSlide {
       background-color: #ffffff;
       border-radius: 50%;
       color: #1f2937;
-      border: 1px solid rgba(191, 152, 116, 0.35);
+      border: 1px solid rgba(0, 127, 255, 0.35);
       box-shadow: 0 6px 14px rgba(10, 16, 32, 0.12);
       text-decoration: none;
       transition: all 0.3s ease;
     }
 
     .social-icon:hover {
-      background-color: #BF9874;
-      border-color: #BF9874;
+      background-color: #FCD116;
+      border-color: #007FFF;
       color: #ffffff;
     }
 
@@ -2035,7 +2036,7 @@ interface PresidentSlide {
     }
 
     .privacy-link:hover {
-      color: #BF9874;
+      color: #007FFF;
     }
 
     /* ========================================
@@ -2146,7 +2147,7 @@ interface PresidentSlide {
       .contact-divider {
         width: 100%;
         height: 1px;
-        background: linear-gradient(to right, transparent, #BF9874, transparent);
+        background: linear-gradient(to right, transparent, #007FFF, transparent);
       }
 
       .contact-item {
@@ -2366,7 +2367,7 @@ interface PresidentSlide {
         padding-bottom: 16px;
         margin-bottom: 30px;
         -webkit-overflow-scrolling: touch;
-        scrollbar-color: rgba(191, 152, 116, 0.35) transparent;
+        scrollbar-color: rgba(0, 127, 255, 0.35) transparent;
       }
 
       .newsletter-grid::-webkit-scrollbar {
@@ -2374,7 +2375,7 @@ interface PresidentSlide {
       }
 
       .newsletter-grid::-webkit-scrollbar-thumb {
-        background: rgba(191, 152, 116, 0.35);
+        background: rgba(0, 127, 255, 0.35);
         border-radius: 999px;
       }
 
@@ -2528,7 +2529,7 @@ interface PresidentSlide {
       .read-more-link {
         padding: 8px 12px;
         border-radius: 999px;
-        background: rgba(191, 152, 116, 0.12);
+        background: rgba(0, 127, 255, 0.12);
       }
 
       .offer-section,
@@ -2988,7 +2989,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
           type: 'column',
           name: 'Cases',
           data: [420, 460, 510, 470, 530, 590],
-          color: '#BF9874',
+          color: '#007FFF',
           borderRadius: 4
         }
       ]
@@ -3037,7 +3038,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
           type: 'line',
           name: 'Processing time',
           data: [92, 84, 76, 68],
-          color: '#b8754d',
+          color: '#B8860B', // Dark goldenrod - DRC yellow for text
           marker: { radius: 3 }
         }
       ]
@@ -3098,10 +3099,10 @@ export class HomeComponent implements OnInit, AfterViewInit {
           type: 'pie',
           name: 'Decisions',
           data: [
-            { name: 'Civil', y: 38, color: '#BF9874' },
-            { name: 'Public', y: 27, color: '#5b7391' },
-            { name: 'Labor', y: 18, color: '#a96a6a' },
-            { name: 'Other', y: 17, color: '#8b7a5e' }
+            { name: 'Civil', y: 38, color: '#007FFF' },      // DRC Sky Blue
+            { name: 'Public', y: 27, color: '#005CBF' },     // DRC Dark Blue
+            { name: 'Labor', y: 18, color: '#4DA6FF' },      // DRC Light Blue
+            { name: 'Other', y: 17, color: '#B8860B' }       // DRC Dark Gold
           ]
         }
       ]
