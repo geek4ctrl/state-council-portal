@@ -129,6 +129,8 @@
   border-radius: 999px;
   cursor: pointer;
   transition: background-color 0.2s, color 0.2s;
+  min-width: 42px;
+  text-align: center;
 }
 
 .lang-btn.active {

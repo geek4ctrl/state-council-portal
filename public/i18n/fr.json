@@ -103,6 +103,10 @@
       "next": "Suivant",
       "pageLabel": "Page {{page}}"
     },
+    "empty": {
+      "title": "Aucune actualité pour le moment",
+      "body": "Les articles s'afficheront ici dès leur publication."
+    },
     "articles": {
       "1": {
         "date": "30 janvier",
