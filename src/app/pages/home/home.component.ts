@@ -256,7 +256,7 @@ interface PresidentSlide {
             <div class="offer-card">
               <div class="offer-card-header">
                 <div class="offer-icon">
-                  <svg viewBox="0 0 64 64" fill="currentColor">
+                  <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2">
                     <path d="M32 8L16 16L16 32C16 44 24 52 32 56C40 52 48 44 48 32L48 16L32 8Z"/>
                   </svg>
                 </div>
@@ -268,12 +268,12 @@ interface PresidentSlide {
             <div class="offer-card">
               <div class="offer-card-header">
                 <div class="offer-icon">
-                  <svg viewBox="0 0 64 64" fill="currentColor">
+                  <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2">
                     <rect x="18" y="12" width="28" height="40" rx="2"/>
-                    <rect x="22" y="16" width="4" height="4" fill="white"/>
-                    <rect x="22" y="24" width="4" height="4" fill="white"/>
-                    <rect x="28" y="16" width="14" height="4" fill="white"/>
-                    <rect x="28" y="24" width="14" height="4" fill="white"/>
+                    <rect x="22" y="16" width="4" height="4" fill="currentColor"/>
+                    <rect x="22" y="24" width="4" height="4" fill="currentColor"/>
+                    <rect x="28" y="16" width="14" height="4" fill="currentColor"/>
+                    <rect x="28" y="24" width="14" height="4" fill="currentColor"/>
                   </svg>
                 </div>
                 <h3>{{ 'home.offer.cards.2.title' | i18n }}</h3>
@@ -284,10 +284,10 @@ interface PresidentSlide {
             <div class="offer-card">
               <div class="offer-card-header">
                 <div class="offer-icon">
-                  <svg viewBox="0 0 64 64" fill="currentColor">
+                  <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2">
                     <circle cx="32" cy="20" r="8"/>
-                    <path d="M32 30C24 30 16 32 16 36V42H48V36C48 32 40 30 32 30Z"/>
-                    <path d="M26 18L30 22L38 14L40 16L30 26L24 20L26 18Z" fill="white"/>
+                    <path d="M32 30C24 30 16 32 16 36V42H48V42V36C48 32 40 30 32 30Z"/>
+                    <path d="M26 18L30 22L38 14L40 16L30 26L24 20L26 18Z" fill="currentColor"/>
                   </svg>
                 </div>
                 <h3>{{ 'home.offer.cards.3.title' | i18n }}</h3>
@@ -298,9 +298,9 @@ interface PresidentSlide {
             <div class="offer-card">
               <div class="offer-card-header">
                 <div class="offer-icon">
-                  <svg viewBox="0 0 64 64" fill="currentColor">
+                  <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2">
                     <circle cx="32" cy="32" r="24"/>
-                    <path d="M20 28L28 32L38 22L42 26L28 40L16 32L20 28Z" fill="white"/>
+                    <path d="M20 28L28 32L38 22L42 26L28 40L16 32L20 28Z" fill="currentColor"/>
                   </svg>
                 </div>
                 <h3>{{ 'home.offer.cards.4.title' | i18n }}</h3>
@@ -756,7 +756,7 @@ interface PresidentSlide {
     }
 
     .indicator.active {
-      background-color: #FCD116;
+      background-color: #007FFF; /* DRC blue */
     }
 
     /* Key Facts Section */
@@ -1143,19 +1143,33 @@ interface PresidentSlide {
     .offer-icon {
       width: 50px;
       height: 50px;
-      color: #1E2E45;
+      color: #007FFF; /* DRC blue */
       flex-shrink: 0;
+      border-radius: 50%; /* Circle */
+      background: transparent;
+      border: 1px solid #B8860B; /* Golden border - reduced width */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s ease;
+    }
+
+    .offer-card:hover .offer-icon {
+      background: rgba(184, 134, 11, 0.1); /* Light golden background on hover */
+      transform: scale(1.05);
     }
 
     .offer-icon svg {
-      width: 100%;
-      height: 100%;
+      width: 60%;
+      height: 60%;
+      stroke: currentColor;
+      fill: none; /* Remove fill, outline only */
     }
 
     .offer-card h3 {
       font-size: 0.95rem;
       font-weight: 700;
-      color: #1a1a1a;
+      color: #1a1a1a; /* Dark for readability */
       margin: 0;
       line-height: 1.2;
       text-align: left;
@@ -1289,10 +1303,11 @@ interface PresidentSlide {
     .practice-icon {
       width: 54px;
       height: 54px;
-      color: var(--accent);
+      color: #007FFF; /* DRC blue */
       flex-shrink: 0;
-      border-radius: 12px;
-      background: linear-gradient(135deg, rgba(0, 127, 255, 0.12), rgba(15, 15, 15, 0.02));
+      border-radius: 50%; /* Circle */
+      background: transparent;
+      border: 1px solid #B8860B; /* Golden border */
       display: flex;
       align-items: center;
       justify-content: center;
@@ -1398,11 +1413,11 @@ interface PresidentSlide {
       font-size: 0.95rem;
     }
 
-    .accent-civil { --accent: #007FFF; }
+    .accent-civil { --accent: #B8860B; }
     .accent-family { --accent: #B8860B; }
-    .accent-public { --accent: #005CBF; }
-    .accent-labor { --accent: #4DA6FF; }
-    .accent-criminal { --accent: #CE1126; }
+    .accent-public { --accent: #B8860B; }
+    .accent-labor { --accent: #B8860B; }
+    .accent-criminal { --accent: #B8860B; }
     .accent-property { --accent: #B8860B; }
 
     .practice-grid .practice-card:nth-child(1) { animation-delay: 0.05s; }

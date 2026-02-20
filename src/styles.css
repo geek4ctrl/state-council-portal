@@ -379,8 +379,6 @@ img[loading='lazy'] {
 
 /* ===== ALL ICON STYLING (TRANSPARENT BACKGROUND, BLUE BORDER ONLY, 4PX RADIUS) ===== */
 .quick-link-icon,
-.offer-icon,
-.practice-icon,
 .card-icon {
   background: transparent !important;
   background-color: transparent !important;
@@ -388,6 +386,24 @@ img[loading='lazy'] {
   border-radius: 4px !important;
   overflow: hidden;
   padding: 8px;
+}
+
+.practice-icon {
+  background: transparent !important;
+  background-color: transparent !important;
+  border: 1px solid #B8860B !important; /* Golden border */
+  border-radius: 50% !important; /* Circle for practice icons */
+  overflow: visible;
+  padding: 0;
+}
+
+.offer-icon {
+  background: transparent !important;
+  background-color: transparent !important;
+  border: 1px solid #B8860B !important; /* Golden border - reduced width */
+  border-radius: 50% !important; /* Circle for offer icons */
+  overflow: visible;
+  padding: 0;
 }
 
 .quick-link-icon.non-border,
