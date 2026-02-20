@@ -430,7 +430,7 @@
     color: inherit;
     height: 24px; /* Further reduced height */
     width: auto;
-    font-size: 0.75rem; /* Smaller font */
+    font-size: 0.6rem; /* Further reduced font size */
     gap: 0.4rem; /* Gap between icon and text */
   }
 

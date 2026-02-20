@@ -136,7 +136,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
               (click)="goToPreviousPage()"
               [attr.aria-label]="'news.pagination.previous' | i18n">
               <app-icon name="chevron-down" [size]="20" [customClass]="'rotate-90'" [attr.aria-hidden]="true"></app-icon>
-              {{ 'news.pagination.previous' | i18n }}
+              <span class="prev-btn-text">{{ 'news.pagination.previous' | i18n }}</span>
             </button>
             @for (page of pageNumbers(); track page) {
               <button
@@ -554,6 +554,10 @@ import { FooterComponent } from '../../components/footer/footer.component';
       font-size: 0.9rem;
     }
 
+    .prev-btn-text {
+      display: inline;
+    }
+
     @media (max-width: 1199px) {
       .container { padding: 0 30px; }
       .hero-left h1 { font-size: 4.5rem; letter-spacing: 6px; }
@@ -599,10 +603,13 @@ import { FooterComponent } from '../../components/footer/footer.component';
       .news-title { min-height: auto; font-size: 1rem; }
       .news-excerpt { font-size: 0.85rem; }
       .read-more { align-self: flex-start !important; text-align: left !important; }
-      .pagination { gap: 8px; flex-wrap: wrap; }
-      .pagination-btn, .pagination-number { padding: 8px 12px; font-size: 0.85rem; border-width: 6px !important; }
-      .pagination-btn.next-btn, .pagination-btn.prev-btn { padding: 8px 16px; }
-      .next-text { font-size: 0.85rem; }
+      .pagination { gap: 8px; flex-wrap: nowrap; }
+      .pagination-btn { min-width: 40px; padding: 10px; width: 40px; height: 40px; background: transparent !important; border: none !important; }
+      .pagination-btn app-icon { display: flex; }
+      .prev-btn-text { display: none; }
+      .pagination-number { padding: 10px; font-size: 0.85rem; min-width: 40px; width: 40px; height: 40px; background: transparent !important; border: none !important; }
+      .pagination-number.active { background: transparent !important; color: #007FFF; font-weight: 700; border: none !important; }
+      .next-text { display: none; }
       .footer-logo-wrapper { width: 100px; height: 100px; top: -35px; }
       .footer-main { padding-bottom: 30px !important; }
       .footer-grid { grid-template-columns: 1fr; gap: 35px; }
@@ -632,11 +639,13 @@ import { FooterComponent } from '../../components/footer/footer.component';
       .news-title { font-size: 0.95rem; margin-bottom: 12px; }
       .news-excerpt { font-size: 0.8rem; margin-bottom: 12px; }
       .read-more { font-size: 0.8rem; }
-      .pagination { gap: 6px; }
-      .pagination-btn, .pagination-number { padding: 7px 10px; font-size: 0.8rem; border-width: 5px !important; }
-      .pagination-number { min-width: 38px; }
-      .pagination-btn.next-btn, .pagination-btn.prev-btn { padding: 7px 14px; }
-      .next-text { font-size: 0.8rem; }
+      .pagination { gap: 6px; flex-wrap: nowrap; }
+      .pagination-btn { min-width: 38px; padding: 9px; width: 38px; height: 38px; background: transparent !important; border: none !important; }
+      .pagination-btn app-icon { display: flex; }
+      .prev-btn-text { display: none; }
+      .pagination-number { padding: 9px; font-size: 0.8rem; min-width: 38px; width: 38px; height: 38px; background: transparent !important; border: none !important; }
+      .pagination-number.active { background: transparent !important; color: #007FFF; font-weight: 700; border: none !important; }
+      .next-text { display: none; }
       .footer-logo-wrapper { width: 90px; height: 90px; top: -30px; }
       .footer-main { padding: 50px 0 25px !important; }
       .footer-grid { gap: 30px; padding-top: 30px; }
