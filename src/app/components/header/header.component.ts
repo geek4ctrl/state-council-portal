@@ -87,6 +87,23 @@ export class HeaderComponent {
     this.closeDropdowns();
     this.closeMobileMenu();
     this.router.navigate(['/appointment']);
+    this.scrollToTop();
+  }
+
+  onNavLinkClick() {
+    this.closeMobileMenu();
+    this.scrollToTop();
+  }
+
+  onDropdownLinkClick() {
+    this.closeMobileMenu();
+    this.scrollToTop();
+  }
+
+  private scrollToTop() {
+    if (typeof window !== 'undefined') {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
   }
 
   setLanguage(lang: LanguageCode) {
