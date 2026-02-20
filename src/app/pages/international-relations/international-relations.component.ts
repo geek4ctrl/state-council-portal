@@ -562,9 +562,9 @@ import { FooterComponent } from '../../components/footer/footer.component';
     }
 
     .contact-btn {
-      background-color: transparent;
-      color: #007FFF;
-      border: 2px solid #007FFF;
+      background-color: #007FFF;
+      color: white;
+      border: none;
       padding: 16px 40px;
       font-size: 0.85rem;
       font-weight: 600;
@@ -578,8 +578,8 @@ import { FooterComponent } from '../../components/footer/footer.component';
     }
 
     .contact-btn:hover {
-      background-color: #007FFF;
-      color: #1E2E45;
+      background-color: #005CBF;
+      color: white;
       transform: translateY(-2px);
       box-shadow: 0 4px 12px rgba(0, 127, 255, 0.4);
     }

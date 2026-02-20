@@ -68,6 +68,9 @@
 
 .contact-item svg {
   flex-shrink: 0;
+  color: #007FFF; /* DRC blue to match Book Appointment button */
+  fill: #007FFF; /* Fill the icons */
+  stroke: none; /* Remove stroke */
 }
 
 .social-links {
@@ -134,7 +137,7 @@
 }
 
 .lang-btn.active {
-  background: #1a2942;
+  background: #007FFF;
   color: #ffffff;
 }
 
@@ -615,6 +618,24 @@
     padding: 8px 0 16px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.14);
     margin-bottom: 8px;
+  }
+
+  .drawer-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 0.9rem;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  .drawer-title span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 200px;
   }
 
   .drawer-close svg {
