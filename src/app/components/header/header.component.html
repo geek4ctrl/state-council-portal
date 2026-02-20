@@ -6,11 +6,11 @@
       <div class="top-bar-content">
         <div class="contact-info">
           <span class="contact-item">
-            <app-icon name="phone" [size]="16"></app-icon>
+            <app-icon name="phone" [size]="16" fill="#007FFF" stroke="none"></app-icon>
             {{ 'header.contact.phone' | i18n }}
           </span>
           <span class="contact-item">
-            <app-icon name="clock" [size]="16"></app-icon>
+            <app-icon name="clock" [size]="16" fill="#007FFF" stroke="none"></app-icon>
             {{ 'header.contact.hours' | i18n }}
           </span>
         </div>
@@ -77,6 +77,10 @@
         <!-- Navigation Menu -->
         <ul class="nav-menu" [class.mobile-open]="isMobileMenuOpen()">
           <li class="drawer-header mobile-only">
+            <div class="drawer-title">
+              <app-icon name="scale" [size]="24"></app-icon>
+              <span>{{ 'header.siteName' | i18n }}</span>
+            </div>
             <button class="drawer-close" type="button" (click)="closeMobileMenu()" aria-label="Close menu">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M6 6l12 12" />
