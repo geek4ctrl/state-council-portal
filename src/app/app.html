@@ -9,8 +9,8 @@
   <a
     class="mobile-nav-item"
     routerLink="/"
-    [class.active]="isRouteActive('/')"
-    [attr.aria-current]="isRouteActive('/') ? 'page' : null"
+    routerLinkActive="active"
+    [routerLinkActiveOptions]="{exact: true}"
     (click)="scrollToTop()">
     <span class="mobile-nav-icon" aria-hidden="true">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
@@ -24,8 +24,7 @@
   <a
     class="mobile-nav-item"
     routerLink="/organization"
-    [class.active]="isRouteActive('/organization')"
-    [attr.aria-current]="isRouteActive('/organization') ? 'page' : null"
+    routerLinkActive="active"
     (click)="scrollToTop()">
     <span class="mobile-nav-icon" aria-hidden="true">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
@@ -40,8 +39,8 @@
   <a
     class="mobile-nav-item"
     routerLink="/filing"
-    [class.active]="isFilingActive()"
-    [attr.aria-current]="isFilingActive() ? 'page' : null"
+    routerLinkActive="active"
+    [routerLinkActiveOptions]="{exact: false}"
     (click)="scrollToTop()">
     <span class="mobile-nav-icon" aria-hidden="true">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
@@ -55,8 +54,7 @@
   <a
     class="mobile-nav-item"
     routerLink="/news"
-    [class.active]="isRouteActive('/news')"
-    [attr.aria-current]="isRouteActive('/news') ? 'page' : null"
+    routerLinkActive="active"
     (click)="scrollToTop()">
     <span class="mobile-nav-icon" aria-hidden="true">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
