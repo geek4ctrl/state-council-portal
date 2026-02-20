@@ -192,8 +192,8 @@
   "footer": {
     "mainOffice": {
       "title": "Bureau principal",
-      "address1": "No. 3 Avenue de la Justice",
-      "address2": "Quartier central de Kinshasa",
+      "address1": "7639, croisement des avenues Pumbu et des Bâtonniers",
+      "address2": "Commune de la Gombe, Kinshasa",
       "address3": "République démocratique du Congo",
       "phone": "Tel: +243 (21) 0000000",
       "email": "Email: info@conseildetatrdc.com"
@@ -394,7 +394,7 @@
     "contact": {
       "address": {
         "title": "Adresse du bureau",
-        "body": "No. 2 Avenue de la Justice dans la commune de la Gombe à Kinshasa."
+        "body": "7639, croisement des avenues Pumbu et des Bâtonniers dans la commune de la Gombe/Kinshasa-RDC"
       },
       "phone": {
         "title": "Numéro du bureau",

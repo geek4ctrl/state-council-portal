@@ -222,8 +222,8 @@ import { FooterComponent } from '../../components/footer/footer.component';
       right: 0;
       bottom: 0;
       background: 
-        radial-gradient(circle at 20% 30%, rgba(191, 152, 116, 0.18) 0%, transparent 50%),
-        radial-gradient(circle at 80% 70%, rgba(191, 152, 116, 0.15) 0%, transparent 50%),
+        radial-gradient(circle at 20% 30%, rgba(0, 127, 255, 0.15) 0%, transparent 50%),
+        radial-gradient(circle at 80% 70%, rgba(252, 209, 22, 0.12) 0%, transparent 50%),
         radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.03) 0%, transparent 60%);
       z-index: 2;
     }
@@ -258,12 +258,12 @@ import { FooterComponent } from '../../components/footer/footer.component';
         180deg,
         transparent 0%,
         rgba(255, 255, 255, 0.8) 15%,
-        rgba(191, 152, 116, 0.9) 50%,
+        rgba(0, 127, 255, 0.85) 50%,
         rgba(255, 255, 255, 0.8) 85%,
         transparent 100%
       );
       display: block;
-      box-shadow: 0 0 20px rgba(191, 152, 116, 0.4);
+      box-shadow: 0 0 20px rgba(0, 127, 255, 0.4);
     }
 
     .hero-description p {
@@ -279,7 +279,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
     .stats-section {
       background: linear-gradient(180deg, #e8eef7 0%, #f5f8fc 100%);
       padding: 60px 0;
-      border-bottom: 1px solid rgba(191, 152, 116, 0.1);
+      border-bottom: 1px solid rgba(0, 127, 255, 0.1);
     }
 
     .stats-grid {
@@ -305,7 +305,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
     .stat-divider {
       width: 60px;
       height: 2px;
-      background: linear-gradient(90deg, transparent, #BF9874, transparent);
+      background: linear-gradient(90deg, transparent, #007FFF, transparent);
       margin: 15px auto;
     }
 
@@ -320,7 +320,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
     .stat-separator {
       width: 1px;
       height: 80px;
-      background: linear-gradient(180deg, transparent, #BF9874, transparent);
+      background: linear-gradient(180deg, transparent, #007FFF, transparent);
       flex-shrink: 0;
     }
 
@@ -354,7 +354,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
     .header-line {
       flex: 0 0 60px;
       height: 2px;
-      background: linear-gradient(90deg, transparent, #BF9874);
+      background: linear-gradient(90deg, transparent, #007FFF);
     }
 
     .header-line-left,
@@ -364,16 +364,16 @@ import { FooterComponent } from '../../components/footer/footer.component';
     }
 
     .header-line-left {
-      background: linear-gradient(90deg, transparent, #BF9874);
+      background: linear-gradient(90deg, transparent, #007FFF);
     }
 
     .header-line-right {
-      background: linear-gradient(90deg, #BF9874, transparent);
+      background: linear-gradient(90deg, #007FFF, transparent);
     }
 
     .section-subtitle {
       font-size: 0.9rem;
-      color: #BF9874 !important;
+      color: #B8860B !important;
       margin: 0 0 60px 0;
       line-height: 1.7;
       letter-spacing: 1.5px;
@@ -406,11 +406,11 @@ import { FooterComponent } from '../../components/footer/footer.component';
     .card-accent {
       width: 4px;
       height: 100%;
-      background: linear-gradient(180deg, #BF9874 0%, #a87e5f 100%);
+      background: linear-gradient(180deg, #007FFF 0%, #005CBF 100%);
       position: absolute;
       left: 0;
       top: 0;
-      box-shadow: 2px 0 8px rgba(191, 152, 116, 0.3);
+      box-shadow: 2px 0 8px rgba(0, 127, 255, 0.3);
     }
 
     .card-content {
@@ -464,7 +464,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
     .domain-card:hover {
       transform: translateY(-5px);
       box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
-      border-color: #BF9874;
+      border-color: #007FFF;
     }
 
     .domain-header {
@@ -478,17 +478,17 @@ import { FooterComponent } from '../../components/footer/footer.component';
       width: 50px;
       height: 50px;
       min-width: 50px;
-      color: #BF9874;
+      color: #007FFF;
       display: flex;
       align-items: center;
       justify-content: center;
-      border: 2px solid #BF9874;
+      border: 2px solid #007FFF;
       border-radius: 50%;
       transition: all 0.3s ease;
     }
 
     .domain-card:hover .domain-icon {
-      background: #BF9874;
+      background: #007FFF;
       color: white;
     }
 
@@ -529,8 +529,8 @@ import { FooterComponent } from '../../components/footer/footer.component';
       right: 0;
       bottom: 0;
       background: 
-        radial-gradient(circle at 10% 20%, rgba(191, 152, 116, 0.1) 0%, transparent 50%),
-        radial-gradient(circle at 90% 80%, rgba(191, 152, 116, 0.08) 0%, transparent 50%);
+        radial-gradient(circle at 10% 20%, rgba(0, 127, 255, 0.08) 0%, transparent 50%),
+        radial-gradient(circle at 90% 80%, rgba(252, 209, 22, 0.06) 0%, transparent 50%);
     }
 
     .collaboration-content {
@@ -563,8 +563,8 @@ import { FooterComponent } from '../../components/footer/footer.component';
 
     .contact-btn {
       background-color: transparent;
-      color: #BF9874;
-      border: 2px solid #BF9874;
+      color: #007FFF;
+      border: 2px solid #007FFF;
       padding: 16px 40px;
       font-size: 0.85rem;
       font-weight: 600;
@@ -578,10 +578,10 @@ import { FooterComponent } from '../../components/footer/footer.component';
     }
 
     .contact-btn:hover {
-      background-color: #BF9874;
+      background-color: #007FFF;
       color: #1E2E45;
       transform: translateY(-2px);
-      box-shadow: 0 4px 12px rgba(191, 152, 116, 0.4);
+      box-shadow: 0 4px 12px rgba(0, 127, 255, 0.4);
     }
 
     /* ========================================
@@ -696,7 +696,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
         width: 80px;
         height: 3px;
         margin: 0 auto;
-        background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.8), #BF9874, rgba(255, 255, 255, 0.8), transparent);
+        background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.8), #007FFF, rgba(255, 255, 255, 0.8), transparent);
       }
 
       .hero-description p {

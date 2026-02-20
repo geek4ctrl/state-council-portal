@@ -245,7 +245,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
     .header-decoration-right {
       flex: 0 0 80px;
       height: 1px;
-      background: linear-gradient(90deg, transparent, #BF9874, transparent);
+      background: linear-gradient(90deg, transparent, #007FFF, transparent);
     }
 
     .section-header h2 {
@@ -260,7 +260,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
 
     .section-subtitle {
       font-size: 0.85rem;
-      color: #BF9874 !important;
+      color: #B8860B !important;
       text-transform: uppercase;
       letter-spacing: 3px;
       margin: 0 0 60px 0;
@@ -282,7 +282,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
     .insights-line {
       width: 50px;
       height: 2px;
-      background: #BF9874;
+      background: #007FFF;
     }
 
     .insights-header h3 {
@@ -297,7 +297,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
 
     .insights-subtitle {
       font-size: 0.85rem;
-      color: #BF9874 !important;
+      color: #B8860B !important;
       margin: 0 0 24px;
       letter-spacing: 1px;
       text-transform: uppercase;
@@ -338,7 +338,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
       font-size: 0.75rem;
       text-transform: uppercase;
       letter-spacing: 1px;
-      color: #BF9874 !important;
+      color: #B8860B !important;
       font-weight: 600;
       white-space: nowrap;
     }
@@ -486,7 +486,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
     }
 
     .read-more:hover {
-      color: #BF9874 !important;
+      color: #B8860B !important;
     }
 
     .pagination {
@@ -499,7 +499,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
     .pagination-btn,
     .pagination-number {
       background: transparent;
-      border: 1px solid #BF9874 !important;
+      border: 1px solid #007FFF !important;
       border-radius: 6px !important;
       color: #666;
       padding: 10px 15px;
@@ -528,19 +528,19 @@ import { FooterComponent } from '../../components/footer/footer.component';
     }
 
     .pagination-number.active {
-      background: #BF9874;
+      background: #007FFF;
       color: white;
-      border-color: #BF9874 !important;
+      border-color: #007FFF !important;
     }
 
     .pagination-number:hover:not(.active) {
-      border-color: #BF9874 !important;
-      color: #BF9874;
+      border-color: #007FFF !important;
+      color: #007FFF;
     }
 
     .pagination-btn:hover:not(:disabled) {
-      border-color: #BF9874 !important;
-      color: #BF9874;
+      border-color: #007FFF !important;
+      color: #007FFF;
     }
 
     .pagination-btn.next-btn,
@@ -729,7 +729,7 @@ export class NewsComponent implements OnInit, AfterViewInit {
 
   private renderNewsCharts() {
     const axisLabelStyle = {
-      color: '#BF9874',
+      color: '#007FFF',
       fontSize: '11px'
     };
 
@@ -783,7 +783,7 @@ export class NewsComponent implements OnInit, AfterViewInit {
           type: 'column',
           name: 'Reforms',
           data: [4, 5, 6, 7, 6, 8],
-          color: 'rgba(191, 152, 116, 0.75)'
+          color: 'rgba(0, 127, 255, 0.7)'
         },
         {
           type: 'column',
@@ -825,7 +825,7 @@ export class NewsComponent implements OnInit, AfterViewInit {
           type: 'line',
           name: 'Publications',
           data: [15, 18, 22, 19, 24, 27],
-          color: '#BF9874',
+          color: '#007FFF',
           marker: { radius: 4 }
         }
       ]
