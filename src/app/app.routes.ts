@@ -23,6 +23,16 @@ export const routes: Routes = [
     loadComponent: () => import('./pages/organization/organization.component').then(m => m.OrganizationComponent)
   },
   {
+    path: 'administrative-courts',
+    loadComponent: () => import('./pages/coming-soon/coming-soon.component').then(m => m.ComingSoonComponent),
+    data: { title: 'Cours Administratives' }
+  },
+  {
+    path: 'administrative-tribunals',
+    loadComponent: () => import('./pages/coming-soon/coming-soon.component').then(m => m.ComingSoonComponent),
+    data: { title: 'Tribunaux Administratifs' }
+  },
+  {
     path: 'history',
     loadComponent: () => import('./pages/history/history.component').then(m => m.HistoryComponent)
   },
