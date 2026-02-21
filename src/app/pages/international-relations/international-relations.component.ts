@@ -1,4 +1,7 @@
-import { Component, ChangeDetectionStrategy } from '@angular/core';
+import {
+  AfterViewInit, ChangeDetectionStrategy, Component, DestroyRef,
+  ElementRef, OnInit, ViewChild, inject, signal,
+} from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { I18nPipe } from '../../i18n/i18n.pipe';
 import { FooterComponent } from '../../components/footer/footer.component';
@@ -8,7 +11,28 @@ import { FooterComponent } from '../../components/footer/footer.component';
   imports: [CommonModule, I18nPipe, FooterComponent],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
-    <div class="page-container">
+    <!-- LOADER -->
+    <div class="loader" [class.out]="isPageLoaded()">
+      <div class="loader-sphere">
+        <div class="sphere-ring r1"></div>
+        <div class="sphere-ring r2"></div>
+        <div class="sphere-ring r3"></div>
+        <div class="sphere-core">
+          <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M32 8L16 16L16 32C16 44 24 52 32 56C40 52 48 44 48 32L48 16L32 8Z"/>
+          </svg>
+        </div>
+      </div>
+      <div class="loader-track"><div class="loader-fill"></div></div>
+      <span class="loader-label">Initializing...</span>
+    </div>
+
+    <!-- CUSTOM CURSOR -->
+    <div class="cur-dot" #curDot></div>
+    <div class="cur-ring" #curRing></div>
+    <div class="cur-trail" #curTrail></div>
+
+    <div class="page-wrap page-container">
       <!-- Hero Section -->
       <section class="hero-section">
         <div class="hero-overlay"></div>
@@ -29,22 +53,25 @@ import { FooterComponent } from '../../components/footer/footer.component';
       <section class="stats-section">
         <div class="container">
           <div class="stats-grid">
-            <div class="stat-item">
+            <div class="stat-item tilt-card" style="--i:0" (mousemove)="tilt($event)" (mouseleave)="tiltReset($event)">
+              <div class="tilt-shine"></div>
               <div class="stat-number">2</div>
               <div class="stat-divider"></div>
-              <div class="stat-label">{{ 'international.stats.associations' | i18n }}</div>
+              <div class="stat-label anim-label-pulse">{{ 'international.stats.associations' | i18n }}</div>
             </div>
             <div class="stat-separator"></div>
-            <div class="stat-item">
+            <div class="stat-item tilt-card" style="--i:1" (mousemove)="tilt($event)" (mouseleave)="tiltReset($event)">
+              <div class="tilt-shine"></div>
               <div class="stat-number">50+</div>
               <div class="stat-divider"></div>
-              <div class="stat-label">{{ 'international.stats.partners' | i18n }}</div>
+              <div class="stat-label anim-label-pulse">{{ 'international.stats.partners' | i18n }}</div>
             </div>
             <div class="stat-separator"></div>
-            <div class="stat-item">
+            <div class="stat-item tilt-card" style="--i:2" (mousemove)="tilt($event)" (mouseleave)="tiltReset($event)">
+              <div class="tilt-shine"></div>
               <div class="stat-number">100+</div>
               <div class="stat-divider"></div>
-              <div class="stat-label">{{ 'international.stats.exchanges' | i18n }}</div>
+              <div class="stat-label anim-label-pulse">{{ 'international.stats.exchanges' | i18n }}</div>
             </div>
           </div>
         </div>
@@ -54,13 +81,14 @@ import { FooterComponent } from '../../components/footer/footer.component';
       <section class="networks-section">
         <div class="container">
           <div class="section-header">
-            <div class="header-line"></div>
-            <h2>{{ 'international.networks.title' | i18n }}</h2>
+            <div class="header-line anim-line"></div>
+            <h2 class="anim-up">{{ 'international.networks.title' | i18n }}</h2>
           </div>
-          <p class="section-subtitle">{{ 'international.networks.subtitle' | i18n }}</p>
+          <p class="section-subtitle anim-up a-d1">{{ 'international.networks.subtitle' | i18n }}</p>
 
           <div class="network-cards">
-            <div class="network-card glass-card">
+            <div class="network-card glass-card tilt-card" style="--i:0" (mousemove)="tilt($event)" (mouseleave)="tiltReset($event)">
+              <div class="tilt-shine"></div>
               <div class="card-accent"></div>
               <div class="card-content">
                 <h3>AHJUCAF</h3>
@@ -69,7 +97,8 @@ import { FooterComponent } from '../../components/footer/footer.component';
               </div>
             </div>
 
-            <div class="network-card glass-card">
+            <div class="network-card glass-card tilt-card" style="--i:1" (mousemove)="tilt($event)" (mouseleave)="tiltReset($event)">
+              <div class="tilt-shine"></div>
               <div class="card-accent"></div>
               <div class="card-content">
                 <h3>AA-HJF</h3>
@@ -85,14 +114,15 @@ import { FooterComponent } from '../../components/footer/footer.component';
       <section class="cooperation-section">
         <div class="container">
           <div class="section-header centered">
-            <div class="header-line-left"></div>
-            <h2>{{ 'international.domains.title' | i18n }}</h2>
-            <div class="header-line-right"></div>
+            <div class="header-line-left anim-line-c"></div>
+            <h2 class="anim-up">{{ 'international.domains.title' | i18n }}</h2>
+            <div class="header-line-right anim-line-c"></div>
           </div>
-          <p class="section-subtitle centered">{{ 'international.domains.subtitle' | i18n }}</p>
+          <p class="section-subtitle centered anim-up a-d1">{{ 'international.domains.subtitle' | i18n }}</p>
 
           <div class="domain-grid">
-            <div class="domain-card glass-card">
+            <div class="domain-card glass-card tilt-card" style="--i:0" (mousemove)="tilt($event)" (mouseleave)="tiltReset($event)">
+              <div class="tilt-shine"></div>
               <div class="domain-header">
                 <div class="domain-icon">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
@@ -104,7 +134,8 @@ import { FooterComponent } from '../../components/footer/footer.component';
               <p>{{ 'international.domains.dialogue.body' | i18n }}</p>
             </div>
 
-            <div class="domain-card glass-card">
+            <div class="domain-card glass-card tilt-card" style="--i:1" (mousemove)="tilt($event)" (mouseleave)="tiltReset($event)">
+              <div class="tilt-shine"></div>
               <div class="domain-header">
                 <div class="domain-icon">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
@@ -117,7 +148,8 @@ import { FooterComponent } from '../../components/footer/footer.component';
               <p>{{ 'international.domains.assistance.body' | i18n }}</p>
             </div>
 
-            <div class="domain-card glass-card">
+            <div class="domain-card glass-card tilt-card" style="--i:2" (mousemove)="tilt($event)" (mouseleave)="tiltReset($event)">
+              <div class="tilt-shine"></div>
               <div class="domain-header">
                 <div class="domain-icon">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
@@ -132,7 +164,8 @@ import { FooterComponent } from '../../components/footer/footer.component';
               <p>{{ 'international.domains.capacity.body' | i18n }}</p>
             </div>
 
-            <div class="domain-card glass-card">
+            <div class="domain-card glass-card tilt-card" style="--i:3" (mousemove)="tilt($event)" (mouseleave)="tiltReset($event)">
+              <div class="tilt-shine"></div>
               <div class="domain-header">
                 <div class="domain-icon">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
@@ -157,7 +190,9 @@ import { FooterComponent } from '../../components/footer/footer.component';
               <h2>{{ 'international.collaboration.title' | i18n }}</h2>
               <p class="section-subtitle">{{ 'international.collaboration.body' | i18n }}</p>
             </div>
-            <button class="contact-btn">{{ 'international.collaboration.cta' | i18n }}</button>
+            <button class="contact-btn mag-btn" (mousemove)="mag($event)" (mouseleave)="magOut($event)" (click)="ripple($event)">
+              <span>{{ 'international.collaboration.cta' | i18n }}</span>
+            </button>
           </div>
         </div>
       </section>
@@ -1001,6 +1036,147 @@ import { FooterComponent } from '../../components/footer/footer.component';
         transform: none;
       }
     }
+    /* ━━━ Home-style animations ━━━ */
+    @keyframes fillBar{0%{width:0}60%{width:70%}100%{width:100%}}
+    @keyframes labelPulse{0%,100%{opacity:.4;letter-spacing:2px}50%{opacity:1;letter-spacing:5px}}
+    @keyframes loaderOut{to{opacity:0;visibility:hidden}}
+    @keyframes rOrbit1{from{transform:rotateX(65deg) rotateZ(0)}to{transform:rotateX(65deg) rotateZ(360deg)}}
+    @keyframes rOrbit2{from{transform:rotateX(65deg) rotateZ(120deg)}to{transform:rotateX(65deg) rotateZ(480deg)}}
+    @keyframes rOrbit3{from{transform:rotateX(65deg) rotateZ(240deg)}to{transform:rotateX(65deg) rotateZ(600deg)}}
+    @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+    @keyframes shimmerSweep{from{transform:translateX(-120%) skewX(-20deg)}to{transform:translateX(220%) skewX(-20deg)}}
+    @keyframes rippleAnim{to{transform:scale(1);opacity:0}}
+    @keyframes cardIn{from{opacity:0;transform:translateY(40px) rotateX(20deg) scale(.94)}to{opacity:1;transform:translateY(0) rotateX(0) scale(1)}}
+    @keyframes lineExpand{from{width:0;opacity:0}to{width:60px;opacity:1}}
+    @keyframes lineCExpand{from{width:0;opacity:0}to{width:160px;opacity:1}}
+    @keyframes upFade{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:translateY(0)}}
+
+    .page-wrap{cursor:none;}
+    .loader{
+      position:fixed;inset:0;background:linear-gradient(135deg,#080e1a,#1a2942);
+      display:flex;flex-direction:column;align-items:center;justify-content:center;gap:32px;
+      z-index:9999;transition:opacity .7s ease,visibility .7s ease,transform .7s ease;
+    }
+    .loader.out{opacity:0;visibility:hidden;transform:scale(1.06);pointer-events:none;}
+    .loader-sphere{width:120px;height:120px;position:relative;display:flex;align-items:center;justify-content:center;}
+    .sphere-ring{position:absolute;inset:0;border-radius:50%;border:1px solid rgba(191,152,116,.35);}
+    .r1{inset:10px;animation:rOrbit1 2.5s linear infinite;}
+    .r2{inset:0;animation:rOrbit2 3.5s linear infinite;}
+    .r3{inset:-12px;animation:rOrbit3 5s linear infinite;}
+    .sphere-core{
+      width:52px;height:52px;border-radius:50%;
+      background:radial-gradient(circle,rgba(191,152,116,.25),rgba(191,152,116,.05));
+      border:1px solid rgba(191,152,116,.5);
+      display:flex;align-items:center;justify-content:center;color:#BF9874;
+      box-shadow:0 0 30px rgba(191,152,116,.3);animation:float 3s ease-in-out infinite;
+    }
+    .sphere-core svg{width:30px;height:30px;}
+    .loader-track{width:220px;height:3px;background:rgba(255,255,255,.08);border-radius:99px;overflow:hidden;}
+    .loader-fill{height:100%;background:linear-gradient(90deg,#BF9874,#e0b98a);border-radius:99px;animation:fillBar 2s ease-in-out infinite;}
+    .loader-label{font-size:.72rem;font-weight:700;letter-spacing:2px;color:#BF9874;text-transform:uppercase;animation:labelPulse 2s ease-in-out infinite;}
+
+    .cur-dot{position:fixed;width:8px;height:8px;border-radius:50%;background:#BF9874;pointer-events:none;z-index:99999;transform:translate(-50%,-50%);}
+    .cur-ring{position:fixed;width:38px;height:38px;border-radius:50%;border:2px solid rgba(191,152,116,.55);pointer-events:none;z-index:99998;transform:translate(-50%,-50%);transition:width .25s,height .25s,border-color .25s;}
+    .cur-trail{position:fixed;width:80px;height:80px;border-radius:50%;border:1px solid rgba(191,152,116,.15);pointer-events:none;z-index:99997;transform:translate(-50%,-50%);transition:width .4s,height .4s;}
+    body:has(button:hover) .cur-ring,.page-wrap:has(.contact-btn:hover) .cur-ring{width:56px;height:56px;border-color:rgba(191,152,116,.9);}
+
+    .anim-line{animation:lineExpand .8s ease-out both;}
+    .anim-line-c{animation:lineCExpand .8s ease-out both;}
+    .anim-up{animation:upFade .7s cubic-bezier(.23,1,.32,1) both;opacity:0;}
+    .a-d1{animation-delay:.15s;}
+    .anim-label-pulse{animation:labelPulse 3s ease-in-out infinite;}
+
+    .tilt-card{transform-style:preserve-3d;position:relative;overflow:hidden;transition:transform .5s cubic-bezier(.23,1,.32,1),box-shadow .5s ease;}
+    .tilt-card{opacity:0;animation:cardIn .7s cubic-bezier(.23,1,.32,1) calc(var(--i,0)*.1s) forwards;}
+    .tilt-shine{position:absolute;inset:0;border-radius:inherit;pointer-events:none;z-index:10;background:linear-gradient(105deg,transparent 45%,rgba(255,255,255,.18) 50%,transparent 55%);transform:translateX(-120%) skewX(-20deg);}
+
+    .mag-btn{position:relative;overflow:hidden;transition:transform .25s ease;}
+    .mag-btn::before{content:'';position:absolute;inset:0;background:linear-gradient(105deg,transparent 40%,rgba(255,255,255,.2) 50%,transparent 60%);transform:translateX(-120%) skewX(-20deg);pointer-events:none;}
+    .mag-btn:hover::before{animation:shimmerSweep .6s ease forwards;}
   `]
 })
-export class InternationalRelationsComponent {}
+export class InternationalRelationsComponent implements OnInit, AfterViewInit {
+  private destroyRef = inject(DestroyRef);
+  @ViewChild('curDot') curDot!: ElementRef<HTMLDivElement>;
+  @ViewChild('curRing') curRing!: ElementRef<HTMLDivElement>;
+  @ViewChild('curTrail') curTrail!: ElementRef<HTMLDivElement>;
+  isPageLoaded = signal(false);
+  private rafId?: number;
+  private curRx = 0; private curRy = 0;
+  private trailRx = 0; private trailRy = 0;
+
+  ngOnInit() {
+    setTimeout(() => this.isPageLoaded.set(true), 1800);
+    this.destroyRef.onDestroy(() => { if (this.rafId) cancelAnimationFrame(this.rafId); });
+  }
+
+  ngAfterViewInit() {
+    this.initCursor();
+  }
+
+  private initCursor() {
+    const dot = this.curDot?.nativeElement;
+    const ring = this.curRing?.nativeElement;
+    const trail = this.curTrail?.nativeElement;
+    if (!dot || !ring || !trail) return;
+    let mx = 0, my = 0;
+    document.addEventListener('mousemove', (e) => { mx = e.clientX; my = e.clientY; dot.style.left = mx + 'px'; dot.style.top = my + 'px'; });
+    const anim = () => {
+      this.curRx += (mx - this.curRx) * 0.14;
+      this.curRy += (my - this.curRy) * 0.14;
+      this.trailRx += (mx - this.trailRx) * 0.07;
+      this.trailRy += (my - this.trailRy) * 0.07;
+      ring.style.left = this.curRx + 'px'; ring.style.top = this.curRy + 'px';
+      trail.style.left = this.trailRx + 'px'; trail.style.top = this.trailRy + 'px';
+      this.rafId = requestAnimationFrame(anim);
+    };
+    requestAnimationFrame(anim);
+    document.querySelectorAll('.page-wrap button,.page-wrap a').forEach(el => {
+      el.addEventListener('mouseenter', () => { ring.style.width = '56px'; ring.style.height = '56px'; ring.style.borderColor = 'rgba(191,152,116,.9)'; trail.style.width = '90px'; trail.style.height = '90px'; });
+      el.addEventListener('mouseleave', () => { ring.style.width = '38px'; ring.style.height = '38px'; ring.style.borderColor = 'rgba(191,152,116,.55)'; trail.style.width = '80px'; trail.style.height = '80px'; });
+    });
+  }
+
+  tilt(e: MouseEvent) {
+    const el = e.currentTarget as HTMLElement;
+    const r = el.getBoundingClientRect();
+    const dx = (e.clientX - r.left - r.width / 2) / (r.width / 2);
+    const dy = (e.clientY - r.top - r.height / 2) / (r.height / 2);
+    const tx = -dy * 14; const ty = dx * 14;
+    el.style.transform = `perspective(900px) rotateX(${tx}deg) rotateY(${ty}deg) translateZ(14px)`;
+    el.style.boxShadow = `${-ty * 1.5}px ${tx * 1.5}px 50px rgba(0,0,0,.18)`;
+    const shine = el.querySelector<HTMLElement>('.tilt-shine');
+    if (shine) { shine.style.transform = `translateX(${dx * 60}%) translateY(${dy * 40}%) skewX(-20deg)`; shine.style.opacity = '.7'; }
+  }
+
+  tiltReset(e: MouseEvent) {
+    const el = e.currentTarget as HTMLElement;
+    el.style.transform = ''; el.style.boxShadow = '';
+    const shine = el.querySelector<HTMLElement>('.tilt-shine');
+    if (shine) { shine.style.transform = 'translateX(-120%) skewX(-20deg)'; shine.style.opacity = '0'; }
+  }
+
+  mag(e: MouseEvent) {
+    const el = e.currentTarget as HTMLElement;
+    const r = el.getBoundingClientRect();
+    const dx = (e.clientX - r.left - r.width / 2) * 0.4;
+    const dy = (e.clientY - r.top - r.height / 2) * 0.4;
+    el.style.transform = `translate(${dx}px,${dy}px)`;
+  }
+
+  magOut(e: MouseEvent) { (e.currentTarget as HTMLElement).style.transform = ''; }
+
+  ripple(e: MouseEvent) {
+    const el = e.currentTarget as HTMLElement;
+    const r = el.getBoundingClientRect();
+    const rip = document.createElement('span');
+    const size = Math.max(r.width, r.height) * 2;
+    rip.style.cssText = `position:absolute;width:${size}px;height:${size}px;border-radius:50%;background:rgba(255,255,255,.35);transform:scale(0);left:${e.clientX - r.left - size / 2}px;top:${e.clientY - r.top - size / 2}px;animation:rippleAnim .6s ease-out forwards;pointer-events:none;z-index:10;`;
+    const style = document.createElement('style');
+    style.textContent = '@keyframes rippleAnim{to{transform:scale(1);opacity:0;}}';
+    document.head.appendChild(style);
+    el.style.position = 'relative'; el.style.overflow = 'hidden';
+    el.appendChild(rip);
+    setTimeout(() => { rip.remove(); style.remove(); }, 700);
+  }
+}
