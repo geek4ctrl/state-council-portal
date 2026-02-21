@@ -20,6 +20,8 @@
       "court": "LA COUR",
       "presentation": "Présentation",
       "organization": "Organisation",
+      "administrativeCourts": "Cours Administratives",
+      "administrativeTribunals": "Tribunaux Administratifs",
       "reforms": "Réformes",
       "international": "Relations internationales",
       "audiences": "AUDIENCES",
@@ -33,6 +35,11 @@
     "organization": "Organisation",
     "apply": "Déposer",
     "news": "Actualités"
+  },
+  "comingSoon": {
+    "subtitle": "Bientôt disponible",
+    "description": "Cette page est en cours de développement et sera bientôt disponible. Revenez plus tard pour découvrir le contenu.",
+    "backHome": "Retour à l'accueil"
   },
   "errors": {
     "generic": {

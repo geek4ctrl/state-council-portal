@@ -20,6 +20,8 @@
       "court": "THE COURT",
       "presentation": "Presentation",
       "organization": "Organization",
+      "administrativeCourts": "Administrative Courts",
+      "administrativeTribunals": "Administrative Tribunals",
       "reforms": "Reforms",
       "international": "International Relations",
       "audiences": "AUDIENCES",
@@ -33,6 +35,11 @@
     "organization": "Org",
     "apply": "Apply",
     "news": "News"
+  },
+  "comingSoon": {
+    "subtitle": "Coming Soon",
+    "description": "This page is currently under development and will be available soon. Please check back later to explore the content.",
+    "backHome": "Back to Home"
   },
   "errors": {
     "generic": {
