@@ -85,36 +85,12 @@
 }
 
 .mobile-nav-item.active {
-  color: #3a6bb6;
+  color: #7b85a0;
 }
 
 .mobile-nav-item.active .mobile-nav-icon {
-  background: #ffffff;
-  box-shadow: 0 12px 20px rgba(31, 75, 153, 0.28);
-  animation: mobile-nav-pop 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) both;
-}
-
-.mobile-nav-item.active .mobile-nav-icon::after {
-  content: '';
-  position: absolute;
-  inset: -6px;
-  border-radius: 14px;
-  background:
-    radial-gradient(circle at 50% 30%, rgba(150, 195, 255, 0.5), transparent 64%),
-    radial-gradient(circle at 50% 70%, rgba(95, 150, 235, 0.4), transparent 70%),
-    radial-gradient(circle at 50% 100%, rgba(65, 115, 210, 0.3), transparent 74%);
-  opacity: 0.6;
-  filter: blur(4.5px);
-  animation: mobile-nav-flame 2.1s ease-in-out infinite;
-  pointer-events: none;
-}
-
-.mobile-nav-label {
-  transition: transform 0.25s ease, color 0.25s ease;
-}
-
-.mobile-nav-item.active .mobile-nav-label {
-  transform: translateY(-1px);
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 6px 14px rgba(24, 44, 70, 0.12);
 }
 
 @keyframes mobile-nav-rise {
