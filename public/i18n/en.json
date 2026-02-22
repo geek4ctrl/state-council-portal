@@ -1,5 +1,6 @@
 {
   "header": {
+    "siteName": "State Council of the DRC",
     "contact": {
       "phone": "+ 243 (21) 00000000",
       "hours": "MONDAY - FRIDAY 7:30AM - 6:30PM"
@@ -19,6 +20,8 @@
       "court": "THE COURT",
       "presentation": "Presentation",
       "organization": "Organization",
+      "administrativeCourts": "Administrative Courts",
+      "administrativeTribunals": "Administrative Tribunals",
       "reforms": "Reforms",
       "international": "International Relations",
       "audiences": "AUDIENCES",
@@ -26,6 +29,17 @@
       "news": "NEWS",
       "bookAppointment": "Book Appointment"
     }
+  },
+  "mobileNav": {
+    "home": "Home",
+    "organization": "Org",
+    "apply": "Apply",
+    "news": "News"
+  },
+  "comingSoon": {
+    "subtitle": "Coming Soon",
+    "description": "This page is currently under development and will be available soon. Please check back later to explore the content.",
+    "backHome": "Back to Home"
   },
   "errors": {
     "generic": {
@@ -96,6 +110,10 @@
       "previous": "Previous page",
       "next": "Next",
       "pageLabel": "Page {{page}}"
+    },
+    "empty": {
+      "title": "No news posts yet",
+      "body": "New articles will appear here once they are published."
     },
     "articles": {
       "1": {
@@ -182,8 +200,8 @@
   "footer": {
     "mainOffice": {
       "title": "Main Office",
-      "address1": "No. 3 Avenue de la Justice",
-      "address2": "Central District of Kinshasa",
+      "address1": "7639, intersection of Pumbu and Batonniers Avenues",
+      "address2": "Commune of Gombe, Kinshasa",
       "address3": "Democratic Republic of Congo",
       "phone": "Tel: +243 (21) 0000000",
       "email": "Email: info@conseildetatrdc.com"
@@ -384,7 +402,7 @@
     "contact": {
       "address": {
         "title": "Office Address",
-        "body": "No. 2 Avenue de la Justice in the Gombe district of Kinshasa."
+        "body": "7639, intersection of Pumbu and Batonniers Avenues in the commune of Gombe/Kinshasa-DRC"
       },
       "phone": {
         "title": "Office Number",
@@ -402,7 +420,7 @@
         "1": {
           "title": "THE FIRST PRESIDENT OF THE STATE COUNCIL",
           "paragraphs": {
-            "1": "As the third-ranking member of the DRC's High Council of the Judiciary, the First President of the STATE COUNCIL, Professor NGOMBA KABEYYA ELIE LEON, donated blood on Thursday, February 27th, in solidarity with the victims of the Rwandan aggression in the eastern part of the country.",
+            "1": "As the third-ranking member of the DRC's High Council of the Judiciary, the First President of the STATE COUNCIL, Brigitte Nsensele Wa Nsensele, donated blood on Thursday, February 27th, in solidarity with the victims of the Rwandan aggression in the eastern part of the country.",
             "2": "For every democratic Congolese citizen, contributing to the war effort is a civic duty. The judiciary is no exception.",
             "3": "For over three decades, the DRC has suffered aggression perpetrated by Rwanda and other negative armed groups, resulting in millions of deaths, tens of thousands of displaced persons, and a deplorable humanitarian situation."
           }
@@ -426,7 +444,7 @@
       }
     },
     "newsletter": {
-      "title": "NEWSLETTER",
+      "title": "NEWS & ARTICLES",
       "readMore": "Read More",
       "cta": "Learn More",
       "items": {
@@ -667,7 +685,7 @@
       "aria": "Interactive organization chart",
       "peopleTitle": "LEADERSHIP BY NAME",
       "peopleSubtitle": "Names of the First President, Presidents, and Advisors.",
-      "peopleFirstPresidentName": "PROF. NGOMBA KABEYYA ELIE LEON",
+      "peopleFirstPresidentName": "Brigitte Nsensele Wa Nsensele",
       "roles": {
         "firstPresident": "First President",
         "president": "President",

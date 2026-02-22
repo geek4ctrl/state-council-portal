@@ -11,10 +11,12 @@ import {
   computed
 } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { HttpClient } from '@angular/common/http';
 import { SkeletonLoaderComponent } from '../../components/skeleton-loader/skeleton-loader.component';
 import { IconComponent } from '../../components/icon/icon.component';
 import { SeoService } from '../../services/seo.service';
 import { I18nPipe } from '../../i18n/i18n.pipe';
+import { I18nService } from '../../i18n/i18n.service';
 import Highcharts from 'highcharts';
 import { FooterComponent } from '../../components/footer/footer.component';
 
@@ -112,26 +114,54 @@ import { FooterComponent } from '../../components/footer/footer.component';
               @for (item of [1, 2, 3]; track item) {
                 <app-skeleton-loader type="news-card"></app-skeleton-loader>
               }
+            } @else if (articles().length === 0) {
+              <div class="news-empty" role="status" aria-live="polite">
+                <h3>{{ 'news.empty.title' | i18n }}</h3>
+                <p>{{ 'news.empty.body' | i18n }}</p>
+              </div>
             } @else {
+<<<<<<< HEAD
               @for (article of getCurrentPageArticles(); track article.id; let i = $index) {
                 <article class="news-card glass-card tilt-card" [style.--i]="i" (mousemove)="tilt($event)" (mouseleave)="tiltReset($event)">
                   <div class="tilt-shine"></div>
                   <div class="news-image img-zoom">
                     <img [src]="article.image" [alt]="article.titleKey | i18n" loading="lazy">
                     <div class="img-sheen"></div>
+=======
+              @for (article of getCurrentPageArticles(); track article.id) {
+                <article class="news-card glass-card">
+                  <div class="news-image">
+                    <img [src]="article.image" [alt]="article.title" loading="lazy">
+>>>>>>> 6c2bf8ab9303933ae43cbf5c35ae6537463bd357
                   </div>
                   <div class="news-content">
                     <div class="news-meta">
-                      <span class="news-date">{{ article.dateKey | i18n }}</span>
+                      <span class="news-date">{{ article.date }}</span>
                       <span class="news-divider">|</span>
-                      <span class="news-category">{{ article.categoryKey | i18n }}</span>
+                      <span class="news-category">{{ article.category }}</span>
                     </div>
+<<<<<<< HEAD
                     <h3 class="news-title">{{ article.titleKey | i18n }}</h3>
                     <p class="news-excerpt">{{ article.excerptKey | i18n }}</p>
                     <a href="#" class="read-more mag-btn" (mousemove)="mag($event)" (mouseleave)="magOut($event)" (click)="ripple($event)">
                       <span>{{ 'news.actions.readMore' | i18n }}</span>
                       <app-icon name="arrow-right" [size]="16"></app-icon>
                     </a>
+=======
+                    <h3 class="news-title">{{ article.title }}</h3>
+                    <p class="news-excerpt">{{ article.excerpt }}</p>
+                    @if (article.link) {
+                      <a [href]="article.link" class="read-more" target="_blank" rel="noopener noreferrer">
+                        Lire la suite
+                        <app-icon name="arrow-right" [size]="16"></app-icon>
+                      </a>
+                    } @else {
+                      <span class="read-more">
+                        Lire la suite
+                        <app-icon name="arrow-right" [size]="16"></app-icon>
+                      </span>
+                    }
+>>>>>>> 6c2bf8ab9303933ae43cbf5c35ae6537463bd357
                   </div>
                 </article>
               }
@@ -148,9 +178,24 @@ import { FooterComponent } from '../../components/footer/footer.component';
               (mouseleave)="magOut($event)"
               [attr.aria-label]="'news.pagination.previous' | i18n">
               <app-icon name="chevron-down" [size]="20" [customClass]="'rotate-90'" [attr.aria-hidden]="true"></app-icon>
+<<<<<<< HEAD
               <span>Previous</span>
+=======
+              <span class="prev-btn-text">{{ 'news.pagination.previous' | i18n }}</span>
+>>>>>>> 6c2bf8ab9303933ae43cbf5c35ae6537463bd357
             </button>
+            @for (page of pageNumbers(); track page) {
+              <button
+                class="pagination-number"
+                [class.active]="currentPage() === page"
+                (click)="goToPage(page)"
+                [attr.aria-current]="currentPage() === page ? 'page' : null"
+                [attr.aria-label]="'news.pagination.pageLabel' | i18n : { page }">
+                {{ page }}
+              </button>
+            }
             <button
+<<<<<<< HEAD
               class="pagination-number mag-btn"
               [class.active]="currentPage() === 1"
               (click)="goToPage(1); ripple($event)"
@@ -186,6 +231,11 @@ import { FooterComponent } from '../../components/footer/footer.component';
               (click)="goToNextPage(); ripple($event)"
               (mousemove)="mag($event)"
               (mouseleave)="magOut($event)"
+=======
+              class="pagination-btn next-btn"
+              [disabled]="currentPage() === totalPages()"
+              (click)="goToNextPage()"
+>>>>>>> 6c2bf8ab9303933ae43cbf5c35ae6537463bd357
               [attr.aria-label]="'news.pagination.next' | i18n">
               <span class="next-text">{{ 'news.pagination.next' | i18n }}</span>
               <app-icon name="chevron-right" [size]="16" [attr.aria-hidden]="true"></app-icon>
@@ -279,7 +329,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
     .header-decoration-right {
       flex: 0 0 80px;
       height: 1px;
-      background: linear-gradient(90deg, transparent, #BF9874, transparent);
+      background: linear-gradient(90deg, transparent, #007FFF, transparent);
     }
 
     .section-header h2 {
@@ -294,7 +344,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
 
     .section-subtitle {
       font-size: 0.85rem;
-      color: #BF9874 !important;
+      color: #B8860B !important;
       text-transform: uppercase;
       letter-spacing: 3px;
       margin: 0 0 60px 0;
@@ -316,7 +366,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
     .insights-line {
       width: 50px;
       height: 2px;
-      background: #BF9874;
+      background: #007FFF;
     }
 
     .insights-header h3 {
@@ -331,7 +381,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
 
     .insights-subtitle {
       font-size: 0.85rem;
-      color: #BF9874 !important;
+      color: #B8860B !important;
       margin: 0 0 24px;
       letter-spacing: 1px;
       text-transform: uppercase;
@@ -372,14 +422,15 @@ import { FooterComponent } from '../../components/footer/footer.component';
       font-size: 0.75rem;
       text-transform: uppercase;
       letter-spacing: 1px;
-      color: #BF9874 !important;
+      color: #B8860B !important;
       font-weight: 600;
       white-space: nowrap;
     }
 
     .insight-chart {
       width: 100%;
-      height: 250px;
+      height: clamp(180px, 45vw, 260px);
+      overflow: hidden;
     }
 
     .news-grid {
@@ -387,6 +438,31 @@ import { FooterComponent } from '../../components/footer/footer.component';
       grid-template-columns: repeat(3, 1fr);
       gap: 30px;
       margin-bottom: 50px;
+    }
+
+    .news-empty {
+      grid-column: 1 / -1;
+      text-align: center;
+      padding: 48px 24px;
+      border: 1px solid rgba(26, 41, 66, 0.12);
+      border-radius: 6px;
+      background: #ffffff;
+      box-shadow: 0 12px 26px rgba(26, 41, 66, 0.12);
+    }
+
+    .news-empty h3 {
+      margin: 0 0 10px 0;
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #1a1a1a;
+      letter-spacing: 0.5px;
+    }
+
+    .news-empty p {
+      margin: 0;
+      font-size: 0.9rem;
+      color: #666;
+      line-height: 1.6;
     }
 
     .news-card {
@@ -494,7 +570,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
     }
 
     .read-more:hover {
-      color: #BF9874 !important;
+      color: #B8860B !important;
     }
 
     .pagination {
@@ -507,7 +583,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
     .pagination-btn,
     .pagination-number {
       background: transparent;
-      border: 1px solid #BF9874 !important;
+      border: 1px solid #007FFF !important;
       border-radius: 6px !important;
       color: #666;
       padding: 10px 15px;
@@ -522,6 +598,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
       align-items: center;
       justify-content: center;
       gap: 8px;
+      min-width: 160px;
     }
 
     .pagination-btn:disabled {
@@ -535,33 +612,34 @@ import { FooterComponent } from '../../components/footer/footer.component';
     }
 
     .pagination-number.active {
-      background: #BF9874;
+      background: #007FFF;
       color: white;
-      border-color: #BF9874 !important;
+      border-color: #007FFF !important;
     }
 
     .pagination-number:hover:not(.active) {
-      border-color: #BF9874 !important;
-      color: #BF9874;
+      border-color: #007FFF !important;
+      color: #007FFF;
     }
 
     .pagination-btn:hover:not(:disabled) {
-      border-color: #BF9874 !important;
-      color: #BF9874;
+      border-color: #007FFF !important;
+      color: #007FFF;
     }
 
-    .pagination-btn.next-btn {
+    .pagination-btn.next-btn,
+    .pagination-btn.prev-btn {
       padding: 10px 20px;
       font-weight: 600;
       text-transform: capitalize;
     }
 
-    .pagination-btn.prev-btn {
-      padding: 10px 15px;
-    }
-
     .next-text {
       font-size: 0.9rem;
+    }
+
+    .prev-btn-text {
+      display: inline;
     }
 
     @media (max-width: 1199px) {
@@ -584,7 +662,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
       .section-header h2 { font-size: 2rem; }
       .header-decoration-left, .header-decoration-right { flex: 0 0 60px; }
       .news-image { height: 220px; }
-      .insight-chart { height: 230px; }
+      .insight-chart { height: clamp(180px, 48vw, 230px); }
       .footer-grid { grid-template-columns: repeat(2, 1fr); gap: 40px; }
     }
 
@@ -602,17 +680,20 @@ import { FooterComponent } from '../../components/footer/footer.component';
       .section-subtitle { font-size: 0.8rem; margin-bottom: 40px; }
       .insights-header h3 { font-size: 1.4rem; }
       .insight-card { padding: 20px 18px 14px; }
-      .insight-chart { height: 220px; }
+      .insight-chart { height: clamp(180px, 55vw, 220px); }
       .news-grid { grid-template-columns: 1fr; gap: 24px; margin-bottom: 40px; }
       .news-image { height: 200px; }
       .news-content { padding: 20px; }
       .news-title { min-height: auto; font-size: 1rem; }
       .news-excerpt { font-size: 0.85rem; }
       .read-more { align-self: flex-start !important; text-align: left !important; }
-      .pagination { gap: 8px; flex-wrap: wrap; }
-      .pagination-btn, .pagination-number { padding: 8px 12px; font-size: 0.85rem; border-width: 6px !important; }
-      .pagination-btn.next-btn { padding: 8px 16px; }
-      .next-text { font-size: 0.85rem; }
+      .pagination { gap: 8px; flex-wrap: nowrap; }
+      .pagination-btn { min-width: 40px; padding: 10px; width: 40px; height: 40px; background: transparent !important; border: none !important; }
+      .pagination-btn app-icon { display: flex; }
+      .prev-btn-text { display: none; }
+      .pagination-number { padding: 10px; font-size: 0.85rem; min-width: 40px; width: 40px; height: 40px; background: transparent !important; border: none !important; }
+      .pagination-number.active { background: transparent !important; color: #007FFF; font-weight: 700; border: none !important; }
+      .next-text { display: none; }
       .footer-logo-wrapper { width: 100px; height: 100px; top: -35px; }
       .footer-main { padding-bottom: 30px !important; }
       .footer-grid { grid-template-columns: 1fr; gap: 35px; }
@@ -634,7 +715,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
       .insights-header h3 { font-size: 1.3rem; }
       .insight-card-header { flex-direction: column; align-items: flex-start; }
       .insight-note { white-space: normal; }
-      .insight-chart { height: 200px; }
+      .insight-chart { height: clamp(170px, 60vw, 200px); }
       .news-grid { gap: 20px; margin-bottom: 35px; }
       .news-image { height: 180px; }
       .news-content { padding: 18px; }
@@ -642,11 +723,13 @@ import { FooterComponent } from '../../components/footer/footer.component';
       .news-title { font-size: 0.95rem; margin-bottom: 12px; }
       .news-excerpt { font-size: 0.8rem; margin-bottom: 12px; }
       .read-more { font-size: 0.8rem; }
-      .pagination { gap: 6px; }
-      .pagination-btn, .pagination-number { padding: 7px 10px; font-size: 0.8rem; border-width: 5px !important; }
-      .pagination-number { min-width: 38px; }
-      .pagination-btn.next-btn { padding: 7px 14px; }
-      .next-text { font-size: 0.8rem; }
+      .pagination { gap: 6px; flex-wrap: nowrap; }
+      .pagination-btn { min-width: 38px; padding: 9px; width: 38px; height: 38px; background: transparent !important; border: none !important; }
+      .pagination-btn app-icon { display: flex; }
+      .prev-btn-text { display: none; }
+      .pagination-number { padding: 9px; font-size: 0.8rem; min-width: 38px; width: 38px; height: 38px; background: transparent !important; border: none !important; }
+      .pagination-number.active { background: transparent !important; color: #007FFF; font-weight: 700; border: none !important; }
+      .next-text { display: none; }
       .footer-logo-wrapper { width: 90px; height: 90px; top: -30px; }
       .footer-main { padding: 50px 0 25px !important; }
       .footer-grid { gap: 30px; padding-top: 30px; }
@@ -720,12 +803,19 @@ import { FooterComponent } from '../../components/footer/footer.component';
 })
 export class NewsComponent implements OnInit, AfterViewInit {
   private seoService = inject(SeoService);
+  private readonly http = inject(HttpClient);
+  private readonly i18n = inject(I18nService);
   private readonly destroyRef = inject(DestroyRef);
   private chartInstances: Highcharts.Chart[] = [];
   private resizeObserver?: ResizeObserver;
+<<<<<<< HEAD
   private rafId?: number;
   private curRx = 0; private curRy = 0;
   private trailRx = 0; private trailRy = 0;
+=======
+  private readonly apiUrl = 'https://patient-wonder-production.up.railway.app/api/posts';
+  private readonly fallbackImage = 'https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=800&h=600&fit=crop';
+>>>>>>> 6c2bf8ab9303933ae43cbf5c35ae6537463bd357
   private readonly handleVisibilityChange = () => {
     if (!document.hidden) {
       this.reflowCharts();
@@ -744,9 +834,16 @@ export class NewsComponent implements OnInit, AfterViewInit {
 
   currentPage = signal(1);
   isLoading = signal(true);
+<<<<<<< HEAD
   isPageLoaded = signal(false);
   totalPages = 3;
   itemsPerPage = 3;
+=======
+  itemsPerPage = 6;
+  protected readonly articles = signal<NewsArticle[]>([]);
+  readonly totalPages = computed(() => Math.max(1, Math.ceil(this.articles().length / this.itemsPerPage)));
+  readonly pageNumbers = computed(() => Array.from({ length: this.totalPages() }, (_, index) => index + 1));
+>>>>>>> 6c2bf8ab9303933ae43cbf5c35ae6537463bd357
 
   ngOnInit() {
     this.seoService.updateMetadata({
@@ -756,9 +853,13 @@ export class NewsComponent implements OnInit, AfterViewInit {
       ogUrl: '/news'
     });
 
+<<<<<<< HEAD
     setTimeout(() => this.isPageLoaded.set(true), 1800);
     setTimeout(() => this.isLoading.set(false), 1500);
     this.destroyRef.onDestroy(() => { if (this.rafId) cancelAnimationFrame(this.rafId); });
+=======
+    this.loadNews();
+>>>>>>> 6c2bf8ab9303933ae43cbf5c35ae6537463bd357
   }
 
   ngAfterViewInit() {
@@ -856,7 +957,7 @@ export class NewsComponent implements OnInit, AfterViewInit {
 
   private renderNewsCharts() {
     const axisLabelStyle = {
-      color: '#BF9874',
+      color: '#007FFF',
       fontSize: '11px'
     };
 
@@ -910,7 +1011,7 @@ export class NewsComponent implements OnInit, AfterViewInit {
           type: 'column',
           name: 'Reforms',
           data: [4, 5, 6, 7, 6, 8],
-          color: 'rgba(191, 152, 116, 0.75)'
+          color: 'rgba(0, 127, 255, 0.7)'
         },
         {
           type: 'column',
@@ -952,7 +1053,7 @@ export class NewsComponent implements OnInit, AfterViewInit {
           type: 'line',
           name: 'Publications',
           data: [15, 18, 22, 19, 24, 27],
-          color: '#BF9874',
+          color: '#007FFF',
           marker: { radius: 4 }
         }
       ]
@@ -964,89 +1065,14 @@ export class NewsComponent implements OnInit, AfterViewInit {
     ];
   }
 
-  allNewsArticles = [
-    {
-      id: 1,
-      dateKey: 'news.articles.1.date',
-      categoryKey: 'news.articles.1.category',
-      titleKey: 'news.articles.1.title',
-      excerptKey: 'news.articles.1.excerpt',
-      image: 'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=800&h=600&fit=crop'
-    },
-    {
-      id: 2,
-      dateKey: 'news.articles.2.date',
-      categoryKey: 'news.articles.2.category',
-      titleKey: 'news.articles.2.title',
-      excerptKey: 'news.articles.2.excerpt',
-      image: 'https://images.unsplash.com/photo-1505664194779-8beaceb93744?w=800&h=600&fit=crop'
-    },
-    {
-      id: 3,
-      dateKey: 'news.articles.3.date',
-      categoryKey: 'news.articles.3.category',
-      titleKey: 'news.articles.3.title',
-      excerptKey: 'news.articles.3.excerpt',
-      image: 'https://images.unsplash.com/photo-1479142506502-19b3a3b7ff33?w=800&h=600&fit=crop'
-    },
-    {
-      id: 4,
-      dateKey: 'news.articles.1.date',
-      categoryKey: 'news.articles.1.category',
-      titleKey: 'news.articles.1.title',
-      excerptKey: 'news.articles.1.excerpt',
-      image: 'https://images.unsplash.com/photo-1521587760476-6c12a4b040da?w=800&h=600&fit=crop'
-    },
-    {
-      id: 5,
-      dateKey: 'news.articles.2.date',
-      categoryKey: 'news.articles.2.category',
-      titleKey: 'news.articles.2.title',
-      excerptKey: 'news.articles.2.excerpt',
-      image: 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&h=600&fit=crop'
-    },
-    {
-      id: 6,
-      dateKey: 'news.articles.3.date',
-      categoryKey: 'news.articles.3.category',
-      titleKey: 'news.articles.3.title',
-      excerptKey: 'news.articles.3.excerpt',
-      image: 'https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=800&h=600&fit=crop'
-    },
-    {
-      id: 7,
-      dateKey: 'news.articles.1.date',
-      categoryKey: 'news.articles.1.category',
-      titleKey: 'news.articles.1.title',
-      excerptKey: 'news.articles.1.excerpt',
-      image: 'https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=800&h=600&fit=crop'
-    },
-    {
-      id: 8,
-      dateKey: 'news.articles.2.date',
-      categoryKey: 'news.articles.2.category',
-      titleKey: 'news.articles.2.title',
-      excerptKey: 'news.articles.2.excerpt',
-      image: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=800&h=600&fit=crop'
-    },
-    {
-      id: 9,
-      dateKey: 'news.articles.3.date',
-      categoryKey: 'news.articles.3.category',
-      titleKey: 'news.articles.3.title',
-      excerptKey: 'news.articles.3.excerpt',
-      image: 'https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=800&h=600&fit=crop'
-    }
-  ];
-
   getCurrentPageArticles() {
     const startIndex = (this.currentPage() - 1) * this.itemsPerPage;
     const endIndex = startIndex + this.itemsPerPage;
-    return this.allNewsArticles.slice(startIndex, endIndex);
+    return this.articles().slice(startIndex, endIndex);
   }
 
   goToPage(page: number) {
-    if (page >= 1 && page <= this.totalPages) {
+    if (page >= 1 && page <= this.totalPages()) {
       this.currentPage.set(page);
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
@@ -1059,8 +1085,95 @@ export class NewsComponent implements OnInit, AfterViewInit {
   }
 
   goToNextPage() {
-    if (this.currentPage() < this.totalPages) {
+    if (this.currentPage() < this.totalPages()) {
       this.goToPage(this.currentPage() + 1);
     }
   }
+
+  private loadNews() {
+    this.isLoading.set(true);
+    this.http.get<PostsResponse>(this.apiUrl).subscribe({
+      next: (response) => {
+        const posts = (response?.posts ?? [])
+          .sort((a, b) => this.getTimestamp(b.date) - this.getTimestamp(a.date))
+          .map((post) => this.mapPostToArticle(post));
+
+        this.articles.set(posts);
+        if (this.currentPage() > this.totalPages()) {
+          this.currentPage.set(1);
+        }
+        this.isLoading.set(false);
+      },
+      error: () => {
+        this.articles.set([]);
+        this.isLoading.set(false);
+      }
+    });
+  }
+
+  private mapPostToArticle(post: ApiPost): NewsArticle {
+    const title = post.title?.trim() || 'Untitled';
+    const excerpt = post.excerpt?.trim() || post.content?.trim() || '';
+    const category = post.category?.trim() || 'General';
+    const image = post.image_url?.trim() || this.fallbackImage;
+    return {
+      id: post.id,
+      title,
+      excerpt,
+      category,
+      image,
+      date: this.formatDate(post.date),
+      link: post.external_link?.trim() || undefined
+    };
+  }
+
+  private formatDate(dateValue?: string | null): string {
+    if (!dateValue) {
+      return '';
+    }
+    const parsed = new Date(dateValue);
+    if (Number.isNaN(parsed.getTime())) {
+      return '';
+    }
+    const lang = this.i18n.activeLang();
+    return new Intl.DateTimeFormat(lang, {
+      day: '2-digit',
+      month: 'short',
+      year: 'numeric'
+    }).format(parsed);
+  }
+
+  private getTimestamp(dateValue?: string | null): number {
+    if (!dateValue) {
+      return 0;
+    }
+    const parsed = new Date(dateValue);
+    return Number.isNaN(parsed.getTime()) ? 0 : parsed.getTime();
+  }
 }
+
+type ApiPost = {
+  id: number;
+  title?: string | null;
+  content?: string | null;
+  excerpt?: string | null;
+  category?: string | null;
+  image_url?: string | null;
+  date?: string | null;
+  external_link?: string | null;
+  status?: string | null;
+};
+
+type PostsResponse = {
+  posts?: ApiPost[];
+};
+
+type NewsArticle = {
+  id: number;
+  title: string;
+  excerpt: string;
+  category: string;
+  image: string;
+  date: string;
+  link?: string;
+};

@@ -6,7 +6,12 @@
 </main>
 
 <nav class="mobile-nav" aria-label="Mobile navigation">
-  <a class="mobile-nav-item" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+  <a
+    class="mobile-nav-item"
+    routerLink="/"
+    routerLinkActive="active"
+    [routerLinkActiveOptions]="{exact: true}"
+    (click)="scrollToTop()">
     <span class="mobile-nav-icon" aria-hidden="true">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
         <path d="M3 11.5L12 4l9 7.5" />
@@ -14,9 +19,13 @@
         <path d="M9.5 20v-5h5v5" />
       </svg>
     </span>
-    <span class="mobile-nav-label">Home</span>
+    <span class="mobile-nav-label">{{ 'mobileNav.home' | i18n }}</span>
   </a>
-  <a class="mobile-nav-item" routerLink="/organization" routerLinkActive="active">
+  <a
+    class="mobile-nav-item"
+    routerLink="/organization"
+    routerLinkActive="active"
+    (click)="scrollToTop()">
     <span class="mobile-nav-icon" aria-hidden="true">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
         <rect x="3" y="3" width="7" height="7" rx="2" />
@@ -25,9 +34,14 @@
         <rect x="14" y="14" width="7" height="7" rx="2" />
       </svg>
     </span>
-    <span class="mobile-nav-label">Org</span>
+    <span class="mobile-nav-label">{{ 'mobileNav.organization' | i18n }}</span>
   </a>
-  <a class="mobile-nav-item" routerLink="/filing" routerLinkActive="active">
+  <a
+    class="mobile-nav-item"
+    routerLink="/filing"
+    routerLinkActive="active"
+    [routerLinkActiveOptions]="{exact: false}"
+    (click)="scrollToTop()">
     <span class="mobile-nav-icon" aria-hidden="true">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
         <path d="M7 4h7l4 4v12a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z" />
@@ -35,9 +49,13 @@
         <path d="M9 13l2 2 4-4" />
       </svg>
     </span>
-    <span class="mobile-nav-label">Apply</span>
+    <span class="mobile-nav-label">{{ 'mobileNav.apply' | i18n }}</span>
   </a>
-  <a class="mobile-nav-item" routerLink="/news" routerLinkActive="active">
+  <a
+    class="mobile-nav-item"
+    routerLink="/news"
+    routerLinkActive="active"
+    (click)="scrollToTop()">
     <span class="mobile-nav-icon" aria-hidden="true">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
         <path d="M6 4h11a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z" />
@@ -46,7 +64,7 @@
         <path d="M8 14h4" />
       </svg>
     </span>
-    <span class="mobile-nav-label">News</span>
+    <span class="mobile-nav-label">{{ 'mobileNav.news' | i18n }}</span>
   </a>
 </nav>
 

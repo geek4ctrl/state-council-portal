@@ -61,15 +61,36 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Design Tokens */
+/* Design Tokens - DRC Flag Colors */
 :root {
-  --surface-0: #f6f3ee;
+  /* DRC Flag Colors */
+  --drc-blue: #007FFF;
+  --drc-blue-dark: #005CBF;
+  --drc-blue-light: #4DA6FF;
+  --drc-yellow: #FCD116;
+  --drc-yellow-dark: #B8860B; /* Dark goldenrod for text - much better contrast */
+  --drc-yellow-darker: #8B6914; /* Even darker for emphasis */
+  --drc-red: #CE1126;
+  --drc-red-dark: #A00D1E;
+  
+  /* Surface Colors */
+  --surface-0: #F5F8FC;
   --surface-1: #ffffff;
-  --ink-strong: #1f2a24;
-  --ink-muted: #55645c;
-  --accent: #6f7f6d;
-  --accent-strong: #3f5a4a;
-  --accent-soft: rgba(111, 127, 109, 0.18);
+  --surface-accent: rgba(0, 127, 255, 0.04);
+  
+  /* Text Colors */
+  --ink-strong: #1a2942;
+  --ink-muted: #556B7F;
+  
+  /* Accent Colors */
+  --accent: #007FFF;
+  --accent-strong: #005CBF;
+  --accent-soft: rgba(0, 127, 255, 0.12);
+  --accent-gold: #B8860B; /* Changed to dark goldenrod for better readability */
+  --accent-gold-decorative: #FCD116; /* Bright yellow only for decorative elements */
+  --accent-red: #CE1126;
+  
+  /* Spacing */
   --space-1: 0.25rem;
   --space-2: 0.5rem;
   --space-3: 0.75rem;
@@ -78,11 +99,15 @@ body {
   --space-6: 2rem;
   --space-7: 2.5rem;
   --space-8: 3rem;
+  
+  /* Border Radius */
   --radius-sm: 10px;
   --radius-md: 16px;
   --radius-lg: 22px;
-  --shadow-soft: 0 12px 30px rgba(19, 27, 23, 0.08);
-  --shadow-lift: 0 18px 45px rgba(19, 27, 23, 0.12);
+  
+  /* Shadows */
+  --shadow-soft: 0 12px 30px rgba(0, 63, 127, 0.08);
+  --shadow-lift: 0 18px 45px rgba(0, 63, 127, 0.12);
 }
 
 /* Global Styles */
@@ -147,13 +172,13 @@ button {
 }
 
 ::selection {
-  background: rgba(191, 152, 116, 0.35);
-  color: #0f172a;
+  background: rgba(0, 127, 255, 0.25);
+  color: #1a2942;
 }
 
 ::-moz-selection {
-  background: rgba(191, 152, 116, 0.35);
-  color: #0f172a;
+  background: rgba(0, 127, 255, 0.25);
+  color: #1a2942;
 }
 
 /* Shared card styling */
@@ -247,7 +272,7 @@ input:focus-visible,
 textarea:focus-visible,
 select:focus-visible,
 [tabindex]:focus-visible {
-  outline: 3px solid #bf9874;
+  outline: 3px solid var(--drc-blue);
   outline-offset: 2px;
 }
 
@@ -259,7 +284,7 @@ select:focus-visible,
 /* Ensure interactive elements have visible focus */
 .nav-link:focus-visible,
 .dropdown-link:focus-visible {
-  outline: 3px solid #bf9874;
+  outline: 3px solid var(--drc-blue);
   outline-offset: 2px;
   border-radius: 2px;
 }
@@ -339,7 +364,7 @@ img[loading='lazy'] {
   padding: 0 20px;
 }
 
-/* ===== SUBTITLE GOLDISH COLOR ===== */
+/* ===== SUBTITLE ACCENT COLOR (Using dark gold for readability) ===== */
 .hero-subtitle,
 .key-facts-subtitle,
 .section-subtitle,
@@ -349,20 +374,36 @@ img[loading='lazy'] {
 .key-fact-note,
 .form-subtitle,
 .hero-category {
-  color: #bf9874 !important;
+  color: var(--drc-yellow-dark) !important;
 }
 
-/* ===== ALL ICON STYLING (TRANSPARENT BACKGROUND, GOLDISH BORDER ONLY, 4PX RADIUS) ===== */
+/* ===== ALL ICON STYLING (TRANSPARENT BACKGROUND, BLUE BORDER ONLY, 4PX RADIUS) ===== */
 .quick-link-icon,
-.offer-icon,
-.practice-icon,
 .card-icon {
   background: transparent !important;
   background-color: transparent !important;
-  border: 1px solid #bf9874 !important;
+  border: 1px solid var(--drc-blue) !important;
   border-radius: 4px !important;
   overflow: hidden;
   padding: 8px;
+}
+
+.practice-icon {
+  background: transparent !important;
+  background-color: transparent !important;
+  border: 1px solid #B8860B !important; /* Golden border */
+  border-radius: 50% !important; /* Circle for practice icons */
+  overflow: visible;
+  padding: 0;
+}
+
+.offer-icon {
+  background: transparent !important;
+  background-color: transparent !important;
+  border: 1px solid #B8860B !important; /* Golden border - reduced width */
+  border-radius: 50% !important; /* Circle for offer icons */
+  overflow: visible;
+  padding: 0;
 }
 
 .quick-link-icon.non-border,
@@ -387,16 +428,14 @@ img[loading='lazy'] {
   background: none !important;
 }
 
-/* ===== TEXT LINK BUTTONS (NO BORDERS, UNDERLINED) ===== */
+/* ===== TEXT LINK BUTTONS (NO BORDERS, NO UNDERLINE) ===== */
 .quick-link-action,
 .read-more-link,
 .practice-cta,
 .card-link {
   border: none !important;
   background: transparent !important;
-  text-decoration: underline !important;
-  text-decoration-thickness: 2px !important;
-  text-underline-offset: 4px !important;
+  text-decoration: none !important;
   padding: 0 !important;
   font-weight: 700 !important;
   color: #1a2942 !important;
@@ -406,11 +445,19 @@ img[loading='lazy'] {
 }
 
 .read-more-link {
-  color: #bf9874 !important;
+  color: var(--drc-blue) !important;
 }
 
 .practice-cta {
+  border: none !important;
+  background: transparent !important;
+  text-decoration: none !important; /* Remove underline */
+  padding: 0 !important;
+  font-weight: 700 !important;
   color: var(--accent) !important;
+  display: inline-flex !important;
+  align-items: center;
+  gap: 6px;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-size: 0.8rem;
@@ -449,10 +496,10 @@ button[type='submit'] {
 .btn-appointment {
   border-width: 1px !important;
   border-style: solid !important;
-  border-color: #bf9874 !important;
+  border-color: var(--drc-blue) !important;
   border-radius: 6px !important;
   background: transparent !important;
-  color: #bf9874 !important;
+  color: var(--drc-blue) !important;
   padding: 14px 38px !important;
   font-size: 0.9rem !important;
   font-weight: 700 !important;
@@ -464,7 +511,7 @@ button[type='submit'] {
 .president-learn-btn:hover,
 .newsletter-learn-btn:hover,
 .btn-appointment:hover {
-  background: #bf9874 !important;
+  background: var(--drc-blue) !important;
   color: white !important;
 }
 
@@ -528,7 +575,7 @@ img,
 .card-icon svg {
   width: 100%;
   height: 100%;
-  stroke: #bf9874;
+  stroke: var(--drc-blue);
 }
 
 .info-card h3 {
@@ -577,7 +624,7 @@ img,
 
 /* ===== FOOTER LOGO (LANGUAGE SUPPORT) ===== */
 .footer-logo-wrapper {
-  border: 1px solid rgba(191, 152, 116, 0.3) !important;
+  border: 1px solid rgba(0, 127, 255, 0.3) !important;
 }
 
 .footer-logo-wrapper img {
@@ -587,7 +634,7 @@ img,
   border: none !important;
 }
 
-/* ===== SOCIAL ICONS - GOLDISH BORDERS WITH SPACING ===== */
+/* ===== SOCIAL ICONS - BLUE BORDERS WITH SPACING ===== */
 .social-icons {
   display: flex;
   gap: 15px;
@@ -596,12 +643,12 @@ img,
 }
 
 .social-icon {
-  border: 1px solid #bf9874 !important;
+  border: 1px solid var(--drc-blue) !important;
 }
 
 .social-icon:hover {
-  border-color: #bf9874 !important;
-  background-color: #bf9874 !important;
+  border-color: var(--drc-blue) !important;
+  background-color: var(--drc-blue) !important;
 }
 
 /* ===== NAVIGATION ARROWS ===== */
@@ -610,30 +657,30 @@ img,
 }
 
 .nav-arrow:hover {
-  border-color: rgba(191, 152, 116, 0.8) !important;
+  border-color: var(--drc-yellow) !important;
 }
 
-/* ===== DECORATIVE LINES - GOLDISH ===== */
+/* ===== DECORATIVE LINES - YELLOW ACCENT (Can stay bright) ===== */
 .key-facts-line,
 .offer-line,
 .header-line,
 .expertise-line {
-  background: #bf9874 !important;
+  background: var(--drc-yellow) !important; /* Bright yellow OK for decorative elements */
 }
 
-/* ===== CONTACT INFO DIVIDERS - GOLDISH ===== */
+/* ===== CONTACT INFO DIVIDERS - BLUE ACCENT ===== */
 .contact-divider {
   background: linear-gradient(
     to bottom,
     transparent,
-    rgba(191, 152, 116, 0.7),
+    var(--drc-blue),
     transparent
   ) !important;
 }
 
 @media (max-width: 1023px) {
   .contact-divider {
-    background: linear-gradient(to right, transparent, #bf9874, transparent) !important;
+    background: linear-gradient(to right, transparent, var(--drc-blue), transparent) !important;
   }
 
   .cards-grid {
@@ -789,11 +836,11 @@ img,
 }
 
 .quick-link-item {
-  border: 1px solid rgba(191, 152, 116, 0.2);
+  border: 1px solid rgba(0, 127, 255, 0.2);
 }
 
 .quick-link-item:hover {
-  border-color: rgba(191, 152, 116, 0.4);
+  border-color: rgba(0, 127, 255, 0.4);
 }
 
 /* ═══════════════════════════════════════════════════════════════════

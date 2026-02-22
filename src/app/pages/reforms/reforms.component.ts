@@ -72,9 +72,14 @@ import { FooterComponent } from '../../components/footer/footer.component';
             <!-- Step 1 -->
             <div class="process-step">
               <div class="step-number">01</div>
+<<<<<<< HEAD
               <div class="step-content tilt-card" style="--i:0" (mousemove)="tilt($event)" (mouseleave)="tiltReset($event)">
                 <div class="tilt-shine"></div>
                 <div class="step-icon-wrapper" style="background: linear-gradient(135deg, #c8956b 0%, #b8865b 100%);">
+=======
+              <div class="step-content">
+                <div class="step-icon-wrapper" style="background: linear-gradient(135deg, #B8860B 0%, #8B6914 100%);">
+>>>>>>> 6c2bf8ab9303933ae43cbf5c35ae6537463bd357
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
                     <circle cx="9" cy="7" r="4"></circle>
@@ -90,10 +95,10 @@ import { FooterComponent } from '../../components/footer/footer.component';
                 <svg viewBox="0 0 100 60" preserveAspectRatio="none">
                   <defs>
                     <marker id="arrowhead1" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
-                      <polygon points="0 0, 10 3, 0 6" fill="#c8956b"/>
+                      <polygon points="0 0, 10 3, 0 6" fill="#B8860B"/>
                     </marker>
                   </defs>
-                  <path d="M0,30 Q50,10 100,30" stroke="#c8956b" stroke-width="2" fill="none" stroke-dasharray="5,5" marker-end="url(#arrowhead1)"/>
+                  <path d="M0,30 Q50,10 100,30" stroke="#B8860B" stroke-width="2" fill="none" stroke-dasharray="5,5" marker-end="url(#arrowhead1)"/>
                 </svg>
               </div>
             </div>
@@ -101,9 +106,14 @@ import { FooterComponent } from '../../components/footer/footer.component';
             <!-- Step 2 -->
             <div class="process-step">
               <div class="step-number">02</div>
+<<<<<<< HEAD
               <div class="step-content tilt-card" style="--i:1" (mousemove)="tilt($event)" (mouseleave)="tiltReset($event)">
                 <div class="tilt-shine"></div>
                 <div class="step-icon-wrapper" style="background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);">
+=======
+              <div class="step-content">
+                <div class="step-icon-wrapper" style="background: linear-gradient(135deg, #007FFF 0%, #005CBF 100%);">
+>>>>>>> 6c2bf8ab9303933ae43cbf5c35ae6537463bd357
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
                     <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
@@ -117,7 +127,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
                 <svg viewBox="0 0 100 60" preserveAspectRatio="none">
                   <defs>
                     <marker id="arrowhead2" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
-                      <polygon points="0 0, 10 3, 0 6" fill="#c8956b"/>
+                      <polygon points="0 0, 10 3, 0 6" fill="#B8860B"/>
                     </marker>
                   </defs>
                   <path d="M0,30 Q50,50 100,30" stroke="#c8956b" stroke-width="2" fill="none" stroke-dasharray="5,5" marker-end="url(#arrowhead2)"/>
@@ -128,9 +138,14 @@ import { FooterComponent } from '../../components/footer/footer.component';
             <!-- Step 3 -->
             <div class="process-step">
               <div class="step-number">03</div>
+<<<<<<< HEAD
               <div class="step-content tilt-card" style="--i:2" (mousemove)="tilt($event)" (mouseleave)="tiltReset($event)">
                 <div class="tilt-shine"></div>
                 <div class="step-icon-wrapper" style="background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);">
+=======
+              <div class="step-content">
+                <div class="step-icon-wrapper" style="background: linear-gradient(135deg, #005CBF 0%, #007FFF 100%);">
+>>>>>>> 6c2bf8ab9303933ae43cbf5c35ae6537463bd357
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <circle cx="12" cy="12" r="10"></circle>
                     <line x1="2" y1="12" x2="22" y2="12"></line>
@@ -145,10 +160,10 @@ import { FooterComponent } from '../../components/footer/footer.component';
                 <svg viewBox="0 0 100 60" preserveAspectRatio="none">
                   <defs>
                     <marker id="arrowhead3" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
-                      <polygon points="0 0, 10 3, 0 6" fill="#c8956b"/>
+                      <polygon points="0 0, 10 3, 0 6" fill="#B8860B"/>
                     </marker>
                   </defs>
-                  <path d="M0,30 Q50,10 100,30" stroke="#c8956b" stroke-width="2" fill="none" stroke-dasharray="5,5" marker-end="url(#arrowhead3)"/>
+                  <path d="M0,30 Q50,10 100,30" stroke="#B8860B" stroke-width="2" fill="none" stroke-dasharray="5,5" marker-end="url(#arrowhead3)"/>
                 </svg>
               </div>
             </div>
@@ -156,9 +171,14 @@ import { FooterComponent } from '../../components/footer/footer.component';
             <!-- Step 4 -->
             <div class="process-step">
               <div class="step-number">04</div>
+<<<<<<< HEAD
               <div class="step-content tilt-card" style="--i:3" (mousemove)="tilt($event)" (mouseleave)="tiltReset($event)">
                 <div class="tilt-shine"></div>
                 <div class="step-icon-wrapper" style="background: linear-gradient(135deg, #7d8a96 0%, #8d9aa6 100%);">
+=======
+              <div class="step-content">
+                <div class="step-icon-wrapper" style="background: linear-gradient(135deg, #4DA6FF 0%, #007FFF 100%);">
+>>>>>>> 6c2bf8ab9303933ae43cbf5c35ae6537463bd357
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
                     <line x1="8" y1="21" x2="16" y2="21"></line>
@@ -173,7 +193,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
                 <svg viewBox="0 0 100 60" preserveAspectRatio="none">
                   <defs>
                     <marker id="arrowhead4" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
-                      <polygon points="0 0, 10 3, 0 6" fill="#c8956b"/>
+                      <polygon points="0 0, 10 3, 0 6" fill="#B8860B"/>
                     </marker>
                   </defs>
                   <path d="M0,30 Q50,50 100,30" stroke="#c8956b" stroke-width="2" fill="none" stroke-dasharray="5,5" marker-end="url(#arrowhead4)"/>
@@ -184,9 +204,14 @@ import { FooterComponent } from '../../components/footer/footer.component';
             <!-- Step 5 -->
             <div class="process-step last-step">
               <div class="step-number">05</div>
+<<<<<<< HEAD
               <div class="step-content tilt-card" style="--i:4" (mousemove)="tilt($event)" (mouseleave)="tiltReset($event)">
                 <div class="tilt-shine"></div>
                 <div class="step-icon-wrapper" style="background: linear-gradient(135deg, #f39c12 0%, #e67e22 100%);">
+=======
+              <div class="step-content">
+                <div class="step-icon-wrapper" style="background: linear-gradient(135deg, #FCD116 0%, #B8860B 100%);">
+>>>>>>> 6c2bf8ab9303933ae43cbf5c35ae6537463bd357
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
                     <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
@@ -318,8 +343,8 @@ import { FooterComponent } from '../../components/footer/footer.component';
       right: 0;
       bottom: 0;
       background: 
-        radial-gradient(circle at 20% 30%, rgba(191, 152, 116, 0.18) 0%, transparent 50%),
-        radial-gradient(circle at 80% 70%, rgba(191, 152, 116, 0.15) 0%, transparent 50%),
+        radial-gradient(circle at 20% 30%, rgba(0, 127, 255, 0.15) 0%, transparent 50%),
+        radial-gradient(circle at 80% 70%, rgba(252, 209, 22, 0.12) 0%, transparent 50%),
         url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><defs><pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255,255,255,0.03)" stroke-width="1"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
       z-index: 2;
     }
@@ -355,12 +380,12 @@ import { FooterComponent } from '../../components/footer/footer.component';
         180deg,
         transparent 0%,
         rgba(255, 255, 255, 0.8) 15%,
-        rgba(191, 152, 116, 0.9) 50%,
+        rgba(0, 127, 255, 0.85) 50%,
         rgba(255, 255, 255, 0.8) 85%,
         transparent 100%
       );
       display: block;
-      box-shadow: 0 0 20px rgba(191, 152, 116, 0.4);
+      box-shadow: 0 0 20px rgba(0, 127, 255, 0.4);
     }
 
     .hero-content-right p {
@@ -392,12 +417,12 @@ import { FooterComponent } from '../../components/footer/footer.component';
     .tag-line {
       width: 60px;
       height: 2px;
-      background: linear-gradient(90deg, transparent, #BF9874);
+      background: linear-gradient(90deg, transparent, #007FFF);
     }
 
     .section-tag span {
       font-size: 0.75rem;
-      color: #BF9874;
+      color: #007FFF;
       text-transform: uppercase;
       letter-spacing: 2px;
       font-weight: 600;
@@ -417,7 +442,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
     .building-section .section-description {
       font-size: 1rem;
       line-height: 1.8;
-      color: #BF9874;
+      color: #007FFF;
       text-align: justify;
       max-width: 100%;
       margin: 0 0 60px 0;
@@ -441,7 +466,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
     .initiatives-section .section-description {
       font-size: 1rem;
       line-height: 1.8;
-      color: #BF9874;
+      color: #007FFF;
       text-align: center;
       max-width: 900px;
       margin: 0 auto 60px;
@@ -474,7 +499,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
     .step-number {
       width: 50px;
       height: 50px;
-      background: linear-gradient(135deg, #c8956b 0%, #b8865b 100%);
+      background: linear-gradient(135deg, #B8860B 0%, #8B6914 100%);
       color: white;
       border-radius: 50%;
       display: flex;
@@ -483,7 +508,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
       font-size: 1.2rem;
       font-weight: 700;
       margin-bottom: 25px;
-      box-shadow: 0 4px 12px rgba(200, 149, 107, 0.3);
+      box-shadow: 0 4px 12px rgba(184, 134, 11, 0.3);
       z-index: 2;
       position: relative;
     }
@@ -551,17 +576,17 @@ import { FooterComponent } from '../../components/footer/footer.component';
 
     .step-badge.critical {
       background: #ffebee;
-      color: #c41e3a;
+      color: #CE1126; /* DRC red */
     }
 
     .step-badge.high {
-      background: #fff3e0;
-      color: #f39c12;
+      background: #fff8e1;
+      color: #B8860B; /* DRC dark gold */
     }
 
     .step-badge.medium {
-      background: #e8f5e9;
-      color: #4caf50;
+      background: #e3f2fd;
+      color: #007FFF; /* DRC blue */
     }
 
     .arrow-connector {
@@ -598,11 +623,11 @@ import { FooterComponent } from '../../components/footer/footer.component';
     }
 
     .header-line.left {
-      background: linear-gradient(90deg, transparent, #c8956b);
+      background: linear-gradient(90deg, transparent, #B8860B);
     }
 
     .header-line.right {
-      background: linear-gradient(90deg, #c8956b, transparent);
+      background: linear-gradient(90deg, #B8860B, transparent);
     }
 
     .section-title-stakeholders {
@@ -618,7 +643,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
     .section-subtitle {
       text-align: center;
       font-size: 0.9rem;
-      color: #c8956b;
+      color: #B8860B; /* DRC dark gold */
       margin: 0 0 50px 0;
       letter-spacing: 2px;
       text-transform: uppercase;
@@ -658,6 +683,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
       object-fit: cover;
       display: block;
       transition: transform 0.4s ease;
+      filter: grayscale(100%); /* Black and white */
     }
 
     .image-overlay {
@@ -831,7 +857,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
         width: 100px;
         height: 2px;
         margin: 0 auto;
-        background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.8), #BF9874, rgba(255, 255, 255, 0.8), transparent);
+        background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.8), #007FFF, rgba(255, 255, 255, 0.8), transparent);
       }
 
       .hero-content-left h1 {
@@ -1299,22 +1325,22 @@ export class ReformsComponent implements OnInit, AfterViewInit {
     {
       name: 'BAGUNDA NSIMIRE',
       roleKey: 'reforms.stakeholders.roles.president',
-      image: 'https://i.pravatar.cc/400?img=12'
+      image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=500&fit=crop&q=80'
     },
     {
       name: 'NDOMBA KABEYA',
       roleKey: 'reforms.stakeholders.roles.vicePresident',
-      image: 'https://i.pravatar.cc/400?img=33'
+      image: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&h=500&fit=crop&q=80'
     },
     {
       name: 'CHRISTINA WOCIN',
       roleKey: 'reforms.stakeholders.roles.chiefMagistrate',
-      image: 'https://i.pravatar.cc/400?img=47'
+      image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=500&fit=crop&q=80'
     },
     {
       name: 'MUKENGULE MUDERHWA',
       roleKey: 'reforms.stakeholders.roles.internationalRelations',
-      image: 'https://i.pravatar.cc/400?img=56'
+      image: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&h=500&fit=crop&q=80'
     }
   ];
 

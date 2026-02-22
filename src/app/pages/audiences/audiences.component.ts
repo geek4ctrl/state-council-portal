@@ -323,12 +323,12 @@ import { FooterComponent } from '../../components/footer/footer.component';
       .vertical-line {
         width: 2px;
         height: 180px;
-        background: linear-gradient(to bottom, 
-          transparent 0%, 
+        background: linear-gradient(to bottom,
+          transparent 0%,
           rgba(255, 255, 255, 0.2) 10%,
-          rgba(255, 255, 255, 0.5) 30%, 
-          rgba(255, 255, 255, 0.8) 50%, 
-          rgba(255, 255, 255, 0.5) 70%, 
+          rgba(255, 255, 255, 0.5) 30%,
+          rgba(255, 255, 255, 0.8) 50%,
+          rgba(255, 255, 255, 0.5) 70%,
           rgba(255, 255, 255, 0.2) 90%,
           transparent 100%);
         position: relative;
@@ -350,6 +350,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
       .hero-description {
         padding-left: 0;
         text-align: left;
+        color: #ffffff;
       }
 
       .hero-title h1 {
@@ -368,6 +369,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
         opacity: 0.95;
         margin: 0;
         font-weight: 300;
+        color: #ffffff;
       }
 
       /* Content Section */
@@ -484,7 +486,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
 
       .section-subtitle {
         font-size: 0.8rem;
-        color: #BF9874 !important;
+        color: #B8860B !important;
         margin: 0 0 60px 0;
         text-transform: uppercase;
         letter-spacing: 2.5px;
@@ -635,7 +637,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
       }
 
       .contact-btn {
-        background: #1a1a1a;
+        background: #007FFF;
         color: white;
         border: none;
         padding: 16px 40px;
@@ -651,9 +653,9 @@ import { FooterComponent } from '../../components/footer/footer.component';
       }
 
       .contact-btn:hover {
-        background: #000;
+        background: #005CBF;
         transform: translateY(-2px);
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 4px 12px rgba(0, 127, 255, 0.3);
       }
 
       /* Footer Section */
@@ -724,7 +726,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
       }
 
       .footer-column ul li a:hover {
-        color: #BF9874;
+        color: #007FFF;
       }
 
       .footer-bottom {
@@ -758,7 +760,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
       }
 
       .social-icon:hover {
-        background-color: #BF9874;
+        background-color: #007FFF;
       }
 
       .social-icon svg {
@@ -779,7 +781,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
       }
 
       .privacy-link:hover {
-        color: #BF9874;
+        color: #007FFF;
       }
 
       /* ========================================
@@ -852,12 +854,12 @@ import { FooterComponent } from '../../components/footer/footer.component';
           width: 150px;
           height: 2px;
           margin: 0 auto;
-          background: linear-gradient(to right, 
-            transparent 0%, 
+          background: linear-gradient(to right,
+            transparent 0%,
             rgba(255, 255, 255, 0.2) 10%,
-            rgba(255, 255, 255, 0.5) 30%, 
-            rgba(255, 255, 255, 0.8) 50%, 
-            rgba(255, 255, 255, 0.5) 70%, 
+            rgba(255, 255, 255, 0.5) 30%,
+            rgba(255, 255, 255, 0.8) 50%,
+            rgba(255, 255, 255, 0.5) 70%,
             rgba(255, 255, 255, 0.2) 90%,
             transparent 100%);
         }
@@ -1021,7 +1023,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
           font-size: 0.75rem;
           margin-bottom: 40px;
           text-align: left;
-          color: #BF9874 !important;
+          color: #B8860B !important;
         }
 
         .documents-grid {
@@ -1168,7 +1170,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
           font-size: 0.7rem;
           letter-spacing: 2px;
           margin-bottom: 35px;
-          color: #BF9874 !important;
+          color: #B8860B !important;
         }
 
         .documents-grid {
@@ -1514,7 +1516,7 @@ export class AudiencesComponent implements OnInit, AfterViewInit {
 
   private renderAudienceCharts() {
     const axisLabelStyle = {
-      color: '#BF9874',
+      color: '#007FFF',
       fontSize: '11px'
     };
 
@@ -1605,7 +1607,7 @@ export class AudiencesComponent implements OnInit, AfterViewInit {
           type: 'area',
           name: 'Adjourned',
           data: [36, 38, 42, 40, 45, 47],
-          color: 'rgba(191, 152, 116, 0.7)'
+          color: 'rgba(0, 127, 255, 0.7)'
         },
         {
           type: 'area',

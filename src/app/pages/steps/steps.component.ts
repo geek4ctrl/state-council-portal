@@ -529,7 +529,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
 
     .form-subtitle {
       font-size: 0.9rem;
-      color: #BF9874 !important;
+      color: #B8860B !important;
       text-transform: uppercase;
       letter-spacing: 2px;
       margin: 0;
@@ -679,8 +679,8 @@ import { FooterComponent } from '../../components/footer/footer.component';
 
     .form-submit button {
       background: white;
-      color: #BF9874;
-      border: 1px solid #BF9874;
+      color: #007FFF;
+      border: 1px solid #007FFF;
       padding: 15px 50px;
       font-size: 0.9rem;
       font-weight: 600;
@@ -691,7 +691,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
 
     .form-submit button:hover {
       background: transparent;
-      color: #BF9874;
+      color: #007FFF;
     }
 
     /* Map Section */

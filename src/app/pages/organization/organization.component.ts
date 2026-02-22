@@ -62,7 +62,7 @@ type HighchartsStatic = typeof import('highcharts');
             <div class="tilt-shine"></div>
             <div class="president-image-large img-zoom">
               <img
-                ngSrc="https://scontent.fpry2-1.fna.fbcdn.net/v/t39.30808-6/481977439_661094752968468_3580912692254417664_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=833d8c&_nc_ohc=781MphyOZxYQ7kNvwFA72Pl&_nc_oc=AdlS3efGmR2NwVl7AluKnrYklBBqsJYuTlJ2j9PkHSisG9RQ-4n7jDHjPIDmj6En6_w&_nc_zt=23&_nc_ht=scontent.fpry2-1.fna&_nc_gid=ECXY9r39JHQUTs-eZefdrQ&oh=00_AfsTzaj3KdpgLrEjgftG5I3y5wMeOJriKEBVHzCL_mVnRA&oe=69939BC0"
+                ngSrc="https://res.cloudinary.com/dhqvb8wbn/image/upload/v1771319774/brigitte_rycfia.jpg"
                 [attr.alt]="'organization.firstPresident.alt' | i18n"
                 width="400"
                 height="500">
@@ -569,7 +569,7 @@ type HighchartsStatic = typeof import('highcharts');
       margin: 0 0 30px 0;
       letter-spacing: 1.5px;
       padding-bottom: 20px;
-      border-bottom: 3px solid #BF9874;
+      border-bottom: 3px solid #007FFF;
       display: inline-block;
       position: relative;
     }
@@ -581,7 +581,7 @@ type HighchartsStatic = typeof import('highcharts');
       left: 0;
       width: 60%;
       height: 3px;
-      background: linear-gradient(to right, #BF9874, transparent);
+      background: linear-gradient(to right, #007FFF, transparent);
     }
 
     .president-description {
@@ -601,13 +601,13 @@ type HighchartsStatic = typeof import('highcharts');
     .senior-label-section {
       background: #f5f7fa;
       padding: 50px 0 0 0;
-      border-top: 1px solid rgba(191, 152, 116, 0.2);
+      border-top: 1px solid rgba(0, 127, 255, 0.2);
     }
 
     .senior-label {
       font-size: 0.8rem;
       font-weight: 700;
-      color: #BF9874;
+      color: #007FFF;
       letter-spacing: 3px;
       text-transform: uppercase;
       margin-bottom: 0;
@@ -623,7 +623,7 @@ type HighchartsStatic = typeof import('highcharts');
     .members-filter-section {
       background: #f5f7fa;
       padding: 0 0 30px 0;
-      border-bottom: 2px solid rgba(191, 152, 116, 0.15);
+      border-bottom: 2px solid rgba(0, 127, 255, 0.15);
     }
 
     .members-filter {
@@ -679,8 +679,8 @@ type HighchartsStatic = typeof import('highcharts');
     .org-chart-line {
       width: 60px;
       height: 3px;
-      background: linear-gradient(to right, #BF9874, #d4af8e);
-      box-shadow: 0 2px 8px rgba(191, 152, 116, 0.3);
+      background: linear-gradient(to right, #007FFF, #4DA6FF);
+      box-shadow: 0 2px 8px rgba(0, 127, 255, 0.3);
     }
 
     .org-chart-subtitle {
@@ -767,7 +767,7 @@ type HighchartsStatic = typeof import('highcharts');
     .org-chart-names .org-node.primary {
       font-size: 0.72rem;
     }
-    
+
     .filter-group input,
     .filter-group select {
       background: #fafbfc;
@@ -782,8 +782,8 @@ type HighchartsStatic = typeof import('highcharts');
 
     .filter-group input:focus,
     .filter-group select:focus {
-      border-color: #BF9874;
-      box-shadow: 0 0 0 4px rgba(191, 152, 116, 0.15);
+      border-color: #007FFF;
+      box-shadow: 0 0 0 4px rgba(0, 127, 255, 0.15);
       background: #ffffff;
     }
 
@@ -816,7 +816,7 @@ type HighchartsStatic = typeof import('highcharts');
       left: 0;
       width: 80px;
       height: 3px;
-      background: linear-gradient(to right, #BF9874, transparent);
+      background: linear-gradient(to right, #007FFF, transparent);
     }
 
     .members-grid {
@@ -831,7 +831,7 @@ type HighchartsStatic = typeof import('highcharts');
       padding: 30px;
       color: rgba(255, 255, 255, 0.85);
       font-size: 1rem;
-      border-left: 4px solid #BF9874;
+      border-left: 4px solid #007FFF;
       border-radius: 8px;
       box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     }
@@ -842,13 +842,13 @@ type HighchartsStatic = typeof import('highcharts');
       overflow: hidden;
       transition: all 0.4s ease;
       box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-      border: 1px solid rgba(191, 152, 116, 0.15);
+      border: 1px solid rgba(0, 127, 255, 0.15);
     }
 
     .member-card:hover {
       transform: translateY(-8px);
       box-shadow: 0 12px 35px rgba(0, 0, 0, 0.18);
-      border-color: rgba(191, 152, 116, 0.4);
+      border-color: rgba(0, 127, 255, 0.4);
     }
 
     .member-image {
@@ -889,7 +889,7 @@ type HighchartsStatic = typeof import('highcharts');
     .member-info {
       padding: 28px 24px;
       background: #ffffff;
-      border-top: 3px solid #BF9874;
+      border-top: 3px solid #007FFF;
     }
 
     .member-info h3 {
@@ -919,7 +919,7 @@ type HighchartsStatic = typeof import('highcharts');
 
     .learn-more {
       font-size: 0.78rem;
-      color: #BF9874;
+      color: #007FFF;
       text-decoration: none;
       font-weight: 700;
       letter-spacing: 1.5px;
@@ -949,7 +949,7 @@ type HighchartsStatic = typeof import('highcharts');
     }
 
     .load-more-btn {
-      background: linear-gradient(135deg, #BF9874 0%, #a08060 100%);
+      background: linear-gradient(135deg, #007FFF 0%, #005CBF 100%);
       border: none;
       color: white;
       padding: 14px 50px;
@@ -960,12 +960,12 @@ type HighchartsStatic = typeof import('highcharts');
       cursor: pointer;
       transition: all 0.3s ease;
       text-transform: uppercase;
-      box-shadow: 0 4px 15px rgba(191, 152, 116, 0.3);
+      box-shadow: 0 4px 15px rgba(0, 127, 255, 0.3);
     }
 
     .load-more-btn:hover {
       transform: translateY(-2px);
-      box-shadow: 0 8px 25px rgba(191, 152, 116, 0.4);
+      box-shadow: 0 8px 25px rgba(0, 127, 255, 0.4);
       background: linear-gradient(135deg, #a08060 0%, #8b6f50 100%);
     }
 
@@ -1023,7 +1023,7 @@ type HighchartsStatic = typeof import('highcharts');
       left: 0;
       right: 0;
       height: 3px;
-      background: linear-gradient(90deg, #BF9874, #4e6a8a);
+      background: linear-gradient(90deg, #007FFF, #FCD116);
     }
 
     .service-box:hover {
@@ -1061,7 +1061,7 @@ type HighchartsStatic = typeof import('highcharts');
     }
 
     .service-link:hover {
-      color: #BF9874;
+      color: #007FFF;
       transform: translateX(3px);
     }
 
@@ -1080,7 +1080,7 @@ type HighchartsStatic = typeof import('highcharts');
       position: absolute;
       inset: 0;
       background:
-        radial-gradient(circle at 10% 20%, rgba(191, 152, 116, 0.15), transparent 50%),
+        radial-gradient(circle at 10% 20%, rgba(0, 127, 255, 0.12), transparent 50%),
         radial-gradient(circle at 90% 10%, rgba(78, 106, 138, 0.12), transparent 45%);
       pointer-events: none;
     }
@@ -1097,7 +1097,7 @@ type HighchartsStatic = typeof import('highcharts');
 
     .section-subheading {
       font-size: 0.95rem;
-      color: #BF9874;
+      color: #007FFF;
       text-align: center;
       margin: 0 0 60px 0;
       font-style: italic;
@@ -1147,7 +1147,7 @@ type HighchartsStatic = typeof import('highcharts');
       flex-shrink: 0;
       width: 42px;
       height: 42px;
-      background: radial-gradient(circle at 30% 30%, #d9c2a7, #BF9874);
+      background: radial-gradient(circle at 30% 30%, #4DA6FF, #007FFF);
       color: white;
       border-radius: 14px;
       display: flex;
@@ -1210,7 +1210,7 @@ type HighchartsStatic = typeof import('highcharts');
       flex-shrink: 0;
       width: 42px;
       height: 42px;
-      background: radial-gradient(circle at 30% 30%, #d9c2a7, #BF9874);
+      background: radial-gradient(circle at 30% 30%, #4DA6FF, #007FFF);
       color: white;
       border-radius: 14px;
       display: flex;
@@ -2075,7 +2075,7 @@ export class OrganizationComponent implements OnInit, AfterViewInit {
     const advisorNodes = this.memberService.advisors.map((member) => ({
       id: `advisor-${member.slug}`,
       name: member.name,
-      color: '#BF9874'
+      color: '#007FFF'
     }));
 
     const presidentLinks = presidentNodes.map(
