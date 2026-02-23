@@ -137,7 +137,6 @@ interface PresidentSlide { id:number; titleKey:string; image:string; paragraphKe
       <!-- ═══ QUICK LINKS ═══ -->
       <section class="ql-section">
         <div class="container">
-<<<<<<< HEAD
           <div class="ql-row">
             @for(q of ql; track q.key; let i=$index){
               <div class="ql-card flip-card" style="--i:{{i}}" (click)="flipToggle($event)">
@@ -161,7 +160,7 @@ interface PresidentSlide { id:number; titleKey:string; image:string; paragraphKe
               </div>
               @if(i<3){ <div class="ql-divider"></div> }
             }
-=======
+          </div>
           <div class="quick-links-marquee">
             <div class="quick-links-container">
               <div class="quick-link-item glass-card">
@@ -258,7 +257,6 @@ interface PresidentSlide { id:number; titleKey:string; image:string; paragraphKe
                 </div>
               </div>
             </div>
->>>>>>> 6c2bf8ab9303933ae43cbf5c35ae6537463bd357
           </div>
         </div>
       </section>
@@ -272,38 +270,37 @@ interface PresidentSlide { id:number; titleKey:string; image:string; paragraphKe
           </div>
           <p class="sec-sub anim-up a-d1">{{ 'home.offer.subtitle' | i18n }}</p>
           <div class="offer-grid">
-<<<<<<< HEAD
             <div class="o-card tilt-card" style="--i:0" (mousemove)="tilt($event)" (mouseleave)="tiltReset($event)">
               <div class="tilt-shine"></div>
               <div class="o-card-floor"></div>
               <div class="o-icon-wrap">
                 <div class="o-icon-sphere">
                   <svg viewBox="0 0 64 64" fill="currentColor"><path d="M32 8L16 16L16 32C16 44 24 52 32 56C40 52 48 44 48 32L48 16L32 8Z"/></svg>
-=======
-            <div class="offer-card">
+                </div>
+              </div>
+              <div class="offer-card">
               <div class="offer-card-header">
                 <div class="offer-icon">
                   <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2">
                     <path d="M32 8L16 16L16 32C16 44 24 52 32 56C40 52 48 44 48 32L48 16L32 8Z"/>
                   </svg>
->>>>>>> 6c2bf8ab9303933ae43cbf5c35ae6537463bd357
                 </div>
                 <div class="o-icon-orbit"><span class="orbit-dot"></span></div>
               </div>
               <h3>{{ 'home.offer.cards.1.title' | i18n }}</h3>
               <p>{{ 'home.offer.cards.1.body' | i18n }}</p>
               <div class="o-card-beam"></div>
+              </div>
             </div>
-<<<<<<< HEAD
             <div class="o-card tilt-card" style="--i:1" (mousemove)="tilt($event)" (mouseleave)="tiltReset($event)">
               <div class="tilt-shine"></div>
               <div class="o-card-floor"></div>
               <div class="o-icon-wrap">
                 <div class="o-icon-sphere">
                   <svg viewBox="0 0 64 64" fill="currentColor"><rect x="18" y="12" width="28" height="40" rx="2"/><rect x="22" y="16" width="4" height="4" fill="white"/><rect x="22" y="24" width="4" height="4" fill="white"/><rect x="28" y="16" width="14" height="4" fill="white"/><rect x="28" y="24" width="14" height="4" fill="white"/></svg>
-=======
-
-            <div class="offer-card">
+                </div>
+              </div>
+              <div class="offer-card">
               <div class="offer-card-header">
                 <div class="offer-icon">
                   <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2">
@@ -313,24 +310,23 @@ interface PresidentSlide { id:number; titleKey:string; image:string; paragraphKe
                     <rect x="28" y="16" width="14" height="4" fill="currentColor"/>
                     <rect x="28" y="24" width="14" height="4" fill="currentColor"/>
                   </svg>
->>>>>>> 6c2bf8ab9303933ae43cbf5c35ae6537463bd357
                 </div>
                 <div class="o-icon-orbit"><span class="orbit-dot"></span></div>
               </div>
               <h3>{{ 'home.offer.cards.2.title' | i18n }}</h3>
               <p>{{ 'home.offer.cards.2.body' | i18n }}</p>
               <div class="o-card-beam"></div>
+              </div>
             </div>
-<<<<<<< HEAD
             <div class="o-card tilt-card" style="--i:2" (mousemove)="tilt($event)" (mouseleave)="tiltReset($event)">
               <div class="tilt-shine"></div>
               <div class="o-card-floor"></div>
               <div class="o-icon-wrap">
                 <div class="o-icon-sphere">
                   <svg viewBox="0 0 64 64" fill="currentColor"><circle cx="32" cy="20" r="8"/><path d="M32 30C24 30 16 32 16 36V42H48V36C48 32 40 30 32 30Z"/><path d="M26 18L30 22L38 14L40 16L30 26L24 20L26 18Z" fill="white"/></svg>
-=======
-
-            <div class="offer-card">
+                </div>
+              </div>
+              <div class="offer-card">
               <div class="offer-card-header">
                 <div class="offer-icon">
                   <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2">
@@ -338,39 +334,36 @@ interface PresidentSlide { id:number; titleKey:string; image:string; paragraphKe
                     <path d="M32 30C24 30 16 32 16 36V42H48V42V36C48 32 40 30 32 30Z"/>
                     <path d="M26 18L30 22L38 14L40 16L30 26L24 20L26 18Z" fill="currentColor"/>
                   </svg>
->>>>>>> 6c2bf8ab9303933ae43cbf5c35ae6537463bd357
                 </div>
                 <div class="o-icon-orbit"><span class="orbit-dot"></span></div>
               </div>
               <h3>{{ 'home.offer.cards.3.title' | i18n }}</h3>
               <p>{{ 'home.offer.cards.3.body' | i18n }}</p>
               <div class="o-card-beam"></div>
+              </div>
             </div>
-<<<<<<< HEAD
             <div class="o-card tilt-card" style="--i:3" (mousemove)="tilt($event)" (mouseleave)="tiltReset($event)">
               <div class="tilt-shine"></div>
               <div class="o-card-floor"></div>
               <div class="o-icon-wrap">
                 <div class="o-icon-sphere">
                   <svg viewBox="0 0 64 64" fill="currentColor"><circle cx="32" cy="32" r="24"/><path d="M20 28L28 32L38 22L42 26L28 40L16 32L20 28Z" fill="white"/></svg>
-=======
-
-            <div class="offer-card">
+                </div>
+              </div>
+              <div class="offer-card">
               <div class="offer-card-header">
                 <div class="offer-icon">
                   <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2">
                     <circle cx="32" cy="32" r="24"/>
                     <path d="M20 28L28 32L38 22L42 26L28 40L16 32L20 28Z" fill="currentColor"/>
                   </svg>
->>>>>>> 6c2bf8ab9303933ae43cbf5c35ae6537463bd357
                 </div>
                 <div class="o-icon-orbit"><span class="orbit-dot"></span></div>
               </div>
               <h3>{{ 'home.offer.cards.4.title' | i18n }}</h3>
               <p>{{ 'home.offer.cards.4.body' | i18n }}</p>
-<<<<<<< HEAD
               <div class="o-card-beam"></div>
-=======
+              </div>
             </div>
           </div>
         </div>
@@ -538,7 +531,6 @@ interface PresidentSlide { id:number; titleKey:string; image:string; paragraphKe
             <div class="contact-item">
               <h3>{{ 'home.contact.email.title' | i18n }}</h3>
               <p>{{ 'home.contact.email.body' | i18n }}</p>
->>>>>>> 6c2bf8ab9303933ae43cbf5c35ae6537463bd357
             </div>
           </div>
         </div>
@@ -766,7 +758,6 @@ interface PresidentSlide { id:number; titleKey:string; image:string; paragraphKe
             <h2 class="anim-up">{{ 'home.newsletter.title' | i18n }}</h2>
             <div class="nl-line anim-line-c"></div>
           </div>
-<<<<<<< HEAD
           <div class="nl-grid">
             @for(n of nlItems; track n.key; let i=$index){
               <div class="nl-card tilt-card" style="--i:{{i}}" (mousemove)="tilt($event)" (mouseleave)="tiltReset($event)">
@@ -795,7 +786,7 @@ interface PresidentSlide { id:number; titleKey:string; image:string; paragraphKe
             <button class="nl-btn mag-btn" (mousemove)="mag($event)" (mouseleave)="magOut($event)" (click)="ripple($event)">
               <span>{{ 'home.newsletter.cta' | i18n }}</span>
             </button>
-=======
+          </div>
 
           <div class="newsletter-grid" role="region" aria-label="Newsletter updates">
             <div class="newsletter-track">
@@ -856,7 +847,6 @@ interface PresidentSlide { id:number; titleKey:string; image:string; paragraphKe
 
           <div class="newsletter-actions">
             <a class="newsletter-learn-btn" routerLink="/news">{{ 'home.newsletter.cta' | i18n }}</a>
->>>>>>> 6c2bf8ab9303933ae43cbf5c35ae6537463bd357
           </div>
         </div>
       </section>
@@ -865,7 +855,6 @@ interface PresidentSlide { id:number; titleKey:string; image:string; paragraphKe
     </div>
   `,
   styles: [`
-<<<<<<< HEAD
     *{margin:0;padding:0;box-sizing:border-box;}
     .container{max-width:1200px;margin:0 auto;padding:0 20px;}
 
@@ -1441,9 +1430,9 @@ interface PresidentSlide { id:number; titleKey:string; image:string; paragraphKe
     @media(max-width:374px){
       .hero{height:360px;} .hero-h1{font-size:1.2rem;} .sec-title{font-size:1.2rem;}
     }
-    @media(prefers-reduced-motion:reduce){
+    @media (prefers-reduced-motion: reduce) {
       *,*::before,*::after{animation-duration:.01ms !important;animation-iteration-count:1 !important;transition-duration:.01ms !important;}
-=======
+    }
     * {
       margin: 0;
       padding: 0;
@@ -3668,7 +3657,6 @@ interface PresidentSlide { id:number; titleKey:string; image:string; paragraphKe
         opacity: 1;
         transform: none;
       }
->>>>>>> 6c2bf8ab9303933ae43cbf5c35ae6537463bd357
     }
   `]
 })
@@ -3688,7 +3676,6 @@ export class HomeComponent implements OnInit, AfterViewInit {
   private readonly apiUrl = 'https://patient-wonder-production.up.railway.app/api/posts';
   private readonly fallbackImage = 'https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=800&h=600&fit=crop';
 
-<<<<<<< HEAD
   @ViewChild('caseVolumeChart', { static: true }) chartA!: ElementRef<HTMLDivElement>;
   @ViewChild('processingTimeChart', { static: true }) chartB!: ElementRef<HTMLDivElement>;
   @ViewChild('decisionsTypeChart', { static: true }) chartC!: ElementRef<HTMLDivElement>;
@@ -3700,23 +3687,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
   currentSlide = signal(0);
   currentPresSlide = signal(0);
   isPageLoaded = signal(false);
-=======
-  @ViewChild('caseVolumeChart', { static: true })
-  caseVolumeChart!: ElementRef<HTMLDivElement>;
-
-  @ViewChild('processingTimeChart', { static: true })
-  processingTimeChart!: ElementRef<HTMLDivElement>;
-
-  @ViewChild('decisionsTypeChart', { static: true })
-  decisionsTypeChart!: ElementRef<HTMLDivElement>;
-
-
-  private chartInstances: Highcharts.Chart[] = [];
-
-  currentSlide = signal(0);
-  currentPresidentSlide = signal(0);
   readonly newsletterPosts = signal<HomeNewsPost[]>([]);
->>>>>>> 6c2bf8ab9303933ae43cbf5c35ae6537463bd357
 
   ql = [
     { key:'news', img:'https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=120&h=120&fit=crop', title:'home.quickLinks.items.news.title', body:'home.quickLinks.items.news.body', action:'home.quickLinks.items.news.action' },
@@ -3725,7 +3696,6 @@ export class HomeComponent implements OnInit, AfterViewInit {
     { key:'appt', img:'https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=120&h=120&fit=crop', title:'home.quickLinks.items.appointment.title', body:'home.quickLinks.items.appointment.body', action:'home.quickLinks.items.appointment.action' },
   ];
 
-<<<<<<< HEAD
   nlItems = [
     { key:'1', img:'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=800&h=600&fit=crop', alt:'home.newsletter.items.1.alt', date:'home.newsletter.items.1.date', title:'home.newsletter.items.1.title' },
     { key:'2', img:'https://images.unsplash.com/photo-1505664194779-8beaceb93744?w=800&h=600&fit=crop', alt:'home.newsletter.items.2.alt', date:'home.newsletter.items.2.date', title:'home.newsletter.items.2.title' },
@@ -3740,61 +3710,16 @@ export class HomeComponent implements OnInit, AfterViewInit {
   ];
 
   presSlides: PresidentSlide[] = [
-    { id:1, titleKey:'home.president.slides.1.title', image:'https://scontent.fpry2-1.fna.fbcdn.net/v/t39.30808-6/481977439_661094752968468_3580912692254417664_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=833d8c&_nc_ohc=781MphyOZxYQ7kNvwFA72Pl&_nc_oc=AdlS3efGmR2NwVl7AluKnrYklBBqsJYuTlJ2j9PkHSisG9RQ-4n7jDHjPIDmj6En6_w&_nc_zt=23&_nc_ht=scontent.fpry2-1.fna&_nc_gid=ECXY9r39JHQUTs-eZefdrQ&oh=00_AfsTzaj3KdpgLrEjgftG5I3y5wMeOJriKEBVHzCL_mVnRA&oe=69939BC0', paragraphKeys:['home.president.slides.1.paragraphs.1','home.president.slides.1.paragraphs.2','home.president.slides.1.paragraphs.3'] },
-    { id:2, titleKey:'home.president.slides.2.title', image:'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&h=1000&fit=crop', paragraphKeys:['home.president.slides.2.paragraphs.1','home.president.slides.2.paragraphs.2','home.president.slides.2.paragraphs.3'] },
-    { id:3, titleKey:'home.president.slides.3.title', image:'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=800&h=1000&fit=crop', paragraphKeys:['home.president.slides.3.paragraphs.1','home.president.slides.3.paragraphs.2','home.president.slides.3.paragraphs.3'] },
+    { id:1, titleKey:'home.president.slides.1.title', image:'https://res.cloudinary.com/dhqvb8wbn/image/upload/v1771319774/brigitte_rycfia.jpg', paragraphKeys:['home.president.slides.1.paragraphs.1','home.president.slides.1.paragraphs.2','home.president.slides.1.paragraphs.3'] },
+    { id:2, titleKey:'home.president.slides.2.title', image:'https://res.cloudinary.com/dhqvb8wbn/image/upload/v1771319776/599929838_875339684877306_2530911599543204256_n_fpyzl6.jpg', paragraphKeys:['home.president.slides.2.paragraphs.1','home.president.slides.2.paragraphs.2','home.president.slides.2.paragraphs.3'] },
+    { id:3, titleKey:'home.president.slides.3.title', image:'https://res.cloudinary.com/dhqvb8wbn/image/upload/v1771319774/brigitte_rycfia.jpg', paragraphKeys:['home.president.slides.3.paragraphs.1','home.president.slides.3.paragraphs.2','home.president.slides.3.paragraphs.3'] },
   ];
 
   ngOnInit() {
     setTimeout(() => this.isPageLoaded.set(true), 1800);
     this.heroIntervalId = window.setInterval(() => this.nextSlide(), 7000);
     this.presIntervalId = window.setInterval(() => this.nextPresSlide(), 8000);
-=======
-  presidentSlides: PresidentSlide[] = [
-    {
-      id: 1,
-      titleKey: 'home.president.slides.1.title',
-      image: 'https://res.cloudinary.com/dhqvb8wbn/image/upload/v1771319774/brigitte_rycfia.jpg',
-      paragraphKeys: [
-        'home.president.slides.1.paragraphs.1',
-        'home.president.slides.1.paragraphs.2',
-        'home.president.slides.1.paragraphs.3'
-      ]
-    },
-    {
-      id: 2,
-      titleKey: 'home.president.slides.2.title',
-      image: 'https://res.cloudinary.com/dhqvb8wbn/image/upload/v1771319776/599929838_875339684877306_2530911599543204256_n_fpyzl6.jpg',
-      paragraphKeys: [
-        'home.president.slides.2.paragraphs.1',
-        'home.president.slides.2.paragraphs.2',
-        'home.president.slides.2.paragraphs.3'
-      ]
-    },
-    {
-      id: 3,
-      titleKey: 'home.president.slides.3.title',
-      image: 'https://res.cloudinary.com/dhqvb8wbn/image/upload/v1771319774/brigitte_rycfia.jpg',
-      paragraphKeys: [
-        'home.president.slides.3.paragraphs.1',
-        'home.president.slides.3.paragraphs.2',
-        'home.president.slides.3.paragraphs.3'
-      ]
-    }
-  ];
-
-  ngOnInit() {
-    this.heroSlideIntervalId = window.setInterval(() => {
-      this.nextSlide();
-    }, 7000);
-
-    this.presidentSlideIntervalId = window.setInterval(() => {
-      this.nextPresidentSlide();
-    }, 8000);
-
     this.loadNewsletterPosts();
-
->>>>>>> 6c2bf8ab9303933ae43cbf5c35ae6537463bd357
     this.destroyRef.onDestroy(() => {
       if (this.heroIntervalId) window.clearInterval(this.heroIntervalId);
       if (this.presIntervalId) window.clearInterval(this.presIntervalId);
@@ -3875,7 +3800,6 @@ export class HomeComponent implements OnInit, AfterViewInit {
     if (shine) { shine.style.transform = `translateX(${dx*60}%) translateY(${dy*40}%) skewX(-20deg)`; shine.style.opacity = '.7'; }
   }
 
-<<<<<<< HEAD
   tiltReset(e: MouseEvent) {
     const el = e.currentTarget as HTMLElement;
     el.style.transform = ''; el.style.boxShadow = '';
@@ -3906,181 +3830,6 @@ export class HomeComponent implements OnInit, AfterViewInit {
     el.appendChild(rip);
     setTimeout(() => { rip.remove(); style.remove(); }, 700);
   }
-=======
-  private renderKeyFactsCharts() {
-    const baseAxisLabelStyle = {
-      color: '#5b6472',
-      fontSize: '11px',
-      fontWeight: '600'
-    };
-
-    const caseVolumeOptions: Highcharts.Options = {
-      chart: {
-        type: 'column',
-        backgroundColor: 'transparent',
-        height: 220,
-        spacing: [10, 10, 0, 10]
-      },
-      title: { text: undefined },
-      credits: { enabled: false },
-      legend: { enabled: false },
-      xAxis: {
-        categories: ['Sep', 'Oct', 'Nov', 'Dec', 'Jan', 'Feb'],
-        labels: { style: baseAxisLabelStyle },
-        lineColor: 'rgba(26, 41, 66, 0.15)',
-        tickColor: 'rgba(26, 41, 66, 0.15)',
-        tickLength: 0
-      },
-      yAxis: {
-        title: { text: undefined },
-        labels: { style: baseAxisLabelStyle },
-        gridLineColor: 'rgba(26, 41, 66, 0.08)'
-      },
-      tooltip: {
-        backgroundColor: 'rgba(26, 41, 66, 0.95)',
-        style: { color: '#ffffff', fontSize: '12px' },
-        borderColor: 'rgba(26, 41, 66, 0.95)',
-        borderRadius: 10,
-        shadow: true
-      },
-      plotOptions: {
-        series: {
-          animation: { duration: 600 }
-        },
-        column: {
-          borderWidth: 0,
-          borderRadius: 6
-        }
-      },
-      series: [
-        {
-          type: 'column',
-          name: 'Cases',
-          data: [420, 460, 510, 470, 530, 590],
-          color: '#007FFF',
-          borderRadius: 4
-        }
-      ]
-    };
-
-    const processingTimeOptions: Highcharts.Options = {
-      chart: {
-        type: 'line',
-        backgroundColor: 'transparent',
-        height: 220,
-        spacing: [10, 10, 0, 10]
-      },
-      title: { text: undefined },
-      credits: { enabled: false },
-      legend: { enabled: false },
-      xAxis: {
-        categories: ['Q1', 'Q2', 'Q3', 'Q4'],
-        labels: { style: baseAxisLabelStyle },
-        lineColor: 'rgba(26, 41, 66, 0.15)',
-        tickColor: 'rgba(26, 41, 66, 0.15)',
-        tickLength: 0
-      },
-      yAxis: {
-        title: { text: undefined },
-        labels: { style: baseAxisLabelStyle },
-        gridLineColor: 'rgba(26, 41, 66, 0.08)'
-      },
-      tooltip: {
-        backgroundColor: 'rgba(26, 41, 66, 0.95)',
-        style: { color: '#ffffff', fontSize: '12px' },
-        borderColor: 'rgba(26, 41, 66, 0.95)',
-        borderRadius: 10,
-        shadow: true,
-        valueSuffix: ' days'
-      },
-      plotOptions: {
-        series: {
-          animation: { duration: 600 }
-        },
-        line: {
-          lineWidth: 2
-        }
-      },
-      series: [
-        {
-          type: 'line',
-          name: 'Processing time',
-          data: [92, 84, 76, 68],
-          color: '#B8860B', // Dark goldenrod - DRC yellow for text
-          marker: { radius: 3 }
-        }
-      ]
-    };
-
-    const decisionsTypeOptions: Highcharts.Options = {
-      chart: {
-        type: 'pie',
-        backgroundColor: 'transparent',
-        height: 220,
-        spacing: [10, 10, 10, 10]
-      },
-      title: { text: undefined },
-      credits: { enabled: false },
-      legend: {
-        align: 'center',
-        verticalAlign: 'bottom',
-        itemStyle: { color: '#1f2937', fontWeight: '600', fontSize: '12px' }
-      },
-      tooltip: {
-        backgroundColor: 'rgba(26, 41, 66, 0.95)',
-        style: { color: '#ffffff', fontSize: '12px' },
-        borderColor: 'rgba(26, 41, 66, 0.95)',
-        borderRadius: 10,
-        shadow: true,
-        pointFormat: '<b>{point.percentage:.0f}%</b>'
-      },
-      plotOptions: {
-        series: {
-          animation: { duration: 600 }
-        },
-        pie: {
-          innerSize: '55%',
-          dataLabels: { enabled: false }
-        }
-      },
-      responsive: {
-        rules: [
-          {
-            condition: { maxWidth: 600 },
-            chartOptions: {
-              chart: { 
-                height: 280, /* Increased height for mobile */
-                spacing: [15, 5, 15, 5] /* More vertical spacing */
-              },
-              legend: {
-                itemStyle: { fontSize: '11px' },
-                itemMarginBottom: 8 /* More space between legend items */
-              },
-              plotOptions: {
-                pie: {
-                  center: ['50%', '40%'], /* Move chart up slightly */
-                  size: '80%' /* Slightly smaller to fit better */
-                }
-              }
-            }
-          }
-        ]
-      },
-      series: [
-        {
-          type: 'pie',
-          name: 'Decisions',
-          data: [
-            { name: 'Civil', y: 38, color: '#007FFF' },      // DRC Sky Blue
-            { name: 'Public', y: 27, color: '#005CBF' },     // DRC Dark Blue
-            { name: 'Labor', y: 18, color: '#4DA6FF' },      // DRC Light Blue
-            { name: 'Other', y: 17, color: '#B8860B' }       // DRC Dark Gold
-          ]
-        }
-      ]
-    };
->>>>>>> 6c2bf8ab9303933ae43cbf5c35ae6537463bd357
-
   flipToggle(e: MouseEvent) {
     const card = e.currentTarget as HTMLElement;
     card.classList.toggle('flipped');
@@ -4148,35 +3897,6 @@ export class HomeComponent implements OnInit, AfterViewInit {
         series:[{type:'pie',name:'Decisions',data:[{name:'Civil',y:38,color:'#BF9874'},{name:'Public',y:27,color:'#4e6a8a'},{name:'Labor',y:18,color:'#a45858'},{name:'Other',y:17,color:'#7f6b4a'}]}]
       }),
     ];
-  }
-<<<<<<< HEAD
-}
-=======
-
-  nextSlide() {
-    this.currentSlide.update(current =>
-      current === this.heroSlides.length - 1 ? 0 : current + 1
-    );
-  }
-
-  previousSlide() {
-    this.currentSlide.update(current =>
-      current === 0 ? this.heroSlides.length - 1 : current - 1
-    );
-  }
-
-  goToSlide(index: number) {
-    this.currentSlide.set(index);
-  }
-
-  nextPresidentSlide() {
-    this.currentPresidentSlide.update(current =>
-      current === this.presidentSlides.length - 1 ? 0 : current + 1
-    );
-  }
-
-  goToPresidentSlide(index: number) {
-    this.currentPresidentSlide.set(index);
   }
 
   private loadNewsletterPosts() {
@@ -4254,4 +3974,3 @@ type HomeNewsPost = {
   date: string;
   link?: string;
 };
->>>>>>> 6c2bf8ab9303933ae43cbf5c35ae6537463bd357

@@ -33,7 +33,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
 
     <div class="page-wrap page-container">
       <!-- Hero Section -->
-      <section class="hero-section">
+      <div class="hero-section">
         <div class="hero-overlay"></div>
         <div class="container">
           <div class="hero-grid">
@@ -46,10 +46,10 @@ import { FooterComponent } from '../../components/footer/footer.component';
             </div>
           </div>
         </div>
-      </section>
+      </div>
 
       <!-- Building Section -->
-      <section class="building-section">
+      <div class="building-section">
         <div class="container">
           <div class="section-tag">
             <div class="tag-line"></div>
@@ -59,10 +59,10 @@ import { FooterComponent } from '../../components/footer/footer.component';
           <h2 class="section-title">{{ 'reforms.building.title' | i18n }}</h2>
           <p class="section-description">{{ 'reforms.building.body' | i18n }}</p>
         </div>
-      </section>
+      </div>
 
       <!-- Strategic Reform Initiatives -->
-      <section class="initiatives-section">
+      <div class="initiatives-section">
         <div class="container">
           <h2 class="section-title">{{ 'reforms.initiatives.title' | i18n }}</h2>
           <p class="section-description">{{ 'reforms.initiatives.body' | i18n }}</p>
@@ -72,14 +72,9 @@ import { FooterComponent } from '../../components/footer/footer.component';
             <!-- Step 1 -->
             <div class="process-step">
               <div class="step-number">01</div>
-<<<<<<< HEAD
               <div class="step-content tilt-card" style="--i:0" (mousemove)="tilt($event)" (mouseleave)="tiltReset($event)">
                 <div class="tilt-shine"></div>
-                <div class="step-icon-wrapper" style="background: linear-gradient(135deg, #c8956b 0%, #b8865b 100%);">
-=======
-              <div class="step-content">
                 <div class="step-icon-wrapper" style="background: linear-gradient(135deg, #B8860B 0%, #8B6914 100%);">
->>>>>>> 6c2bf8ab9303933ae43cbf5c35ae6537463bd357
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
                     <circle cx="9" cy="7" r="4"></circle>
@@ -106,14 +101,9 @@ import { FooterComponent } from '../../components/footer/footer.component';
             <!-- Step 2 -->
             <div class="process-step">
               <div class="step-number">02</div>
-<<<<<<< HEAD
               <div class="step-content tilt-card" style="--i:1" (mousemove)="tilt($event)" (mouseleave)="tiltReset($event)">
                 <div class="tilt-shine"></div>
-                <div class="step-icon-wrapper" style="background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);">
-=======
-              <div class="step-content">
                 <div class="step-icon-wrapper" style="background: linear-gradient(135deg, #007FFF 0%, #005CBF 100%);">
->>>>>>> 6c2bf8ab9303933ae43cbf5c35ae6537463bd357
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
                     <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
@@ -138,14 +128,9 @@ import { FooterComponent } from '../../components/footer/footer.component';
             <!-- Step 3 -->
             <div class="process-step">
               <div class="step-number">03</div>
-<<<<<<< HEAD
               <div class="step-content tilt-card" style="--i:2" (mousemove)="tilt($event)" (mouseleave)="tiltReset($event)">
                 <div class="tilt-shine"></div>
-                <div class="step-icon-wrapper" style="background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);">
-=======
-              <div class="step-content">
                 <div class="step-icon-wrapper" style="background: linear-gradient(135deg, #005CBF 0%, #007FFF 100%);">
->>>>>>> 6c2bf8ab9303933ae43cbf5c35ae6537463bd357
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <circle cx="12" cy="12" r="10"></circle>
                     <line x1="2" y1="12" x2="22" y2="12"></line>
@@ -171,14 +156,9 @@ import { FooterComponent } from '../../components/footer/footer.component';
             <!-- Step 4 -->
             <div class="process-step">
               <div class="step-number">04</div>
-<<<<<<< HEAD
               <div class="step-content tilt-card" style="--i:3" (mousemove)="tilt($event)" (mouseleave)="tiltReset($event)">
                 <div class="tilt-shine"></div>
-                <div class="step-icon-wrapper" style="background: linear-gradient(135deg, #7d8a96 0%, #8d9aa6 100%);">
-=======
-              <div class="step-content">
                 <div class="step-icon-wrapper" style="background: linear-gradient(135deg, #4DA6FF 0%, #007FFF 100%);">
->>>>>>> 6c2bf8ab9303933ae43cbf5c35ae6537463bd357
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
                     <line x1="8" y1="21" x2="16" y2="21"></line>
@@ -204,14 +184,9 @@ import { FooterComponent } from '../../components/footer/footer.component';
             <!-- Step 5 -->
             <div class="process-step last-step">
               <div class="step-number">05</div>
-<<<<<<< HEAD
               <div class="step-content tilt-card" style="--i:4" (mousemove)="tilt($event)" (mouseleave)="tiltReset($event)">
                 <div class="tilt-shine"></div>
-                <div class="step-icon-wrapper" style="background: linear-gradient(135deg, #f39c12 0%, #e67e22 100%);">
-=======
-              <div class="step-content">
                 <div class="step-icon-wrapper" style="background: linear-gradient(135deg, #FCD116 0%, #B8860B 100%);">
->>>>>>> 6c2bf8ab9303933ae43cbf5c35ae6537463bd357
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
                     <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
@@ -224,10 +199,10 @@ import { FooterComponent } from '../../components/footer/footer.component';
             </div>
           </div>
         </div>
-      </section>
+      </div>
 
       <!-- Key Stakeholders Section -->
-      <section class="stakeholders-section">
+      <div class="stakeholders-section">
         <div class="container">
           <div class="stakeholders-header">
             <div class="header-line left"></div>
@@ -251,7 +226,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
             </div>
           </div>
         </div>
-      </section>
+      </div>
       <app-footer></app-footer>
     </div>
   `,
@@ -342,7 +317,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
       left: 0;
       right: 0;
       bottom: 0;
-      background: 
+      background:
         radial-gradient(circle at 20% 30%, rgba(0, 127, 255, 0.15) 0%, transparent 50%),
         radial-gradient(circle at 80% 70%, rgba(252, 209, 22, 0.12) 0%, transparent 50%),
         url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><defs><pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255,255,255,0.03)" stroke-width="1"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
@@ -1299,7 +1274,6 @@ import { FooterComponent } from '../../components/footer/footer.component';
     .cur-dot{position:fixed;width:8px;height:8px;border-radius:50%;background:#BF9874;pointer-events:none;z-index:99999;transform:translate(-50%,-50%);}
     .cur-ring{position:fixed;width:38px;height:38px;border-radius:50%;border:2px solid rgba(191,152,116,.55);pointer-events:none;z-index:99998;transform:translate(-50%,-50%);transition:width .25s,height .25s,border-color .25s;}
     .cur-trail{position:fixed;width:80px;height:80px;border-radius:50%;border:1px solid rgba(191,152,116,.15);pointer-events:none;z-index:99997;transform:translate(-50%,-50%);transition:width .4s,height .4s;}
-    .page-wrap:has(button:hover) .cur-ring,.page-wrap:has(a:hover) .cur-ring{width:56px;height:56px;border-color:rgba(191,152,116,.9);}
     .tilt-card{transform-style:preserve-3d;position:relative;overflow:hidden;transition:transform .5s cubic-bezier(.23,1,.32,1),box-shadow .5s ease;opacity:0;animation:cardIn .7s cubic-bezier(.23,1,.32,1) calc(var(--i,0)*.1s) forwards;}
     .tilt-shine{position:absolute;inset:0;border-radius:inherit;pointer-events:none;z-index:10;background:linear-gradient(105deg,transparent 45%,rgba(255,255,255,.18) 50%,transparent 55%);transform:translateX(-120%) skewX(-20deg);}
     .img-zoom{overflow:hidden;position:relative;}

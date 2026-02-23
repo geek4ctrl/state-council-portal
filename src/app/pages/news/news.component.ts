@@ -120,19 +120,12 @@ import { FooterComponent } from '../../components/footer/footer.component';
                 <p>{{ 'news.empty.body' | i18n }}</p>
               </div>
             } @else {
-<<<<<<< HEAD
               @for (article of getCurrentPageArticles(); track article.id; let i = $index) {
                 <article class="news-card glass-card tilt-card" [style.--i]="i" (mousemove)="tilt($event)" (mouseleave)="tiltReset($event)">
                   <div class="tilt-shine"></div>
                   <div class="news-image img-zoom">
-                    <img [src]="article.image" [alt]="article.titleKey | i18n" loading="lazy">
-                    <div class="img-sheen"></div>
-=======
-              @for (article of getCurrentPageArticles(); track article.id) {
-                <article class="news-card glass-card">
-                  <div class="news-image">
                     <img [src]="article.image" [alt]="article.title" loading="lazy">
->>>>>>> 6c2bf8ab9303933ae43cbf5c35ae6537463bd357
+                    <div class="img-sheen"></div>
                   </div>
                   <div class="news-content">
                     <div class="news-meta">
@@ -140,28 +133,19 @@ import { FooterComponent } from '../../components/footer/footer.component';
                       <span class="news-divider">|</span>
                       <span class="news-category">{{ article.category }}</span>
                     </div>
-<<<<<<< HEAD
-                    <h3 class="news-title">{{ article.titleKey | i18n }}</h3>
-                    <p class="news-excerpt">{{ article.excerptKey | i18n }}</p>
-                    <a href="#" class="read-more mag-btn" (mousemove)="mag($event)" (mouseleave)="magOut($event)" (click)="ripple($event)">
-                      <span>{{ 'news.actions.readMore' | i18n }}</span>
-                      <app-icon name="arrow-right" [size]="16"></app-icon>
-                    </a>
-=======
                     <h3 class="news-title">{{ article.title }}</h3>
                     <p class="news-excerpt">{{ article.excerpt }}</p>
                     @if (article.link) {
-                      <a [href]="article.link" class="read-more" target="_blank" rel="noopener noreferrer">
-                        Lire la suite
+                      <a [href]="article.link" class="read-more mag-btn" (mousemove)="mag($event)" (mouseleave)="magOut($event)" (click)="ripple($event)" target="_blank" rel="noopener noreferrer">
+                        <span>{{ 'news.actions.readMore' | i18n }}</span>
                         <app-icon name="arrow-right" [size]="16"></app-icon>
                       </a>
                     } @else {
                       <span class="read-more">
-                        Lire la suite
+                        {{ 'news.actions.readMore' | i18n }}
                         <app-icon name="arrow-right" [size]="16"></app-icon>
                       </span>
                     }
->>>>>>> 6c2bf8ab9303933ae43cbf5c35ae6537463bd357
                   </div>
                 </article>
               }
@@ -178,64 +162,26 @@ import { FooterComponent } from '../../components/footer/footer.component';
               (mouseleave)="magOut($event)"
               [attr.aria-label]="'news.pagination.previous' | i18n">
               <app-icon name="chevron-down" [size]="20" [customClass]="'rotate-90'" [attr.aria-hidden]="true"></app-icon>
-<<<<<<< HEAD
-              <span>Previous</span>
-=======
               <span class="prev-btn-text">{{ 'news.pagination.previous' | i18n }}</span>
->>>>>>> 6c2bf8ab9303933ae43cbf5c35ae6537463bd357
             </button>
             @for (page of pageNumbers(); track page) {
               <button
-                class="pagination-number"
+                class="pagination-number mag-btn"
                 [class.active]="currentPage() === page"
-                (click)="goToPage(page)"
+                (click)="goToPage(page); ripple($event)"
+                (mousemove)="mag($event)"
+                (mouseleave)="magOut($event)"
                 [attr.aria-current]="currentPage() === page ? 'page' : null"
                 [attr.aria-label]="'news.pagination.pageLabel' | i18n : { page }">
                 {{ page }}
               </button>
             }
             <button
-<<<<<<< HEAD
-              class="pagination-number mag-btn"
-              [class.active]="currentPage() === 1"
-              (click)="goToPage(1); ripple($event)"
-              (mousemove)="mag($event)"
-              (mouseleave)="magOut($event)"
-              [attr.aria-current]="currentPage() === 1 ? 'page' : null"
-              [attr.aria-label]="'news.pagination.pageLabel' | i18n : { page: 1 }">
-              1
-            </button>
-            <button
-              class="pagination-number mag-btn"
-              [class.active]="currentPage() === 2"
-              (click)="goToPage(2); ripple($event)"
-              (mousemove)="mag($event)"
-              (mouseleave)="magOut($event)"
-              [attr.aria-current]="currentPage() === 2 ? 'page' : null"
-              [attr.aria-label]="'news.pagination.pageLabel' | i18n : { page: 2 }">
-              2
-            </button>
-            <button
-              class="pagination-number mag-btn"
-              [class.active]="currentPage() === 3"
-              (click)="goToPage(3); ripple($event)"
-              (mousemove)="mag($event)"
-              (mouseleave)="magOut($event)"
-              [attr.aria-current]="currentPage() === 3 ? 'page' : null"
-              [attr.aria-label]="'news.pagination.pageLabel' | i18n : { page: 3 }">
-              3
-            </button>
-            <button 
-              class="pagination-btn next-btn mag-btn" 
-              [disabled]="currentPage() === totalPages"
+              class="pagination-btn next-btn mag-btn"
+              [disabled]="currentPage() === totalPages()"
               (click)="goToNextPage(); ripple($event)"
               (mousemove)="mag($event)"
               (mouseleave)="magOut($event)"
-=======
-              class="pagination-btn next-btn"
-              [disabled]="currentPage() === totalPages()"
-              (click)="goToNextPage()"
->>>>>>> 6c2bf8ab9303933ae43cbf5c35ae6537463bd357
               [attr.aria-label]="'news.pagination.next' | i18n">
               <span class="next-text">{{ 'news.pagination.next' | i18n }}</span>
               <app-icon name="chevron-right" [size]="16" [attr.aria-hidden]="true"></app-icon>
@@ -808,14 +754,11 @@ export class NewsComponent implements OnInit, AfterViewInit {
   private readonly destroyRef = inject(DestroyRef);
   private chartInstances: Highcharts.Chart[] = [];
   private resizeObserver?: ResizeObserver;
-<<<<<<< HEAD
   private rafId?: number;
   private curRx = 0; private curRy = 0;
   private trailRx = 0; private trailRy = 0;
-=======
   private readonly apiUrl = 'https://patient-wonder-production.up.railway.app/api/posts';
   private readonly fallbackImage = 'https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=800&h=600&fit=crop';
->>>>>>> 6c2bf8ab9303933ae43cbf5c35ae6537463bd357
   private readonly handleVisibilityChange = () => {
     if (!document.hidden) {
       this.reflowCharts();
@@ -834,16 +777,11 @@ export class NewsComponent implements OnInit, AfterViewInit {
 
   currentPage = signal(1);
   isLoading = signal(true);
-<<<<<<< HEAD
   isPageLoaded = signal(false);
-  totalPages = 3;
-  itemsPerPage = 3;
-=======
   itemsPerPage = 6;
   protected readonly articles = signal<NewsArticle[]>([]);
   readonly totalPages = computed(() => Math.max(1, Math.ceil(this.articles().length / this.itemsPerPage)));
   readonly pageNumbers = computed(() => Array.from({ length: this.totalPages() }, (_, index) => index + 1));
->>>>>>> 6c2bf8ab9303933ae43cbf5c35ae6537463bd357
 
   ngOnInit() {
     this.seoService.updateMetadata({
@@ -853,13 +791,10 @@ export class NewsComponent implements OnInit, AfterViewInit {
       ogUrl: '/news'
     });
 
-<<<<<<< HEAD
     setTimeout(() => this.isPageLoaded.set(true), 1800);
     setTimeout(() => this.isLoading.set(false), 1500);
     this.destroyRef.onDestroy(() => { if (this.rafId) cancelAnimationFrame(this.rafId); });
-=======
     this.loadNews();
->>>>>>> 6c2bf8ab9303933ae43cbf5c35ae6537463bd357
   }
 
   ngAfterViewInit() {
