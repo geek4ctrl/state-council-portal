@@ -718,19 +718,19 @@ import { FooterComponent } from '../../components/footer/footer.component';
     .loader{position:fixed;inset:0;background:linear-gradient(135deg,#080e1a,#1a2942);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:32px;z-index:9999;transition:opacity .7s ease,visibility .7s ease,transform .7s ease;}
     .loader.out{opacity:0;visibility:hidden;transform:scale(1.06);pointer-events:none;}
     .loader-sphere{width:120px;height:120px;position:relative;display:flex;align-items:center;justify-content:center;}
-    .sphere-ring{position:absolute;inset:0;border-radius:50%;border:1px solid rgba(191,152,116,.35);}
+    .sphere-ring{position:absolute;inset:0;border-radius:50%;border:1px solid rgba(184,134,11,.35);}
     .loader .r1{inset:10px;animation:rOrbit1 2.5s linear infinite;}
     .loader .r2{inset:0;animation:rOrbit2 3.5s linear infinite;}
     .loader .r3{inset:-12px;animation:rOrbit3 5s linear infinite;}
-    .sphere-core{width:52px;height:52px;border-radius:50%;background:radial-gradient(circle,rgba(191,152,116,.25),rgba(191,152,116,.05));border:1px solid rgba(191,152,116,.5);display:flex;align-items:center;justify-content:center;color:#BF9874;box-shadow:0 0 30px rgba(191,152,116,.3);animation:float 3s ease-in-out infinite;}
+    .sphere-core{width:52px;height:52px;border-radius:50%;background:radial-gradient(circle,rgba(184,134,11,.25),rgba(184,134,11,.05));border:1px solid rgba(184,134,11,.5);display:flex;align-items:center;justify-content:center;color:#B8860B;box-shadow:0 0 30px rgba(184,134,11,.3);animation:float 3s ease-in-out infinite;}
     .sphere-core svg{width:30px;height:30px;}
     .loader-track{width:220px;height:3px;background:rgba(255,255,255,.08);border-radius:99px;overflow:hidden;}
-    .loader-fill{height:100%;background:linear-gradient(90deg,#BF9874,#e0b98a);border-radius:99px;animation:fillBar 2s ease-in-out infinite;}
-    .loader-label{font-size:.72rem;font-weight:700;letter-spacing:2px;color:#BF9874;text-transform:uppercase;animation:labelPulse 2s ease-in-out infinite;}
-    .cur-dot{position:fixed;width:8px;height:8px;border-radius:50%;background:#BF9874;pointer-events:none;z-index:99999;transform:translate(-50%,-50%);}
-    .cur-ring{position:fixed;width:38px;height:38px;border-radius:50%;border:2px solid rgba(191,152,116,.55);pointer-events:none;z-index:99998;transform:translate(-50%,-50%);transition:width .25s,height .25s,border-color .25s;}
-    .cur-trail{position:fixed;width:80px;height:80px;border-radius:50%;border:1px solid rgba(191,152,116,.15);pointer-events:none;z-index:99997;transform:translate(-50%,-50%);transition:width .4s,height .4s;}
-    .page-wrap:has(button:hover) .cur-ring,.page-wrap:has(a:hover) .cur-ring{width:56px;height:56px;border-color:rgba(191,152,116,.9);}
+    .loader-fill{height:100%;background:linear-gradient(90deg,#B8860B,#D4A574);border-radius:99px;animation:fillBar 2s ease-in-out infinite;}
+    .loader-label{font-size:.72rem;font-weight:700;letter-spacing:2px;color:#B8860B;text-transform:uppercase;animation:labelPulse 2s ease-in-out infinite;}
+    .cur-dot{position:fixed;width:8px;height:8px;border-radius:50%;background:#B8860B;pointer-events:none;z-index:99999;transform:translate(-50%,-50%);}
+    .cur-ring{position:fixed;width:38px;height:38px;border-radius:50%;border:2px solid rgba(184,134,11,.55);pointer-events:none;z-index:99998;transform:translate(-50%,-50%);transition:width .25s,height .25s,border-color .25s;}
+    .cur-trail{position:fixed;width:80px;height:80px;border-radius:50%;border:1px solid rgba(184,134,11,.15);pointer-events:none;z-index:99997;transform:translate(-50%,-50%);transition:width .4s,height .4s;}
+    .page-wrap:has(button:hover) .cur-ring,.page-wrap:has(a:hover) .cur-ring{width:56px;height:56px;border-color:rgba(184,134,11,.9);}
     .anim-line{animation:lineExpand .8s ease-out both;}
     .header-decoration-left.anim-line-c,.header-decoration-right.anim-line-c{animation:lineCExpand .8s ease-out both;}
     .anim-up{animation:upFade .7s cubic-bezier(.23,1,.32,1) both;opacity:0;}
@@ -829,8 +829,8 @@ export class NewsComponent implements OnInit, AfterViewInit {
     };
     requestAnimationFrame(anim);
     document.querySelectorAll('.page-wrap button,.page-wrap a').forEach(el => {
-      el.addEventListener('mouseenter', () => { ring.style.width = '56px'; ring.style.height = '56px'; ring.style.borderColor = 'rgba(191,152,116,.9)'; trail.style.width = '90px'; trail.style.height = '90px'; });
-      el.addEventListener('mouseleave', () => { ring.style.width = '38px'; ring.style.height = '38px'; ring.style.borderColor = 'rgba(191,152,116,.55)'; trail.style.width = '80px'; trail.style.height = '80px'; });
+      el.addEventListener('mouseenter', () => { ring.style.width = '56px'; ring.style.height = '56px'; ring.style.borderColor = 'rgba(184,134,11,.9)'; trail.style.width = '90px'; trail.style.height = '90px'; });
+      el.addEventListener('mouseleave', () => { ring.style.width = '38px'; ring.style.height = '38px'; ring.style.borderColor = 'rgba(184,134,11,.55)'; trail.style.width = '80px'; trail.style.height = '80px'; });
     });
   }
 

@@ -74,7 +74,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
               <div class="step-number">01</div>
               <div class="step-content tilt-card" style="--i:0" (mousemove)="tilt($event)" (mouseleave)="tiltReset($event)">
                 <div class="tilt-shine"></div>
-                <div class="step-icon-wrapper" style="background: linear-gradient(135deg, #B8860B 0%, #8B6914 100%);">
+                <div class="step-icon-wrapper" style="background: linear-gradient(135deg, #FCD116 0%, #FFD700 100%);">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
                     <circle cx="9" cy="7" r="4"></circle>
@@ -90,10 +90,10 @@ import { FooterComponent } from '../../components/footer/footer.component';
                 <svg viewBox="0 0 100 60" preserveAspectRatio="none">
                   <defs>
                     <marker id="arrowhead1" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
-                      <polygon points="0 0, 10 3, 0 6" fill="#B8860B"/>
+                      <polygon points="0 0, 10 3, 0 6" fill="#FCD116"/>
                     </marker>
                   </defs>
-                  <path d="M0,30 Q50,10 100,30" stroke="#B8860B" stroke-width="2" fill="none" stroke-dasharray="5,5" marker-end="url(#arrowhead1)"/>
+                  <path d="M0,30 Q50,10 100,30" stroke="#FCD116" stroke-width="2" fill="none" stroke-dasharray="5,5" marker-end="url(#arrowhead1)"/>
                 </svg>
               </div>
             </div>
@@ -117,7 +117,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
                 <svg viewBox="0 0 100 60" preserveAspectRatio="none">
                   <defs>
                     <marker id="arrowhead2" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
-                      <polygon points="0 0, 10 3, 0 6" fill="#B8860B"/>
+                      <polygon points="0 0, 10 3, 0 6" fill="#FCD116"/>
                     </marker>
                   </defs>
                   <path d="M0,30 Q50,50 100,30" stroke="#c8956b" stroke-width="2" fill="none" stroke-dasharray="5,5" marker-end="url(#arrowhead2)"/>
@@ -145,10 +145,10 @@ import { FooterComponent } from '../../components/footer/footer.component';
                 <svg viewBox="0 0 100 60" preserveAspectRatio="none">
                   <defs>
                     <marker id="arrowhead3" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
-                      <polygon points="0 0, 10 3, 0 6" fill="#B8860B"/>
+                      <polygon points="0 0, 10 3, 0 6" fill="#FCD116"/>
                     </marker>
                   </defs>
-                  <path d="M0,30 Q50,10 100,30" stroke="#B8860B" stroke-width="2" fill="none" stroke-dasharray="5,5" marker-end="url(#arrowhead3)"/>
+                  <path d="M0,30 Q50,10 100,30" stroke="#FCD116" stroke-width="2" fill="none" stroke-dasharray="5,5" marker-end="url(#arrowhead3)"/>
                 </svg>
               </div>
             </div>
@@ -173,7 +173,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
                 <svg viewBox="0 0 100 60" preserveAspectRatio="none">
                   <defs>
                     <marker id="arrowhead4" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
-                      <polygon points="0 0, 10 3, 0 6" fill="#B8860B"/>
+                      <polygon points="0 0, 10 3, 0 6" fill="#FCD116"/>
                     </marker>
                   </defs>
                   <path d="M0,30 Q50,50 100,30" stroke="#c8956b" stroke-width="2" fill="none" stroke-dasharray="5,5" marker-end="url(#arrowhead4)"/>
@@ -245,22 +245,22 @@ import { FooterComponent } from '../../components/footer/footer.component';
     }
     .loader.out{opacity:0;visibility:hidden;transform:scale(1.06);pointer-events:none;}
     .loader-sphere{width:120px;height:120px;position:relative;display:flex;align-items:center;justify-content:center;}
-    .sphere-ring{position:absolute;inset:0;border-radius:50%;border:1px solid rgba(191,152,116,.35);}
+    .sphere-ring{position:absolute;inset:0;border-radius:50%;border:1px solid rgba(252,209,22,.35);}
     .sphere-ring.r1{inset:10px;animation:rOrbit1 2.5s linear infinite;}
     .sphere-ring.r2{inset:0;animation:rOrbit2 3.5s linear infinite;}
     .sphere-ring.r3{inset:-12px;animation:rOrbit3 5s linear infinite;}
     .sphere-core{
       width:52px;height:52px;border-radius:50%;
-      background:radial-gradient(circle,rgba(191,152,116,.25),rgba(191,152,116,.05));
-      border:1px solid rgba(191,152,116,.5);
-      display:flex;align-items:center;justify-content:center;color:#BF9874;
-      box-shadow:0 0 30px rgba(191,152,116,.3),inset 0 0 20px rgba(191,152,116,.1);
+      background:radial-gradient(circle,rgba(252,209,22,.25),rgba(252,209,22,.05));
+      border:1px solid rgba(252,209,22,.5);
+      display:flex;align-items:center;justify-content:center;color:#FCD116;
+      box-shadow:0 0 30px rgba(252,209,22,.3),inset 0 0 20px rgba(252,209,22,.1);
       animation:float 3s ease-in-out infinite;
     }
     .sphere-core svg{width:30px;height:30px;}
     .loader-track{width:220px;height:3px;background:rgba(255,255,255,.08);border-radius:99px;overflow:hidden;}
-    .loader-fill{height:100%;background:linear-gradient(90deg,#BF9874,#e0b98a,#BF9874);background-size:200%;animation:fillBar 2s ease-in-out infinite;border-radius:99px;}
-    .loader-label{font-size:.72rem;font-weight:700;letter-spacing:2px;color:#BF9874;text-transform:uppercase;animation:labelPulse 2s ease-in-out infinite;}
+    .loader-fill{height:100%;background:linear-gradient(90deg,#FCD116,#FFE066,#FCD116);background-size:200%;animation:fillBar 2s ease-in-out infinite;border-radius:99px;}
+    .loader-label{font-size:.72rem;font-weight:700;letter-spacing:2px;color:#FCD116;text-transform:uppercase;animation:labelPulse 2s ease-in-out infinite;}
 
     /* General Reset */
     * {
@@ -474,7 +474,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
     .step-number {
       width: 50px;
       height: 50px;
-      background: linear-gradient(135deg, #B8860B 0%, #8B6914 100%);
+      background: linear-gradient(135deg, #FCD116 0%, #FFD700 100%);
       color: white;
       border-radius: 50%;
       display: flex;
@@ -556,7 +556,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
 
     .step-badge.high {
       background: #fff8e1;
-      color: #B8860B; /* DRC dark gold */
+      color: #FCD116; /* DRC yellow */
     }
 
     .step-badge.medium {
@@ -598,11 +598,11 @@ import { FooterComponent } from '../../components/footer/footer.component';
     }
 
     .header-line.left {
-      background: linear-gradient(90deg, transparent, #B8860B);
+      background: linear-gradient(90deg, transparent, #FCD116);
     }
 
     .header-line.right {
-      background: linear-gradient(90deg, #B8860B, transparent);
+      background: linear-gradient(90deg, #FCD116, transparent);
     }
 
     .section-title-stakeholders {
@@ -618,7 +618,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
     .section-subtitle {
       text-align: center;
       font-size: 0.9rem;
-      color: #B8860B; /* DRC dark gold */
+      color: #FCD116; /* DRC yellow */
       margin: 0 0 50px 0;
       letter-spacing: 2px;
       text-transform: uppercase;
@@ -1271,9 +1271,9 @@ import { FooterComponent } from '../../components/footer/footer.component';
     /* Home-style: cursor, tilt, img-zoom */
     @keyframes cardIn{from{opacity:0;transform:translateY(40px) rotateX(20deg) scale(.94)}to{opacity:1;transform:translateY(0) rotateX(0) scale(1)}}
     .page-wrap{cursor:none;}
-    .cur-dot{position:fixed;width:8px;height:8px;border-radius:50%;background:#BF9874;pointer-events:none;z-index:99999;transform:translate(-50%,-50%);}
-    .cur-ring{position:fixed;width:38px;height:38px;border-radius:50%;border:2px solid rgba(191,152,116,.55);pointer-events:none;z-index:99998;transform:translate(-50%,-50%);transition:width .25s,height .25s,border-color .25s;}
-    .cur-trail{position:fixed;width:80px;height:80px;border-radius:50%;border:1px solid rgba(191,152,116,.15);pointer-events:none;z-index:99997;transform:translate(-50%,-50%);transition:width .4s,height .4s;}
+    .cur-dot{position:fixed;width:8px;height:8px;border-radius:50%;background:#B8860B;pointer-events:none;z-index:99999;transform:translate(-50%,-50%);}
+    .cur-ring{position:fixed;width:38px;height:38px;border-radius:50%;border:2px solid rgba(184,134,11,.55);pointer-events:none;z-index:99998;transform:translate(-50%,-50%);transition:width .25s,height .25s,border-color .25s;}
+    .cur-trail{position:fixed;width:80px;height:80px;border-radius:50%;border:1px solid rgba(184,134,11,.15);pointer-events:none;z-index:99997;transform:translate(-50%,-50%);transition:width .4s,height .4s;}
     .tilt-card{transform-style:preserve-3d;position:relative;overflow:hidden;transition:transform .5s cubic-bezier(.23,1,.32,1),box-shadow .5s ease;opacity:0;animation:cardIn .7s cubic-bezier(.23,1,.32,1) calc(var(--i,0)*.1s) forwards;}
     .tilt-shine{position:absolute;inset:0;border-radius:inherit;pointer-events:none;z-index:10;background:linear-gradient(105deg,transparent 45%,rgba(255,255,255,.18) 50%,transparent 55%);transform:translateX(-120%) skewX(-20deg);}
     .img-zoom{overflow:hidden;position:relative;}
@@ -1345,8 +1345,8 @@ export class ReformsComponent implements OnInit, AfterViewInit {
     };
     requestAnimationFrame(anim);
     document.querySelectorAll('.page-wrap button,.page-wrap a').forEach(el => {
-      el.addEventListener('mouseenter', () => { ring.style.width = '56px'; ring.style.height = '56px'; ring.style.borderColor = 'rgba(191,152,116,.9)'; trail.style.width = '90px'; trail.style.height = '90px'; });
-      el.addEventListener('mouseleave', () => { ring.style.width = '38px'; ring.style.height = '38px'; ring.style.borderColor = 'rgba(191,152,116,.55)'; trail.style.width = '80px'; trail.style.height = '80px'; });
+      el.addEventListener('mouseenter', () => { ring.style.width = '56px'; ring.style.height = '56px'; ring.style.borderColor = 'rgba(184,134,11,.9)'; trail.style.width = '90px'; trail.style.height = '90px'; });
+      el.addEventListener('mouseleave', () => { ring.style.width = '38px'; ring.style.height = '38px'; ring.style.borderColor = 'rgba(184,134,11,.55)'; trail.style.width = '80px'; trail.style.height = '80px'; });
     });
   }
 

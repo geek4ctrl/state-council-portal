@@ -20,7 +20,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
       padding: 3rem 1rem;
     }
     h1 {
-      color: #B8860B;
+      color: #FCD116;
       margin-bottom: 1rem;
     }
   `]

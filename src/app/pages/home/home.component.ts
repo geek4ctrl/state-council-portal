@@ -270,40 +270,21 @@ interface PresidentSlide { id:number; titleKey:string; image:string; paragraphKe
           </div>
           <p class="sec-sub anim-up a-d1">{{ 'home.offer.subtitle' | i18n }}</p>
           <div class="offer-grid">
-            <div class="o-card tilt-card" style="--i:0" (mousemove)="tilt($event)" (mouseleave)="tiltReset($event)">
-              <div class="tilt-shine"></div>
-              <div class="o-card-floor"></div>
-              <div class="o-icon-wrap">
-                <div class="o-icon-sphere">
-                  <svg viewBox="0 0 64 64" fill="currentColor"><path d="M32 8L16 16L16 32C16 44 24 52 32 56C40 52 48 44 48 32L48 16L32 8Z"/></svg>
-                </div>
-              </div>
-              <div class="offer-card">
-              <div class="offer-card-header">
-                <div class="offer-icon">
-                  <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2">
+            <div class="o-card" style="--i:0">
+              <div class="o-card-header">
+                <div class="o-icon">
+                  <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.5">
                     <path d="M32 8L16 16L16 32C16 44 24 52 32 56C40 52 48 44 48 32L48 16L32 8Z"/>
                   </svg>
                 </div>
-                <div class="o-icon-orbit"><span class="orbit-dot"></span></div>
+                <h3>{{ 'home.offer.cards.1.title' | i18n }}</h3>
               </div>
-              <h3>{{ 'home.offer.cards.1.title' | i18n }}</h3>
               <p>{{ 'home.offer.cards.1.body' | i18n }}</p>
-              <div class="o-card-beam"></div>
-              </div>
             </div>
-            <div class="o-card tilt-card" style="--i:1" (mousemove)="tilt($event)" (mouseleave)="tiltReset($event)">
-              <div class="tilt-shine"></div>
-              <div class="o-card-floor"></div>
-              <div class="o-icon-wrap">
-                <div class="o-icon-sphere">
-                  <svg viewBox="0 0 64 64" fill="currentColor"><rect x="18" y="12" width="28" height="40" rx="2"/><rect x="22" y="16" width="4" height="4" fill="white"/><rect x="22" y="24" width="4" height="4" fill="white"/><rect x="28" y="16" width="14" height="4" fill="white"/><rect x="28" y="24" width="14" height="4" fill="white"/></svg>
-                </div>
-              </div>
-              <div class="offer-card">
-              <div class="offer-card-header">
-                <div class="offer-icon">
-                  <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2">
+            <div class="o-card" style="--i:1">
+              <div class="o-card-header">
+                <div class="o-icon">
+                  <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.5">
                     <rect x="18" y="12" width="28" height="40" rx="2"/>
                     <rect x="22" y="16" width="4" height="4" fill="currentColor"/>
                     <rect x="22" y="24" width="4" height="4" fill="currentColor"/>
@@ -311,231 +292,38 @@ interface PresidentSlide { id:number; titleKey:string; image:string; paragraphKe
                     <rect x="28" y="24" width="14" height="4" fill="currentColor"/>
                   </svg>
                 </div>
-                <div class="o-icon-orbit"><span class="orbit-dot"></span></div>
+                <h3>{{ 'home.offer.cards.2.title' | i18n }}</h3>
               </div>
-              <h3>{{ 'home.offer.cards.2.title' | i18n }}</h3>
               <p>{{ 'home.offer.cards.2.body' | i18n }}</p>
-              <div class="o-card-beam"></div>
-              </div>
             </div>
-            <div class="o-card tilt-card" style="--i:2" (mousemove)="tilt($event)" (mouseleave)="tiltReset($event)">
-              <div class="tilt-shine"></div>
-              <div class="o-card-floor"></div>
-              <div class="o-icon-wrap">
-                <div class="o-icon-sphere">
-                  <svg viewBox="0 0 64 64" fill="currentColor"><circle cx="32" cy="20" r="8"/><path d="M32 30C24 30 16 32 16 36V42H48V36C48 32 40 30 32 30Z"/><path d="M26 18L30 22L38 14L40 16L30 26L24 20L26 18Z" fill="white"/></svg>
-                </div>
-              </div>
-              <div class="offer-card">
-              <div class="offer-card-header">
-                <div class="offer-icon">
-                  <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2">
+            <div class="o-card" style="--i:2">
+              <div class="o-card-header">
+                <div class="o-icon">
+                  <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.5">
                     <circle cx="32" cy="20" r="8"/>
                     <path d="M32 30C24 30 16 32 16 36V42H48V42V36C48 32 40 30 32 30Z"/>
                     <path d="M26 18L30 22L38 14L40 16L30 26L24 20L26 18Z" fill="currentColor"/>
                   </svg>
                 </div>
-                <div class="o-icon-orbit"><span class="orbit-dot"></span></div>
+                <h3>{{ 'home.offer.cards.3.title' | i18n }}</h3>
               </div>
-              <h3>{{ 'home.offer.cards.3.title' | i18n }}</h3>
               <p>{{ 'home.offer.cards.3.body' | i18n }}</p>
-              <div class="o-card-beam"></div>
-              </div>
             </div>
-            <div class="o-card tilt-card" style="--i:3" (mousemove)="tilt($event)" (mouseleave)="tiltReset($event)">
-              <div class="tilt-shine"></div>
-              <div class="o-card-floor"></div>
-              <div class="o-icon-wrap">
-                <div class="o-icon-sphere">
-                  <svg viewBox="0 0 64 64" fill="currentColor"><circle cx="32" cy="32" r="24"/><path d="M20 28L28 32L38 22L42 26L28 40L16 32L20 28Z" fill="white"/></svg>
-                </div>
-              </div>
-              <div class="offer-card">
-              <div class="offer-card-header">
-                <div class="offer-icon">
-                  <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2">
-                    <circle cx="32" cy="32" r="24"/>
-                    <path d="M20 28L28 32L38 22L42 26L28 40L16 32L20 28Z" fill="currentColor"/>
+            <div class="o-card" style="--i:3">
+              <div class="o-card-header">
+                <div class="o-icon">
+                  <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <circle cx="32" cy="32" r="20"/>
+                    <path d="M20 32L28 40L44 24" stroke-width="3"/>
                   </svg>
                 </div>
-                <div class="o-icon-orbit"><span class="orbit-dot"></span></div>
+                <h3>{{ 'home.offer.cards.4.title' | i18n }}</h3>
               </div>
-              <h3>{{ 'home.offer.cards.4.title' | i18n }}</h3>
               <p>{{ 'home.offer.cards.4.body' | i18n }}</p>
-              <div class="o-card-beam"></div>
-              </div>
             </div>
           </div>
         </div>
       </section>
-      <!-- Fields of Expertise Section -->
-      <section class="expertise-section">
-        <div class="container">
-          <div class="expertise-header">
-            <div class="expertise-line"></div>
-            <h2 class="section-title">{{ 'home.expertise.title' | i18n }}</h2>
-            <div class="expertise-line"></div>
-          </div>
-          <p class="expertise-subtitle">{{ 'home.expertise.subtitle' | i18n }}</p>
-
-          <div class="practice-grid">
-            <a class="practice-card accent-civil" href="#">
-              <div class="practice-content">
-                <div class="practice-header">
-                  <div class="practice-icon">
-                    <svg viewBox="0 0 64 64" fill="currentColor">
-                      <path d="M38 8L26 8C24 8 22 10 22 12L22 52C22 54 24 56 26 56L38 56C40 56 42 54 42 52L42 12C42 10 40 8 38 8Z"/>
-                      <path d="M32 12L28 16L36 16L32 12Z" fill="white"/>
-                    </svg>
-                  </div>
-                  <h3>{{ 'home.expertise.areas.civil.title' | i18n }}</h3>
-                </div>
-                <p class="practice-desc">{{ 'home.expertise.areas.civil.desc' | i18n }}</p>
-                <ul>
-                  <li>{{ 'home.expertise.areas.civil.items.1' | i18n }}</li>
-                  <li>{{ 'home.expertise.areas.civil.items.2' | i18n }}</li>
-                  <li>{{ 'home.expertise.areas.civil.items.3' | i18n }}</li>
-                </ul>
-                <span class="practice-cta">{{ 'home.expertise.cta' | i18n }}</span>
-              </div>
-            </a>
-
-            <a class="practice-card accent-family" href="#">
-              <div class="practice-content">
-                <div class="practice-header">
-                  <div class="practice-icon">
-                    <svg viewBox="0 0 64 64" fill="currentColor">
-                      <path d="M24 40C16 40 10 44 10 50V56H38V50C38 44 32 40 24 40Z"/>
-                      <path d="M40 40C38 40 36 40.4 34 41C37 43 38 46 38 50V56H54V50C54 44 48 40 40 40Z"/>
-                      <circle cx="24" cy="26" r="10"/>
-                      <circle cx="42" cy="24" r="8"/>
-                    </svg>
-                  </div>
-                  <h3>{{ 'home.expertise.areas.family.title' | i18n }}</h3>
-                </div>
-                <p class="practice-desc">{{ 'home.expertise.areas.family.desc' | i18n }}</p>
-                <ul>
-                  <li>{{ 'home.expertise.areas.family.items.1' | i18n }}</li>
-                  <li>{{ 'home.expertise.areas.family.items.2' | i18n }}</li>
-                  <li>{{ 'home.expertise.areas.family.items.3' | i18n }}</li>
-                </ul>
-                <span class="practice-cta">{{ 'home.expertise.cta' | i18n }}</span>
-              </div>
-            </a>
-
-            <a class="practice-card accent-public" href="#">
-              <div class="practice-content">
-                <div class="practice-header">
-                  <div class="practice-icon">
-                    <svg viewBox="0 0 64 64" fill="currentColor">
-                      <path d="M32 8L18 14V28C18 40 26 48 32 52C38 48 46 40 46 28V14L32 8Z M32 12L42 16V28C42 38 36 44 32 48C28 44 22 38 22 28V16L32 12Z"/>
-                      <rect x="28" y="24" width="8" height="16" fill="white"/>
-                      <rect x="24" y="32" width="16" height="4" fill="white"/>
-                    </svg>
-                  </div>
-                  <h3>{{ 'home.expertise.areas.public.title' | i18n }}</h3>
-                </div>
-                <p class="practice-desc">{{ 'home.expertise.areas.public.desc' | i18n }}</p>
-                <ul>
-                  <li>{{ 'home.expertise.areas.public.items.1' | i18n }}</li>
-                  <li>{{ 'home.expertise.areas.public.items.2' | i18n }}</li>
-                  <li>{{ 'home.expertise.areas.public.items.3' | i18n }}</li>
-                </ul>
-                <span class="practice-cta">{{ 'home.expertise.cta' | i18n }}</span>
-              </div>
-            </a>
-
-            <a class="practice-card accent-labor" href="#">
-              <div class="practice-content">
-                <div class="practice-header">
-                  <div class="practice-icon">
-                    <svg viewBox="0 0 64 64" fill="currentColor">
-                      <rect x="22" y="28" width="20" height="20" rx="2"/>
-                      <rect x="26" y="20" width="12" height="10" rx="2"/>
-                      <circle cx="32" cy="38" r="3" fill="white"/>
-                    </svg>
-                  </div>
-                  <h3>{{ 'home.expertise.areas.labor.title' | i18n }}</h3>
-                </div>
-                <p class="practice-desc">{{ 'home.expertise.areas.labor.desc' | i18n }}</p>
-                <ul>
-                  <li>{{ 'home.expertise.areas.labor.items.1' | i18n }}</li>
-                  <li>{{ 'home.expertise.areas.labor.items.2' | i18n }}</li>
-                  <li>{{ 'home.expertise.areas.labor.items.3' | i18n }}</li>
-                </ul>
-                <span class="practice-cta">{{ 'home.expertise.cta' | i18n }}</span>
-              </div>
-            </a>
-
-            <a class="practice-card accent-criminal" href="#">
-              <div class="practice-content">
-                <div class="practice-header">
-                  <div class="practice-icon">
-                    <svg viewBox="0 0 64 64" fill="currentColor">
-                      <path d="M32 8C24 8 18 14 18 22C18 30 24 36 32 36C40 36 46 30 46 22C46 14 40 8 32 8Z"/>
-                      <path d="M46 18C46 14 43 11 39 11L25 11C21 11 18 14 18 18L18 46C18 50 21 53 25 53L39 53C43 53 46 50 46 46L46 18Z"/>
-                      <path d="M28 18L32 24L36 18" stroke="#007FFF" stroke-width="2" fill="none"/>
-                    </svg>
-                  </div>
-                  <h3>{{ 'home.expertise.areas.criminal.title' | i18n }}</h3>
-                </div>
-                <p class="practice-desc">{{ 'home.expertise.areas.criminal.desc' | i18n }}</p>
-                <ul>
-                  <li>{{ 'home.expertise.areas.criminal.items.1' | i18n }}</li>
-                  <li>{{ 'home.expertise.areas.criminal.items.2' | i18n }}</li>
-                  <li>{{ 'home.expertise.areas.criminal.items.3' | i18n }}</li>
-                </ul>
-                <span class="practice-cta">{{ 'home.expertise.cta' | i18n }}</span>
-              </div>
-            </a>
-
-            <a class="practice-card accent-property" href="#">
-              <div class="practice-content">
-                <div class="practice-header">
-                  <div class="practice-icon">
-                    <svg viewBox="0 0 64 64" fill="currentColor">
-                      <rect x="16" y="32" width="32" height="20"/>
-                      <polygon points="32,12 16,32 48,32"/>
-                      <rect x="28" y="24" width="8" height="8" fill="white"/>
-                    </svg>
-                  </div>
-                  <h3>{{ 'home.expertise.areas.property.title' | i18n }}</h3>
-                </div>
-                <p class="practice-desc">{{ 'home.expertise.areas.property.desc' | i18n }}</p>
-                <ul>
-                  <li>{{ 'home.expertise.areas.property.items.1' | i18n }}</li>
-                  <li>{{ 'home.expertise.areas.property.items.2' | i18n }}</li>
-                  <li>{{ 'home.expertise.areas.property.items.3' | i18n }}</li>
-                </ul>
-                <span class="practice-cta">{{ 'home.expertise.cta' | i18n }}</span>
-              </div>
-            </a>
-          </div>
-        </div>
-      </section>
-
-      <!-- Contact Information Bar -->
-      <section class="contact-info-section">
-        <div class="container">
-          <div class="contact-bar">
-            <div class="contact-item">
-              <h3>{{ 'home.contact.address.title' | i18n }}</h3>
-              <p>{{ 'home.contact.address.body' | i18n }}</p>
-            </div>
-            <div class="contact-divider"></div>
-            <div class="contact-item">
-              <h3>{{ 'home.contact.phone.title' | i18n }}</h3>
-              <p>{{ 'home.contact.phone.body' | i18n }}</p>
-            </div>
-            <div class="contact-divider"></div>
-            <div class="contact-item">
-              <h3>{{ 'home.contact.email.title' | i18n }}</h3>
-              <p>{{ 'home.contact.email.body' | i18n }}</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       <!-- ═══ EXPERTISE ═══ -->
       <section class="exp-section">
         <div class="exp-grid-bg"></div>
@@ -759,94 +547,77 @@ interface PresidentSlide { id:number; titleKey:string; image:string; paragraphKe
             <div class="nl-line anim-line-c"></div>
           </div>
           <div class="nl-grid">
-            @for(n of nlItems; track n.key; let i=$index){
-              <div class="nl-card tilt-card" style="--i:{{i}}" (mousemove)="tilt($event)" (mouseleave)="tiltReset($event)">
-                <div class="tilt-shine"></div>
-                <div class="nl-img-wrap img-zoom">
-                  <img [src]="n.img" [alt]="n.alt | i18n">
-                  <div class="img-sheen"></div>
-                  <div class="nl-img-badge">{{ n.date | i18n }}</div>
-                  <div class="nl-img-scan"></div>
-                </div>
-                <div class="nl-body">
-                  <h3>{{ n.title | i18n }}</h3>
-                  <a href="#" class="nl-link">
-                    {{ 'home.newsletter.readMore' | i18n }}
-                    <span class="nl-arr">
-                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                    </span>
-                    <span class="nl-underline"></span>
-                  </a>
-                </div>
-                <div class="nl-card-glow"></div>
-              </div>
-            }
-          </div>
-          <div class="nl-action">
-            <button class="nl-btn mag-btn" (mousemove)="mag($event)" (mouseleave)="magOut($event)" (click)="ripple($event)">
-              <span>{{ 'home.newsletter.cta' | i18n }}</span>
-            </button>
-          </div>
-
-          <div class="newsletter-grid" role="region" aria-label="Newsletter updates">
-            <div class="newsletter-track">
-              @for (post of newsletterPosts(); track post.id) {
-                <div class="news-card glass-card">
-                  <div class="news-image">
-                    <img [src]="post.image" [alt]="post.title" loading="lazy">
+            <div class="nl-track">
+              @for(post of newsletterPosts(); track post.id){
+                <div class="nl-card tilt-card" (mousemove)="tilt($event)" (mouseleave)="tiltReset($event)">
+                  <div class="tilt-shine"></div>
+                  <div class="nl-img-wrap img-zoom">
+                    <img [src]="post.image" [alt]="post.title">
+                    <div class="img-sheen"></div>
+                    <div class="nl-img-badge">{{ post.date }} | {{ post.category }}</div>
+                    <div class="nl-img-scan"></div>
                   </div>
-                  <div class="news-content">
-                    <p class="news-date">{{ post.date }} | {{ post.category }}</p>
+                  <div class="nl-body">
                     <h3>{{ post.title }}</h3>
                     @if (post.link) {
-                      <a [href]="post.link" class="read-more-link" target="_blank" rel="noopener noreferrer">
-                        Lire la suite
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                          <path d="M5 12h14M12 5l7 7-7 7"/>
-                        </svg>
+                      <a [href]="post.link" class="nl-link" target="_blank" rel="noopener noreferrer">
+                        {{ 'home.newsletter.readMore' | i18n }}
+                        <span class="nl-arr">
+                          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        </span>
+                        <span class="nl-underline"></span>
                       </a>
                     } @else {
-                      <span class="read-more-link">
-                        Lire la suite
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                          <path d="M5 12h14M12 5l7 7-7 7"/>
-                        </svg>
+                      <span class="nl-link">
+                        {{ 'home.newsletter.readMore' | i18n }}
+                        <span class="nl-arr">
+                          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        </span>
+                        <span class="nl-underline"></span>
                       </span>
                     }
                   </div>
+                  <div class="nl-card-glow"></div>
                 </div>
               }
-              @for (post of newsletterPosts(); track post.id + '-clone') {
-                <div class="news-card glass-card" aria-hidden="true">
-                  <div class="news-image">
-                    <img [src]="post.image" [alt]="''" loading="lazy">
+              @for(post of newsletterPosts(); track post.id + '-clone'){
+                <div class="nl-card tilt-card" aria-hidden="true" (mousemove)="tilt($event)" (mouseleave)="tiltReset($event)">
+                  <div class="tilt-shine"></div>
+                  <div class="nl-img-wrap img-zoom">
+                    <img [src]="post.image" [alt]="''">
+                    <div class="img-sheen"></div>
+                    <div class="nl-img-badge">{{ post.date }} | {{ post.category }}</div>
+                    <div class="nl-img-scan"></div>
                   </div>
-                  <div class="news-content">
-                    <p class="news-date">{{ post.date }} | {{ post.category }}</p>
+                  <div class="nl-body">
                     <h3>{{ post.title }}</h3>
                     @if (post.link) {
-                      <a [href]="post.link" class="read-more-link" tabindex="-1" aria-hidden="true">
-                        Lire la suite
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                          <path d="M5 12h14M12 5l7 7-7 7"/>
-                        </svg>
+                      <a [href]="post.link" class="nl-link" tabindex="-1" aria-hidden="true">
+                        {{ 'home.newsletter.readMore' | i18n }}
+                        <span class="nl-arr">
+                          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        </span>
+                        <span class="nl-underline"></span>
                       </a>
                     } @else {
-                      <span class="read-more-link" aria-hidden="true">
-                        Lire la suite
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                          <path d="M5 12h14M12 5l7 7-7 7"/>
-                        </svg>
+                      <span class="nl-link" aria-hidden="true">
+                        {{ 'home.newsletter.readMore' | i18n }}
+                        <span class="nl-arr">
+                          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        </span>
+                        <span class="nl-underline"></span>
                       </span>
                     }
                   </div>
+                  <div class="nl-card-glow"></div>
                 </div>
               }
             </div>
           </div>
-
-          <div class="newsletter-actions">
-            <a class="newsletter-learn-btn" routerLink="/news">{{ 'home.newsletter.cta' | i18n }}</a>
+          <div class="nl-action">
+            <a routerLink="/news" class="nl-btn mag-btn" (mousemove)="mag($event)" (mouseleave)="magOut($event)" (click)="ripple($event)">
+              <span>{{ 'home.newsletter.cta' | i18n }}</span>
+            </a>
           </div>
         </div>
       </section>
@@ -890,7 +661,7 @@ interface PresidentSlide { id:number; titleKey:string; image:string; paragraphKe
     @keyframes gridMove{from{background-position:0 0}to{background-position:60px 60px}}
     @keyframes glowPulse{0%,100%{opacity:.6}50%{opacity:1}}
     @keyframes arrPress{0%{transform:translateZ(0) rotateX(0)}50%{transform:translateZ(-4px) rotateX(8deg)}100%{transform:translateZ(0) rotateX(0)}}
-    @keyframes badgeBob{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
+    @keyframes badgeBob{0%,100%{transform:translateY(0)}50%{transform:translateY(-3px)}}
     @keyframes imgScanMove{from{top:-100%}to{top:200%}}
     @keyframes ctIconSpin{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
     @keyframes neonFlicker{0%,100%{opacity:1}92%{opacity:1}93%{opacity:.4}94%{opacity:1}96%{opacity:.6}97%{opacity:1}}
@@ -899,22 +670,22 @@ interface PresidentSlide { id:number; titleKey:string; image:string; paragraphKe
     /* ━━━━━━━━━━━━━━ CURSOR ━━━━━━━━━━━━━━ */
     .cur-dot{
       position:fixed;width:8px;height:8px;border-radius:50%;
-      background:#BF9874;pointer-events:none;z-index:99999;
+      background:#B8860B;pointer-events:none;z-index:99999;
       transform:translate(-50%,-50%);transition:transform .06s ease;
     }
     .cur-ring{
       position:fixed;width:38px;height:38px;border-radius:50%;
-      border:2px solid rgba(191,152,116,.55);pointer-events:none;z-index:99998;
+      border:2px solid rgba(184,134,11,.55);pointer-events:none;z-index:99998;
       transform:translate(-50%,-50%);
       transition:width .25s ease,height .25s ease,border-color .25s ease;
     }
     .cur-trail{
       position:fixed;width:80px;height:80px;border-radius:50%;
-      border:1px solid rgba(191,152,116,.15);pointer-events:none;z-index:99997;
+      border:1px solid rgba(184,134,11,.15);pointer-events:none;z-index:99997;
       transform:translate(-50%,-50%);
       transition:width .4s ease,height .4s ease;
     }
-    body:has(button:hover) .cur-ring{width:58px;height:58px;border-color:#BF9874;}
+    body:has(button:hover) .cur-ring{width:58px;height:58px;border-color:#B8860B;}
 
     /* ━━━━━━━━━━━━━━ LOADER ━━━━━━━━━━━━━━ */
     .loader{
@@ -926,23 +697,23 @@ interface PresidentSlide { id:number; titleKey:string; image:string; paragraphKe
     .loader-sphere{width:120px;height:120px;position:relative;display:flex;align-items:center;justify-content:center;}
     .sphere-ring{
       position:absolute;inset:0;border-radius:50%;
-      border:1px solid rgba(191,152,116,.35);
+      border:1px solid rgba(184,134,11,.35);
     }
     .r1{inset:10px;animation:rOrbit1 2.5s linear infinite;}
     .r2{inset:0;animation:rOrbit2 3.5s linear infinite;}
     .r3{inset:-12px;animation:rOrbit3 5s linear infinite;}
     .sphere-core{
       width:52px;height:52px;border-radius:50%;
-      background:radial-gradient(circle,rgba(191,152,116,.25),rgba(191,152,116,.05));
-      border:1px solid rgba(191,152,116,.5);
-      display:flex;align-items:center;justify-content:center;color:#BF9874;
-      box-shadow:0 0 30px rgba(191,152,116,.3),inset 0 0 20px rgba(191,152,116,.1);
+      background:radial-gradient(circle,rgba(184,134,11,.25),rgba(184,134,11,.05));
+      border:1px solid rgba(184,134,11,.5);
+      display:flex;align-items:center;justify-content:center;color:#B8860B;
+      box-shadow:0 0 30px rgba(184,134,11,.3),inset 0 0 20px rgba(184,134,11,.1);
       animation:float 3s ease-in-out infinite;
     }
     .sphere-core svg{width:30px;height:30px;}
     .loader-track{width:220px;height:3px;background:rgba(255,255,255,.08);border-radius:99px;overflow:hidden;}
-    .loader-fill{height:100%;background:linear-gradient(90deg,#BF9874,#e0b98a,#BF9874);background-size:200%;animation:fillBar 2s ease-in-out infinite;border-radius:99px;}
-    .loader-label{font-size:.72rem;font-weight:700;letter-spacing:2px;color:#BF9874;text-transform:uppercase;animation:labelPulse 2s ease-in-out infinite;}
+    .loader-fill{height:100%;background:linear-gradient(90deg,#B8860B,#D4A574,#B8860B);background-size:200%;animation:fillBar 2s ease-in-out infinite;border-radius:99px;}
+    .loader-label{font-size:.72rem;font-weight:700;letter-spacing:2px;color:#B8860B;text-transform:uppercase;animation:labelPulse 2s ease-in-out infinite;}
 
     /* ━━━━━━━━━━━━━━ HERO ━━━━━━━━━━━━━━ */
     .hero{position:relative;height:600px;overflow:hidden;perspective:800px;}
@@ -952,7 +723,7 @@ interface PresidentSlide { id:number; titleKey:string; image:string; paragraphKe
     .hero-body{position:relative;z-index:2;height:100%;display:flex;align-items:center;}
     .hero-text{max-width:660px;color:#fff;perspective:600px;}
     .hero-tag{
-      font-size:.72rem;font-weight:800;letter-spacing:3px;text-transform:uppercase;color:#BF9874;
+      font-size:.72rem;font-weight:800;letter-spacing:3px;text-transform:uppercase;color:#B8860B;
       margin-bottom:18px;
       animation:heroTagIn .7s cubic-bezier(.23,1,.32,1) .2s both;
     }
@@ -998,17 +769,17 @@ interface PresidentSlide { id:number; titleKey:string; image:string; paragraphKe
     .arr-face{position:absolute;display:flex;align-items:center;justify-content:center;}
     .arr-front{inset:0;z-index:1;transition:transform .3s ease;}
     .arr-front svg{width:24px;height:24px;}
-    .arr-top{top:0;left:0;right:0;height:6px;background:rgba(191,152,116,.5);transform:rotateX(90deg) translateZ(3px);transform-origin:top;}
+    .arr-top{top:0;left:0;right:0;height:6px;background:rgba(184,134,11,.5);transform:rotateX(90deg) translateZ(3px);transform-origin:top;}
     .arr-bottom{bottom:0;left:0;right:0;height:6px;background:rgba(0,0,0,.3);transform:rotateX(-90deg) translateZ(3px);transform-origin:bottom;}
-    .h-arr:hover{transform:translateZ(6px) scale(1.1);background:rgba(191,152,116,.25);border-color:#BF9874;box-shadow:0 0 20px rgba(191,152,116,.4);}
+    .h-arr:hover{transform:translateZ(6px) scale(1.1);background:rgba(184,134,11,.25);border-color:#B8860B;box-shadow:0 0 20px rgba(184,134,11,.4);}
     .h-arr:active{transform:translateZ(-2px) scale(.96);animation:arrPress .2s ease;}
 
     .h-dots{display:flex;gap:16px;}
     .h-dot{position:relative;width:52px;height:5px;background:rgba(255,255,255,.3);border:none;cursor:pointer;border-radius:3px;overflow:visible;transition:transform .3s ease;}
     .h-dot.on{transform:scaleY(1.5);}
     .hdot-bar{position:absolute;inset:0;border-radius:3px;transition:background .4s ease;}
-    .h-dot.on .hdot-bar{background:#BF9874;}
-    .hdot-glow{position:absolute;bottom:-10px;left:50%;transform:translateX(-50%);width:0;height:8px;border-radius:50%;background:#BF9874;filter:blur(5px);opacity:0;transition:all .4s ease;}
+    .h-dot.on .hdot-bar{background:#B8860B;}
+    .hdot-glow{position:absolute;bottom:-10px;left:50%;transform:translateX(-50%);width:0;height:8px;border-radius:50%;background:#B8860B;filter:blur(5px);opacity:0;transition:all .4s ease;}
     .h-dot.on .hdot-glow{width:36px;opacity:.9;}
     .h-dot.on .hdot-bar::after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,transparent,rgba(255,255,255,.5),transparent);animation:shimmerSweep 2s ease infinite;}
 
@@ -1033,7 +804,7 @@ interface PresidentSlide { id:number; titleKey:string; image:string; paragraphKe
     }
     .kf-bg-aura{
       position:absolute;top:-100px;left:-100px;width:500px;height:500px;border-radius:50%;
-      background:radial-gradient(circle,rgba(191,152,116,.12),transparent 70%);
+      background:radial-gradient(circle,rgba(184,134,11,.12),transparent 70%);
       pointer-events:none;animation:auroraShift 8s ease-in-out infinite;
     }
     .kf-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
@@ -1045,21 +816,21 @@ interface PresidentSlide { id:number; titleKey:string; image:string; paragraphKe
     }
     .kf-meta{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin-bottom:12px;}
     .kf-meta h3{font-size:1rem;font-weight:700;color:#1a1a1a;}
-    .kf-tag{font-size:.72rem;color:#8b7355;text-transform:uppercase;letter-spacing:1px;font-weight:700;white-space:nowrap;animation:labelPulse 3s ease-in-out infinite;}
+    .kf-tag{font-size:.72rem;color:#B8860B;text-transform:uppercase;letter-spacing:1px;font-weight:700;white-space:nowrap;animation:labelPulse 3s ease-in-out infinite;}
     .kf-chart{width:100%;height:250px;overflow:visible;}
-    .card-edge-r{position:absolute;top:0;right:0;width:3px;height:100%;background:linear-gradient(to bottom,transparent,rgba(191,152,116,.5),transparent);opacity:0;transition:opacity .3s ease;}
-    .card-edge-b{position:absolute;bottom:0;left:0;height:3px;width:100%;background:linear-gradient(to right,transparent,rgba(191,152,116,.5),transparent);opacity:0;transition:opacity .3s ease;}
+    .card-edge-r{position:absolute;top:0;right:0;width:3px;height:100%;background:linear-gradient(to bottom,transparent,rgba(184,134,11,.5),transparent);opacity:0;transition:opacity .3s ease;}
+    .card-edge-b{position:absolute;bottom:0;left:0;height:3px;width:100%;background:linear-gradient(to right,transparent,rgba(184,134,11,.5),transparent);opacity:0;transition:opacity .3s ease;}
     .tilt-card:hover .card-edge-r,.tilt-card:hover .card-edge-b{opacity:1;}
 
     /* ━━━━━━━━━━━━━━ SEC HEADERS ━━━━━━━━━━━━━━ */
     .sec-head{display:flex;align-items:center;gap:16px;margin-bottom:10px;}
     .sec-head.center{justify-content:center;}
-    .sec-line{width:60px;height:3px;background:linear-gradient(90deg,#BF9874,#d4a06a);}
+    .sec-line{width:60px;height:3px;background:linear-gradient(90deg,#B8860B,#D4A574);}
     .anim-line{animation:lineExpand .8s ease-out both;}
-    .sec-line-c{width:160px;height:1px;background:linear-gradient(90deg,transparent,rgba(191,152,116,.7),transparent);}
+    .sec-line-c{width:160px;height:1px;background:linear-gradient(90deg,transparent,rgba(184,134,11,.7),transparent);}
     .anim-line-c{animation:lineCExpand .8s ease-out both;}
     .sec-title{font-size:2.3rem;font-weight:800;color:#1a1a1a;margin:0;}
-    .sec-sub{font-size:.9rem;color:#BF9874;line-height:1.6;margin-bottom:38px;max-width:720px;}
+    .sec-sub{font-size:.9rem;color:#B8860B;line-height:1.6;margin-bottom:38px;max-width:720px;}
     .sec-sub.center{text-align:center;margin:0 auto 38px;}
     .anim-up{animation:upFade .7s cubic-bezier(.23,1,.32,1) both;opacity:0;}
     .a-d1{animation-delay:.15s;}
@@ -1067,7 +838,7 @@ interface PresidentSlide { id:number; titleKey:string; image:string; paragraphKe
     /* ━━━━━━━━━━━━━━ QUICK LINKS ━━━━━━━━━━━━━━ */
     .ql-section{background:#ECECF1;padding:28px 0;border-top:1px solid rgba(255,255,255,.2);border-bottom:1px solid rgba(255,255,255,.2);}
     .ql-row{display:flex;align-items:stretch;gap:8px;}
-    .ql-divider{width:1px;background:linear-gradient(to bottom,transparent,rgba(191,152,116,.4),transparent);flex-shrink:0;}
+    .ql-divider{width:1px;background:linear-gradient(to bottom,transparent,rgba(184,134,11,.4),transparent);flex-shrink:0;}
     .ql-card{flex:1;border-radius:14px;overflow:hidden;cursor:pointer;perspective:600px;}
     .flip-card{transition:none;}
     .flip-inner{
@@ -1085,11 +856,11 @@ interface PresidentSlide { id:number; titleKey:string; image:string; paragraphKe
     }
     .flip-back{transform:rotateY(180deg);background:linear-gradient(135deg,#1a2942,#2c3e50);}
     .flip-back-inner{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;color:#fff;text-align:center;width:100%;}
-    .flip-back-icon{width:40px;height:40px;color:#BF9874;}
+    .flip-back-icon{width:40px;height:40px;color:#B8860B;}
     .flip-back-icon svg{width:100%;height:100%;}
     .flip-back p{font-size:.78rem;line-height:1.5;color:rgba(255,255,255,.8);}
-    .flip-back-btn{padding:8px 20px;background:#BF9874;color:#fff;border:none;border-radius:99px;font-size:.78rem;font-weight:700;cursor:pointer;transition:background .3s ease;}
-    .flip-back-btn:hover{background:#d4a06a;}
+    .flip-back-btn{padding:8px 20px;background:#B8860B;color:#fff;border:none;border-radius:99px;font-size:.78rem;font-weight:700;cursor:pointer;transition:background .3s ease;}
+    .flip-back-btn:hover{background:#D4A574;}
     .ql-img{width:64px;flex-shrink:0;border-radius:10px;overflow:hidden;position:relative;}
     .ql-img img{width:100%;height:100%;object-fit:cover;}
     .img-zoom img{transition:transform .5s ease;}
@@ -1103,63 +874,139 @@ interface PresidentSlide { id:number; titleKey:string; image:string; paragraphKe
     .ql-card:hover{box-shadow:0 16px 40px rgba(9,16,40,.22);}
 
     /* ━━━━━━━━━━━━━━ OFFER ━━━━━━━━━━━━━━ */
-    .offer-section{padding:64px 0;background:#fff;border-bottom:1px solid rgba(26,41,66,.08);}
-    .offer-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:28px;}
+    .offer-section{padding:80px 0;background:#F9FAFB;position:relative;overflow:hidden;}
+    .offer-section::before{
+      content:'';
+      position:absolute;
+      top:-50%;
+      left:-50%;
+      width:200%;
+      height:200%;
+      background:radial-gradient(circle at 30% 50%,rgba(0,127,255,.08),transparent 50%),
+                  radial-gradient(circle at 70% 50%,rgba(0,127,255,.06),transparent 50%);
+      pointer-events:none;
+      animation:lightRotate 20s linear infinite;
+    }
+    @keyframes lightRotate{
+      0%{transform:rotate(0deg);}
+      100%{transform:rotate(360deg);}
+    }
+    .offer-section .container{position:relative;z-index:1;}
+    .offer-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;max-width:1200px;margin:0 auto;}
     .o-card{
-      background:#fff;padding:28px 22px;
-      box-shadow:0 4px 20px rgba(0,0,0,.07);
-      border-radius:4px;text-align:left;
+      background:#fff;
+      padding:24px 28px;
+      border-radius:12px;
+      display:flex;
+      flex-direction:column;
+      gap:12px;
+      box-shadow:0 2px 8px rgba(0,0,0,.06);
+      transition:box-shadow .3s ease,transform .3s ease;
+      animation:upFade .7s ease calc(var(--i,0)*.1s) both;
+      min-height:160px;
+      position:relative;
+      overflow:hidden;
     }
-    .o-card-floor{
-      position:absolute;bottom:0;left:0;right:0;height:3px;
-      background:linear-gradient(90deg,#BF9874,#d4a06a);
-      transform:scaleX(0);transform-origin:left;transition:transform .4s cubic-bezier(.23,1,.32,1);
+    .o-card::before{
+      content:'';
+      position:absolute;
+      inset:-2px;
+      border-radius:12px;
+      padding:2px;
+      background:linear-gradient(135deg,rgba(0,127,255,.3),rgba(0,127,255,.1),rgba(0,127,255,.3));
+      -webkit-mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);
+      -webkit-mask-composite:xor;
+      mask-composite:exclude;
+      opacity:0;
+      transition:opacity .3s ease;
     }
-    .tilt-card:hover .o-card-floor{transform:scaleX(1);}
-    .o-icon-wrap{position:relative;width:56px;height:56px;margin-bottom:18px;}
-    .o-icon-sphere{
-      width:52px;height:52px;border-radius:14px;
-      background:linear-gradient(135deg,rgba(30,46,69,.12),rgba(30,46,69,.04));
-      color:#1E2E45;display:flex;align-items:center;justify-content:center;
-      transition:transform .5s cubic-bezier(.23,1,.32,1),box-shadow .5s ease;
+    .o-card::after{
+      content:'';
+      position:absolute;
+      top:-50%;
+      left:-50%;
+      width:200%;
+      height:200%;
+      background:conic-gradient(from 0deg at 50% 50%,transparent 0deg,rgba(0,127,255,.15) 90deg,transparent 180deg,rgba(0,127,255,.15) 270deg,transparent 360deg);
+      opacity:0;
+      transition:opacity .3s ease;
+      animation:cardRotateLight 4s linear infinite;
+      pointer-events:none;
     }
-    .o-icon-sphere svg{width:34px;height:34px;transition:transform .5s cubic-bezier(.23,1,.32,1);}
-    .tilt-card:hover .o-icon-sphere{transform:rotateY(360deg);box-shadow:0 8px 25px rgba(30,46,69,.2);}
-    .o-icon-orbit{
-      position:absolute;inset:-6px;
-      border-radius:50%;border:1px dashed rgba(191,152,116,.4);
-      opacity:0;transition:opacity .3s ease;
+    @keyframes cardRotateLight{
+      0%{transform:rotate(0deg);}
+      100%{transform:rotate(360deg);}
     }
-    .orbit-dot{
-      position:absolute;top:50%;left:0;
-      width:6px;height:6px;border-radius:50%;background:#BF9874;margin-top:-3px;margin-left:-3px;
-      animation:orbitDot 2s linear infinite;opacity:0;transition:opacity .3s ease;
+    .o-card:hover::before{
+      opacity:1;
     }
-    .tilt-card:hover .o-icon-orbit{opacity:1;}
-    .tilt-card:hover .orbit-dot{opacity:1;}
-    .o-card h3{font-size:.95rem;font-weight:700;color:#1a1a1a;margin-bottom:10px;line-height:1.2;}
-    .o-card p{font-size:.84rem;color:#666;line-height:1.7;}
-    .o-card-beam{
-      position:absolute;bottom:0;left:50%;transform:translateX(-50%);
-      width:2px;height:0;background:linear-gradient(to top,#BF9874,transparent);
-      opacity:0;transition:height .5s ease,opacity .5s ease;
+    .o-card:hover::after{
+      opacity:1;
     }
-    .tilt-card:hover .o-card-beam{height:60%;opacity:.5;animation:beamRise .5s ease forwards;}
+    .o-card:hover{
+      box-shadow:0 8px 20px rgba(0,0,0,.1);
+      transform:translateY(-4px);
+    }
+    .o-card-header{
+      display:flex;
+      align-items:center;
+      gap:16px;
+      position:relative;
+      z-index:1;
+    }
+    .o-icon{
+      flex-shrink:0;
+      width:56px;
+      height:56px;
+      border-radius:12px;
+      background:linear-gradient(135deg,rgba(0,127,255,.2),rgba(0,127,255,.04));
+      color:#007FFF;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      transition:transform .3s ease,box-shadow .3s ease;
+    }
+    .o-card:hover .o-icon{
+      transform:scale(1.1);
+      box-shadow:0 8px 20px rgba(0,127,255,.3);
+    }
+    .o-icon svg{
+      width:28px;
+      height:28px;
+    }
+    .o-card h3{
+      font-size:1rem;
+      font-weight:700;
+      color:#1a1a1a;
+      margin:0;
+      line-height:1.3;
+      flex:1;
+      position:relative;
+      z-index:1;
+    }
+    .o-card p{
+      font-size:.875rem;
+      color:#6b7280;
+      line-height:1.6;
+      margin:0;
+      position:relative;
+      z-index:1;
+    }
 
     /* ━━━━━━━━━━━━━━ EXPERTISE ━━━━━━━━━━━━━━ */
     .exp-section{position:relative;padding:90px 0;overflow:hidden;background:transparent;}
     .exp-grid-bg{
       position:absolute;inset:0;
-      background-image:linear-gradient(rgba(191,152,116,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(191,152,116,.07) 1px,transparent 1px);
+      background-image:linear-gradient(rgba(184,134,11,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(184,134,11,.07) 1px,transparent 1px);
       background-size:55px 55px;animation:gridMove 5s linear infinite;pointer-events:none;
     }
     .exp-glow-orb{position:absolute;border-radius:50%;filter:blur(80px);pointer-events:none;}
-    .exp-orb1{width:500px;height:500px;top:-150px;right:-150px;background:radial-gradient(circle,rgba(191,152,116,.18),transparent 70%);animation:auroraShift 9s ease-in-out infinite;}
+    .exp-orb1{width:500px;height:500px;top:-150px;right:-150px;background:radial-gradient(circle,rgba(184,134,11,.18),transparent 70%);animation:auroraShift 9s ease-in-out infinite;}
     .exp-orb2{width:350px;height:350px;bottom:-100px;left:-80px;background:radial-gradient(circle,rgba(44,62,80,.12),transparent 70%);animation:auroraShift 12s ease-in-out infinite reverse;}
     .exp-section .sec-title{text-align:center;letter-spacing:3px;font-size:clamp(1.8rem,2.2vw,2.6rem);}
     .exp-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;max-width:1200px;margin:0 auto;}
     .exp-card{
-      --accent:#BF9874;
+      --accent:#007FFF;
       position:relative;padding:32px 28px;background:#fff;
       border-radius:14px;border-top:3px solid var(--accent);
       box-shadow:0 10px 30px rgba(0,0,0,.1);
@@ -1183,8 +1030,8 @@ interface PresidentSlide { id:number; titleKey:string; image:string; paragraphKe
     .exp-icon-wrap{display:flex;align-items:center;gap:14px;margin-bottom:12px;}
     .exp-icon{
       width:52px;height:52px;border-radius:12px;
-      background:linear-gradient(135deg,rgba(191,152,116,.2),rgba(191,152,116,.04));
-      color:var(--accent);display:flex;align-items:center;justify-content:center;
+      background:linear-gradient(135deg,rgba(0,127,255,.2),rgba(0,127,255,.04));
+      color:#007FFF;display:flex;align-items:center;justify-content:center;
       position:relative;flex-shrink:0;
     }
     .float-icon{animation:iconIconBob 3.5s ease-in-out infinite;}
@@ -1192,7 +1039,7 @@ interface PresidentSlide { id:number; titleKey:string; image:string; paragraphKe
     .exp-icon svg{width:30px;height:30px;}
     .exp-icon-pulse{
       position:absolute;inset:-6px;border-radius:inherit;
-      border:2px solid var(--accent);opacity:0;
+      border:2px solid #007FFF;opacity:0;
     }
     .exp-card:hover .exp-icon-pulse{animation:pulseRing .7s ease-out forwards;}
     .exp-icon-wrap h3{font-size:1rem;font-weight:800;color:#1a1a1a;line-height:1.2;}
@@ -1202,14 +1049,14 @@ interface PresidentSlide { id:number; titleKey:string; image:string; paragraphKe
     .exp-list li::before{content:"•";color:var(--accent);font-weight:700;flex-shrink:0;}
     .exp-cta{
       margin-top:auto;padding-top:14px;font-size:.78rem;font-weight:800;
-      color:var(--accent);text-transform:uppercase;letter-spacing:1px;
+      color:#007FFF;text-transform:uppercase;letter-spacing:1px;
       display:flex;align-items:center;gap:6px;transition:gap .3s ease;
     }
     .cta-arr{display:inline-block;transition:transform .3s cubic-bezier(.23,1,.32,1);}
     .exp-card:hover .exp-cta{gap:10px;}
     .exp-card:hover .cta-arr{transform:translateX(5px);}
-    .accent-civil{--accent:#BF9874;} .accent-family{--accent:#b8754d;} .accent-public{--accent:#4e6a8a;}
-    .accent-labor{--accent:#a45858;} .accent-criminal{--accent:#7a4d66;} .accent-property{--accent:#7f6b4a;}
+    .accent-civil{--accent:#007FFF;} .accent-family{--accent:#007FFF;} .accent-public{--accent:#007FFF;}
+    .accent-labor{--accent:#007FFF;} .accent-criminal{--accent:#007FFF;} .accent-property{--accent:#007FFF;}
 
     /* ━━━━━━━━━━━━━━ CONTACT ━━━━━━━━━━━━━━ */
     .ct-section{background:#fff;}
@@ -1220,27 +1067,27 @@ interface PresidentSlide { id:number; titleKey:string; image:string; paragraphKe
       animation:upFade .7s ease calc(var(--i,0)*.1s) both;
       cursor:default;transition:background .3s ease;
     }
-    .ct-item:hover{background:rgba(191,152,116,.05);}
+    .ct-item:hover{background:rgba(0,127,255,.05);}
     .ct-icon-box{
       width:52px;height:52px;flex-shrink:0;border-radius:14px;
-      background:linear-gradient(135deg,rgba(191,152,116,.18),rgba(191,152,116,.05));
-      display:flex;align-items:center;justify-content:center;color:#BF9874;
+      background:linear-gradient(135deg,rgba(0,127,255,.18),rgba(0,127,255,.05));
+      display:flex;align-items:center;justify-content:center;color:#007FFF;
       position:relative;transform-style:preserve-3d;
       transition:transform .4s cubic-bezier(.23,1,.32,1),box-shadow .4s ease;
     }
-    .ct-item:hover .ct-icon-box{transform:translateY(-6px) rotateY(15deg) rotateX(10deg);box-shadow:0 12px 28px rgba(191,152,116,.25);}
-    .ct-icon-ring{position:absolute;inset:-5px;border-radius:inherit;border:2px solid rgba(191,152,116,.3);opacity:0;transition:opacity .3s ease;}
+    .ct-item:hover .ct-icon-box{transform:translateY(-6px) rotateY(15deg) rotateX(10deg);box-shadow:0 12px 28px rgba(0,127,255,.25);}
+    .ct-icon-ring{position:absolute;inset:-5px;border-radius:inherit;border:2px solid rgba(0,127,255,.3);opacity:0;transition:opacity .3s ease;}
     .ct-item:hover .ct-icon-ring{animation:pulseRing .8s ease-out forwards;}
     .ct-text h3{font-size:.88rem;font-weight:700;color:#1a1a1a;margin-bottom:5px;}
     .ct-text p{font-size:.83rem;color:#4b5563;line-height:1.5;}
-    .ct-sep{width:1px;background:linear-gradient(to bottom,transparent,rgba(191,152,116,.6),transparent);}
+    .ct-sep{width:1px;background:linear-gradient(to bottom,transparent,rgba(0,127,255,.6),transparent);}
 
     /* ━━━━━━━━━━━━━━ PRESIDENT ━━━━━━━━━━━━━━ */
     .pres-section{padding:90px 0;background:#ECECF1;position:relative;overflow:hidden;}
     .pres-aurora{position:absolute;border-radius:50%;filter:blur(90px);pointer-events:none;}
-    .pres-a1{width:600px;height:600px;top:-200px;right:-150px;background:radial-gradient(circle,rgba(191,152,116,.22),transparent 70%);animation:auroraShift 10s ease-in-out infinite;}
+    .pres-a1{width:600px;height:600px;top:-200px;right:-150px;background:radial-gradient(circle,rgba(184,134,11,.22),transparent 70%);animation:auroraShift 10s ease-in-out infinite;}
     .pres-a2{width:400px;height:400px;bottom:-100px;left:-100px;background:radial-gradient(circle,rgba(44,62,80,.12),transparent 70%);animation:auroraShift 14s ease-in-out infinite reverse;}
-    .pres-a3{width:250px;height:250px;top:40%;left:40%;background:radial-gradient(circle,rgba(191,152,116,.08),transparent 70%);animation:auroraShift 7s ease-in-out infinite;}
+    .pres-a3{width:250px;height:250px;top:40%;left:40%;background:radial-gradient(circle,rgba(184,134,11,.08),transparent 70%);animation:auroraShift 7s ease-in-out infinite;}
     .pres-layout{display:grid;grid-template-columns:420px 1fr;gap:70px;align-items:center;position:relative;z-index:1;}
     .pres-img-stage{
       position:relative;height:520px;border-radius:20px;overflow:hidden;
@@ -1270,7 +1117,7 @@ interface PresidentSlide { id:number; titleKey:string; image:string; paragraphKe
     .tilt-card:hover .pres-img-shadow{transform:translateY(8px) scaleX(.9);opacity:.6;}
     .pres-badge{
       position:absolute;bottom:20px;left:20px;
-      background:rgba(191,152,116,.9);backdrop-filter:blur(8px);
+      background:#007FFF;backdrop-filter:blur(8px);
       color:#fff;font-size:.7rem;font-weight:800;letter-spacing:1px;text-transform:uppercase;
       padding:6px 14px;border-radius:99px;display:flex;align-items:center;gap:5px;
       animation:badgeBob 3s ease-in-out infinite;
@@ -1281,17 +1128,17 @@ interface PresidentSlide { id:number; titleKey:string; image:string; paragraphKe
       text-transform:uppercase;line-height:1.2;letter-spacing:1px;
       position:relative;padding-bottom:14px;
     }
-    .pres-title::after{content:'';position:absolute;left:0;bottom:0;width:70px;height:3px;background:linear-gradient(90deg,#BF9874,transparent);}
+    .pres-title::after{content:'';position:absolute;left:0;bottom:0;width:70px;height:3px;background:linear-gradient(90deg,#007FFF,transparent);}
     .pres-para{font-size:.93rem;line-height:1.8;color:#4b5563;margin-bottom:14px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;}
     .pres-btn{
       display:inline-flex;align-items:center;gap:10px;
-      padding:14px 36px;background:transparent;color:#BF9874;
-      border:1.5px solid #BF9874;font-size:.88rem;font-weight:800;cursor:pointer;
+      padding:14px 36px;background:transparent;color:#007FFF;
+      border:1.5px solid #007FFF;font-size:.88rem;font-weight:800;cursor:pointer;
       margin-top:18px;text-transform:capitalize;border-radius:999px;align-self:flex-start;
       position:relative;overflow:hidden;transition:color .3s ease,background .3s ease,transform .25s ease;
     }
-    .pres-btn:hover{background:#BF9874;color:#fff;}
-    .pres-btn-aura{position:absolute;inset:-2px;border-radius:inherit;background:radial-gradient(circle,rgba(191,152,116,.4),transparent 70%);opacity:0;pointer-events:none;transition:opacity .3s ease;}
+    .pres-btn:hover{background:#007FFF;color:#fff;}
+    .pres-btn-aura{position:absolute;inset:-2px;border-radius:inherit;background:radial-gradient(circle,rgba(0,127,255,.4),transparent 70%);opacity:0;pointer-events:none;transition:opacity .3s ease;}
     .pres-btn:hover .pres-btn-aura{opacity:1;}
     .pres-dots{display:flex;gap:12px;margin-top:24px;}
     .pres-dot{
@@ -1300,10 +1147,10 @@ interface PresidentSlide { id:number; titleKey:string; image:string; paragraphKe
       padding:0;transition:all .3s ease;overflow:visible;
     }
     .pres-dot:hover{transform:scale(1.3);}
-    .pres-dot.on{background:#BF9874;transform:scale(1.2);}
+    .pres-dot.on{background:#007FFF;transform:scale(1.2);}
     .pdot-inner{position:absolute;inset:3px;border-radius:50%;background:rgba(255,255,255,.5);opacity:0;transition:opacity .3s ease;}
     .pres-dot.on .pdot-inner{opacity:1;}
-    .pdot-wave{position:absolute;inset:-5px;border:2px solid #BF9874;border-radius:50%;opacity:0;pointer-events:none;}
+    .pdot-wave{position:absolute;inset:-5px;border:2px solid #007FFF;border-radius:50%;opacity:0;pointer-events:none;}
     .pres-dot.on .pdot-wave{animation:dotWave 1.2s ease-out infinite;}
 
     /* ━━━━━━━━━━━━━━ NEWSLETTER ━━━━━━━━━━━━━━ */
@@ -1317,22 +1164,56 @@ interface PresidentSlide { id:number; titleKey:string; image:string; paragraphKe
     .nl-head{display:flex;align-items:center;justify-content:center;gap:36px;margin-bottom:0;}
     .nl-head h2{font-size:2.3rem;font-weight:900;color:#1a1a1a;margin:0;letter-spacing:4px;text-align:center;animation:upFade .7s ease both;animation:neonFlicker 4s ease-in-out 1s infinite;}
     .nl-line{flex:1;max-width:180px;height:1px;background:linear-gradient(90deg,transparent,rgba(191,152,116,.8),transparent);}
-    .nl-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin:55px 0 44px;}
-    .nl-card{
-      background:transparent;border-radius:18px;overflow:hidden;
-      display:flex;flex-direction:column;
+    .nl-grid{
+      overflow:hidden;
+      margin:55px 0 44px;
+      padding-bottom:20px;
+      min-height:420px;
     }
-    .nl-img-wrap{position:relative;width:100%;height:195px;overflow:hidden;}
+    .nl-track{
+      display:flex;
+      gap:20px;
+      width:max-content;
+      animation:nl-marquee 40s linear infinite;
+      will-change:transform;
+      height:100%;
+    }
+    .nl-grid:hover .nl-track,
+    .nl-grid:focus-within .nl-track{
+      animation-play-state:paused;
+    }
+    @keyframes nl-marquee{
+      from{transform:translateX(0);}
+      to{transform:translateX(-50%);}
+    }
+    .nl-card{
+      background:#ffffff;border-radius:20px;overflow:hidden;
+      display:flex;flex-direction:column;
+      box-shadow:0 6px 16px rgba(0,0,0,.12),0 2px 6px rgba(0,0,0,.08);
+      height:380px;
+      flex:0 0 270px;
+      transition:transform .3s ease,box-shadow .3s ease;
+      will-change:transform;
+    }
+    .nl-card:hover{
+      transform:translateY(-6px);
+      box-shadow:0 16px 32px rgba(0,0,0,.18),0 8px 16px rgba(0,0,0,.12);
+    }
+    .nl-img-wrap{position:relative;width:100%;height:220px;overflow:hidden;border-radius:20px 20px 0 0;}
     .nl-img-wrap img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease;}
-    .nl-card:hover .nl-img-wrap img{transform:scale(1.1);}
+    .nl-card:hover .nl-img-wrap img{transform:scale(1.05);}
     .nl-img-overlay{position:absolute;inset:0;background:linear-gradient(180deg,transparent 50%,rgba(0,18,45,.55));opacity:0;transition:opacity .35s ease;pointer-events:none;}
     .nl-card:hover .nl-img-overlay{opacity:1;}
     .nl-img-badge{
-      position:absolute;top:12px;left:12px;
-      background:rgba(191,152,116,.9);color:#fff;
-      font-size:.62rem;font-weight:800;letter-spacing:1px;text-transform:uppercase;
-      padding:4px 10px;border-radius:99px;
+      position:absolute;top:16px;left:16px;
+      background:rgba(197,122,69,.95);color:#fff;
+      font-size:.625rem;font-weight:700;letter-spacing:.5px;text-transform:uppercase;
+      padding:8px 16px;border-radius:8px;
+      z-index:2;
+      backdrop-filter:blur(6px);
+      box-shadow:0 2px 8px rgba(0,0,0,.2);
       transition:transform .3s ease,box-shadow .3s ease;
+      white-space:nowrap;
     }
     .nl-card:hover .nl-img-badge{transform:translateY(-3px);box-shadow:0 6px 18px rgba(191,152,116,.5);}
     .nl-img-scan{
@@ -1342,18 +1223,19 @@ interface PresidentSlide { id:number; titleKey:string; image:string; paragraphKe
     }
     .nl-card:hover .nl-img-scan{opacity:1;animation:imgScanMove 1.5s linear infinite;}
     .nl-body{
-      padding:20px 16px 22px;flex:1;display:flex;flex-direction:column;
-      background:linear-gradient(180deg,rgba(255,255,255,.9),rgba(255,255,255,.75));
-      border-top:1px solid rgba(255,255,255,.4);
+      padding:24px 22px 22px;flex:1;display:flex;flex-direction:column;
+      background:#ffffff;
     }
-    .nl-body h3{font-size:.93rem;font-weight:700;line-height:1.5;color:#1f2937;margin:0 0 12px;}
+    .nl-body h3{font-size:1.1rem;font-weight:700;line-height:1.45;color:#1a1a1a;margin:0 0 18px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;min-height:3rem;}
     .nl-link{
       display:inline-flex;align-items:center;gap:6px;
-      color:#BF9874;font-size:.8rem;font-weight:800;
-      text-decoration:none;text-transform:capitalize;
+      color:#007FFF;font-size:.875rem;font-weight:700;
+      text-decoration:none;
       margin-top:auto;padding-top:8px;align-self:flex-start;
       position:relative;overflow:hidden;
+      transition:gap .3s ease,color .3s ease;
     }
+    .nl-link:hover{color:#0066CC;gap:10px;}
     .nl-arr{display:inline-flex;transition:transform .3s cubic-bezier(.23,1,.32,1);}
     .nl-link:hover .nl-arr{transform:translateX(6px) scale(1.2);}
     .nl-underline{position:absolute;bottom:0;left:0;height:1.5px;width:0;background:linear-gradient(90deg,#BF9874,#d4a06a);transition:width .35s ease;border-radius:99px;}
@@ -1366,12 +1248,12 @@ interface PresidentSlide { id:number; titleKey:string; image:string; paragraphKe
     .nl-card:hover .nl-card-glow{opacity:1;}
     .nl-action{text-align:center;}
     .nl-btn{
-      padding:15px 48px;background:transparent;color:#BF9874;
-      border:1.5px solid #BF9874;font-size:.92rem;font-weight:800;
+      padding:15px 48px;background:transparent;color:#007FFF;
+      border:1.5px solid #007FFF;font-size:.92rem;font-weight:800;
       cursor:pointer;text-transform:capitalize;position:relative;overflow:hidden;
       transition:all .3s ease;
     }
-    .nl-btn:hover{background:#BF9874;color:#fff;transform:translateY(-2px);box-shadow:0 10px 30px rgba(191,152,116,.35);}
+    .nl-btn:hover{background:#007FFF;color:#fff;transform:translateY(-2px);box-shadow:0 10px 30px rgba(0,127,255,.35);}
     .nl-btn::before{content:'';position:absolute;inset:0;background:linear-gradient(105deg,transparent 40%,rgba(255,255,255,.2) 50%,transparent 60%);transform:translateX(-120%) skewX(-20deg);pointer-events:none;}
     .nl-btn:hover::before{animation:shimmerSweep .6s ease forwards;}
 
@@ -1383,7 +1265,6 @@ interface PresidentSlide { id:number; titleKey:string; image:string; paragraphKe
       .kf-grid{grid-template-columns:repeat(2,1fr);}
       .offer-grid{grid-template-columns:repeat(2,1fr);}
       .exp-grid{grid-template-columns:repeat(2,1fr);}
-      .nl-grid{grid-template-columns:repeat(2,1fr);}
       .pres-layout{grid-template-columns:360px 1fr;gap:50px;}
     }
     @media(max-width:1023px){
@@ -1414,7 +1295,7 @@ interface PresidentSlide { id:number; titleKey:string; image:string; paragraphKe
       .exp-section .sec-title{letter-spacing:1.5px;}
       .exp-grid{grid-template-columns:1fr;gap:14px;}
       .nl-head{gap:16px;} .nl-head h2{font-size:1.6rem;letter-spacing:2px;} .nl-line{display:none;}
-      .nl-grid{grid-template-columns:1fr;gap:20px;margin:40px 0 36px;}
+      .nl-grid{margin:40px 0 36px;}
       .pres-title{font-size:1.7rem;}
       .pres-layout{gap:32px;}
       .cur-dot,.cur-ring,.cur-trail{display:none;}
@@ -2139,8 +2020,8 @@ interface PresidentSlide { id:number; titleKey:string; image:string; paragraphKe
 
     .practice-card:hover {
       transform: translateY(calc(-6px + var(--float-y))) scale(1.01);
-      box-shadow: 0 16px 36px rgba(0, 0, 0, 0.18);
-      border-color: rgba(0, 127, 255, 0.55);
+      box-shadow: 0 16px 36px rgba(0, 127, 255, 0.25);
+      border-color: rgba(0, 127, 255, 0.85);
     }
 
     .practice-card:focus-visible {
@@ -2155,7 +2036,7 @@ interface PresidentSlide { id:number; titleKey:string; image:string; paragraphKe
       flex-shrink: 0;
       border-radius: 50%; /* Circle */
       background: transparent;
-      border: 1px solid #B8860B; /* Golden border */
+      border: 1px solid #007FFF; /* Blue border */
       display: flex;
       align-items: center;
       justify-content: center;
@@ -2164,7 +2045,7 @@ interface PresidentSlide { id:number; titleKey:string; image:string; paragraphKe
 
     .practice-card:hover .practice-icon {
       transform: translateY(-3px) rotate(-2deg);
-      box-shadow: 0 10px 20px rgba(15, 15, 15, 0.12);
+      box-shadow: 0 10px 20px rgba(0, 127, 255, 0.3);
     }
 
     .practice-icon svg {
@@ -2261,12 +2142,12 @@ interface PresidentSlide { id:number; titleKey:string; image:string; paragraphKe
       font-size: 0.95rem;
     }
 
-    .accent-civil { --accent: #B8860B; }
-    .accent-family { --accent: #B8860B; }
-    .accent-public { --accent: #B8860B; }
-    .accent-labor { --accent: #B8860B; }
-    .accent-criminal { --accent: #B8860B; }
-    .accent-property { --accent: #B8860B; }
+    .accent-civil { --accent: #007FFF; }
+    .accent-family { --accent: #007FFF; }
+    .accent-public { --accent: #007FFF; }
+    .accent-labor { --accent: #007FFF; }
+    .accent-criminal { --accent: #007FFF; }
+    .accent-property { --accent: #007FFF; }
 
     .practice-grid .practice-card:nth-child(1) { animation-delay: 0.05s; }
     .practice-grid .practice-card:nth-child(2) { animation-delay: 0.12s; }
@@ -2579,7 +2460,7 @@ interface PresidentSlide { id:number; titleKey:string; image:string; paragraphKe
     }
 
     .newsletter-grid {
-      --news-card-width: 300px;
+      --news-card-width: 270px;
       overflow: hidden;
       margin-bottom: 50px;
       margin-top: 60px;
@@ -2588,9 +2469,9 @@ interface PresidentSlide { id:number; titleKey:string; image:string; paragraphKe
 
     .newsletter-track {
       display: flex;
-      gap: 26px;
+      gap: 20px;
       width: max-content;
-      animation: newsletter-marquee 36s linear infinite;
+      animation: newsletter-marquee 40s linear infinite;
       will-change: transform;
     }
 
@@ -2600,14 +2481,17 @@ interface PresidentSlide { id:number; titleKey:string; image:string; paragraphKe
     }
 
     .news-card {
-      background-color: transparent;
-      border-radius: 18px;
+      position: relative;
+      background-color: #ffffff;
+      border-radius: 20px;
       overflow: hidden;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
       display: flex;
       flex-direction: column;
       border: none;
       flex: 0 0 var(--news-card-width);
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12), 0 2px 6px rgba(0, 0, 0, 0.08);
+      height: 380px;
     }
 
     @keyframes newsletter-marquee {
@@ -2620,72 +2504,98 @@ interface PresidentSlide { id:number; titleKey:string; image:string; paragraphKe
     }
 
     .news-card:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 18px 34px rgba(10, 16, 32, 0.25);
+      transform: translateY(-6px);
+      box-shadow: 0 16px 32px rgba(0, 0, 0, 0.18), 0 8px 16px rgba(0, 0, 0, 0.12);
     }
 
     .news-image {
+      position: relative;
       width: 100%;
-      height: 190px;
+      height: 220px;
       overflow: hidden;
+      border-radius: 20px 20px 0 0;
+      background: #f5f5f5;
     }
 
     .news-image img {
       width: 100%;
       height: 100%;
       object-fit: cover;
+      display: block;
+      border-radius: 20px 20px 0 0;
       transition: transform 0.4s ease;
     }
 
     .news-card:hover .news-image img {
-      transform: scale(1.03);
+      transform: scale(1.05);
     }
 
     .news-content {
-      padding: 26px 22px 28px;
+      padding: 24px 22px 22px;
       color: #1a1a1a;
       flex: 1;
       display: flex;
       flex-direction: column;
-      background: linear-gradient(180deg, rgba(255, 255, 255, 0.82), rgba(255, 255, 255, 0.72));
-      border-top: 1px solid rgba(255, 255, 255, 0.4);
+      background: #ffffff;
       text-align: left;
+      position: relative;
     }
 
     .news-date {
-      color: #001025 !important;
-      font-weight: 600;
-      font-size: 0.75rem;
-      margin-bottom: 16px;
+      position: absolute;
+      top: 16px;
+      left: 16px;
+      background: rgba(197, 122, 69, 0.95);
+      color: #ffffff !important;
+      font-weight: 700;
+      font-size: 0.625rem;
+      padding: 8px 16px;
+      border-radius: 8px;
       text-transform: uppercase;
-      text-align: left;
+      letter-spacing: 0.5px;
+      z-index: 2;
+      backdrop-filter: blur(6px);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+      white-space: nowrap;
     }
 
     .news-content h3 {
-      font-size: 1rem;
+      font-size: 1.1rem;
       font-weight: 700;
-      line-height: 1.5;
-      color: #1f2937;
-      margin: 0 0 20px 0;
+      line-height: 1.45;
+      color: #1a1a1a;
+      margin: 0 0 18px 0;
       text-align: left;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      min-height: 3rem;
     }
 
     .read-more-link {
       display: inline-flex;
       align-items: center;
-      gap: 8px;
+      gap: 6px;
       color: #007FFF;
-      font-size: 0.85rem;
+      font-size: 0.875rem;
       font-weight: 700;
       text-decoration: none;
-      text-transform: capitalize;
       margin-top: auto;
-      padding-top: 12px;
+      padding-top: 8px;
       align-self: flex-start;
+      transition: gap 0.3s ease, color 0.3s ease;
     }
 
     .read-more-link svg {
       transition: transform 0.3s ease;
+      width: 16px;
+      height: 16px;
+    }
+
+    .read-more-link:hover {
+      color: #0066CC;
+      gap: 10px;
     }
 
     .read-more-link:hover svg {
@@ -3696,13 +3606,6 @@ export class HomeComponent implements OnInit, AfterViewInit {
     { key:'appt', img:'https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=120&h=120&fit=crop', title:'home.quickLinks.items.appointment.title', body:'home.quickLinks.items.appointment.body', action:'home.quickLinks.items.appointment.action' },
   ];
 
-  nlItems = [
-    { key:'1', img:'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=800&h=600&fit=crop', alt:'home.newsletter.items.1.alt', date:'home.newsletter.items.1.date', title:'home.newsletter.items.1.title' },
-    { key:'2', img:'https://images.unsplash.com/photo-1505664194779-8beaceb93744?w=800&h=600&fit=crop', alt:'home.newsletter.items.2.alt', date:'home.newsletter.items.2.date', title:'home.newsletter.items.2.title' },
-    { key:'3', img:'https://images.unsplash.com/photo-1479142506502-19b3a3b7ff33?w=800&h=600&fit=crop', alt:'home.newsletter.items.3.alt', date:'home.newsletter.items.3.date', title:'home.newsletter.items.3.title' },
-    { key:'4', img:'https://images.unsplash.com/photo-1521587760476-6c12a4b040da?w=800&h=600&fit=crop', alt:'home.newsletter.items.4.alt', date:'home.newsletter.items.4.date', title:'home.newsletter.items.4.title' },
-  ];
-
   heroSlides: HeroSlide[] = [
     { id:1, titleKey:'home.hero.slides.1.title', subtitleKey:'home.hero.slides.1.subtitle', descriptionKey:'home.hero.slides.1.body', buttonKey:'home.hero.slides.1.cta', image:'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=1920&h=1080&fit=crop' },
     { id:2, titleKey:'home.hero.slides.2.title', subtitleKey:'home.hero.slides.2.subtitle', descriptionKey:'home.hero.slides.2.body', buttonKey:'home.hero.slides.2.cta', image:'https://images.unsplash.com/photo-1505664194779-8beaceb93744?w=1920&h=1080&fit=crop' },
@@ -3780,7 +3683,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
         p.x += p.vx; p.y += p.vy; p.alpha -= p.decay;
         if (p.alpha <= 0) { p.alpha = Math.random()*.6+.2; p.x = Math.random()*W; p.y = H + 10; }
         ctx.beginPath(); ctx.arc(p.x, p.y, p.size, 0, Math.PI*2);
-        ctx.fillStyle = `rgba(191,152,116,${p.alpha})`; ctx.fill();
+        ctx.fillStyle = `rgba(184,134,11,${p.alpha})`; ctx.fill();
       });
       requestAnimationFrame(draw);
     };
@@ -3795,7 +3698,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
     const dy = (e.clientY - r.top - r.height/2) / (r.height/2);
     const tx = -dy * 14; const ty = dx * 14;
     el.style.transform = `perspective(900px) rotateX(${tx}deg) rotateY(${ty}deg) translateZ(14px)`;
-    el.style.boxShadow = `${-ty*1.5}px ${tx*1.5}px 50px rgba(0,0,0,.18), 0 25px 60px rgba(191,152,116,.12)`;
+    el.style.boxShadow = `${-ty*1.5}px ${tx*1.5}px 50px rgba(0,0,0,.18), 0 25px 60px rgba(184,134,11,.12)`;
     const shine = el.querySelector<HTMLElement>('.tilt-shine');
     if (shine) { shine.style.transform = `translateX(${dx*60}%) translateY(${dy*40}%) skewX(-20deg)`; shine.style.opacity = '.7'; }
   }
@@ -3877,7 +3780,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
         xAxis:{categories:['Sep','Oct','Nov','Dec','Jan','Feb'],labels:{style:s},lineColor:'rgba(26,41,66,.2)',tickColor:'rgba(26,41,66,.2)'},
         yAxis:{title:{text:undefined},labels:{style:s},gridLineColor:'rgba(26,41,66,.12)'},
         tooltip:{backgroundColor:'#1a2942',style:{color:'#fff'},borderColor:'#1a2942'},
-        series:[{type:'column',name:'Cases',data:[420,460,510,470,530,590],color:'#BF9874',borderRadius:4}]
+        series:[{type:'column',name:'Cases',data:[420,460,510,470,530,590],color:'#B8860B',borderRadius:4}]
       }),
       Highcharts.chart(this.chartB.nativeElement, {
         chart:{type:'line',backgroundColor:'transparent',height:220,spacing:[10,10,0,10]},
@@ -3885,7 +3788,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
         xAxis:{categories:['Q1','Q2','Q3','Q4'],labels:{style:s},lineColor:'rgba(26,41,66,.2)',tickColor:'rgba(26,41,66,.2)'},
         yAxis:{title:{text:undefined},labels:{style:s},gridLineColor:'rgba(26,41,66,.12)'},
         tooltip:{backgroundColor:'#1a2942',style:{color:'#fff'},borderColor:'#1a2942',valueSuffix:' days'},
-        series:[{type:'line',name:'Processing',data:[92,84,76,68],color:'#b8754d',marker:{radius:4}}]
+        series:[{type:'line',name:'Processing',data:[92,84,76,68],color:'#D4A574',marker:{radius:4}}]
       }),
       Highcharts.chart(this.chartC.nativeElement, {
         chart:{type:'pie',backgroundColor:'transparent',height:220,spacing:[10,10,10,10]},
@@ -3894,7 +3797,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
         tooltip:{backgroundColor:'#1a2942',style:{color:'#fff'},borderColor:'#1a2942',pointFormat:'<b>{point.percentage:.0f}%</b>'},
         plotOptions:{pie:{innerSize:'55%',dataLabels:{enabled:false}}},
         responsive:{rules:[{condition:{maxWidth:600},chartOptions:{chart:{height:240},plotOptions:{pie:{center:['50%','45%'],size:'90%'}}}}]},
-        series:[{type:'pie',name:'Decisions',data:[{name:'Civil',y:38,color:'#BF9874'},{name:'Public',y:27,color:'#4e6a8a'},{name:'Labor',y:18,color:'#a45858'},{name:'Other',y:17,color:'#7f6b4a'}]}]
+        series:[{type:'pie',name:'Decisions',data:[{name:'Civil',y:38,color:'#B8860B'},{name:'Public',y:27,color:'#007FFF'},{name:'Labor',y:18,color:'#CE1126'},{name:'Other',y:17,color:'#D4A574'}]}]
       }),
     ];
   }
@@ -3904,7 +3807,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
       next: (response) => {
         const posts = (response?.posts ?? [])
           .sort((a, b) => this.getTimestamp(b.date) - this.getTimestamp(a.date))
-          .slice(0, 4)
+          .slice(0, 8)
           .map((post) => this.mapPostToHomePost(post));
         this.newsletterPosts.set(posts);
       },

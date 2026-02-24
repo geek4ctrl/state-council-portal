@@ -1109,7 +1109,7 @@ img,
   position: absolute;
   inset: -2px;
   border-radius: inherit;
-  background: linear-gradient(135deg, #BF9874, #d4a06a, #BF9874);
+  background: linear-gradient(135deg, #FCD116, #FFE066, #FCD116);
   opacity: 0;
   z-index: -1;
   filter: blur(10px);
