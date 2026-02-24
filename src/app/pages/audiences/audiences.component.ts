@@ -19,22 +19,6 @@ import { FooterComponent } from '../../components/footer/footer.component';
   imports: [CommonModule, I18nPipe, FooterComponent],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
-    <!-- LOADER -->
-    <div class="loader" [class.out]="isPageLoaded()">
-      <div class="loader-sphere">
-        <div class="sphere-ring r1"></div>
-        <div class="sphere-ring r2"></div>
-        <div class="sphere-ring r3"></div>
-        <div class="sphere-core">
-          <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M32 8L16 16L16 32C16 44 24 52 32 56C40 52 48 44 48 32L48 16L32 8Z"/>
-          </svg>
-        </div>
-      </div>
-      <div class="loader-track"><div class="loader-fill"></div></div>
-      <span class="loader-label">Initializing...</span>
-    </div>
-
     <div class="cur-dot" #curDot></div>
     <div class="cur-ring" #curRing></div>
     <div class="cur-trail" #curTrail></div>
@@ -368,6 +352,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
         opacity: 0.95;
         margin: 0;
         font-weight: 300;
+       color: #ffffff;
       }
 
       /* Content Section */
@@ -445,7 +430,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
         font-size: 0.75rem;
         text-transform: uppercase;
         letter-spacing: 1px;
-        color: #c9a961;
+        color: #1F9BD9;
         font-weight: 600;
         white-space: nowrap;
       }
@@ -470,7 +455,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
       .header-line {
         flex: 0 0 60px;
         height: 2px;
-        background: #c9a961;
+        background: #1F9BD9;
       }
 
       .schedules-section h2 {
@@ -484,7 +469,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
 
       .section-subtitle {
         font-size: 0.8rem;
-        color: #BF9874 !important;
+        color: #1F9BD9 !important;
         margin: 0 0 60px 0;
         text-transform: uppercase;
         letter-spacing: 2.5px;
@@ -557,7 +542,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
 
       .label-date {
         font-weight: 600;
-        color: #c9a961;
+        color: #1F9BD9;
       }
 
       .document-info {
@@ -724,7 +709,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
       }
 
       .footer-column ul li a:hover {
-        color: #BF9874;
+        color: #1F9BD9;
       }
 
       .footer-bottom {
@@ -758,7 +743,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
       }
 
       .social-icon:hover {
-        background-color: #BF9874;
+        background-color: #1F9BD9;
       }
 
       .social-icon svg {
@@ -779,7 +764,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
       }
 
       .privacy-link:hover {
-        color: #BF9874;
+        color: #1F9BD9;
       }
 
       /* ========================================
@@ -1021,7 +1006,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
           font-size: 0.75rem;
           margin-bottom: 40px;
           text-align: left;
-          color: #BF9874 !important;
+          color: #1F9BD9 !important;
         }
 
         .documents-grid {
@@ -1168,7 +1153,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
           font-size: 0.7rem;
           letter-spacing: 2px;
           margin-bottom: 35px;
-          color: #BF9874 !important;
+          color: #1F9BD9 !important;
         }
 
         .documents-grid {
@@ -1364,22 +1349,22 @@ import { FooterComponent } from '../../components/footer/footer.component';
       @keyframes rippleAnim{to{transform:scale(1);opacity:0}}
       @keyframes cardIn{from{opacity:0;transform:translateY(40px) rotateX(20deg) scale(.94)}to{opacity:1;transform:translateY(0) rotateX(0) scale(1)}}
       .page-wrap{cursor:none;}
-      .loader{position:fixed;inset:0;background:linear-gradient(135deg,#080e1a,#1a2942);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:32px;z-index:9999;transition:opacity .7s ease,visibility .7s ease,transform .7s ease;}
+      .loader{position:fixed;inset:0;background:linear-gradient(135deg,#080e1a,#82BCDC);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:32px;z-index:9999;transition:opacity .7s ease,visibility .7s ease,transform .7s ease;}
       .loader.out{opacity:0;visibility:hidden;transform:scale(1.06);pointer-events:none;}
       .loader-sphere{width:120px;height:120px;position:relative;display:flex;align-items:center;justify-content:center;}
-      .sphere-ring{position:absolute;inset:0;border-radius:50%;border:1px solid rgba(191,152,116,.35);}
+      .sphere-ring{position:absolute;inset:0;border-radius:50%;border:1px solid rgba(31,155,217,.35);}
       .loader .r1{inset:10px;animation:rOrbit1 2.5s linear infinite;}
       .loader .r2{inset:0;animation:rOrbit2 3.5s linear infinite;}
       .loader .r3{inset:-12px;animation:rOrbit3 5s linear infinite;}
-      .sphere-core{width:52px;height:52px;border-radius:50%;background:radial-gradient(circle,rgba(191,152,116,.25),rgba(191,152,116,.05));border:1px solid rgba(191,152,116,.5);display:flex;align-items:center;justify-content:center;color:#BF9874;box-shadow:0 0 30px rgba(191,152,116,.3);animation:float 3s ease-in-out infinite;}
+      .sphere-core{width:52px;height:52px;border-radius:50%;background:radial-gradient(circle,rgba(31,155,217,.25),rgba(31,155,217,.05));border:1px solid rgba(31,155,217,.5);display:flex;align-items:center;justify-content:center;color:#1F9BD9;box-shadow:0 0 30px rgba(31,155,217,.3);animation:float 3s ease-in-out infinite;}
       .sphere-core svg{width:30px;height:30px;}
       .loader-track{width:220px;height:3px;background:rgba(255,255,255,.08);border-radius:99px;overflow:hidden;}
-      .loader-fill{height:100%;background:linear-gradient(90deg,#BF9874,#e0b98a);border-radius:99px;animation:fillBar 2s ease-in-out infinite;}
-      .loader-label{font-size:.72rem;font-weight:700;letter-spacing:2px;color:#BF9874;text-transform:uppercase;animation:labelPulse 2s ease-in-out infinite;}
-      .cur-dot{position:fixed;width:8px;height:8px;border-radius:50%;background:#BF9874;pointer-events:none;z-index:99999;transform:translate(-50%,-50%);}
-      .cur-ring{position:fixed;width:38px;height:38px;border-radius:50%;border:2px solid rgba(191,152,116,.55);pointer-events:none;z-index:99998;transform:translate(-50%,-50%);transition:width .25s,height .25s,border-color .25s;}
-      .cur-trail{position:fixed;width:80px;height:80px;border-radius:50%;border:1px solid rgba(191,152,116,.15);pointer-events:none;z-index:99997;transform:translate(-50%,-50%);transition:width .4s,height .4s;}
-      .page-wrap:has(button:hover) .cur-ring,.page-wrap:has(a:hover) .cur-ring{width:56px;height:56px;border-color:rgba(191,152,116,.9);}
+      .loader-fill{height:100%;background:linear-gradient(90deg,#1F9BD9,#e0b98a);border-radius:99px;animation:fillBar 2s ease-in-out infinite;}
+      .loader-label{font-size:.72rem;font-weight:700;letter-spacing:2px;color:#1F9BD9;text-transform:uppercase;animation:labelPulse 2s ease-in-out infinite;}
+      .cur-dot{position:fixed;width:8px;height:8px;border-radius:50%;background:#1F9BD9;pointer-events:none;z-index:99999;transform:translate(-50%,-50%);}
+      .cur-ring{position:fixed;width:38px;height:38px;border-radius:50%;border:2px solid rgba(31,155,217,.55);pointer-events:none;z-index:99998;transform:translate(-50%,-50%);transition:width .25s,height .25s,border-color .25s;}
+      .cur-trail{position:fixed;width:80px;height:80px;border-radius:50%;border:1px solid rgba(31,155,217,.15);pointer-events:none;z-index:99997;transform:translate(-50%,-50%);transition:width .4s,height .4s;}
+      .page-wrap:has(button:hover) .cur-ring,.page-wrap:has(a:hover) .cur-ring{width:56px;height:56px;border-color:rgba(31,155,217,.9);}
       .anim-label-pulse{animation:labelPulse 3s ease-in-out infinite;}
       .tilt-card{transform-style:preserve-3d;position:relative;overflow:hidden;transition:transform .5s cubic-bezier(.23,1,.32,1),box-shadow .5s ease;opacity:0;animation:cardIn .7s cubic-bezier(.23,1,.32,1) calc(var(--i,0)*.1s) forwards;}
       .tilt-shine{position:absolute;inset:0;border-radius:inherit;pointer-events:none;z-index:10;background:linear-gradient(105deg,transparent 45%,rgba(255,255,255,.18) 50%,transparent 55%);transform:translateX(-120%) skewX(-20deg);}
@@ -1412,10 +1397,7 @@ export class AudiencesComponent implements OnInit, AfterViewInit {
     }
   };
 
-  isPageLoaded = signal(false);
-
   ngOnInit() {
-    setTimeout(() => this.isPageLoaded.set(true), 1800);
     this.destroyRef.onDestroy(() => { if (this.rafId) cancelAnimationFrame(this.rafId); });
   }
 
@@ -1451,8 +1433,8 @@ export class AudiencesComponent implements OnInit, AfterViewInit {
     };
     requestAnimationFrame(anim);
     document.querySelectorAll('.page-wrap button,.page-wrap a').forEach(el => {
-      el.addEventListener('mouseenter', () => { ring.style.width = '56px'; ring.style.height = '56px'; ring.style.borderColor = 'rgba(191,152,116,.9)'; trail.style.width = '90px'; trail.style.height = '90px'; });
-      el.addEventListener('mouseleave', () => { ring.style.width = '38px'; ring.style.height = '38px'; ring.style.borderColor = 'rgba(191,152,116,.55)'; trail.style.width = '80px'; trail.style.height = '80px'; });
+      el.addEventListener('mouseenter', () => { ring.style.width = '56px'; ring.style.height = '56px'; ring.style.borderColor = 'rgba(31,155,217,.9)'; trail.style.width = '90px'; trail.style.height = '90px'; });
+      el.addEventListener('mouseleave', () => { ring.style.width = '38px'; ring.style.height = '38px'; ring.style.borderColor = 'rgba(31,155,217,.55)'; trail.style.width = '80px'; trail.style.height = '80px'; });
     });
   }
 
@@ -1514,7 +1496,7 @@ export class AudiencesComponent implements OnInit, AfterViewInit {
 
   private renderAudienceCharts() {
     const axisLabelStyle = {
-      color: '#BF9874',
+      color: '#1F9BD9',
       fontSize: '11px'
     };
 
@@ -1551,7 +1533,7 @@ export class AudiencesComponent implements OnInit, AfterViewInit {
           type: 'column',
           name: 'Hearings',
           data: [120, 135, 150, 142, 168, 176],
-          color: '#c9a961',
+          color: '#1F9BD9',
           borderRadius: 4
         }
       ]
@@ -1605,7 +1587,7 @@ export class AudiencesComponent implements OnInit, AfterViewInit {
           type: 'area',
           name: 'Adjourned',
           data: [36, 38, 42, 40, 45, 47],
-          color: 'rgba(191, 152, 116, 0.7)'
+          color: 'rgba(31, 155, 217, 0.7)'
         },
         {
           type: 'area',

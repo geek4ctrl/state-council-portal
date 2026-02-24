@@ -1,6 +1,6 @@
 import {
   AfterViewInit, ChangeDetectionStrategy, Component, DestroyRef,
-  ElementRef, OnInit, ViewChild, inject, signal,
+  ElementRef, OnInit, ViewChild, inject,
 } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { I18nPipe } from '../../i18n/i18n.pipe';
@@ -11,22 +11,6 @@ import { FooterComponent } from '../../components/footer/footer.component';
   imports: [CommonModule, I18nPipe, FooterComponent],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
-    <!-- LOADER -->
-    <div class="loader" [class.out]="isPageLoaded()">
-      <div class="loader-sphere">
-        <div class="sphere-ring r1"></div>
-        <div class="sphere-ring r2"></div>
-        <div class="sphere-ring r3"></div>
-        <div class="sphere-core">
-          <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M32 8L16 16L16 32C16 44 24 52 32 56C40 52 48 44 48 32L48 16L32 8Z"/>
-          </svg>
-        </div>
-      </div>
-      <div class="loader-track"><div class="loader-fill"></div></div>
-      <span class="loader-label">Initializing...</span>
-    </div>
-
     <!-- CUSTOM CURSOR -->
     <div class="cur-dot" #curDot></div>
     <div class="cur-ring" #curRing></div>
@@ -257,8 +241,8 @@ import { FooterComponent } from '../../components/footer/footer.component';
       right: 0;
       bottom: 0;
       background: 
-        radial-gradient(circle at 20% 30%, rgba(191, 152, 116, 0.18) 0%, transparent 50%),
-        radial-gradient(circle at 80% 70%, rgba(191, 152, 116, 0.15) 0%, transparent 50%),
+        radial-gradient(circle at 20% 30%, rgba(31, 155, 217, 0.18) 0%, transparent 50%),
+        radial-gradient(circle at 80% 70%, rgba(31, 155, 217, 0.15) 0%, transparent 50%),
         radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.03) 0%, transparent 60%);
       z-index: 2;
     }
@@ -293,12 +277,12 @@ import { FooterComponent } from '../../components/footer/footer.component';
         180deg,
         transparent 0%,
         rgba(255, 255, 255, 0.8) 15%,
-        rgba(191, 152, 116, 0.9) 50%,
+        rgba(31, 155, 217, 0.9) 50%,
         rgba(255, 255, 255, 0.8) 85%,
         transparent 100%
       );
       display: block;
-      box-shadow: 0 0 20px rgba(191, 152, 116, 0.4);
+      box-shadow: 0 0 20px rgba(31, 155, 217, 0.4);
     }
 
     .hero-description p {
@@ -314,7 +298,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
     .stats-section {
       background: linear-gradient(180deg, #e8eef7 0%, #f5f8fc 100%);
       padding: 60px 0;
-      border-bottom: 1px solid rgba(191, 152, 116, 0.1);
+      border-bottom: 1px solid rgba(31, 155, 217, 0.1);
     }
 
     .stats-grid {
@@ -340,7 +324,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
     .stat-divider {
       width: 60px;
       height: 2px;
-      background: linear-gradient(90deg, transparent, #BF9874, transparent);
+      background: linear-gradient(90deg, transparent, #1F9BD9, transparent);
       margin: 15px auto;
     }
 
@@ -355,7 +339,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
     .stat-separator {
       width: 1px;
       height: 80px;
-      background: linear-gradient(180deg, transparent, #BF9874, transparent);
+      background: linear-gradient(180deg, transparent, #1F9BD9, transparent);
       flex-shrink: 0;
     }
 
@@ -389,7 +373,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
     .header-line {
       flex: 0 0 60px;
       height: 2px;
-      background: linear-gradient(90deg, transparent, #BF9874);
+      background: linear-gradient(90deg, transparent, #1F9BD9);
     }
 
     .header-line-left,
@@ -399,16 +383,16 @@ import { FooterComponent } from '../../components/footer/footer.component';
     }
 
     .header-line-left {
-      background: linear-gradient(90deg, transparent, #BF9874);
+      background: linear-gradient(90deg, transparent, #1F9BD9);
     }
 
     .header-line-right {
-      background: linear-gradient(90deg, #BF9874, transparent);
+      background: linear-gradient(90deg, #1F9BD9, transparent);
     }
 
     .section-subtitle {
       font-size: 0.9rem;
-      color: #BF9874 !important;
+      color: #1F9BD9 !important;
       margin: 0 0 60px 0;
       line-height: 1.7;
       letter-spacing: 4.5px;
@@ -441,11 +425,11 @@ import { FooterComponent } from '../../components/footer/footer.component';
     .card-accent {
       width: 4px;
       height: 100%;
-      background: linear-gradient(180deg, #BF9874 0%, #a87e5f 100%);
+      background: linear-gradient(180deg, #1F9BD9 0%, #a87e5f 100%);
       position: absolute;
       left: 0;
       top: 0;
-      box-shadow: 2px 0 8px rgba(191, 152, 116, 0.3);
+      box-shadow: 2px 0 8px rgba(31, 155, 217, 0.3);
     }
 
     .card-content {
@@ -499,7 +483,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
     .domain-card:hover {
       transform: translateY(-5px);
       box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
-      border-color: #BF9874;
+      border-color: #1F9BD9;
     }
 
     .domain-header {
@@ -513,17 +497,17 @@ import { FooterComponent } from '../../components/footer/footer.component';
       width: 50px;
       height: 50px;
       min-width: 50px;
-      color: #BF9874;
+      color: #1F9BD9;
       display: flex;
       align-items: center;
       justify-content: center;
-      border: 2px solid #BF9874;
+      border: 2px solid #1F9BD9;
       border-radius: 50%;
       transition: all 0.3s ease;
     }
 
     .domain-card:hover .domain-icon {
-      background: #BF9874;
+      background: #1F9BD9;
       color: white;
     }
 
@@ -564,8 +548,8 @@ import { FooterComponent } from '../../components/footer/footer.component';
       right: 0;
       bottom: 0;
       background: 
-        radial-gradient(circle at 10% 20%, rgba(191, 152, 116, 0.1) 0%, transparent 50%),
-        radial-gradient(circle at 90% 80%, rgba(191, 152, 116, 0.08) 0%, transparent 50%);
+        radial-gradient(circle at 10% 20%, rgba(31, 155, 217, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 90% 80%, rgba(31, 155, 217, 0.08) 0%, transparent 50%);
     }
 
     .collaboration-content {
@@ -598,8 +582,8 @@ import { FooterComponent } from '../../components/footer/footer.component';
 
     .contact-btn {
       background-color: transparent;
-      color: #BF9874;
-      border: 2px solid #BF9874;
+      color: #1F9BD9;
+      border: 2px solid #1F9BD9;
       padding: 16px 40px;
       font-size: 0.85rem;
       font-weight: 600;
@@ -613,10 +597,10 @@ import { FooterComponent } from '../../components/footer/footer.component';
     }
 
     .contact-btn:hover {
-      background-color: #BF9874;
+      background-color: #1F9BD9;
       color: #1E2E45;
       transform: translateY(-2px);
-      box-shadow: 0 4px 12px rgba(191, 152, 116, 0.4);
+      box-shadow: 0 4px 12px rgba(31, 155, 217, 0.4);
     }
 
     /* ========================================
@@ -731,7 +715,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
         width: 80px;
         height: 3px;
         margin: 0 auto;
-        background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.8), #BF9874, rgba(255, 255, 255, 0.8), transparent);
+        background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.8), #1F9BD9, rgba(255, 255, 255, 0.8), transparent);
       }
 
       .hero-description p {
@@ -1053,32 +1037,32 @@ import { FooterComponent } from '../../components/footer/footer.component';
 
     .page-wrap{cursor:none;}
     .loader{
-      position:fixed;inset:0;background:linear-gradient(135deg,#080e1a,#1a2942);
+      position:fixed;inset:0;background:linear-gradient(135deg,#080e1a,#82BCDC);
       display:flex;flex-direction:column;align-items:center;justify-content:center;gap:32px;
       z-index:9999;transition:opacity .7s ease,visibility .7s ease,transform .7s ease;
     }
     .loader.out{opacity:0;visibility:hidden;transform:scale(1.06);pointer-events:none;}
     .loader-sphere{width:120px;height:120px;position:relative;display:flex;align-items:center;justify-content:center;}
-    .sphere-ring{position:absolute;inset:0;border-radius:50%;border:1px solid rgba(191,152,116,.35);}
+    .sphere-ring{position:absolute;inset:0;border-radius:50%;border:1px solid rgba(31,155,217,.35);}
     .r1{inset:10px;animation:rOrbit1 2.5s linear infinite;}
     .r2{inset:0;animation:rOrbit2 3.5s linear infinite;}
     .r3{inset:-12px;animation:rOrbit3 5s linear infinite;}
     .sphere-core{
       width:52px;height:52px;border-radius:50%;
-      background:radial-gradient(circle,rgba(191,152,116,.25),rgba(191,152,116,.05));
-      border:1px solid rgba(191,152,116,.5);
-      display:flex;align-items:center;justify-content:center;color:#BF9874;
-      box-shadow:0 0 30px rgba(191,152,116,.3);animation:float 3s ease-in-out infinite;
+      background:radial-gradient(circle,rgba(31,155,217,.25),rgba(31,155,217,.05));
+      border:1px solid rgba(31,155,217,.5);
+      display:flex;align-items:center;justify-content:center;color:#1F9BD9;
+      box-shadow:0 0 30px rgba(31,155,217,.3);animation:float 3s ease-in-out infinite;
     }
     .sphere-core svg{width:30px;height:30px;}
     .loader-track{width:220px;height:3px;background:rgba(255,255,255,.08);border-radius:99px;overflow:hidden;}
-    .loader-fill{height:100%;background:linear-gradient(90deg,#BF9874,#e0b98a);border-radius:99px;animation:fillBar 2s ease-in-out infinite;}
-    .loader-label{font-size:.72rem;font-weight:700;letter-spacing:2px;color:#BF9874;text-transform:uppercase;animation:labelPulse 2s ease-in-out infinite;}
+    .loader-fill{height:100%;background:linear-gradient(90deg,#1F9BD9,#e0b98a);border-radius:99px;animation:fillBar 2s ease-in-out infinite;}
+    .loader-label{font-size:.72rem;font-weight:700;letter-spacing:2px;color:#1F9BD9;text-transform:uppercase;animation:labelPulse 2s ease-in-out infinite;}
 
-    .cur-dot{position:fixed;width:8px;height:8px;border-radius:50%;background:#BF9874;pointer-events:none;z-index:99999;transform:translate(-50%,-50%);}
-    .cur-ring{position:fixed;width:38px;height:38px;border-radius:50%;border:2px solid rgba(191,152,116,.55);pointer-events:none;z-index:99998;transform:translate(-50%,-50%);transition:width .25s,height .25s,border-color .25s;}
-    .cur-trail{position:fixed;width:80px;height:80px;border-radius:50%;border:1px solid rgba(191,152,116,.15);pointer-events:none;z-index:99997;transform:translate(-50%,-50%);transition:width .4s,height .4s;}
-    body:has(button:hover) .cur-ring,.page-wrap:has(.contact-btn:hover) .cur-ring{width:56px;height:56px;border-color:rgba(191,152,116,.9);}
+    .cur-dot{position:fixed;width:8px;height:8px;border-radius:50%;background:#1F9BD9;pointer-events:none;z-index:99999;transform:translate(-50%,-50%);}
+    .cur-ring{position:fixed;width:38px;height:38px;border-radius:50%;border:2px solid rgba(31,155,217,.55);pointer-events:none;z-index:99998;transform:translate(-50%,-50%);transition:width .25s,height .25s,border-color .25s;}
+    .cur-trail{position:fixed;width:80px;height:80px;border-radius:50%;border:1px solid rgba(31,155,217,.15);pointer-events:none;z-index:99997;transform:translate(-50%,-50%);transition:width .4s,height .4s;}
+    body:has(button:hover) .cur-ring,.page-wrap:has(.contact-btn:hover) .cur-ring{width:56px;height:56px;border-color:rgba(31,155,217,.9);}
 
     .anim-line{animation:lineExpand .8s ease-out both;}
     .anim-line-c{animation:lineCExpand .8s ease-out both;}
@@ -1100,13 +1084,11 @@ export class InternationalRelationsComponent implements OnInit, AfterViewInit {
   @ViewChild('curDot') curDot!: ElementRef<HTMLDivElement>;
   @ViewChild('curRing') curRing!: ElementRef<HTMLDivElement>;
   @ViewChild('curTrail') curTrail!: ElementRef<HTMLDivElement>;
-  isPageLoaded = signal(false);
   private rafId?: number;
   private curRx = 0; private curRy = 0;
   private trailRx = 0; private trailRy = 0;
 
   ngOnInit() {
-    setTimeout(() => this.isPageLoaded.set(true), 1800);
     this.destroyRef.onDestroy(() => { if (this.rafId) cancelAnimationFrame(this.rafId); });
   }
 
@@ -1132,8 +1114,8 @@ export class InternationalRelationsComponent implements OnInit, AfterViewInit {
     };
     requestAnimationFrame(anim);
     document.querySelectorAll('.page-wrap button,.page-wrap a').forEach(el => {
-      el.addEventListener('mouseenter', () => { ring.style.width = '56px'; ring.style.height = '56px'; ring.style.borderColor = 'rgba(191,152,116,.9)'; trail.style.width = '90px'; trail.style.height = '90px'; });
-      el.addEventListener('mouseleave', () => { ring.style.width = '38px'; ring.style.height = '38px'; ring.style.borderColor = 'rgba(191,152,116,.55)'; trail.style.width = '80px'; trail.style.height = '80px'; });
+      el.addEventListener('mouseenter', () => { ring.style.width = '56px'; ring.style.height = '56px'; ring.style.borderColor = 'rgba(31,155,217,.9)'; trail.style.width = '90px'; trail.style.height = '90px'; });
+      el.addEventListener('mouseleave', () => { ring.style.width = '38px'; ring.style.height = '38px'; ring.style.borderColor = 'rgba(31,155,217,.55)'; trail.style.width = '80px'; trail.style.height = '80px'; });
     });
   }
 

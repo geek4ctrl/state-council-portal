@@ -65,7 +65,7 @@ body {
 :root {
   --surface-0: #f6f3ee;
   --surface-1: #ffffff;
-  --ink-strong: #1f2a24;
+  --ink-strong: #000000 !important;
   --ink-muted: #55645c;
   --accent: #6f7f6d;
   --accent-strong: #3f5a4a;
@@ -147,12 +147,12 @@ button {
 }
 
 ::selection {
-  background: rgba(191, 152, 116, 0.35);
+  background: rgba(31, 155, 217, 0.35);
   color: #0f172a;
 }
 
 ::-moz-selection {
-  background: rgba(191, 152, 116, 0.35);
+  background: rgba(31, 155, 217, 0.35);
   color: #0f172a;
 }
 
@@ -247,7 +247,7 @@ input:focus-visible,
 textarea:focus-visible,
 select:focus-visible,
 [tabindex]:focus-visible {
-  outline: 3px solid #bf9874;
+  outline: 3px solid #1F9BD9;
   outline-offset: 2px;
 }
 
@@ -259,7 +259,7 @@ select:focus-visible,
 /* Ensure interactive elements have visible focus */
 .nav-link:focus-visible,
 .dropdown-link:focus-visible {
-  outline: 3px solid #bf9874;
+  outline: 3px solid #1F9BD9;
   outline-offset: 2px;
   border-radius: 2px;
 }
@@ -349,7 +349,7 @@ img[loading='lazy'] {
 .key-fact-note,
 .form-subtitle,
 .hero-category {
-  color: #bf9874 !important;
+  color: #1F9BD9 !important;
 }
 
 /* ===== ALL ICON STYLING (TRANSPARENT BACKGROUND, GOLDISH BORDER ONLY, 4PX RADIUS) ===== */
@@ -359,7 +359,7 @@ img[loading='lazy'] {
 .card-icon {
   background: transparent !important;
   background-color: transparent !important;
-  border: 1px solid #bf9874 !important;
+  border: 1px solid #1F9BD9 !important;
   border-radius: 4px !important;
   overflow: hidden;
   padding: 8px;
@@ -399,14 +399,14 @@ img[loading='lazy'] {
   text-underline-offset: 4px !important;
   padding: 0 !important;
   font-weight: 700 !important;
-  color: #1a2942 !important;
+  color: #82BCDC !important;
   display: inline-flex !important;
   align-items: center;
   gap: 6px;
 }
 
 .read-more-link {
-  color: #bf9874 !important;
+  color: #1F9BD9 !important;
 }
 
 .practice-cta {
@@ -417,7 +417,7 @@ img[loading='lazy'] {
 }
 
 .card-link {
-  color: #1a2942 !important;
+  color: #82BCDC !important;
   font-size: 0.9rem;
 }
 
@@ -440,7 +440,7 @@ button[type='submit'] {
   /* border-width: 6px !important; */
   border-style: solid !important;
   border-radius: 6px !important;
-  /* border-color: #BF9874 !important; */
+  /* border-color: #1F9BD9 !important; */
 }
 
 /* ===== LEARN MORE / APPOINTMENT BUTTONS (1PX BORDER LIKE ICONS) ===== */
@@ -449,10 +449,10 @@ button[type='submit'] {
 .btn-appointment {
   border-width: 1px !important;
   border-style: solid !important;
-  border-color: #bf9874 !important;
+  border-color: #1F9BD9 !important;
   border-radius: 6px !important;
   background: transparent !important;
-  color: #bf9874 !important;
+  color: #1F9BD9 !important;
   padding: 14px 38px !important;
   font-size: 0.9rem !important;
   font-weight: 700 !important;
@@ -464,7 +464,7 @@ button[type='submit'] {
 .president-learn-btn:hover,
 .newsletter-learn-btn:hover,
 .btn-appointment:hover {
-  background: #bf9874 !important;
+  background: #1F9BD9 !important;
   color: white !important;
 }
 
@@ -528,7 +528,7 @@ img,
 .card-icon svg {
   width: 100%;
   height: 100%;
-  stroke: #bf9874;
+  stroke: #1F9BD9;
 }
 
 .info-card h3 {
@@ -577,7 +577,7 @@ img,
 
 /* ===== FOOTER LOGO (LANGUAGE SUPPORT) ===== */
 .footer-logo-wrapper {
-  border: 1px solid rgba(191, 152, 116, 0.3) !important;
+  border: 1px solid rgba(31, 155, 217, 0.3) !important;
 }
 
 .footer-logo-wrapper img {
@@ -596,12 +596,12 @@ img,
 }
 
 .social-icon {
-  border: 1px solid #bf9874 !important;
+  border: 1px solid #1F9BD9 !important;
 }
 
 .social-icon:hover {
-  border-color: #bf9874 !important;
-  background-color: #bf9874 !important;
+  border-color: #1F9BD9 !important;
+  background-color: #1F9BD9 !important;
 }
 
 /* ===== NAVIGATION ARROWS ===== */
@@ -610,7 +610,7 @@ img,
 }
 
 .nav-arrow:hover {
-  border-color: rgba(191, 152, 116, 0.8) !important;
+  border-color: rgba(31, 155, 217, 0.8) !important;
 }
 
 /* ===== DECORATIVE LINES - GOLDISH ===== */
@@ -618,7 +618,7 @@ img,
 .offer-line,
 .header-line,
 .expertise-line {
-  background: #bf9874 !important;
+  background: #1F9BD9 !important;
 }
 
 /* ===== CONTACT INFO DIVIDERS - GOLDISH ===== */
@@ -626,14 +626,14 @@ img,
   background: linear-gradient(
     to bottom,
     transparent,
-    rgba(191, 152, 116, 0.7),
+    rgba(31, 155, 217, 0.7),
     transparent
   ) !important;
 }
 
 @media (max-width: 1023px) {
   .contact-divider {
-    background: linear-gradient(to right, transparent, #bf9874, transparent) !important;
+    background: linear-gradient(to right, transparent, #1F9BD9, transparent) !important;
   }
 
   .cards-grid {
@@ -789,11 +789,11 @@ img,
 }
 
 .quick-link-item {
-  border: 1px solid rgba(191, 152, 116, 0.2);
+  border: 1px solid rgba(31, 155, 217, 0.2);
 }
 
 .quick-link-item:hover {
-  border-color: rgba(191, 152, 116, 0.4);
+  border-color: rgba(31, 155, 217, 0.4);
 }
 
 /* ═══════════════════════════════════════════════════════════════════
@@ -1062,7 +1062,7 @@ img,
   position: absolute;
   inset: -2px;
   border-radius: inherit;
-  background: linear-gradient(135deg, #BF9874, #d4a06a, #BF9874);
+  background: linear-gradient(135deg, #1F9BD9, #d4a06a, #1F9BD9);
   opacity: 0;
   z-index: -1;
   filter: blur(10px);
@@ -1205,7 +1205,7 @@ img,
   height: 500px;
   background: radial-gradient(
     circle,
-    rgba(191, 152, 116, 0.18),
+    rgba(31, 155, 217, 0.18),
     transparent 70%
   );
   animation-duration: 9s;
@@ -1227,12 +1227,12 @@ img,
 
 .grid-bg {
   background-image: linear-gradient(
-      rgba(191, 152, 116, 0.07) 1px,
+      rgba(31, 155, 217, 0.07) 1px,
       transparent 1px
     ),
     linear-gradient(
       90deg,
-      rgba(191, 152, 116, 0.07) 1px,
+      rgba(31, 155, 217, 0.07) 1px,
       transparent 1px
     );
   background-size: 55px 55px;
@@ -1244,8 +1244,8 @@ img,
 .scanlines {
   background: repeating-linear-gradient(
     0deg,
-    rgba(191, 152, 116, 0.03) 0,
-    rgba(191, 152, 116, 0.03) 1px,
+    rgba(31, 155, 217, 0.03) 0,
+    rgba(31, 155, 217, 0.03) 1px,
     transparent 1px,
     transparent 40px
   );

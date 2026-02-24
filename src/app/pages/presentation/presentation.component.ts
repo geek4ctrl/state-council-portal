@@ -1,6 +1,6 @@
 import {
   AfterViewInit, Component, DestroyRef, ElementRef,
-  OnInit, ViewChild, inject, signal,
+  OnInit, ViewChild, inject,
 } from '@angular/core';
 import { SeoService } from '../../services/seo.service';
 import { I18nPipe } from '../../i18n/i18n.pipe';
@@ -11,22 +11,6 @@ import { FooterComponent } from '../../components/footer/footer.component';
   standalone: true,
   imports: [I18nPipe, FooterComponent],
   template: `
-    <!-- LOADER -->
-    <div class="loader" [class.out]="isPageLoaded()">
-      <div class="loader-sphere">
-        <div class="sphere-ring r1"></div>
-        <div class="sphere-ring r2"></div>
-        <div class="sphere-ring r3"></div>
-        <div class="sphere-core">
-          <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M32 8L16 16L16 32C16 44 24 52 32 56C40 52 48 44 48 32L48 16L32 8Z"/>
-          </svg>
-        </div>
-      </div>
-      <div class="loader-track"><div class="loader-fill"></div></div>
-      <span class="loader-label">Initializing...</span>
-    </div>
-
     <div class="cur-dot" #curDot></div>
     <div class="cur-ring" #curRing></div>
     <div class="cur-trail" #curTrail></div>
@@ -125,7 +109,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
       position: relative;
       height: 400px;
       background: linear-gradient(rgba(10, 25, 41, 0.85), rgba(26, 41, 66, 0.9)),
-                  url('https://placehold.co/1920x400/1a2942/ffffff?text=Court+Building') center/cover;
+                  url('https://placehold.co/1920x400/82BCDC/ffffff?text=Court+Building') center/cover;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -267,7 +251,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
       background: #f8f9fa;
       padding: 30px;
       border-radius: 8px;
-      border-left: 4px solid #c8956b;
+      border-left: 4px solid #82BCDC;
     }
 
     .text-block h4 {
@@ -397,22 +381,22 @@ import { FooterComponent } from '../../components/footer/footer.component';
     @keyframes rOrbit3{from{transform:rotateX(65deg) rotateZ(240deg)}to{transform:rotateX(65deg) rotateZ(600deg)}}
     @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
     .page-wrap{cursor:none;}
-    .loader{position:fixed;inset:0;background:linear-gradient(135deg,#080e1a,#1a2942);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:32px;z-index:9999;transition:opacity .7s ease,visibility .7s ease,transform .7s ease;}
+    .loader{position:fixed;inset:0;background:linear-gradient(135deg,#080e1a,#82BCDC);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:32px;z-index:9999;transition:opacity .7s ease,visibility .7s ease,transform .7s ease;}
     .loader.out{opacity:0;visibility:hidden;transform:scale(1.06);pointer-events:none;}
     .loader-sphere{width:120px;height:120px;position:relative;display:flex;align-items:center;justify-content:center;}
-    .sphere-ring{position:absolute;inset:0;border-radius:50%;border:1px solid rgba(191,152,116,.35);}
+    .sphere-ring{position:absolute;inset:0;border-radius:50%;border:1px solid rgba(31,155,217,.35);}
     .loader .r1{inset:10px;animation:rOrbit1 2.5s linear infinite;}
     .loader .r2{inset:0;animation:rOrbit2 3.5s linear infinite;}
     .loader .r3{inset:-12px;animation:rOrbit3 5s linear infinite;}
-    .sphere-core{width:52px;height:52px;border-radius:50%;background:radial-gradient(circle,rgba(191,152,116,.25),rgba(191,152,116,.05));border:1px solid rgba(191,152,116,.5);display:flex;align-items:center;justify-content:center;color:#BF9874;box-shadow:0 0 30px rgba(191,152,116,.3);animation:float 3s ease-in-out infinite;}
+    .sphere-core{width:52px;height:52px;border-radius:50%;background:radial-gradient(circle,rgba(31,155,217,.25),rgba(31,155,217,.05));border:1px solid rgba(31,155,217,.5);display:flex;align-items:center;justify-content:center;color:#1F9BD9;box-shadow:0 0 30px rgba(31,155,217,.3);animation:float 3s ease-in-out infinite;}
     .sphere-core svg{width:30px;height:30px;}
     .loader-track{width:220px;height:3px;background:rgba(255,255,255,.08);border-radius:99px;overflow:hidden;}
-    .loader-fill{height:100%;background:linear-gradient(90deg,#BF9874,#e0b98a);border-radius:99px;animation:fillBar 2s ease-in-out infinite;}
-    .loader-label{font-size:.72rem;font-weight:700;letter-spacing:2px;color:#BF9874;text-transform:uppercase;animation:labelPulse 2s ease-in-out infinite;}
-    .cur-dot{position:fixed;width:8px;height:8px;border-radius:50%;background:#BF9874;pointer-events:none;z-index:99999;transform:translate(-50%,-50%);}
-    .cur-ring{position:fixed;width:38px;height:38px;border-radius:50%;border:2px solid rgba(191,152,116,.55);pointer-events:none;z-index:99998;transform:translate(-50%,-50%);transition:width .25s,height .25s,border-color .25s;}
-    .cur-trail{position:fixed;width:80px;height:80px;border-radius:50%;border:1px solid rgba(191,152,116,.15);pointer-events:none;z-index:99997;transform:translate(-50%,-50%);transition:width .4s,height .4s;}
-    .page-wrap:has(button:hover) .cur-ring,.page-wrap:has(a:hover) .cur-ring{width:56px;height:56px;border-color:rgba(191,152,116,.9);}
+    .loader-fill{height:100%;background:linear-gradient(90deg,#1F9BD9,#e0b98a);border-radius:99px;animation:fillBar 2s ease-in-out infinite;}
+    .loader-label{font-size:.72rem;font-weight:700;letter-spacing:2px;color:#1F9BD9;text-transform:uppercase;animation:labelPulse 2s ease-in-out infinite;}
+    .cur-dot{position:fixed;width:8px;height:8px;border-radius:50%;background:#1F9BD9;pointer-events:none;z-index:99999;transform:translate(-50%,-50%);}
+    .cur-ring{position:fixed;width:38px;height:38px;border-radius:50%;border:2px solid rgba(31,155,217,.55);pointer-events:none;z-index:99998;transform:translate(-50%,-50%);transition:width .25s,height .25s,border-color .25s;}
+    .cur-trail{position:fixed;width:80px;height:80px;border-radius:50%;border:1px solid rgba(31,155,217,.15);pointer-events:none;z-index:99997;transform:translate(-50%,-50%);transition:width .4s,height .4s;}
+    .page-wrap:has(button:hover) .cur-ring,.page-wrap:has(a:hover) .cur-ring{width:56px;height:56px;border-color:rgba(31,155,217,.9);}
   `]
 })
 export class PresentationComponent implements OnInit, AfterViewInit {
@@ -423,13 +407,11 @@ export class PresentationComponent implements OnInit, AfterViewInit {
   @ViewChild('curRing') curRing!: ElementRef<HTMLDivElement>;
   @ViewChild('curTrail') curTrail!: ElementRef<HTMLDivElement>;
 
-  isPageLoaded = signal(false);
   private rafId?: number;
   private curRx = 0; private curRy = 0;
   private trailRx = 0; private trailRy = 0;
 
   ngOnInit() {
-    setTimeout(() => this.isPageLoaded.set(true), 1800);
     this.destroyRef.onDestroy(() => { if (this.rafId) cancelAnimationFrame(this.rafId); });
     this.seoService.updateMetadata({
       title: 'Présentation',
@@ -461,8 +443,8 @@ export class PresentationComponent implements OnInit, AfterViewInit {
     };
     requestAnimationFrame(anim);
     document.querySelectorAll('.page-wrap button,.page-wrap a').forEach(el => {
-      el.addEventListener('mouseenter', () => { ring.style.width = '56px'; ring.style.height = '56px'; ring.style.borderColor = 'rgba(191,152,116,.9)'; trail.style.width = '90px'; trail.style.height = '90px'; });
-      el.addEventListener('mouseleave', () => { ring.style.width = '38px'; ring.style.height = '38px'; ring.style.borderColor = 'rgba(191,152,116,.55)'; trail.style.width = '80px'; trail.style.height = '80px'; });
+      el.addEventListener('mouseenter', () => { ring.style.width = '56px'; ring.style.height = '56px'; ring.style.borderColor = 'rgba(31,155,217,.9)'; trail.style.width = '90px'; trail.style.height = '90px'; });
+      el.addEventListener('mouseleave', () => { ring.style.width = '38px'; ring.style.height = '38px'; ring.style.borderColor = 'rgba(31,155,217,.55)'; trail.style.width = '80px'; trail.style.height = '80px'; });
     });
   }
 }

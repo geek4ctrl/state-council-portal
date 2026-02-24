@@ -194,7 +194,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
 
     .tab.active {
       color: #2c3e50;
-      border-bottom-color: #BF9874;
+      border-bottom-color: #1F9BD9;
       font-weight: 600;
     }
 
@@ -219,7 +219,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
 
     .form-subtitle {
       font-size: 0.9rem;
-      color: #c9a961;
+      color: #1F9BD9;
       text-transform: uppercase;
       letter-spacing: 2px;
       margin: 0;
@@ -257,7 +257,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
     .form-group select:focus,
     .form-group textarea:focus {
       outline: none;
-      border-color: #BF9874;
+      border-color: #1F9BD9;
     }
 
     .form-group input::placeholder,
@@ -347,7 +347,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
       }
 
       .tab.active {
-        border-bottom-color: #BF9874;
+        border-bottom-color: #1F9BD9;
       }
 
       .form-row {

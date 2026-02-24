@@ -23,22 +23,6 @@ import { FooterComponent } from '../../components/footer/footer.component';
   imports: [CommonModule, SkeletonLoaderComponent, IconComponent, I18nPipe, FooterComponent],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
-    <!-- LOADER -->
-    <div class="loader" [class.out]="isPageLoaded()">
-      <div class="loader-sphere">
-        <div class="sphere-ring r1"></div>
-        <div class="sphere-ring r2"></div>
-        <div class="sphere-ring r3"></div>
-        <div class="sphere-core">
-          <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M32 8L16 16L16 32C16 44 24 52 32 56C40 52 48 44 48 32L48 16L32 8Z"/>
-          </svg>
-        </div>
-      </div>
-      <div class="loader-track"><div class="loader-fill"></div></div>
-      <span class="loader-label">Initializing...</span>
-    </div>
-
     <div class="cur-dot" #curDot></div>
     <div class="cur-ring" #curRing></div>
     <div class="cur-trail" #curTrail></div>
@@ -279,7 +263,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
     .header-decoration-right {
       flex: 0 0 80px;
       height: 1px;
-      background: linear-gradient(90deg, transparent, #BF9874, transparent);
+      background: linear-gradient(90deg, transparent, #1F9BD9, transparent);
     }
 
     .section-header h2 {
@@ -294,7 +278,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
 
     .section-subtitle {
       font-size: 0.85rem;
-      color: #BF9874 !important;
+      color: #1F9BD9 !important;
       text-transform: uppercase;
       letter-spacing: 3px;
       margin: 0 0 60px 0;
@@ -316,7 +300,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
     .insights-line {
       width: 50px;
       height: 2px;
-      background: #BF9874;
+      background: #1F9BD9;
     }
 
     .insights-header h3 {
@@ -331,7 +315,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
 
     .insights-subtitle {
       font-size: 0.85rem;
-      color: #BF9874 !important;
+      color: #1F9BD9 !important;
       margin: 0 0 24px;
       letter-spacing: 1px;
       text-transform: uppercase;
@@ -372,7 +356,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
       font-size: 0.75rem;
       text-transform: uppercase;
       letter-spacing: 1px;
-      color: #BF9874 !important;
+      color: #1F9BD9 !important;
       font-weight: 600;
       white-space: nowrap;
     }
@@ -476,7 +460,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
     }
 
     .read-more {
-      color: #9b6b3f !important;
+      color: #1F9BD9 !important;
       font-size: 0.85rem;
       font-weight: 600;
       text-decoration: underline !important;
@@ -494,7 +478,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
     }
 
     .read-more:hover {
-      color: #BF9874 !important;
+      color: #1F9BD9 !important;
     }
 
     .pagination {
@@ -507,9 +491,9 @@ import { FooterComponent } from '../../components/footer/footer.component';
     .pagination-btn,
     .pagination-number {
       background: transparent;
-      border: 1px solid #BF9874 !important;
+      border: 1px solid #1F9BD9 !important;
       border-radius: 6px !important;
-      color: #666;
+      color: #1F9BD9;
       padding: 10px 15px;
       cursor: pointer;
       transition: all 0.3s ease;
@@ -535,19 +519,19 @@ import { FooterComponent } from '../../components/footer/footer.component';
     }
 
     .pagination-number.active {
-      background: #BF9874;
+      background: #1F9BD9;
       color: white;
-      border-color: #BF9874 !important;
+      border-color: #1F9BD9 !important;
     }
 
     .pagination-number:hover:not(.active) {
-      border-color: #BF9874 !important;
-      color: #BF9874;
+      border-color: #1F9BD9 !important;
+      color: #1F9BD9;
     }
 
     .pagination-btn:hover:not(:disabled) {
-      border-color: #BF9874 !important;
-      color: #BF9874;
+      border-color: #1F9BD9 !important;
+      color: #1F9BD9;
     }
 
     .pagination-btn.next-btn {
@@ -686,22 +670,22 @@ import { FooterComponent } from '../../components/footer/footer.component';
     @keyframes lineCExpand{from{width:0;opacity:0}to{width:80px;opacity:1}}
     @keyframes upFade{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:translateY(0)}}
     .page-wrap{cursor:none;}
-    .loader{position:fixed;inset:0;background:linear-gradient(135deg,#080e1a,#1a2942);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:32px;z-index:9999;transition:opacity .7s ease,visibility .7s ease,transform .7s ease;}
+    .loader{position:fixed;inset:0;background:linear-gradient(135deg,#080e1a,#82BCDC);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:32px;z-index:9999;transition:opacity .7s ease,visibility .7s ease,transform .7s ease;}
     .loader.out{opacity:0;visibility:hidden;transform:scale(1.06);pointer-events:none;}
     .loader-sphere{width:120px;height:120px;position:relative;display:flex;align-items:center;justify-content:center;}
-    .sphere-ring{position:absolute;inset:0;border-radius:50%;border:1px solid rgba(191,152,116,.35);}
+    .sphere-ring{position:absolute;inset:0;border-radius:50%;border:1px solid rgba(31,155,217,.35);}
     .loader .r1{inset:10px;animation:rOrbit1 2.5s linear infinite;}
     .loader .r2{inset:0;animation:rOrbit2 3.5s linear infinite;}
     .loader .r3{inset:-12px;animation:rOrbit3 5s linear infinite;}
-    .sphere-core{width:52px;height:52px;border-radius:50%;background:radial-gradient(circle,rgba(191,152,116,.25),rgba(191,152,116,.05));border:1px solid rgba(191,152,116,.5);display:flex;align-items:center;justify-content:center;color:#BF9874;box-shadow:0 0 30px rgba(191,152,116,.3);animation:float 3s ease-in-out infinite;}
+    .sphere-core{width:52px;height:52px;border-radius:50%;background:radial-gradient(circle,rgba(31,155,217,.25),rgba(31,155,217,.05));border:1px solid rgba(31,155,217,.5);display:flex;align-items:center;justify-content:center;color:#1F9BD9;box-shadow:0 0 30px rgba(31,155,217,.3);animation:float 3s ease-in-out infinite;}
     .sphere-core svg{width:30px;height:30px;}
     .loader-track{width:220px;height:3px;background:rgba(255,255,255,.08);border-radius:99px;overflow:hidden;}
-    .loader-fill{height:100%;background:linear-gradient(90deg,#BF9874,#e0b98a);border-radius:99px;animation:fillBar 2s ease-in-out infinite;}
-    .loader-label{font-size:.72rem;font-weight:700;letter-spacing:2px;color:#BF9874;text-transform:uppercase;animation:labelPulse 2s ease-in-out infinite;}
-    .cur-dot{position:fixed;width:8px;height:8px;border-radius:50%;background:#BF9874;pointer-events:none;z-index:99999;transform:translate(-50%,-50%);}
-    .cur-ring{position:fixed;width:38px;height:38px;border-radius:50%;border:2px solid rgba(191,152,116,.55);pointer-events:none;z-index:99998;transform:translate(-50%,-50%);transition:width .25s,height .25s,border-color .25s;}
-    .cur-trail{position:fixed;width:80px;height:80px;border-radius:50%;border:1px solid rgba(191,152,116,.15);pointer-events:none;z-index:99997;transform:translate(-50%,-50%);transition:width .4s,height .4s;}
-    .page-wrap:has(button:hover) .cur-ring,.page-wrap:has(a:hover) .cur-ring{width:56px;height:56px;border-color:rgba(191,152,116,.9);}
+    .loader-fill{height:100%;background:linear-gradient(90deg,#1F9BD9,#e0b98a);border-radius:99px;animation:fillBar 2s ease-in-out infinite;}
+    .loader-label{font-size:.72rem;font-weight:700;letter-spacing:2px;color:#1F9BD9;text-transform:uppercase;animation:labelPulse 2s ease-in-out infinite;}
+    .cur-dot{position:fixed;width:8px;height:8px;border-radius:50%;background:#1F9BD9;pointer-events:none;z-index:99999;transform:translate(-50%,-50%);}
+    .cur-ring{position:fixed;width:38px;height:38px;border-radius:50%;border:2px solid rgba(31,155,217,.55);pointer-events:none;z-index:99998;transform:translate(-50%,-50%);transition:width .25s,height .25s,border-color .25s;}
+    .cur-trail{position:fixed;width:80px;height:80px;border-radius:50%;border:1px solid rgba(31,155,217,.15);pointer-events:none;z-index:99997;transform:translate(-50%,-50%);transition:width .4s,height .4s;}
+    .page-wrap:has(button:hover) .cur-ring,.page-wrap:has(a:hover) .cur-ring{width:56px;height:56px;border-color:rgba(31,155,217,.9);}
     .anim-line{animation:lineExpand .8s ease-out both;}
     .header-decoration-left.anim-line-c,.header-decoration-right.anim-line-c{animation:lineCExpand .8s ease-out both;}
     .anim-up{animation:upFade .7s cubic-bezier(.23,1,.32,1) both;opacity:0;}
@@ -744,7 +728,6 @@ export class NewsComponent implements OnInit, AfterViewInit {
 
   currentPage = signal(1);
   isLoading = signal(true);
-  isPageLoaded = signal(false);
   totalPages = 3;
   itemsPerPage = 3;
 
@@ -756,7 +739,6 @@ export class NewsComponent implements OnInit, AfterViewInit {
       ogUrl: '/news'
     });
 
-    setTimeout(() => this.isPageLoaded.set(true), 1800);
     setTimeout(() => this.isLoading.set(false), 1500);
     this.destroyRef.onDestroy(() => { if (this.rafId) cancelAnimationFrame(this.rafId); });
   }
@@ -793,8 +775,8 @@ export class NewsComponent implements OnInit, AfterViewInit {
     };
     requestAnimationFrame(anim);
     document.querySelectorAll('.page-wrap button,.page-wrap a').forEach(el => {
-      el.addEventListener('mouseenter', () => { ring.style.width = '56px'; ring.style.height = '56px'; ring.style.borderColor = 'rgba(191,152,116,.9)'; trail.style.width = '90px'; trail.style.height = '90px'; });
-      el.addEventListener('mouseleave', () => { ring.style.width = '38px'; ring.style.height = '38px'; ring.style.borderColor = 'rgba(191,152,116,.55)'; trail.style.width = '80px'; trail.style.height = '80px'; });
+      el.addEventListener('mouseenter', () => { ring.style.width = '56px'; ring.style.height = '56px'; ring.style.borderColor = 'rgba(31,155,217,.9)'; trail.style.width = '90px'; trail.style.height = '90px'; });
+      el.addEventListener('mouseleave', () => { ring.style.width = '38px'; ring.style.height = '38px'; ring.style.borderColor = 'rgba(31,155,217,.55)'; trail.style.width = '80px'; trail.style.height = '80px'; });
     });
   }
 
@@ -856,7 +838,7 @@ export class NewsComponent implements OnInit, AfterViewInit {
 
   private renderNewsCharts() {
     const axisLabelStyle = {
-      color: '#BF9874',
+      color: '#1F9BD9',
       fontSize: '11px'
     };
 
@@ -910,7 +892,7 @@ export class NewsComponent implements OnInit, AfterViewInit {
           type: 'column',
           name: 'Reforms',
           data: [4, 5, 6, 7, 6, 8],
-          color: 'rgba(191, 152, 116, 0.75)'
+          color: 'rgba(31, 155, 217, 0.75)'
         },
         {
           type: 'column',
@@ -952,7 +934,7 @@ export class NewsComponent implements OnInit, AfterViewInit {
           type: 'line',
           name: 'Publications',
           data: [15, 18, 22, 19, 24, 27],
-          color: '#BF9874',
+          color: '#1F9BD9',
           marker: { radius: 4 }
         }
       ]

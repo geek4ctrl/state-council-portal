@@ -102,7 +102,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
       position: relative;
       height: 400px;
       background: linear-gradient(rgba(10, 25, 41, 0.85), rgba(26, 41, 66, 0.9)),
-                  url('https://placehold.co/1920x400/1a2942/ffffff?text=Court+Building') center/cover;
+                  url('https://placehold.co/1920x400/82BCDC/ffffff?text=Court+Building') center/cover;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -244,7 +244,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
       background: #f8f9fa;
       padding: 30px;
       border-radius: 8px;
-      border-left: 4px solid #c8956b;
+      border-left: 4px solid #82BCDC;
     }
 
     .text-block h4 {
