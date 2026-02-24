@@ -1275,7 +1275,9 @@ interface PresidentSlide { id:number; titleKey:string; image:string; paragraphKe
       .exp-section .sec-title{letter-spacing:1.5px;}
       .exp-grid{grid-template-columns:1fr;gap:14px;}
       .nl-head{gap:16px;} .nl-head h2{font-size:1.6rem;letter-spacing:2px;} .nl-line{display:none;}
-      .nl-grid{margin:40px 0 36px;}
+      .nl-grid{margin:40px 0 36px;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;}
+      .nl-track{animation:none;}
+      .nl-card{scroll-snap-align:start;}
       .pres-title{font-size:1.7rem;}
       .pres-layout{gap:32px;}
       .pres-img-stage{

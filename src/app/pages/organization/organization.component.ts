@@ -769,6 +769,39 @@ type HighchartsStatic = typeof import('highcharts');
       font-size: 0.72rem;
     }
 
+    @media (hover: none), (pointer: coarse) {
+      .org-chart-section {
+        background: #eef3f8;
+        box-shadow: none;
+      }
+
+      .org-chart-section.org-chart-names {
+        background: #f8f9fb;
+      }
+
+      .org-node {
+        box-shadow: none;
+        transition: none;
+      }
+
+      .org-node:hover {
+        transform: none;
+      }
+
+      .org-chart-connector {
+        background: rgba(26, 41, 66, 0.15);
+      }
+
+      .org-node.primary,
+      .org-node.muted {
+        box-shadow: none;
+      }
+
+      .anim-line {
+        animation: none;
+      }
+    }
+
     .filter-group input,
     .filter-group select {
       background: #fafbfc;
