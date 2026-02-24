@@ -486,10 +486,6 @@ interface PresidentSlide { id:number; titleKey:string; image:string; paragraphKe
                 <div class="pres-img-grid"></div>
               </div>
               <div class="pres-img-shadow"></div>
-              <div class="pres-badge">
-                <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-                <span>Verified</span>
-              </div>
             </div>
             <div class="pres-content">
               <h2 class="pres-title">{{ presSlides[currentPresSlide()].titleKey | i18n }}</h2>
@@ -1282,6 +1278,14 @@ interface PresidentSlide { id:number; titleKey:string; image:string; paragraphKe
       .nl-grid{margin:40px 0 36px;}
       .pres-title{font-size:1.7rem;}
       .pres-layout{gap:32px;}
+      .pres-img-stage{
+        width:100%;
+        max-width:100%;
+        margin:0;
+        height:auto;
+        aspect-ratio:4/5;
+      }
+      .pres-img-frame img{object-position:top center;}
       .cur-dot,.cur-ring,.cur-trail{display:none;}
     }
     @media(max-width:575px){
@@ -1292,6 +1296,7 @@ interface PresidentSlide { id:number; titleKey:string; image:string; paragraphKe
       .offer-section,.exp-section,.pres-section,.nl-section{padding:36px 0;}
       .sec-title{font-size:1.3rem;}
       .nl-head h2{font-size:1.4rem;}
+      .pres-img-stage{max-width:100%;}
     }
     @media(max-width:374px){
       .hero{height:360px;} .hero-h1{font-size:1.2rem;} .sec-title{font-size:1.2rem;}
