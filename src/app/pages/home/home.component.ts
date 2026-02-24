@@ -137,30 +137,6 @@ interface PresidentSlide { id:number; titleKey:string; image:string; paragraphKe
       <!-- ═══ QUICK LINKS ═══ -->
       <section class="ql-section">
         <div class="container">
-          <div class="ql-row">
-            @for(q of ql; track q.key; let i=$index){
-              <div class="ql-card flip-card" style="--i:{{i}}" (click)="flipToggle($event)">
-                <div class="flip-inner">
-                  <div class="flip-front">
-                    <div class="ql-img img-zoom"><img [src]="q.img" alt=""><div class="img-sheen"></div></div>
-                    <div class="ql-info">
-                      <h3>{{ q.title | i18n }}</h3>
-                      <p>{{ q.body | i18n }}</p>
-                      <span class="ql-cta">{{ q.action | i18n }} <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
-                    </div>
-                  </div>
-                  <div class="flip-back">
-                    <div class="flip-back-inner">
-                      <div class="flip-back-icon"><svg viewBox="0 0 64 64" fill="currentColor"><path d="M32 8L16 16L16 32C16 44 24 52 32 56C40 52 48 44 48 32L48 16L32 8Z"/></svg></div>
-                      <p>{{ q.body | i18n }}</p>
-                      <button class="flip-back-btn" (click)="$event.stopPropagation()">{{ q.action | i18n }}</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              @if(i<3){ <div class="ql-divider"></div> }
-            }
-          </div>
           <div class="quick-links-marquee">
             <div class="quick-links-container">
               <div class="quick-link-item glass-card">
@@ -261,7 +237,7 @@ interface PresidentSlide { id:number; titleKey:string; image:string; paragraphKe
         </div>
       </section>
 
-      <!-- ═══ OFFER ═══ -->
+      <!-- ═══ WHAT WE OFFER ═══ -->
       <section class="offer-section">
         <div class="container">
           <div class="sec-head">
@@ -720,8 +696,9 @@ interface PresidentSlide { id:number; titleKey:string; image:string; paragraphKe
     .hero-bg{position:absolute;inset:-5%;background-size:cover;background-position:center;transition:background-image .8s ease;transform:translateZ(-40px) scale(1.1);}
     .hero-fog{position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,18,45,.93) 0%,rgba(0,18,45,.72) 55%,rgba(0,18,45,.4) 100%);}
     .hero-canvas{position:absolute;inset:0;pointer-events:none;z-index:1;}
-    .hero-body{position:relative;z-index:2;height:100%;display:flex;align-items:center;}
-    .hero-text{max-width:660px;color:#fff;perspective:600px;}
+    .hero-body{position:relative;z-index:2;height:100%;display:flex;align-items:center;justify-content:flex-start;padding-left:370px;}
+    .hero-body .container{display:flex;justify-content:flex-start;margin:0;padding:0;max-width:none;}
+    .hero-text{max-width:660px;color:#fff;perspective:600px;text-align:left;}
     .hero-tag{
       font-size:.72rem;font-weight:800;letter-spacing:3px;text-transform:uppercase;color:#B8860B;
       margin-bottom:18px;
@@ -733,7 +710,7 @@ interface PresidentSlide { id:number; titleKey:string; image:string; paragraphKe
       animation:heroH1In .8s cubic-bezier(.23,1,.32,1) .4s both;
       text-shadow:0 4px 30px rgba(0,0,0,.4);
     }
-    .hero-btns{display:flex;gap:14px;flex-wrap:wrap;animation:heroBtnsIn .7s ease .65s both;}
+    .hero-btns{display:flex;gap:14px;flex-wrap:wrap;animation:heroBtnsIn .7s ease .65s both;justify-content:flex-start;}
     .hbtn{
       position:relative;padding:17px 44px;font-size:.95rem;font-weight:700;
       cursor:pointer;overflow:hidden;transform-style:preserve-3d;
@@ -802,6 +779,7 @@ interface PresidentSlide { id:number; titleKey:string; image:string; paragraphKe
       background:linear-gradient(180deg,#f8f6f2,#fff);padding:64px 0 48px;
       border-bottom:1px solid rgba(26,41,66,.08);position:relative;overflow:hidden;
     }
+    .kf-section .sec-sub{color:#B8860B;}
     .kf-bg-aura{
       position:absolute;top:-100px;left:-100px;width:500px;height:500px;border-radius:50%;
       background:radial-gradient(circle,rgba(184,134,11,.12),transparent 70%);
@@ -816,21 +794,21 @@ interface PresidentSlide { id:number; titleKey:string; image:string; paragraphKe
     }
     .kf-meta{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin-bottom:12px;}
     .kf-meta h3{font-size:1rem;font-weight:700;color:#1a1a1a;}
-    .kf-tag{font-size:.72rem;color:#B8860B;text-transform:uppercase;letter-spacing:1px;font-weight:700;white-space:nowrap;animation:labelPulse 3s ease-in-out infinite;}
+    .kf-tag{font-size:.72rem;color:#D4A574;text-transform:uppercase;letter-spacing:1px;font-weight:700;white-space:nowrap;animation:labelPulse 3s ease-in-out infinite;}
     .kf-chart{width:100%;height:250px;overflow:visible;}
-    .card-edge-r{position:absolute;top:0;right:0;width:3px;height:100%;background:linear-gradient(to bottom,transparent,rgba(184,134,11,.5),transparent);opacity:0;transition:opacity .3s ease;}
-    .card-edge-b{position:absolute;bottom:0;left:0;height:3px;width:100%;background:linear-gradient(to right,transparent,rgba(184,134,11,.5),transparent);opacity:0;transition:opacity .3s ease;}
+    .card-edge-r{position:absolute;top:0;right:0;width:3px;height:100%;background:linear-gradient(to bottom,transparent,rgba(0,127,255,.5),transparent);opacity:0;transition:opacity .3s ease;}
+    .card-edge-b{position:absolute;bottom:0;left:0;height:3px;width:100%;background:linear-gradient(to right,transparent,rgba(0,127,255,.5),transparent);opacity:0;transition:opacity .3s ease;}
     .tilt-card:hover .card-edge-r,.tilt-card:hover .card-edge-b{opacity:1;}
 
     /* ━━━━━━━━━━━━━━ SEC HEADERS ━━━━━━━━━━━━━━ */
     .sec-head{display:flex;align-items:center;gap:16px;margin-bottom:10px;}
     .sec-head.center{justify-content:center;}
-    .sec-line{width:60px;height:3px;background:linear-gradient(90deg,#B8860B,#D4A574);}
+    .sec-line{width:60px;height:3px;background:linear-gradient(90deg,#007FFF,#4A9FFF);}
     .anim-line{animation:lineExpand .8s ease-out both;}
     .sec-line-c{width:160px;height:1px;background:linear-gradient(90deg,transparent,rgba(184,134,11,.7),transparent);}
     .anim-line-c{animation:lineCExpand .8s ease-out both;}
     .sec-title{font-size:2.3rem;font-weight:800;color:#1a1a1a;margin:0;}
-    .sec-sub{font-size:.9rem;color:#B8860B;line-height:1.6;margin-bottom:38px;max-width:720px;}
+    .sec-sub{font-size:.9rem;color:#007FFF;line-height:1.6;margin-bottom:38px;max-width:720px;}
     .sec-sub.center{text-align:center;margin:0 auto 38px;}
     .anim-up{animation:upFade .7s cubic-bezier(.23,1,.32,1) both;opacity:0;}
     .a-d1{animation-delay:.15s;}
@@ -875,6 +853,8 @@ interface PresidentSlide { id:number; titleKey:string; image:string; paragraphKe
 
     /* ━━━━━━━━━━━━━━ OFFER ━━━━━━━━━━━━━━ */
     .offer-section{padding:80px 0;background:#F9FAFB;position:relative;overflow:hidden;}
+    .offer-section .sec-sub{color:#B8860B;}
+    .offer-section .sec-line{background:linear-gradient(90deg,#D4A574,#B8860B);}
     .offer-section::before{
       content:'';
       position:absolute;
@@ -882,8 +862,8 @@ interface PresidentSlide { id:number; titleKey:string; image:string; paragraphKe
       left:-50%;
       width:200%;
       height:200%;
-      background:radial-gradient(circle at 30% 50%,rgba(0,127,255,.08),transparent 50%),
-                  radial-gradient(circle at 70% 50%,rgba(0,127,255,.06),transparent 50%);
+      background:radial-gradient(circle at 30% 50%,rgba(212,165,116,.08),transparent 50%),
+                  radial-gradient(circle at 70% 50%,rgba(212,165,116,.06),transparent 50%);
       pointer-events:none;
       animation:lightRotate 20s linear infinite;
     }
@@ -892,7 +872,7 @@ interface PresidentSlide { id:number; titleKey:string; image:string; paragraphKe
       100%{transform:rotate(360deg);}
     }
     .offer-section .container{position:relative;z-index:1;}
-    .offer-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;max-width:1200px;margin:0 auto;}
+    .offer-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;max-width:1200px;margin:0 auto;}
     .o-card{
       background:#fff;
       padding:24px 28px;
@@ -995,6 +975,7 @@ interface PresidentSlide { id:number; titleKey:string; image:string; paragraphKe
 
     /* ━━━━━━━━━━━━━━ EXPERTISE ━━━━━━━━━━━━━━ */
     .exp-section{position:relative;padding:90px 0;overflow:hidden;background:transparent;}
+    .exp-section .sec-sub{color:#B8860B;}
     .exp-grid-bg{
       position:absolute;inset:0;
       background-image:linear-gradient(rgba(184,134,11,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(184,134,11,.07) 1px,transparent 1px);
@@ -1260,6 +1241,7 @@ interface PresidentSlide { id:number; titleKey:string; image:string; paragraphKe
     /* ━━━━━━━━━━━━━━ RESPONSIVE ━━━━━━━━━━━━━━ */
     @media(max-width:1199px){
       .container{padding:0 28px;}
+      .hero-body{padding-left:280px;}
       .hero-h1{font-size:2.4rem;}
       .sec-title{font-size:2rem;}
       .kf-grid{grid-template-columns:repeat(2,1fr);}
@@ -1269,6 +1251,7 @@ interface PresidentSlide { id:number; titleKey:string; image:string; paragraphKe
     }
     @media(max-width:1023px){
       .hero{height:500px;} .hero-h1{font-size:2rem;}
+      .hero-body{padding-left:200px;}
       .ql-row{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;}
       .ql-divider{display:none;}
       .flip-inner{min-height:120px;}
@@ -1282,6 +1265,7 @@ interface PresidentSlide { id:number; titleKey:string; image:string; paragraphKe
     }
     @media(max-width:767px){
       .container{padding:0 20px;}
+      .hero-body{padding-left:60px;}
       .hero{height:460px;} .hero-h1{font-size:1.7rem;} .hero-tag{font-size:.65rem;}
       .hbtn{padding:14px 30px;font-size:.85rem;} .hero-btns{gap:10px;}
       .hero-nav{bottom:20px;} .hero-controls{gap:16px;}
@@ -1302,6 +1286,7 @@ interface PresidentSlide { id:number; titleKey:string; image:string; paragraphKe
     }
     @media(max-width:575px){
       .container{padding:0 15px;}
+      .hero-body{padding-left:40px;}
       .hero{height:410px;} .hero-h1{font-size:1.4rem;} .hbtn{padding:12px 24px;font-size:.8rem;}
       .h-dot{width:32px;height:4px;}
       .offer-section,.exp-section,.pres-section,.nl-section{padding:36px 0;}
@@ -1508,7 +1493,7 @@ interface PresidentSlide { id:number; titleKey:string; image:string; paragraphKe
     .key-facts-line {
       width: 60px;
       height: 3px;
-      background: #FCD116;
+      background: #B8860B;
     }
 
     .key-facts-subtitle {
@@ -1580,19 +1565,25 @@ interface PresidentSlide { id:number; titleKey:string; image:string; paragraphKe
 
     /* Quick Links Section */
     .quick-links-section {
-      background:
-        radial-gradient(circle at 15% 20%, rgba(255, 255, 255, 0.65), transparent 45%),
-        linear-gradient(180deg, #f2f3f7 0%, #ececf1 100%);
-      color: black;
+      background: #F9FAFB;
+      position: relative;
+      overflow: hidden;
       padding: 44px 0;
-      border-top: 1px solid rgba(255, 255, 255, 0.35);
-      border-bottom: 1px solid rgba(255, 255, 255, 0.35);
-      backdrop-filter: blur(18px) saturate(135%);
-      -webkit-backdrop-filter: blur(18px) saturate(135%);
-      --glass-bg: linear-gradient(135deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.16));
-      --glass-shadow: 0 10px 22px rgba(9, 16, 40, 0.14), inset 0 1px 0 rgba(255, 255, 255, 0.6);
       --quick-link-width: 284px;
     }
+    .quick-links-section::before{
+      content:'';
+      position:absolute;
+      top:-50%;
+      left:-50%;
+      width:200%;
+      height:200%;
+      background:radial-gradient(circle at 30% 50%,rgba(0,127,255,.08),transparent 50%),
+                  radial-gradient(circle at 70% 50%,rgba(0,127,255,.06),transparent 50%);
+      pointer-events:none;
+      animation:lightRotate 20s linear infinite;
+    }
+    .quick-links-section .container{position:relative;z-index:1;}
 
     .quick-links-marquee {
       overflow: hidden;
@@ -1612,12 +1603,12 @@ interface PresidentSlide { id:number; titleKey:string; image:string; paragraphKe
 
     .quick-links-marquee::before {
       left: 0;
-      background: linear-gradient(90deg, #ececf1 0%, rgba(236, 236, 241, 0) 100%);
+      background: linear-gradient(90deg, #F9FAFB 0%, rgba(249, 250, 251, 0) 100%);
     }
 
     .quick-links-marquee::after {
       right: 0;
-      background: linear-gradient(270deg, #ececf1 0%, rgba(236, 236, 241, 0) 100%);
+      background: linear-gradient(270deg, #F9FAFB 0%, rgba(249, 250, 251, 0) 100%);
     }
 
     .quick-links-container {
@@ -1709,19 +1700,32 @@ interface PresidentSlide { id:number; titleKey:string; image:string; paragraphKe
     }
 
     .quick-link-action {
-      color: #273243;
+      color: #1a1a1a;
       font-size: 0.75rem;
-      font-weight: 600;
+      font-weight: 700;
       display: inline-flex;
       align-items: center;
-      text-decoration: underline;
-      text-decoration-thickness: 1px;
-      text-underline-offset: 4px;
+      gap: 6px;
+      text-decoration: none;
       text-transform: capitalize;
-      margin-top: auto;
-      padding-top: 8px;
+      margin-top: 8px;
       line-height: 1.2;
       text-align: left;
+      position: relative;
+      z-index: 1;
+      transition: gap .3s ease, color .3s ease;
+    }
+    .quick-link-action::after {
+      content: '→';
+      font-size: 0.85rem;
+      transition: transform .3s ease;
+    }
+    .quick-link-item:hover .quick-link-action {
+      color: #007FFF;
+      gap: 8px;
+    }
+    .quick-link-item:hover .quick-link-action::after {
+      transform: translateX(3px);
     }
 
     .connector-line {
@@ -1740,175 +1744,6 @@ interface PresidentSlide { id:number; titleKey:string; image:string; paragraphKe
       to {
         transform: translateX(-50%);
       }
-    }
-
-    /* What We Offer */
-    .offer-section {
-      padding: 64px 0;
-      background-color: #ffffff;
-      border-bottom: 1px solid rgba(26, 41, 66, 0.08);
-    }
-
-    .offer-header {
-      display: flex;
-      align-items: center;
-      gap: 20px;
-      margin-bottom: 15px;
-    }
-
-    .offer-line {
-      width: 60px;
-      height: 3px;
-      background: #FCD116;
-    }
-
-    .section-title {
-      font-size: 2.4rem;
-      font-weight: 700;
-      color: #1a1a1a;
-      margin: 0;
-      text-align: left;
-    }
-
-    .section-subtitle {
-      font-size: 0.9rem;
-      color: #B8860B !important;
-      margin-top: 10px;
-      margin-bottom: 50px;
-      line-height: 1.6;
-      max-width: 820px;
-      text-align: left;
-    }
-
-    .offer-subtitle {
-      margin-left: 0;
-      text-align: left;
-      padding-bottom: 29px;
-      color: #B8860B !important;
-
-
-    }
-
-    .offer-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 30px;
-    }
-
-    .offer-card {
-      background: white;
-      padding: 25px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-      text-align: left;
-      position: relative;
-      border-radius: 14px;
-      overflow: hidden;
-    }
-
-    .offer-card::before {
-      content: '';
-      position: absolute;
-      inset: -2px;
-      border-radius: 16px;
-      background:
-        conic-gradient(from 180deg,
-          rgba(0, 127, 255, 0.0),
-          rgba(0, 127, 255, 0.65),
-          rgba(252, 209, 22, 0.85),
-          rgba(0, 127, 255, 0.65),
-          rgba(0, 127, 255, 0.0));
-      opacity: 0.55;
-      filter: blur(6px);
-      animation: lightning-border 7s linear infinite;
-      pointer-events: none;
-    }
-
-    .offer-card:hover::before {
-      opacity: 0.95;
-      filter: blur(3px) saturate(1.15);
-      animation: lightning-border 7s linear infinite, lightning-pulse 1.6s ease-in-out infinite;
-    }
-
-    @keyframes lightning-pulse {
-      0%,
-      100% {
-        opacity: 0.8;
-      }
-      50% {
-        opacity: 1;
-      }
-    }
-
-    .offer-card::after {
-      content: '';
-      position: absolute;
-      inset: 1px;
-      border-radius: 13px;
-      background: white;
-      z-index: 0;
-    }
-
-    .offer-card > * {
-      position: relative;
-      z-index: 1;
-    }
-
-    @keyframes lightning-border {
-      0% {
-        transform: rotate(0deg);
-      }
-      100% {
-        transform: rotate(360deg);
-      }
-    }
-
-    .offer-card-header {
-      display: flex;
-      align-items: center;
-      gap: 15px;
-      margin-bottom: 15px;
-    }
-
-    .offer-icon {
-      width: 50px;
-      height: 50px;
-      color: #007FFF; /* DRC blue */
-      flex-shrink: 0;
-      border-radius: 50%; /* Circle */
-      background: transparent;
-      border: 1px solid #B8860B; /* Golden border - reduced width */
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      transition: all 0.3s ease;
-    }
-
-    .offer-card:hover .offer-icon {
-      background: rgba(184, 134, 11, 0.1); /* Light golden background on hover */
-      transform: scale(1.05);
-    }
-
-    .offer-icon svg {
-      width: 60%;
-      height: 60%;
-      stroke: currentColor;
-      fill: none; /* Remove fill, outline only */
-    }
-
-    .offer-card h3 {
-      font-size: 0.95rem;
-      font-weight: 700;
-      color: #1a1a1a; /* Dark for readability */
-      margin: 0;
-      line-height: 1.2;
-      text-align: left;
-    }
-
-    .offer-card p {
-      font-size: 0.85rem;
-      color: #666;
-      line-height: 1.7;
-      text-align: left;
     }
 
     /* Fields of Expertise */
@@ -1956,7 +1791,7 @@ interface PresidentSlide { id:number; titleKey:string; image:string; paragraphKe
     .expertise-line {
       width: 180px;
       height: 1px;
-      background: linear-gradient(90deg, transparent, rgba(252, 209, 22, 0.5), transparent);
+      background: linear-gradient(90deg, transparent, rgba(184, 134, 11, 0.5), transparent);
     }
 
     .expertise-section .section-title {
@@ -2346,7 +2181,7 @@ interface PresidentSlide { id:number; titleKey:string; image:string; paragraphKe
     }
 
     .president-learn-btn:hover {
-      background-color: #FCD116;
+      background-color: #B8860B;
       color: white;
     }
 
@@ -2371,7 +2206,7 @@ interface PresidentSlide { id:number; titleKey:string; image:string; paragraphKe
     }
 
     .pagination-dot.active {
-      background-color: #FCD116;
+      background-color: #B8860B;
       transform: scale(1.1);
     }
 
@@ -2619,7 +2454,7 @@ interface PresidentSlide { id:number; titleKey:string; image:string; paragraphKe
     }
 
     .newsletter-learn-btn:hover {
-      background: #FCD116;
+      background: #B8860B;
       color: white;
     }
 
@@ -2785,7 +2620,7 @@ interface PresidentSlide { id:number; titleKey:string; image:string; paragraphKe
     }
 
     .social-icon:hover {
-      background-color: #FCD116;
+      background-color: #B8860B;
       border-color: #007FFF;
       color: #ffffff;
     }
@@ -3780,7 +3615,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
         xAxis:{categories:['Sep','Oct','Nov','Dec','Jan','Feb'],labels:{style:s},lineColor:'rgba(26,41,66,.2)',tickColor:'rgba(26,41,66,.2)'},
         yAxis:{title:{text:undefined},labels:{style:s},gridLineColor:'rgba(26,41,66,.12)'},
         tooltip:{backgroundColor:'#1a2942',style:{color:'#fff'},borderColor:'#1a2942'},
-        series:[{type:'column',name:'Cases',data:[420,460,510,470,530,590],color:'#B8860B',borderRadius:4}]
+        series:[{type:'column',name:'Cases',data:[420,460,510,470,530,590],color:'#007FFF',borderRadius:4}]
       }),
       Highcharts.chart(this.chartB.nativeElement, {
         chart:{type:'line',backgroundColor:'transparent',height:220,spacing:[10,10,0,10]},
@@ -3797,7 +3632,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
         tooltip:{backgroundColor:'#1a2942',style:{color:'#fff'},borderColor:'#1a2942',pointFormat:'<b>{point.percentage:.0f}%</b>'},
         plotOptions:{pie:{innerSize:'55%',dataLabels:{enabled:false}}},
         responsive:{rules:[{condition:{maxWidth:600},chartOptions:{chart:{height:240},plotOptions:{pie:{center:['50%','45%'],size:'90%'}}}}]},
-        series:[{type:'pie',name:'Decisions',data:[{name:'Civil',y:38,color:'#B8860B'},{name:'Public',y:27,color:'#007FFF'},{name:'Labor',y:18,color:'#CE1126'},{name:'Other',y:17,color:'#D4A574'}]}]
+        series:[{type:'pie',name:'Decisions',data:[{name:'Civil',y:38,color:'#007FFF'},{name:'Public',y:27,color:'#4A9FFF'},{name:'Labor',y:18,color:'#CE1126'},{name:'Other',y:17,color:'#D4A574'}]}]
       }),
     ];
   }

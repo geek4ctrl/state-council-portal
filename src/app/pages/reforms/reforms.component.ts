@@ -74,7 +74,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
               <div class="step-number">01</div>
               <div class="step-content tilt-card" style="--i:0" (mousemove)="tilt($event)" (mouseleave)="tiltReset($event)">
                 <div class="tilt-shine"></div>
-                <div class="step-icon-wrapper" style="background: linear-gradient(135deg, #FCD116 0%, #FFD700 100%);">
+                <div class="step-icon-wrapper" style="background: linear-gradient(135deg, #B8860B 0%, #D4A574 100%);">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
                     <circle cx="9" cy="7" r="4"></circle>
@@ -90,10 +90,10 @@ import { FooterComponent } from '../../components/footer/footer.component';
                 <svg viewBox="0 0 100 60" preserveAspectRatio="none">
                   <defs>
                     <marker id="arrowhead1" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
-                      <polygon points="0 0, 10 3, 0 6" fill="#FCD116"/>
+                      <polygon points="0 0, 10 3, 0 6" fill="#B8860B"/>
                     </marker>
                   </defs>
-                  <path d="M0,30 Q50,10 100,30" stroke="#FCD116" stroke-width="2" fill="none" stroke-dasharray="5,5" marker-end="url(#arrowhead1)"/>
+                  <path d="M0,30 Q50,10 100,30" stroke="#B8860B" stroke-width="2" fill="none" stroke-dasharray="5,5" marker-end="url(#arrowhead1)"/>
                 </svg>
               </div>
             </div>
@@ -117,10 +117,10 @@ import { FooterComponent } from '../../components/footer/footer.component';
                 <svg viewBox="0 0 100 60" preserveAspectRatio="none">
                   <defs>
                     <marker id="arrowhead2" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
-                      <polygon points="0 0, 10 3, 0 6" fill="#FCD116"/>
+                      <polygon points="0 0, 10 3, 0 6" fill="#B8860B"/>
                     </marker>
                   </defs>
-                  <path d="M0,30 Q50,50 100,30" stroke="#c8956b" stroke-width="2" fill="none" stroke-dasharray="5,5" marker-end="url(#arrowhead2)"/>
+                  <path d="M0,30 Q50,50 100,30" stroke="#B8860B" stroke-width="2" fill="none" stroke-dasharray="5,5" marker-end="url(#arrowhead2)"/>
                 </svg>
               </div>
             </div>
@@ -145,10 +145,10 @@ import { FooterComponent } from '../../components/footer/footer.component';
                 <svg viewBox="0 0 100 60" preserveAspectRatio="none">
                   <defs>
                     <marker id="arrowhead3" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
-                      <polygon points="0 0, 10 3, 0 6" fill="#FCD116"/>
+                      <polygon points="0 0, 10 3, 0 6" fill="#B8860B"/>
                     </marker>
                   </defs>
-                  <path d="M0,30 Q50,10 100,30" stroke="#FCD116" stroke-width="2" fill="none" stroke-dasharray="5,5" marker-end="url(#arrowhead3)"/>
+                  <path d="M0,30 Q50,10 100,30" stroke="#B8860B" stroke-width="2" fill="none" stroke-dasharray="5,5" marker-end="url(#arrowhead3)"/>
                 </svg>
               </div>
             </div>
@@ -173,10 +173,10 @@ import { FooterComponent } from '../../components/footer/footer.component';
                 <svg viewBox="0 0 100 60" preserveAspectRatio="none">
                   <defs>
                     <marker id="arrowhead4" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
-                      <polygon points="0 0, 10 3, 0 6" fill="#FCD116"/>
+                      <polygon points="0 0, 10 3, 0 6" fill="#B8860B"/>
                     </marker>
                   </defs>
-                  <path d="M0,30 Q50,50 100,30" stroke="#c8956b" stroke-width="2" fill="none" stroke-dasharray="5,5" marker-end="url(#arrowhead4)"/>
+                  <path d="M0,30 Q50,50 100,30" stroke="#B8860B" stroke-width="2" fill="none" stroke-dasharray="5,5" marker-end="url(#arrowhead4)"/>
                 </svg>
               </div>
             </div>
@@ -186,7 +186,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
               <div class="step-number">05</div>
               <div class="step-content tilt-card" style="--i:4" (mousemove)="tilt($event)" (mouseleave)="tiltReset($event)">
                 <div class="tilt-shine"></div>
-                <div class="step-icon-wrapper" style="background: linear-gradient(135deg, #FCD116 0%, #B8860B 100%);">
+                <div class="step-icon-wrapper" style="background: linear-gradient(135deg, #B8860B 0%, #D4A574 100%);">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
                     <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
@@ -346,6 +346,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
       letter-spacing: 2px;
       color: #ffffff;
       text-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+      text-align: left;
     }
 
     .vertical-line {
@@ -369,6 +370,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
       opacity: 0.95;
       margin: 0;
       text-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+      text-align: left;
     }
 
     /* Building Section - UPDATED ALIGNMENT */
@@ -474,7 +476,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
     .step-number {
       width: 50px;
       height: 50px;
-      background: linear-gradient(135deg, #FCD116 0%, #FFD700 100%);
+      background: linear-gradient(135deg, #B8860B 0%, #D4A574 100%);
       color: white;
       border-radius: 50%;
       display: flex;
@@ -556,7 +558,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
 
     .step-badge.high {
       background: #fff8e1;
-      color: #FCD116; /* DRC yellow */
+      color: #B8860B; /* Gold */
     }
 
     .step-badge.medium {
