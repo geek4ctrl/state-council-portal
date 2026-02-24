@@ -456,7 +456,7 @@ type HighchartsStatic = typeof import('highcharts');
       margin: 0 auto;
       padding: 0 20px;
     }
- 
+
     /* Hero Section */
     .hero-section {
       position: relative;
@@ -480,6 +480,7 @@ type HighchartsStatic = typeof import('highcharts');
       margin: 0;
       text-transform: uppercase;
       text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.4);
+      word-break: break-word;
     }
 
     /* First President Section */
@@ -1261,6 +1262,16 @@ type HighchartsStatic = typeof import('highcharts');
       transform: translateY(0);
     }
 
+    @media (hover: none), (pointer: coarse) {
+      .reveal-on-scroll,
+      .anim-up {
+        opacity: 1;
+        transform: none;
+        animation: none;
+        transition: none;
+      }
+    }
+
     .services-grid .service-box:nth-child(1) {
       --reveal-delay: 0ms;
     }
@@ -1415,6 +1426,11 @@ type HighchartsStatic = typeof import('highcharts');
         letter-spacing: 2px;
       }
 
+      .hero-content-left {
+        font-size: 2.5rem;
+        letter-spacing: 2px;
+      }
+
       .president-card-large {
         grid-template-columns: 1fr;
       }
@@ -1466,7 +1482,11 @@ type HighchartsStatic = typeof import('highcharts');
       }
 
       .hero-title {
-        font-size: 2rem;
+        font-size: 0.75rem;
+      }
+
+      .hero-content-left {
+        font-size: 2.1rem;
       }
 
       .president-image-large {
@@ -1582,7 +1602,11 @@ type HighchartsStatic = typeof import('highcharts');
       }
 
       .hero-title {
-        font-size: 1.7rem;
+        font-size: 0.75rem;
+      }
+
+      .hero-content-left {
+        font-size: 1.9rem;
       }
 
       .president-image-large {
@@ -1633,7 +1657,12 @@ type HighchartsStatic = typeof import('highcharts');
       }
 
       .hero-title {
-        font-size: 1.5rem;
+        font-size: 0.65rem;
+        letter-spacing: 1px;
+      }
+
+      .hero-content-left {
+        font-size: 1.7rem;
         letter-spacing: 1px;
       }
 
@@ -1770,6 +1799,10 @@ type HighchartsStatic = typeof import('highcharts');
         font-size: 1.3rem;
       }
 
+      .hero-content-left {
+        font-size: 1.6rem;
+      }
+
       .president-title-underlined {
         font-size: 1.3rem;
       }
@@ -1830,6 +1863,13 @@ type HighchartsStatic = typeof import('highcharts');
     .cur-ring{position:fixed;width:38px;height:38px;border-radius:50%;border:2px solid rgba(191,152,116,.55);pointer-events:none;z-index:99998;transform:translate(-50%,-50%);transition:width .25s,height .25s,border-color .25s;}
     .cur-trail{position:fixed;width:80px;height:80px;border-radius:50%;border:1px solid rgba(191,152,116,.15);pointer-events:none;z-index:99997;transform:translate(-50%,-50%);transition:width .4s,height .4s;}
     .page-wrap:has(button:hover) .cur-ring,.page-wrap:has(a:hover) .cur-ring{width:56px;height:56px;border-color:rgba(191,152,116,.9);}
+
+    @media (hover: none), (pointer: coarse) {
+      .page-wrap{cursor:auto;}
+      .cur-dot,
+      .cur-ring,
+      .cur-trail{display:none;}
+    }
     .org-header-line,.section-head-wrap .org-header-line{width:60px;height:3px;background:linear-gradient(90deg,#BF9874,#d4a06a);}
     .section-head-wrap{display:flex;align-items:center;gap:16px;margin-bottom:24px;}
     .org-chart-header{display:flex;align-items:center;gap:16px;}
@@ -1923,6 +1963,11 @@ export class OrganizationComponent implements OnInit, AfterViewInit {
   }
 
   private initScrollReveal() {
+    if (!window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
+      this.revealAll(Array.from(document.querySelectorAll<HTMLElement>('.reveal-on-scroll')));
+      return;
+    }
+
     const elements = Array.from(document.querySelectorAll<HTMLElement>('.reveal-on-scroll'));
     if (elements.length === 0) {
       return;
@@ -1962,6 +2007,13 @@ export class OrganizationComponent implements OnInit, AfterViewInit {
   }
 
   private initCursor() {
+    if (!window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
+      this.curDot?.nativeElement?.remove();
+      this.curRing?.nativeElement?.remove();
+      this.curTrail?.nativeElement?.remove();
+      return;
+    }
+
     const dot = this.curDot?.nativeElement;
     const ring = this.curRing?.nativeElement;
     const trail = this.curTrail?.nativeElement;
