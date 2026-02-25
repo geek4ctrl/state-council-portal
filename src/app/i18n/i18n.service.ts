@@ -2,7 +2,10 @@ import { Injectable, inject, signal } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { firstValueFrom, map, tap } from 'rxjs';
 
-export type LanguageCode = 'en' | 'fr';
+export type LanguageCode = 'en' | 'fr' | 'sw' | 'ln' | 'ts' | 'kg';
+
+/** Languages that have translation files. Others fallback to English. */
+const SUPPORTED_LANGS: LanguageCode[] = ['en', 'fr'];
 
 @Injectable({ providedIn: 'root' })
 export class I18nService {
@@ -14,7 +17,8 @@ export class I18nService {
 
   init(): Promise<void> {
     const stored = typeof localStorage !== 'undefined' ? localStorage.getItem('lang') : null;
-    const lang = stored === 'en' ? 'en' : 'fr';
+    const validCodes: LanguageCode[] = ['en', 'fr', 'sw', 'ln', 'ts', 'kg'];
+    const lang: LanguageCode = (stored && validCodes.includes(stored as LanguageCode)) ? stored as LanguageCode : 'fr';
     return firstValueFrom(this.loadLanguage(lang));
   }
 
@@ -40,7 +44,8 @@ export class I18nService {
   }
 
   private loadLanguage(lang: LanguageCode) {
-    return this.http.get<Record<string, unknown>>(`/i18n/${lang}.json`).pipe(
+    const loadLang = SUPPORTED_LANGS.includes(lang) ? lang : 'en';
+    return this.http.get<Record<string, unknown>>(`/i18n/${loadLang}.json`).pipe(
       tap((payload) => {
         this.dictionary.set(payload);
         this.lang.set(lang);
