@@ -3449,15 +3449,15 @@ export class HomeComponent implements OnInit, AfterViewInit {
   ];
 
   heroSlides: HeroSlide[] = [
-    { id:1, titleKey:'home.hero.slides.1.title', subtitleKey:'home.hero.slides.1.subtitle', descriptionKey:'home.hero.slides.1.body', buttonKey:'home.hero.slides.1.cta', image:'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=1920&h=1080&fit=crop' },
+    { id:1, titleKey:'home.hero.slides.1.title', subtitleKey:'home.hero.slides.1.subtitle', descriptionKey:'home.hero.slides.1.body', buttonKey:'home.hero.slides.1.cta', image:'https://res.cloudinary.com/dhqvb8wbn/image/upload/v1772019774/Accueil_Site_1_qzidwt.jpg' },
     { id:2, titleKey:'home.hero.slides.2.title', subtitleKey:'home.hero.slides.2.subtitle', descriptionKey:'home.hero.slides.2.body', buttonKey:'home.hero.slides.2.cta', image:'https://images.unsplash.com/photo-1505664194779-8beaceb93744?w=1920&h=1080&fit=crop' },
     { id:3, titleKey:'home.hero.slides.3.title', subtitleKey:'home.hero.slides.3.subtitle', descriptionKey:'home.hero.slides.3.body', buttonKey:'home.hero.slides.3.cta', image:'https://images.unsplash.com/photo-1479142506502-19b3a3b7ff33?w=1920&h=1080&fit=crop' },
   ];
 
   presSlides: PresidentSlide[] = [
-    { id:1, titleKey:'home.president.slides.1.title', image:'https://res.cloudinary.com/dhqvb8wbn/image/upload/v1771319774/brigitte_rycfia.jpg', paragraphKeys:['home.president.slides.1.paragraphs.1','home.president.slides.1.paragraphs.2','home.president.slides.1.paragraphs.3'] },
+    { id:1, titleKey:'home.president.slides.1.title', image:'https://res.cloudinary.com/dhqvb8wbn/image/upload/v1772020345/Brigitte_NSENSELE_wa_NSENSELE.jpg_2_vgiv72.jpg', paragraphKeys:['home.president.slides.1.paragraphs.1','home.president.slides.1.paragraphs.2','home.president.slides.1.paragraphs.3'] },
     { id:2, titleKey:'home.president.slides.2.title', image:'https://res.cloudinary.com/dhqvb8wbn/image/upload/v1771319776/599929838_875339684877306_2530911599543204256_n_fpyzl6.jpg', paragraphKeys:['home.president.slides.2.paragraphs.1','home.president.slides.2.paragraphs.2','home.president.slides.2.paragraphs.3'] },
-    { id:3, titleKey:'home.president.slides.3.title', image:'https://res.cloudinary.com/dhqvb8wbn/image/upload/v1771319774/brigitte_rycfia.jpg', paragraphKeys:['home.president.slides.3.paragraphs.1','home.president.slides.3.paragraphs.2','home.president.slides.3.paragraphs.3'] },
+    { id:3, titleKey:'home.president.slides.3.title', image:'https://res.cloudinary.com/dhqvb8wbn/image/upload/v1772020345/Brigitte_NSENSELE_wa_NSENSELE.jpg_2_vgiv72.jpg', paragraphKeys:['home.president.slides.3.paragraphs.1','home.president.slides.3.paragraphs.2','home.president.slides.3.paragraphs.3'] },
   ];
 
   ngOnInit() {
