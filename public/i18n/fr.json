@@ -197,6 +197,62 @@
       "submit": "ENVOYER LE MESSAGE"
     }
   },
+  "appealSteps": {
+      "title": "COMMENT DÉPOSER UN RECOURS",
+      "subtitle": "Suivez ces étapes pour soumettre votre recours au Conseil d'État",
+      "steps": {
+        "1": {
+          "title": "Préparez vos documents",
+          "body": "Rassemblez la décision administrative contestée, votre pièce d'identité et tout élément de preuve. Assurez-vous que tous les documents sont lisibles et dûment certifiés si nécessaire."
+        },
+        "2": {
+          "title": "Rédigez votre requête",
+          "body": "Rédigez une requête claire exposant les faits, les motifs du recours et la décision demandée. Incluez les références aux dispositions légales applicables."
+        },
+        "3": {
+          "title": "Dépôt au greffe",
+          "body": "Déposez votre requête et les pièces justificatives au greffe du Conseil d'État dans les délais légaux prescrits. Obtenez un reçu comme preuve de dépôt."
+        },
+        "4": {
+          "title": "Payez les frais applicables",
+          "body": "Acquittez les frais de justice requis au bureau désigné. Conservez le reçu de paiement pour vos dossiers."
+        },
+        "5": {
+          "title": "Attendez la notification",
+          "body": "Le greffe vous informera du numéro d'affaire et de la date d'audience. Vous pourrez être tenu de signifier des copies à la partie adverse."
+        }
+      }
+  },
+  "haveQuestions": {
+      "title": "Des questions ?",
+      "body": "Notre équipe est là pour vous aider à comprendre la procédure de recours.",
+      "cta": "Envoyez-nous un email"
+  },
+  "faqs": {
+      "title": "QUESTIONS FRÉQUENTES",
+      "items": {
+        "1": {
+          "question": "Quel est le délai pour déposer un recours ?",
+          "answer": "Les recours doivent généralement être déposés dans les deux mois suivant la notification de la décision contestée. Des délais spécifiques peuvent s'appliquer selon le type d'acte administratif. Consultez la législation applicable ou contactez le greffe."
+        },
+        "2": {
+          "question": "Puis-je me représenter moi-même ou ai-je besoin d'un avocat ?",
+          "answer": "Vous pouvez vous représenter devant le Conseil d'État. Toutefois, une représentation juridique est recommandée pour les affaires complexes. Le greffe peut fournir des informations sur l'aide juridique si vous êtes éligible."
+        },
+        "3": {
+          "question": "Quels documents dois-je joindre ?",
+          "answer": "Typiquement : la décision contestée, votre requête, une pièce d'identité et les pièces justificatives. Le greffe fournit une liste de vérification sur demande. Des documents supplémentaires peuvent être requis selon votre cas."
+        },
+        "4": {
+          "question": "Combien de temps dure la procédure de recours ?",
+          "answer": "Les délais varient selon la complexité de l'affaire et la charge de travail. Vous recevrez une date d'audience après l'enregistrement de votre dossier. Le greffe peut fournir des délais estimés pour des affaires similaires."
+        },
+        "5": {
+          "question": "Puis-je retirer mon recours ?",
+          "answer": "Oui. Vous pouvez retirer votre recours à tout moment avant la décision définitive. Soumettez un retrait écrit au greffe. Notez que le retrait peut avoir des implications pour toute procédure connexe."
+        }
+      }
+  },
   "footer": {
     "mainOffice": {
       "title": "Bureau principal",

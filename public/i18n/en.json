@@ -197,6 +197,62 @@
       "submit": "SEND MESSAGE"
     }
   },
+  "appealSteps": {
+    "title": "HOW TO FILL AN APPEAL",
+      "subtitle": "Follow these steps to submit your appeal to the State Council",
+      "steps": {
+        "1": {
+          "title": "Prepare your documents",
+          "body": "Gather the contested administrative decision, your identification, and any supporting evidence. Ensure all documents are legible and properly certified where required."
+        },
+        "2": {
+          "title": "Draft your petition",
+          "body": "Write a clear petition stating the facts, grounds for appeal, and the relief you seek. Include references to applicable legal provisions."
+        },
+        "3": {
+          "title": "File with the Registry",
+          "body": "Submit your petition and supporting documents to the Registry of the State Council within the prescribed legal timeframes. Obtain a receipt as proof of filing."
+        },
+        "4": {
+          "title": "Pay applicable fees",
+          "body": "Pay any required court fees at the designated office. Keep the payment receipt for your records."
+        },
+        "5": {
+          "title": "Await notification",
+          "body": "The Registry will notify you of the case number and hearing date. You may be required to serve copies to the opposing party."
+        }
+      }
+  },
+  "haveQuestions": {
+      "title": "Have questions?",
+      "body": "Our team is here to help you understand the appeal process.",
+      "cta": "Send us an email"
+  },
+  "faqs": {
+      "title": "FREQUENTLY ASKED QUESTIONS",
+      "items": {
+        "1": {
+          "question": "What is the deadline for filing an appeal?",
+          "answer": "Appeals must generally be filed within two months of notification of the contested decision. Specific timeframes may apply depending on the type of administrative act. Consult the applicable legislation or contact the Registry for guidance."
+        },
+        "2": {
+          "question": "Can I represent myself or do I need a lawyer?",
+          "answer": "You may represent yourself before the State Council. However, legal representation is recommended for complex matters. The Registry can provide information on legal aid options if you qualify."
+        },
+        "3": {
+          "question": "What documents do I need to include?",
+          "answer": "Typically you need: the contested decision, your petition, identification, and supporting documents. The Registry provides a checklist upon request. Additional documents may be required depending on your case."
+        },
+        "4": {
+          "question": "How long does the appeal process take?",
+          "answer": "Processing times vary depending on case complexity and court workload. You will receive a hearing date after your case is registered. The Registry can provide estimated timelines for similar cases."
+        },
+        "5": {
+          "question": "Can I withdraw my appeal?",
+          "answer": "Yes. You may withdraw your appeal at any time before the final decision. Submit a written withdrawal to the Registry. Note that withdrawal may have implications for any related proceedings."
+        }
+      }
+  },
   "footer": {
     "mainOffice": {
       "title": "Main Office",

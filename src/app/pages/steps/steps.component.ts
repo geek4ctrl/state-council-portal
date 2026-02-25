@@ -280,63 +280,72 @@ import { FooterComponent } from '../../components/footer/footer.component';
             </form>
           }
 
-          <!-- Appeal Form -->
+          <!-- Appeal Tab: Steps, Email CTA, FAQs -->
           @if (activeTab() === 'appeal') {
-            <div class="form-header">
-              <div class="form-header-line anim-line"></div>
-              <h2 class="anim-up">{{ 'steps.forms.appeal.title' | i18n }}</h2>
-              <p class="form-subtitle anim-up a-d1">{{ 'steps.forms.appeal.subtitle' | i18n }}</p>
-            </div>
-
-            <form class="appeal-form">
-              <div class="form-row">
-                <div class="form-group">
-                  <input type="text" [placeholder]="'steps.forms.fullName' | i18n" required>
-                </div>
-                <div class="form-group">
-                  <input type="email" [placeholder]="'steps.forms.email' | i18n" required>
-                </div>
+            <div class="appeal-content">
+              <!-- Steps for filling an appeal -->
+              <div class="form-header">
+                <div class="form-header-line anim-line"></div>
+                <h2 class="anim-up">{{ 'appealSteps.title' | i18n }}</h2>
+                <p class="form-subtitle anim-up a-d1">{{ 'appealSteps.subtitle' | i18n }}</p>
               </div>
 
-              <div class="form-group">
-                <div class="custom-select" (click)="toggleDepartment('appeal')">
-                  <div class="select-trigger">
-                    <span [class.placeholder]="!selectedDepartmentAppeal()">
-                      {{ selectedDepartmentAppeal() || ('steps.forms.department' | i18n) }}
-                    </span>
-                    <svg class="dropdown-arrow" [class.open]="departmentOpenAppeal()" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                      <polyline points="6 9 12 15 18 9"></polyline>
-                    </svg>
+              <div class="appeal-steps">
+                @for (step of appealStepIds; track step) {
+                  <div class="appeal-step anim-up" [style.animation-delay]="(0.1 * $index) + 's'">
+                    <div class="step-number">{{ step }}</div>
+                    <div class="step-body">
+                      <h3>{{ 'appealSteps.steps.' + step + '.title' | i18n }}</h3>
+                      <p>{{ 'appealSteps.steps.' + step + '.body' | i18n }}</p>
+                    </div>
                   </div>
-                  @if (departmentOpenAppeal()) {
-                    <div class="select-dropdown">
-                      <div class="dropdown-item" (click)="selectDepartment('appeal', 'criminal', $event)">
-                        {{ 'steps.forms.chambers.criminal' | i18n }}
-                      </div>
-                      <div class="dropdown-item" (click)="selectDepartment('appeal', 'civil', $event)">
-                        {{ 'steps.forms.chambers.civil' | i18n }}
-                      </div>
-                      <div class="dropdown-item" (click)="selectDepartment('appeal', 'social', $event)">
-                        {{ 'steps.forms.chambers.social' | i18n }}
-                      </div>
-                      <div class="dropdown-item" (click)="selectDepartment('appeal', 'commercial', $event)">
-                        {{ 'steps.forms.chambers.commercial' | i18n }}
+                }
+              </div>
+
+              <!-- Have questions? Send email -->
+              <div class="have-questions anim-up">
+                <h3>{{ 'haveQuestions.title' | i18n }}</h3>
+                <p>{{ 'haveQuestions.body' | i18n }}</p>
+                <a
+                  href="mailto:info@conseildetatrdc.com"
+                  class="email-cta mag-btn"
+                  (mousemove)="mag($event)"
+                  (mouseleave)="magOut($event)"
+                  (click)="ripple($event)"
+                >
+                  <span>{{ 'haveQuestions.cta' | i18n }}</span>
+                </a>
+              </div>
+
+              <!-- Collapsible FAQs -->
+              <div class="faqs-section">
+                <div class="form-header">
+                  <div class="form-header-line anim-line"></div>
+                  <h2 class="anim-up">{{ 'faqs.title' | i18n }}</h2>
+                </div>
+                <div class="faqs-list">
+                  @for (id of faqIds; track id) {
+                    <div class="faq-item" [class.open]="openFaqId() === id">
+                      <button
+                        type="button"
+                        class="faq-question"
+                        (click)="toggleFaq(id)"
+                        (mousemove)="mag($event)"
+                        (mouseleave)="magOut($event)"
+                      >
+                        <span>{{ 'faqs.items.' + id + '.question' | i18n }}</span>
+                        <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                          <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                      </button>
+                      <div class="faq-answer">
+                        <p>{{ 'faqs.items.' + id + '.answer' | i18n }}</p>
                       </div>
                     </div>
                   }
                 </div>
               </div>
-
-              <div class="form-group">
-                <textarea [placeholder]="'steps.forms.message' | i18n" rows="6" required></textarea>
-              </div>
-
-              <div class="form-submit">
-                <button type="submit" class="mag-btn" (mousemove)="mag($event)" (mouseleave)="magOut($event)" (click)="ripple($event)">
-                  <span>{{ 'steps.forms.submit' | i18n }}</span>
-                </button>
-              </div>
-            </form>
+            </div>
           }
         </div>
       </section>
@@ -674,6 +683,168 @@ import { FooterComponent } from '../../components/footer/footer.component';
       color: #1F9BD9;
     }
 
+    /* Appeal Tab: Steps, Email CTA, FAQs */
+    .appeal-content {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .appeal-steps {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      margin-bottom: 50px;
+    }
+    .appeal-step {
+      display: flex;
+      gap: 24px;
+      align-items: flex-start;
+      padding: 24px 28px;
+      margin-top: 16px;
+      background: #fafafa;
+      border-radius: 8px;
+      border-left: 4px solid #1F9BD9;
+      transition: background 0.2s ease;
+    }
+    .appeal-step:hover {
+      background: #f5f5f5;
+    }
+    .step-number {
+      flex-shrink: 0;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #1F9BD9, #4a9fff);
+      color: white;
+      font-size: 1rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .step-body h3 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: #1a1a1a;
+      margin: 0 0 8px 0;
+    }
+    .step-body p {
+      font-size: 0.95rem;
+      color: #555;
+      line-height: 1.6;
+      margin: 0;
+    }
+    .have-questions {
+      text-align: center;
+      padding: 40px 24px;
+      background: linear-gradient(135deg, rgba(31, 155, 217, 0.08), rgba(31, 155, 217, 0.08));
+      border-radius: 12px;
+      margin-bottom: 50px;
+    }
+    .have-questions h3 {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: #1a1a1a;
+      margin: 0 0 8px 0;
+    }
+    .have-questions p {
+      font-size: 0.95rem;
+      color: #555;
+      margin: 0 0 20px 0;
+    }
+    .email-cta {
+      display: inline-block;
+      background: white;
+      color: #1F9BD9;
+      border: 1px solid #1F9BD9;
+      padding: 14px 36px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+      text-decoration: none;
+      border-radius: 3px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    .email-cta:hover {
+      background: #1F9BD9;
+      color: white;
+    }
+    .faqs-section {
+      margin-top: 20px;
+    }
+    .faqs-section .form-header {
+      margin-bottom: 30px;
+    }
+    .faqs-list {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .faq-item {
+      background: #fff;
+      border: 1px solid #e0e0e0;
+      border-radius: 8px;
+      overflow: hidden;
+      transition: border-color 0.2s ease;
+    }
+    .faq-item:hover {
+      border-color: #1F9BD9;
+    }
+    .faq-item.open {
+      border-color: #1F9BD9;
+    }
+    .faq-question {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 18px 22px;
+      background: transparent;
+      border: none;
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: #1a1a1a;
+      text-align: left;
+      cursor: pointer;
+      transition: background 0.2s ease;
+    }
+    .faq-question:hover {
+      background: #f8f8f8;
+    }
+    .faq-item.open .faq-question {
+      background: #f0f8ff;
+    }
+    .faq-chevron {
+      width: 18px;
+      height: 18px;
+      flex-shrink: 0;
+      transition: transform 0.3s ease;
+      color: #1F9BD9;
+    }
+    .faq-item.open .faq-chevron {
+      transform: rotate(180deg);
+    }
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.35s ease;
+    }
+    .faq-item.open .faq-answer {
+      max-height: 500px;
+    }
+    .faq-answer p {
+      padding: 0 22px 18px 22px;
+      margin: 0;
+      font-size: 0.9rem;
+      color: #555;
+      line-height: 1.6;
+      border-top: 1px solid #eee;
+    }
+    .faq-item.open .faq-answer p {
+      padding-top: 16px;
+    }
+
     /* Map Section */
     .map-section {
       background: #f5f5f5;
@@ -738,6 +909,33 @@ import { FooterComponent } from '../../components/footer/footer.component';
       .form-row {
         grid-template-columns: 1fr;
         gap: 0;
+      }
+
+      .appeal-step {
+        flex-direction: row;
+        padding: 18px 20px;
+        gap: 16px;
+      }
+      .step-number {
+        width: 34px;
+        height: 34px;
+        font-size: 0.9rem;
+      }
+      .step-body h3 {
+        font-size: 1rem;
+      }
+      .step-body p {
+        font-size: 0.9rem;
+      }
+      .have-questions {
+        padding: 30px 20px;
+      }
+      .have-questions h3 {
+        font-size: 1.2rem;
+      }
+      .faq-question {
+        padding: 16px 18px;
+        font-size: 0.9rem;
       }
 
       .form-header h2 {
@@ -821,7 +1019,10 @@ export class StepsComponent implements OnInit, AfterViewInit {
   private destroyRef = inject(DestroyRef);
 
   activeTab = signal<'report' | 'appointment' | 'appeal'>('report');
-  
+  appealStepIds = ['1', '2', '3', '4', '5'];
+  faqIds = ['1', '2', '3', '4', '5'];
+  openFaqId = signal<string | null>(null);
+
   departmentOpenReport = signal(false);
   departmentOpenAppointment = signal(false);
   departmentOpenAppeal = signal(false);
@@ -932,5 +1133,9 @@ export class StepsComponent implements OnInit, AfterViewInit {
     this.departmentOpenAppointment.set(false);
     this.departmentOpenAppeal.set(false);
     this.meetingOpen.set(false);
+  }
+
+  toggleFaq(id: string) {
+    this.openFaqId.update(current => (current === id ? null : id));
   }
 }
