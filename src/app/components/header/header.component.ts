@@ -19,8 +19,18 @@ import { I18nService, LanguageCode } from '../../i18n/i18n.service';
 export class HeaderComponent {
   isCourtDropdownOpen = signal(false);
   isStepsDropdownOpen = signal(false);
+  isLangDropdownOpen = signal(false);
   isMobileMenuOpen = signal(false);
-  
+
+  readonly languages: { code: LanguageCode; label: string }[] = [
+    { code: 'en', label: 'English' },
+    { code: 'fr', label: 'French' },
+    { code: 'sw', label: 'Swahili' },
+    { code: 'ln', label: 'Lingala' },
+    { code: 'ts', label: 'Tshiluba' },
+    { code: 'kg', label: 'Kikongo' }
+  ];
+
   private readonly i18n = inject(I18nService);
   private readonly router = inject(Router);
 
@@ -36,8 +46,9 @@ export class HeaderComponent {
 
   onDocumentClick(event: MouseEvent) {
     const target = event.target as HTMLElement;
-    const clickedInsideDropdown = target.closest('.dropdown');
-    if (!clickedInsideDropdown) {
+    const clickedInsideNavDropdown = target.closest('.dropdown');
+    const clickedInsideLangDropdown = target.closest('.lang-dropdown-wrapper');
+    if (!clickedInsideNavDropdown && !clickedInsideLangDropdown) {
       this.closeDropdowns();
     }
   }
@@ -66,6 +77,13 @@ export class HeaderComponent {
   }
 
   closeDropdowns() {
+    this.isCourtDropdownOpen.set(false);
+    this.isStepsDropdownOpen.set(false);
+    this.isLangDropdownOpen.set(false);
+  }
+
+  toggleLangDropdown() {
+    this.isLangDropdownOpen.set(!this.isLangDropdownOpen());
     this.isCourtDropdownOpen.set(false);
     this.isStepsDropdownOpen.set(false);
   }
@@ -108,9 +126,15 @@ export class HeaderComponent {
 
   setLanguage(lang: LanguageCode) {
     void this.i18n.setLanguage(lang);
+    this.isLangDropdownOpen.set(false);
   }
 
   activeLang() {
     return this.i18n.activeLang();
+  }
+
+  currentLanguageLabel(): string {
+    const lang = this.i18n.activeLang();
+    return this.languages.find((l) => l.code === lang)?.label ?? 'English';
   }
 }

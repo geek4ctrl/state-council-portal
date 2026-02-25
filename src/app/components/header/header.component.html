@@ -26,25 +26,33 @@
               <app-icon name="instagram" [size]="18" fill="currentColor" stroke="none"></app-icon>
             </a>
           </div>
-          <div class="lang-toggle" role="group" [attr.aria-label]="'header.lang.label' | i18n">
+          <div class="lang-dropdown-wrapper" role="group" [attr.aria-label]="'header.lang.label' | i18n">
             <button
               type="button"
-              class="lang-btn"
-              [class.active]="activeLang() === 'en'"
-              [attr.aria-pressed]="activeLang() === 'en'"
-              [attr.aria-label]="'header.lang.switchToEnglish' | i18n"
-              (click)="setLanguage('en')">
-              EN
+              class="lang-dropdown-btn"
+              [attr.aria-expanded]="isLangDropdownOpen()"
+              [attr.aria-haspopup]="true"
+              [attr.aria-label]="'header.lang.label' | i18n"
+              (click)="toggleLangDropdown()">
+              <app-icon name="globe" [size]="16" fill="#007FFF" stroke="none"></app-icon>
+              <span class="lang-dropdown-label">{{ currentLanguageLabel() }}</span>
+              <app-icon name="chevron-down" [size]="14" [customClass]="isLangDropdownOpen() ? 'rotated' : ''"></app-icon>
             </button>
-            <button
-              type="button"
-              class="lang-btn"
-              [class.active]="activeLang() === 'fr'"
-              [attr.aria-pressed]="activeLang() === 'fr'"
-              [attr.aria-label]="'header.lang.switchToFrench' | i18n"
-              (click)="setLanguage('fr')">
-              FR
-            </button>
+            @if (isLangDropdownOpen()) {
+              <ul class="lang-dropdown-menu">
+                @for (lang of languages; track lang.code) {
+                  <li>
+                    <button
+                      type="button"
+                      class="lang-dropdown-item"
+                      [class.active]="activeLang() === lang.code"
+                      (click)="setLanguage(lang.code)">
+                      {{ lang.label }}
+                    </button>
+                  </li>
+                }
+              </ul>
+            }
           </div>
         </div>
       </div>
