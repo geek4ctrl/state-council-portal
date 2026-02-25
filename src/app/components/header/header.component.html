@@ -6,11 +6,11 @@
       <div class="top-bar-content">
         <div class="contact-info">
           <span class="contact-item">
-            <app-icon name="phone" [size]="16" fill="#007FFF" stroke="none"></app-icon>
+            <app-icon name="phone" [size]="16" fill="#1F9BD9" stroke="none"></app-icon>
             {{ 'header.contact.phone' | i18n }}
           </span>
           <span class="contact-item">
-            <app-icon name="clock" [size]="16" fill="#007FFF" stroke="none"></app-icon>
+            <app-icon name="clock" [size]="16" fill="#1F9BD9" stroke="none"></app-icon>
             {{ 'header.contact.hours' | i18n }}
           </span>
         </div>
@@ -34,7 +34,7 @@
               [attr.aria-haspopup]="true"
               [attr.aria-label]="'header.lang.label' | i18n"
               (click)="toggleLangDropdown()">
-              <app-icon name="globe" [size]="16" fill="none" stroke="#007FFF" [strokeWidth]="2"></app-icon>
+              <app-icon name="globe" [size]="16" fill="none" stroke="#1F9BD9" [strokeWidth]="2"></app-icon>
               <span class="lang-dropdown-label">{{ currentLanguageLabel() }}</span>
               <app-icon name="chevron-down" [size]="14" [customClass]="isLangDropdownOpen() ? 'rotated' : ''"></app-icon>
             </button>
