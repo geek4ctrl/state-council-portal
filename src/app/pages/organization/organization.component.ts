@@ -1236,7 +1236,7 @@ type HighchartsStatic = typeof import('highcharts');
 
       .service-item.active {
         border-color: #1f9bd9;
-        // background: linear-gradient(135deg, #fff8ef 0%, #D7EEFD 100%);
+        /* background: linear-gradient(135deg, #fff8ef 0%, #D7EEFD 100%); */
         box-shadow: 0 22px 40px rgba(139, 115, 85, 0.22);
       }
 
@@ -1255,7 +1255,7 @@ type HighchartsStatic = typeof import('highcharts');
       }
 
       .service-item.active .service-icon {
-        // background: radial-gradient(circle at 30% 30%, #b59b7a, #6d5a43);
+        /* background: radial-gradient(circle at 30% 30%, #b59b7a, #6d5a43); */
       }
 
       .service-text h4 {
@@ -2130,11 +2130,11 @@ type HighchartsStatic = typeof import('highcharts');
         border-color: rgba(31, 155, 217, 0.9);
       }
       .org-header-line,
-      // .section-head-wrap .org-header-line {
-      //   width: 60px;
-      //   height: 3px;
-      //   background: linear-gradient(90deg, #1f9bd9, #d4a06a);
-      // }
+      /* .section-head-wrap .org-header-line {
+        width: 60px;
+        height: 3px;
+        background: linear-gradient(90deg, #1f9bd9, #d4a06a);
+      } */
       .section-head-wrap {
         display: flex;
         align-items: center;
