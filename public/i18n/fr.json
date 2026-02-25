@@ -232,7 +232,14 @@
   },
   "home": {
     "hero": {
+      "learnMore": "En savoir plus",
       "slides": {
+        "0": {
+          "title": "CONSEIL D'ÉTAT - RENTRÉE JUDICIAIRE 2025-2026",
+          "subtitle": "PALAIS DU PEUPLE - 13 NOVEMBRE 2025",
+          "body": "Le Conseil d'État s'est réuni au Palais du Peuple pour l'ouverture officielle de l'année judiciaire 2025-2026.",
+          "cta": "En savoir plus"
+        },
         "1": {
           "title": "RDC : L'ANNÉE JUDICIAIRE S'OUVRE AU CONSEIL D'ÉTAT POUR LE TERME 2025-2026",
           "subtitle": "MAISON DU DROIT ET DE L'ORDRE",

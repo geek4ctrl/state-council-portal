@@ -130,7 +130,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
       width: 100px;
       height: 100px;
       margin: 0 auto 1.5rem;
-      background: linear-gradient(135deg, #007FFF 0%, #0056b3 100%);
+      background: linear-gradient(135deg, #1F9BD9 0%, #1F9BD9 100%);
       border-radius: 50%;
       display: flex;
       align-items: center;
@@ -147,7 +147,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
     .coming-soon-title {
       font-size: 1.75rem;
       font-weight: 700;
-      color: #007FFF;
+      color: #1F9BD9;
       margin-bottom: 1rem;
       letter-spacing: 0.5px;
     }
@@ -167,7 +167,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
       align-items: center;
       gap: 0.5rem;
       padding: 0.875rem 2rem;
-      background: #007FFF;
+      background: #1F9BD9;
       color: white;
       text-decoration: none;
       border-radius: 6px;
@@ -175,7 +175,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
       font-size: 0.9rem;
       transition: all 0.3s ease;
       box-shadow: 0 4px 15px rgba(0, 127, 255, 0.3);
-      border: 1px solid #007FFF;
+      border: 1px solid #1F9BD9;
     }
 
     .btn-home svg {
@@ -184,10 +184,10 @@ import { FooterComponent } from '../../components/footer/footer.component';
     }
 
     .btn-home:hover {
-      background: #0056b3;
-      border-color: #0056b3;
+      background: #1F9BD9;
+      border-color: #1F9BD9;
       transform: translateY(-2px);
-      box-shadow: 0 8px 25px rgba(0, 127, 255, 0.4);
+      // box-shadow: 0 8px 25px rgba(0, 127, 255, 0.4);
     }
 
     /* Responsive Design */

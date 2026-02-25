@@ -232,7 +232,14 @@
   },
   "home": {
     "hero": {
+      "learnMore": "Learn More",
       "slides": {
+        "0": {
+          "title": "CONSEIL D'ÉTAT - RENTRÉE JUDICIAIRE 2025-2026",
+          "subtitle": "PALAIS DU PEUPLE - 13 NOVEMBRE 2025",
+          "body": "The State Council gathered at the People's Palace for the formal opening of the judicial year 2025-2026.",
+          "cta": "Learn More"
+        },
         "1": {
           "title": "DRC: JUDICIAL YEAR BEGINS AT THE STATE COUNCIL FOR THE 2025-2026 TERM",
           "subtitle": "HOME OF LAW & ORDER",
