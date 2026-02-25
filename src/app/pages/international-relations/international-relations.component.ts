@@ -753,10 +753,13 @@ import { FooterComponent } from '../../components/footer/footer.component';
         flex-direction: column;
       }
 
-      .header-line,
-      .header-line-left,
-      .header-line-right {
+      .header-line {
         flex: 0 0 50px;
+      }
+
+      .cooperation-section .header-line-left,
+      .cooperation-section .header-line-right {
+        display: none;
       }
 
       .section-subtitle {
@@ -874,10 +877,13 @@ import { FooterComponent } from '../../components/footer/footer.component';
         font-size: 1.5rem;
       }
 
-      .header-line,
-      .header-line-left,
-      .header-line-right {
+      .header-line {
         flex: 0 0 40px;
+      }
+
+      .cooperation-section .header-line-left,
+      .cooperation-section .header-line-right {
+        display: none;
       }
 
       .section-subtitle {
