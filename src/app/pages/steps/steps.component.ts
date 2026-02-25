@@ -12,26 +12,6 @@ import { FooterComponent } from '../../components/footer/footer.component';
   imports: [CommonModule, I18nPipe, FooterComponent],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
-    <!-- LOADER -->
-    <div class="loader" [class.out]="isPageLoaded()">
-      <div class="loader-sphere">
-        <div class="sphere-ring r1"></div>
-        <div class="sphere-ring r2"></div>
-        <div class="sphere-ring r3"></div>
-        <div class="sphere-core">
-          <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M32 8L16 16L16 32C16 44 24 52 32 56C40 52 48 44 48 32L48 16L32 8Z"/>
-          </svg>
-        </div>
-      </div>
-      <div class="loader-track"><div class="loader-fill"></div></div>
-      <span class="loader-label">Initializing...</span>
-    </div>
-
-    <div class="cur-dot" #curDot></div>
-    <div class="cur-ring" #curRing></div>
-    <div class="cur-trail" #curTrail></div>
-
     <div class="page-wrap page-container">
       <!-- Hero Section - Changes based on active tab -->
       @if (activeTab() === 'report') {
@@ -300,63 +280,72 @@ import { FooterComponent } from '../../components/footer/footer.component';
             </form>
           }
 
-          <!-- Appeal Form -->
+          <!-- Appeal Tab: Steps, Email CTA, FAQs -->
           @if (activeTab() === 'appeal') {
-            <div class="form-header">
-              <div class="form-header-line anim-line"></div>
-              <h2 class="anim-up">{{ 'steps.forms.appeal.title' | i18n }}</h2>
-              <p class="form-subtitle anim-up a-d1">{{ 'steps.forms.appeal.subtitle' | i18n }}</p>
-            </div>
-
-            <form class="appeal-form">
-              <div class="form-row">
-                <div class="form-group">
-                  <input type="text" [placeholder]="'steps.forms.fullName' | i18n" required>
-                </div>
-                <div class="form-group">
-                  <input type="email" [placeholder]="'steps.forms.email' | i18n" required>
-                </div>
+            <div class="appeal-content">
+              <!-- Steps for filling an appeal -->
+              <div class="form-header">
+                <div class="form-header-line anim-line"></div>
+                <h2 class="anim-up">{{ 'appealSteps.title' | i18n }}</h2>
+                <p class="form-subtitle anim-up a-d1">{{ 'appealSteps.subtitle' | i18n }}</p>
               </div>
 
-              <div class="form-group">
-                <div class="custom-select" (click)="toggleDepartment('appeal')">
-                  <div class="select-trigger">
-                    <span [class.placeholder]="!selectedDepartmentAppeal()">
-                      {{ selectedDepartmentAppeal() || ('steps.forms.department' | i18n) }}
-                    </span>
-                    <svg class="dropdown-arrow" [class.open]="departmentOpenAppeal()" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                      <polyline points="6 9 12 15 18 9"></polyline>
-                    </svg>
+              <div class="appeal-steps">
+                @for (step of appealStepIds; track step) {
+                  <div class="appeal-step anim-up" [style.animation-delay]="(0.1 * $index) + 's'">
+                    <div class="step-number">{{ step }}</div>
+                    <div class="step-body">
+                      <h3>{{ 'appealSteps.steps.' + step + '.title' | i18n }}</h3>
+                      <p>{{ 'appealSteps.steps.' + step + '.body' | i18n }}</p>
+                    </div>
                   </div>
-                  @if (departmentOpenAppeal()) {
-                    <div class="select-dropdown">
-                      <div class="dropdown-item" (click)="selectDepartment('appeal', 'criminal', $event)">
-                        {{ 'steps.forms.chambers.criminal' | i18n }}
-                      </div>
-                      <div class="dropdown-item" (click)="selectDepartment('appeal', 'civil', $event)">
-                        {{ 'steps.forms.chambers.civil' | i18n }}
-                      </div>
-                      <div class="dropdown-item" (click)="selectDepartment('appeal', 'social', $event)">
-                        {{ 'steps.forms.chambers.social' | i18n }}
-                      </div>
-                      <div class="dropdown-item" (click)="selectDepartment('appeal', 'commercial', $event)">
-                        {{ 'steps.forms.chambers.commercial' | i18n }}
+                }
+              </div>
+
+              <!-- Have questions? Send email -->
+              <div class="have-questions anim-up">
+                <h3>{{ 'haveQuestions.title' | i18n }}</h3>
+                <p>{{ 'haveQuestions.body' | i18n }}</p>
+                <a
+                  href="mailto:info@conseildetatrdc.com"
+                  class="email-cta mag-btn"
+                  (mousemove)="mag($event)"
+                  (mouseleave)="magOut($event)"
+                  (click)="ripple($event)"
+                >
+                  <span>{{ 'haveQuestions.cta' | i18n }}</span>
+                </a>
+              </div>
+
+              <!-- Collapsible FAQs -->
+              <div class="faqs-section">
+                <div class="form-header">
+                  <div class="form-header-line anim-line"></div>
+                  <h2 class="anim-up">{{ 'faqs.title' | i18n }}</h2>
+                </div>
+                <div class="faqs-list">
+                  @for (id of faqIds; track id) {
+                    <div class="faq-item" [class.open]="openFaqId() === id">
+                      <button
+                        type="button"
+                        class="faq-question"
+                        (click)="toggleFaq(id)"
+                        (mousemove)="mag($event)"
+                        (mouseleave)="magOut($event)"
+                      >
+                        <span>{{ 'faqs.items.' + id + '.question' | i18n }}</span>
+                        <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                          <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                      </button>
+                      <div class="faq-answer">
+                        <p>{{ 'faqs.items.' + id + '.answer' | i18n }}</p>
                       </div>
                     </div>
                   }
                 </div>
               </div>
-
-              <div class="form-group">
-                <textarea [placeholder]="'steps.forms.message' | i18n" rows="6" required></textarea>
-              </div>
-
-              <div class="form-submit">
-                <button type="submit" class="mag-btn" (mousemove)="mag($event)" (mouseleave)="magOut($event)" (click)="ripple($event)">
-                  <span>{{ 'steps.forms.submit' | i18n }}</span>
-                </button>
-              </div>
-            </form>
+            </div>
           }
         </div>
       </section>
@@ -515,7 +504,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
     .form-header-line {
       width: 60px;
       height: 3px;
-      background: linear-gradient(90deg, #BF9874, #d4a06a);
+      background: linear-gradient(90deg, #1F9BD9, #d4a06a);
       margin: 0 auto 15px;
     }
 
@@ -529,7 +518,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
 
     .form-subtitle {
       font-size: 0.9rem;
-      color: #B8860B !important;
+      color: #1F9BD9 !important;
       text-transform: uppercase;
       letter-spacing: 2px;
       margin: 0;
@@ -679,8 +668,8 @@ import { FooterComponent } from '../../components/footer/footer.component';
 
     .form-submit button {
       background: white;
-      color: #007FFF;
-      border: 1px solid #007FFF;
+      color: #1F9BD9;
+      border: 1px solid #1F9BD9;
       padding: 15px 50px;
       font-size: 0.9rem;
       font-weight: 600;
@@ -691,7 +680,169 @@ import { FooterComponent } from '../../components/footer/footer.component';
 
     .form-submit button:hover {
       background: transparent;
-      color: #007FFF;
+      color: #1F9BD9;
+    }
+
+    /* Appeal Tab: Steps, Email CTA, FAQs */
+    .appeal-content {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .appeal-steps {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      margin-bottom: 50px;
+    }
+    .appeal-step {
+      display: flex;
+      gap: 24px;
+      align-items: flex-start;
+      padding: 24px 28px;
+      margin-top: 16px;
+      background: #fafafa;
+      border-radius: 8px;
+      border-left: 4px solid #1F9BD9;
+      transition: background 0.2s ease;
+    }
+    .appeal-step:hover {
+      background: #f5f5f5;
+    }
+    .step-number {
+      flex-shrink: 0;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #1F9BD9, #4a9fff);
+      color: white;
+      font-size: 1rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .step-body h3 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: #1a1a1a;
+      margin: 0 0 8px 0;
+    }
+    .step-body p {
+      font-size: 0.95rem;
+      color: #555;
+      line-height: 1.6;
+      margin: 0;
+    }
+    .have-questions {
+      text-align: center;
+      padding: 40px 24px;
+      background: linear-gradient(135deg, rgba(31, 155, 217, 0.08), rgba(31, 155, 217, 0.08));
+      border-radius: 12px;
+      margin-bottom: 50px;
+    }
+    .have-questions h3 {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: #1a1a1a;
+      margin: 0 0 8px 0;
+    }
+    .have-questions p {
+      font-size: 0.95rem;
+      color: #555;
+      margin: 0 0 20px 0;
+    }
+    .email-cta {
+      display: inline-block;
+      background: white;
+      color: #1F9BD9;
+      border: 1px solid #1F9BD9;
+      padding: 14px 36px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+      text-decoration: none;
+      border-radius: 3px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    .email-cta:hover {
+      background: #1F9BD9;
+      color: white;
+    }
+    .faqs-section {
+      margin-top: 20px;
+    }
+    .faqs-section .form-header {
+      margin-bottom: 30px;
+    }
+    .faqs-list {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .faq-item {
+      background: #fff;
+      border: 1px solid #e0e0e0;
+      border-radius: 8px;
+      overflow: hidden;
+      transition: border-color 0.2s ease;
+    }
+    .faq-item:hover {
+      border-color: #1F9BD9;
+    }
+    .faq-item.open {
+      border-color: #1F9BD9;
+    }
+    .faq-question {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 18px 22px;
+      background: transparent;
+      border: none;
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: #1a1a1a;
+      text-align: left;
+      cursor: pointer;
+      transition: background 0.2s ease;
+    }
+    .faq-question:hover {
+      background: #f8f8f8;
+    }
+    .faq-item.open .faq-question {
+      background: #f0f8ff;
+    }
+    .faq-chevron {
+      width: 18px;
+      height: 18px;
+      flex-shrink: 0;
+      transition: transform 0.3s ease;
+      color: #1F9BD9;
+    }
+    .faq-item.open .faq-chevron {
+      transform: rotate(180deg);
+    }
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.35s ease;
+    }
+    .faq-item.open .faq-answer {
+      max-height: 500px;
+    }
+    .faq-answer p {
+      padding: 0 22px 18px 22px;
+      margin: 0;
+      font-size: 0.9rem;
+      color: #555;
+      line-height: 1.6;
+      border-top: 1px solid #eee;
+    }
+    .faq-item.open .faq-answer p {
+      padding-top: 16px;
     }
 
     /* Map Section */
@@ -760,6 +911,33 @@ import { FooterComponent } from '../../components/footer/footer.component';
         gap: 0;
       }
 
+      .appeal-step {
+        flex-direction: row;
+        padding: 18px 20px;
+        gap: 16px;
+      }
+      .step-number {
+        width: 34px;
+        height: 34px;
+        font-size: 0.9rem;
+      }
+      .step-body h3 {
+        font-size: 1rem;
+      }
+      .step-body p {
+        font-size: 0.9rem;
+      }
+      .have-questions {
+        padding: 30px 20px;
+      }
+      .have-questions h3 {
+        font-size: 1.2rem;
+      }
+      .faq-question {
+        padding: 16px 18px;
+        font-size: 0.9rem;
+      }
+
       .form-header h2 {
         font-size: 2rem;
       }
@@ -817,22 +995,18 @@ import { FooterComponent } from '../../components/footer/footer.component';
     @keyframes lineExpand{from{width:0;opacity:0}to{width:60px;opacity:1}}
     @keyframes upFade{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:translateY(0)}}
     .page-wrap{cursor:none;}
-    .loader{position:fixed;inset:0;background:linear-gradient(135deg,#080e1a,#1a2942);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:32px;z-index:9999;transition:opacity .7s ease,visibility .7s ease,transform .7s ease;}
+    .loader{position:fixed;inset:0;background:linear-gradient(135deg,#080e1a,#82BCDC);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:32px;z-index:9999;transition:opacity .7s ease,visibility .7s ease,transform .7s ease;}
     .loader.out{opacity:0;visibility:hidden;transform:scale(1.06);pointer-events:none;}
     .loader-sphere{width:120px;height:120px;position:relative;display:flex;align-items:center;justify-content:center;}
-    .sphere-ring{position:absolute;inset:0;border-radius:50%;border:1px solid rgba(191,152,116,.35);}
+    .sphere-ring{position:absolute;inset:0;border-radius:50%;border:1px solid rgba(31,155,217,.35);}
     .r1{inset:10px;animation:rOrbit1 2.5s linear infinite;}
     .r2{inset:0;animation:rOrbit2 3.5s linear infinite;}
     .r3{inset:-12px;animation:rOrbit3 5s linear infinite;}
-    .sphere-core{width:52px;height:52px;border-radius:50%;background:radial-gradient(circle,rgba(191,152,116,.25),rgba(191,152,116,.05));border:1px solid rgba(191,152,116,.5);display:flex;align-items:center;justify-content:center;color:#BF9874;box-shadow:0 0 30px rgba(191,152,116,.3);animation:float 3s ease-in-out infinite;}
+    .sphere-core{width:52px;height:52px;border-radius:50%;background:radial-gradient(circle,rgba(31,155,217,.25),rgba(31,155,217,.05));border:1px solid rgba(31,155,217,.5);display:flex;align-items:center;justify-content:center;color:#1F9BD9;box-shadow:0 0 30px rgba(31,155,217,.3);animation:float 3s ease-in-out infinite;}
     .sphere-core svg{width:30px;height:30px;}
     .loader-track{width:220px;height:3px;background:rgba(255,255,255,.08);border-radius:99px;overflow:hidden;}
-    .loader-fill{height:100%;background:linear-gradient(90deg,#BF9874,#e0b98a);border-radius:99px;animation:fillBar 2s ease-in-out infinite;}
-    .loader-label{font-size:.72rem;font-weight:700;letter-spacing:2px;color:#BF9874;text-transform:uppercase;animation:labelPulse 2s ease-in-out infinite;}
-    .cur-dot{position:fixed;width:8px;height:8px;border-radius:50%;background:#BF9874;pointer-events:none;z-index:99999;transform:translate(-50%,-50%);}
-    .cur-ring{position:fixed;width:38px;height:38px;border-radius:50%;border:2px solid rgba(191,152,116,.55);pointer-events:none;z-index:99998;transform:translate(-50%,-50%);transition:width .25s,height .25s,border-color .25s;}
-    .cur-trail{position:fixed;width:80px;height:80px;border-radius:50%;border:1px solid rgba(191,152,116,.15);pointer-events:none;z-index:99997;transform:translate(-50%,-50%);transition:width .4s,height .4s;}
-    .page-wrap:has(button:hover) .cur-ring{width:56px;height:56px;border-color:rgba(191,152,116,.9);}
+    .loader-fill{height:100%;background:linear-gradient(90deg,#1F9BD9,#e0b98a);border-radius:99px;animation:fillBar 2s ease-in-out infinite;}
+    .loader-label{font-size:.72rem;font-weight:700;letter-spacing:2px;color:#1F9BD9;text-transform:uppercase;animation:labelPulse 2s ease-in-out infinite;}
     .anim-line{animation:lineExpand .8s ease-out both;}
     .anim-up{animation:upFade .7s cubic-bezier(.23,1,.32,1) both;opacity:0;}
     .a-d1{animation-delay:.15s;}
@@ -843,16 +1017,12 @@ import { FooterComponent } from '../../components/footer/footer.component';
 })
 export class StepsComponent implements OnInit, AfterViewInit {
   private destroyRef = inject(DestroyRef);
-  @ViewChild('curDot') curDot!: ElementRef<HTMLDivElement>;
-  @ViewChild('curRing') curRing!: ElementRef<HTMLDivElement>;
-  @ViewChild('curTrail') curTrail!: ElementRef<HTMLDivElement>;
-  isPageLoaded = signal(false);
-  private rafId?: number;
-  private curRx = 0; private curRy = 0;
-  private trailRx = 0; private trailRy = 0;
 
   activeTab = signal<'report' | 'appointment' | 'appeal'>('report');
-  
+  appealStepIds = ['1', '2', '3', '4', '5'];
+  faqIds = ['1', '2', '3', '4', '5'];
+  openFaqId = signal<string | null>(null);
+
   departmentOpenReport = signal(false);
   departmentOpenAppointment = signal(false);
   departmentOpenAppeal = signal(false);
@@ -868,8 +1038,6 @@ export class StepsComponent implements OnInit, AfterViewInit {
   constructor(private route: ActivatedRoute) {}
 
   ngOnInit() {
-    setTimeout(() => this.isPageLoaded.set(true), 1800);
-    this.destroyRef.onDestroy(() => { if (this.rafId) cancelAnimationFrame(this.rafId); });
     this.route.queryParams.subscribe(params => {
       const tab = params['tab'];
       if (tab === 'report' || tab === 'appointment' || tab === 'appeal') {
@@ -878,32 +1046,7 @@ export class StepsComponent implements OnInit, AfterViewInit {
     });
   }
 
-  ngAfterViewInit() {
-    this.initCursor();
-  }
-
-  private initCursor() {
-    const dot = this.curDot?.nativeElement;
-    const ring = this.curRing?.nativeElement;
-    const trail = this.curTrail?.nativeElement;
-    if (!dot || !ring || !trail) return;
-    let mx = 0, my = 0;
-    document.addEventListener('mousemove', (e) => { mx = e.clientX; my = e.clientY; dot.style.left = mx + 'px'; dot.style.top = my + 'px'; });
-    const anim = () => {
-      this.curRx += (mx - this.curRx) * 0.14;
-      this.curRy += (my - this.curRy) * 0.14;
-      this.trailRx += (mx - this.trailRx) * 0.07;
-      this.trailRy += (my - this.trailRy) * 0.07;
-      ring.style.left = this.curRx + 'px'; ring.style.top = this.curRy + 'px';
-      trail.style.left = this.trailRx + 'px'; trail.style.top = this.trailRy + 'px';
-      this.rafId = requestAnimationFrame(anim);
-    };
-    requestAnimationFrame(anim);
-    document.querySelectorAll('.page-wrap button,.page-wrap a').forEach(el => {
-      el.addEventListener('mouseenter', () => { ring.style.width = '56px'; ring.style.height = '56px'; ring.style.borderColor = 'rgba(191,152,116,.9)'; trail.style.width = '90px'; trail.style.height = '90px'; });
-      el.addEventListener('mouseleave', () => { ring.style.width = '38px'; ring.style.height = '38px'; ring.style.borderColor = 'rgba(191,152,116,.55)'; trail.style.width = '80px'; trail.style.height = '80px'; });
-    });
-  }
+  ngAfterViewInit() {}
 
   mag(e: MouseEvent) {
     const el = e.currentTarget as HTMLElement;
@@ -990,5 +1133,9 @@ export class StepsComponent implements OnInit, AfterViewInit {
     this.departmentOpenAppointment.set(false);
     this.departmentOpenAppeal.set(false);
     this.meetingOpen.set(false);
+  }
+
+  toggleFaq(id: string) {
+    this.openFaqId.update(current => (current === id ? null : id));
   }
 }

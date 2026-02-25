@@ -1,6 +1,6 @@
 import {
   AfterViewInit, Component, DestroyRef, ElementRef,
-  OnInit, ViewChild, inject, signal,
+  ViewChild, inject,
 } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { I18nPipe } from '../../i18n/i18n.pipe';
@@ -11,29 +11,9 @@ import { FooterComponent } from '../../components/footer/footer.component';
   standalone: true,
   imports: [CommonModule, I18nPipe, FooterComponent],
   template: `
-    <!-- LOADER -->
-    <div class="loader" [class.out]="isPageLoaded()">
-      <div class="loader-sphere">
-        <div class="sphere-ring r1"></div>
-        <div class="sphere-ring r2"></div>
-        <div class="sphere-ring r3"></div>
-        <div class="sphere-core">
-          <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M32 8L16 16L16 32C16 44 24 52 32 56C40 52 48 44 48 32L48 16L32 8Z"/>
-          </svg>
-        </div>
-      </div>
-      <div class="loader-track"><div class="loader-fill"></div></div>
-      <span class="loader-label">Initializing loader</span>
-    </div>
-
-    <div class="cur-dot" #curDot></div>
-    <div class="cur-ring" #curRing></div>
-    <div class="cur-trail" #curTrail></div>
-
     <div class="page-wrap page-container">
       <!-- Hero Section -->
-      <div class="hero-section">
+      <section class="hero-section">
         <div class="hero-overlay"></div>
         <div class="container">
           <div class="hero-grid">
@@ -46,10 +26,10 @@ import { FooterComponent } from '../../components/footer/footer.component';
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
       <!-- Building Section -->
-      <div class="building-section">
+      <section class="building-section">
         <div class="container">
           <div class="section-tag">
             <div class="tag-line"></div>
@@ -59,10 +39,10 @@ import { FooterComponent } from '../../components/footer/footer.component';
           <h2 class="section-title">{{ 'reforms.building.title' | i18n }}</h2>
           <p class="section-description">{{ 'reforms.building.body' | i18n }}</p>
         </div>
-      </div>
+      </section>
 
       <!-- Strategic Reform Initiatives -->
-      <div class="initiatives-section">
+      <section class="initiatives-section">
         <div class="container">
           <h2 class="section-title">{{ 'reforms.initiatives.title' | i18n }}</h2>
           <p class="section-description">{{ 'reforms.initiatives.body' | i18n }}</p>
@@ -74,7 +54,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
               <div class="step-number">01</div>
               <div class="step-content tilt-card" style="--i:0" (mousemove)="tilt($event)" (mouseleave)="tiltReset($event)">
                 <div class="tilt-shine"></div>
-                <div class="step-icon-wrapper" style="background: linear-gradient(135deg, #B8860B 0%, #D4A574 100%);">
+                <div class="step-icon-wrapper" style="background: linear-gradient(135deg, #82BCDC 0%, #1EA2DD 100%);">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
                     <circle cx="9" cy="7" r="4"></circle>
@@ -90,10 +70,10 @@ import { FooterComponent } from '../../components/footer/footer.component';
                 <svg viewBox="0 0 100 60" preserveAspectRatio="none">
                   <defs>
                     <marker id="arrowhead1" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
-                      <polygon points="0 0, 10 3, 0 6" fill="#B8860B"/>
+                      <polygon points="0 0, 10 3, 0 6" fill="#82BCDC"/>
                     </marker>
                   </defs>
-                  <path d="M0,30 Q50,10 100,30" stroke="#B8860B" stroke-width="2" fill="none" stroke-dasharray="5,5" marker-end="url(#arrowhead1)"/>
+                  <path d="M0,30 Q50,10 100,30" stroke="#82BCDC" stroke-width="2" fill="none" stroke-dasharray="5,5" marker-end="url(#arrowhead1)"/>
                 </svg>
               </div>
             </div>
@@ -103,7 +83,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
               <div class="step-number">02</div>
               <div class="step-content tilt-card" style="--i:1" (mousemove)="tilt($event)" (mouseleave)="tiltReset($event)">
                 <div class="tilt-shine"></div>
-                <div class="step-icon-wrapper" style="background: linear-gradient(135deg, #007FFF 0%, #005CBF 100%);">
+                <div class="step-icon-wrapper" style="background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
                     <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
@@ -117,10 +97,10 @@ import { FooterComponent } from '../../components/footer/footer.component';
                 <svg viewBox="0 0 100 60" preserveAspectRatio="none">
                   <defs>
                     <marker id="arrowhead2" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
-                      <polygon points="0 0, 10 3, 0 6" fill="#B8860B"/>
+                      <polygon points="0 0, 10 3, 0 6" fill="#82BCDC"/>
                     </marker>
                   </defs>
-                  <path d="M0,30 Q50,50 100,30" stroke="#B8860B" stroke-width="2" fill="none" stroke-dasharray="5,5" marker-end="url(#arrowhead2)"/>
+                  <path d="M0,30 Q50,50 100,30" stroke="#82BCDC" stroke-width="2" fill="none" stroke-dasharray="5,5" marker-end="url(#arrowhead2)"/>
                 </svg>
               </div>
             </div>
@@ -130,7 +110,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
               <div class="step-number">03</div>
               <div class="step-content tilt-card" style="--i:2" (mousemove)="tilt($event)" (mouseleave)="tiltReset($event)">
                 <div class="tilt-shine"></div>
-                <div class="step-icon-wrapper" style="background: linear-gradient(135deg, #005CBF 0%, #007FFF 100%);">
+                <div class="step-icon-wrapper" style="background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <circle cx="12" cy="12" r="10"></circle>
                     <line x1="2" y1="12" x2="22" y2="12"></line>
@@ -145,10 +125,10 @@ import { FooterComponent } from '../../components/footer/footer.component';
                 <svg viewBox="0 0 100 60" preserveAspectRatio="none">
                   <defs>
                     <marker id="arrowhead3" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
-                      <polygon points="0 0, 10 3, 0 6" fill="#B8860B"/>
+                      <polygon points="0 0, 10 3, 0 6" fill="#82BCDC"/>
                     </marker>
                   </defs>
-                  <path d="M0,30 Q50,10 100,30" stroke="#B8860B" stroke-width="2" fill="none" stroke-dasharray="5,5" marker-end="url(#arrowhead3)"/>
+                  <path d="M0,30 Q50,10 100,30" stroke="#82BCDC" stroke-width="2" fill="none" stroke-dasharray="5,5" marker-end="url(#arrowhead3)"/>
                 </svg>
               </div>
             </div>
@@ -158,7 +138,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
               <div class="step-number">04</div>
               <div class="step-content tilt-card" style="--i:3" (mousemove)="tilt($event)" (mouseleave)="tiltReset($event)">
                 <div class="tilt-shine"></div>
-                <div class="step-icon-wrapper" style="background: linear-gradient(135deg, #4DA6FF 0%, #007FFF 100%);">
+                <div class="step-icon-wrapper" style="background: linear-gradient(135deg, #7d8a96 0%, #8d9aa6 100%);">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
                     <line x1="8" y1="21" x2="16" y2="21"></line>
@@ -173,10 +153,10 @@ import { FooterComponent } from '../../components/footer/footer.component';
                 <svg viewBox="0 0 100 60" preserveAspectRatio="none">
                   <defs>
                     <marker id="arrowhead4" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
-                      <polygon points="0 0, 10 3, 0 6" fill="#B8860B"/>
+                      <polygon points="0 0, 10 3, 0 6" fill="#82BCDC"/>
                     </marker>
                   </defs>
-                  <path d="M0,30 Q50,50 100,30" stroke="#B8860B" stroke-width="2" fill="none" stroke-dasharray="5,5" marker-end="url(#arrowhead4)"/>
+                  <path d="M0,30 Q50,50 100,30" stroke="#82BCDC" stroke-width="2" fill="none" stroke-dasharray="5,5" marker-end="url(#arrowhead4)"/>
                 </svg>
               </div>
             </div>
@@ -186,7 +166,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
               <div class="step-number">05</div>
               <div class="step-content tilt-card" style="--i:4" (mousemove)="tilt($event)" (mouseleave)="tiltReset($event)">
                 <div class="tilt-shine"></div>
-                <div class="step-icon-wrapper" style="background: linear-gradient(135deg, #B8860B 0%, #D4A574 100%);">
+                <div class="step-icon-wrapper" style="background: linear-gradient(135deg, #f39c12 0%, #e67e22 100%);">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
                     <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
@@ -199,10 +179,10 @@ import { FooterComponent } from '../../components/footer/footer.component';
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
       <!-- Key Stakeholders Section -->
-      <div class="stakeholders-section">
+      <section class="stakeholders-section">
         <div class="container">
           <div class="stakeholders-header">
             <div class="header-line left"></div>
@@ -226,7 +206,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
             </div>
           </div>
         </div>
-      </div>
+      </section>
       <app-footer></app-footer>
     </div>
   `,
@@ -239,28 +219,28 @@ import { FooterComponent } from '../../components/footer/footer.component';
     @keyframes float{0%,100%{transform:translateY(0) rotateZ(0)}50%{transform:translateY(-8px) rotateZ(2deg)}}
 
     .loader{
-      position:fixed;inset:0;background:linear-gradient(135deg,#080e1a,#1a2942);
+      position:fixed;inset:0;background:linear-gradient(135deg,#080e1a,#82BCDC);
       display:flex;flex-direction:column;align-items:center;justify-content:center;gap:32px;
       z-index:9999;transition:opacity .7s ease,visibility .7s ease,transform .7s ease;
     }
     .loader.out{opacity:0;visibility:hidden;transform:scale(1.06);pointer-events:none;}
     .loader-sphere{width:120px;height:120px;position:relative;display:flex;align-items:center;justify-content:center;}
-    .sphere-ring{position:absolute;inset:0;border-radius:50%;border:1px solid rgba(252,209,22,.35);}
+    .sphere-ring{position:absolute;inset:0;border-radius:50%;border:1px solid rgba(31,155,217,.35);}
     .sphere-ring.r1{inset:10px;animation:rOrbit1 2.5s linear infinite;}
     .sphere-ring.r2{inset:0;animation:rOrbit2 3.5s linear infinite;}
     .sphere-ring.r3{inset:-12px;animation:rOrbit3 5s linear infinite;}
     .sphere-core{
       width:52px;height:52px;border-radius:50%;
-      background:radial-gradient(circle,rgba(252,209,22,.25),rgba(252,209,22,.05));
-      border:1px solid rgba(252,209,22,.5);
-      display:flex;align-items:center;justify-content:center;color:#FCD116;
-      box-shadow:0 0 30px rgba(252,209,22,.3),inset 0 0 20px rgba(252,209,22,.1);
+      background:radial-gradient(circle,rgba(31,155,217,.25),rgba(31,155,217,.05));
+      border:1px solid rgba(31,155,217,.5);
+      display:flex;align-items:center;justify-content:center;color:#1F9BD9;
+      box-shadow:0 0 30px rgba(31,155,217,.3),inset 0 0 20px rgba(31,155,217,.1);
       animation:float 3s ease-in-out infinite;
     }
     .sphere-core svg{width:30px;height:30px;}
     .loader-track{width:220px;height:3px;background:rgba(255,255,255,.08);border-radius:99px;overflow:hidden;}
-    .loader-fill{height:100%;background:linear-gradient(90deg,#FCD116,#FFE066,#FCD116);background-size:200%;animation:fillBar 2s ease-in-out infinite;border-radius:99px;}
-    .loader-label{font-size:.72rem;font-weight:700;letter-spacing:2px;color:#FCD116;text-transform:uppercase;animation:labelPulse 2s ease-in-out infinite;}
+    .loader-fill{height:100%;background:linear-gradient(90deg,#1F9BD9,#e0b98a,#1F9BD9);background-size:200%;animation:fillBar 2s ease-in-out infinite;border-radius:99px;}
+    .loader-label{font-size:.72rem;font-weight:700;letter-spacing:2px;color:#1F9BD9;text-transform:uppercase;animation:labelPulse 2s ease-in-out infinite;}
 
     /* General Reset */
     * {
@@ -317,9 +297,9 @@ import { FooterComponent } from '../../components/footer/footer.component';
       left: 0;
       right: 0;
       bottom: 0;
-      background:
-        radial-gradient(circle at 20% 30%, rgba(0, 127, 255, 0.15) 0%, transparent 50%),
-        radial-gradient(circle at 80% 70%, rgba(252, 209, 22, 0.12) 0%, transparent 50%),
+      background: 
+        radial-gradient(circle at 20% 30%, rgba(31, 155, 217, 0.18) 0%, transparent 50%),
+        radial-gradient(circle at 80% 70%, rgba(31, 155, 217, 0.15) 0%, transparent 50%),
         url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><defs><pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255,255,255,0.03)" stroke-width="1"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
       z-index: 2;
     }
@@ -346,7 +326,6 @@ import { FooterComponent } from '../../components/footer/footer.component';
       letter-spacing: 2px;
       color: #ffffff;
       text-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
-      text-align: left;
     }
 
     .vertical-line {
@@ -356,12 +335,12 @@ import { FooterComponent } from '../../components/footer/footer.component';
         180deg,
         transparent 0%,
         rgba(255, 255, 255, 0.8) 15%,
-        rgba(0, 127, 255, 0.85) 50%,
+        rgba(31, 155, 217, 0.9) 50%,
         rgba(255, 255, 255, 0.8) 85%,
         transparent 100%
       );
       display: block;
-      box-shadow: 0 0 20px rgba(0, 127, 255, 0.4);
+      box-shadow: 0 0 20px rgba(31, 155, 217, 0.4);
     }
 
     .hero-content-right p {
@@ -370,7 +349,6 @@ import { FooterComponent } from '../../components/footer/footer.component';
       opacity: 0.95;
       margin: 0;
       text-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
-      text-align: left;
     }
 
     /* Building Section - UPDATED ALIGNMENT */
@@ -394,12 +372,12 @@ import { FooterComponent } from '../../components/footer/footer.component';
     .tag-line {
       width: 60px;
       height: 2px;
-      background: linear-gradient(90deg, transparent, #007FFF);
+      background: linear-gradient(90deg, transparent, #1F9BD9);
     }
 
     .section-tag span {
       font-size: 0.75rem;
-      color: #007FFF;
+      color: #1F9BD9;
       text-transform: uppercase;
       letter-spacing: 2px;
       font-weight: 600;
@@ -419,7 +397,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
     .building-section .section-description {
       font-size: 1rem;
       line-height: 1.8;
-      color: #007FFF;
+      color: #1F9BD9;
       text-align: justify;
       max-width: 100%;
       margin: 0 0 60px 0;
@@ -443,7 +421,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
     .initiatives-section .section-description {
       font-size: 1rem;
       line-height: 1.8;
-      color: #007FFF;
+      color: #1F9BD9;
       text-align: center;
       max-width: 900px;
       margin: 0 auto 60px;
@@ -476,7 +454,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
     .step-number {
       width: 50px;
       height: 50px;
-      background: linear-gradient(135deg, #B8860B 0%, #D4A574 100%);
+      background: linear-gradient(135deg, #82BCDC 0%, #1EA2DD 100%);
       color: white;
       border-radius: 50%;
       display: flex;
@@ -485,7 +463,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
       font-size: 1.2rem;
       font-weight: 700;
       margin-bottom: 25px;
-      box-shadow: 0 4px 12px rgba(184, 134, 11, 0.3);
+      box-shadow: 0 4px 12px rgba(200, 149, 107, 0.3);
       z-index: 2;
       position: relative;
     }
@@ -553,17 +531,17 @@ import { FooterComponent } from '../../components/footer/footer.component';
 
     .step-badge.critical {
       background: #ffebee;
-      color: #CE1126; /* DRC red */
+      color: #c41e3a;
     }
 
     .step-badge.high {
-      background: #fff8e1;
-      color: #B8860B; /* Gold */
+      background: #fff3e0;
+      color: #f39c12;
     }
 
     .step-badge.medium {
-      background: #e3f2fd;
-      color: #007FFF; /* DRC blue */
+      background: #e8f5e9;
+      color: #4caf50;
     }
 
     .arrow-connector {
@@ -600,11 +578,11 @@ import { FooterComponent } from '../../components/footer/footer.component';
     }
 
     .header-line.left {
-      background: linear-gradient(90deg, transparent, #FCD116);
+      background: linear-gradient(90deg, transparent, #82BCDC);
     }
 
     .header-line.right {
-      background: linear-gradient(90deg, #FCD116, transparent);
+      background: linear-gradient(90deg, #82BCDC, transparent);
     }
 
     .section-title-stakeholders {
@@ -620,7 +598,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
     .section-subtitle {
       text-align: center;
       font-size: 0.9rem;
-      color: #FCD116; /* DRC yellow */
+      color: #82BCDC;
       margin: 0 0 50px 0;
       letter-spacing: 2px;
       text-transform: uppercase;
@@ -660,7 +638,6 @@ import { FooterComponent } from '../../components/footer/footer.component';
       object-fit: cover;
       display: block;
       transition: transform 0.4s ease;
-      filter: grayscale(100%); /* Black and white */
     }
 
     .image-overlay {
@@ -699,7 +676,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
 
     .stakeholder-role {
       font-size: 0.85rem;
-      color: #c8956b;
+      color: #82BCDC;
       font-weight: 500;
       margin: 0;
     }
@@ -834,7 +811,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
         width: 100px;
         height: 2px;
         margin: 0 auto;
-        background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.8), #007FFF, rgba(255, 255, 255, 0.8), transparent);
+        background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.8), #1F9BD9, rgba(255, 255, 255, 0.8), transparent);
       }
 
       .hero-content-left h1 {
@@ -1272,10 +1249,6 @@ import { FooterComponent } from '../../components/footer/footer.component';
 
     /* Home-style: cursor, tilt, img-zoom */
     @keyframes cardIn{from{opacity:0;transform:translateY(40px) rotateX(20deg) scale(.94)}to{opacity:1;transform:translateY(0) rotateX(0) scale(1)}}
-    .page-wrap{cursor:none;}
-    .cur-dot{position:fixed;width:8px;height:8px;border-radius:50%;background:#B8860B;pointer-events:none;z-index:99999;transform:translate(-50%,-50%);}
-    .cur-ring{position:fixed;width:38px;height:38px;border-radius:50%;border:2px solid rgba(184,134,11,.55);pointer-events:none;z-index:99998;transform:translate(-50%,-50%);transition:width .25s,height .25s,border-color .25s;}
-    .cur-trail{position:fixed;width:80px;height:80px;border-radius:50%;border:1px solid rgba(184,134,11,.15);pointer-events:none;z-index:99997;transform:translate(-50%,-50%);transition:width .4s,height .4s;}
     .tilt-card{transform-style:preserve-3d;position:relative;overflow:hidden;transition:transform .5s cubic-bezier(.23,1,.32,1),box-shadow .5s ease;opacity:0;animation:cardIn .7s cubic-bezier(.23,1,.32,1) calc(var(--i,0)*.1s) forwards;}
     .tilt-shine{position:absolute;inset:0;border-radius:inherit;pointer-events:none;z-index:10;background:linear-gradient(105deg,transparent 45%,rgba(255,255,255,.18) 50%,transparent 55%);transform:translateX(-120%) skewX(-20deg);}
     .img-zoom{overflow:hidden;position:relative;}
@@ -1284,73 +1257,34 @@ import { FooterComponent } from '../../components/footer/footer.component';
     .img-sheen{position:absolute;inset:0;background:linear-gradient(135deg,rgba(255,255,255,.3) 0%,transparent 50%);pointer-events:none;}
   `]
 })
-export class ReformsComponent implements OnInit, AfterViewInit {
+export class ReformsComponent implements AfterViewInit {
   private destroyRef = inject(DestroyRef);
 
-  isPageLoaded = signal(false);
-
-  @ViewChild('curDot') curDot!: ElementRef<HTMLDivElement>;
-  @ViewChild('curRing') curRing!: ElementRef<HTMLDivElement>;
-  @ViewChild('curTrail') curTrail!: ElementRef<HTMLDivElement>;
-
-  private rafId?: number;
-  private curRx = 0; private curRy = 0;
-  private trailRx = 0; private trailRy = 0;
 
   stakeholders = [
     {
       name: 'BAGUNDA NSIMIRE',
       roleKey: 'reforms.stakeholders.roles.president',
-      image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=500&fit=crop&q=80'
+      image: 'https://i.pravatar.cc/400?img=12'
     },
     {
       name: 'NDOMBA KABEYA',
       roleKey: 'reforms.stakeholders.roles.vicePresident',
-      image: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&h=500&fit=crop&q=80'
+      image: 'https://i.pravatar.cc/400?img=33'
     },
     {
       name: 'CHRISTINA WOCIN',
       roleKey: 'reforms.stakeholders.roles.chiefMagistrate',
-      image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=500&fit=crop&q=80'
+      image: 'https://i.pravatar.cc/400?img=47'
     },
     {
       name: 'MUKENGULE MUDERHWA',
       roleKey: 'reforms.stakeholders.roles.internationalRelations',
-      image: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&h=500&fit=crop&q=80'
+      image: 'https://i.pravatar.cc/400?img=56'
     }
   ];
 
-  ngOnInit() {
-    setTimeout(() => this.isPageLoaded.set(true), 1800);
-  }
-
-  ngAfterViewInit() {
-    this.initCursor();
-    this.destroyRef.onDestroy(() => { if (this.rafId) cancelAnimationFrame(this.rafId); });
-  }
-
-  private initCursor() {
-    const dot = this.curDot?.nativeElement;
-    const ring = this.curRing?.nativeElement;
-    const trail = this.curTrail?.nativeElement;
-    if (!dot || !ring || !trail) return;
-    let mx = 0, my = 0;
-    document.addEventListener('mousemove', (e) => { mx = e.clientX; my = e.clientY; dot.style.left = mx + 'px'; dot.style.top = my + 'px'; });
-    const anim = () => {
-      this.curRx += (mx - this.curRx) * 0.14;
-      this.curRy += (my - this.curRy) * 0.14;
-      this.trailRx += (mx - this.trailRx) * 0.07;
-      this.trailRy += (my - this.trailRy) * 0.07;
-      ring.style.left = this.curRx + 'px'; ring.style.top = this.curRy + 'px';
-      trail.style.left = this.trailRx + 'px'; trail.style.top = this.trailRy + 'px';
-      this.rafId = requestAnimationFrame(anim);
-    };
-    requestAnimationFrame(anim);
-    document.querySelectorAll('.page-wrap button,.page-wrap a').forEach(el => {
-      el.addEventListener('mouseenter', () => { ring.style.width = '56px'; ring.style.height = '56px'; ring.style.borderColor = 'rgba(184,134,11,.9)'; trail.style.width = '90px'; trail.style.height = '90px'; });
-      el.addEventListener('mouseleave', () => { ring.style.width = '38px'; ring.style.height = '38px'; ring.style.borderColor = 'rgba(184,134,11,.55)'; trail.style.width = '80px'; trail.style.height = '80px'; });
-    });
-  }
+  ngAfterViewInit() {}
 
   tilt(e: MouseEvent) {
     const el = e.currentTarget as HTMLElement;
