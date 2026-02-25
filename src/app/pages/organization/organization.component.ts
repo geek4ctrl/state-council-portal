@@ -54,7 +54,7 @@ type HighchartsStatic = typeof import('highcharts');
             <div class="tilt-shine"></div>
             <div class="president-image-large img-zoom">
               <img
-                ngSrc="assets/president-portrait.png"
+                ngSrc="https://res.cloudinary.com/dhqvb8wbn/image/upload/v1772020345/Brigitte_NSENSELE_wa_NSENSELE.jpg_2_vgiv72.jpg"
                 [attr.alt]="'organization.firstPresident.alt' | i18n"
                 width="400"
                 height="500"
