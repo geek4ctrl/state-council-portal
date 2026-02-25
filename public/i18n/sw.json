@@ -1,0 +1,799 @@
+{
+  "header": {
+    "siteName": "Baraza la Serikali la RDC",
+    "contact": {
+      "phone": "+ 243 (21) 00000000",
+      "hours": "JUMATATU - IJUMAA 8:30AM - 4:00PM"
+    },
+    "social": {
+      "facebook": "Facebook",
+      "twitter": "Twitter",
+      "instagram": "Instagram"
+    },
+    "lang": {
+      "label": "Lugha",
+      "switchToEnglish": "Badili kwenda Kiingereza",
+      "switchToFrench": "Badili kwenda Kifaransa"
+    },
+    "nav": {
+      "home": "MWANZO",
+      "court": "MAHAKAMA",
+      "presentation": "Uwasilishaji",
+      "organization": "Muundo",
+      "administrativeCourts": "Mahakama za Utawala",
+      "administrativeTribunals": "Mabaraza ya Utawala",
+      "reforms": "Mageuzi",
+      "international": "Mahusiano ya Kimataifa",
+      "audiences": "MAKIKAO",
+      "steps": "HATUA",
+      "news": "HABARI",
+      "bookAppointment": "Weka Miadi"
+    }
+  },
+  "hero": {
+    "titleOpening2025": "MWAKA WA MAHAKAMA UNAFUNGULIWA KATIKA BARAZA LA SERIKALI KWA MUHULA WA 2025 - 2026"
+  },
+  "mobileNav": {
+    "home": "Mwanzo",
+    "organization": "Muundo",
+    "apply": "Wasilisha",
+    "news": "Habari"
+  },
+  "comingSoon": {
+    "subtitle": "Inakuja Hivi Karibuni",
+    "description": "Ukurasa huu uko katika maendeleo na utapatikana hivi karibuni. Tafadhali rudi baadaye kuangalia maudhui.",
+    "backHome": "Rudi Mwanzo"
+  },
+  "errors": {
+    "generic": {
+      "code": "Kosa",
+      "title": "Kuna Tatizo",
+      "message": "Tunakutana na tatizo katika kutimiza ombi lako. Tafadhali jaribu tena au rudi kwenye ukurasa wa mwanzo wa Baraza la Serikali.",
+      "primary": "Rudi Mwanzo",
+      "secondary": "Tazama Taarifa"
+    },
+    "notFound": {
+      "code": "404",
+      "title": "Ukurasa Haupatikani",
+      "message": "Ukurasa unaoutafuta haupo au umehamishwa."
+    }
+  },
+  "history": {
+    "title": "Historia",
+    "body": "Gundua historia tajiri ya Baraza la Serikali."
+  },
+  "process": {
+    "title": "Mchakato wa Mahakama",
+    "body": "Elewa mchakato wa mahakama na unachoweza kutarajia."
+  },
+  "judges": {
+    "title": "Majaji",
+    "body": "Kutana na majaji mashuhuri wa Baraza la Serikali."
+  },
+  "memberDetail": {
+    "back": "<- Rudi kwenye Muundo",
+    "title": "Profaili ya Mwanachama",
+    "subtitle": "Profaili ya kina na taarifa za mawasiliano.",
+    "office": "Ofisi",
+    "email": "Barua pepe",
+    "notFound": {
+      "title": "Mwanachama hapatikani",
+      "body": "Profaili uliyotafuta haikupatikana.",
+      "cta": "Rudi kwenye Muundo"
+    }
+  },
+  "news": {
+    "hero": {
+      "title": "HABARI NA TAARIFA",
+      "body": "Dhulumaa inaweza kujitokeza kwa njia nyingi katika jamii yetu. Tunakupa nafasi ya kuripoti aina zote za manyanyaso."
+    },
+    "section": {
+      "title": "HABARI NA TAARIFA",
+      "subtitle": "MAONO HUTUFANYA TUWE SISI"
+    },
+    "insights": {
+      "title": "VIASHIRIA VYA HABARI",
+      "subtitle": "Mwelekeo kwa mada na kasi ya uchapishaji",
+      "topics": {
+        "title": "Mada kwa mwezi",
+        "note": "Miezi 6 iliyopita",
+        "aria": "Mada za habari kwa mwezi"
+      },
+      "cadence": {
+        "title": "Kasi ya uchapishaji",
+        "note": "Makala zilizochapishwa",
+        "aria": "Kasi ya uchapishaji kwa mwezi"
+      }
+    },
+    "actions": {
+      "readMore": "Soma zaidi"
+    },
+    "pagination": {
+      "label": "Ukurasa wa habari",
+      "previous": "Ukurasa uliopita",
+      "next": "Ufuatao",
+      "pageLabel": "Ukurasa {{page}}"
+    },
+    "empty": {
+      "title": "Hakuna habari bado",
+      "body": "Makala mpya zitaonekana hapa zitakapochapishwa."
+    },
+    "articles": {
+      "1": {
+        "date": "30 Januari",
+        "category": "Utawala",
+        "title": "Rais wa Kwanza wa Baraza la Serikali awahimiza mahakimu kuzingatia azimio o...",
+        "excerpt": "Baada ya kufungwa kwa mkutano mkuu wa kawaida wa Baraza Kuu la Mahakama ya Utawala..."
+      },
+      "2": {
+        "date": "30 Januari",
+        "category": "Utawala",
+        "title": "MKUTANO WA MWONGOZO KATIKA BARAZA LA SERIKALI",
+        "excerpt": "Kinshasa, 18 Oktoba 2025: Baraza la Serikali la Jamhuri ya Kidemokrasia ya Kongo linatoa ta..."
+      },
+      "3": {
+        "date": "30 Januari",
+        "category": "Utawala",
+        "title": "MKUTANO WA MWONGOZO KATIKA BARAZA LA SERIKALI",
+        "excerpt": "Kinshasa, 18 Oktoba 2025: Baraza la Serikali la Jamhuri ya Kidemokrasia ya Kongo linatoa ta..."
+      }
+    }
+  },
+  "steps": {
+    "hero": {
+      "report": {
+        "title": "RIPOTI",
+        "body": "Dhulumaa inaweza kujitokeza kwa njia nyingi katika jamii yetu. Tunakupa nafasi ya kuripoti aina zote za manyanyaso."
+      },
+      "appointment": {
+        "title": "WEKA<br>MIADI",
+        "body": "Ili kupanga mkutano na Baraza la Serikali, tafadhali jaza fomu hii ya ombi la miadi. Hakikisha taarifa zote zinazohitajika zimejazwa kwa usahihi ili tuweze kushughulikia ombi lako kwa ufanisi. Utapokea barua pepe au simu ya kuthibitisha tarehe na saa ya miadi."
+      },
+      "appeal": {
+        "title": "RUFAA KWA<br>BARAZA LA<br>SERIKALI",
+        "body1": "Rufaa kwa Baraza la Serikali ni njia ya kisheria ya utawala inayomruhusu mhusika kupinga maamuzi na vitendo vya utawala. Baraza la Serikali hukagua kama sheria za utawala zilitekelezwa kwa usahihi na taratibu zilifuatwa.",
+        "body2": "Baraza la Serikali linaombwa kupitia maombi ya wahusika au tamko lililowasilishwa kwa Baraza. Rufaa lazima ziwasilishwe ndani ya muda unaotakiwa kisheria na kuthibitishwa kwa maombi pamoja na nyaraka za kuunga mkono."
+      }
+    },
+    "tabs": {
+      "report": "Ripoti",
+      "appointment": "Weka Miadi",
+      "appeal": "Wasilisha Rufaa"
+    },
+    "forms": {
+      "report": {
+        "title": "FOMU YA MALALAMIKO",
+        "subtitle": "TUNAPENDA KUSIKIA TATIZO LAKO"
+      },
+      "appointment": {
+        "title": "WEKA MIADI",
+        "subtitle": "TUNAPENDA KUKUSAIDIA KATIKA TATIZO LAKO"
+      },
+      "appeal": {
+        "title": "FOMU YA RUFAA",
+        "subtitle": "TUNAPENDA KUSIKIA TATIZO LAKO"
+      },
+      "fullName": "Jina Kamili *",
+      "email": "Barua pepe *",
+      "department": "Idara",
+      "chambers": {
+        "criminal": "Chumba cha Jinai",
+        "civil": "Chumba cha Kiraia",
+        "social": "Chumba cha Kijamii",
+        "commercial": "Chumba cha Biashara"
+      },
+      "meeting": {
+        "placeholder": "Unataka kukutana na nani? *",
+        "firstPresident": "Rais wa Kwanza",
+        "chamberPresident": "Rais wa Chumba",
+        "legalAdvisor": "Mshauri wa Kisheria",
+        "clerk": "Karani wa Mahakama"
+      },
+      "visit": {
+        "placeholder": "Unapanga kuja lini?",
+        "thisWeek": "Wiki hii",
+        "nextWeek": "Wiki ijayo",
+        "thisMonth": "Mwezi huu",
+        "nextMonth": "Mwezi ujao"
+      },
+      "message": "Ujumbe *",
+      "submit": "TUMA UJUMBE"
+    }
+  },
+  "footer": {
+    "mainOffice": {
+      "title": "Ofisi Kuu",
+      "address1": "7639, makutano ya Pumbu na Batonniers",
+      "address2": "Kata ya Gombe, Kinshasa",
+      "address3": "Jamhuri ya Kidemokrasia ya Kongo",
+      "phone": "Simu: +243 (21) 0000000",
+      "email": "Barua pepe: info@conseildetatrdc.com"
+    },
+    "quickLinks": {
+      "title": "Viungo vya Haraka",
+      "about": "Kuhusu Mahakama",
+      "jurisprudence": "Maamuzi ya Mahakama",
+      "filing": "Taratibu za Uwasilishaji",
+      "contact": "Wasiliana Nasi"
+    },
+    "resources": {
+      "title": "Rasilimali",
+      "legalDocs": "Nyaraka za Kisheria",
+      "decisions": "Maamuzi ya Mahakama",
+      "reports": "Ripoti za Mwaka",
+      "faqs": "Maswali ya Mara kwa Mara"
+    },
+    "connect": {
+      "title": "Ungana Nasi",
+      "facebook": "Facebook",
+      "twitter": "Twitter",
+      "instagram": "Instagram",
+      "linkedin": "LinkedIn"
+    },
+    "privacy": "Faragha",
+    "copyright": "Hakimiliki Baraza la Serikali. Haki zote zimehifadhiwa"
+  },
+  "home": {
+    "hero": {
+      "slides": {
+        "1": {
+          "title": "MWAKA WA MAHAKAMA UNAFUNGULIWA KATIKA BARAZA LA SERIKALI KWA MUHULA WA 2025 - 2026",
+          "subtitle": "NYUMBA YA SHERIA NA UTARATIBU",
+          "body": "Video hii inaonyesha ufunguzi rasmi wa mwaka wa mahakama 2025-2026. Mbele ya Rais Felix Tshisekedi, kikao kilikusanya majaji wakuu na viongozi wa kisheria.",
+          "cta": "Tazama Kikao Moja kwa Moja kwenye YouTube"
+        },
+        "2": {
+          "title": "KUIMARISHA UHURU NA WAJIBU WA MAHAKAMA",
+          "subtitle": "NYUMBA YA SHERIA NA UTARATIBU",
+          "body": "BARAZA LA SERIKALI linaendelea kutetea misingi ya haki, usawa, na utawala wa sheria. Tumejitoa kuhakikisha uwazi na uadilifu.",
+          "cta": "Jifunze Zaidi Kuhusu Dhamira Yetu"
+        },
+        "3": {
+          "title": "KUKUZA UBORA WA KISHERIA KATIKA JAMHURI YA KIDEMOKRASIA YA KONGO",
+          "subtitle": "NYUMBA YA SHERIA NA UTARATIBU",
+          "body": "Kupitia mafunzo madhubuti ya kisheria na kufuata viwango bora vya kimataifa, tunalenga viwango vya juu vya ubora wa mahakama.",
+          "cta": "Chunguza Mipango Yetu"
+        }
+      }
+    },
+    "quickLinks": {
+      "items": {
+        "news": {
+          "alt": "Habari",
+          "title": "HABARI",
+          "body": "Pata taarifa kuhusu maamuzi na matukio muhimu.",
+          "action": "Soma"
+        },
+        "excerpts": {
+          "alt": "Dondoo",
+          "title": "DONDoo ZA ORODHA",
+          "body": "Angalia nyakati za kusikilizwa na kesi zinazoendelea.",
+          "action": "Jifunze Zaidi"
+        },
+        "report": {
+          "alt": "Ripoti",
+          "title": "RIPOTI",
+          "body": "Ripoti vitendo vya kutiliwa shaka au kinyume cha sheria kwa usalama.",
+          "action": "Wasilisha Ripoti"
+        },
+        "appointment": {
+          "alt": "Weka miadi",
+          "title": "WEKA MIADI",
+          "body": "Panga mashauriano na maofisa wa mahakama.",
+          "action": "Weka Sasa"
+        }
+      }
+    },
+    "keyFacts": {
+      "title": "Taarifa Muhimu",
+      "subtitle": "Kiasi cha kesi, muda wa uchakataji, na mchanganyiko wa maamuzi kwa muhtasari.",
+      "cards": {
+        "volume": {
+          "title": "Kiasi cha Kesi",
+          "note": "Miezi 6 iliyopita",
+          "aria": "Kiasi cha kesi kwa mwezi"
+        },
+        "processing": {
+          "title": "Muda wa Uchakataji",
+          "note": "Siku za wastani",
+          "aria": "Wastani wa muda wa uchakataji kwa robo mwaka"
+        },
+        "decisions": {
+          "title": "Maamuzi kwa Aina",
+          "note": "Mwaka huu",
+          "aria": "Maamuzi kwa aina"
+        }
+      }
+    },
+    "offer": {
+      "title": "TUNACHOTOA",
+      "subtitle": "Tunatoa suluhisho za kisheria zinazolengwa mahitaji yako ili kuhakikisha haki zako zinalindwa na haki inatendeka.",
+      "cards": {
+        "1": {
+          "title": "Mamlaka ya Juu ya Mahakama",
+          "body": "Kama mahakama ya juu katika mfumo wa kawaida wa mahakama, Baraza la Serikali huhakikisha tafsiri na utekelezaji wa sheria kwa usawa katika Jamhuri ya Kidemokrasia ya Kongo."
+        },
+        "2": {
+          "title": "Uthabiti wa Kisheria",
+          "body": "Kupitia maamuzi na uamuzi wa kesi, tunaweka misingi ya kisheria inayowaongoza mahakama za chini na kuhakikisha uthabiti katika utekelezaji wa haki."
+        },
+        "3": {
+          "title": "Ubora wa Mahakama",
+          "body": "Mahakimu na washauri wetu huchaguliwa kwa misingi ya uwezo, kuhakikisha viwango vya juu vya utaalamu wa kisheria, uadilifu, na kujitolea kwa haki."
+        },
+        "4": {
+          "title": "Ushirikiano wa Kimataifa",
+          "body": "Tunashiriki kikamilifu katika mazungumzo na taasisi za kimataifa za mahakama na kushirikiana na mahakama za Kifaransa na Afrika."
+        }
+      }
+    },
+    "expertise": {
+      "title": "MAENEO YA UTAALAMU",
+      "subtitle": "BARAZA LA SERIKALI linatumia mamlaka katika masuala mbalimbali ya kisheria kama mahakama kuu ya mfumo wa kawaida wa mahakama.",
+      "stats": {
+        "domains": {
+          "value": "6",
+          "label": "maeneo"
+        },
+        "decisions": {
+          "value": "120+",
+          "label": "maamuzi/mwaka"
+        },
+        "magistrates": {
+          "value": "30+",
+          "label": "mahakimu"
+        }
+      },
+      "cta": "Tazama maelezo",
+      "areas": {
+        "civil": {
+          "title": "Sheria ya Kiraia na Biashara",
+          "desc": "Mikataba, wajibu, na masuala ya mali kote nchini.",
+          "items": {
+            "1": "Rufaa kutoka Mahakama za Rufaa",
+            "2": "Migogoro ya kibiashara na mikataba",
+            "3": "Masuala ya mali na urithi"
+          }
+        },
+        "family": {
+          "title": "Sheria ya Familia",
+          "desc": "Kulinda haki za familia na kutatua migogoro nyeti.",
+          "items": {
+            "1": "Rufaa za ndoa na talaka",
+            "2": "Migogoro ya uangalizi wa watoto",
+            "3": "Masuala ya mirathi"
+          }
+        },
+        "public": {
+          "title": "Sheria ya Umma",
+          "desc": "Uangalizi wa utendaji wa umma na ulinzi wa katiba.",
+          "items": {
+            "1": "Kesi za marupurupu ya mamlaka",
+            "2": "Mashtaka dhidi ya viongozi wa juu",
+            "3": "Masuala ya katiba"
+          }
+        },
+        "labor": {
+          "title": "Ajira na Kazi",
+          "desc": "Migogoro ya ajira na ulinzi wa haki za wafanyakazi.",
+          "items": {
+            "1": "Rufaa za migogoro ya ajira",
+            "2": "Masuala ya mikataba ya ajira",
+            "3": "Ulinzi wa haki za wafanyakazi"
+          }
+        },
+        "criminal": {
+          "title": "Sheria ya Jinai",
+          "desc": "Mapitio ya maamuzi ya jinai na ulinzi wa taratibu.",
+          "items": {
+            "1": "Rufaa za jinai kwa Baraza la Serikali",
+            "2": "Mapitio ya makosa ya utaratibu",
+            "3": "Matumizi ya sheria ya jinai"
+          }
+        },
+        "property": {
+          "title": "Haki za Mali",
+          "desc": "Umiliki wa ardhi, mali isiyohamishika, na shughuli za mali.",
+          "items": {
+            "1": "Migogoro ya mali isiyohamishika",
+            "2": "Masuala ya umiliki wa ardhi",
+            "3": "Miamala ya mali"
+          }
+        }
+      }
+    },
+    "contact": {
+      "address": {
+        "title": "Anwani ya Ofisi",
+        "body": "7639, makutano ya Pumbu na Batonniers katika kata ya Gombe/Kinshasa-RDC"
+      },
+      "phone": {
+        "title": "Namba ya Ofisi",
+        "body": "+243 000000000"
+      },
+      "email": {
+        "title": "Barua pepe ya Ofisi",
+        "body": "info@conseildetatrdc.com"
+      }
+    },
+    "president": {
+      "imageAlt": "Rais",
+      "cta": "Jifunze Zaidi",
+      "slides": {
+        "1": {
+          "title": "RAIS WA KWANZA WA BARAZA LA SERIKALI",
+          "paragraphs": {
+            "1": "Kama mshiriki wa tatu katika Baraza Kuu la Mahakama la RDC, Rais wa Kwanza wa BARAZA LA SERIKALI, Brigitte Nsensele Wa Nsensele, alitoa damu Alhamisi, Februari 27, kwa mshikamano na waathiriwa wa mashambulizi ya Rwanda mashariki mwa nchi.",
+            "2": "Kwa kila raia wa kidemokrasia wa Kongo, kuchangia juhudi za vita ni wajibu wa kiraia. Mahakama si tofauti.",
+            "3": "Kwa zaidi ya miongo mitatu, RDC imekumbwa na mashambulizi ya Rwanda na makundi mengine yenye silaha, na kusababisha vifo vya mamilioni, maelfu ya wakimbizi, na hali mbaya ya kibinadamu."
+          }
+        },
+        "2": {
+          "title": "UONGOZI WA MAHAKAMA NA MAGEUZI",
+          "paragraphs": {
+            "1": "Chini ya uongozi wa Rais wa Kwanza, BARAZA LA SERIKALI limeanza mageuzi ya kina ya mahakama ili kuifanya ya kisasa.",
+            "2": "Mageuzi haya yanajumuisha usambazaji wa rekodi za mahakama kidijitali, utekelezaji wa mifumo ya usimamizi wa kesi, na programu za mafunzo kwa majaji na wafanyakazi wa mahakama.",
+            "3": "Mipango hii inaonyesha dhamira ya Mahakama ya uwazi, ufanisi, na uwajibikaji katika utoaji wa haki."
+          }
+        },
+        "3": {
+          "title": "USHIRIKIANO WA KIMATAIFA",
+          "paragraphs": {
+            "1": "BARAZA LA SERIKALI hushirikiana na taasisi za kimataifa za mahakama na kushiriki katika majukwaa ya kimataifa kubadilishana uzoefu.",
+            "2": "Kupitia ushirikiano na mahakama za Ufaransa, Ubelgiji, na nchi nyingine za Kifaransa, Mahakama inahakikisha inabaki mbele katika maendeleo ya kisheria.",
+            "3": "Ushirikiano huu wa kimataifa unaimarisha mfumo wa mahakama wa RDC na uwezo wake wa kutoa haki kwa viwango vya kimataifa."
+          }
+        }
+      }
+    },
+    "newsletter": {
+      "title": "HABARI NA MAKALA",
+      "readMore": "Soma zaidi",
+      "cta": "Jifunze Zaidi",
+      "items": {
+        "1": {
+          "alt": "Rufaa",
+          "date": "15 Nov 2025 | Ripoti ya Uamuzi",
+          "title": "Kuongoza Rufaa: Ushauri wa Kisheria kwa Mchakato Mzuri"
+        },
+        "2": {
+          "alt": "Mashauri ya Baraza la Serikali",
+          "date": "22 Okt 2025 | Taarifa ya Mahakama",
+          "title": "Mambo Muhimu katika Mashauri ya Baraza la Serikali"
+        },
+        "3": {
+          "alt": "Kitaratibu",
+          "date": "18 Okt 2025 | Uamuzi wa Mahakama",
+          "title": "Mabadiliko ya Hivi Karibuni katika Sheria ya Taratibu"
+        },
+        "4": {
+          "alt": "Haki",
+          "date": "12 Okt 2025 | Taarifa ya Kisheria",
+          "title": "Kuelewa Haki Zako Katika Mchakato wa Rufaa"
+        }
+      }
+    }
+  },
+  "about": {
+    "hero": {
+      "title": "KUELEWA MAHAKAMA YA JUU<br>YA MFUMO WA MAHAKAMA"
+    },
+    "intro": {
+      "title": "KUELEWA MAHAKAMA YA JUU<br>YA MFUMO WA MAHAKAMA",
+      "body": "Kifungu 151 aya ya 1 ya Katiba ya RDC ya Februari 18, 2006 kinaanzisha mfumo wa mahakama za utawala unaojumuisha mahakama na mabaraza ya utawala chini ya usimamizi wa Baraza la Serikali. Kifungu 82 cha Sheria ya Kikaboni Na. 13/011-B ya Aprili 11, 2013 kuhusu mpangilio, muundo na uendeshaji wa mahakama za utawala kinasema kuwa kuna Baraza la Serikali lenye makao ya kawaida katika mji mkuu wa Jamhuri ya Kidemokrasia ya Kongo. Mamlaka yake ya kisheria yanaweza kutekelezwa mahali pengine. Kihistoria, Baraza la Serikali katika wasilisho hili fupi linaeleza historia na mizizi yake katika taasisi yetu ya mahakama. Liliundwa kwa Amri ya Sheria tarehe 31 Januari 1968, na Baraza la Serikali limeacha alama yake kwa zaidi ya karne. Ni miaka nane baada ya uhuru mwaka 1960 ndipo nchi ilipoanzisha Baraza hili la Serikali kusimamia rufaa za utawala. Ni baada ya karne moja mwaka 2015 ndipo Mahakama Kuu ya Utawala. Mahakama hii ilisimama katika muktadha wa Katiba ya 2006 na kuanzishwa kwake, ambayo ilitangaza batili masharti yote yanayokinzana na ikaweka katika Kifungu 223 kuwa hukumu na amri zilizotolewa kabla ya kutangazwa kwa Katiba hii zitaendelea kutekelezwa. Mahakama Kuu ya Utawala ilisimama kabisa tarehe 11 Aprili 2013 wakati Sheria ya Kikaboni Na. 13/011-B ya Aprili 11, 2013 ilipoanzisha mpangilio, muundo na uendeshaji wa mahakama za utawala. Kwa mujibu wa Kifungu 151 aya ya 3 ya Katiba kinachoweka mamlaka ya udhibiti wa utekelezaji wa mamlaka ya zamani ya Mahakama Kuu ya Utawala, mahakama na mabaraza ya utawala yanaunda mfumo wa mahakama za utawala wa Kongo."
+    },
+    "legal": {
+      "title": "FIKIA MAANDIKO MAKUU YA KISHERIA NA KIKANUNI<br>YA BARAZA LA SERIKALI",
+      "docs": {
+        "1": "Sheria ya Kikaboni N° 13/011-B ya Aprili 11, 2013 kuhusu mpangilio, muundo na uendeshaji wa mamlaka za kawaida",
+        "2": "Amri N° 13/046 ya Septemba 25, 2013 kuhusu vyumba vya Baraza la Serikali",
+        "3": "Amri ya Sheria N° 13/018 kuhusu malipo na posho za mahakimu"
+      },
+      "detail": {
+        "title": "Sheria ya Kikaboni N° 13/011-B ya Aprili 11, 2013 kuhusu mpangilio, muundo na uendeshaji wa mahakama za utawala",
+        "paragraph1": "Maudhui ya Sheria N° 13/011-B ya Aprili 11, 2013 kuhusu mpangilio, muundo na uendeshaji wa mahakama za utawala yamewekwa katika muktadha wa jumla wa mahakama za utawala.",
+        "paragraph2": "Kila kifungu cha Sheria kimeandikwa katika vifungu muhimu vya Kichwa cha I kuhusu mahakimu:",
+        "list1": {
+          "1": "SURA I: Masharti ya jumla",
+          "2": "SURA II: Uteuzi na kuapishwa kwa mahakimu na makarani",
+          "3": "SURA III: Muktadha wa kisheria",
+          "4": "SURA IV: Mamlaka, dhamana na mipaka ya Mahakimu",
+          "5": "SURA V: Nidhamu"
+        },
+        "paragraph3": "Kichwa cha II cha Baraza la Serikali kuanzia Kifungu 81 hadi 95 kinaeleza kila kifungu kuhusu Baraza la Serikali kwa sura zifuatazo:",
+        "list2": {
+          "1": "SURA I: Mfumo wa kisheria",
+          "2": "SURA II: Uwekaji na muundo wa Baraza la Serikali",
+          "3": "SURA III: Miundo tofauti, uendeshaji na wafanyakazi wa Baraza la Serikali"
+        },
+        "paragraph4": "Muundo katika kifungu 82 unaeleza jinsi Baraza la Serikali linavyoundwa na kuorodhesha wafanyakazi wanaosaidia mahakimu na wasaidizi katika kutimiza jukumu la utawala.",
+        "paragraph5": "Kifungu 83 kinaeleza mamlaka za Baraza la Serikali, mojawapo ni: Rufaa katika masuala ya utawala; kinatumia nidhamu kwa majaji na wasaidizi wa mahakama katika mamlaka yake; kinapokea kiapo cha mahakimu na maofisa wa mahakama walio chini ya mamlaka ya utawala; kinatoa ushauri wa kisheria mbele ya majaji walioteuliwa au mamlaka ya mahakama. Kifungu 84 kinaeleza muundo wa sehemu mbalimbali na uundaji wa Baraza la Serikali; Kifungu 88 kinaeleza mamlaka katika majadiliano ya chumba, kila chumba huunda chombo cha mahakama kwa utekelezaji wa jukumu la Baraza la Serikali ili kukaa katika mamlaka mbalimbali tu ikiwa kigezo cha idadi kimefikiwa.",
+        "paragraph6": "Idadi inayotakiwa katika kifungu hicho inafikiwa pale vyumba vyote vinapoundwa kama ifuatavyo: rais au makamu wa rais wa chumba na mahakimu wengine wawili, pamoja na mshauri wa kisheria na Karani.",
+        "paragraph7": "Kuhusu idadi ya mahakama katika Kifungu 89, kila chumba kinaweza kuunda chombo cha mahakama kwa utekelezaji wa jukumu la Baraza la Serikali na kukaa kwa mamlaka mbalimbali tu ikiwa idadi inayotakiwa imefikiwa.",
+        "paragraph8": "Idadi inayotakiwa inafikiwa pale vyumba vyote vinapoundwa kama ifuatavyo: rais au makamu wa rais wa chumba na mahakimu wengine wawili, pamoja na mshauri wa kisheria na Karani. Pamoja na mhusika anayehusika aliyeketi katika utaratibu akiwa na msaada wake ikihitajika na wakati wa majadiliano ya faragha, kwa ushiriki wa Mwanasheria Mkuu katika majadiliano, na ushiriki wa Karani unaofanywa kwa maelekezo ya shauri.",
+        "paragraph9": "Baada ya kusoma na kuelewa maandiko ya kisheria yaliyoelezwa kwa mamlaka hizi katika jukwaa hili, unaweza kuomba huduma zao moja kwa moja kwa kuwasiliana nasi kwa barua pepe au kwa simu na hivyo kuzipokea."
+      }
+    }
+  },
+  "reforms": {
+    "hero": {
+      "title": "MAGEUZI<br>YANAYOPENDEKEZWA",
+      "body": "Kufanya mfumo wa mahakama wa kisasa kupitia mageuzi ya kimkakati yanayoongeza ufanisi, uwazi, na upatikanaji wa haki kwa raia wote wa Kongo."
+    },
+    "building": {
+      "tag": "UANZISHAJI UPYA WA MAHAKAMA",
+      "title": "KUPANGA MFUMO IMARA ZAIDI WA HAKI",
+      "body": "Baada ya Katiba ya 2006, BARAZA LA SERIKALI lilianza mageuzi ya kina ili kuimarisha uhuru wa mahakama, kuboresha upatikanaji wa haki, na kuendana na viwango vya kimataifa. Mipango hii inalenga kuimarisha taasisi, mabadiliko ya kidijitali, na kujenga uwezo."
+    },
+    "initiatives": {
+      "tag": "RAMANI YA MABADILIKO",
+      "title": "MIPANGO YA KIMKAKATI YA MAGEUZI",
+      "body": "Mpango wa hatua tano wa kisasa wa mfumo wetu wa mahakama, kuhakikisha ubora katika kila hatua ya mabadiliko.",
+      "badges": {
+        "critical": "Kipaumbele Kikuu",
+        "high": "Kipaumbele cha Juu",
+        "medium": "Kipaumbele cha Kati"
+      },
+      "steps": {
+        "1": {
+          "title": "Uhuru wa Taasisi",
+          "body": "Kuimarisha uhuru wa mahakama kupitia dhamana za katiba na uhuru wa kifedha."
+        },
+        "2": {
+          "title": "Upatikanaji wa Haki",
+          "body": "Kupanua huduma za msaada wa kisheria na kuanzisha vituo vya huduma za haki nchini kote."
+        },
+        "3": {
+          "title": "Ushirikiano wa Kimataifa",
+          "body": "Kuimarisha ushirikiano na taasisi za kimataifa za mahakama kwa kubadilishana maarifa."
+        },
+        "4": {
+          "title": "Mabadiliko ya Kidijitali",
+          "body": "Kutekeleza mifumo ya kisasa ya usimamizi wa kesi na hifadhidata za maamuzi mtandaoni."
+        },
+        "5": {
+          "title": "Ujenzi wa Uwezo",
+          "body": "Mafunzo endelevu kwa mahakimu na uwezo wa utafiti wa kisheria wa hali ya juu."
+        }
+      }
+    },
+    "stakeholders": {
+      "title": "WAHUSIKA WAKUU",
+      "subtitle": "UONGOZI WA MAGEUZI",
+      "roles": {
+        "president": "Rais",
+        "vicePresident": "Makamu wa Rais",
+        "chiefMagistrate": "Hakimu Mkuu",
+        "internationalRelations": "Mahusiano ya Kimataifa"
+      }
+    }
+  },
+  "international": {
+    "hero": {
+      "title": "MAHUSIANO YA<br>KIMATAIFA",
+      "body": "Katika muktadha wa kimataifa wa sheria na haki, BARAZA LA SERIKALI la Jamhuri ya Kidemokrasia ya Kongo haliko peke yake. Linashiriki kikamilifu katika mazungumzo ya majaji kwa kudumisha kiwango cha juu cha ushirikiano ndani ya mfumo wa Chama cha Mahakama Kuu za nchi zinazotumia Kifaransa (AHJUCAF) na Chama cha Mahakama Kuu za Kifaransa za Afrika (AA-HJF)."
+    },
+    "stats": {
+      "associations": "Mashirika Makuu ya Mahakama ya Kimataifa",
+      "partners": "Nchi Washirika na Mahakama Kuu",
+      "exchanges": "Mikutano na Mabadilishano ya Mahakama kwa Mwaka"
+    },
+    "networks": {
+      "title": "MITANDAO YA MAHAKAMA YA KIMATAIFA",
+      "subtitle": "Mahakama inahifadhi uhusiano wa karibu na vyama vikuu vya mahakama za Kifaransa na Afrika",
+      "ahjucaf": {
+        "name": "Chama cha Mahakama Kuu za Nchi Zinazotumia Kifaransa",
+        "body": "Jukwaa la kubadilishana na ushirikiano kati ya mahakama kuu za Kifaransa, kuwezesha mazungumzo ya majaji, ushirikishaji wa maamuzi, na kuimarisha uwezo wa taasisi kote duniani."
+      },
+      "aahjf": {
+        "name": "Chama cha Mahakama Kuu za Kifaransa za Afrika",
+        "body": "Jukwaa la kubadilishana na ushirikiano kati ya mahakama kuu za Kifaransa, kuwezesha mazungumzo ya majaji, ushirikishaji wa maamuzi, na kuimarisha uwezo wa taasisi kote duniani."
+      }
+    },
+    "domains": {
+      "title": "MAENEO YA USHIRIKIANO WA KIMATAIFA",
+      "subtitle": "Ushiriki wetu wa kimataifa unaonekana katika mipango mbalimbali ya kuimarisha ubora wa haki na utawala wa sheria",
+      "dialogue": {
+        "title": "Mazungumzo ya Mahakama",
+        "body": "Mabadilishano ya mara kwa mara kuhusu maamuzi, mbinu bora, na changamoto za pamoja zinazokabili mahakama kuu, zikikuza ujifunzaji wa pamoja na tafsiri ya kisheria iliyoratibiwa."
+      },
+      "assistance": {
+        "title": "Msaada wa Kiufundi",
+        "body": "Ushirikiano wa kiufundi kwa ajili ya kufanya mfumo wa mahakama wa kisasa, kidijitali, na kuboresha upatikanaji wa haki kupitia uzoefu wa pamoja."
+      },
+      "capacity": {
+        "title": "Ujenzi wa Uwezo",
+        "body": "Programu za mafunzo, semina, na warsha za kuimarisha ujuzi wa mahakimu na wafanyakazi wa mahakama kupitia utaalamu wa kimataifa."
+      },
+      "forums": {
+        "title": "Majukwaa ya Kimataifa",
+        "body": "Ushiriki hai katika majukwaa ya kimataifa kuchangia maendeleo ya sheria za kimataifa na za kikanda pamoja na viwango vya mahakama."
+      }
+    },
+    "collaboration": {
+      "title": "Unapenda Ushirikiano?",
+      "body": "Tuko tayari kwa ushirikiano wa taasisi na mabadilishano na mamlaka nyingine za kitaifa na kimataifa zinazolenga kuimarisha mifumo ya haki.",
+      "cta": "WASILIANE NASI"
+    }
+  },
+  "audiences": {
+    "hero": {
+      "title": "MAKIKAO<br>NA DONDoo ZA KUSIKILIZWA",
+      "body": "Fikia ratiba na dondoo za makikao na maamuzi ya hivi karibuni."
+    },
+    "understanding": {
+      "title": "KUELEWA MAKIKAO",
+      "body": "Pata mwongozo kuhusu jinsi makikao yanavyopangwa na namna ya kushauriana na orodha za hivi karibuni."
+    },
+    "metrics": {
+      "title": "VIASHIRIA VYA MAKIKAO",
+      "subtitle": "Kiasi cha makikao kwa mwezi na matokeo kwa muda.",
+      "volume": {
+        "title": "Kiasi cha makikao kwa mwezi",
+        "note": "Miezi 6 iliyopita",
+        "aria": "Kiasi cha makikao kwa mwezi"
+      },
+      "outcomes": {
+        "title": "Matokeo kwa muda",
+        "note": "Mchanganyiko wa maamuzi",
+        "aria": "Matokeo ya makikao kwa muda"
+      }
+    },
+    "recent": {
+      "title": "DONDoo ZA ORODHA ZA KARIBUNI",
+      "subtitle": "DONDoo ZA KARIBUNI ZA KUSIKILIZWA"
+    },
+    "documents": {
+      "civil": {
+        "label": "Kiraia",
+        "title": "Dondoo za Makikao ya Chumba cha Kiraia"
+      },
+      "criminal": {
+        "label": "Jinai",
+        "title": "Dondoo za Makikao ya Chumba cha Jinai"
+      },
+      "social": {
+        "label": "Kijamii",
+        "title": "Dondoo za Makikao ya Chumba cha Kijamii"
+      },
+      "general": {
+        "label": "Jumla",
+        "title": "Dondoo za Makikao ya Chumba cha Jumla"
+      }
+    },
+    "actions": {
+      "downloadPdf": "PAKUA PDF"
+    },
+    "assistance": {
+      "title": "Unahitaji Msaada?",
+      "body": "Wasiliana na Baraza la Serikali kwa msaada wa kupata nyaraka au ratiba.",
+      "cta": "WASILIANE NASI"
+    }
+  },
+  "organization": {
+    "hero": {
+      "title": "MUUNDO<br>WA BARAZA LA SERIKALI"
+    },
+    "firstPresident": {
+      "alt": "Rais wa Kwanza",
+      "title": "RAIS WA KWANZA",
+      "body": "Rais wa Kwanza anaongoza Baraza la Serikali, anaongoza vikao vyake, na kuhakikisha taasisi inafanya kazi ipasavyo."
+    },
+    "seniorLabel": "MAHAKIMU WAKUU",
+    "chart": {
+      "title": "CHATI YA MUUNDO",
+      "subtitle": "Muhtasari wa muundo wa uongozi na vitengo vya msingi vya Baraza la Serikali.",
+      "interactiveTitle": "CHATI YA MUUNDO INAYOINGILIKA",
+      "interactiveSubtitle": "Chunguza ngazi na muundo wa taarifa.",
+      "aria": "Chati ya muundo inayoweza kuingilika",
+      "peopleTitle": "UONGOZI KWA MAJINA",
+      "peopleSubtitle": "Majina ya Rais wa Kwanza, Marais, na Washauri.",
+      "peopleFirstPresidentName": "Brigitte Nsensele Wa Nsensele",
+      "roles": {
+        "firstPresident": "Rais wa Kwanza",
+        "president": "Rais",
+        "advisor": "Mshauri"
+      },
+      "nodes": {
+        "firstPresident": "Rais wa Kwanza",
+        "plenary": "Mkutano Mkuu",
+        "councilOffice": "Ofisi ya Baraza",
+        "registry": "Usajili na Kumbukumbu",
+        "civilChamber": "Chumba cha Kiraia",
+        "criminalChamber": "Chumba cha Jinai",
+        "commercialChamber": "Chumba cha Biashara",
+        "socialChamber": "Chumba cha Kijamii"
+      }
+    },
+    "filters": {
+      "searchLabel": "Tafuta wanachama",
+      "searchPlaceholder": "Tafuta kwa jina au cheo",
+      "roleLabel": "Wajibu",
+      "all": "Wote",
+      "presidents": "Marais",
+      "advisors": "Washauri",
+      "summary": "Inaonyesha marais {{presidents}} na washauri {{advisors}}"
+    },
+    "presidents": {
+      "title": "MARAIS",
+      "empty": "Hakuna marais wanaolingana na utafutaji wako."
+    },
+    "advisors": {
+      "title": "WASHAURI",
+      "empty": "Hakuna washauri wanaolingana na utafutaji wako."
+    },
+    "members": {
+      "learnMore": "Jifunze Zaidi",
+      "loadMore": "Pakua zaidi"
+    },
+    "services": {
+      "overviewTitle": "MUHTASARI WA HUDUMA",
+      "learnMore": "Jifunze Zaidi",
+      "registry": {
+        "title": "Usajili",
+        "body": "Fikia uwasilishaji, hali ya kesi, na rekodi rasmi."
+      },
+      "docs": {
+        "title": "Nyaraka",
+        "body": "Pata fomu, maandiko ya kisheria, na miongozo ya taratibu."
+      },
+      "tv": {
+        "title": "TV ya Baraza",
+        "body": "Tazama makikao, matangazo, na taarifa."
+      },
+      "title": "HUDUMA ZETU",
+      "subtitle": "Chunguza idara na ofisi zinazounga mkono kazi ya Baraza la Serikali.",
+      "divisions": {
+        "title": "Vitengo",
+        "rooms": "Kumbi na vyumba",
+        "council": "Ofisi ya baraza",
+        "registers": "Usajili na kumbukumbu"
+      },
+      "rooms": {
+        "title": "Kumbi",
+        "body": "Kumbi za utawala na mahakama zinazopanga majadiliano na makikao."
+      },
+      "council": {
+        "title": "Baraza",
+        "body": "Ofisi inayoratibu sera na utawala wa taasisi."
+      },
+      "registers": {
+        "title": "Usajili",
+        "body": "Vitengo vinavyosimamia rekodi, kumbukumbu, na uwasilishaji rasmi."
+      },
+      "details": {
+        "chambers": {
+          "title": "Vyumba",
+          "item1": "Chumba cha Kiraia",
+          "item2": "Chumba cha Jinai",
+          "item3": "Chumba cha Biashara",
+          "item4": "Chumba cha Kijamii",
+          "body1": "Kila chumba hushughulikia masuala maalum ndani ya mamlaka yake.",
+          "body2": "Vyumba hukaa katika miundo kulingana na sheria inayotumika."
+        },
+        "rooms": {
+          "title": "Kumbi na Vyumba",
+          "body1": "Kumbi hupanga makikao na kuandaa faili za kesi.",
+          "body2": "Huhakikisha ufuatiliaji wa taratibu na ratiba.",
+          "body3": "Husaidia majadiliano kwa uratibu wa utawala.",
+          "body4": "Huhakikisha mtiririko mzuri wa kesi hadi maamuzi ya mwisho."
+        },
+        "council": {
+          "title": "Ofisi ya Baraza",
+          "body1": "Ofisi ya Baraza huhakikisha uratibu wa kimkakati.",
+          "body2": "Huandaa vikao vya mkutano mkuu na mwelekeo wa sera.",
+          "body3": "Husimamia utekelezaji wa maamuzi na mageuzi.",
+          "body4": "Husaidia mawasiliano na mahusiano ya taasisi."
+        },
+        "registers": {
+          "title": "Usajili na Kumbukumbu",
+          "body1": "Usajili hupokea na kurekodi uwasilishaji na maamuzi.",
+          "body2": "Huhifadhi kumbukumbu kwa muda mrefu.",
+          "body3": "Hutoa nakala zilizoidhinishwa kwa ombi.",
+          "body4": "Husimamia uorodheshaji na urejeshaji wa faili za kesi.",
+          "body5": "Huhakikisha usiri na uadilifu wa rekodi."
+        }
+      }
+    }
+  }
+}
