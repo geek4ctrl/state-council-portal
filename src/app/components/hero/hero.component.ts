@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterLink } from '@angular/router';
+import { I18nPipe } from '../../i18n/i18n.pipe';
 
 @Component({
   selector: 'app-hero',
   standalone: true,
-  imports: [CommonModule, RouterLink],
+  imports: [CommonModule, RouterLink, I18nPipe],
   templateUrl: './hero.component.html',
   styleUrl: './hero.component.css'
 })
@@ -15,7 +16,7 @@ export class HeroComponent {
   slides = [
     {
       category: 'HOME OF LAW & ORDER',
-      title: 'DRC: JUDICIAL YEAR BEGINS AT THE STATE COUNCIL FOR THE 2025-2026 TERM',
+      title: 'hero.titleOpening2025',
       description: 'This video covers the formal opening of the judicial year for 2025-2026. In the presence of President Félix Tshisekedi, counselors and magistrates resumed their duties after the judicial recess, OPENING OF THE JUDICIAL YEAR AT THE STATE COUNCIL — YouTube',
       link: '',
       buttonText: 'Watch Live Proceedings on Youtube',
