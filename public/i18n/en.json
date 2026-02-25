@@ -30,6 +30,9 @@
       "bookAppointment": "Book Appointment"
     }
   },
+  "hero": {
+    "titleOpening2025": "THE JUDICIAL YEAR OPENS AT THE STATE COUNCIL FOR THE 2025 - 2026 TERM"
+  },
   "mobileNav": {
     "home": "Home",
     "organization": "Org",
@@ -234,7 +237,7 @@
     "hero": {
       "slides": {
         "1": {
-          "title": "DRC: JUDICIAL YEAR BEGINS AT THE STATE COUNCIL FOR THE 2025-2026 TERM",
+          "title": "THE JUDICIAL YEAR OPENS AT THE STATE COUNCIL FOR THE 2025 - 2026 TERM",
           "subtitle": "HOME OF LAW & ORDER",
           "body": "This video covers the formal opening of the judicial year for 2025-2026. In the presence of President Felix Tshisekedi, the session brought together senior judges and legal officials.",
           "cta": "Watch Live Proceeding on Youtube"

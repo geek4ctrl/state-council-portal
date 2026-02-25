@@ -30,6 +30,9 @@
       "bookAppointment": "Prendre rendez-vous"
     }
   },
+  "hero": {
+    "titleOpening2025": "L'ANNEE JUDICIAIRE S'OUVRE AU CONSEIL D'ETAT POUR L'EXERCISE 2025 - 2026"
+  },
   "mobileNav": {
     "home": "Accueil",
     "organization": "Organisation",
@@ -234,7 +237,7 @@
     "hero": {
       "slides": {
         "1": {
-          "title": "RDC : L'ANNÉE JUDICIAIRE S'OUVRE AU CONSEIL D'ÉTAT POUR LE TERME 2025-2026",
+          "title": "L'ANNÉE JUDICIAIRE S'OUVRE AU CONSEIL D'ÉTAT POUR L'EXERCICE 2025 - 2026",
           "subtitle": "MAISON DU DROIT ET DE L'ORDRE",
           "body": "Cette vidéo couvre l'ouverture officielle de l'année judiciaire 2025-2026. En présence du Président Felix Tshisekedi, la séance a réuni des hauts magistrats et des responsables juridiques.",
           "cta": "Regarder la séance en direct sur Youtube"
