@@ -3,7 +3,7 @@
     "siteName": "State Council of the DRC",
     "contact": {
       "phone": "+ 243 (21) 00000000",
-      "hours": "MONDAY - FRIDAY 7:30AM - 6:30PM"
+      "hours": "MONDAY - FRIDAY 8:30AM - 4:00PM"
     },
     "social": {
       "facebook": "Facebook",
@@ -29,6 +29,9 @@
       "news": "NEWS",
       "bookAppointment": "Book Appointment"
     }
+  },
+  "hero": {
+    "titleOpening2025": "THE JUDICIAL YEAR OPENS AT THE STATE COUNCIL FOR THE 2025 - 2026 TERM"
   },
   "mobileNav": {
     "home": "Home",
@@ -234,7 +237,7 @@
     "hero": {
       "slides": {
         "1": {
-          "title": "DRC: JUDICIAL YEAR BEGINS AT THE STATE COUNCIL FOR THE 2025-2026 TERM",
+          "title": "THE JUDICIAL YEAR OPENS AT THE STATE COUNCIL FOR THE 2025 - 2026 TERM",
           "subtitle": "HOME OF LAW & ORDER",
           "body": "This video covers the formal opening of the judicial year for 2025-2026. In the presence of President Felix Tshisekedi, the session brought together senior judges and legal officials.",
           "cta": "Watch Live Proceeding on Youtube"
