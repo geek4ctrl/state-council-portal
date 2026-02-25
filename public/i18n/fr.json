@@ -513,6 +513,7 @@
       "title": "ACTUALITÉS & ARTICLES",
       "readMore": "Lire la suite",
       "cta": "En savoir plus",
+      "empty": "Aucun article n'a été publié",
       "items": {
         "1": {
           "alt": "Recours",

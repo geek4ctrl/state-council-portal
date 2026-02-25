@@ -147,11 +147,13 @@ interface PresidentSlide {
       <section class="kf-section">
         <div class="kf-bg-aura"></div>
         <div class="container">
-          <div class="sec-head">
-            <div class="sec-line anim-line"></div>
-            <h2 class="sec-title anim-up">{{ 'home.keyFacts.title' | i18n }}</h2>
+          <div class="kf-header">
+            <div class="sec-head">
+              <div class="sec-line anim-line"></div>
+              <h2 class="sec-title anim-up">{{ 'home.keyFacts.title' | i18n }}</h2>
+            </div>
+            <p class="sec-sub anim-up a-d1">{{ 'home.keyFacts.subtitle' | i18n }}</p>
           </div>
-          <p class="sec-sub anim-up a-d1">{{ 'home.keyFacts.subtitle' | i18n }}</p>
           <div class="kf-grid">
             <div
               class="kf-card tilt-card"
@@ -742,6 +744,7 @@ interface PresidentSlide {
             <div class="nl-line anim-line-c"></div>
           </div>
           <div class="nl-grid">
+            @if (newsletterPosts().length > 0) {
             <div class="nl-track">
               @for (post of newsletterPosts(); track post.id) {
                 <div
@@ -858,6 +861,11 @@ interface PresidentSlide {
                 </div>
               }
             </div>
+            } @else {
+            <div class="nl-empty">
+              <p>{{ 'home.newsletter.empty' | i18n }}</p>
+            </div>
+            }
           </div>
           <div class="nl-action">
             <a
@@ -1700,6 +1708,9 @@ interface PresidentSlide {
         position: relative;
         overflow: hidden;
       }
+      // .kf-header {
+      //   min-height: 240px;
+      // }
       .kf-bg-aura {
         position: absolute;
         top: -100px;
@@ -1715,6 +1726,7 @@ interface PresidentSlide {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 20px;
+        min-height: 360px;
       }
       .kf-card {
         background: linear-gradient(135deg, rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.5));
@@ -1731,6 +1743,7 @@ interface PresidentSlide {
         justify-content: space-between;
         gap: 12px;
         margin-bottom: 12px;
+        min-height: 3.5em;
       }
       .kf-meta h3 {
         font-size: 1rem;
@@ -1782,7 +1795,6 @@ interface PresidentSlide {
         align-items: center;
         gap: 16px;
         margin-bottom: 10px;
-        min-height: 3.2em;
       }
       .sec-head.center {
         justify-content: center;
@@ -1815,7 +1827,7 @@ interface PresidentSlide {
         line-height: 1.6;
         margin-bottom: 38px;
         max-width: 720px;
-        min-height: 3em;
+        min-height: 4em;
       }
       .sec-sub.center {
         text-align: center;
@@ -1831,15 +1843,17 @@ interface PresidentSlide {
 
       /* ━━━━━━━━━━━━━━ QUICK LINKS ━━━━━━━━━━━━━━ */
       .ql-section {
+        min-height: 130px;
         background: #ececf1;
-        padding: 28px 0;
+        padding: 20px 0;
         border-top: 1px solid rgba(255, 255, 255, 0.2);
         border-bottom: 1px solid rgba(255, 255, 255, 0.2);
       }
       .ql-row {
         display: flex;
         align-items: stretch;
-        gap: 8px;
+        gap: 6px;
+        min-height: 130px;
       }
       .ql-divider {
         width: 1px;
@@ -1848,7 +1862,7 @@ interface PresidentSlide {
       }
       .ql-card {
         flex: 1;
-        border-radius: 14px;
+        border-radius: 12px;
         overflow: hidden;
         cursor: pointer;
         perspective: 600px;
@@ -1859,10 +1873,10 @@ interface PresidentSlide {
       .flip-inner {
         width: 100%;
         height: 100%;
+        min-height: 120px;
         transform-style: preserve-3d;
         transition: transform 0.65s cubic-bezier(0.23, 1, 0.32, 1);
         position: relative;
-        min-height: 110px;
       }
       .ql-card.flipped .flip-inner {
         transform: rotateY(180deg);
@@ -1874,11 +1888,11 @@ interface PresidentSlide {
         backface-visibility: hidden;
         display: flex;
         align-items: stretch;
-        gap: 12px;
-        padding: 12px;
+        gap: 8px;
+        padding: 8px;
         background: linear-gradient(135deg, rgba(255, 255, 255, 0.55), rgba(255, 255, 255, 0.2));
         backdrop-filter: blur(12px);
-        border-radius: 14px;
+        border-radius: 12px;
       }
       .flip-back {
         transform: rotateY(180deg);
@@ -1923,9 +1937,10 @@ interface PresidentSlide {
         background: #d4a06a;
       }
       .ql-img {
-        width: 64px;
+        width: 36px;
+        height: 42px;
         flex-shrink: 0;
-        border-radius: 10px;
+        border-radius: 6px;
         overflow: hidden;
         position: relative;
       }
@@ -1950,29 +1965,29 @@ interface PresidentSlide {
         flex: 1;
         display: flex;
         flex-direction: column;
+        min-height: 4em;
       }
       .ql-info h3 {
-        font-size: 0.72rem;
+        font-size: 0.68rem;
         font-weight: 800;
         text-transform: uppercase;
         letter-spacing: 0.7px;
         color: #1a1a1a;
-        margin-bottom: 6px;
+        margin-bottom: 4px;
       }
       .ql-info p {
-        font-size: 0.75rem;
+        font-size: 0.7rem;
         color: #4b5563;
         line-height: 1.5;
-        flex: 1;
       }
       .ql-cta {
-        font-size: 0.72rem;
+        font-size: 0.68rem;
         font-weight: 700;
         color: #1F9BD9;
         display: inline-flex;
         align-items: center;
         gap: 4px;
-        margin-top: 6px;
+        margin-top: 32px;
         transition: gap 0.3s ease;
       }
       .ql-cta:hover {
@@ -2024,8 +2039,8 @@ interface PresidentSlide {
         width: 52px;
         height: 52px;
         border-radius: 14px;
-        background: linear-gradient(135deg, rgba(30, 46, 69, 0.12), rgba(30, 46, 69, 0.04));
-        color: #1e2e45;
+        background: linear-gradient(135deg, rgba(31, 155, 217, 0.2), rgba(31, 155, 217, 0.06));
+        color: #1F9BD9;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -2040,7 +2055,7 @@ interface PresidentSlide {
       }
       .tilt-card:hover .o-icon-sphere {
         transform: rotateY(360deg);
-        box-shadow: 0 8px 25px rgba(30, 46, 69, 0.2);
+        box-shadow: 0 8px 25px rgba(31, 155, 217, 0.25);
       }
       .o-icon-orbit {
         position: absolute;
@@ -2231,7 +2246,7 @@ interface PresidentSlide {
         position: absolute;
         inset: -6px;
         border-radius: inherit;
-        border: 2px solid #8b6f50;
+        border: 2px solid #1F9BD9;
         opacity: 0;
       }
       .exp-card:hover .exp-icon-pulse {
@@ -2292,23 +2307,13 @@ interface PresidentSlide {
       .exp-card:hover .cta-arr {
         transform: translateX(5px);
       }
-      .accent-civil {
-        --accent: #1f9bd9;
-      }
-      .accent-family {
-        --accent: #b8754d;
-      }
-      .accent-public {
-        --accent: #4e6a8a;
-      }
-      .accent-labor {
-        --accent: #a45858;
-      }
-      .accent-criminal {
-        --accent: #7a4d66;
-      }
+      .accent-civil,
+      .accent-family,
+      .accent-public,
+      .accent-labor,
+      .accent-criminal,
       .accent-property {
-        --accent: #7f6b4a;
+        --accent: #1F9BD9;
       }
 
       /* ━━━━━━━━━━━━━━ CONTACT ━━━━━━━━━━━━━━ */
@@ -2693,6 +2698,20 @@ interface PresidentSlide {
           transform: translateX(-50%);
         }
       }
+      .nl-empty {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 320px;
+        padding: 40px 20px;
+        text-align: center;
+      }
+      .nl-empty p {
+        font-size: 1.1rem;
+        color: #6b7280;
+        font-weight: 500;
+        margin: 0;
+      }
       .nl-card {
         flex: 0 0 270px;
         height: 380px;
@@ -2903,13 +2922,14 @@ interface PresidentSlide {
         .ql-row {
           display: grid;
           grid-template-columns: repeat(2, 1fr);
-          gap: 16px;
+          gap: 12px;
+          min-height: 220px;
         }
         .ql-divider {
           display: none;
         }
         .flip-inner {
-          min-height: 120px;
+          min-height: 110px;
         }
         .offer-section,
         .exp-section,
@@ -2981,12 +3001,16 @@ interface PresidentSlide {
         .h-dot {
           width: 38px;
         }
+        .kf-header {
+          min-height: 260px;
+        }
         .kf-grid {
           grid-template-columns: 1fr;
         }
         .ql-row {
           grid-template-columns: 1fr;
-          gap: 12px;
+          gap: 10px;
+          min-height: 360px;
         }
         .offer-grid {
           grid-template-columns: 1fr;

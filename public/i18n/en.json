@@ -513,6 +513,7 @@
       "title": "NEWS & ARTICLES",
       "readMore": "Read More",
       "cta": "Learn More",
+      "empty": "No articles have been published",
       "items": {
         "1": {
           "alt": "Appeals",
