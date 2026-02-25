@@ -33,6 +33,12 @@ export class HeaderComponent {
   private readonly i18n = inject(I18nService);
   private readonly router = inject(Router);
 
+  readonly activeLang = this.i18n.activeLang;
+  currentLanguageLabel = computed(() => {
+    const lang = this.i18n.activeLang();
+    return this.languages.find((l) => l.code === lang)?.label ?? 'English';
+  });
+
   logoSrc = computed(() => 'assets/new-logo.png');
 
   constructor() {}
@@ -121,14 +127,5 @@ export class HeaderComponent {
   setLanguage(lang: LanguageCode) {
     void this.i18n.setLanguage(lang);
     this.isLangDropdownOpen.set(false);
-  }
-
-  activeLang() {
-    return this.i18n.activeLang();
-  }
-
-  currentLanguageLabel(): string {
-    const lang = this.i18n.activeLang();
-    return this.languages.find((l) => l.code === lang)?.label ?? 'English';
   }
 }
