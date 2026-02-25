@@ -524,6 +524,7 @@ type HighchartsStatic = typeof import('highcharts');
       .page-container {
         min-height: 100vh;
         background: #0a1929;
+        overflow-x: hidden;
       }
       .hero-content-left {
         font-size: 3.5rem;
@@ -533,6 +534,8 @@ type HighchartsStatic = typeof import('highcharts');
         letter-spacing: 2px;
         color: #ffffff !important;
         text-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+        max-width: 100%;
+        word-wrap: break-word;
       }
       .container {
         max-width: 1200px;
@@ -553,6 +556,9 @@ type HighchartsStatic = typeof import('highcharts');
         justify-content: center;
         padding: 80px 20px;
         box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+      }
+      .hero-section .container {
+        width: 100%;
       }
 
       .hero-title {
@@ -657,6 +663,8 @@ type HighchartsStatic = typeof import('highcharts');
         border-bottom: 3px solid #1f9bd9;
         display: inline-block;
         position: relative;
+        max-width: 100%;
+        word-wrap: break-word;
       }
 
       .president-title-underlined::after {
@@ -892,6 +900,8 @@ type HighchartsStatic = typeof import('highcharts');
         letter-spacing: 2.5px;
         position: relative;
         padding-bottom: 20px;
+        max-width: 100%;
+        word-wrap: break-word;
       }
 
       .section-title::after {
@@ -928,6 +938,7 @@ type HighchartsStatic = typeof import('highcharts');
         transition: all 0.4s ease;
         box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
         border: 1px solid rgba(31, 155, 217, 0.15);
+        min-width: 0;
       }
 
       .member-card:hover {
@@ -985,6 +996,8 @@ type HighchartsStatic = typeof import('highcharts');
         line-height: 1.4;
         text-transform: uppercase;
         letter-spacing: 0.8px;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
       }
 
       .member-title {
@@ -1000,6 +1013,8 @@ type HighchartsStatic = typeof import('highcharts');
         color: #9ca3af;
         margin: 0 0 18px 0;
         line-height: 1.4;
+        word-break: break-word;
+        overflow-wrap: break-word;
       }
 
       .learn-more {
@@ -1008,10 +1023,14 @@ type HighchartsStatic = typeof import('highcharts');
         text-decoration: none;
         font-weight: 700;
         letter-spacing: 1.5px;
-        display: inline-block;
+        display: inline-flex;
+        align-items: center;
         transition: all 0.3s ease;
         text-transform: uppercase;
         position: relative;
+        padding: 8px 0;
+        min-height: 44px;
+        line-height: 1.4;
       }
 
       .learn-more::after {
@@ -1081,6 +1100,8 @@ type HighchartsStatic = typeof import('highcharts');
         margin: 0 0 40px 0;
         letter-spacing: 2px;
         text-transform: uppercase;
+        max-width: 100%;
+        word-wrap: break-word;
       }
 
       .services-grid {
@@ -1183,6 +1204,8 @@ type HighchartsStatic = typeof import('highcharts');
         margin: 0 0 12px 0;
         letter-spacing: 2px;
         text-transform: uppercase;
+        max-width: 100%;
+        word-wrap: break-word;
       }
 
       .section-subheading {
@@ -1213,6 +1236,7 @@ type HighchartsStatic = typeof import('highcharts');
         gap: 20px;
         align-items: flex-start;
         padding: 26px 28px;
+        min-width: 0;
         background: linear-gradient(135deg, #ffffff 0%, #e8f1f7 100%);
         border-radius: 20px;
         border: 1px solid rgba(26, 41, 66, 0.08);
@@ -1293,6 +1317,7 @@ type HighchartsStatic = typeof import('highcharts');
         gap: 20px;
         align-items: flex-start;
         padding: 28px 30px;
+        min-width: 0;
         background: linear-gradient(140deg, #ffffff 0%, #f8f4ee 100%);
         border-radius: 22px;
         border: 1px solid rgba(26, 41, 66, 0.08);
@@ -1339,6 +1364,11 @@ type HighchartsStatic = typeof import('highcharts');
         color: #333;
         margin: 0 0 15px 0;
         text-align: justify;
+      }
+      .service-text,
+      .detail-content {
+        min-width: 0;
+        overflow-wrap: break-word;
       }
 
       .reveal-on-scroll {
@@ -1404,7 +1434,8 @@ type HighchartsStatic = typeof import('highcharts');
           max-width: 1400px;
         }
 
-        .hero-title {
+        .hero-title,
+        .hero-content-left {
           font-size: 4rem;
         }
 
@@ -1448,7 +1479,8 @@ type HighchartsStatic = typeof import('highcharts');
           padding: 60px 20px;
         }
 
-        .hero-title {
+        .hero-title,
+        .hero-content-left {
           font-size: 3rem;
         }
 
@@ -1505,7 +1537,8 @@ type HighchartsStatic = typeof import('highcharts');
 
       /* Tablet Portrait (768px - 900px) */
       @media (max-width: 900px) {
-        .hero-title {
+        .hero-title,
+        .hero-content-left {
           font-size: 2.5rem;
           letter-spacing: 2px;
         }
@@ -1540,8 +1573,12 @@ type HighchartsStatic = typeof import('highcharts');
           grid-template-columns: 1fr;
         }
 
+        .service-links {
+          order: 0;
+        }
+
         .service-details {
-          order: -1;
+          order: 1;
         }
 
         .services-section {
@@ -1555,12 +1592,22 @@ type HighchartsStatic = typeof import('highcharts');
           padding: 0 15px;
         }
 
+        .section-title {
+          text-align: left;
+        }
+
+        .section-title-white,
+        .section-heading {
+          text-align: center;
+        }
+
         .hero-section {
           min-height: 280px;
           padding: 50px 15px;
         }
 
-        .hero-title {
+        .hero-title,
+        .hero-content-left {
           font-size: 2rem;
         }
 
@@ -1669,6 +1716,78 @@ type HighchartsStatic = typeof import('highcharts');
         }
       }
 
+      /* Org chart mobile adjustments */
+      @media (max-width: 768px) {
+        .org-chart-section {
+          padding: 50px 0 40px;
+        }
+        .org-chart-header,
+        .section-head-wrap {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 12px;
+        }
+        .org-chart-subtitle {
+          font-size: 0.95rem;
+          margin-bottom: 28px;
+        }
+        .org-chart-tier {
+          gap: 12px 14px;
+        }
+        .org-node {
+          padding: 12px 18px;
+          font-size: 0.7rem;
+          letter-spacing: 1px;
+        }
+        .org-chart-names .org-node {
+          padding: 10px 14px;
+          font-size: 0.65rem;
+          max-width: 100%;
+        }
+      }
+
+      @media (max-width: 600px) {
+        .org-chart-section {
+          padding: 40px 0 35px;
+        }
+        .org-chart-tier {
+          gap: 10px 12px;
+        }
+        .org-node {
+          padding: 10px 14px;
+          font-size: 0.65rem;
+        }
+        .org-chart-names .org-node {
+          padding: 8px 12px;
+          font-size: 0.6rem;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .org-chart-section {
+          padding: 35px 0 30px;
+        }
+        .org-chart-header {
+          margin-bottom: 15px;
+        }
+        .org-chart-subtitle {
+          font-size: 0.9rem;
+          margin-bottom: 22px;
+        }
+        .org-chart-tier {
+          gap: 8px 10px;
+        }
+        .org-node {
+          padding: 8px 12px;
+          font-size: 0.6rem;
+          letter-spacing: 0.8px;
+        }
+        .org-chart-names .org-node {
+          padding: 6px 10px;
+          font-size: 0.55rem;
+        }
+      }
+
       /* Mobile Portrait (480px - 600px) */
       @media (max-width: 600px) {
         .hero-section {
@@ -1676,7 +1795,8 @@ type HighchartsStatic = typeof import('highcharts');
           padding: 40px 15px;
         }
 
-        .hero-title {
+        .hero-title,
+        .hero-content-left {
           font-size: 1.7rem;
         }
 
@@ -1727,7 +1847,8 @@ type HighchartsStatic = typeof import('highcharts');
           padding: 35px 12px;
         }
 
-        .hero-title {
+        .hero-title,
+        .hero-content-left {
           font-size: 1.5rem;
           letter-spacing: 1px;
         }
@@ -1861,7 +1982,8 @@ type HighchartsStatic = typeof import('highcharts');
 
       /* Extra Small Mobile (below 375px) */
       @media (max-width: 375px) {
-        .hero-title {
+        .hero-title,
+        .hero-content-left {
           font-size: 1.3rem;
         }
 
@@ -1887,7 +2009,8 @@ type HighchartsStatic = typeof import('highcharts');
           padding: 30px 15px;
         }
 
-        .hero-title {
+        .hero-title,
+        .hero-content-left {
           font-size: 1.6rem;
         }
 
@@ -2090,6 +2213,7 @@ type HighchartsStatic = typeof import('highcharts');
         align-items: center;
         gap: 16px;
         margin-bottom: 24px;
+        flex-wrap: wrap;
       }
       .org-chart-header {
         display: flex;
