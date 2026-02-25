@@ -5,7 +5,7 @@ import { firstValueFrom, map, tap } from 'rxjs';
 export type LanguageCode = 'en' | 'fr' | 'sw' | 'ln' | 'ts' | 'kg';
 
 /** Languages that have translation files. Others fallback to English. */
-const SUPPORTED_LANGS: LanguageCode[] = ['en', 'fr', 'sw'];
+const SUPPORTED_LANGS: LanguageCode[] = ['en', 'fr', 'sw', 'ln'];
 
 @Injectable({ providedIn: 'root' })
 export class I18nService {
