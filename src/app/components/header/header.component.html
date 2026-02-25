@@ -34,7 +34,7 @@
               [attr.aria-haspopup]="true"
               [attr.aria-label]="'header.lang.label' | i18n"
               (click)="toggleLangDropdown()">
-              <app-icon name="globe" [size]="16" fill="#007FFF" stroke="none"></app-icon>
+              <app-icon name="globe" [size]="16" fill="none" stroke="#007FFF" [strokeWidth]="2"></app-icon>
               <span class="lang-dropdown-label">{{ currentLanguageLabel() }}</span>
               <app-icon name="chevron-down" [size]="14" [customClass]="isLangDropdownOpen() ? 'rotated' : ''"></app-icon>
             </button>

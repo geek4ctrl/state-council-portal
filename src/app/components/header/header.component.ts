@@ -1,4 +1,4 @@
-import { Component, inject, signal, computed } from '@angular/core';
+import { Component, inject, signal, computed, HostListener } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Router, RouterLink, RouterLinkActive } from '@angular/router';
 import { IconComponent } from '../icon/icon.component';
@@ -10,7 +10,6 @@ import { I18nService, LanguageCode } from '../../i18n/i18n.service';
   selector: 'app-header',
   imports: [CommonModule, RouterLink, RouterLinkActive, IconComponent, PreloadOnHoverDirective, I18nPipe],
   host: {
-    'document:click': 'onDocumentClick($event)',
     'document:keydown.escape': 'onEscapeKey()'
   },
   templateUrl: './header.component.html',
@@ -44,6 +43,7 @@ export class HeaderComponent {
 
   constructor() {}
 
+  @HostListener('document:click', ['$event'])
   onDocumentClick(event: MouseEvent) {
     const target = event.target as HTMLElement;
     const clickedInsideNavDropdown = target.closest('.dropdown');
