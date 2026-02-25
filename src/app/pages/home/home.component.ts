@@ -1782,6 +1782,7 @@ interface PresidentSlide {
         align-items: center;
         gap: 16px;
         margin-bottom: 10px;
+        min-height: 3.2em;
       }
       .sec-head.center {
         justify-content: center;
@@ -1814,6 +1815,7 @@ interface PresidentSlide {
         line-height: 1.6;
         margin-bottom: 38px;
         max-width: 720px;
+        min-height: 3em;
       }
       .sec-sub.center {
         text-align: center;
@@ -2511,6 +2513,7 @@ interface PresidentSlide {
         letter-spacing: 1px;
         position: relative;
         padding-bottom: 14px;
+        min-height: 2.6em;
       }
       .pres-title::after {
         content: '';
@@ -2646,6 +2649,7 @@ interface PresidentSlide {
         justify-content: center;
         gap: 36px;
         margin-bottom: 0;
+        min-height: 3em;
       }
       .nl-head h2 {
         font-size: 2.3rem;

@@ -190,21 +190,6 @@ body.menu-open .mobile-nav {
   min-height: 48px;
 }
 
-.header .main-nav .nav-content {
-  min-height: 78px;
-}
-
-/* Stabilize section heights to reduce up/down shift on language change */
-.sec-head,
-.sec-head.center {
-  min-height: 2.5rem;
-}
-
-.sec-sub,
-.sec-sub.center {
-  min-height: 2.5rem;
-}
-
 a {
   color: var(--accent-strong);
   text-decoration: none;
