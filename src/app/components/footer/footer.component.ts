@@ -61,10 +61,14 @@ import { CommonModule } from '@angular/common';
               <h3>{{ 'footer.connect.title' | i18n }}</h3>
               <ul>
                 <li>
-                  <a href="#">{{ 'footer.connect.facebook' | i18n }}</a>
+                  <a href="https://www.facebook.com/ConseilEtatRDC/" target="_blank" rel="noopener noreferrer">
+                    {{ 'footer.connect.facebook' | i18n }}
+                  </a>
                 </li>
                 <li>
-                  <a href="#">{{ 'footer.connect.twitter' | i18n }}</a>
+                  <a href="https://x.com/ConseilEtatRDC" target="_blank" rel="noopener noreferrer">
+                    {{ 'footer.connect.twitter' | i18n }}
+                  </a>
                 </li>
                 <li>
                   <a href="#">{{ 'footer.connect.instagram' | i18n }}</a>
@@ -83,14 +87,14 @@ import { CommonModule } from '@angular/common';
             <a href="#" class="privacy-link">{{ 'footer.privacy' | i18n }}</a>
             <p class="copyright">{{ 'footer.copyright' | i18n }}</p>
             <div class="social-icons">
-              <a href="#" class="social-icon">
+              <a href="https://www.facebook.com/ConseilEtatRDC/" target="_blank" rel="noopener noreferrer" class="social-icon">
                 <svg viewBox="0 0 24 24" fill="currentColor">
                   <path
                     d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"
                   />
                 </svg>
               </a>
-              <a href="#" class="social-icon">
+              <a href="https://x.com/ConseilEtatRDC" target="_blank" rel="noopener noreferrer" class="social-icon">
                 <svg viewBox="0 0 24 24" fill="currentColor">
                   <path
                     d="M22.46 6c-.85.38-1.78.64-2.75.76 1-.6 1.76-1.55 2.12-2.68-.93.55-1.96.95-3.06 1.17-.88-.94-2.13-1.53-3.51-1.53-2.66 0-4.82 2.16-4.82 4.82 0 .38.04.75.13 1.10-4-.2-7.54-2.12-9.91-5.04-.42.72-.66 1.55-.66 2.44 0 1.67.85 3.15 2.14 4.01-.79-.03-1.53-.24-2.18-.6v.06c0 2.34 1.66 4.29 3.87 4.73-.4.11-.83.17-1.27.17-.31 0-.62-.03-.92-.08.63 1.96 2.44 3.38 4.6 3.42-1.68 1.32-3.8 2.1-6.11 2.1-.4 0-.79-.02-1.17-.07 2.18 1.4 4.77 2.21 7.55 2.21 9.06 0 14-7.5 14-14 0-.21 0-.42-.02-.63.96-.69 1.8-1.56 2.46-2.55z"
