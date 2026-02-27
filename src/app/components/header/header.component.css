@@ -120,6 +120,7 @@
 .lang-dropdown-wrapper {
   position: relative;
   display: inline-flex;
+  z-index: 1102;
 }
 
 .lang-dropdown-btn {
@@ -173,7 +174,7 @@
   list-style: none;
   padding: 0.35rem 0;
   min-width: 140px;
-  z-index: 100;
+  z-index: 1103;
 }
 
 .lang-dropdown-item {
@@ -879,6 +880,11 @@
   }
 
   .hamburger.active {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .hamburger.lang-open {
     opacity: 0;
     pointer-events: none;
   }
