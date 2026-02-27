@@ -1,6 +1,6 @@
 import { Injectable, inject, signal } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { firstValueFrom, map, tap } from 'rxjs';
+import { catchError, firstValueFrom, map, tap, throwError } from 'rxjs';
 
 export type LanguageCode = 'en' | 'fr' | 'sw' | 'ln' | 'ts' | 'kg';
 
@@ -30,9 +30,10 @@ export class I18nService {
   }
 
   translate(key: string, params?: Record<string, string | number>): string {
-    const raw = this.resolveKey(this.dictionary(), key);
+    const normalizedKey = this.normalizeKey(key);
+    const raw = this.resolveKey(this.dictionary(), normalizedKey);
     if (typeof raw !== 'string') {
-      return key;
+      return normalizedKey;
     }
     if (!params) {
       return raw;
@@ -45,7 +46,23 @@ export class I18nService {
 
   private loadLanguage(lang: LanguageCode) {
     const loadLang = SUPPORTED_LANGS.includes(lang) ? lang : 'en';
-    return this.http.get<Record<string, unknown>>(`/i18n/${loadLang}.json`).pipe(
+    const primaryUrl = this.getBaseAwareI18nUrl(loadLang);
+    const rootUrl = `/i18n/${loadLang}.json`;
+    const englishUrl = this.getBaseAwareI18nUrl('en');
+
+    return this.http.get<Record<string, unknown>>(primaryUrl).pipe(
+      catchError((primaryError) => {
+        if (primaryUrl !== rootUrl) {
+          return this.http.get<Record<string, unknown>>(rootUrl);
+        }
+        return throwError(() => primaryError);
+      }),
+      catchError(() => {
+        if (loadLang !== 'en') {
+          return this.http.get<Record<string, unknown>>(englishUrl);
+        }
+        return throwError(() => new Error(`Unable to load i18n dictionary for '${loadLang}'.`));
+      }),
       tap((payload) => {
         this.dictionary.set(payload);
         this.lang.set(lang);
@@ -54,12 +71,40 @@ export class I18nService {
     );
   }
 
+  private getBaseAwareI18nUrl(lang: LanguageCode): string {
+    if (typeof document === 'undefined') {
+      return `/i18n/${lang}.json`;
+    }
+    return new URL(`i18n/${lang}.json`, document.baseURI).toString();
+  }
+
   private resolveKey(source: Record<string, unknown>, key: string): unknown {
-    return key.split('.').reduce<unknown>((acc, part) => {
-      if (acc && typeof acc === 'object' && part in acc) {
-        return (acc as Record<string, unknown>)[part];
+    return key.split('.').reduce<unknown>((acc, rawPart) => {
+      if (!acc || typeof acc !== 'object') {
+        return undefined;
       }
-      return undefined;
+
+      const part = rawPart.trim();
+      const record = acc as Record<string, unknown>;
+
+      if (part in record) {
+        return record[part];
+      }
+
+      const matchedKey = Object.keys(record).find(
+        (candidate) => candidate.toLowerCase() === part.toLowerCase()
+      );
+
+      return matchedKey ? record[matchedKey] : undefined;
     }, source);
+  }
+
+  private normalizeKey(key: string): string {
+    return key
+      .replace(/[\u200B-\u200D\uFEFF]/g, '')
+      .trim()
+      .split('.')
+      .map((part) => part.trim())
+      .join('.');
   }
 }

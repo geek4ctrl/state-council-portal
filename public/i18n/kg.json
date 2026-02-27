@@ -11,9 +11,9 @@
       "instagram": "Instagram"
     },
     "lang": {
-      "label": "Ndinga",
-      "switchToEnglish": "Bongola na Anglais",
-      "switchToFrench": "Bongola na Francais"
+      "label": "Luludimi",
+      "switchToEnglish": "Langila ku Anglais",
+      "switchToFrench": "Langila ku Français"
     },
     "nav": {
       "home": "MBELO",
@@ -22,7 +22,7 @@
       "organization": "ORGANISATION",
       "administrativeCourts": "Tribinal ya Administratif",
       "administrativeTribunals": "Banunu ya Administratif",
-      "reforms": "BONGWANA",
+      "reforms": "MABONGOLU",
       "international": "BOYOKANI YA MOKILI",
       "audiences": "MAKIKAO",
       "steps": "BITINI",
@@ -235,7 +235,14 @@
   },
   "home": {
     "hero": {
+      "learnMore": "Yeba mingi",
       "slides": {
+        "0": {
+          "title": "CONSEIL D'ETAT - Bofungoli ya mbula ya tribinal 2025-2026",
+          "subtitle": "PALAIS DU PEUPLE - 13 NOVEMBRE 2025",
+          "body": "Conseil d'Etat esanganaki na Palais du Peuple mpo na bofungoli ya mbula ya tribinal 2025-2026.",
+          "cta": "Yeba mingi"
+        },
         "1": {
           "title": "MBULA YA TRIBINAL EFUNGOLA NA CONSEIL D'ETAT MPO NA 2025 - 2026",
           "subtitle": "NDako ya Mibeko na Kotalisa",
