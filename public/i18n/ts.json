@@ -13,7 +13,7 @@
     "lang": {
       "label": "Luludimi",
       "switchToEnglish": "Langila ku Anglais",
-      "switchToFrench": "Langila ku Francais"
+      "switchToFrench": "Langila ku Français"
     },
     "nav": {
       "home": "KU BWALU",
@@ -235,7 +235,14 @@
   },
   "home": {
     "hero": {
+      "learnMore": "Yeba mingi",
       "slides": {
+        "0": {
+          "title": "CONSEIL D'ETAT - Bofungoli ya mbula ya tribinal 2025-2026",
+          "subtitle": "PALAIS DU PEUPLE - 13 NOVEMBRE 2025",
+          "body": "Conseil d'Etat esanganaki na Palais du Peuple mpo na bofungoli ya mbula ya tribinal 2025-2026.",
+          "cta": "Yeba mingi"
+        },
         "1": {
           "title": "MBULA YA TRIBINAL EFUNGOLA NA CONSEIL D'ETAT MPO NA 2025 - 2026",
           "subtitle": "NDako ya Mibeko na Kotalisa",
@@ -251,7 +258,7 @@
         "3": {
           "title": "KOTOMBOLA BOKOKO YA JURIDIQUE NA RDC",
           "subtitle": "NDako ya Mibeko na Kotalisa",
-          "body": "Na nzelá ya mateya ya mibeko mpe kobatela makambo ya mokili mobimba, tolingi nyonso na bokokó ya tribinal.",
+          "body": "Na nzela ya mateya ya mibeko mpe kobatela makambo ya mokili mobimba, tolingi nyonso na bokokó ya tribinal.",
           "cta": "Tala misala na biso"
         }
       }
@@ -328,76 +335,76 @@
       }
     },
     "expertise": {
-      "title": "MAKAMBO YA BOKOKO",
-      "subtitle": "CONSEIL D'ETAT esalaka na makambo mingi ya mibeko lokola tribinal ya likolo.",
+      "title": "BISANTU BYA MABANZA",
+      "subtitle": "Conseil d'Etat ukusebeza mu makambo anji mpela tribunal wa mutwe.",
       "stats": {
         "domains": {
           "value": "6",
-          "label": "domaine"
+          "label": "bisantu"
         },
         "decisions": {
           "value": "120+",
-          "label": "mikano/mbula"
+          "label": "mikano/mwaka"
         },
         "magistrates": {
           "value": "30+",
-          "label": "bamagistrat"
+          "label": "bamakimu"
         }
       },
-      "cta": "Tala makambo",
+      "cta": "Mona makambo",
       "areas": {
         "civil": {
-          "title": "Mibeko ya civil na commerce",
-          "desc": "Kontra, bamabanza, mpe makambo ya eloko.",
+          "title": "Milawo ya Civil ne Commerce",
+          "desc": "Makontala, milambu, ne makambo a ditshik.",
           "items": {
-            "1": "Rufaa ya Court ya Rufaa",
-            "2": "Makambo ya commerce",
-            "3": "Makambo ya libula"
+            "1": "Rufaa kuva mu ba courts d'appel",
+            "2": "Mikanganyiko ya commerce ne makontala",
+            "3": "Makambo a ditshik ne bukole"
           }
         },
         "family": {
-          "title": "Mibeko ya famille",
-          "desc": "Kobatela makambo ya famille mpe kosilisa mikakatano.",
+          "title": "Milawo ya Bakaji",
+          "desc": "Kubika milambu ya bakaji ne kumalisa mikanganyiko.",
           "items": {
-            "1": "Rufaa ya mabala na koboma",
-            "2": "Makambo ya bana",
-            "3": "Makambo ya libula"
+            "1": "Rufaa ya bukole ne divorce",
+            "2": "Mikanganyiko ya bana",
+            "3": "Makambo a bukole"
           }
         },
         "public": {
-          "title": "Mibeko ya public",
-          "desc": "Kotalela misala ya public mpe mibeko ya konstitision.",
+          "title": "Milawo ya Public",
+          "desc": "Kulanga misala ya nshinga ne kubika milawo ya konstitision.",
           "items": {
-            "1": "Makambo ya privilege",
-            "2": "Masolo ya bakambi",
-            "3": "Makambo ya konstitision"
+            "1": "Makambo a privilege juridictionnel",
+            "2": "Kukangila bantu ba mutwe",
+            "3": "Makambo a konstitision"
           }
         },
         "labor": {
-          "title": "Mosala mpe emploi",
-          "desc": "Makambo ya mosala mpe kobatela basali.",
+          "title": "Milawo ya Musala",
+          "desc": "Mikanganyiko ya musala ne kubika milambu ya basali.",
           "items": {
-            "1": "Rufaa ya mosala",
-            "2": "Makambo ya kontrat",
-            "3": "Bobateli ya basali"
+            "1": "Rufaa ya mikanganyiko ya musala",
+            "2": "Makambo a makontala a musala",
+            "3": "Kubika milambu ya basali"
           }
         },
         "criminal": {
-          "title": "Mibeko ya penal",
-          "desc": "Kotalela mikano ya penal mpe bokebi ya nzela.",
+          "title": "Milawo ya Penal",
+          "desc": "Kulangalala mikano ya penal ne kubika nzila.",
           "items": {
-            "1": "Rufaa ya penal na Conseil d'Etat",
-            "2": "Bobengisi ya erreurs",
-            "3": "Bosaleli ya mibeko ya penal"
+            "1": "Rufaa ya penal ku Conseil d'Etat",
+            "2": "Kulangalala mafuku a prosedure",
+            "3": "Kusebeza milawo ya penal"
           }
         },
         "property": {
-          "title": "Makambo ya mabele",
-          "desc": "Bokoko ya mabele, ndako, mpe misala ya mabele.",
+          "title": "Milambu ya Ditshik",
+          "desc": "Bukole bwa ditshik, nzubu, ne misala ya ditshik.",
           "items": {
-            "1": "Mikakatano ya mabele",
-            "2": "Makambo ya bokoko ya mabele",
-            "3": "Mikolo ya mabele"
+            "1": "Mikanganyiko ya ditshik",
+            "2": "Makambo a bukole bwa ditshik",
+            "3": "Misala ya ditshik"
           }
         }
       }

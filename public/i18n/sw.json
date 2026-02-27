@@ -235,7 +235,14 @@
   },
   "home": {
     "hero": {
+      "learnMore": "Jifunze Zaidi",
       "slides": {
+        "0": {
+          "title": "BARAZA LA SERIKALI - UFUNGUZI WA MWAKA WA MAHAKAMA 2025-2026",
+          "subtitle": "PALAIS DU PEUPLE - 13 NOVEMBA 2025",
+          "body": "Baraza la Serikali lilikutana katika Palais du Peuple kwa ufunguzi rasmi wa mwaka wa mahakama 2025-2026.",
+          "cta": "Jifunze Zaidi"
+        },
         "1": {
           "title": "MWAKA WA MAHAKAMA UNAFUNGULIWA KATIKA BARAZA LA SERIKALI KWA MUHULA WA 2025 - 2026",
           "subtitle": "NYUMBA YA SHERIA NA UTARATIBU",
