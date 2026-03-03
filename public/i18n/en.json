@@ -751,8 +751,9 @@
     },
     "firstPresidents": {
       "title": "FIRST PRESIDENTS",
-      "honoraryTitle": "Honorary and Emeritus First President 2018 - 2022",
-      "honoraryTitleSecond": "Honorary and Emeritus President 2022 - 2025",
+      "honoraryTitle": "Honorary and Emeritus First President: 2018 - 2022",
+      "honoraryTitleSecond": "Honorary and Emeritus President: 2022 - 2025",
+      "honoraryTitleThird": "First President: 2025 - present",
       "placeholderName": "First President {{index}}",
       "placeholderSubtitle": "Photo slot reserved",
       "photoLabel": "Photo {{index}}"
