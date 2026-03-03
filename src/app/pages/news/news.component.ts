@@ -51,58 +51,6 @@ import { FooterComponent } from '../../components/footer/footer.component';
           </div>
           <p class="section-subtitle anim-up a-d1">{{ 'news.section.subtitle' | i18n }}</p>
 
-          <div class="insights-section">
-            <div class="insights-header">
-              <div class="insights-line anim-line"></div>
-              <h3 class="anim-up">{{ 'news.insights.title' | i18n }}</h3>
-            </div>
-            <p class="insights-subtitle anim-up a-d1">{{ 'news.insights.subtitle' | i18n }}</p>
-
-            <div class="insights-grid">
-              <div
-                class="insight-card glass-card tilt-card"
-                style="--i:0"
-                (mousemove)="tilt($event)"
-                (mouseleave)="tiltReset($event)"
-              >
-                <div class="tilt-shine"></div>
-                <div class="insight-card-header">
-                  <h4>{{ 'news.insights.topics.title' | i18n }}</h4>
-                  <span class="insight-note anim-label-pulse">{{
-                    'news.insights.topics.note' | i18n
-                  }}</span>
-                </div>
-                <div
-                  #newsCategoryChart
-                  class="insight-chart"
-                  role="img"
-                  [attr.aria-label]="'news.insights.topics.aria' | i18n"
-                ></div>
-              </div>
-
-              <div
-                class="insight-card glass-card tilt-card"
-                style="--i:1"
-                (mousemove)="tilt($event)"
-                (mouseleave)="tiltReset($event)"
-              >
-                <div class="tilt-shine"></div>
-                <div class="insight-card-header">
-                  <h4>{{ 'news.insights.cadence.title' | i18n }}</h4>
-                  <span class="insight-note anim-label-pulse">{{
-                    'news.insights.cadence.note' | i18n
-                  }}</span>
-                </div>
-                <div
-                  #newsCadenceChart
-                  class="insight-chart"
-                  role="img"
-                  [attr.aria-label]="'news.insights.cadence.aria' | i18n"
-                ></div>
-              </div>
-            </div>
-          </div>
-
           <div class="news-grid">
             @if (isLoading()) {
               @for (item of [1, 2, 3]; track item) {
@@ -206,6 +154,58 @@ import { FooterComponent } from '../../components/footer/footer.component';
               <app-icon name="chevron-right" [size]="16" [attr.aria-hidden]="true"></app-icon>
             </button>
           </nav>
+
+          <div class="insights-section" style="padding-top: 2rem;">
+            <div class="insights-header">
+              <div class="insights-line anim-line"></div>
+              <h3 class="anim-up">{{ 'news.insights.title' | i18n }}</h3>
+            </div>
+            <p class="insights-subtitle anim-up a-d1">{{ 'news.insights.subtitle' | i18n }}</p>
+
+            <div class="insights-grid">
+              <div
+                class="insight-card glass-card tilt-card"
+                style="--i:0"
+                (mousemove)="tilt($event)"
+                (mouseleave)="tiltReset($event)"
+              >
+                <div class="tilt-shine"></div>
+                <div class="insight-card-header">
+                  <h4>{{ 'news.insights.topics.title' | i18n }}</h4>
+                  <span class="insight-note anim-label-pulse">{{
+                    'news.insights.topics.note' | i18n
+                  }}</span>
+                </div>
+                <div
+                  #newsCategoryChart
+                  class="insight-chart"
+                  role="img"
+                  [attr.aria-label]="'news.insights.topics.aria' | i18n"
+                ></div>
+              </div>
+
+              <div
+                class="insight-card glass-card tilt-card"
+                style="--i:1"
+                (mousemove)="tilt($event)"
+                (mouseleave)="tiltReset($event)"
+              >
+                <div class="tilt-shine"></div>
+                <div class="insight-card-header">
+                  <h4>{{ 'news.insights.cadence.title' | i18n }}</h4>
+                  <span class="insight-note anim-label-pulse">{{
+                    'news.insights.cadence.note' | i18n
+                  }}</span>
+                </div>
+                <div
+                  #newsCadenceChart
+                  class="insight-chart"
+                  role="img"
+                  [attr.aria-label]="'news.insights.cadence.aria' | i18n"
+                ></div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -294,11 +294,11 @@ import { FooterComponent } from '../../components/footer/footer.component';
       }
 
       .header-decoration-left,
-    .header-decoration-right {
-      flex: 0 0 80px;
-      height: 1px;
-      background: linear-gradient(90deg, transparent, #1F9BD9, transparent);
-    }
+      .header-decoration-right {
+        flex: 0 0 80px;
+        height: 1px;
+        background: linear-gradient(90deg, transparent, #1f9bd9, transparent);
+      }
 
       .section-header h2 {
         font-size: 2.5rem;
@@ -311,14 +311,14 @@ import { FooterComponent } from '../../components/footer/footer.component';
       }
 
       .section-subtitle {
-      font-size: 0.85rem;
-      color: #1F9BD9 !important;
-      text-transform: uppercase;
-      letter-spacing: 3px;
-      margin: 0 0 60px 0;
-      text-align: center;
-      font-weight: 400;
-    }
+        font-size: 0.85rem;
+        color: #1f9bd9 !important;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        margin: 0 0 60px 0;
+        text-align: center;
+        font-weight: 400;
+      }
 
       .insights-section {
         margin-bottom: 50px;
@@ -332,10 +332,10 @@ import { FooterComponent } from '../../components/footer/footer.component';
       }
 
       .insights-line {
-      width: 50px;
-      height: 2px;
-      background: #1F9BD9;
-    }
+        width: 50px;
+        height: 2px;
+        background: #1f9bd9;
+      }
 
       .insights-header h3 {
         font-size: 1.6rem;
@@ -348,13 +348,13 @@ import { FooterComponent } from '../../components/footer/footer.component';
       }
 
       .insights-subtitle {
-      font-size: 0.85rem;
-      color: #1F9BD9 !important;
-      margin: 0 0 24px;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-      text-align: left;
-    }
+        font-size: 0.85rem;
+        color: #1f9bd9 !important;
+        margin: 0 0 24px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        text-align: left;
+      }
 
       .insights-grid {
         display: grid;
@@ -387,13 +387,13 @@ import { FooterComponent } from '../../components/footer/footer.component';
       }
 
       .insight-note {
-      font-size: 0.75rem;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      color: #1F9BD9 !important;
-      font-weight: 600;
-      white-space: nowrap;
-    }
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: #1f9bd9 !important;
+        font-weight: 600;
+        white-space: nowrap;
+      }
 
       .insight-chart {
         width: 100%;
@@ -522,80 +522,79 @@ import { FooterComponent } from '../../components/footer/footer.component';
       }
 
       .read-more {
-      color: #1F9BD9 !important;
-      font-size: 0.85rem;
-      font-weight: 600;
-      text-decoration: underline !important;
-      text-decoration-thickness: 2px !important;
-      text-underline-offset: 4px !important;
-      transition: color 0.3s ease;
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      margin-top: auto;
-      border: none !important;
-      background: transparent !important;
-      padding: 0 !important;
-      align-self: flex-start;
-    }
+        color: #1f9bd9 !important;
+        font-size: 0.85rem;
+        font-weight: 600;
+        text-decoration: underline !important;
+        text-decoration-thickness: 2px !important;
+        text-underline-offset: 4px !important;
+        transition: color 0.3s ease;
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        margin-top: auto;
+        border: none !important;
+        background: transparent !important;
+        padding: 0 !important;
+        align-self: flex-start;
+      }
 
-    .read-more:hover {
-      color: #1F9BD9 !important;
-    }
+      .read-more:hover {
+        color: #1f9bd9 !important;
+      }
 
-    .pagination {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-    }
+      .pagination {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+      }
 
-    .pagination-btn,
-    .pagination-number {
-      background: transparent;
-      border: 1px solid #1F9BD9 !important;
-      border-radius: 6px !important;
-      color: #1F9BD9;
-      padding: 10px 15px;
-      cursor: pointer;
-      transition: all 0.3s ease;
-      font-size: 0.9rem;
-      font-weight: 500;
-    }
+      .pagination-btn,
+      .pagination-number {
+        background: transparent;
+        border: 1px solid #1f9bd9 !important;
+        border-radius: 6px !important;
+        color: #1f9bd9;
+        padding: 10px 15px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        font-size: 0.9rem;
+        font-weight: 500;
+      }
 
-    .pagination-btn {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 8px;
-    }
+      .pagination-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+      }
 
-    .pagination-btn:disabled {
-      opacity: 0.4;
-      cursor: not-allowed;
-    }
+      .pagination-btn:disabled {
+        opacity: 0.4;
+        cursor: not-allowed;
+      }
 
-    .pagination-number {
-      min-width: 45px;
-      text-align: center;
-    }
+      .pagination-number {
+        min-width: 45px;
+        text-align: center;
+      }
 
-    .pagination-number.active {
-      background: #1F9BD9;
-      color: white;
-      border-color: #1F9BD9 !important;
-    }
+      .pagination-number.active {
+        background: #1f9bd9;
+        color: white;
+        border-color: #1f9bd9 !important;
+      }
 
-    .pagination-number:hover:not(.active) {
-      border-color: #1F9BD9 !important;
-      color: #1F9BD9;
-    }
+      .pagination-number:hover:not(.active) {
+        border-color: #1f9bd9 !important;
+        color: #1f9bd9;
+      }
 
-    .pagination-btn:hover:not(:disabled) {
-      border-color: #1F9BD9 !important;
-      color: #1F9BD9;
-    }
-
+      .pagination-btn:hover:not(:disabled) {
+        border-color: #1f9bd9 !important;
+        color: #1f9bd9;
+      }
 
       .pagination-btn.next-btn,
       .pagination-btn.prev-btn {
@@ -786,7 +785,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
         }
         .pagination-number.active {
           background: transparent !important;
-          color: #1F9BD9;
+          color: #1f9bd9;
           font-weight: 700;
           border: none !important;
         }
@@ -918,7 +917,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
         }
         .pagination-number.active {
           background: transparent !important;
-          color: #1F9BD9;
+          color: #1f9bd9;
           font-weight: 700;
           border: none !important;
         }
