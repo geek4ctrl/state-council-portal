@@ -2387,9 +2387,10 @@ export class OrganizationComponent implements OnInit, AfterViewInit {
     },
     {
       slot: 3,
-      name: '',
+      name: 'Brigitte Nsensele Wa Nsensele',
       subtitleKey: 'organization.firstPresidents.placeholderSubtitle',
-      image: '',
+      image:
+        'https://res.cloudinary.com/dhqvb8wbn/image/upload/v1772020345/Brigitte_NSENSELE_wa_NSENSELE.jpg_2_vgiv72.jpg',
     },
   ];
 
