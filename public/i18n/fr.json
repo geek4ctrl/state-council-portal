@@ -767,6 +767,11 @@
       "peopleTitle": "DIRECTION PAR NOM",
       "peopleSubtitle": "Noms de la Première Présidente, des Présidents et des Conseillers.",
       "peopleFirstPresidentName": "Brigitte Nsensele Wa Nsensele",
+      "namedPhotoRoles": {
+        "firstPresident": "Première Présidente",
+        "consultative": "Présidente de la section consultative",
+        "contentieux": "Président de la section du contentieux"
+      },
       "roles": {
         "firstPresident": "Première Présidente",
         "president": "Président",
@@ -780,7 +785,9 @@
         "civilChamber": "Chambre civile",
         "criminalChamber": "Chambre criminelle",
         "commercialChamber": "Chambre commerciale",
-        "socialChamber": "Chambre sociale"
+        "socialChamber": "Chambre sociale",
+        "consultativeSection": "Section consultative",
+        "litigationSection": "Section du contentieux"
       }
     },
     "filters": {

@@ -711,6 +711,11 @@
       "peopleTitle": "UONGOZI KWA MAJINA",
       "peopleSubtitle": "Majina ya Rais wa Kwanza, Marais, na Washauri.",
       "peopleFirstPresidentName": "Brigitte Nsensele Wa Nsensele",
+      "namedPhotoRoles": {
+        "firstPresident": "Rais wa Kwanza",
+        "consultative": "Rais wa Sehemu ya Ushauri",
+        "contentieux": "Rais wa Sehemu ya Mashauri"
+      },
       "roles": {
         "firstPresident": "Rais wa Kwanza",
         "president": "Rais",
@@ -724,7 +729,9 @@
         "civilChamber": "Chumba cha Kiraia",
         "criminalChamber": "Chumba cha Jinai",
         "commercialChamber": "Chumba cha Biashara",
-        "socialChamber": "Chumba cha Kijamii"
+        "socialChamber": "Chumba cha Kijamii",
+        "consultativeSection": "Sehemu ya Ushauri",
+        "litigationSection": "Sehemu ya Mashauri"
       }
     },
     "filters": {

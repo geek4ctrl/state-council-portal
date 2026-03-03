@@ -711,6 +711,11 @@
       "peopleTitle": "BOKONZI NA BIKOMBO",
       "peopleSubtitle": "Bikombo ya Rais ya Liboso, Marais, mpe Basungi.",
       "peopleFirstPresidentName": "Brigitte Nsensele Wa Nsensele",
+      "namedPhotoRoles": {
+        "firstPresident": "Rais ya Liboso",
+        "consultative": "Mokambi ya eteni ya Consultative",
+        "contentieux": "Mokambi ya eteni ya Contentieux"
+      },
       "roles": {
         "firstPresident": "Rais ya Liboso",
         "president": "Rais",
@@ -724,7 +729,9 @@
         "civilChamber": "Chambre Civil",
         "criminalChamber": "Chambre Penal",
         "commercialChamber": "Chambre Commerce",
-        "socialChamber": "Chambre Social"
+        "socialChamber": "Chambre Social",
+        "consultativeSection": "Eteni ya Consultative",
+        "litigationSection": "Eteni ya Contentieux"
       }
     },
     "filters": {

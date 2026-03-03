@@ -98,31 +98,11 @@ type HighchartsStatic = typeof import('highcharts');
             <div class="org-chart-connector" aria-hidden="true"></div>
 
             <div class="org-chart-tier" role="listitem">
-              <div class="org-node">
-                {{ 'organization.chart.nodes.plenary' | i18n }}
-              </div>
-              <div class="org-node">
-                {{ 'organization.chart.nodes.councilOffice' | i18n }}
-              </div>
-              <div class="org-node">
-                {{ 'organization.chart.nodes.registry' | i18n }}
-              </div>
-            </div>
-
-            <div class="org-chart-connector" aria-hidden="true"></div>
-
-            <div class="org-chart-tier" role="listitem">
               <div class="org-node muted">
-                {{ 'organization.chart.nodes.civilChamber' | i18n }}
+                {{ 'organization.chart.nodes.consultativeSection' | i18n }}
               </div>
               <div class="org-node muted">
-                {{ 'organization.chart.nodes.criminalChamber' | i18n }}
-              </div>
-              <div class="org-node muted">
-                {{ 'organization.chart.nodes.commercialChamber' | i18n }}
-              </div>
-              <div class="org-node muted">
-                {{ 'organization.chart.nodes.socialChamber' | i18n }}
+                {{ 'organization.chart.nodes.litigationSection' | i18n }}
               </div>
             </div>
           </div>
@@ -138,35 +118,44 @@ type HighchartsStatic = typeof import('highcharts');
               {{ 'organization.chart.peopleTitle' | i18n }}
             </h2>
           </div>
-          <p class="org-chart-subtitle anim-up a-d1">
-            {{ 'organization.chart.peopleSubtitle' | i18n }}
-          </p>
 
-          <div class="org-chart" role="list">
-            <div class="org-chart-tier" role="listitem">
-              <div class="org-node primary">
-                {{ 'organization.chart.peopleFirstPresidentName' | i18n }}
+          <div class="leadership-photo-layout" role="list">
+            <article class="leadership-photo-card top" role="listitem">
+              <div class="leadership-photo-frame">
+                <img
+                  ngSrc="https://res.cloudinary.com/dhqvb8wbn/image/upload/v1772020345/Brigitte_NSENSELE_wa_NSENSELE.jpg_2_vgiv72.jpg"
+                  [alt]="'organization.chart.namedPhotoRoles.firstPresident' | i18n"
+                  width="320"
+                  height="380"
+                />
               </div>
-            </div>
+              <p class="leadership-photo-role">{{ 'organization.chart.namedPhotoRoles.firstPresident' | i18n }}</p>
+            </article>
 
-            <div class="org-chart-connector" aria-hidden="true"></div>
-
-            <div class="org-chart-tier" role="listitem">
-              @for (president of presidents; track president.slug) {
-                <div class="org-node">
-                  {{ president.name }}
+            <div class="leadership-photo-row" role="listitem">
+              <article class="leadership-photo-card">
+                <div class="leadership-photo-frame">
+                  <img
+                    ngSrc="https://res.cloudinary.com/dhqvb8wbn/image/upload/v1772556705/PRES_MASANI_40x50.jpg_ast5mq.jpg"
+                    [alt]="'organization.chart.namedPhotoRoles.consultative' | i18n"
+                    width="320"
+                    height="380"
+                  />
                 </div>
-              }
-            </div>
+                <p class="leadership-photo-role">{{ 'organization.chart.namedPhotoRoles.consultative' | i18n }}</p>
+              </article>
 
-            <div class="org-chart-connector" aria-hidden="true"></div>
-
-            <div class="org-chart-tier" role="listitem">
-              @for (advisor of advisors; track advisor.slug) {
-                <div class="org-node muted">
-                  {{ advisor.name }}
+              <article class="leadership-photo-card">
+                <div class="leadership-photo-frame">
+                  <img
+                    ngSrc="https://res.cloudinary.com/dhqvb8wbn/image/upload/v1772556921/Eug%C3%A8ne_KIBWE_MUTER.jpg_bacl4e.jpg"
+                    [alt]="'organization.chart.namedPhotoRoles.contentieux' | i18n"
+                    width="320"
+                    height="380"
+                  />
                 </div>
-              }
+                <p class="leadership-photo-role">{{ 'organization.chart.namedPhotoRoles.contentieux' | i18n }}</p>
+              </article>
             </div>
           </div>
         </div>
@@ -910,6 +899,62 @@ type HighchartsStatic = typeof import('highcharts');
         font-size: 0.72rem;
       }
 
+      .leadership-photo-layout {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+      }
+
+      .leadership-photo-row {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 24px;
+        max-width: 900px;
+      }
+
+      .leadership-photo-card {
+        background: #ffffff;
+        border: 1px solid rgba(26, 41, 66, 0.12);
+        border-radius: 16px;
+        box-shadow: 0 10px 28px rgba(26, 41, 66, 0.12);
+        padding: 12px;
+      }
+
+      .leadership-photo-card.top {
+        max-width: 430px;
+        width: 100%;
+      }
+
+      .leadership-photo-frame {
+        border-radius: 12px;
+        overflow: hidden;
+        background: transparent;
+        aspect-ratio: 4 / 5;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .leadership-photo-frame img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        display: block;
+      }
+
+      .leadership-photo-role {
+        margin: 10px 0 4px;
+        text-align: center;
+        font-size: 0.82rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: #1a2942;
+        line-height: 1.45;
+      }
+
       .filter-group input,
       .filter-group select {
         background: #fafbfc;
@@ -1602,6 +1647,11 @@ type HighchartsStatic = typeof import('highcharts');
           gap: 30px;
         }
 
+        .leadership-photo-row {
+          max-width: 760px;
+          gap: 18px;
+        }
+
         .service-item,
         .detail-box {
           padding: 24px;
@@ -1656,6 +1706,11 @@ type HighchartsStatic = typeof import('highcharts');
 
         .services-section {
           padding: 70px 0;
+        }
+
+        .leadership-photo-row {
+          grid-template-columns: 1fr;
+          max-width: 430px;
         }
       }
 
@@ -1816,6 +1871,18 @@ type HighchartsStatic = typeof import('highcharts');
           padding: 10px 14px;
           font-size: 0.65rem;
           max-width: 100%;
+        }
+
+        .leadership-photo-layout {
+          gap: 16px;
+        }
+
+        .leadership-photo-frame img {
+          height: 100%;
+        }
+
+        .leadership-photo-role {
+          font-size: 0.75rem;
         }
       }
 

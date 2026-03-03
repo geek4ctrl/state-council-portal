@@ -767,6 +767,11 @@
       "peopleTitle": "LEADERSHIP BY NAME",
       "peopleSubtitle": "Names of the First President, Presidents, and Advisors.",
       "peopleFirstPresidentName": "Brigitte Nsensele Wa Nsensele",
+      "namedPhotoRoles": {
+        "firstPresident": "First President",
+        "consultative": "President of the Consultative Section",
+        "contentieux": "President of the Litigation Section"
+      },
       "roles": {
         "firstPresident": "First President",
         "president": "President",
@@ -780,7 +785,9 @@
         "civilChamber": "Civil Chamber",
         "criminalChamber": "Criminal Chamber",
         "commercialChamber": "Commercial Chamber",
-        "socialChamber": "Social Chamber"
+        "socialChamber": "Social Chamber",
+        "consultativeSection": "Consultative Section",
+        "litigationSection": "Litigation Section"
       }
     },
     "filters": {
