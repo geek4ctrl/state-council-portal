@@ -162,11 +162,11 @@ type HighchartsStatic = typeof import('highcharts');
       </section>
 
       <!-- Senior Magistrates Label -->
-      <section class="senior-label-section">
+      <!-- <section class="senior-label-section">
         <div class="container">
           <div class="senior-label">{{ 'organization.seniorLabel' | i18n }}</div>
         </div>
-      </section>
+      </section> -->
 
       <!-- Members Filter Section -->
       <section class="members-filter-section">
@@ -249,7 +249,7 @@ type HighchartsStatic = typeof import('highcharts');
       </section>
 
       <!-- The Presidents Section -->
-      <section class="members-section presidents-section">
+      <!-- <section class="members-section presidents-section">
         <div class="container">
           <div class="section-head-wrap">
             <div class="org-header-line anim-line"></div>
@@ -301,10 +301,10 @@ type HighchartsStatic = typeof import('highcharts');
             }
           </div>
         </div>
-      </section>
+      </section> -->
 
       <!-- The Advisors Section -->
-      <section class="members-section advisors-section">
+      <!-- <section class="members-section advisors-section">
         <div class="container">
           <div class="section-head-wrap">
             <div class="org-header-line anim-line"></div>
@@ -361,7 +361,7 @@ type HighchartsStatic = typeof import('highcharts');
             </button>
           </div>
         </div>
-      </section>
+      </section> -->
 
       <!-- Services Info Section -->
       <section class="services-info-section">
