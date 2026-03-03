@@ -222,15 +222,27 @@
 
 .logo {
   display: flex;
+  flex-direction: column;
   align-items: center;
+  gap: 0.2rem;
   flex-shrink: 0;
+  text-decoration: none;
 }
 
 .logo-image {
   display: block;
-  height: 50px;
+  height: 58px;
   width: auto;
   object-fit: contain;
+}
+
+.logo-caption {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #1a2942;
+  letter-spacing: 0.3px;
+  line-height: 1;
+  white-space: nowrap;
 }
 
 .logo svg {
@@ -891,6 +903,14 @@
 }
 
 @media (max-width: 480px) {
+  .logo-image {
+    height: 48px;
+  }
+
+  .logo-caption {
+    font-size: 0.62rem;
+  }
+
   .logo svg {
     width: 40px;
     height: 40px;
