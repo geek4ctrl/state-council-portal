@@ -5437,8 +5437,8 @@ export class HomeComponent implements OnInit, AfterViewInit {
 
   heroSlides: HeroSlide[] = [
     { id:1, titleKey:'home.hero.slides.1.title', subtitleKey:'home.hero.slides.1.subtitle', descriptionKey:'home.hero.slides.1.body', buttonKey:'home.hero.slides.1.cta', image:'https://res.cloudinary.com/dhqvb8wbn/image/upload/v1772019774/Accueil_Site_1_qzidwt.jpg' },
-    { id:2, titleKey:'home.hero.slides.2.title', subtitleKey:'home.hero.slides.2.subtitle', descriptionKey:'home.hero.slides.2.body', buttonKey:'home.hero.slides.2.cta', image:'https://images.unsplash.com/photo-1505664194779-8beaceb93744?w=1920&h=1080&fit=crop' },
-    { id:3, titleKey:'home.hero.slides.3.title', subtitleKey:'home.hero.slides.3.subtitle', descriptionKey:'home.hero.slides.3.body', buttonKey:'home.hero.slides.3.cta', image:'https://images.unsplash.com/photo-1479142506502-19b3a3b7ff33?w=1920&h=1080&fit=crop' },
+    { id:2, titleKey:'home.hero.slides.2.title', subtitleKey:'home.hero.slides.2.subtitle', descriptionKey:'home.hero.slides.2.body', buttonKey:'home.hero.slides.2.cta', image:'https://res.cloudinary.com/dhqvb8wbn/image/upload/v1772545211/BATIMENTS.jpg_gbz5ea.jpg' },
+    { id:3, titleKey:'home.hero.slides.3.title', subtitleKey:'home.hero.slides.3.subtitle', descriptionKey:'home.hero.slides.3.body', buttonKey:'home.hero.slides.3.cta', image:'https://res.cloudinary.com/dhqvb8wbn/image/upload/v1772545434/BATIMENT_2.jpg_rvmjqd.jpg' },
   ];
 
   presSlides: PresidentSlide[] = [
