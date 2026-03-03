@@ -76,7 +76,7 @@ export class PreloadService {
    * Preload popular/common routes after initial load
    */
   private preloadPopularRoutes() {
-    const popularRoutes = ['/', '/news', '/organization', '/steps'];
+    const popularRoutes = ['/', '/news', '/presentation', '/steps'];
 
     popularRoutes.forEach(route => {
       if (!this.preloadedRoutes.has(route)) {
@@ -90,12 +90,12 @@ export class PreloadService {
    */
   private preloadLikelyNextRoutes(currentUrl: string) {
     const likelyNextRoutes: Record<string, string[]> = {
-      '/': ['/news', '/organization', '/steps'],
-      '/news': ['/organization', '/'],
-      '/organization': ['/reforms', '/international-relations'],
-      '/steps': ['/news', '/organization'],
-      '/reforms': ['/international-relations', '/organization'],
-      '/international-relations': ['/reforms', '/organization']
+      '/': ['/news', '/presentation', '/steps'],
+      '/news': ['/presentation', '/'],
+      '/presentation': ['/reforms', '/international-relations'],
+      '/steps': ['/news', '/presentation'],
+      '/reforms': ['/international-relations', '/presentation'],
+      '/international-relations': ['/reforms', '/presentation']
     };
 
     const nextRoutes = likelyNextRoutes[currentUrl] || [];

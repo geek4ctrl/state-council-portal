@@ -693,6 +693,13 @@
       "title": "RAIS WA KWANZA",
       "body": "Rais wa Kwanza anaongoza Baraza la Serikali, anaongoza vikao vyake, na kuhakikisha taasisi inafanya kazi ipasavyo."
     },
+    "firstPresidents": {
+      "title": "MARAIS WA KWANZA",
+      "honoraryTitle": "Rais wa Kwanza wa Heshima na Emeritus 2018 - 2022",
+      "placeholderName": "Rais wa Kwanza {{index}}",
+      "placeholderSubtitle": "Nafasi iliyotengwa kwa picha",
+      "photoLabel": "Picha {{index}}"
+    },
     "seniorLabel": "MAHAKIMU WAKUU",
     "chart": {
       "title": "CHATI YA MUUNDO",

@@ -749,6 +749,13 @@
       "title": "THE FIRST PRESIDENT",
       "body": "The First President leads the State Council, presides over its sessions, and ensures the proper functioning of the institution."
     },
+    "firstPresidents": {
+      "title": "FIRST PRESIDENTS",
+      "honoraryTitle": "Honorary and Emeritus First President 2018 - 2022",
+      "placeholderName": "First President {{index}}",
+      "placeholderSubtitle": "Photo slot reserved",
+      "photoLabel": "Photo {{index}}"
+    },
     "seniorLabel": "SENIOR MAGISTRATES",
     "chart": {
       "title": "ORGANIZATION CHART",

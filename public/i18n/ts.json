@@ -693,6 +693,13 @@
       "title": "RAIS YA LIBOSO",
       "body": "Rais ya liboso akambaka Conseil d'Etat mpe likita na yango."
     },
+    "firstPresidents": {
+      "title": "MARAIS YA LIBOSO",
+      "honoraryTitle": "Rais ya liboso ya lokumu mpe emerite 2018 - 2022",
+      "placeholderName": "Rais ya Liboso {{index}}",
+      "placeholderSubtitle": "Esika ebongisami mpo na foto",
+      "photoLabel": "Foto {{index}}"
+    },
     "seniorLabel": "BAMAGISTRAT YA LIKOLO",
     "chart": {
       "title": "CHART YA ORGANISASION",

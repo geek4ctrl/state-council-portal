@@ -5,11 +5,12 @@ import {
 import { SeoService } from '../../services/seo.service';
 import { I18nPipe } from '../../i18n/i18n.pipe';
 import { FooterComponent } from '../../components/footer/footer.component';
+import { OrganizationComponent } from '../organization/organization.component';
 
 @Component({
   selector: 'app-presentation',
   standalone: true,
-  imports: [I18nPipe, FooterComponent],
+  imports: [I18nPipe, FooterComponent, OrganizationComponent],
   template: `
     <div class="page-wrap page-container">
       <!-- Hero Section -->
@@ -20,6 +21,8 @@ import { FooterComponent } from '../../components/footer/footer.component';
           </div>
         </div>
       </section>
+
+      <app-organization [embedded]="true"></app-organization>
 
       <!-- Content Section -->
       <section class="content-section">
@@ -78,6 +81,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
           </div>
         </div>
       </section>
+
       <app-footer></app-footer>
     </div>
   `,

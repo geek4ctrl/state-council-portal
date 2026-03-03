@@ -4,6 +4,7 @@ import {
   Component,
   DestroyRef,
   ElementRef,
+  Input,
   OnInit,
   ViewChild,
   computed,
@@ -35,12 +36,14 @@ type HighchartsStatic = typeof import('highcharts');
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <div class="page-wrap page-container">
-      <!-- Hero Section -->
-      <section class="hero-section">
-        <div class="container">
-          <h1 class="hero-content-left" [innerHTML]="'organization.hero.title' | i18n"></h1>
-        </div>
-      </section>
+      @if (!embedded) {
+        <!-- Hero Section -->
+        <section class="hero-section">
+          <div class="container">
+            <h1 class="hero-content-left" [innerHTML]="'organization.hero.title' | i18n"></h1>
+          </div>
+        </section>
+      }
 
       <!-- First President Section -->
       <section class="first-president-section">
@@ -208,6 +211,50 @@ type HighchartsStatic = typeof import('highcharts');
                       }
               }}
             </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- First Presidents Section -->
+      <section class="members-section first-presidents-section">
+        <div class="container">
+          <div class="section-head-wrap">
+            <div class="org-header-line anim-line"></div>
+            <h2 class="section-title anim-up">{{ 'organization.firstPresidents.title' | i18n }}</h2>
+          </div>
+          <div class="members-grid first-presidents-grid">
+            @for (president of firstPresidents; track president.slot; let i = $index) {
+              <div
+                class="member-card glass-card first-president-slot"
+                [style.--i]="i"
+                (mousemove)="tilt($event)"
+                (mouseleave)="tiltReset($event)"
+              >
+                <div class="tilt-shine"></div>
+                <div class="member-image first-president-photo-slot">
+                  @if (president.image) {
+                    <img
+                      [ngSrc]="president.image"
+                      [alt]="president.name || ('organization.firstPresidents.placeholderName' | i18n : { index: president.slot })"
+                      width="300"
+                      height="350"
+                    />
+                  } @else {
+                    <span class="photo-slot-label">{{ 'organization.firstPresidents.photoLabel' | i18n : { index: i + 1 } }}</span>
+                  }
+                </div>
+                <div class="member-info">
+                  <h3>
+                    @if (president.name) {
+                      {{ president.name }}
+                    } @else {
+                      {{ 'organization.firstPresidents.placeholderName' | i18n : { index: president.slot } }}
+                    }
+                  </h3>
+                  <p class="member-title">{{ president.subtitleKey | i18n : { index: president.slot } }}</p>
+                </div>
+              </div>
+            }
           </div>
         </div>
       </section>
@@ -516,7 +563,9 @@ type HighchartsStatic = typeof import('highcharts');
           </div>
         </div>
       </section>
-      <app-footer></app-footer>
+      @if (!embedded) {
+        <app-footer></app-footer>
+      }
     </div>
   `,
   styles: [
@@ -980,6 +1029,30 @@ type HighchartsStatic = typeof import('highcharts');
 
       .member-card:hover .member-image img {
         transform: scale(1.08);
+      }
+
+      .first-presidents-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+
+      .first-president-photo-slot {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px dashed rgba(31, 155, 217, 0.45);
+        background: linear-gradient(135deg, #edf4fb 0%, #dce9f7 100%);
+      }
+
+      .first-president-photo-slot::after {
+        display: none;
+      }
+
+      .photo-slot-label {
+        font-size: 0.95rem;
+        font-weight: 700;
+        letter-spacing: 0.6px;
+        color: #1f9bd9;
+        text-transform: uppercase;
       }
 
       .member-info {
@@ -2295,6 +2368,30 @@ type HighchartsStatic = typeof import('highcharts');
   ],
 })
 export class OrganizationComponent implements OnInit, AfterViewInit {
+  @Input() embedded = false;
+
+  readonly firstPresidents = [
+    {
+      slot: 1,
+      name: 'Félix VUNDUAWE te PEMAKO',
+      subtitleKey: 'organization.firstPresidents.honoraryTitle',
+      image:
+        'https://res.cloudinary.com/dhqvb8wbn/image/upload/v1772552204/F%C3%A9lix_VUNDUAWE_te_PEMAKO..jpg_1_usgopn.jpg',
+    },
+    {
+      slot: 2,
+      name: '',
+      subtitleKey: 'organization.firstPresidents.placeholderSubtitle',
+      image: '',
+    },
+    {
+      slot: 3,
+      name: '',
+      subtitleKey: 'organization.firstPresidents.placeholderSubtitle',
+      image: '',
+    },
+  ];
+
   @ViewChild('orgChartContainer', { static: true })
   orgChartContainer!: ElementRef<HTMLDivElement>;
 
