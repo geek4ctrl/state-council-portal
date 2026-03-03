@@ -18,10 +18,7 @@ export const routes: Routes = [
     path: 'organization/member/:slug',
     loadComponent: () => import('./pages/member-detail/member-detail.component').then(m => m.MemberDetailComponent)
   },
-  {
-    path: 'organization',
-    loadComponent: () => import('./pages/organization/organization.component').then(m => m.OrganizationComponent)
-  },
+  { path: 'organization', redirectTo: 'presentation', pathMatch: 'full' },
   {
     path: 'administrative-courts',
     loadComponent: () => import('./pages/coming-soon/coming-soon.component').then(m => m.ComingSoonComponent),
