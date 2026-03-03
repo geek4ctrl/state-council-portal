@@ -2380,9 +2380,10 @@ export class OrganizationComponent implements OnInit, AfterViewInit {
     },
     {
       slot: 2,
-      name: '',
-      subtitleKey: 'organization.firstPresidents.placeholderSubtitle',
-      image: '',
+      name: 'Marthe ODIO NONDE',
+      subtitleKey: 'organization.firstPresidents.honoraryTitleSecond',
+      image:
+        'https://res.cloudinary.com/dhqvb8wbn/image/upload/v1772554526/Marthe_ODIO_NONDE.jpg_1_pzymzp.jpg',
     },
     {
       slot: 3,

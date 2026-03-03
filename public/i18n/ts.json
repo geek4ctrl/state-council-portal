@@ -696,6 +696,7 @@
     "firstPresidents": {
       "title": "MARAIS YA LIBOSO",
       "honoraryTitle": "Rais ya liboso ya lokumu mpe emerite 2018 - 2022",
+      "honoraryTitleSecond": "Mokambi ya lokumu mpe emerite 2022 - 2025",
       "placeholderName": "Rais ya Liboso {{index}}",
       "placeholderSubtitle": "Esika ebongisami mpo na foto",
       "photoLabel": "Foto {{index}}"

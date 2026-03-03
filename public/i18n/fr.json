@@ -751,7 +751,8 @@
     },
     "firstPresidents": {
       "title": "PREMIERS PRÉSIDENTS",
-      "honoraryTitle": "Premier President Honoraire et Emerite 2018 - 2022",
+      "honoraryTitle": "Premier Président Honoraire et Émérite 2018 - 2022",
+      "honoraryTitleSecond": "Présidente Honoraire et Émérite 2022 - 2025",
       "placeholderName": "Premier Président {{index}}",
       "placeholderSubtitle": "Emplacement réservé pour photo",
       "photoLabel": "Photo {{index}}"
