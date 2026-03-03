@@ -751,8 +751,9 @@
     },
     "firstPresidents": {
       "title": "PREMIERS PRÉSIDENTS",
-      "honoraryTitle": "Premier Président Honoraire et Émérite 2018 - 2022",
-      "honoraryTitleSecond": "Présidente Honoraire et Émérite 2022 - 2025",
+      "honoraryTitle": "Premier Président Honoraire et Émérite : 2018 - 2022",
+      "honoraryTitleSecond": "Présidente Honoraire et Émérite : 2022 - 2025",
+      "honoraryTitleThird": "Première présidente : 2025 - à ce jour",
       "placeholderName": "Premier Président {{index}}",
       "placeholderSubtitle": "Emplacement réservé pour photo",
       "photoLabel": "Photo {{index}}"
@@ -769,7 +770,7 @@
       "peopleFirstPresidentName": "Brigitte Nsensele Wa Nsensele",
       "namedPhotoRoles": {
         "firstPresident": "Première Présidente",
-        "consultative": "Présidente de la section consultative",
+        "consultative": "Président de la section consultative",
         "contentieux": "Président de la section du contentieux"
       },
       "roles": {

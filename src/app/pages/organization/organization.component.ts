@@ -12,8 +12,6 @@ import {
   signal,
 } from '@angular/core';
 import { CommonModule, NgOptimizedImage } from '@angular/common';
-import { RouterLink } from '@angular/router';
-import { SkeletonLoaderComponent } from '../../components/skeleton-loader/skeleton-loader.component';
 import { MemberService } from '../../services/members.service';
 import type { Member, MemberRole, RoleFilter } from '../../services/members.service';
 import { I18nPipe } from '../../i18n/i18n.pipe';
@@ -27,8 +25,6 @@ type HighchartsStatic = typeof import('highcharts');
   selector: 'app-organization',
   imports: [
     CommonModule,
-    RouterLink,
-    SkeletonLoaderComponent,
     NgOptimizedImage,
     I18nPipe,
     FooterComponent,
@@ -2455,7 +2451,7 @@ export class OrganizationComponent implements OnInit, AfterViewInit {
     {
       slot: 3,
       name: 'Brigitte Nsensele Wa Nsensele',
-      subtitleKey: 'organization.firstPresidents.placeholderSubtitle',
+      subtitleKey: 'organization.firstPresidents.honoraryTitleThird',
       image:
         'https://res.cloudinary.com/dhqvb8wbn/image/upload/v1772020345/Brigitte_NSENSELE_wa_NSENSELE.jpg_2_vgiv72.jpg',
     },
