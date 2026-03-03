@@ -139,83 +139,6 @@ interface PresidentSlide {
         </div>
       </section>
 
-      <!-- ═══ KEY FACTS ═══ -->
-      <section class="kf-section">
-        <div class="kf-bg-aura"></div>
-        <div class="container">
-          <div class="sec-head">
-            <div class="sec-line anim-line"></div>
-            <h2 class="sec-title anim-up">{{ 'home.keyFacts.title' | i18n }}</h2>
-          </div>
-          <p class="sec-sub anim-up a-d1">{{ 'home.keyFacts.subtitle' | i18n }}</p>
-          <div class="kf-grid">
-            <div
-              class="kf-card tilt-card"
-              style="--i:0"
-              (mousemove)="tilt($event)"
-              (mouseleave)="tiltReset($event)"
-            >
-              <div class="tilt-shine"></div>
-              <div class="tilt-shadow"></div>
-              <div class="kf-meta">
-                <h3>{{ 'home.keyFacts.cards.volume.title' | i18n }}</h3>
-                <span class="kf-tag">{{ 'home.keyFacts.cards.volume.note' | i18n }}</span>
-              </div>
-              <div
-                #caseVolumeChart
-                class="kf-chart"
-                role="img"
-                [attr.aria-label]="'home.keyFacts.cards.volume.aria' | i18n"
-              ></div>
-              <div class="card-edge-r"></div>
-              <div class="card-edge-b"></div>
-            </div>
-            <div
-              class="kf-card tilt-card"
-              style="--i:1"
-              (mousemove)="tilt($event)"
-              (mouseleave)="tiltReset($event)"
-            >
-              <div class="tilt-shine"></div>
-              <div class="tilt-shadow"></div>
-              <div class="kf-meta">
-                <h3>{{ 'home.keyFacts.cards.processing.title' | i18n }}</h3>
-                <span class="kf-tag">{{ 'home.keyFacts.cards.processing.note' | i18n }}</span>
-              </div>
-              <div
-                #processingTimeChart
-                class="kf-chart"
-                role="img"
-                [attr.aria-label]="'home.keyFacts.cards.processing.aria' | i18n"
-              ></div>
-              <div class="card-edge-r"></div>
-              <div class="card-edge-b"></div>
-            </div>
-            <div
-              class="kf-card tilt-card"
-              style="--i:2"
-              (mousemove)="tilt($event)"
-              (mouseleave)="tiltReset($event)"
-            >
-              <div class="tilt-shine"></div>
-              <div class="tilt-shadow"></div>
-              <div class="kf-meta">
-                <h3>{{ 'home.keyFacts.cards.decisions.title' | i18n }}</h3>
-                <span class="kf-tag">{{ 'home.keyFacts.cards.decisions.note' | i18n }}</span>
-              </div>
-              <div
-                #decisionsTypeChart
-                class="kf-chart"
-                role="img"
-                [attr.aria-label]="'home.keyFacts.cards.decisions.aria' | i18n"
-              ></div>
-              <div class="card-edge-r"></div>
-              <div class="card-edge-b"></div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       <!-- ═══ QUICK LINKS ═══ -->
       <section class="ql-section">
         <div class="container">
@@ -911,6 +834,83 @@ interface PresidentSlide {
             >
               <span>{{ 'home.newsletter.cta' | i18n }}</span>
             </a>
+          </div>
+        </div>
+      </section>
+
+            <!-- ═══ KEY FACTS ═══ -->
+      <section class="kf-section">
+        <div class="kf-bg-aura"></div>
+        <div class="container">
+          <div class="sec-head">
+            <div class="sec-line anim-line"></div>
+            <h2 class="sec-title anim-up">{{ 'home.keyFacts.title' | i18n }}</h2>
+          </div>
+          <p class="sec-sub anim-up a-d1">{{ 'home.keyFacts.subtitle' | i18n }}</p>
+          <div class="kf-grid">
+            <div
+              class="kf-card tilt-card"
+              style="--i:0"
+              (mousemove)="tilt($event)"
+              (mouseleave)="tiltReset($event)"
+            >
+              <div class="tilt-shine"></div>
+              <div class="tilt-shadow"></div>
+              <div class="kf-meta">
+                <h3>{{ 'home.keyFacts.cards.volume.title' | i18n }}</h3>
+                <span class="kf-tag">{{ 'home.keyFacts.cards.volume.note' | i18n }}</span>
+              </div>
+              <div
+                #caseVolumeChart
+                class="kf-chart"
+                role="img"
+                [attr.aria-label]="'home.keyFacts.cards.volume.aria' | i18n"
+              ></div>
+              <div class="card-edge-r"></div>
+              <div class="card-edge-b"></div>
+            </div>
+            <div
+              class="kf-card tilt-card"
+              style="--i:1"
+              (mousemove)="tilt($event)"
+              (mouseleave)="tiltReset($event)"
+            >
+              <div class="tilt-shine"></div>
+              <div class="tilt-shadow"></div>
+              <div class="kf-meta">
+                <h3>{{ 'home.keyFacts.cards.processing.title' | i18n }}</h3>
+                <span class="kf-tag">{{ 'home.keyFacts.cards.processing.note' | i18n }}</span>
+              </div>
+              <div
+                #processingTimeChart
+                class="kf-chart"
+                role="img"
+                [attr.aria-label]="'home.keyFacts.cards.processing.aria' | i18n"
+              ></div>
+              <div class="card-edge-r"></div>
+              <div class="card-edge-b"></div>
+            </div>
+            <div
+              class="kf-card tilt-card"
+              style="--i:2"
+              (mousemove)="tilt($event)"
+              (mouseleave)="tiltReset($event)"
+            >
+              <div class="tilt-shine"></div>
+              <div class="tilt-shadow"></div>
+              <div class="kf-meta">
+                <h3>{{ 'home.keyFacts.cards.decisions.title' | i18n }}</h3>
+                <span class="kf-tag">{{ 'home.keyFacts.cards.decisions.note' | i18n }}</span>
+              </div>
+              <div
+                #decisionsTypeChart
+                class="kf-chart"
+                role="img"
+                [attr.aria-label]="'home.keyFacts.cards.decisions.aria' | i18n"
+              ></div>
+              <div class="card-edge-r"></div>
+              <div class="card-edge-b"></div>
+            </div>
           </div>
         </div>
       </section>
