@@ -688,8 +688,8 @@
   },
   "audiences": {
     "hero": {
-      "title": "AUDIENCES<br>ET EXTRAITS D'AUDIENCE",
-      "body": "Accédez aux horaires et aux extraits des audiences et décisions récentes."
+      "title": "AUDIENCES ET EXTRAITS DE RÔLE",
+      "body": "Accéder aux horaires d’audiences, aux extraits des rôles, et aux décisions récentes."
     },
     "understanding": {
       "title": "COMPRENDRE LES AUDIENCES",

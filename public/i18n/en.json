@@ -688,8 +688,8 @@
   },
   "audiences": {
     "hero": {
-      "title": "AUDIENCES<br>AND HEARING EXCERPTS",
-      "body": "Access schedules and excerpts from recent hearings and decisions."
+      "title": "HEARINGS AND ROLL EXTRACTS",
+      "body": "Access hearing schedules, roll extracts, and recent decisions."
     },
     "understanding": {
       "title": "UNDERSTANDING AUDIENCES",

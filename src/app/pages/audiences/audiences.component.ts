@@ -7,7 +7,7 @@ import {
   OnInit,
   ViewChild,
   inject,
-  signal
+  signal,
 } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { I18nPipe } from '../../i18n/i18n.pipe';
@@ -39,51 +39,6 @@ import { FooterComponent } from '../../components/footer/footer.component';
       <!-- Content Section -->
       <section class="content-section">
         <div class="container">
-          <!-- Understanding Audiences -->
-          <div class="understanding-section">
-            <h2>{{ 'audiences.understanding.title' | i18n }}</h2>
-            <p>{{ 'audiences.understanding.body' | i18n }}</p>
-          </div>
-
-          <!-- Monthly Hearing Metrics Section -->
-          <div class="metrics-section">
-            <div class="section-header">
-              <div class="header-line"></div>
-              <h2>{{ 'audiences.metrics.title' | i18n }}</h2>
-            </div>
-            <p class="section-subtitle">{{ 'audiences.metrics.subtitle' | i18n }}</p>
-
-            <div class="metrics-grid">
-              <div class="metrics-card glass-card tilt-card" style="--i:0" (mousemove)="tilt($event)" (mouseleave)="tiltReset($event)">
-                <div class="tilt-shine"></div>
-                <div class="metrics-card-header">
-                  <h3>{{ 'audiences.metrics.volume.title' | i18n }}</h3>
-                  <span class="metrics-note anim-label-pulse">{{ 'audiences.metrics.volume.note' | i18n }}</span>
-                </div>
-                <div
-                  #monthlyVolumeChart
-                  class="metrics-chart"
-                  role="img"
-                  [attr.aria-label]="'audiences.metrics.volume.aria' | i18n">
-                </div>
-              </div>
-
-              <div class="metrics-card glass-card tilt-card" style="--i:1" (mousemove)="tilt($event)" (mouseleave)="tiltReset($event)">
-                <div class="tilt-shine"></div>
-                <div class="metrics-card-header">
-                  <h3>{{ 'audiences.metrics.outcomes.title' | i18n }}</h3>
-                  <span class="metrics-note anim-label-pulse">{{ 'audiences.metrics.outcomes.note' | i18n }}</span>
-                </div>
-                <div
-                  #outcomesChart
-                  class="metrics-chart"
-                  role="img"
-                  [attr.aria-label]="'audiences.metrics.outcomes.aria' | i18n">
-                </div>
-              </div>
-            </div>
-          </div>
-
           <!-- Recent Role Excerpts Section -->
           <div class="schedules-section">
             <div class="section-header">
@@ -94,7 +49,12 @@ import { FooterComponent } from '../../components/footer/footer.component';
 
             <div class="documents-grid">
               <!-- Document Card 1 -->
-              <div class="document-card glass-card tilt-card" style="--i:0" (mousemove)="tilt($event)" (mouseleave)="tiltReset($event)">
+              <div
+                class="document-card glass-card tilt-card"
+                style="--i:0"
+                (mousemove)="tilt($event)"
+                (mouseleave)="tiltReset($event)"
+              >
                 <div class="tilt-shine"></div>
                 <div class="document-preview">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 260" fill="none">
@@ -115,7 +75,12 @@ import { FooterComponent } from '../../components/footer/footer.component';
                 </div>
                 <div class="document-info">
                   <h3>{{ 'audiences.documents.civil.title' | i18n }}</h3>
-                  <button class="download-btn mag-btn" (mousemove)="mag($event)" (mouseleave)="magOut($event)" (click)="ripple($event)">
+                  <button
+                    class="download-btn mag-btn"
+                    (mousemove)="mag($event)"
+                    (mouseleave)="magOut($event)"
+                    (click)="ripple($event)"
+                  >
                     <span>{{ 'audiences.actions.downloadPdf' | i18n }}</span>
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
                       <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z" />
@@ -125,7 +90,12 @@ import { FooterComponent } from '../../components/footer/footer.component';
               </div>
 
               <!-- Document Card 2 -->
-              <div class="document-card glass-card tilt-card" style="--i:1" (mousemove)="tilt($event)" (mouseleave)="tiltReset($event)">
+              <div
+                class="document-card glass-card tilt-card"
+                style="--i:1"
+                (mousemove)="tilt($event)"
+                (mouseleave)="tiltReset($event)"
+              >
                 <div class="tilt-shine"></div>
                 <div class="document-preview">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 260" fill="none">
@@ -140,13 +110,20 @@ import { FooterComponent } from '../../components/footer/footer.component';
                     <rect x="20" y="130" width="140" height="4" fill="#eee" />
                   </svg>
                   <div class="document-label">
-                    <span class="label-text">{{ 'audiences.documents.criminal.label' | i18n }}</span>
+                    <span class="label-text">{{
+                      'audiences.documents.criminal.label' | i18n
+                    }}</span>
                     <span class="label-date">18/01/26</span>
                   </div>
                 </div>
                 <div class="document-info">
                   <h3>{{ 'audiences.documents.criminal.title' | i18n }}</h3>
-                  <button class="download-btn mag-btn" (mousemove)="mag($event)" (mouseleave)="magOut($event)" (click)="ripple($event)">
+                  <button
+                    class="download-btn mag-btn"
+                    (mousemove)="mag($event)"
+                    (mouseleave)="magOut($event)"
+                    (click)="ripple($event)"
+                  >
                     <span>{{ 'audiences.actions.downloadPdf' | i18n }}</span>
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
                       <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z" />
@@ -156,7 +133,12 @@ import { FooterComponent } from '../../components/footer/footer.component';
               </div>
 
               <!-- Document Card 3 -->
-              <div class="document-card glass-card tilt-card" style="--i:2" (mousemove)="tilt($event)" (mouseleave)="tiltReset($event)">
+              <div
+                class="document-card glass-card tilt-card"
+                style="--i:2"
+                (mousemove)="tilt($event)"
+                (mouseleave)="tiltReset($event)"
+              >
                 <div class="tilt-shine"></div>
                 <div class="document-preview">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 260" fill="none">
@@ -177,7 +159,12 @@ import { FooterComponent } from '../../components/footer/footer.component';
                 </div>
                 <div class="document-info">
                   <h3>{{ 'audiences.documents.social.title' | i18n }}</h3>
-                  <button class="download-btn mag-btn" (mousemove)="mag($event)" (mouseleave)="magOut($event)" (click)="ripple($event)">
+                  <button
+                    class="download-btn mag-btn"
+                    (mousemove)="mag($event)"
+                    (mouseleave)="magOut($event)"
+                    (click)="ripple($event)"
+                  >
                     <span>{{ 'audiences.actions.downloadPdf' | i18n }}</span>
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
                       <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z" />
@@ -187,7 +174,12 @@ import { FooterComponent } from '../../components/footer/footer.component';
               </div>
 
               <!-- Document Card 4 -->
-              <div class="document-card glass-card tilt-card" style="--i:3" (mousemove)="tilt($event)" (mouseleave)="tiltReset($event)">
+              <div
+                class="document-card glass-card tilt-card"
+                style="--i:3"
+                (mousemove)="tilt($event)"
+                (mouseleave)="tiltReset($event)"
+              >
                 <div class="tilt-shine"></div>
                 <div class="document-preview">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 260" fill="none">
@@ -208,7 +200,12 @@ import { FooterComponent } from '../../components/footer/footer.component';
                 </div>
                 <div class="document-info">
                   <h3>{{ 'audiences.documents.general.title' | i18n }}</h3>
-                  <button class="download-btn mag-btn" (mousemove)="mag($event)" (mouseleave)="magOut($event)" (click)="ripple($event)">
+                  <button
+                    class="download-btn mag-btn"
+                    (mousemove)="mag($event)"
+                    (mouseleave)="magOut($event)"
+                    (click)="ripple($event)"
+                  >
                     <span>{{ 'audiences.actions.downloadPdf' | i18n }}</span>
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
                       <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z" />
@@ -219,15 +216,57 @@ import { FooterComponent } from '../../components/footer/footer.component';
             </div>
           </div>
 
-          <!-- Need Assistance Section -->
-          <div class="assistance-section">
-            <div class="assistance-content">
-              <h2>{{ 'audiences.assistance.title' | i18n }}</h2>
-              <p>{{ 'audiences.assistance.body' | i18n }}</p>
+          <!-- Monthly Hearing Metrics Section -->
+          <div class="metrics-section">
+            <div class="section-header">
+              <div class="header-line"></div>
+              <h2>{{ 'audiences.metrics.title' | i18n }}</h2>
             </div>
-            <button class="contact-btn mag-btn" (mousemove)="mag($event)" (mouseleave)="magOut($event)" (click)="ripple($event)">
-              <span>{{ 'audiences.assistance.cta' | i18n }}</span>
-            </button>
+            <p class="section-subtitle">{{ 'audiences.metrics.subtitle' | i18n }}</p>
+
+            <div class="metrics-grid">
+              <div
+                class="metrics-card glass-card tilt-card"
+                style="--i:0"
+                (mousemove)="tilt($event)"
+                (mouseleave)="tiltReset($event)"
+              >
+                <div class="tilt-shine"></div>
+                <div class="metrics-card-header">
+                  <h3>{{ 'audiences.metrics.volume.title' | i18n }}</h3>
+                  <span class="metrics-note anim-label-pulse">{{
+                    'audiences.metrics.volume.note' | i18n
+                  }}</span>
+                </div>
+                <div
+                  #monthlyVolumeChart
+                  class="metrics-chart"
+                  role="img"
+                  [attr.aria-label]="'audiences.metrics.volume.aria' | i18n"
+                ></div>
+              </div>
+
+              <div
+                class="metrics-card glass-card tilt-card"
+                style="--i:1"
+                (mousemove)="tilt($event)"
+                (mouseleave)="tiltReset($event)"
+              >
+                <div class="tilt-shine"></div>
+                <div class="metrics-card-header">
+                  <h3>{{ 'audiences.metrics.outcomes.title' | i18n }}</h3>
+                  <span class="metrics-note anim-label-pulse">{{
+                    'audiences.metrics.outcomes.note' | i18n
+                  }}</span>
+                </div>
+                <div
+                  #outcomesChart
+                  class="metrics-chart"
+                  role="img"
+                  [attr.aria-label]="'audiences.metrics.outcomes.aria' | i18n"
+                ></div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -256,20 +295,20 @@ import { FooterComponent } from '../../components/footer/footer.component';
       }
 
       /* Hero Section */
-  .hero-section {
-  position: relative;
-  min-height: 400px;
-  background-image: url('https://plus.unsplash.com/premium_photo-1706546717570-865a9430bb34?q=80&w=2370&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 80px 20px;
-  overflow: hidden;
-}
+      .hero-section {
+        position: relative;
+        min-height: 400px;
+        background-image: url('https://plus.unsplash.com/premium_photo-1706546717570-865a9430bb34?q=80&w=2370&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 80px 20px;
+        overflow: hidden;
+      }
 
       .hero-overlay {
         position: absolute;
@@ -303,14 +342,16 @@ import { FooterComponent } from '../../components/footer/footer.component';
       .vertical-line {
         width: 2px;
         height: 180px;
-        background: linear-gradient(to bottom, 
-          transparent 0%, 
+        background: linear-gradient(
+          to bottom,
+          transparent 0%,
           rgba(255, 255, 255, 0.2) 10%,
-          rgba(255, 255, 255, 0.5) 30%, 
-          rgba(255, 255, 255, 0.8) 50%, 
-          rgba(255, 255, 255, 0.5) 70%, 
+          rgba(255, 255, 255, 0.5) 30%,
+          rgba(255, 255, 255, 0.8) 50%,
+          rgba(255, 255, 255, 0.5) 70%,
           rgba(255, 255, 255, 0.2) 90%,
-          transparent 100%);
+          transparent 100%
+        );
         position: relative;
         box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
       }
@@ -348,7 +389,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
         opacity: 0.95;
         margin: 0;
         font-weight: 300;
-       color: #ffffff;
+        color: #ffffff;
       }
 
       /* Content Section */
@@ -426,7 +467,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
         font-size: 0.75rem;
         text-transform: uppercase;
         letter-spacing: 1px;
-        color: #1F9BD9;
+        color: #1f9bd9;
         font-weight: 600;
         white-space: nowrap;
       }
@@ -451,7 +492,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
       .header-line {
         flex: 0 0 60px;
         height: 2px;
-        background: #1F9BD9;
+        background: #1f9bd9;
       }
 
       .schedules-section h2 {
@@ -465,7 +506,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
 
       .section-subtitle {
         font-size: 0.8rem;
-        color: #1F9BD9 !important;
+        color: #1f9bd9 !important;
         margin: 0 0 60px 0;
         text-transform: uppercase;
         letter-spacing: 2.5px;
@@ -538,7 +579,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
 
       .label-date {
         font-weight: 600;
-        color: #1F9BD9;
+        color: #1f9bd9;
       }
 
       .document-info {
@@ -643,14 +684,14 @@ import { FooterComponent } from '../../components/footer/footer.component';
       }
 
       .footer-main {
-        background-color: #2C3E50;
+        background-color: #2c3e50;
         color: #b0b0b0;
         padding: 60px 0 40px;
         position: relative;
       }
 
       .understanding-section p {
-        text-align: left;  /* Changed from 'justify' to 'left' */
+        text-align: left; /* Changed from 'justify' to 'left' */
       }
 
       .footer-logo-wrapper {
@@ -705,11 +746,11 @@ import { FooterComponent } from '../../components/footer/footer.component';
       }
 
       .footer-column ul li a:hover {
-        color: #1F9BD9;
+        color: #1f9bd9;
       }
 
       .footer-bottom {
-        background-color: #EAF1FA;
+        background-color: #eaf1fa;
         padding: 25px 0;
       }
 
@@ -731,7 +772,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: #5A7184;
+        background-color: #5a7184;
         border-radius: 50%;
         color: white;
         text-decoration: none;
@@ -739,7 +780,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
       }
 
       .social-icon:hover {
-        background-color: #1F9BD9;
+        background-color: #1f9bd9;
       }
 
       .social-icon svg {
@@ -760,7 +801,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
       }
 
       .privacy-link:hover {
-        color: #1F9BD9;
+        color: #1f9bd9;
       }
 
       /* ========================================
@@ -833,14 +874,16 @@ import { FooterComponent } from '../../components/footer/footer.component';
           width: 150px;
           height: 2px;
           margin: 0 auto;
-          background: linear-gradient(to right, 
-            transparent 0%, 
+          background: linear-gradient(
+            to right,
+            transparent 0%,
             rgba(255, 255, 255, 0.2) 10%,
-            rgba(255, 255, 255, 0.5) 30%, 
-            rgba(255, 255, 255, 0.8) 50%, 
-            rgba(255, 255, 255, 0.5) 70%, 
+            rgba(255, 255, 255, 0.5) 30%,
+            rgba(255, 255, 255, 0.8) 50%,
+            rgba(255, 255, 255, 0.5) 70%,
             rgba(255, 255, 255, 0.2) 90%,
-            transparent 100%);
+            transparent 100%
+          );
         }
 
         .vertical-line::before {
@@ -1002,7 +1045,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
           font-size: 0.75rem;
           margin-bottom: 40px;
           text-align: left;
-          color: #1F9BD9 !important;
+          color: #1f9bd9 !important;
         }
 
         .documents-grid {
@@ -1149,7 +1192,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
           font-size: 0.7rem;
           letter-spacing: 2px;
           margin-bottom: 35px;
-          color: #1F9BD9 !important;
+          color: #1f9bd9 !important;
         }
 
         .documents-grid {
@@ -1335,35 +1378,220 @@ import { FooterComponent } from '../../components/footer/footer.component';
       }
 
       /* Home-style: loader, cursor, tilt, labelPulse, mag, ripple */
-      @keyframes fillBar{0%{width:0}60%{width:70%}100%{width:100%}}
-      @keyframes labelPulse{0%,100%{opacity:.4;letter-spacing:2px}50%{opacity:1;letter-spacing:5px}}
-      @keyframes rOrbit1{from{transform:rotateX(65deg) rotateZ(0)}to{transform:rotateX(65deg) rotateZ(360deg)}}
-      @keyframes rOrbit2{from{transform:rotateX(65deg) rotateZ(120deg)}to{transform:rotateX(65deg) rotateZ(480deg)}}
-      @keyframes rOrbit3{from{transform:rotateX(65deg) rotateZ(240deg)}to{transform:rotateX(65deg) rotateZ(600deg)}}
-      @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
-      @keyframes shimmerSweep{from{transform:translateX(-120%) skewX(-20deg)}to{transform:translateX(220%) skewX(-20deg)}}
-      @keyframes rippleAnim{to{transform:scale(1);opacity:0}}
-      @keyframes cardIn{from{opacity:0;transform:translateY(40px) rotateX(20deg) scale(.94)}to{opacity:1;transform:translateY(0) rotateX(0) scale(1)}}
-      .loader{position:fixed;inset:0;background:linear-gradient(135deg,#080e1a,#82BCDC);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:32px;z-index:9999;transition:opacity .7s ease,visibility .7s ease,transform .7s ease;}
-      .loader.out{opacity:0;visibility:hidden;transform:scale(1.06);pointer-events:none;}
-      .loader-sphere{width:120px;height:120px;position:relative;display:flex;align-items:center;justify-content:center;}
-      .sphere-ring{position:absolute;inset:0;border-radius:50%;border:1px solid rgba(31,155,217,.35);}
-      .loader .r1{inset:10px;animation:rOrbit1 2.5s linear infinite;}
-      .loader .r2{inset:0;animation:rOrbit2 3.5s linear infinite;}
-      .loader .r3{inset:-12px;animation:rOrbit3 5s linear infinite;}
-      .sphere-core{width:52px;height:52px;border-radius:50%;background:radial-gradient(circle,rgba(31,155,217,.25),rgba(31,155,217,.05));border:1px solid rgba(31,155,217,.5);display:flex;align-items:center;justify-content:center;color:#1F9BD9;box-shadow:0 0 30px rgba(31,155,217,.3);animation:float 3s ease-in-out infinite;}
-      .sphere-core svg{width:30px;height:30px;}
-      .loader-track{width:220px;height:3px;background:rgba(255,255,255,.08);border-radius:99px;overflow:hidden;}
-      .loader-fill{height:100%;background:linear-gradient(90deg,#1F9BD9,#e0b98a);border-radius:99px;animation:fillBar 2s ease-in-out infinite;}
-      .loader-label{font-size:.72rem;font-weight:700;letter-spacing:2px;color:#1F9BD9;text-transform:uppercase;animation:labelPulse 2s ease-in-out infinite;}
-      .anim-label-pulse{animation:labelPulse 3s ease-in-out infinite;}
-      .tilt-card{transform-style:preserve-3d;position:relative;overflow:hidden;transition:transform .5s cubic-bezier(.23,1,.32,1),box-shadow .5s ease;opacity:0;animation:cardIn .7s cubic-bezier(.23,1,.32,1) calc(var(--i,0)*.1s) forwards;}
-      .tilt-shine{position:absolute;inset:0;border-radius:inherit;pointer-events:none;z-index:10;background:linear-gradient(105deg,transparent 45%,rgba(255,255,255,.18) 50%,transparent 55%);transform:translateX(-120%) skewX(-20deg);}
-      .mag-btn{position:relative;overflow:hidden;transition:transform .25s ease;}
-      .mag-btn::before{content:'';position:absolute;inset:0;background:linear-gradient(105deg,transparent 40%,rgba(255,255,255,.2) 50%,transparent 60%);transform:translateX(-120%) skewX(-20deg);pointer-events:none;}
-      .mag-btn:hover::before{animation:shimmerSweep .6s ease forwards;}
-    `
-  ]
+      @keyframes fillBar {
+        0% {
+          width: 0;
+        }
+        60% {
+          width: 70%;
+        }
+        100% {
+          width: 100%;
+        }
+      }
+      @keyframes labelPulse {
+        0%,
+        100% {
+          opacity: 0.4;
+          letter-spacing: 2px;
+        }
+        50% {
+          opacity: 1;
+          letter-spacing: 5px;
+        }
+      }
+      @keyframes rOrbit1 {
+        from {
+          transform: rotateX(65deg) rotateZ(0);
+        }
+        to {
+          transform: rotateX(65deg) rotateZ(360deg);
+        }
+      }
+      @keyframes rOrbit2 {
+        from {
+          transform: rotateX(65deg) rotateZ(120deg);
+        }
+        to {
+          transform: rotateX(65deg) rotateZ(480deg);
+        }
+      }
+      @keyframes rOrbit3 {
+        from {
+          transform: rotateX(65deg) rotateZ(240deg);
+        }
+        to {
+          transform: rotateX(65deg) rotateZ(600deg);
+        }
+      }
+      @keyframes float {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-8px);
+        }
+      }
+      @keyframes shimmerSweep {
+        from {
+          transform: translateX(-120%) skewX(-20deg);
+        }
+        to {
+          transform: translateX(220%) skewX(-20deg);
+        }
+      }
+      @keyframes rippleAnim {
+        to {
+          transform: scale(1);
+          opacity: 0;
+        }
+      }
+      @keyframes cardIn {
+        from {
+          opacity: 0;
+          transform: translateY(40px) rotateX(20deg) scale(0.94);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0) rotateX(0) scale(1);
+        }
+      }
+      .loader {
+        position: fixed;
+        inset: 0;
+        background: linear-gradient(135deg, #080e1a, #82bcdc);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 32px;
+        z-index: 9999;
+        transition:
+          opacity 0.7s ease,
+          visibility 0.7s ease,
+          transform 0.7s ease;
+      }
+      .loader.out {
+        opacity: 0;
+        visibility: hidden;
+        transform: scale(1.06);
+        pointer-events: none;
+      }
+      .loader-sphere {
+        width: 120px;
+        height: 120px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .sphere-ring {
+        position: absolute;
+        inset: 0;
+        border-radius: 50%;
+        border: 1px solid rgba(31, 155, 217, 0.35);
+      }
+      .loader .r1 {
+        inset: 10px;
+        animation: rOrbit1 2.5s linear infinite;
+      }
+      .loader .r2 {
+        inset: 0;
+        animation: rOrbit2 3.5s linear infinite;
+      }
+      .loader .r3 {
+        inset: -12px;
+        animation: rOrbit3 5s linear infinite;
+      }
+      .sphere-core {
+        width: 52px;
+        height: 52px;
+        border-radius: 50%;
+        background: radial-gradient(circle, rgba(31, 155, 217, 0.25), rgba(31, 155, 217, 0.05));
+        border: 1px solid rgba(31, 155, 217, 0.5);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #1f9bd9;
+        box-shadow: 0 0 30px rgba(31, 155, 217, 0.3);
+        animation: float 3s ease-in-out infinite;
+      }
+      .sphere-core svg {
+        width: 30px;
+        height: 30px;
+      }
+      .loader-track {
+        width: 220px;
+        height: 3px;
+        background: rgba(255, 255, 255, 0.08);
+        border-radius: 99px;
+        overflow: hidden;
+      }
+      .loader-fill {
+        height: 100%;
+        background: linear-gradient(90deg, #1f9bd9, #e0b98a);
+        border-radius: 99px;
+        animation: fillBar 2s ease-in-out infinite;
+      }
+      .loader-label {
+        font-size: 0.72rem;
+        font-weight: 700;
+        letter-spacing: 2px;
+        color: #1f9bd9;
+        text-transform: uppercase;
+        animation: labelPulse 2s ease-in-out infinite;
+      }
+      .anim-label-pulse {
+        animation: labelPulse 3s ease-in-out infinite;
+      }
+      .tilt-card {
+        transform-style: preserve-3d;
+        position: relative;
+        overflow: hidden;
+        transition:
+          transform 0.5s cubic-bezier(0.23, 1, 0.32, 1),
+          box-shadow 0.5s ease;
+        opacity: 0;
+        animation: cardIn 0.7s cubic-bezier(0.23, 1, 0.32, 1) calc(var(--i, 0) * 0.1s) forwards;
+      }
+      .tilt-shine {
+        position: absolute;
+        inset: 0;
+        border-radius: inherit;
+        pointer-events: none;
+        z-index: 10;
+        background: linear-gradient(
+          105deg,
+          transparent 45%,
+          rgba(255, 255, 255, 0.18) 50%,
+          transparent 55%
+        );
+        transform: translateX(-120%) skewX(-20deg);
+      }
+      .mag-btn {
+        position: relative;
+        overflow: hidden;
+        transition: transform 0.25s ease;
+      }
+      .mag-btn::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+          105deg,
+          transparent 40%,
+          rgba(255, 255, 255, 0.2) 50%,
+          transparent 60%
+        );
+        transform: translateX(-120%) skewX(-20deg);
+        pointer-events: none;
+      }
+      .mag-btn:hover::before {
+        animation: shimmerSweep 0.6s ease forwards;
+      }
+    `,
+  ],
 })
 export class AudiencesComponent implements OnInit, AfterViewInit {
   @ViewChild('monthlyVolumeChart', { static: true })
@@ -1387,7 +1615,7 @@ export class AudiencesComponent implements OnInit, AfterViewInit {
     this.renderAudienceCharts();
     this.setupChartObservers([this.monthlyVolumeChart, this.outcomesChart]);
     this.destroyRef.onDestroy(() => {
-      this.chartInstances.forEach(chart => chart.destroy());
+      this.chartInstances.forEach((chart) => chart.destroy());
       this.chartInstances = [];
       document.removeEventListener('visibilitychange', this.handleVisibilityChange);
       this.resizeObserver?.disconnect();
@@ -1400,18 +1628,26 @@ export class AudiencesComponent implements OnInit, AfterViewInit {
     const r = el.getBoundingClientRect();
     const dx = (e.clientX - r.left - r.width / 2) / (r.width / 2);
     const dy = (e.clientY - r.top - r.height / 2) / (r.height / 2);
-    const tx = -dy * 14; const ty = dx * 14;
+    const tx = -dy * 14;
+    const ty = dx * 14;
     el.style.transform = `perspective(900px) rotateX(${tx}deg) rotateY(${ty}deg) translateZ(14px)`;
     el.style.boxShadow = `${-ty * 1.5}px ${tx * 1.5}px 50px rgba(0,0,0,.18)`;
     const shine = el.querySelector<HTMLElement>('.tilt-shine');
-    if (shine) { shine.style.transform = `translateX(${dx * 60}%) translateY(${dy * 40}%) skewX(-20deg)`; shine.style.opacity = '.7'; }
+    if (shine) {
+      shine.style.transform = `translateX(${dx * 60}%) translateY(${dy * 40}%) skewX(-20deg)`;
+      shine.style.opacity = '.7';
+    }
   }
 
   tiltReset(e: MouseEvent) {
     const el = e.currentTarget as HTMLElement;
-    el.style.transform = ''; el.style.boxShadow = '';
+    el.style.transform = '';
+    el.style.boxShadow = '';
     const shine = el.querySelector<HTMLElement>('.tilt-shine');
-    if (shine) { shine.style.transform = 'translateX(-120%) skewX(-20deg)'; shine.style.opacity = '0'; }
+    if (shine) {
+      shine.style.transform = 'translateX(-120%) skewX(-20deg)';
+      shine.style.opacity = '0';
+    }
   }
 
   mag(e: MouseEvent) {
@@ -1422,7 +1658,9 @@ export class AudiencesComponent implements OnInit, AfterViewInit {
     el.style.transform = `translate(${dx}px,${dy}px)`;
   }
 
-  magOut(e: MouseEvent) { (e.currentTarget as HTMLElement).style.transform = ''; }
+  magOut(e: MouseEvent) {
+    (e.currentTarget as HTMLElement).style.transform = '';
+  }
 
   ripple(e: MouseEvent) {
     const el = e.currentTarget as HTMLElement;
@@ -1433,28 +1671,32 @@ export class AudiencesComponent implements OnInit, AfterViewInit {
     const style = document.createElement('style');
     style.textContent = '@keyframes rippleAnim{to{transform:scale(1);opacity:0;}}';
     document.head.appendChild(style);
-    el.style.position = 'relative'; el.style.overflow = 'hidden';
+    el.style.position = 'relative';
+    el.style.overflow = 'hidden';
     el.appendChild(rip);
-    setTimeout(() => { rip.remove(); style.remove(); }, 700);
+    setTimeout(() => {
+      rip.remove();
+      style.remove();
+    }, 700);
   }
 
   private setupChartObservers(containers: ElementRef<HTMLDivElement>[]) {
     if (typeof ResizeObserver !== 'undefined') {
       this.resizeObserver = new ResizeObserver(() => this.reflowCharts());
-      containers.forEach(container => this.resizeObserver?.observe(container.nativeElement));
+      containers.forEach((container) => this.resizeObserver?.observe(container.nativeElement));
     }
 
     document.addEventListener('visibilitychange', this.handleVisibilityChange);
   }
 
   private reflowCharts() {
-    this.chartInstances.forEach(chart => chart.reflow());
+    this.chartInstances.forEach((chart) => chart.reflow());
   }
 
   private renderAudienceCharts() {
     const axisLabelStyle = {
       color: '#1F9BD9',
-      fontSize: '11px'
+      fontSize: '11px',
     };
 
     const months = ['Sep', 'Oct', 'Nov', 'Dec', 'Jan', 'Feb'];
@@ -1464,7 +1706,7 @@ export class AudiencesComponent implements OnInit, AfterViewInit {
         type: 'column',
         backgroundColor: 'transparent',
         height: 260,
-        spacing: [10, 10, 0, 10]
+        spacing: [10, 10, 0, 10],
       },
       title: { text: undefined },
       credits: { enabled: false },
@@ -1473,17 +1715,17 @@ export class AudiencesComponent implements OnInit, AfterViewInit {
         categories: months,
         labels: { style: axisLabelStyle },
         lineColor: 'rgba(26, 41, 66, 0.12)',
-        tickColor: 'rgba(26, 41, 66, 0.12)'
+        tickColor: 'rgba(26, 41, 66, 0.12)',
       },
       yAxis: {
         title: { text: undefined },
         labels: { style: axisLabelStyle },
-        gridLineColor: 'rgba(26, 41, 66, 0.08)'
+        gridLineColor: 'rgba(26, 41, 66, 0.08)',
       },
       tooltip: {
         backgroundColor: '#1a1a1a',
         style: { color: '#ffffff' },
-        borderColor: '#1a1a1a'
+        borderColor: '#1a1a1a',
       },
       series: [
         {
@@ -1491,9 +1733,9 @@ export class AudiencesComponent implements OnInit, AfterViewInit {
           name: 'Hearings',
           data: [120, 135, 150, 142, 168, 176],
           color: '#1F9BD9',
-          borderRadius: 4
-        }
-      ]
+          borderRadius: 4,
+        },
+      ],
     };
 
     const outcomesOptions: Highcharts.Options = {
@@ -1501,63 +1743,63 @@ export class AudiencesComponent implements OnInit, AfterViewInit {
         type: 'area',
         backgroundColor: 'transparent',
         height: 260,
-        spacing: [10, 10, 0, 10]
+        spacing: [10, 10, 0, 10],
       },
       title: { text: undefined },
       credits: { enabled: false },
       legend: {
         align: 'center',
         verticalAlign: 'bottom',
-        itemStyle: { color: '#1a1a1a', fontWeight: '600' }
+        itemStyle: { color: '#1a1a1a', fontWeight: '600' },
       },
       xAxis: {
         categories: months,
         labels: { style: axisLabelStyle },
         lineColor: 'rgba(26, 41, 66, 0.12)',
-        tickColor: 'rgba(26, 41, 66, 0.12)'
+        tickColor: 'rgba(26, 41, 66, 0.12)',
       },
       yAxis: {
         title: { text: undefined },
         labels: { style: axisLabelStyle },
-        gridLineColor: 'rgba(26, 41, 66, 0.08)'
+        gridLineColor: 'rgba(26, 41, 66, 0.08)',
       },
       tooltip: {
         backgroundColor: '#1a1a1a',
         style: { color: '#ffffff' },
         borderColor: '#1a1a1a',
-        shared: true
+        shared: true,
       },
       plotOptions: {
         area: {
           stacking: 'normal',
-          marker: { radius: 3 }
-        }
+          marker: { radius: 3 },
+        },
       },
       series: [
         {
           type: 'area',
           name: 'Decisions rendered',
           data: [54, 61, 70, 66, 78, 82],
-          color: 'rgba(26, 41, 66, 0.7)'
+          color: 'rgba(26, 41, 66, 0.7)',
         },
         {
           type: 'area',
           name: 'Adjourned',
           data: [36, 38, 42, 40, 45, 47],
-          color: 'rgba(31, 155, 217, 0.7)'
+          color: 'rgba(31, 155, 217, 0.7)',
         },
         {
           type: 'area',
           name: 'Dismissed',
           data: [22, 24, 26, 24, 28, 29],
-          color: 'rgba(90, 113, 132, 0.7)'
-        }
-      ]
+          color: 'rgba(90, 113, 132, 0.7)',
+        },
+      ],
     };
 
     this.chartInstances = [
       Highcharts.chart(this.monthlyVolumeChart.nativeElement, volumeOptions),
-      Highcharts.chart(this.outcomesChart.nativeElement, outcomesOptions)
+      Highcharts.chart(this.outcomesChart.nativeElement, outcomesOptions),
     ];
   }
 }
