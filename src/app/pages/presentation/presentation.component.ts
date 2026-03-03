@@ -24,70 +24,56 @@ import { FooterComponent } from '../../components/footer/footer.component';
       <!-- Content Section -->
       <section class="content-section">
         <div class="container">
-          <!-- Introduction -->
-          <div class="intro-box">
-            <h2 class="section-heading" [innerHTML]="'about.intro.title' | i18n"></h2>
-            <div class="intro-text">
-              <p>{{ 'about.intro.body' | i18n }}</p>
-            </div>
-          </div>
-
-          <!-- Legal Texts Section -->
           <div class="legal-section">
-            <h2 class="section-heading" [innerHTML]="'about.legal.title' | i18n"></h2>
+            <h2 class="section-heading" [innerHTML]="'about.intro.title' | i18n"></h2>
 
-            <div class="legal-content">
-              <!-- Left Column - Document Links -->
-              <div class="document-links">
-                <div class="doc-item">
-                  <span class="doc-number">1</span>
-                  <div class="doc-text">
-                    <h3>{{ 'about.legal.docs.1' | i18n }}</h3>
-                  </div>
-                </div>
+            <div class="rubrics-grid">
+              <article class="rubric-card">
+                <h3>{{ 'about.rubrics.legalBasis' | i18n }}</h3>
+                <p>{{ 'about.intro.body' | i18n }}</p>
+                <ul>
+                  <li>{{ 'about.legal.docs.1' | i18n }}</li>
+                  <li>{{ 'about.legal.docs.2' | i18n }}</li>
+                  <li>{{ 'about.legal.docs.3' | i18n }}</li>
+                </ul>
+              </article>
 
-                <div class="doc-item">
-                  <span class="doc-number">2</span>
-                  <div class="doc-text">
-                    <h3>{{ 'about.legal.docs.2' | i18n }}</h3>
-                  </div>
-                </div>
+              <article class="rubric-card">
+                <h3>{{ 'about.rubrics.organization' | i18n }}</h3>
+                <p>{{ 'about.legal.detail.paragraph3' | i18n }}</p>
+                <ul>
+                  <li>{{ 'about.legal.detail.list2.1' | i18n }}</li>
+                  <li>{{ 'about.legal.detail.list2.2' | i18n }}</li>
+                  <li>{{ 'about.legal.detail.list2.3' | i18n }}</li>
+                </ul>
+                <p>{{ 'about.legal.detail.paragraph4' | i18n }}</p>
+              </article>
 
-                <div class="doc-item">
-                  <span class="doc-number">3</span>
-                  <div class="doc-text">
-                    <h3>{{ 'about.legal.docs.3' | i18n }}</h3>
-                  </div>
-                </div>
-              </div>
+              <article class="rubric-card">
+                <h3>{{ 'about.rubrics.mission' | i18n }}</h3>
+                <p>{{ 'about.legal.detail.paragraph1' | i18n }}</p>
+                <p>{{ 'about.legal.detail.paragraph2' | i18n }}</p>
+                <ul>
+                  <li>{{ 'about.legal.detail.list1.1' | i18n }}</li>
+                  <li>{{ 'about.legal.detail.list1.2' | i18n }}</li>
+                  <li>{{ 'about.legal.detail.list1.3' | i18n }}</li>
+                  <li>{{ 'about.legal.detail.list1.4' | i18n }}</li>
+                  <li>{{ 'about.legal.detail.list1.5' | i18n }}</li>
+                </ul>
+              </article>
 
-              <!-- Right Column - Detailed Text -->
-              <div class="detailed-text">
-                <div class="text-block">
-                  <h4>{{ 'about.legal.detail.title' | i18n }}</h4>
-                  <p>{{ 'about.legal.detail.paragraph1' | i18n }}</p>
-                  <p>{{ 'about.legal.detail.paragraph2' | i18n }}</p>
-                  <ul>
-                    <li>{{ 'about.legal.detail.list1.1' | i18n }}</li>
-                    <li>{{ 'about.legal.detail.list1.2' | i18n }}</li>
-                    <li>{{ 'about.legal.detail.list1.3' | i18n }}</li>
-                    <li>{{ 'about.legal.detail.list1.4' | i18n }}</li>
-                    <li>{{ 'about.legal.detail.list1.5' | i18n }}</li>
-                  </ul>
-                  <p>{{ 'about.legal.detail.paragraph3' | i18n }}</p>
-                  <ul>
-                    <li>{{ 'about.legal.detail.list2.1' | i18n }}</li>
-                    <li>{{ 'about.legal.detail.list2.2' | i18n }}</li>
-                    <li>{{ 'about.legal.detail.list2.3' | i18n }}</li>
-                  </ul>
-                  <p>{{ 'about.legal.detail.paragraph4' | i18n }}</p>
-                  <p>{{ 'about.legal.detail.paragraph5' | i18n }}</p>
-                  <p>{{ 'about.legal.detail.paragraph6' | i18n }}</p>
-                  <p>{{ 'about.legal.detail.paragraph7' | i18n }}</p>
-                  <p>{{ 'about.legal.detail.paragraph8' | i18n }}</p>
-                  <p>{{ 'about.legal.detail.paragraph9' | i18n }}</p>
-                </div>
-              </div>
+              <article class="rubric-card">
+                <h3>{{ 'about.rubrics.competences' | i18n }}</h3>
+                <p>{{ 'about.legal.detail.paragraph5' | i18n }}</p>
+              </article>
+
+              <article class="rubric-card">
+                <h3>{{ 'about.rubrics.procedureBeforeCouncil' | i18n }}</h3>
+                <p>{{ 'about.legal.detail.paragraph6' | i18n }}</p>
+                <p>{{ 'about.legal.detail.paragraph7' | i18n }}</p>
+                <p>{{ 'about.legal.detail.paragraph8' | i18n }}</p>
+                <p>{{ 'about.legal.detail.paragraph9' | i18n }}</p>
+              </article>
             </div>
           </div>
         </div>
@@ -162,26 +148,6 @@ import { FooterComponent } from '../../components/footer/footer.component';
       letter-spacing: 0.5px;
     }
 
-    /* Introduction Box */
-    .intro-box {
-      background: white;
-      padding: 60px 80px;
-      margin-bottom: 80px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    }
-
-    .intro-text {
-      margin-top: 40px;
-    }
-
-    .intro-text p {
-      font-size: 1rem;
-      line-height: 1.9;
-      color: #333;
-      text-align: justify;
-      margin: 0;
-    }
-
     /* Legal Section */
     .legal-section {
       background: white;
@@ -189,76 +155,32 @@ import { FooterComponent } from '../../components/footer/footer.component';
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
     }
 
-    .legal-content {
+    .rubrics-grid {
       display: grid;
-      grid-template-columns: 300px 1fr;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
       gap: 40px;
       margin-top: 40px;
     }
 
-    /* Document Links */
-    .document-links {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-    }
-
-    .doc-item {
-      display: flex;
-      gap: 15px;
-      align-items: flex-start;
-      padding: 20px;
-      background: #f8f9fa;
-      border-radius: 8px;
-      transition: all 0.3s ease;
-      cursor: pointer;
-    }
-
-    .doc-item:hover {
-      background: #e8eef7;
-      transform: translateX(5px);
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    }
-
-    .doc-number {
-      flex-shrink: 0;
-      width: 30px;
-      height: 30px;
-      background: #c41e3a;
-      color: white;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: 600;
-      font-size: 0.9rem;
-    }
-
-    .doc-text h3 {
-      font-size: 0.85rem;
-      font-weight: 600;
-      color: #1a1a1a;
-      line-height: 1.5;
-      margin: 0;
-    }
-
-    /* Detailed Text */
-    .detailed-text {
+    .rubric-card {
       background: #f8f9fa;
       padding: 30px;
       border-radius: 8px;
       border-left: 4px solid #82BCDC;
     }
 
-    .text-block h4 {
-      font-size: 1rem;
-      font-weight: 700;
-      color: #1a1a1a;
-      margin: 0 0 20px 0;
-      line-height: 1.6;
+    .rubric-card:nth-child(5) {
+      grid-column: 1 / -1;
     }
 
-    .text-block p {
+    .rubric-card h3 {
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: #1a1a1a;
+      margin: 0 0 20px 0;
+    }
+
+    .rubric-card p {
       font-size: 0.9rem;
       line-height: 1.8;
       color: #333;
@@ -266,12 +188,12 @@ import { FooterComponent } from '../../components/footer/footer.component';
       text-align: justify;
     }
 
-    .text-block ul {
+    .rubric-card ul {
       margin: 15px 0;
       padding-left: 25px;
     }
 
-    .text-block li {
+    .rubric-card li {
       font-size: 0.9rem;
       line-height: 1.8;
       color: #333;
@@ -284,24 +206,17 @@ import { FooterComponent } from '../../components/footer/footer.component';
         font-size: 2.25rem;
       }
 
-      .intro-box,
       .legal-section {
         padding: 50px 40px;
       }
 
-      .legal-content {
+      .rubrics-grid {
         grid-template-columns: 1fr;
         gap: 30px;
       }
 
-      .document-links {
-        flex-direction: row;
-        overflow-x: auto;
-        gap: 15px;
-      }
-
-      .doc-item {
-        min-width: 250px;
+      .rubric-card:nth-child(5) {
+        grid-column: auto;
       }
     }
 
@@ -322,17 +237,8 @@ import { FooterComponent } from '../../components/footer/footer.component';
         padding: 50px 0;
       }
 
-      .intro-box,
       .legal-section {
         padding: 40px 25px;
-      }
-
-      .document-links {
-        flex-direction: column;
-      }
-
-      .doc-item {
-        min-width: auto;
       }
     }
 
@@ -349,23 +255,17 @@ import { FooterComponent } from '../../components/footer/footer.component';
         font-size: 1.25rem;
       }
 
-      .intro-box,
       .legal-section {
         padding: 30px 20px;
       }
 
-      .intro-text p,
-      .text-block p,
-      .text-block li {
+      .rubric-card p,
+      .rubric-card li {
         font-size: 0.85rem;
       }
 
-      .doc-text h3 {
-        font-size: 0.8rem;
-      }
-
-      .text-block h4 {
-        font-size: 0.95rem;
+      .rubric-card h3 {
+        font-size: 1rem;
       }
     }
 

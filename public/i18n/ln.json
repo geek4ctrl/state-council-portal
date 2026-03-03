@@ -489,6 +489,13 @@
       "title": "KOYEBA JURIDIKSION YA LIKOLO YA ORDRE ADMINISTRATIF NA REPUBLIKI DEMOKRATIKI YA KONGO",
       "body": "Article 151 paragraphe 1 ya Konstitision ya RDC ya 18 Febuari 2006 etongaki systeme ya tribunaux ya administratif na boyokani ya Conseil d'Etat. Article 82 ya Loi organique No 13/011-B ya 11 Avril 2013 elobi ete ezali na Conseil d'Etat na Kinshasa. Mibeko na yango ekoki kosalela na esika mosusu. Lisolo ya Conseil d'Etat elobeli ndenge ekomaki. Esalemaki na Decret-Loi ya 31 Janvier 1968. Na 2013, Loi organique No 13/011-B ebongaki organisation mpe fonctionnement ya tribunaux ya administratif."
     },
+    "rubrics": {
+      "legalBasis": "Moboko ya mibeko",
+      "organization": "Boyangeli",
+      "mission": "Mission",
+      "competences": "Bokoki",
+      "procedureBeforeCouncil": "Procedure liboso ya Conseil d'Etat"
+    },
     "legal": {
       "title": "KOKOTA NA MIKANDA YA MIBEKO MPE REGLEMENTAIRE<br>YA CONSEIL D'ETAT",
       "docs": {
@@ -625,8 +632,8 @@
   },
   "audiences": {
     "hero": {
-      "title": "MAKIKAO<br>MPE BITENI YA KOYOKA",
-      "body": "Zwa programme mpe biteni ya makikayo ya sika."
+      "title": "MAKIKAO MPE BITENI YA ROLE",
+      "body": "Zwa ba horaires ya makikayo, biteni ya ba role, mpe mikano ya sika."
     },
     "understanding": {
       "title": "KOYEBA MAKIKAO",
