@@ -693,6 +693,14 @@
       "title": "RAIS WA KWANZA",
       "body": "Rais wa Kwanza anaongoza Baraza la Serikali, anaongoza vikao vyake, na kuhakikisha taasisi inafanya kazi ipasavyo."
     },
+    "firstPresidents": {
+      "title": "MARAIS WA KWANZA",
+      "honoraryTitle": "Rais wa Kwanza wa Heshima na Emeritus 2018 - 2022",
+      "honoraryTitleSecond": "Rais wa Heshima na Emeritus 2022 - 2025",
+      "placeholderName": "Rais wa Kwanza {{index}}",
+      "placeholderSubtitle": "Nafasi iliyotengwa kwa picha",
+      "photoLabel": "Picha {{index}}"
+    },
     "seniorLabel": "MAHAKIMU WAKUU",
     "chart": {
       "title": "CHATI YA MUUNDO",
@@ -703,6 +711,11 @@
       "peopleTitle": "UONGOZI KWA MAJINA",
       "peopleSubtitle": "Majina ya Rais wa Kwanza, Marais, na Washauri.",
       "peopleFirstPresidentName": "Brigitte Nsensele Wa Nsensele",
+      "namedPhotoRoles": {
+        "firstPresident": "Rais wa Kwanza",
+        "consultative": "Rais wa Sehemu ya Ushauri",
+        "contentieux": "Rais wa Sehemu ya Mashauri"
+      },
       "roles": {
         "firstPresident": "Rais wa Kwanza",
         "president": "Rais",
@@ -716,7 +729,9 @@
         "civilChamber": "Chumba cha Kiraia",
         "criminalChamber": "Chumba cha Jinai",
         "commercialChamber": "Chumba cha Biashara",
-        "socialChamber": "Chumba cha Kijamii"
+        "socialChamber": "Chumba cha Kijamii",
+        "consultativeSection": "Sehemu ya Ushauri",
+        "litigationSection": "Sehemu ya Mashauri"
       }
     },
     "filters": {

@@ -4,6 +4,7 @@ import {
   Component,
   DestroyRef,
   ElementRef,
+  Input,
   OnInit,
   ViewChild,
   computed,
@@ -35,12 +36,14 @@ type HighchartsStatic = typeof import('highcharts');
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <div class="page-wrap page-container">
-      <!-- Hero Section -->
-      <section class="hero-section">
-        <div class="container">
-          <h1 class="hero-content-left" [innerHTML]="'organization.hero.title' | i18n"></h1>
-        </div>
-      </section>
+      @if (!embedded) {
+        <!-- Hero Section -->
+        <section class="hero-section">
+          <div class="container">
+            <h1 class="hero-content-left" [innerHTML]="'organization.hero.title' | i18n"></h1>
+          </div>
+        </section>
+      }
 
       <!-- First President Section -->
       <section class="first-president-section">
@@ -95,31 +98,11 @@ type HighchartsStatic = typeof import('highcharts');
             <div class="org-chart-connector" aria-hidden="true"></div>
 
             <div class="org-chart-tier" role="listitem">
-              <div class="org-node">
-                {{ 'organization.chart.nodes.plenary' | i18n }}
-              </div>
-              <div class="org-node">
-                {{ 'organization.chart.nodes.councilOffice' | i18n }}
-              </div>
-              <div class="org-node">
-                {{ 'organization.chart.nodes.registry' | i18n }}
-              </div>
-            </div>
-
-            <div class="org-chart-connector" aria-hidden="true"></div>
-
-            <div class="org-chart-tier" role="listitem">
               <div class="org-node muted">
-                {{ 'organization.chart.nodes.civilChamber' | i18n }}
+                {{ 'organization.chart.nodes.consultativeSection' | i18n }}
               </div>
               <div class="org-node muted">
-                {{ 'organization.chart.nodes.criminalChamber' | i18n }}
-              </div>
-              <div class="org-node muted">
-                {{ 'organization.chart.nodes.commercialChamber' | i18n }}
-              </div>
-              <div class="org-node muted">
-                {{ 'organization.chart.nodes.socialChamber' | i18n }}
+                {{ 'organization.chart.nodes.litigationSection' | i18n }}
               </div>
             </div>
           </div>
@@ -135,46 +118,55 @@ type HighchartsStatic = typeof import('highcharts');
               {{ 'organization.chart.peopleTitle' | i18n }}
             </h2>
           </div>
-          <p class="org-chart-subtitle anim-up a-d1">
-            {{ 'organization.chart.peopleSubtitle' | i18n }}
-          </p>
 
-          <div class="org-chart" role="list">
-            <div class="org-chart-tier" role="listitem">
-              <div class="org-node primary">
-                {{ 'organization.chart.peopleFirstPresidentName' | i18n }}
+          <div class="leadership-photo-layout" role="list">
+            <article class="leadership-photo-card top" role="listitem">
+              <div class="leadership-photo-frame">
+                <img
+                  ngSrc="https://res.cloudinary.com/dhqvb8wbn/image/upload/v1772020345/Brigitte_NSENSELE_wa_NSENSELE.jpg_2_vgiv72.jpg"
+                  [alt]="'organization.chart.namedPhotoRoles.firstPresident' | i18n"
+                  width="320"
+                  height="380"
+                />
               </div>
-            </div>
+              <p class="leadership-photo-role">{{ 'organization.chart.namedPhotoRoles.firstPresident' | i18n }}</p>
+            </article>
 
-            <div class="org-chart-connector" aria-hidden="true"></div>
-
-            <div class="org-chart-tier" role="listitem">
-              @for (president of presidents; track president.slug) {
-                <div class="org-node">
-                  {{ president.name }}
+            <div class="leadership-photo-row" role="listitem">
+              <article class="leadership-photo-card">
+                <div class="leadership-photo-frame">
+                  <img
+                    ngSrc="https://res.cloudinary.com/dhqvb8wbn/image/upload/v1772556705/PRES_MASANI_40x50.jpg_ast5mq.jpg"
+                    [alt]="'organization.chart.namedPhotoRoles.consultative' | i18n"
+                    width="320"
+                    height="380"
+                  />
                 </div>
-              }
-            </div>
+                <p class="leadership-photo-role">{{ 'organization.chart.namedPhotoRoles.consultative' | i18n }}</p>
+              </article>
 
-            <div class="org-chart-connector" aria-hidden="true"></div>
-
-            <div class="org-chart-tier" role="listitem">
-              @for (advisor of advisors; track advisor.slug) {
-                <div class="org-node muted">
-                  {{ advisor.name }}
+              <article class="leadership-photo-card">
+                <div class="leadership-photo-frame">
+                  <img
+                    ngSrc="https://res.cloudinary.com/dhqvb8wbn/image/upload/v1772556921/Eug%C3%A8ne_KIBWE_MUTER.jpg_bacl4e.jpg"
+                    [alt]="'organization.chart.namedPhotoRoles.contentieux' | i18n"
+                    width="320"
+                    height="380"
+                  />
                 </div>
-              }
+                <p class="leadership-photo-role">{{ 'organization.chart.namedPhotoRoles.contentieux' | i18n }}</p>
+              </article>
             </div>
           </div>
         </div>
       </section>
 
       <!-- Senior Magistrates Label -->
-      <section class="senior-label-section">
+      <!-- <section class="senior-label-section">
         <div class="container">
           <div class="senior-label">{{ 'organization.seniorLabel' | i18n }}</div>
         </div>
-      </section>
+      </section> -->
 
       <!-- Members Filter Section -->
       <section class="members-filter-section">
@@ -212,8 +204,52 @@ type HighchartsStatic = typeof import('highcharts');
         </div>
       </section>
 
+      <!-- First Presidents Section -->
+      <section class="members-section first-presidents-section">
+        <div class="container">
+          <div class="section-head-wrap">
+            <div class="org-header-line anim-line"></div>
+            <h2 class="section-title anim-up">{{ 'organization.firstPresidents.title' | i18n }}</h2>
+          </div>
+          <div class="members-grid first-presidents-grid">
+            @for (president of firstPresidents; track president.slot; let i = $index) {
+              <div
+                class="member-card glass-card first-president-slot"
+                [style.--i]="i"
+                (mousemove)="tilt($event)"
+                (mouseleave)="tiltReset($event)"
+              >
+                <div class="tilt-shine"></div>
+                <div class="member-image first-president-photo-slot">
+                  @if (president.image) {
+                    <img
+                      [ngSrc]="president.image"
+                      [alt]="president.name || ('organization.firstPresidents.placeholderName' | i18n : { index: president.slot })"
+                      width="300"
+                      height="350"
+                    />
+                  } @else {
+                    <span class="photo-slot-label">{{ 'organization.firstPresidents.photoLabel' | i18n : { index: i + 1 } }}</span>
+                  }
+                </div>
+                <div class="member-info">
+                  <h3>
+                    @if (president.name) {
+                      {{ president.name }}
+                    } @else {
+                      {{ 'organization.firstPresidents.placeholderName' | i18n : { index: president.slot } }}
+                    }
+                  </h3>
+                  <p class="member-title">{{ president.subtitleKey | i18n : { index: president.slot } }}</p>
+                </div>
+              </div>
+            }
+          </div>
+        </div>
+      </section>
+
       <!-- The Presidents Section -->
-      <section class="members-section presidents-section">
+      <!-- <section class="members-section presidents-section">
         <div class="container">
           <div class="section-head-wrap">
             <div class="org-header-line anim-line"></div>
@@ -265,10 +301,10 @@ type HighchartsStatic = typeof import('highcharts');
             }
           </div>
         </div>
-      </section>
+      </section> -->
 
       <!-- The Advisors Section -->
-      <section class="members-section advisors-section">
+      <!-- <section class="members-section advisors-section">
         <div class="container">
           <div class="section-head-wrap">
             <div class="org-header-line anim-line"></div>
@@ -325,7 +361,7 @@ type HighchartsStatic = typeof import('highcharts');
             </button>
           </div>
         </div>
-      </section>
+      </section> -->
 
       <!-- Services Info Section -->
       <section class="services-info-section">
@@ -516,7 +552,9 @@ type HighchartsStatic = typeof import('highcharts');
           </div>
         </div>
       </section>
-      <app-footer></app-footer>
+      @if (!embedded) {
+        <app-footer></app-footer>
+      }
     </div>
   `,
   styles: [
@@ -861,6 +899,62 @@ type HighchartsStatic = typeof import('highcharts');
         font-size: 0.72rem;
       }
 
+      .leadership-photo-layout {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+      }
+
+      .leadership-photo-row {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 24px;
+        max-width: 900px;
+      }
+
+      .leadership-photo-card {
+        background: #ffffff;
+        border: 1px solid rgba(26, 41, 66, 0.12);
+        border-radius: 16px;
+        box-shadow: 0 10px 28px rgba(26, 41, 66, 0.12);
+        padding: 12px;
+      }
+
+      .leadership-photo-card.top {
+        max-width: 430px;
+        width: 100%;
+      }
+
+      .leadership-photo-frame {
+        border-radius: 12px;
+        overflow: hidden;
+        background: transparent;
+        aspect-ratio: 4 / 5;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .leadership-photo-frame img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        display: block;
+      }
+
+      .leadership-photo-role {
+        margin: 10px 0 4px;
+        text-align: center;
+        font-size: 0.82rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: #1a2942;
+        line-height: 1.45;
+      }
+
       .filter-group input,
       .filter-group select {
         background: #fafbfc;
@@ -980,6 +1074,30 @@ type HighchartsStatic = typeof import('highcharts');
 
       .member-card:hover .member-image img {
         transform: scale(1.08);
+      }
+
+      .first-presidents-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+
+      .first-president-photo-slot {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px dashed rgba(31, 155, 217, 0.45);
+        background: linear-gradient(135deg, #edf4fb 0%, #dce9f7 100%);
+      }
+
+      .first-president-photo-slot::after {
+        display: none;
+      }
+
+      .photo-slot-label {
+        font-size: 0.95rem;
+        font-weight: 700;
+        letter-spacing: 0.6px;
+        color: #1f9bd9;
+        text-transform: uppercase;
       }
 
       .member-info {
@@ -1529,6 +1647,11 @@ type HighchartsStatic = typeof import('highcharts');
           gap: 30px;
         }
 
+        .leadership-photo-row {
+          max-width: 760px;
+          gap: 18px;
+        }
+
         .service-item,
         .detail-box {
           padding: 24px;
@@ -1583,6 +1706,11 @@ type HighchartsStatic = typeof import('highcharts');
 
         .services-section {
           padding: 70px 0;
+        }
+
+        .leadership-photo-row {
+          grid-template-columns: 1fr;
+          max-width: 430px;
         }
       }
 
@@ -1743,6 +1871,18 @@ type HighchartsStatic = typeof import('highcharts');
           padding: 10px 14px;
           font-size: 0.65rem;
           max-width: 100%;
+        }
+
+        .leadership-photo-layout {
+          gap: 16px;
+        }
+
+        .leadership-photo-frame img {
+          height: 100%;
+        }
+
+        .leadership-photo-role {
+          font-size: 0.75rem;
         }
       }
 
@@ -2295,6 +2435,32 @@ type HighchartsStatic = typeof import('highcharts');
   ],
 })
 export class OrganizationComponent implements OnInit, AfterViewInit {
+  @Input() embedded = false;
+
+  readonly firstPresidents = [
+    {
+      slot: 1,
+      name: 'Félix VUNDUAWE te PEMAKO',
+      subtitleKey: 'organization.firstPresidents.honoraryTitle',
+      image:
+        'https://res.cloudinary.com/dhqvb8wbn/image/upload/v1772552204/F%C3%A9lix_VUNDUAWE_te_PEMAKO..jpg_1_usgopn.jpg',
+    },
+    {
+      slot: 2,
+      name: 'Marthe ODIO NONDE',
+      subtitleKey: 'organization.firstPresidents.honoraryTitleSecond',
+      image:
+        'https://res.cloudinary.com/dhqvb8wbn/image/upload/v1772554526/Marthe_ODIO_NONDE.jpg_1_pzymzp.jpg',
+    },
+    {
+      slot: 3,
+      name: 'Brigitte Nsensele Wa Nsensele',
+      subtitleKey: 'organization.firstPresidents.placeholderSubtitle',
+      image:
+        'https://res.cloudinary.com/dhqvb8wbn/image/upload/v1772020345/Brigitte_NSENSELE_wa_NSENSELE.jpg_2_vgiv72.jpg',
+    },
+  ];
+
   @ViewChild('orgChartContainer', { static: true })
   orgChartContainer!: ElementRef<HTMLDivElement>;
 

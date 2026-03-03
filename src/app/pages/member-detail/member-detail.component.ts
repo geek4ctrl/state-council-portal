@@ -15,7 +15,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
     <div class="member-page">
       <section class="member-hero">
         <div class="container">
-          <a routerLink="/organization" class="back-link">{{ 'memberDetail.back' | i18n }}</a>
+          <a routerLink="/presentation" class="back-link">{{ 'memberDetail.back' | i18n }}</a>
           <h1 class="member-title">{{ 'memberDetail.title' | i18n }}</h1>
           <p class="member-subtitle">{{ 'memberDetail.subtitle' | i18n }}</p>
         </div>
@@ -53,7 +53,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
             <div class="not-found" role="status" aria-live="polite">
               <h2>{{ 'memberDetail.notFound.title' | i18n }}</h2>
               <p>{{ 'memberDetail.notFound.body' | i18n }}</p>
-              <a routerLink="/organization" class="back-link">{{ 'memberDetail.notFound.cta' | i18n }}</a>
+              <a routerLink="/presentation" class="back-link">{{ 'memberDetail.notFound.cta' | i18n }}</a>
             </div>
           }
         </div>
