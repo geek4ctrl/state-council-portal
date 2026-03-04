@@ -210,13 +210,9 @@ type HighchartsStatic = typeof import('highcharts');
           <div class="members-grid first-presidents-grid">
             @for (president of firstPresidents; track president.slot; let i = $index) {
               <div
-                class="member-card glass-card first-president-slot"
-                [style.--i]="i"
-                (mousemove)="tilt($event)"
-                (mouseleave)="tiltReset($event)"
+                class="leadership-photo-card first-president-slot"
               >
-                <div class="tilt-shine"></div>
-                <div class="member-image first-president-photo-slot">
+                <div class="leadership-photo-frame first-president-photo-slot">
                   @if (president.image) {
                     <img
                       [ngSrc]="president.image"
@@ -1132,6 +1128,7 @@ type HighchartsStatic = typeof import('highcharts');
 
       .first-president-slot .member-info h3 {
         margin: 0 0 8px;
+        text-transform: none;
       }
 
       .first-president-slot .member-title {
@@ -2492,7 +2489,7 @@ export class OrganizationComponent implements OnInit, AfterViewInit {
     },
     {
       slot: 3,
-      name: 'Brigitte Nsensele Wa Nsensele',
+      name: 'Brigitte NSENSELE wa NSENSELE',
       subtitleKey: 'organization.firstPresidents.honoraryTitleThird',
       image:
         'https://res.cloudinary.com/dhqvb8wbn/image/upload/v1772555485/Brigitte_NSENSELE_wa_NSENSELE_OK.jpg_ndsjzg.jpg',
