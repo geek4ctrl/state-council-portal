@@ -133,24 +133,24 @@ type HighchartsStatic = typeof import('highcharts');
                 <div class="leadership-photo-frame">
                   <img
                     ngSrc="https://res.cloudinary.com/dhqvb8wbn/image/upload/v1772556921/Eug%C3%A8ne_KIBWE_MUTER.jpg_bacl4e.jpg"
-                    [alt]="'organization.chart.namedPhotoRoles.contentieux' | i18n"
-                    width="320"
-                    height="380"
-                  />
-                </div>
-                <p class="leadership-photo-role">{{ 'organization.chart.namedPhotoRoles.contentieux' | i18n }}</p>
-              </article>
-
-              <article class="leadership-photo-card">
-                <div class="leadership-photo-frame">
-                  <img
-                    ngSrc="https://res.cloudinary.com/dhqvb8wbn/image/upload/v1772556705/PRES_MASANI_40x50.jpg_ast5mq.jpg"
                     [alt]="'organization.chart.namedPhotoRoles.consultative' | i18n"
                     width="320"
                     height="380"
                   />
                 </div>
                 <p class="leadership-photo-role">{{ 'organization.chart.namedPhotoRoles.consultative' | i18n }}</p>
+              </article>
+
+              <article class="leadership-photo-card">
+                <div class="leadership-photo-frame">
+                  <img
+                    ngSrc="https://res.cloudinary.com/dhqvb8wbn/image/upload/v1772556705/PRES_MASANI_40x50.jpg_ast5mq.jpg"
+                    [alt]="'organization.chart.namedPhotoRoles.contentieux' | i18n"
+                    width="320"
+                    height="380"
+                  />
+                </div>
+                <p class="leadership-photo-role">{{ 'organization.chart.namedPhotoRoles.contentieux' | i18n }}</p>
               </article>
             </div>
           </div>
@@ -1076,12 +1076,39 @@ type HighchartsStatic = typeof import('highcharts');
         grid-template-columns: repeat(3, minmax(0, 1fr));
       }
 
+      .first-president-slot {
+        background: #ffffff;
+        border: 1px solid rgba(26, 41, 66, 0.12);
+        border-radius: 16px;
+        box-shadow: 0 10px 28px rgba(26, 41, 66, 0.12);
+        padding: 12px;
+      }
+
+      .first-president-slot:hover {
+        transform: none;
+        box-shadow: 0 10px 28px rgba(26, 41, 66, 0.12);
+        border-color: rgba(26, 41, 66, 0.12);
+      }
+
       .first-president-photo-slot {
         display: flex;
         align-items: center;
         justify-content: center;
-        border: 2px dashed rgba(31, 155, 217, 0.45);
-        background: linear-gradient(135deg, #edf4fb 0%, #dce9f7 100%);
+        height: auto;
+        border: none;
+        border-radius: 12px;
+        background: transparent;
+        aspect-ratio: 4 / 5;
+      }
+
+      .first-president-photo-slot img {
+        object-fit: contain;
+        object-position: center top;
+        transition: none;
+      }
+
+      .first-president-slot:hover .first-president-photo-slot img {
+        transform: none;
       }
 
       .first-president-photo-slot::after {
@@ -1094,6 +1121,21 @@ type HighchartsStatic = typeof import('highcharts');
         letter-spacing: 0.6px;
         color: #1f9bd9;
         text-transform: uppercase;
+      }
+
+      .first-president-slot .member-info {
+        padding: 10px 4px 4px;
+        background: transparent;
+        border-top: 0;
+        text-align: center;
+      }
+
+      .first-president-slot .member-info h3 {
+        margin: 0 0 8px;
+      }
+
+      .first-president-slot .member-title {
+        margin: 0;
       }
 
       .member-info {
