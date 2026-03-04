@@ -5442,9 +5442,9 @@ export class HomeComponent implements OnInit, AfterViewInit {
   ];
 
   presSlides: PresidentSlide[] = [
-    { id:1, titleKey:'home.president.slides.1.title', image:'https://res.cloudinary.com/dhqvb8wbn/image/upload/v1772020345/Brigitte_NSENSELE_wa_NSENSELE.jpg_2_vgiv72.jpg', paragraphKeys:['home.president.slides.1.paragraphs.1','home.president.slides.1.paragraphs.2','home.president.slides.1.paragraphs.3'] },
-    { id:2, titleKey:'home.president.slides.2.title', image:'https://res.cloudinary.com/dhqvb8wbn/image/upload/v1771319776/599929838_875339684877306_2530911599543204256_n_fpyzl6.jpg', paragraphKeys:['home.president.slides.2.paragraphs.1','home.president.slides.2.paragraphs.2','home.president.slides.2.paragraphs.3'] },
-    { id:3, titleKey:'home.president.slides.3.title', image:'https://res.cloudinary.com/dhqvb8wbn/image/upload/v1772020345/Brigitte_NSENSELE_wa_NSENSELE.jpg_2_vgiv72.jpg', paragraphKeys:['home.president.slides.3.paragraphs.1','home.president.slides.3.paragraphs.2','home.president.slides.3.paragraphs.3'] },
+    { id:1, titleKey:'home.president.slides.1.title', image:'https://res.cloudinary.com/dhqvb8wbn/image/upload/v1772555485/Brigitte_NSENSELE_wa_NSENSELE_OK.jpg_ndsjzg.jpg', paragraphKeys:['home.president.slides.1.paragraphs.1','home.president.slides.1.paragraphs.2','home.president.slides.1.paragraphs.3'] },
+    { id:2, titleKey:'home.president.slides.2.title', image:'https://res.cloudinary.com/dhqvb8wbn/image/upload/v1772555485/Brigitte_NSENSELE_wa_NSENSELE_OK.jpg_ndsjzg.jpg', paragraphKeys:['home.president.slides.2.paragraphs.1','home.president.slides.2.paragraphs.2','home.president.slides.2.paragraphs.3'] },
+    { id:3, titleKey:'home.president.slides.3.title', image:'https://res.cloudinary.com/dhqvb8wbn/image/upload/v1772555485/Brigitte_NSENSELE_wa_NSENSELE_OK.jpg_ndsjzg.jpg', paragraphKeys:['home.president.slides.3.paragraphs.1','home.president.slides.3.paragraphs.2','home.president.slides.3.paragraphs.3'] },
   ];
 
   ngOnInit() {
