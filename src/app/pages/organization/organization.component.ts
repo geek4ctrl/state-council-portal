@@ -133,7 +133,7 @@ type HighchartsStatic = typeof import('highcharts');
             </article>
 
             <div class="leadership-photo-row" role="listitem">
-              <article class="leadership-photo-card">
+              <article class="leadership-photo-card top">
                 <div class="leadership-photo-frame">
                   <img
                     ngSrc="https://res.cloudinary.com/dhqvb8wbn/image/upload/v1772556921/Eug%C3%A8ne_KIBWE_MUTER.jpg_bacl4e.jpg"
@@ -145,7 +145,7 @@ type HighchartsStatic = typeof import('highcharts');
                 <p class="leadership-photo-role">{{ 'organization.chart.namedPhotoRoles.consultative' | i18n }}</p>
               </article>
 
-              <article class="leadership-photo-card">
+              <article class="leadership-photo-card top">
                 <div class="leadership-photo-frame">
                   <img
                     ngSrc="https://res.cloudinary.com/dhqvb8wbn/image/upload/v1772556705/PRES_MASANI_40x50.jpg_ast5mq.jpg"
@@ -305,7 +305,7 @@ type HighchartsStatic = typeof import('highcharts');
       </section>
 
       <!-- The Advisors Section -->
-      <!-- <section class="members-section advisors-section">
+      <section class="members-section advisors-section">
         <div class="container">
           <div class="section-head-wrap">
             <div class="org-header-line anim-line"></div>
@@ -320,14 +320,8 @@ type HighchartsStatic = typeof import('highcharts');
               @if (filteredAdvisors().length === 0) {
                 <div class="no-results">{{ 'organization.advisors.empty' | i18n }}</div>
               } @else {
-                @for (advisor of filteredAdvisors(); track advisor.email; let i = $index) {
-                  <div
-                    class="member-card glass-card tilt-card"
-                    [style.--i]="i"
-                    (mousemove)="tilt($event)"
-                    (mouseleave)="tiltReset($event)"
-                  >
-                    <div class="tilt-shine"></div>
+                @for (advisor of filteredAdvisors(); track advisor.email) {
+                  <div class="member-card glass-card">
                     <div class="member-image img-zoom">
                       <img [ngSrc]="advisor.image" [alt]="advisor.name" width="300" height="350" />
                       <div class="img-sheen"></div>
@@ -362,7 +356,7 @@ type HighchartsStatic = typeof import('highcharts');
             </button>
           </div>
         </div>
-      </section> -->
+      </section>
 
       <!-- Services Info Section -->
       <section class="services-info-section">
@@ -911,6 +905,7 @@ type HighchartsStatic = typeof import('highcharts');
         width: 100%;
         display: grid;
         grid-template-columns: repeat(2, minmax(0, 1fr));
+        justify-items: center;
         gap: 24px;
         max-width: 900px;
       }
@@ -1153,7 +1148,8 @@ type HighchartsStatic = typeof import('highcharts');
         margin: 0;
       }
 
-      .presidents-section .member-card {
+      .presidents-section .member-card,
+      .advisors-section .member-card {
         background: #ffffff;
         border: 1px solid rgba(26, 41, 66, 0.12);
         border-radius: 16px;
@@ -1161,13 +1157,15 @@ type HighchartsStatic = typeof import('highcharts');
         padding: 12px;
       }
 
-      .presidents-section .member-card:hover {
+      .presidents-section .member-card:hover,
+      .advisors-section .member-card:hover {
         transform: none;
         box-shadow: 0 10px 28px rgba(26, 41, 66, 0.12);
         border-color: rgba(26, 41, 66, 0.12);
       }
 
-      .presidents-section .member-image {
+      .presidents-section .member-image,
+      .advisors-section .member-image {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -1178,37 +1176,60 @@ type HighchartsStatic = typeof import('highcharts');
         aspect-ratio: 4 / 5;
       }
 
-      .presidents-section .member-image::after {
+      .presidents-section .member-image.img-zoom,
+      .advisors-section .member-image.img-zoom {
+        border-radius: 12px;
+      }
+
+      .presidents-section .member-image img,
+      .advisors-section .member-image img {
+        border-radius: 12px;
+      }
+
+      .presidents-section .member-image .img-sheen,
+      .advisors-section .member-image .img-sheen {
+        border-radius: 12px;
+      }
+
+      .presidents-section .member-image::after,
+      .advisors-section .member-image::after {
         display: none;
       }
 
-      .presidents-section .member-image img {
+      .presidents-section .member-image img,
+      .advisors-section .member-image img {
         object-fit: contain;
         object-position: center top;
         transition: none;
       }
 
-      .presidents-section .member-card:hover .member-image img {
+      .presidents-section .member-card:hover .member-image img,
+      .advisors-section .member-card:hover .member-image img {
         transform: none;
       }
 
-      .presidents-section .member-info {
+      .presidents-section .member-info,
+      .advisors-section .member-info {
         padding: 10px 4px 4px;
         background: transparent;
         border-top: 0;
         text-align: center;
       }
 
-      .presidents-section .member-info h3 {
+      .presidents-section .member-info h3,
+      .advisors-section .member-info h3 {
         margin: 0 0 8px;
       }
 
-      .presidents-section .member-title {
+      .presidents-section .member-title,
+      .advisors-section .member-title {
         margin: 0;
       }
 
       .presidents-section .member-email,
-      .presidents-section .learn-more {
+      .presidents-section .learn-more,
+      .advisors-section .member-email,
+      .advisors-section .learn-more {
         display: none;
       }
 
