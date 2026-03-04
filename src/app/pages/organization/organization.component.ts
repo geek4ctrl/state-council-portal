@@ -12,12 +12,14 @@ import {
   signal,
 } from '@angular/core';
 import { CommonModule, NgOptimizedImage } from '@angular/common';
+import { RouterLink } from '@angular/router';
 import { MemberService } from '../../services/members.service';
 import type { Member, MemberRole, RoleFilter } from '../../services/members.service';
 import { I18nPipe } from '../../i18n/i18n.pipe';
 import { I18nService } from '../../i18n/i18n.service';
 import type { Chart, Options, SeriesOptionsType } from 'highcharts';
 import { FooterComponent } from '../../components/footer/footer.component';
+import { SkeletonLoaderComponent } from '../../components/skeleton-loader/skeleton-loader.component';
 
 type HighchartsStatic = typeof import('highcharts');
 
@@ -26,8 +28,10 @@ type HighchartsStatic = typeof import('highcharts');
   imports: [
     CommonModule,
     NgOptimizedImage,
+    RouterLink,
     I18nPipe,
     FooterComponent,
+    SkeletonLoaderComponent,
   ],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
@@ -241,7 +245,7 @@ type HighchartsStatic = typeof import('highcharts');
       </section>
 
       <!-- The Presidents Section -->
-      <!-- <section class="members-section presidents-section">
+      <section class="members-section presidents-section">
         <div class="container">
           <div class="section-head-wrap">
             <div class="org-header-line anim-line"></div>
@@ -258,13 +262,12 @@ type HighchartsStatic = typeof import('highcharts');
               } @else {
                 @for (president of filteredPresidents(); track president.email; let i = $index) {
                   <div
-                    class="member-card glass-card tilt-card"
-                    [style.--i]="i"
-                    (mousemove)="tilt($event)"
-                    (mouseleave)="tiltReset($event)"
+                    class="member-card glass-card"
                   >
-                    <div class="tilt-shine"></div>
-                    <div class="member-image img-zoom">
+                    <div
+                      class="member-image img-zoom"
+                      [class.full-height-photo]="president.slug === 'nsensele-wa-nsensele-brigitte'"
+                    >
                       <img
                         [ngSrc]="president.image"
                         [alt]="president.name"
@@ -293,7 +296,7 @@ type HighchartsStatic = typeof import('highcharts');
             }
           </div>
         </div>
-      </section> -->
+      </section>
 
       <!-- The Advisors Section -->
       <!-- <section class="members-section advisors-section">
@@ -1064,8 +1067,17 @@ type HighchartsStatic = typeof import('highcharts');
         transition: transform 0.6s ease;
       }
 
+      .member-image.full-height-photo img {
+        object-fit: contain;
+        object-position: center top;
+      }
+
       .member-card:hover .member-image img {
         transform: scale(1.08);
+      }
+
+      .member-card:hover .member-image.full-height-photo img {
+        transform: none;
       }
 
       .first-presidents-grid {
@@ -1135,6 +1147,65 @@ type HighchartsStatic = typeof import('highcharts');
         margin: 0;
       }
 
+      .presidents-section .member-card {
+        background: #ffffff;
+        border: 1px solid rgba(26, 41, 66, 0.12);
+        border-radius: 16px;
+        box-shadow: 0 10px 28px rgba(26, 41, 66, 0.12);
+        padding: 12px;
+      }
+
+      .presidents-section .member-card:hover {
+        transform: none;
+        box-shadow: 0 10px 28px rgba(26, 41, 66, 0.12);
+        border-color: rgba(26, 41, 66, 0.12);
+      }
+
+      .presidents-section .member-image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        border: none;
+        border-radius: 12px;
+        background: transparent;
+        aspect-ratio: 4 / 5;
+      }
+
+      .presidents-section .member-image::after {
+        display: none;
+      }
+
+      .presidents-section .member-image img {
+        object-fit: contain;
+        object-position: center top;
+        transition: none;
+      }
+
+      .presidents-section .member-card:hover .member-image img {
+        transform: none;
+      }
+
+      .presidents-section .member-info {
+        padding: 10px 4px 4px;
+        background: transparent;
+        border-top: 0;
+        text-align: center;
+      }
+
+      .presidents-section .member-info h3 {
+        margin: 0 0 8px;
+      }
+
+      .presidents-section .member-title {
+        margin: 0;
+      }
+
+      .presidents-section .member-email,
+      .presidents-section .learn-more {
+        display: none;
+      }
+
       .member-info {
         padding: 28px 24px;
         background: #ffffff;
@@ -1147,7 +1218,7 @@ type HighchartsStatic = typeof import('highcharts');
         color: #1a1a1a;
         margin: 0 0 10px 0;
         line-height: 1.4;
-        text-transform: uppercase;
+        text-transform: none;
         letter-spacing: 0.8px;
         word-wrap: break-word;
         overflow-wrap: break-word;
