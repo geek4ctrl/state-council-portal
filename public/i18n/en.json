@@ -775,6 +775,7 @@
       },
       "roles": {
         "firstPresident": "First President",
+        "ppce": "P.P.C.E",
         "president": "President",
         "advisor": "Advisor"
       },

@@ -278,7 +278,13 @@ type HighchartsStatic = typeof import('highcharts');
                     </div>
                     <div class="member-info">
                       <h3>{{ president.name }}</h3>
-                      <p class="member-title">{{ president.title }}</p>
+                      <p class="member-title">
+                        {{
+                          (president.slug === 'nsensele-wa-nsensele-brigitte'
+                            ? 'organization.chart.roles.ppce'
+                            : 'organization.chart.roles.president') | i18n
+                        }}
+                      </p>
                       <p class="member-email">{{ president.email }}</p>
                       <a
                         [routerLink]="['/organization/member', president.slug]"
