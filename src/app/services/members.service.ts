@@ -119,64 +119,344 @@ export class MemberService {
       summary: 'Drives chamber-level governance and contributes to procedural consistency across matters.'
     },
     {
-      name: 'ILUNG TAMIN',
+      name: 'TSHIBOLA BIDILUKINI Antoine',
       title: 'Advisor',
-      email: 'ilung@conseildetatrdc.com',
+      email: 'tshibola@conseildetatrdc.com',
       image: 'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=300&h=350&fit=crop',
       role: 'advisor',
-      slug: 'ilung-tamin',
+      slug: 'tshibola-bidilukini-antoine',
       office: 'STATE COUNCIL',
-      summary: 'Provides strategic guidance on case workflow optimization.'
+      summary: 'Provides advisory support on administrative and judicial matters.'
     },
     {
-      name: 'ZAISNE ZINALIBWA',
+      name: 'KAHUNGU ZAMBA Félix',
       title: 'Advisor',
-      email: 'zaisne@conseildetatrdc.com',
+      email: 'kahungu@conseildetatrdc.com',
       image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=300&h=350&fit=crop',
       role: 'advisor',
-      slug: 'zaisne-zinalibwa',
+      slug: 'kahungu-zamba-felix',
       office: 'STATE COUNCIL',
-      summary: 'Coordinates documentation and knowledge management for court decisions.'
+      summary: 'Provides advisory support on administrative and judicial matters.'
     },
     {
-      name: 'OTHUNGU WONGOZI OGYTA',
+      name: 'BAHATI MAIMOTO Roger',
       title: 'Advisor',
-      email: 'othungu@conseildetatrdc.com',
+      email: 'bahati@conseildetatrdc.com',
       image: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=300&h=350&fit=crop',
       role: 'advisor',
-      slug: 'othungu-wongozi-ogyta',
+      slug: 'bahati-maimoto-roger',
       office: 'STATE COUNCIL',
-      summary: 'Advises on institutional partnerships and stakeholder engagement.'
+      summary: 'Provides advisory support on administrative and judicial matters.'
     },
     {
-      name: 'LOHOTA IITUMBA',
+      name: 'SIBU MATUBUKA René',
       title: 'Advisor',
-      email: 'lohota@conseildetatrdc.com',
+      email: 'sibu@conseildetatrdc.com',
       image: 'https://images.unsplash.com/photo-1592520113018-180c8bc831c9?w=300&h=350&fit=crop',
       role: 'advisor',
-      slug: 'lohota-iitumba',
+      slug: 'sibu-matubuka-rene',
       office: 'STATE COUNCIL',
-      summary: 'Supports legal analysis for complex cases and advisory opinions.'
+      summary: 'Provides advisory support on administrative and judicial matters.'
     },
     {
-      name: 'KALUMBA KAMPATA',
+      name: 'CAKWANGASHA KABWENGA Jean-Pierre',
       title: 'Advisor',
-      email: 'kalumba@conseildetatrdc.com',
+      email: 'cakwangasha@conseildetatrdc.com',
       image: 'https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=300&h=350&fit=crop',
       role: 'advisor',
-      slug: 'kalumba-kampata',
+      slug: 'cakwangasha-kabwenga-jean-pierre',
       office: 'STATE COUNCIL',
-      summary: 'Focuses on procedural compliance and quality review.'
+      summary: 'Provides advisory support on administrative and judicial matters.'
     },
     {
-      name: 'BAKUNGA NGIMBE',
+      name: 'AYANGASOBE BAMBABALE Blaise',
       title: 'Advisor',
-      email: 'bakunga@conseildetatrdc.com',
+      email: 'ayangasobe@conseildetatrdc.com',
       image: 'https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=300&h=350&fit=crop',
       role: 'advisor',
-      slug: 'bakunga-ngimbe',
+      slug: 'ayangasobe-bambabale-blaise',
       office: 'STATE COUNCIL',
-      summary: 'Advises on administrative improvements and service delivery standards.'
+      summary: 'Provides advisory support on administrative and judicial matters.'
+    },
+    {
+      name: 'KITENGE NDIBU John',
+      title: 'Advisor',
+      email: 'kitenge@conseildetatrdc.com',
+      image: 'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=300&h=350&fit=crop',
+      role: 'advisor',
+      slug: 'kitenge-ndibu-john',
+      office: 'STATE COUNCIL',
+      summary: 'Provides advisory support on administrative and judicial matters.'
+    },
+    {
+      name: 'BADIBANGA ILUNGA Jean',
+      title: 'Advisor',
+      email: 'badibanga@conseildetatrdc.com',
+      image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=300&h=350&fit=crop',
+      role: 'advisor',
+      slug: 'badibanga-ilunga-jean',
+      office: 'STATE COUNCIL',
+      summary: 'Provides advisory support on administrative and judicial matters.'
+    },
+    {
+      name: 'KWEYI BISEMBO ASINGA Fulgence',
+      title: 'Advisor',
+      email: 'kweyi@conseildetatrdc.com',
+      image: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=300&h=350&fit=crop',
+      role: 'advisor',
+      slug: 'kweyi-bisembo-asinga-fulgence',
+      office: 'STATE COUNCIL',
+      summary: 'Provides advisory support on administrative and judicial matters.'
+    },
+    {
+      name: 'KANZA MAKOKA Joseph',
+      title: 'Advisor',
+      email: 'kanza@conseildetatrdc.com',
+      image: 'https://images.unsplash.com/photo-1592520113018-180c8bc831c9?w=300&h=350&fit=crop',
+      role: 'advisor',
+      slug: 'kanza-makoka-joseph',
+      office: 'STATE COUNCIL',
+      summary: 'Provides advisory support on administrative and judicial matters.'
+    },
+    {
+      name: 'KATAMBE MALIPO Gérard',
+      title: 'Advisor',
+      email: 'katambe@conseildetatrdc.com',
+      image: 'https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=300&h=350&fit=crop',
+      role: 'advisor',
+      slug: 'katambe-malipo-gerard',
+      office: 'STATE COUNCIL',
+      summary: 'Provides advisory support on administrative and judicial matters.'
+    },
+    {
+      name: 'LEMBLEMBE N\'KASCHAMA Guérin Emmanuel',
+      title: 'Advisor',
+      email: 'lemblembe@conseildetatrdc.com',
+      image: 'https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=300&h=350&fit=crop',
+      role: 'advisor',
+      slug: 'lemblembe-n-kaschama-guerin-emmanuel',
+      office: 'STATE COUNCIL',
+      summary: 'Provides advisory support on administrative and judicial matters.'
+    },
+    {
+      name: 'LUSHULE BASHOMEKA Déogratias',
+      title: 'Advisor',
+      email: 'lushule@conseildetatrdc.com',
+      image: 'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=300&h=350&fit=crop',
+      role: 'advisor',
+      slug: 'lushule-bashomeka-deogratias',
+      office: 'STATE COUNCIL',
+      summary: 'Provides advisory support on administrative and judicial matters.'
+    },
+    {
+      name: 'MAYENGO LUZIMBUKI Aimé',
+      title: 'Advisor',
+      email: 'mayengo@conseildetatrdc.com',
+      image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=300&h=350&fit=crop',
+      role: 'advisor',
+      slug: 'mayengo-luzimbuki-aime',
+      office: 'STATE COUNCIL',
+      summary: 'Provides advisory support on administrative and judicial matters.'
+    },
+    {
+      name: 'Mme MONGU NKANGA Marie-Louise',
+      title: 'Advisor',
+      email: 'mongu@conseildetatrdc.com',
+      image: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=300&h=350&fit=crop',
+      role: 'advisor',
+      slug: 'mme-mongu-nkanga-marie-louise',
+      office: 'STATE COUNCIL',
+      summary: 'Provides advisory support on administrative and judicial matters.'
+    },
+    {
+      name: 'MUDINDAMBI NAWENA Julien',
+      title: 'Advisor',
+      email: 'mudindambi@conseildetatrdc.com',
+      image: 'https://images.unsplash.com/photo-1592520113018-180c8bc831c9?w=300&h=350&fit=crop',
+      role: 'advisor',
+      slug: 'mudindambi-nawena-julien',
+      office: 'STATE COUNCIL',
+      summary: 'Provides advisory support on administrative and judicial matters.'
+    },
+    {
+      name: 'KOURA MFUMANKIE Emmanuel',
+      title: 'Advisor',
+      email: 'koura@conseildetatrdc.com',
+      image: 'https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=300&h=350&fit=crop',
+      role: 'advisor',
+      slug: 'koura-mfumankie-emmanuel',
+      office: 'STATE COUNCIL',
+      summary: 'Provides advisory support on administrative and judicial matters.'
+    },
+    {
+      name: 'NTUMBA MUSUKA Zacharie',
+      title: 'Advisor',
+      email: 'ntumba.musuka@conseildetatrdc.com',
+      image: 'https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=300&h=350&fit=crop',
+      role: 'advisor',
+      slug: 'ntumba-musuka-zacharie',
+      office: 'STATE COUNCIL',
+      summary: 'Provides advisory support on administrative and judicial matters.'
+    },
+    {
+      name: 'NTUMBA MANDE Enoch',
+      title: 'Advisor',
+      email: 'ntumba.mande@conseildetatrdc.com',
+      image: 'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=300&h=350&fit=crop',
+      role: 'advisor',
+      slug: 'ntumba-mande-enoch',
+      office: 'STATE COUNCIL',
+      summary: 'Provides advisory support on administrative and judicial matters.'
+    },
+    {
+      name: 'WANE BAMEME Bienvenu',
+      title: 'Advisor',
+      email: 'wane@conseildetatrdc.com',
+      image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=300&h=350&fit=crop',
+      role: 'advisor',
+      slug: 'wane-bameme-bienvenu',
+      office: 'STATE COUNCIL',
+      summary: 'Provides advisory support on administrative and judicial matters.'
+    },
+    {
+      name: 'YAMULAMBA KASONGO Godefroid',
+      title: 'Advisor',
+      email: 'yamulamba@conseildetatrdc.com',
+      image: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=300&h=350&fit=crop',
+      role: 'advisor',
+      slug: 'yamulamba-kasongo-godefroid',
+      office: 'STATE COUNCIL',
+      summary: 'Provides advisory support on administrative and judicial matters.'
+    },
+    {
+      name: 'MVUEKIANI NDONZUA Alexis',
+      title: 'Advisor',
+      email: 'mvuekiani@conseildetatrdc.com',
+      image: 'https://images.unsplash.com/photo-1592520113018-180c8bc831c9?w=300&h=350&fit=crop',
+      role: 'advisor',
+      slug: 'mvuekiani-ndonzua-alexis',
+      office: 'STATE COUNCIL',
+      summary: 'Provides advisory support on administrative and judicial matters.'
+    },
+    {
+      name: 'TABALA KITENE Faustin',
+      title: 'Advisor',
+      email: 'tabala@conseildetatrdc.com',
+      image: 'https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=300&h=350&fit=crop',
+      role: 'advisor',
+      slug: 'tabala-kitene-faustin',
+      office: 'STATE COUNCIL',
+      summary: 'Provides advisory support on administrative and judicial matters.'
+    },
+    {
+      name: 'MUSEMA KAWATA Achille',
+      title: 'Advisor',
+      email: 'musema@conseildetatrdc.com',
+      image: 'https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=300&h=350&fit=crop',
+      role: 'advisor',
+      slug: 'musema-kawata-achille',
+      office: 'STATE COUNCIL',
+      summary: 'Provides advisory support on administrative and judicial matters.'
+    },
+    {
+      name: 'MUNEKAYI CTTOKO Honoré',
+      title: 'Advisor',
+      email: 'munekayi@conseildetatrdc.com',
+      image: 'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=300&h=350&fit=crop',
+      role: 'advisor',
+      slug: 'munekayi-cttoko-honore',
+      office: 'STATE COUNCIL',
+      summary: 'Provides advisory support on administrative and judicial matters.'
+    },
+    {
+      name: 'Mme IBA MAYA Sophie',
+      title: 'Advisor',
+      email: 'iba.maya@conseildetatrdc.com',
+      image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=300&h=350&fit=crop',
+      role: 'advisor',
+      slug: 'mme-iba-maya-sophie',
+      office: 'STATE COUNCIL',
+      summary: 'Provides advisory support on administrative and judicial matters.'
+    },
+    {
+      name: 'Mme KULULU NSUNGU Philomène',
+      title: 'Advisor',
+      email: 'kululu@conseildetatrdc.com',
+      image: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=300&h=350&fit=crop',
+      role: 'advisor',
+      slug: 'mme-kululu-nsungu-philomene',
+      office: 'STATE COUNCIL',
+      summary: 'Provides advisory support on administrative and judicial matters.'
+    },
+    {
+      name: 'KAKUDJI WA KAKUDJI',
+      title: 'Advisor',
+      email: 'kakudji@conseildetatrdc.com',
+      image: 'https://images.unsplash.com/photo-1592520113018-180c8bc831c9?w=300&h=350&fit=crop',
+      role: 'advisor',
+      slug: 'kakudji-wa-kakudji',
+      office: 'STATE COUNCIL',
+      summary: 'Provides advisory support on administrative and judicial matters.'
+    },
+    {
+      name: 'DJONGESONGO OHUMAHUMA Gaston',
+      title: 'Advisor',
+      email: 'djongesongo@conseildetatrdc.com',
+      image: 'https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=300&h=350&fit=crop',
+      role: 'advisor',
+      slug: 'djongesongo-ohumahuma-gaston',
+      office: 'STATE COUNCIL',
+      summary: 'Provides advisory support on administrative and judicial matters.'
+    },
+    {
+      name: 'SOKO MABIALA',
+      title: 'Advisor',
+      email: 'soko@conseildetatrdc.com',
+      image: 'https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=300&h=350&fit=crop',
+      role: 'advisor',
+      slug: 'soko-mabiala',
+      office: 'STATE COUNCIL',
+      summary: 'Provides advisory support on administrative and judicial matters.'
+    },
+    {
+      name: 'Mme KATALA MATADI Lysette',
+      title: 'Advisor',
+      email: 'katala@conseildetatrdc.com',
+      image: 'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=300&h=350&fit=crop',
+      role: 'advisor',
+      slug: 'mme-katala-matadi-lysette',
+      office: 'STATE COUNCIL',
+      summary: 'Provides advisory support on administrative and judicial matters.'
+    },
+    {
+      name: 'Mme LUVANGU NKENGE Thérèse',
+      title: 'Advisor',
+      email: 'luvangu@conseildetatrdc.com',
+      image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=300&h=350&fit=crop',
+      role: 'advisor',
+      slug: 'mme-luvangu-nkenge-therese',
+      office: 'STATE COUNCIL',
+      summary: 'Provides advisory support on administrative and judicial matters.'
+    },
+    {
+      name: 'EKABELA MUNDONGYA Ruphin',
+      title: 'Advisor',
+      email: 'ekabela@conseildetatrdc.com',
+      image: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=300&h=350&fit=crop',
+      role: 'advisor',
+      slug: 'ekabela-mundongya-ruphin',
+      office: 'STATE COUNCIL',
+      summary: 'Provides advisory support on administrative and judicial matters.'
+    },
+    {
+      name: 'KITWA NDALAMBA Arthur',
+      title: 'Advisor',
+      email: 'kitwa@conseildetatrdc.com',
+      image: 'https://images.unsplash.com/photo-1592520113018-180c8bc831c9?w=300&h=350&fit=crop',
+      role: 'advisor',
+      slug: 'kitwa-ndalamba-arthur',
+      office: 'STATE COUNCIL',
+      summary: 'Provides advisory support on administrative and judicial matters.'
     }
   ];
 
