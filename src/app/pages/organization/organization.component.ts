@@ -305,7 +305,7 @@ type HighchartsStatic = typeof import('highcharts');
       </section>
 
       <!-- The Advisors Section -->
-      <!-- <section class="members-section advisors-section">
+      <section class="members-section advisors-section">
         <div class="container">
           <div class="section-head-wrap">
             <div class="org-header-line anim-line"></div>
@@ -362,7 +362,7 @@ type HighchartsStatic = typeof import('highcharts');
             </button>
           </div>
         </div>
-      </section> -->
+      </section>
 
       <!-- Services Info Section -->
       <section class="services-info-section">
