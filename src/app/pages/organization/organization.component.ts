@@ -132,18 +132,6 @@ type HighchartsStatic = typeof import('highcharts');
               <article class="leadership-photo-card">
                 <div class="leadership-photo-frame">
                   <img
-                    ngSrc="https://res.cloudinary.com/dhqvb8wbn/image/upload/v1772556705/PRES_MASANI_40x50.jpg_ast5mq.jpg"
-                    [alt]="'organization.chart.namedPhotoRoles.consultative' | i18n"
-                    width="320"
-                    height="380"
-                  />
-                </div>
-                <p class="leadership-photo-role">{{ 'organization.chart.namedPhotoRoles.consultative' | i18n }}</p>
-              </article>
-
-              <article class="leadership-photo-card">
-                <div class="leadership-photo-frame">
-                  <img
                     ngSrc="https://res.cloudinary.com/dhqvb8wbn/image/upload/v1772556921/Eug%C3%A8ne_KIBWE_MUTER.jpg_bacl4e.jpg"
                     [alt]="'organization.chart.namedPhotoRoles.contentieux' | i18n"
                     width="320"
@@ -151,6 +139,18 @@ type HighchartsStatic = typeof import('highcharts');
                   />
                 </div>
                 <p class="leadership-photo-role">{{ 'organization.chart.namedPhotoRoles.contentieux' | i18n }}</p>
+              </article>
+
+              <article class="leadership-photo-card">
+                <div class="leadership-photo-frame">
+                  <img
+                    ngSrc="https://res.cloudinary.com/dhqvb8wbn/image/upload/v1772556705/PRES_MASANI_40x50.jpg_ast5mq.jpg"
+                    [alt]="'organization.chart.namedPhotoRoles.consultative' | i18n"
+                    width="320"
+                    height="380"
+                  />
+                </div>
+                <p class="leadership-photo-role">{{ 'organization.chart.namedPhotoRoles.consultative' | i18n }}</p>
               </article>
             </div>
           </div>
