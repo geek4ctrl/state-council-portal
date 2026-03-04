@@ -53,7 +53,7 @@ type HighchartsStatic = typeof import('highcharts');
             <div class="tilt-shine"></div>
             <div class="president-image-large img-zoom">
               <img
-                ngSrc="https://res.cloudinary.com/dhqvb8wbn/image/upload/v1772020345/Brigitte_NSENSELE_wa_NSENSELE.jpg_2_vgiv72.jpg"
+                ngSrc="https://res.cloudinary.com/dhqvb8wbn/image/upload/v1772555485/Brigitte_NSENSELE_wa_NSENSELE_OK.jpg_ndsjzg.jpg"
                 [attr.alt]="'organization.firstPresident.alt' | i18n"
                 width="400"
                 height="500"
@@ -119,7 +119,7 @@ type HighchartsStatic = typeof import('highcharts');
             <article class="leadership-photo-card top" role="listitem">
               <div class="leadership-photo-frame">
                 <img
-                  ngSrc="https://res.cloudinary.com/dhqvb8wbn/image/upload/v1772020345/Brigitte_NSENSELE_wa_NSENSELE.jpg_2_vgiv72.jpg"
+                  ngSrc="https://res.cloudinary.com/dhqvb8wbn/image/upload/v1772555485/Brigitte_NSENSELE_wa_NSENSELE_OK.jpg_ndsjzg.jpg"
                   [alt]="'organization.chart.namedPhotoRoles.firstPresident' | i18n"
                   width="320"
                   height="380"
@@ -2453,7 +2453,7 @@ export class OrganizationComponent implements OnInit, AfterViewInit {
       name: 'Brigitte Nsensele Wa Nsensele',
       subtitleKey: 'organization.firstPresidents.honoraryTitleThird',
       image:
-        'https://res.cloudinary.com/dhqvb8wbn/image/upload/v1772020345/Brigitte_NSENSELE_wa_NSENSELE.jpg_2_vgiv72.jpg',
+        'https://res.cloudinary.com/dhqvb8wbn/image/upload/v1772555485/Brigitte_NSENSELE_wa_NSENSELE_OK.jpg_ndsjzg.jpg',
     },
   ];
 
