@@ -24,6 +24,7 @@ export class HeaderComponent {
   readonly languages: { code: LanguageCode; label: string }[] = [
     { code: 'en', label: 'English' },
     { code: 'fr', label: 'French' },
+    { code: 'es', label: 'Spanish' },
     { code: 'pt', label: 'Portuguese' },
     { code: 'sw', label: 'Swahili' },
     { code: 'ln', label: 'Lingala' },
