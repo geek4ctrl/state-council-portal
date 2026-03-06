@@ -1,6 +1,6 @@
 {
   "header": {
-    "siteName": "State Council do DRC",
+    "siteName": "Conselho de Estado da RDC",
     "contact": {
       "phone": "+ 243 (21) 00000000",
       "hours": "SEGUNDA - SEXTA, 8H30 - 16H00"
@@ -11,12 +11,12 @@
       "instagram": "Instagram"
     },
     "lang": {
-      "label": "Linguagem",
+      "label": "Idioma",
       "switchToEnglish": "Mudar para inglês",
       "switchToFrench": "Mudar para francês"
     },
     "nav": {
-      "home": "LAR",
+      "home": "INÍCIO",
       "court": "O TRIBUNAL",
       "presentation": "Apresentação",
       "organization": "Organização",
@@ -27,29 +27,29 @@
       "audiences": "AUDIÊNCIAS",
       "steps": "PASSOS",
       "news": "NOTÍCIAS",
-      "bookAppointment": "Agendar consulta"
+      "bookAppointment": "Marcar atendimento"
     }
   },
   "hero": {
-    "titleOpening2025": "O ANO JUDICIAL ABRE NO STATE COUNCIL PARA O PERÍODO 2025 - 2026"
+    "titleOpening2025": "O ANO JUDICIÁRIO ABRE NO CONSELHO DE ESTADO PARA O PERÍODO 2025 - 2026"
   },
   "mobileNav": {
-    "home": "Lar",
+    "home": "Início",
     "organization": "Organização",
-    "apply": "Aplicar",
+    "apply": "Solicitar",
     "news": "Notícias"
   },
   "comingSoon": {
     "subtitle": "Em breve",
     "description": "Esta página está em desenvolvimento e estará disponível em breve. Volte mais tarde para explorar o conteúdo.",
-    "backHome": "De volta para casa"
+    "backHome": "Voltar ao início"
   },
   "errors": {
     "generic": {
       "code": "Erro",
       "title": "Algo deu errado",
-      "message": "Estamos tendo problemas para concluir sua solicitação. Tente novamente ou retorne à página inicial de State Council.",
-      "primary": "Voltar para casa",
+      "message": "Estamos com dificuldades para concluir o seu pedido. Tente novamente ou volte à página inicial do Conselho de Estado.",
+      "primary": "Voltar ao início",
       "secondary": "Ver atualizações"
     },
     "notFound": {
@@ -60,7 +60,7 @@
   },
   "history": {
     "title": "História",
-    "body": "Descubra a rica história do State Council."
+    "body": "Descubra a rica história do Conselho de Estado."
   },
   "process": {
     "title": "Processo judicial",
@@ -68,7 +68,7 @@
   },
   "judges": {
     "title": "Os juízes",
-    "body": "Conheça os ilustres juízes do State Council."
+    "body": "Conheça os ilustres juízes do Conselho de Estado."
   },
   "memberDetail": {
     "back": "← Voltar para Organização",
@@ -84,8 +84,8 @@
   },
   "news": {
     "hero": {
-      "title": "NOTÍCIAS e atualizações",
-      "body": "A injustiça pode manifestar-se de muitas maneiras na nossa sociedade. Damos-lhe a oportunidade de denunciar todos os abusos de formulários."
+      "title": "NOTÍCIAS E ATUALIZAÇÕES",
+      "body": "A injustiça pode manifestar-se de muitas formas na nossa sociedade. Damos-lhe a oportunidade de denunciar todas as formas de abuso."
     },
     "section": {
       "title": "NOTÍCIAS E ATUALIZAÇÕES",
@@ -146,32 +146,32 @@
         "body": "A injustiça pode manifestar-se de muitas maneiras na nossa sociedade. Damos-lhe a oportunidade de denunciar todos os abusos de formulários."
       },
       "appointment": {
-        "title": "BOOK<BR>APPOINTMENT",
-        "body": "Para marcar uma reunião com o State Council, preencha o seguinte formulário de solicitação de agendamento. Certifique-se de que todos os campos obrigatórios sejam preenchidos corretamente para que possamos processar sua solicitação com eficiência. Você receberá um e-mail ou telefonema de confirmação com a data e horário agendados."
+        "title": "MARCAR<BR>ATENDIMENTO",
+        "body": "Para marcar uma reunião com o Conselho de Estado, preencha o formulário de pedido de agendamento. Certifique-se de que todos os campos obrigatórios estão corretamente preenchidos para que possamos processar o seu pedido com eficiência. Receberá um e-mail ou chamada de confirmação com a data e hora marcadas."
       },
       "appeal": {
-        "title": "APELO AO<BR>STATE<BR>COUNCIL",
-        "body1": "Um recurso para o State Council é um recurso jurídico administrativo que permite a uma parte contestar decisões e atos administrativos. O State Council verifica se a legislação administrativa foi corretamente aplicada e se os procedimentos adequados foram seguidos.",
-        "body2": "O State Council é apreendido por requerimento das partes ou por declaração apresentada ao Conselho. Os recursos deverão ser interpostos nos prazos legais prescritos e confirmados por petição acompanhada de documentos comprobatórios."
+        "title": "RECURSO AO<BR>CONSELHO<BR>DE ESTADO",
+        "body1": "Um recurso ao Conselho de Estado é um meio jurídico-administrativo que permite contestar decisões e atos administrativos. O Conselho de Estado verifica se o direito administrativo foi corretamente aplicado e se os procedimentos adequados foram cumpridos.",
+        "body2": "O Conselho de Estado é acionado por requerimento das partes ou por declaração apresentada ao Conselho. Os recursos devem ser interpostos dentro dos prazos legais e confirmados por petição com documentos comprovativos."
       }
     },
     "tabs": {
       "report": "Relatório",
-      "appointment": "Marque uma consulta",
+      "appointment": "Marcar atendimento",
       "appeal": "Apresentar um recurso"
     },
     "forms": {
       "report": {
         "title": "FORMULÁRIO DE RECLAMAÇÃO",
-        "subtitle": "ADORAMOS OUVIR SEUS PROBLEMAS"
+        "subtitle": "GOSTARÍAMOS DE OUVIR AS SUAS QUESTÕES"
       },
       "appointment": {
-        "title": "FAÇA UMA MARCAÇÃO",
-        "subtitle": "NÓS ADORAMOS AJUDÁ-LO COM SEU PROBLEMA"
+        "title": "MARCAR ATENDIMENTO",
+        "subtitle": "GOSTARÍAMOS DE AJUDÁ-LO COM A SUA QUESTÃO"
       },
       "appeal": {
         "title": "FORMULÁRIO DE RECURSO",
-        "subtitle": "ADORAMOS OUVIR SEUS PROBLEMAS"
+        "subtitle": "GOSTARÍAMOS DE OUVIR AS SUAS QUESTÕES"
       },
       "fullName": "Nome completo *",
       "email": "E-mail *",
@@ -183,15 +183,15 @@
         "commercial": "Câmara Comercial"
       },
       "meeting": {
-        "placeholder": "Quem você quer conhecer? *",
+        "placeholder": "Com quem deseja falar? *",
         "firstPresident": "Primeiro Presidente",
         "chamberPresident": "Presidente da Câmara",
         "legalAdvisor": "Consultor Jurídico",
         "clerk": "Escrivão do Tribunal"
       },
       "visit": {
-        "placeholder": "Quando você planeja vir?",
-        "thisWeek": "Essa semana",
+        "placeholder": "Quando pretende vir?",
+        "thisWeek": "Esta semana",
         "nextWeek": "Próxima semana",
         "thisMonth": "Este mês",
         "nextMonth": "Próximo mês"
@@ -202,7 +202,7 @@
   },
   "appealSteps": {
     "title": "COMO PREENCHER UM RECURSO",
-    "subtitle": "Siga estas etapas para enviar sua apelação ao State Council",
+    "subtitle": "Siga estes passos para submeter o seu recurso ao Conselho de Estado",
     "steps": {
       "1": {
         "title": "Prepare seus documentos",
@@ -213,8 +213,8 @@
         "body": "Escreva uma petição clara declarando os fatos, os motivos do recurso e a reparação que você busca. Incluir referências às disposições legais aplicáveis."
       },
       "3": {
-        "title": "Arquivo com o Registro",
-        "body": "Envie sua petição e documentos comprobatórios ao Cartório do State Council dentro dos prazos legais prescritos. Obtenha um recibo como prova de depósito."
+        "title": "Protocolar no Cartório",
+        "body": "Entregue a sua petição e os documentos comprovativos no Cartório do Conselho de Estado dentro dos prazos legais. Obtenha um comprovativo como prova de protocolo."
       },
       "4": {
         "title": "Pague as taxas aplicáveis",
@@ -228,7 +228,7 @@
   },
   "haveQuestions": {
     "title": "Tem dúvidas?",
-    "body": "Nossa equipe está aqui para ajudá-lo a entender o processo de apelação.",
+    "body": "A nossa equipa está aqui para ajudá-lo a compreender o processo de recurso.",
     "cta": "Envie-nos um e-mail"
   },
   "faqs": {
@@ -261,7 +261,7 @@
       "title": "Escritório Central",
       "address1": "7639, cruzamento das Avenidas Pumbu e Batonniers",
       "address2": "Comuna de Gombe, Kinshasa",
-      "address3": "Democratic Republic of Congo",
+      "address3": "República Democrática do Congo",
       "phone": "Tel: +243 (21) 0000000",
       "email": "Email: info@conseildetatrdc.com"
     },
@@ -287,7 +287,7 @@
       "linkedin": "LinkedIn"
     },
     "privacy": "Privacidade",
-    "copyright": "Direitos autorais State Council. Todos os direitos reservados"
+    "copyright": "Copyright Conselho de Estado. Todos os direitos reservados"
   },
   "home": {
     "hero": {
@@ -296,7 +296,7 @@
         "0": {
           "title": "CONSEIL D'ÉTAT - RENTRÉE JUDICIAIRE 2025-2026",
           "subtitle": "PALAIS DU PEUPLE - 13 DE NOVEMBRO DE 2025",
-          "body": "Os State Council reuniram-se no Palácio do Povo para a abertura formal do ano judicial 2025-2026.",
+          "body": "O Conselho de Estado reuniu-se no Palácio do Povo para a abertura formal do ano judicial 2025-2026.",
           "cta": "Saber mais"
         },
         "1": {
@@ -329,7 +329,7 @@
         },
         "excerpts": {
           "alt": "Trechos",
-          "title": "TRECHOS DE PAPÉIS",
+          "title": "EXCERTOS DE PAUTAS",
           "body": "Verifique os horários das audiências e os casos pendentes.",
           "action": "Saber mais"
         },
@@ -341,18 +341,18 @@
         },
         "appointment": {
           "alt": "Marcar consulta",
-          "title": "MARCAR NOMEAÇÃO",
+          "title": "MARCAR ATENDIMENTO",
           "body": "Agende consultas com funcionários judiciais.",
-          "action": "Reserve agora"
+          "action": "Marcar agora"
         }
       }
     },
     "keyFacts": {
-      "title": "Principais fatos",
+      "title": "Fatos principais",
       "subtitle": "Resumo do volume de casos, tempo de processamento e combinação de decisões.",
       "cards": {
         "volume": {
-          "title": "Volume do caso",
+          "title": "Volume de casos",
           "note": "Últimos 6 meses",
           "aria": "Volume de casos por mês"
         },
@@ -587,7 +587,7 @@
   },
   "reforms": {
     "hero": {
-      "title": "SUGERIDA<BR>REFORMAS",
+      "title": "REFORMAS<BR>PROPOSTAS",
       "body": "Modernizar o sistema judicial através de reformas estratégicas que melhorem a eficiência, a transparência e o acesso à justiça para todos os cidadãos congoleses."
     },
     "building": {
@@ -632,7 +632,7 @@
       "subtitle": "LIDERANÇA DA REFORMA",
       "roles": {
         "president": "Presidente",
-        "vicePresident": "vice-presidente",
+        "vicePresident": "Vice-Presidente",
         "chiefMagistrate": "Magistrado Chefe",
         "internationalRelations": "Relações Internacionais"
       }
@@ -640,7 +640,7 @@
   },
   "international": {
     "hero": {
-      "title": "INTERNACIONAL<BR>RELAÇÕES",
+      "title": "RELAÇÕES<BR>INTERNACIONAIS",
       "body": "No contexto da internacionalização do direito e da justiça, o STATE COUNCIL do Democratic Republic of Congo não está isolado deste ambiente. Participa ativamente no diálogo dos juízes, mantendo um elevado nível de cooperação no âmbito da Associação dos Supremos Tribunais dos Países de Língua Francesa (AHJUCAF) e da Associação Africana dos Supremos Tribunais Francófonos (AA-HJF)."
     },
     "stats": {
@@ -688,30 +688,30 @@
   },
   "audiences": {
     "hero": {
-      "title": "AUDIÊNCIAS E EXTRATOS DE ROLAMENTO",
+      "title": "AUDIÊNCIAS E EXCERTOS DE PAUTA",
       "body": "Acesse agendas de audiências, extratos de listas e decisões recentes."
     },
     "understanding": {
-      "title": "COMPREENDENDO O PÚBLICO",
+      "title": "COMPREENDER AS AUDIÊNCIAS",
       "body": "Encontre orientações sobre como as audiências são organizadas e como consultar os lançamentos recentes."
     },
     "metrics": {
-      "title": "MÉTRICAS DE AUDIÇÃO",
-      "subtitle": "Volume auditivo mensal e resultados ao longo do tempo.",
+      "title": "MÉTRICAS DE AUDIÊNCIAS",
+      "subtitle": "Volume mensal de audiências e resultados ao longo do tempo.",
       "volume": {
-        "title": "Volume auditivo mensal",
+        "title": "Volume mensal de audiências",
         "note": "Últimos 6 meses",
-        "aria": "Volume auditivo mensal"
+        "aria": "Volume mensal de audiências"
       },
       "outcomes": {
         "title": "Resultados ao longo do tempo",
         "note": "Combinação de decisão",
-        "aria": "Resultados auditivos ao longo do tempo"
+        "aria": "Resultados das audiências ao longo do tempo"
       }
     },
     "recent": {
-      "title": "TRECHOS DE PAPÉIS RECENTES",
-      "subtitle": "ÚLTIMOS TRECHOS DE AUDIÇÃO"
+      "title": "EXCERTOS DE PAUTA RECENTES",
+      "subtitle": "ÚLTIMOS EXCERTOS DE AUDIÊNCIA"
     },
     "documents": {
       "civil": {
@@ -727,7 +727,7 @@
         "title": "Trechos de Audiências da Câmara Social"
       },
       "general": {
-        "label": "Em geral",
+        "label": "Geral",
         "title": "Trechos de Audiências da Câmara Geral"
       }
     },
@@ -760,7 +760,7 @@
     },
     "seniorLabel": "MAGISTRADOS SÊNIOR",
     "chart": {
-      "title": "ORGANIZAÇÃO",
+      "title": "ORGANOGRAMA",
       "subtitle": "Visão geral da estrutura de liderança e divisões principais do State Council.",
       "interactiveTitle": "ORGOGRAMA INTERATIVO",
       "interactiveSubtitle": "Explore a hierarquia e a estrutura de relatórios.",
@@ -806,7 +806,7 @@
       "empty": "Nenhum presidente corresponde à sua pesquisa."
     },
     "advisors": {
-      "title": "OS CONSULTORES",
+      "title": "OS CONSELHEIROS",
       "empty": "Nenhum consultor corresponde à sua pesquisa."
     },
     "members": {
@@ -825,7 +825,7 @@
         "body": "Encontre formulários, textos jurídicos e guias de procedimentos."
       },
       "tv": {
-        "title": "Televisão do Conselho",
+        "title": "TV DO CONSELHO",
         "body": "Assista a audiências, anúncios e atualizações."
       },
       "title": "NOSSOS SERVIÇOS",
@@ -837,7 +837,7 @@
         "registers": "Registros e arquivos"
       },
       "rooms": {
-        "title": "Quartos",
+        "title": "Salas",
         "body": "Salas administrativas e judiciais que organizam deliberações e audiências."
       },
       "council": {
@@ -861,9 +861,9 @@
         "rooms": {
           "title": "Salas e Câmaras",
           "body1": "As salas organizam audiências e preparam arquivos de casos.",
-          "body2": "Eles garantem o cumprimento dos procedimentos e o agendamento.",
+          "body2": "Elas garantem o cumprimento dos procedimentos e o agendamento.",
           "body3": "Apoiam as deliberações com coordenação administrativa.",
-          "body4": "Eles garantem o bom fluxo dos casos até as decisões finais."
+          "body4": "Elas garantem o bom andamento dos casos até às decisões finais."
         },
         "council": {
           "title": "Gabinete do Conselho",
