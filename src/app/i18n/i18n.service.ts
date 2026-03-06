@@ -2,10 +2,10 @@ import { Injectable, inject, signal } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { catchError, firstValueFrom, map, tap, throwError } from 'rxjs';
 
-export type LanguageCode = 'en' | 'fr' | 'sw' | 'ln' | 'ts' | 'kg';
+export type LanguageCode = 'en' | 'fr' | 'sw' | 'ln' | 'ts' | 'kg' | 'pt';
 
 /** Languages that have translation files. Others fallback to English. */
-const SUPPORTED_LANGS: LanguageCode[] = ['en', 'fr', 'sw', 'ln', 'ts', 'kg'];
+const SUPPORTED_LANGS: LanguageCode[] = ['en', 'fr', 'sw', 'ln', 'ts', 'kg', 'pt'];
 
 @Injectable({ providedIn: 'root' })
 export class I18nService {
@@ -17,7 +17,7 @@ export class I18nService {
 
   init(): Promise<void> {
     const stored = typeof localStorage !== 'undefined' ? localStorage.getItem('lang') : null;
-    const validCodes: LanguageCode[] = ['en', 'fr', 'sw', 'ln', 'ts', 'kg'];
+    const validCodes: LanguageCode[] = ['en', 'fr', 'sw', 'ln', 'ts', 'kg', 'pt'];
     const lang: LanguageCode = (stored && validCodes.includes(stored as LanguageCode)) ? stored as LanguageCode : 'fr';
     return firstValueFrom(this.loadLanguage(lang));
   }
@@ -49,6 +49,7 @@ export class I18nService {
     const primaryUrl = this.getBaseAwareI18nUrl(loadLang);
     const rootUrl = `/i18n/${loadLang}.json`;
     const englishUrl = this.getBaseAwareI18nUrl('en');
+    let resolvedLang: LanguageCode = loadLang;
 
     return this.http.get<Record<string, unknown>>(primaryUrl).pipe(
       catchError((primaryError) => {
@@ -59,13 +60,14 @@ export class I18nService {
       }),
       catchError(() => {
         if (loadLang !== 'en') {
+          resolvedLang = 'en';
           return this.http.get<Record<string, unknown>>(englishUrl);
         }
         return throwError(() => new Error(`Unable to load i18n dictionary for '${loadLang}'.`));
       }),
       tap((payload) => {
         this.dictionary.set(payload);
-        this.lang.set(lang);
+        this.lang.set(resolvedLang);
       }),
       map(() => undefined)
     );
