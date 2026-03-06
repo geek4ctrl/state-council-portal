@@ -1,0 +1,886 @@
+{
+  "header": {
+    "siteName": "Consejo de Estado de la RDC",
+    "contact": {
+      "phone": "+ 243 (21) 00000000",
+      "hours": "LUNES - VIERNES 8:30AM - 4:00PM"
+    },
+    "social": {
+      "facebook": "Facebook",
+      "twitter": "Gorjeo",
+      "instagram": "Instagram"
+    },
+    "lang": {
+      "label": "Idioma",
+      "switchToEnglish": "Cambiar a inglés",
+      "switchToFrench": "Cambiar a francés"
+    },
+    "nav": {
+      "home": "INICIO",
+      "court": "EL TRIBUNAL",
+      "presentation": "Presentación",
+      "organization": "Organización",
+      "administrativeCourts": "Tribunales administrativos",
+      "administrativeTribunals": "Tribunales administrativos",
+      "reforms": "Reformas",
+      "international": "Relaciones Internacionales",
+      "audiences": "AUDIENCIAS",
+      "steps": "PASOS",
+      "news": "NOTICIAS",
+      "bookAppointment": "Reservar cita"
+    }
+  },
+  "hero": {
+    "titleOpening2025": "SE ABRE EL AÑO JUDICIAL EN EL CONSEJO DE ESTADO PARA EL PERIODO 2025 - 2026"
+  },
+  "mobileNav": {
+    "home": "Hogar",
+    "organization": "Org.",
+    "apply": "Aplicar",
+    "news": "Noticias"
+  },
+  "comingSoon": {
+    "subtitle": "Muy pronto",
+    "description": "Esta página está actualmente en desarrollo y estará disponible pronto. Vuelva a consultar más tarde para explorar el contenido.",
+    "backHome": "Volver a Inicio"
+  },
+  "errors": {
+    "generic": {
+      "code": "Error",
+      "title": "Algo salió mal",
+      "message": "Estamos teniendo problemas para completar su solicitud. Inténtelo de nuevo o regrese a la página de inicio del Consejo de Estado.",
+      "primary": "Regresar a casa",
+      "secondary": "Ver actualizaciones"
+    },
+    "notFound": {
+      "code": "404",
+      "title": "Página no encontrada",
+      "message": "La página que buscas no existe o ha sido movida."
+    }
+  },
+  "history": {
+    "title": "Historia",
+    "body": "Descubra la rica historia del Consejo de Estado."
+  },
+  "process": {
+    "title": "Proceso judicial",
+    "body": "Comprenda el proceso judicial y qué esperar."
+  },
+  "judges": {
+    "title": "los jueces",
+    "body": "Conozca a los distinguidos jueces del Consejo de Estado."
+  },
+  "memberDetail": {
+    "back": "← Volver a Organización",
+    "title": "Perfil de miembro",
+    "subtitle": "Perfil detallado e información de contacto.",
+    "office": "Oficina",
+    "email": "correo electrónico",
+    "notFound": {
+      "title": "Miembro no encontrado",
+      "body": "No se pudo localizar el perfil solicitado.",
+      "cta": "Volver a la organización"
+    }
+  },
+  "news": {
+    "hero": {
+      "title": "NOTICIAS y actualizaciones",
+      "body": "La injusticia puede manifestarse de muchas maneras en nuestra sociedad. Le damos la oportunidad de denunciar todos los abusos de formularios."
+    },
+    "section": {
+      "title": "NOTICIAS Y ACTUALIZACIONES",
+      "subtitle": "LA VISIÓN NOS HACE QUIENES SOMOS"
+    },
+    "insights": {
+      "title": "NOTICIAS",
+      "subtitle": "Tendencias por tema y cadencia de publicación",
+      "topics": {
+        "title": "Temas por mes",
+        "note": "últimos 6 meses",
+        "aria": "Temas de noticias por mes"
+      },
+      "cadence": {
+        "title": "Cadencia de publicación",
+        "note": "Artículos publicados",
+        "aria": "Cadencia de publicación por mes"
+      }
+    },
+    "actions": {
+      "readMore": "Leer más"
+    },
+    "pagination": {
+      "label": "Paginación de noticias",
+      "previous": "Pagina anterior",
+      "next": "Próximo",
+      "pageLabel": "Página {{page}}"
+    },
+    "empty": {
+      "title": "Aún no hay publicaciones de noticias",
+      "body": "Los nuevos artículos aparecerán aquí una vez que se publiquen."
+    },
+    "articles": {
+      "1": {
+        "date": "30 de enero",
+        "category": "Administración",
+        "title": "El Primer Presidente del Consejo de Estado insta a los magistrados a adoptar la resolución de...",
+        "excerpt": "Tras el acto de clausura de la asamblea general ordinaria del Consejo Superior de la Administración..."
+      },
+      "2": {
+        "date": "30 de enero",
+        "category": "Administración",
+        "title": "REUNIÓN DE ORIENTACIÓN EN EL CONSEJO DE ESTADO",
+        "excerpt": "Kinshasa, 18 de octubre de 2025: El Consejo de Estado de la RDC informa a un pu..."
+      },
+      "3": {
+        "date": "30 de enero",
+        "category": "Administración",
+        "title": "REUNIÓN DE ORIENTACIÓN EN EL CONSEJO DE ESTADO",
+        "excerpt": "Kinshasa, 18 de octubre de 2025: El Consejo de Estado de la RDC informa a un pu..."
+      }
+    }
+  },
+  "steps": {
+    "hero": {
+      "report": {
+        "title": "INFORME",
+        "body": "La injusticia puede manifestarse de muchas maneras en nuestra sociedad. Le damos la oportunidad de denunciar todos los abusos de formularios."
+      },
+      "appointment": {
+        "title": "RESERVAR<br>CITA",
+        "body": "Para concertar una reunión con el Consejo de Estado, complete el siguiente formulario de solicitud de cita. Asegúrese de que todos los campos obligatorios se completen con precisión para que podamos procesar su solicitud de manera eficiente. Recibirás un correo electrónico de confirmación o una llamada telefónica con la fecha y hora programadas."
+      },
+      "appeal": {
+        "title": "LLAMAMIENTO AL CONSEJO<br>ESTADO<br>",
+        "body1": "Una apelación ante el Consejo de Estado es un recurso legal administrativo que permite a una parte impugnar decisiones y actos administrativos. El Consejo de Estado verifica si se aplicó correctamente el derecho administrativo y si se siguieron los procedimientos adecuados.",
+        "body2": "El Consejo de Estado interviene a petición de las partes o mediante declaración presentada ante el Consejo. Los recursos deben interponerse dentro de los plazos legales establecidos y deben ser confirmados mediante petición acompañada de los documentos justificativos."
+      }
+    },
+    "tabs": {
+      "report": "Informe",
+      "appointment": "Reserve una cita",
+      "appeal": "Presentar una apelación"
+    },
+    "forms": {
+      "report": {
+        "title": "FORMULARIO DE QUEJA",
+        "subtitle": "NOS ENCANTARÍA ESCUCHAR SUS PROBLEMAS"
+      },
+      "appointment": {
+        "title": "PEDIR HORA",
+        "subtitle": "NOS ENCANTARÍA AYUDARLE CON SU PROBLEMA"
+      },
+      "appeal": {
+        "title": "FORMULARIO DE APELACIÓN",
+        "subtitle": "NOS ENCANTARÍA ESCUCHAR SUS PROBLEMAS"
+      },
+      "fullName": "Nombre completo *",
+      "email": "correo electrónico *",
+      "department": "Departamento",
+      "chambers": {
+        "criminal": "Sala Penal",
+        "civil": "Sala Civil",
+        "social": "Cámara Social",
+        "commercial": "Cámara Comercial"
+      },
+      "meeting": {
+        "placeholder": "¿A quién quieres conocer? *",
+        "firstPresident": "primer presidente",
+        "chamberPresident": "Presidente de la Cámara",
+        "legalAdvisor": "Asesor Jurídico",
+        "clerk": "secretario del tribunal"
+      },
+      "visit": {
+        "placeholder": "¿Cuándo tienes pensado venir?",
+        "thisWeek": "Esta semana",
+        "nextWeek": "La próxima semana",
+        "thisMonth": "este mes",
+        "nextMonth": "Mes próximo"
+      },
+      "message": "Mensaje *",
+      "submit": "ENVIAR MENSAJE"
+    }
+  },
+  "appealSteps": {
+    "title": "CÓMO PRESENTAR UNA APELACIÓN",
+    "subtitle": "Siga estos pasos para presentar su apelación al Consejo de Estado",
+    "steps": {
+      "1": {
+        "title": "Prepara tus documentos",
+        "body": "Reúna la decisión administrativa impugnada, su identificación y cualquier evidencia que la respalde. Asegúrese de que todos los documentos sean legibles y estén debidamente certificados cuando sea necesario."
+      },
+      "2": {
+        "title": "Redacte su petición",
+        "body": "Escriba una petición clara que indique los hechos, los motivos de la apelación y la reparación que busca. Incluir referencias a disposiciones legales aplicables."
+      },
+      "3": {
+        "title": "Presentar ante el Registro",
+        "body": "Presente su petición y los documentos de respaldo al Registro del Consejo de Estado dentro de los plazos legales establecidos. Obtenga un recibo como prueba de presentación."
+      },
+      "4": {
+        "title": "Pagar las tarifas aplicables",
+        "body": "Pague las tasas judiciales requeridas en la oficina designada. Guarde el recibo de pago para sus registros."
+      },
+      "5": {
+        "title": "Esperar notificación",
+        "body": "El Registro le notificará el número de caso y la fecha de la audiencia. Es posible que deba entregar copias a la parte contraria."
+      }
+    }
+  },
+  "haveQuestions": {
+    "title": "¿Tiene preguntas?",
+    "body": "Nuestro equipo está aquí para ayudarle a comprender el proceso de apelación.",
+    "cta": "Envíanos un correo electrónico"
+  },
+  "faqs": {
+    "title": "PREGUNTAS FRECUENTES",
+    "items": {
+      "1": {
+        "question": "¿Cuál es el plazo para presentar un recurso de apelación?",
+        "answer": "Por lo general, los recursos deben interponerse dentro de los dos meses siguientes a la notificación de la decisión impugnada. Pueden aplicarse plazos específicos según el tipo de acto administrativo. Consulte la legislación aplicable o comuníquese con el Registro para obtener orientación."
+      },
+      "2": {
+        "question": "¿Puedo representarme a mí mismo o necesito un abogado?",
+        "answer": "Puede representarse a sí mismo ante el Consejo de Estado. Sin embargo, se recomienda representación legal para asuntos complejos. El Registro puede proporcionar información sobre opciones de asistencia legal si califica."
+      },
+      "3": {
+        "question": "¿Qué documentos necesito incluir?",
+        "answer": "Normalmente necesitará: la decisión impugnada, su petición, identificación y documentos de respaldo. El Registro proporciona una lista de verificación a pedido. Es posible que se requieran documentos adicionales según su caso."
+      },
+      "4": {
+        "question": "¿Cuánto tiempo lleva el proceso de apelación?",
+        "answer": "Los tiempos de procesamiento varían según la complejidad del caso y la carga de trabajo del tribunal. Recibirá una fecha de audiencia después de que se registre su caso. El Registro puede proporcionar cronogramas estimados para casos similares."
+      },
+      "5": {
+        "question": "¿Puedo retirar mi apelación?",
+        "answer": "Sí. Puede retirar su apelación en cualquier momento antes de la decisión final. Presentar un retiro por escrito al Registro. Tenga en cuenta que el retiro puede tener implicaciones para cualquier procedimiento relacionado."
+      }
+    }
+  },
+  "footer": {
+    "mainOffice": {
+      "title": "Oficina central",
+      "address1": "7639, intersección de las avenidas Pumbu y Batonniers",
+      "address2": "Comuna de Gombe, Kinshasa",
+      "address3": "República Democrática del Congo",
+      "phone": "Teléfono: +243 (21) 0000000",
+      "email": "correo electrónico: info@conseildetatrdc.com"
+    },
+    "quickLinks": {
+      "title": "Enlaces rápidos",
+      "about": "Acerca de la corte",
+      "jurisprudence": "Jurisprudencia",
+      "filing": "Procedimientos de presentación",
+      "contact": "Contáctenos"
+    },
+    "resources": {
+      "title": "Recursos",
+      "legalDocs": "Documentos Legales",
+      "decisions": "Decisiones judiciales",
+      "reports": "Informes anuales",
+      "faqs": "Preguntas frecuentes"
+    },
+    "connect": {
+      "title": "Conectar",
+      "facebook": "Facebook",
+      "twitter": "Gorjeo",
+      "instagram": "Instagram",
+      "linkedin": "LinkedIn"
+    },
+    "privacy": "Privacidad",
+    "copyright": "Consejo de Estado de Derecho de Autor. Reservados todos los derechos"
+  },
+  "home": {
+    "hero": {
+      "learnMore": "Más información",
+      "slides": {
+        "0": {
+          "title": "CONSEJO DE ESTADO - ARRENDATARIO JUDICIAL 2025-2026",
+          "subtitle": "PALAIS DU PEUPLE - 13 DE NOVIEMBRE DE 2025",
+          "body": "El Consejo de Estado se reunió en el Palacio del Pueblo para la inauguración formal del año judicial 2025-2026.",
+          "cta": "Más información"
+        },
+        "1": {
+          "title": "SE ABRE EL AÑO JUDICIAL EN EL CONSEJO DE ESTADO PARA EL PERIODO 2025 - 2026",
+          "subtitle": "CASA DE LA LEY Y EL ORDEN",
+          "body": "Este video cubre la apertura formal del año judicial 2025-2026. En presencia del Presidente Felix Tshisekedi, la sesión reunió a altos jueces y funcionarios jurídicos.",
+          "cta": "Vea el procedimiento en vivo en Youtube"
+        },
+        "2": {
+          "title": "FORTALECIMIENTO DE LA INDEPENDENCIA JUDICIAL Y LA RESPONSABILIDAD",
+          "subtitle": "CASA DE LA LEY Y EL ORDEN",
+          "body": "El CONSEJO DE ESTADO continúa defendiendo los principios de justicia, equidad y estado de derecho. Estamos comprometidos a garantizar la transparencia y la integridad.",
+          "cta": "Obtenga más información sobre nuestra misión"
+        },
+        "3": {
+          "title": "IMPULSAR LA EXCELENCIA JURÍDICA EN LA REPÚBLICA DEMOCRÁTICA DEL CONGO",
+          "subtitle": "CASA DE LA LEY Y EL ORDEN",
+          "body": "A través de una formación jurídica rigurosa y el cumplimiento de las mejores prácticas internacionales, nos esforzamos por mantener los más altos estándares de excelencia judicial.",
+          "cta": "Explora nuestras iniciativas"
+        }
+      }
+    },
+    "quickLinks": {
+      "items": {
+        "news": {
+          "alt": "Noticias",
+          "title": "NOTICIAS",
+          "body": "Manténgase informado sobre decisiones y eventos clave.",
+          "action": "Leer"
+        },
+        "excerpts": {
+          "alt": "Extractos",
+          "title": "EXTRACTOS DE ROLES",
+          "body": "Consultar horarios de audiencias y casos pendientes.",
+          "action": "Más información"
+        },
+        "report": {
+          "alt": "Informe",
+          "title": "INFORME",
+          "body": "Informe actividades sospechosas o ilegales de forma segura.",
+          "action": "Registrar un informe"
+        },
+        "appointment": {
+          "alt": "Reservar cita",
+          "title": "RESERVAR CITA",
+          "body": "Programe consultas con funcionarios judiciales.",
+          "action": "Reserva ahora"
+        }
+      }
+    },
+    "keyFacts": {
+      "title": "Hechos clave",
+      "subtitle": "Volumen de casos, tiempo de procesamiento y combinación de decisiones de un vistazo.",
+      "cards": {
+        "volume": {
+          "title": "Volumen del caso",
+          "note": "últimos 6 meses",
+          "aria": "Volumen de casos por mes"
+        },
+        "processing": {
+          "title": "Tiempo de procesamiento",
+          "note": "Días promedio",
+          "aria": "Tiempo medio de procesamiento por trimestre"
+        },
+        "decisions": {
+          "title": "Decisiones por tipo",
+          "note": "Año corriente",
+          "aria": "Decisiones por tipo"
+        }
+      }
+    },
+    "offer": {
+      "title": "QUE OFRECEMOS",
+      "subtitle": "Brindamos soluciones legales personalizadas para satisfacer sus necesidades únicas, garantizando que sus derechos estén protegidos y que se haga justicia.",
+      "cards": {
+        "1": {
+          "title": "Autoridad Judicial Suprema",
+          "body": "Como tribunal supremo del sistema judicial ordinario, el Consejo de Estado garantiza la interpretación y aplicación uniforme de la ley en toda la República Democrática del Congo."
+        },
+        "2": {
+          "title": "Seguridad jurídica",
+          "body": "A través de nuestra jurisprudencia y decisiones, establecemos precedentes legales que guían a los tribunales inferiores y garantizan la coherencia en la aplicación de la justicia."
+        },
+        "3": {
+          "title": "Excelencia Judicial",
+          "body": "Nuestros magistrados y consejeros son seleccionados en función del mérito, lo que garantiza los más altos estándares de experiencia jurídica, integridad y compromiso con la justicia."
+        },
+        "4": {
+          "title": "Cooperación Internacional",
+          "body": "Participamos activamente en el diálogo con órganos judiciales internacionales y mantenemos la cooperación con los tribunales francófonos y africanos."
+        }
+      }
+    },
+    "expertise": {
+      "title": "CAMPOS DE EXPERIENCIA",
+      "subtitle": "El CONSEJO DE ESTADO ejerce competencia sobre diversas materias jurídicas como tribunal supremo del sistema judicial ordinario.",
+      "stats": {
+        "domains": {
+          "value": "6",
+          "label": "dominios"
+        },
+        "decisions": {
+          "value": "120+",
+          "label": "decisiones/año"
+        },
+        "magistrates": {
+          "value": "30+",
+          "label": "magistrados"
+        }
+      },
+      "cta": "Ver detalles",
+      "areas": {
+        "civil": {
+          "title": "Derecho Civil y Comercial",
+          "desc": "Contratos, obligaciones y asuntos patrimoniales en todo el país.",
+          "items": {
+            "1": "Apelaciones de tribunales de apelación",
+            "2": "Disputas y contratos comerciales",
+            "3": "Asuntos de propiedad y herencia"
+          }
+        },
+        "family": {
+          "title": "Derecho de Familia",
+          "desc": "Proteger los derechos familiares y resolver disputas delicadas.",
+          "items": {
+            "1": "Apelaciones de matrimonio y divorcio",
+            "2": "Disputas por la custodia de los hijos",
+            "3": "Asuntos de sucesión"
+          }
+        },
+        "public": {
+          "title": "Derecho público",
+          "desc": "Supervisión de la acción pública y garantías constitucionales.",
+          "items": {
+            "1": "Casos de privilegio jurisdiccional",
+            "2": "Procesamiento de altos funcionarios",
+            "3": "Asuntos constitucionales"
+          }
+        },
+        "labor": {
+          "title": "Trabajo y empleo",
+          "desc": "Conflictos laborales y protección de los derechos de los trabajadores.",
+          "items": {
+            "1": "Apelaciones de conflictos laborales",
+            "2": "Asuntos del contrato de trabajo",
+            "3": "Protección de los derechos de los trabajadores"
+          }
+        },
+        "criminal": {
+          "title": "Derecho penal",
+          "desc": "Revisión de decisiones penales y garantías procesales.",
+          "items": {
+            "1": "Apelaciones penales ante el Consejo de Estado.",
+            "2": "Revisiones de errores de procedimiento",
+            "3": "Aplicación del derecho penal"
+          }
+        },
+        "property": {
+          "title": "Derechos de propiedad",
+          "desc": "Propiedad de la tierra, bienes inmuebles y transacciones inmobiliarias.",
+          "items": {
+            "1": "Disputas inmobiliarias",
+            "2": "La propiedad de la tierra importa",
+            "3": "Transacciones de propiedad"
+          }
+        }
+      }
+    },
+    "contact": {
+      "address": {
+        "title": "Dirección de la oficina",
+        "body": "7639, intersección de las avenidas Pumbu y Batonniers en la comuna de Gombe/Kinshasa-RDC"
+      },
+      "phone": {
+        "title": "Número de oficina",
+        "body": "+243 000000000"
+      },
+      "email": {
+        "title": "correo electrónico de la oficina",
+        "body": "info@conseildetatrdc.com"
+      }
+    },
+    "president": {
+      "imageAlt": "Presidente",
+      "cta": "Más información",
+      "slides": {
+        "1": {
+          "title": "EL PRIMER PRESIDENTE DEL CONSEJO DE ESTADO",
+          "paragraphs": {
+            "1": "Como tercer miembro de alto rango del Consejo Superior del Poder Judicial de la República Democrática del Congo, la Primera Presidenta del CONSEJO DE ESTADO, Brigitte Nsensele Wa Nsensele, donó sangre el jueves 27 de febrero, en solidaridad con las víctimas de la agresión ruandesa en la parte oriental del país.",
+            "2": "Para todo ciudadano congoleño democrático, contribuir al esfuerzo bélico es un deber cívico. El poder judicial no es una excepción.",
+            "3": "Durante más de tres décadas, la República Democrática del Congo ha sufrido agresiones perpetradas por Ruanda y otros grupos armados negativos, que han provocado millones de muertes, decenas de miles de personas desplazadas y una situación humanitaria deplorable."
+          }
+        },
+        "2": {
+          "title": "LIDERAZGO Y REFORMA JUDICIAL",
+          "paragraphs": {
+            "1": "Bajo el liderazgo del Primer Presidente, el CONSEJO DE ESTADO ha emprendido reformas judiciales integrales destinadas a modernizar el sistema judicial.",
+            "2": "Las reformas incluyen la digitalización de los expedientes judiciales, la implementación de sistemas de gestión de casos y programas de capacitación para jueces y personal judicial.",
+            "3": "Estas iniciativas reflejan el compromiso de la Corte con la transparencia, la eficiencia y la rendición de cuentas en la administración de justicia."
+          }
+        },
+        "3": {
+          "title": "COLABORACIÓN INTERNACIONAL",
+          "paragraphs": {
+            "1": "El CONSEJO DE ESTADO colabora activamente con instituciones judiciales internacionales y participa en foros globales para compartir experiencias.",
+            "2": "A través de asociaciones con tribunales de Francia, Bélgica y otros países francófonos, el Tribunal garantiza mantenerse a la vanguardia de los avances jurídicos.",
+            "3": "Este compromiso internacional fortalece el sistema judicial de la República Democrática del Congo y mejora su capacidad para impartir justicia de acuerdo con los estándares internacionales."
+          }
+        }
+      }
+    },
+    "newsletter": {
+      "title": "NOTICIAS Y ARTÍCULOS",
+      "readMore": "Leer más",
+      "cta": "Más información",
+      "items": {
+        "1": {
+          "alt": "Apelaciones",
+          "date": "15 de noviembre de 2025 | Informe de decisión",
+          "title": "Navegación de apelaciones: asesoramiento legal para un proceso fluido"
+        },
+        "2": {
+          "alt": "Procedimientos del Consejo de Estado",
+          "date": "22 de octubre de 2025 | Actualización de la corte",
+          "title": "Consideraciones clave en los procedimientos del Consejo de Estado"
+        },
+        "3": {
+          "alt": "Procesal",
+          "date": "18 de octubre de 2025 | Fallo judicial",
+          "title": "Cambios recientes en el derecho procesal"
+        },
+        "4": {
+          "alt": "Derechos",
+          "date": "12 de octubre de 2025 | Actualización Legal",
+          "title": "Comprender sus derechos en el proceso de apelación"
+        }
+      }
+    }
+  },
+  "about": {
+    "hero": {
+      "title": "ENTENDIENDO LA MÁXIMA JURISDICCIÓN DEL ORDEN ADMINISTRATIVO EN LA REPÚBLICA DEMOCRÁTICA DEL CONGO"
+    },
+    "intro": {
+      "title": "ENTENDIENDO LA MÁXIMA JURISDICCIÓN DEL ORDEN ADMINISTRATIVO EN LA REPÚBLICA DEMOCRÁTICA DEL CONGO",
+      "body": "El artículo 151, apartado 1, de la Constitución de la República Democrática del Congo del 18 de febrero de 2006 establece un sistema judicial administrativo compuesto por juzgados y tribunales administrativos bajo la supervisión del Consejo de Estado. El artículo 82 de la Ley Orgánica N° 13/011-B, de 11 de abril de 2013, que establece la organización, composición y funcionamiento de los tribunales administrativos, estipula que existe un Consejo de Estado cuya sede ordinaria está ubicada en la capital de la República Democrática del Congo. Su capacidad jurisdiccional puede ejercerse en otro lugar. Históricamente, el Consejo de Estado en esta breve presentación rastrea su historia y sus raíces en nuestra institución judicial. Creado por Decreto-Ley el 31 de enero de 1968, el Consejo de Estado encuentra su huella distintiva desde hace más de un siglo. De hecho, ocho años después de obtener la independencia en 1960, el país creó este Consejo de Estado para regular los recursos administrativos. Sólo después de un siglo, en 2015, el Tribunal Supremo Administrativo. Este Tribunal dejó de existir a raíz de la Constitución de 2006 y su creación, que declaró nulas todas las disposiciones contrarias y estipuló en su artículo 223 que las sentencias y autos dictados antes de la promulgación de la Constitución vigente que haya transcurrido y los tribunales en los dictados en extrema virtud de mayor especialización, y asentados en causa precedente, como instrumento en la especialización del 18 de febrero de 2006, el Tribunal Supremo Administrativo dejó de existir definitivamente en abril. 11 de abril de 2013, cuando la Ley Orgánica N° 13/011-B, de 11 de abril de 2013, establece la organización, composición y funcionamiento de los tribunales administrativos. De conformidad con el párrafo 3 del artículo 151 de la Constitución, que establece la autoridad reguladora para el ejercicio de las competencias del antiguo Tribunal Supremo Administrativo. Los juzgados y tribunales administrativos que componen el sistema judicial administrativo del Congo."
+    },
+    "rubrics": {
+      "legalBasis": "Base legal",
+      "organization": "Organización",
+      "mission": "Misión",
+      "competences": "Competencias",
+      "procedureBeforeCouncil": "Procedimiento ante el Consejo de Estado"
+    },
+    "legal": {
+      "title": "ACCEDA A LOS PRINCIPALES TEXTOS JURÍDICOS Y REGLAMENTARIOS<br> DEL CONSEJO DE ESTADO",
+      "docs": {
+        "1": "Ley Orgánica N° 13/011-B de 11 de abril de 2013 que contiene la organización, composición y funcionamiento de las jurisdicciones ordinarias",
+        "2": "Decreto N° 13/046 de 25 de septiembre de 2013 reglamenta las salas del Consejo de Estado",
+        "3": "Decreto Ley N° 13/018 relativo a las remuneraciones y dietas de los magistrados"
+      },
+      "detail": {
+        "title": "Ley Orgánica N° 13/011-B de 11 de abril de 2013 que contiene la organización, composición y funcionamiento de las jurisdicciones administrativas",
+        "paragraph1": "El contenido de esta Ley N° 13/011-B, de 11 de abril de 2013, que contiene la organización, composición y funcionamiento de las jurisdicciones administrativas, ha sido ubicado en un contexto judicial administrativo general.",
+        "paragraph2": "Cada uno de los artículos de la Ley se recoge a través de las disposiciones clave del Título I de los magistrados:",
+        "list1": {
+          "1": "CAPÍTULO I: Disposiciones generales",
+          "2": "CAPÍTULO II: Nombramiento e instalación de los magistrados y secretarios",
+          "3": "CAPÍTULO III: Del régimen jurídico",
+          "4": "CAPÍTULO IV: Facultades, garantías y límites de los Magistrados",
+          "5": "CAPITULO V: Disciplina"
+        },
+        "paragraph3": "Se rige por el Título II del Consejo de Estado del artículo 81 al artículo 95 que cada artículo trata específicamente del Consejo de Estado en los siguientes capítulos:",
+        "list2": {
+          "1": "CAPÍTULO I: Régimen jurídico",
+          "2": "CAPÍTULO II: Instalación, composición del Consejo de Estado",
+          "3": "CAPÍTULO III: Diferentes formaciones, funcionamiento y personal del Consejo de Estado"
+        },
+        "paragraph4": "La composición del artículo 82 establece cómo se integra el Consejo de Estado y enumera el personal que asiste a los magistrados y las atribuciones del personal auxiliar para el cumplimiento del mandato administrativo.",
+        "paragraph5": "El artículo 83 preveía las atribuciones del Consejo de Estado, una de las cuales es: Los recursos en materia administrativa; Ejerce la disciplina de los jueces y auxiliares de tribunales en su carácter jurisdiccional; Recibe el juramento de los magistrados y funcionarios judiciales sujetos a la jurisdicción administrativa; Emite la opinión jurídica en presencia de los jueces designados o de la autoridad jurisdiccional. El artículo 84 preveía la composición de las diferentes secciones y la formación del Consejo de Estado; El artículo 88 preveía la atribución en la deliberación de la cámara, cada cámara constituirá una formación jurisdiccional para el cumplimiento del mandato del Consejo de Estado en cuanto a reunirse para distintas atribuciones sólo si se alcanza el quórum.",
+        "paragraph6": "El quórum exigido en el artículo se alcanzará cuando todas las cámaras estén integradas de la siguiente manera: el presidente o vicepresidente de la cámara y otros dos magistrados, así como un asesor jurídico y el Secretario.",
+        "paragraph7": "En cuanto al quórum judicial del artículo 89, cada cámara podrá constituir una formación jurisdiccional para el cumplimiento del mandato del Consejo de Estado y reunirse para distintas atribuciones sólo si se alcanza el quórum judicial.",
+        "paragraph8": "El quórum exigido en el artículo se alcanzará cuando todas las cámaras estén integradas de la siguiente manera: el presidente o vicepresidente de la cámara y otros dos magistrados, así como un asesor jurídico y el Secretario. Con la incorporación del interesado interesado sentado durante el procedimiento con su asistencia si fuera necesario y en el momento de las deliberaciones a puerta cerrada, con la participación del Fiscal General en las deliberaciones con participación del secretario que se realice mediante instrucción del asunto.",
+        "paragraph9": "Luego de leer y tener explicados los textos legales de las jurisdicciones en esta plataforma, podrá solicitar su servicio directamente contactándonos por correo electrónico o por teléfono y así recibirlos."
+      }
+    }
+  },
+  "reforms": {
+    "hero": {
+      "title": "REFORMAS SUGERIDAS<br>",
+      "body": "Modernizar el sistema judicial a través de reformas estratégicas que mejoren la eficiencia, la transparencia y el acceso a la justicia para todos los ciudadanos congoleños."
+    },
+    "building": {
+      "tag": "MODERNIZACIÓN JUDICIAL",
+      "title": "CONSTRUIR UN SISTEMA DE JUSTICIA MÁS SÓLIDO",
+      "body": "Tras la Constitución de 2006, el CONSEJO DE ESTADO se ha embarcado en reformas integrales para fortalecer la independencia judicial, mejorar el acceso a la justicia y alinearse con los estándares internacionales. Estas iniciativas se centran en el fortalecimiento institucional, la transformación digital y el desarrollo de capacidades."
+    },
+    "initiatives": {
+      "tag": "HOJA DE RUTA DE TRANSFORMACIÓN",
+      "title": "INICIATIVAS DE REFORMA ESTRATÉGICA",
+      "body": "Un enfoque integral de cinco fases para modernizar nuestro sistema judicial, garantizando la excelencia en cada etapa de la transformación.",
+      "badges": {
+        "critical": "Prioridad crítica",
+        "high": "alta prioridad",
+        "medium": "Prioridad media"
+      },
+      "steps": {
+        "1": {
+          "title": "Independencia institucional",
+          "body": "Fortalecer la independencia judicial a través de salvaguardias constitucionales y autonomía financiera."
+        },
+        "2": {
+          "title": "Acceso a la justicia",
+          "body": "Ampliar los servicios de asistencia jurídica y establecer puntos de acceso regionales a nivel nacional."
+        },
+        "3": {
+          "title": "Cooperación Internacional",
+          "body": "Profundizar alianzas con organismos judiciales internacionales para el intercambio de conocimientos."
+        },
+        "4": {
+          "title": "Transformación Digital",
+          "body": "Implementar sistemas modernos de gestión de casos y bases de datos de jurisprudencia en línea."
+        },
+        "5": {
+          "title": "Desarrollo de capacidades",
+          "body": "Formación continua de magistrados y capacidades avanzadas de investigación jurídica."
+        }
+      }
+    },
+    "stakeholders": {
+      "title": "ACTORES CLAVE",
+      "subtitle": "LIDERAZGO REFORMA",
+      "roles": {
+        "president": "Presidente",
+        "vicePresident": "vicepresidente",
+        "chiefMagistrate": "Magistrado Jefe",
+        "internationalRelations": "Relaciones Internacionales"
+      }
+    }
+  },
+  "international": {
+    "hero": {
+      "title": "RELACIONES INTERNACIONALES<br>",
+      "body": "En el contexto de la internacionalización del derecho y la justicia, el CONSEJO DE ESTADO de la República Democrática del Congo no está aislado de este entorno. Participa activamente en el diálogo de los jueces manteniendo un alto nivel de cooperación en el marco de la Asociación de Tribunales Supremos de los países de habla francesa (AHJUCAF) y la Asociación Africana de Tribunales Supremos Francófonos (AA-HJF)."
+    },
+    "stats": {
+      "associations": "Principales asociaciones judiciales internacionales",
+      "partners": "Países socios y tribunales supremos",
+      "exchanges": "Intercambios y conferencias judiciales anuales"
+    },
+    "networks": {
+      "title": "REDES JUDICIALES INTERNACIONALES",
+      "subtitle": "El Tribunal mantiene relaciones privilegiadas con las principales asociaciones de tribunales supremos francófonos y africanos",
+      "ahjucaf": {
+        "name": "Asociación de Tribunales Supremos que utilizan el francés",
+        "body": "Una plataforma para el intercambio y la cooperación entre tribunales supremos francófonos, que facilita el diálogo judicial, comparte jurisprudencia y fortalece las capacidades institucionales en las jurisdicciones francófonas de todo el mundo."
+      },
+      "aahjf": {
+        "name": "Asociación Africana de Tribunales Supremos Francófonos",
+        "body": "Una plataforma para el intercambio y la cooperación entre tribunales supremos francófonos, que facilita el diálogo judicial, comparte jurisprudencia y fortalece las capacidades institucionales en las jurisdicciones francófonas de todo el mundo."
+      }
+    },
+    "domains": {
+      "title": "DOMINIOS DE COOPERACIÓN INTERNACIONAL",
+      "subtitle": "Nuestro compromiso internacional se traduce en una participación activa en diversas iniciativas encaminadas a fortalecer la calidad de la justicia y el Estado de derecho.",
+      "dialogue": {
+        "title": "Diálogo judicial",
+        "body": "Intercambios periódicos sobre jurisprudencia, mejores prácticas y desafíos comunes que enfrentan los tribunales supremos, fomentando el aprendizaje mutuo y la interpretación jurídica armonizada."
+      },
+      "assistance": {
+        "title": "Asistencia Técnica",
+        "body": "Cooperación técnica para la modernización de los sistemas judiciales, la digitalización y la mejora del acceso a la justicia a través de experiencias compartidas."
+      },
+      "capacity": {
+        "title": "Desarrollo de capacidades",
+        "body": "Programas de capacitación, seminarios y talleres para fortalecer las habilidades de magistrados y personal judicial a través de experiencia internacional."
+      },
+      "forums": {
+        "title": "Foros internacionales",
+        "body": "Participación activa en foros internacionales para contribuir al desarrollo del derecho y estándares judiciales internacionales y regionales."
+      }
+    },
+    "collaboration": {
+      "title": "¿Interesado en la colaboración?",
+      "body": "Estamos abiertos a asociaciones e intercambios institucionales con otras jurisdicciones nacionales e internacionales comprometidas con el fortalecimiento de los sistemas de justicia.",
+      "cta": "CONTÁCTANOS"
+    }
+  },
+  "audiences": {
+    "hero": {
+      "title": "AUDIENCIAS Y EXTRACTOS DE ROLLOS",
+      "body": "Acceda a horarios de audiencias, extractos de listas y decisiones recientes."
+    },
+    "understanding": {
+      "title": "ENTENDIENDO AL AUDIENCIA",
+      "body": "Encuentre orientación sobre cómo se organizan las audiencias y cómo consultar listas recientes."
+    },
+    "metrics": {
+      "title": "MÉTRICAS DE AUDICIÓN",
+      "subtitle": "Volumen de audiencia mensual y resultados a lo largo del tiempo.",
+      "volume": {
+        "title": "Volumen de audiencia mensual",
+        "note": "últimos 6 meses",
+        "aria": "Volumen de audiencia mensual"
+      },
+      "outcomes": {
+        "title": "Resultados a lo largo del tiempo",
+        "note": "Combinación de decisiones",
+        "aria": "Resultados auditivos a lo largo del tiempo"
+      }
+    },
+    "recent": {
+      "title": "EXTRACTOS DE FUNCIONES RECIENTES",
+      "subtitle": "ÚLTIMOS EXTRACTOS DE AUDIENCIA"
+    },
+    "documents": {
+      "civil": {
+        "label": "Civil",
+        "title": "Extractos de la audiencia de la Cámara Civil"
+      },
+      "criminal": {
+        "label": "Criminal",
+        "title": "Extractos de la audiencia de la Cámara Penal"
+      },
+      "social": {
+        "label": "Social",
+        "title": "Extractos de la audiencia de la Cámara Social"
+      },
+      "general": {
+        "label": "General",
+        "title": "Extractos de la audiencia de la Sala General"
+      }
+    },
+    "actions": {
+      "downloadPdf": "DESCARGAR PDF"
+    },
+    "assistance": {
+      "title": "¿Necesita ayuda?",
+      "body": "Comuníquese con el Consejo de Estado para obtener ayuda para acceder a documentos o horarios.",
+      "cta": "CONTÁCTANOS"
+    }
+  },
+  "organization": {
+    "hero": {
+      "title": "ORGANIZACIÓN<br>DEL CONSEJO DE ESTADO"
+    },
+    "firstPresident": {
+      "alt": "primer presidente",
+      "title": "EL PRIMER PRESIDENTE",
+      "body": "El Primer Presidente dirige el Consejo de Estado, preside sus sesiones y vela por el buen funcionamiento de la institución."
+    },
+    "firstPresidents": {
+      "title": "PRIMEROS PRESIDENTES",
+      "honoraryTitle": "Primer Presidente Honorario y Emérito: 2018 - 2022",
+      "honoraryTitleSecond": "Presidente Honorario y Emérito: 2022 - 2025",
+      "honoraryTitleThird": "Primer Presidente: 2025 - presente",
+      "placeholderName": "Primer Presidente {{index}}",
+      "placeholderSubtitle": "Espacio para fotos reservado",
+      "photoLabel": "Foto {{index}}"
+    },
+    "seniorLabel": "MAGISTRADOS SUPERIORES",
+    "chart": {
+      "title": "ORGANIGRAMA",
+      "subtitle": "Descripción general de la estructura de liderazgo y las divisiones centrales del Consejo de Estado.",
+      "interactiveTitle": "ORGANIGRAMA INTERACTIVO",
+      "interactiveSubtitle": "Explore la jerarquía y la estructura de informes.",
+      "aria": "Organigrama interactivo",
+      "peopleTitle": "LIDERAZGO POR NOMBRE",
+      "peopleSubtitle": "Nombres del Primer Presidente, Presidentes y Consejeros.",
+      "peopleFirstPresidentName": "Brigitte Nsensele",
+      "namedPhotoRoles": {
+        "firstPresident": "primer presidente",
+        "consultative": "Presidente de la Sección Consultiva",
+        "contentieux": "Presidente de la Sección de Litigios"
+      },
+      "roles": {
+        "firstPresident": "primer presidente",
+        "ppce": "P.P.C.E.",
+        "president": "Presidente",
+        "advisor": "Tutor"
+      },
+      "nodes": {
+        "firstPresident": "primer presidente",
+        "plenary": "Asamblea Plenaria",
+        "councilOffice": "Oficina del Consejo",
+        "registry": "Registro y Archivos",
+        "civilChamber": "Sala Civil",
+        "criminalChamber": "Sala Penal",
+        "commercialChamber": "Cámara Comercial",
+        "socialChamber": "Cámara Social",
+        "consultativeSection": "Sección Consultiva",
+        "litigationSection": "Sección de Litigios"
+      }
+    },
+    "filters": {
+      "searchLabel": "Buscar miembros",
+      "searchPlaceholder": "Buscar por nombre o título",
+      "roleLabel": "Role",
+      "all": "Todo",
+      "presidents": "presidentes",
+      "advisors": "Asesores",
+      "summary": "Mostrando {{presidents}} presidentes y {{advisors}} asesores"
+    },
+    "presidents": {
+      "title": "LOS PRESIDENTES",
+      "empty": "Ningún presidente coincide con tu búsqueda."
+    },
+    "advisors": {
+      "title": "LOS ASESORES",
+      "empty": "Ningún asesor coincide con tu búsqueda."
+    },
+    "members": {
+      "learnMore": "Más información",
+      "loadMore": "Cargar más"
+    },
+    "services": {
+      "overviewTitle": "RESUMEN DE SERVICIOS",
+      "learnMore": "Más información",
+      "registry": {
+        "title": "Registro",
+        "body": "Acceda a presentaciones, estado de casos y registros oficiales."
+      },
+      "docs": {
+        "title": "Documentos",
+        "body": "Encuentre formularios, textos legales y guías de procedimiento."
+      },
+      "tv": {
+        "title": "televisión del consejo",
+        "body": "Vea audiencias, anuncios y actualizaciones."
+      },
+      "title": "NUESTROS SERVICIOS",
+      "subtitle": "Explore las divisiones y oficinas que apoyan el trabajo del Consejo de Estado.",
+      "divisions": {
+        "title": "Divisiones",
+        "rooms": "Habitaciones y recámaras",
+        "council": "oficina del consejo",
+        "registers": "Registros y archivos"
+      },
+      "rooms": {
+        "title": "Alojamiento",
+        "body": "Salas administrativas y judiciales que organizan deliberaciones y audiencias."
+      },
+      "council": {
+        "title": "Concejo",
+        "body": "La oficina que coordina la política y la gobernanza institucional."
+      },
+      "registers": {
+        "title": "Registros",
+        "body": "Unidades que gestionan registros, archivos y expedientes oficiales."
+      },
+      "details": {
+        "chambers": {
+          "title": "Las Cámaras",
+          "item1": "Sala Civil",
+          "item2": "Sala Penal",
+          "item3": "Cámara Comercial",
+          "item4": "Cámara Social",
+          "body1": "Cada cámara maneja asuntos especializados dentro de su jurisdicción.",
+          "body2": "Las cámaras se reúnen en formaciones de acuerdo con la ley aplicable."
+        },
+        "rooms": {
+          "title": "Habitaciones y Cámaras",
+          "body1": "Las salas organizan audiencias y preparan expedientes.",
+          "body2": "Garantizan el cumplimiento procesal y la programación.",
+          "body3": "Apoyan las deliberaciones con coordinación administrativa.",
+          "body4": "Garantizan el flujo fluido de los casos hasta las decisiones finales."
+        },
+        "council": {
+          "title": "Oficina del Consejo",
+          "body1": "La Oficina del Consejo garantiza la coordinación estratégica.",
+          "body2": "Prepara sesiones plenarias y orientaciones políticas.",
+          "body3": "Supervisa la implementación de decisiones y reformas.",
+          "body4": "Apoya la comunicación y las relaciones institucionales."
+        },
+        "registers": {
+          "title": "Registros y Archivos",
+          "body1": "Los registros reciben y registran las presentaciones y decisiones.",
+          "body2": "Mantienen archivos para su preservación a largo plazo.",
+          "body3": "Proporcionan copias certificadas a pedido.",
+          "body4": "Gestionan la indexación y recuperación de expedientes.",
+          "body5": "Garantizan la confidencialidad y la integridad de los registros."
+        }
+      }
+    }
+  }
+}

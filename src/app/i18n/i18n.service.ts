@@ -2,10 +2,10 @@ import { Injectable, inject, signal } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { catchError, firstValueFrom, map, tap, throwError } from 'rxjs';
 
-export type LanguageCode = 'en' | 'fr' | 'sw' | 'ln' | 'ts' | 'kg' | 'pt';
+export type LanguageCode = 'en' | 'fr' | 'sw' | 'ln' | 'ts' | 'kg' | 'pt' | 'es';
 
 /** Languages that have translation files. Others fallback to English. */
-const SUPPORTED_LANGS: LanguageCode[] = ['en', 'fr', 'sw', 'ln', 'ts', 'kg', 'pt'];
+const SUPPORTED_LANGS: LanguageCode[] = ['en', 'fr', 'sw', 'ln', 'ts', 'kg', 'pt', 'es'];
 
 @Injectable({ providedIn: 'root' })
 export class I18nService {
@@ -17,7 +17,7 @@ export class I18nService {
 
   init(): Promise<void> {
     const stored = typeof localStorage !== 'undefined' ? localStorage.getItem('lang') : null;
-    const validCodes: LanguageCode[] = ['en', 'fr', 'sw', 'ln', 'ts', 'kg', 'pt'];
+    const validCodes: LanguageCode[] = ['en', 'fr', 'sw', 'ln', 'ts', 'kg', 'pt', 'es'];
     const lang: LanguageCode = (stored && validCodes.includes(stored as LanguageCode)) ? stored as LanguageCode : 'fr';
     return firstValueFrom(this.loadLanguage(lang));
   }
@@ -46,22 +46,13 @@ export class I18nService {
 
   private loadLanguage(lang: LanguageCode) {
     const loadLang = SUPPORTED_LANGS.includes(lang) ? lang : 'en';
-    const primaryUrl = this.getBaseAwareI18nUrl(loadLang);
-    const rootUrl = `/i18n/${loadLang}.json`;
-    const englishUrl = this.getBaseAwareI18nUrl('en');
     let resolvedLang: LanguageCode = loadLang;
 
-    return this.http.get<Record<string, unknown>>(primaryUrl).pipe(
-      catchError((primaryError) => {
-        if (primaryUrl !== rootUrl) {
-          return this.http.get<Record<string, unknown>>(rootUrl);
-        }
-        return throwError(() => primaryError);
-      }),
+    return this.fetchDictionary(loadLang).pipe(
       catchError(() => {
         if (loadLang !== 'en') {
           resolvedLang = 'en';
-          return this.http.get<Record<string, unknown>>(englishUrl);
+          return this.fetchDictionary('en');
         }
         return throwError(() => new Error(`Unable to load i18n dictionary for '${loadLang}'.`));
       }),
@@ -71,6 +62,21 @@ export class I18nService {
       }),
       map(() => undefined)
     );
+  }
+
+  private fetchDictionary(lang: LanguageCode) {
+    const urls = this.getDictionaryUrls(lang);
+    return this.http.get<Record<string, unknown>>(urls[0]).pipe(
+      catchError(() => this.http.get<Record<string, unknown>>(urls[1])),
+      catchError(() => this.http.get<Record<string, unknown>>(urls[2]))
+    );
+  }
+
+  private getDictionaryUrls(lang: LanguageCode): [string, string, string] {
+    const baseAware = this.getBaseAwareI18nUrl(lang);
+    const root = `/i18n/${lang}.json`;
+    const publicRoot = `/public/i18n/${lang}.json`;
+    return [baseAware, root, publicRoot];
   }
 
   private getBaseAwareI18nUrl(lang: LanguageCode): string {
