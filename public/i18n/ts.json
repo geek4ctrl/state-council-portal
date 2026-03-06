@@ -1,9 +1,9 @@
 {
   "header": {
-    "siteName": "Conseil d'Etat wa RDC",
+    "siteName": "Tshipangu tshia ditunga tshia RDC",
     "contact": {
       "phone": "+ 243 (21) 00000000",
-      "hours": "LUBIDI - LUMINGU 8:30AM - 4:00PM"
+      "hours": "DIMUE - DITANU 8:30AM - 4:00PM"
     },
     "social": {
       "facebook": "Facebook",
@@ -11,818 +11,874 @@
       "instagram": "Instagram"
     },
     "lang": {
-      "label": "Luludimi",
-      "switchToEnglish": "Langila ku Anglais",
-      "switchToFrench": "Langila ku Français"
+      "label": "Muakulu",
+      "switchToEnglish": "Kushintulula mu Anglais",
+      "switchToFrench": "Shintulula mu Mfualansa"
     },
     "nav": {
-      "home": "KU BWALU",
-      "court": "TRIBINAL",
-      "presentation": "BOTALISI",
-      "organization": "ORGANISATION",
-      "administrativeCourts": "Tribinal ya Administratif",
-      "administrativeTribunals": "Banunu ya Administratif",
-      "reforms": "MABONGOLU",
-      "international": "BOYOKANI YA MOKILI",
-      "audiences": "MAKIKAO",
-      "steps": "BITINI",
-      "news": "MASANGO",
-      "bookAppointment": "BOKANDA RENDEZ-VOUS"
+      "home": "NZUBU",
+      "court": "LUBULU",
+      "presentation": "DIDIMANYISHA",
+      "organization": "BULONGOLODI",
+      "administrativeCourts": "Tubadi tua malu a mbulamatadi",
+      "administrativeTribunals": "Malu a mbulamatadi",
+      "reforms": "MASHINTULUKA",
+      "international": "MALANDA A MATUNGA MASANGA",
+      "audiences": "BANTU",
+      "steps": "BIDIMU",
+      "news": "MAPIA MAPIA",
+      "bookAppointment": "DIFUNDA DIA KUTUADIKANGANA"
     }
   },
   "hero": {
-    "titleOpening2025": "MBULA YA TRIBINAL EFUNGOLA NA CONSEIL D'ETAT MPO NA 2025 - 2026"
+    "titleOpening2025": "TSHIDIMU TSHIA BULUMBULU BUA BUALU BUA BUALU BUA 2025 - 2026"
   },
   "mobileNav": {
-    "home": "Ku Bwalu",
-    "organization": "Organisation",
-    "apply": "Kotinda",
-    "news": "Masango"
+    "home": "Nzubu",
+    "organization": "Bulongolodi",
+    "apply": "Kulomba",
+    "news": "Mapia mapia"
   },
   "comingSoon": {
-    "subtitle": "Ekoya Kala te",
-    "description": "Lokasa oyo ezali kobongisama mpe ekoya kala te. Zonga lisusu na sima mpo omona makambo.",
-    "backHome": "Zonga Ku Bwalu"
+    "subtitle": "Bidi bilua",
+    "description": "Dibeji edi didi mu tshikondo etshi ne nedikaleku mu katupa kîpi emu. Suaku upingane pashishe bua kumona malu adimu.",
+    "backHome": "Kupingana ku nzubu"
   },
   "errors": {
     "generic": {
-      "code": "Libunga",
-      "title": "Likambo moko ekomi",
-      "message": "Tozali na mpasi mpo na kosalisa yo. Me zonga ku lokasa ya ebandeli ya Conseil d'Etat.",
-      "primary": "Zonga Ku Bwalu",
-      "secondary": "Tala Masango"
+      "code": "Tshilema",
+      "title": "Bualu kampanda buvua buenzeke bibi",
+      "message": "Tudi ne lutatu lua kukumbaja dilomba diebe. Teta kabidi anyi upingane ku dibeji dia kumpala dia Conseil de l'État.",
+      "primary": "Kupingana kumbelu",
+      "secondary": "Tangila malu mapiamapia"
     },
     "notFound": {
       "code": "404",
-      "title": "Lokasa ezwami te",
-      "message": "Lokasa oyo olingi ezali te to ebongolami."
+      "title": "Dibeji kadiena dipeta to",
+      "message": "Dibeji diudi ukeba kadienaku anyi mbadimbushe."
     }
   },
   "history": {
-    "title": "Lisolo",
-    "body": "Yeba lisolo ya Conseil d'Etat."
+    "title": "Muanu",
+    "body": "Umanye malu a kale a tshipangu tshia ditunga."
   },
   "process": {
-    "title": "Mosala wa Tribinal",
-    "body": "Yeba ndenge mosala wa tribinal etambolaka."
+    "title": "Njila ya ku kabadi",
+    "body": "Umvua mushindu udibu benza malu ku kabadi ne tshiudi mua kutekemena."
   },
   "judges": {
-    "title": "Bajaji",
-    "body": "Kutana na bajaji ya Conseil d'Etat."
+    "title": "Balumbuluishi",
+    "body": "Tuilanganayi ne balumbuluishi banene ba mu tshipangu tshia ditunga."
   },
   "memberDetail": {
-    "back": "<- Zonga ku Organisation",
-    "title": "Profil ya Membre",
-    "subtitle": "Profil ya malamu mpe boyokani.",
-    "office": "Ofisi",
+    "back": "← Kupingana ku bulongolodi",
+    "title": "Muyuki wa muena mu tshisumbu",
+    "subtitle": "Muyuki wa muntu ne ngumu ya kusambakena nayi.",
+    "office": "Biro",
     "email": "Email",
     "notFound": {
-      "title": "Membre azwami te",
-      "body": "Profil oyo olingi ezwami te.",
-      "cta": "Zonga ku Organisation"
+      "title": "Muena mu tshisumbu ki mmupeta to",
+      "body": "Mukanda uvuabu balombe kawena mua kupetekibua to.",
+      "cta": "Kupingana ku bulongolodi"
     }
   },
   "news": {
     "hero": {
-      "title": "MASANGO NA BA UPDATES",
-      "body": "Boboto te ekoki kobima na ndenge mingi. Topesi yo nzela ya kopesa sango ya mabe nyonso."
+      "title": "LUMU & MALU MAPIAMAPIA",
+      "body": "Malu mabi adi mua kudileja mu mishindu ya bungi mu nsombelu wetu. Tudi tukupesha mushindu wa kumanyisha mishindu yonso ya malu mabi."
     },
     "section": {
-      "title": "MASANGO NA BA UPDATES",
-      "subtitle": "BOMONI ELOKO TOSALI"
+      "title": "LUMU NE BIDI BIPIA",
+      "subtitle": "TSHIMONA TSHITUDI TUENZA TSHITUDI"
     },
     "insights": {
-      "title": "BILEMBO YA MASANGO",
-      "subtitle": "Mikano na makambo mpe ndenge ya kobimisa",
+      "title": "LUMU LUA LUMU",
+      "subtitle": "Malu adi enzeka bilondeshile tshiena-bualu ne mushindu udibu bapatula mikanda",
       "topics": {
-        "title": "Makambo na sanza",
-        "note": "Sanza 6 eleki",
-        "aria": "Makambo ya masango na sanza"
+        "title": "Biena-bualu bilondeshile ngondo",
+        "note": "Ngondo 6 mipita",
+        "aria": "Biena bualu bia ngumu bilondeshile ngondo"
       },
       "cadence": {
-        "title": "Ndenge ya kobimisa",
-        "note": "Makala ebimi",
-        "aria": "Ndenge ya kobimisa na sanza"
+        "title": "Dipatuka dia mikanda",
+        "note": "Biena bualu bipatuka",
+        "aria": "Dipatuka dia mikanda bilondeshile ngondo"
       }
     },
     "actions": {
-      "readMore": "Tanga lisusu"
+      "readMore": "Bala kabidi"
     },
     "pagination": {
-      "label": "Pagination ya masango",
-      "previous": "Lokasa ya liboso",
-      "next": "Oyo elandi",
-      "pageLabel": "Lokasa {{page}}"
+      "label": "Mabeji a ngumu",
+      "previous": "Dibeji dia kumpala",
+      "next": "Bidi bilonda",
+      "pageLabel": "Dibeji {{page}}"
     },
     "empty": {
-      "title": "Masango ezali naino te",
-      "body": "Makala ya sika ekobima awa soki ebimi."
+      "title": "Kakuena lumu nansha lumue to",
+      "body": "Biena-bualu bipiabipia nebipatuke apa padibi bimane kupatuka."
     },
     "articles": {
       "1": {
-        "date": "30 Janvier",
-        "category": "Administratif",
-        "title": "Rais ya liboso ya Conseil d'Etat alendisi bajaji ...",
-        "excerpt": "Nsima ya bokangami ya likita ya monene ya Conseil ya Administratif..."
+        "date": "dia 30 ngondo wa kumpala",
+        "category": "Bulombodi",
+        "title": "Mulombodi wa kumpala wa tshipangu tshia ditunga udi ulomba kudi ba majistre bua kuangata dipangadika dia...",
+        "excerpt": "Kunyima kua tshibilu tshia dijika dia tshisangilu tshinene tshia pa tshibidilu tshia tshipangu tshinene tshia malu a mbulamatadi..."
       },
       "2": {
-        "date": "30 Janvier",
-        "category": "Administratif",
-        "title": "LIKITA YA NDIMBO NA CONSEIL D'ETAT",
-        "excerpt": "Kinshasa, 18 Oktoba 2025: Conseil d'Etat ya RDC ebimisi ..."
+        "date": "dia 30 ngondo wa kumpala",
+        "category": "Bulombodi",
+        "title": "TSHISANGILU TSHIA BULONGOLONODI KU TSHIPANGU TSHIA DITUNGA",
+        "excerpt": "Kinshasa, dia matuku 18/10/2025: Conseil d’État du congo démocratique udi umanyisha pu..."
       },
       "3": {
-        "date": "30 Janvier",
-        "category": "Administratif",
-        "title": "LIKITA YA NDIMBO NA CONSEIL D'ETAT",
-        "excerpt": "Kinshasa, 18 Oktoba 2025: Conseil d'Etat ya RDC ebimisi ..."
+        "date": "dia 30 ngondo wa kumpala",
+        "category": "Bulombodi",
+        "title": "TSHISANGILU TSHIA BULONGOLONODI KU TSHIPANGU TSHIA DITUNGA",
+        "excerpt": "Kinshasa, dia matuku 18/10/2025: Conseil d’État du congo démocratique udi umanyisha pu..."
       }
     }
   },
   "steps": {
     "hero": {
       "report": {
-        "title": "RAPPORT",
-        "body": "Boboto te ekoki kobima na ndenge mingi. Topesi yo nzela ya kopesa sango ya mabe nyonso."
+        "title": "LAPOLU",
+        "body": "Malu mabi adi mua kudileja mu mishindu ya bungi mu nsombelu wetu. Tudi tukupesha mushindu wa kumanyisha mishindu yonso ya malu mabi."
       },
       "appointment": {
-        "title": "BOKANDA<br>RENDEZ-VOUS",
-        "body": "Mpo na kosala bokutani na Conseil d'Etat, tondisa fomu oyo. Salisa ete makambo nyonso ezali malamu. Okobaka na email to telefone mpo na mokolo na ngonga."
+        "title": "DIFUNDA<br>DIA KUTUADIKANGANA",
+        "body": "Bua kulongolola tshisangilu ne tshipangu tshia ditunga, udi mua kuwuja mukanda wa dilomba dia mudimu udi ulonda eu. Ikala mujadike ne: miaba yonso idibu balomba idi miuja bimpe bua tuetu kumona mua kuenza mudimu bimpe ne dilomba diebe. Neupete mukanda wa dianyisha anyi dibikila dia ku telefone ne dituku ne dîba bidibu balongolole."
       },
       "appeal": {
-        "title": "RUFAA NA<br>CONSEIL D'ETAT",
-        "body1": "Rufaa na Conseil d'Etat ezali nzela ya administratif mpo na kobenga mokano. Conseil d'Etat etali soki mibeko ya administratif ekendaki malamu.",
-        "body2": "Conseil d'Etat ebengami na maloba ya bato to na formulaire. Rufaa esengeli kotindama na tango esengeli mpe na mikanda nyonso."
+        "title": "KULOMBA KUDI<br>TSHIPANGU<br>TSHIA DITUNGA",
+        "body1": "Dilomba dia dilumbuluisha kudi tshipangu tshia ditunga ndilongolola dia malu a mbulamatadi didi dianyishila tshitupa kampanda bua kuela mapangadika ne bienzedi bia mbulamatadi mpata. Tshipangu tshia ditunga tshidi tshijadika ni mikenji ya mbulamatadi ivua mitumikila bimpa ne ni mikenji mikumbane ivua milonda.",
+        "body2": "Tshipangu tshia ditunga tshidi tshikuata kudi dilomba dia bena ditunga anyi kudi dimanyisha difila kudi Tshipangu. Dilomba dia dilumbuluisha didi ne tshia kufidibua mu tshikondo tshidi mikenji misungula ne didi ne tshia kujadikibua kudi mukanda wa dilomba udi ne mikanda idi ijadika."
       }
     },
     "tabs": {
-      "report": "Rapport",
-      "appointment": "Bokanda Rendez-vous",
-      "appeal": "Kotinda Rufaa"
+      "report": "Lapolu",
+      "appointment": "Difunda dia kutuadikangana",
+      "appeal": "Fila dilomba dia dilumbuluisha"
     },
     "forms": {
       "report": {
-        "title": "FORMULAIRE YA BOTALO",
-        "subtitle": "TOZALI KOLINGA KOYOKA MPASI NA YO"
+        "title": "MUKANDA WA KUELA",
+        "subtitle": "TUDI BUSANKA BUA KUMVUA BUALU BENU"
       },
       "appointment": {
-        "title": "BOKANDA RENDEZ-VOUS",
-        "subtitle": "TOZALI KOLINGA KOYOKA MPASI NA YO"
+        "title": "ENZA RANZA",
+        "subtitle": "TUDI BUA KUKUABULULA NE LUTANTU LUEBE"
       },
       "appeal": {
-        "title": "FORMULAIRE YA RUFAA",
-        "subtitle": "TOZALI KOLINGA KOYOKA MPASI NA YO"
+        "title": "MUKANDA WA DILOMBOLA",
+        "subtitle": "TUDI BUSANKA BUA KUMVUA BUALU BENU"
       },
-      "fullName": "Nkombo mobimba *",
-      "email": "Email *",
-      "department": "Departema",
+      "fullName": "Dîna dijima *",
+      "email": "E-mail *",
+      "department": "Tshibambalu",
       "chambers": {
-        "criminal": "Chambre ya Penal",
-        "civil": "Chambre ya Civil",
-        "social": "Chambre ya Social",
-        "commercial": "Chambre ya Commerce"
+        "criminal": "Tshibambalu tshia malu a tshibawu",
+        "civil": "Tshibambalu tshia bena ditunga",
+        "social": "Tshibambalu tshia malu a bantu",
+        "commercial": "Tshibambalu tshia malu a bungenda"
       },
       "meeting": {
-        "placeholder": "Olingi kokutana na nani? *",
-        "firstPresident": "Rais ya Liboso",
-        "chamberPresident": "Rais ya Chambre",
-        "legalAdvisor": "Conseiller ya Juridique",
-        "clerk": "Greffier"
+        "placeholder": "Udi musue kusambakena ne nganyi ? *",
+        "firstPresident": "Mfumu wa kumpala",
+        "chamberPresident": "Mulombodi wa tshibambalu",
+        "legalAdvisor": "Mufidi wa mibelu wa malu a mikenji",
+        "clerk": "Mufundi wa kabadi"
       },
       "visit": {
-        "placeholder": "Okoya tango nini?",
-        "thisWeek": "Semaine oyo",
-        "nextWeek": "Semaine oyo elandi",
-        "thisMonth": "Sanza oyo",
-        "nextMonth": "Sanza oyo elandi"
+        "placeholder": "Udi mulongolole bua kulua dîba kayi ?",
+        "thisWeek": "Lumingu elu",
+        "nextWeek": "Lumingu ludi lulonda",
+        "thisMonth": "Ngondo ewu",
+        "nextMonth": "Ngondo udi ulonda"
       },
-      "message": "Message *",
-      "submit": "TINDA MESSAGE"
+      "message": "Mukenji *",
+      "submit": "TUMA MUKENDE"
+    }
+  },
+  "appealSteps": {
+    "title": "MUSHINDU WA KUFILA DILOMBA DIA DILUMBULUISHA",
+    "subtitle": "Landila bidimu ebi bua kutuma dilomba diebe kudi Tshipangu tshia Ditunga",
+    "steps": {
+      "1": {
+        "title": "Longolola mikanda yebe",
+        "body": "Sangisha dipangadika dia mbulamatadi didi ulomba, mukanda wa kujidika bu muntu ne bintu bionso bidi bitshimikina dipanga diebe. Jadika ne mikanda yonso idi mua kubaleka bimpe ne idi ijadikiwe paudi ubikenga."
+      },
+      "2": {
+        "title": "Funda mukanda wa dilomba",
+        "body": "Funda mukanda uleja ne bukese malu enzeke, mbitu bidi bikukokesha bua kulomba, ne tshiudi ulomba bua kuangata. Bika biajiki bia mikenji idikala isaluka."
+      },
+      "3": {
+        "title": "Fidila ku Greffe",
+        "body": "Fidila mukanda webe wa dilomba ne mikanda ya bujadiki ku Greffe wa Tshipangu tshia Ditunga mu tshikondo tshidi mikenji isungula. Angata bulongolodi bua kujadika ne udi mumane kufila."
+      },
+      "4": {
+        "title": "Futa mali a mikenji",
+        "body": "Futa mali a kabadi adibu balomba mu biro bidi bishunguludiwe. Bika mukanda wa bujadiki bua difuta bua kukonga bintu biebe."
+      },
+      "5": {
+        "title": "Linda dimanyisha",
+        "body": "Greffe neakumanyishe numero ya dossier ne dituku dia dipetangana. Mbimpe bua badikukeba kufidila ne bakwabo batupa mikanda ya dosie."
+      }
+    }
+  },
+  "haveQuestions": {
+    "title": "Udi ne nkonko?",
+    "body": "Tshisumbu tshietu tshidi apa bua kukwambulwila bua kuumvua mushindu wa dilomba dia dilumbuluisha.",
+    "cta": "Tumina bietu email"
+  },
+  "faqs": {
+    "title": "NKO NKO IDIBU BAKONKA KABIDI",
+    "items": {
+      "1": {
+        "question": "Tshikondo kai tshia kufila dilomba dia dilumbuluisha?",
+        "answer": "Bikaleku pa tshibidi, dilomba didi ne bua kufidibua mu ngondo ibidi panyima pa dimanyisha dia dipangadika didi bakudila. Mikenji mikwabo idi mua kusungula bikondo bishesha bilondeshile mushindu wa benza dia mbulamatadi. Tangila mikenji idikala isaluka anyi ubikile Greffe bua dimvuluwu."
+      },
+      "2": {
+        "question": "Ndi mua kudifila nkamue anyi ndi ne bua kuangata avocat?",
+        "answer": "Udi mua kudifila kudi Tshipangu tshia Ditunga nkamue. Kadi, kudi malu makole, kusungila avocat nkunengelela. Greffe udi mua kukufila dimvuluwu pa bualu bua musadidi wa mikenji buudi mua kuupeta."
+      },
+      "3": {
+        "question": "Mikanda kayi idingile kufila?",
+        "answer": "Pabuipi udi ne bua kufila: dipangadika didi ulomba, mukanda webe wa dilomba, mukanda wa kujidika bu muntu ne mikanda ya bujadiki. Greffe udi ufila liste ya bintu bidi bikengelaku padibu bamulomba. Mikanda mikwabo idi mua kulombibua bilondeshile dossier webe."
+      },
+      "4": {
+        "question": "Mushindu eu udi uangata tshikondo tshinganyi?",
+        "answer": "Tshikondo tshia didibikila tshiidi tshishintuluka bilondeshile bukole bua dossier ne bungi bua mudimu wa kabadi. Neupete dituku dia dipetangana panyima pa dossier webe kumanaku ku rejistre. Greffe udi mua kukufila bikondo bidi bipepele pa dossiers bidi bifanane."
+      },
+      "5": {
+        "question": "Ndi mua kukeba kufumishe dilomba diami anyi?",
+        "answer": "Eyo. Udi mua kufumisha dilomba diebe mu dîba dionso kumpala kua dipangadika dia ndekeelu. Fila mukanda wa kufumisha mu ditumba ku Greffe. Anji umanye ne kufumisha didi mua kukwata pa malanda makwabo adi ne dossier eu."
+      }
     }
   },
   "footer": {
     "mainOffice": {
-      "title": "Ofisi Monene",
-      "address1": "7639, bokutana ya Pumbu na Batonniers",
-      "address2": "Komine ya Gombe, Kinshasa",
-      "address3": "RDC",
+      "title": "Biro binene",
+      "address1": "7639, njila wa Pumbu ne wa Batonniers",
+      "address2": "Commune wa Gombe, Kinshasa",
+      "address3": "RÉPUBLIQUE DÉMOCRATIQUE DU CONGO",
       "phone": "Tel: +243 (21) 0000000",
       "email": "Email: info@conseildetatrdc.com"
     },
     "quickLinks": {
-      "title": "Ba lien ya mbangu",
-      "about": "Na ntina ya Tribinal",
-      "jurisprudence": "Jurisprudence",
-      "filing": "Nzela ya kotinda",
-      "contact": "Benga biso"
+      "title": "Malu a lukasa",
+      "about": "Pa bidi bitangila Kabadi",
+      "jurisprudence": "Malu a mikenji",
+      "filing": "Njila ya difunda",
+      "contact": "Tubikile"
     },
     "resources": {
-      "title": "Biloko",
-      "legalDocs": "Mikanda ya mibeko",
-      "decisions": "Ba mokano ya tribinal",
-      "reports": "Rapport ya mbula",
-      "faqs": "Mituna oyo ebimisaka"
+      "title": "Biuma",
+      "legalDocs": "Mikanda ya mikenji",
+      "decisions": "Mapangadika a ku kabadi",
+      "reports": "Luapolo lua tshidimu",
+      "faqs": "Mandamuna a nkonko"
     },
     "connect": {
-      "title": "Bokutana",
+      "title": "Kutuangaja",
       "facebook": "Facebook",
       "twitter": "Twitter",
       "instagram": "Instagram",
       "linkedin": "LinkedIn"
     },
-    "privacy": "Bokebi",
-    "copyright": "Droit nyonso ya Conseil d'Etat."
+    "privacy": "Sekele",
+    "copyright": "Tshipangu tshia ditunga tshia bukenji bua mufundi. Bukokeshi buonso budi bukubibua"
   },
   "home": {
     "hero": {
-      "learnMore": "Yeba mingi",
+      "learnMore": "Longa bia bungi",
       "slides": {
         "0": {
-          "title": "CONSEIL D'ETAT - Bofungoli ya mbula ya tribinal 2025-2026",
+          "title": "CONSEIL D'ÉTAT - RENTRÉE JUDICIAIRE 2025-2026",
           "subtitle": "PALAIS DU PEUPLE - 13 NOVEMBRE 2025",
-          "body": "Conseil d'Etat esanganaki na Palais du Peuple mpo na bofungoli ya mbula ya tribinal 2025-2026.",
-          "cta": "Yeba mingi"
+          "body": "Tshipangu tshia ditunga tshiakadisangisha ku nzubu wa bukalenge wa bantu bua diunzulula dia tshidimu tshia kulumbuluisha tshia 2025-2026.",
+          "cta": "Longa bia bungi"
         },
         "1": {
-          "title": "MBULA YA TRIBINAL EFUNGOLA NA CONSEIL D'ETAT MPO NA 2025 - 2026",
-          "subtitle": "NDako ya Mibeko na Kotalisa",
-          "body": "Video oyo elakisaka bofungoli ya mbula ya tribinal 2025-2026. Na miso ya Rais Felix Tshisekedi, likita ekangaki bajaji ya likolo mpe bakambi ya mibeko.",
-          "cta": "Tala likita live na YouTube"
+          "title": "TSHIDIMU TSHIA BULUMBULU BUA BUALU BUA BUALU BUA 2025 - 2026",
+          "subtitle": "Nzubu wa mikenji ne bulongame",
+          "body": "Tshinjinjimbi etshi tshidi tshileja diunzulula dia tshidimu tshia kulumbuluisha tshia 2025-2026. Mu dikalaku dia mfumu wa ditunga Felix Tshisekedi, tshisangilu etshi tshivua tshisangisha banzuji banene ne bena malu a mikenji.",
+          "cta": "Tangila malu adi enzeka pa Youtube"
         },
         "2": {
-          "title": "KOBATELA KIMOKA YA TRIBINAL MPE RESPONSABILITE",
-          "subtitle": "NDako ya Mibeko na Kotalisa",
-          "body": "CONSEIL D'ETAT ezali kokoba kobatela mibeko, bosembo, mpe bokonzi ya mibeko. Tobeti motema na polele mpe bosembo.",
-          "cta": "Yeba mingi na mission na biso"
+          "title": "KUKOKESHA BUA BUALU BUA BUALU BUA BUALU NE BUALU BUA BUALU",
+          "subtitle": "Nzubu wa mikenji ne bulongame",
+          "body": "Tshipangu tshia ditunga tshidi tshitungunuka ne kulama mikenji ya bululame, ya bululame, ne ya mikenji. Tudi badisuike bua kujadika patoke ne bululame.",
+          "cta": "Manya malu makuabu adi atangila mudimu wetu"
         },
         "3": {
-          "title": "KOTOMBOLA BOKOKO YA JURIDIQUE NA RDC",
-          "subtitle": "NDako ya Mibeko na Kotalisa",
-          "body": "Na nzela ya mateya ya mibeko mpe kobatela makambo ya mokili mobimba, tolingi nyonso na bokokó ya tribinal.",
-          "cta": "Tala misala na biso"
+          "title": "KUTUADILA BUALU BUIMPE BIA MIKANDA MU REPUBLIQUE DEMOCRATIQUE DU CONGO",
+          "subtitle": "Nzubu wa mikenji ne bulongame",
+          "body": "Ku diambuluisha dia dilongesha dikole dia mikenji ne dilonda dia mikenji mimpe ya pa buloba bujima, tudi tudienzeja bua kulama mikenji mitambe buimpe ya malu a kulumbuluisha.",
+          "cta": "Tangila malu atudi tuenza"
         }
       }
     },
     "quickLinks": {
       "items": {
         "news": {
-          "alt": "Sango",
-          "title": "SANGO",
-          "body": "Yeba makambo ya mokano mpe masango ya motuya.",
-          "action": "Tanga"
+          "alt": "Mapia mapia",
+          "title": "MAPIA MAPIA",
+          "body": "Ikala mumanye mapangadika manene ne malu adi enzeka.",
+          "action": "Kubala"
         },
         "excerpts": {
-          "alt": "Biteni",
-          "title": "Biteni ya liste",
-          "body": "Tala tango ya koyoka mpe makambo oyo ezali se.",
-          "action": "Yeba mingi"
+          "alt": "Bitupa",
+          "title": "BITUPA BIA MU MIDIMU",
+          "body": "Tangila mêba a dilumbuluisha ne bilumbu bidi kabiyi bijika.",
+          "action": "Longa bia bungi"
         },
         "report": {
-          "alt": "Rapport",
-          "title": "RAPPORT",
-          "body": "Pesa sango ya makambo ya mabe na lolenge ya bobateli.",
-          "action": "Tinda Rapport"
+          "alt": "Lapolu",
+          "title": "LAPOLU",
+          "body": "Umanyishe malu adi kaayi malelela anyi adi kaayi malelela mu bukubi.",
+          "action": "Funda luapolo"
         },
         "appointment": {
-          "alt": "Bokanda rendez-vous",
-          "title": "BOKANDA RENDEZ-VOUS",
-          "body": "Bokanga bokutani na bato ya tribinal.",
-          "action": "Bokanda sikoyo"
+          "alt": "Kufunda kutuadikangana",
+          "title": "KUFUNDA MUKANDA",
+          "body": "Teka programe wa diyukidilangana ne bena mudimu ba ku kabadi.",
+          "action": "Funda mpindieu"
         }
       }
     },
     "keyFacts": {
-      "title": "Makambo ya ntina",
-      "subtitle": "Motango ya makambo, tango ya kosala, mpe ndenge ya mokano na mokuse.",
+      "title": "Malu manene",
+      "subtitle": "Bungi bua tshilumbu, dîba dia kuenza mudimu, ne mapangadika adibu basangisha anu musangu umue.",
       "cards": {
         "volume": {
-          "title": "Motango ya makambo",
-          "note": "Sanza 6 eleki",
-          "aria": "Motango ya makambo na sanza"
+          "title": "Bungi bua tshilumbu",
+          "note": "Ngondo 6 mipita",
+          "aria": "Bungi bua bilumbu ku ngondu"
         },
         "processing": {
-          "title": "Tango ya kosala",
-          "note": "Mikolo ya moyenne",
-          "aria": "Tango ya kosala na trimestre"
+          "title": "Dîba dia kuenza mudimu",
+          "note": "Matuku a munkatshi",
+          "aria": "Tshikondo tshia mudimu tshia munkatshi mu tshitupa tshisatu"
         },
         "decisions": {
-          "title": "Mikano na ndenge",
-          "note": "Mbula oyo",
-          "aria": "Mikano na ndenge"
+          "title": "Mapangadika bilondeshile mishindu",
+          "note": "Tshidimu etshi",
+          "aria": "Mapangadika bilondeshile mishindu"
         }
       }
     },
     "offer": {
-      "title": "OYO TOPESAKA",
-      "subtitle": "Topesaka ndenge ya mibeko oyo ebongi na bosenga na yo, mpo na kobatela mikili na yo mpe bosembo.",
+      "title": "BITUDI TUFILA",
+      "subtitle": "Tudi tufila mishindu milongolola ya mikenji bua kukumbaja majinga ebe, bua kujadika ne: makokeshi ebe adi makubibue ne buakane buenzeke.",
       "cards": {
         "1": {
-          "title": "Bokonzi ya likolo ya tribinal",
-          "body": "Lokola tribinal ya likolo, Conseil d'Etat ebatelaka ndenge ya mibeko na RDC."
+          "title": "Bukokeshi bua kulumbuluisha bunene",
+          "body": "Bu mudi kabadi kanene ka ndongoluelu wa malu a kulumbuluisha, Tshipangu tshia Ditunga tshidi tshijadika diunvuija dia mikenji ne ditumikila dia mikenji mu Ditunga dijima dia Kongu wa Ditunga."
         },
         "2": {
-          "title": "Bosembo ya mibeko",
-          "body": "Na mikano na biso, topesaka maboko mpo na bokende malamu ya bosembo."
+          "title": "Bujadiki bua mikenji",
+          "body": "Ku diambuluisha dia mikenji yetu ne mapangadika etu, tudi tuteka bilejilu bia mikenji bidi bilombola tubadi tukese ne tujadika dikala dia bululame mu dienza dia malu makane."
         },
         "3": {
-          "title": "Bokoko ya tribinal",
-          "body": "Bajaji na basungi baponi na bokoki, mpo na bokoko mpe bosembo."
+          "title": "Buimpe bua malu a kulumbuluisha",
+          "body": "Bakulumpe betu ne bafidi betu ba mibelu badi basungula bilondeshile bipedi, bua kujadika mikenji mipite bungi ya dimanya dia mikenji, bululame, ne didifila ku bululame."
         },
         "4": {
-          "title": "Bosangani ya mokili mobimba",
-          "body": "Tokutanaka na bibongiseli ya mokili mobimba mpe ba tribinal ya Afrika na Fransi."
+          "title": "Buobumue bua matunga masanga",
+          "body": "Tudi tuenza mudimu ne tshisumi mu diyukidilangana ne bibambalu bia kulumbuluisha bia matunga masanga ne tulama malanda ne tubadi tudi tuakula muakulu wa Mfualansa ne tubadi tua mu Afrike."
         }
       }
     },
     "expertise": {
-      "title": "BISANTU BYA MABANZA",
-      "subtitle": "Conseil d'Etat ukusebeza mu makambo anji mpela tribunal wa mutwe.",
+      "title": "BIDIMU BIDI BIMANYISHA",
+      "subtitle": "STATE COUNCIL udi ne bukookeshi pa malu mashilangane a mikenji bu kabadi kanene ka bulongolodi bua dilumbuluisha dia patupu.",
       "stats": {
         "domains": {
           "value": "6",
-          "label": "bisantu"
+          "label": "bitupa"
         },
         "decisions": {
           "value": "120+",
-          "label": "mikano/mwaka"
+          "label": "mapangadika/tshidimu"
         },
         "magistrates": {
           "value": "30+",
-          "label": "bamakimu"
+          "label": "banzuji"
         }
       },
-      "cta": "Mona makambo",
+      "cta": "Tangila malu onso",
       "areas": {
         "civil": {
-          "title": "Milawo ya Civil ne Commerce",
-          "desc": "Makontala, milambu, ne makambo a ditshik.",
+          "title": "Mikenji ya bena ditunga ne ya bungenda",
+          "desc": "Bipungidi, majitu, ne malu a bintu mu ditunga dijima.",
           "items": {
-            "1": "Rufaa kuva mu ba courts d'appel",
-            "2": "Mikanganyiko ya commerce ne makontala",
-            "3": "Makambo a ditshik ne bukole"
+            "1": "Dilomba dia ku tubadi tua bilumbu",
+            "2": "Malu a bungenda ne bipungidi",
+            "3": "Malu a bintu ne a bumpianyi"
           }
         },
         "family": {
-          "title": "Milawo ya Bakaji",
-          "desc": "Kubika milambu ya bakaji ne kumalisa mikanganyiko.",
+          "title": "Mikenji ya Dîku",
+          "desc": "Kulama manême a bena mu dîku ne kujikija bilumbu bikole.",
           "items": {
-            "1": "Rufaa ya bukole ne divorce",
-            "2": "Mikanganyiko ya bana",
-            "3": "Makambo a bukole"
+            "1": "Malu a dibaka ne a dishipa dia dibaka",
+            "2": "Malu a dilama dia bana",
+            "3": "Dilondangana didi ne mushinga"
           }
         },
         "public": {
-          "title": "Milawo ya Public",
-          "desc": "Kulanga misala ya nshinga ne kubika milawo ya konstitision.",
+          "title": "Mikenji ya bantu bonso",
+          "desc": "Dilombola dia midimu ya patoke ne malu adi mikenji ya ditunga ilama.",
           "items": {
-            "1": "Makambo a privilege juridictionnel",
-            "2": "Kukangila bantu ba mutwe",
-            "3": "Makambo a konstitision"
+            "1": "Bilumbu bia bukokeshi",
+            "2": "Dilumbuluisha dia bamfumu banene",
+            "3": "Malu a meyi a ditunga"
           }
         },
         "labor": {
-          "title": "Milawo ya Musala",
-          "desc": "Mikanganyiko ya musala ne kubika milambu ya basali.",
+          "title": "Mudimu ne mudimu",
+          "desc": "Bilumbu bia mudimu ne dikuba dia makokeshi a bena mudimu.",
           "items": {
-            "1": "Rufaa ya mikanganyiko ya musala",
-            "2": "Makambo a makontala a musala",
-            "3": "Kubika milambu ya basali"
+            "1": "Dilomba dia bilumbu bia mudimu",
+            "2": "Malu a tshipungidi tshia mudimu",
+            "3": "Dikuba dia makokeshi a bena mudimu"
           }
         },
         "criminal": {
-          "title": "Milawo ya Penal",
-          "desc": "Kulangalala mikano ya penal ne kubika nzila.",
+          "title": "Mikenji ya tshibawu",
+          "desc": "Dikonkonona dia mapangadika a tshibawu ne malu a bukubi.",
           "items": {
-            "1": "Rufaa ya penal ku Conseil d'Etat",
-            "2": "Kulangalala mafuku a prosedure",
-            "3": "Kusebeza milawo ya penal"
+            "1": "Dilomba dia tshibawu kudi tshipangu tshia ditunga",
+            "2": "Dikonkonona dia bilema bia mudimu",
+            "3": "Ditumikila dia mikenji ya tshibawu"
           }
         },
         "property": {
-          "title": "Milambu ya Ditshik",
-          "desc": "Bukole bwa ditshik, nzubu, ne misala ya ditshik.",
+          "title": "Malu a bintu",
+          "desc": "Bumfumu bua maloba, nzubu ne madimi, ne dipana dia bintu.",
           "items": {
-            "1": "Mikanganyiko ya ditshik",
-            "2": "Makambo a bukole bwa ditshik",
-            "3": "Misala ya ditshik"
+            "1": "Malu a nzubu ne madimi",
+            "2": "Malu a bumfumu bua maloba",
+            "3": "Dishintakaja dia bintu"
           }
         }
       }
     },
     "contact": {
       "address": {
-        "title": "Adres ya Ofisi",
-        "body": "7639, bokutana ya Pumbu na Batonniers na komine ya Gombe/Kinshasa-RDC"
+        "title": "Adelese wa biro",
+        "body": "7639, intersection of Pumbu and Batonniers Avenues in the commune of Gombe/Kinshasa-RDC"
       },
       "phone": {
-        "title": "Numero ya Ofisi",
+        "title": "Nomba ya biro",
         "body": "+243 000000000"
       },
       "email": {
-        "title": "Email ya Ofisi",
+        "title": "Mposita wa biro",
         "body": "info@conseildetatrdc.com"
       }
     },
     "president": {
-      "imageAlt": "Rais",
-      "cta": "Yeba mingi",
+      "imageAlt": "Mukalenge",
+      "cta": "Longa bia bungi",
       "slides": {
         "1": {
-          "title": "RAIS YA LIBOSO YA CONSEIL D'ETAT",
+          "title": "MULOMBODI WA KUMPALA WA TSHIBUMBA WA DITUKU",
           "paragraphs": {
-            "1": "Lokola memba ya misato na Conseil Suprem ya Magistrature ya RDC, Rais ya liboso ya Conseil d'Etat, Brigitte Nsensele Wa Nsensele, apesaki makila na mokolo ya mitano, 27 Febuari, mpo na kobatela ba victimes ya aggression na este ya mboka.",
-            "2": "Mpo na moboto nyonso ya RDC, kosalisa na mpasi ya ekolo ezali mosala ya citoyen. Tribinal ezangi te.",
-            "3": "Sanza mingi, RDC ezali komona aggression ya Rwanda mpe bitumba ya badiabolo, oyo epesaki kufa ya bato mingi mpe ba deplaces mingi."
+            "1": "Bu mudiye muntu muisatu mu tshipangu tshinene tshia malu a kulumbuluisha tshia ditunga dia RDC, mulombodi wa kumpala wa tshipangu tshia ditunga, Brigitte Nsensele Wa Nsensele, wakafila mashi mu dia matuku 27 ngondo muibidi, bua kuleja muvuabu bafue mu mvita ya bena Rwanda ku est kua ditunga.",
+            "2": "Bua muena Congo yonso udi ne demokrasi, kufila diambuluisha mu mvita mmudimu wa bena ditunga. Tshibambalu tshia kulumbuluisha katshiena tshishilangane to.",
+            "3": "Kukadi bidimu makumi asatu, RDC mmukengeshibue kudi Rwanda ne bisumbu bikuabu bia basalayi bibi, bifikisha ku lufu lua bantu miliyo ya bungi, makumi a binunu bia bantu badi bumbuka mu nzubu yabu, ne nsombelu mubi wa diambuluisha dia bantu."
           }
         },
         "2": {
-          "title": "BOKONZI YA TRIBINAL NA BONGWANA",
+          "title": "BULOMBODI BUA LUMBA NE DISHINTULULA",
           "paragraphs": {
-            "1": "Na bokonzi ya Rais ya liboso, Conseil d'Etat ebandaki bongwana mpo na kosala tribinal ya sika.",
-            "2": "Bongwana yango esangisi digitalisation ya makambo ya tribinal, ndenge ya gestion ya makambo, mpe mateya mpo na bajaji na basali.",
-            "3": "Mokano oyo elakisi molende ya tribinal mpo na polele, bokasi, mpe kopesa mokano ya bosembo."
+            "1": "Ku bulombodi bwa mfumu wa ditunga wa kumpala, tshipangu tshia ditunga tshidi tshituadije dishintulula dia malu a kulumbuluisha dia malu adi ne tshipatshila tshia kulengeja bulongolodi bua malu a kulumbuluisha.",
+            "2": "Mashintuluka aa adi atangila dienza dia mikanda ya ku tubadi ku Enternete, dienza dia mishindu ya dilombola dia bilumbu, ne programe ya dilongesha dia balumbuluishi ne bena mudimu ba ku tubadi.",
+            "3": "Malu aa adi aleja mudi Kabadi kadifila bua kuenza malu patoke, kuenza mudimu bimpe ne kuikala ne diandamuna mu dilombola dia malu a bululame."
           }
         },
         "3": {
-          "title": "BOSANGANI YA MOKILI MOBIMBA",
+          "title": "DIUMVANGANA DIA BULOBA BUJIMA",
           "paragraphs": {
-            "1": "Conseil d'Etat esalaka na ba institutions ya mokili mobimba mpe esangaka na ba forum.",
-            "2": "Na boyokani na ba tribunaux ya France, Belgique, mpe bituka mosusu ya francophone, tribinal ebongisaka boyebi.",
-            "3": "Boyokani ya mokili mobimba ebakisa makasi ya RDC mpo na kopesa bosembo ya mokili mobimba."
+            "1": "STATE COUNCIL udi wenza mudimu ne bibambalu bia kulumbuluisha bia pa buloba bujima ne udi ubuela mu bisangilu bia pa buloba bujima bua kuabanyangana malu adibu bapeta.",
+            "2": "Kupityila ku buobumue ne tubadi tua mu France, Belgique, ne matunga makuabu adi akula tshiena-France, tubadi tudi tujadika ne tudi anu ku mutu kua malu a mikenji.",
+            "3": "Diumvuangana edi dia matunga a buloba bujima didi dikolesha ndongoluelu wa malu a kulumbuluisha wa ditunga dia RDC ne dikolesha bukole buadi bua kufila bululame bilondeshela mikenji ya matunga a buloba bujima."
           }
         }
       }
     },
     "newsletter": {
-      "title": "MASANGO NA MAKALA",
-      "readMore": "Tanga lisusu",
-      "cta": "Yeba mingi",
+      "title": "LUMU NE BIENA BUALU",
+      "readMore": "Bala kabidi",
+      "cta": "Longa bia bungi",
       "items": {
         "1": {
-          "alt": "Rufaa",
-          "date": "15 Nov 2025 | Rapport ya mokano",
-          "title": "Kokamba Rufaa: Maloba ya mibeko mpo na mobembo malamu"
+          "alt": "Dilomba",
+          "date": "15/11/2025 | Luapolo lua dipangadika",
+          "title": "Kulonda bilumbu: Mibelu ya mikenji bua kuenza mudimu bimpe"
         },
         "2": {
-          "alt": "Masolo ya Conseil d'Etat",
-          "date": "22 Okt 2025 | Tolea ya Tribinal",
-          "title": "Makambo ya ntina na masolo ya Conseil d'Etat"
+          "alt": "Miyuki ya tshipangu tshia ditunga",
+          "date": "22/10/2025 | Malu mapiamapia a ku kabadi",
+          "title": "Malu manene a kuela meji mu bilumbu bia tshipangu tshia ditunga"
         },
         "3": {
-          "alt": "Procedural",
-          "date": "18 Okt 2025 | Mokano ya Tribinal",
-          "title": "Bongwana ya sika na mibeko ya prosedure"
+          "alt": "Njila",
+          "date": "18/10/2025 | Dipangadika dia kulumbuluisha",
+          "title": "Mashintuluka a matuku mashale aa mu mikenji ya malu a dilumbuluisha"
         },
         "4": {
-          "alt": "Mibeko",
-          "date": "12 Okt 2025 | Tolea ya Mibeko",
-          "title": "Koyeba mikumba na yo na processus ya rufaa"
+          "alt": "Malu",
+          "date": "12/10/2025 | Malu mapiamapia a mikenji",
+          "title": "Kumvua makokeshi ebe mu tshilumbu tshia dilomba dia dilumbuluisha"
         }
       }
     }
   },
   "about": {
     "hero": {
-      "title": "KOYEBA JURIDIKSION YA LIKOLO YA ORDRE ADMINISTRATIF NA REPUBLIKI DEMOKRATIKI YA KONGO"
+      "title": "KUMVUA BUKOKESHI BUA BUALU BUA BULOMBODI BUA BULOMBODI MU DITUKU DIA DEMOCRATIQUE DU CONGO"
     },
     "intro": {
-      "title": "KOYEBA JURIDIKSION YA LIKOLO YA ORDRE ADMINISTRATIF NA REPUBLIKI DEMOKRATIKI YA KONGO",
-      "body": "Article 151 paragraphe 1 ya Konstitision ya RDC ya 18 Febuari 2006 etongaki systeme ya tribunaux ya administratif na boyokani ya Conseil d'Etat. Article 82 ya Loi organique No 13/011-B ya 11 Avril 2013 elobi ete ezali na Conseil d'Etat na Kinshasa. Mibeko na yango ekoki kosalela na esika mosusu. Lisolo ya Conseil d'Etat elobeli ndenge ekomaki. Esalemaki na Decret-Loi ya 31 Janvier 1968. Na 2013, Loi organique No 13/011-B ebongaki organisation mpe fonctionnement ya tribunaux ya administratif."
+      "title": "KUMVUA BUKOKESHI BUA BUALU BUA BULOMBODI BUA BULOMBODI MU DITUKU DIA DEMOCRATIQUE DU CONGO",
+      "body": "Kanungu ka 151 kanungu ka 1 ka Dîyi dikulu dia ditunga dia RDC dia dia matuku 18 ngondo muibidi 2006, kadi kateka ndongoluelu wa dilumbuluisha dia mbulamatadi udi ne tubadi tua mbulamatadi ne tubadi tudi tulombola kudi Tshipangu tshia Ditunga. Kanungu ka 82 ka Dîyi dikulu Nomba 13/011-B dia dia matuku 11 ngondo muinayi 2013 didi dijadika bulongolodi, dienza ne mudimu wa tubadi tua mbulamatadi didi dileja ne kudi dikalaku dia tshipangu tshia ditunga tshidi ne tshibambalu tshiatshi tshia pa tshibidilu tshidi mu tshimenga tshikulu tshia ditunga dia Congo. Bukokeshi bwandi bwa bukokeshi budi mua kuenzeka muaba mukuabu. Mu malu a kale, Tshipangu tshia ditunga mu muyuki muipi eu, tshidi tshilonda malu a kale ne miji yatshi mu tshibambalu tshietu tshia kulumbuluisha. Tshipangu tshia mbulamatadi tshiakafukibua ku diambuluisha dia mukenji mu dia matuku 31 ngondo wa kumpala tshidimu tshia 1968, tshidi tshipeta tshimanyinu tshiatshi tshia pa buatshi bidimu bipite pa lukama. Bushuwa, bidimu muanda mukulu kunyima kua dipeta dia budikadidi mu 1960 ke muvua ditunga dijadike Tshipangu tshia Ditunga etshi bua kulombola bilumbu bia mbulamatadi. Anu kunyima kua bidimu lukama mu 2015 ke muvua Kabadi kanene ka malu a mbulamatadi. Kabadi aka kakalekela kuikalaku kunyima kua Dîyi dikulu dia ditunga dia 2006 ne dijadikibua diadi, divua diamba ne: mikenji yonso ivua mibengangane ne ivua kayiyi ne mushinga ne ivua ileja mu kanungu ka 223 ne: mapangadika ne mêyi avuabu bafile kumpala kua dimanyisha dia Dîyi dikulu dia ditunga adi ne bukole adi mapita ne tubadi tua mu malu adibu bapatule mu mushindu mutambe buimpe, badi bateka mu bilumbu bia pa buabi ne bia pa buabi mu dilonga dia pa buadi dia ngondo muibidi 18, 2006, Kabadi kanene ka malu a mbulamatadi kakalekela kuikalaku mu dia matuku 11 ngondo muinayi 2013 pavua mikenji ya bulongolodi No. 13/011-B ya dia matuku 11 ngondo muinayi 2013 iteka bulongolodi, dienza ne mudimu wa tubadi tua mbulamatadi. Bilondeshile kanungu ka 151 kanungu ka 3 ka Dîyi dikulu didi diteka bukookeshi bwa kulongolola bwa dienza dia bukookeshi bwa Kabadi kakulu ka kale. Matunga a buludiki ne tubadi tudi tuenza bulongolodi bwa dilumbuluisha dia buludiki mu Congo."
     },
     "rubrics": {
-      "legalBasis": "Moboko ya mibeko",
-      "organization": "Boyangeli",
-      "mission": "Mission",
-      "competences": "Bokoki",
-      "procedureBeforeCouncil": "Procedure liboso ya Conseil d'Etat"
+      "legalBasis": "Nshindamenu wa mikenji",
+      "organization": "Bulongolodi",
+      "mission": "Mudimu",
+      "competences": "Bipedi",
+      "procedureBeforeCouncil": "Mushindu wa kuenza kumpala kua tshipangu tshia ditunga"
     },
     "legal": {
-      "title": "KOKOTA NA MIKANDA YA MIBEKO MPE REGLEMENTAIRE<br>YA CONSEIL D'ETAT",
+      "title": "KUBUELA MU MIKANDA MINENE NE MIKANDA YA<br>YA TSHIBAMBALU tshia DITUKU",
       "docs": {
-        "1": "Loi organique N 13/011-B ya 11 Avril 2013 mpo na organisation mpe fonctionnement",
-        "2": "Decret N 13/046 ya 25 Septembre 2013 mpo na chambres",
-        "3": "Decret-Loi N 13/018 mpo na salaires ya bamagistrat"
+        "1": "Mikenji ya bulongolodi N° 13/011-B ya dia matuku 11 ngondo muinayi 2013 idi itangila bulongolodi, dienza ne mudimu wa makokeshi a bantu bonso",
+        "2": "Mukenji N° 13/046 wa dia matuku 25 ngondo wa tshitema 2013 udi utangila nzubu ya tshipangu tshia ditunga",
+        "3": "Mukenji wa mikenji N° 13/018 udi utangila difutu ne makuta adibu bafila kudi balumbuluishi"
       },
       "detail": {
-        "title": "Loi organique N 13/011-B ya 11 Avril 2013 mpo na tribunaux ya administratif",
-        "paragraph1": "Makambo ya Loi 13/011-B epesami na contexte ya administratif.",
-        "paragraph2": "Mikanda nyonso etalisami na Title I ya bamagistrat:",
+        "title": "Mikenji ya bulongolodi N° 13/011-B ya dia matuku 11 ngondo muinayi 2013 idi itangila bulongolodi, dienza ne mudimu wa makokeshi a mbulamatadi",
+        "paragraph1": "Malu adi mu meyi aa N° 13/011-B a dia matuku 11 ngondo muinayi 2013 adi atangila bulongolodi, dienza ne mudimu wa makokeshi a mbulamatadi adi mateka mu tshilumbu tshia mbulamatadi tshia kulumbuluisha.",
+        "paragraph2": "Tshitupa tshionso tshia mikenji tshidi tshifunda mu meyi manene a mu tshitupa tshia kumpala tshia banzuji:",
         "list1": {
-          "1": "CHAPITRE I: Mibeko ya liboso",
-          "2": "CHAPITRE II: Komonia mpe kosala serment",
-          "3": "CHAPITRE III: Rojime ya mibeko",
-          "4": "CHAPITRE IV: Mibeko, garantie, mpe limite",
-          "5": "CHAPITRE V: Disipline"
+          "1": "CITUPA I: Mikenji ya tshibungi",
+          "2": "CITUPA II: Disungula ne diteka dia ba majistre ne ba bafundi",
+          "3": "CITUPA III: tshia mbulamatadi wa mikenji",
+          "4": "CITUPA IV: Bukokeshi, bijadiki ne mikalu ya ba Magistrate",
+          "5": "CITUPA V: Dinyoka"
         },
-        "paragraph3": "Title II ya Conseil d'Etat (Articles 81-95) elobeli na sukali nyonso.",
+        "paragraph3": "Bidi bilondeshila tshitupa tshia II tshia tshipangu tshia ditunga kanungu ka 81 too ne kanungu ka 95 ne kanungu konso kadi kakula patoke bua tshipangu tshia ditunga mu nshapita idi ilonda eyi:",
         "list2": {
-          "1": "CHAPITRE I: Rojime ya mibeko",
-          "2": "CHAPITRE II: Installation mpe composition",
-          "3": "CHAPITRE III: Formation mpe fonctionnement"
+          "1": "CITUPA I: Bukokeshi bwa mikenji",
+          "2": "CITUPA II: Diteka, dienza dia Tshipangu tshia Ditunga",
+          "3": "CITUPA III: Bisumbu bishilangane, mudimu ne bena mudimu ba Tshipangu tshia Ditunga"
         },
-        "paragraph4": "Article 82 elobeli composition ya Conseil d'Etat mpe bato oyo basalaka.",
-        "paragraph5": "Article 83 elobeli attribution: rufaa administratif, disipline, serment, mpe avis juridique.",
-        "paragraph6": "Quorum: president to vice-president ya chambre na bamagistrat mibale, conseiller juridique mpe greffier.",
-        "paragraph7": "Kila chambre ekoki kosala formation soki quorum ezwami.",
-        "paragraph8": "Quorum esalemaka na ndenge moko, na participation ya Attorney General na deliberation.",
-        "paragraph9": "Soki olingi mikanda, bongisa na email to telefone mpo ozwa yango."
+        "paragraph4": "Bulongolodi budi mu kanungu ka 82 budi buleja mushindu udi Tshipangu tshia Ditunga tshienza, ne budi buleja bena mudimu badi bambuluisha ba-majistre ne bena mudimu bambuluishi badibu bafila bua kukumbaja mudimu wa mbulamatadi.",
+        "paragraph5": "Kanungu ka 83 kadi kaleja difila dia tshipangu tshia ditunga, tshimue tshia kudibi ntshia se: Dilomba dia dilumbuluisha mu malu a mbulamatadi; Udi wenza mudimu ne dinyoka dia balumbuluishi ne bambuluishi ba ku tubadi mu bukokeshi buende; Udi upeta mutshipu wa ba majistre ne bena mudimu ba ku kabadi badi muinshi mua bukookeshi bwa mbulamatadi; Udi ufila lungenyi lua mikenji kumpala kua balumbuluishi badibu basungula anyi kudi mbulamatadi wa bukokeshi. Kanungu ka 84 kadi kaleja dienza dia bitupa bishilangane ne dienza dia tshipangu tshia ditunga; Kanungu ka 88 kadi kaleja difila dia bintu mu diyukidilangana dia tshibambalu, tshibambalu tshionso tshidi ne tshia kuikala tshibambalu tshia bukokeshi bua kukumbaja mudimu wa tshipangu tshia ditunga tshia kusomba bua difila dia bintu bishilangane anu pikala bungi bua bantu bufika.",
+        "paragraph6": "Bungi bua bantu budibu balomba mu kanungu budi bufika, padi nzubu yonso milongolola mushindu ewu: mulombodi anyi mulombodi muibidi wa nzubu ne banzuji bakuabu babidi, ne kabidi mufidi wa mibelu wa malu a mikenji ne mufundi wa mikanda.",
+        "paragraph7": "Pa bidi bitangila tshisumbu tshia balumbuluishi tshidi mu kanungu ka 89, tshibambalu tshionso tshidi mua kuikala tshibambalu tshia bukookeshi bwa kukumbaja mudimu wa tshipangu tshia ditunga ne kusomba bua mishindu mishilangane anu pikala tshisumbu tshikumbane.",
+        "paragraph8": "Bungi bua bantu budibu balomba mu kanungu budi bufika, padi nzubu yonso milongolola mushindu ewu: mulombodi anyi mulombodi muibidi wa nzubu ne banzuji bakuabu babidi, ne kabidi mufidi wa mibelu wa malu a mikenji ne mufundi wa mikanda. Ne dikumbaja dia muntu udi ne bualu udi musombe mu tshikondo tshia mudimu ne diambuluisha diende pikalabi bikengela ne mu tshikondo tshia diyukidilangana ku tshiibi tshikanga, ne dibuela dia Procureur général mu diyukidilangana ne dibuela dia mufundi didi dienzeka ku diambuluisha dia dilongesha dia bualu.",
+        "paragraph9": "Panyima pa wewe mumane kubala ne kumvuija mikanda ya mikenji kudi matunga adi mu tshisanji etshi, udi mua kulomba mudimu wabu buludiludi pa kutubikila ku e-mail anyi ku telefone ne nunku wewe kuyipeta."
       }
     }
   },
   "reforms": {
     "hero": {
-      "title": "BONGWANA<br>OYO EPESAMI",
-      "body": "Kobongisa systeme ya tribinal na nzela ya bongwana oyo ezali kobakisa bokasi, polele, mpe bosembo mpo na bato nyonso."
+      "title": "BIDI BILOMBA<br>BIDI BISHINTULULA",
+      "body": "Kulengeja ndongoluelu wa malu a kulumbuluisha kupitshila ku dishintulula dia malu adi akolesha dienza dia mudimu bimpe, dikala patoke ne dipeta dia bululame kudi bena ditunga dijima dia Congo."
     },
     "building": {
-      "tag": "KOBONGISA TRIBINAL",
-      "title": "KOTONGA SISTEME YA SIKA",
-      "body": "Nsima ya Konstitision ya 2006, Conseil d'Etat ebanda bongwana mpo na kosala tribinal moko ya makasi, polele, mpe ekotambola malamu."
+      "tag": "DISHINTULULA DIA BIDIMU",
+      "title": "KUENZA BUALU BUA BUALU BUA BUALU BUA BUKOLE",
+      "body": "Bilondeshela Dîyi dikulu dia 2006, Tshipangu tshia ditunga tshiakatuadija malu a bungi bua kukolesha budikadidi bua balumbuluishi, kulengeja mushindu wa kupeta bululame ne kuenza malu bilondeshile mikenji ya matunga a bungi. Mianda eyi idi itangila dikolesha dia bibambalu, dishintulula dia malu a ordinatere ne dikolesha dia bukole."
     },
     "initiatives": {
-      "tag": "PLAN YA BONGWANA",
-      "title": "MIPANGO YA BONGWANA",
-      "body": "Plan ya etape mitano mpo na kosala tribinal ya sika.",
+      "tag": "MUSHINDU WA KUSHINTULULA",
+      "title": "BIDIMU BIA DISHINTULULA DIA MUSHINDU",
+      "body": "Mushindu mujalame wa bitupa bitanu wa kulengeja bulongolodi buetu bua kulumbuluisha, bua kujadika dienza dia malu mimpe ku tshitupa tshionso tshia dishintuluka.",
       "badges": {
-        "critical": "Kipa ya monene",
-        "high": "Kipa ya likolo",
-        "medium": "Kipa ya katikati"
+        "critical": "Bualu bua mushinga mukole",
+        "high": "Bualu bua mushinga mukole",
+        "medium": "Tshia kumpala tshia munkatshi"
       },
       "steps": {
         "1": {
-          "title": "Bokonzi ya institution",
-          "body": "Kobatela kimoka ya tribinal na mibeko ya konstitision."
+          "title": "Budikadidi bwa bulongolodi",
+          "body": "Kukolesha budikadidi bua balumbuluishi ku diambuluisha dia mikenji ya ditunga ne budikadidi bua malu a mfranga."
         },
         "2": {
-          "title": "Bokoti ya bosembo",
-          "body": "Kobakisa service ya legal aid mpe bacentre na mboka mobimba."
+          "title": "Dipeta dia bululame",
+          "body": "Kuvudija midimu ya diambuluisha dia mikenji ne kuenza miaba ya kufika mu bitupa bia ditunga mu ditunga dijima."
         },
         "3": {
-          "title": "Boyokani ya mokili",
-          "body": "Kokoba boyokani na ba institutions ya mokili mpo na boyebi."
+          "title": "Buobumue bua matunga masanga",
+          "body": "Kukolesha malanda ne bibambalu bia kulumbuluisha bia matunga masanga bua dishintakaja dia mamanya."
         },
         "4": {
-          "title": "Digitalisation",
-          "body": "Kokota na systeme ya gestion ya makambo mpe ba base de donnees."
+          "title": "Dishintuluka dia malu a ordinatere",
+          "body": "Kuenza mudimu ne ndongamu ya lelu ya dilombola dia bilumbu ne mikanda ya mikenji ya pa buloba."
         },
         "5": {
-          "title": "Kobongisa bokoki",
-          "body": "Mateya ya ntina mpo na bamagistrat."
+          "title": "Dikolesha dia bukole",
+          "body": "Dilongesha dia tshiendelele dia ba-majistre ne mamanya a makebulula a mikenji."
         }
       }
     },
     "stakeholders": {
-      "title": "BATO YA NTINA",
-      "subtitle": "BOKONZI YA BONGWANA",
+      "title": "BANTU BA MUSHINDU WA KUENZA",
+      "subtitle": "KUSHINTULULA BULOMBODI",
       "roles": {
-        "president": "Rais",
-        "vicePresident": "Vice President",
-        "chiefMagistrate": "Chef Magistrat",
-        "internationalRelations": "Boyokani ya Mokili"
+        "president": "Mukalenge",
+        "vicePresident": "Mulombodi wa ditunga",
+        "chiefMagistrate": "Mulumbuluishi Munene",
+        "internationalRelations": "Malanda a matunga masanga"
       }
     }
   },
   "international": {
     "hero": {
-      "title": "BOYOKANI YA<br>MOKILI MOBIMBA",
-      "body": "Na contexte ya internationalisation ya mibeko, Conseil d'Etat ya RDC esalaka na ba partenaires mpe ba associations ya tribunaux."
+      "title": "INTERNATIONAL<br>RELATIONS",
+      "body": "Mu tshikondu tshia divuija dia meyi ne bululame pa buloba bujima, Tshisangilu tshia ditunga tshia ditunga dia Congo katshiena tshitapuluke ne nsombelu ewu to. Udi ubuela mu diyukidilangana dia balumbuluishi pa kulama buobumue bua bungi mu tshisumbu tshia tubadi tunene tua matunga adi bakula muakulu wa Mfualansa (AHJUCAF) ne tshisumbu tshia tubadi tunene tua mu Afrike (AA-HJF)."
     },
     "stats": {
-      "associations": "Ba associations ya tribunaux ya mokili",
-      "partners": "Mboka mpe ba tribunaux partners",
-      "exchanges": "Bokutana ya tribinal na mbula"
+      "associations": "Bisumbu binene bia balumbuluishi bia pa buloba bujima",
+      "partners": "Matunga adi mu buobumue ne tubadi tunene",
+      "exchanges": "Dishintakaja dia malu a kulumbuluisha ne mpungilu ya tshidimu tshionso"
     },
     "networks": {
-      "title": "BOKUTANI YA TRIBINAL YA MOKILI",
-      "subtitle": "Tribinal ezali na boyokani na ba associations ya francophone mpe africain",
+      "title": "BIDIMU BIA BULOBA BUA BULOBA BUJIMA",
+      "subtitle": "Kabadi kadi kalama malanda mimpe ne malongolodi manene a tubadi tunene tua bena Francophone ne tua mu Afrike",
       "ahjucaf": {
-        "name": "Association ya ba tribunaux ya Francais",
-        "body": "Plateforme ya boyokani mpe bobongisi ya ba tribunaux francophone."
+        "name": "Tshisumbu tshia tubadi tunene tshienza mudimu ne Mfualansa",
+        "body": "Tshibambalu tshia dishintakaja ne dienza mudimu pamue pankatshi pa tubadi tunene tua bena Francophone, diambuluisha dia diyukidilangana dia balumbuluishi, diabanya dia malu a mikenji, ne dikolesha dia bukole bua bibambalu mu matunga adibu bakula tshiena-France pa buloba bujima."
       },
       "aahjf": {
-        "name": "Association ya ba tribunaux francophone ya Afrika",
-        "body": "Plateforme ya boyokani mpe bobongisi ya ba tribunaux francophone."
+        "name": "Tshisumbu tshia bena Afrike tshia tubadi tunene tua bena Francophone",
+        "body": "Tshibambalu tshia dishintakaja ne dienza mudimu pamue pankatshi pa tubadi tunene tua bena Francophone, diambuluisha dia diyukidilangana dia balumbuluishi, diabanya dia malu a mikenji, ne dikolesha dia bukole bua bibambalu mu matunga adibu bakula tshiena-France pa buloba bujima."
       }
     },
     "domains": {
-      "title": "MAKAMBO YA BOYOKANI YA MOKILI",
-      "subtitle": "Boyokani ya mokili ekoki kosalisa bosembo mpe bokonzi ya mibeko",
+      "title": "BIDIMU BIA BUALU BUA BUALU BUA BULOBA BUA BUALU",
+      "subtitle": "Diumvuangana dietu dia matunga a bungi didi difila dibuela mu malu mashilangane adi ne tshipatshila tshia kukolesha bulenga bua bululame ne dikokesha dia mikenji",
       "dialogue": {
-        "title": "Masolo ya tribinal",
-        "body": "Masolo ya mikano, best practices, mpe mikakatano ya ba tribunaux."
+        "title": "Diyukidilangana dia balumbuluishi",
+        "body": "Diyukidilangana dia pa tshibidilu pa malu a mikenji, mishindu mimpe ya kuenza mudimu, ne ntatu idi tubadi tunene tupeta, dikolesha dilonga dia muntu ne muntu ne diumvuija dia mikenji didi dipetangana."
       },
       "assistance": {
-        "title": "Lisalisi ya technique",
-        "body": "Lisalisi mpo na modernisation, digitalisation, mpe bokoti ya bosembo."
+        "title": "Diambuluisha dia malu a tekiniki",
+        "body": "Technical cooperation for modernization of judicial systems, digitalization, and improvement of access to justice through shared experiences."
       },
       "capacity": {
-        "title": "Kobongisa bokoki",
-        "body": "Mateya, seminaires, mpe ateliers mpo na bamagistrat."
+        "title": "Dikolesha dia bukole",
+        "body": "Programe ya dilongesha, bisangilu, ne bisangilu bia mudimu bua kukolesha mamanya a ba-majistre ne bena mudimu ba ku tubadi ku diambuluisha dia mamanya a pa buloba bujima."
       },
       "forums": {
-        "title": "Ba forum ya mokili",
-        "body": "Kosangana na ba forum mpo na mibeko ya mokili."
+        "title": "Nsangilu ya matunga masanga",
+        "body": "Kubuela mu bisangilu bia matunga masanga bua kuambuluisha mu dikola dia mikenji ya matunga masanga ne ya bitupa bia ditunga ne mikenji ya kulumbuluisha."
       }
     },
     "collaboration": {
-      "title": "Olingi boyokani?",
-      "body": "Tozali na mposa ya boyokani na ba institutions ya mokili.",
-      "cta": "BENGA BISO"
+      "title": "Udi musue kuenza mudimu pamue anyi?",
+      "body": "Tudi badisuike bua kuenza mudimu pamue ne kuyukila ne matunga makuabu a mu ditunga ne a pa buloba bujima adi adifila bua kukolesha bulongolodi bua malu a kulumbuluisha.",
+      "cta": "TUBIKIJA"
     }
   },
   "audiences": {
     "hero": {
-      "title": "MAKIKAO MPE BITENI YA ROLE",
-      "body": "Zwa ba horaires ya makikayo, biteni ya ba role, mpe mikano ya sika."
+      "title": "BIUMVUILU NE BIDIMU BIA MU ROLL",
+      "body": "Tangila ndongamu ya kuteleja, bitupa bia mukanda, ne mapangadika a matuku mashale aa."
     },
     "understanding": {
-      "title": "KOYEBA MAKIKAO",
-      "body": "Yeba ndenge makikayo ebongisami mpe ndenge ya koyoka liste."
+      "title": "KUMVUA BANTU BATELEJI",
+      "body": "Keba buludiki bua mushindu udi bateleji balongolola ne mushindu wa kutangila mikanda ya lelu."
     },
     "metrics": {
-      "title": "BILEMBO YA MAKIKAO",
-      "subtitle": "Motango ya makikayo na sanza mpe ndenge ya mikano.",
+      "title": "BIDIMU BIDI BUMVUA",
+      "subtitle": "Bungi bua diumvua dia ku ngondo ne bipeta mu bule bua matuku.",
       "volume": {
-        "title": "Motango ya makikayo na sanza",
-        "note": "Sanza 6 eleki",
-        "aria": "Motango ya makikayo na sanza"
+        "title": "Bungi bua diumvua dia ngondo yonso",
+        "note": "Ngondo 6 mipita",
+        "aria": "Bungi bua diumvua dia ngondo yonso"
       },
       "outcomes": {
-        "title": "Matokeo na tango",
-        "note": "Mix ya mikano",
-        "aria": "Matokeo ya makikayo na tango"
+        "title": "Bipeta mu bule bua matuku",
+        "note": "Dipangadika disangisha",
+        "aria": "Bipeta bia kumvua mu bule bua matuku"
       }
     },
     "recent": {
-      "title": "BITENI YA LISTE YA SIKA",
-      "subtitle": "BITENI YA KOYOKA YA SIKA"
+      "title": "BITUPA BIA MUDIMU WA MUDIMU",
+      "subtitle": "BITUPA BIA DIUMVUA DIA KUMPALA"
     },
     "documents": {
       "civil": {
-        "label": "Civil",
-        "title": "Biteni ya makikayo ya chambre civil"
+        "label": "Civile",
+        "title": "Bitupa bia dilumbuluisha dia nzubu wa tshididi"
       },
       "criminal": {
-        "label": "Penal",
-        "title": "Biteni ya makikayo ya chambre penal"
+        "label": "Muena tshibawu",
+        "title": "Bitupa bia dilumbuluisha dia nzubu wa tshibawu"
       },
       "social": {
-        "label": "Social",
-        "title": "Biteni ya makikayo ya chambre social"
+        "label": "Nsombelu",
+        "title": "Bitupa bia dilumbuluisha dia nzubu wa tshilala benyi"
       },
       "general": {
-        "label": "Generale",
-        "title": "Biteni ya makikayo ya chambre generale"
+        "label": "Mu kabujima",
+        "title": "Bitupa bia tshilumbu tshia mu nzubu wa tshipangu tshinene"
       }
     },
     "actions": {
-      "downloadPdf": "TELECHARGER PDF"
+      "downloadPdf": "KUANGATA PDF"
     },
     "assistance": {
-      "title": "Osengeli lisalisi?",
-      "body": "Benga Conseil d'Etat mpo na lisalisi ya mikanda to programme.",
-      "cta": "BENGA BISO"
+      "title": "Udi dijinga ne diambuluisha anyi?",
+      "body": "Udi mua kubikila bena mu tshipangu tshia ditunga bua kukuambuluisha bua kupeta mikanda anyi ndongamu.",
+      "cta": "TUBIKIJA"
     }
   },
   "organization": {
     "hero": {
-      "title": "ORGANISASION<br>YA CONSEIL D'ETAT"
+      "title": "BULONGOLODI<br>BUA BUALU BUA DITUKU"
     },
     "firstPresident": {
-      "alt": "Rais ya liboso",
-      "title": "RAIS YA LIBOSO",
-      "body": "Rais ya liboso akambaka Conseil d'Etat mpe likita na yango."
+      "alt": "Mfumu wa kumpala",
+      "title": "MULOMBODI WA KUMPALA",
+      "body": "Mfumu wa ditunga wa kumpala udi ulombola tshipangu tshia ditunga, ulombola bisangilu biatshi, ne udi utangila mudimu muimpe wa tshibambalu etshi."
     },
     "firstPresidents": {
-      "title": "MARAIS YA LIBOSO",
-      "honoraryTitle": "Rais ya liboso ya lokumu mpe emerite 2018 - 2022",
-      "honoraryTitleSecond": "Mokambi ya lokumu mpe emerite 2022 - 2025",
-      "honoraryTitleThird": "Rais ya liboso: 2025 - kino lelo",
-      "placeholderName": "Rais ya Liboso {{index}}",
-      "placeholderSubtitle": "Esika ebongisami mpo na foto",
-      "photoLabel": "Foto {{index}}"
+      "title": "BALOMBODI BA KUMPALA",
+      "honoraryTitle": "Mulombodi wa kumpala wa buneme ne wa tshijila: 2018 - 2022",
+      "honoraryTitleSecond": "Mulombodi wa buneme ne wa mudimu: 2022 - 2025",
+      "honoraryTitleThird": "Mulombodi wa kumpala: 2025 - lelu",
+      "placeholderName": "Mfumu wa kumpala {{index}}",
+      "placeholderSubtitle": "Muaba wa foto mmulama",
+      "photoLabel": "Tshimfuanyi {{index}}"
     },
-    "seniorLabel": "BAMAGISTRAT YA LIKOLO",
+    "seniorLabel": "BA MAJISTRATE BANENE",
     "chart": {
-      "title": "CHART YA ORGANISASION",
-      "subtitle": "Lisalisi ya bosangani na biteni ya Conseil d'Etat.",
-      "interactiveTitle": "CHART YA ORGANISASION YA INTERACTIF",
-      "interactiveSubtitle": "Tala ndenge ya bosangani.",
-      "aria": "Chart ya organisasion interactif",
-      "peopleTitle": "BOKONZI NA BIKOMBO",
-      "peopleSubtitle": "Bikombo ya Rais ya Liboso, Marais, mpe Basungi.",
+      "title": "TABULU WA BULONGOLODI",
+      "subtitle": "Tshikoso tshia bulongolodi bua bulombodi ne bitupa bia nshindamenu bia tshipangu tshia ditunga.",
+      "interactiveTitle": "TABULE WA ORG WA KUENZA",
+      "interactiveSubtitle": "Tangila bulongolodi ne mushindu wa kufila luapolo.",
+      "aria": "Tablo wa bulongolodi udi utangila malu",
+      "peopleTitle": "BULOMBODI KU DINA",
+      "peopleSubtitle": "Mêna a Mulombodi wa kumpala, balombodi ne bafidi ba mibelu.",
       "peopleFirstPresidentName": "Brigitte Nsensele Wa Nsensele",
       "namedPhotoRoles": {
-        "firstPresident": "Rais ya Liboso",
-        "consultative": "Mokambi ya eteni ya Consultative",
-        "contentieux": "Mokambi ya eteni ya Contentieux"
+        "firstPresident": "Mfumu wa kumpala",
+        "consultative": "Mulombodi wa tshitupa tshia diyukidilangana",
+        "contentieux": "Mulombodi wa tshitupa tshia malu a bilumbu"
       },
       "roles": {
-        "firstPresident": "Rais ya Liboso",
+        "firstPresident": "Mfumu wa kumpala",
         "ppce": "P.P.C.E",
-        "president": "Rais",
-        "advisor": "Conseiller"
+        "president": "Mukalenge",
+        "advisor": "Mufidi wa mibelu"
       },
       "nodes": {
-        "firstPresident": "Rais ya Liboso",
-        "plenary": "Assemblee generale",
-        "councilOffice": "Bureau ya Conseil",
-        "registry": "Greffe mpe Archives",
-        "civilChamber": "Chambre Civil",
-        "criminalChamber": "Chambre Penal",
-        "commercialChamber": "Chambre Commerce",
-        "socialChamber": "Chambre Social",
-        "consultativeSection": "Eteni ya Consultative",
-        "litigationSection": "Eteni ya Contentieux"
+        "firstPresident": "Mfumu wa kumpala",
+        "plenary": "Tshisangilu tshijima",
+        "councilOffice": "Biro bia tshipangu",
+        "registry": "Muaba wa difunda dia mêna ne bintu bia kale",
+        "civilChamber": "Tshibambalu tshia bena ditunga",
+        "criminalChamber": "Tshibambalu tshia malu a tshibawu",
+        "commercialChamber": "Tshibambalu tshia malu a bungenda",
+        "socialChamber": "Tshibambalu tshia malu a bantu",
+        "consultativeSection": "Tshitupa tshia diyukidilangana",
+        "litigationSection": "Tshitupa tshia bilumbu"
       }
     },
     "filters": {
-      "searchLabel": "Luka bamembre",
-      "searchPlaceholder": "Luka na kombo to fonction",
-      "roleLabel": "Mosala",
-      "all": "Banso",
-      "presidents": "Marais",
-      "advisors": "Basungi",
-      "summary": "Ezali kolakisa marais {{presidents}} mpe basungi {{advisors}}"
+      "searchLabel": "Keba bena tshisumbu",
+      "searchPlaceholder": "Keba ku dina anyi ku mudimu",
+      "roleLabel": "Mudimu",
+      "all": "Bonso",
+      "presidents": "Balombodi",
+      "advisors": "Bafidi ba mibelu",
+      "summary": "Kuleja balombodi ba {{presidents}} ne bafidi ba mibelu ba {{advisors}}"
     },
     "presidents": {
-      "title": "MARAIS",
-      "empty": "Marais ezwami te na boluki na yo."
+      "title": "BA PRESIDENT",
+      "empty": "Kakuena mfumu wa ditunga udi upetangana ne tshiudi ukeba to."
     },
     "advisors": {
-      "title": "BASUNGI",
-      "empty": "Basungi ezwami te na boluki na yo."
+      "title": "BANTU BA MIBELU",
+      "empty": "Kakuena mufidi wa mibelu udi ukumbanangana ne tshiudi ukeba to."
     },
     "members": {
-      "learnMore": "Yeba mingi",
-      "loadMore": "Tinda lisusu"
+      "learnMore": "Longa bia bungi",
+      "loadMore": "Teka bia bungi"
     },
     "services": {
-      "overviewTitle": "BOTALISI YA MISALA",
-      "learnMore": "Yeba mingi",
+      "overviewTitle": "BIDIMU BIDI BIENZEKA",
+      "learnMore": "Longa bia bungi",
       "registry": {
-        "title": "Greffe",
-        "body": "Zwa mikanda, etat ya makambo, mpe ba archives."
+        "title": "Mukanda wa difunda",
+        "body": "Tangila mikanda, nsombelu wa tshilumbu, ne mikanda ya mbulamatadi."
       },
       "docs": {
         "title": "Mikanda",
-        "body": "Zwa ba formulaire, mibeko, mpe guide."
+        "body": "Keba formilere, mikanda ya mikenji, ne mishindu ya kuenza mudimu."
       },
       "tv": {
-        "title": "TV ya Conseil",
-        "body": "Tala makikayo, masango, mpe updates."
+        "title": "TV wa tshipangu",
+        "body": "Tangila bilumbu, mamanyisha, ne malu mapiamapia."
       },
-      "title": "MISALA NA BISO",
-      "subtitle": "Tala biteni mpe ofisi oyo esalisaka misala ya Conseil d'Etat.",
+      "title": "MIDIMU YETU",
+      "subtitle": "Tangila bitupa ne bibambalu bidi bikuatshisha mudimu wa Tshipangu tshia Ditunga.",
       "divisions": {
-        "title": "Bitelemeli",
-        "rooms": "Ba salle na chambre",
-        "council": "Bureau ya Conseil",
-        "registers": "Greffe na archives"
+        "title": "Matapuluka",
+        "rooms": "Bibambalu ne bibambalu",
+        "council": "Biro bia tshipangu",
+        "registers": "Bikandakanda ne bintu bia kale"
       },
       "rooms": {
-        "title": "Ba salle",
-        "body": "Ba salle ya administratif mpe tribinal mpo na makikayo."
+        "title": "Nzubu",
+        "body": "Bibambalu bia mbulamatadi ne bia kulumbuluisha bidi bilongolola dikokangana ne diteleja dia malu."
       },
       "council": {
-        "title": "Conseil",
-        "body": "Bureau oyo ebongisaka politiki mpe administrasion."
+        "title": "Mibelu",
+        "body": "Biro bidi bilombola mikenji ne bulombodi bua bibambalu."
       },
       "registers": {
-        "title": "Greffe na Archives",
-        "body": "Biteni oyo ebongisaka mikanda na archives."
+        "title": "Ma registre",
+        "body": "Bibambalu bidi bitangila mikanda, bintu bia kale, ne mikanda ya mbulamatadi."
       },
       "details": {
         "chambers": {
-          "title": "Chambres",
-          "item1": "Chambre Civil",
-          "item2": "Chambre Penal",
-          "item3": "Chambre Commerce",
-          "item4": "Chambre Social",
-          "body1": "Chambre moko na moko esalaka na makambo ya sika.",
-          "body2": "Chambres etambolaka kolanda mibeko."
+          "title": "Nzubu",
+          "item1": "Tshibambalu tshia bena ditunga",
+          "item2": "Tshibambalu tshia malu a tshibawu",
+          "item3": "Tshibambalu tshia malu a bungenda",
+          "item4": "Tshibambalu tshia malu a bantu",
+          "body1": "Tshibambalu tshionso tshidi tshitangila malu a pa buawu adi mu bukokeshi buatshi.",
+          "body2": "Bibambalu bidi mu mishindu bilondeshile mikenji idiku."
         },
         "rooms": {
-          "title": "Ba salle na Chambres",
-          "body1": "Ba salle ebongisaka makikayo mpe mikanda.",
-          "body2": "Bakopekisa ndeko ya procedure mpe programme.",
-          "body3": "Basalisaka deliberation na administrasion.",
-          "body4": "Basalisaka makambo kino na mokano ya nsuka."
+          "title": "Nzubu ne nzubu ya tshilala benyi",
+          "body1": "Bibambalu bidi bilongolola bilumbu ne bilongolola mikanda ya bilumbu.",
+          "body2": "Badi bajadika dilonda dia mikenji ne dilongolola dia ndongamu.",
+          "body3": "Badi bakuatshisha diyukidilangana ne dilongolola dia malu a mbulamatadi.",
+          "body4": "Badi bajadika dienda dia bilumbu bimpa too ne ku mapangadika a ndekelu."
         },
         "council": {
-          "title": "Bureau ya Conseil",
-          "body1": "Bureau ya Conseil ebongisaka direction ya monene.",
-          "body2": "Ebongisaka makutano ya generale na bikwaka.",
-          "body3": "Ebongisaka implementation ya mikano na bongwana.",
-          "body4": "Ebongisaka communication mpe boyokani ya institution."
+          "title": "Biro bia tshipangu",
+          "body1": "Biro bia tshipangu bidi bienza mudimu wa dilongolola dia malu.",
+          "body2": "Udi ulongolola bisangilu bia tshisangilu ne mishindu ya mikenji.",
+          "body3": "Udi utangila dikumbaja dia mapangadika ne dishintulula.",
+          "body4": "Udi ukuatshisha dimanyishangana ne malanda a bibambalu."
         },
         "registers": {
-          "title": "Greffe na Archives",
-          "body1": "Greffe eyambaka mpe ekomaka makambo na mikano.",
-          "body2": "Ebatelaka archives mpo na tango molai.",
-          "body3": "Epesa copie certifie soki basengi.",
-          "body4": "Esalaka indexing mpe kofuta dossiers.",
-          "body5": "Ebatelaka secrete mpe bonane ya mikanda."
+          "title": "Bikandakanda ne bintu bia kale",
+          "body1": "Ma registre adi apeta ne afunda mikanda ne mapangadika.",
+          "body2": "Badi balama bintu bia kale bua kubilama mutantshi mule.",
+          "body3": "Badi bafila mikanda mijadika padibu babalomba.",
+          "body4": "Badi balombola difunda ne dipeta dia mikanda ya bilumbu.",
+          "body5": "Badi bajadika tshisokomenu ne bulelela bua mikanda."
         }
       }
     }
