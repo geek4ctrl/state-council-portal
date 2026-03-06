@@ -1,0 +1,886 @@
+{
+  "header": {
+    "siteName": "Conselho de Estado da RDC",
+    "contact": {
+      "phone": "+ 243 (21) 00000000",
+      "hours": "SEGUNDA - SEXTA, 8H30 - 16H00"
+    },
+    "social": {
+      "facebook": "Facebook",
+      "twitter": "Twitter",
+      "instagram": "Instagram"
+    },
+    "lang": {
+      "label": "Idioma",
+      "switchToEnglish": "Mudar para inglês",
+      "switchToFrench": "Mudar para francês"
+    },
+    "nav": {
+      "home": "INÍCIO",
+      "court": "O TRIBUNAL",
+      "presentation": "Apresentação",
+      "organization": "Organização",
+      "administrativeCourts": "Tribunais Administrativos",
+      "administrativeTribunals": "Tribunais Administrativos",
+      "reforms": "Reformas",
+      "international": "Relações Internacionais",
+      "audiences": "AUDIÊNCIAS",
+      "steps": "PASSOS",
+      "news": "NOTÍCIAS",
+      "bookAppointment": "Marcar atendimento"
+    }
+  },
+  "hero": {
+    "titleOpening2025": "O ANO JUDICIÁRIO ABRE NO CONSELHO DE ESTADO PARA O PERÍODO 2025 - 2026"
+  },
+  "mobileNav": {
+    "home": "Início",
+    "organization": "Organização",
+    "apply": "Solicitar",
+    "news": "Notícias"
+  },
+  "comingSoon": {
+    "subtitle": "Em breve",
+    "description": "Esta página está em desenvolvimento e estará disponível em breve. Volte mais tarde para explorar o conteúdo.",
+    "backHome": "Voltar ao início"
+  },
+  "errors": {
+    "generic": {
+      "code": "Erro",
+      "title": "Algo deu errado",
+      "message": "Estamos com dificuldades para concluir o seu pedido. Tente novamente ou volte à página inicial do Conselho de Estado.",
+      "primary": "Voltar ao início",
+      "secondary": "Ver atualizações"
+    },
+    "notFound": {
+      "code": "404",
+      "title": "Página não encontrada",
+      "message": "A página que você procura não existe ou foi movida."
+    }
+  },
+  "history": {
+    "title": "História",
+    "body": "Descubra a rica história do Conselho de Estado."
+  },
+  "process": {
+    "title": "Processo judicial",
+    "body": "Entenda o processo judicial e o que esperar."
+  },
+  "judges": {
+    "title": "Os juízes",
+    "body": "Conheça os ilustres juízes do Conselho de Estado."
+  },
+  "memberDetail": {
+    "back": "← Voltar para Organização",
+    "title": "Perfil do membro",
+    "subtitle": "Perfil detalhado e informações de contato.",
+    "office": "Escritório",
+    "email": "E-mail",
+    "notFound": {
+      "title": "Membro não encontrado",
+      "body": "Não foi possível localizar o perfil solicitado.",
+      "cta": "Voltar para a organização"
+    }
+  },
+  "news": {
+    "hero": {
+      "title": "NOTÍCIAS E ATUALIZAÇÕES",
+      "body": "A injustiça pode manifestar-se de muitas formas na nossa sociedade. Damos-lhe a oportunidade de denunciar todas as formas de abuso."
+    },
+    "section": {
+      "title": "NOTÍCIAS E ATUALIZAÇÕES",
+      "subtitle": "A VISÃO NOS TORNA QUEM SOMOS"
+    },
+    "insights": {
+      "title": "NOTÍCIAS",
+      "subtitle": "Tendências por tópico e cadência de publicação",
+      "topics": {
+        "title": "Tópicos por mês",
+        "note": "Últimos 6 meses",
+        "aria": "Tópicos de notícias por mês"
+      },
+      "cadence": {
+        "title": "Cadência de publicação",
+        "note": "Artigos publicados",
+        "aria": "Cadência de publicação por mês"
+      }
+    },
+    "actions": {
+      "readMore": "Leia mais"
+    },
+    "pagination": {
+      "label": "Paginação de notícias",
+      "previous": "Página anterior",
+      "next": "Próximo",
+      "pageLabel": "Página {{page}}"
+    },
+    "empty": {
+      "title": "Ainda não há postagens de notícias",
+      "body": "Novos artigos aparecerão aqui assim que forem publicados."
+    },
+    "articles": {
+      "1": {
+        "date": "30 de janeiro",
+        "category": "Administração",
+        "title": "O Primeiro Presidente do State Council insta os magistrados a adotarem a resolução...",
+        "excerpt": "Após a cerimónia de encerramento da assembleia geral ordinária do Conselho Superior da Administração..."
+      },
+      "2": {
+        "date": "30 de janeiro",
+        "category": "Administração",
+        "title": "REUNIÃO DE ORIENTAÇÃO NO STATE COUNCIL",
+        "excerpt": "Kinshasa, 18 de outubro de 2025: O State Council do Democratic Republic of Congo informa um pu..."
+      },
+      "3": {
+        "date": "30 de janeiro",
+        "category": "Administração",
+        "title": "REUNIÃO DE ORIENTAÇÃO NO STATE COUNCIL",
+        "excerpt": "Kinshasa, 18 de outubro de 2025: O State Council do Democratic Republic of Congo informa um pu..."
+      }
+    }
+  },
+  "steps": {
+    "hero": {
+      "report": {
+        "title": "RELATÓRIO",
+        "body": "A injustiça pode manifestar-se de muitas maneiras na nossa sociedade. Damos-lhe a oportunidade de denunciar todos os abusos de formulários."
+      },
+      "appointment": {
+        "title": "MARCAR<BR>ATENDIMENTO",
+        "body": "Para marcar uma reunião com o Conselho de Estado, preencha o formulário de pedido de agendamento. Certifique-se de que todos os campos obrigatórios estão corretamente preenchidos para que possamos processar o seu pedido com eficiência. Receberá um e-mail ou chamada de confirmação com a data e hora marcadas."
+      },
+      "appeal": {
+        "title": "RECURSO AO<BR>CONSELHO<BR>DE ESTADO",
+        "body1": "Um recurso ao Conselho de Estado é um meio jurídico-administrativo que permite contestar decisões e atos administrativos. O Conselho de Estado verifica se o direito administrativo foi corretamente aplicado e se os procedimentos adequados foram cumpridos.",
+        "body2": "O Conselho de Estado é acionado por requerimento das partes ou por declaração apresentada ao Conselho. Os recursos devem ser interpostos dentro dos prazos legais e confirmados por petição com documentos comprovativos."
+      }
+    },
+    "tabs": {
+      "report": "Relatório",
+      "appointment": "Marcar atendimento",
+      "appeal": "Apresentar um recurso"
+    },
+    "forms": {
+      "report": {
+        "title": "FORMULÁRIO DE RECLAMAÇÃO",
+        "subtitle": "GOSTARÍAMOS DE OUVIR AS SUAS QUESTÕES"
+      },
+      "appointment": {
+        "title": "MARCAR ATENDIMENTO",
+        "subtitle": "GOSTARÍAMOS DE AJUDÁ-LO COM A SUA QUESTÃO"
+      },
+      "appeal": {
+        "title": "FORMULÁRIO DE RECURSO",
+        "subtitle": "GOSTARÍAMOS DE OUVIR AS SUAS QUESTÕES"
+      },
+      "fullName": "Nome completo *",
+      "email": "E-mail *",
+      "department": "Departamento",
+      "chambers": {
+        "criminal": "Câmara Criminal",
+        "civil": "Câmara Cível",
+        "social": "Câmara Social",
+        "commercial": "Câmara Comercial"
+      },
+      "meeting": {
+        "placeholder": "Com quem deseja falar? *",
+        "firstPresident": "Primeiro Presidente",
+        "chamberPresident": "Presidente da Câmara",
+        "legalAdvisor": "Consultor Jurídico",
+        "clerk": "Escrivão do Tribunal"
+      },
+      "visit": {
+        "placeholder": "Quando pretende vir?",
+        "thisWeek": "Esta semana",
+        "nextWeek": "Próxima semana",
+        "thisMonth": "Este mês",
+        "nextMonth": "Próximo mês"
+      },
+      "message": "Mensagem *",
+      "submit": "ENVIAR MENSAGEM"
+    }
+  },
+  "appealSteps": {
+    "title": "COMO PREENCHER UM RECURSO",
+    "subtitle": "Siga estes passos para submeter o seu recurso ao Conselho de Estado",
+    "steps": {
+      "1": {
+        "title": "Prepare seus documentos",
+        "body": "Reúna a decisão administrativa impugnada, a sua identificação e quaisquer provas de apoio. Certifique-se de que todos os documentos estejam legíveis e devidamente certificados quando necessário."
+      },
+      "2": {
+        "title": "Elabore sua petição",
+        "body": "Escreva uma petição clara declarando os fatos, os motivos do recurso e a reparação que você busca. Incluir referências às disposições legais aplicáveis."
+      },
+      "3": {
+        "title": "Protocolar no Cartório",
+        "body": "Entregue a sua petição e os documentos comprovativos no Cartório do Conselho de Estado dentro dos prazos legais. Obtenha um comprovativo como prova de protocolo."
+      },
+      "4": {
+        "title": "Pague as taxas aplicáveis",
+        "body": "Pague todas as custas judiciais exigidas no escritório designado. Guarde o comprovante de pagamento em seus registros."
+      },
+      "5": {
+        "title": "Aguardar notificação",
+        "body": "O Registro irá notificá-lo sobre o número do processo e a data da audiência. Você pode ser obrigado a entregar cópias à parte contrária."
+      }
+    }
+  },
+  "haveQuestions": {
+    "title": "Tem dúvidas?",
+    "body": "A nossa equipa está aqui para ajudá-lo a compreender o processo de recurso.",
+    "cta": "Envie-nos um e-mail"
+  },
+  "faqs": {
+    "title": "PERGUNTAS FREQUENTES",
+    "items": {
+      "1": {
+        "question": "Qual o prazo para interposição de recurso?",
+        "answer": "Os recursos devem geralmente ser interpostos no prazo de dois meses a contar da notificação da decisão impugnada. Podem aplicar-se prazos específicos em função do tipo de ato administrativo. Consulte a legislação aplicável ou entre em contato com o Cartório para orientação."
+      },
+      "2": {
+        "question": "Posso me representar ou preciso de um advogado?",
+        "answer": "Você pode se representar perante o State Council. No entanto, a representação legal é recomendada para questões complexas. O Registro pode fornecer informações sobre opções de assistência jurídica, se você se qualificar."
+      },
+      "3": {
+        "question": "Que documentos preciso incluir?",
+        "answer": "Normalmente você precisa: da decisão impugnada, sua petição, identificação e documentos comprovativos. O Registro fornece uma lista de verificação mediante solicitação. Documentos adicionais podem ser necessários dependendo do seu caso."
+      },
+      "4": {
+        "question": "Quanto tempo leva o processo de recurso?",
+        "answer": "Os tempos de processamento variam dependendo da complexidade do caso e da carga de trabalho do tribunal. Você receberá uma data de audiência depois que seu caso for registrado. O Registro pode fornecer prazos estimados para casos semelhantes."
+      },
+      "5": {
+        "question": "Posso retirar meu recurso?",
+        "answer": "Sim. Você pode retirar seu recurso a qualquer momento antes da decisão final. Envie uma retirada por escrito ao Registro. Observe que a retirada pode ter implicações em quaisquer procedimentos relacionados."
+      }
+    }
+  },
+  "footer": {
+    "mainOffice": {
+      "title": "Escritório Central",
+      "address1": "7639, cruzamento das Avenidas Pumbu e Batonniers",
+      "address2": "Comuna de Gombe, Kinshasa",
+      "address3": "República Democrática do Congo",
+      "phone": "Tel: +243 (21) 0000000",
+      "email": "Email: info@conseildetatrdc.com"
+    },
+    "quickLinks": {
+      "title": "Links rápidos",
+      "about": "Sobre o Tribunal",
+      "jurisprudence": "Jurisprudência",
+      "filing": "Procedimentos de arquivamento",
+      "contact": "Contate-nos"
+    },
+    "resources": {
+      "title": "Recursos",
+      "legalDocs": "Documentos Legais",
+      "decisions": "Decisões judiciais",
+      "reports": "Relatórios Anuais",
+      "faqs": "Perguntas frequentes"
+    },
+    "connect": {
+      "title": "Conectar",
+      "facebook": "Facebook",
+      "twitter": "Twitter",
+      "instagram": "Instagram",
+      "linkedin": "LinkedIn"
+    },
+    "privacy": "Privacidade",
+    "copyright": "Copyright Conselho de Estado. Todos os direitos reservados"
+  },
+  "home": {
+    "hero": {
+      "learnMore": "Saber mais",
+      "slides": {
+        "0": {
+          "title": "CONSEIL D'ÉTAT - RENTRÉE JUDICIAIRE 2025-2026",
+          "subtitle": "PALAIS DU PEUPLE - 13 DE NOVEMBRO DE 2025",
+          "body": "O Conselho de Estado reuniu-se no Palácio do Povo para a abertura formal do ano judicial 2025-2026.",
+          "cta": "Saber mais"
+        },
+        "1": {
+          "title": "O ANO JUDICIAL ABRE NO STATE COUNCIL PARA O PERÍODO 2025 - 2026",
+          "subtitle": "CASA DA LEI E ORDEM",
+          "body": "Este vídeo cobre a abertura formal do ano judicial para 2025-2026. Na presença do Presidente Felix Tshisekedi, a sessão reuniu juízes seniores e funcionários jurídicos.",
+          "cta": "Assista ao processo ao vivo no Youtube"
+        },
+        "2": {
+          "title": "FORTALECENDO A INDEPENDÊNCIA E A RESPONSABILIDADE JUDICIAIS",
+          "subtitle": "CASA DA LEI E ORDEM",
+          "body": "O STATE COUNCIL continua a defender os princípios de justiça, imparcialidade e Estado de direito. Temos o compromisso de garantir transparência e integridade.",
+          "cta": "Saiba mais sobre nossa missão"
+        },
+        "3": {
+          "title": "AVANÇO DA EXCELÊNCIA JURÍDICA NA REPÚBLICA DEMOCRÁTICA DO CONGO",
+          "subtitle": "CASA DA LEI E ORDEM",
+          "body": "Através de uma formação jurídica rigorosa e da adesão às melhores práticas internacionais, esforçamo-nos por manter os mais elevados padrões de excelência judicial.",
+          "cta": "Explore nossas iniciativas"
+        }
+      }
+    },
+    "quickLinks": {
+      "items": {
+        "news": {
+          "alt": "Notícias",
+          "title": "NOTÍCIAS",
+          "body": "Mantenha-se informado sobre as principais decisões e eventos.",
+          "action": "Ler"
+        },
+        "excerpts": {
+          "alt": "Trechos",
+          "title": "EXCERTOS DE PAUTAS",
+          "body": "Verifique os horários das audiências e os casos pendentes.",
+          "action": "Saber mais"
+        },
+        "report": {
+          "alt": "Relatório",
+          "title": "RELATÓRIO",
+          "body": "Relate atividades suspeitas ou ilegais com segurança.",
+          "action": "Registrar um relatório"
+        },
+        "appointment": {
+          "alt": "Marcar consulta",
+          "title": "MARCAR ATENDIMENTO",
+          "body": "Agende consultas com funcionários judiciais.",
+          "action": "Marcar agora"
+        }
+      }
+    },
+    "keyFacts": {
+      "title": "Fatos principais",
+      "subtitle": "Resumo do volume de casos, tempo de processamento e combinação de decisões.",
+      "cards": {
+        "volume": {
+          "title": "Volume de casos",
+          "note": "Últimos 6 meses",
+          "aria": "Volume de casos por mês"
+        },
+        "processing": {
+          "title": "Tempo de processamento",
+          "note": "Média de dias",
+          "aria": "Tempo médio de processamento por trimestre"
+        },
+        "decisions": {
+          "title": "Decisões por tipo",
+          "note": "Ano atual",
+          "aria": "Decisões por tipo"
+        }
+      }
+    },
+    "offer": {
+      "title": "O QUE OFERECEMOS",
+      "subtitle": "Fornecemos soluções jurídicas personalizadas para atender às suas necessidades exclusivas, garantindo que seus direitos sejam protegidos e que a justiça seja feita.",
+      "cards": {
+        "1": {
+          "title": "Autoridade Judiciária Suprema",
+          "body": "Na qualidade de tribunal de mais alta instância do sistema judicial ordinário, o State Council garante uma interpretação e aplicação uniformes da lei em todo o Democratic Republic of Congo."
+        },
+        "2": {
+          "title": "Segurança Jurídica",
+          "body": "Por meio de nossa jurisprudência e decisões, estabelecemos precedentes legais que norteiam os tribunais inferiores e garantem consistência na aplicação da justiça."
+        },
+        "3": {
+          "title": "Excelência Judicial",
+          "body": "Nossos magistrados e conselheiros são selecionados com base no mérito, garantindo os mais altos padrões de especialização jurídica, integridade e compromisso com a justiça."
+        },
+        "4": {
+          "title": "Cooperação Internacional",
+          "body": "Participamos ativamente no diálogo com órgãos judiciais internacionais e mantemos a cooperação com tribunais francófonos e africanos."
+        }
+      }
+    },
+    "expertise": {
+      "title": "CAMPOS DE EXPERIÊNCIA",
+      "subtitle": "O STATE COUNCIL exerce jurisdição sobre diversas questões jurídicas como o tribunal supremo do sistema judicial ordinário.",
+      "stats": {
+        "domains": {
+          "value": "6",
+          "label": "domínios"
+        },
+        "decisions": {
+          "value": "120+",
+          "label": "decisões/ano"
+        },
+        "magistrates": {
+          "value": "30+",
+          "label": "magistrados"
+        }
+      },
+      "cta": "Ver detalhes",
+      "areas": {
+        "civil": {
+          "title": "Direito Civil e Comercial",
+          "desc": "Contratos, obrigações e questões de propriedade em todo o país.",
+          "items": {
+            "1": "Recursos dos Tribunais de Recurso",
+            "2": "Disputas comerciais e contratos",
+            "3": "Questões de propriedade e herança"
+          }
+        },
+        "family": {
+          "title": "Direito da Família",
+          "desc": "Proteger os direitos da família e resolver disputas delicadas.",
+          "items": {
+            "1": "Apelações de casamento e divórcio",
+            "2": "Disputas pela custódia dos filhos",
+            "3": "Sucessão é importante"
+          }
+        },
+        "public": {
+          "title": "Direito Público",
+          "desc": "Supervisão da ação pública e salvaguardas constitucionais.",
+          "items": {
+            "1": "Casos de privilégio jurisdicional",
+            "2": "Processo de altos funcionários",
+            "3": "Questões constitucionais"
+          }
+        },
+        "labor": {
+          "title": "Trabalho e Emprego",
+          "desc": "Disputas trabalhistas e proteção dos direitos dos trabalhadores.",
+          "items": {
+            "1": "Recursos de disputa trabalhista",
+            "2": "Questões contratuais de trabalho",
+            "3": "Proteção dos direitos dos trabalhadores"
+          }
+        },
+        "criminal": {
+          "title": "Direito Penal",
+          "desc": "Revisão de decisões criminais e salvaguardas processuais.",
+          "items": {
+            "1": "Recursos criminais para o State Council",
+            "2": "Revisões de erros processuais",
+            "3": "Aplicação do direito penal"
+          }
+        },
+        "property": {
+          "title": "Direitos de propriedade",
+          "desc": "Propriedade de terras, imóveis e transações imobiliárias.",
+          "items": {
+            "1": "Disputas imobiliárias",
+            "2": "A propriedade da terra é importante",
+            "3": "Transações de propriedade"
+          }
+        }
+      }
+    },
+    "contact": {
+      "address": {
+        "title": "Endereço do escritório",
+        "body": "7639, cruzamento das avenidas Pumbu e Batonniers no município de Gombe/Kinshasa-DRC"
+      },
+      "phone": {
+        "title": "Número do escritório",
+        "body": "+243 000000000"
+      },
+      "email": {
+        "title": "E-mail do escritório",
+        "body": "info@conseildetatrdc.com"
+      }
+    },
+    "president": {
+      "imageAlt": "Presidente",
+      "cta": "Saber mais",
+      "slides": {
+        "1": {
+          "title": "O PRIMEIRO PRESIDENTE DO STATE COUNCIL",
+          "paragraphs": {
+            "1": "Na qualidade de membro do terceiro escalão do Conselho Superior da Magistratura Judicial do DRC, o Primeiro Presidente do STATE COUNCIL, Brigitte Nsensele Wa Nsensele, doou sangue na quinta-feira, 27 de fevereiro, em solidariedade às vítimas da agressão do Rwandan na zona oriental do país.",
+            "2": "Para cada cidadão congolês democrático, contribuir para o esforço de guerra é um dever cívico. O Judiciário não é exceção.",
+            "3": "Durante mais de três décadas, o DRC sofreu agressões perpetradas por Rwanda e outros grupos armados negativos, resultando em milhões de mortes, dezenas de milhares de pessoas deslocadas e numa situação humanitária deplorável."
+          }
+        },
+        "2": {
+          "title": "LIDERANÇA E REFORMA JUDICIAL",
+          "paragraphs": {
+            "1": "Sob a liderança do Primeiro Presidente, o STATE COUNCIL iniciou reformas judiciais abrangentes destinadas a modernizar o sistema judicial.",
+            "2": "As reformas incluem a digitalização dos registos judiciais, a implementação de sistemas de gestão de processos e programas de formação para juízes e funcionários judiciais.",
+            "3": "Estas iniciativas reflectem o compromisso do Tribunal com a transparência, a eficiência e a responsabilização na administração da justiça."
+          }
+        },
+        "3": {
+          "title": "COLABORAÇÃO INTERNACIONAL",
+          "paragraphs": {
+            "1": "O STATE COUNCIL envolve-se ativamente com instituições judiciais internacionais e participa em fóruns globais para partilhar experiências.",
+            "2": "Através de parcerias com tribunais em França, Bélgica e outros países francófonos, o Tribunal garante que permanece na vanguarda da evolução jurídica.",
+            "3": "Este envolvimento internacional fortalece o sistema judicial do DRC e aumenta a sua capacidade de fazer justiça de acordo com os padrões internacionais."
+          }
+        }
+      }
+    },
+    "newsletter": {
+      "title": "NOTÍCIAS E ARTIGOS",
+      "readMore": "Leia mais",
+      "cta": "Saber mais",
+      "items": {
+        "1": {
+          "alt": "Recursos",
+          "date": "15 de novembro de 2025 | Relatório de decisão",
+          "title": "Navegando em recursos: aconselhamento jurídico para um processo tranquilo"
+        },
+        "2": {
+          "alt": "State Council procedimentos",
+          "date": "22 de outubro de 2025 | Atualização do Tribunal",
+          "title": "Principais considerações em procedimentos State Council"
+        },
+        "3": {
+          "alt": "Processual",
+          "date": "18 de outubro de 2025 | Decisão judicial",
+          "title": "Mudanças Recentes no Direito Processual"
+        },
+        "4": {
+          "alt": "Direitos",
+          "date": "12 de outubro de 2025 | Atualização jurídica",
+          "title": "Compreendendo seus direitos no processo de apelação"
+        }
+      }
+    }
+  },
+  "about": {
+    "hero": {
+      "title": "ENTENDENDO A MAIS ALTA JURISDIÇÃO DA ORDEM ADMINISTRATIVA NA REPÚBLICA DEMOCRÁTICA DO CONGO"
+    },
+    "intro": {
+      "title": "ENTENDENDO A MAIS ALTA JURISDIÇÃO DA ORDEM ADMINISTRATIVA NA REPÚBLICA DEMOCRÁTICA DO CONGO",
+      "body": "O artigo 151.º, n.º 1, da Constituição do DRC, de 18 de fevereiro de 2006, estabelece um sistema judicial administrativo composto por tribunais administrativos e tribunais com tutela do State Council. O artigo 82.º da Lei Orgânica n.º 13/011-B, de 11 de abril de 2013, que estabelece a organização, composição e funcionamento dos tribunais administrativos, prevê a existência de um State Council com sede ordinária na capital do Democratic Republic of Congo. Sua capacidade jurisdicional poderá ser exercida em outro local. Historicamente, o State Council nesta breve apresentação traça a sua história e raízes na nossa instituição judicial. Criado por Decreto-Lei de 31 de janeiro de 1968, o State Council encontra a sua marca distintiva há mais de um século. Na verdade, foi oito anos depois de conquistar a independência em 1960 que o país criou este State Council para regular os recursos administrativos. Só depois de um século, em 2015, o Supremo Tribunal Administrativo. Este Tribunal deixou de existir na sequência da Constituição de 2006 e da sua criação, que declarou nulas todas as disposições contrárias e estipulou no seu artigo 223.º que os acórdãos e despachos proferidos antes da promulgação da Constituição em vigor que tenha sido aprovada e os tribunais daqueles proferidos em extrema em virtude de maior especialização, e assentados em caso precedente, como instrumento na especialização de 18 de Fevereiro de 2006, o Supremo Tribunal Administrativo deixou de existir definitivamente em 11 de Abril, 2013 com a entrada em vigor da Lei Orgânica n.º 13/011-B, de 11 de abril de 2013, que estabelece a organização, composição e funcionamento dos tribunais administrativos. Nos termos do n.º 3 do artigo 151.º da Constituição que estabelece a autoridade reguladora do exercício das competências do antigo Supremo Tribunal Administrativo. Os tribunais administrativos e os tribunais que compõem o sistema judicial administrativo do Congo."
+    },
+    "rubrics": {
+      "legalBasis": "Base jurídica",
+      "organization": "Organização",
+      "mission": "Missão",
+      "competences": "Competências",
+      "procedureBeforeCouncil": "Procedimento antes do State Council"
+    },
+    "legal": {
+      "title": "ACESSE OS PRINCIPAIS TEXTOS LEGAIS E REGULATÓRIOS<BR>DO STATE COUNCIL",
+      "docs": {
+        "1": "Lei Orgânica N° 13/011-B de 11 de abril de 2013 que contém a organização, composição e funcionamento dos foros ordinários",
+        "2": "Decreto N° 13/046 de 25 de setembro de 2013 regulamenta as câmaras de State Council",
+        "3": "Decreto-Lei n.º 13/018 relativo às remunerações e subsídios dos magistrados"
+      },
+      "detail": {
+        "title": "Lei Orgânica N° 13/011-B de 11 de abril de 2013 que contém a organização, composição e funcionamento dos foros administrativos",
+        "paragraph1": "O conteúdo desta Lei nº 13/011-B, de 11 de abril de 2013, que contém a organização, composição e funcionamento dos foros administrativos, foi inserido num contexto judicial administrativo geral.",
+        "paragraph2": "Cada um dos artigos da Lei está escrito nas principais disposições do Título I dos magistrados:",
+        "list1": {
+          "1": "CAPÍTULO I: Disposições gerais",
+          "2": "CAPÍTULO II: Nomeação e posse dos magistrados e escrivães",
+          "3": "CAPÍTULO III: do regime jurídico",
+          "4": "CAPÍTULO IV: Poderes, garantias e limites dos Magistrados",
+          "5": "CAPÍTULO V: Disciplina"
+        },
+        "paragraph3": "É regido pelo Título II do State Council Artigo 81 ao Artigo 95 que cada artigo trata especificamente do State Council nos seguintes capítulos:",
+        "list2": {
+          "1": "CAPÍTULO I: Regime jurídico",
+          "2": "CAPÍTULO II: Instalação, composição do State Council",
+          "3": "CAPÍTULO III: Diferentes formações, funcionamento e pessoal do State Council"
+        },
+        "paragraph4": "A composição do artigo 82 dispõe sobre a composição do State Council, e relaciona o pessoal que auxilia os magistrados e as atribuições do pessoal auxiliar para o cumprimento do mandato administrativo.",
+        "paragraph5": "O artigo 83 previa a atribuição do State Council, sendo um deles: Recursos em matéria administrativa; Exerce a disciplina de juízes e auxiliares judiciais na sua capacidade jurisdicional; Recebe o juramento dos magistrados e oficiais de justiça da jurisdição administrativa; Emite parecer jurídico na presença dos juízes nomeados ou da autoridade jurisdicional. O artigo 84 dispunha sobre a composição de diferentes seções e formação do State Council; O artigo 88 previa a atribuição na deliberação da câmara, cada câmara constituirá uma formação jurisdicional para cumprimento do mandato do State Council, podendo exercer diferentes atribuições somente se o quórum for alcançado.",
+        "paragraph6": "O quórum exigido no artigo é atingido quando todas as câmaras estiverem assim compostas: o presidente ou vice-presidente de câmara e outros dois magistrados, bem como um consultor jurídico e o escrivão.",
+        "paragraph7": "No que diz respeito ao quórum judicial previsto no artigo 89.º, cada câmara poderá constituir uma formação jurisdicional para o cumprimento do mandato do State Council e exercer diferentes atribuições apenas se o quórum for atingido.",
+        "paragraph8": "O quórum exigido no artigo é atingido quando todas as câmaras estiverem assim compostas: o presidente ou vice-presidente de câmara e outros dois magistrados, bem como um consultor jurídico e o escrivão. Com a adição do interessado sentado durante o procedimento com sua assistência se necessário e no momento das deliberações à porta fechada, com a participação do Procurador-Geral nas deliberações com a participação do escrivão é feita pela instrução do assunto.",
+        "paragraph9": "Depois de ler e ter explicado os textos legais às jurisdições nesta plataforma, poderá solicitar o seu serviço diretamente contactando-nos por email ou por telefone e assim recebê-los."
+      }
+    }
+  },
+  "reforms": {
+    "hero": {
+      "title": "REFORMAS<BR>PROPOSTAS",
+      "body": "Modernizar o sistema judicial através de reformas estratégicas que melhorem a eficiência, a transparência e o acesso à justiça para todos os cidadãos congoleses."
+    },
+    "building": {
+      "tag": "MODERNIZAÇÃO JUDICIAL",
+      "title": "CONSTRUINDO UM SISTEMA DE JUSTIÇA MAIS FORTE",
+      "body": "Na sequência da Constituição de 2006, o STATE COUNCIL iniciou reformas abrangentes para reforçar a independência judicial, melhorar o acesso à justiça e alinhar-se com as normas internacionais. Estas iniciativas centram-se no fortalecimento institucional, na transformação digital e na capacitação."
+    },
+    "initiatives": {
+      "tag": "ROTEIRO DE TRANSFORMAÇÃO",
+      "title": "INICIATIVAS DE REFORMA ESTRATÉGICA",
+      "body": "Uma abordagem abrangente em cinco fases para modernizar o nosso sistema judicial, garantindo a excelência em todas as fases da transformação.",
+      "badges": {
+        "critical": "Prioridade Crítica",
+        "high": "Alta prioridade",
+        "medium": "Prioridade Média"
+      },
+      "steps": {
+        "1": {
+          "title": "Independência Institucional",
+          "body": "Reforçar a independência judicial através de salvaguardas constitucionais e autonomia financeira."
+        },
+        "2": {
+          "title": "Acesso à Justiça",
+          "body": "Expandir os serviços de assistência jurídica e estabelecer pontos de acesso regionais em todo o país."
+        },
+        "3": {
+          "title": "Cooperação Internacional",
+          "body": "Aprofundar parcerias com órgãos judiciais internacionais para troca de conhecimento."
+        },
+        "4": {
+          "title": "Transformação Digital",
+          "body": "Implementação de sistemas modernos de gerenciamento de casos e bancos de dados de jurisprudência on-line."
+        },
+        "5": {
+          "title": "Capacitação",
+          "body": "Formação contínua de magistrados e capacidades avançadas de investigação jurídica."
+        }
+      }
+    },
+    "stakeholders": {
+      "title": "PRINCIPAIS INTERESSADOS",
+      "subtitle": "LIDERANÇA DA REFORMA",
+      "roles": {
+        "president": "Presidente",
+        "vicePresident": "Vice-Presidente",
+        "chiefMagistrate": "Magistrado Chefe",
+        "internationalRelations": "Relações Internacionais"
+      }
+    }
+  },
+  "international": {
+    "hero": {
+      "title": "RELAÇÕES<BR>INTERNACIONAIS",
+      "body": "No contexto da internacionalização do direito e da justiça, o STATE COUNCIL do Democratic Republic of Congo não está isolado deste ambiente. Participa ativamente no diálogo dos juízes, mantendo um elevado nível de cooperação no âmbito da Associação dos Supremos Tribunais dos Países de Língua Francesa (AHJUCAF) e da Associação Africana dos Supremos Tribunais Francófonos (AA-HJF)."
+    },
+    "stats": {
+      "associations": "Principais Associações Judiciárias Internacionais",
+      "partners": "Países Parceiros e Supremos Tribunais",
+      "exchanges": "Intercâmbios e conferências judiciais anuais"
+    },
+    "networks": {
+      "title": "REDES JUDICIAIS INTERNACIONAIS",
+      "subtitle": "O Tribunal mantém relações privilegiadas com as principais associações dos tribunais supremos francófonos e africanos",
+      "ahjucaf": {
+        "name": "Associação de Supremos Tribunais em Francês",
+        "body": "Uma plataforma de intercâmbio e cooperação entre os tribunais supremos francófonos, facilitando o diálogo judicial, a partilha de jurisprudência e o reforço das capacidades institucionais nas jurisdições francófonas em todo o mundo."
+      },
+      "aahjf": {
+        "name": "Associação Africana dos Supremos Tribunais Francófonos",
+        "body": "Uma plataforma de intercâmbio e cooperação entre os tribunais supremos francófonos, facilitando o diálogo judicial, a partilha de jurisprudência e o reforço das capacidades institucionais nas jurisdições francófonas em todo o mundo."
+      }
+    },
+    "domains": {
+      "title": "DOMÍNIOS DE COOPERAÇÃO INTERNACIONAL",
+      "subtitle": "O nosso envolvimento internacional traduz-se na participação ativa em diversas iniciativas destinadas a fortalecer a qualidade da justiça e o Estado de direito",
+      "dialogue": {
+        "title": "Diálogo Judicial",
+        "body": "Intercâmbios regulares sobre jurisprudência, melhores práticas e desafios comuns enfrentados pelos tribunais supremos, promovendo a aprendizagem mútua e a interpretação jurídica harmonizada."
+      },
+      "assistance": {
+        "title": "Assistência Técnica",
+        "body": "Cooperação técnica para a modernização dos sistemas judiciais, digitalização e melhoria do acesso à justiça através de experiências partilhadas."
+      },
+      "capacity": {
+        "title": "Capacitação",
+        "body": "Programas de formação, seminários e workshops para reforçar as competências dos magistrados e do pessoal judicial através de conhecimentos especializados internacionais."
+      },
+      "forums": {
+        "title": "Fóruns Internacionais",
+        "body": "Participação ativa em fóruns internacionais para contribuir para o desenvolvimento do direito internacional e regional e das normas judiciais."
+      }
+    },
+    "collaboration": {
+      "title": "Interessado em colaboração?",
+      "body": "Estamos abertos a parcerias institucionais e intercâmbios com outras jurisdições nacionais e internacionais comprometidas com o fortalecimento dos sistemas de justiça.",
+      "cta": "CONTATE-NOS"
+    }
+  },
+  "audiences": {
+    "hero": {
+      "title": "AUDIÊNCIAS E EXCERTOS DE PAUTA",
+      "body": "Acesse agendas de audiências, extratos de listas e decisões recentes."
+    },
+    "understanding": {
+      "title": "COMPREENDER AS AUDIÊNCIAS",
+      "body": "Encontre orientações sobre como as audiências são organizadas e como consultar os lançamentos recentes."
+    },
+    "metrics": {
+      "title": "MÉTRICAS DE AUDIÊNCIAS",
+      "subtitle": "Volume mensal de audiências e resultados ao longo do tempo.",
+      "volume": {
+        "title": "Volume mensal de audiências",
+        "note": "Últimos 6 meses",
+        "aria": "Volume mensal de audiências"
+      },
+      "outcomes": {
+        "title": "Resultados ao longo do tempo",
+        "note": "Combinação de decisão",
+        "aria": "Resultados das audiências ao longo do tempo"
+      }
+    },
+    "recent": {
+      "title": "EXCERTOS DE PAUTA RECENTES",
+      "subtitle": "ÚLTIMOS EXCERTOS DE AUDIÊNCIA"
+    },
+    "documents": {
+      "civil": {
+        "label": "Civil",
+        "title": "Trechos de audiência da Câmara Cível"
+      },
+      "criminal": {
+        "label": "Criminal",
+        "title": "Trechos de audiência da Câmara Criminal"
+      },
+      "social": {
+        "label": "Social",
+        "title": "Trechos de Audiências da Câmara Social"
+      },
+      "general": {
+        "label": "Geral",
+        "title": "Trechos de Audiências da Câmara Geral"
+      }
+    },
+    "actions": {
+      "downloadPdf": "BAIXAR PDF"
+    },
+    "assistance": {
+      "title": "Precisa de ajuda?",
+      "body": "Contate o State Council para obter ajuda no acesso a documentos ou agendas.",
+      "cta": "CONTATE-NOS"
+    }
+  },
+  "organization": {
+    "hero": {
+      "title": "ORGANIZAÇÃO<BR>DO STATE COUNCIL"
+    },
+    "firstPresident": {
+      "alt": "Primeiro Presidente",
+      "title": "O PRIMEIRO PRESIDENTE",
+      "body": "O Primeiro Presidente dirige o State Council, preside as suas sessões e zela pelo bom funcionamento da instituição."
+    },
+    "firstPresidents": {
+      "title": "PRIMEIROS PRESIDENTES",
+      "honoraryTitle": "Primeiro Presidente Honorário e Emérito: 2018 - 2022",
+      "honoraryTitleSecond": "Presidente Honorário e Emérito: 2022 - 2025",
+      "honoraryTitleThird": "Primeiro Presidente: 2025 - presente",
+      "placeholderName": "Primeiro Presidente {{index}}",
+      "placeholderSubtitle": "Espaço para fotos reservado",
+      "photoLabel": "Foto {{index}}"
+    },
+    "seniorLabel": "MAGISTRADOS SÊNIOR",
+    "chart": {
+      "title": "ORGANOGRAMA",
+      "subtitle": "Visão geral da estrutura de liderança e divisões principais do State Council.",
+      "interactiveTitle": "ORGOGRAMA INTERATIVO",
+      "interactiveSubtitle": "Explore a hierarquia e a estrutura de relatórios.",
+      "aria": "Organograma interativo",
+      "peopleTitle": "LIDERANÇA POR NOME",
+      "peopleSubtitle": "Nomes do primeiro presidente, presidentes e conselheiros.",
+      "peopleFirstPresidentName": "Brigitte Nsensele Wa Nsensele",
+      "namedPhotoRoles": {
+        "firstPresident": "Primeiro Presidente",
+        "consultative": "Presidente da Seção Consultiva",
+        "contentieux": "Presidente da Secção de Contencioso"
+      },
+      "roles": {
+        "firstPresident": "Primeiro Presidente",
+        "ppce": "P.P.C.E",
+        "president": "Presidente",
+        "advisor": "Conselheiro"
+      },
+      "nodes": {
+        "firstPresident": "Primeiro Presidente",
+        "plenary": "Assembleia Plenária",
+        "councilOffice": "Gabinete do Conselho",
+        "registry": "Registro e Arquivos",
+        "civilChamber": "Câmara Cível",
+        "criminalChamber": "Câmara Criminal",
+        "commercialChamber": "Câmara Comercial",
+        "socialChamber": "Câmara Social",
+        "consultativeSection": "Seção Consultiva",
+        "litigationSection": "Seção de Contencioso"
+      }
+    },
+    "filters": {
+      "searchLabel": "Pesquisar membros",
+      "searchPlaceholder": "Pesquise por nome ou título",
+      "roleLabel": "Papel",
+      "all": "Todos",
+      "presidents": "Presidentes",
+      "advisors": "Conselheiros",
+      "summary": "Mostrando {{presidents}} presidentes e {{advisors}} conselheiros"
+    },
+    "presidents": {
+      "title": "OS PRESIDENTES",
+      "empty": "Nenhum presidente corresponde à sua pesquisa."
+    },
+    "advisors": {
+      "title": "OS CONSELHEIROS",
+      "empty": "Nenhum consultor corresponde à sua pesquisa."
+    },
+    "members": {
+      "learnMore": "Saber mais",
+      "loadMore": "Carregar mais"
+    },
+    "services": {
+      "overviewTitle": "VISÃO GERAL DOS SERVIÇOS",
+      "learnMore": "Saber mais",
+      "registry": {
+        "title": "Registro",
+        "body": "Acesse arquivos, status do caso e registros oficiais."
+      },
+      "docs": {
+        "title": "Documentos",
+        "body": "Encontre formulários, textos jurídicos e guias de procedimentos."
+      },
+      "tv": {
+        "title": "TV DO CONSELHO",
+        "body": "Assista a audiências, anúncios e atualizações."
+      },
+      "title": "NOSSOS SERVIÇOS",
+      "subtitle": "Explore as divisões e escritórios que apoiam o trabalho do State Council.",
+      "divisions": {
+        "title": "Divisões",
+        "rooms": "Salas e câmaras",
+        "council": "Escritório do conselho",
+        "registers": "Registros e arquivos"
+      },
+      "rooms": {
+        "title": "Salas",
+        "body": "Salas administrativas e judiciais que organizam deliberações e audiências."
+      },
+      "council": {
+        "title": "Conselho",
+        "body": "O escritório que coordena a governança política e institucional."
+      },
+      "registers": {
+        "title": "Registros",
+        "body": "Unidades que gerenciam registros, arquivos e arquivamentos oficiais."
+      },
+      "details": {
+        "chambers": {
+          "title": "As Câmaras",
+          "item1": "Câmara Cível",
+          "item2": "Câmara Criminal",
+          "item3": "Câmara Comercial",
+          "item4": "Câmara Social",
+          "body1": "Cada câmara trata de assuntos especializados dentro de sua jurisdição.",
+          "body2": "As Câmaras reúnem-se em formações de acordo com a legislação aplicável."
+        },
+        "rooms": {
+          "title": "Salas e Câmaras",
+          "body1": "As salas organizam audiências e preparam arquivos de casos.",
+          "body2": "Elas garantem o cumprimento dos procedimentos e o agendamento.",
+          "body3": "Apoiam as deliberações com coordenação administrativa.",
+          "body4": "Elas garantem o bom andamento dos casos até às decisões finais."
+        },
+        "council": {
+          "title": "Gabinete do Conselho",
+          "body1": "O Gabinete do Conselho assegura a coordenação estratégica.",
+          "body2": "Prepara sessões plenárias e orientações políticas.",
+          "body3": "Supervisiona a implementação de decisões e reformas.",
+          "body4": "Apoia a comunicação e as relações institucionais."
+        },
+        "registers": {
+          "title": "Registros e Arquivos",
+          "body1": "Os registros recebem e registram arquivamentos e decisões.",
+          "body2": "Eles mantêm arquivos para preservação a longo prazo.",
+          "body3": "Eles fornecem cópias autenticadas mediante solicitação.",
+          "body4": "Eles gerenciam a indexação e recuperação de arquivos de casos.",
+          "body5": "Eles garantem a confidencialidade e integridade dos registros."
+        }
+      }
+    }
+  }
+}
