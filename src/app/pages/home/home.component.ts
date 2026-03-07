@@ -14,7 +14,7 @@ import { HttpClient } from '@angular/common/http';
 import { RouterLink } from '@angular/router';
 import { I18nPipe } from '../../i18n/i18n.pipe';
 import { I18nService } from '../../i18n/i18n.service';
-import Highcharts from 'highcharts';
+import type { Chart } from 'highcharts';
 import { FooterComponent } from '../../components/footer/footer.component';
 
 interface HeroSlide {
@@ -31,6 +31,8 @@ interface PresidentSlide {
   image: string;
   paragraphKeys: string[];
 }
+
+type HighchartsStatic = typeof import('highcharts');
 
 @Component({
   selector: 'app-home',
@@ -58,7 +60,12 @@ interface PresidentSlide {
       <!-- ═══ HERO ═══ -->
       <section class="hero">
         <div
-          class="hero-bg"
+          class="hero-bg hero-bg-prev"
+          [class.fade-out]="isSlideTransitioning()"
+          [style.background-image]="'url(' + heroSlides[prevHeroSlide()].image + ')'"
+        ></div>
+        <div
+          class="hero-bg hero-bg-current"
           [style.background-image]="'url(' + heroSlides[currentSlide()].image + ')'"
         ></div>
         <div class="hero-fog"></div>
@@ -1379,8 +1386,19 @@ interface PresidentSlide {
         inset: -5%;
         background-size: cover;
         background-position: center;
-        transition: background-image 0.8s ease;
+        transition: opacity 0.9s ease;
         transform: translateZ(-40px) scale(1.1);
+        z-index: 0;
+        will-change: opacity;
+      }
+      .hero-bg-prev {
+        opacity: 1;
+      }
+      .hero-bg-prev.fade-out {
+        opacity: 0;
+      }
+      .hero-bg-current {
+        opacity: 1;
       }
       .hero-fog {
         position: absolute;
@@ -1391,16 +1409,17 @@ interface PresidentSlide {
           rgba(0, 18, 45, 0.72) 55%,
           rgba(0, 18, 45, 0.4) 100%
         );
+        z-index: 1;
       }
       .hero-canvas {
         position: absolute;
         inset: 0;
         pointer-events: none;
-        z-index: 1;
+        z-index: 2;
       }
       .hero-body {
         position: relative;
-        z-index: 2;
+        z-index: 3;
         height: 100%;
         display: flex;
         align-items: center;
@@ -1533,7 +1552,7 @@ interface PresidentSlide {
         bottom: 32px;
         left: 0;
         right: 0;
-        z-index: 3;
+        z-index: 4;
       }
       .hero-controls {
         display: flex;
@@ -5382,8 +5401,16 @@ interface PresidentSlide {
 export class HomeComponent implements OnInit, AfterViewInit {
   private heroIntervalId?: number;
   private presIntervalId?: number;
+  private slideTransitionTimeoutId?: number;
+  private heroTransitionToken = 0;
   private resizeObserver?: ResizeObserver;
-  private charts: Highcharts.Chart[] = [];
+  private charts: Chart[] = [];
+  private highchartsRoot?: HighchartsStatic;
+  private chartLoadObserver?: IntersectionObserver;
+  private chartsInitialized = false;
+  private heroCanvasRafId?: number;
+  private heroCanvasResizeHandler?: () => void;
+  private heroCanvasVisibilityHandler?: () => void;
   private readonly onVisibility = () => {
     if (!document.hidden) this.charts.forEach((c) => c.reflow());
   };
@@ -5400,6 +5427,8 @@ export class HomeComponent implements OnInit, AfterViewInit {
   @ViewChild('decisionsTypeChart', { static: true }) chartC!: ElementRef<HTMLDivElement>;
   @ViewChild('heroCanvas') heroCanvas!: ElementRef<HTMLCanvasElement>;
   currentSlide = signal(0);
+  prevHeroSlide = signal(0);
+  isSlideTransitioning = signal(false);
   currentPresSlide = signal(0);
   isPageLoaded = signal(false);
   readonly newsletterPosts = signal<HomeNewsPost[]>([]);
@@ -5455,22 +5484,41 @@ export class HomeComponent implements OnInit, AfterViewInit {
     this.destroyRef.onDestroy(() => {
       if (this.heroIntervalId) window.clearInterval(this.heroIntervalId);
       if (this.presIntervalId) window.clearInterval(this.presIntervalId);
+      if (this.slideTransitionTimeoutId) window.clearTimeout(this.slideTransitionTimeoutId);
     });
   }
 
   ngAfterViewInit() {
-    this.renderCharts();
     this.setupObservers();
+    this.initChartsOnView();
     this.initHeroCanvas();
     this.destroyRef.onDestroy(() => {
       this.charts.forEach((c) => c.destroy());
       this.charts = [];
+      this.chartLoadObserver?.disconnect();
+      this.chartLoadObserver = undefined;
+      if (this.heroCanvasRafId) {
+        cancelAnimationFrame(this.heroCanvasRafId);
+        this.heroCanvasRafId = undefined;
+      }
+      if (this.heroCanvasResizeHandler) {
+        window.removeEventListener('resize', this.heroCanvasResizeHandler);
+        this.heroCanvasResizeHandler = undefined;
+      }
+      if (this.heroCanvasVisibilityHandler) {
+        document.removeEventListener('visibilitychange', this.heroCanvasVisibilityHandler);
+        this.heroCanvasVisibilityHandler = undefined;
+      }
       document.removeEventListener('visibilitychange', this.onVisibility);
       this.resizeObserver?.disconnect();
     });
   }
 
   private initHeroCanvas() {
+    if (typeof window === 'undefined' || typeof document === 'undefined') return;
+    const prefersReducedMotion =
+      window.matchMedia?.('(prefers-reduced-motion: reduce)').matches ?? false;
+    if (prefersReducedMotion) return;
     const canvas = this.heroCanvas?.nativeElement;
     if (!canvas) return;
     const ctx = canvas.getContext('2d');
@@ -5513,13 +5561,35 @@ export class HomeComponent implements OnInit, AfterViewInit {
         ctx.fillStyle = `rgba(184,134,11,${p.alpha})`;
         ctx.fill();
       });
-      requestAnimationFrame(draw);
+      this.heroCanvasRafId = requestAnimationFrame(draw);
     };
-    draw();
-    window.addEventListener('resize', () => {
+
+    const start = () => {
+      if (this.heroCanvasRafId || document.hidden) return;
+      this.heroCanvasRafId = requestAnimationFrame(draw);
+    };
+
+    const stop = () => {
+      if (!this.heroCanvasRafId) return;
+      cancelAnimationFrame(this.heroCanvasRafId);
+      this.heroCanvasRafId = undefined;
+    };
+
+    this.heroCanvasResizeHandler = () => {
       W = canvas.width = canvas.offsetWidth;
       H = canvas.height = canvas.offsetHeight;
-    });
+    };
+    window.addEventListener('resize', this.heroCanvasResizeHandler);
+
+    this.heroCanvasVisibilityHandler = () => {
+      if (document.hidden) {
+        stop();
+      } else {
+        start();
+      }
+    };
+    document.addEventListener('visibilitychange', this.heroCanvasVisibilityHandler);
+    start();
   }
 
   tilt(e: MouseEvent) {
@@ -5605,13 +5675,15 @@ export class HomeComponent implements OnInit, AfterViewInit {
   }
 
   nextSlide() {
-    this.currentSlide.update((c) => (c === this.heroSlides.length - 1 ? 0 : c + 1));
+    const next = this.currentSlide() === this.heroSlides.length - 1 ? 0 : this.currentSlide() + 1;
+    this.transitionToSlide(next);
   }
   prevSlide() {
-    this.currentSlide.update((c) => (c === 0 ? this.heroSlides.length - 1 : c - 1));
+    const next = this.currentSlide() === 0 ? this.heroSlides.length - 1 : this.currentSlide() - 1;
+    this.transitionToSlide(next);
   }
   gotoSlide(i: number) {
-    this.currentSlide.set(i);
+    this.transitionToSlide(i);
   }
 
   nextPresSlide() {
@@ -5619,6 +5691,57 @@ export class HomeComponent implements OnInit, AfterViewInit {
   }
   gotoPresSlide(i: number) {
     this.currentPresSlide.set(i);
+  }
+
+  private transitionToSlide(nextIndex: number) {
+    if (nextIndex === this.currentSlide()) {
+      return;
+    }
+
+    const reduceMotion =
+      typeof window !== 'undefined' &&
+      (window.matchMedia?.('(prefers-reduced-motion: reduce)').matches ?? false);
+
+    if (this.slideTransitionTimeoutId) {
+      window.clearTimeout(this.slideTransitionTimeoutId);
+      this.slideTransitionTimeoutId = undefined;
+    }
+
+    const targetImage = this.heroSlides[nextIndex]?.image;
+    const token = ++this.heroTransitionToken;
+
+    const applyTransition = () => {
+      if (token !== this.heroTransitionToken) {
+        return;
+      }
+
+      this.prevHeroSlide.set(this.currentSlide());
+      this.currentSlide.set(nextIndex);
+
+      if (reduceMotion) {
+        this.isSlideTransitioning.set(false);
+        return;
+      }
+
+      this.isSlideTransitioning.set(true);
+      this.slideTransitionTimeoutId = window.setTimeout(() => {
+        this.isSlideTransitioning.set(false);
+        this.slideTransitionTimeoutId = undefined;
+      }, 900);
+    };
+
+    if (!targetImage || typeof Image === 'undefined') {
+      applyTransition();
+      return;
+    }
+
+    const preload = new Image();
+    preload.onload = applyTransition;
+    preload.onerror = applyTransition;
+    preload.src = targetImage;
+    if (preload.complete) {
+      applyTransition();
+    }
   }
 
   private setupObservers() {
@@ -5631,7 +5754,55 @@ export class HomeComponent implements OnInit, AfterViewInit {
     document.addEventListener('visibilitychange', this.onVisibility);
   }
 
-  private renderCharts() {
+  private initChartsOnView() {
+    if (this.chartsInitialized) return;
+    const target = this.chartA?.nativeElement;
+    if (!target || typeof IntersectionObserver === 'undefined') {
+      void this.renderCharts();
+      return;
+    }
+
+    this.chartLoadObserver = new IntersectionObserver(
+      (entries, observer) => {
+        for (const entry of entries) {
+          if (entry.isIntersecting) {
+            observer.disconnect();
+            this.chartLoadObserver = undefined;
+            void this.renderCharts();
+            break;
+          }
+        }
+      },
+      { rootMargin: '200px 0px', threshold: 0.1 },
+    );
+
+    this.chartLoadObserver.observe(target);
+  }
+
+  private async getHighcharts(): Promise<HighchartsStatic> {
+    if (this.highchartsRoot) {
+      return this.highchartsRoot;
+    }
+
+    const highchartsModule = await import('highcharts');
+    const Highcharts: HighchartsStatic =
+      (highchartsModule as unknown as { default?: HighchartsStatic }).default ??
+      (highchartsModule as unknown as HighchartsStatic);
+    this.highchartsRoot = Highcharts;
+    return Highcharts;
+  }
+
+  private async renderCharts() {
+    if (this.chartsInitialized) return;
+    this.chartsInitialized = true;
+    let Highcharts: HighchartsStatic;
+    try {
+      Highcharts = await this.getHighcharts();
+    } catch (error) {
+      this.chartsInitialized = false;
+      console.error('Failed to load Highcharts:', error);
+      return;
+    }
     const s = { color: '#4b5563', fontSize: '12px', fontWeight: '600' };
     this.charts = [
       Highcharts.chart(this.chartA.nativeElement, {
