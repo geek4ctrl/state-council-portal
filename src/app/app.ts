@@ -30,18 +30,28 @@ export class App implements AfterViewInit {
   }
 
   private initCursor(): void {
+    if (typeof window === 'undefined' || typeof document === 'undefined') return;
+    const prefersReducedMotion =
+      window.matchMedia?.('(prefers-reduced-motion: reduce)').matches ?? false;
+    const finePointer = window.matchMedia?.('(pointer: fine)').matches ?? true;
+    if (prefersReducedMotion || !finePointer) return;
+
     const dot = this.curDot?.nativeElement;
     const ring = this.curRing?.nativeElement;
     const trail = this.curTrail?.nativeElement;
     if (!dot || !ring || !trail) return;
     let mx = 0, my = 0;
-    document.addEventListener('mousemove', (e) => {
+    const onMouseMove = (e: MouseEvent) => {
       mx = e.clientX;
       my = e.clientY;
       dot.style.left = mx + 'px';
       dot.style.top = my + 'px';
-    });
+    };
+    document.addEventListener('mousemove', onMouseMove);
+
+    let isRunning = false;
     const anim = () => {
+      if (!isRunning) return;
       this.curRx += (mx - this.curRx) * 0.14;
       this.curRy += (my - this.curRy) * 0.14;
       this.trailRx += (mx - this.trailRx) * 0.07;
@@ -52,7 +62,31 @@ export class App implements AfterViewInit {
       trail.style.top = this.trailRy + 'px';
       this.rafId = requestAnimationFrame(anim);
     };
-    requestAnimationFrame(anim);
+
+    const start = () => {
+      if (isRunning || document.hidden) return;
+      isRunning = true;
+      this.rafId = requestAnimationFrame(anim);
+    };
+
+    const stop = () => {
+      isRunning = false;
+      if (this.rafId) {
+        cancelAnimationFrame(this.rafId);
+        this.rafId = undefined;
+      }
+    };
+
+    const onVisibilityChange = () => {
+      if (document.hidden) {
+        stop();
+      } else {
+        start();
+      }
+    };
+
+    start();
+    document.addEventListener('visibilitychange', onVisibilityChange);
     document.querySelectorAll('button, a').forEach((el) => {
       el.addEventListener('mouseenter', () => {
         ring.style.width = '58px';
@@ -70,7 +104,9 @@ export class App implements AfterViewInit {
       });
     });
     this.destroyRef.onDestroy(() => {
-      if (this.rafId) cancelAnimationFrame(this.rafId);
+      stop();
+      document.removeEventListener('mousemove', onMouseMove);
+      document.removeEventListener('visibilitychange', onVisibilityChange);
     });
   }
 
