@@ -1,0 +1,886 @@
+{
+  "header": {
+    "siteName": "Consiglio di Stato della RDC",
+    "contact": {
+      "phone": "+ 243 (21) 00000000",
+      "hours": "LUNEDI - VENERDI 8:30 - 16:00"
+    },
+    "social": {
+      "facebook": "Facebook",
+      "twitter": "Twitter",
+      "instagram": "Instagram"
+    },
+    "lang": {
+      "label": "Lingua",
+      "switchToEnglish": "Passa all'inglese",
+      "switchToFrench": "Passa al francese"
+    },
+    "nav": {
+      "home": "HOME",
+      "court": "LA CORTE",
+      "presentation": "Presentazione",
+      "organization": "Organizzazione",
+      "administrativeCourts": "Corti amministrative",
+      "administrativeTribunals": "Tribunali amministrativi",
+      "reforms": "Riforme",
+      "international": "Relazioni internazionali",
+      "audiences": "UDIENZE",
+      "steps": "FASI",
+      "news": "NOTIZIE",
+      "bookAppointment": "Prenota un appuntamento"
+    }
+  },
+  "hero": {
+    "titleOpening2025": "L'ANNO GIUDIZIARIO SI APRE AL CONSIGLIO DI STATO PER IL PERIODO 2025 - 2026"
+  },
+  "mobileNav": {
+    "home": "Home",
+    "organization": "Org.",
+    "apply": "Deposita",
+    "news": "Notizie"
+  },
+  "comingSoon": {
+    "subtitle": "Prossimamente",
+    "description": "Questa pagina e in fase di sviluppo e sara disponibile a breve. Ritorna piu tardi per consultare i contenuti.",
+    "backHome": "Torna alla Home"
+  },
+  "errors": {
+    "generic": {
+      "code": "Errore",
+      "title": "Qualcosa e andato storto",
+      "message": "Stiamo riscontrando difficolta nel completare la tua richiesta. Riprova o torna alla homepage del Consiglio di Stato.",
+      "primary": "Torna alla Home",
+      "secondary": "Vedi aggiornamenti"
+    },
+    "notFound": {
+      "code": "404",
+      "title": "Pagina non trovata",
+      "message": "La pagina che stai cercando non esiste o e stata spostata."
+    }
+  },
+  "history": {
+    "title": "Storia",
+    "body": "Scopri la ricca storia del Consiglio di Stato."
+  },
+  "process": {
+    "title": "Procedura giudiziaria",
+    "body": "Comprendi il processo e cosa aspettarti."
+  },
+  "judges": {
+    "title": "I giudici",
+    "body": "Incontra i giudici illustri del Consiglio di Stato."
+  },
+  "memberDetail": {
+    "back": "← Torna all'Organizzazione",
+    "title": "Profilo del membro",
+    "subtitle": "Profilo dettagliato e informazioni di contatto.",
+    "office": "Ufficio",
+    "email": "Email",
+    "notFound": {
+      "title": "Membro non trovato",
+      "body": "Il profilo richiesto non e stato trovato.",
+      "cta": "Torna all'Organizzazione"
+    }
+  },
+  "news": {
+    "hero": {
+      "title": "NEWS & AGGIORNAMENTI",
+      "body": "L'ingiustizia puo manifestarsi in molte forme nella nostra societa. Ti offriamo la possibilita di segnalare tutte le forme di abuso."
+    },
+    "section": {
+      "title": "NEWS & AGGIORNAMENTI",
+      "subtitle": "LA VISIONE CI DEFINISCE"
+    },
+    "insights": {
+      "title": "ANALISI NEWS",
+      "subtitle": "Trend per tema e frequenza di pubblicazione",
+      "topics": {
+        "title": "Temi per mese",
+        "note": "Ultimi 6 mesi",
+        "aria": "Temi delle notizie per mese"
+      },
+      "cadence": {
+        "title": "Frequenza di pubblicazione",
+        "note": "Articoli pubblicati",
+        "aria": "Frequenza di pubblicazione per mese"
+      }
+    },
+    "actions": {
+      "readMore": "Leggi di piu"
+    },
+    "pagination": {
+      "label": "Paginazione notizie",
+      "previous": "Pagina precedente",
+      "next": "Pagina successiva",
+      "pageLabel": "Pagina {{page}}"
+    },
+    "empty": {
+      "title": "Nessuna notizia ancora",
+      "body": "Nuovi articoli appariranno qui non appena pubblicati."
+    },
+    "articles": {
+      "1": {
+        "date": "30 gennaio",
+        "category": "Amministrazione",
+        "title": "La Prima Presidente del Consiglio di Stato invita i magistrati ad adottare la risoluz...",
+        "excerpt": "Dopo la cerimonia di chiusura dell'assemblea generale ordinaria dell'Alto Consiglio dell'Amministrativo..."
+      },
+      "2": {
+        "date": "30 gennaio",
+        "category": "Amministrazione",
+        "title": "RIUNIONE DI ORIENTAMENTO AL CONSIGLIO DI STATO",
+        "excerpt": "Kinshasa, 18 ottobre 2025: Il Consiglio di Stato della Repubblica Democratica del Congo informa il pub..."
+      },
+      "3": {
+        "date": "30 gennaio",
+        "category": "Amministrazione",
+        "title": "RIUNIONE DI ORIENTAMENTO AL CONSIGLIO DI STATO",
+        "excerpt": "Kinshasa, 18 ottobre 2025: Il Consiglio di Stato della Repubblica Democratica del Congo informa il pub..."
+      }
+    }
+  },
+  "steps": {
+    "hero": {
+      "report": {
+        "title": "SEGNALAZIONE",
+        "body": "L'ingiustizia puo manifestarsi in molte forme nella nostra societa. Ti offriamo la possibilita di segnalare tutte le forme di abuso."
+      },
+      "appointment": {
+        "title": "PRENOTA<br>APPUNTAMENTO",
+        "body": "Per organizzare un incontro con il Consiglio di Stato, compila il seguente modulo di richiesta appuntamento. Assicurati che tutti i campi obbligatori siano compilati correttamente in modo che possiamo elaborare la tua richiesta in modo efficiente. Riceverai una conferma via email o telefono con la data e l'ora pianificate."
+      },
+      "appeal": {
+        "title": "RICORSO AL<br>CONSIGLIO<br>DI STATO",
+        "body1": "Un ricorso al Consiglio di Stato e un rimedio legale amministrativo che consente a una parte di impugnare decisioni e atti amministrativi. Il Consiglio di Stato verifica se il diritto amministrativo e stato applicato correttamente e se le procedure appropriate sono state seguite.",
+        "body2": "Il Consiglio di Stato e adito tramite una richiesta delle parti o mediante una dichiarazione depositata presso il Consiglio. I ricorsi devono essere presentati entro i termini legali prescritti e confermati da una petizione con documenti di supporto."
+      }
+    },
+    "tabs": {
+      "report": "Segnala",
+      "appointment": "Prenota un appuntamento",
+      "appeal": "Deposita un ricorso"
+    },
+    "forms": {
+      "report": {
+        "title": "MODULO DI RECLAMO",
+        "subtitle": "CI PIACEREBBE CONOSCERE I TUOI PROBLEMI"
+      },
+      "appointment": {
+        "title": "PRENOTA UN APPUNTAMENTO",
+        "subtitle": "SIAMO QUI PER AIUTARTI"
+      },
+      "appeal": {
+        "title": "MODULO DI RICORSO",
+        "subtitle": "CI PIACEREBBE CONOSCERE I TUOI PROBLEMI"
+      },
+      "fullName": "Nome completo *",
+      "email": "E-mail *",
+      "department": "Dipartimento",
+      "chambers": {
+        "criminal": "Sezione penale",
+        "civil": "Sezione civile",
+        "social": "Sezione sociale",
+        "commercial": "Sezione commerciale"
+      },
+      "meeting": {
+        "placeholder": "Chi desideri incontrare? *",
+        "firstPresident": "Prima Presidente",
+        "chamberPresident": "Presidente di sezione",
+        "legalAdvisor": "Consigliere legale",
+        "clerk": "Cancelliere"
+      },
+      "visit": {
+        "placeholder": "Quando pensi di venire?",
+        "thisWeek": "Questa settimana",
+        "nextWeek": "Settimana prossima",
+        "thisMonth": "Questo mese",
+        "nextMonth": "Mese prossimo"
+      },
+      "message": "Messaggio *",
+      "submit": "INVIA MESSAGGIO"
+    }
+  },
+  "appealSteps": {
+    "title": "COME PRESENTARE UN RICORSO",
+    "subtitle": "Segui questi passaggi per presentare il tuo ricorso al Consiglio di Stato",
+    "steps": {
+      "1": {
+        "title": "Prepara i tuoi documenti",
+        "body": "Raccogli la decisione amministrativa contestata, il tuo documento di identita e qualsiasi prova di supporto. Assicurati che tutti i documenti siano leggibili e debitamente certificati se richiesto."
+      },
+      "2": {
+        "title": "Redigi la tua istanza",
+        "body": "Scrivi una chiara istanza indicando i fatti, i motivi del ricorso e il risultato richiesto. Includi riferimenti alle disposizioni legali applicabili."
+      },
+      "3": {
+        "title": "Deposito presso la Cancelleria",
+        "body": "Presenta la tua istanza e i documenti di supporto alla Cancelleria del Consiglio di Stato entro i termini legali prescritti. Ottieni una ricevuta come prova del deposito."
+      },
+      "4": {
+        "title": "Paga le tasse applicabili",
+        "body": "Paga le tasse di giustizia richieste all'ufficio designato. Conserva la ricevuta di pagamento per i tuoi archivi."
+      },
+      "5": {
+        "title": "Attendi la notifica",
+        "body": "La Cancelleria ti comunichera il numero del caso e la data dell'udienza. Potrebbe essere necessario notificare copie alla parte avversa."
+      }
+    }
+  },
+  "haveQuestions": {
+    "title": "Hai domande?",
+    "body": "Il nostro team e qui per aiutarti a comprendere il processo di ricorso.",
+    "cta": "Inviaci una email"
+  },
+  "faqs": {
+    "title": "DOMANDE FREQUENTI",
+    "items": {
+      "1": {
+        "question": "Qual e il termine per presentare un ricorso?",
+        "answer": "I ricorsi devono generalmente essere presentati entro due mesi dalla notifica della decisione contestata. Possono applicarsi termini specifici a seconda del tipo di atto amministrativo. Consulta la legislazione applicabile o contatta la Cancelleria per indicazioni."
+      },
+      "2": {
+        "question": "Posso rappresentarmi da solo o ho bisogno di un avvocato?",
+        "answer": "Puoi rappresentarti da solo davanti al Consiglio di Stato. Tuttavia, e consigliata una rappresentanza legale per i casi complessi. La Cancelleria puo fornire informazioni sull'assistenza legale se ne hai diritto."
+      },
+      "3": {
+        "question": "Quali documenti devo includere?",
+        "answer": "In genere servono: la decisione contestata, la tua istanza, un documento di identita e i documenti di supporto. La Cancelleria fornisce una lista di controllo su richiesta. Potrebbero essere richiesti documenti aggiuntivi a seconda del caso."
+      },
+      "4": {
+        "question": "Quanto dura il procedimento di ricorso?",
+        "answer": "I tempi di lavorazione variano in base alla complessita del caso e al carico di lavoro del tribunale. Riceverai una data di udienza dopo la registrazione del tuo caso. La Cancelleria puo fornire tempistiche indicative per casi simili."
+      },
+      "5": {
+        "question": "Posso ritirare il mio ricorso?",
+        "answer": "Si. Puoi ritirare il tuo ricorso in qualsiasi momento prima della decisione finale. Presenta un ritiro scritto alla Cancelleria. Nota che il ritiro puo avere implicazioni per eventuali procedimenti correlati."
+      }
+    }
+  },
+  "footer": {
+    "mainOffice": {
+      "title": "Ufficio principale",
+      "address1": "7639, incrocio tra le vie Pumbu e Bâtonniers",
+      "address2": "Comune di Gombe, Kinshasa",
+      "address3": "Repubblica Democratica del Congo",
+      "phone": "Tel: +243 (21) 0000000",
+      "email": "Email: info@conseildetatrdc.com"
+    },
+    "quickLinks": {
+      "title": "Link rapidi",
+      "about": "Informazioni sulla Corte",
+      "jurisprudence": "Giurisprudenza",
+      "filing": "Procedure di deposito",
+      "contact": "Contattaci"
+    },
+    "resources": {
+      "title": "Risorse",
+      "legalDocs": "Documenti legali",
+      "decisions": "Decisioni del tribunale",
+      "reports": "Rapporti annuali",
+      "faqs": "FAQ"
+    },
+    "connect": {
+      "title": "Rimani connesso",
+      "facebook": "Facebook",
+      "twitter": "Twitter",
+      "instagram": "Instagram",
+      "linkedin": "LinkedIn"
+    },
+    "privacy": "Privacy",
+    "copyright": "Copyright Consiglio di Stato. Tutti i diritti riservati"
+  },
+  "home": {
+    "hero": {
+      "learnMore": "Scopri di piu",
+      "slides": {
+        "0": {
+          "title": "CONSIGLIO DI STATO - APERTURA DELL'ANNO GIUDIZIARIO 2025-2026",
+          "subtitle": "PALAZZO DEL POPOLO - 13 NOVEMBRE 2025",
+          "body": "Il Consiglio di Stato si e riunito al Palazzo del Popolo per l'apertura ufficiale dell'anno giudiziario 2025-2026.",
+          "cta": "Scopri di piu"
+        },
+        "1": {
+          "title": "L'ANNO GIUDIZIARIO SI APRE AL CONSIGLIO DI STATO PER IL PERIODO 2025 - 2026",
+          "subtitle": "CASA DEL DIRITTO E DELL'ORDINE",
+          "body": "Questo video copre l'apertura ufficiale dell'anno giudiziario 2025-2026. In presenza del Presidente Felix Tshisekedi, la sessione ha riunito alti magistrati e responsabili legali.",
+          "cta": "Guarda la seduta in diretta su YouTube"
+        },
+        "2": {
+          "title": "RAFFORZARE L'INDIPENDENZA E LA RESPONSABILITA GIUDIZIARIA",
+          "subtitle": "CASA DEL DIRITTO E DELL'ORDINE",
+          "body": "Il CONSIGLIO DI STATO continua a sostenere i principi di giustizia, equita e stato di diritto. Ci impegniamo per trasparenza e integrita.",
+          "cta": "Scopri la nostra missione"
+        },
+        "3": {
+          "title": "PROMUOVERE L'ECCELLENZA GIURIDICA NELLA REPUBBLICA DEMOCRATICA DEL CONGO",
+          "subtitle": "CASA DEL DIRITTO E DELL'ORDINE",
+          "body": "Attraverso una formazione giuridica rigorosa e il rispetto delle migliori pratiche internazionali, puntiamo ai piu alti standard di eccellenza giudiziaria.",
+          "cta": "Esplora le nostre iniziative"
+        }
+      }
+    },
+    "quickLinks": {
+      "items": {
+        "news": {
+          "alt": "Notizie",
+          "title": "NOTIZIE",
+          "body": "Resta informato su decisioni ed eventi chiave.",
+          "action": "Leggi"
+        },
+        "excerpts": {
+          "alt": "Estratti",
+          "title": "ESTRATTI DEI RUOLI",
+          "body": "Controlla gli orari delle udienze e i casi in corso.",
+          "action": "Scopri di piu"
+        },
+        "report": {
+          "alt": "Segnalazione",
+          "title": "SEGNALAZIONE",
+          "body": "Segnala in modo sicuro attivita sospette o illegali.",
+          "action": "Invia una segnalazione"
+        },
+        "appointment": {
+          "alt": "Prenota appuntamento",
+          "title": "PRENOTA APPUNTAMENTO",
+          "body": "Pianifica consultazioni con i funzionari del tribunale.",
+          "action": "Prenota ora"
+        }
+      }
+    },
+    "keyFacts": {
+      "title": "Dati chiave",
+      "subtitle": "Volume dei casi, tempi di elaborazione e mix delle decisioni in un colpo d'occhio.",
+      "cards": {
+        "volume": {
+          "title": "Volume dei casi",
+          "note": "Ultimi 6 mesi",
+          "aria": "Volume dei casi per mese"
+        },
+        "processing": {
+          "title": "Tempo di elaborazione",
+          "note": "Giorni medi",
+          "aria": "Tempo medio di elaborazione per trimestre"
+        },
+        "decisions": {
+          "title": "Decisioni per tipo",
+          "note": "Anno in corso",
+          "aria": "Decisioni per tipo"
+        }
+      }
+    },
+    "offer": {
+      "title": "COSA OFFRIAMO",
+      "subtitle": "Offriamo soluzioni legali su misura per soddisfare le tue esigenze, garantendo che i tuoi diritti siano protetti e che la giustizia sia servita.",
+      "cards": {
+        "1": {
+          "title": "Autorita giudiziaria suprema",
+          "body": "In quanto massima corte dell'ordine giudiziario ordinario, il Consiglio di Stato assicura l'interpretazione e l'applicazione uniforme del diritto in tutta la Repubblica Democratica del Congo."
+        },
+        "2": {
+          "title": "Certezza giuridica",
+          "body": "Attraverso la nostra giurisprudenza e le decisioni, stabiliamo precedenti legali che guidano i tribunali inferiori e garantiscono coerenza nell'applicazione della giustizia."
+        },
+        "3": {
+          "title": "Eccellenza giudiziaria",
+          "body": "I nostri magistrati e consiglieri sono selezionati per merito, garantendo i piu alti standard di competenza legale, integrita e impegno per la giustizia."
+        },
+        "4": {
+          "title": "Cooperazione internazionale",
+          "body": "Partecipiamo attivamente al dialogo con organi giudiziari internazionali e manteniamo cooperazione con corti francofone e africane."
+        }
+      }
+    },
+    "expertise": {
+      "title": "AREE DI COMPETENZA",
+      "subtitle": "Il CONSIGLIO DI STATO esercita giurisdizione su varie materie legali come massima corte dell'ordine giudiziario ordinario.",
+      "stats": {
+        "domains": {
+          "value": "6",
+          "label": "ambiti"
+        },
+        "decisions": {
+          "value": "120+",
+          "label": "decisioni/anno"
+        },
+        "magistrates": {
+          "value": "30+",
+          "label": "magistrati"
+        }
+      },
+      "cta": "Vedi dettagli",
+      "areas": {
+        "civil": {
+          "title": "Diritto civile e commerciale",
+          "desc": "Contratti, obbligazioni e questioni di proprieta in tutto il paese.",
+          "items": {
+            "1": "Ricorsi dalle Corti d'Appello",
+            "2": "Controversie commerciali e contratti",
+            "3": "Questioni di proprieta e successione"
+          }
+        },
+        "family": {
+          "title": "Diritto di famiglia",
+          "desc": "Tutela dei diritti familiari e risoluzione di controversie sensibili.",
+          "items": {
+            "1": "Ricorsi in materia di matrimonio e divorzio",
+            "2": "Controversie sull'affidamento dei minori",
+            "3": "Questioni di successione"
+          }
+        },
+        "public": {
+          "title": "Diritto pubblico",
+          "desc": "Vigilanza sull'azione pubblica e garanzie costituzionali.",
+          "items": {
+            "1": "Casi di privilegio di giurisdizione",
+            "2": "Perseguimento di alti funzionari",
+            "3": "Questioni costituzionali"
+          }
+        },
+        "labor": {
+          "title": "Lavoro e occupazione",
+          "desc": "Controversie lavorative e tutela dei diritti dei lavoratori.",
+          "items": {
+            "1": "Ricorsi in controversie di lavoro",
+            "2": "Questioni relative ai contratti di lavoro",
+            "3": "Tutela dei diritti dei lavoratori"
+          }
+        },
+        "criminal": {
+          "title": "Diritto penale",
+          "desc": "Revisione delle decisioni penali e garanzie procedurali.",
+          "items": {
+            "1": "Ricorsi penali al Consiglio di Stato",
+            "2": "Verifica di errori procedurali",
+            "3": "Applicazione del diritto penale"
+          }
+        },
+        "property": {
+          "title": "Diritti di proprieta",
+          "desc": "Proprieta fondiaria, immobili e transazioni patrimoniali.",
+          "items": {
+            "1": "Controversie immobiliari",
+            "2": "Questioni di proprieta fondiaria",
+            "3": "Transazioni patrimoniali"
+          }
+        }
+      }
+    },
+    "contact": {
+      "address": {
+        "title": "Indirizzo ufficio",
+        "body": "7639, incrocio tra le vie Pumbu e Batonniers nel comune di Gombe/Kinshasa-RDC"
+      },
+      "phone": {
+        "title": "Numero ufficio",
+        "body": "+243 000000000"
+      },
+      "email": {
+        "title": "Email ufficio",
+        "body": "info@conseildetatrdc.com"
+      }
+    },
+    "president": {
+      "imageAlt": "Presidente",
+      "cta": "Scopri di piu",
+      "slides": {
+        "1": {
+          "title": "LA PRIMA PRESIDENTE DEL CONSIGLIO DI STATO",
+          "paragraphs": {
+            "1": "In qualita di terza figura piu importante dell'Alto Consiglio della Magistratura della RDC, la Prima Presidente del CONSIGLIO DI STATO, Brigitte Nsensele Wa Nsensele, ha donato sangue giovedi 27 febbraio in solidarieta con le vittime dell'aggressione ruandese nella parte orientale del paese.",
+            "2": "Per ogni cittadino congolese democratico, contribuire allo sforzo bellico e un dovere civico. La magistratura non fa eccezione.",
+            "3": "Da oltre tre decenni, la RDC soffre aggressioni perpetrate dal Ruanda e da altri gruppi armati negativi, causando milioni di morti, decine di migliaia di sfollati e una deplorevole situazione umanitaria."
+          }
+        },
+        "2": {
+          "title": "LEADERSHIP GIUDIZIARIA E RIFORMA",
+          "paragraphs": {
+            "1": "Sotto la guida della Prima Presidente, il CONSIGLIO DI STATO ha intrapreso riforme giudiziarie complete volte a modernizzare il sistema giudiziario.",
+            "2": "Le riforme includono la digitalizzazione dei fascicoli giudiziari, l'implementazione di sistemi di gestione dei casi e programmi di formazione per giudici e personale di cancelleria.",
+            "3": "Queste iniziative riflettono l'impegno della Corte per trasparenza, efficienza e responsabilita nell'amministrazione della giustizia."
+          }
+        },
+        "3": {
+          "title": "COLLABORAZIONE INTERNAZIONALE",
+          "paragraphs": {
+            "1": "Il CONSIGLIO DI STATO collabora attivamente con istituzioni giudiziarie internazionali e partecipa a forum globali per condividere esperienze.",
+            "2": "Attraverso partnership con corti in Francia, Belgio e altri paesi francofoni, la Corte garantisce di rimanere all'avanguardia degli sviluppi legali.",
+            "3": "Questo impegno internazionale rafforza il sistema giudiziario della RDC e ne migliora la capacita di rendere giustizia in conformita agli standard internazionali."
+          }
+        }
+      }
+    },
+    "newsletter": {
+      "title": "NEWS & ARTICOLI",
+      "readMore": "Leggi di piu",
+      "cta": "Scopri di piu",
+      "items": {
+        "1": {
+          "alt": "Ricorsi",
+          "date": "15 Nov 2025 | Rapporto decisionale",
+          "title": "Orientarsi nei ricorsi: consigli legali per un processo senza intoppi"
+        },
+        "2": {
+          "alt": "Procedimenti del Consiglio di Stato",
+          "date": "22 Ott 2025 | Aggiornamento giudiziario",
+          "title": "Considerazioni chiave nei procedimenti del Consiglio di Stato"
+        },
+        "3": {
+          "alt": "Procedurale",
+          "date": "18 Ott 2025 | Sentenza giudiziaria",
+          "title": "Recenti cambiamenti nel diritto procedurale"
+        },
+        "4": {
+          "alt": "Diritti",
+          "date": "12 Ott 2025 | Aggiornamento legale",
+          "title": "Comprendere i propri diritti nel processo di ricorso"
+        }
+      }
+    }
+  },
+  "about": {
+    "hero": {
+      "title": "COMPRENDERE LA MASSIMA GIURISDIZIONE DELL'ORDINE AMMINISTRATIVO NELLA REPUBBLICA DEMOCRATICA DEL CONGO"
+    },
+    "intro": {
+      "title": "COMPRENDERE LA MASSIMA GIURISDIZIONE DELL'ORDINE AMMINISTRATIVO NELLA REPUBBLICA DEMOCRATICA DEL CONGO",
+      "body": "L'articolo 151 comma 1 della Costituzione della RDC del 18 febbraio 2006 istituisce un sistema giudiziario amministrativo composto da corti e tribunali amministrativi sotto la supervisione del Consiglio di Stato. L'articolo 82 della Legge Organica n. 13/011-B dell'11 aprile 2013 che stabilisce l'organizzazione, la composizione e il funzionamento dei tribunali amministrativi prevede l'esistenza di un Consiglio di Stato la cui sede ordinaria e situata nella capitale della Repubblica Democratica del Congo. La sua capacita giurisdizionale puo essere esercitata in un altro luogo. Storicamente, il Consiglio di Stato in questa breve presentazione ripercorre la sua storia e le sue radici nella nostra istituzione giudiziaria. Creato con decreto-legge il 31 gennaio 1968, il Consiglio di Stato ha un segno distintivo da oltre un secolo. Infatti, furono otto anni dopo l'indipendenza del 1960 che il paese istituì questo Consiglio di Stato per regolare i ricorsi amministrativi. Solo dopo un secolo, nel 2015, fu creato il Supremo Tribunale Amministrativo. Questo tribunale ha cessato di esistere a seguito della Costituzione del 2006 e della sua istituzione, che dichiarava nulle tutte le disposizioni contrarie e stabiliva, al suo articolo 223, che le sentenze e le ordinanze pronunciate prima della promulgazione della Costituzione vigente restassero valide. I tribunali che giudicano in ultima istanza furono impiegati, per maggiore specializzazione, come strumento di precedenti. Con la specializzazione del 18 febbraio 2006, il Supremo Tribunale Amministrativo cessò definitivamente di esistere l'11 aprile 2013 con la Legge Organica n. 13/011-B dell'11 aprile 2013 che stabilisce l'organizzazione, la composizione e il funzionamento dei tribunali amministrativi. In virtù dell'articolo 151 comma 3 della Costituzione, e stabilita l'autorita regolamentare per l'esercizio delle competenze del precedente Supremo Tribunale Amministrativo. Le corti e i tribunali amministrativi costituiscono il sistema giudiziario amministrativo del Congo."
+    },
+    "rubrics": {
+      "legalBasis": "Base legale",
+      "organization": "Organizzazione",
+      "mission": "Missione",
+      "competences": "Competenze",
+      "procedureBeforeCouncil": "Procedura davanti al Consiglio di Stato"
+    },
+    "legal": {
+      "title": "ACCEDI AI PRINCIPALI TESTI LEGALI E REGOLAMENTARI<br>DEL CONSIGLIO DI STATO",
+      "docs": {
+        "1": "Legge Organica n. 13/011-B dell'11 aprile 2013 contenente l'organizzazione, la composizione e il funzionamento delle giurisdizioni ordinarie",
+        "2": "Decreto n. 13/046 del 25 settembre 2013 sulle camere del Consiglio di Stato",
+        "3": "Decreto-legge n. 13/018 relativo alla remunerazione e alle indennita dei magistrati"
+      },
+      "detail": {
+        "title": "Legge Organica n. 13/011-B dell'11 aprile 2013 contenente l'organizzazione, la composizione e il funzionamento delle giurisdizioni amministrative",
+        "paragraph1": "Il contenuto di questa Legge Organica n. 13/011-B dell'11 aprile 2013 contenente l'organizzazione, la composizione e il funzionamento delle giurisdizioni amministrative e stato collocato in un contesto generale della giustizia amministrativa.",
+        "paragraph2": "Ciascun articolo della Legge e redatto nelle disposizioni chiave del Titolo I sui magistrati:",
+        "list1": {
+          "1": "CAPITOLO I: Disposizioni generali",
+          "2": "CAPITOLO II: Nomina e insediamento dei magistrati e cancellieri",
+          "3": "CAPITOLO III: Regime giuridico",
+          "4": "CAPITOLO IV: Poteri, garanzie e limiti dei Magistrati",
+          "5": "CAPITOLO V: Disciplina"
+        },
+        "paragraph3": "E regolato dal Titolo II del Consiglio di Stato, dagli articoli 81 all'articolo 95, in cui ciascun articolo tratta specificamente il Consiglio di Stato nei seguenti capitoli:",
+        "list2": {
+          "1": "CAPITOLO I: Regime giuridico",
+          "2": "CAPITOLO II: Insediamento, composizione del Consiglio di Stato",
+          "3": "CAPITOLO III: Diverse formazioni, funzionamento e personale del Consiglio di Stato"
+        },
+        "paragraph4": "La composizione all'articolo 82 prevede come e composto il Consiglio di Stato e elenca il personale che assiste i magistrati e le attribuzioni del personale ausiliario per il conseguimento del mandato amministrativo.",
+        "paragraph5": "L'articolo 83 prevede le attribuzioni del Consiglio di Stato, tra cui: ricorsi in materia amministrativa; l'esercizio della disciplina dei giudici e degli ausiliari di giustizia nella sua capacita giurisdizionale; la ricezione del giuramento dei magistrati e degli ufficiali di cancelleria rientranti nella giurisdizione amministrativa; l'emissione del parere legale in presenza dei giudici nominati o dell'autorita giurisdizionale. L'articolo 84 prevede la composizione delle diverse sezioni e formazioni del Consiglio di Stato; l'articolo 88 prevede le attribuzioni nella deliberazione della camera, ciascuna camera costituira una formazione giurisdizionale per l'adempimento del mandato del Consiglio di Stato e sedera per diverse attribuzioni solo se il quorum e raggiunto.",
+        "paragraph6": "Il quorum richiesto nell'articolo e raggiunto quando tutte le camere sono composte come segue: il presidente o vicepresidente di camera e due altri magistrati, nonche un consigliere legale e il cancelliere.",
+        "paragraph7": "Per quanto riguarda il quorum giurisdizionale all'articolo 89, ciascuna camera puo costituire una formazione giurisdizionale per l'adempimento del mandato del Consiglio di Stato e sedere per diverse attribuzioni solo se il quorum e raggiunto.",
+        "paragraph8": "Il quorum richiesto nell'articolo e raggiunto quando tutte le camere sono composte come segue: il presidente o vicepresidente di camera e due altri magistrati, nonche un consigliere legale e il cancelliere. Si aggiunge la parte interessata coinvolta seduta durante la procedura con la sua assistenza se necessario e al momento delle deliberazioni a porte chiuse, con la partecipazione del Procuratore Generale alle deliberazioni con la partecipazione del cancelliere che avviene tramite l'istruzione della causa.",
+        "paragraph9": "Dopo aver letto e avuto i testi legali spiegati in questa piattaforma, puoi richiedere i loro servizi direttamente via email o telefono e quindi riceverli."
+      }
+    }
+  },
+  "reforms": {
+    "hero": {
+      "title": "RIFORME<br>PROPOSTE",
+      "body": "Modernizzare il sistema giudiziario attraverso riforme strategiche che migliorano efficienza, trasparenza e accesso alla giustizia per tutti i cittadini congolesi."
+    },
+    "building": {
+      "tag": "MODERNIZZAZIONE GIUDIZIARIA",
+      "title": "COSTRUIRE UN SISTEMA DI GIUSTIZIA PIU FORTE",
+      "body": "Dopo la Costituzione del 2006, il CONSIGLIO DI STATO ha intrapreso riforme complete per rafforzare l'indipendenza giudiziaria, migliorare l'accesso alla giustizia e allinearsi agli standard internazionali. Queste iniziative si concentrano sul rafforzamento istituzionale, sulla trasformazione digitale e sullo sviluppo delle capacita."
+    },
+    "initiatives": {
+      "tag": "ROADMAP DI TRASFORMAZIONE",
+      "title": "INIZIATIVE DI RIFORMA STRATEGICA",
+      "body": "Un approccio completo in cinque fasi per modernizzare il nostro sistema giudiziario, garantendo eccellenza in ogni fase della trasformazione.",
+      "badges": {
+        "critical": "Priorita critica",
+        "high": "Alta priorita",
+        "medium": "Media priorita"
+      },
+      "steps": {
+        "1": {
+          "title": "Indipendenza istituzionale",
+          "body": "Rafforzare l'indipendenza giudiziaria attraverso garanzie costituzionali e autonomia finanziaria."
+        },
+        "2": {
+          "title": "Accesso alla giustizia",
+          "body": "Espandere i servizi di assistenza legale e creare punti di accesso regionali in tutto il paese."
+        },
+        "3": {
+          "title": "Cooperazione internazionale",
+          "body": "Approfondire le partnership con organi giudiziari internazionali per lo scambio di conoscenze."
+        },
+        "4": {
+          "title": "Trasformazione digitale",
+          "body": "Implementare moderni sistemi di gestione dei casi e banche dati di giurisprudenza online."
+        },
+        "5": {
+          "title": "Sviluppo delle capacita",
+          "body": "Formazione continua per i magistrati e capacita avanzate di ricerca legale."
+        }
+      }
+    },
+    "stakeholders": {
+      "title": "ATTORI CHIAVE",
+      "subtitle": "LEADERSHIP DELLA RIFORMA",
+      "roles": {
+        "president": "Presidente",
+        "vicePresident": "Vice Presidente",
+        "chiefMagistrate": "Capo Magistrato",
+        "internationalRelations": "Relazioni internazionali"
+      }
+    }
+  },
+  "international": {
+    "hero": {
+      "title": "RELAZIONI<br>INTERNAZIONALI",
+      "body": "Nel contesto dell'internazionalizzazione del diritto e della giustizia, il CONSIGLIO DI STATO della Repubblica Democratica del Congo non e isolato da questo ambiente. Partecipa attivamente al dialogo tra giudici mantenendo un alto livello di cooperazione nell'ambito dell'Associazione delle Corti Supreme dei paesi francofoni (AHJUCAF) e dell'Associazione Africana delle Corti Supreme francofone (AA-HJF)."
+    },
+    "stats": {
+      "associations": "Principali associazioni giudiziarie internazionali",
+      "partners": "Paesi partner e Corti Supreme",
+      "exchanges": "Scambi giudiziari annuali e conferenze"
+    },
+    "networks": {
+      "title": "RETI GIUDIZIARIE INTERNAZIONALI",
+      "subtitle": "La Corte mantiene relazioni privilegiate con le principali associazioni delle corti supreme francofone e africane",
+      "ahjucaf": {
+        "name": "Associazione delle Corti Supreme di lingua francese",
+        "body": "Una piattaforma di scambio e cooperazione tra corti supreme francofone, che facilita il dialogo giudiziario, la condivisione della giurisprudenza e il rafforzamento delle capacita istituzionali nelle giurisdizioni francofone di tutto il mondo."
+      },
+      "aahjf": {
+        "name": "Associazione Africana delle Corti Supreme francofone",
+        "body": "Una piattaforma di scambio e cooperazione tra corti supreme francofone, che facilita il dialogo giudiziario, la condivisione della giurisprudenza e il rafforzamento delle capacita istituzionali nelle giurisdizioni francofone di tutto il mondo."
+      }
+    },
+    "domains": {
+      "title": "AMBITI DI COOPERAZIONE INTERNAZIONALE",
+      "subtitle": "Il nostro impegno internazionale si traduce in una partecipazione attiva a diverse iniziative volte a rafforzare la qualita della giustizia e lo stato di diritto",
+      "dialogue": {
+        "title": "Dialogo giudiziario",
+        "body": "Scambi regolari su giurisprudenza, best practice e sfide comuni affrontate dalle corti supreme, favorendo l'apprendimento reciproco e un'interpretazione legale armonizzata."
+      },
+      "assistance": {
+        "title": "Assistenza tecnica",
+        "body": "Cooperazione tecnica per la modernizzazione dei sistemi giudiziari, la digitalizzazione e il miglioramento dell'accesso alla giustizia attraverso esperienze condivise."
+      },
+      "capacity": {
+        "title": "Sviluppo delle capacita",
+        "body": "Programmi di formazione, seminari e workshop per rafforzare le competenze dei magistrati e del personale giudiziario attraverso expertise internazionale."
+      },
+      "forums": {
+        "title": "Forum internazionali",
+        "body": "Partecipazione attiva a forum internazionali per contribuire allo sviluppo del diritto internazionale e regionale e degli standard giudiziari."
+      }
+    },
+    "collaboration": {
+      "title": "Interessato alla collaborazione?",
+      "body": "Siamo aperti a partnership istituzionali e scambi con altre giurisdizioni nazionali e internazionali impegnate nel rafforzamento dei sistemi di giustizia.",
+      "cta": "CONTATTACI"
+    }
+  },
+  "audiences": {
+    "hero": {
+      "title": "UDIENZE ED ESTRATTI DI RUOLO",
+      "body": "Accedi agli orari delle udienze, agli estratti di ruolo e alle decisioni recenti."
+    },
+    "understanding": {
+      "title": "COMPRENDERE LE UDIENZE",
+      "body": "Trova indicazioni su come sono organizzate le udienze e come consultare i ruoli recenti."
+    },
+    "metrics": {
+      "title": "METRICHE DELLE UDIENZE",
+      "subtitle": "Volume mensile delle udienze e risultati nel tempo.",
+      "volume": {
+        "title": "Volume mensile delle udienze",
+        "note": "Ultimi 6 mesi",
+        "aria": "Volume mensile delle udienze"
+      },
+      "outcomes": {
+        "title": "Risultati nel tempo",
+        "note": "Mix di decisioni",
+        "aria": "Risultati delle udienze nel tempo"
+      }
+    },
+    "recent": {
+      "title": "ESTRATTI RECENTI DI RUOLO",
+      "subtitle": "ULTIMI ESTRATTI DI UDIENZA"
+    },
+    "documents": {
+      "civil": {
+        "label": "Civile",
+        "title": "Estratti udienze della Sezione civile"
+      },
+      "criminal": {
+        "label": "Penale",
+        "title": "Estratti udienze della Sezione penale"
+      },
+      "social": {
+        "label": "Sociale",
+        "title": "Estratti udienze della Sezione sociale"
+      },
+      "general": {
+        "label": "Generale",
+        "title": "Estratti udienze della Sezione generale"
+      }
+    },
+    "actions": {
+      "downloadPdf": "SCARICA PDF"
+    },
+    "assistance": {
+      "title": "Hai bisogno di assistenza?",
+      "body": "Contatta il Consiglio di Stato per aiuto nell'accesso a documenti o orari.",
+      "cta": "CONTATTACI"
+    }
+  },
+  "organization": {
+    "hero": {
+      "title": "ORGANIZZAZIONE<br>DEL CONSIGLIO DI STATO"
+    },
+    "firstPresident": {
+      "alt": "Prima Presidente",
+      "title": "LA PRIMA PRESIDENTE",
+      "body": "La Prima Presidente guida il Consiglio di Stato, presiede le sessioni e assicura il corretto funzionamento dell'istituzione."
+    },
+    "firstPresidents": {
+      "title": "PRIME PRESIDENTI",
+      "honoraryTitle": "Prima Presidente onoraria ed emerita: 2018 - 2022",
+      "honoraryTitleSecond": "Presidente onorario ed emerito: 2022 - 2025",
+      "honoraryTitleThird": "Prima Presidente: 2025 - presente",
+      "placeholderName": "Prima Presidente {{index}}",
+      "placeholderSubtitle": "Spazio foto riservato",
+      "photoLabel": "Foto {{index}}"
+    },
+    "seniorLabel": "MAGISTRATI SENIOR",
+    "chart": {
+      "title": "ORGANIGRAMMA",
+      "subtitle": "Panoramica della struttura di leadership e delle divisioni chiave del Consiglio di Stato.",
+      "interactiveTitle": "ORGANIGRAMMA INTERATTIVO",
+      "interactiveSubtitle": "Esplora la gerarchia e la struttura di reporting.",
+      "aria": "Organigramma interattivo",
+      "peopleTitle": "LEADERSHIP PER NOME",
+      "peopleSubtitle": "Nomi della Prima Presidente, Presidenti e Consiglieri.",
+      "peopleFirstPresidentName": "Brigitte Nsensele Wa Nsensele",
+      "namedPhotoRoles": {
+        "firstPresident": "Prima Presidente",
+        "consultative": "Presidente della Sezione consultiva",
+        "contentieux": "Presidente della Sezione contenziosa"
+      },
+      "roles": {
+        "firstPresident": "Prima Presidente",
+        "ppce": "P.P.C.E",
+        "president": "Presidente",
+        "advisor": "Consigliere"
+      },
+      "nodes": {
+        "firstPresident": "Prima Presidente",
+        "plenary": "Assemblea plenaria",
+        "councilOffice": "Ufficio del Consiglio",
+        "registry": "Cancelleria e Archivi",
+        "civilChamber": "Sezione civile",
+        "criminalChamber": "Sezione penale",
+        "commercialChamber": "Sezione commerciale",
+        "socialChamber": "Sezione sociale",
+        "consultativeSection": "Sezione consultiva",
+        "litigationSection": "Sezione contenziosa"
+      }
+    },
+    "filters": {
+      "searchLabel": "Cerca membri",
+      "searchPlaceholder": "Cerca per nome o titolo",
+      "roleLabel": "Ruolo",
+      "all": "Tutti",
+      "presidents": "Presidenti",
+      "advisors": "Consiglieri",
+      "summary": "Mostrando {{presidents}} presidenti e {{advisors}} consiglieri"
+    },
+    "presidents": {
+      "title": "I PRESIDENTI",
+      "empty": "Nessun presidente corrisponde alla tua ricerca."
+    },
+    "advisors": {
+      "title": "I CONSIGLIERI",
+      "empty": "Nessun consigliere corrisponde alla tua ricerca."
+    },
+    "members": {
+      "learnMore": "Scopri di piu",
+      "loadMore": "Carica altro"
+    },
+    "services": {
+      "overviewTitle": "PANORAMICA SERVIZI",
+      "learnMore": "Scopri di piu",
+      "registry": {
+        "title": "Cancelleria",
+        "body": "Accesso ai depositi, allo stato dei casi e agli atti ufficiali."
+      },
+      "docs": {
+        "title": "Documenti",
+        "body": "Trova moduli, testi legali e guide procedurali."
+      },
+      "tv": {
+        "title": "Consiglio TV",
+        "body": "Guarda udienze, annunci e aggiornamenti."
+      },
+      "title": "I NOSTRI SERVIZI",
+      "subtitle": "Esplora le divisioni e gli uffici che supportano il lavoro del Consiglio di Stato.",
+      "divisions": {
+        "title": "Divisioni",
+        "rooms": "Sale e sezioni",
+        "council": "Ufficio del Consiglio",
+        "registers": "Registri e archivi"
+      },
+      "rooms": {
+        "title": "Sale",
+        "body": "Sale amministrative e giudiziarie che organizzano deliberazioni e udienze."
+      },
+      "council": {
+        "title": "Consiglio",
+        "body": "L'ufficio che coordina la politica e la governance istituzionale."
+      },
+      "registers": {
+        "title": "Registri e archivi",
+        "body": "Unita che gestiscono registri, archivi e depositi ufficiali."
+      },
+      "details": {
+        "chambers": {
+          "title": "Le sezioni",
+          "item1": "Sezione civile",
+          "item2": "Sezione penale",
+          "item3": "Sezione commerciale",
+          "item4": "Sezione sociale",
+          "body1": "Ogni sezione gestisce materie specializzate nella propria competenza.",
+          "body2": "Le sezioni siedono in formazioni secondo la legge applicabile."
+        },
+        "rooms": {
+          "title": "Sale e sezioni",
+          "body1": "Le sale organizzano udienze e preparano i fascicoli.",
+          "body2": "Assicurano la conformita procedurale e la programmazione.",
+          "body3": "Supportano le deliberazioni con coordinamento amministrativo.",
+          "body4": "Garantiscono un flusso regolare dei casi fino alle decisioni finali."
+        },
+        "council": {
+          "title": "Ufficio del Consiglio",
+          "body1": "L'Ufficio del Consiglio assicura il coordinamento strategico.",
+          "body2": "Prepara le sessioni plenarie e gli orientamenti di politica.",
+          "body3": "Supervisiona l'attuazione delle decisioni e delle riforme.",
+          "body4": "Supporta la comunicazione e le relazioni istituzionali."
+        },
+        "registers": {
+          "title": "Registri e archivi",
+          "body1": "I registri ricevono e registrano depositi e decisioni.",
+          "body2": "Mantengono archivi per la conservazione a lungo termine.",
+          "body3": "Forniscono copie certificate su richiesta.",
+          "body4": "Gestiscono l'indicizzazione e il recupero dei fascicoli.",
+          "body5": "Garantiscono riservatezza e integrita dei documenti."
+        }
+      }
+    }
+  }
+}
