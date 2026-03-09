@@ -12,16 +12,16 @@
     },
     "lang": {
       "label": "Lokota",
-      "switchToEnglish": "Bongola na Lingala te, na Anglais",
-      "switchToFrench": "Bongola na français"
+      "switchToEnglish": "Bongola na Anglais",
+      "switchToFrench": "Bongola na Francais"
     },
     "nav": {
       "home": "EBANDELI",
       "court": "TRIBINAL",
       "presentation": "BOTALISI",
       "organization": "ORGANISASION",
-      "administrativeCourts": "Tribinal ya Administratif",
-      "administrativeTribunals": "Bununu ya Administratif",
+      "administrativeCourts": "Tribinal ya Administratif ya Likolo",
+      "administrativeTribunals": "Tribinal ya Administratif ya liboso",
       "reforms": "BONGWANA",
       "international": "BOYOKANI YA MOKILI MOBIMBA",
       "audiences": "MAKIKAO",
@@ -198,6 +198,62 @@
       },
       "message": "Message *",
       "submit": "TINDÁ MESSAGE"
+    }
+  },
+  "appealSteps": {
+    "title": "NDENGE YA KOTONDISA RUFaa",
+    "subtitle": "Landá ba etape oyo mpo na kotinda rufaa na Conseil d'Etat",
+    "steps": {
+      "1": {
+        "title": "Bongisa mikanda na yo",
+        "body": "Sanganisa mokano ya administration oyo olingi kotia na ntembe, identité na yo, mpe bilembo nyonso ya kosunga. Sala ete mikanda nyonso ezala ya kotanga mpe ekangama malamu soki esengeli."
+      },
+      "2": {
+        "title": "Koma requete na yo",
+        "body": "Koma requete polele elobaka makambo, bantina ya rufaa, mpe oyo olingi. Tyela ba reference ya mibeko oyo ekoki."
+      },
+      "3": {
+        "title": "Tinda na Greffe",
+        "body": "Tinda requete na yo mpe mikanda na Greffe ya Conseil d'Etat na ntango ya mibeko. Zwá reçu lokola elembo ya kotinda."
+      },
+      "4": {
+        "title": "Futa ba frais",
+        "body": "Futa ba frais ya tribinal na bureau oyo epesameli. Batela reçu ya kofuta."
+      },
+      "5": {
+        "title": "Zela mayebisi",
+        "body": "Greffe ekoyebisa yo numero ya dossier mpe mokolo ya audience. Ekoki kosengama ete otinda bakopi na partie oyo etelemela yo."
+      }
+    }
+  },
+  "haveQuestions": {
+    "title": "Ozali na mituna?",
+    "body": "Equipe na biso ezali awa mpo na kosalisa yo oyeba ndenge ya rufaa.",
+    "cta": "Tindela biso email"
+  },
+  "faqs": {
+    "title": "MITUNA OYO EBIMISAKA",
+    "items": {
+      "1": {
+        "question": "Dela ya kotinda rufaa ezali nini?",
+        "answer": "Na momesano, rufaa esengeli kotindama na kati ya sanza mibale sima ya koyebisa mokano oyo olingi kotelemela. Mikolo ya sipesial ekoki kozala kolanda lolenge ya likambo ya administration. Tala mibeko oyo etali yango to benga Greffe mpo na lisalisi."
+      },
+      "2": {
+        "question": "Nakoki komimema ngai moko to esengeli avocat?",
+        "answer": "Okoki komimema liboso ya Conseil d'Etat. Kasi mpo na makambo ya mpasi, representation ya avocat ezali malamu. Greffe ekoki kopesa mayebisi na lisalisi juridique soki okoki."
+      },
+      "3": {
+        "question": "Mikanda nini esengeli natia?",
+        "answer": "Na momesano esengeli: mokano oyo olingi kotelemela, requete na yo, identité, mpe mikanda ya kosunga. Greffe epesaka liste ya mikanda soki olingi. Mikanda mosusu ekoki kosengama kolanda dossier."
+      },
+      "4": {
+        "question": "Procédure ya rufaa ekoumela ntango nini?",
+        "answer": "Ntango ya kosala ekobongwana kolanda komplexite ya dossier mpe mosala ya tribinal. Okoyamba mokolo ya audience sima ya enregistrement ya dossier. Greffe ekoki kopesa bantango ya ndakisa."
+      },
+      "5": {
+        "question": "Nakoki kolongola rufaa na ngai?",
+        "answer": "Ee. Okoki kolongola rufaa na yo ata ntango nyonso liboso ya mokano ya suka. Tinda ekomama ya kolongola na Greffe. Yeba ete yango ekoki kozala na impact na makambo mosusu."
+      }
     }
   },
   "footer": {

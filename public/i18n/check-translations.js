@@ -9,6 +9,7 @@ const ts = JSON.parse(fs.readFileSync('./ts.json', 'utf8'));
 const pt = JSON.parse(fs.readFileSync('./pt.json', 'utf8'));
 const es = JSON.parse(fs.readFileSync('./es.json', 'utf8'));
 const de = JSON.parse(fs.readFileSync('./de.json', 'utf8'));
+const it = JSON.parse(fs.readFileSync('./it.json', 'utf8'));
 
 function getAllKeys(obj, prefix = '') {
   let keys = [];
@@ -32,6 +33,7 @@ const tsKeys = getAllKeys(ts).sort();
 const ptKeys = getAllKeys(pt).sort();
 const esKeys = getAllKeys(es).sort();
 const deKeys = getAllKeys(de).sort();
+const itKeys = getAllKeys(it).sort();
 
 console.log('=== Translation Key Count ===');
 console.log('EN (English):', enKeys.length);
@@ -43,6 +45,7 @@ console.log('TS (Tshiluba):', tsKeys.length);
 console.log('PT (Portuguese):', ptKeys.length);
 console.log('ES (Spanish):', esKeys.length);
 console.log('DE (German):', deKeys.length);
+console.log('IT (Italian):', itKeys.length);
 
 console.log('\n=== Missing Keys Analysis ===');
 
@@ -53,6 +56,7 @@ const missingInTS = enKeys.filter(k => !tsKeys.includes(k));
 const missingInPT = enKeys.filter(k => !ptKeys.includes(k));
 const missingInES = enKeys.filter(k => !esKeys.includes(k));
 const missingInDE = enKeys.filter(k => !deKeys.includes(k));
+const missingInIT = enKeys.filter(k => !itKeys.includes(k));
 
 console.log('\nKikongo missing:', missingInKG.length, 'keys');
 if (missingInKG.length > 0) {
@@ -89,6 +93,11 @@ if (missingInDE.length > 0) {
   console.log('First 10:', missingInDE.slice(0, 10));
 }
 
+console.log('\nItalian missing:', missingInIT.length, 'keys');
+if (missingInIT.length > 0) {
+  console.log('First 10:', missingInIT.slice(0, 10));
+}
+
 console.log('\n=== Completion Status ===');
 console.log('EN vs FR:', frKeys.length === enKeys.length ? '✓ Complete' : '✗ Incomplete');
 console.log('EN vs KG:', kgKeys.length === enKeys.length ? '✓ Complete' : `✗ Missing ${enKeys.length - kgKeys.length} keys`);
@@ -98,3 +107,4 @@ console.log('EN vs TS:', tsKeys.length === enKeys.length ? '✓ Complete' : `✗
 console.log('EN vs PT:', ptKeys.length === enKeys.length ? '✓ Complete' : `✗ Missing ${enKeys.length - ptKeys.length} keys`);
 console.log('EN vs ES:', esKeys.length === enKeys.length ? '✓ Complete' : `✗ Missing ${enKeys.length - esKeys.length} keys`);
 console.log('EN vs DE:', deKeys.length === enKeys.length ? '✓ Complete' : `✗ Missing ${enKeys.length - deKeys.length} keys`);
+console.log('EN vs IT:', itKeys.length === enKeys.length ? '✓ Complete' : `✗ Missing ${enKeys.length - itKeys.length} keys`);
