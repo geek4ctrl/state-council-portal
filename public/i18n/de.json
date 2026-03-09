@@ -1,0 +1,886 @@
+{
+  "header": {
+    "siteName": "Staatsrat der DR Kongo",
+    "contact": {
+      "phone": "+ 243 (21) 00000000",
+      "hours": "MONTAG - FREITAG 8:30 - 16:00"
+    },
+    "social": {
+      "facebook": "Facebook",
+      "twitter": "Twitter",
+      "instagram": "Instagram"
+    },
+    "lang": {
+      "label": "Sprache",
+      "switchToEnglish": "Zu Englisch wechseln",
+      "switchToFrench": "Zu Französisch wechseln"
+    },
+    "nav": {
+      "home": "START",
+      "court": "DAS GERICHT",
+      "presentation": "Vorstellung",
+      "organization": "Organisation",
+      "administrativeCourts": "Verwaltungsgerichte",
+      "administrativeTribunals": "Verwaltungstribunale",
+      "reforms": "Reformen",
+      "international": "Internationale Beziehungen",
+      "audiences": "ANHÖRUNGEN",
+      "steps": "SCHRITTE",
+      "news": "NACHRICHTEN",
+      "bookAppointment": "Termin buchen"
+    }
+  },
+  "hero": {
+    "titleOpening2025": "DAS GERICHTSJAHR WIRD IM STAATSRAT FÜR DIE AMTSPERIODE 2025 - 2026 ERÖFFNET"
+  },
+  "mobileNav": {
+    "home": "Start",
+    "organization": "Org.",
+    "apply": "Einreichen",
+    "news": "Nachrichten"
+  },
+  "comingSoon": {
+    "subtitle": "Demnächst",
+    "description": "Diese Seite wird derzeit entwickelt und ist bald verfügbar. Bitte schauen Sie später noch einmal vorbei, um den Inhalt zu sehen.",
+    "backHome": "Zurück zur Startseite"
+  },
+  "errors": {
+    "generic": {
+      "code": "Fehler",
+      "title": "Etwas ist schiefgelaufen",
+      "message": "Wir haben Probleme, Ihre Anfrage abzuschließen. Bitte versuchen Sie es erneut oder kehren Sie zur Startseite des Staatsrats zurück.",
+      "primary": "Zur Startseite",
+      "secondary": "Updates ansehen"
+    },
+    "notFound": {
+      "code": "404",
+      "title": "Seite nicht gefunden",
+      "message": "Die von Ihnen gesuchte Seite existiert nicht oder wurde verschoben."
+    }
+  },
+  "history": {
+    "title": "Geschichte",
+    "body": "Entdecken Sie die reiche Geschichte des Staatsrats."
+  },
+  "process": {
+    "title": "Gerichtsverfahren",
+    "body": "Erfahren Sie, wie das Verfahren abläuft und was Sie erwartet."
+  },
+  "judges": {
+    "title": "Die Richter",
+    "body": "Lernen Sie die angesehenen Richter des Staatsrats kennen."
+  },
+  "memberDetail": {
+    "back": "← Zurück zur Organisation",
+    "title": "Mitgliedsprofil",
+    "subtitle": "Detailliertes Profil und Kontaktdaten.",
+    "office": "Büro",
+    "email": "E-Mail",
+    "notFound": {
+      "title": "Mitglied nicht gefunden",
+      "body": "Das angeforderte Profil konnte nicht gefunden werden.",
+      "cta": "Zurück zur Organisation"
+    }
+  },
+  "news": {
+    "hero": {
+      "title": "NEWS & AKTUELLES",
+      "body": "Unrecht kann sich in unserer Gesellschaft auf viele Arten zeigen. Wir geben Ihnen die Möglichkeit, alle Formen von Missbrauch zu melden."
+    },
+    "section": {
+      "title": "NEWS & AKTUELLES",
+      "subtitle": "VISION MACHT UNS AUS"
+    },
+    "insights": {
+      "title": "NEWS-EINBLICKE",
+      "subtitle": "Trends nach Thema und Veröffentlichungsrhythmus",
+      "topics": {
+        "title": "Themen nach Monat",
+        "note": "Letzte 6 Monate",
+        "aria": "News-Themen nach Monat"
+      },
+      "cadence": {
+        "title": "Veröffentlichungsrhythmus",
+        "note": "Veröffentlichte Artikel",
+        "aria": "Veröffentlichungsrhythmus nach Monat"
+      }
+    },
+    "actions": {
+      "readMore": "Weiterlesen"
+    },
+    "pagination": {
+      "label": "News-Seitennavigation",
+      "previous": "Vorherige Seite",
+      "next": "Nächste Seite",
+      "pageLabel": "Seite {{page}}"
+    },
+    "empty": {
+      "title": "Noch keine News-Beiträge",
+      "body": "Neue Artikel erscheinen hier, sobald sie veröffentlicht werden."
+    },
+    "articles": {
+      "1": {
+        "date": "30. Januar",
+        "category": "Verwaltung",
+        "title": "Die Erste Präsidentin des Staatsrats fordert die Magistrate auf, die Entschließung a...",
+        "excerpt": "Im Anschluss an die Abschlusszeremonie der ordentlichen Generalversammlung des Hohen Rates der Verwaltungs..."
+      },
+      "2": {
+        "date": "30. Januar",
+        "category": "Verwaltung",
+        "title": "ORIENTIERUNGSTREFFEN IM STAATSRAT",
+        "excerpt": "Kinshasa, 18. Oktober 2025: Der Staatsrat der Demokratischen Republik Kongo informiert die Öf..."
+      },
+      "3": {
+        "date": "30. Januar",
+        "category": "Verwaltung",
+        "title": "ORIENTIERUNGSTREFFEN IM STAATSRAT",
+        "excerpt": "Kinshasa, 18. Oktober 2025: Der Staatsrat der Demokratischen Republik Kongo informiert die Öf..."
+      }
+    }
+  },
+  "steps": {
+    "hero": {
+      "report": {
+        "title": "MELDUNG",
+        "body": "Unrecht kann sich in unserer Gesellschaft auf viele Arten zeigen. Wir geben Ihnen die Möglichkeit, alle Formen von Missbrauch zu melden."
+      },
+      "appointment": {
+        "title": "TERMIN<br>BUCHEN",
+        "body": "Um ein Treffen mit dem Staatsrat zu vereinbaren, füllen Sie bitte das folgende Terminanfrageformular aus. Stellen Sie sicher, dass alle erforderlichen Felder korrekt ausgefüllt sind, damit wir Ihre Anfrage effizient bearbeiten können. Sie erhalten eine Bestätigung per E-Mail oder Telefon mit Datum und Uhrzeit."
+      },
+      "appeal": {
+        "title": "REKURS AN DEN<br>STAATSRAT",
+        "body1": "Ein Rekurs an den Staatsrat ist ein verwaltungsrechtlicher Rechtsbehelf, der es einer Partei ermöglicht, Verwaltungsentscheidungen und -handlungen anzufechten. Der Staatsrat prüft, ob das Verwaltungsrecht korrekt angewendet wurde und ob die richtigen Verfahren eingehalten wurden.",
+        "body2": "Der Staatsrat wird durch einen Antrag der Parteien oder durch eine beim Rat eingereichte Erklärung angerufen. Rekurse müssen innerhalb der gesetzlichen Fristen eingereicht und durch eine Petition mit unterstützenden Dokumenten bestätigt werden."
+      }
+    },
+    "tabs": {
+      "report": "Melden",
+      "appointment": "Termin buchen",
+      "appeal": "Rekurs einreichen"
+    },
+    "forms": {
+      "report": {
+        "title": "BESCHWERDEFORMULAR",
+        "subtitle": "WIR MÖCHTEN IHRE ANLIEGEN HÖREN"
+      },
+      "appointment": {
+        "title": "TERMIN VEREINBAREN",
+        "subtitle": "WIR HELFEN IHNEN GERN"
+      },
+      "appeal": {
+        "title": "REKURSFORMULAR",
+        "subtitle": "WIR MÖCHTEN IHRE ANLIEGEN HÖREN"
+      },
+      "fullName": "Vollständiger Name *",
+      "email": "E-Mail *",
+      "department": "Abteilung",
+      "chambers": {
+        "criminal": "Strafkammer",
+        "civil": "Zivilkammer",
+        "social": "Sozialkammer",
+        "commercial": "Handelskammer"
+      },
+      "meeting": {
+        "placeholder": "Wen möchten Sie treffen? *",
+        "firstPresident": "Erste Präsidentin",
+        "chamberPresident": "Kammerpräsident",
+        "legalAdvisor": "Rechtsberater",
+        "clerk": "Gerichtsschreiber"
+      },
+      "visit": {
+        "placeholder": "Wann planen Sie zu kommen?",
+        "thisWeek": "Diese Woche",
+        "nextWeek": "Nächste Woche",
+        "thisMonth": "Diesen Monat",
+        "nextMonth": "Nächsten Monat"
+      },
+      "message": "Nachricht *",
+      "submit": "NACHRICHT SENDEN"
+    }
+  },
+  "appealSteps": {
+    "title": "WIE EIN REKURS EINGEREICHT WIRD",
+    "subtitle": "Folgen Sie diesen Schritten, um Ihren Rekurs beim Staatsrat einzureichen",
+    "steps": {
+      "1": {
+        "title": "Bereiten Sie Ihre Unterlagen vor",
+        "body": "Stellen Sie die angefochtene Verwaltungsentscheidung, Ihre Identifikation und alle unterstützenden Belege zusammen. Stellen Sie sicher, dass alle Dokumente lesbar und gegebenenfalls ordnungsgemäß beglaubigt sind."
+      },
+      "2": {
+        "title": "Verfassen Sie Ihre Eingabe",
+        "body": "Schreiben Sie eine klare Eingabe mit den Fakten, den Rekursgründen und dem gewünschten Ergebnis. Fügen Sie Verweise auf die einschlägigen Rechtsvorschriften hinzu."
+      },
+      "3": {
+        "title": "Einreichung beim Register",
+        "body": "Reichen Sie Ihre Eingabe und die unterstützenden Dokumente innerhalb der gesetzlichen Fristen beim Register des Staatsrats ein. Lassen Sie sich eine Empfangsbestätigung ausstellen."
+      },
+      "4": {
+        "title": "Zahlen Sie die anfallenden Gebühren",
+        "body": "Zahlen Sie die erforderlichen Gerichtsgebühren am vorgesehenen Schalter. Bewahren Sie die Zahlungsbestätigung für Ihre Unterlagen auf."
+      },
+      "5": {
+        "title": "Auf Benachrichtigung warten",
+        "body": "Das Register informiert Sie über die Aktennummer und den Anhörungstermin. Möglicherweise müssen Sie Kopien der Gegenseite zustellen."
+      }
+    }
+  },
+  "haveQuestions": {
+    "title": "Haben Sie Fragen?",
+    "body": "Unser Team hilft Ihnen, den Rekursprozess zu verstehen.",
+    "cta": "Senden Sie uns eine E-Mail"
+  },
+  "faqs": {
+    "title": "HÄUFIG GESTELLTE FRAGEN",
+    "items": {
+      "1": {
+        "question": "Was ist die Frist für die Einreichung eines Rekurses?",
+        "answer": "Rekurse müssen in der Regel innerhalb von zwei Monaten nach Bekanntgabe der angefochtenen Entscheidung eingereicht werden. Je nach Art des Verwaltungsakts können spezifische Fristen gelten. Konsultieren Sie die einschlägige Gesetzgebung oder kontaktieren Sie das Register."
+      },
+      "2": {
+        "question": "Kann ich mich selbst vertreten oder brauche ich einen Anwalt?",
+        "answer": "Sie können sich vor dem Staatsrat selbst vertreten. Bei komplexen Fällen wird jedoch eine rechtliche Vertretung empfohlen. Das Register kann Informationen zu Prozesskostenhilfe geben, falls Sie berechtigt sind."
+      },
+      "3": {
+        "question": "Welche Unterlagen muss ich beifügen?",
+        "answer": "In der Regel benötigen Sie: die angefochtene Entscheidung, Ihre Eingabe, einen Identitätsnachweis und unterstützende Dokumente. Das Register stellt auf Anfrage eine Checkliste zur Verfügung. Je nach Fall können zusätzliche Unterlagen erforderlich sein."
+      },
+      "4": {
+        "question": "Wie lange dauert das Rekursverfahren?",
+        "answer": "Die Bearbeitungszeiten variieren je nach Komplexität des Falls und Arbeitsbelastung des Gerichts. Sie erhalten einen Anhörungstermin, nachdem Ihr Fall registriert wurde. Das Register kann Richtwerte für ähnliche Fälle nennen."
+      },
+      "5": {
+        "question": "Kann ich meinen Rekurs zurückziehen?",
+        "answer": "Ja. Sie können Ihren Rekurs jederzeit vor der endgültigen Entscheidung zurückziehen. Reichen Sie dazu einen schriftlichen Rücknahmeantrag beim Register ein. Beachten Sie, dass die Rücknahme Auswirkungen auf verbundene Verfahren haben kann."
+      }
+    }
+  },
+  "footer": {
+    "mainOffice": {
+      "title": "Hauptbüro",
+      "address1": "7639, Kreuzung der Avenuen Pumbu und Bâtonniers",
+      "address2": "Gemeinde Gombe, Kinshasa",
+      "address3": "Demokratische Republik Kongo",
+      "phone": "Tel: +243 (21) 0000000",
+      "email": "E-Mail: info@conseildetatrdc.com"
+    },
+    "quickLinks": {
+      "title": "Schnellzugriff",
+      "about": "Über das Gericht",
+      "jurisprudence": "Rechtsprechung",
+      "filing": "Einreichungsverfahren",
+      "contact": "Kontakt"
+    },
+    "resources": {
+      "title": "Ressourcen",
+      "legalDocs": "Rechtsdokumente",
+      "decisions": "Gerichtsentscheidungen",
+      "reports": "Jahresberichte",
+      "faqs": "FAQs"
+    },
+    "connect": {
+      "title": "Verbinden",
+      "facebook": "Facebook",
+      "twitter": "Twitter",
+      "instagram": "Instagram",
+      "linkedin": "LinkedIn"
+    },
+    "privacy": "Datenschutz",
+    "copyright": "Copyright Staatsrat. Alle Rechte vorbehalten"
+  },
+  "home": {
+    "hero": {
+      "learnMore": "Mehr erfahren",
+      "slides": {
+        "0": {
+          "title": "STAATSRAT - JUDIZIELLER JAHRESAUFTAKT 2025-2026",
+          "subtitle": "PALAST DES VOLKES - 13. NOVEMBER 2025",
+          "body": "Der Staatsrat versammelte sich im Palais des Peuples zur feierlichen Eröffnung des Justizjahres 2025-2026.",
+          "cta": "Mehr erfahren"
+        },
+        "1": {
+          "title": "DAS GERICHTSJAHR WIRD IM STAATSRAT FÜR DIE AMTSPERIODE 2025 - 2026 ERÖFFNET",
+          "subtitle": "HAUS VON RECHT UND ORDNUNG",
+          "body": "Dieses Video zeigt die feierliche Eröffnung des Justizjahres 2025-2026. In Anwesenheit von Präsident Felix Tshisekedi brachte die Sitzung hochrangige Richter und Rechtsverantwortliche zusammen.",
+          "cta": "Live-Sitzung auf YouTube ansehen"
+        },
+        "2": {
+          "title": "STÄRKUNG DER JUSTIZUNABHÄNGIGKEIT UND RECHENSCHAFT",
+          "subtitle": "HAUS VON RECHT UND ORDNUNG",
+          "body": "Der STAATSRAT setzt sich weiterhin für Gerechtigkeit, Fairness und Rechtsstaatlichkeit ein. Wir verpflichten uns zu Transparenz und Integrität.",
+          "cta": "Mehr über unsere Mission erfahren"
+        },
+        "3": {
+          "title": "FÖRDERUNG JURISTISCHER EXZELLENZ IN DER DEMOKRATISCHEN REPUBLIK KONGO",
+          "subtitle": "HAUS VON RECHT UND ORDNUNG",
+          "body": "Durch rigorose juristische Ausbildung und die Einhaltung internationaler Best Practices streben wir höchste Standards gerichtlicher Exzellenz an.",
+          "cta": "Unsere Initiativen erkunden"
+        }
+      }
+    },
+    "quickLinks": {
+      "items": {
+        "news": {
+          "alt": "Nachrichten",
+          "title": "NACHRICHTEN",
+          "body": "Bleiben Sie über wichtige Entscheidungen und Ereignisse informiert.",
+          "action": "Lesen"
+        },
+        "excerpts": {
+          "alt": "Auszüge",
+          "title": "AUSZÜGE AUS ROLLEN",
+          "body": "Prüfen Sie Anhörungszeiten und laufende Fälle.",
+          "action": "Mehr erfahren"
+        },
+        "report": {
+          "alt": "Meldung",
+          "title": "MELDUNG",
+          "body": "Melden Sie verdächtige oder illegale Aktivitäten sicher.",
+          "action": "Meldung abgeben"
+        },
+        "appointment": {
+          "alt": "Termin buchen",
+          "title": "TERMIN BUCHEN",
+          "body": "Planen Sie Konsultationen mit Gerichtsoffiziellen.",
+          "action": "Jetzt buchen"
+        }
+      }
+    },
+    "keyFacts": {
+      "title": "Schlüsselzahlen",
+      "subtitle": "Fallvolumen, Bearbeitungszeit und Entscheidungsstruktur im Überblick.",
+      "cards": {
+        "volume": {
+          "title": "Fallvolumen",
+          "note": "Letzte 6 Monate",
+          "aria": "Fallvolumen nach Monat"
+        },
+        "processing": {
+          "title": "Bearbeitungszeit",
+          "note": "Durchschnittliche Tage",
+          "aria": "Durchschnittliche Bearbeitungszeit nach Quartal"
+        },
+        "decisions": {
+          "title": "Entscheidungen nach Typ",
+          "note": "Laufendes Jahr",
+          "aria": "Entscheidungen nach Typ"
+        }
+      }
+    },
+    "offer": {
+      "title": "WAS WIR BIETEN",
+      "subtitle": "Wir bieten maßgeschneiderte rechtliche Lösungen, um Ihre Rechte zu schützen und Gerechtigkeit zu gewährleisten.",
+      "cards": {
+        "1": {
+          "title": "Oberste Justizbehörde",
+          "body": "Als höchstes Gericht der ordentlichen Gerichtsbarkeit sorgt der Staatsrat für eine einheitliche Auslegung und Anwendung des Rechts in der Demokratischen Republik Kongo."
+        },
+        "2": {
+          "title": "Rechtssicherheit",
+          "body": "Durch unsere Rechtsprechung und Entscheidungen setzen wir Präzedenzfälle, die untere Gerichte leiten und die Kohärenz der Rechtsprechung sichern."
+        },
+        "3": {
+          "title": "Justizielle Exzellenz",
+          "body": "Unsere Magistrate und Berater werden nach Leistung ausgewählt, was höchste Standards in Fachkompetenz, Integrität und Gerechtigkeitsengagement gewährleistet."
+        },
+        "4": {
+          "title": "Internationale Zusammenarbeit",
+          "body": "Wir beteiligen uns aktiv am Dialog mit internationalen Justizorganen und pflegen die Zusammenarbeit mit frankophonen und afrikanischen Gerichten."
+        }
+      }
+    },
+    "expertise": {
+      "title": "FACHGEBIETE",
+      "subtitle": "Der STAATSRAT ist als oberstes Gericht der ordentlichen Gerichtsbarkeit für verschiedene Rechtsmaterien zuständig.",
+      "stats": {
+        "domains": {
+          "value": "6",
+          "label": "Bereiche"
+        },
+        "decisions": {
+          "value": "120+",
+          "label": "Entscheidungen/Jahr"
+        },
+        "magistrates": {
+          "value": "30+",
+          "label": "Magistrate"
+        }
+      },
+      "cta": "Details ansehen",
+      "areas": {
+        "civil": {
+          "title": "Zivil- und Handelsrecht",
+          "desc": "Verträge, Verpflichtungen und Eigentumsfragen im ganzen Land.",
+          "items": {
+            "1": "Rekurse von Berufungsgerichten",
+            "2": "Handelsstreitigkeiten und Verträge",
+            "3": "Eigentums- und Erbangelegenheiten"
+          }
+        },
+        "family": {
+          "title": "Familienrecht",
+          "desc": "Schutz von Familienrechten und Lösung sensibler Streitigkeiten.",
+          "items": {
+            "1": "Rekurse in Ehe- und Scheidungsfällen",
+            "2": "Sorgerechtsstreitigkeiten",
+            "3": "Nachlassangelegenheiten"
+          }
+        },
+        "public": {
+          "title": "Öffentliches Recht",
+          "desc": "Aufsicht über staatliches Handeln und verfassungsrechtliche Garantien.",
+          "items": {
+            "1": "Fälle mit Zuständigkeitsprivileg",
+            "2": "Verfolgung hoher Amtsträger",
+            "3": "Verfassungsrechtliche Angelegenheiten"
+          }
+        },
+        "labor": {
+          "title": "Arbeits- und Beschäftigungsrecht",
+          "desc": "Arbeitskonflikte und Schutz der Arbeitnehmerrechte.",
+          "items": {
+            "1": "Rekurse in Arbeitsstreitigkeiten",
+            "2": "Arbeitsvertragsangelegenheiten",
+            "3": "Schutz der Arbeitnehmerrechte"
+          }
+        },
+        "criminal": {
+          "title": "Strafrecht",
+          "desc": "Überprüfung strafrechtlicher Entscheidungen und Verfahrensgarantien.",
+          "items": {
+            "1": "Strafrechtliche Rekurse an den Staatsrat",
+            "2": "Prüfung von Verfahrensfehlern",
+            "3": "Anwendung des Strafrechts"
+          }
+        },
+        "property": {
+          "title": "Eigentumsrechte",
+          "desc": "Grundbesitz, Immobilien und Eigentumstransaktionen.",
+          "items": {
+            "1": "Immobilienstreitigkeiten",
+            "2": "Grundstückseigentum",
+            "3": "Eigentumstransaktionen"
+          }
+        }
+      }
+    },
+    "contact": {
+      "address": {
+        "title": "Büroadresse",
+        "body": "7639, Kreuzung der Avenuen Pumbu und Batonniers in der Gemeinde Gombe/Kinshasa-DRK"
+      },
+      "phone": {
+        "title": "Büronummer",
+        "body": "+243 000000000"
+      },
+      "email": {
+        "title": "Büro-E-Mail",
+        "body": "info@conseildetatrdc.com"
+      }
+    },
+    "president": {
+      "imageAlt": "Präsidentin",
+      "cta": "Mehr erfahren",
+      "slides": {
+        "1": {
+          "title": "DIE ERSTE PRÄSIDENTIN DES STAATSRATS",
+          "paragraphs": {
+            "1": "Als dritthöchstes Mitglied des Obersten Rates der Justiz der DRK spendete die Erste Präsidentin des STAATSRATS, Brigitte Nsensele Wa Nsensele, am Donnerstag, dem 27. Februar, aus Solidarität mit den Opfern der ruandischen Aggression im Osten des Landes Blut.",
+            "2": "Für jeden demokratischen kongolesischen Bürger ist die Unterstützung der Kriegsanstrengungen eine staatsbürgerliche Pflicht. Die Justiz ist davon nicht ausgenommen.",
+            "3": "Seit über drei Jahrzehnten leidet die DRK unter Aggressionen durch Ruanda und andere negative bewaffnete Gruppen, was zu Millionen von Todesopfern, Zehntausenden von Vertriebenen und einer beklagenswerten humanitären Lage geführt hat."
+          }
+        },
+        "2": {
+          "title": "JUSTIZFÜHRUNG UND REFORM",
+          "paragraphs": {
+            "1": "Unter der Führung der Ersten Präsidentin hat der STAATSRAT umfassende Justizreformen eingeleitet, die auf die Modernisierung des Justizsystems abzielen.",
+            "2": "Die Reformen umfassen die Digitalisierung von Gerichtsakten, die Einführung von Fallmanagementsystemen sowie Schulungsprogramme für Richter und Gerichtspersonal.",
+            "3": "Diese Initiativen spiegeln das Engagement des Gerichts für Transparenz, Effizienz und Rechenschaft in der Rechtspflege wider."
+          }
+        },
+        "3": {
+          "title": "INTERNATIONALE ZUSAMMENARBEIT",
+          "paragraphs": {
+            "1": "Der STAATSRAT arbeitet aktiv mit internationalen Justizinstitutionen zusammen und nimmt an globalen Foren teil, um Erfahrungen auszutauschen.",
+            "2": "Durch Partnerschaften mit Gerichten in Frankreich, Belgien und anderen frankophonen Ländern stellt das Gericht sicher, dass es an der Spitze rechtlicher Entwicklungen bleibt.",
+            "3": "Dieses internationale Engagement stärkt das Justizsystem der DRK und verbessert seine Fähigkeit, Recht nach internationalen Standards zu sprechen."
+          }
+        }
+      }
+    },
+    "newsletter": {
+      "title": "NEWS & ARTIKEL",
+      "readMore": "Weiterlesen",
+      "cta": "Mehr erfahren",
+      "items": {
+        "1": {
+          "alt": "Rekurse",
+          "date": "15 Nov 2025 | Entscheidungsbericht",
+          "title": "Rekurse navigieren: Rechtliche Hinweise für einen reibungslosen Ablauf"
+        },
+        "2": {
+          "alt": "Staatsratsverfahren",
+          "date": "22 Okt 2025 | Gerichtsupdate",
+          "title": "Wesentliche Aspekte in Verfahren vor dem Staatsrat"
+        },
+        "3": {
+          "alt": "Verfahrensrecht",
+          "date": "18 Okt 2025 | Gerichtsurteil",
+          "title": "Aktuelle Änderungen im Verfahrensrecht"
+        },
+        "4": {
+          "alt": "Rechte",
+          "date": "12 Okt 2025 | Rechtsupdate",
+          "title": "Ihre Rechte im Rekursverfahren verstehen"
+        }
+      }
+    }
+  },
+  "about": {
+    "hero": {
+      "title": "DAS HÖCHSTE GERICHT DER VERWALTUNGSGERICHTSBARKEIT IN DER DEMOKRATISCHEN REPUBLIK KONGO VERSTEHEN"
+    },
+    "intro": {
+      "title": "DAS HÖCHSTE GERICHT DER VERWALTUNGSGERICHTSBARKEIT IN DER DEMOKRATISCHEN REPUBLIK KONGO VERSTEHEN",
+      "body": "Artikel 151 Absatz 1 der Verfassung der DRK vom 18. Februar 2006 errichtet ein verwaltungsgerichtliches System aus Verwaltungsgerichten und -tribunalen unter der Aufsicht des Staatsrats. Artikel 82 des Organgesetzes Nr. 13/011-B vom 11. April 2013 zur Organisation, Zusammensetzung und Funktionsweise der Verwaltungsgerichte bestimmt das Bestehen eines Staatsrats mit ordentlichem Sitz in der Hauptstadt der Demokratischen Republik Kongo. Seine Zuständigkeit kann an einem anderen Ort ausgeübt werden. Historisch zeichnet der Staatsrat in dieser kurzen Darstellung seine Geschichte und Wurzeln innerhalb unserer Justizinstitution nach. Durch Gesetzesdekret vom 31. Januar 1968 geschaffen, hat der Staatsrat seine markante Prägung seit mehr als einem Jahrhundert. Tatsächlich wurde acht Jahre nach der Unabhängigkeit 1960 dieser Staatsrat zur Regelung administrativer Rekurse eingerichtet. Erst nach einem Jahrhundert wurde 2015 das Oberste Verwaltungsgericht geschaffen. Dieses Gericht hörte im Zuge der Verfassung von 2006 auf zu bestehen, und ihre Einführung erklärte alle widersprechenden Bestimmungen für nichtig und bestimmte in Artikel 223, dass die vor der Verkündung der geltenden Verfassung ergangenen Urteile und Beschlüsse als solche gelten. Die Gerichte, die in letzter Instanz entscheiden, wurden wegen größerer Spezialisierung als Präzedenzinstrument eingesetzt. In der Spezialisierung vom 18. Februar 2006 hörte das Oberste Verwaltungsgericht endgültig am 11. April 2013 auf zu bestehen, als das Organgesetz Nr. 13/011-B vom 11. April 2013 über die Organisation, Zusammensetzung und Funktionsweise der Verwaltungsgerichte erlassen wurde. Gemäß Artikel 151 Absatz 3 der Verfassung wird die Regulierungsbefugnis zur Ausübung der Kompetenzen des früheren Obersten Verwaltungsgerichts festgelegt. Die Verwaltungsgerichte und -tribunale bilden das verwaltungsgerichtliche System des Kongo."
+    },
+    "rubrics": {
+      "legalBasis": "Rechtsgrundlage",
+      "organization": "Organisation",
+      "mission": "Mission",
+      "competences": "Zuständigkeiten",
+      "procedureBeforeCouncil": "Verfahren vor dem Staatsrat"
+    },
+    "legal": {
+      "title": "ZUGRIFF AUF DIE WICHTIGSTEN RECHTS- UND REGELWERKSTEXTE<br>DES STAATSRATS",
+      "docs": {
+        "1": "Organgesetz Nr. 13/011-B vom 11. April 2013 über die Organisation, Zusammensetzung und Funktionsweise der ordentlichen Gerichte",
+        "2": "Dekret Nr. 13/046 vom 25. September 2013 über die Kammern des Staatsrats",
+        "3": "Dekretgesetz Nr. 13/018 über die Vergütung und Zulagen der Magistrate"
+      },
+      "detail": {
+        "title": "Organgesetz Nr. 13/011-B vom 11. April 2013 über die Organisation, Zusammensetzung und Funktionsweise der Verwaltungsgerichte",
+        "paragraph1": "Der Inhalt dieses Organgesetzes Nr. 13/011-B vom 11. April 2013 über die Organisation, Zusammensetzung und Funktionsweise der Verwaltungsgerichte wurde in einen allgemeinen verwaltungsgerichtlichen Kontext gestellt.",
+        "paragraph2": "Jeder Artikel des Gesetzes ist in den Schlüsselbestimmungen des Titels I über die Magistrate verfasst:",
+        "list1": {
+          "1": "KAPITEL I: Allgemeine Bestimmungen",
+          "2": "KAPITEL II: Ernennung und Amtseinführung der Magistrate und Gerichtsschreiber",
+          "3": "KAPITEL III: Rechtsstatus",
+          "4": "KAPITEL IV: Befugnisse, Garantien und Grenzen der Magistrate",
+          "5": "KAPITEL V: Disziplin"
+        },
+        "paragraph3": "Es wird durch Titel II des Staatsrats, Artikel 81 bis Artikel 95, geregelt, wobei jeder Artikel den Staatsrat in den folgenden Kapiteln behandelt:",
+        "list2": {
+          "1": "KAPITEL I: Rechtsstatus",
+          "2": "KAPITEL II: Amtseinführung und Zusammensetzung des Staatsrats",
+          "3": "KAPITEL III: Verschiedene Formationen, Arbeitsweise und Personal des Staatsrats"
+        },
+        "paragraph4": "Die Zusammensetzung in Artikel 82 legt fest, wie der Staatsrat zusammengesetzt ist, und listet das Personal auf, das die Magistrate unterstützt sowie die Aufgaben des Hilfspersonals für die Erfüllung des Verwaltungsmandats.",
+        "paragraph5": "Artikel 83 sieht die Zuständigkeiten des Staatsrats vor, darunter: Rekurse in Verwaltungssachen; die Ausübung der Disziplinargewalt über Richter und Gerichtsgehilfen in seiner gerichtlichen Zuständigkeit; die Entgegennahme des Eides der Magistrate und Gerichtsschreiber der Verwaltungsgerichtsbarkeit; die Abgabe von Rechtsgutachten in Anwesenheit der ernannten Richter oder der zuständigen Gerichtsbarkeit. Artikel 84 regelt die Zusammensetzung der verschiedenen Sektionen und Formationen des Staatsrats; Artikel 88 bestimmt die Zuständigkeiten bei der Beratung der Kammer, wobei jede Kammer eine gerichtliche Formation zur Erfüllung des Mandats des Staatsrats bildet, um unterschiedliche Zuständigkeiten wahrzunehmen, sofern das Quorum erreicht ist.",
+        "paragraph6": "Das in dem Artikel verlangte Quorum ist erreicht, wenn alle Kammern wie folgt zusammengesetzt sind: der Präsident oder Vizepräsident der Kammer und zwei weitere Magistrate sowie ein Rechtsberater und der Gerichtsschreiber.",
+        "paragraph7": "Bezüglich des gerichtlichen Quorums in Artikel 89 kann jede Kammer eine gerichtliche Formation zur Erfüllung des Mandats des Staatsrats bilden und nur dann unterschiedliche Zuständigkeiten wahrnehmen, wenn das Quorum erreicht ist.",
+        "paragraph8": "Das in dem Artikel verlangte Quorum ist erreicht, wenn alle Kammern wie folgt zusammengesetzt sind: der Präsident oder Vizepräsident der Kammer und zwei weitere Magistrate sowie ein Rechtsberater und der Gerichtsschreiber. Hinzu kommt die betroffene interessierte Partei, die während des Verfahrens mit ihrer Assistenz, falls erforderlich, anwesend ist, und während der Beratungen unter Ausschluss der Öffentlichkeit mit Teilnahme des Generalstaatsanwalts. Die Teilnahme des Gerichtsschreibers erfolgt durch die Instruktion der Sache.",
+        "paragraph9": "Nachdem Sie die Rechtstexte auf dieser Plattform gelesen und erläutert bekommen haben, können Sie deren Dienstleistung direkt per E-Mail oder Telefon anfordern und erhalten diese."
+      }
+    }
+  },
+  "reforms": {
+    "hero": {
+      "title": "VORGESCHLAGENE<br>REFORMEN",
+      "body": "Modernisierung des Justizsystems durch strategische Reformen, die Effizienz, Transparenz und Zugang zur Justiz für alle kongolesischen Bürger verbessern."
+    },
+    "building": {
+      "tag": "JUSTIZMODERNISIERUNG",
+      "title": "AUFBAU EINES STÄRKEREN JUSTIZSYSTEMS",
+      "body": "Nach der Verfassung von 2006 hat der STAATSRAT umfassende Reformen eingeleitet, um die richterliche Unabhängigkeit zu stärken, den Zugang zur Justiz zu verbessern und internationale Standards zu erfüllen. Diese Initiativen konzentrieren sich auf institutionelle Stärkung, digitale Transformation und Kapazitätsaufbau."
+    },
+    "initiatives": {
+      "tag": "TRANSFORMATIONSFAHRPLAN",
+      "title": "STRATEGISCHE REFORMINITIATIVEN",
+      "body": "Ein umfassender Fünf-Phasen-Ansatz zur Modernisierung unseres Justizsystems, der Exzellenz in jeder Transformationsphase sicherstellt.",
+      "badges": {
+        "critical": "Kritische Priorität",
+        "high": "Hohe Priorität",
+        "medium": "Mittlere Priorität"
+      },
+      "steps": {
+        "1": {
+          "title": "Institutionelle Unabhängigkeit",
+          "body": "Stärkung der richterlichen Unabhängigkeit durch verfassungsrechtliche Garantien und finanzielle Autonomie."
+        },
+        "2": {
+          "title": "Zugang zur Justiz",
+          "body": "Ausbau von Rechtsberatungsdiensten und Einrichtung regionaler Zugangspunkte im ganzen Land."
+        },
+        "3": {
+          "title": "Internationale Zusammenarbeit",
+          "body": "Vertiefung von Partnerschaften mit internationalen Justizorganen zum Wissensaustausch."
+        },
+        "4": {
+          "title": "Digitale Transformation",
+          "body": "Einführung moderner Fallmanagementsysteme und Online-Datenbanken der Rechtsprechung."
+        },
+        "5": {
+          "title": "Kapazitätsaufbau",
+          "body": "Kontinuierliche Fortbildung für Magistrate und erweiterte juristische Recherchefähigkeiten."
+        }
+      }
+    },
+    "stakeholders": {
+      "title": "SCHLÜSSELAKTEURE",
+      "subtitle": "REFORMLEITUNG",
+      "roles": {
+        "president": "Präsident",
+        "vicePresident": "Vizepräsident",
+        "chiefMagistrate": "Oberster Magistrat",
+        "internationalRelations": "Internationale Beziehungen"
+      }
+    }
+  },
+  "international": {
+    "hero": {
+      "title": "INTERNATIONALE<br>BEZIEHUNGEN",
+      "body": "Im Kontext der Internationalisierung von Recht und Justiz ist der STAATSRAT der Demokratischen Republik Kongo nicht von diesem Umfeld isoliert. Er beteiligt sich aktiv am Dialog der Richter und hält ein hohes Maß an Zusammenarbeit im Rahmen der Vereinigung der obersten Gerichte der französischsprachigen Staaten (AHJUCAF) und der Afrikanischen Vereinigung frankophoner oberster Gerichte (AA-HJF) aufrecht."
+    },
+    "stats": {
+      "associations": "Wichtige internationale Justizverbände",
+      "partners": "Partnerländer & Oberste Gerichte",
+      "exchanges": "Jährliche Justizaustausche & Konferenzen"
+    },
+    "networks": {
+      "title": "INTERNATIONALE JUSTIZNETZWERKE",
+      "subtitle": "Das Gericht pflegt privilegierte Beziehungen zu den führenden Vereinigungen frankophoner und afrikanischer oberster Gerichte",
+      "ahjucaf": {
+        "name": "Vereinigung der obersten Gerichte französischer Sprache",
+        "body": "Eine Plattform für Austausch und Zusammenarbeit zwischen frankophonen obersten Gerichten, die den richterlichen Dialog, den Austausch von Rechtsprechung und die Stärkung institutioneller Kapazitäten weltweit in französischsprachigen Rechtsordnungen fördert."
+      },
+      "aahjf": {
+        "name": "Afrikanische Vereinigung frankophoner oberster Gerichte",
+        "body": "Eine Plattform für Austausch und Zusammenarbeit zwischen frankophonen obersten Gerichten, die den richterlichen Dialog, den Austausch von Rechtsprechung und die Stärkung institutioneller Kapazitäten weltweit in französischsprachigen Rechtsordnungen fördert."
+      }
+    },
+    "domains": {
+      "title": "BEREICHE INTERNATIONALER ZUSAMMENARBEIT",
+      "subtitle": "Unser internationales Engagement äußert sich in aktiver Teilnahme an Initiativen zur Stärkung der Qualität der Rechtspflege und der Rechtsstaatlichkeit",
+      "dialogue": {
+        "title": "Justizieller Dialog",
+        "body": "Regelmäßiger Austausch über Rechtsprechung, Best Practices und gemeinsame Herausforderungen oberster Gerichte, um gegenseitiges Lernen und harmonisierte Rechtsauslegung zu fördern."
+      },
+      "assistance": {
+        "title": "Technische Hilfe",
+        "body": "Technische Zusammenarbeit zur Modernisierung der Justizsysteme, Digitalisierung und Verbesserung des Zugangs zur Justiz durch gemeinsame Erfahrungen."
+      },
+      "capacity": {
+        "title": "Kapazitätsaufbau",
+        "body": "Schulungsprogramme, Seminare und Workshops zur Stärkung der Kompetenzen von Magistraten und Justizpersonal durch internationale Expertise."
+      },
+      "forums": {
+        "title": "Internationale Foren",
+        "body": "Aktive Teilnahme an internationalen Foren zur Mitgestaltung von internationalem und regionalem Recht sowie Justizstandards."
+      }
+    },
+    "collaboration": {
+      "title": "An Zusammenarbeit interessiert?",
+      "body": "Wir sind offen für institutionelle Partnerschaften und Austausche mit anderen nationalen und internationalen Gerichtsbarkeiten, die sich der Stärkung von Justizsystemen verpflichten.",
+      "cta": "KONTAKTIEREN SIE UNS"
+    }
+  },
+  "audiences": {
+    "hero": {
+      "title": "ANHÖRUNGEN UND ROLLENAUSZÜGE",
+      "body": "Zugriff auf Anhörungspläne, Rollenauszüge und aktuelle Entscheidungen."
+    },
+    "understanding": {
+      "title": "ANHÖRUNGEN VERSTEHEN",
+      "body": "Finden Sie Hinweise, wie Anhörungen organisiert sind und wie aktuelle Rollen konsultiert werden."
+    },
+    "metrics": {
+      "title": "ANHÖRUNGS-KENNZAHLEN",
+      "subtitle": "Monatliches Anhörungsvolumen und Ergebnisse im Zeitverlauf.",
+      "volume": {
+        "title": "Monatliches Anhörungsvolumen",
+        "note": "Letzte 6 Monate",
+        "aria": "Monatliches Anhörungsvolumen"
+      },
+      "outcomes": {
+        "title": "Ergebnisse im Zeitverlauf",
+        "note": "Entscheidungsmix",
+        "aria": "Ergebnisse der Anhörungen im Zeitverlauf"
+      }
+    },
+    "recent": {
+      "title": "AKTUELLE ROLLENAUSZÜGE",
+      "subtitle": "NEUESTE ANHÖRUNGSAUSZÜGE"
+    },
+    "documents": {
+      "civil": {
+        "label": "Zivil",
+        "title": "Auszüge der Zivilkammer-Anhörungen"
+      },
+      "criminal": {
+        "label": "Straf",
+        "title": "Auszüge der Strafkammer-Anhörungen"
+      },
+      "social": {
+        "label": "Sozial",
+        "title": "Auszüge der Sozialkammer-Anhörungen"
+      },
+      "general": {
+        "label": "Allgemein",
+        "title": "Auszüge der allgemeinen Kammer-Anhörungen"
+      }
+    },
+    "actions": {
+      "downloadPdf": "PDF HERUNTERLADEN"
+    },
+    "assistance": {
+      "title": "Brauchen Sie Hilfe?",
+      "body": "Kontaktieren Sie den Staatsrat, wenn Sie Hilfe beim Zugriff auf Dokumente oder Termine benötigen.",
+      "cta": "KONTAKTIEREN SIE UNS"
+    }
+  },
+  "organization": {
+    "hero": {
+      "title": "ORGANISATION<br>DES STAATSRATS"
+    },
+    "firstPresident": {
+      "alt": "Erste Präsidentin",
+      "title": "DIE ERSTE PRÄSIDENTIN",
+      "body": "Die Erste Präsidentin leitet den Staatsrat, führt den Vorsitz bei Sitzungen und gewährleistet das ordnungsgemäße Funktionieren der Institution."
+    },
+    "firstPresidents": {
+      "title": "ERSTE PRÄSIDENTEN",
+      "honoraryTitle": "Ehren- und Altpräsidentin: 2018 - 2022",
+      "honoraryTitleSecond": "Ehren- und Altpräsident: 2022 - 2025",
+      "honoraryTitleThird": "Erste Präsidentin: 2025 - heute",
+      "placeholderName": "Erste Präsidentin {{index}}",
+      "placeholderSubtitle": "Platzhalter für Foto",
+      "photoLabel": "Foto {{index}}"
+    },
+    "seniorLabel": "LEITENDE MAGISTRATE",
+    "chart": {
+      "title": "ORGANIGRAMM",
+      "subtitle": "Überblick über die Führungsstruktur und Kernbereiche des Staatsrats.",
+      "interactiveTitle": "INTERAKTIVES ORGANIGRAMM",
+      "interactiveSubtitle": "Erkunden Sie Hierarchie und Berichtslinien.",
+      "aria": "Interaktives Organigramm",
+      "peopleTitle": "FÜHRUNG NACH NAMEN",
+      "peopleSubtitle": "Namen der Ersten Präsidentin, Präsidenten und Berater.",
+      "peopleFirstPresidentName": "Brigitte Nsensele Wa Nsensele",
+      "namedPhotoRoles": {
+        "firstPresident": "Erste Präsidentin",
+        "consultative": "Präsident der Beratungssektion",
+        "contentieux": "Präsident der Streitsektion"
+      },
+      "roles": {
+        "firstPresident": "Erste Präsidentin",
+        "ppce": "P.P.C.E",
+        "president": "Präsident",
+        "advisor": "Berater"
+      },
+      "nodes": {
+        "firstPresident": "Erste Präsidentin",
+        "plenary": "Plenarversammlung",
+        "councilOffice": "Ratbüro",
+        "registry": "Register und Archive",
+        "civilChamber": "Zivilkammer",
+        "criminalChamber": "Strafkammer",
+        "commercialChamber": "Handelskammer",
+        "socialChamber": "Sozialkammer",
+        "consultativeSection": "Beratungssektion",
+        "litigationSection": "Streitsektion"
+      }
+    },
+    "filters": {
+      "searchLabel": "Mitglieder suchen",
+      "searchPlaceholder": "Nach Name oder Titel suchen",
+      "roleLabel": "Rolle",
+      "all": "Alle",
+      "presidents": "Präsidenten",
+      "advisors": "Berater",
+      "summary": "Es werden {{presidents}} Präsidenten und {{advisors}} Berater angezeigt"
+    },
+    "presidents": {
+      "title": "DIE PRÄSIDENTEN",
+      "empty": "Keine Präsidenten entsprechen Ihrer Suche."
+    },
+    "advisors": {
+      "title": "DIE BERATER",
+      "empty": "Keine Berater entsprechen Ihrer Suche."
+    },
+    "members": {
+      "learnMore": "Mehr erfahren",
+      "loadMore": "Mehr laden"
+    },
+    "services": {
+      "overviewTitle": "DIENSTLEISTUNGSÜBERSICHT",
+      "learnMore": "Mehr erfahren",
+      "registry": {
+        "title": "Register",
+        "body": "Zugriff auf Einreichungen, Fallstatus und offizielle Akten."
+      },
+      "docs": {
+        "title": "Dokumente",
+        "body": "Formulare, Rechtstexte und Verfahrensleitfäden finden."
+      },
+      "tv": {
+        "title": "Staatsrat TV",
+        "body": "Anhörungen, Bekanntmachungen und Updates ansehen."
+      },
+      "title": "UNSERE DIENSTLEISTUNGEN",
+      "subtitle": "Entdecken Sie die Abteilungen und Büros, die die Arbeit des Staatsrats unterstützen.",
+      "divisions": {
+        "title": "Abteilungen",
+        "rooms": "Säle und Kammern",
+        "council": "Ratbüro",
+        "registers": "Register und Archive"
+      },
+      "rooms": {
+        "title": "Säle",
+        "body": "Verwaltungs- und Gerichtssäle, die Beratungen und Anhörungen organisieren."
+      },
+      "council": {
+        "title": "Rat",
+        "body": "Das Büro, das Politik und institutionelle Governance koordiniert."
+      },
+      "registers": {
+        "title": "Register und Archive",
+        "body": "Einheiten, die Akten, Archive und offizielle Einreichungen verwalten."
+      },
+      "details": {
+        "chambers": {
+          "title": "Die Kammern",
+          "item1": "Zivilkammer",
+          "item2": "Strafkammer",
+          "item3": "Handelskammer",
+          "item4": "Sozialkammer",
+          "body1": "Jede Kammer behandelt spezialisierte Angelegenheiten in ihrem Zuständigkeitsbereich.",
+          "body2": "Kammern tagen in Formationen nach geltendem Recht."
+        },
+        "rooms": {
+          "title": "Säle und Kammern",
+          "body1": "Säle organisieren Anhörungen und bereiten Fallakten vor.",
+          "body2": "Sie gewährleisten die Einhaltung von Verfahren und Terminplanung.",
+          "body3": "Sie unterstützen Beratungen durch administrative Koordination.",
+          "body4": "Sie sorgen für einen reibungslosen Ablauf bis zu endgültigen Entscheidungen."
+        },
+        "council": {
+          "title": "Ratbüro",
+          "body1": "Das Ratbüro sorgt für strategische Koordination.",
+          "body2": "Es bereitet Plenarsitzungen und politische Ausrichtungen vor.",
+          "body3": "Es überwacht die Umsetzung von Entscheidungen und Reformen.",
+          "body4": "Es unterstützt Kommunikation und institutionelle Beziehungen."
+        },
+        "registers": {
+          "title": "Register und Archive",
+          "body1": "Register nehmen Einreichungen und Entscheidungen entgegen und erfassen sie.",
+          "body2": "Sie pflegen Archive zur langfristigen Aufbewahrung.",
+          "body3": "Sie stellen auf Anfrage beglaubigte Kopien bereit.",
+          "body4": "Sie verwalten Indexierung und Abruf von Fallakten.",
+          "body5": "Sie gewährleisten Vertraulichkeit und Integrität der Akten."
+        }
+      }
+    }
+  }
+}
