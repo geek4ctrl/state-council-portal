@@ -25,6 +25,7 @@ export class HeaderComponent {
     { code: 'en', label: 'English' },
     { code: 'fr', label: 'French' },
     { code: 'de', label: 'German' },
+    { code: 'it', label: 'Italian' },
     { code: 'es', label: 'Spanish' },
     { code: 'pt', label: 'Portuguese' },
     { code: 'sw', label: 'Swahili' },

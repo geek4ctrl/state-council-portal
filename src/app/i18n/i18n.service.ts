@@ -2,10 +2,10 @@ import { Injectable, inject, signal } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { catchError, firstValueFrom, map, tap, throwError } from 'rxjs';
 
-export type LanguageCode = 'en' | 'fr' | 'de' | 'sw' | 'ln' | 'ts' | 'kg' | 'pt' | 'es';
+export type LanguageCode = 'en' | 'fr' | 'de' | 'it' | 'sw' | 'ln' | 'ts' | 'kg' | 'pt' | 'es';
 
 /** Languages that have translation files. Others fallback to English. */
-const SUPPORTED_LANGS: LanguageCode[] = ['en', 'fr', 'de', 'sw', 'ln', 'ts', 'kg', 'pt', 'es'];
+const SUPPORTED_LANGS: LanguageCode[] = ['en', 'fr', 'de', 'it', 'sw', 'ln', 'ts', 'kg', 'pt', 'es'];
 
 @Injectable({ providedIn: 'root' })
 export class I18nService {
@@ -17,7 +17,7 @@ export class I18nService {
 
   init(): Promise<void> {
     const stored = typeof localStorage !== 'undefined' ? localStorage.getItem('lang') : null;
-    const validCodes: LanguageCode[] = ['en', 'fr', 'de', 'sw', 'ln', 'ts', 'kg', 'pt', 'es'];
+    const validCodes: LanguageCode[] = ['en', 'fr', 'de', 'it', 'sw', 'ln', 'ts', 'kg', 'pt', 'es'];
     const lang: LanguageCode = (stored && validCodes.includes(stored as LanguageCode)) ? stored as LanguageCode : 'fr';
     return firstValueFrom(this.loadLanguage(lang));
   }

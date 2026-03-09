@@ -24,7 +24,7 @@
       "administrativeTribunals": "Mabaraza ya Utawala",
       "reforms": "Mageuzi",
       "international": "Mahusiano ya Kimataifa",
-      "audiences": "MAKIKAO",
+      "audiences": "VIKAO",
       "steps": "HATUA",
       "news": "HABARI",
       "bookAppointment": "Weka Miadi"
@@ -200,6 +200,62 @@
       "submit": "TUMA UJUMBE"
     }
   },
+  "appealSteps": {
+    "title": "JINSI YA KUJAZA RUFAA",
+    "subtitle": "Fuata hatua hizi kuwasilisha rufaa yako kwa Baraza la Serikali",
+    "steps": {
+      "1": {
+        "title": "Andaa nyaraka zako",
+        "body": "Kusanya uamuzi wa kiutawala unaopinga, kitambulisho chako, na ushahidi wowote wa kuunga mkono. Hakikisha nyaraka zote zinasomeka na zimethibitishwa ipasavyo inapohitajika."
+      },
+      "2": {
+        "title": "Andika ombi lako",
+        "body": "Andika ombi wazi linaloeleza ukweli, sababu za rufaa, na unachoomba. Jumuisha marejeo ya vifungu vya sheria vinavyotumika."
+      },
+      "3": {
+        "title": "Wasilisha kwa Usajili",
+        "body": "Wasilisha ombi lako na nyaraka za kuunga mkono kwa Ofisi ya Usajili ya Baraza la Serikali ndani ya muda wa kisheria. Pata risiti kama uthibitisho wa kuwasilisha."
+      },
+      "4": {
+        "title": "Lipa ada husika",
+        "body": "Lipa ada zozote za mahakama katika ofisi iliyoainishwa. Hifadhi risiti ya malipo kwa kumbukumbu zako."
+      },
+      "5": {
+        "title": "Subiri taarifa",
+        "body": "Usajili utakutaarifu namba ya kesi na tarehe ya kusikilizwa. Unaweza kuhitajika kuwasilisha nakala kwa upande wa pili."
+      }
+    }
+  },
+  "haveQuestions": {
+    "title": "Una maswali?",
+    "body": "Timu yetu iko hapa kukusaidia kuelewa mchakato wa rufaa.",
+    "cta": "Tuma barua pepe"
+  },
+  "faqs": {
+    "title": "MASWALI YA MARA KWA MARA",
+    "items": {
+      "1": {
+        "question": "Muda wa mwisho wa kuwasilisha rufaa ni upi?",
+        "answer": "Kwa kawaida rufaa lazima ziwasilishwe ndani ya miezi miwili baada ya kutaarifiwa kuhusu uamuzi unaopingiwa. Muda maalum unaweza kutumika kulingana na aina ya kitendo cha kiutawala. Tafadhali soma sheria husika au wasiliana na Usajili kwa mwongozo."
+      },
+      "2": {
+        "question": "Je, naweza kujitetea mwenyewe au nahitaji wakili?",
+        "answer": "Unaweza kujitetea mbele ya Baraza la Serikali. Hata hivyo, uwakili unapendekezwa kwa masuala magumu. Usajili unaweza kutoa taarifa kuhusu msaada wa kisheria ikiwa unastahili."
+      },
+      "3": {
+        "question": "Ni nyaraka gani ninazohitaji?",
+        "answer": "Kwa kawaida unahitaji: uamuzi unaopingiwa, ombi lako, kitambulisho, na nyaraka za kuunga mkono. Usajili hutoa orodha ya ukaguzi kwa ombi. Nyaraka za ziada zinaweza kuhitajika kulingana na kesi yako."
+      },
+      "4": {
+        "question": "Mchakato wa rufaa huchukua muda gani?",
+        "answer": "Muda wa kushughulikia unatofautiana kulingana na ugumu wa kesi na mzigo wa mahakama. Utapokea tarehe ya kusikilizwa baada ya kesi yako kusajiliwa. Usajili unaweza kutoa makadirio ya muda kwa kesi zinazofanana."
+      },
+      "5": {
+        "question": "Naweza kuondoa rufaa yangu?",
+        "answer": "Ndiyo. Unaweza kuondoa rufaa yako wakati wowote kabla ya uamuzi wa mwisho. Wasilisha ombi la maandishi la kuondoa kwa Usajili. Kumbuka kuwa kuondoa kunaweza kuathiri taratibu zinazohusiana."
+      }
+    }
+  },
   "footer": {
     "mainOffice": {
       "title": "Ofisi Kuu",
@@ -273,7 +329,7 @@
         },
         "excerpts": {
           "alt": "Dondoo",
-          "title": "DONDoo ZA ORODHA",
+          "title": "DONDOO ZA ORODHA",
           "body": "Angalia nyakati za kusikilizwa na kesi zinazoendelea.",
           "action": "Jifunze Zaidi"
         },
@@ -654,8 +710,8 @@
       }
     },
     "recent": {
-      "title": "DONDoo ZA ORODHA ZA KARIBUNI",
-      "subtitle": "DONDoo ZA KARIBUNI ZA KUSIKILIZWA"
+      "title": "DONDOO ZA ORODHA ZA KARIBUNI",
+      "subtitle": "DONDOO ZA KARIBUNI ZA KUSIKILIZWA"
     },
     "documents": {
       "civil": {
@@ -755,7 +811,7 @@
     },
     "members": {
       "learnMore": "Jifunze Zaidi",
-      "loadMore": "Pakua zaidi"
+      "loadMore": "Onyesha zaidi"
     },
     "services": {
       "overviewTitle": "MUHTASARI WA HUDUMA",
