@@ -749,6 +749,49 @@
       "title": "RAIS YA LIBOSO",
       "body": "Rais ya liboso akambaka Conseil d'Etat mpe likita na yango."
     },
+    "orgPage": {
+      "hero": {
+        "title": "Organisation du Conseil d'Etat",
+        "subtitle": "Organigramme",
+        "body": "Texte de presentation de l'organisation du Conseil d'Etat."
+      },
+      "photoLabel": "Photo",
+      "organigramme": {
+        "title": "Organigramme general"
+      },
+      "tiles": {
+        "organigramme": "Organigramme",
+        "firstPresident": "Rais ya liboso",
+        "consultative": "Eteni ya Consultative",
+        "contentieux": "Eteni ya Contentieux",
+        "registry": "Greffe mpe Secretariat general"
+      }
+    },
+    "greffe": {
+      "title": "Greffe mpe Archives (Secretariat general)",
+      "ariaLabel": "Biteni ya greffe",
+      "tabs": {
+        "presidents": "Marais ya liboso",
+        "judges": "Bajuge ya Conseil d'Etat"
+      },
+      "cards": {
+        "presidentsTitle": "Marais ya liboso ya Conseil d'Etat",
+        "judgesTitle": "Bajuge ya Conseil d'Etat"
+      },
+      "bodyPlaceholder": "Makomi"
+    },
+    "about": {
+      "title": "Biso tozali nani?",
+      "imageLabel": "Image",
+      "cards": {
+        "missions": "Mission",
+        "organisations": "Boyangeli",
+        "fondements": "Moboko ya mibeko",
+        "competences": "Bokoki",
+        "procedures": "Procedure liboso ya Conseil d'Etat",
+        "historique": "Lisolo"
+      }
+    },
     "firstPresidents": {
       "title": "MARAIS YA LIBOSO",
       "honoraryTitle": "Rais ya liboso ya lokumu mpe emerite 2018 - 2022",

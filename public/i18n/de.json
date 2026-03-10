@@ -71,7 +71,7 @@
     "body": "Lernen Sie die angesehenen Richter des Staatsrats kennen."
   },
   "memberDetail": {
-    "back": "← Zurück zur Organisation",
+    "back": "← Zurück zur Präsentation",
     "title": "Mitgliedsprofil",
     "subtitle": "Detailliertes Profil und Kontaktdaten.",
     "office": "Büro",
@@ -748,6 +748,49 @@
       "alt": "Erste Präsidentin",
       "title": "DIE ERSTE PRÄSIDENTIN",
       "body": "Die Erste Präsidentin leitet den Staatsrat, führt den Vorsitz bei Sitzungen und gewährleistet das ordnungsgemäße Funktionieren der Institution."
+    },
+    "orgPage": {
+      "hero": {
+        "title": "Organisation du Conseil d'Etat",
+        "subtitle": "Organigramme",
+        "body": "Texte de presentation de l'organisation du Conseil d'Etat."
+      },
+      "photoLabel": "Photo",
+      "organigramme": {
+        "title": "Organigramme general"
+      },
+      "tiles": {
+        "organigramme": "Organigramm",
+        "firstPresident": "Die Erste Präsidentin",
+        "consultative": "Die Beratungssektion",
+        "contentieux": "Die Streitsektion",
+        "registry": "Kanzlei und Generalsekretariat"
+      }
+    },
+    "greffe": {
+      "title": "Registratur und Archive (Generalsekretariat)",
+      "ariaLabel": "Abschnitte der Registratur",
+      "tabs": {
+        "presidents": "Die ersten Präsidenten",
+        "judges": "Die Richter des Staatsrats"
+      },
+      "cards": {
+        "presidentsTitle": "Die ersten Präsidenten des Staatsrats",
+        "judgesTitle": "Die Richter des Staatsrats"
+      },
+      "bodyPlaceholder": "Text"
+    },
+    "about": {
+      "title": "Wer sind wir?",
+      "imageLabel": "Image",
+      "cards": {
+        "missions": "Mission",
+        "organisations": "Organisation",
+        "fondements": "Rechtsgrundlage",
+        "competences": "Zuständigkeiten",
+        "procedures": "Verfahren vor dem Staatsrat",
+        "historique": "Geschichte"
+      }
     },
     "firstPresidents": {
       "title": "ERSTE PRÄSIDENTEN",

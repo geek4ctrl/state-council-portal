@@ -71,7 +71,7 @@
     "body": "Conheça os ilustres juízes do Conselho de Estado."
   },
   "memberDetail": {
-    "back": "← Voltar para Organização",
+    "back": "← Voltar para Apresentação",
     "title": "Perfil do membro",
     "subtitle": "Perfil detalhado e informações de contato.",
     "office": "Escritório",
@@ -748,6 +748,49 @@
       "alt": "Primeiro Presidente",
       "title": "O PRIMEIRO PRESIDENTE",
       "body": "O Primeiro Presidente dirige o State Council, preside as suas sessões e zela pelo bom funcionamento da instituição."
+    },
+    "orgPage": {
+      "hero": {
+        "title": "Organização do Conselho de Estado",
+        "subtitle": "Organograma",
+        "body": "Texto de apresentação da organização do Conselho de Estado."
+      },
+      "photoLabel": "Foto",
+      "organigramme": {
+        "title": "Organograma geral"
+      },
+      "tiles": {
+        "organigramme": "Organograma",
+        "firstPresident": "O Primeiro Presidente",
+        "consultative": "A Seção Consultiva",
+        "contentieux": "A Seção do Contencioso",
+        "registry": "O Registro e o Secretariado-Geral"
+      }
+    },
+    "greffe": {
+      "title": "Registro e arquivos (Secretariado-Geral)",
+      "ariaLabel": "Seções do registro",
+      "tabs": {
+        "presidents": "Os primeiros presidentes",
+        "judges": "Os juízes do Conselho de Estado"
+      },
+      "cards": {
+        "presidentsTitle": "Os primeiros presidentes do Conselho de Estado",
+        "judgesTitle": "Os juízes do Conselho de Estado"
+      },
+      "bodyPlaceholder": "Texto"
+    },
+    "about": {
+      "title": "Quem somos?",
+      "imageLabel": "Image",
+      "cards": {
+        "missions": "Missão",
+        "organisations": "Organização",
+        "fondements": "Base jurídica",
+        "competences": "Competências",
+        "procedures": "Procedimento antes do State Council",
+        "historique": "História"
+      }
     },
     "firstPresidents": {
       "title": "PRIMEIROS PRESIDENTES",

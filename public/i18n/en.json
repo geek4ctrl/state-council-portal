@@ -71,7 +71,7 @@
     "body": "Meet the distinguished judges of the State Council."
   },
   "memberDetail": {
-    "back": "← Back to Organization",
+    "back": "← Back to Presentation",
     "title": "Member Profile",
     "subtitle": "Detailed profile and contact information.",
     "office": "Office",
@@ -748,6 +748,49 @@
       "alt": "First President",
       "title": "THE FIRST PRESIDENT",
       "body": "The First President leads the State Council, presides over its sessions, and ensures the proper functioning of the institution."
+    },
+    "orgPage": {
+      "hero": {
+        "title": "Organisation du Conseil d'Etat",
+        "subtitle": "Organigramme",
+        "body": "Texte de presentation de l'organisation du Conseil d'Etat."
+      },
+      "photoLabel": "Photo",
+      "organigramme": {
+        "title": "Organigramme general"
+      },
+      "tiles": {
+        "organigramme": "Organization chart",
+        "firstPresident": "The First President",
+        "consultative": "Consultative Section",
+        "contentieux": "Litigation Section",
+        "registry": "Registry and General Secretariat"
+      }
+    },
+    "greffe": {
+      "title": "Registry and Archives (General Secretariat)",
+      "ariaLabel": "Registry sections",
+      "tabs": {
+        "presidents": "First Presidents",
+        "judges": "Judges of the State Council"
+      },
+      "cards": {
+        "presidentsTitle": "First Presidents of the State Council",
+        "judgesTitle": "Judges of the State Council"
+      },
+      "bodyPlaceholder": "Text"
+    },
+    "about": {
+      "title": "Who are we?",
+      "imageLabel": "Image",
+      "cards": {
+        "missions": "Mission",
+        "organisations": "Organization",
+        "fondements": "Legal Basis",
+        "competences": "Competences",
+        "procedures": "Procedure before the State Council",
+        "historique": "History"
+      }
     },
     "firstPresidents": {
       "title": "FIRST PRESIDENTS",

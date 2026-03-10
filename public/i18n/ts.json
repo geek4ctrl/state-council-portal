@@ -749,6 +749,49 @@
       "title": "MULOMBODI WA KUMPALA",
       "body": "Mfumu wa ditunga wa kumpala udi ulombola tshipangu tshia ditunga, ulombola bisangilu biatshi, ne udi utangila mudimu muimpe wa tshibambalu etshi."
     },
+    "orgPage": {
+      "hero": {
+        "title": "Organisation du Conseil d'Etat",
+        "subtitle": "Organigramme",
+        "body": "Texte de presentation de l'organisation du Conseil d'Etat."
+      },
+      "photoLabel": "Photo",
+      "organigramme": {
+        "title": "Organigramme general"
+      },
+      "tiles": {
+        "organigramme": "Organigramme",
+        "firstPresident": "Mfumu wa kumpala",
+        "consultative": "Tshitupa tshia diyukidilangana",
+        "contentieux": "Tshitupa tshia bilumbu",
+        "registry": "Muaba wa difunda dia mena ne Sekretariya Munene"
+      }
+    },
+    "greffe": {
+      "title": "Greffe ne Archives (Sekretariya Munene)",
+      "ariaLabel": "Bitupa bia greffe",
+      "tabs": {
+        "presidents": "Balombodi ba kumpala",
+        "judges": "Bajudji ba Conseil d'Etat"
+      },
+      "cards": {
+        "presidentsTitle": "Balombodi ba kumpala ba Conseil d'Etat",
+        "judgesTitle": "Bajudji ba Conseil d'Etat"
+      },
+      "bodyPlaceholder": "Mikanda"
+    },
+    "about": {
+      "title": "Beto betu nani?",
+      "imageLabel": "Image",
+      "cards": {
+        "missions": "Mudimu",
+        "organisations": "Bulongolodi",
+        "fondements": "Nshindamenu wa mikenji",
+        "competences": "Bipedi",
+        "procedures": "Mushindu wa kuenza kumpala kua tshipangu tshia ditunga",
+        "historique": "Muanu"
+      }
+    },
     "firstPresidents": {
       "title": "BALOMBODI BA KUMPALA",
       "honoraryTitle": "Mulombodi wa kumpala wa buneme ne wa tshijila: 2018 - 2022",

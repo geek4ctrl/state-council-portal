@@ -71,7 +71,7 @@
     "body": "Rencontrez les juges distingués du Conseil d'État."
   },
   "memberDetail": {
-    "back": "← Retour à l'organisation",
+    "back": "← Retour à la présentation",
     "title": "Profil du membre",
     "subtitle": "Profil détaillé et informations de contact.",
     "office": "Bureau",
@@ -748,6 +748,49 @@
       "alt": "Première Présidente",
       "title": "LA PREMIÈRE PRÉSIDENTE",
       "body": "La Première Présidente dirige le Conseil d'État, préside ses sessions et veille au bon fonctionnement de l'institution."
+    },
+    "orgPage": {
+      "hero": {
+        "title": "Organisation du Conseil d'Etat",
+        "subtitle": "Organigramme",
+        "body": "Texte de presentation de l'organisation du Conseil d'Etat."
+      },
+      "photoLabel": "Photo",
+      "organigramme": {
+        "title": "Organigramme general"
+      },
+      "tiles": {
+        "organigramme": "Organigramme",
+        "firstPresident": "La Première Présidente",
+        "consultative": "La section consultative",
+        "contentieux": "La section du contentieux",
+        "registry": "Le greffe et le Secrétariat général"
+      }
+    },
+    "greffe": {
+      "title": "Greffe et archives (Secrétariat général)",
+      "ariaLabel": "Sections du greffe",
+      "tabs": {
+        "presidents": "Les premiers présidents",
+        "judges": "Les juges du Conseil d'État"
+      },
+      "cards": {
+        "presidentsTitle": "Les premiers présidents du Conseil d'État",
+        "judgesTitle": "Les juges du Conseil d'État"
+      },
+      "bodyPlaceholder": "Texte"
+    },
+    "about": {
+      "title": "Qui sommes-nous ?",
+      "imageLabel": "Image",
+      "cards": {
+        "missions": "Mission",
+        "organisations": "Organisation",
+        "fondements": "Fondement juridique",
+        "competences": "Compétences",
+        "procedures": "Procédure devant le Conseil d'État",
+        "historique": "Histoire"
+      }
     },
     "firstPresidents": {
       "title": "PREMIERS PRÉSIDENTS",

@@ -71,7 +71,7 @@
     "body": "Conozca a los distinguidos jueces del Consejo de Estado."
   },
   "memberDetail": {
-    "back": "← Volver a Organización",
+    "back": "← Volver a Presentación",
     "title": "Perfil de miembro",
     "subtitle": "Perfil detallado e información de contacto.",
     "office": "Oficina",
@@ -748,6 +748,49 @@
       "alt": "primer presidente",
       "title": "EL PRIMER PRESIDENTE",
       "body": "El Primer Presidente dirige el Consejo de Estado, preside sus sesiones y vela por el buen funcionamiento de la institución."
+    },
+    "orgPage": {
+      "hero": {
+        "title": "Organisation du Conseil d'Etat",
+        "subtitle": "Organigramme",
+        "body": "Texte de presentation de l'organisation du Conseil d'Etat."
+      },
+      "photoLabel": "Photo",
+      "organigramme": {
+        "title": "Organigramme general"
+      },
+      "tiles": {
+        "organigramme": "Organigrama",
+        "firstPresident": "El Primer Presidente",
+        "consultative": "La Sección Consultiva",
+        "contentieux": "La Sección de Litigios",
+        "registry": "El Registro y la Secretaría General"
+      }
+    },
+    "greffe": {
+      "title": "Registro y archivos (Secretaría General)",
+      "ariaLabel": "Secciones del registro",
+      "tabs": {
+        "presidents": "Los primeros presidentes",
+        "judges": "Los jueces del Consejo de Estado"
+      },
+      "cards": {
+        "presidentsTitle": "Los primeros presidentes del Consejo de Estado",
+        "judgesTitle": "Los jueces del Consejo de Estado"
+      },
+      "bodyPlaceholder": "Texto"
+    },
+    "about": {
+      "title": "¿Quiénes somos?",
+      "imageLabel": "Image",
+      "cards": {
+        "missions": "Misión",
+        "organisations": "Organización",
+        "fondements": "Base legal",
+        "competences": "Competencias",
+        "procedures": "Procedimiento ante el Consejo de Estado",
+        "historique": "Historia"
+      }
     },
     "firstPresidents": {
       "title": "PRIMEROS PRESIDENTES",

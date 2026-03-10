@@ -71,7 +71,9 @@
     "body": "Incontra i giudici illustri del Consiglio di Stato."
   },
   "memberDetail": {
-    "back": "← Torna all'Organizzazione",
+    "back": "← Torna alla presentazione",
+    "title": "Profilo del membro",
+    "subtitle": "Profilo dettagliato e informazioni di contatto.",
     "title": "Profilo del membro",
     "subtitle": "Profilo dettagliato e informazioni di contatto.",
     "office": "Ufficio",
@@ -748,6 +750,49 @@
       "alt": "Prima Presidente",
       "title": "LA PRIMA PRESIDENTE",
       "body": "La Prima Presidente guida il Consiglio di Stato, presiede le sessioni e assicura il corretto funzionamento dell'istituzione."
+    },
+    "orgPage": {
+      "hero": {
+        "title": "Organisation du Conseil d'Etat",
+        "subtitle": "Organigramme",
+        "body": "Texte de presentation de l'organisation du Conseil d'Etat."
+      },
+      "photoLabel": "Photo",
+      "organigramme": {
+        "title": "Organigramme general"
+      },
+      "tiles": {
+        "organigramme": "Organigramma",
+        "firstPresident": "La Prima Presidente",
+        "consultative": "La Sezione consultiva",
+        "contentieux": "La Sezione contenziosa",
+        "registry": "La Cancelleria e la Segreteria generale"
+      }
+    },
+    "greffe": {
+      "title": "Cancelleria e archivi (Segreteria generale)",
+      "ariaLabel": "Sezioni della cancelleria",
+      "tabs": {
+        "presidents": "I primi presidenti",
+        "judges": "I giudici del Consiglio di Stato"
+      },
+      "cards": {
+        "presidentsTitle": "I primi presidenti del Consiglio di Stato",
+        "judgesTitle": "I giudici del Consiglio di Stato"
+      },
+      "bodyPlaceholder": "Testo"
+    },
+    "about": {
+      "title": "Chi siamo?",
+      "imageLabel": "Image",
+      "cards": {
+        "missions": "Missione",
+        "organisations": "Organizzazione",
+        "fondements": "Base legale",
+        "competences": "Competenze",
+        "procedures": "Procedura davanti al Consiglio di Stato",
+        "historique": "Storia"
+      }
     },
     "firstPresidents": {
       "title": "PRIME PRESIDENTI",

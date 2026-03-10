@@ -77,89 +77,125 @@ type HighchartsStatic = typeof import('highcharts');
         </div>
       </section>
 
-      <!-- Organization Chart Section -->
-      <section class="org-chart-section" aria-labelledby="org-chart-title">
+      <!-- About Section -->
+      <section class="about-section" aria-labelledby="about-title">
         <div class="container">
-          <div class="org-chart-header">
+          <div class="section-head-wrap">
             <div class="org-header-line anim-line"></div>
-            <h2 id="org-chart-title" class="section-title anim-up">
-              {{ 'organization.chart.title' | i18n }}
+            <h2 id="about-title" class="section-title anim-up">
+              {{ 'organization.about.title' | i18n }}
             </h2>
           </div>
-          <p class="org-chart-subtitle anim-up a-d1">{{ 'organization.chart.subtitle' | i18n }}</p>
-
-          <div class="org-chart" role="list">
-            <div class="org-chart-tier" role="listitem">
-              <div class="org-node primary">
-                {{ 'organization.chart.nodes.firstPresident' | i18n }}
-              </div>
-            </div>
-
-            <div class="org-chart-connector" aria-hidden="true"></div>
-
-            <div class="org-chart-tier" role="listitem">
-              <div class="org-node muted">
-                {{ 'organization.chart.nodes.consultativeSection' | i18n }}
-              </div>
-              <div class="org-node muted">
-                {{ 'organization.chart.nodes.litigationSection' | i18n }}
-              </div>
-            </div>
+          <div class="about-grid" role="list">
+            @for (card of aboutCards; track card.titleKey) {
+              <a
+                class="about-card mag-btn"
+                role="listitem"
+                [routerLink]="['/presentation', card.section]"
+                [attr.aria-label]="card.titleKey | i18n"
+                (mousemove)="mag($event)"
+                (mouseleave)="magOut($event)"
+                (click)="ripple($event)"
+              >
+                <div
+                  class="about-card-image"
+                  aria-hidden="true"
+                  [style.backgroundImage]="'url(' + card.imageUrl + ')'"
+                ></div>
+                <div class="about-card-body">
+                  <h3>{{ card.titleKey | i18n }}</h3>
+                </div>
+              </a>
+            }
           </div>
         </div>
       </section>
 
-      <!-- Organization Chart (Names) Section -->
-      <section class="org-chart-section org-chart-names" aria-labelledby="org-chart-names-title">
-        <div class="container">
-          <div class="org-chart-header">
-            <div class="org-header-line anim-line"></div>
-            <h2 id="org-chart-names-title" class="section-title anim-up">
-              {{ 'organization.chart.peopleTitle' | i18n }}
-            </h2>
-          </div>
+      @if (!embedded) {
+        <!-- Organization Chart Section -->
+        <section class="org-chart-section" aria-labelledby="org-chart-title">
+          <div class="container">
+            <div class="org-chart-header">
+              <div class="org-header-line anim-line"></div>
+              <h2 id="org-chart-title" class="section-title anim-up">
+                {{ 'organization.chart.title' | i18n }}
+              </h2>
+            </div>
+            <p class="org-chart-subtitle anim-up a-d1">{{ 'organization.chart.subtitle' | i18n }}</p>
 
-          <div class="leadership-photo-layout" role="list">
-            <article class="leadership-photo-card top" role="listitem">
-              <div class="leadership-photo-frame">
-                <img
-                  ngSrc="https://res.cloudinary.com/dhqvb8wbn/image/upload/v1772555485/Brigitte_NSENSELE_wa_NSENSELE_OK.jpg_ndsjzg.jpg"
-                  [alt]="'organization.chart.namedPhotoRoles.firstPresident' | i18n"
-                  width="320"
-                  height="380"
-                />
+            <div class="org-chart" role="list">
+              <div class="org-chart-tier" role="listitem">
+                <div class="org-node primary">
+                  {{ 'organization.chart.nodes.firstPresident' | i18n }}
+                </div>
               </div>
-              <p class="leadership-photo-role">{{ 'organization.chart.namedPhotoRoles.firstPresident' | i18n }}</p>
-            </article>
 
-            <div class="leadership-photo-row" role="listitem">
-              <article class="leadership-photo-card top">
-                <div class="leadership-photo-frame">
-                  <img
-                    ngSrc="https://res.cloudinary.com/dhqvb8wbn/image/upload/v1772556921/Eug%C3%A8ne_KIBWE_MUTER.jpg_bacl4e.jpg"
-                    [alt]="'organization.chart.namedPhotoRoles.consultative' | i18n"
-                    width="320"
-                    height="380"
-                  />
-                </div>
-                <p class="leadership-photo-role">{{ 'organization.chart.namedPhotoRoles.consultative' | i18n }}</p>
-              </article>
+              <div class="org-chart-connector" aria-hidden="true"></div>
 
-              <article class="leadership-photo-card top">
-                <div class="leadership-photo-frame">
-                  <img
-                    ngSrc="https://res.cloudinary.com/dhqvb8wbn/image/upload/v1772556705/PRES_MASANI_40x50.jpg_ast5mq.jpg"
-                    [alt]="'organization.chart.namedPhotoRoles.contentieux' | i18n"
-                    width="320"
-                    height="380"
-                  />
+              <div class="org-chart-tier" role="listitem">
+                <div class="org-node muted">
+                  {{ 'organization.chart.nodes.consultativeSection' | i18n }}
                 </div>
-                <p class="leadership-photo-role">{{ 'organization.chart.namedPhotoRoles.contentieux' | i18n }}</p>
-              </article>
+                <div class="org-node muted">
+                  {{ 'organization.chart.nodes.litigationSection' | i18n }}
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+
+        <!-- Organization Chart (Names) Section -->
+        <section class="org-chart-section org-chart-names" aria-labelledby="org-chart-names-title">
+          <div class="container">
+            <div class="org-chart-header">
+              <div class="org-header-line anim-line"></div>
+              <h2 id="org-chart-names-title" class="section-title anim-up">
+                {{ 'organization.chart.peopleTitle' | i18n }}
+              </h2>
+            </div>
+
+            <div class="leadership-photo-layout" role="list">
+              <article class="leadership-photo-card top" role="listitem">
+                <div class="leadership-photo-frame">
+                  <img
+                    ngSrc="https://res.cloudinary.com/dhqvb8wbn/image/upload/v1772555485/Brigitte_NSENSELE_wa_NSENSELE_OK.jpg_ndsjzg.jpg"
+                    [alt]="'organization.chart.namedPhotoRoles.firstPresident' | i18n"
+                    width="320"
+                    height="380"
+                  />
+                </div>
+                <p class="leadership-photo-role">{{ 'organization.chart.namedPhotoRoles.firstPresident' | i18n }}</p>
+              </article>
+
+              <div class="leadership-photo-row" role="listitem">
+                <article class="leadership-photo-card top">
+                  <div class="leadership-photo-frame">
+                    <img
+                      ngSrc="https://res.cloudinary.com/dhqvb8wbn/image/upload/v1772556921/Eug%C3%A8ne_KIBWE_MUTER.jpg_bacl4e.jpg"
+                      [alt]="'organization.chart.namedPhotoRoles.consultative' | i18n"
+                      width="320"
+                      height="380"
+                    />
+                  </div>
+                  <p class="leadership-photo-role">{{ 'organization.chart.namedPhotoRoles.consultative' | i18n }}</p>
+                </article>
+
+                <article class="leadership-photo-card top">
+                  <div class="leadership-photo-frame">
+                    <img
+                      ngSrc="https://res.cloudinary.com/dhqvb8wbn/image/upload/v1772556705/PRES_MASANI_40x50.jpg_ast5mq.jpg"
+                      [alt]="'organization.chart.namedPhotoRoles.contentieux' | i18n"
+                      width="320"
+                      height="380"
+                    />
+                  </div>
+                  <p class="leadership-photo-role">{{ 'organization.chart.namedPhotoRoles.contentieux' | i18n }}</p>
+                </article>
+              </div>
+            </div>
+          </div>
+        </section>
+      }
 
       <!-- Senior Magistrates Label -->
       <!-- <section class="senior-label-section">
@@ -168,260 +204,152 @@ type HighchartsStatic = typeof import('highcharts');
         </div>
       </section> -->
 
-      <!-- Members Filter Section -->
-      <section class="members-filter-section">
-        <div class="container">
-          <div class="members-filter">
-            <div class="filter-group">
-              <label for="member-search">{{ 'organization.filters.searchLabel' | i18n }}</label>
-              <input
-                id="member-search"
-                type="search"
-                [placeholder]="'organization.filters.searchPlaceholder' | i18n"
-                [value]="searchTerm()"
-                (input)="onSearch($event)"
-              />
-            </div>
-            <div class="filter-group">
-              <label for="member-role">{{ 'organization.filters.roleLabel' | i18n }}</label>
-              <select id="member-role" [value]="roleFilter()" (change)="onRoleFilterChange($event)">
-                <option value="all">{{ 'organization.filters.all' | i18n }}</option>
-                <option value="president">{{ 'organization.filters.presidents' | i18n }}</option>
-                <option value="advisor">{{ 'organization.filters.advisors' | i18n }}</option>
-              </select>
-            </div>
-            <div class="filter-summary" aria-live="polite">
-              {{
-                'organization.filters.summary'
-                  | i18n
-                    : {
-                        presidents: filteredPresidents().length,
-                        advisors: filteredAdvisors().length,
-                      }
-              }}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- First Presidents Section -->
-      <section class="members-section first-presidents-section">
-        <div class="container">
-          <div class="section-head-wrap">
-            <div class="org-header-line anim-line"></div>
-            <h2 class="section-title anim-up">{{ 'organization.firstPresidents.title' | i18n }}</h2>
-          </div>
-          <div class="members-grid first-presidents-grid">
-            @for (president of firstPresidents; track president.slot; let i = $index) {
-              <div
-                class="leadership-photo-card first-president-slot"
-              >
-                <div class="leadership-photo-frame first-president-photo-slot">
-                  @if (president.image) {
-                    <img
-                      [ngSrc]="president.image"
-                      [alt]="president.name || ('organization.firstPresidents.placeholderName' | i18n : { index: president.slot })"
-                      width="300"
-                      height="350"
-                    />
-                  } @else {
-                    <span class="photo-slot-label">{{ 'organization.firstPresidents.photoLabel' | i18n : { index: i + 1 } }}</span>
-                  }
-                </div>
-                <div class="member-info">
-                  <h3>
-                    @if (president.name) {
-                      {{ president.name }}
-                    } @else {
-                      {{ 'organization.firstPresidents.placeholderName' | i18n : { index: president.slot } }}
-                    }
-                  </h3>
-                  <p class="member-title">{{ president.subtitleKey | i18n : { index: president.slot } }}</p>
-                </div>
+      @if (!embedded) {
+        <!-- Members Filter Section -->
+        <section class="members-filter-section">
+          <div class="container">
+            <div class="members-filter">
+              <div class="filter-group">
+                <label for="member-search">{{ 'organization.filters.searchLabel' | i18n }}</label>
+                <input
+                  id="member-search"
+                  type="search"
+                  [placeholder]="'organization.filters.searchPlaceholder' | i18n"
+                  [value]="searchTerm()"
+                  (input)="onSearch($event)"
+                />
               </div>
-            }
+              <div class="filter-group">
+                <label for="member-role">{{ 'organization.filters.roleLabel' | i18n }}</label>
+                <select id="member-role" [value]="roleFilter()" (change)="onRoleFilterChange($event)">
+                  <option value="all">{{ 'organization.filters.all' | i18n }}</option>
+                  <option value="president">{{ 'organization.filters.presidents' | i18n }}</option>
+                  <option value="advisor">{{ 'organization.filters.advisors' | i18n }}</option>
+                </select>
+              </div>
+              <div class="filter-summary" aria-live="polite">
+                {{
+                  'organization.filters.summary'
+                    | i18n
+                      : {
+                          presidents: filteredPresidents().length,
+                          advisors: filteredAdvisors().length,
+                        }
+                }}
+              </div>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <!-- The Presidents Section -->
-      <section class="members-section presidents-section">
-        <div class="container">
-          <div class="section-head-wrap">
-            <div class="org-header-line anim-line"></div>
-            <h2 class="section-title anim-up">{{ 'organization.presidents.title' | i18n }}</h2>
-          </div>
-          <div class="members-grid">
-            @if (isLoading()) {
-              @for (item of [1, 2, 3, 4, 5, 6, 7, 8]; track item) {
-                <app-skeleton-loader type="profile-card"></app-skeleton-loader>
-              }
-            } @else {
-              @if (filteredPresidents().length === 0) {
-                <div class="no-results">{{ 'organization.presidents.empty' | i18n }}</div>
-              } @else {
-                @for (president of filteredPresidents(); track president.email; let i = $index) {
-                  <div
-                    class="member-card glass-card"
-                  >
-                    <div
-                      class="member-image img-zoom"
-                      [class.full-height-photo]="president.slug === 'nsensele-wa-nsensele-brigitte'"
-                    >
+        <!-- First Presidents Section -->
+        <section class="members-section first-presidents-section">
+          <div class="container">
+            <div class="section-head-wrap">
+              <div class="org-header-line anim-line"></div>
+              <h2 class="section-title anim-up">{{ 'organization.firstPresidents.title' | i18n }}</h2>
+            </div>
+            <div class="members-grid first-presidents-grid">
+              @for (president of firstPresidents; track president.slot; let i = $index) {
+                <div class="leadership-photo-card first-president-slot">
+                  <div class="leadership-photo-frame first-president-photo-slot">
+                    @if (president.image) {
                       <img
                         [ngSrc]="president.image"
-                        [alt]="president.name"
+                        [alt]="president.name || ('organization.firstPresidents.placeholderName' | i18n : { index: president.slot })"
                         width="300"
                         height="350"
                       />
-                      <div class="img-sheen"></div>
-                    </div>
-                    <div class="member-info">
-                      <h3>{{ president.name }}</h3>
-                      <p class="member-title">
-                        {{
-                          (president.slug === 'nsensele-wa-nsensele-brigitte'
-                            ? 'organization.chart.roles.ppce'
-                            : 'organization.chart.roles.president') | i18n
-                        }}
-                      </p>
-                      <p class="member-email">{{ president.email }}</p>
-                      <a
-                        [routerLink]="['/organization/member', president.slug]"
-                        class="learn-more mag-btn"
-                        (mousemove)="mag($event)"
-                        (mouseleave)="magOut($event)"
-                        (click)="ripple($event)"
-                      >
-                        {{ 'organization.members.learnMore' | i18n }}
-                      </a>
-                    </div>
+                    } @else {
+                      <div class="photo-slot">
+                        <span class="photo-slot-label">{{ 'organization.firstPresidents.photoLabel' | i18n : { index: i + 1 } }}</span>
+                      </div>
+                    }
                   </div>
+                  <div class="member-info">
+                    <h3>
+                      @if (president.name) {
+                        {{ president.name }}
+                      } @else {
+                        {{ 'organization.firstPresidents.placeholderName' | i18n : { index: president.slot } }}
+                      }
+                    </h3>
+                    <p class="member-title">{{ president.subtitleKey | i18n : { index: president.slot } }}</p>
+                  </div>
+                </div>
+              }
+            </div>
+          </div>
+        </section>
+
+        <!-- The Presidents Section -->
+        <section class="members-section presidents-section">
+          <div class="container">
+            <div class="section-head-wrap">
+              <div class="org-header-line anim-line"></div>
+              <h2 class="section-title anim-up">{{ 'organization.presidents.title' | i18n }}</h2>
+            </div>
+            <div class="members-grid">
+              @if (isLoading()) {
+                @for (item of [1, 2, 3, 4, 5, 6, 7, 8]; track item) {
+                  <app-skeleton-loader type="profile-card"></app-skeleton-loader>
+                }
+              } @else {
+                @if (filteredPresidents().length === 0) {
+                  <div class="no-results">{{ 'organization.presidents.empty' | i18n }}</div>
+                } @else {
+                  @for (president of filteredPresidents(); track president.email; let i = $index) {
+                    <div class="member-card glass-card">
+                      <div
+                        class="member-image img-zoom"
+                        [class.full-height-photo]="president.slug === 'nsensele-wa-nsensele-brigitte'"
+                      >
+                        <img
+                          [ngSrc]="president.image"
+                          [alt]="president.name"
+                          width="300"
+                          height="350"
+                        />
+                        <div class="img-sheen"></div>
+                      </div>
+                      <div class="member-info">
+                        <h3>{{ president.name }}</h3>
+                        <p class="member-title">{{ president.title }}</p>
+                      </div>
+                    </div>
+                  }
                 }
               }
-            }
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <!-- The Advisors Section -->
-      <section class="members-section advisors-section">
-        <div class="container">
-          <div class="section-head-wrap">
-            <div class="org-header-line anim-line"></div>
-            <h2 class="section-title anim-up">{{ 'organization.advisors.title' | i18n }}</h2>
-          </div>
-          <div class="members-grid">
-            @if (isLoading()) {
-              @for (item of [1, 2, 3, 4, 5, 6, 7, 8]; track item) {
-                <app-skeleton-loader type="profile-card"></app-skeleton-loader>
-              }
-            } @else {
+        <!-- The Advisors Section -->
+        <section class="members-section advisors-section">
+          <div class="container">
+            <div class="section-head-wrap">
+              <div class="org-header-line anim-line"></div>
+              <h2 class="section-title anim-up">{{ 'organization.advisors.title' | i18n }}</h2>
+            </div>
+            <div class="members-grid">
               @if (filteredAdvisors().length === 0) {
                 <div class="no-results">{{ 'organization.advisors.empty' | i18n }}</div>
               } @else {
                 @for (advisor of filteredAdvisors(); track advisor.email) {
-                  <div class="member-card glass-card">
-                    <div class="member-image img-zoom">
-                      <img [ngSrc]="advisor.image" [alt]="advisor.name" width="300" height="350" />
-                      <div class="img-sheen"></div>
+                  <article class="member-card">
+                    <div class="member-photo">
+                      <img [ngSrc]="advisor.image" [alt]="advisor.name" width="260" height="300" />
                     </div>
                     <div class="member-info">
                       <h3>{{ advisor.name }}</h3>
                       <p class="member-title">{{ advisor.title }}</p>
-                      <p class="member-email">{{ advisor.email }}</p>
-                      <a
-                        [routerLink]="['/organization/member', advisor.slug]"
-                        class="learn-more mag-btn"
-                        (mousemove)="mag($event)"
-                        (mouseleave)="magOut($event)"
-                        (click)="ripple($event)"
-                      >
-                        {{ 'organization.members.learnMore' | i18n }}
-                      </a>
                     </div>
-                  </div>
+                  </article>
                 }
               }
-            }
-          </div>
-          <div class="load-more-container">
-            <button
-              class="load-more-btn mag-btn"
-              (mousemove)="mag($event)"
-              (mouseleave)="magOut($event)"
-              (click)="ripple($event)"
-            >
-              <span>{{ 'organization.members.loadMore' | i18n }}</span>
-            </button>
-          </div>
-        </div>
-      </section>
-
-      <!-- Services Info Section -->
-      <section class="services-info-section">
-        <div class="container">
-          <h2 class="section-title-white anim-up">
-            {{ 'organization.services.overviewTitle' | i18n }}
-          </h2>
-          <div class="services-grid">
-            <div
-              class="service-box reveal-on-scroll tilt-card"
-              style="--i:0"
-              (mousemove)="tilt($event)"
-              (mouseleave)="tiltReset($event)"
-            >
-              <div class="tilt-shine"></div>
-              <h3>{{ 'organization.services.registry.title' | i18n }}</h3>
-              <p>{{ 'organization.services.registry.body' | i18n }}</p>
-              <a
-                href="#"
-                class="service-link mag-btn"
-                (mousemove)="mag($event)"
-                (mouseleave)="magOut($event)"
-                (click)="ripple($event)"
-                >{{ 'organization.services.learnMore' | i18n }}</a
-              >
-            </div>
-            <div
-              class="service-box reveal-on-scroll tilt-card"
-              style="--i:1"
-              (mousemove)="tilt($event)"
-              (mouseleave)="tiltReset($event)"
-            >
-              <div class="tilt-shine"></div>
-              <h3>{{ 'organization.services.docs.title' | i18n }}</h3>
-              <p>{{ 'organization.services.docs.body' | i18n }}</p>
-              <a
-                href="#"
-                class="service-link mag-btn"
-                (mousemove)="mag($event)"
-                (mouseleave)="magOut($event)"
-                (click)="ripple($event)"
-                >{{ 'organization.services.learnMore' | i18n }}</a
-              >
-            </div>
-            <div
-              class="service-box reveal-on-scroll tilt-card"
-              style="--i:2"
-              (mousemove)="tilt($event)"
-              (mouseleave)="tiltReset($event)"
-            >
-              <div class="tilt-shine"></div>
-              <h3>{{ 'organization.services.tv.title' | i18n }}</h3>
-              <p>{{ 'organization.services.tv.body' | i18n }}</p>
-              <a
-                href="#"
-                class="service-link mag-btn"
-                (mousemove)="mag($event)"
-                (mouseleave)="magOut($event)"
-                (click)="ripple($event)"
-                >{{ 'organization.services.learnMore' | i18n }}</a
-              >
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+      }
 
       <!-- Services Detail Section -->
       <section class="services-section">
@@ -688,7 +616,7 @@ type HighchartsStatic = typeof import('highcharts');
 
       .president-title-underlined {
         font-size: 2.8rem;
-        font-weight: 400;
+        font-weight: 600;
         color: #1a1a1a;
         margin: 0 0 30px 0;
         letter-spacing: 1.5px;
@@ -721,6 +649,120 @@ type HighchartsStatic = typeof import('highcharts');
       .president-description strong {
         color: #1a1a1a;
         font-weight: 600;
+      }
+
+      /* About Section */
+      .about-section {
+        position: relative;
+        background:
+          radial-gradient(circle at 12% 18%, rgba(31, 155, 217, 0.12), transparent 45%),
+          radial-gradient(circle at 88% 12%, rgba(26, 41, 66, 0.12), transparent 48%),
+          linear-gradient(180deg, #f8fafc 0%, #eef2f7 100%);
+        padding: 70px 0 60px;
+        border-bottom: 1px solid rgba(26, 41, 66, 0.08);
+        overflow: hidden;
+      }
+
+      .about-section::before,
+      .about-section::after {
+        content: '';
+        position: absolute;
+        width: 240px;
+        height: 240px;
+        border-radius: 50%;
+        background: radial-gradient(circle, rgba(31, 155, 217, 0.16), transparent 70%);
+        pointer-events: none;
+      }
+
+      .about-section::before {
+        top: -80px;
+        left: -60px;
+      }
+
+      .about-section::after {
+        bottom: -110px;
+        right: -40px;
+        background: radial-gradient(circle, rgba(26, 41, 66, 0.14), transparent 70%);
+      }
+
+      .about-section .container {
+        position: relative;
+        z-index: 1;
+      }
+
+      .about-section .section-title {
+        font-weight: 600;
+      }
+
+      .about-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 20px;
+      }
+
+      .about-card {
+        display: flex;
+        flex-direction: column;
+        background: #ffffff;
+        border: 1px solid rgba(26, 41, 66, 0.1);
+        border-radius: 18px;
+        box-shadow: 0 8px 20px rgba(26, 41, 66, 0.1);
+        color: #1a1a1a;
+        text-decoration: none;
+        overflow: hidden;
+        transition:
+          transform 0.25s ease,
+          box-shadow 0.25s ease,
+          border-color 0.25s ease;
+        transform: none !important;
+      }
+
+      .about-card:hover {
+        transform: translateY(-2px) !important;
+        box-shadow: 0 12px 26px rgba(26, 41, 66, 0.14);
+        border-color: rgba(26, 41, 66, 0.18);
+      }
+
+      .about-section .mag-btn::before {
+        display: none;
+      }
+
+      .about-card-image {
+        height: 180px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #e2e8f0;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+      }
+
+      .about-card-image::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(180deg, rgba(15, 23, 42, 0.03), rgba(15, 23, 42, 0.14));
+        pointer-events: none;
+      }
+
+      .about-card-body {
+        padding: 20px 22px 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        min-height: 74px;
+      }
+
+      .about-card-body h3 {
+        margin: 0;
+        font-size: 0.95rem;
+        font-weight: 700;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #1a2942;
+        line-height: 1.4;
       }
 
       /* Senior Label Section */
@@ -1431,7 +1473,7 @@ type HighchartsStatic = typeof import('highcharts');
       .services-section {
         --services-heading-font: 'Georgia', 'Times New Roman', serif;
         --services-body-font: 'Trebuchet MS', 'Segoe UI', sans-serif;
-        background: linear-gradient(180deg, #f2f3f7 0%, #ffffff 100%);
+        background: #ffffff;
         padding: 90px 0 100px;
         position: relative;
         overflow: hidden;
@@ -1441,9 +1483,7 @@ type HighchartsStatic = typeof import('highcharts');
         content: '';
         position: absolute;
         inset: 0;
-        background:
-          radial-gradient(circle at 10% 20%, rgba(31, 155, 217, 0.15), transparent 50%),
-          radial-gradient(circle at 90% 10%, rgba(78, 106, 138, 0.12), transparent 45%);
+        background: none;
         pointer-events: none;
       }
 
@@ -1785,6 +1825,10 @@ type HighchartsStatic = typeof import('highcharts');
           gap: 18px;
         }
 
+        .about-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
         .service-item,
         .detail-box {
           padding: 24px;
@@ -2093,6 +2137,18 @@ type HighchartsStatic = typeof import('highcharts');
 
         .members-grid {
           grid-template-columns: 1fr;
+        }
+
+        .about-section {
+          padding: 45px 0 30px;
+        }
+
+        .about-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .about-card-image {
+          height: 130px;
         }
 
         .member-image {
@@ -2591,6 +2647,45 @@ export class OrganizationComponent implements OnInit, AfterViewInit {
       subtitleKey: 'organization.firstPresidents.honoraryTitleThird',
       image:
         'https://res.cloudinary.com/dhqvb8wbn/image/upload/v1772555485/Brigitte_NSENSELE_wa_NSENSELE_OK.jpg_ndsjzg.jpg',
+    },
+  ];
+
+  readonly aboutCards = [
+    {
+      titleKey: 'organization.about.cards.missions',
+      section: 'missions',
+      imageUrl:
+        'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=1200&q=80',
+    },
+    {
+      titleKey: 'organization.about.cards.organisations',
+      section: 'organisations',
+      imageUrl:
+        'https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=1200&q=80',
+    },
+    {
+      titleKey: 'organization.about.cards.fondements',
+      section: 'fondements',
+      imageUrl:
+        'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1200&q=80',
+    },
+    {
+      titleKey: 'organization.about.cards.competences',
+      section: 'competences',
+      imageUrl:
+        'https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1200&q=80',
+    },
+    {
+      titleKey: 'organization.about.cards.procedures',
+      section: 'procedures',
+      imageUrl:
+        'https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1200&q=80',
+    },
+    {
+      titleKey: 'organization.about.cards.historique',
+      section: 'historique',
+      imageUrl:
+        'https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&w=1200&q=80',
     },
   ];
 
