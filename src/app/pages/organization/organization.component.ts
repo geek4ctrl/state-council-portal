@@ -91,7 +91,7 @@ type HighchartsStatic = typeof import('highcharts');
               <a
                 class="about-card mag-btn"
                 role="listitem"
-                [routerLink]="card.route"
+                [routerLink]="['/presentation', card.section]"
                 [attr.aria-label]="card.titleKey | i18n"
                 (mousemove)="mag($event)"
                 (mouseleave)="magOut($event)"
@@ -2714,12 +2714,12 @@ export class OrganizationComponent implements OnInit, AfterViewInit {
   ];
 
   readonly aboutCards = [
-    { titleKey: 'organization.about.cards.missions', route: '/missions' },
-    { titleKey: 'organization.about.cards.organisations', route: '/organisations' },
-    { titleKey: 'organization.about.cards.fondements', route: '/fondements' },
-    { titleKey: 'organization.about.cards.competences', route: '/competences' },
-    { titleKey: 'organization.about.cards.procedures', route: '/procedures' },
-    { titleKey: 'organization.about.cards.historique', route: '/historique' },
+    { titleKey: 'organization.about.cards.missions', section: 'missions' },
+    { titleKey: 'organization.about.cards.organisations', section: 'organisations' },
+    { titleKey: 'organization.about.cards.fondements', section: 'fondements' },
+    { titleKey: 'organization.about.cards.competences', section: 'competences' },
+    { titleKey: 'organization.about.cards.procedures', section: 'procedures' },
+    { titleKey: 'organization.about.cards.historique', section: 'historique' },
   ];
 
   @ViewChild('orgChartContainer', { static: true })

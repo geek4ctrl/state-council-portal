@@ -1,7 +1,4 @@
-import {
-  AfterViewInit, Component, DestroyRef, ElementRef,
-  OnInit, ViewChild, inject,
-} from '@angular/core';
+import { Component, OnInit, inject } from '@angular/core';
 import { SeoService } from '../../services/seo.service';
 import { I18nPipe } from '../../i18n/i18n.pipe';
 import { FooterComponent } from '../../components/footer/footer.component';
@@ -31,7 +28,7 @@ import { OrganizationComponent } from '../organization/organization.component';
             <h2 class="section-heading" [innerHTML]="'about.intro.title' | i18n"></h2>
 
             <div class="rubrics-grid">
-              <article class="rubric-card">
+              <article class="rubric-card" id="fondements">
                 <h3>{{ 'about.rubrics.legalBasis' | i18n }}</h3>
                 <p>{{ 'about.intro.body' | i18n }}</p>
                 <ul>
@@ -41,7 +38,7 @@ import { OrganizationComponent } from '../organization/organization.component';
                 </ul>
               </article>
 
-              <article class="rubric-card">
+              <article class="rubric-card" id="organisations">
                 <h3>{{ 'about.rubrics.organization' | i18n }}</h3>
                 <p>{{ 'about.legal.detail.paragraph3' | i18n }}</p>
                 <ul>
@@ -52,7 +49,7 @@ import { OrganizationComponent } from '../organization/organization.component';
                 <p>{{ 'about.legal.detail.paragraph4' | i18n }}</p>
               </article>
 
-              <article class="rubric-card">
+              <article class="rubric-card" id="missions">
                 <h3>{{ 'about.rubrics.mission' | i18n }}</h3>
                 <p>{{ 'about.legal.detail.paragraph1' | i18n }}</p>
                 <p>{{ 'about.legal.detail.paragraph2' | i18n }}</p>
@@ -65,17 +62,22 @@ import { OrganizationComponent } from '../organization/organization.component';
                 </ul>
               </article>
 
-              <article class="rubric-card">
+              <article class="rubric-card" id="competences">
                 <h3>{{ 'about.rubrics.competences' | i18n }}</h3>
                 <p>{{ 'about.legal.detail.paragraph5' | i18n }}</p>
               </article>
 
-              <article class="rubric-card">
+              <article class="rubric-card" id="procedures">
                 <h3>{{ 'about.rubrics.procedureBeforeCouncil' | i18n }}</h3>
                 <p>{{ 'about.legal.detail.paragraph6' | i18n }}</p>
                 <p>{{ 'about.legal.detail.paragraph7' | i18n }}</p>
                 <p>{{ 'about.legal.detail.paragraph8' | i18n }}</p>
                 <p>{{ 'about.legal.detail.paragraph9' | i18n }}</p>
+              </article>
+
+              <article class="rubric-card" id="historique">
+                <h3>{{ 'history.title' | i18n }}</h3>
+                <p>{{ 'history.body' | i18n }}</p>
               </article>
             </div>
           </div>
@@ -294,9 +296,8 @@ import { OrganizationComponent } from '../organization/organization.component';
     .loader-label{font-size:.72rem;font-weight:700;letter-spacing:2px;color:#1F9BD9;text-transform:uppercase;animation:labelPulse 2s ease-in-out infinite;}
   `]
 })
-export class PresentationComponent implements OnInit, AfterViewInit {
+export class PresentationComponent implements OnInit {
   private seoService = inject(SeoService);
-  private destroyRef = inject(DestroyRef);
 
   ngOnInit() {
     this.seoService.updateMetadata({
@@ -307,5 +308,5 @@ export class PresentationComponent implements OnInit, AfterViewInit {
     });
   }
 
-  ngAfterViewInit() {}
+
 }
