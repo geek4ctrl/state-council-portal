@@ -749,6 +749,49 @@
       "title": "RAIS WA KWANZA",
       "body": "Rais wa Kwanza anaongoza Baraza la Serikali, anaongoza vikao vyake, na kuhakikisha taasisi inafanya kazi ipasavyo."
     },
+    "orgPage": {
+      "hero": {
+        "title": "Organisation du Conseil d'Etat",
+        "subtitle": "Organigramme",
+        "body": "Texte de presentation de l'organisation du Conseil d'Etat."
+      },
+      "photoLabel": "Photo",
+      "organigramme": {
+        "title": "Organigramme general"
+      },
+      "tiles": {
+        "organigramme": "Organigramu",
+        "firstPresident": "Rais wa Kwanza",
+        "consultative": "Sehemu ya Ushauri",
+        "contentieux": "Sehemu ya Mashauri",
+        "registry": "Usajili na Sekretarieti Mkuu"
+      }
+    },
+    "greffe": {
+      "title": "Usajili na Kumbukumbu (Sekretarieti Mkuu)",
+      "ariaLabel": "Sehemu za usajili",
+      "tabs": {
+        "presidents": "Marais wa Kwanza",
+        "judges": "Majaji wa Baraza la Serikali"
+      },
+      "cards": {
+        "presidentsTitle": "Marais wa Kwanza wa Baraza la Serikali",
+        "judgesTitle": "Majaji wa Baraza la Serikali"
+      },
+      "bodyPlaceholder": "Maandishi"
+    },
+    "about": {
+      "title": "Sisi ni nani?",
+      "imageLabel": "Image",
+      "cards": {
+        "missions": "Dhamira",
+        "organisations": "Mpangilio",
+        "fondements": "Msingi wa Kisheria",
+        "competences": "Mamlaka",
+        "procedures": "Utaratibu mbele ya Baraza la Serikali",
+        "historique": "Historia"
+      }
+    },
     "firstPresidents": {
       "title": "MARAIS WA KWANZA",
       "honoraryTitle": "Rais wa Kwanza wa Heshima na Emeritus 2018 - 2022",

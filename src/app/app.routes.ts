@@ -7,8 +7,16 @@ export const routes: Routes = [
     loadComponent: () => import('./pages/home/home.component').then(m => m.HomeComponent)
   },
   {
+    path: 'presentation/:section',
+    loadComponent: () =>
+      import('./pages/presentation-section/presentation-section.component').then(
+        (m) => m.PresentationSectionComponent,
+      ),
+  },
+  {
     path: 'presentation',
-    component: PresentationComponent
+    component: PresentationComponent,
+    pathMatch: 'full'
   },
   {
     path: 'judges',

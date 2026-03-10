@@ -2,11 +2,12 @@ import { Component, inject, OnInit, ChangeDetectionStrategy } from '@angular/cor
 import { RouterLink } from '@angular/router';
 import { SeoService } from '../../services/seo.service';
 import { FooterComponent } from '../../components/footer/footer.component';
+import { I18nPipe } from '../../i18n/i18n.pipe';
 
 @Component({
   selector: 'app-procedures',
   standalone: true,
-  imports: [RouterLink, FooterComponent],
+  imports: [RouterLink, FooterComponent, I18nPipe],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <div class="page-container">
@@ -26,6 +27,16 @@ import { FooterComponent } from '../../components/footer/footer.component';
               </p>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section class="procedure-detail">
+        <div class="container">
+          <h2>{{ 'about.rubrics.procedureBeforeCouncil' | i18n }}</h2>
+          <p>{{ 'about.legal.detail.paragraph6' | i18n }}</p>
+          <p>{{ 'about.legal.detail.paragraph7' | i18n }}</p>
+          <p>{{ 'about.legal.detail.paragraph8' | i18n }}</p>
+          <p>{{ 'about.legal.detail.paragraph9' | i18n }}</p>
         </div>
       </section>
 
@@ -136,6 +147,30 @@ import { FooterComponent } from '../../components/footer/footer.component';
     .tabs-section {
       background: white;
       border-bottom: 1px solid #e0e0e0;
+    }
+
+    .procedure-detail {
+      background: #ffffff;
+      padding: 40px 0 30px;
+    }
+
+    .procedure-detail h2 {
+      margin: 0 0 16px;
+      font-size: 1.6rem;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: #1a1a1a;
+    }
+
+    .procedure-detail p {
+      margin: 0 0 16px;
+      color: #4b5563;
+      line-height: 1.8;
+      font-size: 1rem;
+    }
+
+    .procedure-detail p:last-child {
+      margin-bottom: 0;
     }
 
     .tabs {

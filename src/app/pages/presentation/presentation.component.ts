@@ -1,7 +1,4 @@
-import {
-  AfterViewInit, Component, DestroyRef, ElementRef,
-  OnInit, ViewChild, inject,
-} from '@angular/core';
+import { Component, OnInit, inject } from '@angular/core';
 import { SeoService } from '../../services/seo.service';
 import { I18nPipe } from '../../i18n/i18n.pipe';
 import { FooterComponent } from '../../components/footer/footer.component';
@@ -23,64 +20,6 @@ import { OrganizationComponent } from '../organization/organization.component';
       </section>
 
       <app-organization [embedded]="true"></app-organization>
-
-      <!-- Content Section -->
-      <section class="content-section">
-        <div class="container">
-          <div class="legal-section">
-            <h2 class="section-heading" [innerHTML]="'about.intro.title' | i18n"></h2>
-
-            <div class="rubrics-grid">
-              <article class="rubric-card">
-                <h3>{{ 'about.rubrics.legalBasis' | i18n }}</h3>
-                <p>{{ 'about.intro.body' | i18n }}</p>
-                <ul>
-                  <li>{{ 'about.legal.docs.1' | i18n }}</li>
-                  <li>{{ 'about.legal.docs.2' | i18n }}</li>
-                  <li>{{ 'about.legal.docs.3' | i18n }}</li>
-                </ul>
-              </article>
-
-              <article class="rubric-card">
-                <h3>{{ 'about.rubrics.organization' | i18n }}</h3>
-                <p>{{ 'about.legal.detail.paragraph3' | i18n }}</p>
-                <ul>
-                  <li>{{ 'about.legal.detail.list2.1' | i18n }}</li>
-                  <li>{{ 'about.legal.detail.list2.2' | i18n }}</li>
-                  <li>{{ 'about.legal.detail.list2.3' | i18n }}</li>
-                </ul>
-                <p>{{ 'about.legal.detail.paragraph4' | i18n }}</p>
-              </article>
-
-              <article class="rubric-card">
-                <h3>{{ 'about.rubrics.mission' | i18n }}</h3>
-                <p>{{ 'about.legal.detail.paragraph1' | i18n }}</p>
-                <p>{{ 'about.legal.detail.paragraph2' | i18n }}</p>
-                <ul>
-                  <li>{{ 'about.legal.detail.list1.1' | i18n }}</li>
-                  <li>{{ 'about.legal.detail.list1.2' | i18n }}</li>
-                  <li>{{ 'about.legal.detail.list1.3' | i18n }}</li>
-                  <li>{{ 'about.legal.detail.list1.4' | i18n }}</li>
-                  <li>{{ 'about.legal.detail.list1.5' | i18n }}</li>
-                </ul>
-              </article>
-
-              <article class="rubric-card">
-                <h3>{{ 'about.rubrics.competences' | i18n }}</h3>
-                <p>{{ 'about.legal.detail.paragraph5' | i18n }}</p>
-              </article>
-
-              <article class="rubric-card">
-                <h3>{{ 'about.rubrics.procedureBeforeCouncil' | i18n }}</h3>
-                <p>{{ 'about.legal.detail.paragraph6' | i18n }}</p>
-                <p>{{ 'about.legal.detail.paragraph7' | i18n }}</p>
-                <p>{{ 'about.legal.detail.paragraph8' | i18n }}</p>
-                <p>{{ 'about.legal.detail.paragraph9' | i18n }}</p>
-              </article>
-            </div>
-          </div>
-        </div>
-      </section>
 
       <app-footer></app-footer>
     </div>
@@ -136,91 +75,10 @@ import { OrganizationComponent } from '../organization/organization.component';
       text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
     }
 
-    /* Content Section */
-    .content-section {
-      background: #f8f9fa;
-      padding: 80px 0;
-    }
-
-    .section-heading {
-      font-size: 2rem;
-      font-weight: 700;
-      color: #1a1a1a;
-      text-align: center;
-      margin: 0 0 40px 0;
-      line-height: 1.4;
-      letter-spacing: 0.5px;
-    }
-
-    /* Legal Section */
-    .legal-section {
-      background: white;
-      padding: 60px 80px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    }
-
-    .rubrics-grid {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 40px;
-      margin-top: 40px;
-    }
-
-    .rubric-card {
-      background: #f8f9fa;
-      padding: 30px;
-      border-radius: 8px;
-      border-left: 4px solid #82BCDC;
-    }
-
-    .rubric-card:nth-child(5) {
-      grid-column: 1 / -1;
-    }
-
-    .rubric-card h3 {
-      font-size: 1.15rem;
-      font-weight: 600;
-      color: #1a1a1a;
-      margin: 0 0 20px 0;
-    }
-
-    .rubric-card p {
-      font-size: 0.9rem;
-      line-height: 1.8;
-      color: #333;
-      margin: 0 0 15px 0;
-      text-align: justify;
-    }
-
-    .rubric-card ul {
-      margin: 15px 0;
-      padding-left: 25px;
-    }
-
-    .rubric-card li {
-      font-size: 0.9rem;
-      line-height: 1.8;
-      color: #333;
-      margin-bottom: 8px;
-    }
-
     /* Responsive Design */
     @media (max-width: 1024px) {
       .hero-title {
         font-size: 2.25rem;
-      }
-
-      .legal-section {
-        padding: 50px 40px;
-      }
-
-      .rubrics-grid {
-        grid-template-columns: 1fr;
-        gap: 30px;
-      }
-
-      .rubric-card:nth-child(5) {
-        grid-column: auto;
       }
     }
 
@@ -294,9 +152,8 @@ import { OrganizationComponent } from '../organization/organization.component';
     .loader-label{font-size:.72rem;font-weight:700;letter-spacing:2px;color:#1F9BD9;text-transform:uppercase;animation:labelPulse 2s ease-in-out infinite;}
   `]
 })
-export class PresentationComponent implements OnInit, AfterViewInit {
+export class PresentationComponent implements OnInit {
   private seoService = inject(SeoService);
-  private destroyRef = inject(DestroyRef);
 
   ngOnInit() {
     this.seoService.updateMetadata({
@@ -307,5 +164,5 @@ export class PresentationComponent implements OnInit, AfterViewInit {
     });
   }
 
-  ngAfterViewInit() {}
+
 }
