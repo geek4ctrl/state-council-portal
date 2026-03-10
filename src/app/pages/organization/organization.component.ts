@@ -1007,7 +1007,7 @@ type HighchartsStatic = typeof import('highcharts');
       .members-grid {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        gap: 25px;
+        gap: 20px;
       }
 
       .no-results {
@@ -1090,7 +1090,7 @@ type HighchartsStatic = typeof import('highcharts');
         border: 1px solid rgba(26, 41, 66, 0.12);
         border-radius: 16px;
         box-shadow: 0 10px 28px rgba(26, 41, 66, 0.12);
-        padding: 12px;
+        padding: 8px;
       }
 
       .first-president-slot:hover {
@@ -1107,7 +1107,7 @@ type HighchartsStatic = typeof import('highcharts');
         border: none;
         border-radius: 12px;
         background: transparent;
-        aspect-ratio: 4 / 5;
+        aspect-ratio: 5 / 6;
       }
 
       .first-president-photo-slot img {
@@ -1154,7 +1154,7 @@ type HighchartsStatic = typeof import('highcharts');
         border: 1px solid rgba(26, 41, 66, 0.12);
         border-radius: 16px;
         box-shadow: 0 10px 28px rgba(26, 41, 66, 0.12);
-        padding: 12px;
+        padding: 8px;
       }
 
       .presidents-section .member-card:hover,
@@ -1210,7 +1210,7 @@ type HighchartsStatic = typeof import('highcharts');
 
       .presidents-section .member-info,
       .advisors-section .member-info {
-        padding: 10px 4px 4px;
+        padding: 8px 4px 4px;
         background: transparent;
         border-top: 0;
         text-align: center;
