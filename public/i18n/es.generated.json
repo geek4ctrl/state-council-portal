@@ -760,23 +760,23 @@
         "title": "Organigramme general"
       },
       "tiles": {
-        "organigramme": "Organigramme",
-        "firstPresident": "La premiere presidente",
-        "consultative": "La section consultative",
-        "contentieux": "La section du contentieux",
-        "registry": "La greffe Secretariat general"
+        "organigramme": "Organigrama",
+        "firstPresident": "El Primer Presidente",
+        "consultative": "La Sección Consultiva",
+        "contentieux": "La Sección de Litigios",
+        "registry": "El Registro y la Secretaría General"
       }
     },
     "about": {
       "title": "Qui sommes-nous ?",
       "imageLabel": "Image",
       "cards": {
-        "missions": "Missions",
-        "organisations": "Organisations",
-        "fondements": "Fondements juridiques",
-        "competences": "Compétences",
-        "procedures": "Procédure devant le Conseil d'Etat",
-        "historique": "Historique"
+        "missions": "Misión",
+        "organisations": "Organización",
+        "fondements": "Base legal",
+        "competences": "Competencias",
+        "procedures": "Procedimiento ante el Consejo de Estado",
+        "historique": "Historia"
       }
     },
     "firstPresidents": {

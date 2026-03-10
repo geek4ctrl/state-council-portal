@@ -761,22 +761,22 @@
       },
       "tiles": {
         "organigramme": "Organigramme",
-        "firstPresident": "La premiere presidente",
-        "consultative": "La section consultative",
-        "contentieux": "La section du contentieux",
-        "registry": "La greffe Secretariat general"
+        "firstPresident": "Rais ya liboso",
+        "consultative": "Eteni ya Consultative",
+        "contentieux": "Eteni ya Contentieux",
+        "registry": "Greffe mpe Secretariat general"
       }
     },
     "about": {
       "title": "Qui sommes-nous ?",
       "imageLabel": "Image",
       "cards": {
-        "missions": "Missions",
-        "organisations": "Organisations",
-        "fondements": "Fondements juridiques",
-        "competences": "Compétences",
-        "procedures": "Procédure devant le Conseil d'Etat",
-        "historique": "Historique"
+        "missions": "Mission",
+        "organisations": "Boyangeli",
+        "fondements": "Moboko ya mibeko",
+        "competences": "Bokoki",
+        "procedures": "Procedure liboso ya Conseil d'Etat",
+        "historique": "Lisolo"
       }
     },
     "firstPresidents": {

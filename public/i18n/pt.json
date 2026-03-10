@@ -749,16 +749,34 @@
       "title": "O PRIMEIRO PRESIDENTE",
       "body": "O Primeiro Presidente dirige o State Council, preside as suas sessões e zela pelo bom funcionamento da instituição."
     },
+    "orgPage": {
+      "hero": {
+        "title": "Organização do Conselho de Estado",
+        "subtitle": "Organograma",
+        "body": "Texto de apresentação da organização do Conselho de Estado."
+      },
+      "photoLabel": "Foto",
+      "organigramme": {
+        "title": "Organograma geral"
+      },
+      "tiles": {
+        "organigramme": "Organograma",
+        "firstPresident": "O Primeiro Presidente",
+        "consultative": "A Seção Consultiva",
+        "contentieux": "A Seção do Contencioso",
+        "registry": "O Registro e o Secretariado-Geral"
+      }
+    },
     "about": {
       "title": "Qui sommes-nous ?",
       "imageLabel": "Image",
       "cards": {
-        "missions": "Missions",
-        "organisations": "Organisations",
-        "fondements": "Fondements juridiques",
-        "competences": "Compétences",
-        "procedures": "Procédure devant le Conseil d'Etat",
-        "historique": "Historique"
+        "missions": "Missão",
+        "organisations": "Organização",
+        "fondements": "Base jurídica",
+        "competences": "Competências",
+        "procedures": "Procedimento antes do State Council",
+        "historique": "História"
       }
     },
     "firstPresidents": {

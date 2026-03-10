@@ -761,22 +761,22 @@
       },
       "tiles": {
         "organigramme": "Organigramme",
-        "firstPresident": "La premiere presidente",
+        "firstPresident": "La Première Présidente",
         "consultative": "La section consultative",
         "contentieux": "La section du contentieux",
-        "registry": "La greffe Secretariat general"
+        "registry": "Le greffe et le Secrétariat général"
       }
     },
     "about": {
       "title": "Qui sommes-nous ?",
       "imageLabel": "Image",
       "cards": {
-        "missions": "Missions",
-        "organisations": "Organisations",
-        "fondements": "Fondements juridiques",
+        "missions": "Mission",
+        "organisations": "Organisation",
+        "fondements": "Fondement juridique",
         "competences": "Compétences",
-        "procedures": "Procédure devant le Conseil d'Etat",
-        "historique": "Historique"
+        "procedures": "Procédure devant le Conseil d'État",
+        "historique": "Histoire"
       }
     },
     "firstPresidents": {

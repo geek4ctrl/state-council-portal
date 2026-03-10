@@ -761,22 +761,22 @@
       },
       "tiles": {
         "organigramme": "Organigramme",
-        "firstPresident": "La premiere presidente",
-        "consultative": "La section consultative",
-        "contentieux": "La section du contentieux",
-        "registry": "La greffe Secretariat general"
+        "firstPresident": "Mfumu wa kumpala",
+        "consultative": "Tshitupa tshia diyukidilangana",
+        "contentieux": "Tshitupa tshia bilumbu",
+        "registry": "Muaba wa difunda dia mena ne Sekretariya Munene"
       }
     },
     "about": {
       "title": "Qui sommes-nous ?",
       "imageLabel": "Image",
       "cards": {
-        "missions": "Missions",
-        "organisations": "Organisations",
-        "fondements": "Fondements juridiques",
-        "competences": "Compétences",
-        "procedures": "Procédure devant le Conseil d'Etat",
-        "historique": "Historique"
+        "missions": "Mudimu",
+        "organisations": "Bulongolodi",
+        "fondements": "Nshindamenu wa mikenji",
+        "competences": "Bipedi",
+        "procedures": "Mushindu wa kuenza kumpala kua tshipangu tshia ditunga",
+        "historique": "Muanu"
       }
     },
     "firstPresidents": {
