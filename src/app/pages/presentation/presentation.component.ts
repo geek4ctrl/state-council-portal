@@ -44,14 +44,6 @@ import { OrganizationComponent } from '../organization/organization.component';
                 <p>{{ 'about.legal.detail.paragraph5' | i18n }}</p>
               </article>
 
-              <article class="rubric-card" id="procedures">
-                <h3>{{ 'about.rubrics.procedureBeforeCouncil' | i18n }}</h3>
-                <p>{{ 'about.legal.detail.paragraph6' | i18n }}</p>
-                <p>{{ 'about.legal.detail.paragraph7' | i18n }}</p>
-                <p>{{ 'about.legal.detail.paragraph8' | i18n }}</p>
-                <p>{{ 'about.legal.detail.paragraph9' | i18n }}</p>
-              </article>
-
             </div>
           </div>
         </div>
