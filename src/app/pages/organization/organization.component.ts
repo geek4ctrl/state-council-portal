@@ -616,7 +616,7 @@ type HighchartsStatic = typeof import('highcharts');
 
       .president-title-underlined {
         font-size: 2.8rem;
-        font-weight: 400;
+        font-weight: 600;
         color: #1a1a1a;
         margin: 0 0 30px 0;
         letter-spacing: 1.5px;
@@ -690,32 +690,45 @@ type HighchartsStatic = typeof import('highcharts');
         z-index: 1;
       }
 
+      .about-section .section-title {
+        font-weight: 600;
+      }
+
       .about-grid {
         display: grid;
         grid-template-columns: repeat(3, minmax(0, 1fr));
-        gap: 22px;
+        gap: 20px;
       }
 
       .about-card {
         display: flex;
         flex-direction: column;
         background: #ffffff;
-        border: 1px solid rgba(26, 41, 66, 0.12);
-        border-radius: 16px;
-        box-shadow: 0 10px 24px rgba(26, 41, 66, 0.12);
+        border: 1px solid rgba(26, 41, 66, 0.1);
+        border-radius: 18px;
+        box-shadow: 0 8px 20px rgba(26, 41, 66, 0.1);
         color: #1a1a1a;
         text-decoration: none;
         overflow: hidden;
-        transition: transform 0.35s ease, box-shadow 0.35s ease;
+        transition:
+          transform 0.25s ease,
+          box-shadow 0.25s ease,
+          border-color 0.25s ease;
+        transform: none !important;
       }
 
       .about-card:hover {
-        transform: translateY(-4px);
-        box-shadow: 0 16px 32px rgba(26, 41, 66, 0.16);
+        transform: translateY(-2px) !important;
+        box-shadow: 0 12px 26px rgba(26, 41, 66, 0.14);
+        border-color: rgba(26, 41, 66, 0.18);
+      }
+
+      .about-section .mag-btn::before {
+        display: none;
       }
 
       .about-card-image {
-        height: 170px;
+        height: 180px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -729,17 +742,17 @@ type HighchartsStatic = typeof import('highcharts');
         content: '';
         position: absolute;
         inset: 0;
-        background: linear-gradient(180deg, rgba(15, 23, 42, 0.05), rgba(15, 23, 42, 0.25));
+        background: linear-gradient(180deg, rgba(15, 23, 42, 0.03), rgba(15, 23, 42, 0.14));
         pointer-events: none;
       }
 
       .about-card-body {
-        padding: 18px 20px 22px;
+        padding: 20px 22px 24px;
         display: flex;
         align-items: center;
         justify-content: center;
         text-align: center;
-        min-height: 72px;
+        min-height: 74px;
       }
 
       .about-card-body h3 {
