@@ -456,11 +456,11 @@ type GreffeFirstPresident = {
   `,
   styles: [
     `
-      @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;600&display=swap');
-
       .section-page {
         min-height: 100vh;
         background: #f8f9fb;
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+          Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
       }
 
       .container {
@@ -607,6 +607,20 @@ type GreffeFirstPresident = {
         line-height: 1.8;
         font-size: 0.98rem;
         text-align: left;
+      }
+
+      .section-card ul {
+        margin: 16px 0;
+        padding-left: 22px;
+      }
+
+      .section-card li {
+        margin-bottom: 14px;
+        line-height: 1.7;
+      }
+
+      .section-card li:last-child {
+        margin-bottom: 0;
       }
 
 

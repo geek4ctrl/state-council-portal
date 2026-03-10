@@ -97,9 +97,11 @@ type HighchartsStatic = typeof import('highcharts');
                 (mouseleave)="magOut($event)"
                 (click)="ripple($event)"
               >
-                <div class="about-card-image" aria-hidden="true">
-                  <span>{{ 'organization.about.imageLabel' | i18n }}</span>
-                </div>
+                <div
+                  class="about-card-image"
+                  aria-hidden="true"
+                  [style.backgroundImage]="'url(' + card.imageUrl + ')'"
+                ></div>
                 <div class="about-card-body">
                   <h3>{{ card.titleKey | i18n }}</h3>
                 </div>
@@ -713,15 +715,13 @@ type HighchartsStatic = typeof import('highcharts');
       }
 
       .about-card-image {
-        height: 150px;
+        height: 170px;
         display: flex;
         align-items: center;
         justify-content: center;
-        background: linear-gradient(135deg, rgba(31, 155, 217, 0.1), rgba(26, 41, 66, 0.08));
-        color: #1a2942;
-        font-weight: 700;
-        letter-spacing: 2px;
-        text-transform: uppercase;
+        background-color: #e2e8f0;
+        background-size: cover;
+        background-position: center;
         position: relative;
       }
 
@@ -729,7 +729,7 @@ type HighchartsStatic = typeof import('highcharts');
         content: '';
         position: absolute;
         inset: 0;
-        background: linear-gradient(120deg, rgba(255, 255, 255, 0.2), transparent 55%);
+        background: linear-gradient(180deg, rgba(15, 23, 42, 0.05), rgba(15, 23, 42, 0.25));
         pointer-events: none;
       }
 
@@ -2638,12 +2638,42 @@ export class OrganizationComponent implements OnInit, AfterViewInit {
   ];
 
   readonly aboutCards = [
-    { titleKey: 'organization.about.cards.missions', section: 'missions' },
-    { titleKey: 'organization.about.cards.organisations', section: 'organisations' },
-    { titleKey: 'organization.about.cards.fondements', section: 'fondements' },
-    { titleKey: 'organization.about.cards.competences', section: 'competences' },
-    { titleKey: 'organization.about.cards.procedures', section: 'procedures' },
-    { titleKey: 'organization.about.cards.historique', section: 'historique' },
+    {
+      titleKey: 'organization.about.cards.missions',
+      section: 'missions',
+      imageUrl:
+        'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=1200&q=80',
+    },
+    {
+      titleKey: 'organization.about.cards.organisations',
+      section: 'organisations',
+      imageUrl:
+        'https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=1200&q=80',
+    },
+    {
+      titleKey: 'organization.about.cards.fondements',
+      section: 'fondements',
+      imageUrl:
+        'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1200&q=80',
+    },
+    {
+      titleKey: 'organization.about.cards.competences',
+      section: 'competences',
+      imageUrl:
+        'https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1200&q=80',
+    },
+    {
+      titleKey: 'organization.about.cards.procedures',
+      section: 'procedures',
+      imageUrl:
+        'https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1200&q=80',
+    },
+    {
+      titleKey: 'organization.about.cards.historique',
+      section: 'historique',
+      imageUrl:
+        'https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&w=1200&q=80',
+    },
   ];
 
   @ViewChild('orgChartContainer', { static: true })
