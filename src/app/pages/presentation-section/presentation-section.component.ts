@@ -84,7 +84,6 @@ type GreffeFirstPresident = {
 
         <section class="chart-body">
           <div class="container">
-            <h2 class="chart-section-title">{{ 'organization.orgPage.organigramme.title' | i18n }}</h2>
             <div class="chart-structure" aria-label="{{ 'organization.chart.title' | i18n }}">
               <div class="org-chart">
                 <div class="org-chart-tier">
@@ -171,7 +170,6 @@ type GreffeFirstPresident = {
             </button>
             <div class="hero-split single">
               <div class="hero-left">
-                <p class="hero-kicker">{{ 'organization.orgPage.hero.subtitle' | i18n }}</p>
                 <h1 class="hero-title">{{ 'organization.orgPage.hero.title' | i18n }}</h1>
               </div>
             </div>
@@ -187,7 +185,6 @@ type GreffeFirstPresident = {
                 </div>
                 <div class="org-hero-copy">
                   <h2 class="org-hero-title">{{ 'organization.orgPage.hero.title' | i18n }}</h2>
-                  <p class="org-hero-subtitle">{{ 'organization.orgPage.hero.subtitle' | i18n }}</p>
                   <div class="org-detail-card">
                     <h2>{{ 'about.rubrics.organization' | i18n }}</h2>
                     <p>{{ 'about.legal.detail.paragraph3' | i18n }}</p>
@@ -654,8 +651,7 @@ type GreffeFirstPresident = {
       }
 
       .chart-hero .back-link {
-        width: 100%;
-        justify-content: flex-start;
+        width: fit-content;
       }
 
       .chart-body {
@@ -952,8 +948,16 @@ type GreffeFirstPresident = {
         padding: 90px 0 50px;
       }
 
+      .greffe-hero .hero-split {
+        gap: 48px;
+      }
+
+      .greffe-hero .hero-title {
+        line-height: 1.05;
+      }
+
       .greffe-hero .back-link {
-        color: #1a2942;
+        color: #ffffff;
       }
 
       .greffe-title {
@@ -977,6 +981,11 @@ type GreffeFirstPresident = {
         margin: 0 0 24px;
       }
 
+      .greffe-hero .greffe-tabs {
+        gap: 12px;
+        margin-top: 28px;
+      }
+
       .greffe-tab {
         background: transparent;
         border: none;
@@ -989,10 +998,26 @@ type GreffeFirstPresident = {
         transition: color 0.2s ease, transform 0.2s ease;
       }
 
+      .greffe-hero .greffe-tab {
+        color: rgba(248, 251, 255, 0.82);
+        background: rgba(255, 255, 255, 0.14);
+        border: 1px solid rgba(255, 255, 255, 0.28);
+        padding: 8px 16px;
+        border-radius: 999px;
+        letter-spacing: 0.4px;
+      }
+
       .greffe-tab.active {
         color: #0f172a;
         font-weight: 700;
         transform: translateY(-1px);
+      }
+
+      .greffe-hero .greffe-tab.active {
+        color: #ffffff;
+        background: rgba(255, 255, 255, 0.28);
+        border-color: rgba(255, 255, 255, 0.6);
+        box-shadow: 0 10px 22px rgba(15, 23, 42, 0.28);
       }
 
       .greffe-tab.active::after {
@@ -1005,6 +1030,10 @@ type GreffeFirstPresident = {
         border-radius: 999px;
         background: linear-gradient(90deg, #1f9bd9, #1a2942);
         box-shadow: 0 6px 16px rgba(31, 155, 217, 0.35);
+      }
+
+      .greffe-hero .greffe-tab.active::after {
+        opacity: 0;
       }
 
       .greffe-card {
