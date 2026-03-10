@@ -71,7 +71,9 @@
     "body": "Incontra i giudici illustri del Consiglio di Stato."
   },
   "memberDetail": {
-    "back": "← Torna all'Organizzazione",
+    "back": "← Torna alla presentazione",
+    "title": "Profilo del membro",
+    "subtitle": "Profilo dettagliato e informazioni di contatto.",
     "title": "Profilo del membro",
     "subtitle": "Profilo dettagliato e informazioni di contatto.",
     "office": "Ufficio",

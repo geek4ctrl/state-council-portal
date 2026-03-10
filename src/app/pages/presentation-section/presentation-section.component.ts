@@ -208,9 +208,18 @@ type GreffeFirstPresident = {
           <div class="container">
             <div class="org-grid">
               @for (tile of organisationTiles; track tile.section) {
-                <a class="org-tile" [routerLink]="['/presentation', tile.section]">
-                  <div class="org-tile-media" aria-hidden="true">
-                    {{ 'organization.about.imageLabel' | i18n }}
+                <a
+                  class="org-tile"
+                  [class.has-image]="!!tile.imageUrl"
+                  [routerLink]="['/presentation', tile.section]"
+                >
+                  <div
+                    class="org-tile-media"
+                    [class.has-image]="!!tile.imageUrl"
+                    [style.backgroundImage]="tile.imageUrl ? 'url(' + tile.imageUrl + ')' : null"
+                    aria-hidden="true"
+                  >
+                    <span>{{ 'organization.about.imageLabel' | i18n }}</span>
                   </div>
                   <h3>{{ tile.titleKey | i18n }}</h3>
                 </a>
@@ -1131,6 +1140,13 @@ type GreffeFirstPresident = {
         animation: tileFloat 0.7s ease both;
       }
 
+      .org-tile.has-image {
+        color: #f8fafc;
+        min-height: 240px;
+        display: flex;
+        align-items: flex-end;
+      }
+
       .org-tile::after {
         content: '';
         position: absolute;
@@ -1169,6 +1185,36 @@ type GreffeFirstPresident = {
         text-transform: uppercase;
         color: #1a2942;
         border-bottom: 1px solid rgba(26, 41, 66, 0.08);
+        position: relative;
+      }
+
+      .org-tile-media span {
+        position: relative;
+        z-index: 1;
+      }
+
+      .org-tile-media.has-image {
+        background-size: cover;
+        background-position: top center;
+        background-repeat: no-repeat;
+      }
+
+      .org-tile.has-image .org-tile-media {
+        position: absolute;
+        inset: 0;
+        height: 100%;
+        border-bottom: none;
+      }
+
+      .org-tile-media.has-image::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(180deg, rgba(15, 23, 42, 0.05), rgba(15, 23, 42, 0.6));
+      }
+
+      .org-tile-media.has-image span {
+        opacity: 0;
       }
 
       .org-tile h3 {
@@ -1178,6 +1224,16 @@ type GreffeFirstPresident = {
         text-transform: uppercase;
         color: #0f172a;
         line-height: 1.4;
+      }
+
+      .org-tile.has-image h3 {
+        margin: 0;
+        padding: 18px 20px 22px;
+        position: relative;
+        z-index: 1;
+        color: #f8fafc;
+        background: linear-gradient(180deg, rgba(15, 23, 42, 0) 0%, rgba(15, 23, 42, 0.72) 100%);
+        width: 100%;
       }
 
       .org-tile:nth-child(1) {
@@ -1345,11 +1401,36 @@ export class PresentationSectionComponent implements OnInit {
     },
   ];
   readonly organisationTiles = [
-    { titleKey: 'organization.orgPage.tiles.organigramme', section: 'organigramme' },
-    { titleKey: 'organization.orgPage.tiles.firstPresident', section: 'premiere-presidente' },
-    { titleKey: 'organization.orgPage.tiles.consultative', section: 'section-consultative' },
-    { titleKey: 'organization.orgPage.tiles.contentieux', section: 'section-contentieux' },
-    { titleKey: 'organization.orgPage.tiles.registry', section: 'greffe-secretariat-general' },
+    {
+      titleKey: 'organization.orgPage.tiles.organigramme',
+      section: 'organigramme',
+      imageUrl:
+        'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80',
+    },
+    {
+      titleKey: 'organization.orgPage.tiles.firstPresident',
+      section: 'premiere-presidente',
+      imageUrl:
+        'https://res.cloudinary.com/dhqvb8wbn/image/upload/v1772555485/Brigitte_NSENSELE_wa_NSENSELE_OK.jpg_ndsjzg.jpg',
+    },
+    {
+      titleKey: 'organization.orgPage.tiles.consultative',
+      section: 'section-consultative',
+      imageUrl:
+        'https://res.cloudinary.com/dhqvb8wbn/image/upload/v1772556921/Eug%C3%A8ne_KIBWE_MUTER.jpg_bacl4e.jpg',
+    },
+    {
+      titleKey: 'organization.orgPage.tiles.contentieux',
+      section: 'section-contentieux',
+      imageUrl:
+        'https://res.cloudinary.com/dhqvb8wbn/image/upload/v1772556705/PRES_MASANI_40x50.jpg_ast5mq.jpg',
+    },
+    {
+      titleKey: 'organization.orgPage.tiles.registry',
+      section: 'greffe-secretariat-general',
+      imageUrl:
+        'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1200&q=80',
+    },
   ];
 
   ngOnInit() {
