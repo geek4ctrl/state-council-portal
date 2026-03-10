@@ -749,6 +749,24 @@
       "title": "EL PRIMER PRESIDENTE",
       "body": "El Primer Presidente dirige el Consejo de Estado, preside sus sesiones y vela por el buen funcionamiento de la institución."
     },
+    "orgPage": {
+      "hero": {
+        "title": "Organisation du Conseil d'Etat",
+        "subtitle": "Organigramme",
+        "body": "Texte de presentation de l'organisation du Conseil d'Etat."
+      },
+      "photoLabel": "Photo",
+      "organigramme": {
+        "title": "Organigramme general"
+      },
+      "tiles": {
+        "organigramme": "Organigramme",
+        "firstPresident": "La premiere presidente",
+        "consultative": "La section consultative",
+        "contentieux": "La section du contentieux",
+        "registry": "La greffe Secretariat general"
+      }
+    },
     "about": {
       "title": "Qui sommes-nous ?",
       "imageLabel": "Image",

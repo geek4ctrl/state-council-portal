@@ -749,6 +749,24 @@
       "title": "MULOMBODI WA KUMPALA",
       "body": "Mfumu wa ditunga wa kumpala udi ulombola tshipangu tshia ditunga, ulombola bisangilu biatshi, ne udi utangila mudimu muimpe wa tshibambalu etshi."
     },
+    "orgPage": {
+      "hero": {
+        "title": "Organisation du Conseil d'Etat",
+        "subtitle": "Organigramme",
+        "body": "Texte de presentation de l'organisation du Conseil d'Etat."
+      },
+      "photoLabel": "Photo",
+      "organigramme": {
+        "title": "Organigramme general"
+      },
+      "tiles": {
+        "organigramme": "Organigramme",
+        "firstPresident": "La premiere presidente",
+        "consultative": "La section consultative",
+        "contentieux": "La section du contentieux",
+        "registry": "La greffe Secretariat general"
+      }
+    },
     "about": {
       "title": "Qui sommes-nous ?",
       "imageLabel": "Image",

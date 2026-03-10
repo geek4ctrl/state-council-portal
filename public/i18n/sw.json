@@ -749,6 +749,24 @@
       "title": "RAIS WA KWANZA",
       "body": "Rais wa Kwanza anaongoza Baraza la Serikali, anaongoza vikao vyake, na kuhakikisha taasisi inafanya kazi ipasavyo."
     },
+    "orgPage": {
+      "hero": {
+        "title": "Organisation du Conseil d'Etat",
+        "subtitle": "Organigramme",
+        "body": "Texte de presentation de l'organisation du Conseil d'Etat."
+      },
+      "photoLabel": "Photo",
+      "organigramme": {
+        "title": "Organigramme general"
+      },
+      "tiles": {
+        "organigramme": "Organigramme",
+        "firstPresident": "La premiere presidente",
+        "consultative": "La section consultative",
+        "contentieux": "La section du contentieux",
+        "registry": "La greffe Secretariat general"
+      }
+    },
     "about": {
       "title": "Qui sommes-nous ?",
       "imageLabel": "Image",

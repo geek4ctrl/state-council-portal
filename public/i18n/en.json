@@ -749,6 +749,24 @@
       "title": "THE FIRST PRESIDENT",
       "body": "The First President leads the State Council, presides over its sessions, and ensures the proper functioning of the institution."
     },
+    "orgPage": {
+      "hero": {
+        "title": "Organisation du Conseil d'Etat",
+        "subtitle": "Organigramme",
+        "body": "Texte de presentation de l'organisation du Conseil d'Etat."
+      },
+      "photoLabel": "Photo",
+      "organigramme": {
+        "title": "Organigramme general"
+      },
+      "tiles": {
+        "organigramme": "Organigramme",
+        "firstPresident": "La premiere presidente",
+        "consultative": "La section consultative",
+        "contentieux": "La section du contentieux",
+        "registry": "La greffe Secretariat general"
+      }
+    },
     "about": {
       "title": "Qui sommes-nous ?",
       "imageLabel": "Image",

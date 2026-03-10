@@ -749,6 +749,24 @@
       "title": "DIE ERSTE PRÄSIDENTIN",
       "body": "Die Erste Präsidentin leitet den Staatsrat, führt den Vorsitz bei Sitzungen und gewährleistet das ordnungsgemäße Funktionieren der Institution."
     },
+    "orgPage": {
+      "hero": {
+        "title": "Organisation du Conseil d'Etat",
+        "subtitle": "Organigramme",
+        "body": "Texte de presentation de l'organisation du Conseil d'Etat."
+      },
+      "photoLabel": "Photo",
+      "organigramme": {
+        "title": "Organigramme general"
+      },
+      "tiles": {
+        "organigramme": "Organigramme",
+        "firstPresident": "La premiere presidente",
+        "consultative": "La section consultative",
+        "contentieux": "La section du contentieux",
+        "registry": "La greffe Secretariat general"
+      }
+    },
     "about": {
       "title": "Qui sommes-nous ?",
       "imageLabel": "Image",

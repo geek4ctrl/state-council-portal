@@ -28,16 +28,6 @@ import { OrganizationComponent } from '../organization/organization.component';
             <h2 class="section-heading" [innerHTML]="'about.intro.title' | i18n"></h2>
 
             <div class="rubrics-grid">
-              <article class="rubric-card" id="fondements">
-                <h3>{{ 'about.rubrics.legalBasis' | i18n }}</h3>
-                <p>{{ 'about.intro.body' | i18n }}</p>
-                <ul>
-                  <li>{{ 'about.legal.docs.1' | i18n }}</li>
-                  <li>{{ 'about.legal.docs.2' | i18n }}</li>
-                  <li>{{ 'about.legal.docs.3' | i18n }}</li>
-                </ul>
-              </article>
-
               <article class="rubric-card" id="organisations">
                 <h3>{{ 'about.rubrics.organization' | i18n }}</h3>
                 <p>{{ 'about.legal.detail.paragraph3' | i18n }}</p>
@@ -47,19 +37,6 @@ import { OrganizationComponent } from '../organization/organization.component';
                   <li>{{ 'about.legal.detail.list2.3' | i18n }}</li>
                 </ul>
                 <p>{{ 'about.legal.detail.paragraph4' | i18n }}</p>
-              </article>
-
-              <article class="rubric-card" id="missions">
-                <h3>{{ 'about.rubrics.mission' | i18n }}</h3>
-                <p>{{ 'about.legal.detail.paragraph1' | i18n }}</p>
-                <p>{{ 'about.legal.detail.paragraph2' | i18n }}</p>
-                <ul>
-                  <li>{{ 'about.legal.detail.list1.1' | i18n }}</li>
-                  <li>{{ 'about.legal.detail.list1.2' | i18n }}</li>
-                  <li>{{ 'about.legal.detail.list1.3' | i18n }}</li>
-                  <li>{{ 'about.legal.detail.list1.4' | i18n }}</li>
-                  <li>{{ 'about.legal.detail.list1.5' | i18n }}</li>
-                </ul>
               </article>
 
               <article class="rubric-card" id="competences">
@@ -75,10 +52,6 @@ import { OrganizationComponent } from '../organization/organization.component';
                 <p>{{ 'about.legal.detail.paragraph9' | i18n }}</p>
               </article>
 
-              <article class="rubric-card" id="historique">
-                <h3>{{ 'history.title' | i18n }}</h3>
-                <p>{{ 'history.body' | i18n }}</p>
-              </article>
             </div>
           </div>
         </div>
