@@ -767,6 +767,19 @@
         "registry": "Registry and General Secretariat"
       }
     },
+    "greffe": {
+      "title": "Registry and Archives (General Secretariat)",
+      "ariaLabel": "Registry sections",
+      "tabs": {
+        "presidents": "First Presidents",
+        "judges": "Judges of the State Council"
+      },
+      "cards": {
+        "presidentsTitle": "First Presidents of the State Council",
+        "judgesTitle": "Judges of the State Council"
+      },
+      "bodyPlaceholder": "Text"
+    },
     "about": {
       "title": "Qui sommes-nous ?",
       "imageLabel": "Image",

@@ -651,9 +651,41 @@ type HighchartsStatic = typeof import('highcharts');
 
       /* About Section */
       .about-section {
-        background: #ffffff;
-        padding: 60px 0 40px;
+        position: relative;
+        background:
+          radial-gradient(circle at 12% 18%, rgba(31, 155, 217, 0.12), transparent 45%),
+          radial-gradient(circle at 88% 12%, rgba(26, 41, 66, 0.12), transparent 48%),
+          linear-gradient(180deg, #f8fafc 0%, #eef2f7 100%);
+        padding: 70px 0 60px;
         border-bottom: 1px solid rgba(26, 41, 66, 0.08);
+        overflow: hidden;
+      }
+
+      .about-section::before,
+      .about-section::after {
+        content: '';
+        position: absolute;
+        width: 240px;
+        height: 240px;
+        border-radius: 50%;
+        background: radial-gradient(circle, rgba(31, 155, 217, 0.16), transparent 70%);
+        pointer-events: none;
+      }
+
+      .about-section::before {
+        top: -80px;
+        left: -60px;
+      }
+
+      .about-section::after {
+        bottom: -110px;
+        right: -40px;
+        background: radial-gradient(circle, rgba(26, 41, 66, 0.14), transparent 70%);
+      }
+
+      .about-section .container {
+        position: relative;
+        z-index: 1;
       }
 
       .about-grid {
@@ -1428,7 +1460,7 @@ type HighchartsStatic = typeof import('highcharts');
       .services-section {
         --services-heading-font: 'Georgia', 'Times New Roman', serif;
         --services-body-font: 'Trebuchet MS', 'Segoe UI', sans-serif;
-        background: linear-gradient(180deg, #f2f3f7 0%, #ffffff 100%);
+        background: #ffffff;
         padding: 90px 0 100px;
         position: relative;
         overflow: hidden;
@@ -1438,9 +1470,7 @@ type HighchartsStatic = typeof import('highcharts');
         content: '';
         position: absolute;
         inset: 0;
-        background:
-          radial-gradient(circle at 10% 20%, rgba(31, 155, 217, 0.15), transparent 50%),
-          radial-gradient(circle at 90% 10%, rgba(78, 106, 138, 0.12), transparent 45%);
+        background: none;
         pointer-events: none;
       }
 

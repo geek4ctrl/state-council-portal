@@ -767,6 +767,19 @@
         "registry": "Le greffe et le Secrétariat général"
       }
     },
+    "greffe": {
+      "title": "Greffe et archives (Secrétariat général)",
+      "ariaLabel": "Sections du greffe",
+      "tabs": {
+        "presidents": "Les premiers présidents",
+        "judges": "Les juges du Conseil d'État"
+      },
+      "cards": {
+        "presidentsTitle": "Les premiers présidents du Conseil d'État",
+        "judgesTitle": "Les juges du Conseil d'État"
+      },
+      "bodyPlaceholder": "Texte"
+    },
     "about": {
       "title": "Qui sommes-nous ?",
       "imageLabel": "Image",

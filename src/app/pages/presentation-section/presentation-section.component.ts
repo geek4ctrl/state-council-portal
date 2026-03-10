@@ -67,13 +67,18 @@ type GreffeFirstPresident = {
   template: `
     <div class="page-wrap section-page">
       @if (isOrganigramme()) {
-        <section class="chart-hero">
+        <section class="chart-hero presentation-hero">
           <div class="container">
             <button class="back-link" type="button" (click)="goBack()">
               {{ 'memberDetail.back' | i18n }}
             </button>
-            <h1 class="chart-title">{{ 'organization.chart.title' | i18n }}</h1>
-            <p class="chart-subtitle">{{ 'organization.chart.subtitle' | i18n }}</p>
+            <div class="hero-split">
+              <div class="hero-left">
+                <h1 class="hero-title">{{ 'organization.chart.title' | i18n }}</h1>
+              </div>
+              <span class="hero-divider" aria-hidden="true"></span>
+              <p class="hero-body-text">{{ 'organization.chart.subtitle' | i18n }}</p>
+            </div>
           </div>
         </section>
 
@@ -159,21 +164,41 @@ type GreffeFirstPresident = {
           </div>
         </section>
       } @else if (isOrganisation()) {
-        <section class="org-hero">
+        <section class="org-hero presentation-hero">
           <div class="container">
             <button class="back-link" type="button" (click)="goBack()">
               {{ 'memberDetail.back' | i18n }}
             </button>
-            <div class="org-hero-grid">
-              <div class="org-hero-media" aria-hidden="true">
-                {{ 'organization.orgPage.photoLabel' | i18n }}
+            <div class="hero-split single">
+              <div class="hero-left">
+                <p class="hero-kicker">{{ 'organization.orgPage.hero.subtitle' | i18n }}</p>
+                <h1 class="hero-title">{{ 'organization.orgPage.hero.title' | i18n }}</h1>
               </div>
-              <div class="org-hero-copy">
-                <h1 class="org-hero-title">{{ 'organization.orgPage.hero.title' | i18n }}</h1>
-                <p class="org-hero-subtitle">{{ 'organization.orgPage.hero.subtitle' | i18n }}</p>
-                <p class="org-hero-body">
-                  {{ 'organization.orgPage.hero.body' | i18n }}
-                </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="org-hero-body">
+          <div class="container">
+            <div class="org-hero-card">
+              <div class="org-hero-grid">
+                <div class="org-hero-media" aria-hidden="true">
+                  {{ 'organization.orgPage.photoLabel' | i18n }}
+                </div>
+                <div class="org-hero-copy">
+                  <h2 class="org-hero-title">{{ 'organization.orgPage.hero.title' | i18n }}</h2>
+                  <p class="org-hero-subtitle">{{ 'organization.orgPage.hero.subtitle' | i18n }}</p>
+                  <div class="org-detail-card">
+                    <h2>{{ 'about.rubrics.organization' | i18n }}</h2>
+                    <p>{{ 'about.legal.detail.paragraph3' | i18n }}</p>
+                    <ul>
+                      <li>{{ 'about.legal.detail.list2.1' | i18n }}</li>
+                      <li>{{ 'about.legal.detail.list2.2' | i18n }}</li>
+                      <li>{{ 'about.legal.detail.list2.3' | i18n }}</li>
+                    </ul>
+                    <p>{{ 'about.legal.detail.paragraph4' | i18n }}</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -194,20 +219,30 @@ type GreffeFirstPresident = {
           </div>
         </section>
       } @else if (isGreffe()) {
-        <section class="greffe-hero">
+        <section class="greffe-hero presentation-hero">
           <div class="container">
             <button class="back-link" type="button" (click)="goBack()">
               {{ 'memberDetail.back' | i18n }}
             </button>
-            <h1 class="greffe-title">Greffe et archives (secretariat general)</h1>
-            <div class="greffe-tabs" role="tablist" aria-label="Greffe sections">
+            <div class="hero-split">
+              <div class="hero-left">
+                <h1 class="hero-title">{{ 'organization.greffe.title' | i18n }}</h1>
+              </div>
+              <span class="hero-divider" aria-hidden="true"></span>
+              <p class="hero-body-text">{{ 'organization.greffe.ariaLabel' | i18n }}</p>
+            </div>
+            <div
+              class="greffe-tabs"
+              role="tablist"
+              [attr.aria-label]="'organization.greffe.ariaLabel' | i18n"
+            >
               <button
                 type="button"
                 class="greffe-tab"
                 [class.active]="isGreffePresidents()"
                 (click)="setGreffeSection('presidents')"
               >
-                Les premiers presidents
+                {{ 'organization.greffe.tabs.presidents' | i18n }}
               </button>
               <button
                 type="button"
@@ -215,24 +250,28 @@ type GreffeFirstPresident = {
                 [class.active]="isGreffeJudges()"
                 (click)="setGreffeSection('judges')"
               >
-                Les juges du Conseil d'Etat
+                {{ 'organization.greffe.tabs.judges' | i18n }}
               </button>
             </div>
 
             @if (isGreffePresidents()) {
               <div class="greffe-card">
-                <div class="greffe-card-image" aria-hidden="true">Image</div>
+                <div class="greffe-card-image" aria-hidden="true">
+                  {{ 'organization.about.imageLabel' | i18n }}
+                </div>
                 <div class="greffe-card-body">
-                  <h2>Les premiers presidents du Conseil d'Etat</h2>
-                  <p>Texte</p>
+                  <h2>{{ 'organization.greffe.cards.presidentsTitle' | i18n }}</h2>
+                  <p>{{ 'organization.greffe.bodyPlaceholder' | i18n }}</p>
                 </div>
               </div>
             } @else {
               <div class="greffe-card">
-                <div class="greffe-card-image" aria-hidden="true">Image</div>
+                <div class="greffe-card-image" aria-hidden="true">
+                  {{ 'organization.about.imageLabel' | i18n }}
+                </div>
                 <div class="greffe-card-body">
-                  <h2>Les juges du Conseil d'Etat</h2>
-                  <p>Texte</p>
+                  <h2>{{ 'organization.greffe.cards.judgesTitle' | i18n }}</h2>
+                  <p>{{ 'organization.greffe.bodyPlaceholder' | i18n }}</p>
                 </div>
               </div>
             }
@@ -352,15 +391,20 @@ type GreffeFirstPresident = {
           </div>
         </section>
       } @else {
-        <section class="section-hero">
+        <section class="section-hero presentation-hero">
           <div class="container">
             <button class="back-link" type="button" (click)="goBack()">
               {{ 'memberDetail.back' | i18n }}
             </button>
-            <h1 class="section-title">{{ titleKey() | i18n }}</h1>
-            @if (!isMission() && !isFondements() && !isProcedures() && !isHistorique() && !isCompetences()) {
-              <p class="section-subtitle">{{ bodyKey() | i18n }}</p>
-            }
+            <div class="hero-split" [class.single]="!showHeroBody()">
+              <div class="hero-left">
+                <h1 class="hero-title">{{ titleKey() | i18n }}</h1>
+              </div>
+              @if (showHeroBody()) {
+                <span class="hero-divider" aria-hidden="true"></span>
+                <p class="hero-body-text">{{ bodyKey() | i18n }}</p>
+              }
+            </div>
           </div>
         </section>
 
@@ -425,31 +469,112 @@ type GreffeFirstPresident = {
         padding: 0 20px;
       }
 
-      .section-hero {
-        background: #ffffff;
-        color: #1a1a1a;
-        padding: 80px 0 70px;
+      .presentation-hero {
+        position: relative;
+        color: #ffffff;
+        padding: 90px 0 70px;
+        background:
+          linear-gradient(90deg, rgba(16, 27, 43, 0.88) 0%, rgba(16, 27, 43, 0.64) 55%, rgba(16, 27, 43, 0.42) 100%),
+          url('https://placehold.co/1920x400/82BCDC/ffffff?text=') center/cover;
+        overflow: hidden;
       }
 
-      .section-hero .back-link {
-        color: #1a2942;
+      .presentation-hero::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: radial-gradient(circle at 20% 20%, rgba(31, 155, 217, 0.2), transparent 55%);
+        pointer-events: none;
+      }
+
+      .presentation-hero .container {
+        position: relative;
+        z-index: 1;
+      }
+
+      .presentation-hero .back-link {
+        color: #f8fbff;
+        background: rgba(255, 255, 255, 0.14);
+        border-color: rgba(255, 255, 255, 0.45);
+        box-shadow: 0 12px 26px rgba(15, 23, 42, 0.35);
+      }
+
+      .hero-split {
+        display: grid;
+        grid-template-columns: minmax(0, 1.1fr) 1px minmax(0, 1fr);
+        gap: 34px;
+        align-items: center;
+      }
+
+      .hero-left {
+        text-align: center;
+      }
+
+      .hero-split.single {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-split.single .hero-divider {
+        display: none;
+      }
+
+      .hero-divider {
+        width: 1px;
+        height: 110px;
+        background: rgba(255, 255, 255, 0.6);
+      }
+
+      .hero-kicker {
+        margin: 0 0 10px;
+        font-size: 0.9rem;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        color: rgba(148, 210, 240, 0.95);
+        font-weight: 600;
+      }
+
+      .hero-title {
+        margin: 0;
+        font-size: clamp(2.2rem, 4.8vw, 3.1rem);
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: #ffffff;
+      }
+
+      .hero-body-text {
+        margin: 0;
+        font-size: 1rem;
+        line-height: 1.7;
+        color: rgba(255, 255, 255, 0.85);
       }
 
       .back-link {
         display: inline-flex;
         align-items: center;
         gap: 8px;
-        color: #cfe7f7;
+        color: #1a2942;
         text-decoration: none;
         font-weight: 600;
-        letter-spacing: 0.8px;
+        letter-spacing: 0.6px;
         margin-bottom: 20px;
-        background: transparent;
-        border: none;
-        padding: 0;
-        border-radius: 0;
-        box-shadow: none;
+        background: #f4f9ff;
+        border: 1px solid rgba(31, 155, 217, 0.35);
+        padding: 8px 16px;
+        border-radius: 999px;
+        box-shadow: 0 10px 22px rgba(31, 155, 217, 0.12);
         cursor: pointer;
+        transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+      }
+
+      .back-link:hover {
+        border-color: rgba(31, 155, 217, 0.6);
+        box-shadow: 0 14px 28px rgba(31, 155, 217, 0.18);
+        transform: translateY(-1px);
+      }
+
+      .back-link:focus-visible {
+        outline: 2px solid rgba(31, 155, 217, 0.6);
+        outline-offset: 3px;
       }
 
       .section-title {
@@ -457,13 +582,6 @@ type GreffeFirstPresident = {
         font-weight: 700;
         margin: 0 0 16px;
         letter-spacing: 1px;
-      }
-
-      .section-subtitle {
-        font-size: 1rem;
-        line-height: 1.7;
-        color: rgba(255, 255, 255, 0.85);
-        margin: 0;
       }
 
       .section-body {
@@ -493,38 +611,28 @@ type GreffeFirstPresident = {
 
 
       .org-hero {
-        background: #ffffff;
-        padding: 70px 0 40px;
+        padding: 90px 0 70px;
       }
 
-      .org-hero .back-link {
-        color: #1a2942;
+      .org-hero-body {
+        background: #f8f9fb;
+        padding: 40px 0 60px;
+      }
+
+      .org-hero-card {
+        background: #ffffff;
+        border-radius: 20px;
+        padding: 32px 34px;
+        box-shadow: 0 16px 34px rgba(26, 41, 66, 0.12);
       }
 
       .chart-hero {
-        background: #ffffff;
-        color: #1a1a1a;
-        padding: 70px 0 80px;
-        text-align: center;
+        padding: 90px 0 70px;
       }
 
       .chart-hero .back-link {
-        color: #1a2942;
         width: 100%;
         justify-content: flex-start;
-      }
-
-      .chart-title {
-        margin: 30px 0 10px;
-        font-size: 2.6rem;
-        letter-spacing: 2px;
-        text-transform: uppercase;
-        color: #1a1a1a;
-      }
-
-      .chart-subtitle {
-        margin: 0;
-        color: #4b5563;
       }
 
       .chart-body {
@@ -751,18 +859,82 @@ type GreffeFirstPresident = {
         line-height: 1.8;
       }
 
+      .org-detail-card {
+        margin-top: 28px;
+        background: #ffffff;
+        border-radius: 14px;
+        padding: 24px 26px;
+        border-left: 4px solid #82bcdc;
+        box-shadow: 0 12px 24px rgba(26, 41, 66, 0.1);
+      }
+
+      .org-detail-card h2 {
+        margin: 0 0 12px;
+        font-size: 1.1rem;
+        font-weight: 700;
+        color: #1a1a1a;
+      }
+
+      .org-detail-card p {
+        margin: 0 0 12px;
+        color: #374151;
+        line-height: 1.7;
+        font-size: 0.95rem;
+      }
+
+      .org-detail-card ul {
+        margin: 12px 0;
+        padding-left: 20px;
+        color: #374151;
+      }
+
+      .org-detail-card li {
+        margin-bottom: 8px;
+        line-height: 1.6;
+        font-size: 0.95rem;
+      }
+
       .org-tiles {
-        background: #f8f9fb;
-        padding: 10px 0 80px;
+        position: relative;
+        background: radial-gradient(circle at 15% 20%, rgba(31, 155, 217, 0.12), transparent 45%),
+          radial-gradient(circle at 85% 10%, rgba(250, 204, 84, 0.16), transparent 50%),
+          linear-gradient(180deg, #f7f9fb 0%, #edf2f7 100%);
+        padding: 20px 0 90px;
+        overflow: hidden;
+      }
+
+      .org-tiles::before,
+      .org-tiles::after {
+        content: '';
+        position: absolute;
+        width: 260px;
+        height: 260px;
+        border-radius: 50%;
+        background: radial-gradient(circle, rgba(31, 155, 217, 0.18), transparent 70%);
+        pointer-events: none;
+      }
+
+      .org-tiles::before {
+        top: -80px;
+        left: -60px;
+      }
+
+      .org-tiles::after {
+        bottom: -120px;
+        right: -40px;
+        background: radial-gradient(circle, rgba(26, 41, 66, 0.14), transparent 70%);
       }
 
       .greffe-hero {
-        background: #ffffff;
-        padding: 70px 0 40px;
+        padding: 90px 0 50px;
+      }
+
+      .greffe-hero .back-link {
+        color: #1a2942;
       }
 
       .greffe-title {
-        margin: 12px 0 16px;
+        margin: 12px 0 28px;
         font-size: 2rem;
         letter-spacing: 1px;
         text-transform: uppercase;
@@ -785,16 +957,31 @@ type GreffeFirstPresident = {
       .greffe-tab {
         background: transparent;
         border: none;
-        padding: 0;
+        padding: 6px 2px;
         font-size: 1.05rem;
         color: #374151;
         cursor: pointer;
         text-align: left;
+        position: relative;
+        transition: color 0.2s ease, transform 0.2s ease;
       }
 
       .greffe-tab.active {
-        color: #1a1a1a;
+        color: #0f172a;
         font-weight: 700;
+        transform: translateY(-1px);
+      }
+
+      .greffe-tab.active::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -8px;
+        height: 3px;
+        border-radius: 999px;
+        background: linear-gradient(90deg, #1f9bd9, #1a2942);
+        box-shadow: 0 6px 16px rgba(31, 155, 217, 0.35);
       }
 
       .greffe-card {
@@ -909,49 +1096,121 @@ type GreffeFirstPresident = {
       .org-grid {
         display: grid;
         grid-template-columns: repeat(3, minmax(0, 1fr));
-        gap: 24px;
+        gap: 28px;
+        position: relative;
+        z-index: 1;
       }
 
       .org-tile {
         display: block;
-        background: #ffffff;
-        border-radius: 16px;
-        border: 1px solid rgba(26, 41, 66, 0.1);
-        box-shadow: 0 10px 24px rgba(26, 41, 66, 0.12);
+        background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
+        border-radius: 18px;
+        border: 1px solid rgba(26, 41, 66, 0.12);
+        box-shadow: 0 12px 30px rgba(26, 41, 66, 0.14);
         overflow: hidden;
         text-align: center;
         color: inherit;
         text-decoration: none;
-        transition: transform 0.25s ease, box-shadow 0.25s ease;
+        position: relative;
+        transform: translateY(0);
+        transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+        animation: tileFloat 0.7s ease both;
+      }
+
+      .org-tile::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        border-radius: inherit;
+        background: linear-gradient(120deg, rgba(31, 155, 217, 0.12), transparent 50%);
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        pointer-events: none;
       }
 
       .org-tile:hover {
-        transform: translateY(-4px);
-        box-shadow: 0 16px 32px rgba(26, 41, 66, 0.16);
+        transform: translateY(-6px);
+        box-shadow: 0 18px 36px rgba(26, 41, 66, 0.2);
+        border-color: rgba(31, 155, 217, 0.35);
+      }
+
+      .org-tile:hover::after {
+        opacity: 1;
+      }
+
+      .org-tile:focus-visible {
+        outline: 2px solid rgba(31, 155, 217, 0.7);
+        outline-offset: 3px;
       }
 
       .org-tile-media {
-        height: 150px;
-        background: linear-gradient(135deg, rgba(31, 155, 217, 0.12), rgba(26, 41, 66, 0.08));
+        height: 165px;
+        background: linear-gradient(140deg, rgba(31, 155, 217, 0.18), rgba(26, 41, 66, 0.08)),
+          repeating-linear-gradient(135deg, rgba(31, 155, 217, 0.08) 0 10px, transparent 10px 20px);
         display: flex;
         align-items: center;
         justify-content: center;
         font-weight: 700;
-        letter-spacing: 2px;
+        letter-spacing: 3px;
         text-transform: uppercase;
         color: #1a2942;
+        border-bottom: 1px solid rgba(26, 41, 66, 0.08);
       }
 
       .org-tile h3 {
-        margin: 16px 18px 20px;
+        margin: 16px 20px 22px;
         font-size: 0.95rem;
-        letter-spacing: 1px;
+        letter-spacing: 1.6px;
         text-transform: uppercase;
-        color: #1a1a1a;
+        color: #0f172a;
         line-height: 1.4;
       }
 
+      .org-tile:nth-child(1) {
+        animation-delay: 0.05s;
+      }
+
+      .org-tile:nth-child(2) {
+        animation-delay: 0.1s;
+      }
+
+      .org-tile:nth-child(3) {
+        animation-delay: 0.15s;
+      }
+
+      .org-tile:nth-child(4) {
+        animation-delay: 0.2s;
+      }
+
+      .org-tile:nth-child(5) {
+        animation-delay: 0.25s;
+      }
+
+      .org-tile:nth-child(6) {
+        animation-delay: 0.3s;
+      }
+
+      @keyframes tileFloat {
+        from {
+          opacity: 0;
+          transform: translateY(12px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
       @media (max-width: 768px) {
+        .hero-split {
+          grid-template-columns: 1fr;
+          gap: 18px;
+        }
+
+        .hero-divider {
+          display: none;
+        }
+
         .section-hero {
           padding: 60px 0 50px;
         }
@@ -1037,6 +1296,14 @@ export class PresentationSectionComponent implements OnInit {
   readonly isGreffe = computed(() => this.sectionKey() === 'greffe-secretariat-general');
   readonly isGreffePresidents = computed(() => this.greffeSection() === 'presidents');
   readonly isGreffeJudges = computed(() => this.greffeSection() === 'judges');
+  readonly showHeroBody = computed(
+    () =>
+      !this.isMission() &&
+      !this.isFondements() &&
+      !this.isProcedures() &&
+      !this.isHistorique() &&
+      !this.isCompetences()
+  );
   readonly greffePresidents = computed(() =>
     this.memberService.members.filter((member) => member.role === 'president')
   );

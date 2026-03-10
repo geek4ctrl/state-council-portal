@@ -767,6 +767,19 @@
         "registry": "La Cancelleria e la Segreteria generale"
       }
     },
+    "greffe": {
+      "title": "Cancelleria e archivi (Segreteria generale)",
+      "ariaLabel": "Sezioni della cancelleria",
+      "tabs": {
+        "presidents": "I primi presidenti",
+        "judges": "I giudici del Consiglio di Stato"
+      },
+      "cards": {
+        "presidentsTitle": "I primi presidenti del Consiglio di Stato",
+        "judgesTitle": "I giudici del Consiglio di Stato"
+      },
+      "bodyPlaceholder": "Testo"
+    },
     "about": {
       "title": "Qui sommes-nous ?",
       "imageLabel": "Image",

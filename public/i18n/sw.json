@@ -767,6 +767,19 @@
         "registry": "Usajili na Sekretarieti Mkuu"
       }
     },
+    "greffe": {
+      "title": "Usajili na Kumbukumbu (Sekretarieti Mkuu)",
+      "ariaLabel": "Sehemu za usajili",
+      "tabs": {
+        "presidents": "Marais wa Kwanza",
+        "judges": "Majaji wa Baraza la Serikali"
+      },
+      "cards": {
+        "presidentsTitle": "Marais wa Kwanza wa Baraza la Serikali",
+        "judgesTitle": "Majaji wa Baraza la Serikali"
+      },
+      "bodyPlaceholder": "Maandishi"
+    },
     "about": {
       "title": "Qui sommes-nous ?",
       "imageLabel": "Image",

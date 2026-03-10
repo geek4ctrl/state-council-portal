@@ -767,6 +767,19 @@
         "registry": "Muaba wa difunda dia mena ne Sekretariya Munene"
       }
     },
+    "greffe": {
+      "title": "Greffe ne Archives (Sekretariya Munene)",
+      "ariaLabel": "Bitupa bia greffe",
+      "tabs": {
+        "presidents": "Balombodi ba kumpala",
+        "judges": "Bajudji ba Conseil d'Etat"
+      },
+      "cards": {
+        "presidentsTitle": "Balombodi ba kumpala ba Conseil d'Etat",
+        "judgesTitle": "Bajudji ba Conseil d'Etat"
+      },
+      "bodyPlaceholder": "Mikanda"
+    },
     "about": {
       "title": "Qui sommes-nous ?",
       "imageLabel": "Image",

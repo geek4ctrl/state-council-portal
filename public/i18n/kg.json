@@ -767,6 +767,19 @@
         "registry": "Greffe mpe Secretariat general"
       }
     },
+    "greffe": {
+      "title": "Greffe mpe Archives (Secretariat general)",
+      "ariaLabel": "Biteni ya greffe",
+      "tabs": {
+        "presidents": "Marais ya liboso",
+        "judges": "Bajuge ya Conseil d'Etat"
+      },
+      "cards": {
+        "presidentsTitle": "Marais ya liboso ya Conseil d'Etat",
+        "judgesTitle": "Bajuge ya Conseil d'Etat"
+      },
+      "bodyPlaceholder": "Mikanda"
+    },
     "about": {
       "title": "Qui sommes-nous ?",
       "imageLabel": "Image",

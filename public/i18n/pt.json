@@ -767,6 +767,19 @@
         "registry": "O Registro e o Secretariado-Geral"
       }
     },
+    "greffe": {
+      "title": "Registro e arquivos (Secretariado-Geral)",
+      "ariaLabel": "Seções do registro",
+      "tabs": {
+        "presidents": "Os primeiros presidentes",
+        "judges": "Os juízes do Conselho de Estado"
+      },
+      "cards": {
+        "presidentsTitle": "Os primeiros presidentes do Conselho de Estado",
+        "judgesTitle": "Os juízes do Conselho de Estado"
+      },
+      "bodyPlaceholder": "Texto"
+    },
     "about": {
       "title": "Qui sommes-nous ?",
       "imageLabel": "Image",

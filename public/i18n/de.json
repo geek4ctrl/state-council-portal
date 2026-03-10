@@ -767,6 +767,19 @@
         "registry": "Kanzlei und Generalsekretariat"
       }
     },
+    "greffe": {
+      "title": "Registratur und Archive (Generalsekretariat)",
+      "ariaLabel": "Abschnitte der Registratur",
+      "tabs": {
+        "presidents": "Die ersten Präsidenten",
+        "judges": "Die Richter des Staatsrats"
+      },
+      "cards": {
+        "presidentsTitle": "Die ersten Präsidenten des Staatsrats",
+        "judgesTitle": "Die Richter des Staatsrats"
+      },
+      "bodyPlaceholder": "Text"
+    },
     "about": {
       "title": "Qui sommes-nous ?",
       "imageLabel": "Image",
