@@ -749,6 +749,18 @@
       "title": "LA PRIMA PRESIDENTE",
       "body": "La Prima Presidente guida il Consiglio di Stato, presiede le sessioni e assicura il corretto funzionamento dell'istituzione."
     },
+    "about": {
+      "title": "Qui sommes-nous ?",
+      "imageLabel": "Image",
+      "cards": {
+        "missions": "Missions",
+        "organisations": "Organisations",
+        "fondements": "Fondements juridiques",
+        "competences": "Compétences",
+        "procedures": "Procédure devant le Conseil d'Etat",
+        "historique": "Historique"
+      }
+    },
     "firstPresidents": {
       "title": "PRIME PRESIDENTI",
       "honoraryTitle": "Prima Presidente onoraria ed emerita: 2018 - 2022",

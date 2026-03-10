@@ -749,6 +749,18 @@
       "title": "THE FIRST PRESIDENT",
       "body": "The First President leads the State Council, presides over its sessions, and ensures the proper functioning of the institution."
     },
+    "about": {
+      "title": "Qui sommes-nous ?",
+      "imageLabel": "Image",
+      "cards": {
+        "missions": "Missions",
+        "organisations": "Organisations",
+        "fondements": "Fondements juridiques",
+        "competences": "Compétences",
+        "procedures": "Procédure devant le Conseil d'Etat",
+        "historique": "Historique"
+      }
+    },
     "firstPresidents": {
       "title": "FIRST PRESIDENTS",
       "honoraryTitle": "Honorary and Emeritus First President: 2018 - 2022",

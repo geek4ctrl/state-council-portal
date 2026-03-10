@@ -749,6 +749,18 @@
       "title": "O PRIMEIRO PRESIDENTE",
       "body": "O Primeiro Presidente dirige o State Council, preside as suas sessões e zela pelo bom funcionamento da instituição."
     },
+    "about": {
+      "title": "Qui sommes-nous ?",
+      "imageLabel": "Image",
+      "cards": {
+        "missions": "Missions",
+        "organisations": "Organisations",
+        "fondements": "Fondements juridiques",
+        "competences": "Compétences",
+        "procedures": "Procédure devant le Conseil d'Etat",
+        "historique": "Historique"
+      }
+    },
     "firstPresidents": {
       "title": "PRIMEIROS PRESIDENTES",
       "honoraryTitle": "Primeiro Presidente Honorário e Emérito: 2018 - 2022",

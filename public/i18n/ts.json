@@ -749,6 +749,18 @@
       "title": "MULOMBODI WA KUMPALA",
       "body": "Mfumu wa ditunga wa kumpala udi ulombola tshipangu tshia ditunga, ulombola bisangilu biatshi, ne udi utangila mudimu muimpe wa tshibambalu etshi."
     },
+    "about": {
+      "title": "Qui sommes-nous ?",
+      "imageLabel": "Image",
+      "cards": {
+        "missions": "Missions",
+        "organisations": "Organisations",
+        "fondements": "Fondements juridiques",
+        "competences": "Compétences",
+        "procedures": "Procédure devant le Conseil d'Etat",
+        "historique": "Historique"
+      }
+    },
     "firstPresidents": {
       "title": "BALOMBODI BA KUMPALA",
       "honoraryTitle": "Mulombodi wa kumpala wa buneme ne wa tshijila: 2018 - 2022",

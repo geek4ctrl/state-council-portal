@@ -77,6 +77,38 @@ type HighchartsStatic = typeof import('highcharts');
         </div>
       </section>
 
+      <!-- About Section -->
+      <section class="about-section" aria-labelledby="about-title">
+        <div class="container">
+          <div class="section-head-wrap">
+            <div class="org-header-line anim-line"></div>
+            <h2 id="about-title" class="section-title anim-up">
+              {{ 'organization.about.title' | i18n }}
+            </h2>
+          </div>
+          <div class="about-grid" role="list">
+            @for (card of aboutCards; track card.titleKey) {
+              <a
+                class="about-card mag-btn"
+                role="listitem"
+                [routerLink]="card.route"
+                [attr.aria-label]="card.titleKey | i18n"
+                (mousemove)="mag($event)"
+                (mouseleave)="magOut($event)"
+                (click)="ripple($event)"
+              >
+                <div class="about-card-image" aria-hidden="true">
+                  <span>{{ 'organization.about.imageLabel' | i18n }}</span>
+                </div>
+                <div class="about-card-body">
+                  <h3>{{ card.titleKey | i18n }}</h3>
+                </div>
+              </a>
+            }
+          </div>
+        </div>
+      </section>
+
       <!-- Organization Chart Section -->
       <section class="org-chart-section" aria-labelledby="org-chart-title">
         <div class="container">
@@ -721,6 +753,77 @@ type HighchartsStatic = typeof import('highcharts');
       .president-description strong {
         color: #1a1a1a;
         font-weight: 600;
+      }
+
+      /* About Section */
+      .about-section {
+        background: #ffffff;
+        padding: 60px 0 40px;
+        border-bottom: 1px solid rgba(26, 41, 66, 0.08);
+      }
+
+      .about-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 22px;
+      }
+
+      .about-card {
+        display: flex;
+        flex-direction: column;
+        background: #ffffff;
+        border: 1px solid rgba(26, 41, 66, 0.12);
+        border-radius: 16px;
+        box-shadow: 0 10px 24px rgba(26, 41, 66, 0.12);
+        color: #1a1a1a;
+        text-decoration: none;
+        overflow: hidden;
+        transition: transform 0.35s ease, box-shadow 0.35s ease;
+      }
+
+      .about-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 16px 32px rgba(26, 41, 66, 0.16);
+      }
+
+      .about-card-image {
+        height: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(135deg, rgba(31, 155, 217, 0.1), rgba(26, 41, 66, 0.08));
+        color: #1a2942;
+        font-weight: 700;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        position: relative;
+      }
+
+      .about-card-image::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(120deg, rgba(255, 255, 255, 0.2), transparent 55%);
+        pointer-events: none;
+      }
+
+      .about-card-body {
+        padding: 18px 20px 22px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        min-height: 72px;
+      }
+
+      .about-card-body h3 {
+        margin: 0;
+        font-size: 0.95rem;
+        font-weight: 700;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #1a2942;
+        line-height: 1.4;
       }
 
       /* Senior Label Section */
@@ -1785,6 +1888,10 @@ type HighchartsStatic = typeof import('highcharts');
           gap: 18px;
         }
 
+        .about-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
         .service-item,
         .detail-box {
           padding: 24px;
@@ -2093,6 +2200,18 @@ type HighchartsStatic = typeof import('highcharts');
 
         .members-grid {
           grid-template-columns: 1fr;
+        }
+
+        .about-section {
+          padding: 45px 0 30px;
+        }
+
+        .about-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .about-card-image {
+          height: 130px;
         }
 
         .member-image {
@@ -2592,6 +2711,15 @@ export class OrganizationComponent implements OnInit, AfterViewInit {
       image:
         'https://res.cloudinary.com/dhqvb8wbn/image/upload/v1772555485/Brigitte_NSENSELE_wa_NSENSELE_OK.jpg_ndsjzg.jpg',
     },
+  ];
+
+  readonly aboutCards = [
+    { titleKey: 'organization.about.cards.missions', route: '/missions' },
+    { titleKey: 'organization.about.cards.organisations', route: '/organisations' },
+    { titleKey: 'organization.about.cards.fondements', route: '/fondements' },
+    { titleKey: 'organization.about.cards.competences', route: '/competences' },
+    { titleKey: 'organization.about.cards.procedures', route: '/procedures' },
+    { titleKey: 'organization.about.cards.historique', route: '/historique' },
   ];
 
   @ViewChild('orgChartContainer', { static: true })

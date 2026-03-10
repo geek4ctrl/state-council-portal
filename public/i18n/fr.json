@@ -749,6 +749,18 @@
       "title": "LA PREMIÈRE PRÉSIDENTE",
       "body": "La Première Présidente dirige le Conseil d'État, préside ses sessions et veille au bon fonctionnement de l'institution."
     },
+    "about": {
+      "title": "Qui sommes-nous ?",
+      "imageLabel": "Image",
+      "cards": {
+        "missions": "Missions",
+        "organisations": "Organisations",
+        "fondements": "Fondements juridiques",
+        "competences": "Compétences",
+        "procedures": "Procédure devant le Conseil d'Etat",
+        "historique": "Historique"
+      }
+    },
     "firstPresidents": {
       "title": "PREMIERS PRÉSIDENTS",
       "honoraryTitle": "Premier Président Honoraire et Émérite : 2018 - 2022",

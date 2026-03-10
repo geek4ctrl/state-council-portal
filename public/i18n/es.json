@@ -749,6 +749,18 @@
       "title": "EL PRIMER PRESIDENTE",
       "body": "El Primer Presidente dirige el Consejo de Estado, preside sus sesiones y vela por el buen funcionamiento de la institución."
     },
+    "about": {
+      "title": "Qui sommes-nous ?",
+      "imageLabel": "Image",
+      "cards": {
+        "missions": "Missions",
+        "organisations": "Organisations",
+        "fondements": "Fondements juridiques",
+        "competences": "Compétences",
+        "procedures": "Procédure devant le Conseil d'Etat",
+        "historique": "Historique"
+      }
+    },
     "firstPresidents": {
       "title": "PRIMEROS PRESIDENTES",
       "honoraryTitle": "Primer Presidente Honorario y Emérito: 2018 - 2022",
