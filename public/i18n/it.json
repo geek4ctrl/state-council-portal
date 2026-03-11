@@ -757,9 +757,9 @@
     },
     "orgPage": {
       "hero": {
-        "title": "Organisation du Conseil d'Etat",
-        "subtitle": "Organigramme",
-        "body": "Texte de presentation de l'organisation du Conseil d'Etat."
+        "title": "Organizzazione del Consiglio di Stato",
+        "subtitle": "Organigramma",
+        "body": "Testo di presentazione dell'organizzazione del Consiglio di Stato."
       },
       "photoLabel": "Photo",
       "organigramme": {
