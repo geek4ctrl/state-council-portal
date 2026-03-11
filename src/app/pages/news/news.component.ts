@@ -560,6 +560,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
         align-items: center;
         justify-content: center;
         gap: 8px;
+        min-width: 150px;
       }
 
       .pagination-btn:disabled {

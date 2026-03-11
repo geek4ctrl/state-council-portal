@@ -146,6 +146,107 @@ type HighchartsStatic = typeof import('highcharts');
         </div>
       </section>
 
+      <!-- ═══ NEWSLETTER ═══ -->
+      <section class="nl-section">
+        <div class="nl-scanlines"></div>
+        <div class="container">
+          <div class="nl-head">
+            <div class="nl-line anim-line-c"></div>
+            <h2 class="anim-up">{{ 'home.newsletter.title' | i18n }}</h2>
+            <div class="nl-line anim-line-c"></div>
+          </div>
+          <div class="nl-grid">
+            <div class="nl-track">
+              @for (post of newsletterPosts(); track post.id) {
+                <a
+                  class="nl-card tilt-card"
+                  [routerLink]="['/news', post.id]"
+                  (mousemove)="tilt($event)"
+                  (mouseleave)="tiltReset($event)"
+                >
+                  <div class="tilt-shine"></div>
+                  <div class="nl-img-wrap img-zoom">
+                    <img [src]="post.image" [alt]="post.title" />
+                    <div class="img-sheen"></div>
+                    <div class="nl-img-badge">{{ post.date }} | {{ post.category }}</div>
+                    <div class="nl-img-scan"></div>
+                  </div>
+                  <div class="nl-body">
+                    <h3>{{ post.title }}</h3>
+                    <span class="nl-link">
+                      {{ 'home.newsletter.readMore' | i18n }}
+                      <span class="nl-arr">
+                        <svg
+                          width="14"
+                          height="14"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2.5"
+                        >
+                          <path d="M5 12h14M12 5l7 7-7 7" />
+                        </svg>
+                      </span>
+                      <span class="nl-underline"></span>
+                    </span>
+                  </div>
+                  <div class="nl-card-glow"></div>
+                </a>
+              }
+              @for (post of newsletterPosts(); track post.id + '-clone') {
+                <a
+                  class="nl-card tilt-card"
+                  [routerLink]="['/news', post.id]"
+                  aria-hidden="true"
+                  tabindex="-1"
+                  (mousemove)="tilt($event)"
+                  (mouseleave)="tiltReset($event)"
+                >
+                  <div class="tilt-shine"></div>
+                  <div class="nl-img-wrap img-zoom">
+                    <img [src]="post.image" [alt]="''" />
+                    <div class="img-sheen"></div>
+                    <div class="nl-img-badge">{{ post.date }} | {{ post.category }}</div>
+                    <div class="nl-img-scan"></div>
+                  </div>
+                  <div class="nl-body">
+                    <h3>{{ post.title }}</h3>
+                    <span class="nl-link" aria-hidden="true">
+                      {{ 'home.newsletter.readMore' | i18n }}
+                      <span class="nl-arr">
+                        <svg
+                          width="14"
+                          height="14"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2.5"
+                        >
+                          <path d="M5 12h14M12 5l7 7-7 7" />
+                        </svg>
+                      </span>
+                      <span class="nl-underline"></span>
+                    </span>
+                  </div>
+                  <div class="nl-card-glow"></div>
+                </a>
+              }
+            </div>
+          </div>
+          <div class="nl-action">
+            <a
+              routerLink="/news"
+              class="nl-btn mag-btn"
+              (mousemove)="mag($event)"
+              (mouseleave)="magOut($event)"
+              (click)="ripple($event)"
+            >
+              <span>{{ 'home.newsletter.cta' | i18n }}</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
       <!-- ═══ QUICK LINKS ═══ -->
       <section class="ql-section">
         <div class="container">
@@ -704,108 +805,7 @@ type HighchartsStatic = typeof import('highcharts');
         </div>
       </section>
 
-      <!-- ═══ NEWSLETTER ═══ -->
-      <section class="nl-section">
-        <div class="nl-scanlines"></div>
-        <div class="container">
-          <div class="nl-head">
-            <div class="nl-line anim-line-c"></div>
-            <h2 class="anim-up">{{ 'home.newsletter.title' | i18n }}</h2>
-            <div class="nl-line anim-line-c"></div>
-          </div>
-          <div class="nl-grid">
-            <div class="nl-track">
-              @for (post of newsletterPosts(); track post.id) {
-                <a
-                  class="nl-card tilt-card"
-                  [routerLink]="['/news', post.id]"
-                  (mousemove)="tilt($event)"
-                  (mouseleave)="tiltReset($event)"
-                >
-                  <div class="tilt-shine"></div>
-                  <div class="nl-img-wrap img-zoom">
-                    <img [src]="post.image" [alt]="post.title" />
-                    <div class="img-sheen"></div>
-                    <div class="nl-img-badge">{{ post.date }} | {{ post.category }}</div>
-                    <div class="nl-img-scan"></div>
-                  </div>
-                  <div class="nl-body">
-                    <h3>{{ post.title }}</h3>
-                    <span class="nl-link">
-                      {{ 'home.newsletter.readMore' | i18n }}
-                      <span class="nl-arr">
-                        <svg
-                          width="14"
-                          height="14"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          stroke="currentColor"
-                          stroke-width="2.5"
-                        >
-                          <path d="M5 12h14M12 5l7 7-7 7" />
-                        </svg>
-                      </span>
-                      <span class="nl-underline"></span>
-                    </span>
-                  </div>
-                  <div class="nl-card-glow"></div>
-                </a>
-              }
-              @for (post of newsletterPosts(); track post.id + '-clone') {
-                <a
-                  class="nl-card tilt-card"
-                  [routerLink]="['/news', post.id]"
-                  aria-hidden="true"
-                  tabindex="-1"
-                  (mousemove)="tilt($event)"
-                  (mouseleave)="tiltReset($event)"
-                >
-                  <div class="tilt-shine"></div>
-                  <div class="nl-img-wrap img-zoom">
-                    <img [src]="post.image" [alt]="''" />
-                    <div class="img-sheen"></div>
-                    <div class="nl-img-badge">{{ post.date }} | {{ post.category }}</div>
-                    <div class="nl-img-scan"></div>
-                  </div>
-                  <div class="nl-body">
-                    <h3>{{ post.title }}</h3>
-                    <span class="nl-link" aria-hidden="true">
-                      {{ 'home.newsletter.readMore' | i18n }}
-                      <span class="nl-arr">
-                        <svg
-                          width="14"
-                          height="14"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          stroke="currentColor"
-                          stroke-width="2.5"
-                        >
-                          <path d="M5 12h14M12 5l7 7-7 7" />
-                        </svg>
-                      </span>
-                      <span class="nl-underline"></span>
-                    </span>
-                  </div>
-                  <div class="nl-card-glow"></div>
-                </a>
-              }
-            </div>
-          </div>
-          <div class="nl-action">
-            <a
-              routerLink="/news"
-              class="nl-btn mag-btn"
-              (mousemove)="mag($event)"
-              (mouseleave)="magOut($event)"
-              (click)="ripple($event)"
-            >
-              <span>{{ 'home.newsletter.cta' | i18n }}</span>
-            </a>
-          </div>
-        </div>
-      </section>
-
-            <!-- ═══ KEY FACTS ═══ -->
+      <!-- ═══ KEY FACTS ═══ -->
       <section class="kf-section">
         <div class="kf-bg-aura"></div>
         <div class="container">
