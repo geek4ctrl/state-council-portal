@@ -755,9 +755,9 @@
     },
     "orgPage": {
       "hero": {
-        "title": "Organisation du Conseil d'Etat",
-        "subtitle": "Organigramme",
-        "body": "Texte de presentation de l'organisation du Conseil d'Etat."
+        "title": "Organization of the State Council",
+        "subtitle": "Organization chart",
+        "body": "Introductory text about the organization of the State Council."
       },
       "photoLabel": "Photo",
       "organigramme": {
