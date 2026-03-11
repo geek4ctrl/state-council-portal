@@ -10,6 +10,9 @@ import { FooterComponent } from '../../components/footer/footer.component';
     <div class="page-container">
       <h1>{{ 'judges.title' | i18n }}</h1>
       <p>{{ 'judges.body' | i18n }}</p>
+      <div class="judges-photo">
+        <img src="assets/hero-group-photo.png" [alt]="'judges.photoAlt' | i18n" />
+      </div>
       <app-footer></app-footer>
     </div>
   `,
@@ -22,6 +25,17 @@ import { FooterComponent } from '../../components/footer/footer.component';
     h1 {
       color: #B8860B;
       margin-bottom: 1rem;
+    }
+    .judges-photo {
+      margin: 2rem 0 3rem;
+      display: flex;
+      justify-content: center;
+    }
+    .judges-photo img {
+      width: min(100%, 880px);
+      border-radius: 20px;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+      display: block;
     }
   `]
 })
