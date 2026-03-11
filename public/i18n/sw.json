@@ -108,6 +108,10 @@
     "actions": {
       "readMore": "Soma zaidi"
     },
+    "detail": {
+      "back": "Rudi kwenye Habari",
+      "title": "Maelezo ya Habari"
+    },
     "pagination": {
       "label": "Ukurasa wa habari",
       "previous": "Ukurasa uliopita",

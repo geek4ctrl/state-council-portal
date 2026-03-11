@@ -12,6 +12,7 @@ import {
 } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
+import { RouterLink } from '@angular/router';
 import { SkeletonLoaderComponent } from '../../components/skeleton-loader/skeleton-loader.component';
 import { IconComponent } from '../../components/icon/icon.component';
 import { SeoService } from '../../services/seo.service';
@@ -22,7 +23,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
 
 @Component({
   selector: 'app-news',
-  imports: [CommonModule, SkeletonLoaderComponent, IconComponent, I18nPipe, FooterComponent],
+  imports: [CommonModule, SkeletonLoaderComponent, IconComponent, I18nPipe, FooterComponent, RouterLink],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <div class="page-wrap page-container">
@@ -82,25 +83,16 @@ import { FooterComponent } from '../../components/footer/footer.component';
                     </div>
                     <h3 class="news-title">{{ article.title }}</h3>
                     <p class="news-excerpt">{{ article.excerpt }}</p>
-                    @if (article.link) {
-                      <a
-                        [href]="article.link"
-                        class="read-more mag-btn"
-                        (mousemove)="mag($event)"
-                        (mouseleave)="magOut($event)"
-                        (click)="ripple($event)"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <span>{{ 'news.actions.readMore' | i18n }}</span>
-                        <app-icon name="arrow-right" [size]="16"></app-icon>
-                      </a>
-                    } @else {
-                      <span class="read-more">
-                        {{ 'news.actions.readMore' | i18n }}
-                        <app-icon name="arrow-right" [size]="16"></app-icon>
-                      </span>
-                    }
+                    <a
+                      class="read-more mag-btn"
+                      [routerLink]="['/news', article.id]"
+                      (mousemove)="mag($event)"
+                      (mouseleave)="magOut($event)"
+                      (click)="ripple($event)"
+                    >
+                      <span>{{ 'news.actions.readMore' | i18n }}</span>
+                      <app-icon name="arrow-right" [size]="16"></app-icon>
+                    </a>
                   </div>
                 </article>
               }
