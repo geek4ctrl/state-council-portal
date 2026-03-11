@@ -114,6 +114,10 @@
       "next": "Bidi bilonda",
       "pageLabel": "Dibeji {{page}}"
     },
+    "detail": {
+      "back": "Back to News",
+      "title": "News Detail"
+    },
     "empty": {
       "title": "Kakuena lumu nansha lumue to",
       "body": "Biena-bualu bipiabipia nebipatuke apa padibi bimane kupatuka."

@@ -716,8 +716,9 @@ type HighchartsStatic = typeof import('highcharts');
           <div class="nl-grid">
             <div class="nl-track">
               @for (post of newsletterPosts(); track post.id) {
-                <div
+                <a
                   class="nl-card tilt-card"
+                  [routerLink]="['/news', post.id]"
                   (mousemove)="tilt($event)"
                   (mouseleave)="tiltReset($event)"
                 >
@@ -730,54 +731,32 @@ type HighchartsStatic = typeof import('highcharts');
                   </div>
                   <div class="nl-body">
                     <h3>{{ post.title }}</h3>
-                    @if (post.link) {
-                      <a
-                        [href]="post.link"
-                        class="nl-link"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        {{ 'home.newsletter.readMore' | i18n }}
-                        <span class="nl-arr">
-                          <svg
-                            width="14"
-                            height="14"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-width="2.5"
-                          >
-                            <path d="M5 12h14M12 5l7 7-7 7" />
-                          </svg>
-                        </span>
-                        <span class="nl-underline"></span>
-                      </a>
-                    } @else {
-                      <span class="nl-link">
-                        {{ 'home.newsletter.readMore' | i18n }}
-                        <span class="nl-arr">
-                          <svg
-                            width="14"
-                            height="14"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-width="2.5"
-                          >
-                            <path d="M5 12h14M12 5l7 7-7 7" />
-                          </svg>
-                        </span>
-                        <span class="nl-underline"></span>
+                    <span class="nl-link">
+                      {{ 'home.newsletter.readMore' | i18n }}
+                      <span class="nl-arr">
+                        <svg
+                          width="14"
+                          height="14"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2.5"
+                        >
+                          <path d="M5 12h14M12 5l7 7-7 7" />
+                        </svg>
                       </span>
-                    }
+                      <span class="nl-underline"></span>
+                    </span>
                   </div>
                   <div class="nl-card-glow"></div>
-                </div>
+                </a>
               }
               @for (post of newsletterPosts(); track post.id + '-clone') {
-                <div
+                <a
                   class="nl-card tilt-card"
+                  [routerLink]="['/news', post.id]"
                   aria-hidden="true"
+                  tabindex="-1"
                   (mousemove)="tilt($event)"
                   (mouseleave)="tiltReset($event)"
                 >
@@ -790,44 +769,25 @@ type HighchartsStatic = typeof import('highcharts');
                   </div>
                   <div class="nl-body">
                     <h3>{{ post.title }}</h3>
-                    @if (post.link) {
-                      <a [href]="post.link" class="nl-link" tabindex="-1" aria-hidden="true">
-                        {{ 'home.newsletter.readMore' | i18n }}
-                        <span class="nl-arr">
-                          <svg
-                            width="14"
-                            height="14"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-width="2.5"
-                          >
-                            <path d="M5 12h14M12 5l7 7-7 7" />
-                          </svg>
-                        </span>
-                        <span class="nl-underline"></span>
-                      </a>
-                    } @else {
-                      <span class="nl-link" aria-hidden="true">
-                        {{ 'home.newsletter.readMore' | i18n }}
-                        <span class="nl-arr">
-                          <svg
-                            width="14"
-                            height="14"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-width="2.5"
-                          >
-                            <path d="M5 12h14M12 5l7 7-7 7" />
-                          </svg>
-                        </span>
-                        <span class="nl-underline"></span>
+                    <span class="nl-link" aria-hidden="true">
+                      {{ 'home.newsletter.readMore' | i18n }}
+                      <span class="nl-arr">
+                        <svg
+                          width="14"
+                          height="14"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2.5"
+                        >
+                          <path d="M5 12h14M12 5l7 7-7 7" />
+                        </svg>
                       </span>
-                    }
+                      <span class="nl-underline"></span>
+                    </span>
                   </div>
                   <div class="nl-card-glow"></div>
-                </div>
+                </a>
               }
             </div>
           </div>

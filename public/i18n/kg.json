@@ -108,6 +108,10 @@
     "actions": {
       "readMore": "Tanga lisusu"
     },
+    "detail": {
+      "back": "Back to News",
+      "title": "News Detail"
+    },
     "pagination": {
       "label": "Pagination ya bansangu",
       "previous": "Lokasa ya ntete",

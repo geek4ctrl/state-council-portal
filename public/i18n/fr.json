@@ -108,6 +108,10 @@
     "actions": {
       "readMore": "Lire la suite"
     },
+    "detail": {
+      "back": "Retour aux actualités",
+      "title": "Détail de l'actualité"
+    },
     "pagination": {
       "label": "Pagination des actualités",
       "previous": "Page précédente",
