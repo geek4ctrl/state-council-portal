@@ -65,6 +65,10 @@ export const routes: Routes = [
     loadComponent: () => import('./pages/process/process.component').then(m => m.ProcessComponent)
   },
   {
+    path: 'news/:id',
+    loadComponent: () => import('./pages/news-detail/news-detail.component').then(m => m.NewsDetailComponent)
+  },
+  {
     path: 'news',
     loadComponent: () => import('./pages/news/news.component').then(m => m.NewsComponent)
   },

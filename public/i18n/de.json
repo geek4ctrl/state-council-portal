@@ -108,6 +108,10 @@
     "actions": {
       "readMore": "Weiterlesen"
     },
+    "detail": {
+      "back": "Zurück zu den Nachrichten",
+      "title": "Nachrichten-Details"
+    },
     "pagination": {
       "label": "News-Seitennavigation",
       "previous": "Vorherige Seite",
