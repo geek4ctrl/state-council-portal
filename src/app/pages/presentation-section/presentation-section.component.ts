@@ -181,7 +181,7 @@ type GreffeFirstPresident = {
             <div class="org-hero-card">
               <div class="org-hero-grid">
                 <div class="org-hero-media" aria-hidden="true">
-                  {{ 'organization.orgPage.photoLabel' | i18n }}
+                  <img src="assets/hero-group-photo.png" alt="" />
                 </div>
                 <div class="org-hero-copy">
                   <h2 class="org-hero-title">{{ 'organization.orgPage.hero.title' | i18n }}</h2>
@@ -639,6 +639,10 @@ type GreffeFirstPresident = {
         padding: 40px 0 60px;
       }
 
+      .org-hero-body .container {
+        max-width: 1100px;
+      }
+
       .org-hero-card {
         background: #ffffff;
         border-radius: 20px;
@@ -838,15 +842,15 @@ type GreffeFirstPresident = {
 
       .org-hero-grid {
         display: grid;
-        grid-template-columns: minmax(240px, 320px) 1fr;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 40px;
-        align-items: center;
+        align-items: stretch;
       }
 
       .org-hero-media {
-        background: linear-gradient(135deg, rgba(31, 155, 217, 0.12), rgba(26, 41, 66, 0.08));
+        // background: linear-gradient(135deg, rgba(31, 155, 217, 0.12), rgba(26, 41, 66, 0.08));
         border-radius: 18px;
-        min-height: 260px;
+        min-height: 220px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -854,6 +858,18 @@ type GreffeFirstPresident = {
         letter-spacing: 2px;
         text-transform: uppercase;
         color: #1a2942;
+        overflow: hidden;
+      }
+
+      .org-hero-copy {
+        min-height: 220px;
+      }
+
+      .org-hero-media img {
+        width: 100%;
+        height: 70%;
+        object-fit: cover;
+        display: block;
       }
 
       .org-hero-title {
