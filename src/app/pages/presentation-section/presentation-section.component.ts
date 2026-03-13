@@ -185,6 +185,104 @@ type GreffeFirstPresident = {
 
           </div>
         </section>
+      } @else if (isPremierePresidente()) {
+        <section class="fp-hero presentation-hero">
+          <div class="container">
+            <button class="back-link" type="button" (click)="goBack()">
+              {{ 'memberDetail.back' | i18n }}
+            </button>
+            <div class="hero-split single">
+              <div class="hero-left">
+                <h1 class="hero-title">{{ 'organization.firstPresident.page.heroTitle' | i18n }}</h1>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="fp-intro">
+          <div class="container">
+            <div class="fp-intro-card">
+              <div class="fp-intro-photo">
+                <img
+                  ngSrc="https://res.cloudinary.com/dhqvb8wbn/image/upload/v1772555485/Brigitte_NSENSELE_wa_NSENSELE_OK.jpg_ndsjzg.jpg"
+                  alt="Brigitte Nsensele wa Nsensele"
+                  width="320"
+                  height="380"
+                />
+              </div>
+              <div class="fp-intro-body">
+                <h2>{{ 'organization.chart.namedPhotoRoles.firstPresident' | i18n }}</h2>
+                <p>{{ 'organization.firstPresident.page.inauguration' | i18n }}</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="fp-biography">
+          <div class="container">
+            <div class="fp-bio-layout">
+              <div class="fp-bio-text">
+                <h2>{{ 'organization.firstPresident.page.biographyTitle' | i18n }}</h2>
+                <p>{{ 'organization.firstPresident.page.biography' | i18n }}</p>
+              </div>
+              <div class="fp-bio-photo">
+                <img
+                  ngSrc="https://res.cloudinary.com/dhqvb8wbn/image/upload/v1772555485/Brigitte_NSENSELE_wa_NSENSELE_OK.jpg_ndsjzg.jpg"
+                  alt="Brigitte Nsensele wa Nsensele"
+                  width="280"
+                  height="330"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="fp-career">
+          <div class="container">
+            <h2>{{ 'organization.firstPresident.page.careerTitle' | i18n }}</h2>
+            <ul class="fp-career-list">
+              <li>{{ 'organization.firstPresident.page.career.1' | i18n }}</li>
+              <li>{{ 'organization.firstPresident.page.career.2' | i18n }}</li>
+              <li>{{ 'organization.firstPresident.page.career.3' | i18n }}</li>
+              <li>{{ 'organization.firstPresident.page.career.4' | i18n }}</li>
+              <li>{{ 'organization.firstPresident.page.career.5' | i18n }}</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="fp-honorary">
+          <div class="container">
+            <h2>{{ 'organization.firstPresident.page.honoraryTitle' | i18n }}</h2>
+            <div class="fp-honorary-grid">
+              <article class="fp-honorary-card">
+                <div class="fp-honorary-photo">
+                  <img
+                    ngSrc="https://res.cloudinary.com/dhqvb8wbn/image/upload/v1772552204/F%C3%A9lix_VUNDUAWE_te_PEMAKO..jpg_1_usgopn.jpg"
+                    alt="Félix Vunduawe te Pemako"
+                    width="280"
+                    height="330"
+                  />
+                </div>
+                <h3>{{ 'organization.firstPresident.page.honorary.felix.name' | i18n }}</h3>
+                <p class="fp-honorary-role">{{ 'organization.firstPresident.page.honorary.felix.role' | i18n }}</p>
+                <p class="fp-honorary-years">{{ 'organization.firstPresident.page.honorary.felix.years' | i18n }}</p>
+              </article>
+              <article class="fp-honorary-card">
+                <div class="fp-honorary-photo">
+                  <img
+                    ngSrc="https://res.cloudinary.com/dhqvb8wbn/image/upload/v1772554526/Marthe_ODIO_NONDE.jpg_1_pzymzp.jpg"
+                    alt="Marthe Odio Nonde"
+                    width="280"
+                    height="330"
+                  />
+                </div>
+                <h3>{{ 'organization.firstPresident.page.honorary.marthe.name' | i18n }}</h3>
+                <p class="fp-honorary-role">{{ 'organization.firstPresident.page.honorary.marthe.role' | i18n }}</p>
+                <p class="fp-honorary-years">{{ 'organization.firstPresident.page.honorary.marthe.years' | i18n }}</p>
+              </article>
+            </div>
+          </div>
+        </section>
       } @else if (isOrganisation()) {
         <section class="org-hero presentation-hero">
           <div class="container">
@@ -871,6 +969,224 @@ type GreffeFirstPresident = {
         margin-top: 60px;
       }
 
+      /* First President Page */
+      .fp-intro {
+        padding: 60px 0 40px;
+        background: #fff;
+      }
+
+      .fp-intro-card {
+        display: flex;
+        gap: 40px;
+        align-items: flex-start;
+        background: #f8f9fb;
+        border-radius: 16px;
+        padding: 32px;
+      }
+
+      .fp-intro-photo {
+        flex-shrink: 0;
+        width: 220px;
+        border-radius: 12px;
+        overflow: hidden;
+      }
+
+      .fp-intro-photo img {
+        width: 100%;
+        height: auto;
+        display: block;
+        object-fit: cover;
+      }
+
+      .fp-intro-body {
+        flex: 1;
+      }
+
+      .fp-intro-body h2 {
+        font-size: 1.4rem;
+        font-weight: 700;
+        color: #1a2942;
+        margin: 0 0 16px;
+      }
+
+      .fp-intro-body p {
+        font-size: 0.95rem;
+        color: #333;
+        line-height: 1.8;
+        margin: 0;
+        text-align: justify;
+      }
+
+      .fp-biography {
+        padding: 50px 0;
+        background: #fff;
+      }
+
+      .fp-bio-layout {
+        display: flex;
+        gap: 40px;
+        align-items: flex-start;
+      }
+
+      .fp-bio-text {
+        flex: 1;
+      }
+
+      .fp-bio-text h2 {
+        font-size: 1.3rem;
+        font-weight: 700;
+        color: #1a2942;
+        margin: 0 0 16px;
+      }
+
+      .fp-bio-text p {
+        font-size: 0.95rem;
+        color: #333;
+        line-height: 1.8;
+        text-align: justify;
+        margin: 0;
+      }
+
+      .fp-bio-photo {
+        flex-shrink: 0;
+        width: 200px;
+        border-radius: 12px;
+        overflow: hidden;
+        border: 3px solid #e8e8e8;
+      }
+
+      .fp-bio-photo img {
+        width: 100%;
+        height: auto;
+        display: block;
+        object-fit: cover;
+      }
+
+      .fp-career {
+        padding: 50px 0;
+        background: #f8f9fb;
+      }
+
+      .fp-career h2 {
+        font-size: 1.3rem;
+        font-weight: 700;
+        color: #1a2942;
+        margin: 0 0 24px;
+      }
+
+      .fp-career-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .fp-career-list li {
+        position: relative;
+        padding: 12px 0 12px 24px;
+        font-size: 0.95rem;
+        color: #333;
+        line-height: 1.6;
+        border-bottom: 1px solid #e5e5e5;
+      }
+
+      .fp-career-list li::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: #1a2942;
+      }
+
+      .fp-honorary {
+        padding: 60px 0;
+        background: #fff;
+      }
+
+      .fp-honorary h2 {
+        font-size: 1.3rem;
+        font-weight: 700;
+        color: #1a2942;
+        margin: 0 0 32px;
+      }
+
+      .fp-honorary-grid {
+        display: flex;
+        gap: 40px;
+        flex-wrap: wrap;
+      }
+
+      .fp-honorary-card {
+        flex: 0 0 auto;
+        width: 240px;
+        text-align: center;
+      }
+
+      .fp-honorary-photo {
+        width: 100%;
+        border-radius: 12px;
+        overflow: hidden;
+        margin-bottom: 12px;
+        border: 3px solid #e8e8e8;
+      }
+
+      .fp-honorary-photo img {
+        width: 100%;
+        height: auto;
+        display: block;
+        object-fit: cover;
+      }
+
+      .fp-honorary-card h3 {
+        font-size: 0.95rem;
+        font-weight: 700;
+        color: #1a2942;
+        margin: 0 0 4px;
+      }
+
+      .fp-honorary-role {
+        font-size: 0.85rem;
+        color: #555;
+        margin: 0 0 2px;
+      }
+
+      .fp-honorary-years {
+        font-size: 0.82rem;
+        color: #888;
+        margin: 0;
+      }
+
+      @media (max-width: 768px) {
+        .fp-intro-card {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .fp-intro-photo {
+          width: 180px;
+        }
+
+        .fp-bio-layout {
+          flex-direction: column;
+        }
+
+        .fp-bio-photo {
+          width: 160px;
+          align-self: center;
+        }
+
+        .fp-honorary-grid {
+          justify-content: center;
+        }
+
+        .fp-honorary-card {
+          width: 200px;
+        }
+      }
+
       .role-block {
         margin-bottom: 24px;
       }
@@ -1444,6 +1760,7 @@ export class PresentationSectionComponent implements OnInit {
   readonly titleKey = computed(() => SECTION_MAP[this.sectionKey()].titleKey);
   readonly bodyKey = computed(() => SECTION_MAP[this.sectionKey()].bodyKey);
   readonly isOrganigramme = computed(() => this.sectionKey() === 'organigramme');
+  readonly isPremierePresidente = computed(() => this.sectionKey() === 'premiere-presidente');
   readonly isOrganisation = computed(() => this.sectionKey() === 'organisations');
   readonly isMission = computed(() => this.sectionKey() === 'missions');
   readonly isFondements = computed(() => this.sectionKey() === 'fondements');

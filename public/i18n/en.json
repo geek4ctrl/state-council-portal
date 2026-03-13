@@ -84,7 +84,7 @@
   },
   "news": {
     "hero": {
-      "title": "NEWS & Updates",
+      "title": "News and updates",
       "body": "Injustice can manifest itself in many ways in our society. We give you the opportunity to report all forms abuse."
     },
     "section": {
@@ -751,7 +751,34 @@
     "firstPresident": {
       "alt": "First President",
       "title": "The first president",
-      "body": "The First President leads the State Council, presides over its sessions, and ensures the proper functioning of the institution."
+      "body": "The First President leads the State Council, presides over its sessions, and ensures the proper functioning of the institution.",
+      "page": {
+        "heroTitle": "The first president",
+        "inauguration": "The First President of the Council of State, Madam Brigitte Nsensele wa Nsensele, took the oath of office on 18/02/2025 before the President of the Republic at the Palace of the Nation in Kinshasa.",
+        "biographyTitle": "Biography of Mrs. Brigitte Nsensele wa Nsensele",
+        "biography": "Born in Kinshasa, Madam Brigitte Nsensele wa Nsensele is a career magistrate. She rose through all the ranks of the administrative judiciary before being appointed First President of the Council of State of the Democratic Republic of Congo in February 2025.",
+        "careerTitle": "Career",
+        "career": {
+          "1": "Magistrate at the High Court of Kinshasa",
+          "2": "Advisor at the Council of State",
+          "3": "Chamber President at the Council of State",
+          "4": "Section President at the Council of State",
+          "5": "First President of the Council of State (since February 2025)"
+        },
+        "honoraryTitle": "Honorary first presidents",
+        "honorary": {
+          "felix": {
+            "name": "Félix Vunduawe te Pemako",
+            "role": "Honorary First President Emeritus",
+            "years": "2018 - 2022"
+          },
+          "marthe": {
+            "name": "Marthe Odio Nonde",
+            "role": "Honorary First President Emeritus",
+            "years": "2022 - 2025"
+          }
+        }
+      }
     },
     "orgPage": {
       "hero": {
