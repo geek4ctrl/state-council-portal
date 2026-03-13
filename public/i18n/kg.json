@@ -859,7 +859,9 @@
         "socialChamber": "Chambre Social",
         "consultativeSection": "Eteni ya Consultative",
         "litigationSection": "Eteni ya Contentieux"
-      }
+      },
+      "peopleConsultativePresidentName": "Eugène Kibwe Muter",
+      "peopleLitigationPresidentName": "Hippolyte Masani Matshi"
     },
     "filters": {
       "searchLabel": "Luka bamembre",

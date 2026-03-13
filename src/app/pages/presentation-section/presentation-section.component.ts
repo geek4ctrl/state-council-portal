@@ -117,6 +117,7 @@ type GreffeFirstPresident = {
                       height="380"
                     />
                   </div>
+                  <p class="leadership-photo-name">{{ 'organization.chart.peopleFirstPresidentName' | i18n }}</p>
                   <p class="leadership-photo-role">
                     {{ 'organization.chart.namedPhotoRoles.firstPresident' | i18n }}
                   </p>
@@ -133,6 +134,7 @@ type GreffeFirstPresident = {
                         height="380"
                       />
                     </div>
+                    <p class="leadership-photo-name">{{ 'organization.chart.peopleConsultativePresidentName' | i18n }}</p>
                     <p class="leadership-photo-role">
                       {{ 'organization.chart.namedPhotoRoles.consultative' | i18n }}
                     </p>
@@ -148,6 +150,7 @@ type GreffeFirstPresident = {
                         height="380"
                       />
                     </div>
+                    <p class="leadership-photo-name">{{ 'organization.chart.peopleLitigationPresidentName' | i18n }}</p>
                     <p class="leadership-photo-role">
                       {{ 'organization.chart.namedPhotoRoles.contentieux' | i18n }}
                     </p>
@@ -837,8 +840,17 @@ type GreffeFirstPresident = {
         display: block;
       }
 
+      .leadership-photo-name {
+        margin: 10px 0 2px;
+        text-align: center;
+        font-size: 0.85rem;
+        font-weight: 700;
+        color: #1a2942;
+        line-height: 1.4;
+      }
+
       .leadership-photo-role {
-        margin: 10px 0 4px;
+        margin: 2px 0 4px;
         text-align: center;
         font-size: 0.82rem;
         font-weight: 700;

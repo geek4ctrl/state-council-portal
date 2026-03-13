@@ -859,7 +859,9 @@
         "socialChamber": "Sezione sociale",
         "consultativeSection": "Sezione consultiva",
         "litigationSection": "Sezione contenziosa"
-      }
+      },
+      "peopleConsultativePresidentName": "Eugène Kibwe Muter",
+      "peopleLitigationPresidentName": "Hippolyte Masani Matshi"
     },
     "filters": {
       "searchLabel": "Cerca membri",

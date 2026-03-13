@@ -859,7 +859,9 @@
         "socialChamber": "Chumba cha Kijamii",
         "consultativeSection": "Sehemu ya Ushauri",
         "litigationSection": "Sehemu ya Mashauri"
-      }
+      },
+      "peopleConsultativePresidentName": "Eugène Kibwe Muter",
+      "peopleLitigationPresidentName": "Hippolyte Masani Matshi"
     },
     "filters": {
       "searchLabel": "Tafuta wanachama",
