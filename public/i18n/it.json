@@ -3,7 +3,7 @@
     "siteName": "Consiglio di Stato della RDC",
     "contact": {
       "phone": "+ 243 (21) 00000000",
-      "hours": "LUNEDI - VENERDI 8:30 - 16:00"
+      "hours": "Lunedi - venerdi 8:30 - 16:00"
     },
     "social": {
       "facebook": "Facebook",
@@ -16,22 +16,22 @@
       "switchToFrench": "Passa al francese"
     },
     "nav": {
-      "home": "HOME",
-      "court": "LA CORTE",
+      "home": "Home",
+      "court": "La corte",
       "presentation": "Presentazione",
       "organization": "Organizzazione",
       "administrativeCourts": "Corti amministrative",
       "administrativeTribunals": "Tribunali amministrativi",
       "reforms": "Riforme",
       "international": "Relazioni internazionali",
-      "audiences": "UDIENZE",
-      "steps": "FASI",
-      "news": "NOTIZIE",
+      "audiences": "Udienze",
+      "steps": "Fasi",
+      "news": "Notizie",
       "bookAppointment": "Prenota un appuntamento"
     }
   },
   "hero": {
-    "titleOpening2025": "L'ANNO GIUDIZIARIO SI APRE AL CONSIGLIO DI STATO PER IL PERIODO 2025 - 2026"
+    "titleOpening2025": "L'anno giudiziario si apre al consiglio di stato per il periodo 2025 - 2026"
   },
   "mobileNav": {
     "home": "Home",
@@ -74,8 +74,6 @@
     "back": "← Torna alla presentazione",
     "title": "Profilo del membro",
     "subtitle": "Profilo dettagliato e informazioni di contatto.",
-    "title": "Profilo del membro",
-    "subtitle": "Profilo dettagliato e informazioni di contatto.",
     "office": "Ufficio",
     "email": "Email",
     "notFound": {
@@ -86,15 +84,15 @@
   },
   "news": {
     "hero": {
-      "title": "NEWS & AGGIORNAMENTI",
+      "title": "News & aggiornamenti",
       "body": "L'ingiustizia puo manifestarsi in molte forme nella nostra societa. Ti offriamo la possibilita di segnalare tutte le forme di abuso."
     },
     "section": {
-      "title": "NEWS & AGGIORNAMENTI",
-      "subtitle": "LA VISIONE CI DEFINISCE"
+      "title": "News & aggiornamenti",
+      "subtitle": "La visione ci definisce"
     },
     "insights": {
-      "title": "ANALISI NEWS",
+      "title": "Analisi news",
       "subtitle": "Trend per tema e frequenza di pubblicazione",
       "topics": {
         "title": "Temi per mese",
@@ -134,13 +132,13 @@
       "2": {
         "date": "30 gennaio",
         "category": "Amministrazione",
-        "title": "RIUNIONE DI ORIENTAMENTO AL CONSIGLIO DI STATO",
+        "title": "Riunione di orientamento al consiglio di stato",
         "excerpt": "Kinshasa, 18 ottobre 2025: Il Consiglio di Stato della Repubblica Democratica del Congo informa il pub..."
       },
       "3": {
         "date": "30 gennaio",
         "category": "Amministrazione",
-        "title": "RIUNIONE DI ORIENTAMENTO AL CONSIGLIO DI STATO",
+        "title": "Riunione di orientamento al consiglio di stato",
         "excerpt": "Kinshasa, 18 ottobre 2025: Il Consiglio di Stato della Repubblica Democratica del Congo informa il pub..."
       }
     }
@@ -148,15 +146,15 @@
   "steps": {
     "hero": {
       "report": {
-        "title": "SEGNALAZIONE",
+        "title": "Segnalazione",
         "body": "L'ingiustizia puo manifestarsi in molte forme nella nostra societa. Ti offriamo la possibilita di segnalare tutte le forme di abuso."
       },
       "appointment": {
-        "title": "PRENOTA<br>APPUNTAMENTO",
+        "title": "Prenota<br>Appuntamento",
         "body": "Per organizzare un incontro con il Consiglio di Stato, compila il seguente modulo di richiesta appuntamento. Assicurati che tutti i campi obbligatori siano compilati correttamente in modo che possiamo elaborare la tua richiesta in modo efficiente. Riceverai una conferma via email o telefono con la data e l'ora pianificate."
       },
       "appeal": {
-        "title": "RICORSO AL<br>CONSIGLIO<br>DI STATO",
+        "title": "Ricorso al<br>Consiglio<br>Di stato",
         "body1": "Un ricorso al Consiglio di Stato e un rimedio legale amministrativo che consente a una parte di impugnare decisioni e atti amministrativi. Il Consiglio di Stato verifica se il diritto amministrativo e stato applicato correttamente e se le procedure appropriate sono state seguite.",
         "body2": "Il Consiglio di Stato e adito tramite una richiesta delle parti o mediante una dichiarazione depositata presso il Consiglio. I ricorsi devono essere presentati entro i termini legali prescritti e confermati da una petizione con documenti di supporto."
       }
@@ -168,16 +166,16 @@
     },
     "forms": {
       "report": {
-        "title": "MODULO DI RECLAMO",
-        "subtitle": "CI PIACEREBBE CONOSCERE I TUOI PROBLEMI"
+        "title": "Modulo di reclamo",
+        "subtitle": "Ci piacerebbe conoscere i tuoi problemi"
       },
       "appointment": {
-        "title": "PRENOTA UN APPUNTAMENTO",
-        "subtitle": "SIAMO QUI PER AIUTARTI"
+        "title": "Prenota un appuntamento",
+        "subtitle": "Siamo qui per aiutarti"
       },
       "appeal": {
-        "title": "MODULO DI RICORSO",
-        "subtitle": "CI PIACEREBBE CONOSCERE I TUOI PROBLEMI"
+        "title": "Modulo di ricorso",
+        "subtitle": "Ci piacerebbe conoscere i tuoi problemi"
       },
       "fullName": "Nome completo *",
       "email": "E-mail *",
@@ -203,11 +201,11 @@
         "nextMonth": "Mese prossimo"
       },
       "message": "Messaggio *",
-      "submit": "INVIA MESSAGGIO"
+      "submit": "Invia messaggio"
     }
   },
   "appealSteps": {
-    "title": "COME PRESENTARE UN RICORSO",
+    "title": "Come presentare un ricorso",
     "subtitle": "Segui questi passaggi per presentare il tuo ricorso al Consiglio di Stato",
     "steps": {
       "1": {
@@ -238,7 +236,7 @@
     "cta": "Inviaci una email"
   },
   "faqs": {
-    "title": "DOMANDE FREQUENTI",
+    "title": "Domande frequenti",
     "items": {
       "1": {
         "question": "Qual e il termine per presentare un ricorso?",
@@ -300,26 +298,26 @@
       "learnMore": "Scopri di piu",
       "slides": {
         "0": {
-          "title": "CONSIGLIO DI STATO - APERTURA DELL'ANNO GIUDIZIARIO 2025-2026",
-          "subtitle": "PALAZZO DEL POPOLO - 13 NOVEMBRE 2025",
+          "title": "Consiglio di stato - apertura dell'anno giudiziario 2025-2026",
+          "subtitle": "Palazzo del popolo - 13 novembre 2025",
           "body": "Il Consiglio di Stato si e riunito al Palazzo del Popolo per l'apertura ufficiale dell'anno giudiziario 2025-2026.",
           "cta": "Scopri di piu"
         },
         "1": {
-          "title": "L'ANNO GIUDIZIARIO SI APRE AL CONSIGLIO DI STATO PER IL PERIODO 2025 - 2026",
-          "subtitle": "CASA DEL DIRITTO E DELL'ORDINE",
+          "title": "L'anno giudiziario si apre al consiglio di stato per il periodo 2025 - 2026",
+          "subtitle": "Casa del diritto e dell'ordine",
           "body": "Questo video copre l'apertura ufficiale dell'anno giudiziario 2025-2026. In presenza del Presidente Felix Tshisekedi, la sessione ha riunito alti magistrati e responsabili legali.",
           "cta": "Guarda la seduta in diretta su YouTube"
         },
         "2": {
-          "title": "RAFFORZARE L'INDIPENDENZA E LA RESPONSABILITA GIUDIZIARIA",
-          "subtitle": "CASA DEL DIRITTO E DELL'ORDINE",
+          "title": "Rafforzare l'indipendenza e la responsabilita giudiziaria",
+          "subtitle": "Casa del diritto e dell'ordine",
           "body": "Il CONSIGLIO DI STATO continua a sostenere i principi di giustizia, equita e stato di diritto. Ci impegniamo per trasparenza e integrita.",
           "cta": "Scopri la nostra missione"
         },
         "3": {
-          "title": "PROMUOVERE L'ECCELLENZA GIURIDICA NELLA REPUBBLICA DEMOCRATICA DEL CONGO",
-          "subtitle": "CASA DEL DIRITTO E DELL'ORDINE",
+          "title": "Promuovere l'eccellenza giuridica nella Repubblica Democratica del Congo",
+          "subtitle": "Casa del diritto e dell'ordine",
           "body": "Attraverso una formazione giuridica rigorosa e il rispetto delle migliori pratiche internazionali, puntiamo ai piu alti standard di eccellenza giudiziaria.",
           "cta": "Esplora le nostre iniziative"
         }
@@ -329,25 +327,25 @@
       "items": {
         "news": {
           "alt": "Notizie",
-          "title": "NOTIZIE",
+          "title": "Notizie",
           "body": "Resta informato su decisioni ed eventi chiave.",
           "action": "Leggi"
         },
         "excerpts": {
           "alt": "Estratti",
-          "title": "ESTRATTI DEI RUOLI",
+          "title": "Estratti dei ruoli",
           "body": "Controlla gli orari delle udienze e i casi in corso.",
           "action": "Scopri di piu"
         },
         "report": {
           "alt": "Segnalazione",
-          "title": "SEGNALAZIONE",
+          "title": "Segnalazione",
           "body": "Segnala in modo sicuro attivita sospette o illegali.",
           "action": "Invia una segnalazione"
         },
         "appointment": {
           "alt": "Prenota appuntamento",
-          "title": "PRENOTA APPUNTAMENTO",
+          "title": "Prenota appuntamento",
           "body": "Pianifica consultazioni con i funzionari del tribunale.",
           "action": "Prenota ora"
         }
@@ -375,7 +373,7 @@
       }
     },
     "offer": {
-      "title": "COSA OFFRIAMO",
+      "title": "Cosa offriamo",
       "subtitle": "Offriamo soluzioni legali su misura per soddisfare le tue esigenze, garantendo che i tuoi diritti siano protetti e che la giustizia sia servita.",
       "cards": {
         "1": {
@@ -397,7 +395,7 @@
       }
     },
     "expertise": {
-      "title": "AREE DI COMPETENZA",
+      "title": "Aree di competenza",
       "subtitle": "Il CONSIGLIO DI STATO esercita giurisdizione su varie materie legali come massima corte dell'ordine giudiziario ordinario.",
       "stats": {
         "domains": {
@@ -490,7 +488,7 @@
       "cta": "Scopri di piu",
       "slides": {
         "1": {
-          "title": "LA PRIMA PRESIDENTE DEL CONSIGLIO DI STATO",
+          "title": "La prima presidente del consiglio di stato",
           "paragraphs": {
             "1": "In qualita di terza figura piu importante dell'Alto Consiglio della Magistratura della RDC, la Prima Presidente del CONSIGLIO DI STATO, Brigitte Nsensele Wa Nsensele, ha donato sangue giovedi 27 febbraio in solidarieta con le vittime dell'aggressione ruandese nella parte orientale del paese.",
             "2": "Per ogni cittadino congolese democratico, contribuire allo sforzo bellico e un dovere civico. La magistratura non fa eccezione.",
@@ -498,7 +496,7 @@
           }
         },
         "2": {
-          "title": "LEADERSHIP GIUDIZIARIA E RIFORMA",
+          "title": "Leadership giudiziaria e riforma",
           "paragraphs": {
             "1": "Sotto la guida della Prima Presidente, il CONSIGLIO DI STATO ha intrapreso riforme giudiziarie complete volte a modernizzare il sistema giudiziario.",
             "2": "Le riforme includono la digitalizzazione dei fascicoli giudiziari, l'implementazione di sistemi di gestione dei casi e programmi di formazione per giudici e personale di cancelleria.",
@@ -506,7 +504,7 @@
           }
         },
         "3": {
-          "title": "COLLABORAZIONE INTERNAZIONALE",
+          "title": "Collaborazione internazionale",
           "paragraphs": {
             "1": "Il CONSIGLIO DI STATO collabora attivamente con istituzioni giudiziarie internazionali e partecipa a forum globali per condividere esperienze.",
             "2": "Attraverso partnership con corti in Francia, Belgio e altri paesi francofoni, la Corte garantisce di rimanere all'avanguardia degli sviluppi legali.",
@@ -516,7 +514,7 @@
       }
     },
     "newsletter": {
-      "title": "NEWS & ARTICOLI",
+      "title": "News & articoli",
       "readMore": "Leggi di piu",
       "cta": "Scopri di piu",
       "items": {
@@ -545,10 +543,10 @@
   },
   "about": {
     "hero": {
-      "title": "COMPRENDERE LA MASSIMA GIURISDIZIONE DELL'ORDINE AMMINISTRATIVO NELLA REPUBBLICA DEMOCRATICA DEL CONGO"
+      "title": "Comprendere la massima giurisdizione dell'ordine amministrativo nella Repubblica Democratica del Congo"
     },
     "intro": {
-      "title": "COMPRENDERE LA MASSIMA GIURISDIZIONE DELL'ORDINE AMMINISTRATIVO NELLA REPUBBLICA DEMOCRATICA DEL CONGO",
+      "title": "Comprendere la massima giurisdizione dell'ordine amministrativo nella Repubblica Democratica del Congo",
       "body": "L'articolo 151 comma 1 della Costituzione della RDC del 18 febbraio 2006 istituisce un sistema giudiziario amministrativo composto da corti e tribunali amministrativi sotto la supervisione del Consiglio di Stato. L'articolo 82 della Legge Organica n. 13/011-B dell'11 aprile 2013 che stabilisce l'organizzazione, la composizione e il funzionamento dei tribunali amministrativi prevede l'esistenza di un Consiglio di Stato la cui sede ordinaria e situata nella capitale della Repubblica Democratica del Congo. La sua capacita giurisdizionale puo essere esercitata in un altro luogo. Storicamente, il Consiglio di Stato in questa breve presentazione ripercorre la sua storia e le sue radici nella nostra istituzione giudiziaria. Creato con decreto-legge il 31 gennaio 1968, il Consiglio di Stato ha un segno distintivo da oltre un secolo. Infatti, furono otto anni dopo l'indipendenza del 1960 che il paese istituì questo Consiglio di Stato per regolare i ricorsi amministrativi. Solo dopo un secolo, nel 2015, fu creato il Supremo Tribunale Amministrativo. Questo tribunale ha cessato di esistere a seguito della Costituzione del 2006 e della sua istituzione, che dichiarava nulle tutte le disposizioni contrarie e stabiliva, al suo articolo 223, che le sentenze e le ordinanze pronunciate prima della promulgazione della Costituzione vigente restassero valide. I tribunali che giudicano in ultima istanza furono impiegati, per maggiore specializzazione, come strumento di precedenti. Con la specializzazione del 18 febbraio 2006, il Supremo Tribunale Amministrativo cessò definitivamente di esistere l'11 aprile 2013 con la Legge Organica n. 13/011-B dell'11 aprile 2013 che stabilisce l'organizzazione, la composizione e il funzionamento dei tribunali amministrativi. In virtù dell'articolo 151 comma 3 della Costituzione, e stabilita l'autorita regolamentare per l'esercizio delle competenze del precedente Supremo Tribunale Amministrativo. Le corti e i tribunali amministrativi costituiscono il sistema giudiziario amministrativo del Congo."
     },
     "rubrics": {
@@ -559,7 +557,7 @@
       "procedureBeforeCouncil": "Procedura davanti al Consiglio di Stato"
     },
     "legal": {
-      "title": "ACCEDI AI PRINCIPALI TESTI LEGALI E REGOLAMENTARI<br>DEL CONSIGLIO DI STATO",
+      "title": "Accedi ai principali testi legali e regolamentari<br>Del consiglio di stato",
       "docs": {
         "1": "Legge Organica n. 13/011-B dell'11 aprile 2013 contenente l'organizzazione, la composizione e il funzionamento delle giurisdizioni ordinarie",
         "2": "Decreto n. 13/046 del 25 settembre 2013 sulle camere del Consiglio di Stato",
@@ -593,17 +591,17 @@
   },
   "reforms": {
     "hero": {
-      "title": "RIFORME<br>PROPOSTE",
+      "title": "Riforme<br>Proposte",
       "body": "Modernizzare il sistema giudiziario attraverso riforme strategiche che migliorano efficienza, trasparenza e accesso alla giustizia per tutti i cittadini congolesi."
     },
     "building": {
-      "tag": "MODERNIZZAZIONE GIUDIZIARIA",
-      "title": "COSTRUIRE UN SISTEMA DI GIUSTIZIA PIU FORTE",
+      "tag": "Modernizzazione giudiziaria",
+      "title": "Costruire un sistema di giustizia piu forte",
       "body": "Dopo la Costituzione del 2006, il CONSIGLIO DI STATO ha intrapreso riforme complete per rafforzare l'indipendenza giudiziaria, migliorare l'accesso alla giustizia e allinearsi agli standard internazionali. Queste iniziative si concentrano sul rafforzamento istituzionale, sulla trasformazione digitale e sullo sviluppo delle capacita."
     },
     "initiatives": {
-      "tag": "ROADMAP DI TRASFORMAZIONE",
-      "title": "INIZIATIVE DI RIFORMA STRATEGICA",
+      "tag": "Roadmap di trasformazione",
+      "title": "Iniziative di riforma strategica",
       "body": "Un approccio completo in cinque fasi per modernizzare il nostro sistema giudiziario, garantendo eccellenza in ogni fase della trasformazione.",
       "badges": {
         "critical": "Priorita critica",
@@ -634,8 +632,8 @@
       }
     },
     "stakeholders": {
-      "title": "ATTORI CHIAVE",
-      "subtitle": "LEADERSHIP DELLA RIFORMA",
+      "title": "Attori chiave",
+      "subtitle": "Leadership della riforma",
       "roles": {
         "president": "Presidente",
         "vicePresident": "Vice Presidente",
@@ -646,7 +644,7 @@
   },
   "international": {
     "hero": {
-      "title": "RELAZIONI<br>INTERNAZIONALI",
+      "title": "Relazioni<br>Internazionali",
       "body": "Nel contesto dell'internazionalizzazione del diritto e della giustizia, il CONSIGLIO DI STATO della Repubblica Democratica del Congo non e isolato da questo ambiente. Partecipa attivamente al dialogo tra giudici mantenendo un alto livello di cooperazione nell'ambito dell'Associazione delle Corti Supreme dei paesi francofoni (AHJUCAF) e dell'Associazione Africana delle Corti Supreme francofone (AA-HJF)."
     },
     "stats": {
@@ -655,7 +653,7 @@
       "exchanges": "Scambi giudiziari annuali e conferenze"
     },
     "networks": {
-      "title": "RETI GIUDIZIARIE INTERNAZIONALI",
+      "title": "Reti giudiziarie internazionali",
       "subtitle": "La Corte mantiene relazioni privilegiate con le principali associazioni delle corti supreme francofone e africane",
       "ahjucaf": {
         "name": "Associazione delle Corti Supreme di lingua francese",
@@ -667,7 +665,7 @@
       }
     },
     "domains": {
-      "title": "AMBITI DI COOPERAZIONE INTERNAZIONALE",
+      "title": "Ambiti di cooperazione internazionale",
       "subtitle": "Il nostro impegno internazionale si traduce in una partecipazione attiva a diverse iniziative volte a rafforzare la qualita della giustizia e lo stato di diritto",
       "dialogue": {
         "title": "Dialogo giudiziario",
@@ -689,20 +687,20 @@
     "collaboration": {
       "title": "Interessato alla collaborazione?",
       "body": "Siamo aperti a partnership istituzionali e scambi con altre giurisdizioni nazionali e internazionali impegnate nel rafforzamento dei sistemi di giustizia.",
-      "cta": "CONTATTACI"
+      "cta": "Contattaci"
     }
   },
   "audiences": {
     "hero": {
-      "title": "UDIENZE ED ESTRATTI DI RUOLO",
+      "title": "Udienze ed estratti di ruolo",
       "body": "Accedi agli orari delle udienze, agli estratti di ruolo e alle decisioni recenti."
     },
     "understanding": {
-      "title": "COMPRENDERE LE UDIENZE",
+      "title": "Comprendere le udienze",
       "body": "Trova indicazioni su come sono organizzate le udienze e come consultare i ruoli recenti."
     },
     "metrics": {
-      "title": "METRICHE DELLE UDIENZE",
+      "title": "Metriche delle udienze",
       "subtitle": "Volume mensile delle udienze e risultati nel tempo.",
       "volume": {
         "title": "Volume mensile delle udienze",
@@ -716,8 +714,8 @@
       }
     },
     "recent": {
-      "title": "ESTRATTI RECENTI DI RUOLO",
-      "subtitle": "ULTIMI ESTRATTI DI UDIENZA"
+      "title": "Estratti recenti di ruolo",
+      "subtitle": "Ultimi estratti di udienza"
     },
     "documents": {
       "civil": {
@@ -738,21 +736,21 @@
       }
     },
     "actions": {
-      "downloadPdf": "SCARICA PDF"
+      "downloadPdf": "Scarica PDF"
     },
     "assistance": {
       "title": "Hai bisogno di assistenza?",
       "body": "Contatta il Consiglio di Stato per aiuto nell'accesso a documenti o orari.",
-      "cta": "CONTATTACI"
+      "cta": "Contattaci"
     }
   },
   "organization": {
     "hero": {
-      "title": "ORGANIZZAZIONE<br>DEL CONSIGLIO DI STATO"
+      "title": "Organizzazione<br>Del consiglio di stato"
     },
     "firstPresident": {
       "alt": "Prima Presidente",
-      "title": "LA PRIMA PRESIDENTE",
+      "title": "La prima presidente",
       "body": "La Prima Presidente guida il Consiglio di Stato, presiede le sessioni e assicura il corretto funzionamento dell'istituzione."
     },
     "orgPage": {
@@ -799,7 +797,7 @@
       }
     },
     "firstPresidents": {
-      "title": "PRIME PRESIDENTI",
+      "title": "Prime presidenti",
       "honoraryTitle": "Prima Presidente onoraria ed emerita: 2018 - 2022",
       "honoraryTitleSecond": "Presidente onorario ed emerito: 2022 - 2025",
       "honoraryTitleThird": "Prima Presidente: 2025 - presente",
@@ -807,14 +805,14 @@
       "placeholderSubtitle": "Spazio foto riservato",
       "photoLabel": "Foto {{index}}"
     },
-    "seniorLabel": "MAGISTRATI SENIOR",
+    "seniorLabel": "Magistrati senior",
     "chart": {
-      "title": "ORGANIGRAMMA",
+      "title": "Organigramma",
       "subtitle": "Panoramica della struttura di leadership e delle divisioni chiave del Consiglio di Stato.",
-      "interactiveTitle": "ORGANIGRAMMA INTERATTIVO",
+      "interactiveTitle": "Organigramma interattivo",
       "interactiveSubtitle": "Esplora la gerarchia e la struttura di reporting.",
       "aria": "Organigramma interattivo",
-      "peopleTitle": "LEADERSHIP PER NOME",
+      "peopleTitle": "Leadership per nome",
       "peopleSubtitle": "Nomi della Prima Presidente, Presidenti e Consiglieri.",
       "peopleFirstPresidentName": "Brigitte Nsensele Wa Nsensele",
       "namedPhotoRoles": {
@@ -851,11 +849,11 @@
       "summary": "Mostrando {{presidents}} presidenti e {{advisors}} consiglieri"
     },
     "presidents": {
-      "title": "I PRESIDENTI",
+      "title": "I presidenti",
       "empty": "Nessun presidente corrisponde alla tua ricerca."
     },
     "advisors": {
-      "title": "I CONSIGLIERI",
+      "title": "I consiglieri",
       "empty": "Nessun consigliere corrisponde alla tua ricerca."
     },
     "members": {
@@ -863,7 +861,7 @@
       "loadMore": "Carica altro"
     },
     "services": {
-      "overviewTitle": "PANORAMICA SERVIZI",
+      "overviewTitle": "Panoramica servizi",
       "learnMore": "Scopri di piu",
       "registry": {
         "title": "Cancelleria",
@@ -877,7 +875,7 @@
         "title": "Consiglio TV",
         "body": "Guarda udienze, annunci e aggiornamenti."
       },
-      "title": "I NOSTRI SERVIZI",
+      "title": "I nostri servizi",
       "subtitle": "Esplora le divisioni e gli uffici che supportano il lavoro del Consiglio di Stato.",
       "divisions": {
         "title": "Divisioni",

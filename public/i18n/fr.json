@@ -16,22 +16,22 @@
       "switchToFrench": "Passer en français"
     },
     "nav": {
-      "home": "ACCUEIL",
-      "court": "LA COUR",
+      "home": "Accueil",
+      "court": "La cour",
       "presentation": "Présentation",
       "organization": "Organisation",
       "administrativeCourts": "Cours Administratives",
       "administrativeTribunals": "Tribunaux Administratifs",
       "reforms": "Réformes",
       "international": "Relations internationales",
-      "audiences": "AUDIENCES",
-      "steps": "ÉTAPES",
-      "news": "ACTUALITÉS",
+      "audiences": "Audiences",
+      "steps": "Étapes",
+      "news": "Actualités",
       "bookAppointment": "Prendre rendez-vous"
     }
   },
   "hero": {
-    "titleOpening2025": "L'ANNEE JUDICIAIRE S'OUVRE AU CONSEIL D'ETAT POUR L'EXERCISE 2025 - 2026"
+    "titleOpening2025": "L'annee judiciaire s'ouvre au Conseil d'État pour l'exercise 2025 - 2026"
   },
   "mobileNav": {
     "home": "Accueil",
@@ -84,15 +84,15 @@
   },
   "news": {
     "hero": {
-      "title": "ACTUALITÉS",
+      "title": "Actualités",
       "body": "L'injustice peut se manifester de nombreuses façons dans notre société. Nous vous offrons la possibilité de signaler toutes formes d'abus."
     },
     "section": {
-      "title": "NOS ACTUALITÉS",
-      "subtitle": "LA VISION FAIT QUI NOUS SOMMES"
+      "title": "Nos actualités",
+      "subtitle": "La vision fait qui nous sommes"
     },
     "insights": {
-      "title": "INDICATEURS D'ACTUALITÉ",
+      "title": "Indicateurs d'actualité",
       "subtitle": "Tendances par thème et cadence de publication",
       "topics": {
         "title": "Thèmes par mois",
@@ -132,13 +132,13 @@
       "2": {
         "date": "30 janvier",
         "category": "Administration",
-        "title": "RÉUNION D'ORIENTATION AU CONSEIL D'ÉTAT",
+        "title": "Réunion d'orientation au Conseil d'État",
         "excerpt": "Kinshasa, 18 octobre 2025 : Le Conseil d'État de la République démocratique du Congo informe le pu..."
       },
       "3": {
         "date": "30 janvier",
         "category": "Administration",
-        "title": "RÉUNION D'ORIENTATION AU CONSEIL D'ÉTAT",
+        "title": "Réunion d'orientation au Conseil d'État",
         "excerpt": "Kinshasa, 18 octobre 2025 : Le Conseil d'État de la République démocratique du Congo informe le pu..."
       }
     }
@@ -146,15 +146,15 @@
   "steps": {
     "hero": {
       "report": {
-        "title": "SIGNALEMENT",
+        "title": "Signalement",
         "body": "L'injustice peut se manifester de nombreuses façons dans notre société. Nous vous offrons la possibilité de signaler toutes formes d'abus."
       },
       "appointment": {
-        "title": "PRENDRE<br>RENDEZ-VOUS",
+        "title": "Prendre<br>Rendez-vous",
         "body": "Pour organiser une rencontre avec le Conseil d'État, veuillez remplir le formulaire de demande ci-dessous. Assurez-vous que tous les champs obligatoires sont remplis correctement afin que nous puissions traiter votre demande efficacement. Vous recevrez un email ou un appel de confirmation avec la date et l'heure prévues."
       },
       "appeal": {
-        "title": "RECOURS AU<br>CONSEIL<br>D'ÉTAT",
+        "title": "Recours au<br>Conseil<br>D'état",
         "body1": "Un recours devant le Conseil d'État est une voie de droit administrative permettant à une partie de contester des décisions et actes administratifs. Le Conseil d'État vérifie si le droit administratif a été correctement appliqué et si les procédures adéquates ont été suivies.",
         "body2": "Le Conseil d'État est saisi par une requête des parties ou par une déclaration déposée au Conseil. Les recours doivent être introduits dans les délais légaux prescrits et confirmés par une requête accompagnée de pièces justificatives."
       }
@@ -166,16 +166,16 @@
     },
     "forms": {
       "report": {
-        "title": "FORMULAIRE DE PLAINTE",
-        "subtitle": "NOUS SOUHAITONS CONNAÎTRE VOS PROBLÈMES"
+        "title": "Formulaire de plainte",
+        "subtitle": "Nous souhaitons connaître vos problèmes"
       },
       "appointment": {
-        "title": "PRENDRE RENDEZ-VOUS",
-        "subtitle": "NOUS SOMMES LÀ POUR VOUS AIDER"
+        "title": "Prendre rendez-vous",
+        "subtitle": "Nous sommes là pour vous aider"
       },
       "appeal": {
-        "title": "FORMULAIRE DE RECOURS",
-        "subtitle": "NOUS SOUHAITONS CONNAÎTRE VOS PROBLÈMES"
+        "title": "Formulaire de recours",
+        "subtitle": "Nous souhaitons connaître vos problèmes"
       },
       "fullName": "Nom complet *",
       "email": "E-mail *",
@@ -201,64 +201,64 @@
         "nextMonth": "Le mois prochain"
       },
       "message": "Message *",
-      "submit": "ENVOYER LE MESSAGE"
+      "submit": "Envoyer le message"
     }
   },
   "appealSteps": {
-      "title": "COMMENT DÉPOSER UN RECOURS",
-      "subtitle": "Suivez ces étapes pour soumettre votre recours au Conseil d'État",
-      "steps": {
-        "1": {
-          "title": "Préparez vos documents",
-          "body": "Rassemblez la décision administrative contestée, votre pièce d'identité et tout élément de preuve. Assurez-vous que tous les documents sont lisibles et dûment certifiés si nécessaire."
-        },
-        "2": {
-          "title": "Rédigez votre requête",
-          "body": "Rédigez une requête claire exposant les faits, les motifs du recours et la décision demandée. Incluez les références aux dispositions légales applicables."
-        },
-        "3": {
-          "title": "Dépôt au greffe",
-          "body": "Déposez votre requête et les pièces justificatives au greffe du Conseil d'État dans les délais légaux prescrits. Obtenez un reçu comme preuve de dépôt."
-        },
-        "4": {
-          "title": "Payez les frais applicables",
-          "body": "Acquittez les frais de justice requis au bureau désigné. Conservez le reçu de paiement pour vos dossiers."
-        },
-        "5": {
-          "title": "Attendez la notification",
-          "body": "Le greffe vous informera du numéro d'affaire et de la date d'audience. Vous pourrez être tenu de signifier des copies à la partie adverse."
-        }
+    "title": "Comment déposer un recours",
+    "subtitle": "Suivez ces étapes pour soumettre votre recours au Conseil d'État",
+    "steps": {
+      "1": {
+        "title": "Préparez vos documents",
+        "body": "Rassemblez la décision administrative contestée, votre pièce d'identité et tout élément de preuve. Assurez-vous que tous les documents sont lisibles et dûment certifiés si nécessaire."
+      },
+      "2": {
+        "title": "Rédigez votre requête",
+        "body": "Rédigez une requête claire exposant les faits, les motifs du recours et la décision demandée. Incluez les références aux dispositions légales applicables."
+      },
+      "3": {
+        "title": "Dépôt au greffe",
+        "body": "Déposez votre requête et les pièces justificatives au greffe du Conseil d'État dans les délais légaux prescrits. Obtenez un reçu comme preuve de dépôt."
+      },
+      "4": {
+        "title": "Payez les frais applicables",
+        "body": "Acquittez les frais de justice requis au bureau désigné. Conservez le reçu de paiement pour vos dossiers."
+      },
+      "5": {
+        "title": "Attendez la notification",
+        "body": "Le greffe vous informera du numéro d'affaire et de la date d'audience. Vous pourrez être tenu de signifier des copies à la partie adverse."
       }
+    }
   },
   "haveQuestions": {
-      "title": "Des questions ?",
-      "body": "Notre équipe est là pour vous aider à comprendre la procédure de recours.",
-      "cta": "Envoyez-nous un email"
+    "title": "Des questions ?",
+    "body": "Notre équipe est là pour vous aider à comprendre la procédure de recours.",
+    "cta": "Envoyez-nous un email"
   },
   "faqs": {
-      "title": "QUESTIONS FRÉQUENTES",
-      "items": {
-        "1": {
-          "question": "Quel est le délai pour déposer un recours ?",
-          "answer": "Les recours doivent généralement être déposés dans les deux mois suivant la notification de la décision contestée. Des délais spécifiques peuvent s'appliquer selon le type d'acte administratif. Consultez la législation applicable ou contactez le greffe."
-        },
-        "2": {
-          "question": "Puis-je me représenter moi-même ou ai-je besoin d'un avocat ?",
-          "answer": "Vous pouvez vous représenter devant le Conseil d'État. Toutefois, une représentation juridique est recommandée pour les affaires complexes. Le greffe peut fournir des informations sur l'aide juridique si vous êtes éligible."
-        },
-        "3": {
-          "question": "Quels documents dois-je joindre ?",
-          "answer": "Typiquement : la décision contestée, votre requête, une pièce d'identité et les pièces justificatives. Le greffe fournit une liste de vérification sur demande. Des documents supplémentaires peuvent être requis selon votre cas."
-        },
-        "4": {
-          "question": "Combien de temps dure la procédure de recours ?",
-          "answer": "Les délais varient selon la complexité de l'affaire et la charge de travail. Vous recevrez une date d'audience après l'enregistrement de votre dossier. Le greffe peut fournir des délais estimés pour des affaires similaires."
-        },
-        "5": {
-          "question": "Puis-je retirer mon recours ?",
-          "answer": "Oui. Vous pouvez retirer votre recours à tout moment avant la décision définitive. Soumettez un retrait écrit au greffe. Notez que le retrait peut avoir des implications pour toute procédure connexe."
-        }
+    "title": "Questions fréquentes",
+    "items": {
+      "1": {
+        "question": "Quel est le délai pour déposer un recours ?",
+        "answer": "Les recours doivent généralement être déposés dans les deux mois suivant la notification de la décision contestée. Des délais spécifiques peuvent s'appliquer selon le type d'acte administratif. Consultez la législation applicable ou contactez le greffe."
+      },
+      "2": {
+        "question": "Puis-je me représenter moi-même ou ai-je besoin d'un avocat ?",
+        "answer": "Vous pouvez vous représenter devant le Conseil d'État. Toutefois, une représentation juridique est recommandée pour les affaires complexes. Le greffe peut fournir des informations sur l'aide juridique si vous êtes éligible."
+      },
+      "3": {
+        "question": "Quels documents dois-je joindre ?",
+        "answer": "Typiquement : la décision contestée, votre requête, une pièce d'identité et les pièces justificatives. Le greffe fournit une liste de vérification sur demande. Des documents supplémentaires peuvent être requis selon votre cas."
+      },
+      "4": {
+        "question": "Combien de temps dure la procédure de recours ?",
+        "answer": "Les délais varient selon la complexité de l'affaire et la charge de travail. Vous recevrez une date d'audience après l'enregistrement de votre dossier. Le greffe peut fournir des délais estimés pour des affaires similaires."
+      },
+      "5": {
+        "question": "Puis-je retirer mon recours ?",
+        "answer": "Oui. Vous pouvez retirer votre recours à tout moment avant la décision définitive. Soumettez un retrait écrit au greffe. Notez que le retrait peut avoir des implications pour toute procédure connexe."
       }
+    }
   },
   "footer": {
     "mainOffice": {
@@ -298,26 +298,26 @@
       "learnMore": "En savoir plus",
       "slides": {
         "0": {
-          "title": "CONSEIL D'ÉTAT - RENTRÉE JUDICIAIRE 2025-2026",
-          "subtitle": "PALAIS DU PEUPLE - 13 NOVEMBRE 2025",
+          "title": "Conseil d'État - rentrée judiciaire 2025-2026",
+          "subtitle": "Palais du Peuple - 13 novembre 2025",
           "body": "Le Conseil d'État s'est réuni au Palais du Peuple pour l'ouverture officielle de l'année judiciaire 2025-2026.",
           "cta": "En savoir plus"
         },
         "1": {
-          "title": "L'ANNÉE JUDICIAIRE S'OUVRE AU CONSEIL D'ÉTAT POUR L'EXERCICE 2025 - 2026",
-          "subtitle": "MAISON DU DROIT ET DE L'ORDRE",
+          "title": "L'année judiciaire s'ouvre au Conseil d'État pour l'exercice 2025 - 2026",
+          "subtitle": "Maison du droit et de l'ordre",
           "body": "Cette vidéo couvre l'ouverture officielle de l'année judiciaire 2025-2026. En présence du Président Felix Tshisekedi, la séance a réuni des hauts magistrats et des responsables juridiques.",
           "cta": "Regarder la séance en direct sur YouTube"
         },
         "2": {
-          "title": "RENFORCER L'INDÉPENDANCE ET LA RESPONSABILITÉ JUDICIAIRE",
-          "subtitle": "MAISON DU DROIT ET DE L'ORDRE",
-          "body": "Le CONSEIL D'ÉTAT continue de défendre les principes de justice, d'équité et de l'État de droit. Nous nous engageons pour la transparence et l'intégrité.",
+          "title": "Renforcer l'indépendance et la responsabilité judiciaire",
+          "subtitle": "Maison du droit et de l'ordre",
+          "body": "Le Conseil d'État continue de défendre les principes de justice, d'équité et de l'État de droit. Nous nous engageons pour la transparence et l'intégrité.",
           "cta": "En savoir plus sur notre mission"
         },
         "3": {
-          "title": "PROMOUVOIR L'EXCELLENCE JURIDIQUE EN RÉPUBLIQUE DÉMOCRATIQUE DU CONGO",
-          "subtitle": "MAISON DU DROIT ET DE L'ORDRE",
+          "title": "Promouvoir l'excellence juridique en République démocratique du Congo",
+          "subtitle": "Maison du droit et de l'ordre",
           "body": "Grâce à une formation juridique rigoureuse et au respect des meilleures pratiques internationales, nous visons les plus hauts standards d'excellence judiciaire.",
           "cta": "Découvrir nos initiatives"
         }
@@ -327,25 +327,25 @@
       "items": {
         "news": {
           "alt": "Actualités",
-          "title": "ACTUALITÉS",
+          "title": "Actualités",
           "body": "Restez informé des décisions et événements clés.",
           "action": "Lire"
         },
         "excerpts": {
           "alt": "Extraits",
-          "title": "EXTRAITS DES RÔLES",
+          "title": "Extraits des rôles",
           "body": "Consultez les heures d'audience et les dossiers en cours.",
           "action": "En savoir plus"
         },
         "report": {
           "alt": "Signalement",
-          "title": "SIGNALEMENT",
+          "title": "Signalement",
           "body": "Signalez en toute sécurité toute activité suspecte ou illégale.",
           "action": "Déposer un signalement"
         },
         "appointment": {
           "alt": "Rendez-vous",
-          "title": "PRENDRE RENDEZ-VOUS",
+          "title": "Prendre rendez-vous",
           "body": "Planifiez des consultations avec les responsables de la cour.",
           "action": "Prendre rendez-vous"
         }
@@ -373,7 +373,7 @@
       }
     },
     "offer": {
-      "title": "CE QUE NOUS OFFRONS",
+      "title": "Ce que nous offrons",
       "subtitle": "Nous proposons des solutions juridiques adaptées à vos besoins, afin de protéger vos droits et garantir la justice.",
       "cards": {
         "1": {
@@ -395,8 +395,8 @@
       }
     },
     "expertise": {
-      "title": "DOMAINES D'EXPERTISE",
-      "subtitle": "Le CONSEIL D'ÉTAT exerce sa juridiction sur diverses matières en tant que juridiction suprême de l'ordre judiciaire.",
+      "title": "Domaines d'expertise",
+      "subtitle": "Le Conseil d'État exerce sa juridiction sur diverses matières en tant que juridiction suprême de l'ordre judiciaire.",
       "stats": {
         "domains": {
           "value": "6",
@@ -488,25 +488,25 @@
       "cta": "En savoir plus",
       "slides": {
         "1": {
-          "title": "LA PREMIÈRE PRÉSIDENTE DU CONSEIL D'ÉTAT",
+          "title": "La première présidente du Conseil d'État",
           "paragraphs": {
-            "1": "En tant que troisième membre du Conseil supérieur de la magistrature, la Première Présidente du CONSEIL D'ÉTAT, Brigitte Nsensele Wa Nsensele, a donné son sang le jeudi 27 février, en solidarité avec les victimes de l'agression rwandaise à l'est du pays.",
+            "1": "En tant que troisième membre du Conseil supérieur de la magistrature, la Première Présidente du Conseil d'État, Brigitte Nsensele Wa Nsensele, a donné son sang le jeudi 27 février, en solidarité avec les victimes de l'agression rwandaise à l'est du pays.",
             "2": "Pour chaque citoyen congolais démocrate, contribuer à l'effort de guerre est un devoir civique. La magistrature ne fait pas exception.",
             "3": "Depuis plus de trois décennies, la RDC subit des agressions perpétrées par le Rwanda et d'autres groupes armés négatifs, causant des millions de morts, des dizaines de milliers de déplacés et une situation humanitaire déplorable."
           }
         },
         "2": {
-          "title": "LEADERSHIP JUDICIAIRE ET RÉFORME",
+          "title": "Leadership judiciaire et réforme",
           "paragraphs": {
-            "1": "Sous la direction de la Première Présidente, le CONSEIL D'ÉTAT a engagé des réformes judiciaires pour moderniser le système.",
+            "1": "Sous la direction de la Première Présidente, le Conseil d'État a engagé des réformes judiciaires pour moderniser le système.",
             "2": "Les réformes incluent la numérisation des dossiers, la mise en place de systèmes de gestion des affaires et des programmes de formation pour les magistrats et le personnel.",
             "3": "Ces initiatives reflètent l'engagement de la Cour pour la transparence, l'efficacité et la responsabilité dans l'administration de la justice."
           }
         },
         "3": {
-          "title": "COLLABORATION INTERNATIONALE",
+          "title": "Collaboration internationale",
           "paragraphs": {
-            "1": "Le CONSEIL D'ÉTAT s'engage activement avec les institutions judiciaires internationales et participe aux forums mondiaux pour partager les expériences.",
+            "1": "Le Conseil d'État s'engage activement avec les institutions judiciaires internationales et participe aux forums mondiaux pour partager les expériences.",
             "2": "Grâce à des partenariats avec les cours en France, en Belgique et dans d'autres pays francophones, la Cour reste à la pointe des évolutions juridiques.",
             "3": "Cet engagement international renforce le système judiciaire de la RDC et sa capacité à rendre justice selon les normes internationales."
           }
@@ -514,7 +514,7 @@
       }
     },
     "newsletter": {
-      "title": "ACTUALITÉS & ARTICLES",
+      "title": "Actualités & articles",
       "readMore": "Lire la suite",
       "cta": "En savoir plus",
       "items": {
@@ -543,10 +543,10 @@
   },
   "about": {
     "hero": {
-      "title": "COMPRENDRE LA PLUS HAUTE JURIDICTION DE L'ORDRE ADMINISTRATIF EN REPUBLIQUE DEMOCRATIQUE DU CONGO"
+      "title": "Comprendre la plus haute juridiction de l'ordre administratif en République démocratique du Congo"
     },
     "intro": {
-      "title": "COMPRENDRE LA PLUS HAUTE JURIDICTION DE L'ORDRE ADMINISTRATIF EN REPUBLIQUE DEMOCRATIQUE DU CONGO",
+      "title": "Comprendre la plus haute juridiction de l'ordre administratif en République démocratique du Congo",
       "body": "L'article 151 paragraphe 1 de la Constitution de la RDC du 18 février 2006 établit un ordre de juridictions administratives composé de cours et tribunaux administratifs sous la supervision du Conseil d'État. L'article 82 de la Loi organique No 13/011-B du 11 avril 2013 portant organisation, composition et fonctionnement des juridictions administratives stipule qu'il existe un Conseil d'État dont le siège ordinaire est situé dans la capitale de la République démocratique du Congo. Sa compétence juridictionnelle peut être exercée en un autre lieu. Historiquement, le Conseil d'État, dans cette brève présentation, retrace son histoire et ses racines dans notre institution judiciaire. Créé par décret-loi du 31 janvier 1968, le Conseil d'État trouve sa marque distinctive il y a plus d'un siècle. En effet, c'est huit ans après l'indépendance en 1960 que le pays a établi ce Conseil d'État pour régler les recours administratifs. Ce n'est qu'après un siècle en 2015 que la Cour administrative suprême. Cette Cour a cessé d'exister dans la foulle de la Constitution de 2006 et de son établissement, qui a déclaré nulles toutes dispositions contraires et stipulé en son article 223 que les jugements et ordonnances rendus avant la promulgation de la Constitution en vigueur qui a passé et tribunaux en ceux passés en extrême par vertu de spécialisation accrue, et siégeant en cas précédentiel, comme instrument de la spécialisation du 18 février 2006, la Cour administrative suprême a cessé d'exister définitivement le 11 avril 2013 lors de la Loi organique No 13/011-B du 11 avril 2013 établissant l'organisation, la composition et le fonctionnement des juridictions administratives. Conformément à l'article 151 paragraphe 3 de la Constitution qui établit l'autorité réglementaire pour l'exercice des attributions de l'ancienne Cour administrative suprême. Les juridictions administratives composant l'ordre juridictionnel administratif du Congo."
     },
     "rubrics": {
@@ -557,7 +557,7 @@
       "procedureBeforeCouncil": "Procédure devant le Conseil d'État"
     },
     "legal": {
-      "title": "ACCÉDER AUX PRINCIPAUX TEXTES JURIDIQUES ET RÉGLEMENTAIRES<br>DU CONSEIL D'ÉTAT",
+      "title": "Accéder aux principaux textes juridiques et réglementaires<br>Du Conseil d'État",
       "docs": {
         "1": "Loi organique No 13/011-B du 11 avril 2013 portant organisation, composition et fonctionnement des juridictions ordinaires",
         "2": "Décret No 13/046 du 25 septembre 2013 portant règlement intérieur des chambres du Conseil d'État",
@@ -591,17 +591,17 @@
   },
   "reforms": {
     "hero": {
-      "title": "RÉFORMES<br>PROPOSÉES",
+      "title": "Réformes<br>Proposées",
       "body": "Moderniser le système judiciaire par des réformes stratégiques qui renforcent l'efficacité, la transparence et l'accès à la justice pour tous les citoyens congolais."
     },
     "building": {
-      "tag": "MODERNISATION JUDICIAIRE",
-      "title": "CONSTRUIRE UN SYSTÈME JUDICIAIRE PLUS FORT",
-      "body": "Suite à la Constitution de 2006, le CONSEIL D'ÉTAT a engagé des réformes globales pour renforcer l'indépendance judiciaire, améliorer l'accès à la justice et s'aligner sur les normes internationales. Ces initiatives se concentrent sur le renforcement institutionnel, la transformation numérique et le développement des capacités."
+      "tag": "Modernisation judiciaire",
+      "title": "Construire un système judiciaire plus fort",
+      "body": "Suite à la Constitution de 2006, le Conseil d'État a engagé des réformes globales pour renforcer l'indépendance judiciaire, améliorer l'accès à la justice et s'aligner sur les normes internationales. Ces initiatives se concentrent sur le renforcement institutionnel, la transformation numérique et le développement des capacités."
     },
     "initiatives": {
-      "tag": "FEUILLE DE ROUTE",
-      "title": "INITIATIVES STRATÉGIQUES DE RÉFORME",
+      "tag": "Feuille de route",
+      "title": "Initiatives stratégiques de réforme",
       "body": "Une approche complète en cinq phases pour moderniser notre système judiciaire, garantissant l'excellence à chaque étape de la transformation.",
       "badges": {
         "critical": "Priorité critique",
@@ -632,8 +632,8 @@
       }
     },
     "stakeholders": {
-      "title": "ACTEURS CLES",
-      "subtitle": "LEADERSHIP DE LA RÉFORME",
+      "title": "Acteurs cles",
+      "subtitle": "Leadership de la réforme",
       "roles": {
         "president": "Président",
         "vicePresident": "Vice-président",
@@ -644,8 +644,8 @@
   },
   "international": {
     "hero": {
-      "title": "RELATIONS<br>INTERNATIONALES",
-      "body": "Dans le contexte de l'internationalisation du droit et de la justice, le CONSEIL D'ÉTAT de la République démocratique du Congo n'est pas isolé. Il participe activement au dialogue des juges en maintenant un haut niveau de coopération dans le cadre de l'Association des hautes juridictions de pays francophones (AHJUCAF) et de l'Association africaine des hautes juridictions francophones (AA-HJF)."
+      "title": "Relations<br>Internationales",
+      "body": "Dans le contexte de l'internationalisation du droit et de la justice, le Conseil d'État de la République démocratique du Congo n'est pas isolé. Il participe activement au dialogue des juges en maintenant un haut niveau de coopération dans le cadre de l'Association des hautes juridictions de pays francophones (AHJUCAF) et de l'Association africaine des hautes juridictions francophones (AA-HJF)."
     },
     "stats": {
       "associations": "Principales associations judiciaires internationales",
@@ -653,7 +653,7 @@
       "exchanges": "Échanges et conférences judiciaires annuelles"
     },
     "networks": {
-      "title": "RÉSEAUX JUDICIAIRES INTERNATIONAUX",
+      "title": "Réseaux judiciaires internationaux",
       "subtitle": "La Cour entretient des relations privilégiées avec les principales associations de hautes juridictions francophones et africaines",
       "ahjucaf": {
         "name": "Association des hautes juridictions utilisant le français",
@@ -665,7 +665,7 @@
       }
     },
     "domains": {
-      "title": "DOMAINES DE COOPÉRATION INTERNATIONALE",
+      "title": "Domaines de coopération internationale",
       "subtitle": "Notre engagement international se traduit par une participation active à diverses initiatives visant à renforcer la qualité de la justice et l'État de droit",
       "dialogue": {
         "title": "Dialogue judiciaire",
@@ -687,20 +687,20 @@
     "collaboration": {
       "title": "Intéressé par une collaboration ?",
       "body": "Nous sommes ouverts aux partenariats institutionnels et aux échanges avec d'autres juridictions nationales et internationales engagées pour renforcer les systèmes de justice.",
-      "cta": "CONTACTEZ-NOUS"
+      "cta": "Contactez-nous"
     }
   },
   "audiences": {
     "hero": {
-      "title": "AUDIENCES ET EXTRAITS DE RÔLE",
+      "title": "Audiences et extraits de rôle",
       "body": "Accéder aux horaires d’audiences, aux extraits des rôles, et aux décisions récentes."
     },
     "understanding": {
-      "title": "COMPRENDRE LES AUDIENCES",
+      "title": "Comprendre les audiences",
       "body": "Consultez des informations sur l'organisation des audiences et l'accès aux rôles récents."
     },
     "metrics": {
-      "title": "INDICATEURS DES AUDIENCES",
+      "title": "Indicateurs des audiences",
       "subtitle": "Volume mensuel des audiences et évolution des résultats.",
       "volume": {
         "title": "Volume mensuel des audiences",
@@ -714,8 +714,8 @@
       }
     },
     "recent": {
-      "title": "EXTRAITS DE RÔLE RÉCENTS",
-      "subtitle": "DERNIERS EXTRAITS D'AUDIENCE"
+      "title": "Extraits de rôle récents",
+      "subtitle": "Derniers extraits d'audience"
     },
     "documents": {
       "civil": {
@@ -736,21 +736,21 @@
       }
     },
     "actions": {
-      "downloadPdf": "TÉLÉCHARGER PDF"
+      "downloadPdf": "Télécharger PDF"
     },
     "assistance": {
       "title": "Besoin d'aide ?",
       "body": "Contactez le Conseil d'État pour obtenir de l'aide sur l'accès aux documents ou aux horaires.",
-      "cta": "CONTACTEZ-NOUS"
+      "cta": "Contactez-nous"
     }
   },
   "organization": {
     "hero": {
-      "title": "ORGANISATION<br>DU CONSEIL D'ÉTAT"
+      "title": "Organisation<br>Du Conseil d'État"
     },
     "firstPresident": {
       "alt": "Première Présidente",
-      "title": "LA PREMIÈRE PRÉSIDENTE",
+      "title": "La première présidente",
       "body": "La Première Présidente dirige le Conseil d'État, préside ses sessions et veille au bon fonctionnement de l'institution."
     },
     "orgPage": {
@@ -797,7 +797,7 @@
       }
     },
     "firstPresidents": {
-      "title": "PREMIERS PRÉSIDENTS",
+      "title": "Premiers présidents",
       "honoraryTitle": "Premier Président Honoraire et Émérite : 2018 - 2022",
       "honoraryTitleSecond": "Présidente Honoraire et Émérite : 2022 - 2025",
       "honoraryTitleThird": "Première présidente : 2025 - à ce jour",
@@ -805,14 +805,14 @@
       "placeholderSubtitle": "Emplacement réservé pour photo",
       "photoLabel": "Photo {{index}}"
     },
-    "seniorLabel": "MAGISTRATS SUPÉRIEURS",
+    "seniorLabel": "Magistrats supérieurs",
     "chart": {
-      "title": "ORGANIGRAMME",
+      "title": "Organigramme",
       "subtitle": "Aperçu de la structure de direction et des divisions clés du Conseil d'État.",
-      "interactiveTitle": "ORGANIGRAMME INTERACTIF",
+      "interactiveTitle": "Organigramme interactif",
       "interactiveSubtitle": "Explorez la hiérarchie et les liens de reporting.",
       "aria": "Organigramme interactif",
-      "peopleTitle": "DIRECTION PAR NOM",
+      "peopleTitle": "Direction par nom",
       "peopleSubtitle": "Noms de la Première Présidente, des Présidents et des Conseillers.",
       "peopleFirstPresidentName": "Brigitte Nsensele Wa Nsensele",
       "namedPhotoRoles": {
@@ -822,7 +822,7 @@
       },
       "roles": {
         "firstPresident": "Première Présidente",
-        "ppce": "P.P.C.E",
+        "ppce": "P.p.c.e",
         "president": "Président",
         "advisor": "Conseiller"
       },
@@ -849,11 +849,11 @@
       "summary": "Affichage de {{presidents}} présidents et {{advisors}} conseillers"
     },
     "presidents": {
-      "title": "LES PRÉSIDENTS",
+      "title": "Les présidents",
       "empty": "Aucun président ne correspond à votre recherche."
     },
     "advisors": {
-      "title": "LES CONSEILLERS",
+      "title": "Les conseillers",
       "empty": "Aucun conseiller ne correspond à votre recherche."
     },
     "members": {
@@ -861,7 +861,7 @@
       "loadMore": "Charger plus"
     },
     "services": {
-      "overviewTitle": "APERÇU DES SERVICES",
+      "overviewTitle": "Aperçu des services",
       "learnMore": "En savoir plus",
       "registry": {
         "title": "Greffe",
@@ -875,7 +875,7 @@
         "title": "Conseil TV",
         "body": "Suivez les audiences, annonces et actualités."
       },
-      "title": "NOS SERVICES",
+      "title": "Nos services",
       "subtitle": "Explorez les divisions et les bureaux qui soutiennent le travail du Conseil d'État.",
       "divisions": {
         "title": "Divisions",
