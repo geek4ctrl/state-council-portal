@@ -279,7 +279,7 @@ type GreffeFirstPresident = {
           </div>
         </section>
       } @else if (isOrganisation()) {
-        <section class="org-hero presentation-hero">
+        <section class="org-hero presentation-hero" style="background: linear-gradient(90deg, rgba(16,27,43,0.55) 0%, rgba(16,27,43,0.35) 55%, rgba(16,27,43,0.25) 100%), url('assets/hero-group-photo.png') center/cover no-repeat; image-rendering: auto;">
           <div class="container">
             <button class="back-link" type="button" (click)="goBack()">
               {{ 'memberDetail.back' | i18n }}
@@ -294,24 +294,15 @@ type GreffeFirstPresident = {
 
         <section class="org-hero-body">
           <div class="container">
-            <div class="org-hero-card">
-              <div class="org-hero-grid">
-                <div class="org-hero-media" aria-hidden="true">
-                  <img src="assets/hero-group-photo.png" alt="" />
-                </div>
-                <div class="org-hero-copy">
-                  <div class="org-detail-card">
-                    <h2>{{ 'about.rubrics.organization' | i18n }}</h2>
-                    <p>{{ 'about.legal.detail.paragraph3' | i18n }}</p>
-                    <ul>
-                      <li>{{ 'about.legal.detail.list2.1' | i18n }}</li>
-                      <li>{{ 'about.legal.detail.list2.2' | i18n }}</li>
-                      <li>{{ 'about.legal.detail.list2.3' | i18n }}</li>
-                    </ul>
-                    <p>{{ 'about.legal.detail.paragraph4' | i18n }}</p>
-                  </div>
-                </div>
-              </div>
+            <div class="org-detail-card">
+              <h2>{{ 'about.rubrics.organization' | i18n }}</h2>
+              <p>{{ 'about.legal.detail.paragraph3' | i18n }}</p>
+              <ul>
+                <li>{{ 'about.legal.detail.list2.1' | i18n }}</li>
+                <li>{{ 'about.legal.detail.list2.2' | i18n }}</li>
+                <li>{{ 'about.legal.detail.list2.3' | i18n }}</li>
+              </ul>
+              <p>{{ 'about.legal.detail.paragraph4' | i18n }}</p>
             </div>
           </div>
         </section>
@@ -740,7 +731,7 @@ type GreffeFirstPresident = {
 
 
       .org-hero {
-        padding: 90px 0 70px;
+        padding: 260px 0 240px;
       }
 
       .org-hero-body {
