@@ -769,6 +769,28 @@
         "consultative": "Die Beratungssektion",
         "contentieux": "Die Streitsektion",
         "registry": "Kanzlei und Generalsekretariat"
+      },
+      "roles": {
+        "firstPresident": {
+          "title": "Die Erste Präsidentin",
+          "body": "Der Erste Präsident des Staatsrats ist die hierarchische Autorität an der Spitze aller Verwaltungsgerichte. Er wacht über das ordnungsgemäße Funktionieren des Staatsrats und aller anderen Verwaltungsgerichte."
+        },
+        "sectionPresidents": {
+          "title": "Die Sektionspräsidenten",
+          "body": "Jede der zwei Sektionen des Staatsrats wird von einem Präsidenten geleitet, der ernannt, suspendiert, seines Amtes enthoben und gegebenenfalls durch Entscheidung des Ersten Präsidenten ersetzt wird. Der Sektionspräsident verteilt die ihm vom Ersten Präsidenten anvertrauten Fälle auf die Kammern und sorgt für eine schnelle und optimale Bearbeitung der Akten."
+        },
+        "chamberPresidents": {
+          "title": "Die Kammerpräsidenten",
+          "body": "Die Kammern jeder Sektion des Staatsrats, insgesamt 9, werden von Präsidenten geleitet, die ernannt, suspendiert und gegebenenfalls durch Entscheidung des Ersten Präsidenten ersetzt werden. Jeder Kammerpräsident sorgt für die Ausführung aller Entscheidungen des Ersten Präsidenten oder des Sektionspräsidenten innerhalb seiner Kammer."
+        },
+        "advisors": {
+          "title": "Die Berater des Staatsrats",
+          "body": "Die Berater des Staatsrats werden den Kammern durch Entscheidung des Ersten Präsidenten zugewiesen, neu zugewiesen und gegebenenfalls ersetzt. Sie sind Teil der Besetzung."
+        },
+        "registry": {
+          "title": "Das Generalsekretariat / Kanzlei",
+          "body": "Die Kanzlei des Staatsrats umfasst einen Chefschreiber, Hauptschreiber, Abteilungsschreiber, Schreiber und Gerichtsvollzieher. Sie üben ihre Funktionen gemäß den Gesetzen und Vorschriften der Republik aus. Die Kanzlei ist für die Entgegennahme und Einschreibung der beim Staatsrat eingereichten Fälle zuständig."
+        }
       }
     },
     "greffe": {
@@ -837,7 +859,9 @@
         "socialChamber": "Sozialkammer",
         "consultativeSection": "Beratungssektion",
         "litigationSection": "Streitsektion"
-      }
+      },
+      "peopleConsultativePresidentName": "Eugène Kibwe Muter",
+      "peopleLitigationPresidentName": "Hippolyte Masani Matshi"
     },
     "filters": {
       "searchLabel": "Mitglieder suchen",
