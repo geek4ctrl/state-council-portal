@@ -530,7 +530,6 @@ type HighchartsStatic = typeof import('highcharts');
         line-height: 1.3;
         letter-spacing: 3px;
         margin: 0;
-        text-transform: uppercase;
         text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.4);
       }
 
@@ -760,7 +759,6 @@ type HighchartsStatic = typeof import('highcharts');
         font-size: 0.95rem;
         font-weight: 700;
         letter-spacing: 1px;
-        text-transform: uppercase;
         color: #1a2942;
         line-height: 1.4;
       }
@@ -777,7 +775,6 @@ type HighchartsStatic = typeof import('highcharts');
         font-weight: 700;
         color: #1f9bd9;
         letter-spacing: 3px;
-        text-transform: uppercase;
         margin-bottom: 0;
         padding-bottom: 20px;
       }
@@ -815,7 +812,6 @@ type HighchartsStatic = typeof import('highcharts');
         font-size: 0.8rem;
         font-weight: 700;
         color: #374151;
-        text-transform: uppercase;
         letter-spacing: 1px;
       }
 
@@ -882,7 +878,6 @@ type HighchartsStatic = typeof import('highcharts');
         border-radius: 16px;
         font-weight: 600;
         color: #1a1a1a;
-        text-transform: uppercase;
         letter-spacing: 1.3px;
         font-size: 0.75rem;
         box-shadow: 0 8px 20px rgba(26, 41, 66, 0.1);
@@ -987,7 +982,6 @@ type HighchartsStatic = typeof import('highcharts');
         text-align: center;
         font-size: 0.82rem;
         font-weight: 700;
-        text-transform: uppercase;
         letter-spacing: 1px;
         color: #1a2942;
         line-height: 1.45;
@@ -1171,7 +1165,6 @@ type HighchartsStatic = typeof import('highcharts');
         font-weight: 700;
         letter-spacing: 0.6px;
         color: #1f9bd9;
-        text-transform: uppercase;
       }
 
       .first-president-slot .member-info {
@@ -1319,7 +1312,6 @@ type HighchartsStatic = typeof import('highcharts');
         display: inline-flex;
         align-items: center;
         transition: all 0.3s ease;
-        text-transform: uppercase;
         position: relative;
         padding: 8px 0;
         min-height: 44px;
@@ -1356,7 +1348,6 @@ type HighchartsStatic = typeof import('highcharts');
         letter-spacing: 2px;
         cursor: pointer;
         transition: all 0.3s ease;
-        text-transform: uppercase;
         box-shadow: 0 4px 15px rgba(31, 155, 217, 0.3);
       }
 
@@ -1392,7 +1383,6 @@ type HighchartsStatic = typeof import('highcharts');
         text-align: center;
         margin: 0 0 40px 0;
         letter-spacing: 2px;
-        text-transform: uppercase;
         max-width: 100%;
         word-wrap: break-word;
       }
@@ -1455,7 +1445,6 @@ type HighchartsStatic = typeof import('highcharts');
         text-decoration: none;
         font-weight: 600;
         letter-spacing: 1.5px;
-        text-transform: uppercase;
         display: inline-flex;
         align-items: center;
         gap: 8px;
@@ -1494,14 +1483,13 @@ type HighchartsStatic = typeof import('highcharts');
         text-align: center;
         margin: 0 0 12px 0;
         letter-spacing: 2px;
-        text-transform: uppercase;
         max-width: 100%;
         word-wrap: break-word;
       }
 
       .section-subheading {
         font-size: 0.95rem;
-        color: #1f9bd9;
+        color: #1a1a1a;
         text-align: center;
         margin: 0 0 60px 0;
         font-style: italic;
@@ -2528,7 +2516,6 @@ type HighchartsStatic = typeof import('highcharts');
         font-weight: 700;
         letter-spacing: 2px;
         color: #1f9bd9;
-        text-transform: uppercase;
         animation: labelPulse 2s ease-in-out infinite;
       }
       .org-header-line,
