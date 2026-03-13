@@ -297,7 +297,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
       left: 0;
       right: 0;
       bottom: 0;
-      background: 
+      background:
         radial-gradient(circle at 20% 30%, rgba(31, 155, 217, 0.18) 0%, transparent 50%),
         radial-gradient(circle at 80% 70%, rgba(31, 155, 217, 0.15) 0%, transparent 50%),
         url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><defs><pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255,255,255,0.03)" stroke-width="1"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
@@ -378,7 +378,6 @@ import { FooterComponent } from '../../components/footer/footer.component';
     .section-tag span {
       font-size: 0.75rem;
       color: #1F9BD9;
-      text-transform: uppercase;
       letter-spacing: 2px;
       font-weight: 600;
     }
@@ -397,7 +396,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
     .building-section .section-description {
       font-size: 1rem;
       line-height: 1.8;
-      color: #1F9BD9;
+      color: #1a1a1a;
       text-align: justify;
       max-width: 100%;
       margin: 0 0 60px 0;
@@ -421,7 +420,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
     .initiatives-section .section-description {
       font-size: 1rem;
       line-height: 1.8;
-      color: #1F9BD9;
+      color: #1a1a1a;
       text-align: center;
       max-width: 900px;
       margin: 0 auto 60px;
@@ -525,7 +524,6 @@ import { FooterComponent } from '../../components/footer/footer.component';
       border-radius: 20px;
       font-size: 0.7rem;
       font-weight: 600;
-      text-transform: uppercase;
       letter-spacing: 0.5px;
     }
 
@@ -592,7 +590,6 @@ import { FooterComponent } from '../../components/footer/footer.component';
       text-align: center;
       margin: 0;
       letter-spacing: 3px;
-      text-transform: uppercase;
     }
 
     .section-subtitle {
@@ -601,7 +598,6 @@ import { FooterComponent } from '../../components/footer/footer.component';
       color: #82BCDC;
       margin: 0 0 50px 0;
       letter-spacing: 2px;
-      text-transform: uppercase;
       font-weight: 500;
     }
 
@@ -670,7 +666,6 @@ import { FooterComponent } from '../../components/footer/footer.component';
       color: #1a1a1a;
       font-weight: 700;
       margin: 0 0 8px 0;
-      text-transform: uppercase;
       letter-spacing: 0.5px;
     }
 
