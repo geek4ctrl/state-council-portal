@@ -944,7 +944,7 @@ type HighchartsStatic = typeof import('highcharts');
         grid-template-columns: repeat(2, minmax(0, 1fr));
         justify-items: center;
         gap: 24px;
-        max-width: 900px;
+        max-width: 650px;
       }
 
       .leadership-photo-card {
@@ -956,7 +956,7 @@ type HighchartsStatic = typeof import('highcharts');
       }
 
       .leadership-photo-card.top {
-        max-width: 430px;
+        max-width: 300px;
         width: 100%;
       }
 
@@ -1119,6 +1119,8 @@ type HighchartsStatic = typeof import('highcharts');
 
       .first-presidents-grid {
         grid-template-columns: repeat(3, minmax(0, 1fr));
+        max-width: 750px;
+        margin: 0 auto;
       }
 
       .first-president-slot {
