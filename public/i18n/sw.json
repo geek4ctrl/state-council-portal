@@ -751,7 +751,34 @@
     "firstPresident": {
       "alt": "Rais wa Kwanza",
       "title": "Rais wa kwanza",
-      "body": "Rais wa Kwanza anaongoza Baraza la Serikali, anaongoza vikao vyake, na kuhakikisha taasisi inafanya kazi ipasavyo."
+      "body": "Rais wa Kwanza anaongoza Baraza la Serikali, anaongoza vikao vyake, na kuhakikisha taasisi inafanya kazi ipasavyo.",
+      "page": {
+        "heroTitle": "La première présidente",
+        "inauguration": "La Première Présidente du Conseil d'État, Madame Brigitte Nsensele wa Nsensele, a prêté serment le 18/02/2025 devant le Président de la République au Palais de la Nation de Kinshasa.",
+        "biographyTitle": "Biographie de Mme. Brigitte Nsensele wa Nsensele",
+        "biography": "Née à Kinshasa, Madame Brigitte Nsensele wa Nsensele est magistrate de carrière. Elle a gravi tous les échelons de la magistrature administrative avant d'être nommée Première Présidente du Conseil d'État de la République Démocratique du Congo en février 2025.",
+        "careerTitle": "Parcours",
+        "career": {
+          "1": "Magistrate au Tribunal de Grande Instance de Kinshasa",
+          "2": "Conseillère au Conseil d'État",
+          "3": "Présidente de Chambre au Conseil d'État",
+          "4": "Présidente de Section au Conseil d'État",
+          "5": "Première Présidente du Conseil d'État (depuis février 2025)"
+        },
+        "honoraryTitle": "Les premiers présidents honoraires",
+        "honorary": {
+          "felix": {
+            "name": "Félix Vunduawe te Pemako",
+            "role": "Premier Président honoraire et émérite",
+            "years": "2018 - 2022"
+          },
+          "marthe": {
+            "name": "Marthe Odio Nonde",
+            "role": "Première Présidente honoraire et émérite",
+            "years": "2022 - 2025"
+          }
+        }
+      }
     },
     "orgPage": {
       "hero": {
