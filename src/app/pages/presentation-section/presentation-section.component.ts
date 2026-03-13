@@ -202,16 +202,7 @@ type GreffeFirstPresident = {
         <section class="fp-intro">
           <div class="container">
             <div class="fp-intro-card">
-              <div class="fp-intro-photo">
-                <img
-                  ngSrc="https://res.cloudinary.com/dhqvb8wbn/image/upload/v1772555485/Brigitte_NSENSELE_wa_NSENSELE_OK.jpg_ndsjzg.jpg"
-                  alt="Brigitte Nsensele wa Nsensele"
-                  width="320"
-                  height="380"
-                />
-              </div>
               <div class="fp-intro-body">
-                <h2>{{ 'organization.chart.namedPhotoRoles.firstPresident' | i18n }}</h2>
                 <p>{{ 'organization.firstPresident.page.inauguration' | i18n }}</p>
               </div>
             </div>
@@ -221,10 +212,6 @@ type GreffeFirstPresident = {
         <section class="fp-biography">
           <div class="container">
             <div class="fp-bio-layout">
-              <div class="fp-bio-text">
-                <h2>{{ 'organization.firstPresident.page.biographyTitle' | i18n }}</h2>
-                <p>{{ 'organization.firstPresident.page.biography' | i18n }}</p>
-              </div>
               <div class="fp-bio-photo">
                 <img
                   ngSrc="https://res.cloudinary.com/dhqvb8wbn/image/upload/v1772555485/Brigitte_NSENSELE_wa_NSENSELE_OK.jpg_ndsjzg.jpg"
@@ -232,6 +219,10 @@ type GreffeFirstPresident = {
                   width="280"
                   height="330"
                 />
+              </div>
+              <div class="fp-bio-text">
+                <h2>{{ 'organization.firstPresident.page.biographyTitle' | i18n }}</h2>
+                <p>{{ 'organization.firstPresident.page.biography' | i18n }}</p>
               </div>
             </div>
           </div>
@@ -253,32 +244,36 @@ type GreffeFirstPresident = {
         <section class="fp-honorary">
           <div class="container">
             <h2>{{ 'organization.firstPresident.page.honoraryTitle' | i18n }}</h2>
-            <div class="fp-honorary-grid">
-              <article class="fp-honorary-card">
+            <div class="fp-honorary-list">
+              <article class="fp-honorary-item">
                 <div class="fp-honorary-photo">
                   <img
                     ngSrc="https://res.cloudinary.com/dhqvb8wbn/image/upload/v1772552204/F%C3%A9lix_VUNDUAWE_te_PEMAKO..jpg_1_usgopn.jpg"
                     alt="Félix Vunduawe te Pemako"
-                    width="280"
-                    height="330"
+                    width="160"
+                    height="190"
                   />
                 </div>
-                <h3>{{ 'organization.firstPresident.page.honorary.felix.name' | i18n }}</h3>
-                <p class="fp-honorary-role">{{ 'organization.firstPresident.page.honorary.felix.role' | i18n }}</p>
-                <p class="fp-honorary-years">{{ 'organization.firstPresident.page.honorary.felix.years' | i18n }}</p>
+                <div class="fp-honorary-info">
+                  <h3>{{ 'organization.firstPresident.page.honorary.felix.name' | i18n }}</h3>
+                  <p class="fp-honorary-role">{{ 'organization.firstPresident.page.honorary.felix.role' | i18n }}</p>
+                  <p class="fp-honorary-years">{{ 'organization.firstPresident.page.honorary.felix.years' | i18n }}</p>
+                </div>
               </article>
-              <article class="fp-honorary-card">
+              <article class="fp-honorary-item">
                 <div class="fp-honorary-photo">
                   <img
                     ngSrc="https://res.cloudinary.com/dhqvb8wbn/image/upload/v1772554526/Marthe_ODIO_NONDE.jpg_1_pzymzp.jpg"
                     alt="Marthe Odio Nonde"
-                    width="280"
-                    height="330"
+                    width="160"
+                    height="190"
                   />
                 </div>
-                <h3>{{ 'organization.firstPresident.page.honorary.marthe.name' | i18n }}</h3>
-                <p class="fp-honorary-role">{{ 'organization.firstPresident.page.honorary.marthe.role' | i18n }}</p>
-                <p class="fp-honorary-years">{{ 'organization.firstPresident.page.honorary.marthe.years' | i18n }}</p>
+                <div class="fp-honorary-info">
+                  <h3>{{ 'organization.firstPresident.page.honorary.marthe.name' | i18n }}</h3>
+                  <p class="fp-honorary-role">{{ 'organization.firstPresident.page.honorary.marthe.role' | i18n }}</p>
+                  <p class="fp-honorary-years">{{ 'organization.firstPresident.page.honorary.marthe.years' | i18n }}</p>
+                </div>
               </article>
             </div>
           </div>
@@ -1113,23 +1108,26 @@ type GreffeFirstPresident = {
         margin: 0 0 32px;
       }
 
-      .fp-honorary-grid {
+      .fp-honorary-list {
         display: flex;
-        gap: 40px;
-        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 28px;
       }
 
-      .fp-honorary-card {
-        flex: 0 0 auto;
-        width: 240px;
-        text-align: center;
+      .fp-honorary-item {
+        display: flex;
+        gap: 24px;
+        align-items: flex-start;
+        background: #f8f9fb;
+        border-radius: 12px;
+        padding: 20px;
       }
 
       .fp-honorary-photo {
-        width: 100%;
-        border-radius: 12px;
+        flex-shrink: 0;
+        width: 120px;
+        border-radius: 10px;
         overflow: hidden;
-        margin-bottom: 12px;
         border: 3px solid #e8e8e8;
       }
 
@@ -1140,21 +1138,21 @@ type GreffeFirstPresident = {
         object-fit: cover;
       }
 
-      .fp-honorary-card h3 {
-        font-size: 0.95rem;
+      .fp-honorary-info h3 {
+        font-size: 1rem;
         font-weight: 700;
         color: #1a2942;
-        margin: 0 0 4px;
+        margin: 0 0 6px;
       }
 
       .fp-honorary-role {
-        font-size: 0.85rem;
+        font-size: 0.9rem;
         color: #555;
-        margin: 0 0 2px;
+        margin: 0 0 4px;
       }
 
       .fp-honorary-years {
-        font-size: 0.82rem;
+        font-size: 0.85rem;
         color: #888;
         margin: 0;
       }
@@ -1178,12 +1176,14 @@ type GreffeFirstPresident = {
           align-self: center;
         }
 
-        .fp-honorary-grid {
-          justify-content: center;
+        .fp-honorary-item {
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
         }
 
-        .fp-honorary-card {
-          width: 200px;
+        .fp-honorary-photo {
+          width: 140px;
         }
       }
 
