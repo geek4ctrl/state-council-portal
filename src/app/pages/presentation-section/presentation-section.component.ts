@@ -184,7 +184,6 @@ type GreffeFirstPresident = {
                   <img src="assets/hero-group-photo.png" alt="" />
                 </div>
                 <div class="org-hero-copy">
-                  <h2 class="org-hero-title">{{ 'organization.orgPage.hero.title' | i18n }}</h2>
                   <div class="org-detail-card">
                     <h2>{{ 'about.rubrics.organization' | i18n }}</h2>
                     <p>{{ 'about.legal.detail.paragraph3' | i18n }}</p>
@@ -418,7 +417,6 @@ type GreffeFirstPresident = {
           <div class="container">
             @if (isMission()) {
               <div class="section-card">
-                <h2>{{ titleKey() | i18n }}</h2>
                 <p>{{ 'about.legal.detail.paragraph1' | i18n }}</p>
                 <p>{{ 'about.legal.detail.paragraph2' | i18n }}</p>
                 <ul>
@@ -431,7 +429,6 @@ type GreffeFirstPresident = {
               </div>
             } @else if (isFondements()) {
               <div class="section-card">
-                <h2>{{ titleKey() | i18n }}</h2>
                 <p>{{ 'about.intro.body' | i18n }}</p>
                 <ul>
                   <li>{{ 'about.legal.docs.1' | i18n }}</li>
@@ -441,7 +438,6 @@ type GreffeFirstPresident = {
               </div>
             } @else if (isProcedures()) {
               <div class="section-card">
-                <h2>{{ titleKey() | i18n }}</h2>
                 <p>{{ 'about.legal.detail.paragraph6' | i18n }}</p>
                 <p>{{ 'about.legal.detail.paragraph7' | i18n }}</p>
                 <p>{{ 'about.legal.detail.paragraph8' | i18n }}</p>
@@ -449,7 +445,6 @@ type GreffeFirstPresident = {
               </div>
             } @else {
               <div class="section-card">
-                <h2>{{ titleKey() | i18n }}</h2>
                 <p>{{ bodyKey() | i18n }}</p>
               </div>
             }
