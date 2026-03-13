@@ -3,7 +3,7 @@
     "siteName": "Conseil d'Etat ya RDC",
     "contact": {
       "phone": "+ 243 (21) 00000000",
-      "hours": "MOKOLO YA MOSALA - MOKOLO YA MITANO 8:30AM - 4:00PM"
+      "hours": "Mokolo ya mosala - mokolo ya mitano 8:30am - 4:00pm"
     },
     "social": {
       "facebook": "Facebook",
@@ -16,22 +16,22 @@
       "switchToFrench": "Bongola na Francais"
     },
     "nav": {
-      "home": "EBANDELI",
-      "court": "TRIBINAL",
-      "presentation": "BOTALISI",
-      "organization": "ORGANISASION",
+      "home": "Ebandeli",
+      "court": "Tribinal",
+      "presentation": "Botalisi",
+      "organization": "Organisasion",
       "administrativeCourts": "Tribinal ya Administratif ya Likolo",
       "administrativeTribunals": "Tribinal ya Administratif ya liboso",
-      "reforms": "BONGWANA",
-      "international": "BOYOKANI YA MOKILI MOBIMBA",
-      "audiences": "MAKIKAO",
-      "steps": "ETAPE",
-      "news": "SANGO",
-      "bookAppointment": "BOKANDA RENDEZ-VOUS"
+      "reforms": "Bongwana",
+      "international": "Boyokani ya mokili mobimba",
+      "audiences": "Makikao",
+      "steps": "Etape",
+      "news": "Sango",
+      "bookAppointment": "Bokanda rendez-vous"
     }
   },
   "hero": {
-    "titleOpening2025": "MBULA YA TRIBINAL EFUNGOLAMI NA CONSEIL D'ETAT MPO NA 2025 - 2026"
+    "titleOpening2025": "Mbula ya tribinal efungolami na Conseil d'État mpo na 2025 - 2026"
   },
   "mobileNav": {
     "home": "Ebandeli",
@@ -84,15 +84,15 @@
   },
   "news": {
     "hero": {
-      "title": "SANGO NA BA UPDATES",
+      "title": "Sango na ba updates",
       "body": "Boboto te ekoki kobima na ndenge mingi. Topesi yo nzela ya kopesa sango ya mabe nyonso."
     },
     "section": {
-      "title": "SANGO NA BA UPDATES",
-      "subtitle": "BOMONI ELOKO TOSALI"
+      "title": "Sango na ba updates",
+      "subtitle": "Bomoni eloko tosali"
     },
     "insights": {
-      "title": "BILEMBO YA SANGO",
+      "title": "Bilembo ya sango",
       "subtitle": "Mikano na makambo mpe ndenge ya kobimisa",
       "topics": {
         "title": "Makambo na sanza",
@@ -128,13 +128,13 @@
       "2": {
         "date": "30 Janvier",
         "category": "Administratif",
-        "title": "LIKITA YA NDIMBO NA CONSEIL D'ETAT",
+        "title": "Likita ya ndimbo na Conseil d'État",
         "excerpt": "Kinshasa, 18 Oktoba 2025: Conseil d'Etat ya RDC ebimisi ..."
       },
       "3": {
         "date": "30 Janvier",
         "category": "Administratif",
-        "title": "LIKITA YA NDIMBO NA CONSEIL D'ETAT",
+        "title": "Likita ya ndimbo na Conseil d'État",
         "excerpt": "Kinshasa, 18 Oktoba 2025: Conseil d'Etat ya RDC ebimisi ..."
       }
     }
@@ -142,15 +142,15 @@
   "steps": {
     "hero": {
       "report": {
-        "title": "RAPPORT",
+        "title": "Rapport",
         "body": "Boboto te ekoki kobima na ndenge mingi. Topesi yo nzela ya kopesa sango ya mabe nyonso."
       },
       "appointment": {
-        "title": "BOKANDA<br>RENDEZ-VOUS",
+        "title": "Bokanda<br>Rendez-vous",
         "body": "Mpo na kosala bokutani na Conseil d'Etat, tondisa fomu oyo. Salisa ete makambo nyonso ezali malamu. Okobaka na email to telefone mpo na mokolo na ngonga."
       },
       "appeal": {
-        "title": "RUFAA NA<br>CONSEIL D'ETAT",
+        "title": "Rufaa na<br>Conseil d'État",
         "body1": "Rufaa na Conseil d'Etat ezali nzela ya boyokani ya administratif mpo na kobenga mokano. Conseil d'Etat etali soki mibeko ya administratif ekendaki malamu.",
         "body2": "Conseil d'Etat ebengami na maloba ya bato to na formulaire. Rufaa esengeli kotindama na tango esengeli mpe na mikanda nyonso."
       }
@@ -162,16 +162,16 @@
     },
     "forms": {
       "report": {
-        "title": "FORMULAIRE YA BOTALO",
-        "subtitle": "TOZALI KOLINGA KOYOKA MPASI NA YO"
+        "title": "Formulaire ya botalo",
+        "subtitle": "Tozali kolinga koyoka mpasi na yo"
       },
       "appointment": {
-        "title": "BOKANDA RENDEZ-VOUS",
-        "subtitle": "TOZALI KOLINGA KOYOKA MPASI NA YO"
+        "title": "Bokanda rendez-vous",
+        "subtitle": "Tozali kolinga koyoka mpasi na yo"
       },
       "appeal": {
-        "title": "FORMULAIRE YA RUFaa",
-        "subtitle": "TOZALI KOLINGA KOYOKA MPASI NA YO"
+        "title": "Formulaire ya rufaa",
+        "subtitle": "Tozali kolinga koyoka mpasi na yo"
       },
       "fullName": "Nkombo mobimba *",
       "email": "Email *",
@@ -197,11 +197,11 @@
         "nextMonth": "Sanza oyo elandi"
       },
       "message": "Message *",
-      "submit": "TINDÁ MESSAGE"
+      "submit": "Tindá message"
     }
   },
   "appealSteps": {
-    "title": "NDENGE YA KOTONDISA RUFaa",
+    "title": "Ndenge ya kotondisa rufaa",
     "subtitle": "Landá ba etape oyo mpo na kotinda rufaa na Conseil d'Etat",
     "steps": {
       "1": {
@@ -232,7 +232,7 @@
     "cta": "Tindela biso email"
   },
   "faqs": {
-    "title": "MITUNA OYO EBIMISAKA",
+    "title": "Mituna oyo ebimisaka",
     "items": {
       "1": {
         "question": "Dela ya kotinda rufaa ezali nini?",
@@ -294,25 +294,25 @@
       "learnMore": "Yeba mingi",
       "slides": {
         "0": {
-          "title": "CONSEIL D'ETAT - Bofungoli ya mbula ya tribinal 2025-2026",
-          "subtitle": "PALAIS DU PEUPLE - 13 NOVEMBRE 2025",
+          "title": "Conseil d'État - Bofungoli ya mbula ya tribinal 2025-2026",
+          "subtitle": "Palais du Peuple - 13 novembre 2025",
           "body": "Conseil d'Etat esanganaki na Palais du Peuple mpo na bofungoli ya mbula ya tribinal 2025-2026.",
           "cta": "Yeba mingi"
         },
         "1": {
-          "title": "MBULA YA TRIBINAL EFUNGOLAMI NA CONSEIL D'ETAT MPO NA 2025 - 2026",
+          "title": "Mbula ya tribinal efungolami na Conseil d'État mpo na 2025 - 2026",
           "subtitle": "NDako ya Mibeko na Kotalisa",
           "body": "Video oyo elakisaka bofungoli ya mbula ya tribinal 2025-2026. Na miso ya Rais Felix Tshisekedi, likita ekangaki bajaji ya likolo mpe bakambi ya mibeko.",
           "cta": "Tala likita live na YouTube"
         },
         "2": {
-          "title": "KOBATELA KIMOKA YA TRIBINAL MPE RESPONSABILITE",
+          "title": "Kobatela kimoka ya tribinal mpe responsabilite",
           "subtitle": "NDako ya Mibeko na Kotalisa",
-          "body": "CONSEIL D'ETAT ezali kokoba kobatela mibeko, bosembo, mpe bokonzi ya mibeko. Tobeti motema na polele mpe bosembo.",
+          "body": "Conseil d'État ezali kokoba kobatela mibeko, bosembo, mpe bokonzi ya mibeko. Tobeti motema na polele mpe bosembo.",
           "cta": "Yeba mingi na mission na biso"
         },
         "3": {
-          "title": "KOTOMBOLA BOKOKO YA JURIDIQUE NA RDC",
+          "title": "Kotombola bokoko ya juridique na RDC",
           "subtitle": "NDako ya Mibeko na Kotalisa",
           "body": "Na nzelá ya mateya ya mibeko mpe kobatela makambo ya mokili mobimba, tolingi nyonso na bokokó ya tribinal.",
           "cta": "Tala misala na biso"
@@ -323,7 +323,7 @@
       "items": {
         "news": {
           "alt": "Sango",
-          "title": "SANGO",
+          "title": "Sango",
           "body": "Yeba makambo ya mokano mpe masango ya motuya.",
           "action": "Tanga"
         },
@@ -335,13 +335,13 @@
         },
         "report": {
           "alt": "Rapport",
-          "title": "RAPPORT",
+          "title": "Rapport",
           "body": "Pesa sango ya makambo ya mabe na lolenge ya bobateli.",
           "action": "Tinda Rapport"
         },
         "appointment": {
           "alt": "Bokanda rendez-vous",
-          "title": "BOKANDA RENDEZ-VOUS",
+          "title": "Bokanda rendez-vous",
           "body": "Bokanga bokutani na bato ya tribinal.",
           "action": "Bokanda sikoyo"
         }
@@ -369,7 +369,7 @@
       }
     },
     "offer": {
-      "title": "OYO TOPESAKA",
+      "title": "Oyo topesaka",
       "subtitle": "Topesaka ndenge ya mibeko oyo ebongi na bosenga na yo, mpo na kobatela mikili na yo mpe bosembo.",
       "cards": {
         "1": {
@@ -391,8 +391,8 @@
       }
     },
     "expertise": {
-      "title": "MAKAMBO YA BOKOKO",
-      "subtitle": "CONSEIL D'ETAT esalaka na makambo mingi ya mibeko lokola tribinal ya likolo.",
+      "title": "Makambo ya bokoko",
+      "subtitle": "Conseil d'État esalaka na makambo mingi ya mibeko lokola tribinal ya likolo.",
       "stats": {
         "domains": {
           "value": "6",
@@ -484,7 +484,7 @@
       "cta": "Yeba mingi",
       "slides": {
         "1": {
-          "title": "RAIS YA LIBOSO YA CONSEIL D'ETAT",
+          "title": "Rais ya liboso ya Conseil d'État",
           "paragraphs": {
             "1": "Lokola memba ya misato na Conseil Suprem ya Magistrature ya RDC, Rais ya liboso ya Conseil d'Etat, Brigitte Nsensele Wa Nsensele, apesaki makila na mokolo ya mitano, 27 Febuari, mpo na kobatela ba victimes ya aggression na este ya mboka.",
             "2": "Mpo na moboto nyonso ya RDC, kosalisa na mpasi ya ekolo ezali mosala ya citoyen. Tribinal ezangi te.",
@@ -492,7 +492,7 @@
           }
         },
         "2": {
-          "title": "BOKONZI YA TRIBINAL NA BONGWANA",
+          "title": "Bokonzi ya tribinal na bongwana",
           "paragraphs": {
             "1": "Na bokonzi ya Rais ya liboso, Conseil d'Etat ebandaki bongwana mpo na kosala tribinal ya sika.",
             "2": "Bongwana yango esangisi digitalisation ya makambo ya tribinal, ndenge ya gestion ya makambo, mpe mateya mpo na bajaji na basali.",
@@ -500,7 +500,7 @@
           }
         },
         "3": {
-          "title": "BOSANGANI YA MOKILI MOBIMBA",
+          "title": "Bosangani ya mokili mobimba",
           "paragraphs": {
             "1": "Conseil d'Etat esalaka na ba institutions ya mokili mobimba mpe esangaka na ba forum.",
             "2": "Na boyokani na ba tribunaux ya France, Belgique, mpe bituka mosusu ya francophone, tribinal ebongisaka boyebi.",
@@ -510,7 +510,7 @@
       }
     },
     "newsletter": {
-      "title": "SANGO NA MAKALA",
+      "title": "Sango na makala",
       "readMore": "Tanga lisusu",
       "cta": "Yeba mingi",
       "items": {
@@ -539,10 +539,10 @@
   },
   "about": {
     "hero": {
-      "title": "KOYEBA JURIDIKSION YA LIKOLO YA ORDRE ADMINISTRATIF NA REPUBLIKI DEMOKRATIKI YA KONGO"
+      "title": "Koyeba juridiksion ya likolo ya ordre administratif na republiki demokratiki ya kongo"
     },
     "intro": {
-      "title": "KOYEBA JURIDIKSION YA LIKOLO YA ORDRE ADMINISTRATIF NA REPUBLIKI DEMOKRATIKI YA KONGO",
+      "title": "Koyeba juridiksion ya likolo ya ordre administratif na republiki demokratiki ya kongo",
       "body": "Article 151 paragraphe 1 ya Konstitision ya RDC ya 18 Febuari 2006 etongaki systeme ya tribunaux ya administratif na boyokani ya Conseil d'Etat. Article 82 ya Loi organique No 13/011-B ya 11 Avril 2013 elobi ete ezali na Conseil d'Etat na Kinshasa. Mibeko na yango ekoki kosalela na esika mosusu. Lisolo ya Conseil d'Etat elobeli ndenge ekomaki. Esalemaki na Decret-Loi ya 31 Janvier 1968. Na 2013, Loi organique No 13/011-B ebongaki organisation mpe fonctionnement ya tribunaux ya administratif."
     },
     "rubrics": {
@@ -553,7 +553,7 @@
       "procedureBeforeCouncil": "Procedure liboso ya Conseil d'Etat"
     },
     "legal": {
-      "title": "KOKOTA NA MIKANDA YA MIBEKO MPE REGLEMENTAIRE<br>YA CONSEIL D'ETAT",
+      "title": "Kokota na mikanda ya mibeko mpe reglementaire<br>Ya Conseil d'État",
       "docs": {
         "1": "Loi organique N 13/011-B ya 11 Avril 2013 mpo na organisation mpe fonctionnement",
         "2": "Decret N 13/046 ya 25 Septembre 2013 mpo na chambres",
@@ -568,7 +568,7 @@
           "2": "CHAPITRE II: Komonia mpe kosala serment",
           "3": "CHAPITRE III: Rojime ya mibeko",
           "4": "CHAPITRE IV: Mibeko, garantie, mpe limite",
-          "5": "CHAPITRE V: Disipline"
+          "5": "Chapitre v: disipline"
         },
         "paragraph3": "Title II ya Conseil d'Etat (Articles 81-95) elobeli na sukali nyonso.",
         "list2": {
@@ -587,17 +587,17 @@
   },
   "reforms": {
     "hero": {
-      "title": "BONGWANA<br>OYO EPESAMI",
+      "title": "Bongwana<br>Oyo epesami",
       "body": "Kobongisa systeme ya tribinal na nzela ya bongwana oyo ezali kobakisa bokasi, polele, mpe bosembo mpo na bato nyonso."
     },
     "building": {
-      "tag": "KOBONGISA TRIBINAL",
-      "title": "KOTONGA SISTEME YA SIKA",
+      "tag": "Kobongisa tribinal",
+      "title": "Kotonga sisteme ya sika",
       "body": "Nsima ya Konstitision ya 2006, Conseil d'Etat ebanda bongwana mpo na kosala tribinal moko ya makasi, polele, mpe ekotambola malamu."
     },
     "initiatives": {
-      "tag": "PLAN YA BONGWANA",
-      "title": "MIPANGO YA BONGWANA",
+      "tag": "Plan ya bongwana",
+      "title": "Mipango ya bongwana",
       "body": "Plan ya etape mitano mpo na kosala tribinal ya sika.",
       "badges": {
         "critical": "Kipa ya monene",
@@ -628,8 +628,8 @@
       }
     },
     "stakeholders": {
-      "title": "BATO YA NTINA",
-      "subtitle": "BOKONZI YA BONGWANA",
+      "title": "Bato ya ntina",
+      "subtitle": "Bokonzi ya bongwana",
       "roles": {
         "president": "Rais",
         "vicePresident": "Vice President",
@@ -640,7 +640,7 @@
   },
   "international": {
     "hero": {
-      "title": "BOYOKANI YA<br>MOKILI MOBIMBA",
+      "title": "Boyokani ya<br>Mokili mobimba",
       "body": "Na contexte ya internationalisation ya mibeko, Conseil d'Etat ya RDC esalaka na ba partenaires mpe ba associations ya tribunaux."
     },
     "stats": {
@@ -649,7 +649,7 @@
       "exchanges": "Bokutana ya tribinal na mbula"
     },
     "networks": {
-      "title": "BOKUTANI YA TRIBINAL YA MOKILI",
+      "title": "Bokutani ya tribinal ya mokili",
       "subtitle": "Tribinal ezali na boyokani na ba associations ya francophone mpe africain",
       "ahjucaf": {
         "name": "Association ya ba tribunaux ya Francais",
@@ -661,7 +661,7 @@
       }
     },
     "domains": {
-      "title": "MAKAMBO YA BOYOKANI YA MOKILI",
+      "title": "Makambo ya boyokani ya mokili",
       "subtitle": "Boyokani ya mokili ekoki kosalisa bosembo mpe bokonzi ya mibeko",
       "dialogue": {
         "title": "Masolo ya tribinal",
@@ -683,20 +683,20 @@
     "collaboration": {
       "title": "Olingi boyokani?",
       "body": "Tozali na mposa ya boyokani na ba institutions ya mokili.",
-      "cta": "BENGA BISO"
+      "cta": "Benga biso"
     }
   },
   "audiences": {
     "hero": {
-      "title": "MAKIKAO MPE BITENI YA ROLE",
+      "title": "Makikao mpe biteni ya role",
       "body": "Zwa ba horaires ya makikayo, biteni ya ba role, mpe mikano ya sika."
     },
     "understanding": {
-      "title": "KOYEBA MAKIKAO",
+      "title": "Koyeba makikao",
       "body": "Yeba ndenge makikayo ebongisami mpe ndenge ya koyoka liste."
     },
     "metrics": {
-      "title": "BILEMBO YA MAKIKAO",
+      "title": "Bilembo ya makikao",
       "subtitle": "Motango ya makikayo na sanza mpe ndenge ya mikano.",
       "volume": {
         "title": "Motango ya makikayo na sanza",
@@ -710,8 +710,8 @@
       }
     },
     "recent": {
-      "title": "BITENI YA LISTE YA SIKA",
-      "subtitle": "BITENI YA KOYOKA YA SIKA"
+      "title": "Biteni ya liste ya sika",
+      "subtitle": "Biteni ya koyoka ya sika"
     },
     "documents": {
       "civil": {
@@ -732,21 +732,21 @@
       }
     },
     "actions": {
-      "downloadPdf": "TELECHARGER PDF"
+      "downloadPdf": "Telecharger PDF"
     },
     "assistance": {
       "title": "Osengeli lisalisi?",
       "body": "Benga Conseil d'Etat mpo na lisalisi ya mikanda to programme.",
-      "cta": "BENGA BISO"
+      "cta": "Benga biso"
     }
   },
   "organization": {
     "hero": {
-      "title": "ORGANISASION<br>YA CONSEIL D'ETAT"
+      "title": "Organisasion<br>Ya Conseil d'État"
     },
     "firstPresident": {
       "alt": "Rais ya liboso",
-      "title": "RAIS YA LIBOSO",
+      "title": "Rais ya liboso",
       "body": "Rais ya liboso akambaka Conseil d'Etat mpe likita na yango."
     },
     "orgPage": {
@@ -793,7 +793,7 @@
       }
     },
     "firstPresidents": {
-      "title": "MARAIS YA LIBOSO",
+      "title": "Marais ya liboso",
       "honoraryTitle": "Rais ya liboso ya lokumu mpe emerite 2018 - 2022",
       "honoraryTitleSecond": "Mokambi ya lokumu mpe emerite 2022 - 2025",
       "honoraryTitleThird": "Rais ya liboso: 2025 - kino lelo",
@@ -801,14 +801,14 @@
       "placeholderSubtitle": "Esika ebongisami mpo na foto",
       "photoLabel": "Foto {{index}}"
     },
-    "seniorLabel": "BAMAGISTRAT YA LIKOLO",
+    "seniorLabel": "Bamagistrat ya likolo",
     "chart": {
-      "title": "CHART YA ORGANISASION",
+      "title": "Chart ya organisasion",
       "subtitle": "Lisalisi ya bosangani na biteni ya Conseil d'Etat.",
-      "interactiveTitle": "CHART YA ORGANISASION YA INTERACTIF",
+      "interactiveTitle": "Chart ya organisasion ya interactif",
       "interactiveSubtitle": "Tala ndenge ya bosangani.",
       "aria": "Chart ya organisasion interactif",
-      "peopleTitle": "BOKONZI NA BIKOMBO",
+      "peopleTitle": "Bokonzi na bikombo",
       "peopleSubtitle": "Bikombo ya Rais ya Liboso, Marais, mpe Basungi.",
       "peopleFirstPresidentName": "Brigitte Nsensele Wa Nsensele",
       "namedPhotoRoles": {
@@ -845,11 +845,11 @@
       "summary": "Ezali kolakisa marais {{presidents}} mpe basungi {{advisors}}"
     },
     "presidents": {
-      "title": "MARAIS",
+      "title": "Marais",
       "empty": "Marais ezwami te na boluki na yo."
     },
     "advisors": {
-      "title": "BASUNGI",
+      "title": "Basungi",
       "empty": "Basungi ezwami te na boluki na yo."
     },
     "members": {
@@ -857,7 +857,7 @@
       "loadMore": "Tinda lisusu"
     },
     "services": {
-      "overviewTitle": "BOTALISI YA MISALA",
+      "overviewTitle": "Botalisi ya misala",
       "learnMore": "Yeba mingi",
       "registry": {
         "title": "Greffe",
@@ -871,7 +871,7 @@
         "title": "TV ya Conseil",
         "body": "Tala makikayo, masango, mpe updates."
       },
-      "title": "MISALA NA BISO",
+      "title": "Misala na biso",
       "subtitle": "Tala biteni mpe ofisi oyo esalisaka misala ya Conseil d'Etat.",
       "divisions": {
         "title": "Bitelemeli",

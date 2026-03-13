@@ -3,7 +3,7 @@
     "siteName": "Tshipangu tshia ditunga tshia RDC",
     "contact": {
       "phone": "+ 243 (21) 00000000",
-      "hours": "DIMUE - DITANU 8:30AM - 4:00PM"
+      "hours": "Dimue - ditanu 8:30am - 4:00pm"
     },
     "social": {
       "facebook": "Facebook",
@@ -16,22 +16,22 @@
       "switchToFrench": "Shintulula mu Mfualansa"
     },
     "nav": {
-      "home": "NZUBU",
-      "court": "LUBULU",
-      "presentation": "DIDIMANYISHA",
-      "organization": "BULONGOLODI",
+      "home": "Nzubu",
+      "court": "Lubulu",
+      "presentation": "Didimanyisha",
+      "organization": "Bulongolodi",
       "administrativeCourts": "Tubadi tua malu a mbulamatadi",
       "administrativeTribunals": "Malu a mbulamatadi",
-      "reforms": "MASHINTULUKA",
-      "international": "MALANDA A MATUNGA MASANGA",
-      "audiences": "BANTU",
-      "steps": "BIDIMU",
-      "news": "MAPIA MAPIA",
-      "bookAppointment": "DIFUNDA DIA KUTUADIKANGANA"
+      "reforms": "Mashintuluka",
+      "international": "Malanda a matunga masanga",
+      "audiences": "Bantu",
+      "steps": "Bidimu",
+      "news": "Mapia mapia",
+      "bookAppointment": "Difunda dia kutuadikangana"
     }
   },
   "hero": {
-    "titleOpening2025": "TSHIDIMU TSHIA BULUMBULU BUA BUALU BUA BUALU BUA 2025 - 2026"
+    "titleOpening2025": "Tshidimu tshia bulumbulu bua bualu bua bualu bua 2025 - 2026"
   },
   "mobileNav": {
     "home": "Nzubu",
@@ -84,15 +84,15 @@
   },
   "news": {
     "hero": {
-      "title": "LUMU & MALU MAPIAMAPIA",
+      "title": "Lumu & malu mapiamapia",
       "body": "Malu mabi adi mua kudileja mu mishindu ya bungi mu nsombelu wetu. Tudi tukupesha mushindu wa kumanyisha mishindu yonso ya malu mabi."
     },
     "section": {
-      "title": "LUMU NE BIDI BIPIA",
-      "subtitle": "TSHIMONA TSHITUDI TUENZA TSHITUDI"
+      "title": "Lumu ne bidi bipia",
+      "subtitle": "Tshimona tshitudi tuenza tshitudi"
     },
     "insights": {
-      "title": "LUMU LUA LUMU",
+      "title": "Lumu lua lumu",
       "subtitle": "Malu adi enzeka bilondeshile tshiena-bualu ne mushindu udibu bapatula mikanda",
       "topics": {
         "title": "Biena-bualu bilondeshile ngondo",
@@ -132,13 +132,13 @@
       "2": {
         "date": "dia 30 ngondo wa kumpala",
         "category": "Bulombodi",
-        "title": "TSHISANGILU TSHIA BULONGOLONODI KU TSHIPANGU TSHIA DITUNGA",
+        "title": "Tshisangilu tshia bulongolonodi ku tshipangu tshia ditunga",
         "excerpt": "Kinshasa, dia matuku 18/10/2025: Conseil d’État du congo démocratique udi umanyisha pu..."
       },
       "3": {
         "date": "dia 30 ngondo wa kumpala",
         "category": "Bulombodi",
-        "title": "TSHISANGILU TSHIA BULONGOLONODI KU TSHIPANGU TSHIA DITUNGA",
+        "title": "Tshisangilu tshia bulongolonodi ku tshipangu tshia ditunga",
         "excerpt": "Kinshasa, dia matuku 18/10/2025: Conseil d’État du congo démocratique udi umanyisha pu..."
       }
     }
@@ -146,15 +146,15 @@
   "steps": {
     "hero": {
       "report": {
-        "title": "LAPOLU",
+        "title": "Lapolu",
         "body": "Malu mabi adi mua kudileja mu mishindu ya bungi mu nsombelu wetu. Tudi tukupesha mushindu wa kumanyisha mishindu yonso ya malu mabi."
       },
       "appointment": {
-        "title": "DIFUNDA<br>DIA KUTUADIKANGANA",
+        "title": "Difunda<br>Dia kutuadikangana",
         "body": "Bua kulongolola tshisangilu ne tshipangu tshia ditunga, udi mua kuwuja mukanda wa dilomba dia mudimu udi ulonda eu. Ikala mujadike ne: miaba yonso idibu balomba idi miuja bimpe bua tuetu kumona mua kuenza mudimu bimpe ne dilomba diebe. Neupete mukanda wa dianyisha anyi dibikila dia ku telefone ne dituku ne dîba bidibu balongolole."
       },
       "appeal": {
-        "title": "KULOMBA KUDI<br>TSHIPANGU<br>TSHIA DITUNGA",
+        "title": "Kulomba kudi<br>Tshipangu<br>Tshia ditunga",
         "body1": "Dilomba dia dilumbuluisha kudi tshipangu tshia ditunga ndilongolola dia malu a mbulamatadi didi dianyishila tshitupa kampanda bua kuela mapangadika ne bienzedi bia mbulamatadi mpata. Tshipangu tshia ditunga tshidi tshijadika ni mikenji ya mbulamatadi ivua mitumikila bimpa ne ni mikenji mikumbane ivua milonda.",
         "body2": "Tshipangu tshia ditunga tshidi tshikuata kudi dilomba dia bena ditunga anyi kudi dimanyisha difila kudi Tshipangu. Dilomba dia dilumbuluisha didi ne tshia kufidibua mu tshikondo tshidi mikenji misungula ne didi ne tshia kujadikibua kudi mukanda wa dilomba udi ne mikanda idi ijadika."
       }
@@ -166,16 +166,16 @@
     },
     "forms": {
       "report": {
-        "title": "MUKANDA WA KUELA",
-        "subtitle": "TUDI BUSANKA BUA KUMVUA BUALU BENU"
+        "title": "Mukanda wa kuela",
+        "subtitle": "Tudi busanka bua kumvua bualu benu"
       },
       "appointment": {
-        "title": "ENZA RANZA",
-        "subtitle": "TUDI BUA KUKUABULULA NE LUTANTU LUEBE"
+        "title": "Enza ranza",
+        "subtitle": "Tudi bua kukuabulula ne lutantu luebe"
       },
       "appeal": {
-        "title": "MUKANDA WA DILOMBOLA",
-        "subtitle": "TUDI BUSANKA BUA KUMVUA BUALU BENU"
+        "title": "Mukanda wa dilombola",
+        "subtitle": "Tudi busanka bua kumvua bualu benu"
       },
       "fullName": "Dîna dijima *",
       "email": "E-mail *",
@@ -201,11 +201,11 @@
         "nextMonth": "Ngondo udi ulonda"
       },
       "message": "Mukenji *",
-      "submit": "TUMA MUKENDE"
+      "submit": "Tuma mukende"
     }
   },
   "appealSteps": {
-    "title": "MUSHINDU WA KUFILA DILOMBA DIA DILUMBULUISHA",
+    "title": "Mushindu wa kufila dilomba dia dilumbuluisha",
     "subtitle": "Landila bidimu ebi bua kutuma dilomba diebe kudi Tshipangu tshia Ditunga",
     "steps": {
       "1": {
@@ -236,7 +236,7 @@
     "cta": "Tumina bietu email"
   },
   "faqs": {
-    "title": "NKO NKO IDIBU BAKONKA KABIDI",
+    "title": "Nko nko idibu bakonka kabidi",
     "items": {
       "1": {
         "question": "Tshikondo kai tshia kufila dilomba dia dilumbuluisha?",
@@ -265,7 +265,7 @@
       "title": "Biro binene",
       "address1": "7639, njila wa Pumbu ne wa Batonniers",
       "address2": "Commune wa Gombe, Kinshasa",
-      "address3": "RÉPUBLIQUE DÉMOCRATIQUE DU CONGO",
+      "address3": "République démocratique du Congo",
       "phone": "Tel: +243 (21) 0000000",
       "email": "Email: info@conseildetatrdc.com"
     },
@@ -298,25 +298,25 @@
       "learnMore": "Longa bia bungi",
       "slides": {
         "0": {
-          "title": "CONSEIL D'ÉTAT - RENTRÉE JUDICIAIRE 2025-2026",
-          "subtitle": "PALAIS DU PEUPLE - 13 NOVEMBRE 2025",
+          "title": "Conseil d'État - rentrée judiciaire 2025-2026",
+          "subtitle": "Palais du Peuple - 13 novembre 2025",
           "body": "Tshipangu tshia ditunga tshiakadisangisha ku nzubu wa bukalenge wa bantu bua diunzulula dia tshidimu tshia kulumbuluisha tshia 2025-2026.",
           "cta": "Longa bia bungi"
         },
         "1": {
-          "title": "TSHIDIMU TSHIA BULUMBULU BUA BUALU BUA BUALU BUA 2025 - 2026",
+          "title": "Tshidimu tshia bulumbulu bua bualu bua bualu bua 2025 - 2026",
           "subtitle": "Nzubu wa mikenji ne bulongame",
           "body": "Tshinjinjimbi etshi tshidi tshileja diunzulula dia tshidimu tshia kulumbuluisha tshia 2025-2026. Mu dikalaku dia mfumu wa ditunga Felix Tshisekedi, tshisangilu etshi tshivua tshisangisha banzuji banene ne bena malu a mikenji.",
           "cta": "Tangila malu adi enzeka pa YouTube"
         },
         "2": {
-          "title": "KUKOKESHA BUA BUALU BUA BUALU BUA BUALU NE BUALU BUA BUALU",
+          "title": "Kukokesha bua bualu bua bualu bua bualu ne bualu bua bualu",
           "subtitle": "Nzubu wa mikenji ne bulongame",
           "body": "Tshipangu tshia ditunga tshidi tshitungunuka ne kulama mikenji ya bululame, ya bululame, ne ya mikenji. Tudi badisuike bua kujadika patoke ne bululame.",
           "cta": "Manya malu makuabu adi atangila mudimu wetu"
         },
         "3": {
-          "title": "KUTUADILA BUALU BUIMPE BIA MIKANDA MU REPUBLIQUE DEMOCRATIQUE DU CONGO",
+          "title": "Kutuadila bualu buimpe bia mikanda mu République démocratique du Congo",
           "subtitle": "Nzubu wa mikenji ne bulongame",
           "body": "Ku diambuluisha dia dilongesha dikole dia mikenji ne dilonda dia mikenji mimpe ya pa buloba bujima, tudi tudienzeja bua kulama mikenji mitambe buimpe ya malu a kulumbuluisha.",
           "cta": "Tangila malu atudi tuenza"
@@ -327,25 +327,25 @@
       "items": {
         "news": {
           "alt": "Mapia mapia",
-          "title": "MAPIA MAPIA",
+          "title": "Mapia mapia",
           "body": "Ikala mumanye mapangadika manene ne malu adi enzeka.",
           "action": "Kubala"
         },
         "excerpts": {
           "alt": "Bitupa",
-          "title": "BITUPA BIA MU MIDIMU",
+          "title": "Bitupa bia mu midimu",
           "body": "Tangila mêba a dilumbuluisha ne bilumbu bidi kabiyi bijika.",
           "action": "Longa bia bungi"
         },
         "report": {
           "alt": "Lapolu",
-          "title": "LAPOLU",
+          "title": "Lapolu",
           "body": "Umanyishe malu adi kaayi malelela anyi adi kaayi malelela mu bukubi.",
           "action": "Funda luapolo"
         },
         "appointment": {
           "alt": "Kufunda kutuadikangana",
-          "title": "KUFUNDA MUKANDA",
+          "title": "Kufunda mukanda",
           "body": "Teka programe wa diyukidilangana ne bena mudimu ba ku kabadi.",
           "action": "Funda mpindieu"
         }
@@ -373,7 +373,7 @@
       }
     },
     "offer": {
-      "title": "BITUDI TUFILA",
+      "title": "Bitudi tufila",
       "subtitle": "Tudi tufila mishindu milongolola ya mikenji bua kukumbaja majinga ebe, bua kujadika ne: makokeshi ebe adi makubibue ne buakane buenzeke.",
       "cards": {
         "1": {
@@ -395,8 +395,8 @@
       }
     },
     "expertise": {
-      "title": "BIDIMU BIDI BIMANYISHA",
-      "subtitle": "STATE COUNCIL udi ne bukookeshi pa malu mashilangane a mikenji bu kabadi kanene ka bulongolodi bua dilumbuluisha dia patupu.",
+      "title": "Bidimu bidi bimanyisha",
+      "subtitle": "State Council udi ne bukookeshi pa malu mashilangane a mikenji bu kabadi kanene ka bulongolodi bua dilumbuluisha dia patupu.",
       "stats": {
         "domains": {
           "value": "6",
@@ -488,7 +488,7 @@
       "cta": "Longa bia bungi",
       "slides": {
         "1": {
-          "title": "MULOMBODI WA KUMPALA WA TSHIBUMBA WA DITUKU",
+          "title": "Mulombodi wa kumpala wa tshibumba wa dituku",
           "paragraphs": {
             "1": "Bu mudiye muntu muisatu mu tshipangu tshinene tshia malu a kulumbuluisha tshia ditunga dia RDC, mulombodi wa kumpala wa tshipangu tshia ditunga, Brigitte Nsensele Wa Nsensele, wakafila mashi mu dia matuku 27 ngondo muibidi, bua kuleja muvuabu bafue mu mvita ya bena Rwanda ku est kua ditunga.",
             "2": "Bua muena Congo yonso udi ne demokrasi, kufila diambuluisha mu mvita mmudimu wa bena ditunga. Tshibambalu tshia kulumbuluisha katshiena tshishilangane to.",
@@ -496,7 +496,7 @@
           }
         },
         "2": {
-          "title": "BULOMBODI BUA LUMBA NE DISHINTULULA",
+          "title": "Bulombodi bua lumba ne dishintulula",
           "paragraphs": {
             "1": "Ku bulombodi bwa mfumu wa ditunga wa kumpala, tshipangu tshia ditunga tshidi tshituadije dishintulula dia malu a kulumbuluisha dia malu adi ne tshipatshila tshia kulengeja bulongolodi bua malu a kulumbuluisha.",
             "2": "Mashintuluka aa adi atangila dienza dia mikanda ya ku tubadi ku Enternete, dienza dia mishindu ya dilombola dia bilumbu, ne programe ya dilongesha dia balumbuluishi ne bena mudimu ba ku tubadi.",
@@ -504,9 +504,9 @@
           }
         },
         "3": {
-          "title": "DIUMVANGANA DIA BULOBA BUJIMA",
+          "title": "Diumvangana dia buloba bujima",
           "paragraphs": {
-            "1": "STATE COUNCIL udi wenza mudimu ne bibambalu bia kulumbuluisha bia pa buloba bujima ne udi ubuela mu bisangilu bia pa buloba bujima bua kuabanyangana malu adibu bapeta.",
+            "1": "State Council udi wenza mudimu ne bibambalu bia kulumbuluisha bia pa buloba bujima ne udi ubuela mu bisangilu bia pa buloba bujima bua kuabanyangana malu adibu bapeta.",
             "2": "Kupityila ku buobumue ne tubadi tua mu France, Belgique, ne matunga makuabu adi akula tshiena-France, tubadi tudi tujadika ne tudi anu ku mutu kua malu a mikenji.",
             "3": "Diumvuangana edi dia matunga a buloba bujima didi dikolesha ndongoluelu wa malu a kulumbuluisha wa ditunga dia RDC ne dikolesha bukole buadi bua kufila bululame bilondeshela mikenji ya matunga a buloba bujima."
           }
@@ -514,7 +514,7 @@
       }
     },
     "newsletter": {
-      "title": "LUMU NE BIENA BUALU",
+      "title": "Lumu ne biena bualu",
       "readMore": "Bala kabidi",
       "cta": "Longa bia bungi",
       "items": {
@@ -543,10 +543,10 @@
   },
   "about": {
     "hero": {
-      "title": "KUMVUA BUKOKESHI BUA BUALU BUA BULOMBODI BUA BULOMBODI MU DITUKU DIA DEMOCRATIQUE DU CONGO"
+      "title": "Kumvua bukokeshi bua bualu bua bulombodi bua bulombodi mu dituku dia democratique du congo"
     },
     "intro": {
-      "title": "KUMVUA BUKOKESHI BUA BUALU BUA BULOMBODI BUA BULOMBODI MU DITUKU DIA DEMOCRATIQUE DU CONGO",
+      "title": "Kumvua bukokeshi bua bualu bua bulombodi bua bulombodi mu dituku dia democratique du congo",
       "body": "Kanungu ka 151 kanungu ka 1 ka Dîyi dikulu dia ditunga dia RDC dia dia matuku 18 ngondo muibidi 2006, kadi kateka ndongoluelu wa dilumbuluisha dia mbulamatadi udi ne tubadi tua mbulamatadi ne tubadi tudi tulombola kudi Tshipangu tshia Ditunga. Kanungu ka 82 ka Dîyi dikulu Nomba 13/011-B dia dia matuku 11 ngondo muinayi 2013 didi dijadika bulongolodi, dienza ne mudimu wa tubadi tua mbulamatadi didi dileja ne kudi dikalaku dia tshipangu tshia ditunga tshidi ne tshibambalu tshiatshi tshia pa tshibidilu tshidi mu tshimenga tshikulu tshia ditunga dia Congo. Bukokeshi bwandi bwa bukokeshi budi mua kuenzeka muaba mukuabu. Mu malu a kale, Tshipangu tshia ditunga mu muyuki muipi eu, tshidi tshilonda malu a kale ne miji yatshi mu tshibambalu tshietu tshia kulumbuluisha. Tshipangu tshia mbulamatadi tshiakafukibua ku diambuluisha dia mukenji mu dia matuku 31 ngondo wa kumpala tshidimu tshia 1968, tshidi tshipeta tshimanyinu tshiatshi tshia pa buatshi bidimu bipite pa lukama. Bushuwa, bidimu muanda mukulu kunyima kua dipeta dia budikadidi mu 1960 ke muvua ditunga dijadike Tshipangu tshia Ditunga etshi bua kulombola bilumbu bia mbulamatadi. Anu kunyima kua bidimu lukama mu 2015 ke muvua Kabadi kanene ka malu a mbulamatadi. Kabadi aka kakalekela kuikalaku kunyima kua Dîyi dikulu dia ditunga dia 2006 ne dijadikibua diadi, divua diamba ne: mikenji yonso ivua mibengangane ne ivua kayiyi ne mushinga ne ivua ileja mu kanungu ka 223 ne: mapangadika ne mêyi avuabu bafile kumpala kua dimanyisha dia Dîyi dikulu dia ditunga adi ne bukole adi mapita ne tubadi tua mu malu adibu bapatule mu mushindu mutambe buimpe, badi bateka mu bilumbu bia pa buabi ne bia pa buabi mu dilonga dia pa buadi dia ngondo muibidi 18, 2006, Kabadi kanene ka malu a mbulamatadi kakalekela kuikalaku mu dia matuku 11 ngondo muinayi 2013 pavua mikenji ya bulongolodi No. 13/011-B ya dia matuku 11 ngondo muinayi 2013 iteka bulongolodi, dienza ne mudimu wa tubadi tua mbulamatadi. Bilondeshile kanungu ka 151 kanungu ka 3 ka Dîyi dikulu didi diteka bukookeshi bwa kulongolola bwa dienza dia bukookeshi bwa Kabadi kakulu ka kale. Matunga a buludiki ne tubadi tudi tuenza bulongolodi bwa dilumbuluisha dia buludiki mu Congo."
     },
     "rubrics": {
@@ -557,7 +557,7 @@
       "procedureBeforeCouncil": "Mushindu wa kuenza kumpala kua tshipangu tshia ditunga"
     },
     "legal": {
-      "title": "KUBUELA MU MIKANDA MINENE NE MIKANDA YA<br>YA TSHIBAMBALU tshia DITUKU",
+      "title": "Kubuela mu mikanda minene ne mikanda ya<br>Ya tshibambalu tshia dituku",
       "docs": {
         "1": "Mikenji ya bulongolodi N° 13/011-B ya dia matuku 11 ngondo muinayi 2013 idi itangila bulongolodi, dienza ne mudimu wa makokeshi a bantu bonso",
         "2": "Mukenji N° 13/046 wa dia matuku 25 ngondo wa tshitema 2013 udi utangila nzubu ya tshipangu tshia ditunga",
@@ -572,7 +572,7 @@
           "2": "CITUPA II: Disungula ne diteka dia ba majistre ne ba bafundi",
           "3": "CITUPA III: tshia mbulamatadi wa mikenji",
           "4": "CITUPA IV: Bukokeshi, bijadiki ne mikalu ya ba Magistrate",
-          "5": "CITUPA V: Dinyoka"
+          "5": "Citupa v: dinyoka"
         },
         "paragraph3": "Bidi bilondeshila tshitupa tshia II tshia tshipangu tshia ditunga kanungu ka 81 too ne kanungu ka 95 ne kanungu konso kadi kakula patoke bua tshipangu tshia ditunga mu nshapita idi ilonda eyi:",
         "list2": {
@@ -591,17 +591,17 @@
   },
   "reforms": {
     "hero": {
-      "title": "BIDI BILOMBA<br>BIDI BISHINTULULA",
+      "title": "Bidi bilomba<br>Bidi bishintulula",
       "body": "Kulengeja ndongoluelu wa malu a kulumbuluisha kupitshila ku dishintulula dia malu adi akolesha dienza dia mudimu bimpe, dikala patoke ne dipeta dia bululame kudi bena ditunga dijima dia Congo."
     },
     "building": {
-      "tag": "DISHINTULULA DIA BIDIMU",
-      "title": "KUENZA BUALU BUA BUALU BUA BUALU BUA BUKOLE",
+      "tag": "Dishintulula dia bidimu",
+      "title": "Kuenza bualu bua bualu bua bualu bua bukole",
       "body": "Bilondeshela Dîyi dikulu dia 2006, Tshipangu tshia ditunga tshiakatuadija malu a bungi bua kukolesha budikadidi bua balumbuluishi, kulengeja mushindu wa kupeta bululame ne kuenza malu bilondeshile mikenji ya matunga a bungi. Mianda eyi idi itangila dikolesha dia bibambalu, dishintulula dia malu a ordinatere ne dikolesha dia bukole."
     },
     "initiatives": {
-      "tag": "MUSHINDU WA KUSHINTULULA",
-      "title": "BIDIMU BIA DISHINTULULA DIA MUSHINDU",
+      "tag": "Mushindu wa kushintulula",
+      "title": "Bidimu bia dishintulula dia mushindu",
       "body": "Mushindu mujalame wa bitupa bitanu wa kulengeja bulongolodi buetu bua kulumbuluisha, bua kujadika dienza dia malu mimpe ku tshitupa tshionso tshia dishintuluka.",
       "badges": {
         "critical": "Bualu bua mushinga mukole",
@@ -632,8 +632,8 @@
       }
     },
     "stakeholders": {
-      "title": "BANTU BA MUSHINDU WA KUENZA",
-      "subtitle": "KUSHINTULULA BULOMBODI",
+      "title": "Bantu ba mushindu wa kuenza",
+      "subtitle": "Kushintulula bulombodi",
       "roles": {
         "president": "Mukalenge",
         "vicePresident": "Mulombodi wa ditunga",
@@ -644,7 +644,7 @@
   },
   "international": {
     "hero": {
-      "title": "INTERNATIONAL<br>RELATIONS",
+      "title": "International<br>Relations",
       "body": "Mu tshikondu tshia divuija dia meyi ne bululame pa buloba bujima, Tshisangilu tshia ditunga tshia ditunga dia Congo katshiena tshitapuluke ne nsombelu ewu to. Udi ubuela mu diyukidilangana dia balumbuluishi pa kulama buobumue bua bungi mu tshisumbu tshia tubadi tunene tua matunga adi bakula muakulu wa Mfualansa (AHJUCAF) ne tshisumbu tshia tubadi tunene tua mu Afrike (AA-HJF)."
     },
     "stats": {
@@ -653,7 +653,7 @@
       "exchanges": "Dishintakaja dia malu a kulumbuluisha ne mpungilu ya tshidimu tshionso"
     },
     "networks": {
-      "title": "BIDIMU BIA BULOBA BUA BULOBA BUJIMA",
+      "title": "Bidimu bia buloba bua buloba bujima",
       "subtitle": "Kabadi kadi kalama malanda mimpe ne malongolodi manene a tubadi tunene tua bena Francophone ne tua mu Afrike",
       "ahjucaf": {
         "name": "Tshisumbu tshia tubadi tunene tshienza mudimu ne Mfualansa",
@@ -665,7 +665,7 @@
       }
     },
     "domains": {
-      "title": "BIDIMU BIA BUALU BUA BUALU BUA BULOBA BUA BUALU",
+      "title": "Bidimu bia bualu bua bualu bua buloba bua bualu",
       "subtitle": "Diumvuangana dietu dia matunga a bungi didi difila dibuela mu malu mashilangane adi ne tshipatshila tshia kukolesha bulenga bua bululame ne dikokesha dia mikenji",
       "dialogue": {
         "title": "Diyukidilangana dia balumbuluishi",
@@ -687,20 +687,20 @@
     "collaboration": {
       "title": "Udi musue kuenza mudimu pamue anyi?",
       "body": "Tudi badisuike bua kuenza mudimu pamue ne kuyukila ne matunga makuabu a mu ditunga ne a pa buloba bujima adi adifila bua kukolesha bulongolodi bua malu a kulumbuluisha.",
-      "cta": "TUBIKIJA"
+      "cta": "Tubikija"
     }
   },
   "audiences": {
     "hero": {
-      "title": "BIUMVUILU NE BIDIMU BIA MU ROLL",
+      "title": "Biumvuilu ne bidimu bia mu roll",
       "body": "Tangila ndongamu ya kuteleja, bitupa bia mukanda, ne mapangadika a matuku mashale aa."
     },
     "understanding": {
-      "title": "KUMVUA BANTU BATELEJI",
+      "title": "Kumvua bantu bateleji",
       "body": "Keba buludiki bua mushindu udi bateleji balongolola ne mushindu wa kutangila mikanda ya lelu."
     },
     "metrics": {
-      "title": "BIDIMU BIDI BUMVUA",
+      "title": "Bidimu bidi bumvua",
       "subtitle": "Bungi bua diumvua dia ku ngondo ne bipeta mu bule bua matuku.",
       "volume": {
         "title": "Bungi bua diumvua dia ngondo yonso",
@@ -714,8 +714,8 @@
       }
     },
     "recent": {
-      "title": "BITUPA BIA MUDIMU WA MUDIMU",
-      "subtitle": "BITUPA BIA DIUMVUA DIA KUMPALA"
+      "title": "Bitupa bia mudimu wa mudimu",
+      "subtitle": "Bitupa bia diumvua dia kumpala"
     },
     "documents": {
       "civil": {
@@ -736,21 +736,21 @@
       }
     },
     "actions": {
-      "downloadPdf": "KUANGATA PDF"
+      "downloadPdf": "Kuangata PDF"
     },
     "assistance": {
       "title": "Udi dijinga ne diambuluisha anyi?",
       "body": "Udi mua kubikila bena mu tshipangu tshia ditunga bua kukuambuluisha bua kupeta mikanda anyi ndongamu.",
-      "cta": "TUBIKIJA"
+      "cta": "Tubikija"
     }
   },
   "organization": {
     "hero": {
-      "title": "BULONGOLODI<br>BUA BUALU BUA DITUKU"
+      "title": "Bulongolodi<br>Bua bualu bua dituku"
     },
     "firstPresident": {
       "alt": "Mfumu wa kumpala",
-      "title": "MULOMBODI WA KUMPALA",
+      "title": "Mulombodi wa kumpala",
       "body": "Mfumu wa ditunga wa kumpala udi ulombola tshipangu tshia ditunga, ulombola bisangilu biatshi, ne udi utangila mudimu muimpe wa tshibambalu etshi."
     },
     "orgPage": {
@@ -797,7 +797,7 @@
       }
     },
     "firstPresidents": {
-      "title": "BALOMBODI BA KUMPALA",
+      "title": "Balombodi ba kumpala",
       "honoraryTitle": "Mulombodi wa kumpala wa buneme ne wa tshijila: 2018 - 2022",
       "honoraryTitleSecond": "Mulombodi wa buneme ne wa mudimu: 2022 - 2025",
       "honoraryTitleThird": "Mulombodi wa kumpala: 2025 - lelu",
@@ -805,14 +805,14 @@
       "placeholderSubtitle": "Muaba wa foto mmulama",
       "photoLabel": "Tshimfuanyi {{index}}"
     },
-    "seniorLabel": "BA MAJISTRATE BANENE",
+    "seniorLabel": "Ba majistrate banene",
     "chart": {
-      "title": "TABULU WA BULONGOLODI",
+      "title": "Tabulu wa bulongolodi",
       "subtitle": "Tshikoso tshia bulongolodi bua bulombodi ne bitupa bia nshindamenu bia tshipangu tshia ditunga.",
-      "interactiveTitle": "TABULE WA ORG WA KUENZA",
+      "interactiveTitle": "Tabule wa org wa kuenza",
       "interactiveSubtitle": "Tangila bulongolodi ne mushindu wa kufila luapolo.",
       "aria": "Tablo wa bulongolodi udi utangila malu",
-      "peopleTitle": "BULOMBODI KU DINA",
+      "peopleTitle": "Bulombodi ku dina",
       "peopleSubtitle": "Mêna a Mulombodi wa kumpala, balombodi ne bafidi ba mibelu.",
       "peopleFirstPresidentName": "Brigitte Nsensele Wa Nsensele",
       "namedPhotoRoles": {
@@ -849,11 +849,11 @@
       "summary": "Kuleja balombodi ba {{presidents}} ne bafidi ba mibelu ba {{advisors}}"
     },
     "presidents": {
-      "title": "BA PRESIDENT",
+      "title": "Ba president",
       "empty": "Kakuena mfumu wa ditunga udi upetangana ne tshiudi ukeba to."
     },
     "advisors": {
-      "title": "BANTU BA MIBELU",
+      "title": "Bantu ba mibelu",
       "empty": "Kakuena mufidi wa mibelu udi ukumbanangana ne tshiudi ukeba to."
     },
     "members": {
@@ -861,7 +861,7 @@
       "loadMore": "Teka bia bungi"
     },
     "services": {
-      "overviewTitle": "BIDIMU BIDI BIENZEKA",
+      "overviewTitle": "Bidimu bidi bienzeka",
       "learnMore": "Longa bia bungi",
       "registry": {
         "title": "Mukanda wa difunda",
@@ -875,7 +875,7 @@
         "title": "TV wa tshipangu",
         "body": "Tangila bilumbu, mamanyisha, ne malu mapiamapia."
       },
-      "title": "MIDIMU YETU",
+      "title": "Midimu yetu",
       "subtitle": "Tangila bitupa ne bibambalu bidi bikuatshisha mudimu wa Tshipangu tshia Ditunga.",
       "divisions": {
         "title": "Matapuluka",

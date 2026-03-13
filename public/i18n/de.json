@@ -3,7 +3,7 @@
     "siteName": "Staatsrat der DR Kongo",
     "contact": {
       "phone": "+ 243 (21) 00000000",
-      "hours": "MONTAG - FREITAG 8:30 - 16:00"
+      "hours": "Montag - freitag 8:30 - 16:00"
     },
     "social": {
       "facebook": "Facebook",
@@ -16,22 +16,22 @@
       "switchToFrench": "Zu Französisch wechseln"
     },
     "nav": {
-      "home": "START",
-      "court": "DAS GERICHT",
+      "home": "Start",
+      "court": "Das gericht",
       "presentation": "Vorstellung",
       "organization": "Organisation",
       "administrativeCourts": "Verwaltungsgerichte",
       "administrativeTribunals": "Verwaltungstribunale",
       "reforms": "Reformen",
       "international": "Internationale Beziehungen",
-      "audiences": "ANHÖRUNGEN",
-      "steps": "SCHRITTE",
-      "news": "NACHRICHTEN",
+      "audiences": "Anhörungen",
+      "steps": "Schritte",
+      "news": "Nachrichten",
       "bookAppointment": "Termin buchen"
     }
   },
   "hero": {
-    "titleOpening2025": "DAS GERICHTSJAHR WIRD IM STAATSRAT FÜR DIE AMTSPERIODE 2025 - 2026 ERÖFFNET"
+    "titleOpening2025": "Das gerichtsjahr wird im staatsrat für die amtsperiode 2025 - 2026 eröffnet"
   },
   "mobileNav": {
     "home": "Start",
@@ -84,15 +84,15 @@
   },
   "news": {
     "hero": {
-      "title": "NEWS & AKTUELLES",
+      "title": "News & aktuelles",
       "body": "Unrecht kann sich in unserer Gesellschaft auf viele Arten zeigen. Wir geben Ihnen die Möglichkeit, alle Formen von Missbrauch zu melden."
     },
     "section": {
-      "title": "NEWS & AKTUELLES",
-      "subtitle": "VISION MACHT UNS AUS"
+      "title": "News & aktuelles",
+      "subtitle": "Vision macht uns aus"
     },
     "insights": {
-      "title": "NEWS-EINBLICKE",
+      "title": "News-einblicke",
       "subtitle": "Trends nach Thema und Veröffentlichungsrhythmus",
       "topics": {
         "title": "Themen nach Monat",
@@ -132,13 +132,13 @@
       "2": {
         "date": "30. Januar",
         "category": "Verwaltung",
-        "title": "ORIENTIERUNGSTREFFEN IM STAATSRAT",
+        "title": "Orientierungstreffen im staatsrat",
         "excerpt": "Kinshasa, 18. Oktober 2025: Der Staatsrat der Demokratischen Republik Kongo informiert die Öf..."
       },
       "3": {
         "date": "30. Januar",
         "category": "Verwaltung",
-        "title": "ORIENTIERUNGSTREFFEN IM STAATSRAT",
+        "title": "Orientierungstreffen im staatsrat",
         "excerpt": "Kinshasa, 18. Oktober 2025: Der Staatsrat der Demokratischen Republik Kongo informiert die Öf..."
       }
     }
@@ -146,15 +146,15 @@
   "steps": {
     "hero": {
       "report": {
-        "title": "MELDUNG",
+        "title": "Meldung",
         "body": "Unrecht kann sich in unserer Gesellschaft auf viele Arten zeigen. Wir geben Ihnen die Möglichkeit, alle Formen von Missbrauch zu melden."
       },
       "appointment": {
-        "title": "TERMIN<br>BUCHEN",
+        "title": "Termin<br>Buchen",
         "body": "Um ein Treffen mit dem Staatsrat zu vereinbaren, füllen Sie bitte das folgende Terminanfrageformular aus. Stellen Sie sicher, dass alle erforderlichen Felder korrekt ausgefüllt sind, damit wir Ihre Anfrage effizient bearbeiten können. Sie erhalten eine Bestätigung per E-Mail oder Telefon mit Datum und Uhrzeit."
       },
       "appeal": {
-        "title": "REKURS AN DEN<br>STAATSRAT",
+        "title": "Rekurs an den<br>Staatsrat",
         "body1": "Ein Rekurs an den Staatsrat ist ein verwaltungsrechtlicher Rechtsbehelf, der es einer Partei ermöglicht, Verwaltungsentscheidungen und -handlungen anzufechten. Der Staatsrat prüft, ob das Verwaltungsrecht korrekt angewendet wurde und ob die richtigen Verfahren eingehalten wurden.",
         "body2": "Der Staatsrat wird durch einen Antrag der Parteien oder durch eine beim Rat eingereichte Erklärung angerufen. Rekurse müssen innerhalb der gesetzlichen Fristen eingereicht und durch eine Petition mit unterstützenden Dokumenten bestätigt werden."
       }
@@ -166,16 +166,16 @@
     },
     "forms": {
       "report": {
-        "title": "BESCHWERDEFORMULAR",
-        "subtitle": "WIR MÖCHTEN IHRE ANLIEGEN HÖREN"
+        "title": "Beschwerdeformular",
+        "subtitle": "Wir möchten ihre anliegen hören"
       },
       "appointment": {
-        "title": "TERMIN VEREINBAREN",
-        "subtitle": "WIR HELFEN IHNEN GERN"
+        "title": "Termin vereinbaren",
+        "subtitle": "Wir helfen ihnen gern"
       },
       "appeal": {
-        "title": "REKURSFORMULAR",
-        "subtitle": "WIR MÖCHTEN IHRE ANLIEGEN HÖREN"
+        "title": "Rekursformular",
+        "subtitle": "Wir möchten ihre anliegen hören"
       },
       "fullName": "Vollständiger Name *",
       "email": "E-Mail *",
@@ -201,11 +201,11 @@
         "nextMonth": "Nächsten Monat"
       },
       "message": "Nachricht *",
-      "submit": "NACHRICHT SENDEN"
+      "submit": "Nachricht senden"
     }
   },
   "appealSteps": {
-    "title": "WIE EIN REKURS EINGEREICHT WIRD",
+    "title": "Wie ein rekurs eingereicht wird",
     "subtitle": "Folgen Sie diesen Schritten, um Ihren Rekurs beim Staatsrat einzureichen",
     "steps": {
       "1": {
@@ -236,7 +236,7 @@
     "cta": "Senden Sie uns eine E-Mail"
   },
   "faqs": {
-    "title": "HÄUFIG GESTELLTE FRAGEN",
+    "title": "Häufig gestellte fragen",
     "items": {
       "1": {
         "question": "Was ist die Frist für die Einreichung eines Rekurses?",
@@ -298,26 +298,26 @@
       "learnMore": "Mehr erfahren",
       "slides": {
         "0": {
-          "title": "STAATSRAT - JUDIZIELLER JAHRESAUFTAKT 2025-2026",
-          "subtitle": "PALAST DES VOLKES - 13. NOVEMBER 2025",
+          "title": "Staatsrat - judizieller jahresauftakt 2025-2026",
+          "subtitle": "Palast des volkes - 13. november 2025",
           "body": "Der Staatsrat versammelte sich im Palais des Peuples zur feierlichen Eröffnung des Justizjahres 2025-2026.",
           "cta": "Mehr erfahren"
         },
         "1": {
-          "title": "DAS GERICHTSJAHR WIRD IM STAATSRAT FÜR DIE AMTSPERIODE 2025 - 2026 ERÖFFNET",
-          "subtitle": "HAUS VON RECHT UND ORDNUNG",
+          "title": "Das gerichtsjahr wird im staatsrat für die amtsperiode 2025 - 2026 eröffnet",
+          "subtitle": "Haus von recht und ordnung",
           "body": "Dieses Video zeigt die feierliche Eröffnung des Justizjahres 2025-2026. In Anwesenheit von Präsident Felix Tshisekedi brachte die Sitzung hochrangige Richter und Rechtsverantwortliche zusammen.",
           "cta": "Live-Sitzung auf YouTube ansehen"
         },
         "2": {
-          "title": "STÄRKUNG DER JUSTIZUNABHÄNGIGKEIT UND RECHENSCHAFT",
-          "subtitle": "HAUS VON RECHT UND ORDNUNG",
+          "title": "Stärkung der justizunabhängigkeit und rechenschaft",
+          "subtitle": "Haus von recht und ordnung",
           "body": "Der STAATSRAT setzt sich weiterhin für Gerechtigkeit, Fairness und Rechtsstaatlichkeit ein. Wir verpflichten uns zu Transparenz und Integrität.",
           "cta": "Mehr über unsere Mission erfahren"
         },
         "3": {
-          "title": "FÖRDERUNG JURISTISCHER EXZELLENZ IN DER DEMOKRATISCHEN REPUBLIK KONGO",
-          "subtitle": "HAUS VON RECHT UND ORDNUNG",
+          "title": "Förderung juristischer exzellenz in der demokratischen republik kongo",
+          "subtitle": "Haus von recht und ordnung",
           "body": "Durch rigorose juristische Ausbildung und die Einhaltung internationaler Best Practices streben wir höchste Standards gerichtlicher Exzellenz an.",
           "cta": "Unsere Initiativen erkunden"
         }
@@ -327,25 +327,25 @@
       "items": {
         "news": {
           "alt": "Nachrichten",
-          "title": "NACHRICHTEN",
+          "title": "Nachrichten",
           "body": "Bleiben Sie über wichtige Entscheidungen und Ereignisse informiert.",
           "action": "Lesen"
         },
         "excerpts": {
           "alt": "Auszüge",
-          "title": "AUSZÜGE AUS ROLLEN",
+          "title": "Auszüge aus rollen",
           "body": "Prüfen Sie Anhörungszeiten und laufende Fälle.",
           "action": "Mehr erfahren"
         },
         "report": {
           "alt": "Meldung",
-          "title": "MELDUNG",
+          "title": "Meldung",
           "body": "Melden Sie verdächtige oder illegale Aktivitäten sicher.",
           "action": "Meldung abgeben"
         },
         "appointment": {
           "alt": "Termin buchen",
-          "title": "TERMIN BUCHEN",
+          "title": "Termin buchen",
           "body": "Planen Sie Konsultationen mit Gerichtsoffiziellen.",
           "action": "Jetzt buchen"
         }
@@ -373,7 +373,7 @@
       }
     },
     "offer": {
-      "title": "WAS WIR BIETEN",
+      "title": "Was wir bieten",
       "subtitle": "Wir bieten maßgeschneiderte rechtliche Lösungen, um Ihre Rechte zu schützen und Gerechtigkeit zu gewährleisten.",
       "cards": {
         "1": {
@@ -395,7 +395,7 @@
       }
     },
     "expertise": {
-      "title": "FACHGEBIETE",
+      "title": "Fachgebiete",
       "subtitle": "Der STAATSRAT ist als oberstes Gericht der ordentlichen Gerichtsbarkeit für verschiedene Rechtsmaterien zuständig.",
       "stats": {
         "domains": {
@@ -488,7 +488,7 @@
       "cta": "Mehr erfahren",
       "slides": {
         "1": {
-          "title": "DIE ERSTE PRÄSIDENTIN DES STAATSRATS",
+          "title": "Die erste präsidentin des staatsrats",
           "paragraphs": {
             "1": "Als dritthöchstes Mitglied des Obersten Rates der Justiz der DRK spendete die Erste Präsidentin des STAATSRATS, Brigitte Nsensele Wa Nsensele, am Donnerstag, dem 27. Februar, aus Solidarität mit den Opfern der ruandischen Aggression im Osten des Landes Blut.",
             "2": "Für jeden demokratischen kongolesischen Bürger ist die Unterstützung der Kriegsanstrengungen eine staatsbürgerliche Pflicht. Die Justiz ist davon nicht ausgenommen.",
@@ -496,7 +496,7 @@
           }
         },
         "2": {
-          "title": "JUSTIZFÜHRUNG UND REFORM",
+          "title": "Justizführung und reform",
           "paragraphs": {
             "1": "Unter der Führung der Ersten Präsidentin hat der STAATSRAT umfassende Justizreformen eingeleitet, die auf die Modernisierung des Justizsystems abzielen.",
             "2": "Die Reformen umfassen die Digitalisierung von Gerichtsakten, die Einführung von Fallmanagementsystemen sowie Schulungsprogramme für Richter und Gerichtspersonal.",
@@ -504,7 +504,7 @@
           }
         },
         "3": {
-          "title": "INTERNATIONALE ZUSAMMENARBEIT",
+          "title": "Internationale zusammenarbeit",
           "paragraphs": {
             "1": "Der STAATSRAT arbeitet aktiv mit internationalen Justizinstitutionen zusammen und nimmt an globalen Foren teil, um Erfahrungen auszutauschen.",
             "2": "Durch Partnerschaften mit Gerichten in Frankreich, Belgien und anderen frankophonen Ländern stellt das Gericht sicher, dass es an der Spitze rechtlicher Entwicklungen bleibt.",
@@ -514,7 +514,7 @@
       }
     },
     "newsletter": {
-      "title": "NEWS & ARTIKEL",
+      "title": "News & artikel",
       "readMore": "Weiterlesen",
       "cta": "Mehr erfahren",
       "items": {
@@ -543,10 +543,10 @@
   },
   "about": {
     "hero": {
-      "title": "DAS HÖCHSTE GERICHT DER VERWALTUNGSGERICHTSBARKEIT IN DER DEMOKRATISCHEN REPUBLIK KONGO VERSTEHEN"
+      "title": "Das höchste gericht der verwaltungsgerichtsbarkeit in der demokratischen republik kongo verstehen"
     },
     "intro": {
-      "title": "DAS HÖCHSTE GERICHT DER VERWALTUNGSGERICHTSBARKEIT IN DER DEMOKRATISCHEN REPUBLIK KONGO VERSTEHEN",
+      "title": "Das höchste gericht der verwaltungsgerichtsbarkeit in der demokratischen republik kongo verstehen",
       "body": "Artikel 151 Absatz 1 der Verfassung der DRK vom 18. Februar 2006 errichtet ein verwaltungsgerichtliches System aus Verwaltungsgerichten und -tribunalen unter der Aufsicht des Staatsrats. Artikel 82 des Organgesetzes Nr. 13/011-B vom 11. April 2013 zur Organisation, Zusammensetzung und Funktionsweise der Verwaltungsgerichte bestimmt das Bestehen eines Staatsrats mit ordentlichem Sitz in der Hauptstadt der Demokratischen Republik Kongo. Seine Zuständigkeit kann an einem anderen Ort ausgeübt werden. Historisch zeichnet der Staatsrat in dieser kurzen Darstellung seine Geschichte und Wurzeln innerhalb unserer Justizinstitution nach. Durch Gesetzesdekret vom 31. Januar 1968 geschaffen, hat der Staatsrat seine markante Prägung seit mehr als einem Jahrhundert. Tatsächlich wurde acht Jahre nach der Unabhängigkeit 1960 dieser Staatsrat zur Regelung administrativer Rekurse eingerichtet. Erst nach einem Jahrhundert wurde 2015 das Oberste Verwaltungsgericht geschaffen. Dieses Gericht hörte im Zuge der Verfassung von 2006 auf zu bestehen, und ihre Einführung erklärte alle widersprechenden Bestimmungen für nichtig und bestimmte in Artikel 223, dass die vor der Verkündung der geltenden Verfassung ergangenen Urteile und Beschlüsse als solche gelten. Die Gerichte, die in letzter Instanz entscheiden, wurden wegen größerer Spezialisierung als Präzedenzinstrument eingesetzt. In der Spezialisierung vom 18. Februar 2006 hörte das Oberste Verwaltungsgericht endgültig am 11. April 2013 auf zu bestehen, als das Organgesetz Nr. 13/011-B vom 11. April 2013 über die Organisation, Zusammensetzung und Funktionsweise der Verwaltungsgerichte erlassen wurde. Gemäß Artikel 151 Absatz 3 der Verfassung wird die Regulierungsbefugnis zur Ausübung der Kompetenzen des früheren Obersten Verwaltungsgerichts festgelegt. Die Verwaltungsgerichte und -tribunale bilden das verwaltungsgerichtliche System des Kongo."
     },
     "rubrics": {
@@ -557,7 +557,7 @@
       "procedureBeforeCouncil": "Verfahren vor dem Staatsrat"
     },
     "legal": {
-      "title": "ZUGRIFF AUF DIE WICHTIGSTEN RECHTS- UND REGELWERKSTEXTE<br>DES STAATSRATS",
+      "title": "Zugriff auf die wichtigsten rechts- und regelwerkstexte<br>Des staatsrats",
       "docs": {
         "1": "Organgesetz Nr. 13/011-B vom 11. April 2013 über die Organisation, Zusammensetzung und Funktionsweise der ordentlichen Gerichte",
         "2": "Dekret Nr. 13/046 vom 25. September 2013 über die Kammern des Staatsrats",
@@ -591,17 +591,17 @@
   },
   "reforms": {
     "hero": {
-      "title": "VORGESCHLAGENE<br>REFORMEN",
+      "title": "Vorgeschlagene<br>Reformen",
       "body": "Modernisierung des Justizsystems durch strategische Reformen, die Effizienz, Transparenz und Zugang zur Justiz für alle kongolesischen Bürger verbessern."
     },
     "building": {
-      "tag": "JUSTIZMODERNISIERUNG",
-      "title": "AUFBAU EINES STÄRKEREN JUSTIZSYSTEMS",
+      "tag": "Justizmodernisierung",
+      "title": "Aufbau eines stärkeren justizsystems",
       "body": "Nach der Verfassung von 2006 hat der STAATSRAT umfassende Reformen eingeleitet, um die richterliche Unabhängigkeit zu stärken, den Zugang zur Justiz zu verbessern und internationale Standards zu erfüllen. Diese Initiativen konzentrieren sich auf institutionelle Stärkung, digitale Transformation und Kapazitätsaufbau."
     },
     "initiatives": {
-      "tag": "TRANSFORMATIONSFAHRPLAN",
-      "title": "STRATEGISCHE REFORMINITIATIVEN",
+      "tag": "Transformationsfahrplan",
+      "title": "Strategische reforminitiativen",
       "body": "Ein umfassender Fünf-Phasen-Ansatz zur Modernisierung unseres Justizsystems, der Exzellenz in jeder Transformationsphase sicherstellt.",
       "badges": {
         "critical": "Kritische Priorität",
@@ -632,8 +632,8 @@
       }
     },
     "stakeholders": {
-      "title": "SCHLÜSSELAKTEURE",
-      "subtitle": "REFORMLEITUNG",
+      "title": "Schlüsselakteure",
+      "subtitle": "Reformleitung",
       "roles": {
         "president": "Präsident",
         "vicePresident": "Vizepräsident",
@@ -644,7 +644,7 @@
   },
   "international": {
     "hero": {
-      "title": "INTERNATIONALE<br>BEZIEHUNGEN",
+      "title": "Internationale<br>Beziehungen",
       "body": "Im Kontext der Internationalisierung von Recht und Justiz ist der STAATSRAT der Demokratischen Republik Kongo nicht von diesem Umfeld isoliert. Er beteiligt sich aktiv am Dialog der Richter und hält ein hohes Maß an Zusammenarbeit im Rahmen der Vereinigung der obersten Gerichte der französischsprachigen Staaten (AHJUCAF) und der Afrikanischen Vereinigung frankophoner oberster Gerichte (AA-HJF) aufrecht."
     },
     "stats": {
@@ -653,7 +653,7 @@
       "exchanges": "Jährliche Justizaustausche & Konferenzen"
     },
     "networks": {
-      "title": "INTERNATIONALE JUSTIZNETZWERKE",
+      "title": "Internationale justiznetzwerke",
       "subtitle": "Das Gericht pflegt privilegierte Beziehungen zu den führenden Vereinigungen frankophoner und afrikanischer oberster Gerichte",
       "ahjucaf": {
         "name": "Vereinigung der obersten Gerichte französischer Sprache",
@@ -665,7 +665,7 @@
       }
     },
     "domains": {
-      "title": "BEREICHE INTERNATIONALER ZUSAMMENARBEIT",
+      "title": "Bereiche internationaler zusammenarbeit",
       "subtitle": "Unser internationales Engagement äußert sich in aktiver Teilnahme an Initiativen zur Stärkung der Qualität der Rechtspflege und der Rechtsstaatlichkeit",
       "dialogue": {
         "title": "Justizieller Dialog",
@@ -687,20 +687,20 @@
     "collaboration": {
       "title": "An Zusammenarbeit interessiert?",
       "body": "Wir sind offen für institutionelle Partnerschaften und Austausche mit anderen nationalen und internationalen Gerichtsbarkeiten, die sich der Stärkung von Justizsystemen verpflichten.",
-      "cta": "KONTAKTIEREN SIE UNS"
+      "cta": "Kontaktieren sie uns"
     }
   },
   "audiences": {
     "hero": {
-      "title": "ANHÖRUNGEN UND ROLLENAUSZÜGE",
+      "title": "Anhörungen und rollenauszüge",
       "body": "Zugriff auf Anhörungspläne, Rollenauszüge und aktuelle Entscheidungen."
     },
     "understanding": {
-      "title": "ANHÖRUNGEN VERSTEHEN",
+      "title": "Anhörungen verstehen",
       "body": "Finden Sie Hinweise, wie Anhörungen organisiert sind und wie aktuelle Rollen konsultiert werden."
     },
     "metrics": {
-      "title": "ANHÖRUNGS-KENNZAHLEN",
+      "title": "Anhörungs-kennzahlen",
       "subtitle": "Monatliches Anhörungsvolumen und Ergebnisse im Zeitverlauf.",
       "volume": {
         "title": "Monatliches Anhörungsvolumen",
@@ -714,8 +714,8 @@
       }
     },
     "recent": {
-      "title": "AKTUELLE ROLLENAUSZÜGE",
-      "subtitle": "NEUESTE ANHÖRUNGSAUSZÜGE"
+      "title": "Aktuelle rollenauszüge",
+      "subtitle": "Neueste anhörungsauszüge"
     },
     "documents": {
       "civil": {
@@ -736,21 +736,21 @@
       }
     },
     "actions": {
-      "downloadPdf": "PDF HERUNTERLADEN"
+      "downloadPdf": "PDF herunterladen"
     },
     "assistance": {
       "title": "Brauchen Sie Hilfe?",
       "body": "Kontaktieren Sie den Staatsrat, wenn Sie Hilfe beim Zugriff auf Dokumente oder Termine benötigen.",
-      "cta": "KONTAKTIEREN SIE UNS"
+      "cta": "Kontaktieren sie uns"
     }
   },
   "organization": {
     "hero": {
-      "title": "ORGANISATION<br>DES STAATSRATS"
+      "title": "Organisation<br>Des staatsrats"
     },
     "firstPresident": {
       "alt": "Erste Präsidentin",
-      "title": "DIE ERSTE PRÄSIDENTIN",
+      "title": "Die erste präsidentin",
       "body": "Die Erste Präsidentin leitet den Staatsrat, führt den Vorsitz bei Sitzungen und gewährleistet das ordnungsgemäße Funktionieren der Institution."
     },
     "orgPage": {
@@ -797,7 +797,7 @@
       }
     },
     "firstPresidents": {
-      "title": "ERSTE PRÄSIDENTEN",
+      "title": "Erste präsidenten",
       "honoraryTitle": "Ehren- und Altpräsidentin: 2018 - 2022",
       "honoraryTitleSecond": "Ehren- und Altpräsident: 2022 - 2025",
       "honoraryTitleThird": "Erste Präsidentin: 2025 - heute",
@@ -805,14 +805,14 @@
       "placeholderSubtitle": "Platzhalter für Foto",
       "photoLabel": "Foto {{index}}"
     },
-    "seniorLabel": "LEITENDE MAGISTRATE",
+    "seniorLabel": "Leitende magistrate",
     "chart": {
-      "title": "ORGANIGRAMM",
+      "title": "Organigramm",
       "subtitle": "Überblick über die Führungsstruktur und Kernbereiche des Staatsrats.",
-      "interactiveTitle": "INTERAKTIVES ORGANIGRAMM",
+      "interactiveTitle": "Interaktives organigramm",
       "interactiveSubtitle": "Erkunden Sie Hierarchie und Berichtslinien.",
       "aria": "Interaktives Organigramm",
-      "peopleTitle": "FÜHRUNG NACH NAMEN",
+      "peopleTitle": "Führung nach namen",
       "peopleSubtitle": "Namen der Ersten Präsidentin, Präsidenten und Berater.",
       "peopleFirstPresidentName": "Brigitte Nsensele Wa Nsensele",
       "namedPhotoRoles": {
@@ -849,11 +849,11 @@
       "summary": "Es werden {{presidents}} Präsidenten und {{advisors}} Berater angezeigt"
     },
     "presidents": {
-      "title": "DIE PRÄSIDENTEN",
+      "title": "Die präsidenten",
       "empty": "Keine Präsidenten entsprechen Ihrer Suche."
     },
     "advisors": {
-      "title": "DIE BERATER",
+      "title": "Die berater",
       "empty": "Keine Berater entsprechen Ihrer Suche."
     },
     "members": {
@@ -861,7 +861,7 @@
       "loadMore": "Mehr laden"
     },
     "services": {
-      "overviewTitle": "DIENSTLEISTUNGSÜBERSICHT",
+      "overviewTitle": "Dienstleistungsübersicht",
       "learnMore": "Mehr erfahren",
       "registry": {
         "title": "Register",
@@ -875,7 +875,7 @@
         "title": "Staatsrat TV",
         "body": "Anhörungen, Bekanntmachungen und Updates ansehen."
       },
-      "title": "UNSERE DIENSTLEISTUNGEN",
+      "title": "Unsere dienstleistungen",
       "subtitle": "Entdecken Sie die Abteilungen und Büros, die die Arbeit des Staatsrats unterstützen.",
       "divisions": {
         "title": "Abteilungen",

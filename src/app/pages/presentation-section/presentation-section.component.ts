@@ -534,7 +534,6 @@ type GreffeFirstPresident = {
         margin: 0 0 10px;
         font-size: 0.9rem;
         letter-spacing: 3px;
-        text-transform: uppercase;
         color: rgba(148, 210, 240, 0.95);
         font-weight: 600;
       }
@@ -542,7 +541,6 @@ type GreffeFirstPresident = {
       .hero-title {
         margin: 0;
         font-size: clamp(2.2rem, 4.8vw, 3.1rem);
-        text-transform: uppercase;
         letter-spacing: 2px;
         color: #ffffff;
       }
@@ -691,7 +689,6 @@ type GreffeFirstPresident = {
         justify-content: center;
         font-weight: 700;
         letter-spacing: 2px;
-        text-transform: uppercase;
         color: #1a2942;
       }
 
@@ -699,7 +696,6 @@ type GreffeFirstPresident = {
       .chart-section-title {
         margin: 0 0 18px;
         font-size: 1.2rem;
-        text-transform: uppercase;
         letter-spacing: 1.2px;
         color: #1a1a1a;
         text-align: center;
@@ -708,7 +704,6 @@ type GreffeFirstPresident = {
       .chart-names h3 {
         margin: 0 0 12px;
         font-size: 1.2rem;
-        text-transform: uppercase;
         letter-spacing: 1px;
         color: #1a1a1a;
         text-align: center;
@@ -753,7 +748,6 @@ type GreffeFirstPresident = {
         border-radius: 16px;
         font-weight: 600;
         color: #1a1a1a;
-        text-transform: uppercase;
         letter-spacing: 1.3px;
         font-size: 0.75rem;
         box-shadow: 0 8px 20px rgba(26, 41, 66, 0.1);
@@ -833,7 +827,6 @@ type GreffeFirstPresident = {
         text-align: center;
         font-size: 0.82rem;
         font-weight: 700;
-        text-transform: uppercase;
         letter-spacing: 1px;
         color: #1a2942;
         line-height: 1.45;
@@ -856,7 +849,6 @@ type GreffeFirstPresident = {
         justify-content: center;
         font-weight: 700;
         letter-spacing: 2px;
-        text-transform: uppercase;
         color: #1a2942;
         overflow: hidden;
       }
@@ -883,7 +875,6 @@ type GreffeFirstPresident = {
         margin: 0 0 16px;
         font-size: 1rem;
         font-weight: 700;
-        text-transform: uppercase;
         letter-spacing: 2px;
         color: #1f9bd9;
       }
@@ -980,7 +971,6 @@ type GreffeFirstPresident = {
         margin: 12px 0 28px;
         font-size: 2rem;
         letter-spacing: 1px;
-        text-transform: uppercase;
         color: #1a1a1a;
       }
 
@@ -1071,14 +1061,12 @@ type GreffeFirstPresident = {
         justify-content: center;
         font-weight: 700;
         letter-spacing: 2px;
-        text-transform: uppercase;
         color: #1a2942;
       }
 
       .greffe-card-body h2 {
         margin: 0 0 10px;
         font-size: 1.2rem;
-        text-transform: uppercase;
         letter-spacing: 1px;
       }
 
@@ -1109,7 +1097,6 @@ type GreffeFirstPresident = {
       .greffe-section-title {
         margin: 8px 0 8px;
         font-size: 1.1rem;
-        text-transform: uppercase;
         letter-spacing: 1px;
         color: #1a1a1a;
       }
@@ -1152,7 +1139,6 @@ type GreffeFirstPresident = {
       .greffe-text h3 {
         margin: 0 0 6px;
         font-size: 1.05rem;
-        text-transform: uppercase;
         letter-spacing: 1px;
       }
 
@@ -1227,7 +1213,6 @@ type GreffeFirstPresident = {
         justify-content: center;
         font-weight: 700;
         letter-spacing: 3px;
-        text-transform: uppercase;
         color: #1a2942;
         border-bottom: 1px solid rgba(26, 41, 66, 0.08);
         position: relative;
@@ -1266,7 +1251,6 @@ type GreffeFirstPresident = {
         margin: 16px 20px 22px;
         font-size: 0.95rem;
         letter-spacing: 1.6px;
-        text-transform: uppercase;
         color: #0f172a;
         line-height: 1.4;
       }
