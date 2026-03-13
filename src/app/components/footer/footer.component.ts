@@ -185,7 +185,6 @@ import { CommonModule } from '@angular/common';
         font-size: 1.1rem;
         font-weight: 600;
         margin-bottom: 20px;
-        text-transform: uppercase;
         letter-spacing: 1.2px;
         position: relative;
         display: inline-flex;

@@ -249,7 +249,6 @@ import { FooterComponent } from '../../components/footer/footer.component';
         margin: 0;
         letter-spacing: 8px;
         color: #ffffff;
-        text-transform: uppercase;
         text-align: left;
       }
 
@@ -298,14 +297,12 @@ import { FooterComponent } from '../../components/footer/footer.component';
         color: #1a1a1a;
         margin: 0;
         letter-spacing: 3px;
-        text-transform: uppercase;
         white-space: nowrap;
       }
 
       .section-subtitle {
         font-size: 0.85rem;
-        color: #1f9bd9 !important;
-        text-transform: uppercase;
+        color: #1a1a1a;
         letter-spacing: 3px;
         margin: 0 0 60px 0;
         text-align: center;
@@ -335,16 +332,14 @@ import { FooterComponent } from '../../components/footer/footer.component';
         margin: 0;
         color: #1a1a1a;
         letter-spacing: 1px;
-        text-transform: uppercase;
         text-align: left;
       }
 
       .insights-subtitle {
         font-size: 0.85rem;
-        color: #1f9bd9 !important;
+        color: #1a1a1a;
         margin: 0 0 24px;
         letter-spacing: 1px;
-        text-transform: uppercase;
         text-align: left;
       }
 
@@ -380,9 +375,8 @@ import { FooterComponent } from '../../components/footer/footer.component';
 
       .insight-note {
         font-size: 0.75rem;
-        text-transform: uppercase;
         letter-spacing: 1px;
-        color: #1f9bd9 !important;
+        color: #1a1a1a;
         font-weight: 600;
         white-space: nowrap;
       }

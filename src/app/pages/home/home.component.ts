@@ -1682,7 +1682,7 @@ type HighchartsStatic = typeof import('highcharts');
         overflow: hidden;
       }
       .kf-section .sec-sub {
-        color: #1F9BD9;
+        color: #1a1a1a;
       }
       .kf-bg-aura {
         position: absolute;
@@ -1799,7 +1799,7 @@ type HighchartsStatic = typeof import('highcharts');
       }
       .sec-sub {
         font-size: 0.9rem;
-        color: #1F9BD9;
+        color: #1a1a1a;
         line-height: 1.6;
         margin-bottom: 38px;
         max-width: 720px;
@@ -1977,7 +1977,7 @@ type HighchartsStatic = typeof import('highcharts');
         overflow: hidden;
       }
       .offer-section .sec-sub {
-        color: #1F9BD9;
+        color: #1a1a1a;
       }
       .offer-section .sec-line {
         background: linear-gradient(90deg, #82BCDC, #1F9BD9);
@@ -2147,7 +2147,7 @@ type HighchartsStatic = typeof import('highcharts');
         background: transparent;
       }
       .exp-section .sec-sub {
-        color: #1F9BD9;
+        color: #1a1a1a;
       }
       .exp-grid-bg {
         position: absolute;
@@ -2552,7 +2552,6 @@ type HighchartsStatic = typeof import('highcharts');
         font-weight: 900;
         color: #2c3e50;
         margin-bottom: 24px;
-        text-transform: uppercase;
         line-height: 1.2;
         letter-spacing: 1px;
         position: relative;
@@ -4048,7 +4047,6 @@ type HighchartsStatic = typeof import('highcharts');
         font-weight: 800;
         color: #2c3e50;
         margin-bottom: 28px;
-        text-transform: uppercase;
         line-height: 1.2;
         letter-spacing: 1px;
         position: relative;

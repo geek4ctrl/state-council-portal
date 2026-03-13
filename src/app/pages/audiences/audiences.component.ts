@@ -379,7 +379,6 @@ import { FooterComponent } from '../../components/footer/footer.component';
         line-height: 1.05;
         margin: 0;
         letter-spacing: 2px;
-        text-transform: uppercase;
         color: #ffffff;
       }
 
@@ -431,7 +430,6 @@ import { FooterComponent } from '../../components/footer/footer.component';
         margin: 0;
         font-weight: 700;
         letter-spacing: 1px;
-        text-transform: uppercase;
       }
 
       .metrics-grid {
@@ -465,9 +463,8 @@ import { FooterComponent } from '../../components/footer/footer.component';
 
       .metrics-note {
         font-size: 0.75rem;
-        text-transform: uppercase;
         letter-spacing: 1px;
-        color: #1f9bd9;
+        color: #1a1a1a;
         font-weight: 600;
         white-space: nowrap;
       }
@@ -501,14 +498,12 @@ import { FooterComponent } from '../../components/footer/footer.component';
         margin: 0;
         font-weight: 700;
         letter-spacing: 1px;
-        text-transform: uppercase;
       }
 
       .section-subtitle {
         font-size: 0.8rem;
-        color: #1f9bd9 !important;
+        color: #1a1a1a;
         margin: 0 0 60px 0;
-        text-transform: uppercase;
         letter-spacing: 2.5px;
         font-weight: 400;
         text-align: left !important;
@@ -611,7 +606,9 @@ import { FooterComponent } from '../../components/footer/footer.component';
         transition: all 0.3s ease;
         width: 100%;
         letter-spacing: 0.8px;
-        text-transform: uppercase;
+      }
+        background: #1a1a1a;
+        color: white;
       }
 
       .download-btn:hover {
@@ -668,7 +665,6 @@ import { FooterComponent } from '../../components/footer/footer.component';
         white-space: nowrap;
         transition: all 0.3s ease;
         letter-spacing: 1px;
-        text-transform: uppercase;
         flex-shrink: 0;
       }
 
@@ -1045,7 +1041,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
           font-size: 0.75rem;
           margin-bottom: 40px;
           text-align: left;
-          color: #1f9bd9 !important;
+          color: #1a1a1a !important;
         }
 
         .documents-grid {
@@ -1192,7 +1188,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
           font-size: 0.7rem;
           letter-spacing: 2px;
           margin-bottom: 35px;
-          color: #1f9bd9 !important;
+          color: #1a1a1a !important;
         }
 
         .documents-grid {
@@ -1539,7 +1535,6 @@ import { FooterComponent } from '../../components/footer/footer.component';
         font-weight: 700;
         letter-spacing: 2px;
         color: #1f9bd9;
-        text-transform: uppercase;
         animation: labelPulse 2s ease-in-out infinite;
       }
       .anim-label-pulse {
