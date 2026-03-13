@@ -765,6 +765,28 @@
         "consultative": "Eteni ya Consultative",
         "contentieux": "Eteni ya Contentieux",
         "registry": "Greffe mpe Secretariat general"
+      },
+      "roles": {
+        "firstPresident": {
+          "title": "Rais ya liboso",
+          "body": "Rais ya liboso ya Conseil d Etat azali mokonzi ya likolo ya makambo manso ya tribunal ya administratif. Azali kotala ete Conseil d Etat mpe ba tribunal nionso ya administratif ezali kosala malamu."
+        },
+        "sectionPresidents": {
+          "title": "Ba Rais ya ba Section",
+          "body": "Moko na moko ya ba section mibale ya Conseil d Etat ezali kotambwisama na Rais moko, oyo aponama to abongolama na mokano ya Rais ya liboso."
+        },
+        "chamberPresidents": {
+          "title": "Ba Rais ya ba Chambre",
+          "body": "Ba chambre ya section moko na moko ya Conseil d Etat, 9 en tout, ezali kotambwisama na ba rais oyo baponama na mokano ya Rais ya liboso."
+        },
+        "advisors": {
+          "title": "Ba Conseiller ya Conseil d Etat",
+          "body": "Ba Conseiller ya Conseil d Etat bazali kopesama mpe kobongolama na ba chambre na mokano ya Rais ya liboso."
+        },
+        "registry": {
+          "title": "Secrétariat Général / Greffe",
+          "body": "Greffe ya Conseil d Etat ezali na Greffier en chef, ba greffier principaux, ba greffier divisionnaires, ba greffier mpe ba huissier. Bazali kosala mosala na bango na kolanda mibeko ya République."
+        }
       }
     },
     "greffe": {
@@ -833,7 +855,9 @@
         "socialChamber": "Chambre Social",
         "consultativeSection": "Eteni ya Consultative",
         "litigationSection": "Eteni ya Contentieux"
-      }
+      },
+      "peopleConsultativePresidentName": "Eugène Kibwe Muter",
+      "peopleLitigationPresidentName": "Hippolyte Masani Matshi"
     },
     "filters": {
       "searchLabel": "Luka bamembre",
