@@ -3,7 +3,7 @@
     "siteName": "Consejo de Estado de la RDC",
     "contact": {
       "phone": "+ 243 (21) 00000000",
-      "hours": "LUNES - VIERNES 8:30AM - 4:00PM"
+      "hours": "Lunes - viernes 8:30am - 4:00pm"
     },
     "social": {
       "facebook": "Facebook",
@@ -16,22 +16,22 @@
       "switchToFrench": "Cambiar a francés"
     },
     "nav": {
-      "home": "INICIO",
-      "court": "EL TRIBUNAL",
+      "home": "Inicio",
+      "court": "El tribunal",
       "presentation": "Presentación",
       "organization": "Organización",
       "administrativeCourts": "Cortes administrativas",
       "administrativeTribunals": "Tribunales administrativos",
       "reforms": "Reformas",
       "international": "Relaciones Internacionales",
-      "audiences": "AUDIENCIAS",
-      "steps": "PASOS",
-      "news": "NOTICIAS",
+      "audiences": "Audiencias",
+      "steps": "Pasos",
+      "news": "Noticias",
       "bookAppointment": "Solicitar cita"
     }
   },
   "hero": {
-    "titleOpening2025": "SE ABRE EL AÑO JUDICIAL EN EL CONSEJO DE ESTADO PARA EL PERIODO 2025 - 2026"
+    "titleOpening2025": "Se abre el año judicial en el consejo de estado para el periodo 2025 - 2026"
   },
   "mobileNav": {
     "home": "Inicio",
@@ -84,15 +84,15 @@
   },
   "news": {
     "hero": {
-      "title": "NOTICIAS Y ACTUALIZACIONES",
+      "title": "Noticias y actualizaciones",
       "body": "La injusticia puede manifestarse de muchas maneras en nuestra sociedad. Le ofrecemos un canal para denunciar cualquier forma de abuso."
     },
     "section": {
-      "title": "NOTICIAS Y ACTUALIZACIONES",
-      "subtitle": "LA VISIÓN NOS HACE QUIENES SOMOS"
+      "title": "Noticias y actualizaciones",
+      "subtitle": "La visión nos hace quienes somos"
     },
     "insights": {
-      "title": "ANÁLISIS DE NOTICIAS",
+      "title": "Análisis de noticias",
       "subtitle": "Tendencias por tema y cadencia de publicación",
       "topics": {
         "title": "Temas por mes",
@@ -132,13 +132,13 @@
       "2": {
         "date": "30 de enero",
         "category": "Administración",
-        "title": "REUNIÓN DE ORIENTACIÓN EN EL CONSEJO DE ESTADO",
+        "title": "Reunión de orientación en el consejo de estado",
         "excerpt": "Kinshasa, 18 de octubre de 2025: El Consejo de Estado de la RDC informa a un pu..."
       },
       "3": {
         "date": "30 de enero",
         "category": "Administración",
-        "title": "REUNIÓN DE ORIENTACIÓN EN EL CONSEJO DE ESTADO",
+        "title": "Reunión de orientación en el consejo de estado",
         "excerpt": "Kinshasa, 18 de octubre de 2025: El Consejo de Estado de la RDC informa a un pu..."
       }
     }
@@ -146,15 +146,15 @@
   "steps": {
     "hero": {
       "report": {
-        "title": "INFORME",
+        "title": "Informe",
         "body": "La injusticia puede manifestarse de muchas maneras en nuestra sociedad. Le ofrecemos un canal para denunciar cualquier forma de abuso."
       },
       "appointment": {
-        "title": "RESERVAR<br>CITA",
+        "title": "Reservar<br>Cita",
         "body": "Para concertar una reunión con el Consejo de Estado, complete el siguiente formulario de solicitud de cita. Asegúrese de rellenar con precisión todos los campos obligatorios para que podamos tramitar su solicitud de forma eficiente. Recibirá un correo electrónico de confirmación o una llamada telefónica con la fecha y hora programadas."
       },
       "appeal": {
-        "title": "RECURSO ANTE EL CONSEJO<br>DE ESTADO<br>",
+        "title": "Recurso ante el consejo<br>De estado<br>",
         "body1": "Una apelación ante el Consejo de Estado es un recurso legal administrativo que permite a una parte impugnar decisiones y actos administrativos. El Consejo de Estado verifica si se aplicó correctamente el derecho administrativo y si se siguieron los procedimientos adecuados.",
         "body2": "El Consejo de Estado interviene a petición de las partes o mediante declaración presentada ante el Consejo. Los recursos deben interponerse dentro de los plazos legales establecidos y deben ser confirmados mediante petición acompañada de los documentos justificativos."
       }
@@ -166,16 +166,16 @@
     },
     "forms": {
       "report": {
-        "title": "FORMULARIO DE QUEJA",
-        "subtitle": "NOS ENCANTARÍA ESCUCHAR SUS PROBLEMAS"
+        "title": "Formulario de queja",
+        "subtitle": "Nos encantaría escuchar sus problemas"
       },
       "appointment": {
-        "title": "SOLICITAR CITA",
-        "subtitle": "NOS ENCANTARÍA AYUDARLE CON SU PROBLEMA"
+        "title": "Solicitar cita",
+        "subtitle": "Nos encantaría ayudarle con su problema"
       },
       "appeal": {
-        "title": "FORMULARIO DE APELACIÓN",
-        "subtitle": "NOS ENCANTARÍA ESCUCHAR SUS PROBLEMAS"
+        "title": "Formulario de apelación",
+        "subtitle": "Nos encantaría escuchar sus problemas"
       },
       "fullName": "Nombre completo *",
       "email": "Correo electrónico *",
@@ -201,11 +201,11 @@
         "nextMonth": "El próximo mes"
       },
       "message": "Mensaje *",
-      "submit": "ENVIAR MENSAJE"
+      "submit": "Enviar mensaje"
     }
   },
   "appealSteps": {
-    "title": "CÓMO INTERPONER UN RECURSO",
+    "title": "Cómo interponer un recurso",
     "subtitle": "Siga estos pasos para presentar su apelación al Consejo de Estado",
     "steps": {
       "1": {
@@ -236,7 +236,7 @@
     "cta": "Envíenos un correo electrónico"
   },
   "faqs": {
-    "title": "PREGUNTAS FRECUENTES",
+    "title": "Preguntas frecuentes",
     "items": {
       "1": {
         "question": "¿Cuál es el plazo para presentar un recurso de apelación?",
@@ -298,26 +298,26 @@
       "learnMore": "Más información",
       "slides": {
         "0": {
-          "title": "CONSEJO DE ESTADO - APERTURA DEL AÑO JUDICIAL 2025-2026",
-          "subtitle": "PALAIS DU PEUPLE - 13 DE NOVIEMBRE DE 2025",
+          "title": "Consejo de estado - apertura del año judicial 2025-2026",
+          "subtitle": "Palais du Peuple - 13 de noviembre de 2025",
           "body": "El Consejo de Estado se reunió en el Palacio del Pueblo para la inauguración formal del año judicial 2025-2026.",
           "cta": "Más información"
         },
         "1": {
-          "title": "SE ABRE EL AÑO JUDICIAL EN EL CONSEJO DE ESTADO PARA EL PERIODO 2025 - 2026",
-          "subtitle": "CASA DE LA LEY Y EL ORDEN",
+          "title": "Se abre el año judicial en el consejo de estado para el periodo 2025 - 2026",
+          "subtitle": "Casa de la ley y el orden",
           "body": "Este video cubre la apertura formal del año judicial 2025-2026. En presencia del Presidente Felix Tshisekedi, la sesión reunió a altos jueces y funcionarios jurídicos.",
           "cta": "Ver la sesión en directo en YouTube"
         },
         "2": {
-          "title": "FORTALECIMIENTO DE LA INDEPENDENCIA JUDICIAL Y LA RESPONSABILIDAD",
-          "subtitle": "CASA DE LA LEY Y EL ORDEN",
+          "title": "Fortalecimiento de la independencia judicial y la responsabilidad",
+          "subtitle": "Casa de la ley y el orden",
           "body": "El CONSEJO DE ESTADO continúa defendiendo los principios de justicia, equidad y estado de derecho. Estamos comprometidos a garantizar la transparencia y la integridad.",
           "cta": "Obtenga más información sobre nuestra misión"
         },
         "3": {
-          "title": "IMPULSAR LA EXCELENCIA JURÍDICA EN LA REPÚBLICA DEMOCRÁTICA DEL CONGO",
-          "subtitle": "CASA DE LA LEY Y EL ORDEN",
+          "title": "Impulsar la excelencia jurídica en la República Democrática del Congo",
+          "subtitle": "Casa de la ley y el orden",
           "body": "A través de una formación jurídica rigurosa y el cumplimiento de las mejores prácticas internacionales, nos esforzamos por mantener los más altos estándares de excelencia judicial.",
           "cta": "Explora nuestras iniciativas"
         }
@@ -327,25 +327,25 @@
       "items": {
         "news": {
           "alt": "Noticias",
-          "title": "NOTICIAS",
+          "title": "Noticias",
           "body": "Manténgase informado sobre decisiones y eventos clave.",
           "action": "Leer"
         },
         "excerpts": {
           "alt": "Extractos",
-          "title": "EXTRACTOS DE ROL",
+          "title": "Extractos de rol",
           "body": "Consulte los horarios de audiencia y los casos pendientes.",
           "action": "Más información"
         },
         "report": {
           "alt": "Informe",
-          "title": "INFORME",
+          "title": "Informe",
           "body": "Informe actividades sospechosas o ilegales de forma segura.",
           "action": "Registrar un informe"
         },
         "appointment": {
           "alt": "Reservar cita",
-          "title": "RESERVAR CITA",
+          "title": "Reservar cita",
           "body": "Programe consultas con funcionarios judiciales.",
           "action": "Reservar ahora"
         }
@@ -373,7 +373,7 @@
       }
     },
     "offer": {
-      "title": "QUE OFRECEMOS",
+      "title": "Que ofrecemos",
       "subtitle": "Brindamos soluciones legales personalizadas para satisfacer sus necesidades únicas, garantizando que sus derechos estén protegidos y que se haga justicia.",
       "cards": {
         "1": {
@@ -395,7 +395,7 @@
       }
     },
     "expertise": {
-      "title": "CAMPOS DE EXPERIENCIA",
+      "title": "Campos de experiencia",
       "subtitle": "El CONSEJO DE ESTADO ejerce competencia sobre diversas materias jurídicas como tribunal supremo del sistema judicial ordinario.",
       "stats": {
         "domains": {
@@ -488,7 +488,7 @@
       "cta": "Más información",
       "slides": {
         "1": {
-          "title": "EL PRIMER PRESIDENTE DEL CONSEJO DE ESTADO",
+          "title": "El primer presidente del consejo de estado",
           "paragraphs": {
             "1": "Como tercer miembro de alto rango del Consejo Superior del Poder Judicial de la República Democrática del Congo, la Primera Presidenta del CONSEJO DE ESTADO, Brigitte Nsensele Wa Nsensele, donó sangre el jueves 27 de febrero, en solidaridad con las víctimas de la agresión ruandesa en la parte oriental del país.",
             "2": "Para todo ciudadano congoleño democrático, contribuir al esfuerzo bélico es un deber cívico. El poder judicial no es una excepción.",
@@ -496,7 +496,7 @@
           }
         },
         "2": {
-          "title": "LIDERAZGO Y REFORMA JUDICIAL",
+          "title": "Liderazgo y reforma judicial",
           "paragraphs": {
             "1": "Bajo el liderazgo del Primer Presidente, el CONSEJO DE ESTADO ha emprendido reformas judiciales integrales destinadas a modernizar el sistema judicial.",
             "2": "Las reformas incluyen la digitalización de los expedientes judiciales, la implementación de sistemas de gestión de casos y programas de capacitación para jueces y personal judicial.",
@@ -504,7 +504,7 @@
           }
         },
         "3": {
-          "title": "COLABORACIÓN INTERNACIONAL",
+          "title": "Colaboración internacional",
           "paragraphs": {
             "1": "El CONSEJO DE ESTADO colabora activamente con instituciones judiciales internacionales y participa en foros globales para compartir experiencias.",
             "2": "A través de asociaciones con tribunales de Francia, Bélgica y otros países francófonos, el Tribunal garantiza mantenerse a la vanguardia de los avances jurídicos.",
@@ -514,7 +514,7 @@
       }
     },
     "newsletter": {
-      "title": "NOTICIAS Y ARTÍCULOS",
+      "title": "Noticias y artículos",
       "readMore": "Leer más",
       "cta": "Más información",
       "items": {
@@ -543,10 +543,10 @@
   },
   "about": {
     "hero": {
-      "title": "ENTENDIENDO LA MÁXIMA JURISDICCIÓN DEL ORDEN ADMINISTRATIVO EN LA REPÚBLICA DEMOCRÁTICA DEL CONGO"
+      "title": "Entendiendo la máxima jurisdicción del orden administrativo en la República Democrática del Congo"
     },
     "intro": {
-      "title": "ENTENDIENDO LA MÁXIMA JURISDICCIÓN DEL ORDEN ADMINISTRATIVO EN LA REPÚBLICA DEMOCRÁTICA DEL CONGO",
+      "title": "Entendiendo la máxima jurisdicción del orden administrativo en la República Democrática del Congo",
       "body": "El artículo 151, párrafo 1, de la Constitución de la República Democrática del Congo de 18 de febrero de 2006 establece un orden jurisdiccional administrativo compuesto por juzgados y tribunales administrativos bajo la supervisión del Consejo de Estado. El artículo 82 de la Ley Orgánica N.º 13/011-B de 11 de abril de 2013, relativa a la organización, composición y funcionamiento de las jurisdicciones administrativas, dispone la existencia del Consejo de Estado con sede ordinaria en la capital de la República Democrática del Congo, sin perjuicio de que su función jurisdiccional pueda ejercerse en otro lugar cuando corresponda. Desde una perspectiva histórica, esta institución hunde sus raíces en la evolución de la justicia administrativa congoleña. Creado por Decreto-Ley de 31 de enero de 1968, el Consejo de Estado nació para conocer de los recursos administrativos, en un proceso de construcción institucional iniciado tras la independencia de 1960. Posteriormente, y en el marco de la Constitución de 2006, el antiguo Tribunal Supremo Administrativo dejó de existir, dando paso a una arquitectura judicial especializada conforme a las nuevas disposiciones constitucionales, en particular al artículo 223. Esta transformación se consolidó con la adopción de la Ley Orgánica N.º 13/011-B de 11 de abril de 2013, que organizó de manera definitiva las jurisdicciones administrativas. De conformidad con el artículo 151, párrafo 3, de la Constitución, el Consejo de Estado ejerce hoy las competencias regulatorias y jurisdiccionales que estructuran el funcionamiento de los juzgados y tribunales administrativos que integran el sistema judicial administrativo del Congo."
     },
     "rubrics": {
@@ -557,7 +557,7 @@
       "procedureBeforeCouncil": "Procedimiento ante el Consejo de Estado"
     },
     "legal": {
-      "title": "ACCEDA A LOS PRINCIPALES TEXTOS JURÍDICOS Y REGLAMENTARIOS<br> DEL CONSEJO DE ESTADO",
+      "title": "Acceda a los principales textos jurídicos y reglamentarios<br> Del consejo de estado",
       "docs": {
         "1": "Ley Orgánica N.º 13/011-B de 11 de abril de 2013 sobre la organización, composición y funcionamiento de las jurisdicciones ordinarias",
         "2": "Decreto N.º 13/046 de 25 de septiembre de 2013, relativo a las salas del Consejo de Estado",
@@ -591,17 +591,17 @@
   },
   "reforms": {
     "hero": {
-      "title": "REFORMAS PROPUESTAS<br>",
+      "title": "Reformas propuestas<br>",
       "body": "Modernizar el sistema judicial a través de reformas estratégicas que mejoren la eficiencia, la transparencia y el acceso a la justicia para todos los ciudadanos congoleños."
     },
     "building": {
-      "tag": "MODERNIZACIÓN JUDICIAL",
-      "title": "CONSTRUIR UN SISTEMA DE JUSTICIA MÁS SÓLIDO",
+      "tag": "Modernización judicial",
+      "title": "Construir un sistema de justicia más sólido",
       "body": "Tras la Constitución de 2006, el CONSEJO DE ESTADO se ha embarcado en reformas integrales para fortalecer la independencia judicial, mejorar el acceso a la justicia y alinearse con los estándares internacionales. Estas iniciativas se centran en el fortalecimiento institucional, la transformación digital y el desarrollo de capacidades."
     },
     "initiatives": {
-      "tag": "HOJA DE RUTA DE TRANSFORMACIÓN",
-      "title": "INICIATIVAS DE REFORMA ESTRATÉGICA",
+      "tag": "Hoja de ruta de transformación",
+      "title": "Iniciativas de reforma estratégica",
       "body": "Un enfoque integral de cinco fases para modernizar nuestro sistema judicial, garantizando la excelencia en cada etapa de la transformación.",
       "badges": {
         "critical": "Prioridad crítica",
@@ -632,8 +632,8 @@
       }
     },
     "stakeholders": {
-      "title": "ACTORES CLAVE",
-      "subtitle": "LIDERAZGO DE LA REFORMA",
+      "title": "Actores clave",
+      "subtitle": "Liderazgo de la reforma",
       "roles": {
         "president": "Presidente",
         "vicePresident": "Vicepresidente",
@@ -644,7 +644,7 @@
   },
   "international": {
     "hero": {
-      "title": "RELACIONES INTERNACIONALES<br>",
+      "title": "Relaciones internacionales<br>",
       "body": "En el contexto de la internacionalización del derecho y la justicia, el CONSEJO DE ESTADO de la República Democrática del Congo no está aislado de este entorno. Participa activamente en el diálogo de los jueces manteniendo un alto nivel de cooperación en el marco de la Asociación de Tribunales Supremos de los países de habla francesa (AHJUCAF) y la Asociación Africana de Tribunales Supremos Francófonos (AA-HJF)."
     },
     "stats": {
@@ -653,7 +653,7 @@
       "exchanges": "Intercambios y conferencias judiciales anuales"
     },
     "networks": {
-      "title": "REDES JUDICIALES INTERNACIONALES",
+      "title": "Redes judiciales internacionales",
       "subtitle": "El Tribunal mantiene relaciones privilegiadas con las principales asociaciones de tribunales supremos francófonos y africanos",
       "ahjucaf": {
         "name": "Asociación de Tribunales Supremos que utilizan el francés",
@@ -665,7 +665,7 @@
       }
     },
     "domains": {
-      "title": "DOMINIOS DE COOPERACIÓN INTERNACIONAL",
+      "title": "Dominios de cooperación internacional",
       "subtitle": "Nuestro compromiso internacional se traduce en una participación activa en diversas iniciativas encaminadas a fortalecer la calidad de la justicia y el Estado de derecho.",
       "dialogue": {
         "title": "Diálogo judicial",
@@ -687,20 +687,20 @@
     "collaboration": {
       "title": "¿Interesado en la colaboración?",
       "body": "Estamos abiertos a asociaciones e intercambios institucionales con otras jurisdicciones nacionales e internacionales comprometidas con el fortalecimiento de los sistemas de justicia.",
-      "cta": "CONTÁCTANOS"
+      "cta": "Contáctanos"
     }
   },
   "audiences": {
     "hero": {
-      "title": "AUDIENCIAS Y EXTRACTOS DE ROL",
+      "title": "Audiencias y extractos de rol",
       "body": "Acceda a horarios de audiencias, extractos de listas y decisiones recientes."
     },
     "understanding": {
-      "title": "CÓMO FUNCIONAN LAS AUDIENCIAS",
+      "title": "Cómo funcionan las audiencias",
       "body": "Encuentre orientación sobre cómo se organizan las audiencias y cómo consultar listas recientes."
     },
     "metrics": {
-      "title": "MÉTRICAS DE AUDIENCIAS",
+      "title": "Métricas de audiencias",
       "subtitle": "Volumen de audiencia mensual y resultados a lo largo del tiempo.",
       "volume": {
         "title": "Volumen de audiencia mensual",
@@ -714,8 +714,8 @@
       }
     },
     "recent": {
-      "title": "EXTRACTOS RECIENTES DE ROL",
-      "subtitle": "ÚLTIMOS EXTRACTOS DE AUDIENCIA"
+      "title": "Extractos recientes de rol",
+      "subtitle": "Últimos extractos de audiencia"
     },
     "documents": {
       "civil": {
@@ -736,21 +736,21 @@
       }
     },
     "actions": {
-      "downloadPdf": "DESCARGAR PDF"
+      "downloadPdf": "Descargar PDF"
     },
     "assistance": {
       "title": "¿Necesita ayuda?",
       "body": "Comuníquese con el Consejo de Estado para obtener ayuda para acceder a documentos o horarios.",
-      "cta": "CONTÁCTANOS"
+      "cta": "Contáctanos"
     }
   },
   "organization": {
     "hero": {
-      "title": "ORGANIZACIÓN<br>DEL CONSEJO DE ESTADO"
+      "title": "Organización<br>Del consejo de estado"
     },
     "firstPresident": {
       "alt": "primer presidente",
-      "title": "EL PRIMER PRESIDENTE",
+      "title": "El primer presidente",
       "body": "El Primer Presidente dirige el Consejo de Estado, preside sus sesiones y vela por el buen funcionamiento de la institución."
     },
     "orgPage": {
@@ -797,7 +797,7 @@
       }
     },
     "firstPresidents": {
-      "title": "PRIMEROS PRESIDENTES",
+      "title": "Primeros presidentes",
       "honoraryTitle": "Primer Presidente Honorario y Emérito: 2018 - 2022",
       "honoraryTitleSecond": "Presidente Honorario y Emérito: 2022 - 2025",
       "honoraryTitleThird": "Primer Presidente: 2025 - presente",
@@ -805,14 +805,14 @@
       "placeholderSubtitle": "Espacio para fotos reservado",
       "photoLabel": "Foto {{index}}"
     },
-    "seniorLabel": "MAGISTRADOS SUPERIORES",
+    "seniorLabel": "Magistrados superiores",
     "chart": {
-      "title": "ORGANIGRAMA",
+      "title": "Organigrama",
       "subtitle": "Descripción general de la estructura de liderazgo y las divisiones centrales del Consejo de Estado.",
-      "interactiveTitle": "ORGANIGRAMA INTERACTIVO",
+      "interactiveTitle": "Organigrama interactivo",
       "interactiveSubtitle": "Explore la jerarquía y la estructura de informes.",
       "aria": "Organigrama interactivo",
-      "peopleTitle": "LIDERAZGO POR NOMBRE",
+      "peopleTitle": "Liderazgo por nombre",
       "peopleSubtitle": "Nombres del Primer Presidente, Presidentes y Consejeros.",
       "peopleFirstPresidentName": "Brigitte Nsensele Wa Nsensele",
       "namedPhotoRoles": {
@@ -849,11 +849,11 @@
       "summary": "Mostrando {{presidents}} presidentes y {{advisors}} asesores"
     },
     "presidents": {
-      "title": "LOS PRESIDENTES",
+      "title": "Los presidentes",
       "empty": "Ningún presidente coincide con tu búsqueda."
     },
     "advisors": {
-      "title": "LOS ASESORES",
+      "title": "Los asesores",
       "empty": "Ningún asesor coincide con tu búsqueda."
     },
     "members": {
@@ -861,7 +861,7 @@
       "loadMore": "Cargar más"
     },
     "services": {
-      "overviewTitle": "RESUMEN DE SERVICIOS",
+      "overviewTitle": "Resumen de servicios",
       "learnMore": "Más información",
       "registry": {
         "title": "Registro",
@@ -875,7 +875,7 @@
         "title": "Televisión del Consejo",
         "body": "Vea audiencias, anuncios y actualizaciones."
       },
-      "title": "NUESTROS SERVICIOS",
+      "title": "Nuestros servicios",
       "subtitle": "Explore las divisiones y oficinas que apoyan el trabajo del Consejo de Estado.",
       "divisions": {
         "title": "Divisiones",
