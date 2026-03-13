@@ -15,7 +15,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
         <div class="container">
           <div class="hero-grid">
             <div class="hero-left">
-              <h1>{{ title() }}</h1>
+              <h1>{{ titleKey() | i18n }}</h1>
             </div>
             <div class="vertical-divider"></div>
             <div class="hero-right">
@@ -93,7 +93,6 @@ import { FooterComponent } from '../../components/footer/footer.component';
       margin: 0;
       letter-spacing: 4px;
       color: #ffffff;
-      text-transform: uppercase;
       text-align: left;
     }
 
@@ -325,12 +324,12 @@ import { FooterComponent } from '../../components/footer/footer.component';
   `]
 })
 export class ComingSoonComponent implements OnInit {
-  title = signal<string>('');
+  titleKey = signal<string>('');
 
   constructor(private route: ActivatedRoute) {}
 
   ngOnInit(): void {
-    const routeTitle = this.route.snapshot.data['title'];
-    this.title.set(routeTitle || 'Coming Soon');
+    const key = this.route.snapshot.data['titleKey'];
+    this.titleKey.set(key || 'comingSoon.subtitle');
   }
 }
