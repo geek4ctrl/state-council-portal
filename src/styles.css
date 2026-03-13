@@ -398,7 +398,7 @@ img[loading='lazy'] {
   padding: 0 20px;
 }
 
-/* ===== SUBTITLE GOLDISH COLOR ===== */
+/* ===== SUBTITLE COLOR ===== */
 .hero-subtitle,
 .key-facts-subtitle,
 .section-subtitle,
@@ -408,7 +408,7 @@ img[loading='lazy'] {
 .key-fact-note,
 .form-subtitle,
 .hero-category {
-  color: #1F9BD9 !important;
+  color: #1a1a1a !important;
 }
 
 /* ===== ALL ICON STYLING (TRANSPARENT BACKGROUND, GOLDISH BORDER ONLY, 4PX RADIUS) ===== */
@@ -1369,7 +1369,7 @@ img,
   .tilt-card-3d {
     transform: none !important;
   }
-  
+
   .tilt-card-3d:hover {
     transform: translateY(-4px) !important;
   }
