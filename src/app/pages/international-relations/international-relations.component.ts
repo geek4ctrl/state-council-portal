@@ -235,7 +235,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
       left: 0;
       right: 0;
       bottom: 0;
-      background: 
+      background:
         radial-gradient(circle at 20% 30%, rgba(31, 155, 217, 0.18) 0%, transparent 50%),
         radial-gradient(circle at 80% 70%, rgba(31, 155, 217, 0.15) 0%, transparent 50%),
         radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.03) 0%, transparent 60%);
@@ -260,7 +260,6 @@ import { FooterComponent } from '../../components/footer/footer.component';
       line-height: 1.15;
       margin: 0;
       letter-spacing: 3px;
-      text-transform: uppercase;
       color: white;
       text-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
     }
@@ -361,7 +360,6 @@ import { FooterComponent } from '../../components/footer/footer.component';
       color: #1a1a1a;
       margin: 0;
       letter-spacing: 1px;
-      text-transform: uppercase;
       white-space: nowrap;
     }
 
@@ -387,7 +385,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
 
     .section-subtitle {
       font-size: 0.9rem;
-      color: #1F9BD9 !important;
+      color: #1a1a1a !important;
       margin: 0 0 60px 0;
       line-height: 1.7;
       letter-spacing: 4.5px;
@@ -542,7 +540,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
       left: 0;
       right: 0;
       bottom: 0;
-      background: 
+      background:
         radial-gradient(circle at 10% 20%, rgba(31, 155, 217, 0.1) 0%, transparent 50%),
         radial-gradient(circle at 90% 80%, rgba(31, 155, 217, 0.08) 0%, transparent 50%);
     }
@@ -575,6 +573,10 @@ import { FooterComponent } from '../../components/footer/footer.component';
       color: rgba(255, 255, 255, 0.85);
     }
 
+    .collaboration-text .section-subtitle {
+      color: white !important;
+    }
+
     .contact-btn {
       background-color: transparent;
       color: #1F9BD9;
@@ -585,7 +587,6 @@ import { FooterComponent } from '../../components/footer/footer.component';
       border-radius: 4px;
       cursor: pointer;
       transition: all 0.3s ease;
-      text-transform: uppercase;
       letter-spacing: 1px;
       white-space: nowrap;
       flex-shrink: 0;
@@ -1058,7 +1059,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
     .sphere-core svg{width:30px;height:30px;}
     .loader-track{width:220px;height:3px;background:rgba(255,255,255,.08);border-radius:99px;overflow:hidden;}
     .loader-fill{height:100%;background:linear-gradient(90deg,#1F9BD9,#e0b98a);border-radius:99px;animation:fillBar 2s ease-in-out infinite;}
-    .loader-label{font-size:.72rem;font-weight:700;letter-spacing:2px;color:#1F9BD9;text-transform:uppercase;animation:labelPulse 2s ease-in-out infinite;}
+    .loader-label{font-size:.72rem;font-weight:700;letter-spacing:2px;color:#1F9BD9;animation:labelPulse 2s ease-in-out infinite;}
 
     .anim-line{animation:lineExpand .8s ease-out both;}
     .anim-line-c{animation:lineCExpand .8s ease-out both;}
