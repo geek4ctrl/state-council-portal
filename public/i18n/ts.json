@@ -769,6 +769,28 @@
         "consultative": "Tshitupa tshia diyukidilangana",
         "contentieux": "Tshitupa tshia bilumbu",
         "registry": "Muaba wa difunda dia mena ne Sekretariya Munene"
+      },
+      "roles": {
+        "firstPresident": {
+          "title": "Mfumu wa kumpala",
+          "body": "Mfumu wa kumpala wa Conseil d Etat ndiye mukulu wa ba tribunal yonso ya malu a mbulamatadi. Ye nde utala ete Conseil d Etat ne ba tribunal yonso ya administratif esalaka malamu."
+        },
+        "sectionPresidents": {
+          "title": "Ba Mfumu ya ba Section",
+          "body": "Section moko na moko ya mibale ya Conseil d Etat etambwisama na Mfumu moko oyo aponama na mokano ya Mfumu wa kumpala."
+        },
+        "chamberPresidents": {
+          "title": "Ba Mfumu ya ba Chambre",
+          "body": "Ba chambre ya section moko na moko ya Conseil d Etat, 9 en tout, etambwisama na ba mfumu oyo baponama na mokano ya Mfumu wa kumpala."
+        },
+        "advisors": {
+          "title": "Ba Conseiller ya Conseil d Etat",
+          "body": "Ba Conseiller ya Conseil d Etat bapesama mpe babongolama na ba chambre na mokano ya Mfumu wa kumpala."
+        },
+        "registry": {
+          "title": "Secrétariat Général / Greffe",
+          "body": "Greffe ya Conseil d Etat ezali na Greffier en chef, ba greffier principaux, ba greffier divisionnaires, ba greffier mpe ba huissier."
+        }
       }
     },
     "greffe": {

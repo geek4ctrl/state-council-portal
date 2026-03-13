@@ -120,6 +120,7 @@ type GreffeFirstPresident = {
                   <p class="leadership-photo-role">
                     {{ 'organization.chart.namedPhotoRoles.firstPresident' | i18n }}
                   </p>
+                  <p class="leadership-photo-detail">{{ 'organization.orgPage.tiles.firstPresident' | i18n }}</p>
                 </article>
 
                 <div class="leadership-photo-row" role="listitem">
@@ -135,6 +136,7 @@ type GreffeFirstPresident = {
                     <p class="leadership-photo-role">
                       {{ 'organization.chart.namedPhotoRoles.consultative' | i18n }}
                     </p>
+                    <p class="leadership-photo-detail">{{ 'organization.orgPage.tiles.consultative' | i18n }}</p>
                   </article>
 
                   <article class="leadership-photo-card top">
@@ -149,15 +151,33 @@ type GreffeFirstPresident = {
                     <p class="leadership-photo-role">
                       {{ 'organization.chart.namedPhotoRoles.contentieux' | i18n }}
                     </p>
+                    <p class="leadership-photo-detail">{{ 'organization.orgPage.tiles.contentieux' | i18n }}</p>
                   </article>
                 </div>
               </div>
             </div>
 
-            <div class="org-list" aria-label="{{ 'organization.orgPage.organigramme.title' | i18n }}">
-              <p>{{ 'organization.orgPage.tiles.firstPresident' | i18n }}</p>
-              <p>{{ 'organization.orgPage.tiles.consultative' | i18n }}</p>
-              <p>{{ 'organization.orgPage.tiles.contentieux' | i18n }}</p>
+            <div class="roles-descriptions">
+              <div class="role-block">
+                <h3>{{ 'organization.orgPage.roles.firstPresident.title' | i18n }}</h3>
+                <p>{{ 'organization.orgPage.roles.firstPresident.body' | i18n }}</p>
+              </div>
+              <div class="role-block">
+                <h3>{{ 'organization.orgPage.roles.sectionPresidents.title' | i18n }}</h3>
+                <p>{{ 'organization.orgPage.roles.sectionPresidents.body' | i18n }}</p>
+              </div>
+              <div class="role-block">
+                <h3>{{ 'organization.orgPage.roles.chamberPresidents.title' | i18n }}</h3>
+                <p>{{ 'organization.orgPage.roles.chamberPresidents.body' | i18n }}</p>
+              </div>
+              <div class="role-block">
+                <h3>{{ 'organization.orgPage.roles.advisors.title' | i18n }}</h3>
+                <p>{{ 'organization.orgPage.roles.advisors.body' | i18n }}</p>
+              </div>
+              <div class="role-block">
+                <h3>{{ 'organization.orgPage.roles.registry.title' | i18n }}</h3>
+                <p>{{ 'organization.orgPage.roles.registry.body' | i18n }}</p>
+              </div>
             </div>
 
           </div>
@@ -825,6 +845,37 @@ type GreffeFirstPresident = {
         letter-spacing: 1px;
         color: #1a2942;
         line-height: 1.45;
+      }
+
+      .leadership-photo-detail {
+        margin: 8px 0 0;
+        text-align: center;
+        font-size: 0.78rem;
+        color: #555;
+        line-height: 1.6;
+      }
+
+      .roles-descriptions {
+        margin-top: 60px;
+      }
+
+      .role-block {
+        margin-bottom: 24px;
+      }
+
+      .role-block h3 {
+        font-size: 1rem;
+        font-weight: 700;
+        color: #1a2942;
+        margin: 0 0 6px;
+      }
+
+      .role-block p {
+        font-size: 0.92rem;
+        color: #333;
+        line-height: 1.7;
+        margin: 0;
+        text-align: justify;
       }
 
 

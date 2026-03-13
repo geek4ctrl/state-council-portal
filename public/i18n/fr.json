@@ -769,6 +769,28 @@
         "consultative": "La section consultative",
         "contentieux": "La section du contentieux",
         "registry": "Le greffe et le Secrétariat général"
+      },
+      "roles": {
+        "firstPresident": {
+          "title": "La première présidente",
+          "body": "Le Premier Président du Conseil d'État est l'autorité hiérarchique au sommet de toutes les juridictions de l'ordre administratif. Il veille au bon fonctionnement du Conseil d'État et de toutes les autres juridictions de l'ordre administratif."
+        },
+        "sectionPresidents": {
+          "title": "Les Présidents des Sections",
+          "body": "Chacune de deux sections du Conseil d'État est dirigée par un Président, désigné, suspendu, relevé de sa fonction et, le cas échéant, remplacé par décision du Premier Président. Lorsqu'ils sont relevés de leur fonction à titre définitif, par décision du Premier Président du Conseil d'État, les anciens Présidents des sections peuvent, sur décision du Premier Président du Conseil d'État et selon les disponibilités, bénéficier des mêmes avantages que ceux prévus pour les présidents des sections en exercice. Le Président de section répartit entre les chambres les affaires qui lui sont confiées par le Premier Président du Conseil d'État, en veillant au traitement rapide et optimal des dossiers, et en fait rapport au Premier Président."
+        },
+        "chamberPresidents": {
+          "title": "Les présidents des chambres",
+          "body": "Les chambres de chaque section du Conseil d'État, 9 au total, sont dirigées par des présidents, désignés, suspendus, relevés de leurs fonctions et, le cas échéant, remplacés par décision du premier président. Chaque Président de chambre assure l'exécution de toutes les décisions du Premier Président ou du Président de section au sein de sa chambre. Il peut présider une composition, et conduire les audiences consacrées à l'examen des affaires confiées à cette composition, sauf si ces audiences doivent être dirigées par un autre magistrat désigné Président de la composition. Le président de chambre veille à l'indépendance et à l'impartialité des magistrats de chaque composition."
+        },
+        "advisors": {
+          "title": "Les conseillers au Conseil d'Etat",
+          "body": "Les Conseillers au Conseil d'État sont affectés, réaffectés et, le cas échéant, remplacés au niveau des chambres du Conseil d'État par décision du Premier Président. Ils font partie de la composition."
+        },
+        "registry": {
+          "title": "Le Secrétariat générale / Greffe",
+          "body": "Le greffe du Conseil d'État comprend un Greffier en chef, des greffiers principaux, des greffiers divisionnaires, des greffiers et des huissiers. Ils exercent leurs fonctions conformément aux lois et règlements de la République. Le greffe est chargé de recevoir et d'enrôler les affaires dont le Conseil d'État est saisi. Il reçoit toutes les pièces des parties en demande comme en défense. Il signifie les requêtes, réquisitoires, mémoires et autres exploits. Les Greffiers et huissiers relèvent du statut des agents de carrière des services publics de l'État. Le Greffier en chef remplit, avec célérité et professionnalisme, les devoirs qui lui incombent. Il est chargé du maintien de l'ordre au sein du greffe du Conseil d'État. Il répartit les tâches aux responsables des greffes et coordonne les activités de ces derniers."
+        }
       }
     },
     "greffe": {

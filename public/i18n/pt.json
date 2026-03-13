@@ -769,6 +769,28 @@
         "consultative": "A Seção Consultiva",
         "contentieux": "A Seção do Contencioso",
         "registry": "O Registro e o Secretariado-Geral"
+      },
+      "roles": {
+        "firstPresident": {
+          "title": "A Primeira Presidente",
+          "body": "O Primeiro Presidente do Conselho de Estado é a autoridade hierárquica no topo de todas as jurisdições administrativas. Zela pelo bom funcionamento do Conselho de Estado e de todas as outras jurisdições administrativas."
+        },
+        "sectionPresidents": {
+          "title": "Os Presidentes de Secção",
+          "body": "Cada uma das duas secções do Conselho de Estado é dirigida por um Presidente, designado, suspenso, dispensado das suas funções e, se for o caso, substituído por decisão do Primeiro Presidente. O Presidente de secção distribui pelas câmaras os processos que lhe são confiados pelo Primeiro Presidente."
+        },
+        "chamberPresidents": {
+          "title": "Os Presidentes de Câmara",
+          "body": "As câmaras de cada secção do Conselho de Estado, 9 no total, são dirigidas por presidentes designados, suspensos e, se for o caso, substituídos por decisão do Primeiro Presidente."
+        },
+        "advisors": {
+          "title": "Os Conselheiros do Conselho de Estado",
+          "body": "Os Conselheiros do Conselho de Estado são afetados, reafetados e, se for o caso, substituídos ao nível das câmaras por decisão do Primeiro Presidente. Fazem parte da composição."
+        },
+        "registry": {
+          "title": "O Secretariado-Geral / Registo",
+          "body": "O registo do Conselho de Estado compreende um Escrivão-chefe, escrivães principais, escrivães divisionários, escrivães e oficiais de justiça. Exercem as suas funções em conformidade com as leis e regulamentos da República."
+        }
       }
     },
     "greffe": {

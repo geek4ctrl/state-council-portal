@@ -769,6 +769,28 @@
         "consultative": "Consultative Section",
         "contentieux": "Litigation Section",
         "registry": "Registry and General Secretariat"
+      },
+      "roles": {
+        "firstPresident": {
+          "title": "The First President",
+          "body": "The First President of the Council of State is the hierarchical authority at the top of all administrative courts. They ensure the proper functioning of the Council of State and all other administrative courts."
+        },
+        "sectionPresidents": {
+          "title": "Section Presidents",
+          "body": "Each of the two sections of the Council of State is headed by a President, appointed, suspended, relieved of their duties and, where applicable, replaced by decision of the First President. When they are definitively relieved of their duties by decision of the First President, former Section Presidents may, by decision of the First President and subject to availability, enjoy the same benefits as those provided for serving section presidents. The Section President distributes cases entrusted to them by the First President among the chambers, ensuring rapid and optimal processing of files, and reports to the First President."
+        },
+        "chamberPresidents": {
+          "title": "Chamber Presidents",
+          "body": "The chambers of each section of the Council of State, 9 in total, are headed by presidents appointed, suspended, relieved of their duties and, where applicable, replaced by decision of the First President. Each Chamber President ensures the execution of all decisions of the First President or Section President within their chamber. They may preside over a panel and conduct hearings dedicated to examining cases assigned to that panel, unless those hearings must be led by another magistrate designated as Panel President. The Chamber President ensures the independence and impartiality of magistrates in each panel."
+        },
+        "advisors": {
+          "title": "Advisors to the Council of State",
+          "body": "Advisors to the Council of State are assigned, reassigned and, where applicable, replaced at the chamber level by decision of the First President. They are part of the panel."
+        },
+        "registry": {
+          "title": "General Secretariat / Registry",
+          "body": "The Registry of the Council of State comprises a Chief Registrar, principal registrars, divisional registrars, registrars and bailiffs. They perform their duties in accordance with the laws and regulations of the Republic. The Registry is responsible for receiving and enrolling cases before the Council of State. It receives all documents from parties, whether plaintiff or defendant. It serves petitions, requisitions, briefs and other writs. Registrars and bailiffs are governed by the statute of career agents of public services. The Chief Registrar fulfills their duties with diligence and professionalism. They are responsible for maintaining order within the Registry of the Council of State, distributing tasks to registry heads and coordinating their activities."
+        }
       }
     },
     "greffe": {

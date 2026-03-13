@@ -769,6 +769,28 @@
         "consultative": "La Sección Consultiva",
         "contentieux": "La Sección de Litigios",
         "registry": "El Registro y la Secretaría General"
+      },
+      "roles": {
+        "firstPresident": {
+          "title": "La primera presidenta",
+          "body": "El Primer Presidente del Consejo de Estado es la autoridad jerárquica al frente de todos los tribunales administrativos. Vela por el buen funcionamiento del Consejo de Estado y de todos los demás tribunales administrativos."
+        },
+        "sectionPresidents": {
+          "title": "Los Presidentes de Sección",
+          "body": "Cada una de las dos secciones del Consejo de Estado está dirigida por un Presidente, designado, suspendido, relevado de sus funciones y, en su caso, sustituido por decisión del Primer Presidente. El Presidente de sección reparte entre las salas los asuntos que le confía el Primer Presidente, velando por el tratamiento rápido y óptimo de los expedientes."
+        },
+        "chamberPresidents": {
+          "title": "Los Presidentes de Sala",
+          "body": "Las salas de cada sección del Consejo de Estado, 9 en total, están dirigidas por presidentes designados, suspendidos y, en su caso, sustituidos por decisión del Primer Presidente. Cada Presidente de sala asegura la ejecución de todas las decisiones del Primer Presidente o del Presidente de sección dentro de su sala."
+        },
+        "advisors": {
+          "title": "Los Consejeros del Consejo de Estado",
+          "body": "Los Consejeros del Consejo de Estado son asignados, reasignados y, en su caso, sustituidos a nivel de las salas por decisión del Primer Presidente. Forman parte de la composición."
+        },
+        "registry": {
+          "title": "La Secretaría General / Registro",
+          "body": "El registro del Consejo de Estado comprende un Secretario en jefe, secretarios principales, secretarios divisionales, secretarios y ujieres. Ejercen sus funciones conforme a las leyes y reglamentos de la República. El registro se encarga de recibir e inscribir los asuntos ante el Consejo de Estado."
+        }
       }
     },
     "greffe": {

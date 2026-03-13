@@ -769,6 +769,28 @@
         "consultative": "Sehemu ya Ushauri",
         "contentieux": "Sehemu ya Mashauri",
         "registry": "Usajili na Sekretarieti Mkuu"
+      },
+      "roles": {
+        "firstPresident": {
+          "title": "Rais wa Kwanza",
+          "body": "Rais wa Kwanza wa Baraza la Jimbo ndiye mamlaka ya juu zaidi ya mahakama zote za utawala. Anasimamia utendaji mzuri wa Baraza la Jimbo na mahakama nyingine zote za utawala."
+        },
+        "sectionPresidents": {
+          "title": "Marais wa Sehemu",
+          "body": "Kila moja ya sehemu mbili za Baraza la Jimbo inaongozwa na Rais, anayeteuliwa, kusimamishwa au kubadilishwa kwa uamuzi wa Rais wa Kwanza. Rais wa sehemu anagawa kesi kati ya vyumba kwa usindikaji wa haraka na bora."
+        },
+        "chamberPresidents": {
+          "title": "Marais wa Vyumba",
+          "body": "Vyumba vya kila sehemu ya Baraza la Jimbo, jumla 9, vinaongozwa na marais wanaoteuliwa na kubadilishwa kwa uamuzi wa Rais wa Kwanza. Kila Rais wa chumba anahakikisha utekelezaji wa maamuzi yote ya Rais wa Kwanza au Rais wa sehemu."
+        },
+        "advisors": {
+          "title": "Washauri wa Baraza la Jimbo",
+          "body": "Washauri wa Baraza la Jimbo wanapangiwa, kupangiwa upya na kubadilishwa katika ngazi ya vyumba kwa uamuzi wa Rais wa Kwanza. Wao ni sehemu ya muundo."
+        },
+        "registry": {
+          "title": "Sekretarieti Kuu / Usajili",
+          "body": "Usajili wa Baraza la Jimbo unajumuisha Karani Mkuu, makarani wakuu, makarani wa mgawanyiko, makarani na watumishi wa mahakama. Wanatekeleza majukumu yao kwa mujibu wa sheria na kanuni za Jamhuri."
+        }
       }
     },
     "greffe": {

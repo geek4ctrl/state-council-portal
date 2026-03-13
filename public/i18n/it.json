@@ -769,6 +769,28 @@
         "consultative": "La Sezione consultiva",
         "contentieux": "La Sezione contenziosa",
         "registry": "La Cancelleria e la Segreteria generale"
+      },
+      "roles": {
+        "firstPresident": {
+          "title": "La Prima Presidente",
+          "body": "Il Primo Presidente del Consiglio di Stato è l autorita gerarchica al vertice di tutte le giurisdizioni amministrative. Vigila sul buon funzionamento del Consiglio di Stato e di tutte le altre giurisdizioni amministrative."
+        },
+        "sectionPresidents": {
+          "title": "I Presidenti di Sezione",
+          "body": "Ciascuna delle due sezioni del Consiglio di Stato è diretta da un Presidente, designato, sospeso, sollevato dalle sue funzioni e, se del caso, sostituito per decisione del Primo Presidente. Il Presidente di sezione ripartisce tra le camere gli affari affidatigli dal Primo Presidente."
+        },
+        "chamberPresidents": {
+          "title": "I Presidenti di Camera",
+          "body": "Le camere di ciascuna sezione del Consiglio di Stato, 9 in totale, sono dirette da presidenti designati, sospesi e, se del caso, sostituiti per decisione del Primo Presidente. Ogni Presidente di camera assicura l esecuzione di tutte le decisioni del Primo Presidente o del Presidente di sezione."
+        },
+        "advisors": {
+          "title": "I Consiglieri del Consiglio di Stato",
+          "body": "I Consiglieri del Consiglio di Stato sono assegnati, riassegnati e, se del caso, sostituiti a livello delle camere per decisione del Primo Presidente. Fanno parte della composizione."
+        },
+        "registry": {
+          "title": "Il Segretariato Generale / Cancelleria",
+          "body": "La cancelleria del Consiglio di Stato comprende un Cancelliere capo, cancellieri principali, cancellieri divisionali, cancellieri e uscieri. Esercitano le loro funzioni conformemente alle leggi e ai regolamenti della Repubblica."
+        }
       }
     },
     "greffe": {
