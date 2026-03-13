@@ -518,8 +518,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
 
     .form-subtitle {
       font-size: 0.9rem;
-      color: #1F9BD9 !important;
-      text-transform: uppercase;
+      color: #1a1a1a !important;
       letter-spacing: 2px;
       margin: 0;
     }
@@ -1028,7 +1027,7 @@ export class StepsComponent implements OnInit, AfterViewInit {
   departmentOpenAppeal = signal(false);
   meetingOpen = signal(false);
   visitOpen = signal(false);
-  
+
   selectedDepartmentReport = signal('');
   selectedDepartmentAppointment = signal('');
   selectedDepartmentAppeal = signal('');
