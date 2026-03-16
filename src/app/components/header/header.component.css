@@ -229,11 +229,25 @@
   text-decoration: none;
 }
 
+.logo-row {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
 .logo-image {
   display: block;
   height: 58px;
   width: auto;
   object-fit: contain;
+}
+
+.flag-image {
+  display: block;
+  height: 24px;
+  width: auto;
+  border-radius: 2px;
+  box-shadow: 0 0 0 1px rgba(26, 41, 66, 0.08);
 }
 
 .logo-caption {
