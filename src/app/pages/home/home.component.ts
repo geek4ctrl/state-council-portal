@@ -670,7 +670,7 @@ type HighchartsStatic = typeof import('highcharts');
               <div class="quick-link-item glass-card">
                 <div class="quick-link-icon non-border">
                   <img
-                    src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=120&h=120&fit=crop"
+                    src="https://res.cloudinary.com/dhqvb8wbn/image/upload/v1774366565/news_dmugrc.jpg?w=120&h=120&fit=crop"
                     [alt]="'home.quickLinks.items.report.alt' | i18n"
                   />
                 </div>
@@ -687,7 +687,7 @@ type HighchartsStatic = typeof import('highcharts');
               <div class="quick-link-item glass-card">
                 <div class="quick-link-icon non-border">
                   <img
-                    src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=120&h=120&fit=crop"
+                    src="https://res.cloudinary.com/dhqvb8wbn/image/upload/v1774365470/extraits_de_roles_jtffkz.jpg?w=120&h=120&fit=crop"
                     [alt]="'home.quickLinks.items.excerpts.alt' | i18n"
                   />
                 </div>
@@ -704,7 +704,7 @@ type HighchartsStatic = typeof import('highcharts');
               <div class="quick-link-item glass-card">
                 <div class="quick-link-icon non-border">
                   <img
-                    src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=120&h=120&fit=crop"
+                    src="https://res.cloudinary.com/dhqvb8wbn/image/upload/v1774366744/signalement_cfkcii.jpg?w=120&h=120&fit=crop"
                     [alt]="'home.quickLinks.items.report.alt' | i18n"
                   />
                 </div>
@@ -721,7 +721,7 @@ type HighchartsStatic = typeof import('highcharts');
               <div class="quick-link-item glass-card">
                 <div class="quick-link-icon non-border">
                   <img
-                    src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=120&h=120&fit=crop"
+                    src="https://res.cloudinary.com/dhqvb8wbn/image/upload/v1774367046/prendre_rendez_vous_q1twgk.jpg?w=120&h=120&fit=crop"
                     [alt]="'home.quickLinks.items.appointment.alt' | i18n"
                   />
                 </div>
@@ -737,7 +737,7 @@ type HighchartsStatic = typeof import('highcharts');
               <div class="quick-link-item glass-card" aria-hidden="true">
                 <div class="quick-link-icon non-border">
                   <img
-                    src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=120&h=120&fit=crop"
+                    src="https://res.cloudinary.com/dhqvb8wbn/image/upload/v1774366565/news_dmugrc.jpg?w=120&h=120&fit=crop"
                     [alt]="''"
                   />
                 </div>
@@ -754,7 +754,7 @@ type HighchartsStatic = typeof import('highcharts');
               <div class="quick-link-item glass-card" aria-hidden="true">
                 <div class="quick-link-icon non-border">
                   <img
-                    src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=120&h=120&fit=crop"
+                    src="https://res.cloudinary.com/dhqvb8wbn/image/upload/v1774365470/extraits_de_roles_jtffkz.jpg?w=120&h=120&fit=crop"
                     [alt]="''"
                   />
                 </div>
@@ -771,7 +771,7 @@ type HighchartsStatic = typeof import('highcharts');
               <div class="quick-link-item glass-card" aria-hidden="true">
                 <div class="quick-link-icon non-border">
                   <img
-                    src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=120&h=120&fit=crop"
+                    src="https://res.cloudinary.com/dhqvb8wbn/image/upload/v1774366744/signalement_cfkcii.jpg?w=120&h=120&fit=crop"
                     [alt]="''"
                   />
                 </div>
@@ -788,7 +788,7 @@ type HighchartsStatic = typeof import('highcharts');
               <div class="quick-link-item glass-card" aria-hidden="true">
                 <div class="quick-link-icon non-border">
                   <img
-                    src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=120&h=120&fit=crop"
+                    src="https://res.cloudinary.com/dhqvb8wbn/image/upload/v1774367046/prendre_rendez_vous_q1twgk.jpg?w=120&h=120&fit=crop"
                     [alt]="''"
                   />
                 </div>
@@ -5394,28 +5394,28 @@ export class HomeComponent implements OnInit, AfterViewInit {
   ql = [
     {
       key: 'news',
-      img: 'https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=120&h=120&fit=crop',
+      img: 'https://res.cloudinary.com/dhqvb8wbn/image/upload/v1774366565/news_dmugrc.jpg?w=120&h=120&fit=crop',
       title: 'home.quickLinks.items.news.title',
       body: 'home.quickLinks.items.news.body',
       action: 'home.quickLinks.items.news.action',
     },
     {
       key: 'excerpts',
-      img: 'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=120&h=120&fit=crop',
+      img: 'https://res.cloudinary.com/dhqvb8wbn/image/upload/v1774365470/extraits_de_roles_jtffkz.jpg?w=120&h=120&fit=crop',
       title: 'home.quickLinks.items.excerpts.title',
       body: 'home.quickLinks.items.excerpts.body',
       action: 'home.quickLinks.items.excerpts.action',
     },
     {
       key: 'report',
-      img: 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=120&h=120&fit=crop',
+      img: 'https://res.cloudinary.com/dhqvb8wbn/image/upload/v1774366744/signalement_cfkcii.jpg?w=120&h=120&fit=crop',
       title: 'home.quickLinks.items.report.title',
       body: 'home.quickLinks.items.report.body',
       action: 'home.quickLinks.items.report.action',
     },
     {
       key: 'appt',
-      img: 'https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=120&h=120&fit=crop',
+      img: 'https://res.cloudinary.com/dhqvb8wbn/image/upload/v1774367046/prendre_rendez_vous_q1twgk.jpg?w=120&h=120&fit=crop',
       title: 'home.quickLinks.items.appointment.title',
       body: 'home.quickLinks.items.appointment.body',
       action: 'home.quickLinks.items.appointment.action',
