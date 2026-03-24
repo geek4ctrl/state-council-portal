@@ -22,12 +22,12 @@ export class HeaderComponent {
   isMobileMenuOpen = signal(false);
 
   readonly languages: { code: LanguageCode; label: string }[] = [
-    { code: 'en', label: 'English' },
-    { code: 'fr', label: 'French' },
-    { code: 'de', label: 'German' },
-    { code: 'it', label: 'Italian' },
-    { code: 'es', label: 'Spanish' },
-    { code: 'pt', label: 'Portuguese' },
+    { code: 'en', label: 'Anglais' },
+    { code: 'fr', label: 'Francais' },
+    { code: 'de', label: 'Allemand' },
+    { code: 'it', label: 'Italien' },
+    { code: 'es', label: 'Espagnol' },
+    { code: 'pt', label: 'Portugais' },
     { code: 'sw', label: 'Swahili' },
     { code: 'ln', label: 'Lingala' },
     { code: 'ts', label: 'Tshiluba' },
@@ -133,6 +133,6 @@ export class HeaderComponent {
 
   currentLanguageLabel(): string {
     const lang = this.i18n.activeLang();
-    return this.languages.find((l) => l.code === lang)?.label ?? 'English';
+    return this.languages.find((l) => l.code === lang)?.label ?? 'Anglais';
   }
 }
