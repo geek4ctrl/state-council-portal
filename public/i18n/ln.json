@@ -1,4 +1,70 @@
 {
+  "tour": {
+    "welcome": {
+      "title": "Boyei na Portal ya Conseil d'Etat RDC",
+      "subtitle": "Ekotelo na yo mpo na koyeba bosembo ya bokonzi ya administratif ya RDC",
+      "skip": "Leka mobembo",
+      "start": "Bandisa mobembo"
+    },
+    "features": {
+      "language": {
+        "title": "Lisungi ya minoko mingi",
+        "description": "Kokota na makambo na minoko mingi, lokola francais, anglais mpe minoko ya mboka"
+      },
+      "documents": {
+        "title": "Mikanda ya mibeko",
+        "description": "Tala mikanda ya mibeko, mibeko organique mpe mibeko ya sika"
+      },
+      "members": {
+        "title": "Baprofil ya bamembres",
+        "description": "Yeba nani azali komonisa institisyo na yo na basango ya bamajistra"
+      },
+      "updates": {
+        "title": "Mise a jour na tango ya solo",
+        "description": "Bika na sango ya sika mpe mise a jour ya Conseil d'Etat"
+      }
+    },
+    "step": {
+      "next": "Sima",
+      "prev": "Liboso",
+      "skip": "Leka",
+      "finish": "Silisa"
+    },
+    "steps": {
+      "header": {
+        "title": "Navigation ya liboso",
+        "content": "Salela menu mpo na kokota na biteni: Presentation, Organisation, Actualites mpe mingi."
+      },
+      "hero": {
+        "title": "Etando hero",
+        "content": "Yeba sango mpe makambo ya ntina. Tambola na ba slides mpo na komona sango ya sika."
+      },
+      "newsletter": {
+        "title": "Sango mpe artikeli",
+        "content": "Tala sango ya sika mpe ba artikeli ya mibeko. Klik na artikeli mpo na kotanga."
+      },
+      "offer": {
+        "title": "Baservice na biso",
+        "content": "Yeba oyo Conseil d'Etat epesaka: bokonzi ya likolo, bokengi ya mibeko, malamu ya lisambiseli mpe boyokani ya mokili mobimba."
+      },
+      "expertise": {
+        "title": "Bitando ya mayele",
+        "content": "Tala bitando ya mibeko: droit civil, droit public, droit ya mosala mpe mingi."
+      },
+      "contact": {
+        "title": "Kobenga biso",
+        "content": "Tala adresse, telefone mpe email mpo na kokutana na biso."
+      },
+      "quicklinks": {
+        "title": "Banzela ya mbangu",
+        "content": "Bokota mbangu na baservice ya ntina: sango, biteni ya mikanda, kosignaler mpe rendez-vous."
+      },
+      "footer": {
+        "title": "Pied de page",
+        "content": "Tala banzela ya mbangu, mikanda ya mibeko mpe banzela ya social."
+      }
+    }
+  },
   "header": {
     "siteName": "Conseil d'Etat ya RDC",
     "contact": {

@@ -1,4 +1,70 @@
 {
+  "tour": {
+    "welcome": {
+      "title": "Willkommen im Portal des Staatsrats der DR Kongo",
+      "subtitle": "Ihr Zugang zum Verstaendnis der administrativen Vertretung der Demokratischen Republik Kongo",
+      "skip": "Tour ueberspringen",
+      "start": "Tour starten"
+    },
+    "features": {
+      "language": {
+        "title": "Mehrsprachige Unterstuetzung",
+        "description": "Zugriff auf Inhalte in mehreren Sprachen, einschliesslich Franzoesisch, Englisch und lokaler Sprachen"
+      },
+      "documents": {
+        "title": "Rechtsdokumente",
+        "description": "Zugriff auf Rechtstexte, Organgesetze und geltende Verordnungen"
+      },
+      "members": {
+        "title": "Mitgliederprofile",
+        "description": "Erfahren Sie, wer Ihre Institution vertritt, mit detaillierten Informationen zu den Magistraten"
+      },
+      "updates": {
+        "title": "Aktuelle Updates",
+        "description": "Bleiben Sie mit den neuesten Nachrichten und Updates des Staatsrats informiert"
+      }
+    },
+    "step": {
+      "next": "Weiter",
+      "prev": "Zurueck",
+      "skip": "Ueberspringen",
+      "finish": "Fertig"
+    },
+    "steps": {
+      "header": {
+        "title": "Hauptnavigation",
+        "content": "Nutzen Sie das Menue, um verschiedene Bereiche des Portals zu erreichen: Praesentation, Organisation, Nachrichten und mehr."
+      },
+      "hero": {
+        "title": "Hero-Bereich",
+        "content": "Entdecken Sie Neuigkeiten und wichtige Ereignisse des Staatsrats. Navigieren Sie zwischen den Slides, um die neuesten Informationen zu sehen."
+      },
+      "newsletter": {
+        "title": "Nachrichten und Artikel",
+        "content": "Sehen Sie sich die neuesten Nachrichten und juristischen Artikel an. Klicken Sie auf einen Artikel, um mehr zu lesen."
+      },
+      "offer": {
+        "title": "Unsere Dienstleistungen",
+        "content": "Erfahren Sie, was der Staatsrat bietet: oberste Justizinstanz, Rechtssicherheit, richterliche Exzellenz und internationale Zusammenarbeit."
+      },
+      "expertise": {
+        "title": "Fachgebiete",
+        "content": "Entdecken Sie die vom Staatsrat abgedeckten Rechtsbereiche: Zivilrecht, Oeffentliches Recht, Arbeitsrecht und mehr."
+      },
+      "contact": {
+        "title": "Kontakt",
+        "content": "Hier finden Sie unsere Kontaktdaten: Adresse, Telefon und E-Mail."
+      },
+      "quicklinks": {
+        "title": "Schnellzugriffe",
+        "content": "Schneller Zugriff auf wichtige Dienste: Nachrichten, Auszuege, Meldungen und Terminbuchung."
+      },
+      "footer": {
+        "title": "Fussbereich",
+        "content": "Finden Sie Schnelllinks, rechtliche Ressourcen und unsere sozialen Netzwerke."
+      }
+    }
+  },
   "header": {
     "siteName": "Staatsrat der DR Kongo",
     "contact": {

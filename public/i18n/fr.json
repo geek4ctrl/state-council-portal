@@ -1,4 +1,70 @@
 {
+  "tour": {
+    "welcome": {
+      "title": "Bienvenue sur le Portail du Conseil d'État RDC",
+      "subtitle": "Votre passerelle pour comprendre la représentation administrative de la République Démocratique du Congo",
+      "skip": "Ignorer la Visite",
+      "start": "Commencer la Visite"
+    },
+    "features": {
+      "language": {
+        "title": "Support Multilingue",
+        "description": "Accédez au contenu en plusieurs langues, incluant le français, l'anglais et les langues locales"
+      },
+      "documents": {
+        "title": "Documents Juridiques",
+        "description": "Consultez les textes juridiques, lois organiques et règlements en vigueur"
+      },
+      "members": {
+        "title": "Profils des Membres",
+        "description": "Découvrez qui représente votre institution avec des informations détaillées sur les magistrats"
+      },
+      "updates": {
+        "title": "Mises à Jour en Temps Réel",
+        "description": "Restez informé avec les dernières actualités et mises à jour du Conseil d'État"
+      }
+    },
+    "step": {
+      "next": "Suivant",
+      "prev": "Précédent",
+      "skip": "Ignorer",
+      "finish": "Terminer"
+    },
+    "steps": {
+      "header": {
+        "title": "Navigation Principale",
+        "content": "Utilisez le menu pour accéder aux différentes sections du portail : Présentation, Organisation, Actualités et plus encore."
+      },
+      "hero": {
+        "title": "Section Héro",
+        "content": "Découvrez les actualités et événements importants du Conseil d'État. Naviguez entre les slides pour voir les dernières informations."
+      },
+      "newsletter": {
+        "title": "Actualités et Articles",
+        "content": "Consultez les dernières nouvelles et articles juridiques. Cliquez sur un article pour lire la suite."
+      },
+      "offer": {
+        "title": "Nos Services",
+        "content": "Découvrez ce que le Conseil d'État offre : autorité judiciaire suprême, sécurité juridique, excellence judiciaire et coopération internationale."
+      },
+      "expertise": {
+        "title": "Domaines d'Expertise",
+        "content": "Explorez les différents domaines juridiques couverts par le Conseil d'État : droit civil, droit public, droit du travail et plus encore."
+      },
+      "contact": {
+        "title": "Contactez-nous",
+        "content": "Retrouvez nos coordonnées : adresse, téléphone et email pour nous contacter directement."
+      },
+      "quicklinks": {
+        "title": "Liens Rapides",
+        "content": "Accédez rapidement aux services essentiels : actualités, extraits de rôles, signalement et prise de rendez-vous."
+      },
+      "footer": {
+        "title": "Pied de Page",
+        "content": "Retrouvez les liens rapides, les ressources juridiques et nos réseaux sociaux pour rester connecté."
+      }
+    }
+  },
   "header": {
     "siteName": "Conseil d'État de la RDC",
     "contact": {
@@ -348,6 +414,18 @@
           "title": "Prendre rendez-vous",
           "body": "Planifiez des consultations avec les responsables de la cour.",
           "action": "Prendre rendez-vous"
+        },
+        "faq": {
+          "alt": "FAQ",
+          "title": "Questions fréquentes",
+          "body": "Trouvez les réponses aux questions les plus courantes sur nos services.",
+          "action": "Consulter"
+        },
+        "contact": {
+          "alt": "Contact",
+          "title": "Nous contacter",
+          "body": "Contactez-nous pour toute question ou demande d'information.",
+          "action": "Contactez-nous"
         }
       }
     },

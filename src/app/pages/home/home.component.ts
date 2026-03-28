@@ -732,6 +732,42 @@ type HighchartsStatic = typeof import('highcharts');
                     'home.quickLinks.items.appointment.action' | i18n
                   }}</a>
                 </div>
+                <div class="connector-line"></div>
+              </div>
+
+              <!-- FAQ Card -->
+              <div class="quick-link-item glass-card">
+                <div class="quick-link-icon non-border">
+                  <img
+                    src="https://res.cloudinary.com/dhqvb8wbn/image/upload/v1774366744/signalement_cfkcii.jpg?w=120&h=120&fit=crop"
+                    [alt]="'home.quickLinks.items.faq.alt' | i18n"
+                  />
+                </div>
+                <div class="quick-link-content">
+                  <h3>{{ 'home.quickLinks.items.faq.title' | i18n }}</h3>
+                  <p>{{ 'home.quickLinks.items.faq.body' | i18n }}</p>
+                  <a href="#" class="quick-link-action">{{
+                    'home.quickLinks.items.faq.action' | i18n
+                  }}</a>
+                </div>
+                <div class="connector-line"></div>
+              </div>
+
+              <!-- Contact Card -->
+              <div class="quick-link-item glass-card">
+                <div class="quick-link-icon non-border">
+                  <img
+                    src="https://res.cloudinary.com/dhqvb8wbn/image/upload/v1774366565/news_dmugrc.jpg?w=120&h=120&fit=crop"
+                    [alt]="'home.quickLinks.items.contact.alt' | i18n"
+                  />
+                </div>
+                <div class="quick-link-content">
+                  <h3>{{ 'home.quickLinks.items.contact.title' | i18n }}</h3>
+                  <p>{{ 'home.quickLinks.items.contact.body' | i18n }}</p>
+                  <a href="#" class="quick-link-action">{{
+                    'home.quickLinks.items.contact.action' | i18n
+                  }}</a>
+                </div>
               </div>
 
               <div class="quick-link-item glass-card" aria-hidden="true">
@@ -797,6 +833,40 @@ type HighchartsStatic = typeof import('highcharts');
                   <p>{{ 'home.quickLinks.items.appointment.body' | i18n }}</p>
                   <a href="#" class="quick-link-action" tabindex="-1" aria-hidden="true">{{
                     'home.quickLinks.items.appointment.action' | i18n
+                  }}</a>
+                </div>
+                <div class="connector-line"></div>
+              </div>
+
+              <div class="quick-link-item glass-card" aria-hidden="true">
+                <div class="quick-link-icon non-border">
+                  <img
+                    src="https://res.cloudinary.com/dhqvb8wbn/image/upload/v1774366744/signalement_cfkcii.jpg?w=120&h=120&fit=crop"
+                    [alt]="''"
+                  />
+                </div>
+                <div class="quick-link-content">
+                  <h3>{{ 'home.quickLinks.items.faq.title' | i18n }}</h3>
+                  <p>{{ 'home.quickLinks.items.faq.body' | i18n }}</p>
+                  <a href="#" class="quick-link-action" tabindex="-1" aria-hidden="true">{{
+                    'home.quickLinks.items.faq.action' | i18n
+                  }}</a>
+                </div>
+                <div class="connector-line"></div>
+              </div>
+
+              <div class="quick-link-item glass-card" aria-hidden="true">
+                <div class="quick-link-icon non-border">
+                  <img
+                    src="https://res.cloudinary.com/dhqvb8wbn/image/upload/v1774366565/news_dmugrc.jpg?w=120&h=120&fit=crop"
+                    [alt]="''"
+                  />
+                </div>
+                <div class="quick-link-content">
+                  <h3>{{ 'home.quickLinks.items.contact.title' | i18n }}</h3>
+                  <p>{{ 'home.quickLinks.items.contact.body' | i18n }}</p>
+                  <a href="#" class="quick-link-action" tabindex="-1" aria-hidden="true">{{
+                    'home.quickLinks.items.contact.action' | i18n
                   }}</a>
                 </div>
               </div>
@@ -3515,6 +3585,7 @@ type HighchartsStatic = typeof import('highcharts');
         width: max-content;
         animation: quick-links-marquee 30s linear infinite;
         will-change: transform;
+        padding: 0 20px;
       }
 
       .quick-links-marquee:hover .quick-links-container,
@@ -5054,34 +5125,55 @@ type HighchartsStatic = typeof import('highcharts');
         }
 
         .quick-links-section {
-          --quick-link-width: 200px;
+          --quick-link-width: 160px;
+        }
+
+        .quick-links-container {
+          padding: 0 10px;
+          gap: 12px;
         }
 
         .quick-link-item {
-          padding: 10px 12px;
-          gap: 10px;
+          padding: 8px 10px;
+          gap: 8px;
+          border-radius: 12px;
         }
 
         .quick-link-icon {
-          width: 46px;
+          width: 36px;
+          height: 50px;
+          border-radius: 8px;
+        }
+
+        .quick-link-icon img {
+          object-fit: cover;
+          height: 100%;
         }
 
         .quick-link-content h3 {
-          font-size: 0.62rem;
-          margin-bottom: 5px;
+          font-size: 0.6rem;
+          margin-bottom: 3px;
+          letter-spacing: 0.5px;
         }
 
         .quick-link-content p {
-          font-size: 0.66rem;
-          line-height: 1.4;
-          margin-bottom: 4px;
+          font-size: 0.58rem;
+          line-height: 1.3;
+          margin-bottom: 2px;
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
         }
 
         .quick-link-action {
-          font-size: 0.7rem;
-          padding: 8px 12px;
-          border-radius: 999px;
-          background: rgba(255, 255, 255, 0.12);
+          font-size: 0.6rem;
+          margin-top: 4px;
+        }
+
+        .connector-line {
+          height: 50px;
+          margin: 0 6px;
         }
 
         .read-more-link {

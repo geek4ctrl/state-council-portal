@@ -1,4 +1,70 @@
 {
+  "tour": {
+    "welcome": {
+      "title": "Karibu kwenye Tovuti ya Baraza la Serikali la RDC",
+      "subtitle": "Langoni kwako kuelewa uwakilishi wa utawala wa Jamhuri ya Kidemokrasia ya Kongo",
+      "skip": "Ruka ziara",
+      "start": "Anza ziara"
+    },
+    "features": {
+      "language": {
+        "title": "Msaada wa lugha nyingi",
+        "description": "Fikia maudhui kwa lugha nyingi, ikiwemo Kifaransa, Kiingereza na lugha za eneo"
+      },
+      "documents": {
+        "title": "Nyaraka za kisheria",
+        "description": "Tazama maandishi ya kisheria, sheria za msingi na kanuni zinazotumika"
+      },
+      "members": {
+        "title": "Wasifu wa wanachama",
+        "description": "Gundua wanaowakilisha taasisi yako kwa taarifa za kina kuhusu mahakimu"
+      },
+      "updates": {
+        "title": "Sasisho za muda halisi",
+        "description": "Endelea kupata habari na sasisho mpya za Baraza la Serikali"
+      }
+    },
+    "step": {
+      "next": "Inayofuata",
+      "prev": "Iliyotangulia",
+      "skip": "Ruka",
+      "finish": "Maliza"
+    },
+    "steps": {
+      "header": {
+        "title": "Uelekezaji mkuu",
+        "content": "Tumia menyu kufikia sehemu mbalimbali za tovuti: Uwasilishaji, Muundo, Habari na zaidi."
+      },
+      "hero": {
+        "title": "Sehemu ya shujaa",
+        "content": "Gundua habari na matukio muhimu ya Baraza la Serikali. Sogeza kati ya slaidi kuona taarifa za hivi karibuni."
+      },
+      "newsletter": {
+        "title": "Habari na makala",
+        "content": "Tazama habari za hivi karibuni na makala za kisheria. Bofya makala kusoma zaidi."
+      },
+      "offer": {
+        "title": "Huduma zetu",
+        "content": "Gundua kile Baraza la Serikali kinatoa: mamlaka kuu ya mahakama, usalama wa kisheria, ubora wa mahakama na ushirikiano wa kimataifa."
+      },
+      "expertise": {
+        "title": "Maeneo ya utaalamu",
+        "content": "Chunguza nyanja za sheria zinazofunikwa: sheria za kiraia, sheria ya umma, sheria ya ajira na zaidi."
+      },
+      "contact": {
+        "title": "Wasiliana nasi",
+        "content": "Pata mawasiliano yetu: anwani, simu na barua pepe."
+      },
+      "quicklinks": {
+        "title": "Viungo vya haraka",
+        "content": "Fikia huduma muhimu haraka: habari, dondoo za majukumu, ripoti na kuweka miadi."
+      },
+      "footer": {
+        "title": "Sehemu ya chini",
+        "content": "Pata viungo vya haraka, rasilimali za kisheria na mitandao yetu ya kijamii."
+      }
+    }
+  },
   "header": {
     "siteName": "Baraza la Serikali la RDC",
     "contact": {

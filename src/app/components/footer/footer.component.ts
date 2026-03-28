@@ -55,6 +55,9 @@ import { CommonModule } from '@angular/common';
                 <li>
                   <a href="#">{{ 'footer.resources.faqs' | i18n }}</a>
                 </li>
+                <li>
+                  <a href="#" (click)="restartTour($event)">Relancer la visite guidée</a>
+                </li>
               </ul>
             </div>
             <div class="footer-column">
@@ -346,4 +349,10 @@ export class FooterComponent {
   footerLogo = computed(() => {
     return '/assets/new-logo.png';
   });
+
+  restartTour(event: Event): void {
+    event.preventDefault();
+    localStorage.removeItem('guided-tour-completed');
+    window.location.reload();
+  }
 }

@@ -1,4 +1,70 @@
 {
+  "tour": {
+    "welcome": {
+      "title": "Benvenuto nel Portale del Consiglio di Stato della RDC",
+      "subtitle": "Il tuo accesso per comprendere la rappresentanza amministrativa della Repubblica Democratica del Congo",
+      "skip": "Salta il tour",
+      "start": "Inizia il tour"
+    },
+    "features": {
+      "language": {
+        "title": "Supporto multilingue",
+        "description": "Accedi ai contenuti in piu lingue, inclusi francese, inglese e lingue locali"
+      },
+      "documents": {
+        "title": "Documenti giuridici",
+        "description": "Consulta testi giuridici, leggi organiche e regolamenti in vigore"
+      },
+      "members": {
+        "title": "Profili dei membri",
+        "description": "Scopri chi rappresenta la tua istituzione con informazioni dettagliate sui magistrati"
+      },
+      "updates": {
+        "title": "Aggiornamenti in tempo reale",
+        "description": "Resta informato con le ultime notizie e aggiornamenti del Consiglio di Stato"
+      }
+    },
+    "step": {
+      "next": "Avanti",
+      "prev": "Indietro",
+      "skip": "Salta",
+      "finish": "Fine"
+    },
+    "steps": {
+      "header": {
+        "title": "Navigazione principale",
+        "content": "Usa il menu per accedere alle diverse sezioni del portale: Presentazione, Organizzazione, Notizie e altro."
+      },
+      "hero": {
+        "title": "Sezione hero",
+        "content": "Scopri notizie ed eventi importanti del Consiglio di Stato. Naviga tra le slide per vedere le ultime informazioni."
+      },
+      "newsletter": {
+        "title": "Notizie e articoli",
+        "content": "Consulta le ultime notizie e articoli giuridici. Clicca su un articolo per leggere di piu."
+      },
+      "offer": {
+        "title": "I nostri servizi",
+        "content": "Scopri cosa offre il Consiglio di Stato: massima autorita giudiziaria, sicurezza giuridica, eccellenza giudiziaria e cooperazione internazionale."
+      },
+      "expertise": {
+        "title": "Aree di competenza",
+        "content": "Esplora i diversi ambiti giuridici coperti dal Consiglio di Stato: diritto civile, diritto pubblico, diritto del lavoro e altro."
+      },
+      "contact": {
+        "title": "Contatti",
+        "content": "Trova i nostri contatti: indirizzo, telefono ed email."
+      },
+      "quicklinks": {
+        "title": "Link rapidi",
+        "content": "Accedi rapidamente ai servizi essenziali: notizie, estratti, segnalazioni e prenotazione appuntamenti."
+      },
+      "footer": {
+        "title": "Pie di pagina",
+        "content": "Trova link rapidi, risorse giuridiche e i nostri social."
+      }
+    }
+  },
   "header": {
     "siteName": "Consiglio di Stato della RDC",
     "contact": {

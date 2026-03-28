@@ -1,11 +1,12 @@
 import { AfterViewInit, Component, DestroyRef, ElementRef, ViewChild, inject, signal } from '@angular/core';
 import { Router, RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './components/header/header.component';
+import { GuidedTourComponent } from './components/guided-tour/guided-tour.component';
 import { I18nPipe } from './i18n/i18n.pipe';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, RouterLink, RouterLinkActive, HeaderComponent, I18nPipe],
+  imports: [RouterOutlet, RouterLink, RouterLinkActive, HeaderComponent, GuidedTourComponent, I18nPipe],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
@@ -117,5 +118,10 @@ export class App implements AfterViewInit {
         window.scrollTo({ top: 0, behavior: 'smooth' });
       }
     }, 50);
+  }
+
+  restartTour(): void {
+    localStorage.removeItem('guided-tour-completed');
+    window.location.reload();
   }
 }

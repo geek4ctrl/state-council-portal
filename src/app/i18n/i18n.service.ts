@@ -74,9 +74,9 @@ export class I18nService {
 
   private getDictionaryUrls(lang: LanguageCode): [string, string, string] {
     const baseAware = this.getBaseAwareI18nUrl(lang);
-    const root = `/i18n/${lang}.json`;
-    const publicRoot = `/public/i18n/${lang}.json`;
-    return [baseAware, root, publicRoot];
+    const root = `i18n/${lang}.json`;
+    const absoluteRoot = `/i18n/${lang}.json`;
+    return [root, absoluteRoot, baseAware];
   }
 
   private getBaseAwareI18nUrl(lang: LanguageCode): string {

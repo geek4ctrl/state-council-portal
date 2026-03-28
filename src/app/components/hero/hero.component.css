@@ -215,7 +215,7 @@
 .cards-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 0;
+  gap: 20px;
 }
 
 .info-card {
@@ -223,7 +223,7 @@
   color: white;
   padding: 1.75rem 1.5rem;
   text-align: center;
-  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   transition: all 0.4s ease;
   cursor: pointer;
   position: relative;
@@ -242,9 +242,7 @@
   transition: transform 0.4s ease;
 }
 
-.info-card:last-child {
-  border-right: none;
-}
+
 
 .info-card:hover {
   background: #223a54;

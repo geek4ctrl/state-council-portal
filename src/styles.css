@@ -118,6 +118,30 @@ body {
   margin-bottom: 0 !important;
 }
 
+/* Global scrollbar styling */
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #1F9BD9 #eef6fb;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #eef6fb;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #1F9BD9 0%, #1a7fb3 100%);
+  border-radius: 999px;
+  border: 2px solid #eef6fb;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #22a6e6 0%, #1673a4 100%);
+}
+
 body.menu-open {
   overflow: hidden;
 }

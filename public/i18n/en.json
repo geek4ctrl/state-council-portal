@@ -1,4 +1,70 @@
 {
+  "tour": {
+    "welcome": {
+      "title": "Welcome to the State Council Portal DRC",
+      "subtitle": "Your gateway to understanding the administrative representation of the Democratic Republic of Congo",
+      "skip": "Skip Tour",
+      "start": "Start Tour"
+    },
+    "features": {
+      "language": {
+        "title": "Multilingual Support",
+        "description": "Access content in multiple languages, including French, English and local languages"
+      },
+      "documents": {
+        "title": "Legal Documents",
+        "description": "Access legal texts, organic laws and regulations in force"
+      },
+      "members": {
+        "title": "Member Profiles",
+        "description": "Discover who represents your institution with detailed information on magistrates"
+      },
+      "updates": {
+        "title": "Real-time Updates",
+        "description": "Stay informed with the latest news and updates from the State Council"
+      }
+    },
+    "step": {
+      "next": "Next",
+      "prev": "Previous",
+      "skip": "Skip",
+      "finish": "Finish"
+    },
+    "steps": {
+      "header": {
+        "title": "Main Navigation",
+        "content": "Use the menu to access different sections of the portal: Presentation, Organization, News and more."
+      },
+      "hero": {
+        "title": "Hero Section",
+        "content": "Discover news and important events from the State Council. Navigate between slides to see the latest information."
+      },
+      "newsletter": {
+        "title": "News and Articles",
+        "content": "Check out the latest news and legal articles. Click on an article to read more."
+      },
+      "offer": {
+        "title": "Our Services",
+        "content": "Discover what the State Council offers: supreme judicial authority, legal security, judicial excellence and international cooperation."
+      },
+      "expertise": {
+        "title": "Areas of Expertise",
+        "content": "Explore the different legal domains covered by the State Council: civil law, public law, labor law and more."
+      },
+      "contact": {
+        "title": "Contact Us",
+        "content": "Find our contact details: address, phone and email to reach us directly."
+      },
+      "quicklinks": {
+        "title": "Quick Links",
+        "content": "Quickly access essential services: news, role excerpts, reporting and appointment booking."
+      },
+      "footer": {
+        "title": "Footer",
+        "content": "Find quick links, legal resources and our social networks to stay connected."
+      }
+    }
+  },
   "header": {
     "siteName": "State Council of the DRC",
     "contact": {
@@ -348,6 +414,18 @@
           "title": "Book appointment",
           "body": "Schedule consultations with court officials.",
           "action": "Book Now"
+        },
+        "faq": {
+          "alt": "FAQ",
+          "title": "Frequently Asked Questions",
+          "body": "Find answers to the most common questions about our services.",
+          "action": "View FAQ"
+        },
+        "contact": {
+          "alt": "Contact",
+          "title": "Contact Us",
+          "body": "Reach out to us for any questions or information requests.",
+          "action": "Contact Us"
         }
       }
     },

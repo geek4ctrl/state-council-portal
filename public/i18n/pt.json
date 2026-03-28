@@ -1,4 +1,70 @@
 {
+  "tour": {
+    "welcome": {
+      "title": "Bem-vindo ao Portal do Conselho de Estado da RDC",
+      "subtitle": "Seu acesso para compreender a representacao administrativa da Republica Democratica do Congo",
+      "skip": "Ignorar visita",
+      "start": "Iniciar visita"
+    },
+    "features": {
+      "language": {
+        "title": "Suporte multilingue",
+        "description": "Acesse conteudo em varios idiomas, incluindo frances, ingles e linguas locais"
+      },
+      "documents": {
+        "title": "Documentos juridicos",
+        "description": "Consulte textos juridicos, leis organicas e regulamentos em vigor"
+      },
+      "members": {
+        "title": "Perfis de membros",
+        "description": "Descubra quem representa sua instituicao com informacoes detalhadas sobre os magistrados"
+      },
+      "updates": {
+        "title": "Atualizacoes em tempo real",
+        "description": "Fique informado com as ultimas noticias e atualizacoes do Conselho de Estado"
+      }
+    },
+    "step": {
+      "next": "Seguinte",
+      "prev": "Anterior",
+      "skip": "Ignorar",
+      "finish": "Concluir"
+    },
+    "steps": {
+      "header": {
+        "title": "Navegacao principal",
+        "content": "Use o menu para acessar diferentes secoes do portal: Apresentacao, Organizacao, Noticias e mais."
+      },
+      "hero": {
+        "title": "Secao hero",
+        "content": "Descubra noticias e eventos importantes do Conselho de Estado. Navegue entre os slides para ver as ultimas informacoes."
+      },
+      "newsletter": {
+        "title": "Noticias e artigos",
+        "content": "Veja as ultimas noticias e artigos juridicos. Clique em um artigo para ler mais."
+      },
+      "offer": {
+        "title": "Nossos servicos",
+        "content": "Descubra o que o Conselho de Estado oferece: autoridade judicial suprema, seguranca juridica, excelencia judicial e cooperacao internacional."
+      },
+      "expertise": {
+        "title": "Areas de especializacao",
+        "content": "Explore os dominios juridicos cobertos pelo Conselho de Estado: direito civil, direito publico, direito do trabalho e mais."
+      },
+      "contact": {
+        "title": "Contato",
+        "content": "Encontre nossos contatos: endereco, telefone e email."
+      },
+      "quicklinks": {
+        "title": "Links rapidos",
+        "content": "Acesse rapidamente servicos essenciais: noticias, extratos, denuncias e agendamento."
+      },
+      "footer": {
+        "title": "Rodape",
+        "content": "Encontre links rapidos, recursos juridicos e nossas redes sociais."
+      }
+    }
+  },
   "header": {
     "siteName": "Conselho de Estado da RDC",
     "contact": {
