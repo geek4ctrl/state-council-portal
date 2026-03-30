@@ -11,7 +11,7 @@ import { CommonModule } from '@angular/common';
     <footer class="footer-section">
       <div class="footer-main">
         <div class="footer-logo-wrapper">
-          <img [src]="footerLogo()" alt="Footer Logo" />
+          <img [src]="footerLogo()" alt="Footer Logo" width="77" height="96" loading="lazy" />
         </div>
         <div class="container">
           <div class="footer-grid">

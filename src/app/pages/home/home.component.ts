@@ -59,6 +59,17 @@ type HighchartsStatic = typeof import('highcharts');
     <div class="page-wrap">
       <!-- ═══ HERO ═══ -->
       <section class="hero">
+        <img
+          class="hero-preload"
+          [src]="heroSlides[0].image"
+          alt=""
+          width="1920"
+          height="1080"
+          fetchpriority="high"
+          loading="eager"
+          decoding="async"
+          aria-hidden="true"
+        />
         <div
           class="hero-bg hero-bg-prev"
           [class.fade-out]="isSlideTransitioning()"
@@ -166,7 +177,7 @@ type HighchartsStatic = typeof import('highcharts');
                 >
                   <div class="tilt-shine"></div>
                   <div class="nl-img-wrap img-zoom">
-                    <img [src]="post.image" [alt]="post.title" />
+                    <img [src]="post.image" [alt]="post.title" width="400" height="300" loading="lazy" />
                     <div class="img-sheen"></div>
                     <div class="nl-img-badge">{{ post.date }} | {{ post.category }}</div>
                     <div class="nl-img-scan"></div>
@@ -204,7 +215,7 @@ type HighchartsStatic = typeof import('highcharts');
                 >
                   <div class="tilt-shine"></div>
                   <div class="nl-img-wrap img-zoom">
-                    <img [src]="post.image" [alt]="''" />
+                    <img [src]="post.image" [alt]="''" width="400" height="300" loading="lazy" />
                     <div class="img-sheen"></div>
                     <div class="nl-img-badge">{{ post.date }} | {{ post.category }}</div>
                     <div class="nl-img-scan"></div>
@@ -1410,6 +1421,13 @@ type HighchartsStatic = typeof import('highcharts');
         height: 600px;
         overflow: hidden;
         perspective: 800px;
+      }
+      .hero-preload {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        opacity: 0;
+        pointer-events: none;
       }
       .hero-bg {
         position: absolute;

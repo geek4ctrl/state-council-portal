@@ -39,7 +39,7 @@ import { SeoService } from '../../services/seo.service';
           } @else if (article()) {
             <article class="detail-card">
               <div class="detail-media">
-                <img [src]="article()!.image" [alt]="article()!.title" loading="lazy" />
+                <img [src]="article()!.image" [alt]="article()!.title" width="800" height="420" loading="lazy" />
               </div>
               <div class="detail-content">
                 @if (article()!.excerpt) {

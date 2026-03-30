@@ -72,7 +72,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
                 >
                   <div class="tilt-shine"></div>
                   <div class="news-image img-zoom">
-                    <img [src]="article.image" [alt]="article.title" loading="lazy" />
+                    <img [src]="article.image" [alt]="article.title" width="400" height="250" loading="lazy" />
                     <div class="img-sheen"></div>
                   </div>
                   <div class="news-content">

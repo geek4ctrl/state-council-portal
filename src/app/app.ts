@@ -1,7 +1,8 @@
-import { AfterViewInit, Component, DestroyRef, ElementRef, ViewChild, inject, signal } from '@angular/core';
+import { AfterViewInit, Component, DestroyRef, ElementRef, ViewChild, inject, signal, OnInit } from '@angular/core';
 import { Router, RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './components/header/header.component';
 import { GuidedTourComponent } from './components/guided-tour/guided-tour.component';
+import { PerformanceService } from './services/performance.service';
 import { I18nPipe } from './i18n/i18n.pipe';
 
 @Component({
@@ -10,7 +11,7 @@ import { I18nPipe } from './i18n/i18n.pipe';
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
-export class App implements AfterViewInit {
+export class App implements OnInit, AfterViewInit {
   protected readonly title = signal('state-council-portal');
 
   @ViewChild('curDot') curDot!: ElementRef<HTMLDivElement>;
@@ -23,8 +24,14 @@ export class App implements AfterViewInit {
   private trailRx = 0;
   private trailRy = 0;
   private readonly destroyRef = inject(DestroyRef);
+  private readonly performanceService = inject(PerformanceService);
 
   constructor(private readonly router: Router) {}
+
+  ngOnInit(): void {
+    // Initialize performance monitoring
+    this.performanceService.lazyLoadImages();
+  }
 
   ngAfterViewInit(): void {
     this.initCursor();
@@ -116,6 +123,8 @@ export class App implements AfterViewInit {
     setTimeout(() => {
       if (typeof window !== 'undefined') {
         window.scrollTo({ top: 0, behavior: 'smooth' });
+        // Re-initialize lazy loading after navigation
+        this.performanceService.lazyLoadImages();
       }
     }, 50);
   }

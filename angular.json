@@ -35,6 +35,10 @@
               "highcharts/modules/organization",
               "highcharts/modules/sankey"
             ],
+            "optimization": true,
+            "sourceMap": false,
+            "namedChunks": false,
+            "extractLicenses": true,
             "styles": [
               "src/styles.css"
             ]
@@ -53,7 +57,19 @@
                   "maximumError": "70kB"
                 }
               ],
-              "outputHashing": "all"
+              "outputHashing": "all",
+              "optimization": {
+                "scripts": true,
+                "styles": {
+                  "minify": true,
+                  "inlineCritical": true
+                },
+                "fonts": true
+              },
+              "sourceMap": false,
+              "namedChunks": false,
+              "extractLicenses": true,
+              "aot": true
             },
             "development": {
               "optimization": false,
@@ -73,7 +89,7 @@
               "buildTarget": "state-council-portal:build:development"
             }
           },
-          "defaultConfiguration": "development"
+          "defaultConfiguration": "production"
         },
         "test": {
           "builder": "@angular/build:unit-test"

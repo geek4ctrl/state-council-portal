@@ -11,7 +11,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
       <h1>{{ 'judges.title' | i18n }}</h1>
       <p>{{ 'judges.body' | i18n }}</p>
       <div class="judges-photo">
-        <img src="assets/hero-group-photo.png" [alt]="'judges.photoAlt' | i18n" />
+        <img src="assets/hero-group-photo.png" [alt]="'judges.photoAlt' | i18n" width="880" height="495" loading="lazy" />
       </div>
       <app-footer></app-footer>
     </div>

@@ -899,10 +899,6 @@ export class GuidedTourComponent implements AfterViewInit {
   private findVisibleTarget(selector: string): HTMLElement | null {
     const element = document.querySelector(selector) as HTMLElement | null;
     if (!element) return null;
-
-    const rect = element.getBoundingClientRect();
-    if (rect.width === 0 || rect.height === 0) return null;
-
     return element;
   }
 

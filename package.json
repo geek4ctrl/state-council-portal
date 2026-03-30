@@ -3,8 +3,12 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng serve --configuration production",
+    "serve": "ng serve --configuration production",
+    "serve:dev": "ng serve --configuration development",
     "build": "ng build",
+    "build:prod": "ng build --configuration production",
+    "serve:prod": "npx serve dist/state-council-portal/browser -s",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
@@ -29,8 +33,10 @@
     "@angular/forms": "^21.1.0",
     "@angular/platform-browser": "^21.1.0",
     "@angular/router": "^21.1.0",
+    "@angular/ssr": "^21.1.2",
     "@vitalets/google-translate-api": "^9.2.1",
     "highcharts": "^12.1.0",
+    "zone.js": "^0.15.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0"
   },
@@ -38,6 +44,8 @@
     "@angular/build": "^21.1.2",
     "@angular/cli": "^21.1.2",
     "@angular/compiler-cli": "^21.1.0",
+    "@types/express": "^5.0.6",
+    "@types/node": "^25.5.0",
     "jsdom": "^27.1.0",
     "typescript": "~5.9.2",
     "vitest": "^4.0.8"

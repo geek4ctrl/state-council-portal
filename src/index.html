@@ -33,10 +33,63 @@
   <link rel="icon" type="image/png" href="/assets/new-logo.png">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 
-  <!-- Fonts -->
+  <!-- Resource Hints -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://res.cloudinary.com" crossorigin>
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+  <link rel="dns-prefetch" href="https://res.cloudinary.com">
+
+  <!-- Preload LCP hero image -->
+  <link
+    rel="preload"
+    as="image"
+    href="https://res.cloudinary.com/dhqvb8wbn/image/upload/v1772019774/Accueil_Site_1_qzidwt.jpg"
+    fetchpriority="high"
+  >
+
+  <!-- Async Font Loading -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"></noscript>
+
+  <!-- Critical CSS Inline -->
+  <style>
+    /* Critical CSS for above-the-fold content */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: local('Inter');
+    }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    }
+    .fonts-loaded body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+    app-root { display: block; }
+    .loading-screen {
+      position: fixed; inset: 0;
+      background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
+      display: flex; align-items: center; justify-content: center;
+      z-index: 99999;
+    }
+  </style>
+
+  <!-- Font Loading Detection -->
+  <script>
+    // Check if fonts are loaded
+    if ('fonts' in document) {
+      document.fonts.load('1em Inter').then(function() {
+        document.documentElement.classList.add('fonts-loaded');
+      });
+    } else {
+      // Fallback for browsers without Font Loading API
+      document.documentElement.classList.add('fonts-loaded');
+    }
+  </script>
 
   <!-- Structured Data - Organization -->
   <script type="application/ld+json">
@@ -70,6 +123,17 @@
   </script>
 </head>
 <body>
+  <!-- Loading Screen - Removed by JS when app loads -->
+  <div class="loading-screen" id="loading-screen">
+    <div style="text-align: center;">
+      <div style="width: 60px; height: 60px; border: 3px solid rgba(255,255,255,0.3); border-top-color: white; border-radius: 50%; animation: spin 1s linear infinite; margin: 0 auto 20px;"></div>
+      <p style="color: white; font-size: 14px; margin: 0;">Chargement...</p>
+    </div>
+  </div>
+  <style>
+    @keyframes spin { to { transform: rotate(360deg); } }
+  </style>
+
   <app-root></app-root>
 </body>
 </html>

@@ -195,7 +195,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
             <div class="stakeholder-card tilt-card" *ngFor="let stakeholder of stakeholders; let i = index" [style.--i]="i" (mousemove)="tilt($event)" (mouseleave)="tiltReset($event)">
               <div class="tilt-shine"></div>
               <div class="stakeholder-image img-zoom">
-                <img [src]="stakeholder.image" [alt]="stakeholder.name">
+                <img [src]="stakeholder.image" [alt]="stakeholder.name" width="300" height="350" loading="lazy">
                 <div class="img-sheen"></div>
                 <div class="image-overlay"></div>
               </div>

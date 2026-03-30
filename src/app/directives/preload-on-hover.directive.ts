@@ -16,7 +16,7 @@ import { PreloadService } from '../services/preload.service';
 })
 export class PreloadOnHoverDirective {
   @Input() appPreloadOnHover: string = '';
-  private preloadTimeout?: number;
+  private preloadTimeout?: ReturnType<typeof setTimeout>;
 
   constructor(private preloadService: PreloadService) {}
 
@@ -30,7 +30,7 @@ export class PreloadOnHoverDirective {
   onMouseLeave() {
     // Cancel preload if user moves away quickly
     if (this.preloadTimeout) {
-      this.preloadService.cancelPreload(this.preloadTimeout);
+      clearTimeout(this.preloadTimeout);
     }
   }
 
