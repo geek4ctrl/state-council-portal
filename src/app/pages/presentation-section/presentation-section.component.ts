@@ -296,13 +296,7 @@ type GreffeFirstPresident = {
           <div class="container">
             <div class="org-detail-card">
               <h2>{{ 'about.rubrics.organization' | i18n }}</h2>
-              <p>{{ 'about.legal.detail.paragraph3' | i18n }}</p>
-              <ul>
-                <li>{{ 'about.legal.detail.list2.1' | i18n }}</li>
-                <li>{{ 'about.legal.detail.list2.2' | i18n }}</li>
-                <li>{{ 'about.legal.detail.list2.3' | i18n }}</li>
-              </ul>
-              <p>{{ 'about.legal.detail.paragraph4' | i18n }}</p>
+              <p [innerHTML]="('about.legal.detail.paragraph3' | i18n).replace(/\\n/g, '<br>')"></p>
             </div>
           </div>
         </section>
