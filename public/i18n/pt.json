@@ -831,6 +831,8 @@
         "presidentsTitle": "Os primeiros presidentes do Conselho de Estado",
         "judgesTitle": "Os juízes do Conselho de Estado"
       },
+      "firstPresidentsTitle": "Os primeiros presidentes do Conselho de Estado",
+      "presidentsTitle": "Os presidentes do Conselho de Estado",
       "bodyPlaceholder": "Texto"
     },
     "about": {

@@ -831,6 +831,8 @@
         "presidentsTitle": "Les premiers présidents du Conseil d'État",
         "judgesTitle": "Les juges du Conseil d'État"
       },
+      "firstPresidentsTitle": "Les premiers présidents du Conseil d'État",
+      "presidentsTitle": "Les présidents du Conseil d'État",
       "bodyPlaceholder": "Texte"
     },
     "about": {

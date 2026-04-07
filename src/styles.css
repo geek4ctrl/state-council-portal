@@ -516,7 +516,7 @@ button[type='submit'] {
   font-size: 0.9rem !important;
   font-weight: 700 !important;
   cursor: pointer !important;
-  text-transform: capitalize !important;
+  text-transform: none !important;
   transition: all 0.3s ease !important;
 }
 
