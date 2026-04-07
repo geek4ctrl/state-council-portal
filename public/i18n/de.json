@@ -831,6 +831,8 @@
         "presidentsTitle": "Die ersten Präsidenten des Staatsrats",
         "judgesTitle": "Die Richter des Staatsrats"
       },
+      "firstPresidentsTitle": "Die ersten Präsidenten des Staatsrats",
+      "presidentsTitle": "Die Präsidenten des Staatsrats",
       "bodyPlaceholder": "Text"
     },
     "about": {

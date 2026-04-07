@@ -1712,6 +1712,8 @@ type HighchartsStatic = typeof import('highcharts');
         box-shadow:
           0 12px 40px rgba(26, 41, 66, 0.12),
           inset 0 1px 0 rgba(255, 255, 255, 0.7);
+        position: relative;
+        overflow: visible;
       }
       .kf-meta {
         display: flex;
@@ -1737,8 +1739,10 @@ type HighchartsStatic = typeof import('highcharts');
       .kf-chart {
         flex: 1;
         min-height: 250px;
+        height: 250px;
         width: 100%;
         overflow: visible;
+        display: block;
       }
       .card-edge-r {
         position: absolute;
@@ -2589,7 +2593,7 @@ type HighchartsStatic = typeof import('highcharts');
         cursor: pointer;
         margin-top: 18px;
         text-transform: capitalize;
-        border-radius: 999px;
+        border-radius: 6px;
         align-self: flex-start;
         position: relative;
         overflow: hidden;
@@ -2901,6 +2905,7 @@ type HighchartsStatic = typeof import('highcharts');
         background: transparent;
         color: #1f9bd9;
         border: 1.5px solid #1f9bd9;
+        border-radius: 6px;
         font-size: 0.92rem;
         font-weight: 800;
         cursor: pointer;
@@ -3446,13 +3451,16 @@ type HighchartsStatic = typeof import('highcharts');
         white-space: nowrap;
       }
 
-      .key-fact-chart {
+      .key-fact-chart,
+      .kf-chart {
         width: 100%;
         height: 250px;
         overflow: visible;
+        display: block;
       }
 
-      .key-fact-chart .highcharts-container {
+      .key-fact-chart .highcharts-container,
+      .kf-chart .highcharts-container {
         overflow: visible !important;
       }
 
@@ -4108,7 +4116,7 @@ type HighchartsStatic = typeof import('highcharts');
         margin-top: 18px;
         text-transform: capitalize;
         transition: all 0.3s ease;
-        border-radius: 999px;
+        border-radius: 6px;
         align-self: flex-start;
         opacity: 0;
         transform: translateY(10px);
