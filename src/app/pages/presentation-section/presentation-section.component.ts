@@ -504,22 +504,10 @@ type GreffeFirstPresident = {
               <div class="section-card">
                 <p>{{ 'about.legal.detail.paragraph1' | i18n }}</p>
                 <p>{{ 'about.legal.detail.paragraph2' | i18n }}</p>
-                <ul>
-                  <li>{{ 'about.legal.detail.list1.1' | i18n }}</li>
-                  <li>{{ 'about.legal.detail.list1.2' | i18n }}</li>
-                  <li>{{ 'about.legal.detail.list1.3' | i18n }}</li>
-                  <li>{{ 'about.legal.detail.list1.4' | i18n }}</li>
-                  <li>{{ 'about.legal.detail.list1.5' | i18n }}</li>
-                </ul>
               </div>
             } @else if (isFondements()) {
               <div class="section-card">
                 <p>{{ 'about.intro.body' | i18n }}</p>
-                <ul>
-                  <li>{{ 'about.legal.docs.1' | i18n }}</li>
-                  <li>{{ 'about.legal.docs.2' | i18n }}</li>
-                  <li>{{ 'about.legal.docs.3' | i18n }}</li>
-                </ul>
               </div>
             } @else if (isProcedures()) {
               <div class="section-card">
@@ -530,7 +518,7 @@ type GreffeFirstPresident = {
               </div>
             } @else {
               <div class="section-card">
-                <p>{{ bodyKey() | i18n }}</p>
+                <p [innerHTML]="bodyKey() | i18n"></p>
               </div>
             }
           </div>
@@ -691,6 +679,7 @@ type GreffeFirstPresident = {
         line-height: 1.8;
         font-size: 0.98rem;
         text-align: left;
+        white-space: pre-line;
       }
 
       .section-card ul {
