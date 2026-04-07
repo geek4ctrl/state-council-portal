@@ -71,13 +71,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
                     <li>{{ 'about.legal.detail.list1.4' | i18n }}</li>
                     <li>{{ 'about.legal.detail.list1.5' | i18n }}</li>
                   </ul>
-                  <p>{{ 'about.legal.detail.paragraph3' | i18n }}</p>
-                  <ul>
-                    <li>{{ 'about.legal.detail.list2.1' | i18n }}</li>
-                    <li>{{ 'about.legal.detail.list2.2' | i18n }}</li>
-                    <li>{{ 'about.legal.detail.list2.3' | i18n }}</li>
-                  </ul>
-                  <p>{{ 'about.legal.detail.paragraph4' | i18n }}</p>
+                  <p [innerHTML]="('about.legal.detail.paragraph3' | i18n).replace(/\\n/g, '<br>')"></p>
                   <p>{{ 'about.legal.detail.paragraph5' | i18n }}</p>
                   <p>{{ 'about.legal.detail.paragraph6' | i18n }}</p>
                   <p>{{ 'about.legal.detail.paragraph7' | i18n }}</p>
