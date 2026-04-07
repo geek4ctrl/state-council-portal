@@ -365,28 +365,6 @@ type GreffeFirstPresident = {
                 {{ 'organization.greffe.tabs.judges' | i18n }}
               </button>
             </div>
-
-            @if (isGreffePresidents()) {
-              <div class="greffe-card">
-                <div class="greffe-card-image" aria-hidden="true">
-                  {{ 'organization.about.imageLabel' | i18n }}
-                </div>
-                <div class="greffe-card-body">
-                  <h2>{{ 'organization.greffe.cards.presidentsTitle' | i18n }}</h2>
-                  <p>{{ 'organization.greffe.bodyPlaceholder' | i18n }}</p>
-                </div>
-              </div>
-            } @else {
-              <div class="greffe-card">
-                <div class="greffe-card-image" aria-hidden="true">
-                  {{ 'organization.about.imageLabel' | i18n }}
-                </div>
-                <div class="greffe-card-body">
-                  <h2>{{ 'organization.greffe.cards.judgesTitle' | i18n }}</h2>
-                  <p>{{ 'organization.greffe.bodyPlaceholder' | i18n }}</p>
-                </div>
-              </div>
-            }
           </div>
         </section>
 
@@ -439,7 +417,7 @@ type GreffeFirstPresident = {
               </article>
             } @else {
               <div class="greffe-judges">
-                <h3 class="greffe-section-title">Les premiers presidents du Conseil d'Etat</h3>
+                <h3 class="greffe-section-title">{{ 'organization.greffe.firstPresidentsTitle' | i18n }}</h3>
                 <div class="greffe-people">
                   @for (president of greffeFirstPresidents; track president.name) {
                     <article class="greffe-item">
@@ -459,7 +437,7 @@ type GreffeFirstPresident = {
                   }
                 </div>
 
-                <h3 class="greffe-section-title">Les presidents du Conseil d'Etat</h3>
+                <h3 class="greffe-section-title">{{ 'organization.greffe.presidentsTitle' | i18n }}</h3>
                 <div class="greffe-people">
                   @for (president of greffePresidents(); track president.email) {
                     <article class="greffe-item">
@@ -583,7 +561,7 @@ type GreffeFirstPresident = {
         padding: 90px 0 70px;
         background:
           linear-gradient(90deg, rgba(16, 27, 43, 0.88) 0%, rgba(16, 27, 43, 0.64) 55%, rgba(16, 27, 43, 0.42) 100%),
-          url('https://placehold.co/1920x400/82BCDC/ffffff?text=') center/cover;
+          url('https://images.unsplash.com/photo-1444628838545-ac100e7d4ecf?auto=format&fit=crop&w=1920&h=400&q=80') center/cover no-repeat;
         overflow: hidden;
       }
 
@@ -1833,6 +1811,7 @@ export class PresentationSectionComponent implements OnInit {
       const section = params.get('section') as SectionKey | null;
       if (section && SECTION_MAP[section]) {
         this.sectionKey.set(section);
+        window.scrollTo(0, 0);
       }
     });
   }

@@ -831,6 +831,8 @@
         "presidentsTitle": "First Presidents of the State Council",
         "judgesTitle": "Judges of the State Council"
       },
+      "firstPresidentsTitle": "First Presidents of the State Council",
+      "presidentsTitle": "Presidents of the State Council",
       "bodyPlaceholder": "Text"
     },
     "about": {

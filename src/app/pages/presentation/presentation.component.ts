@@ -34,7 +34,7 @@ import { OrganizationComponent } from '../organization/organization.component';
       position: relative;
       height: 400px;
       background: linear-gradient(rgba(10, 25, 41, 0.85), rgba(26, 41, 66, 0.9)),
-                  url('https://placehold.co/1920x400/82BCDC/ffffff?text=Court+Building') center/cover;
+                  url('https://images.unsplash.com/photo-1444628838545-ac100e7d4ecf?auto=format&fit=crop&w=1920&h=400&q=80') center/cover no-repeat;
       display: flex;
       align-items: center;
       justify-content: center;

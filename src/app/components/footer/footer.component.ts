@@ -70,12 +70,6 @@ import { CommonModule } from '@angular/common';
                     {{ 'footer.connect.twitter' | i18n }}
                   </a>
                 </li>
-                <li>
-                  <a href="#">{{ 'footer.connect.instagram' | i18n }}</a>
-                </li>
-                <li>
-                  <a href="#">{{ 'footer.connect.linkedin' | i18n }}</a>
-                </li>
               </ul>
             </div>
           </div>
