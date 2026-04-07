@@ -518,7 +518,7 @@ type GreffeFirstPresident = {
               </div>
             } @else {
               <div class="section-card">
-                <p>{{ bodyKey() | i18n }}</p>
+                <p [innerHTML]="bodyKey() | i18n"></p>
               </div>
             }
           </div>
@@ -679,6 +679,7 @@ type GreffeFirstPresident = {
         line-height: 1.8;
         font-size: 0.98rem;
         text-align: left;
+        white-space: pre-line;
       }
 
       .section-card ul {
