@@ -755,6 +755,7 @@
       "page": {
         "heroTitle": "La première présidente",
         "inauguration": "La Première Présidente du Conseil d'État, Madame Brigitte Nsensele wa Nsensele, a prêté serment le 18/02/2025 devant le Président de la République au Palais de la Nation de Kinshasa.",
+          "inauguration": "La présidence du Conseil d’Etat est assurée par le Premier Président. Celui-ci\ndispose des compétences ci-après : l’élaboration du projet de règlement intérieur\ndu Conseil d’Etat ; la répartition des matières entre les deux sections ou entre les\nchambres ; la gestion du personnel de greffe mis à la disposition du Conseil ; la\ngestion du budget de fonctionnement alloué aux juridictions de l’ordre\nadministratif. Il en est l’ordonnateur délégué.\nDepuis le 18 Fevrier 2025, Madame Brigitte Nsensele wa Nsensele est la Première Présidente du Conseil d’Etat.",
         "biographyTitle": "Biographie de Mme. Brigitte Nsensele wa Nsensele",
         "biography": "Née à Kinshasa, Madame Brigitte Nsensele wa Nsensele est magistrate de carrière. Elle a gravi tous les échelons de la magistrature administrative avant d'être nommée Première Présidente du Conseil d'État de la République Démocratique du Congo en février 2025.",
         "careerTitle": "Parcours",
@@ -800,7 +801,7 @@
       "roles": {
         "firstPresident": {
           "title": "La première présidente",
-          "body": "Le Premier Président du Conseil d'État est l'autorité hiérarchique au sommet de toutes les juridictions de l'ordre administratif. Il veille au bon fonctionnement du Conseil d'État et de toutes les autres juridictions de l'ordre administratif."
+           "body": "La présidence du Conseil d’Etat est assurée par le Premier Président. Celui-ci\ndispose des compétences ci-après : l’élaboration du projet de règlement intérieur\ndu Conseil d’Etat ; la répartition des matières entre les deux sections ou entre les\nchambres ; la gestion du personnel de greffe mis à la disposition du Conseil ; la\ngestion du budget de fonctionnement alloué aux juridictions de l’ordre\nadministratif. Il en est l’ordonnateur délégué.\nDepuis le 18 Fevrier 2025, Madame Brigitte Nsensele wa Nsensele est la Première Présidente du Conseil d’Etat."
         },
         "sectionPresidents": {
           "title": "Les Présidents des Sections",
