@@ -515,11 +515,6 @@ type GreffeFirstPresident = {
             } @else if (isFondements()) {
               <div class="section-card">
                 <p>{{ 'about.intro.body' | i18n }}</p>
-                <ul>
-                  <li>{{ 'about.legal.docs.1' | i18n }}</li>
-                  <li>{{ 'about.legal.docs.2' | i18n }}</li>
-                  <li>{{ 'about.legal.docs.3' | i18n }}</li>
-                </ul>
               </div>
             } @else if (isProcedures()) {
               <div class="section-card">
