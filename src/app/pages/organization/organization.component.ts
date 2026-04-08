@@ -2644,7 +2644,7 @@ export class OrganizationComponent implements OnInit, AfterViewInit {
       titleKey: 'organization.about.cards.missions',
       section: 'missions',
       imageUrl:
-        'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=1200&q=80',
+        'https://res.cloudinary.com/dhqvb8wbn/image/upload/v1775665794/Mission_ntk5m4.jpg',
     },
     {
       titleKey: 'organization.about.cards.organisations',
@@ -2662,7 +2662,7 @@ export class OrganizationComponent implements OnInit, AfterViewInit {
       titleKey: 'organization.about.cards.competences',
       section: 'competences',
       imageUrl:
-        'https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1200&q=80',
+        'https://res.cloudinary.com/dhqvb8wbn/image/upload/v1775666183/Competences_uxjyl2.jpg',
     },
     {
       titleKey: 'organization.about.cards.procedures',
