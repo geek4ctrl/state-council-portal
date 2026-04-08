@@ -2641,22 +2641,22 @@ export class OrganizationComponent implements OnInit, AfterViewInit {
 
   readonly aboutCards = [
     {
-      titleKey: 'organization.about.cards.missions',
-      section: 'missions',
+      titleKey: 'organization.about.cards.historique',
+      section: 'historique',
       imageUrl:
-        'https://res.cloudinary.com/dhqvb8wbn/image/upload/v1775665794/Mission_ntk5m4.jpg',
-    },
-    {
-      titleKey: 'organization.about.cards.organisations',
-      section: 'organisations',
-      imageUrl:
-        'https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=1200&q=80',
+        'https://res.cloudinary.com/dhqvb8wbn/image/upload/v1775667096/Historique_ztecci.jpg',
     },
     {
       titleKey: 'organization.about.cards.fondements',
       section: 'fondements',
       imageUrl:
-        'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1200&q=80',
+        'https://res.cloudinary.com/dhqvb8wbn/image/upload/v1775666645/Fondement_juridique_yeskeu.jpg',
+    },
+    {
+      titleKey: 'organization.about.cards.missions',
+      section: 'missions',
+      imageUrl:
+        'https://res.cloudinary.com/dhqvb8wbn/image/upload/v1775665794/Mission_ntk5m4.jpg',
     },
     {
       titleKey: 'organization.about.cards.competences',
@@ -2665,16 +2665,16 @@ export class OrganizationComponent implements OnInit, AfterViewInit {
         'https://res.cloudinary.com/dhqvb8wbn/image/upload/v1775666183/Competences_uxjyl2.jpg',
     },
     {
+      titleKey: 'organization.about.cards.organisations',
+      section: 'organisations',
+      imageUrl:
+        'https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=1200&q=80',
+    },
+    {
       titleKey: 'organization.about.cards.procedures',
       section: 'procedures',
       imageUrl:
         'https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1200&q=80',
-    },
-    {
-      titleKey: 'organization.about.cards.historique',
-      section: 'historique',
-      imageUrl:
-        'https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&w=1200&q=80',
     },
   ];
 
