@@ -746,7 +746,21 @@ type GreffeFirstPresident = {
 
 
       .org-hero {
-        padding: 260px 0 240px;
+        padding: 60px 0 240px;
+      }
+
+      .org-hero .container {
+        display: flex;
+        flex-direction: column;
+        min-height: 220px;
+      }
+
+      .org-hero .back-link {
+        align-self: flex-start;
+      }
+
+      .org-hero .hero-split {
+        margin-top: auto;
       }
 
       .org-hero-body {
