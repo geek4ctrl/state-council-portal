@@ -831,7 +831,8 @@
       },
       "firstPresidentsTitle": "First Presidents of the State Council",
       "presidentsTitle": "Presidents of the State Council",
-      "bodyPlaceholder": "Text"
+      "bodyPlaceholder": "Text",
+      "toDate": "present"
     },
     "about": {
       "title": "Who are we?",

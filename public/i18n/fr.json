@@ -831,7 +831,8 @@
       },
       "firstPresidentsTitle": "Les premiers présidents du Conseil d'État",
       "presidentsTitle": "Les présidents du Conseil d'État",
-      "bodyPlaceholder": "Texte"
+      "bodyPlaceholder": "Texte",
+      "toDate": "à ce jour"
     },
     "about": {
       "title": "Qui sommes-nous ?",

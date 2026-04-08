@@ -835,7 +835,8 @@
       },
       "firstPresidentsTitle": "I primi presidenti del Consiglio di Stato",
       "presidentsTitle": "I presidenti del Consiglio di Stato",
-      "bodyPlaceholder": "Testo"
+      "bodyPlaceholder": "Testo",
+      "toDate": "oggi"
     },
     "about": {
       "title": "Chi siamo?",

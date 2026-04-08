@@ -376,7 +376,7 @@ type GreffeFirstPresident = {
                 </div>
                 <div class="greffe-text">
                   <h3>Brigitte Nsensele wa Nsensele</h3>
-                  <p>2025 - a ce jour</p>
+                  <p>2025 - {{ 'organization.greffe.toDate' | i18n }}</p>
                 </div>
               </article>
 
@@ -1804,7 +1804,7 @@ export class PresentationSectionComponent implements OnInit {
   readonly greffeFirstPresidents: GreffeFirstPresident[] = [
     {
       name: 'Brigitte Nsensele wa Nsensele',
-      years: '2025 - a ce jour',
+      years: '2025 - à ce jour',
       image:
         'https://res.cloudinary.com/dhqvb8wbn/image/upload/v1772555485/Brigitte_NSENSELE_wa_NSENSELE_OK.jpg_ndsjzg.jpg',
     },
