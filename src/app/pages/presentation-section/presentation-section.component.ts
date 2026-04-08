@@ -335,7 +335,7 @@ type GreffeFirstPresident = {
                 <h1 class="hero-title">{{ 'organization.greffe.title' | i18n }}</h1>
               </div>
               <span class="hero-divider" aria-hidden="true"></span>
-              <p class="hero-body-text">{{ 'organization.greffe.ariaLabel' | i18n }}</p>
+              <p class="hero-body-text" [innerHTML]="'organization.greffeSectionBody' | i18n"></p>
             </div>
             <div
               class="greffe-tabs"
