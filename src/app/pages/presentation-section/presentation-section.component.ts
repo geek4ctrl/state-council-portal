@@ -44,7 +44,7 @@ const SECTION_MAP = {
   },
   'section-contentieux': {
     titleKey: 'organization.chart.nodes.litigationSection',
-    bodyKey: 'organization.chart.subtitle',
+    bodyKey: 'organization.litigationSectionBody',
   },
   'greffe-secretariat-general': {
     titleKey: 'organization.chart.nodes.registry',
@@ -523,6 +523,21 @@ type GreffeFirstPresident = {
                     />
                   </div>
                   <p [innerHTML]="'organization.consultativeSectionBio' | i18n"></p>
+                </div>
+              </div>
+            } @else if (isContentieux()) {
+              <div class="section-card">
+                <p [innerHTML]="bodyKey() | i18n"></p>
+                <div class="section-photo-bio">
+                  <div class="section-photo-frame">
+                    <img
+                      ngSrc="https://res.cloudinary.com/dhqvb8wbn/image/upload/v1772556705/PRES_MASANI_40x50.jpg_ast5mq.jpg"
+                      [alt]="'organization.chart.peopleLitigationPresidentName' | i18n"
+                      width="200"
+                      height="240"
+                    />
+                  </div>
+                  <p [innerHTML]="'organization.litigationSectionBio' | i18n"></p>
                 </div>
               </div>
             } @else {
@@ -1762,6 +1777,7 @@ export class PresentationSectionComponent implements OnInit {
   readonly isGreffePresidents = computed(() => this.greffeSection() === 'presidents');
   readonly isGreffeJudges = computed(() => this.greffeSection() === 'judges');
   readonly isConsultative = computed(() => this.sectionKey() === 'section-consultative');
+  readonly isContentieux = computed(() => this.sectionKey() === 'section-contentieux');
   readonly showHeroBody = computed(
     () =>
       !this.isMission() &&
@@ -1769,7 +1785,8 @@ export class PresentationSectionComponent implements OnInit {
       !this.isProcedures() &&
       !this.isHistorique() &&
       !this.isCompetences() &&
-      !this.isConsultative()
+      !this.isConsultative() &&
+      !this.isContentieux()
   );
   readonly greffePresidents = computed(() =>
     this.memberService.members.filter((member) => member.role === 'president')
