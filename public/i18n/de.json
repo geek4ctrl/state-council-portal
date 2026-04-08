@@ -835,7 +835,8 @@
       },
       "firstPresidentsTitle": "Die ersten Präsidenten des Staatsrats",
       "presidentsTitle": "Die Präsidenten des Staatsrats",
-      "bodyPlaceholder": "Text"
+      "bodyPlaceholder": "Text",
+      "toDate": "heute"
     },
     "about": {
       "title": "Wer sind wir?",

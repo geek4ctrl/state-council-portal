@@ -835,7 +835,8 @@
       },
       "firstPresidentsTitle": "Os primeiros presidentes do Conselho de Estado",
       "presidentsTitle": "Os presidentes do Conselho de Estado",
-      "bodyPlaceholder": "Texto"
+      "bodyPlaceholder": "Texto",
+      "toDate": "o presente"
     },
     "about": {
       "title": "Quem somos?",
