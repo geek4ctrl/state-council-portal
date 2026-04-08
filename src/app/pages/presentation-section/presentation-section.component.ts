@@ -1513,7 +1513,7 @@ type GreffeFirstPresident = {
       .greffe-photo img {
         width: 100%;
         height: 100%;
-        object-fit: contain;
+        object-fit: cover;
       }
 
       .greffe-text h3 {
