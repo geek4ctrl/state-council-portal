@@ -59,7 +59,7 @@
     }
   },
   "history": {
-    "title": "Geschichte",
+    "title": "Historischer Hintergrund",
     "body": "Der Staatsrat ist das höchste Gericht der Verwaltungsordnung mit sowohl beratender als auch zuständiger Kompetenz. Er wurde durch die Verfassung der Demokratischen Republik Kongo vom 18. Februar 2006 geschaffen, wie sie bis heute geändert wurde, nach der Auflösung des ehemaligen Obersten Gerichtshofs der Justiz. Seine Organisation, Zuständigkeit und Funktionsweise sind im Organgesetz Nr. 16/027 vom 15. Oktober 2016 festgelegt. Die Institution ist seit 2018 tätig."
   },
   "process": {
@@ -845,7 +845,7 @@
         "fondements": "Rechtsgrundlage",
         "competences": "Zuständigkeiten",
         "procedures": "Verfahren vor dem Staatsrat",
-        "historique": "Geschichte"
+        "historique": "Historischer Hintergrund"
       }
     },
     "firstPresidents": {
