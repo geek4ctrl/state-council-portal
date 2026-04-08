@@ -40,7 +40,7 @@ const SECTION_MAP = {
   },
   'section-consultative': {
     titleKey: 'organization.chart.nodes.consultativeSection',
-    bodyKey: 'organization.chart.subtitle',
+    bodyKey: 'organization.consultativeSectionBody',
   },
   'section-contentieux': {
     titleKey: 'organization.chart.nodes.litigationSection',
@@ -510,6 +510,21 @@ type GreffeFirstPresident = {
                 <p>{{ 'about.legal.detail.paragraph8' | i18n }}</p>
                 <p>{{ 'about.legal.detail.paragraph9' | i18n }}</p>
               </div>
+            } @else if (isConsultative()) {
+              <div class="section-card">
+                <p [innerHTML]="bodyKey() | i18n"></p>
+                <div class="section-photo-bio">
+                  <div class="section-photo-frame">
+                    <img
+                      ngSrc="https://res.cloudinary.com/dhqvb8wbn/image/upload/v1772556921/Eug%C3%A8ne_KIBWE_MUTER.jpg_bacl4e.jpg"
+                      [alt]="'organization.chart.peopleConsultativePresidentName' | i18n"
+                      width="200"
+                      height="240"
+                    />
+                  </div>
+                  <p [innerHTML]="'organization.consultativeSectionBio' | i18n"></p>
+                </div>
+              </div>
             } @else {
               <div class="section-card">
                 <p [innerHTML]="bodyKey() | i18n"></p>
@@ -659,6 +674,30 @@ type GreffeFirstPresident = {
         padding: 40px 45px;
         border-radius: 16px;
         box-shadow: 0 14px 30px rgba(26, 41, 66, 0.12);
+      }
+
+      .section-photo-bio {
+        display: flex;
+        gap: 32px;
+        align-items: flex-start;
+        margin-top: 48px;
+      }
+
+      .section-photo-frame {
+        flex-shrink: 0;
+      }
+
+      .section-photo-frame img {
+        border-radius: 8px;
+        border: 2px solid #e5e7eb;
+        object-fit: cover;
+      }
+
+      @media (max-width: 768px) {
+        .section-photo-bio {
+          flex-direction: column;
+          align-items: center;
+        }
       }
 
       .section-card h2 {
@@ -1722,13 +1761,15 @@ export class PresentationSectionComponent implements OnInit {
   readonly isGreffe = computed(() => this.sectionKey() === 'greffe-secretariat-general');
   readonly isGreffePresidents = computed(() => this.greffeSection() === 'presidents');
   readonly isGreffeJudges = computed(() => this.greffeSection() === 'judges');
+  readonly isConsultative = computed(() => this.sectionKey() === 'section-consultative');
   readonly showHeroBody = computed(
     () =>
       !this.isMission() &&
       !this.isFondements() &&
       !this.isProcedures() &&
       !this.isHistorique() &&
-      !this.isCompetences()
+      !this.isCompetences() &&
+      !this.isConsultative()
   );
   readonly greffePresidents = computed(() =>
     this.memberService.members.filter((member) => member.role === 'president')
