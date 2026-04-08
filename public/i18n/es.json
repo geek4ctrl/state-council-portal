@@ -72,6 +72,7 @@
   },
   "memberDetail": {
     "back": "← Volver a Presentación",
+    "backToOrganization": "← Volver a Organización",
     "title": "Perfil de miembro",
     "subtitle": "Perfil detallado e información de contacto.",
     "office": "Oficina",

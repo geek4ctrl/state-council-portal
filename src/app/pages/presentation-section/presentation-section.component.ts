@@ -70,7 +70,7 @@ type GreffeFirstPresident = {
         <section class="chart-hero presentation-hero">
           <div class="container">
             <button class="back-link" type="button" (click)="goBack()">
-              {{ 'memberDetail.back' | i18n }}
+              {{ backLabelKey() | i18n }}
             </button>
             <div class="hero-split">
               <div class="hero-left">
@@ -189,7 +189,7 @@ type GreffeFirstPresident = {
         <section class="fp-hero presentation-hero">
           <div class="container">
             <button class="back-link" type="button" (click)="goBack()">
-              {{ 'memberDetail.back' | i18n }}
+              {{ backLabelKey() | i18n }}
             </button>
             <div class="hero-split single">
               <div class="hero-left">
@@ -282,7 +282,7 @@ type GreffeFirstPresident = {
         <section class="org-hero presentation-hero" style="background: linear-gradient(90deg, rgba(16,27,43,0.55) 0%, rgba(16,27,43,0.35) 55%, rgba(16,27,43,0.25) 100%), url('assets/hero-group-photo.png') center/cover no-repeat; image-rendering: auto;">
           <div class="container">
             <button class="back-link" type="button" (click)="goBack()">
-              {{ 'memberDetail.back' | i18n }}
+              {{ backLabelKey() | i18n }}
             </button>
             <div class="hero-split single">
               <div class="hero-left">
@@ -328,7 +328,7 @@ type GreffeFirstPresident = {
         <section class="greffe-hero presentation-hero">
           <div class="container">
             <button class="back-link" type="button" (click)="goBack()">
-              {{ 'memberDetail.back' | i18n }}
+              {{ backLabelKey() | i18n }}
             </button>
             <div class="hero-split">
               <div class="hero-left">
@@ -478,7 +478,7 @@ type GreffeFirstPresident = {
         <section class="section-hero presentation-hero">
           <div class="container">
             <button class="back-link" type="button" (click)="goBack()">
-              {{ 'memberDetail.back' | i18n }}
+              {{ backLabelKey() | i18n }}
             </button>
             <div class="hero-split" [class.single]="!showHeroBody()">
               <div class="hero-left">
@@ -1787,6 +1787,13 @@ export class PresentationSectionComponent implements OnInit {
       !this.isCompetences() &&
       !this.isConsultative() &&
       !this.isContentieux()
+  );
+  readonly isOrganizationChild = computed(() => {
+    const key = this.sectionKey();
+    return key === 'organigramme' || key === 'premiere-presidente' || key === 'section-consultative' || key === 'section-contentieux' || key === 'greffe-secretariat-general';
+  });
+  readonly backLabelKey = computed(() =>
+    this.isOrganizationChild() ? 'memberDetail.backToOrganization' : 'memberDetail.back'
   );
   readonly greffePresidents = computed(() =>
     this.memberService.members.filter((member) => member.role === 'president')
