@@ -835,7 +835,8 @@
       },
       "firstPresidentsTitle": "Marais wa Kwanza wa Baraza la Serikali",
       "presidentsTitle": "Marais wa Baraza la Serikali",
-      "bodyPlaceholder": "Maandishi"
+      "bodyPlaceholder": "Maandishi",
+      "toDate": "sasa"
     },
     "about": {
       "title": "Sisi ni nani?",
