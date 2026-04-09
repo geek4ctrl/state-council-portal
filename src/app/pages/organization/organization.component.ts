@@ -2668,13 +2668,13 @@ export class OrganizationComponent implements OnInit, AfterViewInit {
       titleKey: 'organization.about.cards.organisations',
       section: 'organisations',
       imageUrl:
-        'https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=1200&q=80',
+        'https://res.cloudinary.com/dhqvb8wbn/image/upload/v1775726541/organization_lrumzi.jpg',
     },
     {
       titleKey: 'organization.about.cards.procedures',
       section: 'procedures',
       imageUrl:
-        'https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1200&q=80',
+        'https://res.cloudinary.com/dhqvb8wbn/image/upload/v1775726305/Presidence_du_conseil_detat_oddnb9.jpg',
     },
   ];
 
