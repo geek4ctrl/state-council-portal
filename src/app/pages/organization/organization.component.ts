@@ -2676,6 +2676,12 @@ export class OrganizationComponent implements OnInit, AfterViewInit {
       imageUrl:
         'https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1200&q=80',
     },
+    {
+      titleKey: 'organization.about.cards.presidence',
+      section: 'premiere-presidente',
+      imageUrl:
+        'https://res.cloudinary.com/dhqvb8wbn/image/upload/v1775726305/Presidence_du_conseil_detat_oddnb9.jpg',
+    },
   ];
 
   @ViewChild('orgChartContainer', { static: true })
