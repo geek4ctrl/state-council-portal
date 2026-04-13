@@ -796,7 +796,8 @@
         "firstPresident": "Rais wa Kwanza",
         "consultative": "Sehemu ya Ushauri",
         "contentieux": "Sehemu ya Mashauri",
-        "registry": "Usajili na Sekretarieti Mkuu"
+        "registry": "Usajili na Sekretarieti Mkuu",
+        "juges": "Majaji wa Baraza la Serikali"
       },
       "roles": {
         "firstPresident": {
@@ -832,8 +833,9 @@
         "presidentsTitle": "Marais wa Kwanza wa Baraza la Serikali",
         "judgesTitle": "Majaji wa Baraza la Serikali"
       },
-      "firstPresidentsTitle": "Marais wa Kwanza wa Baraza la Serikali",
+      "firstPresidentsTitle": "Rais wa Kwanza wa Baraza la Jimbo",
       "presidentsTitle": "Marais wa Baraza la Serikali",
+      "advisorsTitle": "Washauri wa Baraza la Jimbo",
       "bodyPlaceholder": "Maandishi",
       "toDate": "sasa"
     },
@@ -847,7 +849,8 @@
         "competences": "Mamlaka",
         "procedures": "Utaratibu mbele ya Baraza la Serikali",
         "historique": "Historia ya zamani",
-        "presidence": "Urais wa Baraza la Serikali"
+        "presidence": "Urais wa Baraza la Serikali",
+        "juges": "Majaji wa Baraza la Serikali"
       }
     },
     "firstPresidents": {

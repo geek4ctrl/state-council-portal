@@ -792,7 +792,8 @@
         "firstPresident": "La Première Présidente",
         "consultative": "La section consultative",
         "contentieux": "La section du contentieux",
-        "registry": "Le greffe et le Secrétariat général"
+        "registry": "Le greffe et le Secrétariat général",
+        "juges": "Les juges du Conseil d'État"
       },
       "roles": {
         "firstPresident": {
@@ -828,8 +829,9 @@
         "presidentsTitle": "Les premiers présidents du Conseil d'État",
         "judgesTitle": "Les juges du Conseil d'État"
       },
-      "firstPresidentsTitle": "Les premiers présidents du Conseil d'État",
+      "firstPresidentsTitle": "La Première Présidente du Conseil d'État",
       "presidentsTitle": "Les présidents du Conseil d'État",
+      "advisorsTitle": "Les conseillers du Conseil d'État",
       "bodyPlaceholder": "Texte",
       "toDate": "à ce jour"
     },
@@ -843,7 +845,8 @@
         "competences": "Compétences",
         "procedures": "Procédure devant le Conseil d'État",
         "historique": "Historique",
-        "presidence": "La Présidence du Conseil d'État"
+        "presidence": "La Présidence du Conseil d'État",
+        "juges": "Les juges du Conseil d'État"
       }
     },
     "firstPresidents": {
