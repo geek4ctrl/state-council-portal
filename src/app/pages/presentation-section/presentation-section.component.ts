@@ -1766,9 +1766,7 @@ export class PresentationSectionComponent implements OnInit {
   }
 
   goBack() {
-    if (window.history.length > 1) {
-      this.location.back();
-    } else if (this.isOrganizationChild()) {
+    if (this.isOrganizationChild()) {
       this.router.navigate(['/presentation', 'organisations']);
     } else {
       this.router.navigate(['/presentation']);
