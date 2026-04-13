@@ -203,7 +203,7 @@ type GreffeFirstPresident = {
           <div class="container">
             <div class="fp-intro-card">
               <div class="fp-intro-body">
-                <p>{{ 'organization.firstPresident.page.inauguration' | i18n }}</p>
+                <p [innerHTML]="'organization.firstPresident.page.inauguration' | i18n"></p>
               </div>
             </div>
           </div>

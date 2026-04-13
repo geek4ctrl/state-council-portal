@@ -754,9 +754,8 @@
       "title": "Rais ya liboso",
       "body": "Rais ya liboso akambaka Conseil d'Etat mpe likita na yango.",
       "page": {
-        "heroTitle": "La première présidente",
-        "inauguration": "La Première Présidente du Conseil d'État, Madame Brigitte Nsensele wa Nsensele, a prêté serment le 18/02/2025 devant le Président de la République au Palais de la Nation de Kinshasa.",
-          "inauguration": "Bulongolodi bwa Conseil d’Etat busalemi ne Mfumu wa kumpala. Yeye udi ne bipedi bianyi: kulonga projet ya règlement intérieur ya Conseil d’Etat; kulonga bipedi kati ya bitupa bibidi to kati ya bifulu; kulonga badimu ba greffe badi badi mu Conseil; kulonga budget ya bidimu bupeshe ku ba tribunal ya administratif. Yeye udi mu ordonnateur délégué.\nKusuka 18 Febwali 2025, Mama Brigitte Nsensele wa Nsensele udi Mfumu wa kumpala wa Conseil d’Etat.",
+        "heroTitle": "Bokambi ya Conseil d'Etat",
+        "inauguration": "Bulongolodi bwa Conseil d'Etat busalemi ne Mfumu wa kumpala. Yeye udi ne bipedi bianyi: kulonga projet ya règlement intérieur ya Conseil d'Etat; kulonga bipedi kati ya bitupa bibidi to kati ya bifulu; kulonga badimu ba greffe badi badi mu Conseil; kulonga budget ya bidimu bupeshe ku ba tribunal ya administratif. Yeye udi mu ordonnateur délégué.<br><br>Kusuka 18 Febwali 2025, Mama Brigitte Nsensele wa Nsensele udi Mfumu wa kumpala wa Conseil d'Etat.",
         "biographyTitle": "Biographie de Mme. Brigitte Nsensele wa Nsensele",
         "biography": "Née à Kinshasa, Madame Brigitte Nsensele wa Nsensele est magistrate de carrière. Elle a gravi tous les échelons de la magistrature administrative avant d'être nommée Première Présidente du Conseil d'État de la République Démocratique du Congo en février 2025.",
         "careerTitle": "Parcours",
@@ -847,7 +846,8 @@
         "fondements": "Moboko ya mibeko",
         "competences": "Bokoki",
         "procedures": "Procedure liboso ya Conseil d'Etat",
-        "historique": "Lisolo ya kala"
+        "historique": "Lisolo ya kala",
+        "presidence": "Bokambi ya Conseil d'Etat"
       }
     },
     "firstPresidents": {
