@@ -796,7 +796,8 @@
         "firstPresident": "Rais ya liboso",
         "consultative": "Eteni ya Consultative",
         "contentieux": "Eteni ya Contentieux",
-        "registry": "Greffe mpe Secretariat general"
+        "registry": "Greffe mpe Secretariat general",
+        "juges": "Bazuzi ya Conseil d'Etat"
       },
       "roles": {
         "firstPresident": {
@@ -832,8 +833,9 @@
         "presidentsTitle": "Marais ya liboso ya Conseil d'Etat",
         "judgesTitle": "Bajuge ya Conseil d'Etat"
       },
-      "firstPresidentsTitle": "Marais ya liboso ya Conseil d'Etat",
+      "firstPresidentsTitle": "Première Présidente ya Conseil d'État",
       "presidentsTitle": "Marais ya Conseil d'Etat",
+      "advisorsTitle": "Bapesi toli ya Conseil d'État",
       "bodyPlaceholder": "Mikanda",
       "toDate": "lelo"
     },
@@ -847,7 +849,8 @@
         "competences": "Bokoki",
         "procedures": "Procedure liboso ya Conseil d'Etat",
         "historique": "Lisolo ya kala",
-        "presidence": "Bokambi ya Conseil d'Etat"
+        "presidence": "Bokambi ya Conseil d'Etat",
+        "juges": "Bazuzi ya Conseil d'Etat"
       }
     },
     "firstPresidents": {

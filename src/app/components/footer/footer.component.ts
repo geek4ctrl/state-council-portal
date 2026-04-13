@@ -13,7 +13,7 @@ import { CommonModule } from '@angular/common';
         <div class="footer-logo-wrapper">
           <img [src]="footerLogo()" alt="Footer Logo" />
         </div>
-        <div class="container">
+        <div class="footer-inner">
           <div class="footer-grid">
             <div class="footer-column">
               <h3>{{ 'footer.mainOffice.title' | i18n }}</h3>
@@ -76,7 +76,7 @@ import { CommonModule } from '@angular/common';
         </div>
       </div>
       <div class="footer-bottom">
-        <div class="container">
+        <div class="footer-inner">
           <div class="footer-bottom-content">
             <a href="#" class="privacy-link">{{ 'footer.privacy' | i18n }}</a>
             <p class="copyright">{{ 'footer.copyright' | i18n }}</p>
@@ -103,15 +103,28 @@ import { CommonModule } from '@angular/common';
   `,
   styles: [
     `
+      :host {
+        display: block;
+        width: 100%;
+      }
       /* Footer styles copied from home.component.ts */
       .footer-section {
         background-color: transparent;
+        width: 100%;
       }
       .footer-main {
         background: #ececf1;
         color: #55645c;
         padding: 60px 0 40px;
         position: relative;
+      }
+      .footer-main .container,
+      .footer-bottom .container,
+      .footer-inner {
+        width: 100%;
+        max-width: 100%;
+        padding: 0 40px;
+        margin: 0;
       }
       .footer-main::before {
         content: '';

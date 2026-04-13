@@ -91,7 +91,7 @@ type HighchartsStatic = typeof import('highcharts');
               <a
                 class="about-card mag-btn"
                 role="listitem"
-                [routerLink]="['/presentation', card.section]"
+                [routerLink]="card.route || ['/presentation', card.section]"
                 [attr.aria-label]="card.titleKey | i18n"
                 (mousemove)="mag($event)"
                 (mouseleave)="magOut($event)"
@@ -2639,7 +2639,7 @@ export class OrganizationComponent implements OnInit, AfterViewInit {
     },
   ];
 
-  readonly aboutCards = [
+  readonly aboutCards: { titleKey: string; section: string; imageUrl: string; route?: string[] }[] = [
     {
       titleKey: 'organization.about.cards.historique',
       section: 'historique',
@@ -2668,19 +2668,13 @@ export class OrganizationComponent implements OnInit, AfterViewInit {
       titleKey: 'organization.about.cards.organisations',
       section: 'organisations',
       imageUrl:
-        'https://res.cloudinary.com/dhqvb8wbn/image/upload/v1775726541/organization_lrumzi.jpg',
+        'https://res.cloudinary.com/dhqvb8wbn/image/upload/w_800,c_scale,q_100,f_auto,e_sharpen:150/v1775726541/organization_lrumzi.jpg',
     },
     {
       titleKey: 'organization.about.cards.procedures',
       section: 'procedures',
       imageUrl:
         'https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1200&q=80',
-    },
-    {
-      titleKey: 'organization.about.cards.presidence',
-      section: 'premiere-presidente',
-      imageUrl:
-        'https://res.cloudinary.com/dhqvb8wbn/image/upload/v1775726305/Presidence_du_conseil_detat_oddnb9.jpg',
     },
   ];
 
