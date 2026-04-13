@@ -1,42 +1,242 @@
-import { Component, ChangeDetectionStrategy } from '@angular/core';
+import { Component, ChangeDetectionStrategy, computed, inject } from '@angular/core';
 import { I18nPipe } from '../../i18n/i18n.pipe';
 import { FooterComponent } from '../../components/footer/footer.component';
+import { RouterLink } from '@angular/router';
+import { NgOptimizedImage } from '@angular/common';
+import { MemberService } from '../../services/members.service';
 
 @Component({
   selector: 'app-judges',
-  imports: [I18nPipe, FooterComponent],
+  imports: [I18nPipe, FooterComponent, RouterLink, NgOptimizedImage],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
-    <div class="page-container">
-      <h1>{{ 'judges.title' | i18n }}</h1>
-      <p>{{ 'judges.body' | i18n }}</p>
-      <div class="judges-photo">
-        <img src="assets/hero-group-photo.png" [alt]="'judges.photoAlt' | i18n" />
+    <section class="hero-banner">
+      <div class="container">
+        <a class="back-link" routerLink="/presentation/organisations">
+          {{ 'memberDetail.backToOrganization' | i18n }}
+        </a>
+        <div class="hero-content">
+          <h1 class="hero-title">{{ 'judges.title' | i18n }}</h1>
+          <span class="hero-divider" aria-hidden="true"></span>
+          <p class="hero-body">{{ 'judges.body' | i18n }}</p>
+        </div>
       </div>
+    </section>
+
+    <div class="page-container">
+      <section class="judges-list">
+        <h2 class="section-title">{{ 'organization.greffe.firstPresidentsTitle' | i18n }}</h2>
+        <div class="members-grid first-president-grid">
+          @for (president of firstPresidents; track president.name) {
+            <article class="member-card">
+              <div class="member-photo">
+                <img
+                  [ngSrc]="president.image"
+                  [alt]="president.name"
+                  width="120"
+                  height="140"
+                />
+              </div>
+              <div class="member-text">
+                <h3>{{ president.name }}</h3>
+                <p>{{ president.years }}</p>
+              </div>
+            </article>
+          }
+        </div>
+
+        <h2 class="section-title">{{ 'organization.greffe.presidentsTitle' | i18n }}</h2>
+        <div class="members-grid">
+          @for (president of presidents(); track president.email) {
+            <article class="member-card">
+              <div class="member-photo">
+                <img
+                  [ngSrc]="president.image"
+                  [alt]="president.name"
+                  width="120"
+                  height="140"
+                />
+              </div>
+              <div class="member-text">
+                <h3>{{ president.name }}</h3>
+                <p>{{ president.title }}</p>
+              </div>
+            </article>
+          }
+        </div>
+
+        <h2 class="section-title">{{ 'organization.greffe.advisorsTitle' | i18n }}</h2>
+        <div class="members-grid">
+          @for (advisor of advisors(); track advisor.email) {
+            <article class="member-card">
+              <div class="member-photo">
+                <img
+                  [ngSrc]="advisor.image"
+                  [alt]="advisor.name"
+                  width="120"
+                  height="140"
+                />
+              </div>
+              <div class="member-text">
+                <h3>{{ advisor.name }}</h3>
+                <p>{{ advisor.title }}</p>
+              </div>
+            </article>
+          }
+        </div>
+      </section>
+
       <app-footer></app-footer>
     </div>
   `,
   styles: [`
-    .page-container {
+    :host {
+      display: block;
+      background: #f8f9fb;
+    }
+    .hero-banner {
+      position: relative;
+      color: #ffffff;
+      padding: 90px 0 70px;
+      background:
+        linear-gradient(90deg, rgba(16, 27, 43, 0.88) 0%, rgba(16, 27, 43, 0.64) 55%, rgba(16, 27, 43, 0.42) 100%),
+        url('https://images.unsplash.com/photo-1444628838545-ac100e7d4ecf?auto=format&fit=crop&w=1920&h=400&q=80') center/cover no-repeat;
+      overflow: hidden;
+    }
+    .hero-banner::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at 20% 20%, rgba(31, 155, 217, 0.2), transparent 55%);
+      pointer-events: none;
+    }
+    .hero-banner .container {
+      position: relative;
+      z-index: 1;
       max-width: 1200px;
       margin: 0 auto;
-      padding: 3rem 1rem;
+      padding: 0 1rem;
     }
-    h1 {
-      color: #B8860B;
-      margin-bottom: 1rem;
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: #f8fbff;
+      text-decoration: none;
+      font-weight: 600;
+      letter-spacing: 0.6px;
+      margin-bottom: 20px;
+      background: rgba(255, 255, 255, 0.14);
+      border: 1px solid rgba(255, 255, 255, 0.45);
+      padding: 8px 16px;
+      border-radius: 999px;
+      box-shadow: 0 12px 26px rgba(15, 23, 42, 0.35);
+      cursor: pointer;
+      transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
     }
-    .judges-photo {
-      margin: 2rem 0 3rem;
+    .back-link:hover {
+      border-color: rgba(255, 255, 255, 0.7);
+      box-shadow: 0 14px 28px rgba(15, 23, 42, 0.45);
+      transform: translateY(-1px);
+    }
+    .hero-content {
+      display: grid;
+      grid-template-columns: minmax(0, 1.1fr) 1px minmax(0, 1fr);
+      gap: 34px;
+      align-items: center;
+    }
+    .hero-title {
+      margin: 0;
+      font-size: clamp(2.2rem, 4.8vw, 3.1rem);
+      letter-spacing: 2px;
+      color: #ffffff;
+      text-align: center;
+    }
+    .hero-divider {
+      width: 1px;
+      height: 110px;
+      background: rgba(255, 255, 255, 0.6);
+    }
+    .hero-body {
+      margin: 0;
+      font-size: 1.05rem;
+      line-height: 1.7;
+      color: rgba(255, 255, 255, 0.88);
+    }
+    .page-container {
+      margin: 0 auto;
+      padding: 0;
+      background: transparent;
+    }
+    .judges-list {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem 1rem 3rem;
+    }
+    .section-title {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: #1a2942;
+      margin: 2.5rem 0 1.2rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid #e8ecf1;
+    }
+    .members-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 1.2rem;
+    }
+    .first-president-grid {
       display: flex;
       justify-content: center;
     }
-    .judges-photo img {
-      width: min(100%, 880px);
-      border-radius: 20px;
-      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
-      display: block;
+    .member-card {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 1rem;
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+      border: 1px solid #f0f0f0;
+      transition: box-shadow 0.2s ease;
+    }
+    .member-card:hover {
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    }
+    .member-photo img {
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    .member-text h3 {
+      margin: 0 0 4px;
+      font-size: 1rem;
+      color: #1a2942;
+    }
+    .member-text p {
+      margin: 0;
+      font-size: 0.9rem;
+      color: #64748b;
     }
   `]
 })
-export class JudgesComponent {}
+export class JudgesComponent {
+  private readonly memberService = inject(MemberService);
+
+  readonly firstPresidents = [
+    {
+      name: 'Brigitte Nsensele wa Nsensele',
+      years: '2025 - à ce jour',
+      image:
+        'https://res.cloudinary.com/dhqvb8wbn/image/upload/v1772555485/Brigitte_NSENSELE_wa_NSENSELE_OK.jpg_ndsjzg.jpg',
+    },
+  ];
+
+  readonly presidents = computed(() =>
+    this.memberService.members.filter((m) => m.role === 'president' && !m.name.includes('NSENSELE'))
+  );
+
+  readonly advisors = computed(() =>
+    this.memberService.members.filter((m) => m.role === 'advisor')
+  );
+}

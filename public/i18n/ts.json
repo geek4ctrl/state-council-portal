@@ -796,7 +796,8 @@
         "firstPresident": "Mfumu wa kumpala",
         "consultative": "Tshitupa tshia diyukidilangana",
         "contentieux": "Tshitupa tshia bilumbu",
-        "registry": "Muaba wa difunda dia mena ne Sekretariya Munene"
+        "registry": "Muaba wa difunda dia mena ne Sekretariya Munene",
+        "juges": "Bazuzi ba Tshipangu tshia Ditunga"
       },
       "roles": {
         "firstPresident": {
@@ -832,8 +833,9 @@
         "presidentsTitle": "Balombodi ba kumpala ba Conseil d'Etat",
         "judgesTitle": "Bajudji ba Conseil d'Etat"
       },
-      "firstPresidentsTitle": "Balombodi ba kumpala ba Conseil d'Etat",
+      "firstPresidentsTitle": "Première Présidente ya Conseil d'État",
       "presidentsTitle": "Balombodi ba Conseil d'Etat",
+      "advisorsTitle": "Vatshuri va Huvo ya Ximfumo",
       "bodyPlaceholder": "Mikanda",
       "toDate": "lelu"
     },
@@ -847,7 +849,8 @@
         "competences": "Bipedi",
         "procedures": "Mushindu wa kuenza kumpala kua tshipangu tshia ditunga",
         "historique": "Muanu wa kale",
-        "presidence": "Bukalenge bua Tshipangu tshia Ditunga"
+        "presidence": "Bukalenge bua Tshipangu tshia Ditunga",
+        "juges": "Bazuzi ba Tshipangu tshia Ditunga"
       }
     },
     "firstPresidents": {

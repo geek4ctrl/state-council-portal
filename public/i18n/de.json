@@ -796,7 +796,8 @@
         "firstPresident": "Die Erste Präsidentin",
         "consultative": "Die Beratungssektion",
         "contentieux": "Die Streitsektion",
-        "registry": "Kanzlei und Generalsekretariat"
+        "registry": "Kanzlei und Generalsekretariat",
+        "juges": "Die Richter des Staatsrats"
       },
       "roles": {
         "firstPresident": {
@@ -832,8 +833,9 @@
         "presidentsTitle": "Die ersten Präsidenten des Staatsrats",
         "judgesTitle": "Die Richter des Staatsrats"
       },
-      "firstPresidentsTitle": "Die ersten Präsidenten des Staatsrats",
+      "firstPresidentsTitle": "Die Erste Präsidentin des Staatsrats",
       "presidentsTitle": "Die Präsidenten des Staatsrats",
+      "advisorsTitle": "Berater des Staatsrats",
       "bodyPlaceholder": "Text",
       "toDate": "heute"
     },
@@ -847,7 +849,8 @@
         "competences": "Zuständigkeiten",
         "procedures": "Verfahren vor dem Staatsrat",
         "historique": "Historischer Hintergrund",
-        "presidence": "Die Präsidentschaft des Staatsrats"
+        "presidence": "Die Präsidentschaft des Staatsrats",
+        "juges": "Die Richter des Staatsrats"
       }
     },
     "firstPresidents": {

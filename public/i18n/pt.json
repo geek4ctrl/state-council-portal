@@ -796,7 +796,8 @@
         "firstPresident": "O Primeiro Presidente",
         "consultative": "A Seção Consultiva",
         "contentieux": "A Seção do Contencioso",
-        "registry": "O Registro e o Secretariado-Geral"
+        "registry": "O Registro e o Secretariado-Geral",
+        "juges": "Os juízes do Conselho de Estado"
       },
       "roles": {
         "firstPresident": {
@@ -832,8 +833,9 @@
         "presidentsTitle": "Os primeiros presidentes do Conselho de Estado",
         "judgesTitle": "Os juízes do Conselho de Estado"
       },
-      "firstPresidentsTitle": "Os primeiros presidentes do Conselho de Estado",
+      "firstPresidentsTitle": "A Primeira Presidenta do Conselho de Estado",
       "presidentsTitle": "Os presidentes do Conselho de Estado",
+      "advisorsTitle": "Os conselheiros do Conselho de Estado",
       "bodyPlaceholder": "Texto",
       "toDate": "o presente"
     },
@@ -847,7 +849,8 @@
         "competences": "Competências",
         "procedures": "Procedimento antes do State Council",
         "historique": "Histórico",
-        "presidence": "A Presidência do Conselho de Estado"
+        "presidence": "A Presidência do Conselho de Estado",
+        "juges": "Os juízes do Conselho de Estado"
       }
     },
     "firstPresidents": {

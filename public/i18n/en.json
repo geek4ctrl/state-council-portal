@@ -792,7 +792,8 @@
         "firstPresident": "The First President",
         "consultative": "Consultative Section",
         "contentieux": "Litigation Section",
-        "registry": "Registry and General Secretariat"
+        "registry": "Registry and General Secretariat",
+        "juges": "The Judges of the State Council"
       },
       "roles": {
         "firstPresident": {
@@ -828,8 +829,9 @@
         "presidentsTitle": "First Presidents of the State Council",
         "judgesTitle": "Judges of the State Council"
       },
-      "firstPresidentsTitle": "First Presidents of the State Council",
+      "firstPresidentsTitle": "First President of the Council of State",
       "presidentsTitle": "Presidents of the State Council",
+      "advisorsTitle": "Advisors of the Council of State",
       "bodyPlaceholder": "Text",
       "toDate": "present"
     },
@@ -843,7 +845,8 @@
         "competences": "Competences",
         "procedures": "Procedure before the State Council",
         "historique": "Historical Background",
-        "presidence": "The Presidency of the State Council"
+        "presidence": "The Presidency of the State Council",
+        "juges": "The Judges of the State Council"
       }
     },
     "firstPresidents": {

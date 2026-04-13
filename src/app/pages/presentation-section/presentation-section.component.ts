@@ -1,6 +1,6 @@
 import { Component, OnInit, computed, inject, signal } from '@angular/core';
 import { Location, NgOptimizedImage } from '@angular/common';
-import { ActivatedRoute, RouterLink } from '@angular/router';
+import { ActivatedRoute, Router, RouterLink } from '@angular/router';
 import { I18nPipe } from '../../i18n/i18n.pipe';
 import { FooterComponent } from '../../components/footer/footer.component';
 import { MemberService, type Member } from '../../services/members.service';
@@ -308,7 +308,7 @@ type GreffeFirstPresident = {
                 <a
                   class="org-tile"
                   [class.has-image]="!!tile.imageUrl"
-                  [routerLink]="['/presentation', tile.section]"
+                  [routerLink]="tile.route || ['/presentation', tile.section]"
                 >
                   <div
                     class="org-tile-media"
@@ -337,141 +337,12 @@ type GreffeFirstPresident = {
               <span class="hero-divider" aria-hidden="true"></span>
               <p class="hero-body-text" [innerHTML]="'organization.greffeSectionBody' | i18n"></p>
             </div>
-            <div
-              class="greffe-tabs"
-              role="tablist"
-              [attr.aria-label]="'organization.greffe.ariaLabel' | i18n"
-            >
-              <button
-                type="button"
-                class="greffe-tab"
-                [class.active]="isGreffePresidents()"
-                (click)="setGreffeSection('presidents')"
-              >
-                {{ 'organization.greffe.tabs.presidents' | i18n }}
-              </button>
-              <button
-                type="button"
-                class="greffe-tab"
-                [class.active]="isGreffeJudges()"
-                (click)="setGreffeSection('judges')"
-              >
-                {{ 'organization.greffe.tabs.judges' | i18n }}
-              </button>
-            </div>
           </div>
         </section>
 
         <section class="greffe-list">
           <div class="container">
-            @if (isGreffePresidents()) {
-              <article class="greffe-item">
-                <div class="greffe-photo">
-                  <img
-                    ngSrc="https://res.cloudinary.com/dhqvb8wbn/image/upload/v1772555485/Brigitte_NSENSELE_wa_NSENSELE_OK.jpg_ndsjzg.jpg"
-                    alt="Brigitte Nsensele wa Nsensele"
-                    width="120"
-                    height="140"
-                  />
-                </div>
-                <div class="greffe-text">
-                  <h3>Brigitte Nsensele wa Nsensele</h3>
-                  <p>2025 - {{ 'organization.greffe.toDate' | i18n }}</p>
-                </div>
-              </article>
-
-              <article class="greffe-item">
-                <div class="greffe-photo">
-                  <img
-                    ngSrc="https://res.cloudinary.com/dhqvb8wbn/image/upload/v1772554526/Marthe_ODIO_NONDE.jpg_1_pzymzp.jpg"
-                    alt="Marthe Odio Nonde"
-                    width="120"
-                    height="140"
-                  />
-                </div>
-                <div class="greffe-text">
-                  <h3>Marthe Odio Nonde</h3>
-                  <p>2022 - 2025</p>
-                </div>
-              </article>
-
-              <article class="greffe-item">
-                <div class="greffe-photo">
-                  <img
-                    ngSrc="https://res.cloudinary.com/dhqvb8wbn/image/upload/v1772552204/F%C3%A9lix_VUNDUAWE_te_PEMAKO..jpg_1_usgopn.jpg"
-                    alt="Felix Vunduawe te Pemako"
-                    width="120"
-                    height="140"
-                  />
-                </div>
-                <div class="greffe-text">
-                  <h3>Felix Vunduawe te Pemako</h3>
-                  <p>2018 - 2022</p>
-                </div>
-              </article>
-            } @else {
-              <div class="greffe-judges">
-                <h3 class="greffe-section-title">{{ 'organization.greffe.firstPresidentsTitle' | i18n }}</h3>
-                <div class="greffe-people">
-                  @for (president of greffeFirstPresidents; track president.name) {
-                    <article class="greffe-item">
-                      <div class="greffe-photo">
-                        <img
-                          [ngSrc]="president.image"
-                          [alt]="president.name"
-                          width="120"
-                          height="140"
-                        />
-                      </div>
-                      <div class="greffe-text">
-                        <h3>{{ president.name }}</h3>
-                        <p>{{ president.years }}</p>
-                      </div>
-                    </article>
-                  }
-                </div>
-
-                <h3 class="greffe-section-title">{{ 'organization.greffe.presidentsTitle' | i18n }}</h3>
-                <div class="greffe-people">
-                  @for (president of greffePresidents(); track president.email) {
-                    <article class="greffe-item">
-                      <div class="greffe-photo">
-                        <img
-                          [ngSrc]="president.image"
-                          [alt]="president.name"
-                          width="120"
-                          height="140"
-                        />
-                      </div>
-                      <div class="greffe-text">
-                        <h3>{{ president.name }}</h3>
-                        <p>{{ president.title }}</p>
-                      </div>
-                    </article>
-                  }
-                </div>
-
-                <h3 class="greffe-section-title">Les conseillers du Conseil d'Etat</h3>
-                <div class="greffe-people">
-                  @for (advisor of greffeAdvisors(); track advisor.email) {
-                    <article class="greffe-item">
-                      <div class="greffe-photo">
-                        <img
-                          [ngSrc]="advisor.image"
-                          [alt]="advisor.name"
-                          width="120"
-                          height="140"
-                        />
-                      </div>
-                      <div class="greffe-text">
-                        <h3>{{ advisor.name }}</h3>
-                        <p>{{ advisor.title }}</p>
-                      </div>
-                    </article>
-                  }
-                </div>
-              </div>
-            }
+            <p class="coming-soon">{{ 'comingSoon.subtitle' | i18n }}</p>
           </div>
         </section>
       } @else {
@@ -1474,6 +1345,14 @@ type GreffeFirstPresident = {
         padding: 30px 0 80px;
       }
 
+      .coming-soon {
+        text-align: center;
+        font-size: 1.3rem;
+        font-weight: 600;
+        color: #64748b;
+        padding: 60px 20px;
+      }
+
       .greffe-placeholder {
         background: #ffffff;
         border-radius: 16px;
@@ -1772,6 +1651,7 @@ type GreffeFirstPresident = {
 })
 export class PresentationSectionComponent implements OnInit {
   private route = inject(ActivatedRoute);
+  private router = inject(Router);
   private location = inject(Location);
   private memberService = inject(MemberService);
   private sectionKey = signal<SectionKey>('missions');
@@ -1866,6 +1746,13 @@ export class PresentationSectionComponent implements OnInit {
       imageUrl:
         'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1200&q=80',
     },
+    {
+      titleKey: 'organization.orgPage.tiles.juges',
+      section: 'judges',
+      route: ['/judges'],
+      imageUrl:
+        'https://res.cloudinary.com/dhqvb8wbn/image/upload/v1775726305/Presidence_du_conseil_detat_oddnb9.jpg',
+    },
   ];
 
   ngOnInit() {
@@ -1879,7 +1766,11 @@ export class PresentationSectionComponent implements OnInit {
   }
 
   goBack() {
-    this.location.back();
+    if (this.isOrganizationChild()) {
+      this.router.navigate(['/presentation', 'organisations']);
+    } else {
+      this.router.navigate(['/presentation']);
+    }
   }
 
   setGreffeSection(section: GreffeSection) {
