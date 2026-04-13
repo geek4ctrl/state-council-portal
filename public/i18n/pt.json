@@ -754,9 +754,8 @@
       "title": "O primeiro presidente",
       "body": "O Primeiro Presidente dirige o State Council, preside as suas sessões e zela pelo bom funcionamento da instituição.",
       "page": {
-        "heroTitle": "La première présidente",
-        "inauguration": "La Première Présidente du Conseil d'État, Madame Brigitte Nsensele wa Nsensele, a prêté serment le 18/02/2025 devant le Président de la République au Palais de la Nation de Kinshasa.",
-          "inauguration": "A presidência do Conselho de Estado é assegurada pelo Primeiro Presidente. Este dispõe das seguintes competências: elaboração do projeto de regulamento interno do Conselho de Estado; repartição das matérias entre as duas secções ou entre as câmaras; gestão do pessoal de secretaria colocado à disposição do Conselho; gestão do orçamento de funcionamento atribuído aos tribunais administrativos. É o ordenador delegado.\nDesde 18 de fevereiro de 2025, a senhora Brigitte Nsensele wa Nsensele é a Primeira Presidente do Conselho de Estado.",
+        "heroTitle": "A Presidência do Conselho de Estado",
+        "inauguration": "A presidência do Conselho de Estado é assegurada pela Primeira Presidente. Esta dispõe das seguintes competências: elaboração do projeto de regulamento interno do Conselho de Estado; repartição das matérias entre as duas secções ou entre as câmaras; gestão do pessoal de secretaria colocado à disposição do Conselho; gestão do orçamento de funcionamento atribuído aos tribunais administrativos. É a ordenadora delegada.<br><br>Desde 18 de fevereiro de 2025, a senhora Brigitte Nsensele wa Nsensele é a Primeira Presidente do Conselho de Estado.",
         "biographyTitle": "Biographie de Mme. Brigitte Nsensele wa Nsensele",
         "biography": "Née à Kinshasa, Madame Brigitte Nsensele wa Nsensele est magistrate de carrière. Elle a gravi tous les échelons de la magistrature administrative avant d'être nommée Première Présidente du Conseil d'État de la République Démocratique du Congo en février 2025.",
         "careerTitle": "Parcours",
@@ -847,7 +846,8 @@
         "fondements": "Base jurídica",
         "competences": "Competências",
         "procedures": "Procedimento antes do State Council",
-        "historique": "Histórico"
+        "historique": "Histórico",
+        "presidence": "A Presidência do Conselho de Estado"
       }
     },
     "firstPresidents": {

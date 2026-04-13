@@ -754,9 +754,8 @@
       "title": "La prima presidente",
       "body": "La Prima Presidente guida il Consiglio di Stato, presiede le sessioni e assicura il corretto funzionamento dell'istituzione.",
       "page": {
-        "heroTitle": "La première présidente",
-        "inauguration": "La Première Présidente du Conseil d'État, Madame Brigitte Nsensele wa Nsensele, a prêté serment le 18/02/2025 devant le Président de la République au Palais de la Nation de Kinshasa.",
-          "inauguration": "La presidenza del Consiglio di Stato è affidata al Primo Presidente. Questi ha le seguenti competenze: l’elaborazione del progetto di regolamento interno del Consiglio di Stato; la ripartizione delle materie tra le due sezioni o tra le camere; la gestione del personale di cancelleria messo a disposizione del Consiglio; la gestione del bilancio di funzionamento assegnato alle giurisdizioni dell’ordine amministrativo. È l’ordinatore delegato.\nDal 18 febbraio 2025, la signora Brigitte Nsensele wa Nsensele è la Prima Presidente del Consiglio di Stato.",
+        "heroTitle": "La Presidenza del Consiglio di Stato",
+        "inauguration": "La presidenza del Consiglio di Stato è affidata alla Prima Presidente. Questa ha le seguenti competenze: l'elaborazione del progetto di regolamento interno del Consiglio di Stato; la ripartizione delle materie tra le due sezioni o tra le camere; la gestione del personale di cancelleria messo a disposizione del Consiglio; la gestione del bilancio di funzionamento assegnato alle giurisdizioni dell'ordine amministrativo. È l'ordinatrice delegata.<br><br>Dal 18 febbraio 2025, la signora Brigitte Nsensele wa Nsensele è la Prima Presidente del Consiglio di Stato.",
         "biographyTitle": "Biographie de Mme. Brigitte Nsensele wa Nsensele",
         "biography": "Née à Kinshasa, Madame Brigitte Nsensele wa Nsensele est magistrate de carrière. Elle a gravi tous les échelons de la magistrature administrative avant d'être nommée Première Présidente du Conseil d'État de la République Démocratique du Congo en février 2025.",
         "careerTitle": "Parcours",
@@ -847,7 +846,8 @@
         "fondements": "Base legale",
         "competences": "Competenze",
         "procedures": "Procedura davanti al Consiglio di Stato",
-        "historique": "Cenni storici"
+        "historique": "Cenni storici",
+        "presidence": "La Presidenza del Consiglio di Stato"
       }
     },
     "firstPresidents": {

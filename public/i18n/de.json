@@ -754,9 +754,8 @@
       "title": "Die erste präsidentin",
       "body": "Die Erste Präsidentin leitet den Staatsrat, führt den Vorsitz bei Sitzungen und gewährleistet das ordnungsgemäße Funktionieren der Institution.",
       "page": {
-        "heroTitle": "La première présidente",
-        "inauguration": "La Première Présidente du Conseil d'État, Madame Brigitte Nsensele wa Nsensele, a prêté serment le 18/02/2025 devant le Président de la République au Palais de la Nation de Kinshasa.",
-          "inauguration": "Den Vorsitz im Staatsrat führt die Erste Präsidentin. Sie hat folgende Zuständigkeiten: Ausarbeitung des Entwurfs der Geschäftsordnung des Staatsrats; Verteilung der Angelegenheiten zwischen den beiden Sektionen oder zwischen den Kammern; Verwaltung des dem Staatsrat zugewiesenen Kanzleipersonals; Verwaltung des Betriebshaushalts, der den Verwaltungsgerichten zugewiesen ist. Sie ist die beauftragte Anordnungsbefugte.\nSeit dem 18. Februar 2025 ist Frau Brigitte Nsensele wa Nsensele die Erste Präsidentin des Staatsrats.",
+        "heroTitle": "Die Präsidentschaft des Staatsrats",
+        "inauguration": "Den Vorsitz im Staatsrat führt die Erste Präsidentin. Sie hat folgende Zuständigkeiten: Ausarbeitung des Entwurfs der Geschäftsordnung des Staatsrats; Verteilung der Angelegenheiten zwischen den beiden Sektionen oder zwischen den Kammern; Verwaltung des dem Staatsrat zugewiesenen Kanzleipersonals; Verwaltung des Betriebshaushalts, der den Verwaltungsgerichten zugewiesen ist. Sie ist die beauftragte Anordnungsbefugte.<br><br>Seit dem 18. Februar 2025 ist Frau Brigitte Nsensele wa Nsensele die Erste Präsidentin des Staatsrats.",
         "biographyTitle": "Biographie de Mme. Brigitte Nsensele wa Nsensele",
         "biography": "Née à Kinshasa, Madame Brigitte Nsensele wa Nsensele est magistrate de carrière. Elle a gravi tous les échelons de la magistrature administrative avant d'être nommée Première Présidente du Conseil d'État de la République Démocratique du Congo en février 2025.",
         "careerTitle": "Parcours",
@@ -847,7 +846,8 @@
         "fondements": "Rechtsgrundlage",
         "competences": "Zuständigkeiten",
         "procedures": "Verfahren vor dem Staatsrat",
-        "historique": "Historischer Hintergrund"
+        "historique": "Historischer Hintergrund",
+        "presidence": "Die Präsidentschaft des Staatsrats"
       }
     },
     "firstPresidents": {
