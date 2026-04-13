@@ -750,9 +750,8 @@
       "title": "La première présidente",
       "body": "La Première Présidente dirige le Conseil d'État, préside ses sessions et veille au bon fonctionnement de l'institution.",
       "page": {
-        "heroTitle": "La première présidente",
-        "inauguration": "La Première Présidente du Conseil d'État, Madame Brigitte Nsensele wa Nsensele, a prêté serment le 18/02/2025 devant le Président de la République au Palais de la Nation de Kinshasa.",
-          "inauguration": "La présidence du Conseil d’Etat est assurée par le Premier Président. Celui-ci\ndispose des compétences ci-après : l’élaboration du projet de règlement intérieur\ndu Conseil d’Etat ; la répartition des matières entre les deux sections ou entre les\nchambres ; la gestion du personnel de greffe mis à la disposition du Conseil ; la\ngestion du budget de fonctionnement alloué aux juridictions de l’ordre\nadministratif. Il en est l’ordonnateur délégué.\nDepuis le 18 Fevrier 2025, Madame Brigitte Nsensele wa Nsensele est la Première Présidente du Conseil d’Etat.",
+        "heroTitle": "La Présidence du Conseil d'Etat",
+        "inauguration": "La présidence du Conseil d'Etat est assurée par la Première Présidente. Celle-ci dispose des compétences ci-après : l'élaboration du projet de règlement intérieur du Conseil d'Etat ; la répartition des matières entre les deux sections ou entre les chambres ; la gestion du personnel de greffe mis à la disposition du Conseil ; la gestion du budget de fonctionnement alloué aux juridictions de l'ordre administratif. Elle en est l'ordonnatrice déléguée.<br><br>Depuis le 18 Février 2025, Madame Brigitte Nsensele wa Nsensele est la Première Présidente du Conseil d'Etat.",
         "biographyTitle": "Biographie de Mme. Brigitte Nsensele wa Nsensele",
         "biography": "Née à Kinshasa, Madame Brigitte Nsensele wa Nsensele est magistrate de carrière. Elle a gravi tous les échelons de la magistrature administrative avant d'être nommée Première Présidente du Conseil d'État de la République Démocratique du Congo en février 2025.",
         "careerTitle": "Parcours",
@@ -843,7 +842,8 @@
         "fondements": "Fondement juridique",
         "competences": "Compétences",
         "procedures": "Procédure devant le Conseil d'État",
-        "historique": "Historique"
+        "historique": "Historique",
+        "presidence": "La Présidence du Conseil d'État"
       }
     },
     "firstPresidents": {
