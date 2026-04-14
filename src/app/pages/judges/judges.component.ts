@@ -33,8 +33,8 @@ import { MemberService } from '../../services/members.service';
                 <img
                   [ngSrc]="president.image"
                   [alt]="president.name"
-                  width="120"
-                  height="140"
+                  width="180"
+                  height="220"
                 />
               </div>
               <div class="member-text">
@@ -53,8 +53,8 @@ import { MemberService } from '../../services/members.service';
                 <img
                   [ngSrc]="president.image"
                   [alt]="president.name"
-                  width="120"
-                  height="140"
+                  width="180"
+                  height="220"
                 />
               </div>
               <div class="member-text">
@@ -73,8 +73,8 @@ import { MemberService } from '../../services/members.service';
                 <img
                   [ngSrc]="advisor.image"
                   [alt]="advisor.name"
-                  width="120"
-                  height="140"
+                  width="180"
+                  height="220"
                 />
               </div>
               <div class="member-text">
@@ -183,8 +183,8 @@ import { MemberService } from '../../services/members.service';
     }
     .members-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-      gap: 1.2rem;
+      grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+      gap: 1.4rem;
     }
     .first-president-grid {
       display: flex;
@@ -193,8 +193,8 @@ import { MemberService } from '../../services/members.service';
     .member-card {
       display: flex;
       align-items: center;
-      gap: 1rem;
-      padding: 1rem;
+      gap: 1.2rem;
+      padding: 1.2rem;
       background: #fff;
       border-radius: 16px;
       box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
@@ -205,7 +205,7 @@ import { MemberService } from '../../services/members.service';
       box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
     }
     .member-photo img {
-      border-radius: 50%;
+      border-radius: 12px;
       object-fit: cover;
     }
     .member-text h3 {
