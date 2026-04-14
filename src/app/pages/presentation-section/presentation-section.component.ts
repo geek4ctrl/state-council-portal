@@ -340,9 +340,25 @@ type GreffeFirstPresident = {
           </div>
         </section>
 
-        <section class="greffe-list">
+        <section class="greffe-coming-soon">
           <div class="container">
-            <p class="coming-soon">{{ 'comingSoon.subtitle' | i18n }}</p>
+            <div class="coming-soon-content">
+              <div class="coming-soon-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+              </div>
+              <h2 class="coming-soon-title">{{ 'comingSoon.subtitle' | i18n }}</h2>
+              <p class="coming-soon-description">{{ 'comingSoon.description' | i18n }}</p>
+              <a routerLink="/" class="coming-soon-btn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                  <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                </svg>
+                {{ 'comingSoon.backHome' | i18n }}
+              </a>
+            </div>
           </div>
         </section>
       } @else {
@@ -1343,6 +1359,75 @@ type GreffeFirstPresident = {
       .greffe-list {
         background: #f8f9fb;
         padding: 30px 0 80px;
+      }
+
+      .greffe-coming-soon {
+        background: #f8f9fb;
+        padding: 60px 0 80px;
+      }
+
+      .greffe-coming-soon .coming-soon-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 40px 20px;
+      }
+
+      .greffe-coming-soon .coming-soon-icon {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        background: #3bb4e5;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 28px;
+      }
+
+      .greffe-coming-soon .coming-soon-icon svg {
+        width: 56px;
+        height: 56px;
+        color: #fff;
+      }
+
+      .greffe-coming-soon .coming-soon-title {
+        font-size: 2rem;
+        font-weight: 700;
+        color: #3bb4e5;
+        margin-bottom: 16px;
+      }
+
+      .greffe-coming-soon .coming-soon-description {
+        font-size: 1.1rem;
+        color: #6b7280;
+        max-width: 560px;
+        line-height: 1.7;
+        margin-bottom: 32px;
+      }
+
+      .greffe-coming-soon .coming-soon-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        background: #3bb4e5;
+        color: #fff;
+        padding: 14px 32px;
+        border-radius: 10px;
+        font-size: 1.05rem;
+        font-weight: 600;
+        text-decoration: none;
+        transition: background 0.2s ease, transform 0.2s ease;
+      }
+
+      .greffe-coming-soon .coming-soon-btn:hover {
+        background: #2a9fd4;
+        transform: translateY(-1px);
+      }
+
+      .greffe-coming-soon .coming-soon-btn svg {
+        width: 20px;
+        height: 20px;
       }
 
       .coming-soon {
