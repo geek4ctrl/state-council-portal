@@ -45,6 +45,26 @@ import { MemberService } from '../../services/members.service';
           }
         </div>
 
+        <h2 class="section-title">{{ 'organization.orgPage.roles.sectionPresidents.title' | i18n }}</h2>
+        <div class="members-grid section-president-grid">
+          @for (sp of sectionPresidents; track sp.name) {
+            <article class="member-card">
+              <div class="member-photo">
+                <img
+                  [ngSrc]="sp.image"
+                  [alt]="sp.name"
+                  width="180"
+                  height="220"
+                />
+              </div>
+              <div class="member-text">
+                <h3>{{ sp.name }}</h3>
+                <p>{{ sp.role }}</p>
+              </div>
+            </article>
+          }
+        </div>
+
         <h2 class="section-title">{{ 'organization.greffe.presidentsTitle' | i18n }}</h2>
         <div class="members-grid">
           @for (president of presidents(); track president.email) {
@@ -59,7 +79,7 @@ import { MemberService } from '../../services/members.service';
               </div>
               <div class="member-text">
                 <h3>{{ president.name }}</h3>
-                <p>{{ president.title }}</p>
+                <p>{{ 'organization.chart.roles.president' | i18n }}</p>
               </div>
             </article>
           }
@@ -79,7 +99,7 @@ import { MemberService } from '../../services/members.service';
               </div>
               <div class="member-text">
                 <h3>{{ advisor.name }}</h3>
-                <p>{{ advisor.title }}</p>
+                <p>{{ 'organization.chart.roles.advisor' | i18n }}</p>
               </div>
             </article>
           }
@@ -186,9 +206,12 @@ import { MemberService } from '../../services/members.service';
       grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
       gap: 1.4rem;
     }
-    .first-president-grid {
+    .first-president-grid,
+    .section-president-grid {
       display: flex;
       justify-content: center;
+      gap: 1.4rem;
+      flex-wrap: wrap;
     }
     .member-card {
       display: flex;
@@ -229,6 +252,21 @@ export class JudgesComponent {
       years: '2025 - à ce jour',
       image:
         'https://res.cloudinary.com/dhqvb8wbn/image/upload/v1772555485/Brigitte_NSENSELE_wa_NSENSELE_OK.jpg_ndsjzg.jpg',
+    },
+  ];
+
+  readonly sectionPresidents = [
+    {
+      name: 'Eugène Kibwe Muter',
+      role: 'Président de la section consultative',
+      image:
+        'https://res.cloudinary.com/dhqvb8wbn/image/upload/v1772556921/Eug%C3%A8ne_KIBWE_MUTER.jpg_bacl4e.jpg',
+    },
+    {
+      name: 'Hippolyte Masani Matshi',
+      role: 'Président de la section du contentieux',
+      image:
+        'https://res.cloudinary.com/dhqvb8wbn/image/upload/v1772556705/PRES_MASANI_40x50.jpg_ast5mq.jpg',
     },
   ];
 
