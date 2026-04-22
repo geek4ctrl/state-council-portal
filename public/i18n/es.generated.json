@@ -589,6 +589,57 @@
       }
     }
   },
+  "administrativeTribunals": {
+    "hero": {
+      "title": "Tribunales<br>Administrativos",
+      "body": "Organizacion, composicion y funcionamiento de las Cortes administrativas de apelacion conforme a la ley organica."
+    },
+    "intro": {
+      "title": "Articulos 60 a 68",
+      "subtitle": "Cortes administrativas de apelacion: creacion, composicion y organizacion"
+    },
+    "section": {
+      "title": "Parrafo 2: De la composicion y de la organizacion"
+    },
+    "articles": {
+      "60": {
+        "title": "Articulo 60",
+        "body": "Se crea una o varias Cortes administrativas de apelacion en la jurisdiccion de cada provincia, asi como en la ciudad de Kinshasa, capital de la Republica.\nLa jurisdiccion y la sede ordinaria de la Corte administrativa de apelacion se fijan por decreto del Primer Ministro deliberado en Consejo de Ministros."
+      },
+      "61": {
+        "title": "Articulo 61",
+        "body": "La Corte administrativa de apelacion esta compuesta por un Primer Presidente, uno o varios Presidentes y Consejeros."
+      },
+      "62": {
+        "title": "Articulo 62",
+        "body": "En caso de ausencia o impedimento, el Primer Presidente es sustituido por el Presidente mas antiguo y el Presidente por el Consejero mas antiguo.\nLa antiguedad en el grado se rige por la fecha y el orden de nombramiento."
+      },
+      "63": {
+        "title": "Articulo 63",
+        "body": "El Primer Presidente o quien lo sustituya esta encargado de la distribucion del servicio."
+      },
+      "64": {
+        "title": "Articulo 64",
+        "body": "La Corte administrativa de apelacion comprende una seccion consultiva y una seccion contenciosa.\nCada seccion se subdivide en camaras."
+      },
+      "65": {
+        "title": "Articulo 65",
+        "body": "En el seno de la seccion contenciosa, los asuntos se juzgan, en numero impar de jueces, ya sea por una camara o por camaras reunidas.\nLa Corte administrativa de apelacion puede, con caracter excepcional, sesionar en seccion o en secciones reunidas para asuntos delicados o complejos, o cuando la necesidad lo exija.\nEn ese caso, es presidida por el Primer Presidente."
+      },
+      "66": {
+        "title": "Articulo 66",
+        "body": "La camara y la seccion sesionan respectivamente con al menos tres y cinco miembros; las camaras reunidas y las secciones reunidas lo hacen respectivamente con al menos cinco y siete miembros."
+      },
+      "67": {
+        "title": "Articulo 67",
+        "body": "La Asamblea plenaria de la Corte administrativa de apelacion comprende a todos los magistrados de esta Corte.\nEsta presidida por el Primer Presidente.\nDelibera sobre todas las cuestiones de orden general que interesan al conjunto de la Corte o, cuando la necesidad lo exija.\nLa Asamblea plenaria sesiona de pleno derecho en caso de cambio de jurisprudencia, declinatoria de jurisdiccion o cuando corresponda pronunciarse, por sentencia, sobre una cuestion de principio."
+      },
+      "68": {
+        "title": "Articulo 68",
+        "body": "En cada Corte administrativa de apelacion hay un secretario principal, asistido por uno o varios secretarios divisionarios, uno o varios secretarios, asi como alguaciles.\nLa Corte administrativa de apelacion sesiona con la participacion del Ministerio Publico y la asistencia de un secretario."
+      }
+    }
+  },
   "reforms": {
     "hero": {
       "title": "Reformas sugeridas<br>",

@@ -590,6 +590,113 @@
       }
     }
   },
+  "administrativeCourts": {
+    "hero": {
+      "title": "Corti<br>Amministrative",
+      "body": "Organizzazione, composizione e funzionamento dei tribunali amministrativi in conformità con la legge organica n. 13/011-B dell'11 aprile 2013."
+    },
+    "intro": {
+      "title": "Legge organica n. 13/011-B dell'11 aprile 2013",
+      "subtitle": "Organizzazione, composizione e funzionamento delle giurisdizioni dell'ordine amministrativo"
+    },
+    "articles": {
+      "49": {
+        "title": "Articolo 49",
+        "body": "Ogni camera comprende un Presidente e dei Consiglieri.\nDelibera con i membri che hanno partecipato all'istruzione della causa.\nSe il seggio di una camera non può essere validamente composto, viene completato ricorrendo ad altri Consiglieri."
+      },
+      "50": {
+        "title": "Articolo 50",
+        "body": "Il ricorso in annullamento degli atti, regolamenti o decisioni delle autorità amministrative centrali è comunicato dal Primo Presidente alla sezione del contenzioso o, in caso di urgenza, direttamente al Presidente della camera competente.\nIl Primo Presidente ne informa l'autorità il cui atto, regolamento o decisione è impugnata."
+      },
+      "51": {
+        "title": "Articolo 51",
+        "body": "Le cause sottoposte al Consiglio di Stato possono essere rinviate alla plenaria della sezione per esame, su richiesta del Primo Presidente del Consiglio di Stato, del Presidente della sezione interessata, del Presidente della camera competente o delle camere riunite, oppure del Pubblico Ministero.\nLe cause la cui istruzione è stata affidata alla sezione del contenzioso sono esaminate dall'Assemblea plenaria del Consiglio di Stato, su richiesta del Primo Presidente, del Presidente della sezione o camera interessata, o del Pubblico Ministero."
+      },
+      "52": {
+        "title": "Articolo 52",
+        "body": "La sezione consultiva è composta da un Presidente di sezione, Presidenti di camera e Consiglieri.\nComprende le seguenti tre camere:\n1. La camera dei pareri;\n2. La camera di interpretazione dei testi giuridici;\n3. La camera di studi e ispezione permanente."
+      },
+      "53": {
+        "title": "Articolo 53",
+        "body": "Il Consiglio di Stato è dotato di un'assemblea plenaria comprendente tutti i magistrati del Consiglio di Stato.\nL'Assemblea plenaria è presieduta dal Primo Presidente del Consiglio.\nDelibera su tutte le questioni riguardanti l'insieme del Consiglio di Stato o, se necessario, su tutte le questioni pertinenti a una sezione o camera.\nL'Assemblea plenaria si riunisce di diritto in caso di inversione di giurisprudenza, di eccezione di incompetenza o quando è necessario pronunciarsi per sentenza su una questione di principio."
+      },
+      "54": {
+        "title": "Articolo 54",
+        "body": "Il Primo Presidente è responsabile dell'amministrazione e dell'ordine all'interno del Consiglio di Stato.\nIn tale veste:\n- elabora il progetto di regolamento interno del Consiglio di Stato;\n- ripartisce le materie tra le due sezioni o tra le camere;\n- gestisce il personale di cancelleria messo a disposizione del Consiglio;\n- gestisce il bilancio di funzionamento assegnato alle giurisdizioni dell'ordine amministrativo. Egli ne è il funzionario delegato."
+      },
+      "55": {
+        "title": "Articolo 55",
+        "body": "Presso il Consiglio di Stato esiste una cancelleria composta da un cancelliere capo, cancellieri principali, cancellieri divisori, cancellieri e ufficiali giudiziari."
+      },
+      "56": {
+        "title": "Articolo 56",
+        "body": "Il Consiglio di Stato si riunisce con la partecipazione del Pubblico Ministero e l'assistenza di un cancelliere."
+      },
+      "57": {
+        "title": "Articolo 57",
+        "body": "In caso di assenza o impedimento, il Primo Presidente del Consiglio di Stato è sostituito dal Presidente di sezione o di camera più anziano.\nQuesti ultimi sono sostituiti rispettivamente, e nell'ordine, dal Consigliere più anziano."
+      },
+      "58": {
+        "title": "Articolo 58",
+        "body": "È istituito un ufficio del Consiglio di Stato composto dal Primo Presidente, dal Procuratore Generale, dai Presidenti e dai Primi Avvocati Generali.\nL'Ufficio del Consiglio di Stato è un organo di riflessione e decisione messo a disposizione del Primo Presidente e del Procuratore Generale per la gestione efficiente e armoniosa del Consiglio di Stato e degli altri tribunali amministrativi.\nL'Ufficio del Consiglio di Stato non ha competenza giurisdizionale; non può sostituirsi né a una camera, né a una sezione, né tanto meno all'Assemblea plenaria del Consiglio di Stato."
+      },
+      "59": {
+        "title": "Articolo 59",
+        "body": "L'Ufficio approva il regolamento interno del Consiglio di Stato.\nRedige, alla fine di ogni anno, una relazione completa del Consiglio di Stato, delle Corti amministrative d'appello, dei Tribunali amministrativi e delle procure ad essi collegate, all'attenzione del Presidente del Consiglio Superiore della Magistratura, che ne trasmette copia al ministro competente in materia di giustizia.\nLa relazione dell'Ufficio del Consiglio di Stato verte sull'attività delle giurisdizioni amministrative, sull'andamento dei procedimenti e sui loro tempi di realizzazione.\nIn occasione del deposito della relazione, l'Ufficio del Consiglio di Stato informa il Consiglio Superiore della Magistratura delle difficoltà di interpretazione dei testi giuridici riscontrate e propone miglioramenti."
+      }
+    }
+  },
+  "administrativeTribunals": {
+    "hero": {
+      "title": "Tribunali<br>Amministrativi",
+      "body": "Organizzazione, composizione e funzionamento delle Corti amministrative d'appello conformemente alla legge organica."
+    },
+    "intro": {
+      "title": "Articoli da 60 a 68",
+      "subtitle": "Corti amministrative d'appello: creazione, composizione e organizzazione"
+    },
+    "section": {
+      "title": "Paragrafo 2: Composizione e organizzazione"
+    },
+    "articles": {
+      "60": {
+        "title": "Articolo 60",
+        "body": "E' istituita una o piu Corti amministrative d'appello nell'ambito di ciascuna provincia, nonche nella citta di Kinshasa, capitale della Repubblica.\nLa circoscrizione e la sede ordinaria della Corte amministrativa d'appello sono fissate con decreto del Primo Ministro deliberato in Consiglio dei ministri."
+      },
+      "61": {
+        "title": "Articolo 61",
+        "body": "La Corte amministrativa d'appello e composta da un Primo Presidente, da uno o piu Presidenti e da Consiglieri."
+      },
+      "62": {
+        "title": "Articolo 62",
+        "body": "In caso di assenza o impedimento, il Primo Presidente e sostituito dal Presidente piu anziano e il Presidente dal Consigliere piu anziano.\nL'anzianita nel grado e regolata dalla data e dall'ordine di nomina."
+      },
+      "63": {
+        "title": "Articolo 63",
+        "body": "Il Primo Presidente o chi lo sostituisce e incaricato della ripartizione del servizio."
+      },
+      "64": {
+        "title": "Articolo 64",
+        "body": "La Corte amministrativa d'appello comprende una sezione consultiva e una sezione contenziosa.\nOgni sezione e suddivisa in camere."
+      },
+      "65": {
+        "title": "Articolo 65",
+        "body": "All'interno della sezione contenziosa, le cause sono giudicate, in numero dispari di giudici, da una camera oppure da camere riunite.\nLa Corte amministrativa d'appello puo, in via eccezionale, riunirsi in sezione o in sezioni riunite per cause delicate o complesse, o quando la necessita lo richiede.\nIn tal caso, e presieduta dal Primo Presidente."
+      },
+      "66": {
+        "title": "Articolo 66",
+        "body": "La camera e la sezione siedono rispettivamente con almeno tre e cinque membri; le camere riunite e le sezioni riunite siedono rispettivamente con almeno cinque e sette membri."
+      },
+      "67": {
+        "title": "Articolo 67",
+        "body": "L'Assemblea plenaria della Corte amministrativa d'appello comprende tutti i magistrati di tale Corte.\nE presieduta dal Primo Presidente.\nDelibera su tutte le questioni di ordine generale che interessano l'insieme della Corte o, quando la necessita lo richiede.\nL'Assemblea plenaria si riunisce di diritto in caso di mutamento di giurisprudenza, declinatoria di giurisdizione o quando occorre pronunciarsi, con sentenza, su una questione di principio."
+      },
+      "68": {
+        "title": "Articolo 68",
+        "body": "In ogni Corte amministrativa d'appello vi e un cancelliere principale, assistito da uno o piu cancellieri divisionali, da uno o piu cancellieri e da ufficiali giudiziari.\nLa Corte amministrativa d'appello siede con il concorso del Pubblico Ministero e l'assistenza di un cancelliere."
+      }
+    }
+  },
   "reforms": {
     "hero": {
       "title": "Riforme<br>Proposte",
