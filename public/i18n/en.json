@@ -637,51 +637,39 @@
   "administrativeTribunals": {
     "hero": {
       "title": "Administrative<br>Tribunals",
-      "body": "Organization, composition and functioning of Administrative Courts of Appeal in accordance with the organic law."
+      "body": "Organization, composition and functioning of Administrative Tribunals in accordance with the organic law."
     },
     "intro": {
-      "title": "Articles 60 to 68",
-      "subtitle": "Administrative Courts of Appeal: creation, composition and organization"
+      "title": "Articles 69 to 74",
+      "subtitle": "Administrative Tribunals: establishment, composition and organization"
     },
     "section": {
-      "title": "Paragraph 2: Composition and organization"
+      "title": "Paragraph: Composition and organization"
     },
     "articles": {
-      "60": {
-        "title": "Article 60",
-        "body": "One or more Administrative Courts of Appeal are established within the jurisdiction of each province as well as in the city of Kinshasa, capital of the Republic.\nThe territorial jurisdiction and ordinary seat of the Administrative Court of Appeal are determined by decree of the Prime Minister deliberated in the Council of Ministers."
+      "69": {
+        "title": "Article 69",
+        "body": "One or more Administrative Tribunals are established in the city of Kinshasa, in each city and in each territory.\nHowever, a single Administrative Tribunal may be established for two or more territories.\nThe territorial jurisdiction and ordinary seat of Administrative Tribunals are set by decree of the Prime Minister deliberated in the Council of Ministers."
       },
-      "61": {
-        "title": "Article 61",
-        "body": "The Administrative Court of Appeal is composed of a First President, one or more Presidents, and Advisors."
+      "70": {
+        "title": "Article 70",
+        "body": "The Administrative Tribunal includes a consultative section and a litigation section.\nEach section is subdivided into chambers."
       },
-      "62": {
-        "title": "Article 62",
-        "body": "In the event of absence or impediment, the First President is replaced by the most senior President, and the President by the most senior Advisor.\nSeniority in rank is determined by the date and order of appointment."
+      "71": {
+        "title": "Article 71",
+        "body": "The Administrative Tribunal is composed of a President, Section Presidents, Chamber Presidents and judges.\nIn litigation matters, the Administrative Tribunal sits with at least three judges. Exceptionally, it may sit with five judges to examine delicate or complex cases, or when necessary; in that case, the Administrative Tribunal is chaired by the head of the court.\nIn consultative matters, the Administrative Tribunal sits in a mixed plenary formation composed of magistrates of the section and the prosecutor's office, under the direction of the Section President."
       },
-      "63": {
-        "title": "Article 63",
-        "body": "The First President or the person replacing them is responsible for service allocation."
+      "72": {
+        "title": "Article 72",
+        "body": "In case of absence or impediment, the President is replaced by the most senior judge.\nWhere the number of judges of the Administrative Tribunal present at the place of hearing does not allow constitution of the bench, the President of the tribunal may appoint as an associate judge, on reasoned requisition of the Public Prosecutor, a magistrate from the prosecutor's office attached to the Administrative Tribunal, a lawyer with at least five years of seniority, or any other holder of a law degree with experience in administrative matters.\nAn associate judge other than the Public Prosecutor takes the following oath before the President: \"I swear to respect the Constitution and laws of the Democratic Republic of Congo and to discharge faithfully and loyally, with honor and dignity, the functions entrusted to me.\"\nThe associate judge is chosen based on impartiality, notably by excluding any conflict of interest resulting from prior professional knowledge of the case file.\nThe President or the person replacing them is responsible for service allocation."
       },
-      "64": {
-        "title": "Article 64",
-        "body": "The Administrative Court of Appeal comprises a consultative section and a litigation section.\nEach section is subdivided into chambers."
+      "73": {
+        "title": "Article 73",
+        "body": "Each Administrative Tribunal has a divisional registrar, assisted by one or more registrars and bailiffs."
       },
-      "65": {
-        "title": "Article 65",
-        "body": "Within the litigation section, cases are judged by an odd number of judges, either by one chamber or by chambers sitting jointly.\nThe Administrative Court of Appeal may, exceptionally, sit as a section or as sections sitting jointly for delicate or complex cases, or whenever necessary.\nIn such case, it is presided over by the First President."
-      },
-      "66": {
-        "title": "Article 66",
-        "body": "The chamber and the section sit respectively with at least three and five members; chambers sitting jointly and sections sitting jointly sit respectively with at least five and seven members."
-      },
-      "67": {
-        "title": "Article 67",
-        "body": "The Plenary Assembly of the Administrative Court of Appeal includes all magistrates of that Court.\nIt is chaired by the First President.\nIt deliberates on all matters of general order concerning the entire Court or, where necessary.\nThe Plenary Assembly sits, as of right, in cases of reversal of jurisprudence, jurisdictional challenge, or when it must rule by judgment on a matter of principle."
-      },
-      "68": {
-        "title": "Article 68",
-        "body": "Each Administrative Court of Appeal has a principal registrar, assisted by one or more divisional registrars, one or more registrars, as well as bailiffs.\nThe Administrative Court of Appeal sits with the participation of the Public Prosecutor's Office and the assistance of a registrar."
+      "74": {
+        "title": "Article 74",
+        "body": "The Administrative Tribunal sits with the participation of the Public Prosecutor's Office and the assistance of a registrar."
       }
     }
   },

@@ -640,52 +640,40 @@
   },
   "administrativeTribunals": {
     "hero": {
-      "title": "Tubadi tua appel<br>tua malu a mbulamatadi",
-      "body": "Bulongolodi, mutupo ne mushindu wa tubadi tua appel tua malu a mbulamatadi bilondeshile loi organique."
+      "title": "Tubadi tua administratif",
+      "body": "Bulongolodi, mutupo ne mushindu wa tubadi tua administratif bilondeshile loi organique."
     },
     "intro": {
-      "title": "Tshiandiku 60 too ne 68",
-      "subtitle": "Tubadi tua appel tua malu a mbulamatadi: dijinga, mutupo ne bulongolodi"
+      "title": "Tshiandiku 69 too ne 74",
+      "subtitle": "Tubadi tua administratif: dijinga, mutupo ne bulongolodi"
     },
     "section": {
-      "title": "Paragraphe 2: Mutupo ne bulongolodi"
+      "title": "Paragraphe: Mutupo ne bulongolodi"
     },
     "articles": {
-      "60": {
-        "title": "Tshiandiku 60",
-        "body": "Kudi dijinga tubadi tumue anyi tunyingalaye tua appel tua malu a mbulamatadi mu ditunga dijima dia province ne mu mbanza wa Kinshasa, capitale wa République.\nMpaka wa mudimu ne tshibanza tsha tshikadilu tsha tubadi tua appel tua malu a mbulamatadi bidi bikudibua ku décret wa Premier ministre udi musangu wa Conseil des ministres."
+      "69": {
+        "title": "Tshiandiku 69",
+        "body": "Kudi dijinga tubadi tumue anyi tunyingalaye tua administratif mu mbanza wa Kinshasa, mu mbanza yonso ne mu territoire yonso.\nKadi, tubadi tumue kaka tua administratif tudi mua kusalama sambu ku territoires ibidi anyi mingi.\nMpaka wa mudimu ne tshibanza tsha tshikadilu tsha ba-tribunaux administratifs bidi bikudibua ku décret wa Premier ministre udi musangu wa Conseil des ministres."
       },
-      "61": {
-        "title": "Tshiandiku 61",
-        "body": "Tubadi tua appel tua malu a mbulamatadi tudi ne Premier Président, Président umwe anyi bavule, ne ba-Conseillers."
+      "70": {
+        "title": "Tshiandiku 70",
+        "body": "Tubadi tua administratif tudi ne section consultative ne section ya contentieux.\nSection yonso yidi yikabudibue mu ba-chambres."
       },
-      "62": {
-        "title": "Tshiandiku 62",
-        "body": "Padi Premier Président kakuikadi anyi mu mushindu wa kulemala kusala, ushaluishibua ku Président udi mukole mu bukalenge; ne Président ushaluishibua ku Conseiller udi mukole.\nBukole mu grade budi bubikidibua ku dituku ne mulongo wa nomination."
+      "71": {
+        "title": "Tshiandiku 71",
+        "body": "Tubadi tua administratif tudi ne Président, ba-Présidents ba section, ba-Présidents ba chambre ne ba-juges.\nMu mambu a contentieux, tubadi tuvandaka ne ba-juge basatu ku bukese bua bungi. Mu mushindu wa exception, tudi mua kuvanda ne ba-juge batanu sambu ku mialu ya lutatu, ya mindondo anyi padi bualu bubulomba; mu tshikondo tshina, tubadi tutwadijibua ku chef wa juridiction.\nMu mambu a consultation, tubadi tua administratif tuvandaka mu formation plénière mixte yina kesangisha ba-magistrats ba section ne ba parquet, ku bukambi bua Président wa section."
       },
-      "63": {
-        "title": "Tshiandiku 63",
-        "body": "Premier Président anyi ewu udi umushintulula udi ne mudimu wa kukabanya bisalu."
+      "72": {
+        "title": "Tshiandiku 72",
+        "body": "Padi Président kakuikadi anyi mu mushindu wa kulemala kusala, ushaluishibua ku juge udi mukole.\nPadi motango wa ba-juge ba tubadi tua administratif badi pa kisika kua audience kakupeta bua kusala siège, Président wa tubadi udi mua kubaka bu juge assesseur, ku requête motivée wa Procureur de la République, magistrat mosi wa parquet pene na tubadi tua administratif, avocat mosi udi ne bidimu bitanu bya ancienneté anyi muntu mukwabo udi ne grade ya licencié ne expérience mu mambu a administratif.\nJuge assesseur udi ve Ministère public ulapila ndayi eyi ku meso kua Président: \"Ndi nalapi ndayi ya kutosa Constitution ne mikenji ya République Démocratique du Congo ne kusala mu lulamatu ne bulelela, ne lukumu ne dinite, bisalu bindi bapese.\"\nJuge assesseur uponamaka mu kutala impartialité yandi, tshianana mu kubenga conflit d'intérêt yonso yina yikatuka ku boyebi bwa dossier ntete ku mudimu.\nPrésident anyi udi umushintulula udi ne mudimu wa kukabanya bisalu."
       },
-      "64": {
-        "title": "Tshiandiku 64",
-        "body": "Tubadi tua appel tua malu a mbulamatadi tudi ne section consultative ne section contentieuse.\nSection yonso yidi yikabudibue mu ba-chambres."
+      "73": {
+        "title": "Tshiandiku 73",
+        "body": "Mu tubadi tumue na tumue tua administratif mudi greffier divisionnaire, usadibua ku greffiers umwe anyi bavule ne ba-huissiers."
       },
-      "65": {
-        "title": "Tshiandiku 65",
-        "body": "Mu section ya contentieux, mialu yisambibua ku motango wa ba-juge udi wa impair, ku chambre kimwe anyi ku ba-chambres bidi bisanganyi.\nMu mushindu wa exception, tubadi tua appel tua malu a mbulamatadi tukadi mua kuvanda bu section anyi ba-sections bisanganyi sambu ku mialu ya lutatu anyi ya mindondo, anyi padi bualu bulelela bubulomba.\nMu tshikondo tshina, Premier Président ngudi utwadija."
-      },
-      "66": {
-        "title": "Tshiandiku 66",
-        "body": "Chambre ne section bivandaka ne bantu basatu ne batanu ku bukese bua bungi; ba-chambres bisanganyi ne ba-sections bisanganyi bivandaka ne bantu batanu ne nsambvu ku bukese bua bungi."
-      },
-      "67": {
-        "title": "Tshiandiku 67",
-        "body": "Assemblée plénière ya tubadi tua appel tua malu a mbulamatadi tudi ne ba-magistrats bonso ba tubadi atu.\nTudi tutwadijibua ku Premier Président.\nTuvutulaka malu onso a ordre général adì atangila tubadi tuonso anyi, padi bualu bubulomba.\nAssemblée plénière tuvandaka ku bukole bua mikenji padi jurisprudence yishintuluka, padi déclinatoire ya juridiction, anyi padi bikengela kupeta dipangadika ku arrêt mu diambu dia principe."
-      },
-      "68": {
-        "title": "Tshiandiku 68",
-        "body": "Mu tubadi tuonso tua appel tua malu a mbulamatadi mudi greffier principal, udi usadibua ku greffiers divisionnaires umwe anyi bavule, greffiers umwe anyi bavule, ne ba-huissiers.\nTubadi tua appel tua malu a mbulamatadi tuvandaka ne lisalisi ya Ministère public ne ya greffier."
+      "74": {
+        "title": "Tshiandiku 74",
+        "body": "Tubadi tua administratif tuvandaka ne lisalisi ya Ministère public ne ya greffier."
       }
     }
   },

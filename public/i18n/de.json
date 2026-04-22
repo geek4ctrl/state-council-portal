@@ -641,51 +641,39 @@
   "administrativeTribunals": {
     "hero": {
       "title": "Verwaltungs-<br>tribunale",
-      "body": "Organisation, Zusammensetzung und Funktionsweise der Verwaltungsberufungsgerichte gemaess dem Organgesetz."
+      "body": "Organisation, Zusammensetzung und Funktionsweise der Verwaltungsgerichte gemaess dem Organgesetz."
     },
     "intro": {
-      "title": "Artikel 60 bis 68",
-      "subtitle": "Verwaltungsberufungsgerichte: Gruendung, Zusammensetzung und Organisation"
+      "title": "Artikel 69 bis 74",
+      "subtitle": "Verwaltungsgerichte: Gruendung, Zusammensetzung und Organisation"
     },
     "section": {
-      "title": "Absatz 2: Zusammensetzung und Organisation"
+      "title": "Absatz: Zusammensetzung und Organisation"
     },
     "articles": {
-      "60": {
-        "title": "Artikel 60",
-        "body": "Im Gebiet jeder Provinz sowie in der Stadt Kinshasa, Hauptstadt der Republik, wird ein oder mehrere Verwaltungsberufungsgerichte geschaffen.\nDer Gerichtsbezirk und der ordentliche Sitz des Verwaltungsberufungsgerichts werden durch einen im Ministerrat beratenen Erlass des Premierministers festgelegt."
+      "69": {
+        "title": "Artikel 69",
+        "body": "In der Stadt Kinshasa, in jeder Stadt und in jedem Territorium wird ein oder mehrere Verwaltungsgerichte eingerichtet.\nEs kann jedoch auch ein einziges Verwaltungsgericht fuer zwei oder mehrere Territorien eingerichtet werden.\nDer Gerichtsbezirk und der ordentliche Sitz der Verwaltungsgerichte werden durch einen im Ministerrat beratenen Erlass des Premierministers festgelegt."
       },
-      "61": {
-        "title": "Artikel 61",
-        "body": "Das Verwaltungsberufungsgericht besteht aus einem Ersten Praesidenten, einem oder mehreren Praesidenten und Richtern im Rat."
+      "70": {
+        "title": "Artikel 70",
+        "body": "Das Verwaltungsgericht umfasst eine beratende Sektion und eine streitige Sektion.\nJede Sektion ist in Kammern unterteilt."
       },
-      "62": {
-        "title": "Artikel 62",
-        "body": "Bei Abwesenheit oder Verhinderung wird der Erste Praesident durch den dienstaeltesten Praesidenten und der Praesident durch den dienstaeltesten Richter im Rat ersetzt.\nDie Dienstaelteste im Rang richtet sich nach Datum und Reihenfolge der Ernennung."
+      "71": {
+        "title": "Artikel 71",
+        "body": "Das Verwaltungsgericht besteht aus einem Praesidenten, Sektionspraesidenten, Kammerpraesidenten und Richtern.\nIn streitigen Angelegenheiten tagt das Verwaltungsgericht mit mindestens drei Richtern. Ausnahmsweise kann es mit fuenf Richtern tagen, um heikle oder komplexe Sachen zu pruefen oder wenn es erforderlich ist; in diesem Fall fuehrt der Leiter des Gerichts den Vorsitz.\nIn beratenden Angelegenheiten tagt das Verwaltungsgericht in gemischter Plenarbesetzung, bestehend aus den Magistraten der Sektion und der Staatsanwaltschaft, unter Leitung des Sektionspraesidenten."
       },
-      "63": {
-        "title": "Artikel 63",
-        "body": "Der Erste Praesident oder sein Vertreter ist fuer die Verteilung des Dienstes zustaendig."
+      "72": {
+        "title": "Artikel 72",
+        "body": "Bei Abwesenheit oder Verhinderung wird der Praesident durch den dienstaeltesten Richter ersetzt.\nWenn die Zahl der beim Verhandlungsort anwesenden Richter des Verwaltungsgerichts zur Bildung der Richterbank nicht ausreicht, kann der Praesident des Gerichts auf begruendeten Antrag des Staatsanwalts als beisitzenden Richter einen Magistrat der beim Verwaltungsgericht taetigen Staatsanwaltschaft, einen Rechtsanwalt mit mindestens fuenf Jahren Berufserfahrung oder eine andere Person mit juristischem Lizentiat und Erfahrung im Verwaltungsrecht berufen.\nDer beisitzende Richter ausserhalb der Staatsanwaltschaft leistet vor dem Praesidenten folgenden Eid: \"Ich schwoere, die Verfassung und die Gesetze der Demokratischen Republik Kongo zu achten und die mir anvertrauten Funktionen loyal und treu, mit Ehre und Wuerde auszuueben.\"\nDer beisitzende Richter wird nach seiner Unparteilichkeit ausgewaehlt, insbesondere unter Ausschluss jedes Interessenkonflikts aufgrund vorheriger beruflicher Kenntnis der Akte.\nDer Praesident oder sein Vertreter ist fuer die Verteilung des Dienstes zustaendig."
       },
-      "64": {
-        "title": "Artikel 64",
-        "body": "Das Verwaltungsberufungsgericht umfasst eine beratende Sektion und eine streitige Sektion.\nJede Sektion ist in Kammern unterteilt."
+      "73": {
+        "title": "Artikel 73",
+        "body": "Bei jedem Verwaltungsgericht gibt es einen Abteilungskanzler, unterstuetzt von einem oder mehreren Kanzlern sowie Gerichtsvollziehern."
       },
-      "65": {
-        "title": "Artikel 65",
-        "body": "Innerhalb der streitigen Sektion werden die Sachen mit einer ungeraden Zahl von Richtern entschieden, entweder durch eine Kammer oder durch vereinigte Kammern.\nDas Verwaltungsberufungsgericht kann ausnahmsweise als Sektion oder als vereinigte Sektionen tagen, bei heiklen oder komplexen Sachen oder wenn dies erforderlich ist.\nIn diesem Fall fuehrt der Erste Praesident den Vorsitz."
-      },
-      "66": {
-        "title": "Artikel 66",
-        "body": "Die Kammer und die Sektion tagen jeweils mit mindestens drei bzw. fuenf Mitgliedern; die vereinigten Kammern und die vereinigten Sektionen tagen jeweils mit mindestens fuenf bzw. sieben Mitgliedern."
-      },
-      "67": {
-        "title": "Artikel 67",
-        "body": "Die Vollversammlung des Verwaltungsberufungsgerichts umfasst alle Magistrate dieses Gerichts.\nDen Vorsitz fuehrt der Erste Praesident.\nSie beraet ueber alle allgemeinen Fragen, die das gesamte Gericht betreffen oder, soweit erforderlich.\nDie Vollversammlung tagt kraft Gesetzes bei Rechtsprechungsaenderung, bei Zustaendigkeitsstreit oder wenn ueber eine Grundsatzfrage durch Urteil zu entscheiden ist."
-      },
-      "68": {
-        "title": "Artikel 68",
-        "body": "Bei jedem Verwaltungsberufungsgericht gibt es einen Hauptkanzler, unterstuetzt von einem oder mehreren Abteilungskanzlern, einem oder mehreren Kanzlern sowie Gerichtsvollziehern.\nDas Verwaltungsberufungsgericht tagt unter Mitwirkung der Staatsanwaltschaft und mit Unterstuetzung eines Kanzlers."
+      "74": {
+        "title": "Artikel 74",
+        "body": "Das Verwaltungsgericht tagt unter Mitwirkung der Staatsanwaltschaft und mit Unterstuetzung eines Kanzlers."
       }
     }
   },

@@ -641,51 +641,39 @@
   "administrativeTribunals": {
     "hero": {
       "title": "Tribunali<br>Amministrativi",
-      "body": "Organizzazione, composizione e funzionamento delle Corti amministrative d'appello conformemente alla legge organica."
+      "body": "Organizzazione, composizione e funzionamento dei Tribunali amministrativi conformemente alla legge organica."
     },
     "intro": {
-      "title": "Articoli da 60 a 68",
-      "subtitle": "Corti amministrative d'appello: creazione, composizione e organizzazione"
+      "title": "Articoli da 69 a 74",
+      "subtitle": "Tribunali amministrativi: creazione, composizione e organizzazione"
     },
     "section": {
-      "title": "Paragrafo 2: Composizione e organizzazione"
+      "title": "Paragrafo: Composizione e organizzazione"
     },
     "articles": {
-      "60": {
-        "title": "Articolo 60",
-        "body": "E' istituita una o piu Corti amministrative d'appello nell'ambito di ciascuna provincia, nonche nella citta di Kinshasa, capitale della Repubblica.\nLa circoscrizione e la sede ordinaria della Corte amministrativa d'appello sono fissate con decreto del Primo Ministro deliberato in Consiglio dei ministri."
+      "69": {
+        "title": "Articolo 69",
+        "body": "E istituito uno o piu Tribunali amministrativi nella citta di Kinshasa, in ogni citta e in ogni territorio.\nTuttavia, puo essere istituito un solo Tribunale amministrativo per due o piu territori.\nLa competenza territoriale e la sede ordinaria dei Tribunali amministrativi sono fissate con decreto del Primo Ministro deliberato in Consiglio dei ministri."
       },
-      "61": {
-        "title": "Articolo 61",
-        "body": "La Corte amministrativa d'appello e composta da un Primo Presidente, da uno o piu Presidenti e da Consiglieri."
+      "70": {
+        "title": "Articolo 70",
+        "body": "Il Tribunale amministrativo comprende una sezione consultiva e una sezione del contenzioso.\nOgni sezione e suddivisa in camere."
       },
-      "62": {
-        "title": "Articolo 62",
-        "body": "In caso di assenza o impedimento, il Primo Presidente e sostituito dal Presidente piu anziano e il Presidente dal Consigliere piu anziano.\nL'anzianita nel grado e regolata dalla data e dall'ordine di nomina."
+      "71": {
+        "title": "Articolo 71",
+        "body": "Il Tribunale amministrativo e composto da un Presidente, dai Presidenti di sezione, dai Presidenti di camera e dai giudici.\nIn materia contenziosa, il Tribunale amministrativo siede con almeno tre giudici. In via eccezionale puo sedere con cinque giudici per esaminare cause delicate, complesse o quando la necessita lo richiede; in tal caso il Tribunale amministrativo e presieduto dal capo della giurisdizione.\nIn materia consultiva, il Tribunale amministrativo siede in formazione plenaria mista, composta dai magistrati della sezione e della procura, sotto la direzione del Presidente di sezione."
       },
-      "63": {
-        "title": "Articolo 63",
-        "body": "Il Primo Presidente o chi lo sostituisce e incaricato della ripartizione del servizio."
+      "72": {
+        "title": "Articolo 72",
+        "body": "In caso di assenza o impedimento, il Presidente e sostituito dal giudice piu anziano.\nQuando il numero dei giudici del Tribunale amministrativo presenti nel luogo di udienza non consente di costituire il collegio, il Presidente puo assumere, in qualita di giudice assessore e su richiesta motivata del Procuratore della Repubblica, un magistrato della procura presso il Tribunale amministrativo, un avvocato con almeno cinque anni di anzianita o qualsiasi altro titolare di laurea con esperienza in materia amministrativa.\nIl giudice assessore diverso dal Ministero pubblico presta davanti al Presidente il seguente giuramento: \"Giuro di rispettare la Costituzione e le leggi della Repubblica Democratica del Congo e di svolgere lealmente e fedelmente, con onore e dignita, le funzioni che mi sono affidate.\"\nIl giudice assessore e scelto in base alla sua imparzialita, in particolare escludendo qualsiasi conflitto di interessi derivante da una conoscenza professionale preliminare del fascicolo.\nIl Presidente o chi lo sostituisce e incaricato della ripartizione del servizio."
       },
-      "64": {
-        "title": "Articolo 64",
-        "body": "La Corte amministrativa d'appello comprende una sezione consultiva e una sezione contenziosa.\nOgni sezione e suddivisa in camere."
+      "73": {
+        "title": "Articolo 73",
+        "body": "In ogni Tribunale amministrativo vi e un cancelliere divisionale, assistito da uno o piu cancellieri e da ufficiali giudiziari."
       },
-      "65": {
-        "title": "Articolo 65",
-        "body": "All'interno della sezione contenziosa, le cause sono giudicate, in numero dispari di giudici, da una camera oppure da camere riunite.\nLa Corte amministrativa d'appello puo, in via eccezionale, riunirsi in sezione o in sezioni riunite per cause delicate o complesse, o quando la necessita lo richiede.\nIn tal caso, e presieduta dal Primo Presidente."
-      },
-      "66": {
-        "title": "Articolo 66",
-        "body": "La camera e la sezione siedono rispettivamente con almeno tre e cinque membri; le camere riunite e le sezioni riunite siedono rispettivamente con almeno cinque e sette membri."
-      },
-      "67": {
-        "title": "Articolo 67",
-        "body": "L'Assemblea plenaria della Corte amministrativa d'appello comprende tutti i magistrati di tale Corte.\nE presieduta dal Primo Presidente.\nDelibera su tutte le questioni di ordine generale che interessano l'insieme della Corte o, quando la necessita lo richiede.\nL'Assemblea plenaria si riunisce di diritto in caso di mutamento di giurisprudenza, declinatoria di giurisdizione o quando occorre pronunciarsi, con sentenza, su una questione di principio."
-      },
-      "68": {
-        "title": "Articolo 68",
-        "body": "In ogni Corte amministrativa d'appello vi e un cancelliere principale, assistito da uno o piu cancellieri divisionali, da uno o piu cancellieri e da ufficiali giudiziari.\nLa Corte amministrativa d'appello siede con il concorso del Pubblico Ministero e l'assistenza di un cancelliere."
+      "74": {
+        "title": "Articolo 74",
+        "body": "Il Tribunale amministrativo siede con il concorso del Ministero pubblico e l'assistenza di un cancelliere."
       }
     }
   },

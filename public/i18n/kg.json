@@ -640,52 +640,40 @@
   },
   "administrativeTribunals": {
     "hero": {
-      "title": "Tribunal ya appel<br>administratif",
-      "body": "Tukula, kimfumu ye misalu ya tribunal ya appel administratif landila loi organique."
+      "title": "Tribunal ya administratif",
+      "body": "Tukula, kimfumu ye misalu ya tribunal ya administratif landila loi organique."
     },
     "intro": {
-      "title": "Articles 60 tii 68",
-      "subtitle": "Tribunal ya appel administratif: ntumbukulu, kimfumu ye organizasion"
+      "title": "Articles 69 tii 74",
+      "subtitle": "Tribunal ya administratif: ntumbukulu, kimfumu ye organizasion"
     },
     "section": {
-      "title": "Paragraphe 2: Kimfumu ye organizasion"
+      "title": "Paragraphe: Kimfumu ye organizasion"
     },
     "articles": {
-      "60": {
-        "title": "Article 60",
-        "body": "Kusalamaka tribunal mosi to mingi ya appel administratif na kati ya province mosi na mosi mpi na mbanza ya Kinshasa, capitale ya République.\nMpaka ya kisalu mpi kisika ya ntangu yonso ya tribunal ya appel administratif yibikama na décret ya Premier ministre yina Conseil des ministres me ndimisa."
+      "69": {
+        "title": "Article 69",
+        "body": "Kusalamaka tribunal mosi to mingi ya administratif na mbanza ya Kinshasa, na mbanza yonso mpi na territoire yonso.\nKasi, lenda kusalama tribunal mosi kaka ya administratif sambu na territoires zole to mingi.\nMpaka ya kisalu mpi kisika ya ntangu yonso ya ba-tribunaux administratifs yibikama na décret ya Premier ministre yina Conseil des ministres me ndimisa."
       },
-      "61": {
-        "title": "Article 61",
-        "body": "Tribunal ya appel administratif ikele na Premier Président, Président mosi to mingi, mpi ba-Conseillers."
+      "70": {
+        "title": "Article 70",
+        "body": "Tribunal ya administratif ikele na section consultative mpi section ya contentieux.\nSection mosi na mosi ikabwanaka na ba-chambres."
       },
-      "62": {
-        "title": "Article 62",
-        "body": "Kana Premier Président kele ve to me kangama, yandi yibadilama na Président yina me luta na bukulu; mpi Président yibadilama na Conseiller yina me luta na bukulu.\nBukulu mu grade yibikama landila kilumbu mpi ndonga ya nomination."
+      "71": {
+        "title": "Article 71",
+        "body": "Tribunal ya administratif ikele na Président, ba-Présidents ya section, ba-Présidents ya chambre mpi ba-juges.\nNa mambu ya contentieux, tribunal kevandaka na ba-juge tatu na fioti ve. Na mutindu ya exception, lenda kuvanda na ba-juge tanu sambu na mambu ya mpasi, ya mindondo to kana ntina kele; mu ntangu yina, tribunal ketwadisama na chef ya juridiction.\nNa mambu ya consultation, tribunal ya administratif kevandaka na formation plénière mixte yina kesangisa ba-magistrats ya section mpi ya parquet, na bukambi ya Président ya section."
       },
-      "63": {
-        "title": "Article 63",
-        "body": "Premier Président to muntu yina yibadilaka yandi kele na mukumba ya kukabisa kisalu."
+      "72": {
+        "title": "Article 72",
+        "body": "Kana Président kele ve to me kangama, yandi yibadilama na juge yina me luta na bukulu.\nKana motango ya ba-juge ya tribunal ya administratif yina kele na kisika ya audience ekoki ve kusala siège, Président ya tribunal lenda kubaka lokola juge assesseur, na requête motivée ya Procureur de la République, magistrat mosi ya parquet pene ya tribunal ya administratif, avocat mosi yina kele na mbula tanu ya ancienneté to muntu yankaka yina kele na grade ya licencié mpe expérience na mambu ya administratif.\nJuge assesseur yina kele ve Ministère public kelapaka ndayi yai na meso ya Président: \"Mono nalapi ndayi ya kutosa Constitution mpi mikenji ya République Démocratique du Congo mpi kusala na bosembo mpi bondimi, na lokumu mpi dinite, bisalu yina bapesi mono.\"\nJuge assesseur yiponamaka na kutala impartialité na yandi, mingi mingi na kuboya conflit d'intérêt yonso yina ke katuka na boyebi ya dossier ntete sambu na kisalu.\nPrésident to yina yibadilaka yandi kele na mukumba ya kukabisa kisalu."
       },
-      "64": {
-        "title": "Article 64",
-        "body": "Tribunal ya appel administratif ikele na section consultative mpi section contentieuse.\nSection mosi na mosi ikabwanaka na ba-chambres."
+      "73": {
+        "title": "Article 73",
+        "body": "Na tribunal mosi na mosi ya administratif, kele na greffier divisionnaire, yina ba-greffiers mosi to mingi mpe ba-huissiers ke sadisa."
       },
-      "65": {
-        "title": "Article 65",
-        "body": "Mu kati ya section ya contentieux, mambu yisambisamaka na motango ya ba-juge ya mpila ya impair, to na chambre mosi to na ba-chambres yina me kutana.\nNa mutindu ya exception, tribunal ya appel administratif lenda kuvanda lokola section to ba-sections yina me kutana sambu na mambu ya mpasi to ya mindondo, to kana ntina ke lomba yo.\nMu ntangu yina, Premier Président nde ke twadisa yo."
-      },
-      "66": {
-        "title": "Article 66",
-        "body": "Chambre mpi section kevandaka na bantu tatu mpi tanu na fioti ve; ba-chambres yina me kutana mpi ba-sections yina me kutana kevandaka na bantu tanu mpi sambwadi na fioti ve."
-      },
-      "67": {
-        "title": "Article 67",
-        "body": "Assemblée plénière ya tribunal ya appel administratif ikele na ba-magistrats yonso ya tribunal yina.\nYawu ketwadisama na Premier Président.\nYawu kevutula mambu yonso ya ordre général yina metali tribunal ya mvimba to, kana ntina kele.\nAssemblée plénière kevandaka na ndinga ya nsiku kana jurisprudence me baluka, kana kele déclinatoire ya juridiction, to kana mbote kele ya kupesa arrêt na diambu ya principe."
-      },
-      "68": {
-        "title": "Article 68",
-        "body": "Na tribunal mosi na mosi ya appel administratif, kele na greffier principal, yina ba-greffiers divisionnaires mosi to mingi, ba-greffiers mosi to mingi, mpi ba-huissiers ke sadisa.\nTribunal ya appel administratif kevandaka na lisalisi ya Ministère public mpi ya greffier."
+      "74": {
+        "title": "Article 74",
+        "body": "Tribunal ya administratif kevandaka na lisalisi ya Ministère public mpi ya greffier."
       }
     }
   },

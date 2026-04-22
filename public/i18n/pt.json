@@ -641,51 +641,39 @@
   "administrativeTribunals": {
     "hero": {
       "title": "Tribunais<br>Administrativos",
-      "body": "Organizacao, composicao e funcionamento das Cortes administrativas de apelacao em conformidade com a lei organica."
+      "body": "Organizacao, composicao e funcionamento dos Tribunais administrativos em conformidade com a lei organica."
     },
     "intro": {
-      "title": "Artigos 60 a 68",
-      "subtitle": "Cortes administrativas de apelacao: criacao, composicao e organizacao"
+      "title": "Artigos 69 a 74",
+      "subtitle": "Tribunais administrativos: criacao, composicao e organizacao"
     },
     "section": {
-      "title": "Paragrafo 2: Da composicao e da organizacao"
+      "title": "Paragrafo: Composicao e organizacao"
     },
     "articles": {
-      "60": {
-        "title": "Artigo 60",
-        "body": "E criada uma ou mais Cortes administrativas de apelacao no ambito de cada provincia, bem como na cidade de Kinshasa, capital da Republica.\nA jurisdicao e a sede ordinaria da Corte administrativa de apelacao sao fixadas por decreto do Primeiro-Ministro deliberado em Conselho de Ministros."
+      "69": {
+        "title": "Artigo 69",
+        "body": "E criado um ou varios Tribunais administrativos na cidade de Kinshasa, em cada cidade e em cada territorio.\nTodavia, pode ser criado um unico Tribunal administrativo para dois ou varios territorios.\nA jurisdicao e a sede ordinaria dos Tribunais administrativos sao fixadas por decreto do Primeiro-Ministro deliberado em Conselho de Ministros."
       },
-      "61": {
-        "title": "Artigo 61",
-        "body": "A Corte administrativa de apelacao e composta por um Primeiro Presidente, um ou mais Presidentes e Conselheiros."
+      "70": {
+        "title": "Artigo 70",
+        "body": "O Tribunal administrativo compreende uma secao consultiva e uma secao do contencioso.\nCada secao e subdividida em camaras."
       },
-      "62": {
-        "title": "Artigo 62",
-        "body": "Em caso de ausencia ou impedimento, o Primeiro Presidente e substituido pelo Presidente mais antigo e o Presidente pelo Conselheiro mais antigo.\nA antiguidade no grau e regulada pela data e pela ordem de nomeacao."
+      "71": {
+        "title": "Artigo 71",
+        "body": "O Tribunal administrativo e composto por um Presidente, pelos Presidentes de secao, pelos Presidentes de camara e pelos juizes.\nEm materia contenciosa, o Tribunal administrativo funciona com pelo menos tres juizes. A titulo excecional, pode funcionar com cinco juizes para examinar processos delicados, complexos ou quando a necessidade o exigir; nesse caso, o Tribunal administrativo e presidido pelo chefe da jurisdicao.\nEm materia consultiva, o Tribunal administrativo funciona em formacao plenaria mista, composta pelos magistrados da secao e do Ministerio Publico, sob a direcao do Presidente da secao."
       },
-      "63": {
-        "title": "Artigo 63",
-        "body": "O Primeiro Presidente ou quem o substitua e encarregado da reparticao do servico."
+      "72": {
+        "title": "Artigo 72",
+        "body": "Em caso de ausencia ou impedimento, o Presidente e substituido pelo juiz mais antigo.\nQuando o efetivo de juizes do Tribunal administrativo presente no local onde o tribunal realiza audiencia nao permite compor o colegiado, o Presidente pode assumir, na qualidade de juiz assessor, por requisicao fundamentada do Procurador da Republica, um magistrado do Ministerio Publico junto ao Tribunal administrativo, um advogado com pelo menos cinco anos de antiguidade ou qualquer outro titular de licenciatura com experiencia em materia administrativa.\nO juiz assessor, exceto o Ministerio Publico, presta perante o Presidente o seguinte juramento: \"Juro respeitar a Constituicao e as leis da Republica Democratica do Congo e exercer leal e fielmente, com honra e dignidade, as funcoes que me sao confiadas.\"\nO juiz assessor e escolhido em funcao da sua imparcialidade, nomeadamente com exclusao de qualquer conflito de interesse resultante de conhecimento previo do processo a titulo profissional.\nO Presidente ou quem o substitua e encarregado da reparticao do servico."
       },
-      "64": {
-        "title": "Artigo 64",
-        "body": "A Corte administrativa de apelacao compreende uma secao consultiva e uma secao contenciosa.\nCada secao e subdividida em camaras."
+      "73": {
+        "title": "Artigo 73",
+        "body": "Em cada Tribunal administrativo ha um escrivao divisionario, assistido por um ou mais escrivaes, bem como por oficiais de justica."
       },
-      "65": {
-        "title": "Artigo 65",
-        "body": "No seio da secao contenciosa, os processos sao julgados, em numero impar de juizes, por uma camara ou por camaras reunidas.\nA Corte administrativa de apelacao pode, a titulo excepcional, reunir-se em secao ou em secoes reunidas para processos delicados ou complexos, ou quando a necessidade o exigir.\nNesse caso, e presidida pelo Primeiro Presidente."
-      },
-      "66": {
-        "title": "Artigo 66",
-        "body": "A camara e a secao funcionam, respetivamente, com pelo menos tres e cinco membros; as camaras reunidas e as secoes reunidas funcionam, respetivamente, com pelo menos cinco e sete membros."
-      },
-      "67": {
-        "title": "Artigo 67",
-        "body": "A Assembleia plenaria da Corte administrativa de apelacao compreende todos os magistrados dessa Corte.\nE presidida pelo Primeiro Presidente.\nDelibera sobre todas as questoes de ordem geral que interessem ao conjunto da Corte ou, quando a necessidade o exigir.\nA Assembleia plenaria reune-se de pleno direito em caso de mudanca de jurisprudencia, de declinatoria de jurisdicao ou quando houver lugar a pronunciar-se, por acordao, sobre uma questao de principio."
-      },
-      "68": {
-        "title": "Artigo 68",
-        "body": "Em cada Corte administrativa de apelacao ha um escrivao principal, assistido por um ou mais escrivaes divisionarios, por um ou mais escrivaes, bem como por oficiais de justica.\nA Corte administrativa de apelacao funciona com o concurso do Ministerio Publico e a assistencia de um escrivao."
+      "74": {
+        "title": "Artigo 74",
+        "body": "O Tribunal administrativo funciona com o concurso do Ministerio Publico e a assistencia de um escrivao."
       }
     }
   },

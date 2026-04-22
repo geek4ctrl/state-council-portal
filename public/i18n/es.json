@@ -641,51 +641,39 @@
   "administrativeTribunals": {
     "hero": {
       "title": "Tribunales<br>Administrativos",
-      "body": "Organizacion, composicion y funcionamiento de las Cortes administrativas de apelacion conforme a la ley organica."
+      "body": "Organizacion, composicion y funcionamiento de los Tribunales administrativos conforme a la ley organica."
     },
     "intro": {
-      "title": "Articulos 60 a 68",
-      "subtitle": "Cortes administrativas de apelacion: creacion, composicion y organizacion"
+      "title": "Articulos 69 a 74",
+      "subtitle": "Tribunales administrativos: creacion, composicion y organizacion"
     },
     "section": {
-      "title": "Parrafo 2: De la composicion y de la organizacion"
+      "title": "Parrafo: Composicion y organizacion"
     },
     "articles": {
-      "60": {
-        "title": "Articulo 60",
-        "body": "Se crea una o varias Cortes administrativas de apelacion en la jurisdiccion de cada provincia, asi como en la ciudad de Kinshasa, capital de la Republica.\nLa jurisdiccion y la sede ordinaria de la Corte administrativa de apelacion se fijan por decreto del Primer Ministro deliberado en Consejo de Ministros."
+      "69": {
+        "title": "Articulo 69",
+        "body": "Se crea uno o varios Tribunales administrativos en la ciudad de Kinshasa, en cada ciudad y en cada territorio.\nSin embargo, puede crearse un solo Tribunal administrativo para dos o varios territorios.\nLa jurisdiccion y la sede ordinaria de los Tribunales administrativos se fijan por decreto del Primer Ministro deliberado en Consejo de Ministros."
       },
-      "61": {
-        "title": "Articulo 61",
-        "body": "La Corte administrativa de apelacion esta compuesta por un Primer Presidente, uno o varios Presidentes y Consejeros."
+      "70": {
+        "title": "Articulo 70",
+        "body": "El Tribunal administrativo comprende una seccion consultiva y una seccion de lo contencioso.\nCada seccion se subdivide en camaras."
       },
-      "62": {
-        "title": "Articulo 62",
-        "body": "En caso de ausencia o impedimento, el Primer Presidente es sustituido por el Presidente mas antiguo y el Presidente por el Consejero mas antiguo.\nLa antiguedad en el grado se rige por la fecha y el orden de nombramiento."
+      "71": {
+        "title": "Articulo 71",
+        "body": "El Tribunal administrativo esta compuesto por un Presidente, Presidentes de seccion, Presidentes de camara y jueces.\nEn materia contenciosa, el Tribunal administrativo sesiona con al menos tres jueces. De forma excepcional, puede sesionar con cinco jueces para examinar asuntos delicados, complejos o cuando la necesidad lo exija; en ese caso, el Tribunal administrativo es presidido por el jefe de la jurisdiccion.\nEn materia consultiva, el Tribunal administrativo sesiona en formacion plenaria mixta, compuesta por magistrados de la seccion y de la fiscalia, bajo la direccion del Presidente de seccion."
       },
-      "63": {
-        "title": "Articulo 63",
-        "body": "El Primer Presidente o quien lo sustituya esta encargado de la distribucion del servicio."
+      "72": {
+        "title": "Articulo 72",
+        "body": "En caso de ausencia o impedimento, el Presidente es sustituido por el juez mas antiguo.\nCuando el numero de jueces del Tribunal administrativo presentes en el lugar de audiencia no permita constituir el tribunal, el Presidente puede asumir, en calidad de juez asesor y por requerimiento motivado del Fiscal de la Republica, a un magistrado de la fiscalia ante el Tribunal administrativo, a un abogado con al menos cinco anos de antiguedad o a cualquier otro titular de licenciatura con experiencia en materia administrativa.\nEl juez asesor distinto del Ministerio Publico presta ante el Presidente el siguiente juramento: \"Juro respetar la Constitucion y las leyes de la Republica Democratica del Congo y cumplir leal y fielmente, con honor y dignidad, las funciones que me son confiadas.\"\nEl juez asesor se elige por su imparcialidad, en particular excluyendo cualquier conflicto de interes derivado de un conocimiento previo del expediente por razones profesionales.\nEl Presidente o quien lo sustituya esta encargado de la distribucion del servicio."
       },
-      "64": {
-        "title": "Articulo 64",
-        "body": "La Corte administrativa de apelacion comprende una seccion consultiva y una seccion contenciosa.\nCada seccion se subdivide en camaras."
+      "73": {
+        "title": "Articulo 73",
+        "body": "En cada Tribunal administrativo hay un secretario divisionario, asistido por uno o varios secretarios, asi como por alguaciles."
       },
-      "65": {
-        "title": "Articulo 65",
-        "body": "En el seno de la seccion contenciosa, los asuntos se juzgan, en numero impar de jueces, ya sea por una camara o por camaras reunidas.\nLa Corte administrativa de apelacion puede, con caracter excepcional, sesionar en seccion o en secciones reunidas para asuntos delicados o complejos, o cuando la necesidad lo exija.\nEn ese caso, es presidida por el Primer Presidente."
-      },
-      "66": {
-        "title": "Articulo 66",
-        "body": "La camara y la seccion sesionan respectivamente con al menos tres y cinco miembros; las camaras reunidas y las secciones reunidas lo hacen respectivamente con al menos cinco y siete miembros."
-      },
-      "67": {
-        "title": "Articulo 67",
-        "body": "La Asamblea plenaria de la Corte administrativa de apelacion comprende a todos los magistrados de esta Corte.\nEsta presidida por el Primer Presidente.\nDelibera sobre todas las cuestiones de orden general que interesan al conjunto de la Corte o, cuando la necesidad lo exija.\nLa Asamblea plenaria sesiona de pleno derecho en caso de cambio de jurisprudencia, declinatoria de jurisdiccion o cuando corresponda pronunciarse, por sentencia, sobre una cuestion de principio."
-      },
-      "68": {
-        "title": "Articulo 68",
-        "body": "En cada Corte administrativa de apelacion hay un secretario principal, asistido por uno o varios secretarios divisionarios, uno o varios secretarios, asi como alguaciles.\nLa Corte administrativa de apelacion sesiona con la participacion del Ministerio Publico y la asistencia de un secretario."
+      "74": {
+        "title": "Articulo 74",
+        "body": "El Tribunal administrativo sesiona con la participacion del Ministerio Publico y la asistencia de un secretario."
       }
     }
   },

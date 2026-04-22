@@ -575,7 +575,7 @@
           "4": "CHAPITRE IV : Pouvoirs, garanties et limites des magistrats",
           "5": "CHAPITRE V : Discipline"
         },
-"paragraph3": "Pour une bonne marche de la juridiction, le Conseil d'Etat fonctionne avec:\n1. Deux sections distinctes;\n2. Une assemblée plénière;\n3. Un bureau;\n4. Des services administratifs et techniques.\n\n<strong>Les sections du Conseil d'Etat</strong>\n\nLe Conseil d'État est composé d'une section consultative et d'une section du\ncontentieux.\nChaque section comprend une ou plusieurs chambres.",
+        "paragraph3": "Pour une bonne marche de la juridiction, le Conseil d'Etat fonctionne avec:\n1. Deux sections distinctes;\n2. Une assemblée plénière;\n3. Un bureau;\n4. Des services administratifs et techniques.\n\n<strong>Les sections du Conseil d'Etat</strong>\n\nLe Conseil d'État est composé d'une section consultative et d'une section du\ncontentieux.\nChaque section comprend une ou plusieurs chambres.",
         "list2": {},
         "paragraph4": "",
         "paragraph5": "Conformément à l’article 155 de la Constitution du 18 février 2006, modifiée en 2011 et aux articles 75 à 93 de la loi organique n°16/027 du 15 octobre 2016, le Conseil d’Etat exerce la compétence consultative et contentieuse.\n\n<strong>Les compétences consultatives</strong>\n\nEn matière consultative, le Conseil d’Etat statue, selon le cas, soit par voie d’avis motivés. Le conseil d'Etat peut elaborer des rapports et faire des publications.\n\nSans préjudice des dispositions de la Constitution et de la loi organique sur les juridictions de l’ordre administratif, le Conseil d’Etat exerce les compétences consultatives ci-après:\nPour l’émission d’avis motivés, il se prononce :\n\n• Sur les demandes en régularités juridique des textes législatifs et réglementaires en chantier ou en vigueur, introduites par les autorités compétentes du pouvoir central ;\n• Sur les difficultés d’interprétation ou sur les questions qui soulèvent une difficulté d’interprétation des textes juridiques en vigueur autres que la Constitution devant une juridiction ou une autorité administrative centrale ;\n• Sur la pertinence des moyens juridiques retenus par les autorités administratives centrales pour atteindre, dans les domaines les plus divers de la vie nationale, les objectifs qu’elles se sont assignés, en tenant compte des contraintes liées à l’action administrative ;\n• En vue d’attirer, à la demande des autorités du Pouvoir central ou à sa propre initiative, l’attention des pouvoirs publics sur les réformes juridiques qui paraissent souhaitables pour l’intérêt général.\n\nPour la rédaction des rapports de services, il assure :\n• L’inspection des juridictions de l’ordre administratif en vue de se rendre compte des conditions matérielles de leur implantation, de l’environnement matériel et psychologique du travail des magistrats et du respect par ces derniers des règles déontologiques ;\n• La surveillance des activités des juridictions de l’ordre administratif en vue de veiller au respect par ces dernières des textes légaux et règlementaires et au respect de la nécessaire unité de la jurisprudence administrative ;\n• La collecte de toutes données ou de toutes informations susceptibles de l’éclairer ou d’éclairer les pouvoirs publics pour l’amélioration des conditions de fonctionnement de la juridiction administrative.\n\nPour la publication des résultats, il assure, par lui-même, par ses services ou par des tiers rémunérés ou non, les recherches dans les disciplines les plus diverses aussi bien du droit en général, que du droit public en particulier, en vue d’alimenter la juridiction administrative en données scientifiques les plus récentes, les plus fiables et les plus pointues dans ses disciplines.\n\n<strong>Les compétences contentieuses</strong>\n\nSans préjudice des dispositions de la Constitution du 18 février 2006, modifiée en 2011, actuellement en vigueur et de la loi organique n° 16/027 du 15 octobre 2016 relative aux juridictions de l’ordre administratif, le Conseil d’Etat exerce les compétences contentieuses ci-après :\n• en premier et dernier ressort, il connaît des recours en annulation pour violation de la loi, formés contre les actes, règlements ou décisions des autorités administratives centrales, contre ceux des organismes publics placés sous leur tutelle et contre ceux des organes nationaux des ordres professionnels relevant du Pouvoir central. Il peut également en ordonner la suspension, à la demande des parties, en tenant compte des circonstances de fait et de droit de la cause.\n• En appel, il connaît des recours formés contre les arrêts rendus en cette matière par les Cours administratives d’appel, dans le domaine de leurs compétences. Il connait également en appel, des recours formés contre les décisions rendues par certaines juridictions spécialisées de l’ordre administratif, dans le domaine de leurs compétences, au cas où, l’appel n’est pas organisé à l’interne.\n• En cassation, il connaît des pourvois pour violation de la Constitution, du traité dûment ratifié, de la loi, de l’édit, de la coutume, des principes généraux de droit et du règlement dirigés contre les arrêts et jugements des juridictions administratives de droit commun ou contre les décisions des juridictions administratives spécialisées.\nIl peut en prononcer la cassation avec ou sans renvoi. Dans ce cas, il ne statue pas quant au fond du litige ; sauf, lors d’une cassation après renvoi, et que le juge de renvoi n’a pas suivi le point de droit jugé en cassation.\n\n• En matière électorale, il connaît, en appel, du contentieux des résultats des élections des députés provinciaux, des gouverneurs et vice-gouverneurs de province et, en cassation, de celui des élections des autorités urbaines, municipales et locales ainsi que du contentieux relatif à la désignation, par voie d’élection ou de nomination, des membres des assemblées, corps ou organismes administratifs ou professionnels ou des membres des partis ou regroupements politiques visés à l’article 112 de la loi organique n° 16/027 du 15 octobre 2016.\n• Dans les cas où il n’existe pas d’autres juridictions compétentes, il connaît des demandes d’indemnités relatives à la réparation d’un dommage exceptionnel, matériel ou moral, résultant d’une mesure prise ou ordonnée par les autorités du Pouvoir central, des provinces et des entités territoriales décentralisées ainsi que par celles des organismes placés sous leur tutelle.",
@@ -637,51 +637,39 @@
   "administrativeTribunals": {
     "hero": {
       "title": "Tribunaux<br>administratifs",
-      "body": "Organisation, composition et fonctionnement des Cours administratives d'appel conformément à la loi organique."
+      "body": "Organisation, composition et fonctionnement des Tribunaux administratifs conformément a la loi organique."
     },
     "intro": {
-      "title": "Articles 60 à 68",
-      "subtitle": "Cours administratives d'appel : création, composition et organisation"
+      "title": "Articles 69 a 74",
+      "subtitle": "Tribunaux administratifs : creation, composition et organisation"
     },
     "section": {
-      "title": "Paragraphe 2 : De la composition et de l'organisation"
+      "title": "Paragraphe : De la composition et de l'organisation"
     },
     "articles": {
-      "60": {
-        "title": "Article 60",
-        "body": "Il est créé une ou plusieurs Cours administratives d'appel dans le ressort de chaque province ainsi que dans la ville de Kinshasa, capitale de la République.\nLe ressort et le siège ordinaire de la Cour administrative d'appel sont fixés par décret du Premier ministre délibéré en Conseil des ministres."
+      "69": {
+        "title": "Article 69",
+        "body": "Il est cree un ou plusieurs Tribunaux administratifs dans la ville de Kinshasa, dans chaque ville et dans chaque territoire.\nToutefois, il peut etre cree un seul Tribunal administratif pour deux ou plusieurs territoires.\nLe ressort et le siege ordinaire des Tribunaux administratifs sont fixes par decret du Premier ministre delibere en Conseil des ministres."
       },
-      "61": {
-        "title": "Article 61",
-        "body": "La Cour administrative d'appel est composée d'un Premier Président, d'un ou de plusieurs Présidents et des Conseillers."
+      "70": {
+        "title": "Article 70",
+        "body": "Le Tribunal administratif comprend une section consultative et une section du contentieux.\nChaque section est subdivisee en chambres."
       },
-      "62": {
-        "title": "Article 62",
-        "body": "En cas d'absence ou d'empêchement, le Premier Président est remplacé par le Président le plus ancien et le Président par le Conseiller le plus ancien.\nL'ancienneté dans le grade est réglée par la date et l'ordre de nomination."
+      "71": {
+        "title": "Article 71",
+        "body": "Le Tribunal administratif est compose d'un President, des Presidents de section, des Presidents de chambre et des juges.\nEn matiere contentieuse, le Tribunal administratif siege au nombre de trois juges au moins. A titre exceptionnel, il peut sieger au nombre de cinq juges pour examiner les affaires delicates, complexes ou lorsque la necessite l'exige ; dans ce cas, le Tribunal administratif est preside par le chef de la juridiction.\nEn matiere consultative, le Tribunal administratif siege en formation pleniere mixte, composee des magistrats de la section et du parquet, sous la direction du President de la section."
       },
-      "63": {
-        "title": "Article 63",
-        "body": "Le Premier Président ou celui qui le remplace est chargé de la répartition du service."
+      "72": {
+        "title": "Article 72",
+        "body": "En cas d'absence ou d'empêchement, le President est remplace par le juge le plus ancien.\nDans le cas ou l'effectif des juges du Tribunal administratif present au lieu ou le tribunal tient une audience ne permet pas de composer le siege, le President du tribunal peut assumer au titre de juge assesseur, sur requisition motivee du Procureur de la Republique, un magistrat du parquet pres le Tribunal administratif, un avocat ayant au moins cinq ans d'anciennete ou tout autre titulaire du grade de licencie justifiant d'une experience en matiere administrative.\nLe juge assesseur autre que le Ministere public prete entre les mains du President le serment suivant : « Je jure de respecter la Constitution et les lois de la Republique Democratique du Congo et de remplir loyalement et fidelement, avec honneur et dignite, les fonctions qui me sont confiees ».\nLe juge assesseur est choisi en fonction de son impartialite, notamment par l'exclusion de tout conflit d'interet resultant d'une connaissance prealable du dossier a titre professionnel.\nLe President ou celui qui le remplace est charge de la repartition du service."
       },
-      "64": {
-        "title": "Article 64",
-        "body": "La Cour administrative d'appel comprend une section consultative et une section contentieuse.\nChaque section est subdivisée en chambres."
+      "73": {
+        "title": "Article 73",
+        "body": "Il y a dans chaque Tribunal administratif un greffier divisionnaire, assiste d'un ou de plusieurs greffiers ainsi que des huissiers."
       },
-      "65": {
-        "title": "Article 65",
-        "body": "Au sein de la section du contentieux, les affaires sont jugées, en nombre impair des juges, soit par une chambre, soit par des chambres réunies.\nLa Cour administrative d'appel peut, à titre exceptionnel, siéger en section ou en sections réunies pour les affaires délicates ou complexes, ou lorsque la nécessité l'exige.\nDans ce cas, elle est présidée par le Premier Président."
-      },
-      "66": {
-        "title": "Article 66",
-        "body": "La chambre et la section siègent respectivement avec trois et cinq membres au moins ; les chambres réunies et les sections réunies le sont respectivement à cinq et sept membres au moins."
-      },
-      "67": {
-        "title": "Article 67",
-        "body": "L'Assemblée plénière de la Cour administrative d'appel comprend tous les magistrats de cette Cour.\nElle est présidée par le Premier Président.\nElle délibère sur toutes les questions d'ordre général intéressant l'ensemble de la Cour ou, lorsque la nécessité l'exige.\nL'Assemblée plénière siège, de plein droit, en cas de revirement de jurisprudence, de déclinatoire de juridiction ou lorsqu'il y a lieu de se prononcer, par arrêt, sur une question de principe."
-      },
-      "68": {
-        "title": "Article 68",
-        "body": "Il y a dans chaque Cour administrative d'appel un greffier principal, assisté d'un ou de plusieurs greffiers divisionnaires, d'un ou de plusieurs greffiers ainsi que des huissiers.\nLa Cour administrative d'appel siège avec le concours du Ministère public et l'assistance d'un greffier."
+      "74": {
+        "title": "Article 74",
+        "body": "Le Tribunal administratif siege avec le concours du Ministere public et l'assistance d'un greffier."
       }
     }
   },
@@ -897,7 +885,7 @@
       "roles": {
         "firstPresident": {
           "title": "La première présidente",
-           "body": "La présidence du Conseil d’Etat est assurée par le Premier Président. Celui-ci\ndispose des compétences ci-après : l’élaboration du projet de règlement intérieur\ndu Conseil d’Etat ; la répartition des matières entre les deux sections ou entre les\nchambres ; la gestion du personnel de greffe mis à la disposition du Conseil ; la\ngestion du budget de fonctionnement alloué aux juridictions de l’ordre\nadministratif. Il en est l’ordonnateur délégué.\nDepuis le 18 Fevrier 2025, Madame Brigitte Nsensele wa Nsensele est la Première Présidente du Conseil d’Etat."
+          "body": "La présidence du Conseil d’Etat est assurée par le Premier Président. Celui-ci\ndispose des compétences ci-après : l’élaboration du projet de règlement intérieur\ndu Conseil d’Etat ; la répartition des matières entre les deux sections ou entre les\nchambres ; la gestion du personnel de greffe mis à la disposition du Conseil ; la\ngestion du budget de fonctionnement alloué aux juridictions de l’ordre\nadministratif. Il en est l’ordonnateur délégué.\nDepuis le 18 Fevrier 2025, Madame Brigitte Nsensele wa Nsensele est la Première Présidente du Conseil d’Etat."
         },
         "sectionPresidents": {
           "title": "Les Présidents des Sections",

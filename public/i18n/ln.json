@@ -640,52 +640,40 @@
   },
   "administrativeTribunals": {
     "hero": {
-      "title": "Tribinal ya apel<br>ya administratif",
-      "body": "Molongano, bobongisami mpe ndenge ya kosala ya tribinal ya apel ya administratif kolanda mobeko ya organique."
+      "title": "Tribinal ya administratif",
+      "body": "Molongano, bobongisami mpe ndenge ya kosala ya tribinal ya administratif kolanda mobeko ya organique."
     },
     "intro": {
-      "title": "Articles 60 kino 68",
-      "subtitle": "Tribinal ya apel ya administratif: bokeli, bobongisami mpe molongano"
+      "title": "Articles 69 kino 74",
+      "subtitle": "Tribinal ya administratif: bokeli, bobongisami mpe molongano"
     },
     "section": {
-      "title": "Paragraphe 2: Bobongisami mpe molongano"
+      "title": "Paragraphe: Bobongisami mpe molongano"
     },
     "articles": {
-      "60": {
-        "title": "Article 60",
-        "body": "Esalemi tribinal moko to ebele ya apel ya administratif na etuka ya province moko na moko mpe na engumba ya Kinshasa, mboka-mokonzi ya République.\nEtando oyo tribinal ya apel ya administratif etalelaka mpe esika na yango ya momeseno etiamaka na décret ya Premier ministre oyo Conseil des ministres endimaki."
+      "69": {
+        "title": "Article 69",
+        "body": "Esalemi tribinal moko to ebele ya administratif na engumba ya Kinshasa, na engumba nyonso mpe na territoire nyonso.\nNzokande, ekoki kozala tribinal moko kaka ya administratif mpo na territoires mibale to ebele.\nEtando oyo ba-tribinal ya administratif etalelaka mpe esika na yango ya momeseno etiamaka na décret ya Premier ministre oyo Conseil des ministres endimaki."
       },
-      "61": {
-        "title": "Article 61",
-        "body": "Tribinal ya apel ya administratif esalemi na Premier Président, Président moko to ebele, mpe ba-Conseillers."
+      "70": {
+        "title": "Article 70",
+        "body": "Tribinal ya administratif ezali na section consultative mpe section ya contentieux.\nSection moko na moko ekabwani na ba-chambres."
       },
-      "62": {
-        "title": "Article 62",
-        "body": "Soki Premier Président azangi to azui mpasi ya kosala, Président oyo aleki na bokolo nde azongisa ye; mpe Président azongisamaka na Conseiller oyo aleki na bokolo.\nBokolo na grade etalelamaka na mokolo mpe molongo ya nomination."
+      "71": {
+        "title": "Article 71",
+        "body": "Tribinal ya administratif esalemi na Président, ba-Présidents ya section, ba-Présidents ya chambre mpe ba-juges.\nNa makambo ya contentieux, tribinal efandaka na ba-juge misato na moke te. Na ndenge ya exception, ekoki kofanda na ba-juge mitano mpo na kotala makambo ya mpasi, ya mindondo to soki bosenga ezali; na ntango wana, mokonzi ya juridiction nde akambaka tribinal.\nNa makambo ya consultation, tribinal ya administratif efandaka na formation plénière mixte oyo esangisi ba-magistrats ya section mpe ya parquet, na bokambi ya Président ya section."
       },
-      "63": {
-        "title": "Article 63",
-        "body": "Premier Président to moto oyo azongisi ye azali na mokumba ya kokabola misala."
+      "72": {
+        "title": "Article 72",
+        "body": "Soki Président azangi to azui mpasi ya kosala, azongisamaka na juge oyo aleki na bokolo.\nSoki motango ya ba-juge ya tribinal ya administratif oyo bazali na esika ya audience ekoki te kosala siège, Président ya tribinal akoki kozwa lokola juge assesseur, na requête motivée ya Procureur de la République, magistrat moko ya parquet pene na tribinal ya administratif, avocat moko oyo azali na mbula mitano na mosala to motindo mosusu oyo azali na grade ya licencié mpe expérience na makambo ya administratif.\nJuge assesseur oyo azali te Ministère public alapa ndayi oyo liboso ya Président: \"Nalapi ndayi ya kotosa Constitution mpe mibeko ya République Démocratique du Congo mpe kosala na bosembo mpe bondimi, na lokumu mpe na mayele, misala oyo bapesi ngai.\"\nJuge assesseur aponamaka mpo na impartialité na ye, mingi mingi na koboya conflit d'intérêt nyonso oyo ewutaka na boyebi ya dossier liboso mpo na ntina ya mosala.\nPrésident to moto oyo azongisi ye azali na mokumba ya kokabola misala."
       },
-      "64": {
-        "title": "Article 64",
-        "body": "Tribinal ya apel ya administratif ezali na section consultative mpe section contentieuse.\nSection moko na moko ekabwani na ba-chambres."
+      "73": {
+        "title": "Article 73",
+        "body": "Na tribinal moko na moko ya administratif, ezali na greffier divisionnaire, oyo asalisami na greffiers moko to ebele mpe ba-huissiers."
       },
-      "65": {
-        "title": "Article 65",
-        "body": "Na kati ya section ya contentieux, makambo esambisamaka na motango ya ba-juge oyo ekabwani na mibale te, ezala na chambre moko to na ba-chambres oyo esangani.\nNa ndenge ya exception, tribinal ya apel ya administratif ekoki kofanda lokola section moko to ba-sections oyo esangani mpo na makambo ya mpasi to ya mindondo, to soki bosenga ezali.\nNa ntango wana, Premier Président nde akambaka yango."
-      },
-      "66": {
-        "title": "Article 66",
-        "body": "Chambre mpe section efandaka na bato misato mpe mitano na moke te; ba-chambres oyo esangani mpe ba-sections oyo esangani efandaka na bato mitano mpe nsambo na moke te."
-      },
-      "67": {
-        "title": "Article 67",
-        "body": "Assemblée plénière ya tribinal ya apel ya administratif esangisi bamagistrats nyonso ya tribinal wana.\nEkambamaka na Premier Président.\nEtalelaka mituna nyonso ya ordre général oyo etali tribinal mobimba to, soki bosenga ezali.\nAssemblée plénière efandaka na mobeko, soki jurisprudence ebongwani, soki ezali déclinatoire ya juridiction, to soki esengeli kopesa mokano na arrêt na motuna ya principe."
-      },
-      "68": {
-        "title": "Article 68",
-        "body": "Na tribinal moko na moko ya apel ya administratif, ezali na greffier principal, oyo asalisami na greffiers divisionnaires moko to ebele, greffiers moko to ebele, mpe na ba-huissiers.\nTribinal ya apel ya administratif efandaka na lisalisi ya Ministère public mpe ya greffier."
+      "74": {
+        "title": "Article 74",
+        "body": "Tribinal ya administratif efandaka na lisalisi ya Ministère public mpe ya greffier."
       }
     }
   },

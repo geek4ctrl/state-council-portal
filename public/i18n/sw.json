@@ -641,51 +641,39 @@
   "administrativeTribunals": {
     "hero": {
       "title": "Mahakama za<br>Utawala",
-      "body": "Muundo, uundaji na utendaji wa Mahakama za Rufani za Utawala kwa mujibu wa sheria ya kikaboni."
+      "body": "Muundo, uundaji na utendaji wa Mahakama za Utawala kwa mujibu wa sheria ya kikaboni."
     },
     "intro": {
-      "title": "Ibara ya 60 hadi 68",
-      "subtitle": "Mahakama za Rufani za Utawala: uanzishaji, muundo na mpangilio"
+      "title": "Ibara ya 69 hadi 74",
+      "subtitle": "Mahakama za Utawala: uanzishaji, muundo na mpangilio"
     },
     "section": {
-      "title": "Aya ya 2: Muundo na mpangilio"
+      "title": "Aya: Muundo na mpangilio"
     },
     "articles": {
-      "60": {
-        "title": "Ibara ya 60",
-        "body": "Inaanzishwa Mahakama moja au zaidi za Rufani za Utawala ndani ya mamlaka ya kila mkoa pamoja na jiji la Kinshasa, mji mkuu wa Jamhuri.\nMamlaka ya eneo na makao ya kawaida ya Mahakama ya Rufani ya Utawala huamuliwa kwa amri ya Waziri Mkuu iliyojadiliwa katika Baraza la Mawaziri."
+      "69": {
+        "title": "Ibara ya 69",
+        "body": "Inawekwa Mahakama moja au zaidi za Utawala katika jiji la Kinshasa, katika kila jiji na katika kila wilaya.\nHata hivyo, inaweza kuanzishwa Mahakama moja tu ya Utawala kwa wilaya mbili au zaidi.\nMamlaka ya eneo na makao ya kawaida ya Mahakama za Utawala huamuliwa kwa amri ya Waziri Mkuu iliyojadiliwa katika Baraza la Mawaziri."
       },
-      "61": {
-        "title": "Ibara ya 61",
-        "body": "Mahakama ya Rufani ya Utawala inaundwa na Rais wa Kwanza, Rais mmoja au zaidi, na Washauri."
+      "70": {
+        "title": "Ibara ya 70",
+        "body": "Mahakama ya Utawala ina sehemu ya ushauri na sehemu ya mashauri ya migogoro.\nKila sehemu imegawanywa katika vyumba."
       },
-      "62": {
-        "title": "Ibara ya 62",
-        "body": "Iwapo kuna kutokuwepo au kuzuiwa, Rais wa Kwanza hubadilishwa na Rais mwenye ukongwe zaidi, na Rais hubadilishwa na Mshauri mwenye ukongwe zaidi.\nUkongwe katika daraja huamuliwa kwa tarehe na mpangilio wa uteuzi."
+      "71": {
+        "title": "Ibara ya 71",
+        "body": "Mahakama ya Utawala inaundwa na Rais, Marais wa sehemu, Marais wa vyumba na majaji.\nKatika mashauri ya migogoro, Mahakama ya Utawala huketi na angalau majaji watatu. Kwa hali ya kipekee, inaweza kuketi na majaji watano kuchunguza mashauri nyeti, magumu au pale ulazima unapotokea; katika hali hiyo, Mahakama ya Utawala huongozwa na mkuu wa mahakama.\nKatika mashauri ya ushauri, Mahakama ya Utawala huketi katika kikao mchanganyiko cha pleni kinachojumuisha mahakimu wa sehemu na wa mashtaka, chini ya uongozi wa Rais wa sehemu."
       },
-      "63": {
-        "title": "Ibara ya 63",
-        "body": "Rais wa Kwanza au anayemwakilisha ndiye mwenye jukumu la mgawanyo wa huduma."
+      "72": {
+        "title": "Ibara ya 72",
+        "body": "Iwapo kuna kutokuwepo au kuzuiwa, Rais hubadilishwa na jaji mwenye ukongwe zaidi.\nIwapo idadi ya majaji wa Mahakama ya Utawala waliopo mahali pa kusikiliza shauri haitoshi kuunda jopo, Rais wa mahakama anaweza kumteua kama jaji msaidizi, kwa ombi lenye sababu la Mwendesha Mashtaka wa Jamhuri, hakimu wa ofisi ya mashtaka iliyo karibu na Mahakama ya Utawala, wakili mwenye angalau miaka mitano ya uzoefu, au mhitimu mwingine wa sheria mwenye uzoefu katika masuala ya utawala.\nJaji msaidizi ambaye si wa Wizara ya Umma huapa mbele ya Rais kiapo hiki: \"Naapa kuheshimu Katiba na sheria za Jamhuri ya Kidemokrasia ya Kongo na kutekeleza kwa uaminifu na uadilifu, kwa heshima na hadhi, majukumu niliyopewa.\"\nJaji msaidizi huchaguliwa kwa kuzingatia kutokuwa na upendeleo, hasa kwa kuondoa mgongano wowote wa maslahi unaotokana na ujuzi wa awali wa jalada kwa sababu za kikazi.\nRais au anayemwakilisha ndiye mwenye jukumu la mgawanyo wa huduma."
       },
-      "64": {
-        "title": "Ibara ya 64",
-        "body": "Mahakama ya Rufani ya Utawala ina sehemu ya ushauri na sehemu ya mashauri ya migogoro.\nKila sehemu imegawanywa katika vyumba."
+      "73": {
+        "title": "Ibara ya 73",
+        "body": "Katika kila Mahakama ya Utawala kuna karani wa mgawanyo, akisaidiwa na karani mmoja au zaidi pamoja na mabailifu."
       },
-      "65": {
-        "title": "Ibara ya 65",
-        "body": "Ndani ya sehemu ya mashauri ya migogoro, kesi huamuliwa na idadi isiyo gawanyika kwa mbili ya majaji, ama na chumba kimoja au vyumba vilivyoungana.\nMahakama ya Rufani ya Utawala inaweza, kwa hali ya kipekee, kuketi kama sehemu au sehemu zilizoungana kwa kesi nyeti au ngumu, au pale ambapo ulazima unahitaji.\nKatika hali hiyo, huongozwa na Rais wa Kwanza."
-      },
-      "66": {
-        "title": "Ibara ya 66",
-        "body": "Chumba na sehemu huketi kwa angalau wajumbe watatu na watano mtawalia; vyumba vilivyoungana na sehemu zilizoungana huketi kwa angalau wajumbe watano na saba mtawalia."
-      },
-      "67": {
-        "title": "Ibara ya 67",
-        "body": "Mkutano Mkuu wa Mahakama ya Rufani ya Utawala unajumuisha mahakimu wote wa Mahakama hiyo.\nUnaongozwa na Rais wa Kwanza.\nUnajadili masuala yote ya jumla yanayohusu Mahakama nzima au, inapohitajika.\nMkutano Mkuu huketi kwa mujibu wa sheria endapo kuna mabadiliko ya mwenendo wa maamuzi, pingamizi la mamlaka ya kesi, au inapobidi kutoa uamuzi wa kanuni kwa hukumu."
-      },
-      "68": {
-        "title": "Ibara ya 68",
-        "body": "Katika kila Mahakama ya Rufani ya Utawala kuna karani mkuu, akisaidiwa na karani wa mgawanyo mmoja au zaidi, karani mmoja au zaidi, pamoja na mabailifu.\nMahakama ya Rufani ya Utawala huketi kwa ushiriki wa Ofisi ya Mwendesha Mashtaka wa Umma na msaada wa karani."
+      "74": {
+        "title": "Ibara ya 74",
+        "body": "Mahakama ya Utawala huketi kwa ushiriki wa Ofisi ya Mwendesha Mashtaka wa Umma na msaada wa karani."
       }
     }
   },
