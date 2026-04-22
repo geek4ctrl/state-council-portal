@@ -590,6 +590,29 @@
       }
     }
   },
+  "administrativeCourts": {
+    "hero": {
+      "title": "Tribunales<br>Administrativos",
+      "body": "Organización, composición y funcionamiento de los tribunales administrativos de conformidad con la Ley Orgánica N.° 13/011-B del 11 de abril de 2013."
+    },
+    "intro": {
+      "title": "Ley Orgánica N.° 13/011-B del 11 de abril de 2013",
+      "subtitle": "Organización, composición y funcionamiento de las jurisdicciones del orden administrativo"
+    },
+    "articles": {
+      "49": { "title": "Artículo 49", "body": "Cada sala comprende un Presidente y Consejeros.\nDelibera con los miembros que han participado en la instrucción del asunto.\nSi la sala no puede constituirse válidamente, se completa con otros Consejeros." },
+      "50": { "title": "Artículo 50", "body": "El recurso de anulación de actos, reglamentos o decisiones de las autoridades administrativas centrales es comunicado por el Primer Presidente a la sección de lo contencioso o, en caso de urgencia, directamente al Presidente de la sala competente." },
+      "51": { "title": "Artículo 51", "body": "Los asuntos ante el Consejo de Estado pueden remitirse al pleno de la sección para su examen, a petición del Primer Presidente del Consejo de Estado, del Presidente de la sección correspondiente, del Presidente de la sala competente o de las salas reunidas, o del Ministerio Público." },
+      "52": { "title": "Artículo 52", "body": "La sección consultiva está integrada por un Presidente de sección, Presidentes de sala y Consejeros.\nComprende las tres siguientes salas:\n1. La sala de dictámenes;\n2. La sala de interpretación de textos jurídicos;\n3. La sala de estudios e inspección permanente." },
+      "53": { "title": "Artículo 53", "body": "El Consejo de Estado cuenta con una asamblea plenaria integrada por todos los magistrados del Consejo de Estado.\nLa Asamblea plenaria está presidida por el Primer Presidente del Consejo." },
+      "54": { "title": "Artículo 54", "body": "El Primer Presidente está a cargo de la administración y el orden dentro del Consejo de Estado.\nEn este sentido:\n- elabora el proyecto de reglamento interno del Consejo de Estado;\n- distribuye los asuntos entre las dos secciones o entre las salas." },
+      "55": { "title": "Artículo 55", "body": "En el Consejo de Estado existe una secretaría integrada por un secretario jefe, secretarios principales, secretarios de división, secretarios y alguaciles." },
+      "56": { "title": "Artículo 56", "body": "El Consejo de Estado sesiona con la participación del Ministerio Público y la asistencia de un secretario." },
+      "57": { "title": "Artículo 57", "body": "En caso de ausencia o impedimento, el Primer Presidente del Consejo de Estado es sustituido por el Presidente de sección o de sala más antiguo." },
+      "58": { "title": "Artículo 58", "body": "Se instituye una oficina del Consejo de Estado compuesta por el Primer Presidente, el Fiscal General, los Presidentes y los Primeros Abogados Generales.\nLa Oficina del Consejo de Estado no tiene competencia jurisdiccional; no puede sustituir ni a una sala, ni a una sección, ni mucho menos a la Asamblea plenaria del Consejo de Estado." },
+      "59": { "title": "Artículo 59", "body": "La Oficina aprueba el reglamento interno del Consejo de Estado.\nRedacta, al final de cada año, un informe completo del Consejo de Estado, de los Tribunales Administrativos de Apelación, de los Tribunales Administrativos y de las fiscalías adscritas, dirigido al Presidente del Consejo Superior de la Magistratura." }
+    }
+  },
   "reforms": {
     "hero": {
       "title": "Reformas propuestas<br>",

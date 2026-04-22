@@ -590,6 +590,29 @@
       }
     }
   },
+  "administrativeCourts": {
+    "hero": {
+      "title": "Tubadi tua<br>malu a mbulamatadi",
+      "body": "Bulongolodi, mutupo ne mushindu wa tubadi tua malu a mbulamatadi kumudimu wa Tshiatshi tsha Mapangadilu Nsha. 13/011-B wa diba dia 11 avril 2013."
+    },
+    "intro": {
+      "title": "Tshiatshi tsha Mapangadilu Nsha. 13/011-B wa diba dia 11 avril 2013",
+      "subtitle": "Bulongolodi, mutupo ne mushindu wa bukumi bua malu a mbulamatadi"
+    },
+    "articles": {
+      "49": { "title": "Tshiandiku 49", "body": "Chambre yonso idi ne Président ne Conseillers.\nIkonka ne bena bakapite mu kufundisha mudimu.\nEke chambre ikena kulongolola bimpe, ibakangalwa ne Conseillers bangi." },
+      "50": { "title": "Tshiandiku 50", "body": "Recours ya kudika bienzedi, makonzá kana mikandu ya ba autorités administratives ya kati itumbishiwa na Premier Président kwa section ya contentieux kana, mu tshiseshi, droitement kwa Président wa chambre ushinda." },
+      "51": { "title": "Tshiandiku 51", "body": "Mialu idi ku Conseil d'État ikena kutumbishibua kwa plenière ya section mu kusidika, pa demande wa Premier Président wa Conseil d'État, Président wa section ushintulule, Président wa chambre ushinda kana chambres zikanguke, kana Ministère public." },
+      "52": { "title": "Tshiandiku 52", "body": "Section consultative ilongololwa na Président wa section, Présidents ba chambre ne Conseillers.\nIdi ne chambres isatu:\n1. Chambre ya bavis;\n2. Chambre ya kusolola maandikilu a tshiatshi;\n3. Chambre ya mifundilu ne inspection ya mudi wonso." },
+      "53": { "title": "Tshiandiku 53", "body": "Conseil d'État udi ne assemblée plénière idi ne bajuge bonso ba Conseil d'État.\nAssemblée plénière ikonkeshibua na Premier Président wa Conseil." },
+      "54": { "title": "Tshiandiku 54", "body": "Premier Président ushinduluaye administration ne buena mu kati wa Conseil d'État.\nMu bukumu buabu:\n- usala projet wa règlement intérieur wa Conseil d'État;\n- ubakanya mialu pakati pa sections ibidi kana pakati pa chambres." },
+      "55": { "title": "Tshiandiku 55", "body": "Mu kati wa Conseil d'État udi greffe udi ne greffier en chef, greffiers principaux, greffiers divisionnaires, greffiers ne huissiers." },
+      "56": { "title": "Tshiandiku 56", "body": "Conseil d'État ifanda ne lisalisi ya Ministère public ne lisalisi ya greffier." },
+      "57": { "title": "Tshiandiku 57", "body": "Mu tshifuku tsha kuleka kana kuzingama, Premier Président wa Conseil d'État ishintuluibua na Président wa section kana chambre umvua kukula." },
+      "58": { "title": "Tshiandiku 58", "body": "Isalibua bureau wa Conseil d'État ilongololwa na Premier Président, Procureur général, Présidents ne Premiers Avocats Généraux.\nBureau wa Conseil d'État udi ne nguvu ya juridiction tshiena; ikena kushintulula esika ya chambre, ya section, kana Assemblée plénière ya Conseil d'État." },
+      "59": { "title": "Tshiandiku 59", "body": "Bureau ipona règlement intérieur wa Conseil d'État.\nIstablisha, mu suka ya mulemo umue ne umue, rapport complète ya Conseil d'État, Cours administratives d'appel, Tribunaux administratifs ne parquets ikanguke ne babo pa mifunto ya Président wa Conseil supérieur de la magistrature." }
+    }
+  },
   "reforms": {
     "hero": {
       "title": "Bidi bilomba<br>Bidi bishintulula",

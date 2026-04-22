@@ -590,6 +590,29 @@
       }
     }
   },
+  "administrativeCourts": {
+    "hero": {
+      "title": "Tribunal ya<br>Administratif",
+      "body": "Tukula, kimfumu ye misidisu ya tribunal ya administratif mu nzila ya Loi organique Na. 13/011-B ya 11 avril 2013."
+    },
+    "intro": {
+      "title": "Loi organique Na. 13/011-B ya 11 avril 2013",
+      "subtitle": "Tukula, kimfumu ye misidisu ya juridictions ya ordre administratif"
+    },
+    "articles": {
+      "49": { "title": "Article 49", "body": "Chambre yonso ina Président ye Conseillers.\nYibakanga ye bantu bakele mu kufwanana ye instruction ya nkanu.\nSoki siège ya chambre yakwanisa ke, ibakanga Conseillers yangi." },
+      "50": { "title": "Article 50", "body": "Recours mu kusunga bikorwa, makonzá to nkanu ya autorités administratives ya kati itindama na Premier Président epai ya section ya contentieux to, mu ntoto, dirèktement na Président ya chambre ikwanisika.\nPremier Président eba autorité yango bikorwa, makonzá to nkanu yango isungama." },
+      "51": { "title": "Article 51", "body": "Nkanu zina Conseil d'État zikwanisa kutindama na plenière ya section mu kutatola, na demande ya Premier Président ya Conseil d'État, Président ya section ikangama, Président ya chambre ikwanisika to chambres zikangama, to Ministère public." },
+      "52": { "title": "Article 52", "body": "Section consultative itukumama na Président ya section, Présidents ya chambre ye Conseillers.\nIna chambres tatu:\n1. Chambre ya bavis;\n2. Chambre ya kufwanana ya matekilu ya juridique;\n3. Chambre ya masamu ye inspection ya libela." },
+      "53": { "title": "Article 53", "body": "Conseil d'État ina assemblée plénière ina batu bonso ya bajuge ya Conseil d'État.\nAssemblée plénière ikukulamaka na Premier Président ya Conseil." },
+      "54": { "title": "Article 54", "body": "Premier Président isalaka administration ye kimfumu mu kati ya Conseil d'État.\nMu ntinu yina:\n- isalaka projet ya règlement intérieur ya Conseil d'État;\n- ibakisaka mambu kati ya sections mibale to kati ya chambres." },
+      "55": { "title": "Article 55", "body": "Mu kati ya Conseil d'État ina greffe ina greffier en chef, greffiers principaux, greffiers divisionnaires, greffiers ye huissiers." },
+      "56": { "title": "Article 56", "body": "Conseil d'État ifandaka ye lisalisi ya Ministère public ye lisalisi ya greffier." },
+      "57": { "title": "Article 57", "body": "Mu siku ya kuleka to kuzingama, Premier Président ya Conseil d'État isimbolamaka na Président ya section to chambre ukolo kuleka." },
+      "58": { "title": "Article 58", "body": "Isalama bureau ya Conseil d'État itukumama na Premier Président, Procureur général, Présidents ye Premiers Avocats Généraux.\nBureau ya Conseil d'État ina nguya ya juridiction ke; ikwanisa ke kusimba esika ya chambre, ya section, to Assemblée plénière ya Conseil d'État." },
+      "59": { "title": "Article 59", "body": "Bureau ipona règlement intérieur ya Conseil d'État.\nIstablisha, mu suka ya mobu mosi na mosi, rapport complète ya Conseil d'État, Cours administratives d'appel, Tribunaux administratifs ye parquets ikangama na bango na meso ya Président ya Conseil supérieur de la magistrature." }
+    }
+  },
   "reforms": {
     "hero": {
       "title": "Bongwana<br>Oyo epesami",

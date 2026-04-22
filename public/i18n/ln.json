@@ -586,6 +586,62 @@
       }
     }
   },
+  "administrativeCourts": {
+    "hero": {
+      "title": "Tribinal ya<br>Administratif ya Likolo",
+      "body": "Molongano, bobeli mpe kosala ya tribinal ya administratif kolanda Loi organique Na. 13/011-B ya 11 avril 2013."
+    },
+    "intro": {
+      "title": "Loi organique Na. 13/011-B ya 11 avril 2013",
+      "subtitle": "Molongano, bobeli mpe kosala ya juridictions ya ordre administratif"
+    },
+    "articles": {
+      "49": {
+        "title": "Article 49",
+        "body": "Chambre nyonso ezali na Président mpe Conseillers.\nBalobeli na bato oyo bakokani na instruction ya likambo.\nSoki siège ya chambre ekoki te kosala malamu, ekosalema na Conseillers mosusu."
+      },
+      "50": {
+        "title": "Article 50",
+        "body": "Recours ya kosopola bikorwa, makonzá to mibeko ya autorités administratives ya kati etindami na Premier Président epai ya section ya contentieux to, na ngeya, ya mbangu, na Président ya chambre oyo ekoki.\nPremier Président alimboli autorité oyo bikorwa, makonzá to mibeko yango esopwami."
+      },
+      "51": {
+        "title": "Article 51",
+        "body": "Mikambo oyo ezali na Conseil d'État ekoki kotindama na plenière ya section mpo na kotatola, na demande ya Premier Président ya Conseil d'État, Président ya section oyo ekangisami, Président ya chambre oyo ekoki to chambres oyo ekangani, to Ministère public.\nMikambo oyo instruction yango epesami na section ya contentieux etatolamaka na Assemblée plénière ya Conseil d'État, na demande ya Premier Président, Président ya section to chambre oyo ekangisami, to Ministère public."
+      },
+      "52": {
+        "title": "Article 52",
+        "body": "Section consultative esalemi na Président ya section, Présidents ya chambre mpe Conseillers.\nEzali na chambres misato oyo:\n1. Chambre ya biavis;\n2. Chambre ya kolimbola misálo ya juridique;\n3. Chambre ya etúká mpe inspection ya libela."
+      },
+      "53": {
+        "title": "Article 53",
+        "body": "Conseil d'État ezali na assemblée plénière oyo ezali na bato nyonso ya bajuge ya Conseil d'État.\nAssemblée plénière elongwami na Premier Président ya Conseil.\nElobelaki mituna nyonso oyo ekangisami na Conseil d'État oyo nyonso to, na ntina, na mituna nyonso ya section to chambre.\nAssemblée plénière efandaka, na droit, na ntango ya kobongola jurisprudence, ya déclinatoire ya juridiction to ntango esengeli kolobela, na arrêt, motuna ya principe."
+      },
+      "54": {
+        "title": "Article 54",
+        "body": "Premier Président asalaka administration mpe mbeba na kati ya Conseil d'État.\nNa mokano wana:\n- asalaka projet ya règlement intérieur ya Conseil d'État;\n- abakisaka makambo kati ya sections mibale to kati ya chambres;\n- akonzi bato ya greffe oyo bapesami na Conseil;\n- akonzi budget ya kosala epesami na juridictions ya ordre administratif. Ye azali ordonnateur délégué."
+      },
+      "55": {
+        "title": "Article 55",
+        "body": "Na kati ya Conseil d'État ezali greffe na greffier en chef, greffiers principaux, greffiers divisionnaires, greffiers mpe huissiers."
+      },
+      "56": {
+        "title": "Article 56",
+        "body": "Conseil d'État efandaka na lisalisi ya Ministère public mpe na lisalisi ya greffier."
+      },
+      "57": {
+        "title": "Article 57",
+        "body": "Na ntango ya koleka to kozingama, Premier Président ya Conseil d'État asimbolamaka na Président ya section to chambre oyo akolo koleka.\nBango mpe basimbolamaka, moko na moko mpe na molongano, na Conseiller oyo akolo koleka."
+      },
+      "58": {
+        "title": "Article 58",
+        "body": "Esalemi bureau ya Conseil d'État oyo esalemi na Premier Président, Procureur général, Présidents mpe Premiers Avocats Généraux.\nBureau ya Conseil d'État ezali organe ya makanisi mpe mibeko oyo epesami na Premier Président mpe Procureur général mpo na gestion malamu ya Conseil d'État mpe juridictions mosusu ya administratif.\nBureau ya Conseil d'État ezali na nguya ya juridiction te; ekoki te kosimba esika ya chambre, ya section, to Assemblée plénière ya Conseil d'État."
+      },
+      "59": {
+        "title": "Article 59",
+        "body": "Bureau epona règlement intérieur ya Conseil d'État.\nEstablisha, na suka ya mobu moko na moko, rapport complet ya Conseil d'État, Cours administratives d'appel, Tribunaux administratifs mpe parquets oyo ekangani na bango na miso ya Président ya Conseil supérieur de la magistrature oyo atindaka exemplaire na ministre ya justice.\nRapport ya Bureau ya Conseil d'État ezali na activité ya juridictions administratives, molende ya procédures mpe ntango ya kosala yango.\nNa ntango ya kopesa rapport, Bureau ya Conseil d'État elobaka na Conseil supérieur de la magistrature makambo ya kotanga misálo ya juridique oyo eutaki mpe epesaka bongwana."
+      }
+    }
+  },
   "reforms": {
     "hero": {
       "title": "Bongwana<br>Oyo epesami",

@@ -590,6 +590,62 @@
       }
     }
   },
+  "administrativeCourts": {
+    "hero": {
+      "title": "Verwaltungs-<br>gerichte",
+      "body": "Organisation, Zusammensetzung und Funktionsweise der Verwaltungsgerichte gemäß dem Organgesetz Nr. 13/011-B vom 11. April 2013."
+    },
+    "intro": {
+      "title": "Organgesetz Nr. 13/011-B vom 11. April 2013",
+      "subtitle": "Organisation, Zusammensetzung und Funktionsweise der Verwaltungsgerichtsbarkeit"
+    },
+    "articles": {
+      "49": {
+        "title": "Artikel 49",
+        "body": "Jede Kammer besteht aus einem Präsidenten und Räten.\nSie berät mit den Mitgliedern, die an der Untersuchung der Sache teilgenommen haben.\nFalls die Kammer nicht ordnungsgemäß besetzt werden kann, wird sie durch andere Räte ergänzt."
+      },
+      "50": {
+        "title": "Artikel 50",
+        "body": "Die Anfechtungsklage gegen Akte, Verordnungen oder Entscheidungen zentraler Verwaltungsbehörden wird vom Ersten Präsidenten an die Streitabteilung oder in dringenden Fällen direkt an den zuständigen Kammerpräsidenten weitergeleitet.\nDer Erste Präsident informiert die Behörde, deren Akt, Verordnung oder Entscheidung angefochten wird."
+      },
+      "51": {
+        "title": "Artikel 51",
+        "body": "Beim Staatsrat anhängige Verfahren können auf Antrag des Ersten Präsidenten, des zuständigen Abteilungspräsidenten, des Kammerpräsidenten oder der vereinigten Kammern oder der Staatsanwaltschaft zur Prüfung an die Plenarversammlung der Abteilung verwiesen werden.\nVerfahren, deren Untersuchung gemäß diesem Organgesetz der Streitabteilung übertragen wurde, werden auf Antrag des Ersten Präsidenten, des zuständigen Abteilungs- oder Kammerpräsidenten oder der Staatsanwaltschaft von der Plenarversammlung des Staatsrates geprüft."
+      },
+      "52": {
+        "title": "Artikel 52",
+        "body": "Die beratende Abteilung besteht aus einem Abteilungspräsidenten, Kammerpräsidenten und Räten.\nSie umfasst folgende drei Kammern:\n1. Die Gutachterkammer;\n2. Die Kammer für die Auslegung von Rechtstexten;\n3. Die Kammer für Studien und ständige Inspektion."
+      },
+      "53": {
+        "title": "Artikel 53",
+        "body": "Der Staatsrat verfügt über eine Plenarversammlung, der alle Richter des Staatsrates angehören.\nDie Plenarversammlung wird vom Ersten Präsidenten des Rates geleitet.\nSie berät über alle Fragen, die den gesamten Staatsrat betreffen, oder bei Bedarf über alle Fragen einer Abteilung oder Kammer.\nDie Plenarversammlung tagt von Rechts wegen bei Rechtsprechungsänderungen, Zuständigkeitsablehnungen oder wenn eine grundsätzliche Frage per Urteil entschieden werden muss."
+      },
+      "54": {
+        "title": "Artikel 54",
+        "body": "Der Erste Präsident ist für die Verwaltung und Ordnung im Staatsrat zuständig.\nIn dieser Eigenschaft:\n- erarbeitet er den Entwurf der Geschäftsordnung des Staatsrates;\n- teilt er die Aufgaben zwischen den beiden Abteilungen oder Kammern auf;\n- verwaltet er das dem Rat zur Verfügung gestellte Kanzleipersonal;\n- verwaltet er den Betriebshaushalt der Verwaltungsgerichtsbarkeit. Er ist der delegierte Anweisungsbefugte."
+      },
+      "55": {
+        "title": "Artikel 55",
+        "body": "Beim Staatsrat besteht eine Kanzlei mit einem Kanzleichef, Hauptkanzlisten, Abteilungskanzlisten, Kanzlisten und Gerichtsvollziehern."
+      },
+      "56": {
+        "title": "Artikel 56",
+        "body": "Der Staatsrat tagt unter Mitwirkung der Staatsanwaltschaft und mit Unterstützung eines Kanzlisten."
+      },
+      "57": {
+        "title": "Artikel 57",
+        "body": "Bei Abwesenheit oder Verhinderung wird der Erste Präsident des Staatsrates durch den dienstältesten Abteilungs- oder Kammerpräsidenten vertreten.\nDiese werden jeweils und der Reihe nach durch den dienstältesten Rat vertreten."
+      },
+      "58": {
+        "title": "Artikel 58",
+        "body": "Es wird ein Büro des Staatsrates eingerichtet, das aus dem Ersten Präsidenten, dem Generalstaatsanwalt, den Präsidenten und den Ersten Generalanwälten besteht.\nDas Büro des Staatsrates ist ein Beratungs- und Entscheidungsorgan, das dem Ersten Präsidenten und dem Generalstaatsanwalt für die effiziente und harmonische Verwaltung des Staatsrates und der anderen Verwaltungsgerichte zur Verfügung steht.\nDas Büro des Staatsrates hat keine Gerichtsbarkeit; es kann weder eine Kammer noch eine Abteilung und erst recht nicht die Plenarversammlung des Staatsrates ersetzen."
+      },
+      "59": {
+        "title": "Artikel 59",
+        "body": "Das Büro genehmigt die Geschäftsordnung des Staatsrates.\nEs erstellt am Ende jedes Jahres einen umfassenden Bericht des Staatsrates, der Verwaltungsappellationsgerichte, der Verwaltungsgerichte und der angeschlossenen Staatsanwaltschaften zuhanden des Präsidenten des Obersten Richterrats, der eine Kopie an den für Justiz zuständigen Minister übermittelt.\nDer Bericht des Büros des Staatsrates betrifft die Tätigkeit der Verwaltungsgerichte, den Verfahrensablauf und deren Ausführungsfristen.\nAnlässlich der Einreichung seines Berichts teilt das Büro des Staatsrates dem Obersten Richterrat die aufgetretenen Schwierigkeiten bei der Auslegung von Rechtstexten mit und schlägt Verbesserungen vor."
+      }
+    }
+  },
   "reforms": {
     "hero": {
       "title": "Vorgeschlagene<br>Reformen",
