@@ -20,7 +20,7 @@
       "court": "Mahakama",
       "presentation": "Uwasilishaji",
       "organization": "Muundo",
-      "administrativeCourts": "Mahakama za Utawala",
+      "administrativeCourts": "Mahakama za Rufani za Utawala",
       "administrativeTribunals": "Mabaraza ya Utawala",
       "reforms": "Mageuzi",
       "international": "Mahusiano ya Kimataifa",
@@ -592,71 +592,12 @@
   },
   "administrativeCourts": {
     "hero": {
-      "title": "Mahakama za<br>Utawala",
-      "body": "Muundo, muundo na utendaji kazi wa mahakama za utawala kulingana na Sheria ya Kikaboni Na. 13/011-B ya tarehe 11 Aprili 2013."
-    },
-    "intro": {
-      "title": "Sheria ya Kikaboni Na. 13/011-B ya tarehe 11 Aprili 2013",
-      "subtitle": "Muundo, muundo na utendaji kazi wa mamlaka za utaratibu wa utawala"
-    },
-    "articles": {
-      "49": {
-        "title": "Ibara ya 49",
-        "body": "Kila chumba kina Rais na Washauri.\nHufanya maamuzi na wanachama walioshiriki katika uchunguzi wa kesi.\nIkitokea chumba hakiwezi kuundwa ipasavyo, kinaongezewa Washauri wengine."
-      },
-      "50": {
-        "title": "Ibara ya 50",
-        "body": "Rufaa ya uuguzi wa vitendo, kanuni au maamuzi ya mamlaka ya utawala wa kati inakabidhi na Rais wa Kwanza kwa sehemu ya ugomvi au, kwa hali ya dharura, moja kwa moja kwa Rais wa chumba husika.\nRais wa Kwanza humjulisha mamlaka ambaye kitendo, kanuni au uamuzi wake unashambuliwa."
-      },
-      "51": {
-        "title": "Ibara ya 51",
-        "body": "Kesi zilizo mbele ya Baraza la Nchi zinaweza kupelekwa kwa mkutano wa sehemu kwa uchunguzi, kwa ombi la Rais wa Kwanza wa Baraza, Rais wa sehemu husika, Rais wa chumba husika au vyumba vilivyounganishwa, au Ofisi ya Mwendesha Mashtaka.\nKesi ambazo uchunguzi wake ulikabidhiwa sehemu ya ugomvi huchunguzwa na Mkutano Mkuu wa Baraza la Nchi, kwa ombi la Rais wa Kwanza, Rais wa sehemu au chumba husika, au Ofisi ya Mwendesha Mashtaka."
-      },
-      "52": {
-        "title": "Ibara ya 52",
-        "body": "Sehemu ya ushauri inaundwa na Rais wa Sehemu, Marais wa Vyumba na Washauri.\nIna vyumba vitatu vifuatavyo:\n1. Chumba cha maoni;\n2. Chumba cha tafsiri ya maandishi ya kisheria;\n3. Chumba cha tafiti na ukaguzi wa kudumu."
-      },
-      "53": {
-        "title": "Ibara ya 53",
-        "body": "Baraza la Nchi lina mkutano mkuu unaojumuisha mahakimu wote wa Baraza la Nchi.\nMkutano Mkuu unaongozwa na Rais wa Kwanza wa Baraza.\nHufanya maamuzi kuhusu maswali yote yanayohusu Baraza la Nchi zima au, inapohitajika, kuhusu maswali yote yanayohusiana na sehemu au chumba.\nMkutano Mkuu unakaa, kwa haki kamili, katika kesi ya mabadiliko ya uamuzi wa kisheria, ukataji wa mamlaka au anapohitajika kutoa uamuzi juu ya suala la kanuni."
-      },
-      "54": {
-        "title": "Ibara ya 54",
-        "body": "Rais wa Kwanza anashughulikia utawala na utulivu ndani ya Baraza la Nchi.\nKatika uwezo huu:\n- anaandaa rasimu ya kanuni za ndani za Baraza la Nchi;\n- anagawanya mambo kati ya sehemu mbili au kati ya vyumba;\n- anasimamia wafanyakazi wa kumbukumbu waliowekwa wazi kwa Baraza;\n- anasimamia bajeti ya uendeshaji iliyotengwa kwa mahakama za utaratibu wa utawala. Yeye ndiye msimamizi aliyeidhinishwa."
-      },
-      "55": {
-        "title": "Ibara ya 55",
-        "body": "Ndani ya Baraza la Nchi kuna usajili unaojumuisha mkuu wa usajili, wasajili wakuu, wasajili wa mgawanyo, wasajili na maafisa wa mahakama."
-      },
-      "56": {
-        "title": "Ibara ya 56",
-        "body": "Baraza la Nchi linakaa na ushiriki wa Ofisi ya Mwendesha Mashtaka na msaada wa msajili."
-      },
-      "57": {
-        "title": "Ibara ya 57",
-        "body": "Kwa kutokuwepo au kuzuiwa, Rais wa Kwanza wa Baraza la Nchi anabadilishwa na Rais wa sehemu au chumba aliye mzee zaidi.\nHawa wanabadilishwa ipasavyo, na kwa utaratibu, na Mshauri aliye mzee zaidi."
-      },
-      "58": {
-        "title": "Ibara ya 58",
-        "body": "Ofisi ya Baraza la Nchi imeundwa ya Rais wa Kwanza, Mkurugenzi Mkuu, Marais na Mawakili Wakuu wa Kwanza.\nOfisi ya Baraza la Nchi ni chombo cha tafakuri na maamuzi kilichowekwa wazi kwa Rais wa Kwanza na Mkurugenzi Mkuu kwa usimamizi bora na wenye maelewano ya Baraza la Nchi na mahakama nyingine za utawala.\nOfisi ya Baraza la Nchi haina uwezo wa kisheria; haiwezi kuchukua nafasi ya chumba, sehemu, wala Mkutano Mkuu wa Baraza la Nchi."
-      },
-      "59": {
-        "title": "Ibara ya 59",
-        "body": "Ofisi inaidhinisha kanuni za ndani za Baraza la Nchi.\nInaandaa, mwisho wa kila mwaka, ripoti kamili ya Baraza la Nchi, Mahakama za Rufaa za Utawala, Mahakama za Utawala na makao makuu ya mashtaka yanayohusiana, kwa ajili ya Rais wa Baraza la Juu la Mahakimu ambaye huwasilisha nakala kwa waziri anayehusika na haki.\nRipoti ya Ofisi ya Baraza la Nchi inahusu shughuli za mahakama za utawala, mwenendo wa taratibu na muda wa utekelezaji wao.\nKwa fursa ya kuwasilisha ripoti yake, Ofisi ya Baraza la Nchi inamjulisha Baraza la Juu la Mahakimu matatizo ya ufafanuzi wa maandishi ya kisheria yaliyokutwa na kupendekeza maboresho."
-      }
-    }
-  },
-  "administrativeTribunals": {
-    "hero": {
-      "title": "Mahakama za<br>Utawala",
+      "title": "Mahakama za Rufani<br>za Utawala",
       "body": "Muundo, uundaji na utendaji wa Mahakama za Rufani za Utawala kwa mujibu wa sheria ya kikaboni."
     },
     "intro": {
       "title": "Ibara ya 60 hadi 68",
       "subtitle": "Mahakama za Rufani za Utawala: uanzishaji, muundo na mpangilio"
-    },
-    "section": {
-      "title": "Aya ya 2: Muundo na mpangilio"
     },
     "articles": {
       "60": {
@@ -694,6 +635,45 @@
       "68": {
         "title": "Ibara ya 68",
         "body": "Katika kila Mahakama ya Rufani ya Utawala kuna karani mkuu, akisaidiwa na karani wa mgawanyo mmoja au zaidi, karani mmoja au zaidi, pamoja na mabailifu.\nMahakama ya Rufani ya Utawala huketi kwa ushiriki wa Ofisi ya Mwendesha Mashtaka wa Umma na msaada wa karani."
+      }
+    }
+  },
+  "administrativeTribunals": {
+    "hero": {
+      "title": "Mahakama za<br>Utawala",
+      "body": "Muundo, uundaji na utendaji wa Mahakama za Utawala kwa mujibu wa sheria ya kikaboni."
+    },
+    "intro": {
+      "title": "Ibara ya 69 hadi 74",
+      "subtitle": "Mahakama za Utawala: uanzishaji, muundo na mpangilio"
+    },
+    "section": {
+      "title": "Aya: Muundo na mpangilio"
+    },
+    "articles": {
+      "69": {
+        "title": "Ibara ya 69",
+        "body": "Inawekwa Mahakama moja au zaidi za Utawala katika jiji la Kinshasa, katika kila jiji na katika kila wilaya.\nHata hivyo, inaweza kuanzishwa Mahakama moja tu ya Utawala kwa wilaya mbili au zaidi.\nMamlaka ya eneo na makao ya kawaida ya Mahakama za Utawala huamuliwa kwa amri ya Waziri Mkuu iliyojadiliwa katika Baraza la Mawaziri."
+      },
+      "70": {
+        "title": "Ibara ya 70",
+        "body": "Mahakama ya Utawala ina sehemu ya ushauri na sehemu ya mashauri ya migogoro.\nKila sehemu imegawanywa katika vyumba."
+      },
+      "71": {
+        "title": "Ibara ya 71",
+        "body": "Mahakama ya Utawala inaundwa na Rais, Marais wa sehemu, Marais wa vyumba na majaji.\nKatika mashauri ya migogoro, Mahakama ya Utawala huketi na angalau majaji watatu. Kwa hali ya kipekee, inaweza kuketi na majaji watano kuchunguza mashauri nyeti, magumu au pale ulazima unapotokea; katika hali hiyo, Mahakama ya Utawala huongozwa na mkuu wa mahakama.\nKatika mashauri ya ushauri, Mahakama ya Utawala huketi katika kikao mchanganyiko cha pleni kinachojumuisha mahakimu wa sehemu na wa mashtaka, chini ya uongozi wa Rais wa sehemu."
+      },
+      "72": {
+        "title": "Ibara ya 72",
+        "body": "Iwapo kuna kutokuwepo au kuzuiwa, Rais hubadilishwa na jaji mwenye ukongwe zaidi.\nIwapo idadi ya majaji wa Mahakama ya Utawala waliopo mahali pa kusikiliza shauri haitoshi kuunda jopo, Rais wa mahakama anaweza kumteua kama jaji msaidizi, kwa ombi lenye sababu la Mwendesha Mashtaka wa Jamhuri, hakimu wa ofisi ya mashtaka iliyo karibu na Mahakama ya Utawala, wakili mwenye angalau miaka mitano ya uzoefu, au mhitimu mwingine wa sheria mwenye uzoefu katika masuala ya utawala.\nJaji msaidizi ambaye si wa Wizara ya Umma huapa mbele ya Rais kiapo hiki: \"Naapa kuheshimu Katiba na sheria za Jamhuri ya Kidemokrasia ya Kongo na kutekeleza kwa uaminifu na uadilifu, kwa heshima na hadhi, majukumu niliyopewa.\"\nJaji msaidizi huchaguliwa kwa kuzingatia kutokuwa na upendeleo, hasa kwa kuondoa mgongano wowote wa maslahi unaotokana na ujuzi wa awali wa jalada kwa sababu za kikazi.\nRais au anayemwakilisha ndiye mwenye jukumu la mgawanyo wa huduma."
+      },
+      "73": {
+        "title": "Ibara ya 73",
+        "body": "Katika kila Mahakama ya Utawala kuna karani wa mgawanyo, akisaidiwa na karani mmoja au zaidi pamoja na mabailifu."
+      },
+      "74": {
+        "title": "Ibara ya 74",
+        "body": "Mahakama ya Utawala huketi kwa ushiriki wa Ofisi ya Mwendesha Mashtaka wa Umma na msaada wa karani."
       }
     }
   },

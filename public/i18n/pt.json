@@ -20,7 +20,7 @@
       "court": "O tribunal",
       "presentation": "Apresentação",
       "organization": "Organização",
-      "administrativeCourts": "Tribunais Administrativos",
+      "administrativeCourts": "Cortes administrativas de apelacao",
       "administrativeTribunals": "Tribunais Administrativos",
       "reforms": "Reformas",
       "international": "Relações Internacionais",
@@ -592,71 +592,12 @@
   },
   "administrativeCourts": {
     "hero": {
-      "title": "Tribunais<br>Administrativos",
-      "body": "Organização, composição e funcionamento dos tribunais administrativos em conformidade com a Lei Orgânica N.° 13/011-B de 11 de abril de 2013."
-    },
-    "intro": {
-      "title": "Lei Orgânica N.° 13/011-B de 11 de abril de 2013",
-      "subtitle": "Organização, composição e funcionamento das jurisdições da ordem administrativa"
-    },
-    "articles": {
-      "49": {
-        "title": "Artigo 49",
-        "body": "Cada câmara compreende um Presidente e Conselheiros.\nDelibera com os membros que participaram da instrução da causa.\nSe a câmara não puder ser validamente constituída, é completada com outros Conselheiros."
-      },
-      "50": {
-        "title": "Artigo 50",
-        "body": "O recurso de anulação de atos, regulamentos ou decisões das autoridades administrativas centrais é comunicado pelo Primeiro Presidente à seção do contencioso ou, em caso de urgência, diretamente ao Presidente da câmara competente.\nO Primeiro Presidente informa a autoridade cujo ato, regulamento ou decisão é impugnada."
-      },
-      "51": {
-        "title": "Artigo 51",
-        "body": "Os processos submetidos ao Conselho de Estado podem ser remetidos ao plenário da seção para exame, a pedido do Primeiro Presidente do Conselho de Estado, do Presidente da seção em causa, do Presidente da câmara competente ou das câmaras reunidas, ou do Ministério Público.\nOs processos cuja instrução foi confiada à seção do contencioso são examinados pela Assembleia plenária do Conselho de Estado, a pedido do Primeiro Presidente, do Presidente da seção ou câmara em causa, ou do Ministério Público."
-      },
-      "52": {
-        "title": "Artigo 52",
-        "body": "A seção consultiva é constituída por um Presidente de seção, Presidentes de câmara e Conselheiros.\nCompreende as três câmaras seguintes:\n1. A câmara de pareceres;\n2. A câmara de interpretação de textos jurídicos;\n3. A câmara de estudos e inspeção permanente."
-      },
-      "53": {
-        "title": "Artigo 53",
-        "body": "O Conselho de Estado dispõe de uma assembleia plenária composta por todos os magistrados do Conselho de Estado.\nA Assembleia plenária é presidida pelo Primeiro Presidente do Conselho.\nDelibera sobre todas as questões de interesse de todo o Conselho de Estado ou, em caso de necessidade, sobre todas as questões relativas a uma seção ou câmara.\nA Assembleia plenária reúne-se, de pleno direito, em caso de mudança de jurisprudência, de declinatória de jurisdição ou quando seja necessário pronunciar-se, por acórdão, sobre uma questão de princípio."
-      },
-      "54": {
-        "title": "Artigo 54",
-        "body": "O Primeiro Presidente é responsável pela administração e pela ordem dentro do Conselho de Estado.\nNessa qualidade:\n- elabora o projeto de regimento interno do Conselho de Estado;\n- distribui as matérias entre as duas seções ou entre as câmaras;\n- gere o pessoal da secretaria colocado à disposição do Conselho;\n- gere o orçamento de funcionamento atribuído às jurisdições da ordem administrativa. É o responsável pela autorização de despesas delegado."
-      },
-      "55": {
-        "title": "Artigo 55",
-        "body": "No Conselho de Estado existe uma secretaria composta por um secretário-chefe, secretários principais, secretários divisionários, secretários e oficiais de justiça."
-      },
-      "56": {
-        "title": "Artigo 56",
-        "body": "O Conselho de Estado funciona com a participação do Ministério Público e a assistência de um secretário."
-      },
-      "57": {
-        "title": "Artigo 57",
-        "body": "Em caso de ausência ou impedimento, o Primeiro Presidente do Conselho de Estado é substituído pelo Presidente de seção ou câmara mais antigo.\nEstes últimos são substituídos respectivamente, e pela ordem, pelo Conselheiro mais antigo."
-      },
-      "58": {
-        "title": "Artigo 58",
-        "body": "É instituído um bureau do Conselho de Estado composto pelo Primeiro Presidente, pelo Procurador-Geral, pelos Presidentes e pelos Primeiros Advogados-Gerais.\nO Bureau do Conselho de Estado é um órgão de reflexão e decisão colocado à disposição do Primeiro Presidente e do Procurador-Geral para a gestão eficiente e harmoniosa do Conselho de Estado e dos outros tribunais administrativos.\nO Bureau do Conselho de Estado não tem competência jurisdicional; não pode substituir-se nem a uma câmara, nem a uma seção, muito menos à Assembleia plenária do Conselho de Estado."
-      },
-      "59": {
-        "title": "Artigo 59",
-        "body": "O Bureau aprova o regimento interno do Conselho de Estado.\nEstabelece, no final de cada ano, um relatório completo do Conselho de Estado, dos Tribunais Administrativos de Recurso, dos Tribunais Administrativos e das procuradorias a eles ligadas, à atenção do Presidente do Conselho Superior da Magistratura, que transmite uma cópia ao ministro responsável pela justiça.\nO relatório do Bureau do Conselho de Estado incide sobre a atividade das jurisdições administrativas, o andamento dos processos e os seus prazos de execução.\nPor ocasião da apresentação do seu relatório, o Bureau do Conselho de Estado comunica ao Conselho Superior da Magistratura as dificuldades de interpretação dos textos jurídicos encontradas e propõe melhorias."
-      }
-    }
-  },
-  "administrativeTribunals": {
-    "hero": {
-      "title": "Tribunais<br>Administrativos",
+      "title": "Cortes administrativas<br>de apelacao",
       "body": "Organizacao, composicao e funcionamento das Cortes administrativas de apelacao em conformidade com a lei organica."
     },
     "intro": {
       "title": "Artigos 60 a 68",
       "subtitle": "Cortes administrativas de apelacao: criacao, composicao e organizacao"
-    },
-    "section": {
-      "title": "Paragrafo 2: Da composicao e da organizacao"
     },
     "articles": {
       "60": {
@@ -694,6 +635,45 @@
       "68": {
         "title": "Artigo 68",
         "body": "Em cada Corte administrativa de apelacao ha um escrivao principal, assistido por um ou mais escrivaes divisionarios, por um ou mais escrivaes, bem como por oficiais de justica.\nA Corte administrativa de apelacao funciona com o concurso do Ministerio Publico e a assistencia de um escrivao."
+      }
+    }
+  },
+  "administrativeTribunals": {
+    "hero": {
+      "title": "Tribunais<br>Administrativos",
+      "body": "Organizacao, composicao e funcionamento dos Tribunais administrativos em conformidade com a lei organica."
+    },
+    "intro": {
+      "title": "Artigos 69 a 74",
+      "subtitle": "Tribunais administrativos: criacao, composicao e organizacao"
+    },
+    "section": {
+      "title": "Paragrafo: Composicao e organizacao"
+    },
+    "articles": {
+      "69": {
+        "title": "Artigo 69",
+        "body": "E criado um ou varios Tribunais administrativos na cidade de Kinshasa, em cada cidade e em cada territorio.\nTodavia, pode ser criado um unico Tribunal administrativo para dois ou varios territorios.\nA jurisdicao e a sede ordinaria dos Tribunais administrativos sao fixadas por decreto do Primeiro-Ministro deliberado em Conselho de Ministros."
+      },
+      "70": {
+        "title": "Artigo 70",
+        "body": "O Tribunal administrativo compreende uma secao consultiva e uma secao do contencioso.\nCada secao e subdividida em camaras."
+      },
+      "71": {
+        "title": "Artigo 71",
+        "body": "O Tribunal administrativo e composto por um Presidente, pelos Presidentes de secao, pelos Presidentes de camara e pelos juizes.\nEm materia contenciosa, o Tribunal administrativo funciona com pelo menos tres juizes. A titulo excecional, pode funcionar com cinco juizes para examinar processos delicados, complexos ou quando a necessidade o exigir; nesse caso, o Tribunal administrativo e presidido pelo chefe da jurisdicao.\nEm materia consultiva, o Tribunal administrativo funciona em formacao plenaria mista, composta pelos magistrados da secao e do Ministerio Publico, sob a direcao do Presidente da secao."
+      },
+      "72": {
+        "title": "Artigo 72",
+        "body": "Em caso de ausencia ou impedimento, o Presidente e substituido pelo juiz mais antigo.\nQuando o efetivo de juizes do Tribunal administrativo presente no local onde o tribunal realiza audiencia nao permite compor o colegiado, o Presidente pode assumir, na qualidade de juiz assessor, por requisicao fundamentada do Procurador da Republica, um magistrado do Ministerio Publico junto ao Tribunal administrativo, um advogado com pelo menos cinco anos de antiguidade ou qualquer outro titular de licenciatura com experiencia em materia administrativa.\nO juiz assessor, exceto o Ministerio Publico, presta perante o Presidente o seguinte juramento: \"Juro respeitar a Constituicao e as leis da Republica Democratica do Congo e exercer leal e fielmente, com honra e dignidade, as funcoes que me sao confiadas.\"\nO juiz assessor e escolhido em funcao da sua imparcialidade, nomeadamente com exclusao de qualquer conflito de interesse resultante de conhecimento previo do processo a titulo profissional.\nO Presidente ou quem o substitua e encarregado da reparticao do servico."
+      },
+      "73": {
+        "title": "Artigo 73",
+        "body": "Em cada Tribunal administrativo ha um escrivao divisionario, assistido por um ou mais escrivaes, bem como por oficiais de justica."
+      },
+      "74": {
+        "title": "Artigo 74",
+        "body": "O Tribunal administrativo funciona com o concurso do Ministerio Publico e a assistencia de um escrivao."
       }
     }
   },

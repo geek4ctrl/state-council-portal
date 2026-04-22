@@ -3,7 +3,7 @@ import { SeoService } from '../../services/seo.service';
 import { I18nPipe } from '../../i18n/i18n.pipe';
 import { FooterComponent } from '../../components/footer/footer.component';
 
-const ARTICLE_NUMBERS = [60, 61, 62, 63, 64, 65, 66, 67, 68] as const;
+const ARTICLE_NUMBERS = [69, 70, 71, 72, 73, 74] as const;
 
 @Component({
   selector: 'app-administrative-tribunals',
@@ -32,7 +32,7 @@ const ARTICLE_NUMBERS = [60, 61, 62, 63, 64, 65, 66, 67, 68] as const;
       <section class="articles-section">
         <div class="container">
           @for (n of articleNumbers; track n) {
-            @if (n === 61) {
+            @if (n === 71) {
               <h3 class="section-title">{{ 'administrativeTribunals.section.title' | i18n }}</h3>
             }
             <div class="article-card">
@@ -197,7 +197,7 @@ export class AdministrativeTribunalsComponent {
   constructor() {
     inject(SeoService).updateMetadata({
       title: 'Administrative Tribunals | State Council DRC',
-      description: 'Organization, composition and functioning of Administrative Courts of Appeal, Articles 60 to 68.'
+      description: 'Organization, composition and functioning of Administrative Tribunals, Articles 69 to 74.'
     });
   }
 }
