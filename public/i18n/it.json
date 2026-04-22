@@ -20,7 +20,7 @@
       "court": "La corte",
       "presentation": "Presentazione",
       "organization": "Organizzazione",
-      "administrativeCourts": "Corti amministrative",
+      "administrativeCourts": "Corti amministrative d'appello",
       "administrativeTribunals": "Tribunali amministrativi",
       "reforms": "Riforme",
       "international": "Relazioni internazionali",
@@ -592,71 +592,12 @@
   },
   "administrativeCourts": {
     "hero": {
-      "title": "Corti<br>Amministrative",
-      "body": "Organizzazione, composizione e funzionamento dei tribunali amministrativi in conformità con la legge organica n. 13/011-B dell'11 aprile 2013."
-    },
-    "intro": {
-      "title": "Legge organica n. 13/011-B dell'11 aprile 2013",
-      "subtitle": "Organizzazione, composizione e funzionamento delle giurisdizioni dell'ordine amministrativo"
-    },
-    "articles": {
-      "49": {
-        "title": "Articolo 49",
-        "body": "Ogni camera comprende un Presidente e dei Consiglieri.\nDelibera con i membri che hanno partecipato all'istruzione della causa.\nSe il seggio di una camera non può essere validamente composto, viene completato ricorrendo ad altri Consiglieri."
-      },
-      "50": {
-        "title": "Articolo 50",
-        "body": "Il ricorso in annullamento degli atti, regolamenti o decisioni delle autorità amministrative centrali è comunicato dal Primo Presidente alla sezione del contenzioso o, in caso di urgenza, direttamente al Presidente della camera competente.\nIl Primo Presidente ne informa l'autorità il cui atto, regolamento o decisione è impugnata."
-      },
-      "51": {
-        "title": "Articolo 51",
-        "body": "Le cause sottoposte al Consiglio di Stato possono essere rinviate alla plenaria della sezione per esame, su richiesta del Primo Presidente del Consiglio di Stato, del Presidente della sezione interessata, del Presidente della camera competente o delle camere riunite, oppure del Pubblico Ministero.\nLe cause la cui istruzione è stata affidata alla sezione del contenzioso sono esaminate dall'Assemblea plenaria del Consiglio di Stato, su richiesta del Primo Presidente, del Presidente della sezione o camera interessata, o del Pubblico Ministero."
-      },
-      "52": {
-        "title": "Articolo 52",
-        "body": "La sezione consultiva è composta da un Presidente di sezione, Presidenti di camera e Consiglieri.\nComprende le seguenti tre camere:\n1. La camera dei pareri;\n2. La camera di interpretazione dei testi giuridici;\n3. La camera di studi e ispezione permanente."
-      },
-      "53": {
-        "title": "Articolo 53",
-        "body": "Il Consiglio di Stato è dotato di un'assemblea plenaria comprendente tutti i magistrati del Consiglio di Stato.\nL'Assemblea plenaria è presieduta dal Primo Presidente del Consiglio.\nDelibera su tutte le questioni riguardanti l'insieme del Consiglio di Stato o, se necessario, su tutte le questioni pertinenti a una sezione o camera.\nL'Assemblea plenaria si riunisce di diritto in caso di inversione di giurisprudenza, di eccezione di incompetenza o quando è necessario pronunciarsi per sentenza su una questione di principio."
-      },
-      "54": {
-        "title": "Articolo 54",
-        "body": "Il Primo Presidente è responsabile dell'amministrazione e dell'ordine all'interno del Consiglio di Stato.\nIn tale veste:\n- elabora il progetto di regolamento interno del Consiglio di Stato;\n- ripartisce le materie tra le due sezioni o tra le camere;\n- gestisce il personale di cancelleria messo a disposizione del Consiglio;\n- gestisce il bilancio di funzionamento assegnato alle giurisdizioni dell'ordine amministrativo. Egli ne è il funzionario delegato."
-      },
-      "55": {
-        "title": "Articolo 55",
-        "body": "Presso il Consiglio di Stato esiste una cancelleria composta da un cancelliere capo, cancellieri principali, cancellieri divisori, cancellieri e ufficiali giudiziari."
-      },
-      "56": {
-        "title": "Articolo 56",
-        "body": "Il Consiglio di Stato si riunisce con la partecipazione del Pubblico Ministero e l'assistenza di un cancelliere."
-      },
-      "57": {
-        "title": "Articolo 57",
-        "body": "In caso di assenza o impedimento, il Primo Presidente del Consiglio di Stato è sostituito dal Presidente di sezione o di camera più anziano.\nQuesti ultimi sono sostituiti rispettivamente, e nell'ordine, dal Consigliere più anziano."
-      },
-      "58": {
-        "title": "Articolo 58",
-        "body": "È istituito un ufficio del Consiglio di Stato composto dal Primo Presidente, dal Procuratore Generale, dai Presidenti e dai Primi Avvocati Generali.\nL'Ufficio del Consiglio di Stato è un organo di riflessione e decisione messo a disposizione del Primo Presidente e del Procuratore Generale per la gestione efficiente e armoniosa del Consiglio di Stato e degli altri tribunali amministrativi.\nL'Ufficio del Consiglio di Stato non ha competenza giurisdizionale; non può sostituirsi né a una camera, né a una sezione, né tanto meno all'Assemblea plenaria del Consiglio di Stato."
-      },
-      "59": {
-        "title": "Articolo 59",
-        "body": "L'Ufficio approva il regolamento interno del Consiglio di Stato.\nRedige, alla fine di ogni anno, una relazione completa del Consiglio di Stato, delle Corti amministrative d'appello, dei Tribunali amministrativi e delle procure ad essi collegate, all'attenzione del Presidente del Consiglio Superiore della Magistratura, che ne trasmette copia al ministro competente in materia di giustizia.\nLa relazione dell'Ufficio del Consiglio di Stato verte sull'attività delle giurisdizioni amministrative, sull'andamento dei procedimenti e sui loro tempi di realizzazione.\nIn occasione del deposito della relazione, l'Ufficio del Consiglio di Stato informa il Consiglio Superiore della Magistratura delle difficoltà di interpretazione dei testi giuridici riscontrate e propone miglioramenti."
-      }
-    }
-  },
-  "administrativeTribunals": {
-    "hero": {
-      "title": "Tribunali<br>Amministrativi",
+      "title": "Corti amministrative<br>d'appello",
       "body": "Organizzazione, composizione e funzionamento delle Corti amministrative d'appello conformemente alla legge organica."
     },
     "intro": {
       "title": "Articoli da 60 a 68",
       "subtitle": "Corti amministrative d'appello: creazione, composizione e organizzazione"
-    },
-    "section": {
-      "title": "Paragrafo 2: Composizione e organizzazione"
     },
     "articles": {
       "60": {
@@ -694,6 +635,45 @@
       "68": {
         "title": "Articolo 68",
         "body": "In ogni Corte amministrativa d'appello vi e un cancelliere principale, assistito da uno o piu cancellieri divisionali, da uno o piu cancellieri e da ufficiali giudiziari.\nLa Corte amministrativa d'appello siede con il concorso del Pubblico Ministero e l'assistenza di un cancelliere."
+      }
+    }
+  },
+  "administrativeTribunals": {
+    "hero": {
+      "title": "Tribunali<br>Amministrativi",
+      "body": "Organizzazione, composizione e funzionamento dei Tribunali amministrativi conformemente alla legge organica."
+    },
+    "intro": {
+      "title": "Articoli da 69 a 74",
+      "subtitle": "Tribunali amministrativi: creazione, composizione e organizzazione"
+    },
+    "section": {
+      "title": "Paragrafo: Composizione e organizzazione"
+    },
+    "articles": {
+      "69": {
+        "title": "Articolo 69",
+        "body": "E istituito uno o piu Tribunali amministrativi nella citta di Kinshasa, in ogni citta e in ogni territorio.\nTuttavia, puo essere istituito un solo Tribunale amministrativo per due o piu territori.\nLa competenza territoriale e la sede ordinaria dei Tribunali amministrativi sono fissate con decreto del Primo Ministro deliberato in Consiglio dei ministri."
+      },
+      "70": {
+        "title": "Articolo 70",
+        "body": "Il Tribunale amministrativo comprende una sezione consultiva e una sezione del contenzioso.\nOgni sezione e suddivisa in camere."
+      },
+      "71": {
+        "title": "Articolo 71",
+        "body": "Il Tribunale amministrativo e composto da un Presidente, dai Presidenti di sezione, dai Presidenti di camera e dai giudici.\nIn materia contenziosa, il Tribunale amministrativo siede con almeno tre giudici. In via eccezionale puo sedere con cinque giudici per esaminare cause delicate, complesse o quando la necessita lo richiede; in tal caso il Tribunale amministrativo e presieduto dal capo della giurisdizione.\nIn materia consultiva, il Tribunale amministrativo siede in formazione plenaria mista, composta dai magistrati della sezione e della procura, sotto la direzione del Presidente di sezione."
+      },
+      "72": {
+        "title": "Articolo 72",
+        "body": "In caso di assenza o impedimento, il Presidente e sostituito dal giudice piu anziano.\nQuando il numero dei giudici del Tribunale amministrativo presenti nel luogo di udienza non consente di costituire il collegio, il Presidente puo assumere, in qualita di giudice assessore e su richiesta motivata del Procuratore della Repubblica, un magistrato della procura presso il Tribunale amministrativo, un avvocato con almeno cinque anni di anzianita o qualsiasi altro titolare di laurea con esperienza in materia amministrativa.\nIl giudice assessore diverso dal Ministero pubblico presta davanti al Presidente il seguente giuramento: \"Giuro di rispettare la Costituzione e le leggi della Repubblica Democratica del Congo e di svolgere lealmente e fedelmente, con onore e dignita, le funzioni che mi sono affidate.\"\nIl giudice assessore e scelto in base alla sua imparzialita, in particolare escludendo qualsiasi conflitto di interessi derivante da una conoscenza professionale preliminare del fascicolo.\nIl Presidente o chi lo sostituisce e incaricato della ripartizione del servizio."
+      },
+      "73": {
+        "title": "Articolo 73",
+        "body": "In ogni Tribunale amministrativo vi e un cancelliere divisionale, assistito da uno o piu cancellieri e da ufficiali giudiziari."
+      },
+      "74": {
+        "title": "Articolo 74",
+        "body": "Il Tribunale amministrativo siede con il concorso del Ministero pubblico e l'assistenza di un cancelliere."
       }
     }
   },

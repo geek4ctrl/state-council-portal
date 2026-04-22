@@ -20,7 +20,7 @@
       "court": "Das gericht",
       "presentation": "Vorstellung",
       "organization": "Organisation",
-      "administrativeCourts": "Verwaltungsgerichte",
+      "administrativeCourts": "Verwaltungsberufungsgerichte",
       "administrativeTribunals": "Verwaltungstribunale",
       "reforms": "Reformen",
       "international": "Internationale Beziehungen",
@@ -592,71 +592,12 @@
   },
   "administrativeCourts": {
     "hero": {
-      "title": "Verwaltungs-<br>gerichte",
-      "body": "Organisation, Zusammensetzung und Funktionsweise der Verwaltungsgerichte gemäß dem Organgesetz Nr. 13/011-B vom 11. April 2013."
-    },
-    "intro": {
-      "title": "Organgesetz Nr. 13/011-B vom 11. April 2013",
-      "subtitle": "Organisation, Zusammensetzung und Funktionsweise der Verwaltungsgerichtsbarkeit"
-    },
-    "articles": {
-      "49": {
-        "title": "Artikel 49",
-        "body": "Jede Kammer besteht aus einem Präsidenten und Räten.\nSie berät mit den Mitgliedern, die an der Untersuchung der Sache teilgenommen haben.\nFalls die Kammer nicht ordnungsgemäß besetzt werden kann, wird sie durch andere Räte ergänzt."
-      },
-      "50": {
-        "title": "Artikel 50",
-        "body": "Die Anfechtungsklage gegen Akte, Verordnungen oder Entscheidungen zentraler Verwaltungsbehörden wird vom Ersten Präsidenten an die Streitabteilung oder in dringenden Fällen direkt an den zuständigen Kammerpräsidenten weitergeleitet.\nDer Erste Präsident informiert die Behörde, deren Akt, Verordnung oder Entscheidung angefochten wird."
-      },
-      "51": {
-        "title": "Artikel 51",
-        "body": "Beim Staatsrat anhängige Verfahren können auf Antrag des Ersten Präsidenten, des zuständigen Abteilungspräsidenten, des Kammerpräsidenten oder der vereinigten Kammern oder der Staatsanwaltschaft zur Prüfung an die Plenarversammlung der Abteilung verwiesen werden.\nVerfahren, deren Untersuchung gemäß diesem Organgesetz der Streitabteilung übertragen wurde, werden auf Antrag des Ersten Präsidenten, des zuständigen Abteilungs- oder Kammerpräsidenten oder der Staatsanwaltschaft von der Plenarversammlung des Staatsrates geprüft."
-      },
-      "52": {
-        "title": "Artikel 52",
-        "body": "Die beratende Abteilung besteht aus einem Abteilungspräsidenten, Kammerpräsidenten und Räten.\nSie umfasst folgende drei Kammern:\n1. Die Gutachterkammer;\n2. Die Kammer für die Auslegung von Rechtstexten;\n3. Die Kammer für Studien und ständige Inspektion."
-      },
-      "53": {
-        "title": "Artikel 53",
-        "body": "Der Staatsrat verfügt über eine Plenarversammlung, der alle Richter des Staatsrates angehören.\nDie Plenarversammlung wird vom Ersten Präsidenten des Rates geleitet.\nSie berät über alle Fragen, die den gesamten Staatsrat betreffen, oder bei Bedarf über alle Fragen einer Abteilung oder Kammer.\nDie Plenarversammlung tagt von Rechts wegen bei Rechtsprechungsänderungen, Zuständigkeitsablehnungen oder wenn eine grundsätzliche Frage per Urteil entschieden werden muss."
-      },
-      "54": {
-        "title": "Artikel 54",
-        "body": "Der Erste Präsident ist für die Verwaltung und Ordnung im Staatsrat zuständig.\nIn dieser Eigenschaft:\n- erarbeitet er den Entwurf der Geschäftsordnung des Staatsrates;\n- teilt er die Aufgaben zwischen den beiden Abteilungen oder Kammern auf;\n- verwaltet er das dem Rat zur Verfügung gestellte Kanzleipersonal;\n- verwaltet er den Betriebshaushalt der Verwaltungsgerichtsbarkeit. Er ist der delegierte Anweisungsbefugte."
-      },
-      "55": {
-        "title": "Artikel 55",
-        "body": "Beim Staatsrat besteht eine Kanzlei mit einem Kanzleichef, Hauptkanzlisten, Abteilungskanzlisten, Kanzlisten und Gerichtsvollziehern."
-      },
-      "56": {
-        "title": "Artikel 56",
-        "body": "Der Staatsrat tagt unter Mitwirkung der Staatsanwaltschaft und mit Unterstützung eines Kanzlisten."
-      },
-      "57": {
-        "title": "Artikel 57",
-        "body": "Bei Abwesenheit oder Verhinderung wird der Erste Präsident des Staatsrates durch den dienstältesten Abteilungs- oder Kammerpräsidenten vertreten.\nDiese werden jeweils und der Reihe nach durch den dienstältesten Rat vertreten."
-      },
-      "58": {
-        "title": "Artikel 58",
-        "body": "Es wird ein Büro des Staatsrates eingerichtet, das aus dem Ersten Präsidenten, dem Generalstaatsanwalt, den Präsidenten und den Ersten Generalanwälten besteht.\nDas Büro des Staatsrates ist ein Beratungs- und Entscheidungsorgan, das dem Ersten Präsidenten und dem Generalstaatsanwalt für die effiziente und harmonische Verwaltung des Staatsrates und der anderen Verwaltungsgerichte zur Verfügung steht.\nDas Büro des Staatsrates hat keine Gerichtsbarkeit; es kann weder eine Kammer noch eine Abteilung und erst recht nicht die Plenarversammlung des Staatsrates ersetzen."
-      },
-      "59": {
-        "title": "Artikel 59",
-        "body": "Das Büro genehmigt die Geschäftsordnung des Staatsrates.\nEs erstellt am Ende jedes Jahres einen umfassenden Bericht des Staatsrates, der Verwaltungsappellationsgerichte, der Verwaltungsgerichte und der angeschlossenen Staatsanwaltschaften zuhanden des Präsidenten des Obersten Richterrats, der eine Kopie an den für Justiz zuständigen Minister übermittelt.\nDer Bericht des Büros des Staatsrates betrifft die Tätigkeit der Verwaltungsgerichte, den Verfahrensablauf und deren Ausführungsfristen.\nAnlässlich der Einreichung seines Berichts teilt das Büro des Staatsrates dem Obersten Richterrat die aufgetretenen Schwierigkeiten bei der Auslegung von Rechtstexten mit und schlägt Verbesserungen vor."
-      }
-    }
-  },
-  "administrativeTribunals": {
-    "hero": {
-      "title": "Verwaltungs-<br>tribunale",
+      "title": "Verwaltungs-<br>berufungsgerichte",
       "body": "Organisation, Zusammensetzung und Funktionsweise der Verwaltungsberufungsgerichte gemaess dem Organgesetz."
     },
     "intro": {
       "title": "Artikel 60 bis 68",
       "subtitle": "Verwaltungsberufungsgerichte: Gruendung, Zusammensetzung und Organisation"
-    },
-    "section": {
-      "title": "Absatz 2: Zusammensetzung und Organisation"
     },
     "articles": {
       "60": {
@@ -694,6 +635,45 @@
       "68": {
         "title": "Artikel 68",
         "body": "Bei jedem Verwaltungsberufungsgericht gibt es einen Hauptkanzler, unterstuetzt von einem oder mehreren Abteilungskanzlern, einem oder mehreren Kanzlern sowie Gerichtsvollziehern.\nDas Verwaltungsberufungsgericht tagt unter Mitwirkung der Staatsanwaltschaft und mit Unterstuetzung eines Kanzlers."
+      }
+    }
+  },
+  "administrativeTribunals": {
+    "hero": {
+      "title": "Verwaltungs-<br>tribunale",
+      "body": "Organisation, Zusammensetzung und Funktionsweise der Verwaltungsgerichte gemaess dem Organgesetz."
+    },
+    "intro": {
+      "title": "Artikel 69 bis 74",
+      "subtitle": "Verwaltungsgerichte: Gruendung, Zusammensetzung und Organisation"
+    },
+    "section": {
+      "title": "Absatz: Zusammensetzung und Organisation"
+    },
+    "articles": {
+      "69": {
+        "title": "Artikel 69",
+        "body": "In der Stadt Kinshasa, in jeder Stadt und in jedem Territorium wird ein oder mehrere Verwaltungsgerichte eingerichtet.\nEs kann jedoch auch ein einziges Verwaltungsgericht fuer zwei oder mehrere Territorien eingerichtet werden.\nDer Gerichtsbezirk und der ordentliche Sitz der Verwaltungsgerichte werden durch einen im Ministerrat beratenen Erlass des Premierministers festgelegt."
+      },
+      "70": {
+        "title": "Artikel 70",
+        "body": "Das Verwaltungsgericht umfasst eine beratende Sektion und eine streitige Sektion.\nJede Sektion ist in Kammern unterteilt."
+      },
+      "71": {
+        "title": "Artikel 71",
+        "body": "Das Verwaltungsgericht besteht aus einem Praesidenten, Sektionspraesidenten, Kammerpraesidenten und Richtern.\nIn streitigen Angelegenheiten tagt das Verwaltungsgericht mit mindestens drei Richtern. Ausnahmsweise kann es mit fuenf Richtern tagen, um heikle oder komplexe Sachen zu pruefen oder wenn es erforderlich ist; in diesem Fall fuehrt der Leiter des Gerichts den Vorsitz.\nIn beratenden Angelegenheiten tagt das Verwaltungsgericht in gemischter Plenarbesetzung, bestehend aus den Magistraten der Sektion und der Staatsanwaltschaft, unter Leitung des Sektionspraesidenten."
+      },
+      "72": {
+        "title": "Artikel 72",
+        "body": "Bei Abwesenheit oder Verhinderung wird der Praesident durch den dienstaeltesten Richter ersetzt.\nWenn die Zahl der beim Verhandlungsort anwesenden Richter des Verwaltungsgerichts zur Bildung der Richterbank nicht ausreicht, kann der Praesident des Gerichts auf begruendeten Antrag des Staatsanwalts als beisitzenden Richter einen Magistrat der beim Verwaltungsgericht taetigen Staatsanwaltschaft, einen Rechtsanwalt mit mindestens fuenf Jahren Berufserfahrung oder eine andere Person mit juristischem Lizentiat und Erfahrung im Verwaltungsrecht berufen.\nDer beisitzende Richter ausserhalb der Staatsanwaltschaft leistet vor dem Praesidenten folgenden Eid: \"Ich schwoere, die Verfassung und die Gesetze der Demokratischen Republik Kongo zu achten und die mir anvertrauten Funktionen loyal und treu, mit Ehre und Wuerde auszuueben.\"\nDer beisitzende Richter wird nach seiner Unparteilichkeit ausgewaehlt, insbesondere unter Ausschluss jedes Interessenkonflikts aufgrund vorheriger beruflicher Kenntnis der Akte.\nDer Praesident oder sein Vertreter ist fuer die Verteilung des Dienstes zustaendig."
+      },
+      "73": {
+        "title": "Artikel 73",
+        "body": "Bei jedem Verwaltungsgericht gibt es einen Abteilungskanzler, unterstuetzt von einem oder mehreren Kanzlern sowie Gerichtsvollziehern."
+      },
+      "74": {
+        "title": "Artikel 74",
+        "body": "Das Verwaltungsgericht tagt unter Mitwirkung der Staatsanwaltschaft und mit Unterstuetzung eines Kanzlers."
       }
     }
   },
