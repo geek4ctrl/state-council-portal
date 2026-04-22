@@ -603,7 +603,8 @@ import { FooterComponent } from '../../components/footer/footer.component';
 
     .stakeholders-grid {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(3, minmax(240px, 320px));
+      justify-content: center;
       gap: 40px;
       margin-top: 50px;
     }
@@ -717,7 +718,8 @@ import { FooterComponent } from '../../components/footer/footer.component';
       }
 
       .stakeholders-grid {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(3, minmax(220px, 300px));
+        justify-content: center;
         gap: 30px;
       }
     }
@@ -1258,24 +1260,19 @@ export class ReformsComponent implements AfterViewInit {
 
   stakeholders = [
     {
-      name: 'BAGUNDA NSIMIRE',
-      roleKey: 'reforms.stakeholders.roles.president',
-      image: 'https://i.pravatar.cc/400?img=12'
+      name: 'Brigitte Nsensele wa Nsensele',
+      roleKey: 'organization.chart.roles.firstPresident',
+      image: 'https://res.cloudinary.com/dhqvb8wbn/image/upload/v1772555485/Brigitte_NSENSELE_wa_NSENSELE_OK.jpg_ndsjzg.jpg'
     },
     {
-      name: 'NDOMBA KABEYA',
-      roleKey: 'reforms.stakeholders.roles.vicePresident',
-      image: 'https://i.pravatar.cc/400?img=33'
+      name: 'Eugène Kibwe Muter',
+      roleKey: 'organization.chart.namedPhotoRoles.consultative',
+      image: 'https://res.cloudinary.com/dhqvb8wbn/image/upload/v1772556921/Eug%C3%A8ne_KIBWE_MUTER.jpg_bacl4e.jpg'
     },
     {
-      name: 'CHRISTINA WOCIN',
-      roleKey: 'reforms.stakeholders.roles.chiefMagistrate',
-      image: 'https://i.pravatar.cc/400?img=47'
-    },
-    {
-      name: 'MUKENGULE MUDERHWA',
-      roleKey: 'reforms.stakeholders.roles.internationalRelations',
-      image: 'https://i.pravatar.cc/400?img=56'
+      name: 'Hippolyte Masani Matshi',
+      roleKey: 'organization.chart.namedPhotoRoles.contentieux',
+      image: 'https://res.cloudinary.com/dhqvb8wbn/image/upload/v1772556705/PRES_MASANI_40x50.jpg_ast5mq.jpg'
     }
   ];
 

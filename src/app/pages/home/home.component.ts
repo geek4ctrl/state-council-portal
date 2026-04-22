@@ -79,26 +79,6 @@ type HighchartsStatic = typeof import('highcharts');
               <h1 class="hero-h1" [attr.data-slide]="currentSlide()">
                 {{ heroSlides[currentSlide()].titleKey | i18n }}
               </h1>
-              <div class="hero-btns">
-                <button
-                  class="hbtn primary mag-btn"
-                  (mousemove)="mag($event)"
-                  (mouseleave)="magOut($event)"
-                  (click)="ripple($event)"
-                >
-                  <span>{{ heroSlides[currentSlide()].buttonKey | i18n }}</span>
-                  <div class="hbtn-side"></div>
-                </button>
-                <button
-                  class="hbtn ghost mag-btn"
-                  (mousemove)="mag($event)"
-                  (mouseleave)="magOut($event)"
-                  (click)="ripple($event)"
-                >
-                  <span>{{ 'home.hero.learnMore' | i18n }}</span>
-                  <div class="hbtn-side"></div>
-                </button>
-              </div>
             </div>
           </div>
         </div>
@@ -519,95 +499,6 @@ type HighchartsStatic = typeof import('highcharts');
                 >{{ 'home.expertise.cta' | i18n }} <span class="cta-arr">→</span></span
               >
             </a>
-          </div>
-        </div>
-      </section>
-
-      <!-- ═══ CONTACT BAR ═══ -->
-      <section class="ct-section">
-        <div class="container">
-          <div class="ct-bar">
-            <div
-              class="ct-item"
-              style="--i:0"
-              (mouseenter)="ctPop($event)"
-              (mouseleave)="ctUnpop($event)"
-            >
-              <div class="ct-icon-box">
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="1.5"
-                  width="28"
-                  height="28"
-                >
-                  <path
-                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
-                  />
-                  <path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                </svg>
-                <div class="ct-icon-ring"></div>
-              </div>
-              <div class="ct-text">
-                <h3>{{ 'home.contact.address.title' | i18n }}</h3>
-                <p>{{ 'home.contact.address.body' | i18n }}</p>
-              </div>
-            </div>
-            <div class="ct-sep"></div>
-            <div
-              class="ct-item"
-              style="--i:1"
-              (mouseenter)="ctPop($event)"
-              (mouseleave)="ctUnpop($event)"
-            >
-              <div class="ct-icon-box">
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="1.5"
-                  width="28"
-                  height="28"
-                >
-                  <path
-                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
-                  />
-                </svg>
-                <div class="ct-icon-ring"></div>
-              </div>
-              <div class="ct-text">
-                <h3>{{ 'home.contact.phone.title' | i18n }}</h3>
-                <p>{{ 'home.contact.phone.body' | i18n }}</p>
-              </div>
-            </div>
-            <div class="ct-sep"></div>
-            <div
-              class="ct-item"
-              style="--i:2"
-              (mouseenter)="ctPop($event)"
-              (mouseleave)="ctUnpop($event)"
-            >
-              <div class="ct-icon-box">
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="1.5"
-                  width="28"
-                  height="28"
-                >
-                  <path
-                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                  />
-                </svg>
-                <div class="ct-icon-ring"></div>
-              </div>
-              <div class="ct-text">
-                <h3>{{ 'home.contact.email.title' | i18n }}</h3>
-                <p>{{ 'home.contact.email.body' | i18n }}</p>
-              </div>
-            </div>
           </div>
         </div>
       </section>
@@ -1402,8 +1293,8 @@ type HighchartsStatic = typeof import('highcharts');
       .hero-tag {
         font-size: 0.72rem;
         font-weight: 800;
-        letter-spacing: 3px;
-        text-transform: uppercase;
+        letter-spacing: 1px;
+        text-transform: none;
         color: #1F9BD9;
         margin-bottom: 18px;
         animation: heroTagIn 0.7s cubic-bezier(0.23, 1, 0.32, 1) 0.2s both;
@@ -1413,7 +1304,7 @@ type HighchartsStatic = typeof import('highcharts');
         font-weight: 900;
         line-height: 1.12;
         margin-bottom: 28px;
-        text-transform: uppercase;
+        text-transform: none;
         color: #fff;
         animation: heroH1In 0.8s cubic-bezier(0.23, 1, 0.32, 1) 0.4s both;
         text-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);

@@ -397,7 +397,7 @@
     },
     "expertise": {
       "title": "Domaines d'expertise",
-      "subtitle": "Le Conseil d'État exerce sa juridiction sur diverses matières en tant que juridiction suprême de l'ordre judiciaire.",
+      "subtitle": "Le Conseil d'État exerce sa juridiction sur diverses matières en tant que juridiction suprême de l'ordre administratif.",
       "stats": {
         "domains": {
           "value": "6",
