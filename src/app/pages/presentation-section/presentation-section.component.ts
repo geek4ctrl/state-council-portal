@@ -944,7 +944,6 @@ type GreffeFirstPresident = {
         width: 200px;
         border-radius: 12px;
         overflow: hidden;
-        border: 3px solid #e8e8e8;
       }
 
       .fp-bio-photo img {

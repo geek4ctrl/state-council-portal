@@ -5,7 +5,7 @@ import {
   provideBrowserGlobalErrorListeners
 } from '@angular/core';
 import { provideHttpClient } from '@angular/common/http';
-import { provideRouter } from '@angular/router';
+import { provideRouter, withInMemoryScrolling } from '@angular/router';
 
 import { routes } from './app.routes';
 import { I18nService } from './i18n/i18n.service';
@@ -18,7 +18,13 @@ const initI18n = () => {
 export const appConfig: ApplicationConfig = {
   providers: [
     provideBrowserGlobalErrorListeners(),
-    provideRouter(routes),
+    provideRouter(
+      routes,
+      withInMemoryScrolling({
+        scrollPositionRestoration: 'top',
+        anchorScrolling: 'enabled'
+      })
+    ),
     provideHttpClient(),
     {
       provide: APP_INITIALIZER,
