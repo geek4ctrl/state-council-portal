@@ -29,12 +29,12 @@ export const routes: Routes = [
   { path: 'organization', redirectTo: 'presentation', pathMatch: 'full' },
   {
     path: 'administrative-courts',
-    loadComponent: () => import('./pages/coming-soon/coming-soon.component').then(m => m.ComingSoonComponent),
+    loadComponent: () => import('./pages/administrative-courts/administrative-courts.component').then(m => m.AdministrativeCourtsComponent),
     data: { titleKey: 'header.nav.administrativeCourts' }
   },
   {
     path: 'administrative-tribunals',
-    loadComponent: () => import('./pages/coming-soon/coming-soon.component').then(m => m.ComingSoonComponent),
+    loadComponent: () => import('./pages/administrative-tribunals/administrative-tribunals.component').then(m => m.AdministrativeTribunalsComponent),
     data: { titleKey: 'header.nav.administrativeTribunals' }
   },
   {
