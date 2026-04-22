@@ -463,8 +463,39 @@ export class MemberService {
   readonly presidents = this.members.filter((member) => member.role === 'president');
   readonly advisors = this.members.filter((member) => member.role === 'advisor');
 
+  readonly honoraryFirstPresidents: Member[] = [
+    {
+      name: 'Marthe ODIO NONDE',
+      title: 'Honorary First President',
+      email: 'contact@conseildetatrdc.com',
+      image:
+        'https://res.cloudinary.com/dhqvb8wbn/image/upload/v1772554526/Marthe_ODIO_NONDE.jpg_1_pzymzp.jpg',
+      role: 'president',
+      slug: 'marthe-odio-nonde',
+      office: 'STATE COUNCIL - HONORARY',
+      summary:
+        'Served as First President of the State Council from 2022 to 2025 and contributed to institutional consolidation.'
+    },
+    {
+      name: 'Felix VUNDUAWE te PEMAKO',
+      title: 'Honorary First President',
+      email: 'contact@conseildetatrdc.com',
+      image:
+        'https://res.cloudinary.com/dhqvb8wbn/image/upload/v1772552204/F%C3%A9lix_VUNDUAWE_te_PEMAKO..jpg_1_usgopn.jpg',
+      role: 'president',
+      slug: 'felix-vunduawe-te-pemako',
+      office: 'STATE COUNCIL - HONORARY',
+      summary:
+        'Served as First President of the State Council from 2018 to 2022 and helped establish the Court in its early years.'
+    }
+  ];
+
   getBySlug(slug: string): Member | null {
-    return this.members.find((member) => member.slug === slug) ?? null;
+    return (
+      this.members.find((member) => member.slug === slug) ??
+      this.honoraryFirstPresidents.find((member) => member.slug === slug) ??
+      null
+    );
   }
 }
 

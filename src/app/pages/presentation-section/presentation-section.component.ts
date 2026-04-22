@@ -246,32 +246,22 @@ type GreffeFirstPresident = {
             <h2>{{ 'organization.firstPresident.page.honoraryTitle' | i18n }}</h2>
             <div class="fp-honorary-list">
               <article class="fp-honorary-item">
-                <div class="fp-honorary-photo">
-                  <img
-                    ngSrc="https://res.cloudinary.com/dhqvb8wbn/image/upload/v1772552204/F%C3%A9lix_VUNDUAWE_te_PEMAKO..jpg_1_usgopn.jpg"
-                    alt="Félix Vunduawe te Pemako"
-                    width="160"
-                    height="190"
-                  />
-                </div>
                 <div class="fp-honorary-info">
-                  <h3>{{ 'organization.firstPresident.page.honorary.felix.name' | i18n }}</h3>
-                  <p class="fp-honorary-role">{{ 'organization.firstPresident.page.honorary.felix.role' | i18n }}</p>
+                  <h3>
+                    <a [routerLink]="['/organization/member', 'felix-vunduawe-te-pemako']" class="fp-honorary-link">
+                      {{ 'organization.firstPresident.page.honorary.felix.name' | i18n }}
+                    </a>
+                  </h3>
                   <p class="fp-honorary-years">{{ 'organization.firstPresident.page.honorary.felix.years' | i18n }}</p>
                 </div>
               </article>
               <article class="fp-honorary-item">
-                <div class="fp-honorary-photo">
-                  <img
-                    ngSrc="https://res.cloudinary.com/dhqvb8wbn/image/upload/v1772554526/Marthe_ODIO_NONDE.jpg_1_pzymzp.jpg"
-                    alt="Marthe Odio Nonde"
-                    width="160"
-                    height="190"
-                  />
-                </div>
                 <div class="fp-honorary-info">
-                  <h3>{{ 'organization.firstPresident.page.honorary.marthe.name' | i18n }}</h3>
-                  <p class="fp-honorary-role">{{ 'organization.firstPresident.page.honorary.marthe.role' | i18n }}</p>
+                  <h3>
+                    <a [routerLink]="['/organization/member', 'marthe-odio-nonde']" class="fp-honorary-link">
+                      {{ 'organization.firstPresident.page.honorary.marthe.name' | i18n }}
+                    </a>
+                  </h3>
                   <p class="fp-honorary-years">{{ 'organization.firstPresident.page.honorary.marthe.years' | i18n }}</p>
                 </div>
               </article>
@@ -954,7 +944,6 @@ type GreffeFirstPresident = {
         width: 200px;
         border-radius: 12px;
         overflow: hidden;
-        border: 3px solid #e8e8e8;
       }
 
       .fp-bio-photo img {
@@ -1022,44 +1011,34 @@ type GreffeFirstPresident = {
       }
 
       .fp-honorary-item {
-        display: flex;
-        gap: 24px;
-        align-items: flex-start;
+        display: block;
         background: #f8f9fb;
         border-radius: 12px;
-        padding: 20px;
-      }
-
-      .fp-honorary-photo {
-        flex-shrink: 0;
-        width: 120px;
-        border-radius: 10px;
-        overflow: hidden;
-        border: 3px solid #e8e8e8;
-      }
-
-      .fp-honorary-photo img {
-        width: 100%;
-        height: auto;
-        display: block;
-        object-fit: cover;
+        padding: 22px 24px;
       }
 
       .fp-honorary-info h3 {
         font-size: 1rem;
         font-weight: 700;
         color: #1a2942;
-        margin: 0 0 6px;
+        margin: 0 0 8px;
       }
 
-      .fp-honorary-role {
-        font-size: 0.9rem;
-        color: #555;
-        margin: 0 0 4px;
+      .fp-honorary-link {
+        color: inherit;
+        text-decoration: none;
+        border-bottom: 1px solid transparent;
+        transition: color 0.2s ease, border-color 0.2s ease;
+      }
+
+      .fp-honorary-link:hover,
+      .fp-honorary-link:focus-visible {
+        color: #005fb8;
+        border-bottom-color: rgba(0, 95, 184, 0.55);
       }
 
       .fp-honorary-years {
-        font-size: 0.85rem;
+        font-size: 0.95rem;
         color: #888;
         margin: 0;
       }
@@ -1084,13 +1063,7 @@ type GreffeFirstPresident = {
         }
 
         .fp-honorary-item {
-          flex-direction: column;
-          align-items: center;
-          text-align: center;
-        }
-
-        .fp-honorary-photo {
-          width: 140px;
+          text-align: left;
         }
       }
 
