@@ -642,6 +642,57 @@
       }
     }
   },
+  "administrativeTribunals": {
+    "hero": {
+      "title": "Administrative<br>Tribunals",
+      "body": "Organization, composition and functioning of Administrative Courts of Appeal in accordance with the organic law."
+    },
+    "intro": {
+      "title": "Articles 60 to 68",
+      "subtitle": "Administrative Courts of Appeal: creation, composition and organization"
+    },
+    "section": {
+      "title": "Paragraph 2: Composition and organization"
+    },
+    "articles": {
+      "60": {
+        "title": "Article 60",
+        "body": "One or more Administrative Courts of Appeal are established within the jurisdiction of each province as well as in the city of Kinshasa, capital of the Republic.\nThe territorial jurisdiction and ordinary seat of the Administrative Court of Appeal are determined by decree of the Prime Minister deliberated in the Council of Ministers."
+      },
+      "61": {
+        "title": "Article 61",
+        "body": "The Administrative Court of Appeal is composed of a First President, one or more Presidents, and Advisors."
+      },
+      "62": {
+        "title": "Article 62",
+        "body": "In the event of absence or impediment, the First President is replaced by the most senior President, and the President by the most senior Advisor.\nSeniority in rank is determined by the date and order of appointment."
+      },
+      "63": {
+        "title": "Article 63",
+        "body": "The First President or the person replacing them is responsible for service allocation."
+      },
+      "64": {
+        "title": "Article 64",
+        "body": "The Administrative Court of Appeal comprises a consultative section and a litigation section.\nEach section is subdivided into chambers."
+      },
+      "65": {
+        "title": "Article 65",
+        "body": "Within the litigation section, cases are judged by an odd number of judges, either by one chamber or by chambers sitting jointly.\nThe Administrative Court of Appeal may, exceptionally, sit as a section or as sections sitting jointly for delicate or complex cases, or whenever necessary.\nIn such case, it is presided over by the First President."
+      },
+      "66": {
+        "title": "Article 66",
+        "body": "The chamber and the section sit respectively with at least three and five members; chambers sitting jointly and sections sitting jointly sit respectively with at least five and seven members."
+      },
+      "67": {
+        "title": "Article 67",
+        "body": "The Plenary Assembly of the Administrative Court of Appeal includes all magistrates of that Court.\nIt is chaired by the First President.\nIt deliberates on all matters of general order concerning the entire Court or, where necessary.\nThe Plenary Assembly sits, as of right, in cases of reversal of jurisprudence, jurisdictional challenge, or when it must rule by judgment on a matter of principle."
+      },
+      "68": {
+        "title": "Article 68",
+        "body": "Each Administrative Court of Appeal has a principal registrar, assisted by one or more divisional registrars, one or more registrars, as well as bailiffs.\nThe Administrative Court of Appeal sits with the participation of the Public Prosecutor's Office and the assistance of a registrar."
+      }
+    }
+  },
   "reforms": {
     "hero": {
       "title": "Suggested<br>Reforms",

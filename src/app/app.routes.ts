@@ -34,7 +34,7 @@ export const routes: Routes = [
   },
   {
     path: 'administrative-tribunals',
-    loadComponent: () => import('./pages/coming-soon/coming-soon.component').then(m => m.ComingSoonComponent),
+    loadComponent: () => import('./pages/administrative-tribunals/administrative-tribunals.component').then(m => m.AdministrativeTribunalsComponent),
     data: { titleKey: 'header.nav.administrativeTribunals' }
   },
   {

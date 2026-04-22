@@ -642,6 +642,57 @@
       }
     }
   },
+  "administrativeTribunals": {
+    "hero": {
+      "title": "Tribunaux<br>administratifs",
+      "body": "Organisation, composition et fonctionnement des Cours administratives d'appel conformément à la loi organique."
+    },
+    "intro": {
+      "title": "Articles 60 à 68",
+      "subtitle": "Cours administratives d'appel : création, composition et organisation"
+    },
+    "section": {
+      "title": "Paragraphe 2 : De la composition et de l'organisation"
+    },
+    "articles": {
+      "60": {
+        "title": "Article 60",
+        "body": "Il est créé une ou plusieurs Cours administratives d'appel dans le ressort de chaque province ainsi que dans la ville de Kinshasa, capitale de la République.\nLe ressort et le siège ordinaire de la Cour administrative d'appel sont fixés par décret du Premier ministre délibéré en Conseil des ministres."
+      },
+      "61": {
+        "title": "Article 61",
+        "body": "La Cour administrative d'appel est composée d'un Premier Président, d'un ou de plusieurs Présidents et des Conseillers."
+      },
+      "62": {
+        "title": "Article 62",
+        "body": "En cas d'absence ou d'empêchement, le Premier Président est remplacé par le Président le plus ancien et le Président par le Conseiller le plus ancien.\nL'ancienneté dans le grade est réglée par la date et l'ordre de nomination."
+      },
+      "63": {
+        "title": "Article 63",
+        "body": "Le Premier Président ou celui qui le remplace est chargé de la répartition du service."
+      },
+      "64": {
+        "title": "Article 64",
+        "body": "La Cour administrative d'appel comprend une section consultative et une section contentieuse.\nChaque section est subdivisée en chambres."
+      },
+      "65": {
+        "title": "Article 65",
+        "body": "Au sein de la section du contentieux, les affaires sont jugées, en nombre impair des juges, soit par une chambre, soit par des chambres réunies.\nLa Cour administrative d'appel peut, à titre exceptionnel, siéger en section ou en sections réunies pour les affaires délicates ou complexes, ou lorsque la nécessité l'exige.\nDans ce cas, elle est présidée par le Premier Président."
+      },
+      "66": {
+        "title": "Article 66",
+        "body": "La chambre et la section siègent respectivement avec trois et cinq membres au moins ; les chambres réunies et les sections réunies le sont respectivement à cinq et sept membres au moins."
+      },
+      "67": {
+        "title": "Article 67",
+        "body": "L'Assemblée plénière de la Cour administrative d'appel comprend tous les magistrats de cette Cour.\nElle est présidée par le Premier Président.\nElle délibère sur toutes les questions d'ordre général intéressant l'ensemble de la Cour ou, lorsque la nécessité l'exige.\nL'Assemblée plénière siège, de plein droit, en cas de revirement de jurisprudence, de déclinatoire de juridiction ou lorsqu'il y a lieu de se prononcer, par arrêt, sur une question de principe."
+      },
+      "68": {
+        "title": "Article 68",
+        "body": "Il y a dans chaque Cour administrative d'appel un greffier principal, assisté d'un ou de plusieurs greffiers divisionnaires, d'un ou de plusieurs greffiers ainsi que des huissiers.\nLa Cour administrative d'appel siège avec le concours du Ministère public et l'assistance d'un greffier."
+      }
+    }
+  },
   "reforms": {
     "hero": {
       "title": "Bongwana<br>Oyo epesami",
