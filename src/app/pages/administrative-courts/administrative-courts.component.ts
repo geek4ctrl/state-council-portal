@@ -105,13 +105,13 @@ const ARTICLE_NUMBERS = [49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59] as const;
       background: white;
       padding: 40px 60px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-      border-left: 5px solid #1a3a6b;
+      border-left: 5px solid #2a9fd4;
     }
 
     .intro-title {
       font-size: 1.4rem;
       font-weight: 700;
-      color: #1a3a6b;
+      color: #2a9fd4;
       margin: 0 0 10px;
     }
 
@@ -148,7 +148,7 @@ const ARTICLE_NUMBERS = [49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59] as const;
       flex-shrink: 0;
       width: 48px;
       height: 48px;
-      background: #1a3a6b;
+      background: #2a9fd4;
       color: white;
       border-radius: 50%;
       display: flex;
@@ -166,7 +166,7 @@ const ARTICLE_NUMBERS = [49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59] as const;
     .article-title {
       font-size: 1.1rem;
       font-weight: 700;
-      color: #1a3a6b;
+      color: #2a9fd4;
       margin: 0 0 12px;
     }
 
