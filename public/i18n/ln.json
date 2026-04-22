@@ -20,7 +20,7 @@
       "court": "Tribinal",
       "presentation": "Botalisi",
       "organization": "Organisasion",
-      "administrativeCourts": "Tribinal ya Administratif ya Likolo",
+      "administrativeCourts": "Tribinal ya apel ya administratif",
       "administrativeTribunals": "Tribinal ya Administratif ya liboso",
       "reforms": "Bongwana",
       "international": "Boyokani ya mokili mobimba",
@@ -108,6 +108,10 @@
     },
     "actions": {
       "readMore": "Tanga lisusu"
+    },
+    "detail": {
+      "back": "Zonga na Sango",
+      "title": "Makambo ya Sango"
     },
     "pagination": {
       "label": "Pagination ya sango",
@@ -588,108 +592,100 @@
   },
   "administrativeCourts": {
     "hero": {
-      "title": "Tribinal ya<br>Administratif ya Likolo",
-      "body": "Molongano, bobeli mpe kosala ya tribinal ya administratif kolanda Loi organique Na. 13/011-B ya 11 avril 2013."
+      "title": "Tribinal ya apel<br>ya administratif",
+      "body": "Molongano, bobongisami mpe ndenge ya kosala ya tribinal ya apel ya administratif kolanda mobeko ya organique."
     },
     "intro": {
-      "title": "Loi organique Na. 13/011-B ya 11 avril 2013",
-      "subtitle": "Molongano, bobeli mpe kosala ya juridictions ya ordre administratif"
+      "title": "Articles 60 kino 68",
+      "subtitle": "Tribinal ya apel ya administratif: bokeli, bobongisami mpe molongano"
     },
     "articles": {
-      "49": {
-        "title": "Article 49",
-        "body": "Chambre nyonso ezali na Président mpe Conseillers.\nBalobeli na bato oyo bakokani na instruction ya likambo.\nSoki siège ya chambre ekoki te kosala malamu, ekosalema na Conseillers mosusu."
+      "60": {
+        "title": "Article 60",
+        "body": "Esalemi tribinal moko to ebele ya apel ya administratif na etuka ya province moko na moko mpe na engumba ya Kinshasa, mboka-mokonzi ya République.\nEtando oyo tribinal ya apel ya administratif etalelaka mpe esika na yango ya momeseno etiamaka na décret ya Premier ministre oyo Conseil des ministres endimaki."
       },
-      "50": {
-        "title": "Article 50",
-        "body": "Recours ya kosopola bikorwa, makonzá to mibeko ya autorités administratives ya kati etindami na Premier Président epai ya section ya contentieux to, na ngeya, ya mbangu, na Président ya chambre oyo ekoki.\nPremier Président alimboli autorité oyo bikorwa, makonzá to mibeko yango esopwami."
+      "61": {
+        "title": "Article 61",
+        "body": "Tribinal ya apel ya administratif esalemi na Premier Président, Président moko to ebele, mpe ba-Conseillers."
       },
-      "51": {
-        "title": "Article 51",
-        "body": "Mikambo oyo ezali na Conseil d'État ekoki kotindama na plenière ya section mpo na kotatola, na demande ya Premier Président ya Conseil d'État, Président ya section oyo ekangisami, Président ya chambre oyo ekoki to chambres oyo ekangani, to Ministère public.\nMikambo oyo instruction yango epesami na section ya contentieux etatolamaka na Assemblée plénière ya Conseil d'État, na demande ya Premier Président, Président ya section to chambre oyo ekangisami, to Ministère public."
+      "62": {
+        "title": "Article 62",
+        "body": "Soki Premier Président azangi to azui mpasi ya kosala, Président oyo aleki na bokolo nde azongisa ye; mpe Président azongisamaka na Conseiller oyo aleki na bokolo.\nBokolo na grade etalelamaka na mokolo mpe molongo ya nomination."
       },
-      "52": {
-        "title": "Article 52",
-        "body": "Section consultative esalemi na Président ya section, Présidents ya chambre mpe Conseillers.\nEzali na chambres misato oyo:\n1. Chambre ya biavis;\n2. Chambre ya kolimbola misálo ya juridique;\n3. Chambre ya etúká mpe inspection ya libela."
+      "63": {
+        "title": "Article 63",
+        "body": "Premier Président to moto oyo azongisi ye azali na mokumba ya kokabola misala."
       },
-      "53": {
-        "title": "Article 53",
-        "body": "Conseil d'État ezali na assemblée plénière oyo ezali na bato nyonso ya bajuge ya Conseil d'État.\nAssemblée plénière elongwami na Premier Président ya Conseil.\nElobelaki mituna nyonso oyo ekangisami na Conseil d'État oyo nyonso to, na ntina, na mituna nyonso ya section to chambre.\nAssemblée plénière efandaka, na droit, na ntango ya kobongola jurisprudence, ya déclinatoire ya juridiction to ntango esengeli kolobela, na arrêt, motuna ya principe."
+      "64": {
+        "title": "Article 64",
+        "body": "Tribinal ya apel ya administratif ezali na section consultative mpe section contentieuse.\nSection moko na moko ekabwani na ba-chambres."
       },
-      "54": {
-        "title": "Article 54",
-        "body": "Premier Président asalaka administration mpe mbeba na kati ya Conseil d'État.\nNa mokano wana:\n- asalaka projet ya règlement intérieur ya Conseil d'État;\n- abakisaka makambo kati ya sections mibale to kati ya chambres;\n- akonzi bato ya greffe oyo bapesami na Conseil;\n- akonzi budget ya kosala epesami na juridictions ya ordre administratif. Ye azali ordonnateur délégué."
+      "65": {
+        "title": "Article 65",
+        "body": "Na kati ya section ya contentieux, makambo esambisamaka na motango ya ba-juge oyo ekabwani na mibale te, ezala na chambre moko to na ba-chambres oyo esangani.\nNa ndenge ya exception, tribinal ya apel ya administratif ekoki kofanda lokola section moko to ba-sections oyo esangani mpo na makambo ya mpasi to ya mindondo, to soki bosenga ezali.\nNa ntango wana, Premier Président nde akambaka yango."
       },
-      "55": {
-        "title": "Article 55",
-        "body": "Na kati ya Conseil d'État ezali greffe na greffier en chef, greffiers principaux, greffiers divisionnaires, greffiers mpe huissiers."
+      "66": {
+        "title": "Article 66",
+        "body": "Chambre mpe section efandaka na bato misato mpe mitano na moke te; ba-chambres oyo esangani mpe ba-sections oyo esangani efandaka na bato mitano mpe nsambo na moke te."
       },
-      "56": {
-        "title": "Article 56",
-        "body": "Conseil d'État efandaka na lisalisi ya Ministère public mpe na lisalisi ya greffier."
+      "67": {
+        "title": "Article 67",
+        "body": "Assemblée plénière ya tribinal ya apel ya administratif esangisi bamagistrats nyonso ya tribinal wana.\nEkambamaka na Premier Président.\nEtalelaka mituna nyonso ya ordre général oyo etali tribinal mobimba to, soki bosenga ezali.\nAssemblée plénière efandaka na mobeko, soki jurisprudence ebongwani, soki ezali déclinatoire ya juridiction, to soki esengeli kopesa mokano na arrêt na motuna ya principe."
       },
-      "57": {
-        "title": "Article 57",
-        "body": "Na ntango ya koleka to kozingama, Premier Président ya Conseil d'État asimbolamaka na Président ya section to chambre oyo akolo koleka.\nBango mpe basimbolamaka, moko na moko mpe na molongano, na Conseiller oyo akolo koleka."
-      },
-      "58": {
-        "title": "Article 58",
-        "body": "Esalemi bureau ya Conseil d'État oyo esalemi na Premier Président, Procureur général, Présidents mpe Premiers Avocats Généraux.\nBureau ya Conseil d'État ezali organe ya makanisi mpe mibeko oyo epesami na Premier Président mpe Procureur général mpo na gestion malamu ya Conseil d'État mpe juridictions mosusu ya administratif.\nBureau ya Conseil d'État ezali na nguya ya juridiction te; ekoki te kosimba esika ya chambre, ya section, to Assemblée plénière ya Conseil d'État."
-      },
-      "59": {
-        "title": "Article 59",
-        "body": "Bureau epona règlement intérieur ya Conseil d'État.\nEstablisha, na suka ya mobu moko na moko, rapport complet ya Conseil d'État, Cours administratives d'appel, Tribunaux administratifs mpe parquets oyo ekangani na bango na miso ya Président ya Conseil supérieur de la magistrature oyo atindaka exemplaire na ministre ya justice.\nRapport ya Bureau ya Conseil d'État ezali na activité ya juridictions administratives, molende ya procédures mpe ntango ya kosala yango.\nNa ntango ya kopesa rapport, Bureau ya Conseil d'État elobaka na Conseil supérieur de la magistrature makambo ya kotanga misálo ya juridique oyo eutaki mpe epesaka bongwana."
+      "68": {
+        "title": "Article 68",
+        "body": "Na tribinal moko na moko ya apel ya administratif, ezali na greffier principal, oyo asalisami na greffiers divisionnaires moko to ebele, greffiers moko to ebele, mpe na ba-huissiers.\nTribinal ya apel ya administratif efandaka na lisalisi ya Ministère public mpe ya greffier."
       }
     }
   },
   "administrativeTribunals": {
     "hero": {
-      "title": "Tribunaux<br>administratifs",
-      "body": "Organisation, composition et fonctionnement des Cours administratives d'appel conformément à la loi organique."
+      "title": "Tribinal ya apel<br>ya administratif",
+      "body": "Molongano, bobongisami mpe ndenge ya kosala ya tribinal ya apel ya administratif kolanda mobeko ya organique."
     },
     "intro": {
-      "title": "Articles 60 à 68",
-      "subtitle": "Cours administratives d'appel : création, composition et organisation"
+      "title": "Articles 60 kino 68",
+      "subtitle": "Tribinal ya apel ya administratif: bokeli, bobongisami mpe molongano"
     },
     "section": {
-      "title": "Paragraphe 2 : De la composition et de l'organisation"
+      "title": "Paragraphe 2: Bobongisami mpe molongano"
     },
     "articles": {
       "60": {
         "title": "Article 60",
-        "body": "Il est créé une ou plusieurs Cours administratives d'appel dans le ressort de chaque province ainsi que dans la ville de Kinshasa, capitale de la République.\nLe ressort et le siège ordinaire de la Cour administrative d'appel sont fixés par décret du Premier ministre délibéré en Conseil des ministres."
+        "body": "Esalemi tribinal moko to ebele ya apel ya administratif na etuka ya province moko na moko mpe na engumba ya Kinshasa, mboka-mokonzi ya République.\nEtando oyo tribinal ya apel ya administratif etalelaka mpe esika na yango ya momeseno etiamaka na décret ya Premier ministre oyo Conseil des ministres endimaki."
       },
       "61": {
         "title": "Article 61",
-        "body": "La Cour administrative d'appel est composée d'un Premier Président, d'un ou de plusieurs Présidents et des Conseillers."
+        "body": "Tribinal ya apel ya administratif esalemi na Premier Président, Président moko to ebele, mpe ba-Conseillers."
       },
       "62": {
         "title": "Article 62",
-        "body": "En cas d'absence ou d'empêchement, le Premier Président est remplacé par le Président le plus ancien et le Président par le Conseiller le plus ancien.\nL'ancienneté dans le grade est réglée par la date et l'ordre de nomination."
+        "body": "Soki Premier Président azangi to azui mpasi ya kosala, Président oyo aleki na bokolo nde azongisa ye; mpe Président azongisamaka na Conseiller oyo aleki na bokolo.\nBokolo na grade etalelamaka na mokolo mpe molongo ya nomination."
       },
       "63": {
         "title": "Article 63",
-        "body": "Le Premier Président ou celui qui le remplace est chargé de la répartition du service."
+        "body": "Premier Président to moto oyo azongisi ye azali na mokumba ya kokabola misala."
       },
       "64": {
         "title": "Article 64",
-        "body": "La Cour administrative d'appel comprend une section consultative et une section contentieuse.\nChaque section est subdivisée en chambres."
+        "body": "Tribinal ya apel ya administratif ezali na section consultative mpe section contentieuse.\nSection moko na moko ekabwani na ba-chambres."
       },
       "65": {
         "title": "Article 65",
-        "body": "Au sein de la section du contentieux, les affaires sont jugées, en nombre impair des juges, soit par une chambre, soit par des chambres réunies.\nLa Cour administrative d'appel peut, à titre exceptionnel, siéger en section ou en sections réunies pour les affaires délicates ou complexes, ou lorsque la nécessité l'exige.\nDans ce cas, elle est présidée par le Premier Président."
+        "body": "Na kati ya section ya contentieux, makambo esambisamaka na motango ya ba-juge oyo ekabwani na mibale te, ezala na chambre moko to na ba-chambres oyo esangani.\nNa ndenge ya exception, tribinal ya apel ya administratif ekoki kofanda lokola section moko to ba-sections oyo esangani mpo na makambo ya mpasi to ya mindondo, to soki bosenga ezali.\nNa ntango wana, Premier Président nde akambaka yango."
       },
       "66": {
         "title": "Article 66",
-        "body": "La chambre et la section siègent respectivement avec trois et cinq membres au moins ; les chambres réunies et les sections réunies le sont respectivement à cinq et sept membres au moins."
+        "body": "Chambre mpe section efandaka na bato misato mpe mitano na moke te; ba-chambres oyo esangani mpe ba-sections oyo esangani efandaka na bato mitano mpe nsambo na moke te."
       },
       "67": {
         "title": "Article 67",
-        "body": "L'Assemblée plénière de la Cour administrative d'appel comprend tous les magistrats de cette Cour.\nElle est présidée par le Premier Président.\nElle délibère sur toutes les questions d'ordre général intéressant l'ensemble de la Cour ou, lorsque la nécessité l'exige.\nL'Assemblée plénière siège, de plein droit, en cas de revirement de jurisprudence, de déclinatoire de juridiction ou lorsqu'il y a lieu de se prononcer, par arrêt, sur une question de principe."
+        "body": "Assemblée plénière ya tribinal ya apel ya administratif esangisi bamagistrats nyonso ya tribinal wana.\nEkambamaka na Premier Président.\nEtalelaka mituna nyonso ya ordre général oyo etali tribinal mobimba to, soki bosenga ezali.\nAssemblée plénière efandaka na mobeko, soki jurisprudence ebongwani, soki ezali déclinatoire ya juridiction, to soki esengeli kopesa mokano na arrêt na motuna ya principe."
       },
       "68": {
         "title": "Article 68",
-        "body": "Il y a dans chaque Cour administrative d'appel un greffier principal, assisté d'un ou de plusieurs greffiers divisionnaires, d'un ou de plusieurs greffiers ainsi que des huissiers.\nLa Cour administrative d'appel siège avec le concours du Ministère public et l'assistance d'un greffier."
+        "body": "Na tribinal moko na moko ya apel ya administratif, ezali na greffier principal, oyo asalisami na greffiers divisionnaires moko to ebele, greffiers moko to ebele, mpe na ba-huissiers.\nTribinal ya apel ya administratif efandaka na lisalisi ya Ministère public mpe ya greffier."
       }
     }
   },

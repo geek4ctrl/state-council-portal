@@ -20,7 +20,7 @@
       "court": "Lubulu",
       "presentation": "Didimanyisha",
       "organization": "Bulongolodi",
-      "administrativeCourts": "Tubadi tua malu a mbulamatadi",
+      "administrativeCourts": "Tubadi tua appel tua malu a mbulamatadi",
       "administrativeTribunals": "Malu a mbulamatadi",
       "reforms": "Mashintuluka",
       "international": "Malanda a matunga masanga",
@@ -592,108 +592,100 @@
   },
   "administrativeCourts": {
     "hero": {
-      "title": "Tubadi tua<br>malu a mbulamatadi",
-      "body": "Bulongolodi, mutupo ne mushindu wa tubadi tua malu a mbulamatadi kumudimu wa Tshiatshi tsha Mapangadilu Nsha. 13/011-B wa diba dia 11 avril 2013."
+      "title": "Tubadi tua appel<br>tua malu a mbulamatadi",
+      "body": "Bulongolodi, mutupo ne mushindu wa tubadi tua appel tua malu a mbulamatadi bilondeshile loi organique."
     },
     "intro": {
-      "title": "Tshiatshi tsha Mapangadilu Nsha. 13/011-B wa diba dia 11 avril 2013",
-      "subtitle": "Bulongolodi, mutupo ne mushindu wa bukumi bua malu a mbulamatadi"
+      "title": "Tshiandiku 60 too ne 68",
+      "subtitle": "Tubadi tua appel tua malu a mbulamatadi: dijinga, mutupo ne bulongolodi"
     },
     "articles": {
-      "49": {
-        "title": "Tshiandiku 49",
-        "body": "Chambre yonso idi ne Président ne Conseillers.\nIkonka ne bena bakapite mu kufundisha mudimu.\nEke chambre ikena kulongolola bimpe, ibakangalwa ne Conseillers bangi."
+      "60": {
+        "title": "Tshiandiku 60",
+        "body": "Kudi dijinga tubadi tumue anyi tunyingalaye tua appel tua malu a mbulamatadi mu ditunga dijima dia province ne mu mbanza wa Kinshasa, capitale wa République.\nMpaka wa mudimu ne tshibanza tsha tshikadilu tsha tubadi tua appel tua malu a mbulamatadi bidi bikudibua ku décret wa Premier ministre udi musangu wa Conseil des ministres."
       },
-      "50": {
-        "title": "Tshiandiku 50",
-        "body": "Recours ya kudika bienzedi, makonzá kana mikandu ya ba autorités administratives ya kati itumbishiwa na Premier Président kwa section ya contentieux kana, mu tshiseshi, droitement kwa Président wa chambre ushinda."
+      "61": {
+        "title": "Tshiandiku 61",
+        "body": "Tubadi tua appel tua malu a mbulamatadi tudi ne Premier Président, Président umwe anyi bavule, ne ba-Conseillers."
       },
-      "51": {
-        "title": "Tshiandiku 51",
-        "body": "Mialu idi ku Conseil d'État ikena kutumbishibua kwa plenière ya section mu kusidika, pa demande wa Premier Président wa Conseil d'État, Président wa section ushintulule, Président wa chambre ushinda kana chambres zikanguke, kana Ministère public."
+      "62": {
+        "title": "Tshiandiku 62",
+        "body": "Padi Premier Président kakuikadi anyi mu mushindu wa kulemala kusala, ushaluishibua ku Président udi mukole mu bukalenge; ne Président ushaluishibua ku Conseiller udi mukole.\nBukole mu grade budi bubikidibua ku dituku ne mulongo wa nomination."
       },
-      "52": {
-        "title": "Tshiandiku 52",
-        "body": "Section consultative ilongololwa na Président wa section, Présidents ba chambre ne Conseillers.\nIdi ne chambres isatu:\n1. Chambre ya bavis;\n2. Chambre ya kusolola maandikilu a tshiatshi;\n3. Chambre ya mifundilu ne inspection ya mudi wonso."
+      "63": {
+        "title": "Tshiandiku 63",
+        "body": "Premier Président anyi ewu udi umushintulula udi ne mudimu wa kukabanya bisalu."
       },
-      "53": {
-        "title": "Tshiandiku 53",
-        "body": "Conseil d'État udi ne assemblée plénière idi ne bajuge bonso ba Conseil d'État.\nAssemblée plénière ikonkeshibua na Premier Président wa Conseil."
+      "64": {
+        "title": "Tshiandiku 64",
+        "body": "Tubadi tua appel tua malu a mbulamatadi tudi ne section consultative ne section contentieuse.\nSection yonso yidi yikabudibue mu ba-chambres."
       },
-      "54": {
-        "title": "Tshiandiku 54",
-        "body": "Premier Président ushinduluaye administration ne buena mu kati wa Conseil d'État.\nMu bukumu buabu:\n- usala projet wa règlement intérieur wa Conseil d'État;\n- ubakanya mialu pakati pa sections ibidi kana pakati pa chambres."
+      "65": {
+        "title": "Tshiandiku 65",
+        "body": "Mu section ya contentieux, mialu yisambibua ku motango wa ba-juge udi wa impair, ku chambre kimwe anyi ku ba-chambres bidi bisanganyi.\nMu mushindu wa exception, tubadi tua appel tua malu a mbulamatadi tukadi mua kuvanda bu section anyi ba-sections bisanganyi sambu ku mialu ya lutatu anyi ya mindondo, anyi padi bualu bulelela bubulomba.\nMu tshikondo tshina, Premier Président ngudi utwadija."
       },
-      "55": {
-        "title": "Tshiandiku 55",
-        "body": "Mu kati wa Conseil d'État udi greffe udi ne greffier en chef, greffiers principaux, greffiers divisionnaires, greffiers ne huissiers."
+      "66": {
+        "title": "Tshiandiku 66",
+        "body": "Chambre ne section bivandaka ne bantu basatu ne batanu ku bukese bua bungi; ba-chambres bisanganyi ne ba-sections bisanganyi bivandaka ne bantu batanu ne nsambvu ku bukese bua bungi."
       },
-      "56": {
-        "title": "Tshiandiku 56",
-        "body": "Conseil d'État ifanda ne lisalisi ya Ministère public ne lisalisi ya greffier."
+      "67": {
+        "title": "Tshiandiku 67",
+        "body": "Assemblée plénière ya tubadi tua appel tua malu a mbulamatadi tudi ne ba-magistrats bonso ba tubadi atu.\nTudi tutwadijibua ku Premier Président.\nTuvutulaka malu onso a ordre général adì atangila tubadi tuonso anyi, padi bualu bubulomba.\nAssemblée plénière tuvandaka ku bukole bua mikenji padi jurisprudence yishintuluka, padi déclinatoire ya juridiction, anyi padi bikengela kupeta dipangadika ku arrêt mu diambu dia principe."
       },
-      "57": {
-        "title": "Tshiandiku 57",
-        "body": "Mu tshifuku tsha kuleka kana kuzingama, Premier Président wa Conseil d'État ishintuluibua na Président wa section kana chambre umvua kukula."
-      },
-      "58": {
-        "title": "Tshiandiku 58",
-        "body": "Isalibua bureau wa Conseil d'État ilongololwa na Premier Président, Procureur général, Présidents ne Premiers Avocats Généraux.\nBureau wa Conseil d'État udi ne nguvu ya juridiction tshiena; ikena kushintulula esika ya chambre, ya section, kana Assemblée plénière ya Conseil d'État."
-      },
-      "59": {
-        "title": "Tshiandiku 59",
-        "body": "Bureau ipona règlement intérieur wa Conseil d'État.\nIstablisha, mu suka ya mulemo umue ne umue, rapport complète ya Conseil d'État, Cours administratives d'appel, Tribunaux administratifs ne parquets ikanguke ne babo pa mifunto ya Président wa Conseil supérieur de la magistrature."
+      "68": {
+        "title": "Tshiandiku 68",
+        "body": "Mu tubadi tuonso tua appel tua malu a mbulamatadi mudi greffier principal, udi usadibua ku greffiers divisionnaires umwe anyi bavule, greffiers umwe anyi bavule, ne ba-huissiers.\nTubadi tua appel tua malu a mbulamatadi tuvandaka ne lisalisi ya Ministère public ne ya greffier."
       }
     }
   },
   "administrativeTribunals": {
     "hero": {
-      "title": "Tribunaux<br>administratifs",
-      "body": "Organisation, composition et fonctionnement des Cours administratives d'appel conformément à la loi organique."
+      "title": "Tubadi tua appel<br>tua malu a mbulamatadi",
+      "body": "Bulongolodi, mutupo ne mushindu wa tubadi tua appel tua malu a mbulamatadi bilondeshile loi organique."
     },
     "intro": {
-      "title": "Articles 60 à 68",
-      "subtitle": "Cours administratives d'appel : création, composition et organisation"
+      "title": "Tshiandiku 60 too ne 68",
+      "subtitle": "Tubadi tua appel tua malu a mbulamatadi: dijinga, mutupo ne bulongolodi"
     },
     "section": {
-      "title": "Paragraphe 2 : De la composition et de l'organisation"
+      "title": "Paragraphe 2: Mutupo ne bulongolodi"
     },
     "articles": {
       "60": {
-        "title": "Article 60",
-        "body": "Il est créé une ou plusieurs Cours administratives d'appel dans le ressort de chaque province ainsi que dans la ville de Kinshasa, capitale de la République.\nLe ressort et le siège ordinaire de la Cour administrative d'appel sont fixés par décret du Premier ministre délibéré en Conseil des ministres."
+        "title": "Tshiandiku 60",
+        "body": "Kudi dijinga tubadi tumue anyi tunyingalaye tua appel tua malu a mbulamatadi mu ditunga dijima dia province ne mu mbanza wa Kinshasa, capitale wa République.\nMpaka wa mudimu ne tshibanza tsha tshikadilu tsha tubadi tua appel tua malu a mbulamatadi bidi bikudibua ku décret wa Premier ministre udi musangu wa Conseil des ministres."
       },
       "61": {
-        "title": "Article 61",
-        "body": "La Cour administrative d'appel est composée d'un Premier Président, d'un ou de plusieurs Présidents et des Conseillers."
+        "title": "Tshiandiku 61",
+        "body": "Tubadi tua appel tua malu a mbulamatadi tudi ne Premier Président, Président umwe anyi bavule, ne ba-Conseillers."
       },
       "62": {
-        "title": "Article 62",
-        "body": "En cas d'absence ou d'empêchement, le Premier Président est remplacé par le Président le plus ancien et le Président par le Conseiller le plus ancien.\nL'ancienneté dans le grade est réglée par la date et l'ordre de nomination."
+        "title": "Tshiandiku 62",
+        "body": "Padi Premier Président kakuikadi anyi mu mushindu wa kulemala kusala, ushaluishibua ku Président udi mukole mu bukalenge; ne Président ushaluishibua ku Conseiller udi mukole.\nBukole mu grade budi bubikidibua ku dituku ne mulongo wa nomination."
       },
       "63": {
-        "title": "Article 63",
-        "body": "Le Premier Président ou celui qui le remplace est chargé de la répartition du service."
+        "title": "Tshiandiku 63",
+        "body": "Premier Président anyi ewu udi umushintulula udi ne mudimu wa kukabanya bisalu."
       },
       "64": {
-        "title": "Article 64",
-        "body": "La Cour administrative d'appel comprend une section consultative et une section contentieuse.\nChaque section est subdivisée en chambres."
+        "title": "Tshiandiku 64",
+        "body": "Tubadi tua appel tua malu a mbulamatadi tudi ne section consultative ne section contentieuse.\nSection yonso yidi yikabudibue mu ba-chambres."
       },
       "65": {
-        "title": "Article 65",
-        "body": "Au sein de la section du contentieux, les affaires sont jugées, en nombre impair des juges, soit par une chambre, soit par des chambres réunies.\nLa Cour administrative d'appel peut, à titre exceptionnel, siéger en section ou en sections réunies pour les affaires délicates ou complexes, ou lorsque la nécessité l'exige.\nDans ce cas, elle est présidée par le Premier Président."
+        "title": "Tshiandiku 65",
+        "body": "Mu section ya contentieux, mialu yisambibua ku motango wa ba-juge udi wa impair, ku chambre kimwe anyi ku ba-chambres bidi bisanganyi.\nMu mushindu wa exception, tubadi tua appel tua malu a mbulamatadi tukadi mua kuvanda bu section anyi ba-sections bisanganyi sambu ku mialu ya lutatu anyi ya mindondo, anyi padi bualu bulelela bubulomba.\nMu tshikondo tshina, Premier Président ngudi utwadija."
       },
       "66": {
-        "title": "Article 66",
-        "body": "La chambre et la section siègent respectivement avec trois et cinq membres au moins ; les chambres réunies et les sections réunies le sont respectivement à cinq et sept membres au moins."
+        "title": "Tshiandiku 66",
+        "body": "Chambre ne section bivandaka ne bantu basatu ne batanu ku bukese bua bungi; ba-chambres bisanganyi ne ba-sections bisanganyi bivandaka ne bantu batanu ne nsambvu ku bukese bua bungi."
       },
       "67": {
-        "title": "Article 67",
-        "body": "L'Assemblée plénière de la Cour administrative d'appel comprend tous les magistrats de cette Cour.\nElle est présidée par le Premier Président.\nElle délibère sur toutes les questions d'ordre général intéressant l'ensemble de la Cour ou, lorsque la nécessité l'exige.\nL'Assemblée plénière siège, de plein droit, en cas de revirement de jurisprudence, de déclinatoire de juridiction ou lorsqu'il y a lieu de se prononcer, par arrêt, sur une question de principe."
+        "title": "Tshiandiku 67",
+        "body": "Assemblée plénière ya tubadi tua appel tua malu a mbulamatadi tudi ne ba-magistrats bonso ba tubadi atu.\nTudi tutwadijibua ku Premier Président.\nTuvutulaka malu onso a ordre général adì atangila tubadi tuonso anyi, padi bualu bubulomba.\nAssemblée plénière tuvandaka ku bukole bua mikenji padi jurisprudence yishintuluka, padi déclinatoire ya juridiction, anyi padi bikengela kupeta dipangadika ku arrêt mu diambu dia principe."
       },
       "68": {
-        "title": "Article 68",
-        "body": "Il y a dans chaque Cour administrative d'appel un greffier principal, assisté d'un ou de plusieurs greffiers divisionnaires, d'un ou de plusieurs greffiers ainsi que des huissiers.\nLa Cour administrative d'appel siège avec le concours du Ministère public et l'assistance d'un greffier."
+        "title": "Tshiandiku 68",
+        "body": "Mu tubadi tuonso tua appel tua malu a mbulamatadi mudi greffier principal, udi usadibua ku greffiers divisionnaires umwe anyi bavule, greffiers umwe anyi bavule, ne ba-huissiers.\nTubadi tua appel tua malu a mbulamatadi tuvandaka ne lisalisi ya Ministère public ne ya greffier."
       }
     }
   },

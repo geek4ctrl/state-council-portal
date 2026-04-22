@@ -20,7 +20,7 @@
       "court": "The court",
       "presentation": "Presentation",
       "organization": "Organization",
-      "administrativeCourts": "Administrative Courts",
+      "administrativeCourts": "Administrative Courts of Appeal",
       "administrativeTribunals": "Administrative Tribunals",
       "reforms": "Reforms",
       "international": "International Relations",
@@ -588,57 +588,49 @@
   },
   "administrativeCourts": {
     "hero": {
-      "title": "Administrative<br>Courts",
-      "body": "Organization, composition and functioning of administrative courts in accordance with Organic Law No. 13/011-B of April 11, 2013."
+      "title": "Administrative Courts of<br>Appeal",
+      "body": "Organization, composition and functioning of Administrative Courts of Appeal in accordance with the organic law."
     },
     "intro": {
-      "title": "Organic Law No. 13/011-B of April 11, 2013",
-      "subtitle": "Organization, composition and functioning of administrative order jurisdictions"
+      "title": "Articles 60 to 68",
+      "subtitle": "Administrative Courts of Appeal: creation, composition and organization"
     },
     "articles": {
-      "49": {
-        "title": "Article 49",
-        "body": "Each chamber comprises a President and Advisors.\nIt deliberates with the members who took part in the instruction of the case.\nIf the bench of a chamber cannot be validly composed, it is completed by calling on other Advisors."
+      "60": {
+        "title": "Article 60",
+        "body": "One or more Administrative Courts of Appeal are established within the jurisdiction of each province as well as in the city of Kinshasa, capital of the Republic.\nThe territorial jurisdiction and ordinary seat of the Administrative Court of Appeal are determined by decree of the Prime Minister deliberated in the Council of Ministers."
       },
-      "50": {
-        "title": "Article 50",
-        "body": "The appeal for annulment of acts, regulations or decisions of central administrative authorities is communicated by the First President to the litigation section or, in case of urgency, directly to the President of the competent chamber.\nThe First President informs the authority whose act, regulation or decision is challenged."
+      "61": {
+        "title": "Article 61",
+        "body": "The Administrative Court of Appeal is composed of a First President, one or more Presidents, and Advisors."
       },
-      "51": {
-        "title": "Article 51",
-        "body": "Cases before the State Council may be referred to the plenary of the section for examination, at the request of either the First President of the State Council, the President of the relevant section, the President of the competent chamber or chambers sitting jointly, or the Public Prosecutor's Office.\nCases whose instruction has been entrusted to the litigation section in accordance with this organic law are examined by the Plenary Assembly of the State Council, at the request of either the First President of the State Council, the President of the relevant section or chamber, or the Public Prosecutor's Office."
+      "62": {
+        "title": "Article 62",
+        "body": "In the event of absence or impediment, the First President is replaced by the most senior President, and the President by the most senior Advisor.\nSeniority in rank is determined by the date and order of appointment."
       },
-      "52": {
-        "title": "Article 52",
-        "body": "The consultative section consists of a Section President, Chamber Presidents and Advisors.\nIt comprises the following three chambers:\n1. The advisory chamber;\n2. The chamber for interpretation of legal texts;\n3. The chamber for studies and permanent inspection."
+      "63": {
+        "title": "Article 63",
+        "body": "The First President or the person replacing them is responsible for service allocation."
       },
-      "53": {
-        "title": "Article 53",
-        "body": "The State Council has a plenary assembly comprising all magistrates of the State Council.\nThe Plenary Assembly is chaired by the First President of the Council.\nIt deliberates on all matters of interest to the State Council as a whole or, where necessary, on all matters pertaining to a section or chamber.\nThe Plenary Assembly sits, as of right, in cases of jurisprudential reversal, jurisdictional challenge, or when a ruling on a matter of principle is required by judgment."
+      "64": {
+        "title": "Article 64",
+        "body": "The Administrative Court of Appeal comprises a consultative section and a litigation section.\nEach section is subdivided into chambers."
       },
-      "54": {
-        "title": "Article 54",
-        "body": "The First President is responsible for the administration and order within the State Council.\nIn this capacity:\n- they draft the internal regulations of the State Council;\n- they allocate matters between the two sections or between chambers;\n- they manage registry staff placed at the Council's disposal;\n- they manage the operating budget allocated to administrative order jurisdictions. They are the delegated authorizing officer."
+      "65": {
+        "title": "Article 65",
+        "body": "Within the litigation section, cases are judged by an odd number of judges, either by one chamber or by chambers sitting jointly.\nThe Administrative Court of Appeal may, exceptionally, sit as a section or as sections sitting jointly for delicate or complex cases, or whenever necessary.\nIn such case, it is presided over by the First President."
       },
-      "55": {
-        "title": "Article 55",
-        "body": "There is within the State Council a registry comprising a Chief Registrar, principal registrars, divisional registrars, registrars and bailiffs."
+      "66": {
+        "title": "Article 66",
+        "body": "The chamber and the section sit respectively with at least three and five members; chambers sitting jointly and sections sitting jointly sit respectively with at least five and seven members."
       },
-      "56": {
-        "title": "Article 56",
-        "body": "The State Council sits with the participation of the Public Prosecutor's Office and assisted by a registrar."
+      "67": {
+        "title": "Article 67",
+        "body": "The Plenary Assembly of the Administrative Court of Appeal includes all magistrates of that Court.\nIt is chaired by the First President.\nIt deliberates on all matters of general order concerning the entire Court or, where necessary.\nThe Plenary Assembly sits, as of right, in cases of reversal of jurisprudence, jurisdictional challenge, or when it must rule by judgment on a matter of principle."
       },
-      "57": {
-        "title": "Article 57",
-        "body": "In case of absence or impediment, as the case may be, the First President of the State Council is replaced by the most senior Section President or Chamber President.\nThe latter are replaced respectively, and in order, by the most senior Advisor."
-      },
-      "58": {
-        "title": "Article 58",
-        "body": "A bureau of the State Council is established, composed of the First President, the Prosecutor General, the Presidents and the Senior Advocates General.\nThe Bureau of the State Council is a deliberative and decision-making body placed at the disposal of the First President and Prosecutor General for the efficient and harmonious management of the State Council and other administrative courts.\nThe Bureau of the State Council has no jurisdictional competence; it cannot substitute for a chamber, a section, or the Plenary Assembly of the State Council."
-      },
-      "59": {
-        "title": "Article 59",
-        "body": "The Bureau approves the internal regulations of the State Council.\nAt the end of each year, it draws up a comprehensive report on the State Council, the Administrative Courts of Appeal, the Administrative Tribunals and the attached prosecutor's offices, addressed to the President of the High Council of the Judiciary, who transmits a copy to the minister responsible for justice.\nThe Bureau's report covers the activity of administrative courts, procedural progress and their implementation timelines.\nOn the occasion of submitting its report, the Bureau of the State Council informs the High Council of the Judiciary of any difficulties encountered in interpreting legal texts and proposes improvements."
+      "68": {
+        "title": "Article 68",
+        "body": "Each Administrative Court of Appeal has a principal registrar, assisted by one or more divisional registrars, one or more registrars, as well as bailiffs.\nThe Administrative Court of Appeal sits with the participation of the Public Prosecutor's Office and the assistance of a registrar."
       }
     }
   },

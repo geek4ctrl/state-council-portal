@@ -20,7 +20,7 @@
       "court": "La cour",
       "presentation": "Présentation",
       "organization": "Organisation",
-      "administrativeCourts": "Cours Administratives",
+      "administrativeCourts": "Cours administratives d'appel",
       "administrativeTribunals": "Tribunaux Administratifs",
       "reforms": "Réformes",
       "international": "Relations internationales",
@@ -588,57 +588,49 @@
   },
   "administrativeCourts": {
     "hero": {
-      "title": "Cours<br>Administratives",
-      "body": "Organisation, composition et fonctionnement des cours administratives conformément à la loi organique n° 13/011-B du 11 avril 2013."
+      "title": "Cours administratives<br>d'appel",
+      "body": "Organisation, composition et fonctionnement des Cours administratives d'appel conformément à la loi organique."
     },
     "intro": {
-      "title": "Loi organique n° 13/011-B du 11 avril 2013",
-      "subtitle": "Organisation, composition et fonctionnement des juridictions de l'ordre administratif"
+      "title": "Articles 60 à 68",
+      "subtitle": "Cours administratives d'appel : création, composition et organisation"
     },
     "articles": {
-      "49": {
-        "title": "Article 49",
-        "body": "Chaque chambre comprend un Président et des Conseillers.\nElle délibère avec les membres ayant pris part à l'instruction de la cause.\nSi le siège d'une chambre ne peut se composer valablement, il est complété en faisant appel à d'autres Conseillers."
+      "60": {
+        "title": "Article 60",
+        "body": "Il est créé une ou plusieurs Cours administratives d'appel dans le ressort de chaque province ainsi que dans la ville de Kinshasa, capitale de la République.\nLe ressort et le siège ordinaire de la Cour administrative d'appel sont fixés par décret du Premier ministre délibéré en Conseil des ministres."
       },
-      "50": {
-        "title": "Article 50",
-        "body": "Le recours en annulation des actes, règlements ou décisions des autorités administratives centrales est communiqué par le Premier Président à la section du contentieux ou, en cas d'urgence, directement au Président de la chambre compétente.\nLe Premier Président en informe l'autorité dont l'acte, le règlement ou la décision est attaquée."
+      "61": {
+        "title": "Article 61",
+        "body": "La Cour administrative d'appel est composée d'un Premier Président, d'un ou de plusieurs Présidents et des Conseillers."
       },
-      "51": {
-        "title": "Article 51",
-        "body": "Les affaires soumises au Conseil d'État peuvent être renvoyées à la plénière de la section pour examen, à la demande soit du Premier Président du Conseil d'État, soit du Président de la section concernée, soit du Président de la chambre compétente ou des chambres réunies, soit encore à la demande du Ministère public.\nLes affaires dont l'instruction a été confiée à la section du contentieux conformément à la présente loi organique sont examinées par l'Assemblée plénière du Conseil d'État, à la requête soit du Premier Président du Conseil d'État, soit du Président de la section ou de la chambre concernée, soit du Ministère public."
+      "62": {
+        "title": "Article 62",
+        "body": "En cas d'absence ou d'empêchement, le Premier Président est remplacé par le Président le plus ancien et le Président par le Conseiller le plus ancien.\nL'ancienneté dans le grade est réglée par la date et l'ordre de nomination."
       },
-      "52": {
-        "title": "Article 52",
-        "body": "La section consultative est constituée d'un Président de section, des Présidents de chambre et des Conseillers.\nElle comprend les trois chambres ci-après énumérées :\n1. La chambre des avis ;\n2. La chambre d'interprétation des textes juridiques ;\n3. La chambre d'études et d'inspection permanente."
+      "63": {
+        "title": "Article 63",
+        "body": "Le Premier Président ou celui qui le remplace est chargé de la répartition du service."
       },
-      "53": {
-        "title": "Article 53",
-        "body": "Le Conseil d'État est doté d'une assemblée plénière comprenant tous les magistrats du Conseil d'État.\nL'Assemblée plénière est dirigée par le Premier Président du Conseil.\nElle délibère sur toutes les questions intéressant l'ensemble du Conseil d'État ou, en cas de nécessité, sur toutes les questions relevant d'une section ou d'une chambre.\nL'Assemblée plénière siège, de plein droit, en cas de revirement de jurisprudence, de déclinatoire de juridiction ou lorsqu'il y a lieu de se prononcer, par arrêt, sur une question de principe."
+      "64": {
+        "title": "Article 64",
+        "body": "La Cour administrative d'appel comprend une section consultative et une section contentieuse.\nChaque section est subdivisée en chambres."
       },
-      "54": {
-        "title": "Article 54",
-        "body": "Le Premier Président est chargé de l'administration et de la police au sein du Conseil d'État.\nÀ ce titre :\n- il élabore le projet de règlement intérieur du Conseil d'État ;\n- il repartit les matières entre les deux sections ou entre les chambres ;\n- il gère le personnel de greffe mis à la disposition du Conseil ;\n- il gère le budget de fonctionnement alloué aux juridictions de l'ordre administratif. Il en est l'ordonnateur délégué."
+      "65": {
+        "title": "Article 65",
+        "body": "Au sein de la section du contentieux, les affaires sont jugées, en nombre impair des juges, soit par une chambre, soit par des chambres réunies.\nLa Cour administrative d'appel peut, à titre exceptionnel, siéger en section ou en sections réunies pour les affaires délicates ou complexes, ou lorsque la nécessité l'exige.\nDans ce cas, elle est présidée par le Premier Président."
       },
-      "55": {
-        "title": "Article 55",
-        "body": "Il existe au sein du Conseil d'État un greffe comprenant un greffier en chef, des greffiers principaux, des greffiers divisionnaires, des greffiers et des huissiers."
+      "66": {
+        "title": "Article 66",
+        "body": "La chambre et la section siègent respectivement avec trois et cinq membres au moins ; les chambres réunies et les sections réunies le sont respectivement à cinq et sept membres au moins."
       },
-      "56": {
-        "title": "Article 56",
-        "body": "Le Conseil d'État siège avec le concours du Ministère public et l'assistance d'un greffier."
+      "67": {
+        "title": "Article 67",
+        "body": "L'Assemblée plénière de la Cour administrative d'appel comprend tous les magistrats de cette Cour.\nElle est présidée par le Premier Président.\nElle délibère sur toutes les questions d'ordre général intéressant l'ensemble de la Cour ou, lorsque la nécessité l'exige.\nL'Assemblée plénière siège, de plein droit, en cas de revirement de jurisprudence, de déclinatoire de juridiction ou lorsqu'il y a lieu de se prononcer, par arrêt, sur une question de principe."
       },
-      "57": {
-        "title": "Article 57",
-        "body": "En cas d'absence ou d'empêchement, selon le cas, le Premier Président du Conseil d'État est remplacé par le Président de section ou celui de chambre le plus ancien.\nCes derniers sont remplacés respectivement, et dans l'ordre, par le Conseiller le plus ancien."
-      },
-      "58": {
-        "title": "Article 58",
-        "body": "Il est institué un bureau du Conseil d'État composé du Premier Président, du Procureur général, des Présidents et des Premiers Avocats Généraux.\nLe Bureau du Conseil d'État est un organe de réflexion et de décision mis à la disposition du Premier Président et du Procureur général pour la gestion efficiente et harmonieuse du Conseil d'État ainsi que pour celle des autres juridictions administratives.\nLe Bureau du Conseil d'État n'a pas de compétence juridictionnelle ; il ne peut se substituer ni à une chambre, ni à une section, encore moins à l'Assemblée plénière du Conseil d'État."
-      },
-      "59": {
-        "title": "Article 59",
-        "body": "Le Bureau approuve le règlement intérieur du Conseil d'État.\nIl établit, à la fin de chaque année, un rapport complet du Conseil d'État, des Cours administratives d'appel, des Tribunaux administratifs et des parquets qui y sont rattachés à l'attention du Président du Conseil supérieur de la magistrature qui en transmet une copie au ministre ayant la justice dans ses attributions.\nLe rapport du Bureau du Conseil d'État porte sur l'activité des juridictions administratives, la marche des procédures et leurs délais d'exécution.\nÀ l'occasion du dépôt de son rapport, le Bureau du Conseil d'État fait part au Conseil supérieur de la magistrature des difficultés d'interprétation des textes juridiques rencontrées et lui en propose des améliorations."
+      "68": {
+        "title": "Article 68",
+        "body": "Il y a dans chaque Cour administrative d'appel un greffier principal, assisté d'un ou de plusieurs greffiers divisionnaires, d'un ou de plusieurs greffiers ainsi que des huissiers.\nLa Cour administrative d'appel siège avec le concours du Ministère public et l'assistance d'un greffier."
       }
     }
   },

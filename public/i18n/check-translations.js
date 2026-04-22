@@ -58,6 +58,16 @@ const missingInES = enKeys.filter(k => !esKeys.includes(k));
 const missingInDE = enKeys.filter(k => !deKeys.includes(k));
 const missingInIT = enKeys.filter(k => !itKeys.includes(k));
 
+const extraInFR = frKeys.filter(k => !enKeys.includes(k));
+const extraInKG = kgKeys.filter(k => !enKeys.includes(k));
+const extraInLN = lnKeys.filter(k => !enKeys.includes(k));
+const extraInSW = swKeys.filter(k => !enKeys.includes(k));
+const extraInTS = tsKeys.filter(k => !enKeys.includes(k));
+const extraInPT = ptKeys.filter(k => !enKeys.includes(k));
+const extraInES = esKeys.filter(k => !enKeys.includes(k));
+const extraInDE = deKeys.filter(k => !enKeys.includes(k));
+const extraInIT = itKeys.filter(k => !enKeys.includes(k));
+
 console.log('\nKikongo missing:', missingInKG.length, 'keys');
 if (missingInKG.length > 0) {
   console.log('First 10:', missingInKG.slice(0, 10));
@@ -98,13 +108,76 @@ if (missingInIT.length > 0) {
   console.log('First 10:', missingInIT.slice(0, 10));
 }
 
+console.log('\n=== Extra Keys Analysis ===');
+
+console.log('\nFrench extra:', extraInFR.length, 'keys');
+if (extraInFR.length > 0) {
+  console.log('First 10:', extraInFR.slice(0, 10));
+}
+
+console.log('\nKikongo extra:', extraInKG.length, 'keys');
+if (extraInKG.length > 0) {
+  console.log('First 10:', extraInKG.slice(0, 10));
+}
+
+console.log('\nLingala extra:', extraInLN.length, 'keys');
+if (extraInLN.length > 0) {
+  console.log('First 10:', extraInLN.slice(0, 10));
+}
+
+console.log('\nSwahili extra:', extraInSW.length, 'keys');
+if (extraInSW.length > 0) {
+  console.log('First 10:', extraInSW.slice(0, 10));
+}
+
+console.log('\nTshiluba extra:', extraInTS.length, 'keys');
+if (extraInTS.length > 0) {
+  console.log('First 10:', extraInTS.slice(0, 10));
+}
+
+console.log('\nPortuguese extra:', extraInPT.length, 'keys');
+if (extraInPT.length > 0) {
+  console.log('First 10:', extraInPT.slice(0, 10));
+}
+
+console.log('\nSpanish extra:', extraInES.length, 'keys');
+if (extraInES.length > 0) {
+  console.log('First 10:', extraInES.slice(0, 10));
+}
+
+console.log('\nGerman extra:', extraInDE.length, 'keys');
+if (extraInDE.length > 0) {
+  console.log('First 10:', extraInDE.slice(0, 10));
+}
+
+console.log('\nItalian extra:', extraInIT.length, 'keys');
+if (extraInIT.length > 0) {
+  console.log('First 10:', extraInIT.slice(0, 10));
+}
+
 console.log('\n=== Completion Status ===');
-console.log('EN vs FR:', frKeys.length === enKeys.length ? '✓ Complete' : '✗ Incomplete');
-console.log('EN vs KG:', kgKeys.length === enKeys.length ? '✓ Complete' : `✗ Missing ${enKeys.length - kgKeys.length} keys`);
-console.log('EN vs LN:', lnKeys.length === enKeys.length ? '✓ Complete' : `✗ Missing ${enKeys.length - lnKeys.length} keys`);
-console.log('EN vs SW:', swKeys.length === enKeys.length ? '✓ Complete' : `✗ Missing ${enKeys.length - swKeys.length} keys`);
-console.log('EN vs TS:', tsKeys.length === enKeys.length ? '✓ Complete' : `✗ Missing ${enKeys.length - tsKeys.length} keys`);
-console.log('EN vs PT:', ptKeys.length === enKeys.length ? '✓ Complete' : `✗ Missing ${enKeys.length - ptKeys.length} keys`);
-console.log('EN vs ES:', esKeys.length === enKeys.length ? '✓ Complete' : `✗ Missing ${enKeys.length - esKeys.length} keys`);
-console.log('EN vs DE:', deKeys.length === enKeys.length ? '✓ Complete' : `✗ Missing ${enKeys.length - deKeys.length} keys`);
-console.log('EN vs IT:', itKeys.length === enKeys.length ? '✓ Complete' : `✗ Missing ${enKeys.length - itKeys.length} keys`);
+function completionStatus(missing, extra) {
+  if (missing.length === 0 && extra.length === 0) {
+    return '✓ Complete';
+  }
+
+  if (missing.length === 0) {
+    return `✓ Complete (${extra.length} extra keys)`;
+  }
+
+  if (extra.length === 0) {
+    return `✗ Missing ${missing.length} keys`;
+  }
+
+  return `✗ Missing ${missing.length} keys, ${extra.length} extra keys`;
+}
+
+console.log('EN vs FR:', completionStatus([], extraInFR));
+console.log('EN vs KG:', completionStatus(missingInKG, extraInKG));
+console.log('EN vs LN:', completionStatus(missingInLN, extraInLN));
+console.log('EN vs SW:', completionStatus(missingInSW, extraInSW));
+console.log('EN vs TS:', completionStatus(missingInTS, extraInTS));
+console.log('EN vs PT:', completionStatus(missingInPT, extraInPT));
+console.log('EN vs ES:', completionStatus(missingInES, extraInES));
+console.log('EN vs DE:', completionStatus(missingInDE, extraInDE));
+console.log('EN vs IT:', completionStatus(missingInIT, extraInIT));

@@ -3,7 +3,7 @@ import { SeoService } from '../../services/seo.service';
 import { I18nPipe } from '../../i18n/i18n.pipe';
 import { FooterComponent } from '../../components/footer/footer.component';
 
-const ARTICLE_NUMBERS = [49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59] as const;
+const ARTICLE_NUMBERS = [60, 61, 62, 63, 64, 65, 66, 67, 68] as const;
 
 @Component({
   selector: 'app-administrative-courts',
