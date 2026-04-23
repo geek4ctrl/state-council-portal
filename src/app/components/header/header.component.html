@@ -153,6 +153,11 @@
               {{ 'header.nav.news' | i18n }}
             </a>
           </li>
+          <li class="nav-item">
+            <a routerLink="/publications" routerLinkActive="active" class="nav-link" (click)="onNavLinkClick()" appPreloadOnHover="/publications">
+              {{ 'header.nav.publications' | i18n }}
+            </a>
+          </li>
           <li class="nav-item mobile-only">
             <button class="btn-appointment mobile" (click)="navigateToAppointment()">
               {{ 'header.nav.bookAppointment' | i18n }}

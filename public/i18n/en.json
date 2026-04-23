@@ -26,8 +26,9 @@
       "international": "International Relations",
       "audiences": "Audiences",
       "steps": "Steps",
-      "news": "News",
-      "bookAppointment": "Book Appointment"
+      "publications": "State Council Publications",
+      "bookAppointment": "Book Appointment",
+      "news": "News"
     }
   },
   "hero": {
