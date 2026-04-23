@@ -767,8 +767,8 @@
     },
     "recent": {
       "title": "Extractos de funciones recientes",
-        "subtitle": "Últimos extractos de audiencia",
-        "empty": "No hay extractos de rol disponibles en este momento."
+      "subtitle": "Últimos extractos de audiencia",
+      "empty": "No hay extractos de rol disponibles en este momento."
     },
     "documents": {
       "civil": {
@@ -1032,6 +1032,36 @@
           "body5": "Garantizan la confidencialidad y la integridad de los registros."
         }
       }
+    }
+  },
+  "member": {
+    "role": {
+      "president": "Presidente",
+      "advisor": "Consejero"
+    },
+    "title": {
+      "president": "Presidente",
+      "advisor": "Consejero",
+      "honoraryFirstPresident": "Primer Presidente Honorario"
+    },
+    "office": {
+      "stateCouncil": "Consejo de Estado",
+      "stateCouncilHonorary": "Consejo de Estado – Honorario"
+    },
+    "summary": {
+      "advisor": "Brinda apoyo consultivo en asuntos administrativos y judiciales.",
+      "nsensele": "Dirige la coordinación judicial y garantiza la aplicación coherente de la jurisprudencia del Consejo de Estado en las salas.",
+      "bombulu": "Supervisa la coordinación de apelaciones y orienta a la dirección de las salas en las normas procesales.",
+      "ndala": "Apoya la planificación estratégica y supervisa la alineación de políticas en las divisiones del Tribunal.",
+      "masani": "Coordina las operaciones de las salas e impulsa iniciativas de modernización procedimental.",
+      "funga": "Orienta la revisión jurisprudencial y garantiza la coherencia en las interpretaciones jurídicas.",
+      "esambo": "Dirige la supervisión de la formación y apoya el fortalecimiento de capacidades institucionales.",
+      "malenga": "Supervisa el aseguramiento de la calidad de las salas y la armonización de la jurisprudencia.",
+      "abdala": "Coordina el relacionamiento con actores jurídicos y garantiza el cumplimiento de protocolos.",
+      "kibwe": "Apoya la gobernanza de apelaciones y fortalece la coordinación institucional entre salas.",
+      "bulambo": "Impulsa la gobernanza a nivel de sala y contribuye a la coherencia procedimental en los asuntos.",
+      "odioNonde": "Ejerció como Primera Presidenta del Consejo de Estado de 2022 a 2025 y contribuyó a la consolidación institucional.",
+      "vunduawe": "Ejerció como Primer Presidente del Consejo de Estado de 2018 a 2022 y ayudó a establecer el Tribunal en sus primeros años."
     }
   }
 }

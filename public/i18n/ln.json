@@ -804,8 +804,8 @@
     },
     "recent": {
       "title": "Biteni ya liste ya sika",
-        "subtitle": "Biteni ya koyoka ya sika",
-        "empty": "Ezali na biteni ya liste te sik'oyo."
+      "subtitle": "Biteni ya koyoka ya sika",
+      "empty": "Ezali na biteni ya liste te sik'oyo."
     },
     "documents": {
       "civil": {
@@ -1081,6 +1081,36 @@
           "body5": "Ebatelaka secrete mpe bonane ya mikanda."
         }
       }
+    }
+  },
+  "member": {
+    "role": {
+      "president": "Président",
+      "advisor": "Conseiller"
+    },
+    "title": {
+      "president": "Président",
+      "advisor": "Conseiller",
+      "honoraryFirstPresident": "Premier Président Honoraire"
+    },
+    "office": {
+      "stateCouncil": "Conseil d'État",
+      "stateCouncilHonorary": "Conseil d'État – Honoraire"
+    },
+    "summary": {
+      "advisor": "Kopesa lisalisi ya bisengo na makambo ya administratif mpe ya tribunal.",
+      "nsensele": "Kotambola lisangani ya tribunal mpe kokeba toli moko ya jurisprudence ya Conseil d'État na makambi nyonso.",
+      "bombulu": "Kotala lisangani ya kasumba ya bitumba mpe kokamba bef ya makambi na mibeko ya ntalu.",
+      "ndala": "Kosalisa mabongisi ya stratégie mpe kotala toli ya makanda na ba division ya Cour.",
+      "masani": "Kolonga misala ya makambi mpe kopusana ba programme ya modernisation ya ntalu.",
+      "funga": "Kokamba talisi ya jurisprudence mpe kokeba toli ya bisimbi bya kitangwa.",
+      "esambo": "Kotambola kotala ya kofanda mpe kosalisa kobaka nguya ya kitaasisi.",
+      "malenga": "Kotala kalité ya makambi mpe toli ya jurisprudence.",
+      "abdala": "Kolonga boyokani na ba stakeholder ya kitangwa mpe kokeba toli ya ba protocole.",
+      "kibwe": "Kosalisa gouvernance ya kasumba mpe kolendisa lisangani ya kitaasisi na makambi.",
+      "bulambo": "Kolendisa gouvernance ya nkambi mpe kosalisa toli ya ntalu na bilumbu.",
+      "odioNonde": "Asalelaki nzela ya Premier Président ya Conseil d'État banda 2022 tii 2025 mpe abongisaki kitaasisi.",
+      "vunduawe": "Asalelaki nzela ya Premier Président ya Conseil d'État banda 2018 tii 2022 mpe asalaki mosala ya kotonga Cour na mibu ya ebandeli."
     }
   }
 }

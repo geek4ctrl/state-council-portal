@@ -1078,5 +1078,35 @@
         }
       }
     }
+  },
+  "member": {
+    "role": {
+      "president": "Président",
+      "advisor": "Conseiller"
+    },
+    "title": {
+      "president": "Président",
+      "advisor": "Conseiller",
+      "honoraryFirstPresident": "Premier Président Honoraire"
+    },
+    "office": {
+      "stateCouncil": "Conseil d'État",
+      "stateCouncilHonorary": "Conseil d'État – Honoraire"
+    },
+    "summary": {
+      "advisor": "Apporte un soutien consultatif en matière administrative et judiciaire.",
+      "nsensele": "Dirige la coordination judiciaire et assure une application cohérente de la jurisprudence du Conseil d'État au sein des chambres.",
+      "bombulu": "Supervise la coordination des recours et guide les présidents de chambre sur les normes procédurales.",
+      "ndala": "Appuie la planification stratégique et supervise l'alignement des politiques au sein des divisions de la Cour.",
+      "masani": "Coordonne les opérations des chambres et pilote les initiatives de modernisation procédurale.",
+      "funga": "Oriente l'examen jurisprudentiel et assure la cohérence des interprétations juridiques.",
+      "esambo": "Pilote la supervision de la formation et appuie le renforcement des capacités institutionnelles.",
+      "malenga": "Supervise l'assurance qualité des chambres et l'harmonisation de la jurisprudence.",
+      "abdala": "Coordonne les relations avec les parties prenantes juridiques et veille au respect des protocoles.",
+      "kibwe": "Appuie la gouvernance des recours et renforce la coordination institutionnelle interchambre.",
+      "bulambo": "Assure la gouvernance au niveau des chambres et contribue à la cohérence procédurale dans les affaires.",
+      "odioNonde": "A exercé les fonctions de Premier Président du Conseil d'État de 2022 à 2025 et a contribué à la consolidation institutionnelle.",
+      "vunduawe": "A exercé les fonctions de Premier Président du Conseil d'État de 2018 à 2022 et a participé à l'établissement de la Cour dans ses premières années."
+    }
   }
 }

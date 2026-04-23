@@ -804,8 +804,8 @@
     },
     "recent": {
       "title": "Biteni ya liste ya sika",
-        "subtitle": "Biteni ya koyoka ya sika",
-        "empty": "Ezali na biteni ya liste te sik'oyo."
+      "subtitle": "Biteni ya koyoka ya sika",
+      "empty": "Ezali na biteni ya liste te sik'oyo."
     },
     "documents": {
       "civil": {
@@ -1081,6 +1081,36 @@
           "body5": "Ya ke batela secrete mpe bonso ya mikanda."
         }
       }
+    }
+  },
+  "member": {
+    "role": {
+      "president": "Président",
+      "advisor": "Conseiller"
+    },
+    "title": {
+      "president": "Président",
+      "advisor": "Conseiller",
+      "honoraryFirstPresident": "Premier Président Honoraire"
+    },
+    "office": {
+      "stateCouncil": "Conseil d'État",
+      "stateCouncilHonorary": "Conseil d'État – Honoraire"
+    },
+    "summary": {
+      "advisor": "Kutisa nsadisu ya kalulu mu mabongi ya administratif ne ya kitangwa.",
+      "nsensele": "Kutamba malongi ya kitangwa ne kutadila luse lwa nsadisu ya Conseil d'État mu makambi yonso.",
+      "bombulu": "Kutadila malongi ya kasumba ya bitumba ne kukamba ba chef ya makambi mu mabongi ya ntalu.",
+      "ndala": "Kusadisa mabongi ya estratégie ne kutadila luse lwa makanda mu ba division ya Cour.",
+      "masani": "Kutamba misala ya makambi ne kukamba ba programme ya modernisation ya ntalu.",
+      "funga": "Kukamba luse lwa jurisprudence ne kutadila luse lwa bisemono bya kitangwa.",
+      "esambo": "Kutamba lutadisi ya mafunzo ne kusadisa kutunga nguvu za kitaasisi.",
+      "malenga": "Kutadila kalidad ya makambi ne luse lwa jurisprudence.",
+      "abdala": "Kutamba lusambwisi na ba stakeholder ya kitangwa ne kutadila luse lwa ba protocole.",
+      "kibwe": "Kusadisa gouvernance ya kasumba ne kukuba malongi ya kitaasisi na makambi.",
+      "bulambo": "Kukamba gouvernance ya nkambi ne kusadisa luse lwa ntalu mu bilumbu.",
+      "odioNonde": "Wasumba lufumu lwa Premier Président ya Conseil d'État kua 2022 na 2025 ne watunga nguzu za kitaasisi.",
+      "vunduawe": "Wasumba lufumu lwa Premier Président ya Conseil d'État kua 2018 na 2022 ne wakukulula Cour mu mvula ya ntete."
     }
   }
 }

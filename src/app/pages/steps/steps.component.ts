@@ -51,7 +51,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
           <div class="container">
             <div class="hero-grid">
               <div class="hero-left">
-                <h1 [innerHTML]="'steps.hero.appeal.title' | i18n"></h1>
+                <h1 class="appeal-hero-title" [innerHTML]="'steps.hero.appeal.title' | i18n"></h1>
               </div>
               <div class="vertical-line"></div>
               <div class="hero-right">
@@ -427,6 +427,14 @@ import { FooterComponent } from '../../components/footer/footer.component';
     }
 
     .hero-left h1.report-hero-title {
+      margin: 0;
+      font-size: clamp(1.8rem, 4vw, 2.9rem);
+      font-weight: 700;
+      letter-spacing: 2px;
+      color: #ffffff;
+    }
+
+    .hero-left h1.appeal-hero-title {
       margin: 0;
       font-size: clamp(1.8rem, 4vw, 2.9rem);
       font-weight: 700;
@@ -878,7 +886,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
         display: none;
       }
 
-      .hero-left h1:not(.report-hero-title) {
+      .hero-left h1:not(.report-hero-title):not(.appeal-hero-title) {
         font-size: 3rem;
       }
     }
@@ -888,7 +896,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
         padding: 80px 0;
       }
 
-      .hero-left h1:not(.report-hero-title) {
+      .hero-left h1:not(.report-hero-title):not(.appeal-hero-title) {
         font-size: 2.5rem;
       }
 
@@ -963,7 +971,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
         padding: 60px 0;
       }
 
-      .hero-left h1:not(.report-hero-title) {
+      .hero-left h1:not(.report-hero-title):not(.appeal-hero-title) {
         font-size: 2rem;
         letter-spacing: 2px;
       }

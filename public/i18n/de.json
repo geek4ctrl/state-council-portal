@@ -804,8 +804,8 @@
     },
     "recent": {
       "title": "Aktuelle rollenauszüge",
-        "subtitle": "Neueste anhörungsauszüge",
-        "empty": "Derzeit sind keine Rollenauszüge verfügbar."
+      "subtitle": "Neueste anhörungsauszüge",
+      "empty": "Derzeit sind keine Rollenauszüge verfügbar."
     },
     "documents": {
       "civil": {
@@ -1081,6 +1081,36 @@
           "body5": "Sie gewährleisten Vertraulichkeit und Integrität der Akten."
         }
       }
+    }
+  },
+  "member": {
+    "role": {
+      "president": "Präsident",
+      "advisor": "Berater"
+    },
+    "title": {
+      "president": "Präsident",
+      "advisor": "Berater",
+      "honoraryFirstPresident": "Erster Ehrenpräsident"
+    },
+    "office": {
+      "stateCouncil": "Staatsrat",
+      "stateCouncilHonorary": "Staatsrat – Ehrenamt"
+    },
+    "summary": {
+      "advisor": "Bietet beratende Unterstützung in verwaltungs- und gerichtlichen Angelegenheiten.",
+      "nsensele": "Leitet die justizielle Koordination und gewährleistet eine einheitliche Anwendung der Rechtsprechung des Staatsrates in den Kammern.",
+      "bombulu": "Überwacht die Koordination von Berufungsverfahren und berät die Kammerleitungen zu Verfahrensstandards.",
+      "ndala": "Unterstützt die strategische Planung und überwacht die Politikausrichtung in den Abteilungen des Gerichts.",
+      "masani": "Koordiniert die Kammeroperationen und treibt Initiativen zur Verfahrensmodernisierung voran.",
+      "funga": "Leitet die Überprüfung der Rechtsprechung und sorgt für Konsistenz in der Rechtsauslegung.",
+      "esambo": "Leitet die Ausbildungsaufsicht und unterstützt den institutionellen Kapazitätsaufbau.",
+      "malenga": "Überwacht die Qualitätssicherung der Kammern und die Harmonisierung der Rechtsprechung.",
+      "abdala": "Koordiniert die Kontakte zu Rechtsakteuren und gewährleistet die Protokolleinhaltung.",
+      "kibwe": "Unterstützt die Berufungsgovernance und stärkt die kammerübergreifende institutionelle Koordination.",
+      "bulambo": "Treibt die kammerbezogene Governance voran und trägt zur Verfahrenskonsistenz bei.",
+      "odioNonde": "War von 2022 bis 2025 Erste Präsidentin des Staatsrates und trug zur institutionellen Konsolidierung bei.",
+      "vunduawe": "War von 2018 bis 2022 Erster Präsident des Staatsrates und half beim Aufbau des Gerichts in seinen Anfangsjahren."
     }
   }
 }
