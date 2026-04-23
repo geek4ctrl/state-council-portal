@@ -141,7 +141,7 @@ type HighchartsStatic = typeof import('highcharts');
                   [routerLink]="['/news', post.id]"
                 >
                   <div class="nl-img-wrap img-zoom">
-                    <img [src]="post.image" [alt]="post.title" />
+                    <img [src]="post.image" [alt]="post.title" loading="lazy" />
                     <div class="img-sheen"></div>
                     <div class="nl-img-badge">{{ post.date }} | {{ post.category }}</div>
                     <div class="nl-img-scan"></div>
@@ -176,7 +176,7 @@ type HighchartsStatic = typeof import('highcharts');
                   tabindex="-1"
                 >
                   <div class="nl-img-wrap img-zoom">
-                    <img [src]="post.image" [alt]="''" />
+                    <img [src]="post.image" [alt]="''" loading="lazy" />
                     <div class="img-sheen"></div>
                     <div class="nl-img-badge">{{ post.date }} | {{ post.category }}</div>
                     <div class="nl-img-scan"></div>
