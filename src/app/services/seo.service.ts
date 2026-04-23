@@ -1,7 +1,8 @@
 import { Injectable, inject } from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
-import { Router, NavigationEnd } from '@angular/router';
+import { Router, NavigationEnd, ActivatedRoute } from '@angular/router';
 import { filter } from 'rxjs/operators';
+import { I18nService } from '../i18n/i18n.service';
 
 export interface PageMetadata {
   title: string;
@@ -20,17 +21,35 @@ export class SeoService {
   private titleService = inject(Title);
   private metaService = inject(Meta);
   private router = inject(Router);
+  private activatedRoute = inject(ActivatedRoute);
+  private i18n = inject(I18nService);
 
   private readonly baseTitle = 'Conseil d\'État - République Démocratique du Congo';
   private readonly baseUrl = 'https://conseildetatrdc.com';
+  private readonly defaultDescription = 'The State Council of the Democratic Republic of the Congo is the highest court of the administrative order, with advisory and jurisdictional authority.';
 
   constructor() {
-    // Update canonical URL on navigation
     this.router.events
       .pipe(filter(event => event instanceof NavigationEnd))
       .subscribe((event: NavigationEnd) => {
         this.updateCanonicalUrl(event.urlAfterRedirects);
+        this.updateRouteMetadata();
       });
+  }
+
+  private updateRouteMetadata(): void {
+    let route = this.activatedRoute.root;
+    while (route.firstChild) {
+      route = route.firstChild;
+    }
+    const data = route.snapshot.data;
+    const titleKey = data['titleKey'] as string | undefined;
+    const descriptionKey = data['descriptionKey'] as string | undefined;
+
+    const title = titleKey ? this.i18n.translate(titleKey) : '';
+    const description = descriptionKey ? this.i18n.translate(descriptionKey) : this.defaultDescription;
+
+    this.updateMetadata({ title, description });
   }
 
   updateMetadata(metadata: PageMetadata): void {

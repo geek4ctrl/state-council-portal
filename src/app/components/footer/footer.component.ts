@@ -1,4 +1,5 @@
 import { Component, computed, inject } from '@angular/core';
+import { RouterLink } from '@angular/router';
 import { I18nService } from '../../i18n/i18n.service';
 import { I18nPipe } from '../../i18n/i18n.pipe';
 import { CommonModule } from '@angular/common';
@@ -6,7 +7,7 @@ import { CommonModule } from '@angular/common';
 @Component({
   selector: 'app-footer',
   standalone: true,
-  imports: [CommonModule, I18nPipe],
+  imports: [CommonModule, I18nPipe, RouterLink],
   template: `
     <footer class="footer-section">
       <div class="footer-main">
@@ -27,16 +28,16 @@ import { CommonModule } from '@angular/common';
               <h3>{{ 'footer.quickLinks.title' | i18n }}</h3>
               <ul>
                 <li>
-                  <a href="#">{{ 'footer.quickLinks.about' | i18n }}</a>
+                  <a routerLink="/presentation">{{ 'footer.quickLinks.about' | i18n }}</a>
                 </li>
                 <li>
-                  <a href="#">{{ 'footer.quickLinks.jurisprudence' | i18n }}</a>
+                  <a routerLink="/judges">{{ 'footer.quickLinks.jurisprudence' | i18n }}</a>
                 </li>
                 <li>
-                  <a href="#">{{ 'footer.quickLinks.filing' | i18n }}</a>
+                  <a routerLink="/steps">{{ 'footer.quickLinks.filing' | i18n }}</a>
                 </li>
                 <li>
-                  <a href="#">{{ 'footer.quickLinks.contact' | i18n }}</a>
+                  <a routerLink="/steps">{{ 'footer.quickLinks.contact' | i18n }}</a>
                 </li>
               </ul>
             </div>
@@ -44,16 +45,16 @@ import { CommonModule } from '@angular/common';
               <h3>{{ 'footer.resources.title' | i18n }}</h3>
               <ul>
                 <li>
-                  <a href="#">{{ 'footer.resources.legalDocs' | i18n }}</a>
+                  <a routerLink="/process">{{ 'footer.resources.legalDocs' | i18n }}</a>
                 </li>
                 <li>
-                  <a href="#">{{ 'footer.resources.decisions' | i18n }}</a>
+                  <a routerLink="/news">{{ 'footer.resources.decisions' | i18n }}</a>
                 </li>
                 <li>
-                  <a href="#">{{ 'footer.resources.reports' | i18n }}</a>
+                  <a routerLink="/news">{{ 'footer.resources.reports' | i18n }}</a>
                 </li>
                 <li>
-                  <a href="#">{{ 'footer.resources.faqs' | i18n }}</a>
+                  <a routerLink="/steps">{{ 'footer.resources.faqs' | i18n }}</a>
                 </li>
               </ul>
             </div>
@@ -78,7 +79,7 @@ import { CommonModule } from '@angular/common';
       <div class="footer-bottom">
         <div class="footer-inner">
           <div class="footer-bottom-content">
-            <a href="#" class="privacy-link">{{ 'footer.privacy' | i18n }}</a>
+            <a routerLink="/presentation" class="privacy-link">{{ 'footer.privacy' | i18n }}</a>
             <p class="copyright">{{ 'footer.copyright' | i18n }}</p>
             <div class="social-icons">
               <a href="https://www.facebook.com/ConseilEtatRDC/" target="_blank" rel="noopener noreferrer" class="social-icon">

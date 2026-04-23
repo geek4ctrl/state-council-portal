@@ -62,14 +62,13 @@ type HighchartsStatic = typeof import('highcharts');
         <div
           class="hero-bg hero-bg-prev"
           [class.fade-out]="isSlideTransitioning()"
-          [style.background-image]="'url(' + heroSlides[prevHeroSlide()].image + ')'"
+          [style.background-image]="responsiveHeroBg(heroSlides[prevHeroSlide()].image)"
         ></div>
         <div
           class="hero-bg hero-bg-current"
-          [style.background-image]="'url(' + heroSlides[currentSlide()].image + ')'"
+          [style.background-image]="responsiveHeroBg(heroSlides[currentSlide()].image)"
         ></div>
         <div class="hero-fog"></div>
-        <canvas class="hero-canvas" #heroCanvas></canvas>
         <div class="hero-body">
           <div class="container">
             <div class="hero-text">
@@ -128,7 +127,6 @@ type HighchartsStatic = typeof import('highcharts');
 
       <!-- ═══ NEWSLETTER ═══ -->
       <section class="nl-section">
-        <div class="nl-scanlines"></div>
         <div class="container">
           <div class="nl-head">
             <div class="nl-line anim-line-c"></div>
@@ -139,12 +137,9 @@ type HighchartsStatic = typeof import('highcharts');
             <div class="nl-track">
               @for (post of newsletterPosts(); track post.id) {
                 <a
-                  class="nl-card tilt-card"
+                  class="nl-card"
                   [routerLink]="['/news', post.id]"
-                  (mousemove)="tilt($event)"
-                  (mouseleave)="tiltReset($event)"
                 >
-                  <div class="tilt-shine"></div>
                   <div class="nl-img-wrap img-zoom">
                     <img [src]="post.image" [alt]="post.title" />
                     <div class="img-sheen"></div>
@@ -175,14 +170,11 @@ type HighchartsStatic = typeof import('highcharts');
               }
               @for (post of newsletterPosts(); track post.id + '-clone') {
                 <a
-                  class="nl-card tilt-card"
+                  class="nl-card"
                   [routerLink]="['/news', post.id]"
                   aria-hidden="true"
                   tabindex="-1"
-                  (mousemove)="tilt($event)"
-                  (mouseleave)="tiltReset($event)"
                 >
-                  <div class="tilt-shine"></div>
                   <div class="nl-img-wrap img-zoom">
                     <img [src]="post.image" [alt]="''" />
                     <div class="img-sheen"></div>
@@ -217,8 +209,7 @@ type HighchartsStatic = typeof import('highcharts');
             <a
               routerLink="/news"
               class="nl-btn mag-btn"
-              (mousemove)="mag($event)"
-              (mouseleave)="magOut($event)"
+              
               (click)="ripple($event)"
             >
               <span>{{ 'home.newsletter.cta' | i18n }}</span>
@@ -304,13 +295,10 @@ type HighchartsStatic = typeof import('highcharts');
           <p class="sec-sub center anim-up a-d1">{{ 'home.expertise.subtitle' | i18n }}</p>
           <div class="exp-grid">
             <a
-              class="exp-card tilt-card accent-civil"
+              class="exp-card accent-civil"
               href="#"
               style="--i:0"
-              (mousemove)="tilt($event)"
-              (mouseleave)="tiltReset($event)"
             >
-              <div class="tilt-shine"></div>
               <div class="exp-card-accent-bar"></div>
               <div class="exp-card-depth"></div>
               <div class="exp-icon-wrap">
@@ -336,13 +324,10 @@ type HighchartsStatic = typeof import('highcharts');
               >
             </a>
             <a
-              class="exp-card tilt-card accent-family"
+              class="exp-card accent-family"
               href="#"
               style="--i:1"
-              (mousemove)="tilt($event)"
-              (mouseleave)="tiltReset($event)"
             >
-              <div class="tilt-shine"></div>
               <div class="exp-card-accent-bar"></div>
               <div class="exp-card-depth"></div>
               <div class="exp-icon-wrap">
@@ -370,13 +355,10 @@ type HighchartsStatic = typeof import('highcharts');
               >
             </a>
             <a
-              class="exp-card tilt-card accent-public"
+              class="exp-card accent-public"
               href="#"
               style="--i:2"
-              (mousemove)="tilt($event)"
-              (mouseleave)="tiltReset($event)"
             >
-              <div class="tilt-shine"></div>
               <div class="exp-card-accent-bar"></div>
               <div class="exp-card-depth"></div>
               <div class="exp-icon-wrap">
@@ -403,13 +385,10 @@ type HighchartsStatic = typeof import('highcharts');
               >
             </a>
             <a
-              class="exp-card tilt-card accent-labor"
+              class="exp-card accent-labor"
               href="#"
               style="--i:3"
-              (mousemove)="tilt($event)"
-              (mouseleave)="tiltReset($event)"
             >
-              <div class="tilt-shine"></div>
               <div class="exp-card-accent-bar"></div>
               <div class="exp-card-depth"></div>
               <div class="exp-icon-wrap">
@@ -434,13 +413,10 @@ type HighchartsStatic = typeof import('highcharts');
               >
             </a>
             <a
-              class="exp-card tilt-card accent-criminal"
+              class="exp-card accent-criminal"
               href="#"
               style="--i:4"
-              (mousemove)="tilt($event)"
-              (mouseleave)="tiltReset($event)"
             >
-              <div class="tilt-shine"></div>
               <div class="exp-card-accent-bar"></div>
               <div class="exp-card-depth"></div>
               <div class="exp-icon-wrap">
@@ -469,13 +445,10 @@ type HighchartsStatic = typeof import('highcharts');
               >
             </a>
             <a
-              class="exp-card tilt-card accent-property"
+              class="exp-card accent-property"
               href="#"
               style="--i:5"
-              (mousemove)="tilt($event)"
-              (mouseleave)="tiltReset($event)"
             >
-              <div class="tilt-shine"></div>
               <div class="exp-card-accent-bar"></div>
               <div class="exp-card-depth"></div>
               <div class="exp-icon-wrap">
@@ -510,8 +483,8 @@ type HighchartsStatic = typeof import('highcharts');
         <div class="pres-aurora pres-a3"></div>
         <div class="container">
           <div class="pres-layout">
-            <div class="pres-img-stage" (mousemove)="tilt($event)" (mouseleave)="tiltReset($event)">
-              <div class="tilt-shine"></div>
+            <div class="pres-img-stage" >
+              
               <div class="pres-img-frame">
                 <img
                   [src]="presSlides[currentPresSlide()].image"
@@ -529,8 +502,7 @@ type HighchartsStatic = typeof import('highcharts');
               }
               <button
                 class="pres-btn mag-btn"
-                (mousemove)="mag($event)"
-                (mouseleave)="magOut($event)"
+                
                 (click)="ripple($event)"
               >
                 <span>{{ 'home.president.cta' | i18n }}</span>
@@ -707,13 +679,12 @@ type HighchartsStatic = typeof import('highcharts');
           <p class="sec-sub anim-up a-d1">{{ 'home.keyFacts.subtitle' | i18n }}</p>
           <div class="kf-grid">
             <div
-              class="kf-card tilt-card"
+              class="kf-card"
               style="--i:0"
-              (mousemove)="tilt($event)"
-              (mouseleave)="tiltReset($event)"
+              
             >
-              <div class="tilt-shine"></div>
-              <div class="tilt-shadow"></div>
+              
+              
               <div class="kf-meta">
                 <h3>{{ 'home.keyFacts.cards.volume.title' | i18n }}</h3>
                 <span class="kf-tag">{{ 'home.keyFacts.cards.volume.note' | i18n }}</span>
@@ -728,13 +699,12 @@ type HighchartsStatic = typeof import('highcharts');
               <div class="card-edge-b"></div>
             </div>
             <div
-              class="kf-card tilt-card"
+              class="kf-card"
               style="--i:1"
-              (mousemove)="tilt($event)"
-              (mouseleave)="tiltReset($event)"
+              
             >
-              <div class="tilt-shine"></div>
-              <div class="tilt-shadow"></div>
+              
+              
               <div class="kf-meta">
                 <h3>{{ 'home.keyFacts.cards.processing.title' | i18n }}</h3>
                 <span class="kf-tag">{{ 'home.keyFacts.cards.processing.note' | i18n }}</span>
@@ -749,13 +719,12 @@ type HighchartsStatic = typeof import('highcharts');
               <div class="card-edge-b"></div>
             </div>
             <div
-              class="kf-card tilt-card"
+              class="kf-card"
               style="--i:2"
-              (mousemove)="tilt($event)"
-              (mouseleave)="tiltReset($event)"
+              
             >
-              <div class="tilt-shine"></div>
-              <div class="tilt-shadow"></div>
+              
+              
               <div class="kf-meta">
                 <h3>{{ 'home.keyFacts.cards.decisions.title' | i18n }}</h3>
                 <span class="kf-tag">{{ 'home.keyFacts.cards.decisions.note' | i18n }}</span>
@@ -1043,14 +1012,6 @@ type HighchartsStatic = typeof import('highcharts');
           opacity: 0;
         }
       }
-      @keyframes scanline {
-        from {
-          background-position: 0 0;
-        }
-        to {
-          background-position: 0 40px;
-        }
-      }
       @keyframes gridMove {
         from {
           background-position: 0 0;
@@ -1261,12 +1222,6 @@ type HighchartsStatic = typeof import('highcharts');
           rgba(0, 18, 45, 0.4) 100%
         );
         z-index: 1;
-      }
-      .hero-canvas {
-        position: absolute;
-        inset: 0;
-        pointer-events: none;
-        z-index: 2;
       }
       .hero-body {
         position: relative;
@@ -1526,42 +1481,14 @@ type HighchartsStatic = typeof import('highcharts');
         animation: shimmerSweep 2s ease infinite;
       }
 
-      /* ━━━━━━━━━━━━━━ SHARED TILT CARD ━━━━━━━━━━━━━━ */
-      .tilt-card {
-        transform-style: preserve-3d;
-        will-change: transform;
-        transition:
-          transform 0.5s cubic-bezier(0.23, 1, 0.32, 1),
-          box-shadow 0.5s ease;
+      /* ━━━━━━━━━━━━━━ SHARED CARD ENTRANCE ━━━━━━━━━━━━━━ */
+      .nl-card,
+      .exp-card,
+      .kf-card {
         opacity: 0;
         animation: cardIn 0.7s cubic-bezier(0.23, 1, 0.32, 1) calc(var(--i, 0) * 0.1s) forwards;
         position: relative;
         overflow: hidden;
-      }
-      .tilt-shine {
-        position: absolute;
-        inset: 0;
-        border-radius: inherit;
-        pointer-events: none;
-        z-index: 10;
-        background: linear-gradient(
-          105deg,
-          transparent 0%,
-          rgba(255, 255, 255, 0) 45%,
-          rgba(255, 255, 255, 0.18) 50%,
-          rgba(255, 255, 255, 0) 55%,
-          transparent 100%
-        );
-        transform: translateX(-120%) skewX(-20deg);
-      }
-      .tilt-shadow {
-        position: absolute;
-        inset: 0;
-        border-radius: inherit;
-        pointer-events: none;
-        z-index: -1;
-        box-shadow: 0 30px 60px rgba(0, 0, 0, 0);
-        transition: box-shadow 0.5s ease;
       }
 
       /* ━━━━━━━━━━━━━━ KEY FACTS ━━━━━━━━━━━━━━ */
@@ -1655,8 +1582,8 @@ type HighchartsStatic = typeof import('highcharts');
         opacity: 0;
         transition: opacity 0.3s ease;
       }
-      .tilt-card:hover .card-edge-r,
-      .tilt-card:hover .card-edge-b {
+      .kf-card:hover .card-edge-r,
+      .kf-card:hover .card-edge-b {
         opacity: 1;
       }
 
@@ -2381,7 +2308,7 @@ type HighchartsStatic = typeof import('highcharts');
         object-fit: cover;
         transition: transform 0.6s ease;
       }
-      .tilt-card:hover .pres-img-frame img {
+      .pres-img-stage:hover .pres-img-frame img {
         transform: scale(1.05);
       }
       .pres-img-overlay {
@@ -2401,7 +2328,7 @@ type HighchartsStatic = typeof import('highcharts');
         transition: opacity 0.4s ease;
         pointer-events: none;
       }
-      .tilt-card:hover .pres-img-grid {
+      .pres-img-stage:hover .pres-img-grid {
         opacity: 1;
       }
       .pres-img-shadow {
@@ -2417,7 +2344,7 @@ type HighchartsStatic = typeof import('highcharts');
           transform 0.5s ease,
           opacity 0.5s ease;
       }
-      .tilt-card:hover .pres-img-shadow {
+      .pres-img-stage:hover .pres-img-shadow {
         transform: translateY(8px) scaleX(0.9);
         opacity: 0.6;
       }
@@ -2562,19 +2489,6 @@ type HighchartsStatic = typeof import('highcharts');
         background: #fff;
         position: relative;
         overflow: hidden;
-      }
-      .nl-scanlines {
-        position: absolute;
-        inset: 0;
-        pointer-events: none;
-        background: repeating-linear-gradient(
-          0deg,
-          rgba(191, 152, 116, 0.03) 0,
-          rgba(191, 152, 116, 0.03) 1px,
-          transparent 1px,
-          transparent 40px
-        );
-        animation: scanline 3s linear infinite;
       }
       .nl-section .container {
         position: relative;
@@ -5265,9 +5179,6 @@ export class HomeComponent implements OnInit, AfterViewInit {
   private highchartsRoot?: HighchartsStatic;
   private chartLoadObserver?: IntersectionObserver;
   private chartsInitialized = false;
-  private heroCanvasRafId?: number;
-  private heroCanvasResizeHandler?: () => void;
-  private heroCanvasVisibilityHandler?: () => void;
   private readonly onVisibility = () => {
     if (!document.hidden) this.charts.forEach((c) => c.reflow());
   };
@@ -5282,7 +5193,6 @@ export class HomeComponent implements OnInit, AfterViewInit {
   @ViewChild('caseVolumeChart', { static: true }) chartA!: ElementRef<HTMLDivElement>;
   @ViewChild('processingTimeChart', { static: true }) chartB!: ElementRef<HTMLDivElement>;
   @ViewChild('decisionsTypeChart', { static: true }) chartC!: ElementRef<HTMLDivElement>;
-  @ViewChild('heroCanvas') heroCanvas!: ElementRef<HTMLCanvasElement>;
   currentSlide = signal(0);
   prevHeroSlide = signal(0);
   isSlideTransitioning = signal(false);
@@ -5348,145 +5258,17 @@ export class HomeComponent implements OnInit, AfterViewInit {
   ngAfterViewInit() {
     this.setupObservers();
     this.initChartsOnView();
-    this.initHeroCanvas();
     this.destroyRef.onDestroy(() => {
       this.charts.forEach((c) => c.destroy());
       this.charts = [];
       this.chartLoadObserver?.disconnect();
       this.chartLoadObserver = undefined;
-      if (this.heroCanvasRafId) {
-        cancelAnimationFrame(this.heroCanvasRafId);
-        this.heroCanvasRafId = undefined;
-      }
-      if (this.heroCanvasResizeHandler) {
-        window.removeEventListener('resize', this.heroCanvasResizeHandler);
-        this.heroCanvasResizeHandler = undefined;
-      }
-      if (this.heroCanvasVisibilityHandler) {
-        document.removeEventListener('visibilitychange', this.heroCanvasVisibilityHandler);
-        this.heroCanvasVisibilityHandler = undefined;
-      }
       document.removeEventListener('visibilitychange', this.onVisibility);
       this.resizeObserver?.disconnect();
     });
   }
 
-  private initHeroCanvas() {
-    if (typeof window === 'undefined' || typeof document === 'undefined') return;
-    const prefersReducedMotion =
-      window.matchMedia?.('(prefers-reduced-motion: reduce)').matches ?? false;
-    if (prefersReducedMotion) return;
-    const canvas = this.heroCanvas?.nativeElement;
-    if (!canvas) return;
-    const ctx = canvas.getContext('2d');
-    if (!ctx) return;
-    let W = (canvas.width = canvas.offsetWidth);
-    let H = (canvas.height = canvas.offsetHeight);
-    const particles: {
-      x: number;
-      y: number;
-      vx: number;
-      vy: number;
-      size: number;
-      alpha: number;
-      decay: number;
-    }[] = [];
-    for (let i = 0; i < 55; i++) {
-      particles.push({
-        x: Math.random() * W,
-        y: Math.random() * H,
-        vx: (Math.random() - 0.5) * 0.4,
-        vy: -Math.random() * 0.5 - 0.1,
-        size: Math.random() * 2.5 + 0.5,
-        alpha: Math.random() * 0.6 + 0.2,
-        decay: Math.random() * 0.003 + 0.001,
-      });
-    }
-    const draw = () => {
-      ctx.clearRect(0, 0, W, H);
-      particles.forEach((p) => {
-        p.x += p.vx;
-        p.y += p.vy;
-        p.alpha -= p.decay;
-        if (p.alpha <= 0) {
-          p.alpha = Math.random() * 0.6 + 0.2;
-          p.x = Math.random() * W;
-          p.y = H + 10;
-        }
-        ctx.beginPath();
-        ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
-        ctx.fillStyle = `rgba(184,134,11,${p.alpha})`;
-        ctx.fill();
-      });
-      this.heroCanvasRafId = requestAnimationFrame(draw);
-    };
 
-    const start = () => {
-      if (this.heroCanvasRafId || document.hidden) return;
-      this.heroCanvasRafId = requestAnimationFrame(draw);
-    };
-
-    const stop = () => {
-      if (!this.heroCanvasRafId) return;
-      cancelAnimationFrame(this.heroCanvasRafId);
-      this.heroCanvasRafId = undefined;
-    };
-
-    this.heroCanvasResizeHandler = () => {
-      W = canvas.width = canvas.offsetWidth;
-      H = canvas.height = canvas.offsetHeight;
-    };
-    window.addEventListener('resize', this.heroCanvasResizeHandler);
-
-    this.heroCanvasVisibilityHandler = () => {
-      if (document.hidden) {
-        stop();
-      } else {
-        start();
-      }
-    };
-    document.addEventListener('visibilitychange', this.heroCanvasVisibilityHandler);
-    start();
-  }
-
-  tilt(e: MouseEvent) {
-    const el = e.currentTarget as HTMLElement;
-    const r = el.getBoundingClientRect();
-    const dx = (e.clientX - r.left - r.width / 2) / (r.width / 2);
-    const dy = (e.clientY - r.top - r.height / 2) / (r.height / 2);
-    const tx = -dy * 14;
-    const ty = dx * 14;
-    el.style.transform = `perspective(900px) rotateX(${tx}deg) rotateY(${ty}deg) translateZ(14px)`;
-    el.style.boxShadow = `${-ty * 1.5}px ${tx * 1.5}px 50px rgba(0,0,0,.18), 0 25px 60px rgba(184,134,11,.12)`;
-    const shine = el.querySelector<HTMLElement>('.tilt-shine');
-    if (shine) {
-      shine.style.transform = `translateX(${dx * 60}%) translateY(${dy * 40}%) skewX(-20deg)`;
-      shine.style.opacity = '.7';
-    }
-  }
-
-  tiltReset(e: MouseEvent) {
-    const el = e.currentTarget as HTMLElement;
-    el.style.transform = '';
-    el.style.boxShadow = '';
-    const shine = el.querySelector<HTMLElement>('.tilt-shine');
-    if (shine) {
-      shine.style.transform = 'translateX(-120%) skewX(-20deg)';
-      shine.style.opacity = '0';
-    }
-  }
-
-  mag(e: MouseEvent) {
-    const el = e.currentTarget as HTMLElement;
-    const r = el.getBoundingClientRect();
-    const dx = (e.clientX - r.left - r.width / 2) * 0.4;
-    const dy = (e.clientY - r.top - r.height / 2) * 0.4;
-    el.style.transform = `translate(${dx}px,${dy}px)`;
-  }
-
-  magOut(e: MouseEvent) {
-    (e.currentTarget as HTMLElement).style.transform = '';
-  }
 
   ripple(e: MouseEvent) {
     const el = e.currentTarget as HTMLElement;
@@ -5541,6 +5323,16 @@ export class HomeComponent implements OnInit, AfterViewInit {
   }
   gotoSlide(i: number) {
     this.transitionToSlide(i);
+  }
+
+  responsiveHeroBg(url: string): string {
+    if (!url || !url.includes('cloudinary.com')) {
+      return `url('${url}')`;
+    }
+    const sm = url.replace('/upload/', '/upload/w_640,q_auto,f_auto/');
+    const md = url.replace('/upload/', '/upload/w_1200,q_auto,f_auto/');
+    const lg = url.replace('/upload/', '/upload/w_1920,q_auto,f_auto/');
+    return `image-set(url('${sm}') 1x, url('${md}') 2x, url('${lg}') 3x)`;
   }
 
   nextPresSlide() {
