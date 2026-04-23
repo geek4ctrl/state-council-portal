@@ -186,7 +186,6 @@ import { FooterComponent } from '../../components/footer/footer.component';
       background: #1F9BD9;
       border-color: #1F9BD9;
       transform: translateY(-2px);
-      // box-shadow: 0 8px 25px rgba(0, 127, 255, 0.4);
     }
 
     /* Responsive Design */

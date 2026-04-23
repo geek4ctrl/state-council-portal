@@ -1089,7 +1089,6 @@ type GreffeFirstPresident = {
       }
 
       .org-hero-media {
-        // background: linear-gradient(135deg, rgba(31, 155, 217, 0.12), rgba(26, 41, 66, 0.08));
         border-radius: 18px;
         min-height: 220px;
         display: flex;

@@ -44,7 +44,6 @@
   padding-left: 0.75rem; /* Ensure consistent left padding */
   border-radius: 999px;
   background: rgba(255, 255, 255, 0.75);
-  border: 1px solid #1F9BD9; /* Golden border */
   font-weight: 600;
   letter-spacing: 0.2px;
   height: 32px; /* Fixed height for consistent alignment */

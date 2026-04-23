@@ -607,9 +607,6 @@ import { FooterComponent } from '../../components/footer/footer.component';
         width: 100%;
         letter-spacing: 0.8px;
       }
-        background: #1a1a1a;
-        color: white;
-      }
 
       .download-btn:hover {
         background: #1a1a1a;
