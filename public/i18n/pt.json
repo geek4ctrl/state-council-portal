@@ -804,8 +804,8 @@
     },
     "recent": {
       "title": "Excertos de pauta recentes",
-        "subtitle": "Últimos excertos de audiência",
-        "empty": "Nenhum excerto de pauta disponível de momento."
+      "subtitle": "Últimos excertos de audiência",
+      "empty": "Nenhum excerto de pauta disponível de momento."
     },
     "documents": {
       "civil": {
@@ -1081,6 +1081,36 @@
           "body5": "Eles garantem a confidencialidade e integridade dos registros."
         }
       }
+    }
+  },
+  "member": {
+    "role": {
+      "president": "Presidente",
+      "advisor": "Conselheiro"
+    },
+    "title": {
+      "president": "Presidente",
+      "advisor": "Conselheiro",
+      "honoraryFirstPresident": "Primeiro Presidente Honorário"
+    },
+    "office": {
+      "stateCouncil": "Conselho de Estado",
+      "stateCouncilHonorary": "Conselho de Estado – Honorário"
+    },
+    "summary": {
+      "advisor": "Presta apoio consultivo em matérias administrativas e judiciais.",
+      "nsensele": "Lidera a coordenação judicial e garante a aplicação coerente da jurisprudência do Conselho de Estado nas câmaras.",
+      "bombulu": "Supervisiona a coordenação de recursos e orienta a liderança das câmaras nos padrões processuais.",
+      "ndala": "Apoia o planeamento estratégico e supervisiona o alinhamento de políticas nas divisões do Tribunal.",
+      "masani": "Coordena as operações das câmaras e impulsiona iniciativas de modernização processual.",
+      "funga": "Orienta a revisão jurisprudencial e garante a coerência nas interpretações jurídicas.",
+      "esambo": "Lidera a supervisão da formação e apoia o reforço das capacidades institucionais.",
+      "malenga": "Supervisiona a garantia de qualidade das câmaras e a harmonização da jurisprudência.",
+      "abdala": "Coordena as relações com as partes interessadas jurídicas e assegura o cumprimento de protocolos.",
+      "kibwe": "Apoia a governação dos recursos e reforça a coordenação institucional entre câmaras.",
+      "bulambo": "Impulsiona a governação ao nível das câmaras e contribui para a coerência processual nas matérias.",
+      "odioNonde": "Exerceu as funções de Primeira Presidente do Conselho de Estado de 2022 a 2025, contribuindo para a consolidação institucional.",
+      "vunduawe": "Exerceu as funções de Primeiro Presidente do Conselho de Estado de 2018 a 2022 e ajudou a estabelecer o Tribunal nos seus primeiros anos."
     }
   }
 }

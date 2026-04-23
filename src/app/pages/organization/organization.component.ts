@@ -315,7 +315,7 @@ type HighchartsStatic = typeof import('highcharts');
                       </div>
                       <div class="member-info">
                         <h3>{{ president.name }}</h3>
-                        <p class="member-title">{{ president.title }}</p>
+                        <p class="member-title">{{ president.titleKey | i18n }}</p>
                       </div>
                     </div>
                   }
@@ -343,7 +343,7 @@ type HighchartsStatic = typeof import('highcharts');
                     </div>
                     <div class="member-info">
                       <h3>{{ advisor.name }}</h3>
-                      <p class="member-title">{{ advisor.title }}</p>
+                      <p class="member-title">{{ advisor.titleKey | i18n }}</p>
                     </div>
                   </article>
                 }

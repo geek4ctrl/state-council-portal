@@ -804,8 +804,8 @@
     },
     "recent": {
       "title": "Estratti recenti di ruolo",
-        "subtitle": "Ultimi estratti di udienza",
-        "empty": "Nessun estratto di ruolo disponibile al momento."
+      "subtitle": "Ultimi estratti di udienza",
+      "empty": "Nessun estratto di ruolo disponibile al momento."
     },
     "documents": {
       "civil": {
@@ -1081,6 +1081,36 @@
           "body5": "Garantiscono riservatezza e integrita dei documenti."
         }
       }
+    }
+  },
+  "member": {
+    "role": {
+      "president": "Presidente",
+      "advisor": "Consigliere"
+    },
+    "title": {
+      "president": "Presidente",
+      "advisor": "Consigliere",
+      "honoraryFirstPresident": "Primo Presidente Onorario"
+    },
+    "office": {
+      "stateCouncil": "Consiglio di Stato",
+      "stateCouncilHonorary": "Consiglio di Stato – Onorario"
+    },
+    "summary": {
+      "advisor": "Fornisce supporto consultivo su questioni amministrative e giudiziarie.",
+      "nsensele": "Guida il coordinamento giudiziario e garantisce l'applicazione coerente della giurisprudenza del Consiglio di Stato nelle sezioni.",
+      "bombulu": "Supervisiona il coordinamento dei ricorsi e guida la direzione delle sezioni sugli standard procedurali.",
+      "ndala": "Supporta la pianificazione strategica e supervisiona l'allineamento delle politiche nelle divisioni della Corte.",
+      "masani": "Coordina le operazioni delle sezioni e promuove iniziative di modernizzazione procedurale.",
+      "funga": "Guida la revisione giurisprudenziale e garantisce la coerenza delle interpretazioni giuridiche.",
+      "esambo": "Guida la supervisione della formazione e supporta il rafforzamento delle capacità istituzionali.",
+      "malenga": "Supervisiona la garanzia della qualità delle sezioni e l'armonizzazione della giurisprudenza.",
+      "abdala": "Coordina i rapporti con le parti interessate giuridiche e assicura il rispetto dei protocolli.",
+      "kibwe": "Supporta la governance dei ricorsi e rafforza il coordinamento istituzionale tra le sezioni.",
+      "bulambo": "Promuove la governance a livello di sezione e contribuisce alla coerenza procedurale nelle controversie.",
+      "odioNonde": "Ha esercitato le funzioni di Prima Presidente del Consiglio di Stato dal 2022 al 2025, contribuendo al consolidamento istituzionale.",
+      "vunduawe": "Ha esercitato le funzioni di Primo Presidente del Consiglio di Stato dal 2018 al 2022 e ha contribuito a istituire la Corte nei suoi primi anni."
     }
   }
 }

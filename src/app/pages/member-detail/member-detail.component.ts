@@ -33,17 +33,17 @@ import { FooterComponent } from '../../components/footer/footer.component';
               </div>
               <div class="member-details">
                 <div class="member-header">
-                  <p class="role-pill">{{ member()!.role | titlecase }}</p>
+                  <p class="role-pill">{{ 'member.role.' + member()!.role | i18n }}</p>
                   <h2>{{ member()!.name }}</h2>
-                  <p class="member-role">{{ member()!.title }}</p>
+                  <p class="member-role">{{ member()!.titleKey | i18n }}</p>
                 </div>
 
-                <p class="member-summary">{{ member()!.summary }}</p>
+                <p class="member-summary">{{ member()!.summaryKey | i18n }}</p>
 
                 <dl class="member-meta">
                   <div>
                     <dt>{{ 'memberDetail.office' | i18n }}</dt>
-                    <dd>{{ member()!.office | titlecase }}</dd>
+                    <dd>{{ member()!.officeKey | i18n }}</dd>
                   </div>
                   <div>
                     <dt>{{ 'memberDetail.email' | i18n }}</dt>

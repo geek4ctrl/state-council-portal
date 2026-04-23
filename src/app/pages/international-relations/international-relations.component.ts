@@ -18,7 +18,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
         <div class="container">
           <div class="hero-grid">
             <div class="hero-title">
-              <h1 [innerHTML]="'international.hero.title' | i18n"></h1>
+              <h1 class="intl-hero-title" [innerHTML]="'international.hero.title' | i18n"></h1>
             </div>
             <div class="vertical-line"></div>
             <div class="hero-description">
@@ -262,6 +262,14 @@ import { FooterComponent } from '../../components/footer/footer.component';
       letter-spacing: 3px;
       color: white;
       text-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .hero-title h1.intl-hero-title {
+      margin: 0;
+      font-size: clamp(1.8rem, 4vw, 2.9rem);
+      font-weight: 700;
+      letter-spacing: 2px;
+      color: #ffffff;
     }
 
     .vertical-line {
@@ -609,7 +617,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
         padding: 0 30px;
       }
 
-      .hero-title h1 {
+      .hero-title h1:not(.intl-hero-title) {
         font-size: 3.5rem;
       }
 
@@ -638,7 +646,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
         background-attachment: scroll;
       }
 
-      .hero-title h1 {
+      .hero-title h1:not(.intl-hero-title) {
         font-size: 3rem;
         letter-spacing: 2px;
       }
@@ -702,7 +710,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
         text-align: center;
       }
 
-      .hero-title h1 {
+      .hero-title h1:not(.intl-hero-title) {
         font-size: 2.5rem;
         letter-spacing: 2px;
       }
@@ -834,7 +842,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
         padding: 60px 0;
       }
 
-      .hero-title h1 {
+      .hero-title h1:not(.intl-hero-title) {
         font-size: 2rem;
         letter-spacing: 1.5px;
       }
@@ -959,7 +967,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
 
     /* Extra Small Devices (up to 374px) */
     @media (max-width: 374px) {
-      .hero-title h1 {
+      .hero-title h1:not(.intl-hero-title) {
         font-size: 1.8rem;
       }
 
