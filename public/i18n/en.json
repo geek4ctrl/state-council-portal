@@ -1078,5 +1078,35 @@
         }
       }
     }
+  },
+  "member": {
+    "role": {
+      "president": "President",
+      "advisor": "Advisor"
+    },
+    "title": {
+      "president": "President",
+      "advisor": "Advisor",
+      "honoraryFirstPresident": "Honorary First President"
+    },
+    "office": {
+      "stateCouncil": "State Council",
+      "stateCouncilHonorary": "State Council – Honorary"
+    },
+    "summary": {
+      "advisor": "Provides advisory support on administrative and judicial matters.",
+      "nsensele": "Leads judicial coordination and ensures consistent application of State Council jurisprudence across chambers.",
+      "bombulu": "Oversees appellate coordination and guides chamber leadership on procedural standards.",
+      "ndala": "Supports strategic planning and supervises policy alignment across the Court's divisions.",
+      "masani": "Coordinates chamber operations and drives procedural modernization initiatives.",
+      "funga": "Guides jurisprudential review and ensures consistency across legal interpretations.",
+      "esambo": "Leads training oversight and supports institutional capacity building.",
+      "malenga": "Oversees chamber quality assurance and jurisprudence harmonization.",
+      "abdala": "Coordinates outreach with legal stakeholders and ensures protocol adherence.",
+      "kibwe": "Supports appellate governance and strengthens cross-chamber institutional coordination.",
+      "bulambo": "Drives chamber-level governance and contributes to procedural consistency across matters.",
+      "odioNonde": "Served as First President of the State Council from 2022 to 2025 and contributed to institutional consolidation.",
+      "vunduawe": "Served as First President of the State Council from 2018 to 2022 and helped establish the Court in its early years."
+    }
   }
 }

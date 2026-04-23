@@ -804,8 +804,8 @@
     },
     "recent": {
       "title": "Bitupa bia mudimu wa mudimu",
-        "subtitle": "Bitupa bia diumvua dia kumpala",
-        "empty": "Kena bitupa bia mudimu ebi bienzeka tshisekedi."
+      "subtitle": "Bitupa bia diumvua dia kumpala",
+      "empty": "Kena bitupa bia mudimu ebi bienzeka tshisekedi."
     },
     "documents": {
       "civil": {
@@ -1081,6 +1081,36 @@
           "body5": "Badi bajadika tshisokomenu ne bulelela bua mikanda."
         }
       }
+    }
+  },
+  "member": {
+    "role": {
+      "president": "Président",
+      "advisor": "Mufundi"
+    },
+    "title": {
+      "president": "Président",
+      "advisor": "Mufundi",
+      "honoraryFirstPresident": "Premier Président Honoraire"
+    },
+    "office": {
+      "stateCouncil": "Conseil d'État",
+      "stateCouncilHonorary": "Conseil d'État – Honoraire"
+    },
+    "summary": {
+      "advisor": "Upeta bualu bua usambakenu pa mashini a ya administratifu ne a ya buanji.",
+      "nsensele": "Utunga bulongolodi bua buanji ne ukeba muabu wa tshimuelo tsha jurisprudence tsha Conseil d'État mu bakambi bonso.",
+      "bombulu": "Ulanga bulongolodi bua bitumba ne kuposa ba chef ya bakambi pa mibeko ya ntatu wa misambu.",
+      "ndala": "Usadisa mabungulu a stratégie ne ulanga muabu wa makanda mu ba division tsha Cour.",
+      "masani": "Utunga misala ya bakambi ne upusha ba programme ya modernisation ya misambu.",
+      "funga": "Uposha talisha jurisprudence ne ukeba muabu wa bisimbi bya buanji.",
+      "esambo": "Utunga talisha kofundisha ne usadisa kulonga nguvu ya kitaasisi.",
+      "malenga": "Ulanga kalite ya bakambi ne muabu wa jurisprudence.",
+      "abdala": "Utunga lusambwisi na ba stakeholder ya buanji ne ukeba muabu wa ba protocole.",
+      "kibwe": "Usadisa gouvernance ya bitumba ne ukuka bulongolodi bwa kitaasisi mu bakambi.",
+      "bulambo": "Upusha gouvernance ya nkambi ne usadisa muabu wa ntatu mu bilumbu.",
+      "odioNonde": "Wasumba bulumu bwa Premier Président ya Conseil d'État ku 2022 ku 2025 ne wakuba kitaasisi.",
+      "vunduawe": "Wasumba bulumu bwa Premier Président ya Conseil d'État ku 2018 ku 2022 ne wakula Cour mu tshidimu tsha lukalu."
     }
   }
 }

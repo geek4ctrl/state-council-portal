@@ -804,8 +804,8 @@
     },
     "recent": {
       "title": "Dondoo za orodha za karibuni",
-        "subtitle": "Dondoo za karibuni za kusikilizwa",
-        "empty": "Hakuna dondoo za orodha zinazopatikana kwa sasa."
+      "subtitle": "Dondoo za karibuni za kusikilizwa",
+      "empty": "Hakuna dondoo za orodha zinazopatikana kwa sasa."
     },
     "documents": {
       "civil": {
@@ -1081,6 +1081,36 @@
           "body5": "Huhakikisha usiri na uadilifu wa rekodi."
         }
       }
+    }
+  },
+  "member": {
+    "role": {
+      "president": "Rais",
+      "advisor": "Mshauri"
+    },
+    "title": {
+      "president": "Rais",
+      "advisor": "Mshauri",
+      "honoraryFirstPresident": "Rais wa Kwanza wa Heshima"
+    },
+    "office": {
+      "stateCouncil": "Baraza la Nchi",
+      "stateCouncilHonorary": "Baraza la Nchi – la Heshima"
+    },
+    "summary": {
+      "advisor": "Hutoa ushauri katika masuala ya kiutawala na kisheria.",
+      "nsensele": "Huongoza uratibu wa kimahakama na kuhakikisha utekelezaji thabiti wa maamuzi ya Baraza la Nchi katika vyumba vyake.",
+      "bombulu": "Husimamia uratibu wa rufaa na kuongoza uongozi wa vyumba kuhusu viwango vya utaratibu.",
+      "ndala": "Husaidia mipango ya kimkakati na kusimamia usawa wa sera katika idara za Mahakama.",
+      "masani": "Huratibu shughuli za vyumba na kuendeleza mipango ya kisasa ya utaratibu.",
+      "funga": "Huongoza mapitio ya sheria na kuhakikisha uthabiti wa tafsiri za kisheria.",
+      "esambo": "Huongoza usimamizi wa mafunzo na kusaidia uimarishaji wa uwezo wa kitaasisi.",
+      "malenga": "Husimamia udhibiti wa ubora wa vyumba na mlingano wa maamuzi ya kisheria.",
+      "abdala": "Huratibu mahusiano na wadau wa kisheria na kuhakikisha kufuata itifaki.",
+      "kibwe": "Husaidia utawala wa rufaa na kuimarisha uratibu wa kitaasisi baina ya vyumba.",
+      "bulambo": "Huendeleza utawala wa kiwango cha chumba na kuchangia uthabiti wa utaratibu katika mashauri.",
+      "odioNonde": "Alihudumu kama Rais wa Kwanza wa Baraza la Nchi kuanzia 2022 hadi 2025 na alichangia katika uimarishaji wa taasisi.",
+      "vunduawe": "Alihudumu kama Rais wa Kwanza wa Baraza la Nchi kuanzia 2018 hadi 2022 na alisaidia kuanzisha Mahakama katika miaka yake ya mwanzo."
     }
   }
 }

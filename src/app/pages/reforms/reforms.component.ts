@@ -18,7 +18,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
         <div class="container">
           <div class="hero-grid">
             <div class="hero-content-left">
-              <h1 [innerHTML]="'reforms.hero.title' | i18n"></h1>
+              <h1 class="reforms-hero-title" [innerHTML]="'reforms.hero.title' | i18n"></h1>
             </div>
             <div class="vertical-line"></div>
             <div class="hero-content-right">
@@ -326,6 +326,14 @@ import { FooterComponent } from '../../components/footer/footer.component';
       letter-spacing: 2px;
       color: #ffffff;
       text-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .hero-content-left h1.reforms-hero-title {
+      margin: 0;
+      font-size: clamp(1.8rem, 4vw, 2.9rem);
+      font-weight: 700;
+      letter-spacing: 2px;
+      color: #ffffff;
     }
 
     .vertical-line {
@@ -685,7 +693,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
         max-width: 1400px;
       }
 
-      .hero-content-left h1 {
+      .hero-content-left h1:not(.reforms-hero-title) {
         font-size: 4rem;
       }
 
@@ -704,7 +712,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
         gap: 45px;
       }
 
-      .hero-content-left h1 {
+      .hero-content-left h1:not(.reforms-hero-title) {
         font-size: 3rem;
       }
 
@@ -740,7 +748,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
         gap: 40px;
       }
 
-      .hero-content-left h1 {
+      .hero-content-left h1:not(.reforms-hero-title) {
         font-size: 2.5rem;
       }
 
@@ -811,7 +819,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
         background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.8), #1F9BD9, rgba(255, 255, 255, 0.8), transparent);
       }
 
-      .hero-content-left h1 {
+      .hero-content-left h1:not(.reforms-hero-title) {
         font-size: 2.2rem;
       }
 
@@ -881,7 +889,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
         padding: 60px 0;
       }
 
-      .hero-content-left h1 {
+      .hero-content-left h1:not(.reforms-hero-title) {
         font-size: 2rem;
         letter-spacing: 1px;
       }
@@ -1016,7 +1024,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
         padding: 50px 0;
       }
 
-      .hero-content-left h1 {
+      .hero-content-left h1:not(.reforms-hero-title) {
         font-size: 1.8rem;
       }
 
@@ -1059,7 +1067,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
         padding: 40px 0;
       }
 
-      .hero-content-left h1 {
+      .hero-content-left h1:not(.reforms-hero-title) {
         font-size: 1.6rem;
         letter-spacing: 0.5px;
       }
@@ -1186,7 +1194,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
 
     /* Extra Small Mobile (below 375px) */
     @media (max-width: 375px) {
-      .hero-content-left h1 {
+      .hero-content-left h1:not(.reforms-hero-title) {
         font-size: 1.4rem;
       }
 
@@ -1219,7 +1227,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
         padding: 35px 0;
       }
 
-      .hero-content-left h1 {
+      .hero-content-left h1:not(.reforms-hero-title) {
         font-size: 1.8rem;
       }
 
