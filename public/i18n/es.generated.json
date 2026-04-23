@@ -26,8 +26,9 @@
       "international": "Relaciones Internacionales",
       "audiences": "Audiencias",
       "steps": "Pasos",
-      "news": "Noticias",
-      "bookAppointment": "Reservar cita"
+      "publications": "Publicaciones del Consejo de Estado",
+      "bookAppointment": "Reservar cita",
+      "news": "Noticias"
     }
   },
   "hero": {
