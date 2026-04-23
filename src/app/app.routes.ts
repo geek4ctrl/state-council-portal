@@ -87,7 +87,7 @@ export const routes: Routes = [
   },
   {
     path: 'publications',
-    loadComponent: () => import('./pages/coming-soon/coming-soon.component').then(m => m.ComingSoonComponent),
+    loadComponent: () => import('./pages/publications/publications.component').then(m => m.PublicationsComponent),
     data: { titleKey: 'header.nav.publications' }
   },
   {
