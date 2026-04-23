@@ -2,6 +2,7 @@ import { AfterViewInit, Component, DestroyRef, ElementRef, ViewChild, inject, si
 import { Router, RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './components/header/header.component';
 import { I18nPipe } from './i18n/i18n.pipe';
+import { SeoService } from './services/seo.service';
 
 @Component({
   selector: 'app-root',
@@ -11,6 +12,7 @@ import { I18nPipe } from './i18n/i18n.pipe';
 })
 export class App implements AfterViewInit {
   protected readonly title = signal('state-council-portal');
+  private readonly seo = inject(SeoService);
 
   @ViewChild('curDot') curDot!: ElementRef<HTMLDivElement>;
   @ViewChild('curRing') curRing!: ElementRef<HTMLDivElement>;

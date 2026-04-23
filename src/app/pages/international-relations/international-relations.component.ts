@@ -1037,7 +1037,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
     @keyframes lineCExpand{from{width:0;opacity:0}to{width:160px;opacity:1}}
     @keyframes upFade{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:translateY(0)}}
 
-    .page-wrap{cursor:none;}
+    .page-wrap{}
     .loader{
       position:fixed;inset:0;background:linear-gradient(135deg,#080e1a,#82BCDC);
       display:flex;flex-direction:column;align-items:center;justify-content:center;gap:32px;

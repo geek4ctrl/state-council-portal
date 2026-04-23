@@ -993,7 +993,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
     @keyframes rippleAnim{to{transform:scale(1);opacity:0}}
     @keyframes lineExpand{from{width:0;opacity:0}to{width:60px;opacity:1}}
     @keyframes upFade{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:translateY(0)}}
-    .page-wrap{cursor:none;}
+    .page-wrap{}
     .loader{position:fixed;inset:0;background:linear-gradient(135deg,#080e1a,#82BCDC);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:32px;z-index:9999;transition:opacity .7s ease,visibility .7s ease,transform .7s ease;}
     .loader.out{opacity:0;visibility:hidden;transform:scale(1.06);pointer-events:none;}
     .loader-sphere{width:120px;height:120px;position:relative;display:flex;align-items:center;justify-content:center;}

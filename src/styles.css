@@ -1,8 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
 
-/* Import Inter font */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
-
 /* Import Typography System */
 @import './styles/typography.css';
 
@@ -480,26 +477,23 @@ img[loading='lazy'] {
   font-size: 0.9rem;
 }
 
-/* ===== ACTUAL BUTTON STYLES (6PX BORDERS FOR HERO) ===== */
+/* ===== PRIMARY BUTTON STYLES ===== */
 .hero-button,
 .hero-btn {
-  /* border-width: 6px !important; */
-  border-style: solid !important;
-  border-radius: 6px !important;
-  border-color: rgba(255, 255, 255, 0.2) !important;
+  border-style: solid;
+  border-radius: 6px;
+  border-color: rgba(255, 255, 255, 0.2);
 }
 
 .hero-button.secondary {
-  border-color: rgba(255, 255, 255, 0.55) !important;
+  border-color: rgba(255, 255, 255, 0.55);
 }
 
 .contact-btn,
 .download-btn,
 button[type='submit'] {
-  /* border-width: 6px !important; */
-  border-style: solid !important;
-  border-radius: 6px !important;
-  /* border-color: #1F9BD9 !important; */
+  border-style: solid;
+  border-radius: 6px;
 }
 
 /* ===== LEARN MORE / APPOINTMENT BUTTONS (1PX BORDER LIKE ICONS) ===== */
