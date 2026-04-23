@@ -47,172 +47,16 @@ import { FooterComponent } from '../../components/footer/footer.component';
             </div>
             <p class="section-subtitle">{{ 'audiences.recent.subtitle' | i18n }}</p>
 
-            <div class="documents-grid">
-              <!-- Document Card 1 -->
-              <div
-                class="document-card glass-card tilt-card"
-                style="--i:0"
-                (mousemove)="tilt($event)"
-                (mouseleave)="tiltReset($event)"
-              >
-                <div class="tilt-shine"></div>
-                <div class="document-preview">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 260" fill="none">
-                    <rect width="200" height="260" fill="#ffffff" />
-                    <rect x="20" y="30" width="160" height="8" fill="#ddd" />
-                    <rect x="20" y="50" width="140" height="6" fill="#eee" />
-                    <rect x="20" y="70" width="160" height="4" fill="#eee" />
-                    <rect x="20" y="80" width="160" height="4" fill="#eee" />
-                    <rect x="20" y="90" width="120" height="4" fill="#eee" />
-                    <rect x="20" y="110" width="160" height="4" fill="#eee" />
-                    <rect x="20" y="120" width="160" height="4" fill="#eee" />
-                    <rect x="20" y="130" width="140" height="4" fill="#eee" />
-                  </svg>
-                  <div class="document-label">
-                    <span class="label-text">{{ 'audiences.documents.civil.label' | i18n }}</span>
-                    <span class="label-date">18/01/26</span>
-                  </div>
-                </div>
-                <div class="document-info">
-                  <h3>{{ 'audiences.documents.civil.title' | i18n }}</h3>
-                  <button
-                    class="download-btn mag-btn"
-                    (mousemove)="mag($event)"
-                    (mouseleave)="magOut($event)"
-                    (click)="ripple($event)"
-                  >
-                    <span>{{ 'audiences.actions.downloadPdf' | i18n }}</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                      <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z" />
-                    </svg>
-                  </button>
-                </div>
-              </div>
-
-              <!-- Document Card 2 -->
-              <div
-                class="document-card glass-card tilt-card"
-                style="--i:1"
-                (mousemove)="tilt($event)"
-                (mouseleave)="tiltReset($event)"
-              >
-                <div class="tilt-shine"></div>
-                <div class="document-preview">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 260" fill="none">
-                    <rect width="200" height="260" fill="#ffffff" />
-                    <rect x="20" y="30" width="160" height="8" fill="#ddd" />
-                    <rect x="20" y="50" width="140" height="6" fill="#eee" />
-                    <rect x="20" y="70" width="160" height="4" fill="#eee" />
-                    <rect x="20" y="80" width="160" height="4" fill="#eee" />
-                    <rect x="20" y="90" width="120" height="4" fill="#eee" />
-                    <rect x="20" y="110" width="160" height="4" fill="#eee" />
-                    <rect x="20" y="120" width="160" height="4" fill="#eee" />
-                    <rect x="20" y="130" width="140" height="4" fill="#eee" />
-                  </svg>
-                  <div class="document-label">
-                    <span class="label-text">{{
-                      'audiences.documents.criminal.label' | i18n
-                    }}</span>
-                    <span class="label-date">18/01/26</span>
-                  </div>
-                </div>
-                <div class="document-info">
-                  <h3>{{ 'audiences.documents.criminal.title' | i18n }}</h3>
-                  <button
-                    class="download-btn mag-btn"
-                    (mousemove)="mag($event)"
-                    (mouseleave)="magOut($event)"
-                    (click)="ripple($event)"
-                  >
-                    <span>{{ 'audiences.actions.downloadPdf' | i18n }}</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                      <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z" />
-                    </svg>
-                  </button>
-                </div>
-              </div>
-
-              <!-- Document Card 3 -->
-              <div
-                class="document-card glass-card tilt-card"
-                style="--i:2"
-                (mousemove)="tilt($event)"
-                (mouseleave)="tiltReset($event)"
-              >
-                <div class="tilt-shine"></div>
-                <div class="document-preview">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 260" fill="none">
-                    <rect width="200" height="260" fill="#ffffff" />
-                    <rect x="20" y="30" width="160" height="8" fill="#ddd" />
-                    <rect x="20" y="50" width="140" height="6" fill="#eee" />
-                    <rect x="20" y="70" width="160" height="4" fill="#eee" />
-                    <rect x="20" y="80" width="160" height="4" fill="#eee" />
-                    <rect x="20" y="90" width="120" height="4" fill="#eee" />
-                    <rect x="20" y="110" width="160" height="4" fill="#eee" />
-                    <rect x="20" y="120" width="160" height="4" fill="#eee" />
-                    <rect x="20" y="130" width="140" height="4" fill="#eee" />
-                  </svg>
-                  <div class="document-label">
-                    <span class="label-text">{{ 'audiences.documents.social.label' | i18n }}</span>
-                    <span class="label-date">12/01/26</span>
-                  </div>
-                </div>
-                <div class="document-info">
-                  <h3>{{ 'audiences.documents.social.title' | i18n }}</h3>
-                  <button
-                    class="download-btn mag-btn"
-                    (mousemove)="mag($event)"
-                    (mouseleave)="magOut($event)"
-                    (click)="ripple($event)"
-                  >
-                    <span>{{ 'audiences.actions.downloadPdf' | i18n }}</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                      <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z" />
-                    </svg>
-                  </button>
-                </div>
-              </div>
-
-              <!-- Document Card 4 -->
-              <div
-                class="document-card glass-card tilt-card"
-                style="--i:3"
-                (mousemove)="tilt($event)"
-                (mouseleave)="tiltReset($event)"
-              >
-                <div class="tilt-shine"></div>
-                <div class="document-preview">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 260" fill="none">
-                    <rect width="200" height="260" fill="#ffffff" />
-                    <rect x="20" y="30" width="160" height="8" fill="#ddd" />
-                    <rect x="20" y="50" width="140" height="6" fill="#eee" />
-                    <rect x="20" y="70" width="160" height="4" fill="#eee" />
-                    <rect x="20" y="80" width="160" height="4" fill="#eee" />
-                    <rect x="20" y="90" width="120" height="4" fill="#eee" />
-                    <rect x="20" y="110" width="160" height="4" fill="#eee" />
-                    <rect x="20" y="120" width="160" height="4" fill="#eee" />
-                    <rect x="20" y="130" width="140" height="4" fill="#eee" />
-                  </svg>
-                  <div class="document-label">
-                    <span class="label-text">{{ 'audiences.documents.general.label' | i18n }}</span>
-                    <span class="label-date">08/01/26</span>
-                  </div>
-                </div>
-                <div class="document-info">
-                  <h3>{{ 'audiences.documents.general.title' | i18n }}</h3>
-                  <button
-                    class="download-btn mag-btn"
-                    (mousemove)="mag($event)"
-                    (mouseleave)="magOut($event)"
-                    (click)="ripple($event)"
-                  >
-                    <span>{{ 'audiences.actions.downloadPdf' | i18n }}</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                      <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z" />
-                    </svg>
-                  </button>
-                </div>
-              </div>
+            <div class="no-excerpts-state">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.5">
+                <rect x="12" y="8" width="40" height="48" rx="4" />
+                <line x1="20" y1="22" x2="44" y2="22" />
+                <line x1="20" y1="30" x2="44" y2="30" />
+                <line x1="20" y1="38" x2="34" y2="38" />
+                <circle cx="44" cy="44" r="10" fill="white" stroke-width="2" />
+                <line x1="40" y1="44" x2="48" y2="44" stroke-width="2" />
+              </svg>
+              <p>{{ 'audiences.recent.empty' | i18n }}</p>
             </div>
           </div>
 
@@ -507,6 +351,34 @@ import { FooterComponent } from '../../components/footer/footer.component';
         letter-spacing: 2.5px;
         font-weight: 400;
         text-align: left !important;
+      }
+
+      /* No Excerpts Empty State */
+      .no-excerpts-state {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        padding: 60px 20px;
+        margin-bottom: 80px;
+        background: #f8fafc;
+        border-radius: 16px;
+        border: 1px dashed rgba(26, 41, 66, 0.15);
+      }
+
+      .no-excerpts-state svg {
+        width: 72px;
+        height: 72px;
+        color: #94a3b8;
+      }
+
+      .no-excerpts-state p {
+        margin: 0;
+        font-size: 1rem;
+        color: #64748b;
+        font-weight: 500;
+        letter-spacing: 0.3px;
       }
 
       /* Documents Grid */

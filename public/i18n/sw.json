@@ -803,7 +803,8 @@
     },
     "recent": {
       "title": "Dondoo za orodha za karibuni",
-      "subtitle": "Dondoo za karibuni za kusikilizwa"
+        "subtitle": "Dondoo za karibuni za kusikilizwa",
+        "empty": "Hakuna dondoo za orodha zinazopatikana kwa sasa."
     },
     "documents": {
       "civil": {

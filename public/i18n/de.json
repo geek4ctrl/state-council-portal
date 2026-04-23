@@ -803,7 +803,8 @@
     },
     "recent": {
       "title": "Aktuelle rollenauszüge",
-      "subtitle": "Neueste anhörungsauszüge"
+        "subtitle": "Neueste anhörungsauszüge",
+        "empty": "Derzeit sind keine Rollenauszüge verfügbar."
     },
     "documents": {
       "civil": {

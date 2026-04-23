@@ -803,7 +803,8 @@
     },
     "recent": {
       "title": "Biteni ya liste ya sika",
-      "subtitle": "Biteni ya koyoka ya sika"
+        "subtitle": "Biteni ya koyoka ya sika",
+        "empty": "Ezali na biteni ya liste te sik'oyo."
     },
     "documents": {
       "civil": {
