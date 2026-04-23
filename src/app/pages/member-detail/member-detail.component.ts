@@ -43,7 +43,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
                 <dl class="member-meta">
                   <div>
                     <dt>{{ 'memberDetail.office' | i18n }}</dt>
-                    <dd>{{ member()!.office }}</dd>
+                    <dd>{{ member()!.office | titlecase }}</dd>
                   </div>
                   <div>
                     <dt>{{ 'memberDetail.email' | i18n }}</dt>
@@ -226,7 +226,6 @@ import { FooterComponent } from '../../components/footer/footer.component';
 
       .member-meta dt {
         font-size: 0.75rem;
-        text-transform: uppercase;
         letter-spacing: 1px;
         color: #64748b;
       }
