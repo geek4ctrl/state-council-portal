@@ -52,6 +52,31 @@ import { FooterComponent } from '../../components/footer/footer.component';
           </div>
           <p class="section-subtitle anim-up a-d1">{{ 'news.section.subtitle' | i18n }}</p>
 
+          <section class="publication-panel glass-card" aria-labelledby="featured-publication-title">
+            <div class="publication-copy">
+              <p class="publication-kicker">{{ 'header.nav.publications' | i18n }}</p>
+              <h3 id="featured-publication-title" class="publication-title">{{ featuredPublication.title }}</h3>
+              <p class="publication-meta">PDF</p>
+            </div>
+            <a
+              class="publication-download mag-btn"
+              [href]="featuredPublication.href"
+              [attr.download]="featuredPublication.fileName"
+              target="_blank"
+              rel="noopener noreferrer"
+              (mousemove)="mag($event)"
+              (mouseleave)="magOut($event)"
+              (click)="ripple($event)"
+            >
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 3v12"></path>
+                <path d="M7 10l5 5 5-5"></path>
+                <path d="M5 21h14"></path>
+              </svg>
+              <span>PDF</span>
+            </a>
+          </section>
+
           <div class="news-grid">
             @if (isLoading()) {
               @for (item of [1, 2, 3]; track item) {
@@ -307,6 +332,74 @@ import { FooterComponent } from '../../components/footer/footer.component';
         margin: 0 0 60px 0;
         text-align: center;
         font-weight: 400;
+      }
+
+      .publication-panel {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 24px;
+        margin: 0 0 42px;
+        padding: 24px 28px;
+        border: 1px solid rgba(26, 41, 66, 0.08);
+        border-radius: 10px;
+        background: linear-gradient(135deg, rgba(248, 250, 252, 0.98), rgba(241, 245, 249, 0.96));
+        box-shadow: 0 14px 34px rgba(26, 41, 66, 0.1);
+      }
+
+      .publication-copy {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        min-width: 0;
+      }
+
+      .publication-kicker {
+        margin: 0;
+        font-size: 0.78rem;
+        font-weight: 700;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: #1f9bd9;
+      }
+
+      .publication-title {
+        margin: 0;
+        font-size: 1.2rem;
+        line-height: 1.4;
+        color: #1a2942;
+      }
+
+      .publication-meta {
+        margin: 0;
+        font-size: 0.9rem;
+        color: #64748b;
+        letter-spacing: 0.4px;
+      }
+
+      .publication-download {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 0.95rem 1.3rem;
+        border-radius: 999px;
+        background: #1f9bd9;
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: 700;
+        letter-spacing: 0.4px;
+        box-shadow: 0 10px 24px rgba(31, 155, 217, 0.28);
+        flex-shrink: 0;
+      }
+
+      .publication-download svg {
+        width: 18px;
+        height: 18px;
+      }
+
+      .publication-download:hover {
+        color: #ffffff;
       }
 
       .insights-section {
@@ -711,6 +804,14 @@ import { FooterComponent } from '../../components/footer/footer.component';
         .section-subtitle {
           font-size: 0.8rem;
           margin-bottom: 40px;
+        }
+        .publication-panel {
+          flex-direction: column;
+          align-items: flex-start;
+          padding: 20px;
+        }
+        .publication-download {
+          width: 100%;
         }
         .insights-header h3 {
           font-size: 1.4rem;
@@ -1201,6 +1302,11 @@ export class NewsComponent implements OnInit, AfterViewInit {
   currentPage = signal(1);
   isLoading = signal(true);
   itemsPerPage = 6;
+  protected readonly featuredPublication = {
+    title: 'J.O. n° spécial du 26 février 2026 - RITE.097',
+    fileName: 'J.O. n° spécial du 26 février 2026_RITE.097 (1).pdf',
+    href: encodeURI('/publications/J.O. n° spécial du 26 février 2026_RITE.097 (1).pdf'),
+  };
   protected readonly articles = signal<NewsArticle[]>([]);
   readonly totalPages = computed(() =>
     Math.max(1, Math.ceil(this.articles().length / this.itemsPerPage)),
