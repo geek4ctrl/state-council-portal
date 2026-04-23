@@ -274,18 +274,7 @@ type GreffeFirstPresident = {
             <button class="back-link" type="button" (click)="goBack()">
               {{ backLabelKey() | i18n }}
             </button>
-            <div class="hero-split single">
-              <div class="hero-left">
-                <h1 class="hero-title">{{ 'organization.orgPage.hero.title' | i18n }}</h1>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="org-hero-body">
-          <div class="container">
             <div class="org-detail-card">
-              <h2>{{ 'about.rubrics.organization' | i18n }}</h2>
               <p [innerHTML]="('about.legal.detail.paragraph3' | i18n).replace(/\\n/g, '<br>')"></p>
             </div>
           </div>
@@ -623,7 +612,7 @@ type GreffeFirstPresident = {
 
 
       .org-hero {
-        padding: 60px 0 240px;
+        padding: 60px 0 90px;
       }
 
       .org-hero .container {
@@ -640,9 +629,14 @@ type GreffeFirstPresident = {
         margin-top: auto;
       }
 
+      .org-hero .hero-title {
+        text-shadow: 0 10px 28px rgba(6, 12, 24, 0.45);
+        letter-spacing: 1.5px;
+      }
+
       .org-hero-body {
         background: #f8f9fb;
-        padding: 40px 0 60px;
+        padding: 0 0 60px;
       }
 
       .org-hero-body .container {
@@ -1141,37 +1135,58 @@ type GreffeFirstPresident = {
 
       .org-detail-card {
         margin-top: 28px;
-        background: #ffffff;
-        border-radius: 14px;
-        padding: 24px 26px;
-        border-left: 4px solid #82bcdc;
-        box-shadow: 0 12px 24px rgba(26, 41, 66, 0.1);
+        width: 100%;
+        max-width: 1120px;
+        background: transparent;
+        border-radius: 18px;
+        padding: 36px 40px;
+        border: none;
+        box-shadow: none;
+        position: relative;
+        z-index: 2;
+        overflow: hidden;
+      }
+
+      .org-detail-card::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: radial-gradient(circle at 95% 5%, rgba(143, 212, 255, 0.16), transparent 42%);
+        pointer-events: none;
       }
 
       .org-detail-card h2 {
         margin: 0 0 12px;
-        font-size: 1.1rem;
+        font-size: 1.4rem;
         font-weight: 700;
-        color: #1a1a1a;
+        color: #f8fbff;
+        letter-spacing: 0.4px;
+        position: relative;
+        z-index: 1;
       }
 
       .org-detail-card p {
-        margin: 0 0 12px;
-        color: #374151;
-        line-height: 1.7;
-        font-size: 0.95rem;
+        margin: 0 0 14px;
+        color: rgba(248, 251, 255, 0.92);
+        line-height: 1.78;
+        font-size: 1.07rem;
+        position: relative;
+        z-index: 1;
       }
 
       .org-detail-card ul {
         margin: 12px 0;
         padding-left: 20px;
-        color: #374151;
+        color: rgba(248, 251, 255, 0.92);
+        position: relative;
+        z-index: 1;
       }
 
       .org-detail-card li {
         margin-bottom: 8px;
-        line-height: 1.6;
-        font-size: 0.95rem;
+        line-height: 1.72;
+        font-size: 1.07rem;
+        color: rgba(248, 251, 255, 0.92);
       }
 
       .org-tiles {
@@ -1659,6 +1674,12 @@ type GreffeFirstPresident = {
 
         .org-hero-title {
           font-size: 1.8rem;
+        }
+
+        .org-detail-card {
+          margin-top: 20px;
+          max-width: 100%;
+          padding: 26px 24px;
         }
 
         .org-grid {
