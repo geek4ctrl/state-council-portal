@@ -799,7 +799,8 @@
     },
     "recent": {
       "title": "Extraits de rôle récents",
-      "subtitle": "Derniers extraits d'audience"
+      "subtitle": "Derniers extraits d'audience",
+      "empty": "Aucun extrait de rôle disponible pour le moment."
     },
     "documents": {
       "civil": {

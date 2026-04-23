@@ -803,7 +803,8 @@
     },
     "recent": {
       "title": "Estratti recenti di ruolo",
-      "subtitle": "Ultimi estratti di udienza"
+        "subtitle": "Ultimi estratti di udienza",
+        "empty": "Nessun estratto di ruolo disponibile al momento."
     },
     "documents": {
       "civil": {

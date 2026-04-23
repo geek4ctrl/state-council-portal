@@ -803,7 +803,8 @@
     },
     "recent": {
       "title": "Excertos de pauta recentes",
-      "subtitle": "Últimos excertos de audiência"
+        "subtitle": "Últimos excertos de audiência",
+        "empty": "Nenhum excerto de pauta disponível de momento."
     },
     "documents": {
       "civil": {

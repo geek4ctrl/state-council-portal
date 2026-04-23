@@ -766,7 +766,8 @@
     },
     "recent": {
       "title": "Extractos de funciones recientes",
-      "subtitle": "Últimos extractos de audiencia"
+        "subtitle": "Últimos extractos de audiencia",
+        "empty": "No hay extractos de rol disponibles en este momento."
     },
     "documents": {
       "civil": {
