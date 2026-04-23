@@ -26,8 +26,9 @@
       "international": "Internationale Beziehungen",
       "audiences": "Anhörungen",
       "steps": "Schritte",
-      "news": "Nachrichten",
-      "bookAppointment": "Termin buchen"
+      "publications": "Veröffentlichungen des Staatsrates",
+      "bookAppointment": "Termin buchen",
+      "news": "Nachrichten"
     }
   },
   "hero": {

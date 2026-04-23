@@ -86,6 +86,11 @@ export const routes: Routes = [
     data: { titleKey: 'news.hero.title' }
   },
   {
+    path: 'publications',
+    loadComponent: () => import('./pages/coming-soon/coming-soon.component').then(m => m.ComingSoonComponent),
+    data: { titleKey: 'header.nav.publications' }
+  },
+  {
     path: 'error',
     loadComponent: () => import('./pages/errors/error/error.component').then(m => m.ErrorPageComponent),
     data: { titleKey: 'errors.generic.title' }
