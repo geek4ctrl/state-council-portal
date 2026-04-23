@@ -101,6 +101,8 @@ type HighchartsStatic = typeof import('highcharts');
                   class="about-card-image"
                   aria-hidden="true"
                   [style.backgroundImage]="'url(' + card.imageUrl + ')'"
+                  [style.backgroundSize]="card.imageSize || card.imageFit || 'cover'"
+                  [style.backgroundColor]="card.imageBackground || '#e2e8f0'"
                 ></div>
                 <div class="about-card-body">
                   <h3>{{ card.titleKey | i18n }}</h3>
@@ -733,15 +735,18 @@ type HighchartsStatic = typeof import('highcharts');
         justify-content: center;
         background-color: #e2e8f0;
         background-size: cover;
+        background-repeat: no-repeat;
         background-position: center;
         position: relative;
+        /* Apply one shared grade so source images feel visually consistent */
+        filter: grayscale(10%) saturate(84%) contrast(96%) brightness(96%);
       }
 
       .about-card-image::after {
         content: '';
         position: absolute;
         inset: 0;
-        background: linear-gradient(180deg, rgba(15, 23, 42, 0.03), rgba(15, 23, 42, 0.14));
+        background: linear-gradient(180deg, rgba(15, 23, 42, 0.05), rgba(15, 23, 42, 0.18));
         pointer-events: none;
       }
 
@@ -2639,7 +2644,15 @@ export class OrganizationComponent implements OnInit, AfterViewInit {
     },
   ];
 
-  readonly aboutCards: { titleKey: string; section: string; imageUrl: string; route?: string[] }[] = [
+  readonly aboutCards: {
+    titleKey: string;
+    section: string;
+    imageUrl: string;
+    route?: string[];
+    imageFit?: 'cover' | 'contain';
+    imageSize?: string;
+    imageBackground?: string;
+  }[] = [
     {
       titleKey: 'organization.about.cards.historique',
       section: 'historique',
@@ -2668,7 +2681,9 @@ export class OrganizationComponent implements OnInit, AfterViewInit {
       titleKey: 'organization.about.cards.organisations',
       section: 'organisations',
       imageUrl:
-        'https://res.cloudinary.com/dhqvb8wbn/image/upload/w_800,c_scale,q_100,f_auto,e_sharpen:150/v1775726541/organization_lrumzi.jpg',
+        'https://res.cloudinary.com/dhqvb8wbn/image/upload/v1776970595/eb5b762212931306d5babb699fb8500f4217fb2425c3e277293dd1d3c407b317_xnlsvu.png',
+      imageSize: '100%',
+      imageBackground: '#c4ccd8',
     },
     {
       titleKey: 'organization.about.cards.procedures',
@@ -2681,6 +2696,9 @@ export class OrganizationComponent implements OnInit, AfterViewInit {
       section: 'premiere-presidente',
       imageUrl:
         'https://res.cloudinary.com/dhqvb8wbn/image/upload/v1775726305/Presidence_du_conseil_detat_oddnb9.jpg',
+      imageFit: 'contain',
+      imageSize: '45%',
+      imageBackground: '#ffffff',
     },
   ];
 
