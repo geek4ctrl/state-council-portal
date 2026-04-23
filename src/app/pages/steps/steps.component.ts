@@ -19,7 +19,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
           <div class="container">
             <div class="hero-grid">
               <div class="hero-left">
-                <h1>{{ 'steps.hero.report.title' | i18n }}</h1>
+                <h1 class="report-hero-title">{{ 'steps.hero.report.title' | i18n }}</h1>
               </div>
               <div class="vertical-line"></div>
               <div class="hero-right">
@@ -424,6 +424,14 @@ import { FooterComponent } from '../../components/footer/footer.component';
       letter-spacing: 3px;
       line-height: 1.1;
       color: white;
+    }
+
+    .hero-left h1.report-hero-title {
+      margin: 0;
+      font-size: clamp(1.8rem, 4vw, 2.9rem);
+      font-weight: 700;
+      letter-spacing: 2px;
+      color: #ffffff;
     }
 
     .vertical-line {
@@ -870,7 +878,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
         display: none;
       }
 
-      .hero-left h1 {
+      .hero-left h1:not(.report-hero-title) {
         font-size: 3rem;
       }
     }
@@ -880,7 +888,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
         padding: 80px 0;
       }
 
-      .hero-left h1 {
+      .hero-left h1:not(.report-hero-title) {
         font-size: 2.5rem;
       }
 
@@ -955,7 +963,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
         padding: 60px 0;
       }
 
-      .hero-left h1 {
+      .hero-left h1:not(.report-hero-title) {
         font-size: 2rem;
         letter-spacing: 2px;
       }
