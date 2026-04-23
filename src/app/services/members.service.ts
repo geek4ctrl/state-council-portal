@@ -432,7 +432,7 @@ export class MemberService {
       name: 'Mme LUVANGU NKENGE Thérèse',
       title: 'Advisor',
       email: 'luvangu@conseildetatrdc.com',
-      image: 'https://res.cloudinary.com/dhqvb8wbn/image/upload/v1775670049/vecteezy_user-profile-vector-flat-illustration-avatar-person-icon_37336395_ukit5u.jpg',
+      image: 'https://res.cloudinary.com/dhqvb8wbn/image/upload/v1776903349/CONS._LUVANGU_copie.jpg_1_vzvygk.jpg',
       role: 'advisor',
       slug: 'mme-luvangu-nkenge-therese',
       office: 'STATE COUNCIL',
