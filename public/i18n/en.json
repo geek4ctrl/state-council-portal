@@ -799,7 +799,8 @@
     },
     "recent": {
       "title": "Recent role excerpts",
-      "subtitle": "Latest hearing excerpts"
+      "subtitle": "Latest hearing excerpts",
+      "empty": "No role excerpts are available at this time."
     },
     "documents": {
       "civil": {

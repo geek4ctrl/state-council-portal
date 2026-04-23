@@ -803,7 +803,8 @@
     },
     "recent": {
       "title": "Bitupa bia mudimu wa mudimu",
-      "subtitle": "Bitupa bia diumvua dia kumpala"
+        "subtitle": "Bitupa bia diumvua dia kumpala",
+        "empty": "Kena bitupa bia mudimu ebi bienzeka tshisekedi."
     },
     "documents": {
       "civil": {
