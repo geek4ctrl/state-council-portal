@@ -26,7 +26,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
         <div class="container">
           <div class="hero-grid">
             <div class="hero-title">
-              <h1 [innerHTML]="'audiences.hero.title' | i18n"></h1>
+              <h1 class="hearings-roll-hero-title" [innerHTML]="'audiences.hero.title' | i18n"></h1>
             </div>
             <div class="vertical-line"></div>
             <div class="hero-description">
@@ -222,6 +222,14 @@ import { FooterComponent } from '../../components/footer/footer.component';
         font-weight: 700;
         line-height: 1.05;
         margin: 0;
+        letter-spacing: 2px;
+        color: #ffffff;
+      }
+
+      .hero-title h1.hearings-roll-hero-title {
+        margin: 0;
+        font-size: clamp(1.8rem, 4vw, 2.9rem);
+        font-weight: 700;
         letter-spacing: 2px;
         color: #ffffff;
       }
@@ -764,7 +772,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
           transform: translate(0, -50%);
         }
 
-        .hero-title h1 {
+        .hero-title h1:not(.hearings-roll-hero-title) {
           font-size: 3.2rem;
           letter-spacing: 1.5px;
         }
@@ -849,7 +857,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
           gap: 25px;
         }
 
-        .hero-title h1 {
+        .hero-title h1:not(.hearings-roll-hero-title) {
           font-size: 2.5rem;
           letter-spacing: 2px;
         }
@@ -998,7 +1006,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
           padding: 60px 0;
         }
 
-        .hero-title h1 {
+        .hero-title h1:not(.hearings-roll-hero-title) {
           font-size: 2rem;
           letter-spacing: 1.5px;
         }
