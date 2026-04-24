@@ -65,12 +65,9 @@ import { FooterComponent } from '../../components/footer/footer.component';
             } @else {
               @for (article of getCurrentPageArticles(); track article.id; let i = $index) {
                 <article
-                  class="news-card glass-card tilt-card"
+                  class="news-card glass-card"
                   [style.--i]="i"
-                  (mousemove)="tilt($event)"
-                  (mouseleave)="tiltReset($event)"
                 >
-                  <div class="tilt-shine"></div>
                   <div class="news-image img-zoom">
                     <img [src]="article.image" [alt]="article.title" loading="lazy" />
                     <div class="img-sheen"></div>
@@ -86,9 +83,6 @@ import { FooterComponent } from '../../components/footer/footer.component';
                     <a
                       class="read-more mag-btn"
                       [routerLink]="['/news', article.id]"
-                      (mousemove)="mag($event)"
-                      (mouseleave)="magOut($event)"
-                      (click)="ripple($event)"
                     >
                       <span>{{ 'news.actions.readMore' | i18n }}</span>
                       <app-icon name="arrow-right" [size]="16"></app-icon>
@@ -108,9 +102,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
             <button
               class="pagination-btn prev-btn mag-btn"
               [disabled]="currentPage() === 1"
-              (click)="goToPreviousPage(); ripple($event)"
-              (mousemove)="mag($event)"
-              (mouseleave)="magOut($event)"
+              (click)="goToPreviousPage()"
               [attr.aria-label]="'news.pagination.previous' | i18n"
             >
               <app-icon
@@ -125,9 +117,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
               <button
                 class="pagination-number mag-btn"
                 [class.active]="currentPage() === page"
-                (click)="goToPage(page); ripple($event)"
-                (mousemove)="mag($event)"
-                (mouseleave)="magOut($event)"
+                (click)="goToPage(page)"
                 [attr.aria-current]="currentPage() === page ? 'page' : null"
                 [attr.aria-label]="'news.pagination.pageLabel' | i18n: { page }"
               >
@@ -137,9 +127,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
             <button
               class="pagination-btn next-btn mag-btn"
               [disabled]="currentPage() === totalPages()"
-              (click)="goToNextPage(); ripple($event)"
-              (mousemove)="mag($event)"
-              (mouseleave)="magOut($event)"
+              (click)="goToNextPage()"
               [attr.aria-label]="'news.pagination.next' | i18n"
             >
               <span class="next-text">{{ 'news.pagination.next' | i18n }}</span>
@@ -156,12 +144,9 @@ import { FooterComponent } from '../../components/footer/footer.component';
 
             <div class="insights-grid">
               <div
-                class="insight-card glass-card tilt-card"
+                class="insight-card glass-card"
                 style="--i:0"
-                (mousemove)="tilt($event)"
-                (mouseleave)="tiltReset($event)"
               >
-                <div class="tilt-shine"></div>
                 <div class="insight-card-header">
                   <h4>{{ 'news.insights.topics.title' | i18n }}</h4>
                   <span class="insight-note anim-label-pulse">{{
@@ -177,12 +162,9 @@ import { FooterComponent } from '../../components/footer/footer.component';
               </div>
 
               <div
-                class="insight-card glass-card tilt-card"
+                class="insight-card glass-card"
                 style="--i:1"
-                (mousemove)="tilt($event)"
-                (mouseleave)="tiltReset($event)"
               >
-                <div class="tilt-shine"></div>
                 <div class="insight-card-header">
                   <h4>{{ 'news.insights.cadence.title' | i18n }}</h4>
                   <span class="insight-note anim-label-pulse">{{
