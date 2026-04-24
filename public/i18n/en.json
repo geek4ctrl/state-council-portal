@@ -121,7 +121,7 @@
       "pageLabel": "Page {{page}}"
     },
     "empty": {
-      "title": "No news posts yet",
+      "title": "No new post yet",
       "body": "New articles will appear here once they are published."
     },
     "articles": {
