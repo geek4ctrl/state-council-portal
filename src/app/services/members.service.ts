@@ -273,7 +273,7 @@ export class MemberService {
         titleKey: 'member.title.advisor',
       title: 'Advisor',
       email: 'kanza@conseildetatrdc.com',
-      image: 'https://res.cloudinary.com/dhqvb8wbn/image/upload/v1775670049/vecteezy_user-profile-vector-flat-illustration-avatar-person-icon_37336395_ukit5u.jpg',
+      image: 'https://res.cloudinary.com/dhqvb8wbn/image/upload/v1777070512/CONS_KANZA_MAKOKA_JOSEPH_copie.jpg_1_ctcw5q.jpg',
       role: 'advisor',
       slug: 'kanza-makoka-joseph',
         officeKey: 'member.office.stateCouncil',

@@ -137,8 +137,8 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
       .publication-title {
         margin: 0 0 10px;
         color: #1a2942;
-        font-size: 1.24rem;
-        line-height: 1.45;
+        font-size: 0.9rem;
+        line-height: 1.8;
       }
 
       .publication-meta {
