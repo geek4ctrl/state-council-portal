@@ -149,10 +149,11 @@ import { FooterComponent } from '../../components/footer/footer.component';
     }
 
     .hero-left h1 {
-      font-size: 4rem;
-      font-weight: 700;
       margin: 0;
-      letter-spacing: 3px;
+      font-size: clamp(1.8rem, 4vw, 2.9rem);
+      font-weight: 700;
+      letter-spacing: 2px;
+      color: #ffffff;
       line-height: 1.1;
     }
 
