@@ -1618,8 +1618,8 @@ type GreffeFirstPresident = {
       }
 
       .org-tile-media.has-image {
-        background-size: cover;
-        background-position: top center;
+        background-size: contain;
+        background-position: center;
         background-repeat: no-repeat;
       }
 
@@ -1634,7 +1634,7 @@ type GreffeFirstPresident = {
         content: '';
         position: absolute;
         inset: 0;
-        background: linear-gradient(180deg, rgba(15, 23, 42, 0.05), rgba(15, 23, 42, 0.6));
+        background: linear-gradient(180deg, rgba(15, 23, 42, 0.02), rgba(15, 23, 42, 0.25));
       }
 
       .org-tile-media.has-image span {
