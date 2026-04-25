@@ -246,24 +246,24 @@ type GreffeFirstPresident = {
             <h2>{{ 'organization.firstPresident.page.honoraryTitle' | i18n }}</h2>
             <div class="fp-honorary-list">
               <article class="fp-honorary-item">
-                <div class="fp-honorary-info">
-                  <h3>
-                    <a [routerLink]="['/organization/member', 'felix-vunduawe-te-pemako']" class="fp-honorary-link">
+                <a [routerLink]="['/organization/member', 'felix-vunduawe-te-pemako']" class="fp-honorary-link-card">
+                  <div class="fp-honorary-info">
+                    <h3 class="fp-honorary-link">
                       {{ 'organization.firstPresident.page.honorary.felix.name' | i18n }}
-                    </a>
-                  </h3>
-                  <p class="fp-honorary-years">{{ 'organization.firstPresident.page.honorary.felix.years' | i18n }}</p>
-                </div>
+                    </h3>
+                    <p class="fp-honorary-years">{{ 'organization.firstPresident.page.honorary.felix.years' | i18n }}</p>
+                  </div>
+                </a>
               </article>
               <article class="fp-honorary-item">
-                <div class="fp-honorary-info">
-                  <h3>
-                    <a [routerLink]="['/organization/member', 'marthe-odio-nonde']" class="fp-honorary-link">
+                <a [routerLink]="['/organization/member', 'marthe-odio-nonde']" class="fp-honorary-link-card">
+                  <div class="fp-honorary-info">
+                    <h3 class="fp-honorary-link">
                       {{ 'organization.firstPresident.page.honorary.marthe.name' | i18n }}
-                    </a>
-                  </h3>
-                  <p class="fp-honorary-years">{{ 'organization.firstPresident.page.honorary.marthe.years' | i18n }}</p>
-                </div>
+                    </h3>
+                    <p class="fp-honorary-years">{{ 'organization.firstPresident.page.honorary.marthe.years' | i18n }}</p>
+                  </div>
+                </a>
               </article>
             </div>
           </div>
@@ -916,6 +916,7 @@ type GreffeFirstPresident = {
 
       .fp-bio-text {
         flex: 1;
+        margin-top: 18px;
       }
 
       .fp-bio-text h2 {
@@ -1008,7 +1009,28 @@ type GreffeFirstPresident = {
         display: block;
         background: #f8f9fb;
         border-radius: 12px;
+        padding: 0;
+        overflow: hidden;
+        border: 1px solid transparent;
+        transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+      }
+
+      .fp-honorary-link-card {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
         padding: 22px 24px;
+        color: inherit;
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      .fp-honorary-item:hover,
+      .fp-honorary-item:focus-within {
+        transform: translateY(-2px);
+        box-shadow: 0 12px 28px rgba(26, 41, 66, 0.1);
+        border-color: rgba(31, 155, 217, 0.3);
       }
 
       .fp-honorary-info h3 {
@@ -1019,16 +1041,39 @@ type GreffeFirstPresident = {
       }
 
       .fp-honorary-link {
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
         color: inherit;
-        text-decoration: none;
-        border-bottom: 1px solid transparent;
-        transition: color 0.2s ease, border-color 0.2s ease;
+        text-decoration: underline;
+        text-decoration-color: rgba(0, 95, 184, 0.25);
+        text-underline-offset: 0.18em;
+        transition: color 0.2s ease, text-decoration-color 0.2s ease, transform 0.2s ease;
       }
 
-      .fp-honorary-link:hover,
-      .fp-honorary-link:focus-visible {
+      .fp-honorary-link::after {
+        content: '→';
+        font-size: 0.95rem;
         color: #005fb8;
-        border-bottom-color: rgba(0, 95, 184, 0.55);
+        transition: transform 0.2s ease;
+      }
+
+      .fp-honorary-item:hover .fp-honorary-link,
+      .fp-honorary-link-card:focus-visible .fp-honorary-link {
+        color: #005fb8;
+        text-decoration-color: rgba(0, 95, 184, 0.55);
+      }
+
+      .fp-honorary-item:hover .fp-honorary-link::after,
+      .fp-honorary-link-card:focus-visible .fp-honorary-link::after {
+        transform: translateX(3px);
+      }
+
+      .fp-honorary-link-card:focus-visible {
+        outline: 3px solid #1F9BD9;
+        outline-offset: -3px;
+        border-radius: 12px;
       }
 
       .fp-honorary-years {
@@ -1049,6 +1094,10 @@ type GreffeFirstPresident = {
 
         .fp-bio-layout {
           flex-direction: column;
+        }
+
+        .fp-bio-text {
+          margin-top: 0;
         }
 
         .fp-bio-photo {
@@ -1569,8 +1618,8 @@ type GreffeFirstPresident = {
       }
 
       .org-tile-media.has-image {
-        background-size: cover;
-        background-position: top center;
+        background-size: contain;
+        background-position: center;
         background-repeat: no-repeat;
       }
 
@@ -1585,7 +1634,7 @@ type GreffeFirstPresident = {
         content: '';
         position: absolute;
         inset: 0;
-        background: linear-gradient(180deg, rgba(15, 23, 42, 0.05), rgba(15, 23, 42, 0.6));
+        background: linear-gradient(180deg, rgba(15, 23, 42, 0.02), rgba(15, 23, 42, 0.25));
       }
 
       .org-tile-media.has-image span {

@@ -840,7 +840,7 @@
     },
     "firstPresident": {
       "alt": "Rais ya liboso",
-      "title": "Rais ya liboso",
+      "title": "Bokambi ya Conseil d'Etat",
       "body": "Rais ya liboso akambaka Conseil d'Etat mpe likita na yango.",
       "page": {
         "heroTitle": "Bokambi ya Conseil d'Etat",
@@ -882,15 +882,15 @@
       },
       "tiles": {
         "organigramme": "Organigramme",
-        "firstPresident": "Rais ya liboso",
+        "firstPresident": "Bokambi ya Conseil d'Etat",
         "consultative": "Eteni ya Consultative",
         "contentieux": "Eteni ya Contentieux",
-        "registry": "Greffe mpe Secretariat general",
+        "registry": "Greffe",
         "juges": "Bazuzi ya Conseil d'Etat"
       },
       "roles": {
         "firstPresident": {
-          "title": "Rais ya liboso",
+          "title": "Bokambi ya Conseil d'Etat",
           "body": "Rais ya liboso ya Conseil d Etat azali mokonzi ya likolo ya makambo manso ya tribunal ya administratif. Azali kotala ete Conseil d Etat mpe ba tribunal nionso ya administratif ezali kosala malamu."
         },
         "sectionPresidents": {
@@ -906,13 +906,13 @@
           "body": "Ba Conseiller ya Conseil d Etat bazali kopesama, kobongisama mpe kobongolama na ba chambre na mokano ya Rais ya liboso."
         },
         "registry": {
-          "title": "Secrétariat Général / Greffe",
+          "title": "Greffe",
           "body": "Greffe ya Conseil d Etat ezali na Greffier en chef, ba greffier principaux, ba greffier divisionnaires, ba greffier mpe ba huissier. Bazali kosala mosala na bango na kolanda mibeko ya République."
         }
       }
     },
     "greffe": {
-      "title": "Greffe mpe Archives (Secretariat general)",
+      "title": "Greffe",
       "ariaLabel": "Biteni ya greffe",
       "tabs": {
         "presidents": "Marais ya liboso",
