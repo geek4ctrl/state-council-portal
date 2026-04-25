@@ -158,6 +158,11 @@ body {
   z-index: 99997;
   transform: translate(-50%, -50%);
   transition: width 0.4s ease, height 0.4s ease;
+  display: none;
+}
+
+.cur-ring {
+  display: none;
 }
 
 body:has(button:hover) .cur-ring,

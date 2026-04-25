@@ -3,12 +3,13 @@ import {
   ElementRef, OnInit, ViewChild, inject,
 } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RouterLink } from '@angular/router';
 import { I18nPipe } from '../../i18n/i18n.pipe';
 import { FooterComponent } from '../../components/footer/footer.component';
 
 @Component({
   selector: 'app-international-relations',
-  imports: [CommonModule, I18nPipe, FooterComponent],
+  imports: [CommonModule, RouterLink, I18nPipe, FooterComponent],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <div class="page-wrap page-container">
@@ -32,25 +33,22 @@ import { FooterComponent } from '../../components/footer/footer.component';
       <section class="stats-section">
         <div class="container">
           <div class="stats-grid">
-            <div class="stat-item tilt-card" style="--i:0" (mousemove)="tilt($event)" (mouseleave)="tiltReset($event)">
-              <div class="tilt-shine"></div>
+            <div class="stat-item" style="--i:0">
               <div class="stat-number">2</div>
               <div class="stat-divider"></div>
-              <div class="stat-label anim-label-pulse">{{ 'international.stats.associations' | i18n }}</div>
+              <div class="stat-label">{{ 'international.stats.associations' | i18n }}</div>
             </div>
             <div class="stat-separator"></div>
-            <div class="stat-item tilt-card" style="--i:1" (mousemove)="tilt($event)" (mouseleave)="tiltReset($event)">
-              <div class="tilt-shine"></div>
+            <div class="stat-item" style="--i:1">
               <div class="stat-number">50+</div>
               <div class="stat-divider"></div>
-              <div class="stat-label anim-label-pulse">{{ 'international.stats.partners' | i18n }}</div>
+              <div class="stat-label">{{ 'international.stats.partners' | i18n }}</div>
             </div>
             <div class="stat-separator"></div>
-            <div class="stat-item tilt-card" style="--i:2" (mousemove)="tilt($event)" (mouseleave)="tiltReset($event)">
-              <div class="tilt-shine"></div>
+            <div class="stat-item" style="--i:2">
               <div class="stat-number">100+</div>
               <div class="stat-divider"></div>
-              <div class="stat-label anim-label-pulse">{{ 'international.stats.exchanges' | i18n }}</div>
+              <div class="stat-label">{{ 'international.stats.exchanges' | i18n }}</div>
             </div>
           </div>
         </div>
@@ -66,8 +64,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
           <p class="section-subtitle anim-up a-d1">{{ 'international.networks.subtitle' | i18n }}</p>
 
           <div class="network-cards">
-            <div class="network-card glass-card tilt-card" style="--i:0" (mousemove)="tilt($event)" (mouseleave)="tiltReset($event)">
-              <div class="tilt-shine"></div>
+            <div class="network-card glass-card" style="--i:0">
               <div class="card-accent"></div>
               <div class="card-content">
                 <h3>AHJUCAF</h3>
@@ -76,8 +73,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
               </div>
             </div>
 
-            <div class="network-card glass-card tilt-card" style="--i:1" (mousemove)="tilt($event)" (mouseleave)="tiltReset($event)">
-              <div class="tilt-shine"></div>
+            <div class="network-card glass-card" style="--i:1">
               <div class="card-accent"></div>
               <div class="card-content">
                 <h3>AA-HJF</h3>
@@ -100,8 +96,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
           <p class="section-subtitle centered anim-up a-d1">{{ 'international.domains.subtitle' | i18n }}</p>
 
           <div class="domain-grid">
-            <div class="domain-card glass-card tilt-card" style="--i:0" (mousemove)="tilt($event)" (mouseleave)="tiltReset($event)">
-              <div class="tilt-shine"></div>
+            <div class="domain-card glass-card" style="--i:0">
               <div class="domain-header">
                 <div class="domain-icon">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
@@ -113,8 +108,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
               <p>{{ 'international.domains.dialogue.body' | i18n }}</p>
             </div>
 
-            <div class="domain-card glass-card tilt-card" style="--i:1" (mousemove)="tilt($event)" (mouseleave)="tiltReset($event)">
-              <div class="tilt-shine"></div>
+            <div class="domain-card glass-card" style="--i:1">
               <div class="domain-header">
                 <div class="domain-icon">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
@@ -127,8 +121,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
               <p>{{ 'international.domains.assistance.body' | i18n }}</p>
             </div>
 
-            <div class="domain-card glass-card tilt-card" style="--i:2" (mousemove)="tilt($event)" (mouseleave)="tiltReset($event)">
-              <div class="tilt-shine"></div>
+            <div class="domain-card glass-card" style="--i:2">
               <div class="domain-header">
                 <div class="domain-icon">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
@@ -143,8 +136,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
               <p>{{ 'international.domains.capacity.body' | i18n }}</p>
             </div>
 
-            <div class="domain-card glass-card tilt-card" style="--i:3" (mousemove)="tilt($event)" (mouseleave)="tiltReset($event)">
-              <div class="tilt-shine"></div>
+            <div class="domain-card glass-card" style="--i:3">
               <div class="domain-header">
                 <div class="domain-icon">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
@@ -169,9 +161,9 @@ import { FooterComponent } from '../../components/footer/footer.component';
               <h2>{{ 'international.collaboration.title' | i18n }}</h2>
               <p class="section-subtitle">{{ 'international.collaboration.body' | i18n }}</p>
             </div>
-            <button class="contact-btn mag-btn" (mousemove)="mag($event)" (mouseleave)="magOut($event)" (click)="ripple($event)">
+            <a class="contact-btn mag-btn" routerLink="/steps">
               <span>{{ 'international.collaboration.cta' | i18n }}</span>
-            </button>
+            </a>
           </div>
         </div>
       </section>
@@ -598,6 +590,10 @@ import { FooterComponent } from '../../components/footer/footer.component';
       letter-spacing: 1px;
       white-space: nowrap;
       flex-shrink: 0;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
     }
 
     .contact-btn:hover {
