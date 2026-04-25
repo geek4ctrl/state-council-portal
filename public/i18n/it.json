@@ -840,7 +840,7 @@
     },
     "firstPresident": {
       "alt": "Prima Presidente",
-      "title": "La prima presidente",
+      "title": "La Presidenza del Consiglio di Stato",
       "body": "La Prima Presidente guida il Consiglio di Stato, presiede le sessioni e assicura il corretto funzionamento dell'istituzione.",
       "page": {
         "heroTitle": "La Presidenza del Consiglio di Stato",
@@ -882,15 +882,15 @@
       },
       "tiles": {
         "organigramme": "Organigramma",
-        "firstPresident": "La Prima Presidente",
+        "firstPresident": "La Presidenza del Consiglio di Stato",
         "consultative": "La Sezione consultiva",
         "contentieux": "La Sezione contenziosa",
-        "registry": "La Cancelleria e la Segreteria generale",
+        "registry": "La Cancelleria",
         "juges": "I giudici del Consiglio di Stato"
       },
       "roles": {
         "firstPresident": {
-          "title": "La Prima Presidente",
+          "title": "La Presidenza del Consiglio di Stato",
           "body": "Il Primo Presidente del Consiglio di Stato è l autorita gerarchica al vertice di tutte le giurisdizioni amministrative. Vigila sul buon funzionamento del Consiglio di Stato e di tutte le altre giurisdizioni amministrative."
         },
         "sectionPresidents": {
@@ -906,13 +906,13 @@
           "body": "I Consiglieri del Consiglio di Stato sono assegnati, riassegnati e, se del caso, sostituiti a livello delle camere per decisione del Primo Presidente. Fanno parte della composizione."
         },
         "registry": {
-          "title": "Il Segretariato Generale / Cancelleria",
+          "title": "La Cancelleria",
           "body": "La cancelleria del Consiglio di Stato comprende un Cancelliere capo, cancellieri principali, cancellieri divisionali, cancellieri e uscieri. Esercitano le loro funzioni conformemente alle leggi e ai regolamenti della Repubblica."
         }
       }
     },
     "greffe": {
-      "title": "Cancelleria e archivi (Segreteria generale)",
+      "title": "La Cancelleria",
       "ariaLabel": "Sezioni della cancelleria",
       "tabs": {
         "presidents": "I primi presidenti",

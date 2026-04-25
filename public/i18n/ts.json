@@ -840,7 +840,7 @@
     },
     "firstPresident": {
       "alt": "Mfumu wa kumpala",
-      "title": "Mulombodi wa kumpala",
+      "title": "Bukalenge bua Tshipangu tshia Ditunga",
       "body": "Mfumu wa ditunga wa kumpala udi ulombola tshipangu tshia ditunga, ulombola bisangilu biatshi, ne udi utangila mudimu muimpe wa tshibambalu etshi.",
       "page": {
         "heroTitle": "Bukalenge bua Tshipangu tshia Ditunga",
@@ -882,15 +882,15 @@
       },
       "tiles": {
         "organigramme": "Organigramme",
-        "firstPresident": "Mfumu wa kumpala",
+        "firstPresident": "Bukalenge bua Tshipangu tshia Ditunga",
         "consultative": "Tshitupa tshia diyukidilangana",
         "contentieux": "Tshitupa tshia bilumbu",
-        "registry": "Muaba wa difunda dia mena ne Sekretariya Munene",
+        "registry": "Muaba wa difunda dia mena",
         "juges": "Bazuzi ba Tshipangu tshia Ditunga"
       },
       "roles": {
         "firstPresident": {
-          "title": "Mfumu wa kumpala",
+          "title": "Bukalenge bua Tshipangu tshia Ditunga",
           "body": "Mfumu wa kumpala wa Conseil d Etat ndiye mukulu wa ba tribunal yonso ya malu a mbulamatadi. Ye nde utala ete Conseil d Etat ne ba tribunal yonso ya administratif esalaka malamu."
         },
         "sectionPresidents": {
@@ -906,13 +906,13 @@
           "body": "Ba Conseiller ya Conseil d Etat bapesama mpe babongolama na ba chambre na mokano ya Mfumu wa kumpala."
         },
         "registry": {
-          "title": "Secrétariat Général / Greffe",
+          "title": "Muaba wa difunda dia mena",
           "body": "Greffe ya Conseil d Etat ezali na Greffier en chef, ba greffier principaux, ba greffier divisionnaires, ba greffier mpe ba huissier."
         }
       }
     },
     "greffe": {
-      "title": "Greffe ne Archives (Sekretariya Munene)",
+      "title": "Muaba wa difunda dia mena",
       "ariaLabel": "Bitupa bia greffe",
       "tabs": {
         "presidents": "Balombodi ba kumpala",

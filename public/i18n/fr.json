@@ -836,11 +836,11 @@
     },
     "firstPresident": {
       "alt": "Première Présidente",
-      "title": "La première présidente",
+      "title": "La Présidence du Conseil d'État",
       "body": "La Première Présidente dirige le Conseil d'État, préside ses sessions et veille au bon fonctionnement de l'institution.",
       "page": {
-        "heroTitle": "La Présidence du Conseil d'Etat",
-        "inauguration": "La présidence du Conseil d'Etat est assurée par la Première Présidente. Celle-ci dispose des compétences ci-après : l'élaboration du projet de règlement intérieur du Conseil d'Etat ; la répartition des matières entre les deux sections ou entre les chambres ; la gestion du personnel de greffe mis à la disposition du Conseil ; la gestion du budget de fonctionnement alloué aux juridictions de l'ordre administratif. Elle en est l'ordonnatrice déléguée.<br><br>Depuis le 18 Février 2025, Madame Brigitte Nsensele wa Nsensele est la Première Présidente du Conseil d'Etat.",
+        "heroTitle": "La Présidence du Conseil d'État",
+        "inauguration": "La présidence du Conseil d'État est assurée par la Première Présidente. Celle-ci dispose des compétences ci-après : l'élaboration du projet de règlement intérieur du Conseil d'État ; la répartition des matières entre les deux sections ou entre les chambres ; la gestion du personnel de greffe mis à la disposition du Conseil ; la gestion du budget de fonctionnement alloué aux juridictions de l'ordre administratif. Elle en est l'ordonnatrice déléguée.<br><br>Depuis le 18 février 2025, Madame Brigitte Nsensele wa Nsensele est la Première Présidente du Conseil d'État.",
         "biographyTitle": "Biographie de Mme. Brigitte Nsensele wa Nsensele",
         "biography": "Née à Kinshasa, Madame Brigitte Nsensele wa Nsensele est magistrate de carrière. Elle a gravi tous les échelons de la magistrature administrative avant d'être nommée Première Présidente du Conseil d'État de la République Démocratique du Congo en février 2025.",
         "careerTitle": "Parcours",
@@ -868,26 +868,26 @@
     },
     "orgPage": {
       "hero": {
-        "title": "Organisation du Conseil d'Etat",
+        "title": "Organisation du Conseil d'État",
         "subtitle": "Organigramme",
-        "body": "Texte de presentation de l'organisation du Conseil d'Etat."
+        "body": "Texte de présentation de l'organisation du Conseil d'État."
       },
       "photoLabel": "Photo",
       "organigramme": {
-        "title": "Organigramme general"
+        "title": "Organigramme général"
       },
       "tiles": {
         "organigramme": "Organigramme",
-        "firstPresident": "La Première Présidente",
+        "firstPresident": "La Présidence du Conseil d'État",
         "consultative": "La section consultative",
         "contentieux": "La section du contentieux",
-        "registry": "Le greffe et le Secrétariat général",
+        "registry": "Le greffe",
         "juges": "Les juges du Conseil d'État"
       },
       "roles": {
         "firstPresident": {
-          "title": "La première présidente",
-          "body": "La présidence du Conseil d’Etat est assurée par le Premier Président. Celui-ci\ndispose des compétences ci-après : l’élaboration du projet de règlement intérieur\ndu Conseil d’Etat ; la répartition des matières entre les deux sections ou entre les\nchambres ; la gestion du personnel de greffe mis à la disposition du Conseil ; la\ngestion du budget de fonctionnement alloué aux juridictions de l’ordre\nadministratif. Il en est l’ordonnateur délégué.\nDepuis le 18 Fevrier 2025, Madame Brigitte Nsensele wa Nsensele est la Première Présidente du Conseil d’Etat."
+          "title": "La Présidence du Conseil d'État",
+          "body": "La présidence du Conseil d’État est assurée par le Premier Président. Celui-ci\ndispose des compétences ci-après : l’élaboration du projet de règlement intérieur\ndu Conseil d’État ; la répartition des matières entre les deux sections ou entre les\nchambres ; la gestion du personnel de greffe mis à la disposition du Conseil ; la\ngestion du budget de fonctionnement alloué aux juridictions de l’ordre\nadministratif. Il en est l’ordonnateur délégué.\nDepuis le 18 février 2025, Madame Brigitte Nsensele wa Nsensele est la Première Présidente du Conseil d’État."
         },
         "sectionPresidents": {
           "title": "Les Présidents des Sections",
@@ -898,17 +898,17 @@
           "body": "Les chambres de chaque section du Conseil d'État, 9 au total, sont dirigées par des présidents, désignés, suspendus, relevés de leurs fonctions et, le cas échéant, remplacés par décision du premier président. Chaque Président de chambre assure l'exécution de toutes les décisions du Premier Président ou du Président de section au sein de sa chambre. Il peut présider une composition, et conduire les audiences consacrées à l'examen des affaires confiées à cette composition, sauf si ces audiences doivent être dirigées par un autre magistrat désigné Président de la composition. Le président de chambre veille à l'indépendance et à l'impartialité des magistrats de chaque composition."
         },
         "advisors": {
-          "title": "Les conseillers au Conseil d'Etat",
+          "title": "Les conseillers au Conseil d'État",
           "body": "Les Conseillers au Conseil d'État sont affectés, réaffectés et, le cas échéant, remplacés au niveau des chambres du Conseil d'État par décision du Premier Président. Ils font partie de la composition."
         },
         "registry": {
-          "title": "Le Secrétariat générale / Greffe",
+          "title": "Le greffe",
           "body": "Le greffe du Conseil d'État comprend un Greffier en chef, des greffiers principaux, des greffiers divisionnaires, des greffiers et des huissiers. Ils exercent leurs fonctions conformément aux lois et règlements de la République. Le greffe est chargé de recevoir et d'enrôler les affaires dont le Conseil d'État est saisi. Il reçoit toutes les pièces des parties en demande comme en défense. Il signifie les requêtes, réquisitoires, mémoires et autres exploits. Les Greffiers et huissiers relèvent du statut des agents de carrière des services publics de l'État. Le Greffier en chef remplit, avec célérité et professionnalisme, les devoirs qui lui incombent. Il est chargé du maintien de l'ordre au sein du greffe du Conseil d'État. Il répartit les tâches aux responsables des greffes et coordonne les activités de ces derniers."
         }
       }
     },
     "greffe": {
-      "title": "Greffe et archives (Secrétariat général)",
+      "title": "Le greffe",
       "ariaLabel": "Sections du greffe",
       "tabs": {
         "presidents": "Les premiers présidents",
