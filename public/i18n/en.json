@@ -836,7 +836,7 @@
     },
     "firstPresident": {
       "alt": "First President",
-      "title": "The first president",
+      "title": "The Presidency of the State Council",
       "body": "The First President leads the State Council, presides over its sessions, and ensures the proper functioning of the institution.",
       "page": {
         "heroTitle": "The Presidency of the State Council",
@@ -878,15 +878,15 @@
       },
       "tiles": {
         "organigramme": "Organization chart",
-        "firstPresident": "The First President",
+        "firstPresident": "The Presidency of the State Council",
         "consultative": "Consultative Section",
         "contentieux": "Litigation Section",
-        "registry": "Registry and General Secretariat",
+        "registry": "Registry",
         "juges": "The Judges of the State Council"
       },
       "roles": {
         "firstPresident": {
-          "title": "The First President",
+          "title": "The Presidency of the State Council",
           "body": "The First President of the Council of State is the hierarchical authority at the top of all administrative courts. They ensure the proper functioning of the Council of State and all other administrative courts."
         },
         "sectionPresidents": {
@@ -902,13 +902,13 @@
           "body": "Advisors to the Council of State are assigned, reassigned and, where applicable, replaced at the chamber level by decision of the First President. They are part of the panel."
         },
         "registry": {
-          "title": "General Secretariat / Registry",
+          "title": "Registry",
           "body": "The Registry of the Council of State comprises a Chief Registrar, principal registrars, divisional registrars, registrars and bailiffs. They perform their duties in accordance with the laws and regulations of the Republic. The Registry is responsible for receiving and enrolling cases before the Council of State. It receives all documents from parties, whether plaintiff or defendant. It serves petitions, requisitions, briefs and other writs. Registrars and bailiffs are governed by the statute of career agents of public services. The Chief Registrar fulfills their duties with diligence and professionalism. They are responsible for maintaining order within the Registry of the Council of State, distributing tasks to registry heads and coordinating their activities."
         }
       }
     },
     "greffe": {
-      "title": "Registry and Archives (General Secretariat)",
+      "title": "Registry",
       "ariaLabel": "Registry sections",
       "tabs": {
         "presidents": "First Presidents",

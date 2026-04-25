@@ -840,7 +840,7 @@
     },
     "firstPresident": {
       "alt": "Primeiro Presidente",
-      "title": "O primeiro presidente",
+      "title": "A Presidência do Conselho de Estado",
       "body": "O Primeiro Presidente dirige o State Council, preside as suas sessões e zela pelo bom funcionamento da instituição.",
       "page": {
         "heroTitle": "A Presidência do Conselho de Estado",
@@ -882,15 +882,15 @@
       },
       "tiles": {
         "organigramme": "Organograma",
-        "firstPresident": "O Primeiro Presidente",
+        "firstPresident": "A Presidência do Conselho de Estado",
         "consultative": "A Seção Consultiva",
         "contentieux": "A Seção do Contencioso",
-        "registry": "O Registro e o Secretariado-Geral",
+        "registry": "O Registro",
         "juges": "Os juízes do Conselho de Estado"
       },
       "roles": {
         "firstPresident": {
-          "title": "A Primeira Presidente",
+          "title": "A Presidência do Conselho de Estado",
           "body": "O Primeiro Presidente do Conselho de Estado é a autoridade hierárquica no topo de todas as jurisdições administrativas. Zela pelo bom funcionamento do Conselho de Estado e de todas as outras jurisdições administrativas."
         },
         "sectionPresidents": {
@@ -906,13 +906,13 @@
           "body": "Os Conselheiros do Conselho de Estado são afetados, reafetados e, se for o caso, substituídos ao nível das câmaras por decisão do Primeiro Presidente. Fazem parte da composição."
         },
         "registry": {
-          "title": "O Secretariado-Geral / Registo",
+          "title": "O Registro",
           "body": "O registo do Conselho de Estado compreende um Escrivão-chefe, escrivães principais, escrivães divisionários, escrivães e oficiais de justiça. Exercem as suas funções em conformidade com as leis e regulamentos da República."
         }
       }
     },
     "greffe": {
-      "title": "Registro e arquivos (Secretariado-Geral)",
+      "title": "O Registro",
       "ariaLabel": "Seções do registro",
       "tabs": {
         "presidents": "Os primeiros presidentes",

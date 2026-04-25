@@ -840,7 +840,7 @@
     },
     "firstPresident": {
       "alt": "primer presidente",
-      "title": "El primer presidente",
+      "title": "La Presidencia del Consejo de Estado",
       "body": "El Primer Presidente dirige el Consejo de Estado, preside sus sesiones y vela por el buen funcionamiento de la institución.",
       "page": {
         "heroTitle": "La Presidencia del Consejo de Estado",
@@ -882,15 +882,15 @@
       },
       "tiles": {
         "organigramme": "Organigrama",
-        "firstPresident": "El Primer Presidente",
+        "firstPresident": "La Presidencia del Consejo de Estado",
         "consultative": "La Sección Consultiva",
         "contentieux": "La Sección de Litigios",
-        "registry": "El Registro y la Secretaría General",
+        "registry": "El Registro",
         "juges": "Los jueces del Consejo de Estado"
       },
       "roles": {
         "firstPresident": {
-          "title": "La primera presidenta",
+          "title": "La Presidencia del Consejo de Estado",
           "body": "El Primer Presidente del Consejo de Estado es la autoridad jerárquica al frente de todos los tribunales administrativos. Vela por el buen funcionamiento del Consejo de Estado y de todos los demás tribunales administrativos."
         },
         "sectionPresidents": {
@@ -906,13 +906,13 @@
           "body": "Los Consejeros del Consejo de Estado son asignados, reasignados y, en su caso, sustituidos a nivel de las salas por decisión del Primer Presidente. Forman parte de la composición."
         },
         "registry": {
-          "title": "La Secretaría General / Registro",
+          "title": "El Registro",
           "body": "El registro del Consejo de Estado comprende un Secretario en jefe, secretarios principales, secretarios divisionales, secretarios y ujieres. Ejercen sus funciones conforme a las leyes y reglamentos de la República. El registro se encarga de recibir e inscribir los asuntos ante el Consejo de Estado."
         }
       }
     },
     "greffe": {
-      "title": "Registro y archivos (Secretaría General)",
+      "title": "El Registro",
       "ariaLabel": "Secciones del registro",
       "tabs": {
         "presidents": "Los primeros presidentes",
