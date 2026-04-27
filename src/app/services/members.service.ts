@@ -572,7 +572,7 @@ export class MemberService {
         titleKey: 'member.title.advisor',
       title: 'Advisor',
       email: 'ekabela@conseildetatrdc.com',
-      image: 'https://res.cloudinary.com/dhqvb8wbn/image/upload/v1775670049/vecteezy_user-profile-vector-flat-illustration-avatar-person-icon_37336395_ukit5u.jpg',
+      image: 'https://res.cloudinary.com/dhqvb8wbn/image/upload/v1777295346/CONS_EKABELA.jpg_1_u2fmxe.jpg',
       role: 'advisor',
       slug: 'ekabela-mundongya-ruphin',
         officeKey: 'member.office.stateCouncil',
