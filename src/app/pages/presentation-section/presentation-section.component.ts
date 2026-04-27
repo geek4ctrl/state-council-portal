@@ -274,6 +274,11 @@ type GreffeFirstPresident = {
             <button class="back-link" type="button" (click)="goBack()">
               {{ backLabelKey() | i18n }}
             </button>
+          </div>
+        </section>
+
+        <section class="org-hero-summary">
+          <div class="container">
             <div class="org-detail-card">
               <p [innerHTML]="('about.legal.detail.paragraph3' | i18n).replace(/\\n/g, '<br>')"></p>
             </div>
@@ -612,13 +617,13 @@ type GreffeFirstPresident = {
 
 
       .org-hero {
-        padding: 60px 0 90px;
+        padding: 92px 0 56px;
       }
 
       .org-hero .container {
         display: flex;
         flex-direction: column;
-        min-height: 220px;
+        min-height: 430px;
       }
 
       .org-hero .back-link {
@@ -632,6 +637,16 @@ type GreffeFirstPresident = {
       .org-hero .hero-title {
         text-shadow: 0 10px 28px rgba(6, 12, 24, 0.45);
         letter-spacing: 1.5px;
+      }
+
+      .org-hero-summary {
+        background: transparent;
+        padding: 6px 0 22px;
+        border-bottom: none;
+      }
+
+      .org-hero-summary .container {
+        position: relative;
       }
 
       .org-hero-body {
@@ -1182,21 +1197,23 @@ type GreffeFirstPresident = {
       }
 
       .org-detail-card {
-        margin-top: 28px;
+        margin-top: 0;
         width: 100%;
         max-width: 1120px;
         background: transparent;
-        border-radius: 18px;
-        padding: 36px 40px;
+        border-radius: 0;
+        padding: 18px 0 8px;
         border: none;
         box-shadow: none;
+        backdrop-filter: none;
+        -webkit-backdrop-filter: none;
         position: relative;
         z-index: 2;
         overflow: hidden;
       }
 
       .org-detail-card::before {
-        content: '';
+        content: none;
         position: absolute;
         inset: 0;
         background: radial-gradient(circle at 95% 5%, rgba(143, 212, 255, 0.16), transparent 42%);
@@ -1215,17 +1232,23 @@ type GreffeFirstPresident = {
 
       .org-detail-card p {
         margin: 0 0 14px;
-        color: rgba(248, 251, 255, 0.92);
-        line-height: 1.78;
-        font-size: 1.07rem;
+        color: #1f2937;
+        line-height: 1.88;
+        font-size: clamp(1rem, 1.2vw, 1.14rem);
+        text-wrap: pretty;
         position: relative;
         z-index: 1;
+      }
+
+      .org-detail-card p strong {
+        color: #0f172a;
+        font-weight: 700;
       }
 
       .org-detail-card ul {
         margin: 12px 0;
         padding-left: 20px;
-        color: rgba(248, 251, 255, 0.92);
+        color: #1f2937;
         position: relative;
         z-index: 1;
       }
@@ -1234,7 +1257,7 @@ type GreffeFirstPresident = {
         margin-bottom: 8px;
         line-height: 1.72;
         font-size: 1.07rem;
-        color: rgba(248, 251, 255, 0.92);
+        color: #1f2937;
       }
 
       .org-tiles {
@@ -1242,7 +1265,7 @@ type GreffeFirstPresident = {
         background: radial-gradient(circle at 15% 20%, rgba(31, 155, 217, 0.12), transparent 45%),
           radial-gradient(circle at 85% 10%, rgba(250, 204, 84, 0.16), transparent 50%),
           linear-gradient(180deg, #f7f9fb 0%, #edf2f7 100%);
-        padding: 20px 0 90px;
+        padding: 24px 0 90px;
         overflow: hidden;
       }
 
@@ -1695,6 +1718,14 @@ type GreffeFirstPresident = {
       }
 
       @media (max-width: 768px) {
+        .org-hero {
+          padding: 74px 0 40px;
+        }
+
+        .org-hero .container {
+          min-height: 320px;
+        }
+
         .hero-split {
           grid-template-columns: 1fr;
           gap: 18px;
@@ -1725,9 +1756,17 @@ type GreffeFirstPresident = {
         }
 
         .org-detail-card {
-          margin-top: 20px;
+          margin-top: 0;
           max-width: 100%;
-          padding: 26px 24px;
+          padding: 24px 20px;
+          border-radius: 18px;
+          backdrop-filter: none;
+          -webkit-backdrop-filter: none;
+        }
+
+        .org-detail-card p {
+          font-size: 1rem;
+          line-height: 1.78;
         }
 
         .org-grid {
