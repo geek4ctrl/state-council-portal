@@ -256,19 +256,6 @@ export class MemberService {
       summary: 'Provides advisory support on administrative and judicial matters.'
     },
     {
-      name: 'KWEYI BISEMBO ASINGA Fulgence',
-        titleKey: 'member.title.advisor',
-      title: 'Advisor',
-      email: 'kweyi@conseildetatrdc.com',
-      image: 'https://res.cloudinary.com/dhqvb8wbn/image/upload/v1775670049/vecteezy_user-profile-vector-flat-illustration-avatar-person-icon_37336395_ukit5u.jpg',
-      role: 'advisor',
-      slug: 'kweyi-bisembo-asinga-fulgence',
-        officeKey: 'member.office.stateCouncil',
-        summaryKey: 'member.summary.advisor',
-      office: 'STATE COUNCIL',
-      summary: 'Provides advisory support on administrative and judicial matters.'
-    },
-    {
       name: 'KANZA MAKOKA Joseph',
         titleKey: 'member.title.advisor',
       title: 'Advisor',
