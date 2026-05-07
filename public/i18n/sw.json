@@ -975,7 +975,8 @@
         "firstPresident": "Rais wa Kwanza",
         "ppce": "P.P.C.E",
         "president": "Rais",
-        "advisor": "Mshauri"
+        "advisor": "Mshauri",
+        "advisorFemale": "Mshauri"
       },
       "nodes": {
         "firstPresident": "Rais wa Kwanza",

@@ -975,7 +975,8 @@
         "firstPresident": "Rais ya Liboso",
         "ppce": "P.P.C.E",
         "president": "Rais",
-        "advisor": "Conseiller"
+        "advisor": "Conseiller",
+        "advisorFemale": "Conseillère"
       },
       "nodes": {
         "firstPresident": "Rais ya Liboso",
