@@ -5,8 +5,7 @@ import { RouterLink } from '@angular/router';
 import { MemberService } from '../../services/members.service';
 
 function cloudSrc(url: string): string {
-  // Inject Cloudinary transformation: w_180,h_220,c_fill,g_face,q_auto,f_auto
-  return url.replace('/upload/', '/upload/w_180,h_220,c_fill,g_face,q_auto,f_auto/');
+  return url.replace('/upload/', '/upload/w_240,h_300,c_fill,g_face,q_auto,f_auto/');
 }
 
 @Component({
@@ -37,8 +36,8 @@ function cloudSrc(url: string): string {
                 <img
                   [src]="cloudSrc(president.image)"
                   [alt]="president.name"
-                  width="180"
-                  height="220"
+                  width="240"
+                  height="300"
                   loading="eager"
                   decoding="async"
                 />
@@ -59,8 +58,8 @@ function cloudSrc(url: string): string {
                 <img
                   [src]="cloudSrc(sp.image)"
                   [alt]="sp.name"
-                  width="180"
-                  height="220"
+                  width="240"
+                  height="300"
                   loading="lazy"
                   decoding="async"
                 />
@@ -74,15 +73,15 @@ function cloudSrc(url: string): string {
         </div>
 
         <h2 class="section-title">{{ 'organization.greffe.presidentsTitle' | i18n }}</h2>
-        <div class="members-grid">
+        <div class="members-grid col-3">
           @for (president of presidents(); track president.email) {
             <article class="member-card">
               <div class="member-photo">
                 <img
                   [src]="cloudSrc(president.image)"
                   [alt]="president.name"
-                  width="180"
-                  height="220"
+                  width="240"
+                  height="300"
                   loading="lazy"
                   decoding="async"
                 />
@@ -96,15 +95,15 @@ function cloudSrc(url: string): string {
         </div>
 
         <h2 class="section-title">{{ 'organization.greffe.advisorsTitle' | i18n }}</h2>
-        <div class="members-grid">
+        <div class="members-grid col-3">
           @for (advisor of advisors(); track advisor.email) {
             <article class="member-card">
               <div class="member-photo">
                 <img
                   [src]="cloudSrc(advisor.image)"
                   [alt]="advisor.name"
-                  width="180"
-                  height="220"
+                  width="240"
+                  height="300"
                   loading="lazy"
                   decoding="async"
                 />
@@ -214,36 +213,39 @@ function cloudSrc(url: string): string {
     }
     .members-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
-      gap: 1.4rem;
+      grid-template-columns: repeat(auto-fill, minmax(440px, 1fr));
+      gap: 1.8rem;
+    }
+    .members-grid.col-3 {
+      grid-template-columns: repeat(3, 1fr);
     }
     .first-president-grid,
     .section-president-grid {
       display: flex;
       justify-content: center;
-      gap: 1.4rem;
+      gap: 1.8rem;
       flex-wrap: wrap;
     }
     .member-card {
       display: flex;
       align-items: center;
-      gap: 1.2rem;
-      padding: 1.2rem;
+      gap: 1.5rem;
+      padding: 1.5rem;
       background: #fff;
-      border-radius: 16px;
-      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+      border-radius: 18px;
+      box-shadow: 0 2px 14px rgba(0, 0, 0, 0.07);
       border: 1px solid #f0f0f0;
       transition: box-shadow 0.2s ease;
     }
     .member-card:hover {
-      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 8px 26px rgba(0, 0, 0, 0.11);
     }
     .member-photo {
       position: relative;
       flex-shrink: 0;
-      width: 80px;
-      height: 98px;
-      border-radius: 12px;
+      width: 110px;
+      height: 135px;
+      border-radius: 14px;
       background: linear-gradient(90deg, #e8ecf1 25%, #f0f3f7 50%, #e8ecf1 75%);
       background-size: 200% 100%;
       animation: shimmer 1.4s infinite;
@@ -266,14 +268,26 @@ function cloudSrc(url: string): string {
       animation: none;
     }
     .member-text h3 {
-      margin: 0 0 4px;
-      font-size: 1rem;
+      margin: 0 0 6px;
+      font-size: 1.15rem;
       color: #1a2942;
     }
     .member-text p {
       margin: 0;
-      font-size: 0.9rem;
+      font-size: 1rem;
       color: #64748b;
+    }
+
+    @media (max-width: 1100px) {
+      .members-grid.col-3 {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 720px) {
+      .members-grid.col-3 {
+        grid-template-columns: 1fr;
+      }
     }
   `]
 })

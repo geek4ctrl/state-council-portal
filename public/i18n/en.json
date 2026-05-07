@@ -1108,5 +1108,10 @@
       "odioNonde": "Served as First President of the State Council from 2022 to 2025 and contributed to institutional consolidation.",
       "vunduawe": "Served as First President of the State Council from 2018 to 2022 and helped establish the Court in its early years."
     }
+  },
+  "publications": {
+    "download": "Download",
+    "officialGazette": "Official Gazette",
+    "heroBody": "Consult and download the official publications of the State Council."
   }
 }
