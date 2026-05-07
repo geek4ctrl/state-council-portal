@@ -2,12 +2,16 @@ import { Component, ChangeDetectionStrategy, computed, inject } from '@angular/c
 import { I18nPipe } from '../../i18n/i18n.pipe';
 import { FooterComponent } from '../../components/footer/footer.component';
 import { RouterLink } from '@angular/router';
-import { NgOptimizedImage } from '@angular/common';
 import { MemberService } from '../../services/members.service';
+
+function cloudSrc(url: string): string {
+  // Inject Cloudinary transformation: w_180,h_220,c_fill,g_face,q_auto,f_auto
+  return url.replace('/upload/', '/upload/w_180,h_220,c_fill,g_face,q_auto,f_auto/');
+}
 
 @Component({
   selector: 'app-judges',
-  imports: [I18nPipe, FooterComponent, RouterLink, NgOptimizedImage],
+  imports: [I18nPipe, FooterComponent, RouterLink],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <section class="hero-banner">
@@ -31,10 +35,12 @@ import { MemberService } from '../../services/members.service';
             <article class="member-card">
               <div class="member-photo">
                 <img
-                  [ngSrc]="president.image"
+                  [src]="cloudSrc(president.image)"
                   [alt]="president.name"
                   width="180"
                   height="220"
+                  loading="eager"
+                  decoding="async"
                 />
               </div>
               <div class="member-text">
@@ -51,10 +57,12 @@ import { MemberService } from '../../services/members.service';
             <article class="member-card">
               <div class="member-photo">
                 <img
-                  [ngSrc]="sp.image"
+                  [src]="cloudSrc(sp.image)"
                   [alt]="sp.name"
                   width="180"
                   height="220"
+                  loading="lazy"
+                  decoding="async"
                 />
               </div>
               <div class="member-text">
@@ -71,10 +79,12 @@ import { MemberService } from '../../services/members.service';
             <article class="member-card">
               <div class="member-photo">
                 <img
-                  [ngSrc]="president.image"
+                  [src]="cloudSrc(president.image)"
                   [alt]="president.name"
                   width="180"
                   height="220"
+                  loading="lazy"
+                  decoding="async"
                 />
               </div>
               <div class="member-text">
@@ -91,10 +101,12 @@ import { MemberService } from '../../services/members.service';
             <article class="member-card">
               <div class="member-photo">
                 <img
-                  [ngSrc]="advisor.image"
+                  [src]="cloudSrc(advisor.image)"
                   [alt]="advisor.name"
                   width="180"
                   height="220"
+                  loading="lazy"
+                  decoding="async"
                 />
               </div>
               <div class="member-text">
@@ -112,6 +124,10 @@ import { MemberService } from '../../services/members.service';
   styles: [`
     :host {
       display: block;
+      background: #f8f9fb;
+      min-height: 100vh;
+    }
+    .page-container {
       background: #f8f9fb;
     }
     .hero-banner {
@@ -183,11 +199,6 @@ import { MemberService } from '../../services/members.service';
       line-height: 1.7;
       color: rgba(255, 255, 255, 0.88);
     }
-    .page-container {
-      margin: 0 auto;
-      padding: 0;
-      background: transparent;
-    }
     .judges-list {
       max-width: 1200px;
       margin: 0 auto;
@@ -227,9 +238,32 @@ import { MemberService } from '../../services/members.service';
     .member-card:hover {
       box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
     }
+    .member-photo {
+      position: relative;
+      flex-shrink: 0;
+      width: 80px;
+      height: 98px;
+      border-radius: 12px;
+      background: linear-gradient(90deg, #e8ecf1 25%, #f0f3f7 50%, #e8ecf1 75%);
+      background-size: 200% 100%;
+      animation: shimmer 1.4s infinite;
+      overflow: hidden;
+    }
+    @keyframes shimmer {
+      0% { background-position: 200% 0; }
+      100% { background-position: -200% 0; }
+    }
     .member-photo img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
       border-radius: 12px;
       object-fit: cover;
+      display: block;
+    }
+    .member-photo img.loaded {
+      animation: none;
     }
     .member-text h3 {
       margin: 0 0 4px;
@@ -245,6 +279,8 @@ import { MemberService } from '../../services/members.service';
 })
 export class JudgesComponent {
   private readonly memberService = inject(MemberService);
+
+  readonly cloudSrc = cloudSrc;
 
   readonly firstPresidents = [
     {
