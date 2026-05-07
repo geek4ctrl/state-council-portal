@@ -110,7 +110,7 @@ function cloudSrc(url: string): string {
               </div>
               <div class="member-text">
                 <h3>{{ advisor.name }}</h3>
-                <p>{{ 'organization.chart.roles.advisor' | i18n }}</p>
+                <p>{{ advisor.name.startsWith('Mme') ? ('organization.chart.roles.advisorFemale' | i18n) : ('organization.chart.roles.advisor' | i18n) }}</p>
               </div>
             </article>
           }
