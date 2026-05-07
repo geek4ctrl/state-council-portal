@@ -744,6 +744,7 @@ type HighchartsStatic = typeof import('highcharts');
 
       .about-card:nth-child(5) .about-card-image {
         filter: none;
+        background-position: center 35%;
       }
 
       .about-card-image::after {
@@ -2687,7 +2688,6 @@ export class OrganizationComponent implements OnInit, AfterViewInit {
       imageUrl:
         'https://res.cloudinary.com/dhqvb8wbn/image/upload/v1776970595/eb5b762212931306d5babb699fb8500f4217fb2425c3e277293dd1d3c407b317_xnlsvu.png',
       imageSize: '100%',
-      imageBackground: '#c5c8d0',
     },
     {
       titleKey: 'organization.about.cards.procedures',
