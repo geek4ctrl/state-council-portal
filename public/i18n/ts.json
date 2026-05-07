@@ -975,7 +975,8 @@
         "firstPresident": "Mfumu wa kumpala",
         "ppce": "P.P.C.E",
         "president": "Mukalenge",
-        "advisor": "Mufidi wa mibelu"
+        "advisor": "Mufidi wa mibelu",
+        "advisorFemale": "Mufidi wa mibelu"
       },
       "nodes": {
         "firstPresident": "Mfumu wa kumpala",
@@ -1086,7 +1087,8 @@
   "member": {
     "role": {
       "president": "Président",
-      "advisor": "Mufundi"
+      "advisor": "Mufundi",
+      "advisorFemale": "Mufundi"
     },
     "title": {
       "president": "Président",

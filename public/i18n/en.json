@@ -971,7 +971,8 @@
         "firstPresident": "First President",
         "ppce": "P.p.c.e",
         "president": "President",
-        "advisor": "Advisor"
+        "advisor": "Advisor",
+        "advisorFemale": "Advisor"
       },
       "nodes": {
         "firstPresident": "First President",

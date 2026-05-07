@@ -971,7 +971,8 @@
         "firstPresident": "Première Présidente",
         "ppce": "P.p.c.e",
         "president": "Président",
-        "advisor": "Conseiller"
+        "advisor": "Conseiller",
+        "advisorFemale": "Conseillère"
       },
       "nodes": {
         "firstPresident": "Première Présidente",
