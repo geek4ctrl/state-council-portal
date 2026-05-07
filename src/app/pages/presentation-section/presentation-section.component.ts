@@ -1646,6 +1646,16 @@ type GreffeFirstPresident = {
         background-repeat: no-repeat;
       }
 
+      .org-tile:nth-child(1) .org-tile-media.has-image {
+        background-size: 115%;
+        background-position: center center;
+      }
+
+      .org-tile:nth-child(5) .org-tile-media.has-image {
+        background-size: 115%;
+        background-position: center center;
+      }
+
       .org-tile.has-image .org-tile-media {
         position: absolute;
         inset: 0;
