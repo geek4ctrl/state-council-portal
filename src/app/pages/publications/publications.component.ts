@@ -17,7 +17,7 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
             </div>
             <div class="vertical-divider"></div>
             <div class="hero-right">
-              <p>Consultez et téléchargez les publications officielles du Conseil d'État.</p>
+              <p>{{ 'publications.heroBody' | i18n }}</p>
             </div>
           </div>
         </div>
@@ -42,7 +42,7 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
               <h2 class="publication-title">{{ publication.title }}</h2>
               <div class="publication-badges">
                 <span class="badge badge-pdf">PDF</span>
-                <span class="badge badge-official">Journal Officiel</span>
+                <span class="badge badge-official">{{ 'publications.officialGazette' | i18n }}</span>
               </div>
             </div>
             <a
@@ -57,7 +57,7 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
                 <path d="M7 10l5 5 5-5"></path>
                 <path d="M5 21h14"></path>
               </svg>
-              <span>Télécharger</span>
+              <span>{{ 'publications.download' | i18n }}</span>
             </a>
           </article>
         </div>
