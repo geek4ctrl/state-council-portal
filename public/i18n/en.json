@@ -166,6 +166,9 @@
       "appointment": "Book An Appointment",
       "appeal": "File An Appeal"
     },
+    "map": {
+      "title": "Our Location"
+    },
     "forms": {
       "report": {
         "title": "Complaint form",

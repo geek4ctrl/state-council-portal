@@ -166,6 +166,9 @@
       "appointment": "Prenota un appuntamento",
       "appeal": "Deposita un ricorso"
     },
+    "map": {
+      "title": "La nostra sede"
+    },
     "forms": {
       "report": {
         "title": "Modulo di reclamo",

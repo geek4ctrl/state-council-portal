@@ -166,6 +166,9 @@
       "appointment": "Termin buchen",
       "appeal": "Rekurs einreichen"
     },
+    "map": {
+      "title": "Unser Standort"
+    },
     "forms": {
       "report": {
         "title": "Beschwerdeformular",

@@ -166,6 +166,9 @@
       "appointment": "Bokanda Rendez-vous",
       "appeal": "Kotinda Rufaa"
     },
+    "map": {
+      "title": "Esika na biso"
+    },
     "forms": {
       "report": {
         "title": "Formulaire ya botalo",
