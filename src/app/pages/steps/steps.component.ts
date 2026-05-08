@@ -353,11 +353,27 @@ import { FooterComponent } from '../../components/footer/footer.component';
       <!-- Map Section - Only for appointment -->
       @if (activeTab() === 'appointment') {
         <section class="map-section">
+          <div class="container">
+            <div class="map-header">
+              <h2>{{ 'steps.map.title' | i18n }}</h2>
+              <div class="address-card">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                <div class="address-text">
+                  <p class="address-line1">7639, croisement des avenues Pumbu et des Bâtonniers</p>
+                  <p class="address-line2">Commune de la Gombe, Kinshasa</p>
+                  <p class="address-line3">République démocratique du Congo</p>
+                </div>
+              </div>
+            </div>
+          </div>
           <div class="map-container">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3978.8158168478994!2d15.313!3d-4.322!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNMKwMTknMTkuMiJTIDE1wrAxOCc0Ni44IkU!5e0!3m2!1sen!2s!4v1234567890"
+              src="https://www.google.com/maps?q=Conseil+d'Etat,+Avenue+Pumbu,+Kinshasa,+RDC&output=embed"
               width="100%"
-              height="400"
+              height="450"
               style="border:0;"
               allowfullscreen=""
               loading="lazy"
@@ -880,6 +896,75 @@ import { FooterComponent } from '../../components/footer/footer.component';
 
     .map-container iframe {
       display: block;
+    }
+
+    .map-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 24px;
+      padding: 40px 0 24px;
+    }
+
+    .map-header h2 {
+      font-size: 1.75rem;
+      font-weight: 700;
+      color: #1a1a2e;
+      margin: 0;
+    }
+
+    .address-card {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      background: white;
+      padding: 16px 20px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+
+    .address-card svg {
+      width: 24px;
+      height: 24px;
+      flex-shrink: 0;
+      color: #c9a227;
+      margin-top: 2px;
+    }
+
+    .address-text {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .address-text p {
+      margin: 0;
+      font-size: 0.9rem;
+      color: #444;
+      line-height: 1.4;
+    }
+
+    .address-line1 {
+      font-weight: 600;
+      color: #1a1a2e;
+    }
+
+    @media (max-width: 768px) {
+      .map-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+        padding: 24px 0 16px;
+      }
+
+      .map-header h2 {
+        font-size: 1.4rem;
+      }
+
+      .address-card {
+        width: 100%;
+      }
     }
 
     /* Responsive Design */

@@ -165,6 +165,9 @@
       "appointment": "Reserve una cita",
       "appeal": "Presentar una apelación"
     },
+    "map": {
+      "title": "Nuestra ubicación"
+    },
     "forms": {
       "report": {
         "title": "Formulario de queja",
