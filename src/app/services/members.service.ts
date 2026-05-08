@@ -139,7 +139,7 @@ export class MemberService {
       summaryKey: 'member.summary.kibwe',
     },
     {
-      name: 'BULAMBO BAKONGA Beniamin',
+      name: 'BULAMBO BAKONGA Benjamin',
         titleKey: 'member.title.president',
       title: 'President',
       email: 'bulambo@conseildetatrdc.com',
@@ -269,7 +269,7 @@ export class MemberService {
       summary: 'Provides advisory support on administrative and judicial matters.'
     },
     {
-      name: 'KATAMBE MALIPO Gérard',
+      name: 'KATAMBWE MALIPO Gérard',
         titleKey: 'member.title.advisor',
       title: 'Advisor',
       email: 'katambe@conseildetatrdc.com',
@@ -282,7 +282,7 @@ export class MemberService {
       summary: 'Provides advisory support on administrative and judicial matters.'
     },
     {
-      name: 'LEMBLEMBE N\'KASCHAMA Guérin Emmanuel',
+      name: 'LEMBELEMBE N\'KASCHAMA Guérin Emmanuel',
         titleKey: 'member.title.advisor',
       title: 'Advisor',
       email: 'lemblembe@conseildetatrdc.com',
@@ -412,7 +412,7 @@ export class MemberService {
       summary: 'Provides advisory support on administrative and judicial matters.'
     },
     {
-      name: 'MVUEKIANI NDONZUA Alexis',
+      name: 'MVUEKIANI NDONZUAU Alexis',
         titleKey: 'member.title.advisor',
       title: 'Advisor',
       email: 'mvuekiani@conseildetatrdc.com',
@@ -451,7 +451,7 @@ export class MemberService {
       summary: 'Provides advisory support on administrative and judicial matters.'
     },
     {
-      name: 'MUNEKAYI CTTOKO Honoré',
+      name: 'MUNEKAYI CITOKO Honoré',
         titleKey: 'member.title.advisor',
       title: 'Advisor',
       email: 'munekayi@conseildetatrdc.com',
