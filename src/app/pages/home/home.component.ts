@@ -531,7 +531,7 @@ type HighchartsStatic = typeof import('highcharts');
           <div class="quick-links-marquee">
             <div class="quick-links-container">
               <div class="quick-link-item glass-card">
-                <div class="quick-link-icon non-border">
+                <div class="quick-link-icon non-border news-img">
                   <img
                     src="https://res.cloudinary.com/dhqvb8wbn/image/upload/v1774366565/news_dmugrc.jpg?w=120&h=120&fit=crop"
                     [alt]="'home.quickLinks.items.report.alt' | i18n"
@@ -598,7 +598,7 @@ type HighchartsStatic = typeof import('highcharts');
               </div>
 
               <div class="quick-link-item glass-card" aria-hidden="true">
-                <div class="quick-link-icon non-border">
+                <div class="quick-link-icon non-border news-img">
                   <img
                     src="https://res.cloudinary.com/dhqvb8wbn/image/upload/v1774366565/news_dmugrc.jpg?w=120&h=120&fit=crop"
                     [alt]="''"
@@ -3372,21 +3372,31 @@ type HighchartsStatic = typeof import('highcharts');
       }
 
       .quick-link-icon {
-        width: 60px;
-        height: 100%;
+        width: 80px;
+        height: 80px;
         flex-shrink: 0;
         border-radius: 12px;
         overflow: hidden;
         background: linear-gradient(150deg, rgba(255, 255, 255, 0.96), rgba(255, 255, 255, 0.75));
-        align-self: stretch;
         border: 1px solid rgba(255, 255, 255, 0.6);
         box-shadow: 0 8px 14px rgba(7, 12, 28, 0.14);
+      }
+
+      .quick-link-icon.news-img {
+        width: 60px;
+        height: 100%;
+        align-self: stretch;
+      }
+
+      .quick-link-icon.news-img img {
+        object-fit: initial;
       }
 
       .quick-link-icon img {
         width: 100%;
         height: 100%;
-        /* object-fit: cover; */
+        object-fit: cover;
+        display: block;
       }
 
       .quick-link-content {
@@ -4632,6 +4642,7 @@ type HighchartsStatic = typeof import('highcharts');
 
         .quick-link-icon {
           width: 54px;
+          height: 54px;
         }
 
         .quick-link-content h3 {
@@ -4877,6 +4888,7 @@ type HighchartsStatic = typeof import('highcharts');
 
         .quick-link-icon {
           width: 46px;
+          height: 46px;
         }
 
         .quick-link-content h3 {
