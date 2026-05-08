@@ -530,7 +530,7 @@ type HighchartsStatic = typeof import('highcharts');
         <div class="container">
           <div class="quick-links-marquee">
             <div class="quick-links-container">
-              <div class="quick-link-item glass-card">
+              <a class="quick-link-item glass-card" routerLink="/news">
                 <div class="quick-link-icon non-border news-img">
                   <img
                     src="https://res.cloudinary.com/dhqvb8wbn/image/upload/v1774366565/news_dmugrc.jpg?w=120&h=120&fit=crop"
@@ -540,14 +540,14 @@ type HighchartsStatic = typeof import('highcharts');
                 <div class="quick-link-content">
                   <h3>{{ 'home.quickLinks.items.news.title' | i18n }}</h3>
                   <p>{{ 'home.quickLinks.items.news.body' | i18n }}</p>
-                  <a href="#" class="quick-link-action">{{
+                  <span class="quick-link-action">{{
                     'home.quickLinks.items.news.action' | i18n
-                  }}</a>
+                  }}</span>
                 </div>
                 <div class="connector-line"></div>
-              </div>
+              </a>
 
-              <div class="quick-link-item glass-card">
+              <a class="quick-link-item glass-card" routerLink="/audiences">
                 <div class="quick-link-icon non-border">
                   <img
                     src="https://res.cloudinary.com/dhqvb8wbn/image/upload/v1774365470/extraits_de_roles_jtffkz.jpg?w=120&h=120&fit=crop"
@@ -557,14 +557,14 @@ type HighchartsStatic = typeof import('highcharts');
                 <div class="quick-link-content">
                   <h3>{{ 'home.quickLinks.items.excerpts.title' | i18n }}</h3>
                   <p>{{ 'home.quickLinks.items.excerpts.body' | i18n }}</p>
-                  <a href="#" class="quick-link-action">{{
+                  <span class="quick-link-action">{{
                     'home.quickLinks.items.excerpts.action' | i18n
-                  }}</a>
+                  }}</span>
                 </div>
                 <div class="connector-line"></div>
-              </div>
+              </a>
 
-              <div class="quick-link-item glass-card">
+              <a class="quick-link-item glass-card" routerLink="/steps" [queryParams]="{ tab: 'report' }">
                 <div class="quick-link-icon non-border">
                   <img
                     src="https://res.cloudinary.com/dhqvb8wbn/image/upload/v1774366744/signalement_cfkcii.jpg?w=120&h=120&fit=crop"
@@ -574,14 +574,14 @@ type HighchartsStatic = typeof import('highcharts');
                 <div class="quick-link-content">
                   <h3>{{ 'home.quickLinks.items.report.title' | i18n }}</h3>
                   <p>{{ 'home.quickLinks.items.report.body' | i18n }}</p>
-                  <a href="#" class="quick-link-action">{{
+                  <span class="quick-link-action">{{
                     'home.quickLinks.items.report.action' | i18n
-                  }}</a>
+                  }}</span>
                 </div>
                 <div class="connector-line"></div>
-              </div>
+              </a>
 
-              <div class="quick-link-item glass-card">
+              <a class="quick-link-item glass-card" routerLink="/steps" [queryParams]="{ tab: 'appointment' }">
                 <div class="quick-link-icon non-border">
                   <img
                     src="https://res.cloudinary.com/dhqvb8wbn/image/upload/v1774367046/prendre_rendez_vous_q1twgk.jpg?w=120&h=120&fit=crop"
@@ -591,13 +591,13 @@ type HighchartsStatic = typeof import('highcharts');
                 <div class="quick-link-content">
                   <h3>{{ 'home.quickLinks.items.appointment.title' | i18n }}</h3>
                   <p>{{ 'home.quickLinks.items.appointment.body' | i18n }}</p>
-                  <a href="#" class="quick-link-action">{{
+                  <span class="quick-link-action">{{
                     'home.quickLinks.items.appointment.action' | i18n
-                  }}</a>
+                  }}</span>
                 </div>
-              </div>
+              </a>
 
-              <div class="quick-link-item glass-card" aria-hidden="true">
+              <a class="quick-link-item glass-card" routerLink="/news" aria-hidden="true" tabindex="-1">
                 <div class="quick-link-icon non-border news-img">
                   <img
                     src="https://res.cloudinary.com/dhqvb8wbn/image/upload/v1774366565/news_dmugrc.jpg?w=120&h=120&fit=crop"
@@ -607,14 +607,14 @@ type HighchartsStatic = typeof import('highcharts');
                 <div class="quick-link-content">
                   <h3>{{ 'home.quickLinks.items.news.title' | i18n }}</h3>
                   <p>{{ 'home.quickLinks.items.news.body' | i18n }}</p>
-                  <a href="#" class="quick-link-action" tabindex="-1" aria-hidden="true">{{
+                  <span class="quick-link-action">{{
                     'home.quickLinks.items.news.action' | i18n
-                  }}</a>
+                  }}</span>
                 </div>
                 <div class="connector-line"></div>
-              </div>
+              </a>
 
-              <div class="quick-link-item glass-card" aria-hidden="true">
+              <a class="quick-link-item glass-card" routerLink="/audiences" aria-hidden="true" tabindex="-1">
                 <div class="quick-link-icon non-border">
                   <img
                     src="https://res.cloudinary.com/dhqvb8wbn/image/upload/v1774365470/extraits_de_roles_jtffkz.jpg?w=120&h=120&fit=crop"
@@ -624,14 +624,14 @@ type HighchartsStatic = typeof import('highcharts');
                 <div class="quick-link-content">
                   <h3>{{ 'home.quickLinks.items.excerpts.title' | i18n }}</h3>
                   <p>{{ 'home.quickLinks.items.excerpts.body' | i18n }}</p>
-                  <a href="#" class="quick-link-action" tabindex="-1" aria-hidden="true">{{
+                  <span class="quick-link-action">{{
                     'home.quickLinks.items.excerpts.action' | i18n
-                  }}</a>
+                  }}</span>
                 </div>
                 <div class="connector-line"></div>
-              </div>
+              </a>
 
-              <div class="quick-link-item glass-card" aria-hidden="true">
+              <a class="quick-link-item glass-card" routerLink="/steps" [queryParams]="{ tab: 'report' }" aria-hidden="true" tabindex="-1">
                 <div class="quick-link-icon non-border">
                   <img
                     src="https://res.cloudinary.com/dhqvb8wbn/image/upload/v1774366744/signalement_cfkcii.jpg?w=120&h=120&fit=crop"
@@ -641,14 +641,14 @@ type HighchartsStatic = typeof import('highcharts');
                 <div class="quick-link-content">
                   <h3>{{ 'home.quickLinks.items.report.title' | i18n }}</h3>
                   <p>{{ 'home.quickLinks.items.report.body' | i18n }}</p>
-                  <a href="#" class="quick-link-action" tabindex="-1" aria-hidden="true">{{
+                  <span class="quick-link-action">{{
                     'home.quickLinks.items.report.action' | i18n
-                  }}</a>
+                  }}</span>
                 </div>
                 <div class="connector-line"></div>
-              </div>
+              </a>
 
-              <div class="quick-link-item glass-card" aria-hidden="true">
+              <a class="quick-link-item glass-card" routerLink="/steps" [queryParams]="{ tab: 'appointment' }" aria-hidden="true" tabindex="-1">
                 <div class="quick-link-icon non-border">
                   <img
                     src="https://res.cloudinary.com/dhqvb8wbn/image/upload/v1774367046/prendre_rendez_vous_q1twgk.jpg?w=120&h=120&fit=crop"
@@ -658,11 +658,11 @@ type HighchartsStatic = typeof import('highcharts');
                 <div class="quick-link-content">
                   <h3>{{ 'home.quickLinks.items.appointment.title' | i18n }}</h3>
                   <p>{{ 'home.quickLinks.items.appointment.body' | i18n }}</p>
-                  <a href="#" class="quick-link-action" tabindex="-1" aria-hidden="true">{{
+                  <span class="quick-link-action">{{
                     'home.quickLinks.items.appointment.action' | i18n
-                  }}</a>
+                  }}</span>
                 </div>
-              </div>
+              </a>
             </div>
           </div>
         </div>
@@ -3345,6 +3345,9 @@ type HighchartsStatic = typeof import('highcharts');
         border-radius: 18px;
         border: 1px solid rgba(26, 41, 66, 0.05);
         background: linear-gradient(160deg, rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.72));
+        text-decoration: none;
+        color: inherit;
+        cursor: pointer;
         box-shadow:
           0 12px 22px rgba(9, 16, 40, 0.12),
           inset 0 1px 0 rgba(255, 255, 255, 0.65);
