@@ -500,14 +500,13 @@ type HighchartsStatic = typeof import('highcharts');
               @for (p of presSlides[currentPresSlide()].paragraphKeys; track p) {
                 <p class="pres-para">{{ p | i18n }}</p>
               }
-              <button
+              <a
                 class="pres-btn mag-btn"
-                
-                (click)="ripple($event)"
+                routerLink="/presentation/premiere-presidente"
               >
                 <span>{{ 'home.president.cta' | i18n }}</span>
                 <div class="pres-btn-aura"></div>
-              </button>
+              </a>
               <div class="pres-dots">
                 @for (s of presSlides; track s.id; let i = $index) {
                   <button
@@ -2411,6 +2410,7 @@ type HighchartsStatic = typeof import('highcharts');
         cursor: pointer;
         margin-top: 18px;
         text-transform: capitalize;
+        text-decoration: none;
         border-radius: 6px;
         align-self: flex-start;
         position: relative;
