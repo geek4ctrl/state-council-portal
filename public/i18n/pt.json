@@ -166,6 +166,9 @@
       "appointment": "Marcar atendimento",
       "appeal": "Apresentar um recurso"
     },
+    "map": {
+      "title": "A nossa localização"
+    },
     "forms": {
       "report": {
         "title": "Formulário de reclamação",
