@@ -384,11 +384,11 @@ import { FooterComponent } from '../../components/footer/footer.component';
     }
 
     .section-subtitle {
-      font-size: 0.9rem;
+      font-size: 0.95rem;
       color: #1a1a1a !important;
       margin: 0 0 60px 0;
       line-height: 1.7;
-      letter-spacing: 4.5px;
+      letter-spacing: 0.3px;
     }
 
     .section-subtitle.centered {
