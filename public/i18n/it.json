@@ -115,7 +115,8 @@
       "title": "Dettaglio notizia",
       "related": "Articoli correlati",
       "share": "Condividi",
-      "share.copied": "Link copiato!"
+      "share.copied": "Link copiato!",
+      "readTime": "{count} min di lettura"
     },
     "pagination": {
       "label": "Paginazione notizie",

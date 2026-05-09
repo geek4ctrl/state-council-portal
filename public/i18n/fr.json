@@ -115,7 +115,8 @@
       "title": "Détail de l'actualité",
       "related": "Articles connexes",
       "share": "Partager",
-      "share.copied": "Lien copié !"
+      "share.copied": "Lien copié !",
+      "readTime": "{count} min de lecture"
     },
     "pagination": {
       "label": "Pagination des actualités",

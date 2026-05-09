@@ -121,7 +121,8 @@
       "title": "News Detail",
       "related": "Timhaka leti humelelanaka",
       "share": "Avelana",
-      "share.copied": "Xihlanganiso xi kopiwe!"
+      "share.copied": "Xihlanganiso xi kopiwe!",
+      "readTime": "{count} min ya kuvovota"
     },
     "empty": {
       "title": "Kakuena lumu nansha lumue to",
