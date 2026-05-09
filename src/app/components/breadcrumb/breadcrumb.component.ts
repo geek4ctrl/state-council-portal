@@ -55,15 +55,17 @@ const ORG_CHILD_SECTIONS = new Set([
         <div class="container">
           <ol class="breadcrumb-list">
             <li class="breadcrumb-item">
-              <a routerLink="/" class="breadcrumb-link">{{ 'header.nav.home' | i18n }}</a>
+              <a routerLink="/" class="breadcrumb-link home-link">
+                <svg class="home-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/>
+                  <polyline points="9 22 9 12 15 12 15 22"/>
+                </svg>
+                <span class="home-label">{{ 'header.nav.home' | i18n }}</span>
+              </a>
             </li>
             @for (item of breadcrumbs(); track item.url; let last = $last) {
               <li class="breadcrumb-item" [class.active]="last">
-                <span class="breadcrumb-separator" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M9 18l6-6-6-6"/>
-                  </svg>
-                </span>
+                <span class="breadcrumb-separator" aria-hidden="true">/</span>
                 @if (!last) {
                   <a [routerLink]="item.url" class="breadcrumb-link">{{ item.labelKey | i18n }}</a>
                 } @else {
@@ -79,15 +81,16 @@ const ORG_CHILD_SECTIONS = new Set([
   styles: [
     `
       .breadcrumb-nav {
-        background: #f8fafc;
-        border-bottom: 1px solid #e2e8f0;
-        padding: 12px 0;
+        background: #ffffff;
+        border-bottom: 1px solid rgba(226, 232, 240, 0.8);
+        padding: 14px 0;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
       }
 
       .container {
         max-width: 1200px;
         margin: 0 auto;
-        padding: 0 20px;
+        padding: 0 24px;
       }
 
       .breadcrumb-list {
@@ -103,52 +106,100 @@ const ORG_CHILD_SECTIONS = new Set([
       .breadcrumb-item {
         display: flex;
         align-items: center;
-        font-size: 0.85rem;
-        color: #64748b;
+        font-size: 0.82rem;
+        color: #94a3b8;
+        letter-spacing: 0.2px;
       }
 
       .breadcrumb-separator {
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 20px;
-        height: 20px;
-        margin: 0 2px;
-        color: #94a3b8;
-      }
-
-      .breadcrumb-separator svg {
-        width: 14px;
-        height: 14px;
+        width: 24px;
+        font-size: 0.7rem;
+        font-weight: 300;
+        color: #cbd5e1;
+        user-select: none;
       }
 
       .breadcrumb-link {
         color: #64748b;
         text-decoration: none;
         font-weight: 500;
-        padding: 2px 4px;
-        border-radius: 4px;
-        transition: color 0.2s ease, background 0.2s ease;
+        padding: 4px 8px;
+        border-radius: 6px;
+        transition: all 0.25s cubic-bezier(0.23, 1, 0.32, 1);
+        position: relative;
+      }
+
+      .breadcrumb-link::after {
+        content: '';
+        position: absolute;
+        bottom: 2px;
+        left: 8px;
+        right: 8px;
+        height: 1.5px;
+        background: #1F9BD9;
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 0.25s cubic-bezier(0.23, 1, 0.32, 1);
+        border-radius: 1px;
       }
 
       .breadcrumb-link:hover {
         color: #1F9BD9;
-        background: rgba(31, 155, 217, 0.08);
+        background: rgba(31, 155, 217, 0.06);
+      }
+
+      .breadcrumb-link:hover::after {
+        transform: scaleX(1);
+      }
+
+      .home-link {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        padding: 4px 8px 4px 6px;
+      }
+
+      .home-icon {
+        width: 15px;
+        height: 15px;
+        stroke-width: 2.2;
+        transition: transform 0.25s cubic-bezier(0.23, 1, 0.32, 1);
+      }
+
+      .home-link:hover .home-icon {
+        transform: translateY(-1px);
+      }
+
+      .home-label {
+        position: relative;
       }
 
       .breadcrumb-current {
-        color: #1e293b;
+        color: #0f172a;
         font-weight: 600;
-        padding: 2px 4px;
+        padding: 4px 10px;
+        background: linear-gradient(135deg, rgba(31, 155, 217, 0.08) 0%, rgba(31, 155, 217, 0.04) 100%);
+        border-radius: 6px;
+        border: 1px solid rgba(31, 155, 217, 0.12);
+        font-size: 0.82rem;
+        letter-spacing: 0.2px;
       }
 
       @media (max-width: 767px) {
         .breadcrumb-nav {
-          padding: 10px 0;
+          padding: 12px 0;
         }
 
         .breadcrumb-item {
-          font-size: 0.8rem;
+          font-size: 0.78rem;
+        }
+
+        .breadcrumb-current {
+          font-size: 0.78rem;
+          padding: 3px 8px;
         }
       }
     `,
