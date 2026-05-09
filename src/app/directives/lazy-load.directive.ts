@@ -6,15 +6,16 @@ import { Directive, ElementRef, Input, OnInit, OnDestroy } from '@angular/core';
 })
 export class LazyLoadDirective implements OnInit, OnDestroy {
   @Input() src: string = '';
-  @Input() placeholder: string = 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300"%3E%3Crect fill="%23f0f0f0" width="400" height="300"/%3E%3C/svg%3E';
+  @Input() placeholder: string = '';
 
   private intersectionObserver?: IntersectionObserver;
 
   constructor(private el: ElementRef<HTMLImageElement>) {}
 
   ngOnInit() {
-    // Set placeholder
-    this.el.nativeElement.src = this.placeholder;
+    // Use a blurred low-res placeholder if src is available, else fallback to gray SVG
+    const blurPlaceholder = this.src ? this.getBlurPlaceholder(this.src) : this.fallbackPlaceholder();
+    this.el.nativeElement.src = blurPlaceholder;
     this.el.nativeElement.classList.add('lazy-loading');
 
     // Check if IntersectionObserver is supported
@@ -43,6 +44,19 @@ export class LazyLoadDirective implements OnInit, OnDestroy {
     }, options);
 
     this.intersectionObserver.observe(this.el.nativeElement);
+  }
+
+  private fallbackPlaceholder(): string {
+    return 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300"%3E%3Crect fill="%23f0f0f0" width="400" height="300"/%3E%3C/svg%3E';
+  }
+
+  private getBlurPlaceholder(src: string): string {
+    // Cloudinary: generate a tiny blurred version
+    if (src.includes('cloudinary.com')) {
+      return src.replace('/upload/', '/upload/w_30,e_blur:800,q_auto,f_auto/');
+    }
+    // For other images, return the image itself (browser will cache and scale it down)
+    return src;
   }
 
   private loadImage() {
