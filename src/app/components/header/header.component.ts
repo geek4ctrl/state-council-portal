@@ -20,6 +20,7 @@ export class HeaderComponent {
   isStepsDropdownOpen = signal(false);
   isLangDropdownOpen = signal(false);
   isMobileMenuOpen = signal(false);
+  isScrolled = signal(false);
 
   readonly languages: { code: LanguageCode; label: string }[] = [
     { code: 'en', label: 'Anglais' },
@@ -39,7 +40,24 @@ export class HeaderComponent {
 
   logoSrc = computed(() => 'assets/new-logo.png');
 
-  constructor() {}
+  constructor() {
+    if (typeof window !== 'undefined') {
+      this.isScrolled.set(window.scrollY > 60);
+    }
+  }
+
+  @HostListener('window:scroll')
+  onWindowScroll() {
+    if (typeof window !== 'undefined') {
+      const scrollY = window.scrollY;
+      const current = this.isScrolled();
+      if (current && scrollY < 40) {
+        this.isScrolled.set(false);
+      } else if (!current && scrollY > 60) {
+        this.isScrolled.set(true);
+      }
+    }
+  }
 
   @HostListener('document:click', ['$event'])
   onDocumentClick(event: MouseEvent) {

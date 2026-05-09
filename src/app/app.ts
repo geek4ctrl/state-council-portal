@@ -12,6 +12,7 @@ import { SeoService } from './services/seo.service';
 })
 export class App implements AfterViewInit {
   protected readonly title = signal('state-council-portal');
+  showBackToTop = signal(false);
   private readonly seo = inject(SeoService);
 
   @ViewChild('curDot') curDot!: ElementRef<HTMLDivElement>;
@@ -29,6 +30,19 @@ export class App implements AfterViewInit {
 
   ngAfterViewInit(): void {
     this.initCursor();
+    this.initBackToTop();
+  }
+
+  private initBackToTop(): void {
+    if (typeof window === 'undefined') return;
+    const onScroll = () => {
+      this.showBackToTop.set(window.scrollY > 400);
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+    this.destroyRef.onDestroy(() => {
+      window.removeEventListener('scroll', onScroll);
+    });
   }
 
   private initCursor(): void {
