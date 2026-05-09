@@ -365,19 +365,45 @@
   position: relative;
 }
 
+@keyframes dropdownEnter {
+  0% {
+    opacity: 0;
+    transform: translateY(-8px) scale(0.97);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes dropdownItemEnter {
+  0% {
+    opacity: 0;
+    transform: translateX(-6px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 .dropdown-menu {
   position: absolute;
   top: 100%;
   left: 0;
   margin-top: 0.5rem;
   background: white;
-  border: 1px solid #e9ecef;
-  border-radius: 4px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(31, 155, 217, 0.12);
+  border-radius: 12px;
+  box-shadow:
+    0 12px 32px rgba(15, 35, 70, 0.12),
+    0 4px 8px rgba(31, 155, 217, 0.06);
   list-style: none;
   padding: 0.5rem 0;
-  min-width: 200px;
+  min-width: 220px;
   z-index: 100;
+  animation: dropdownEnter 0.3s cubic-bezier(0.22, 1, 0.36, 1) both;
+  transform-origin: top left;
 }
 
 .dropdown-link {
@@ -387,17 +413,24 @@
   text-decoration: none;
   transition: background-color 0.2s, color 0.2s;
   font-size: 0.9rem;
+  animation: dropdownItemEnter 0.25s cubic-bezier(0.22, 1, 0.36, 1) both;
 }
 
+.dropdown-menu li:nth-child(1) .dropdown-link { animation-delay: 0.04s; }
+.dropdown-menu li:nth-child(2) .dropdown-link { animation-delay: 0.08s; }
+.dropdown-menu li:nth-child(3) .dropdown-link { animation-delay: 0.12s; }
+.dropdown-menu li:nth-child(4) .dropdown-link { animation-delay: 0.16s; }
+.dropdown-menu li:nth-child(5) .dropdown-link { animation-delay: 0.20s; }
+
 .dropdown-link:hover {
-  background-color: #f8f9fa;
+  background-color: #f0f7ff;
   color: #1F9BD9;
 }
 
 .dropdown-link:focus-visible {
   outline: 3px solid #1F9BD9;
   outline-offset: -3px;
-  background-color: #f8f9fa;
+  background-color: #f0f7ff;
 }
 
 /* Book Appointment Button */
