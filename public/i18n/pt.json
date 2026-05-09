@@ -112,7 +112,8 @@
     },
     "detail": {
       "back": "Voltar para notícias",
-      "title": "Detalhe da notícia"
+      "title": "Detalhe da notícia",
+      "related": "Artigos relacionados"
     },
     "pagination": {
       "label": "Paginação de notícias",

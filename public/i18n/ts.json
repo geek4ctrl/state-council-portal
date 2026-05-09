@@ -118,7 +118,8 @@
     },
     "detail": {
       "back": "Back to News",
-      "title": "News Detail"
+      "title": "News Detail",
+      "related": "Timhaka leti humelelanaka"
     },
     "empty": {
       "title": "Kakuena lumu nansha lumue to",

@@ -112,7 +112,8 @@
     },
     "detail": {
       "back": "Retour aux actualités",
-      "title": "Détail de l'actualité"
+      "title": "Détail de l'actualité",
+      "related": "Articles connexes"
     },
     "pagination": {
       "label": "Pagination des actualités",

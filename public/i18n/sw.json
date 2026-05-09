@@ -112,7 +112,8 @@
     },
     "detail": {
       "back": "Rudi kwenye Habari",
-      "title": "Maelezo ya Habari"
+      "title": "Maelezo ya Habari",
+      "related": "Makala yanayohusiana"
     },
     "pagination": {
       "label": "Ukurasa wa habari",

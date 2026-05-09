@@ -112,7 +112,8 @@
     },
     "detail": {
       "back": "Zonga na Sango",
-      "title": "Makambo ya Sango"
+      "title": "Makambo ya Sango",
+      "related": "Mikanda eye ebelami"
     },
     "pagination": {
       "label": "Pagination ya sango",
