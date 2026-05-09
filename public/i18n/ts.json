@@ -119,7 +119,9 @@
     "detail": {
       "back": "Back to News",
       "title": "News Detail",
-      "related": "Timhaka leti humelelanaka"
+      "related": "Timhaka leti humelelanaka",
+      "share": "Avelana",
+      "share.copied": "Xihlanganiso xi kopiwe!"
     },
     "empty": {
       "title": "Kakuena lumu nansha lumue to",
