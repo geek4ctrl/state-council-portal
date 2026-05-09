@@ -113,7 +113,9 @@
     "detail": {
       "back": "Back to News",
       "title": "News Detail",
-      "related": "Mikanda ya kuvwalana"
+      "related": "Mikanda ya kuvwalana",
+      "share": "Partager",
+      "share.copied": "Lien copié!"
     },
     "pagination": {
       "label": "Pagination ya bansangu",

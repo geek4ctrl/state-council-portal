@@ -113,7 +113,9 @@
     "detail": {
       "back": "Rudi kwenye Habari",
       "title": "Maelezo ya Habari",
-      "related": "Makala yanayohusiana"
+      "related": "Makala yanayohusiana",
+      "share": "Shiriki",
+      "share.copied": "Kiungo kimefanikiwa!"
     },
     "pagination": {
       "label": "Ukurasa wa habari",

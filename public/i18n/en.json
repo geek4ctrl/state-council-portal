@@ -113,7 +113,9 @@
     "detail": {
       "back": "Back to News",
       "title": "News Detail",
-      "related": "Related Articles"
+      "related": "Related Articles",
+      "share": "Share",
+      "share.copied": "Link copied!"
     },
     "pagination": {
       "label": "News pagination",
