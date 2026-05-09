@@ -355,7 +355,16 @@ import { FooterComponent } from '../../components/footer/footer.component';
         <section class="map-section">
           <div class="container">
             <div class="map-header">
-              <h2>{{ 'steps.map.title' | i18n }}</h2>
+              <div class="map-title-group">
+                <div class="map-icon-badge">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </div>
+                <h2>{{ 'steps.map.title' | i18n }}</h2>
+                <p class="map-subtitle">Conseil d'État de la RDC</p>
+              </div>
               <div class="address-card">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                   <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
@@ -886,16 +895,40 @@ import { FooterComponent } from '../../components/footer/footer.component';
 
     /* Map Section */
     .map-section {
-      background: #f5f5f5;
+      background: linear-gradient(180deg, #f0f4f8 0%, #e8eef5 50%, #f5f7fa 100%);
+      padding-bottom: 60px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .map-section::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 120px;
+      height: 4px;
+      background: linear-gradient(90deg, transparent, #1F9BD9, transparent);
+      border-radius: 0 0 4px 4px;
     }
 
     .map-container {
       width: 100%;
-      height: 400px;
+      max-width: 1200px;
+      margin: 0 auto;
+      height: 420px;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow:
+        0 24px 60px rgba(15, 35, 70, 0.12),
+        0 8px 20px rgba(31, 155, 217, 0.08);
+      border: 1px solid rgba(31, 155, 217, 0.1);
     }
 
     .map-container iframe {
       display: block;
+      border-radius: 20px;
     }
 
     .map-header {
@@ -904,50 +937,115 @@ import { FooterComponent } from '../../components/footer/footer.component';
       justify-content: space-between;
       flex-wrap: wrap;
       gap: 24px;
-      padding: 40px 0 24px;
+      padding: 48px 0 28px;
+    }
+
+    .map-title-group {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+    }
+
+    .map-icon-badge {
+      width: 52px;
+      height: 52px;
+      border-radius: 14px;
+      background: linear-gradient(135deg, #1F9BD9 0%, #0d7ab8 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 6px 16px rgba(31, 155, 217, 0.3);
+      margin-bottom: 4px;
+    }
+
+    .map-icon-badge svg {
+      width: 26px;
+      height: 26px;
+      color: white;
+      stroke-width: 2.2;
     }
 
     .map-header h2 {
-      font-size: 1.75rem;
+      font-size: 2rem;
       font-weight: 700;
-      color: #1a1a2e;
+      color: #0f172a;
       margin: 0;
+      letter-spacing: -0.3px;
+      position: relative;
+      padding-bottom: 8px;
+    }
+
+    .map-header h2::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 48px;
+      height: 3px;
+      background: linear-gradient(90deg, #1F9BD9, #0d7ab8);
+      border-radius: 3px;
+    }
+
+    .map-subtitle {
+      font-size: 0.95rem;
+      color: #6b7280;
+      margin: 0;
+      font-weight: 500;
+      letter-spacing: 0.2px;
     }
 
     .address-card {
       display: flex;
       align-items: flex-start;
-      gap: 12px;
-      background: white;
-      padding: 16px 20px;
-      border-radius: 12px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      gap: 14px;
+      background: linear-gradient(135deg, #ffffff 0%, #f8fbff 100%);
+      padding: 18px 24px;
+      border-radius: 16px;
+      box-shadow:
+        0 8px 24px rgba(15, 35, 70, 0.08),
+        0 2px 6px rgba(31, 155, 217, 0.06);
+      border: 1px solid rgba(31, 155, 217, 0.1);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .address-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 4px;
+      height: 100%;
+      background: linear-gradient(180deg, #1F9BD9 0%, #0d7ab8 100%);
+      border-radius: 16px 0 0 16px;
     }
 
     .address-card svg {
-      width: 24px;
-      height: 24px;
+      width: 26px;
+      height: 26px;
       flex-shrink: 0;
-      color: #c9a227;
+      color: #1F9BD9;
       margin-top: 2px;
     }
 
     .address-text {
       display: flex;
       flex-direction: column;
-      gap: 4px;
+      gap: 5px;
     }
 
     .address-text p {
       margin: 0;
-      font-size: 0.9rem;
-      color: #444;
-      line-height: 1.4;
+      font-size: 0.92rem;
+      color: #4b5563;
+      line-height: 1.45;
     }
 
     .address-line1 {
       font-weight: 600;
-      color: #1a1a2e;
+      color: #0f172a;
+      font-size: 0.95rem;
     }
 
     @media (max-width: 768px) {
@@ -955,15 +1053,26 @@ import { FooterComponent } from '../../components/footer/footer.component';
         flex-direction: column;
         align-items: flex-start;
         gap: 16px;
-        padding: 24px 0 16px;
+        padding: 32px 0 20px;
       }
 
       .map-header h2 {
-        font-size: 1.4rem;
+        font-size: 1.5rem;
       }
 
       .address-card {
         width: 100%;
+      }
+
+      .map-container {
+        height: 320px;
+        border-radius: 16px;
+        margin: 0 16px;
+        width: calc(100% - 32px);
+      }
+
+      .map-container iframe {
+        border-radius: 16px;
       }
     }
 
