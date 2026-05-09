@@ -46,6 +46,23 @@ import { CommonModule } from '@angular/common';
         <div class="skeleton skeleton-paragraph short"></div>
       </div>
     }
+
+    @if (type === 'article') {
+      <div class="skeleton-article">
+        <div class="skeleton skeleton-article-image"></div>
+        <div class="skeleton-article-content">
+          <div class="skeleton skeleton-article-title"></div>
+          <div class="skeleton skeleton-article-meta"></div>
+          <div class="skeleton skeleton-article-excerpt"></div>
+          <div class="skeleton skeleton-article-text"></div>
+          <div class="skeleton skeleton-article-text"></div>
+          <div class="skeleton skeleton-article-text"></div>
+          <div class="skeleton skeleton-article-text short"></div>
+          <div class="skeleton skeleton-article-text"></div>
+          <div class="skeleton skeleton-article-text short"></div>
+        </div>
+      </div>
+    }
   `,
   styles: [`
     /* Base skeleton animation */
@@ -189,8 +206,67 @@ import { CommonModule } from '@angular/common';
     .skeleton-paragraph.short {
       width: 70%;
     }
+
+    /* Article Skeleton */
+    .skeleton-article {
+      background: #ffffff;
+      border-radius: 20px;
+      box-shadow: 0 20px 40px rgba(26, 41, 66, 0.12);
+      overflow: hidden;
+    }
+
+    .skeleton-article-image {
+      width: 100%;
+      height: 380px;
+    }
+
+    .skeleton-article-content {
+      padding: 28px 32px 36px;
+    }
+
+    .skeleton-article-title {
+      height: 32px;
+      width: 85%;
+      margin-bottom: 14px;
+      border-radius: 6px;
+    }
+
+    .skeleton-article-meta {
+      height: 16px;
+      width: 50%;
+      margin-bottom: 22px;
+      border-radius: 4px;
+    }
+
+    .skeleton-article-excerpt {
+      height: 22px;
+      width: 100%;
+      margin-bottom: 20px;
+      border-radius: 4px;
+    }
+
+    .skeleton-article-text {
+      height: 16px;
+      width: 100%;
+      margin-bottom: 12px;
+      border-radius: 4px;
+    }
+
+    .skeleton-article-text.short {
+      width: 75%;
+    }
+
+    @media (max-width: 768px) {
+      .skeleton-article-image {
+        height: 240px;
+      }
+
+      .skeleton-article-content {
+        padding: 24px;
+      }
+    }
   `]
 })
 export class SkeletonLoaderComponent {
-  @Input() type: 'card' | 'news-card' | 'profile-card' | 'text-block' = 'card';
+  @Input() type: 'card' | 'news-card' | 'profile-card' | 'text-block' | 'article' = 'card';
 }

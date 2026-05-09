@@ -26,7 +26,7 @@
       "international": "Malanda a matunga masanga",
       "audiences": "Bantu",
       "steps": "Bidimu",
-      "publications": "Mikanda ya Conseil d'Etat",
+      "publications": "Mikanda ya Conseil d'État",
       "bookAppointment": "Difunda dia kutuadikangana",
       "news": "Mapia mapia"
     }
@@ -556,7 +556,7 @@
     },
     "intro": {
       "title": "Kumvua bukokeshi bua bualu bua bulombodi bua bulombodi mu dituku dia democratique du congo",
-      "body": "Lumungwa luyenkanya bukalenge bwa bualu bwa mulongoshi bwena banina mu Konstitision ya 18 février 2006, bakamu bakamukila kudi lelo, bushindamenu mu article 149 bapelela kuti bukalenge bwa bualu busale mu bana baila ne mabengai, napo ne Conseil d'Etat. Akele, mu mushindu wa article 155 wa Konstitision, Loi organique n°16/027 ya 15 octobre 2016 idika bukalenge, ndambu ne nkole ya bamushindu ba bulongolodi bwa bualu, ku kati ne Conseil d'Etat. Kadi mu musambo, ordonnance n°10/001 ya 10 janvier 2019 ya règlement intérieur ya Conseil d'Etat idika misangu ya kumwela bipede bya bualu bwaba bankulu."
+      "body": "Lumungwa luyenkanya bukalenge bwa bualu bwa mulongoshi bwena banina mu Konstitision ya 18 février 2006, bakamu bakamukila kudi lelo, bushindamenu mu article 149 bapelela kuti bukalenge bwa bualu busale mu bana baila ne mabengai, napo ne Conseil d'État. Akele, mu mushindu wa article 155 wa Konstitision, Loi organique n°16/027 ya 15 octobre 2016 idika bukalenge, ndambu ne nkole ya bamushindu ba bulongolodi bwa bualu, ku kati ne Conseil d'État. Kadi mu musambo, ordonnance n°10/001 ya 10 janvier 2019 ya règlement intérieur ya Conseil d'État idika misangu ya kumwela bipede bya bualu bwaba bankulu."
     },
     "rubrics": {
       "legalBasis": "Nshindamenu wa mikenji",
@@ -583,7 +583,7 @@
           "4": "CITUPA IV: Bukokeshi, bijadiki ne mikalu ya ba Magistrate",
           "5": "Citupa v: dinyoka"
         },
-        "paragraph3": "Bua kutambula bimpe bwa bulongolodi, Conseil d'Etat ebenza ne:\n1. Bifukama bibidi;\n2. Dibunge dia bantu bonso;\n3. Biro;\n4. Misambu ya bulongolodi ne ya teknik.\n\n<strong>Bifukama bia Conseil d'Etat</strong>\n\nConseil d'Etat ebinene ne bifukama bia kusambilila ne bia kulongolola makambo.\nBifukama bionso bibi ne tshisumbu tshimo to mingi.",
+        "paragraph3": "Bua kutambula bimpe bwa bulongolodi, Conseil d'État ebenza ne:\n1. Bifukama bibidi;\n2. Dibunge dia bantu bonso;\n3. Biro;\n4. Misambu ya bulongolodi ne ya teknik.\n\n<strong>Bifukama bia Conseil d'État</strong>\n\nConseil d'État ebinene ne bifukama bia kusambilila ne bia kulongolola makambo.\nBifukama bionso bibi ne tshisumbu tshimo to mingi.",
         "list2": {
           "1": "CITUPA I: Bukokeshi bwa mikenji",
           "2": "CITUPA II: Diteka, dienza dia Tshipangu tshia Ditunga",
@@ -879,9 +879,9 @@
     },
     "orgPage": {
       "hero": {
-        "title": "Bulongolodi bwa Conseil d'Etat",
+        "title": "Bulongolodi bwa Conseil d'État",
         "subtitle": "Organigramme",
-        "body": "Maloba a ntete a bulongolodi bwa Conseil d'Etat."
+        "body": "Maloba a ntete a bulongolodi bwa Conseil d'État."
       },
       "photoLabel": "Photo",
       "organigramme": {
@@ -923,14 +923,14 @@
       "ariaLabel": "Bitupa bia greffe",
       "tabs": {
         "presidents": "Balombodi ba kumpala",
-        "judges": "Bajudji ba Conseil d'Etat"
+        "judges": "Bajudji ba Conseil d'État"
       },
       "cards": {
-        "presidentsTitle": "Balombodi ba kumpala ba Conseil d'Etat",
-        "judgesTitle": "Bajudji ba Conseil d'Etat"
+        "presidentsTitle": "Balombodi ba kumpala ba Conseil d'État",
+        "judgesTitle": "Bajudji ba Conseil d'État"
       },
       "firstPresidentsTitle": "Première Présidente ya Conseil d'État",
-      "presidentsTitle": "Balombodi ba Conseil d'Etat",
+      "presidentsTitle": "Balombodi ba Conseil d'État",
       "advisorsTitle": "Vatshuri va Huvo ya Ximfumo",
       "bodyPlaceholder": "Mikanda",
       "toDate": "lelu"
@@ -960,10 +960,10 @@
     },
     "seniorLabel": "Ba majistrate banene",
     "consultativeSectionBody": "<strong>Bisumbu</strong><br><br>Tshitupa tshia diyukidilangana tshidi ne bisumbu bisatu ebi:<br>1. Tshisumbu tshia mibelu;<br>2. Tshisumbu tshia kumvuija mikanda ya mibeko;<br>3. Tshisumbu tshia malongesha ne dilonda dia matuku onso.<br><br><strong>Bulongolodi</strong><br><br>Tshitupa tshia diyukidilangana tshidi ne Mfumu wa tshitupa, Bamfumu ba bisumbu ne Bapeshi mibelu.<br>Tshitupa tshia diyukidilangana tshikambiwa kudi Mfumu KIBWE MUTER Eugène kumbukila le 02 avril 2025.",
-    "consultativeSectionBio": "KIBWE MUTER Eugène udi Docteur wa Droit wa Université wa Kinshasa. Mu mushindu wa bazuzi uvua: Substitut wa procureur ku Parquet wa Haut-Katanga ku Kipushi (<strong>1990 – 1993</strong>); Zuzi ku Tribunal wa Paix wa Kikwit (<strong>1994 – 1996</strong>); Mfumu wa Tribunal wa Paix wa Feshi (<strong>1996 – 1999</strong>); Zuzi ku Tribunal wa Grande Instance wa Kinshasa/N'djili (<strong>1999 – 2002</strong>); Zuzi ku Tribunal wa Grande Instance wa Kinshasa/Matete (<strong>2002 – 2013</strong>); Conseiller ku Cour d'Appel wa Kinshasa/Gombe (<strong>2013 – 2018</strong>); Conseiller ku Conseil d'Etat (<strong>2018 – 2023</strong>). <strong>Kumbukila le 15 août 2023 udi</strong> Mfumu wa Conseil d'Etat.",
+    "consultativeSectionBio": "KIBWE MUTER Eugène udi Docteur wa Droit wa Université wa Kinshasa. Mu mushindu wa bazuzi uvua: Substitut wa procureur ku Parquet wa Haut-Katanga ku Kipushi (<strong>1990 – 1993</strong>); Zuzi ku Tribunal wa Paix wa Kikwit (<strong>1994 – 1996</strong>); Mfumu wa Tribunal wa Paix wa Feshi (<strong>1996 – 1999</strong>); Zuzi ku Tribunal wa Grande Instance wa Kinshasa/N'djili (<strong>1999 – 2002</strong>); Zuzi ku Tribunal wa Grande Instance wa Kinshasa/Matete (<strong>2002 – 2013</strong>); Conseiller ku Cour d'Appel wa Kinshasa/Gombe (<strong>2013 – 2018</strong>); Conseiller ku Conseil d'État (<strong>2018 – 2023</strong>). <strong>Kumbukila le 15 août 2023 udi</strong> Mfumu wa Conseil d'État.",
     "litigationSectionBody": "<strong>Bisumbu</strong><br><br>Tshitupa tshia milandu tshidi ne bisumbu bisamombo (6) bia diyukidila ne disamba dia makambu aa:<br>1. Tshisumbu tshia administration, tshidi ne bualu bua milandu ya busemba bua mibeko ne difuta dia dikenga dia pa buadi;<br>2. Tshisumbu tshia mali a bantu bonso ne mfutu, tshidi ne bualu bua milandu ya mfutu, parafiscal ne douane ne milandu ya mali a bantu bonso, ba marché ne mishindu ya bantu bonso ya Bukokeshi bua ku kati;<br>3. Tshisumbu tshia makambu a social, tshidi ne bualu bua milandu ya mudimu ya ba agents ne ba fonctionnaires ba Etat, bualu ne milandu ya pension, difuta ne matomba a social;<br>4. Tshisumbu tshia ba élections, ba parti ya politique ne ba organismes ya mudimu, tshidi ne bualu bua milandu ya ba élections kumpala ya présidentielle ne législatives ne milandu ya organisation, fonctionnement ne financement ya ba parti ne ba regroupements ya politique anyi ba organismes ya mudimu;<br>5. Tshisumbu tshia makambu a économie, tshidi ne bualu bua disamba dia milandu ya économie anyi technique ne ya concurrence;<br>6. Tshisumbu tshia makambu a général, tshidi ne bualu bua disamba dia makambu onso adi kapeshibua ku bisumbu bikuabu na loi organique eyi.<br><br><strong>Bulongolodi</strong><br><br>Tshitupa tshia milandu tshidi ne Mfumu wa tshitupa, Bamfumu ba bisumbu ne Bapeshi mibelu.<br>Tshitupa tshia milandu tshikambiwa kudi Mfumu MASANI MATSHI Hippolyte.",
-    "litigationSectionBio": "MASANI MATSHI Hippolyte udi Docteur wa Droit wa Université wa Kinshasa, professeur associé ku faculté wa droit wa Université wa Kinshasa. Mu mushindu wa bazuzi uvua: substitut wa procureur ku Tribunal wa Grande Instance wa Bukavu (<strong>1991 – 1995</strong>); zuzi ku Tribunal wa Grande Instance wa Uvira (<strong>1995 – 1997</strong>); Conseiller ku Cour d'Appel wa Bandundu (<strong>1997 – 2007</strong>); Mfumu wa Cour d'Appel wa Kindu (<strong>2007 – 2009</strong>); Mfumu wa kumpala wa Cour d'Appel wa Bandundu (<strong>2009 – 2011</strong>); Conseiller ku Cour Suprême wa Justice (<strong>2011 – 2018</strong>). <strong>Lelu udi</strong> Mfumu wa Conseil d'Etat.",
-    "greffeSectionBody": "Conseil d'Etat udi ne:<br>• greffe wa tshitupa tshia milandu; ne<br>• greffe wa tshitupa tshia diyukidilangana.<br><br><strong>Bulongolodi</strong><br><br>Bilondeshile ku article 55 wa loi organique, greffe wa Conseil d'Etat udi ne Greffier en chef, ba greffiers principaux, ba greffiers divisionnaires, ba greffiers ne ba huissiers. Badi basala mudimu wabo.",
+    "litigationSectionBio": "MASANI MATSHI Hippolyte udi Docteur wa Droit wa Université wa Kinshasa, professeur associé ku faculté wa droit wa Université wa Kinshasa. Mu mushindu wa bazuzi uvua: substitut wa procureur ku Tribunal wa Grande Instance wa Bukavu (<strong>1991 – 1995</strong>); zuzi ku Tribunal wa Grande Instance wa Uvira (<strong>1995 – 1997</strong>); Conseiller ku Cour d'Appel wa Bandundu (<strong>1997 – 2007</strong>); Mfumu wa Cour d'Appel wa Kindu (<strong>2007 – 2009</strong>); Mfumu wa kumpala wa Cour d'Appel wa Bandundu (<strong>2009 – 2011</strong>); Conseiller ku Cour Suprême wa Justice (<strong>2011 – 2018</strong>). <strong>Lelu udi</strong> Mfumu wa Conseil d'État.",
+    "greffeSectionBody": "Conseil d'État udi ne:<br>• greffe wa tshitupa tshia milandu; ne<br>• greffe wa tshitupa tshia diyukidilangana.<br><br><strong>Bulongolodi</strong><br><br>Bilondeshile ku article 55 wa loi organique, greffe wa Conseil d'État udi ne Greffier en chef, ba greffiers principaux, ba greffiers divisionnaires, ba greffiers ne ba huissiers. Badi basala mudimu wabo.",
     "chart": {
       "title": "Tabulu wa bulongolodi",
       "subtitle": "Tshikoso tshia bulongolodi bua bulombodi ne bitupa bia nshindamenu bia tshipangu tshia ditunga.",

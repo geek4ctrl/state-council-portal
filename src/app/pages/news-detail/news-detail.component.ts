@@ -3,6 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { Component, OnInit, computed, inject, signal } from '@angular/core';
 import { ActivatedRoute, RouterLink } from '@angular/router';
 import { FooterComponent } from '../../components/footer/footer.component';
+import { SkeletonLoaderComponent } from '../../components/skeleton-loader/skeleton-loader.component';
 import { I18nPipe } from '../../i18n/i18n.pipe';
 import { I18nService } from '../../i18n/i18n.service';
 import { SeoService } from '../../services/seo.service';
@@ -10,7 +11,7 @@ import { SeoService } from '../../services/seo.service';
 @Component({
   selector: 'app-news-detail',
   standalone: true,
-  imports: [CommonModule, RouterLink, FooterComponent, I18nPipe],
+  imports: [CommonModule, RouterLink, FooterComponent, SkeletonLoaderComponent, I18nPipe],
   template: `
     <div class="page-wrap detail-page">
       <section class="detail-hero">
@@ -35,7 +36,9 @@ import { SeoService } from '../../services/seo.service';
       <section class="detail-body">
         <div class="container">
           @if (isLoading()) {
-            <div class="detail-card loading">Loading...</div>
+            <div class="detail-card">
+              <app-skeleton-loader type="article"></app-skeleton-loader>
+            </div>
           } @else if (notFound()) {
             <div class="detail-card loading">Article not found.</div>
           } @else if (article()) {
