@@ -10,92 +10,100 @@ import { CommonModule } from '@angular/common';
   imports: [CommonModule, I18nPipe, RouterLink],
   template: `
     <footer class="footer-section">
+      <!-- Main Footer -->
       <div class="footer-main">
-        <div class="footer-logo-wrapper">
-          <img [src]="footerLogo()" alt="Footer Logo" />
-        </div>
         <div class="footer-inner">
           <div class="footer-grid">
-            <div class="footer-column">
-              <h3>{{ 'footer.mainOffice.title' | i18n }}</h3>
-              <p>{{ 'footer.mainOffice.address1' | i18n }}</p>
-              <p>{{ 'footer.mainOffice.address2' | i18n }}</p>
-              <p>{{ 'footer.mainOffice.address3' | i18n }}</p>
-              <p class="footer-contact">{{ 'footer.mainOffice.phone' | i18n }}</p>
-              <p class="footer-contact">{{ 'footer.mainOffice.email' | i18n }}</p>
+            <!-- About Column -->
+            <div class="footer-column footer-about">
+              <div class="footer-brand">
+                <img [src]="footerLogo()" alt="Footer Logo" class="footer-logo-img" />
+                <span class="footer-brand-name">Conseil d'État</span>
+              </div>
+              <p class="footer-about-text">{{ 'footer.about.description' | i18n }}</p>
+              <div class="footer-address-card">
+                <div class="address-card-header">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                  <span>{{ 'footer.mainOffice.title' | i18n }}</span>
+                </div>
+                <div class="address-card-body">
+                  <p>{{ 'footer.mainOffice.address1' | i18n }}</p>
+                  <p>{{ 'footer.mainOffice.address2' | i18n }}</p>
+                  <p>{{ 'footer.mainOffice.address3' | i18n }}</p>
+                </div>
+              </div>
+              <div class="footer-contact-row">
+                <a href="tel:+243813494697" class="contact-chip">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                  <span>+243 813 494 697</span>
+                </a>
+                <a href="mailto:info@conseildetatrdc.com" class="contact-chip">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                  <span>info&#64;conseildetatrdc.com</span>
+                </a>
+              </div>
             </div>
+
+            <!-- Quick Links -->
             <div class="footer-column">
               <h3>{{ 'footer.quickLinks.title' | i18n }}</h3>
               <ul>
-                <li>
-                  <a routerLink="/presentation">{{ 'footer.quickLinks.about' | i18n }}</a>
-                </li>
-                <li>
-                  <a routerLink="/judges">{{ 'footer.quickLinks.jurisprudence' | i18n }}</a>
-                </li>
-                <li>
-                  <a routerLink="/steps">{{ 'footer.quickLinks.filing' | i18n }}</a>
-                </li>
-                <li>
-                  <a routerLink="/steps">{{ 'footer.quickLinks.contact' | i18n }}</a>
-                </li>
+                <li><a routerLink="/presentation">{{ 'footer.quickLinks.about' | i18n }}</a></li>
+                <li><a routerLink="/judges">{{ 'footer.quickLinks.jurisprudence' | i18n }}</a></li>
+                <li><a routerLink="/steps">{{ 'footer.quickLinks.filing' | i18n }}</a></li>
+                <li><a routerLink="/news">{{ 'footer.quickLinks.news' | i18n }}</a></li>
+                <li><a routerLink="/publications">{{ 'footer.quickLinks.publications' | i18n }}</a></li>
               </ul>
             </div>
+
+            <!-- Resources -->
             <div class="footer-column">
               <h3>{{ 'footer.resources.title' | i18n }}</h3>
               <ul>
-                <li>
-                  <a routerLink="/process">{{ 'footer.resources.legalDocs' | i18n }}</a>
-                </li>
-                <li>
-                  <a routerLink="/news">{{ 'footer.resources.decisions' | i18n }}</a>
-                </li>
-                <li>
-                  <a routerLink="/news">{{ 'footer.resources.reports' | i18n }}</a>
-                </li>
-                <li>
-                  <a routerLink="/steps">{{ 'footer.resources.faqs' | i18n }}</a>
-                </li>
+                <li><a routerLink="/process">{{ 'footer.resources.legalDocs' | i18n }}</a></li>
+                <li><a routerLink="/news">{{ 'footer.resources.decisions' | i18n }}</a></li>
+                <li><a routerLink="/news">{{ 'footer.resources.reports' | i18n }}</a></li>
+                <li><a routerLink="/steps">{{ 'footer.resources.faqs' | i18n }}</a></li>
+                <li><a routerLink="/appointment">{{ 'footer.resources.appointment' | i18n }}</a></li>
               </ul>
             </div>
+
+            <!-- Legal -->
             <div class="footer-column">
-              <h3>{{ 'footer.connect.title' | i18n }}</h3>
+              <h3>{{ 'footer.legal.title' | i18n }}</h3>
               <ul>
-                <li>
-                  <a href="https://www.facebook.com/ConseilEtatRDC/" target="_blank" rel="noopener noreferrer">
-                    {{ 'footer.connect.facebook' | i18n }}
-                  </a>
-                </li>
-                <li>
-                  <a href="https://x.com/ConseilEtatRDC" target="_blank" rel="noopener noreferrer">
-                    {{ 'footer.connect.twitter' | i18n }}
-                  </a>
-                </li>
+                <li><a routerLink="/presentation">{{ 'footer.legal.terms' | i18n }}</a></li>
+                <li><a routerLink="/presentation">{{ 'footer.legal.privacy' | i18n }}</a></li>
+                <li><a routerLink="/presentation">{{ 'footer.legal.accessibility' | i18n }}</a></li>
+                <li><a routerLink="/presentation">{{ 'footer.legal.sitemap' | i18n }}</a></li>
               </ul>
+              <div class="footer-social">
+                <span>{{ 'footer.connect.title' | i18n }}</span>
+                <div class="social-icons">
+                  <a href="https://www.facebook.com/ConseilEtatRDC/" target="_blank" rel="noopener noreferrer" class="social-icon" [attr.aria-label]="'footer.connect.facebook' | i18n">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"/></svg>
+                  </a>
+                  <a href="https://x.com/ConseilEtatRDC" target="_blank" rel="noopener noreferrer" class="social-icon" [attr.aria-label]="'footer.connect.twitter' | i18n">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
+
+      <!-- Bottom Bar -->
       <div class="footer-bottom">
         <div class="footer-inner">
           <div class="footer-bottom-content">
-            <a routerLink="/presentation" class="privacy-link">{{ 'footer.privacy' | i18n }}</a>
             <p class="copyright">{{ 'footer.copyright' | i18n }}</p>
-            <div class="social-icons">
-              <a href="https://www.facebook.com/ConseilEtatRDC/" target="_blank" rel="noopener noreferrer" class="social-icon">
-                <svg viewBox="0 0 24 24" fill="currentColor">
-                  <path
-                    d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"
-                  />
-                </svg>
-              </a>
-              <a href="https://x.com/ConseilEtatRDC" target="_blank" rel="noopener noreferrer" class="social-icon">
-                <svg viewBox="0 0 24 24" fill="currentColor">
-                  <path
-                    d="M22.46 6c-.85.38-1.78.64-2.75.76 1-.6 1.76-1.55 2.12-2.68-.93.55-1.96.95-3.06 1.17-.88-.94-2.13-1.53-3.51-1.53-2.66 0-4.82 2.16-4.82 4.82 0 .38.04.75.13 1.10-4-.2-7.54-2.12-9.91-5.04-.42.72-.66 1.55-.66 2.44 0 1.67.85 3.15 2.14 4.01-.79-.03-1.53-.24-2.18-.6v.06c0 2.34 1.66 4.29 3.87 4.73-.4.11-.83.17-1.27.17-.31 0-.62-.03-.92-.08.63 1.96 2.44 3.38 4.6 3.42-1.68 1.32-3.8 2.1-6.11 2.1-.4 0-.79-.02-1.17-.07 2.18 1.4 4.77 2.21 7.55 2.21 9.06 0 14-7.5 14-14 0-.21 0-.42-.02-.63.96-.69 1.8-1.56 2.46-2.55z"
-                  />
-                </svg>
-              </a>
+            <div class="footer-bottom-links">
+              <a routerLink="/presentation">{{ 'footer.legal.privacy' | i18n }}</a>
+              <span class="dot-separator"></span>
+              <a routerLink="/presentation">{{ 'footer.legal.terms' | i18n }}</a>
+              <span class="dot-separator"></span>
+              <span class="footer-hours">{{ 'footer.mainOffice.hours' | i18n }}</span>
             </div>
           </div>
         </div>
@@ -108,147 +116,174 @@ import { CommonModule } from '@angular/common';
         display: block;
         width: 100%;
       }
-      /* Footer styles copied from home.component.ts */
       .footer-section {
         background-color: transparent;
         width: 100%;
       }
+
+      /* Main Footer */
       .footer-main {
-        background: #ececf1;
+        background: linear-gradient(180deg, #f0f2f7 0%, #e8ecf3 100%);
         color: #55645c;
-        padding: 60px 0 40px;
+        padding: 64px 0 48px;
         position: relative;
-      }
-      .footer-main .container,
-      .footer-bottom .container,
-      .footer-inner {
-        width: 100%;
-        max-width: 100%;
-        padding: 0 40px;
-        margin: 0;
       }
       .footer-main::before {
         content: '';
         position: absolute;
-        inset: 0;
-        background:
-          radial-gradient(circle at 50% 0%, rgba(31, 155, 217, 0.22), transparent 55%),
-          linear-gradient(
-            90deg,
-            rgba(255, 255, 255, 0.3),
-            transparent 45%,
-            rgba(255, 255, 255, 0.2)
-          );
-        pointer-events: none;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 1px;
+        background: linear-gradient(90deg, transparent, rgba(31, 155, 217, 0.2), transparent);
       }
-      .footer-main::after {
-        content: '';
-        position: absolute;
-        inset: 0;
-        background: repeating-linear-gradient(
-          90deg,
-          rgba(255, 255, 255, 0.25) 0,
-          rgba(255, 255, 255, 0.25) 1px,
-          transparent 1px,
-          transparent 140px
-        );
-        opacity: 0.15;
-        pointer-events: none;
-      }
-      .footer-logo-wrapper {
-        position: absolute;
-        top: -46px;
-        left: 50%;
-        transform: translateX(-50%);
-        background: linear-gradient(135deg, #ffffff, #f1f5fb);
-        width: 120px;
-        height: 120px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
-        box-shadow:
-          0 18px 36px rgba(12, 18, 40, 0.22),
-          inset 0 1px 0 rgba(255, 255, 255, 0.8);
-        border: 1px solid rgba(255, 255, 255, 0.9);
-      }
-      .footer-logo-wrapper img {
-        max-width: 64%;
-        max-height: 80%;
-        object-fit: contain;
+      .footer-inner {
+        width: 100%;
+        max-width: 1200px;
+        padding: 0 40px;
+        margin: 0 auto;
       }
       .footer-grid {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 50px;
-        padding-top: 40px;
+        grid-template-columns: 1.4fr 1fr 1fr 1fr;
+        gap: 48px;
         position: relative;
         z-index: 1;
       }
-      .footer-column {
-        text-align: left;
+
+      /* About Column */
+      .footer-about {
+        padding-right: 24px;
       }
-      .footer-column h3 {
-        color: #1a1a1a;
-        font-size: 1.1rem;
+      .footer-brand {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 16px;
+      }
+      .footer-logo-img {
+        height: 48px;
+        width: auto;
+        object-fit: contain;
+      }
+      .footer-brand-name {
+        font-size: 1.15rem;
+        font-weight: 700;
+        color: #1a2942;
+        letter-spacing: 0.3px;
+      }
+      .footer-about-text {
+        font-size: 0.88rem;
+        line-height: 1.7;
+        color: #5c6773;
+        margin: 0 0 20px;
+      }
+      .footer-address-card {
+        background: #ffffff;
+        border-radius: 12px;
+        padding: 16px;
+        box-shadow: 0 4px 16px rgba(26, 41, 66, 0.06);
+        border: 1px solid rgba(31, 155, 217, 0.1);
+        margin-bottom: 16px;
+      }
+      .address-card-header {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        color: #1F9BD9;
         font-weight: 600;
-        margin-bottom: 20px;
-        letter-spacing: 1.2px;
-        position: relative;
-        display: inline-flex;
+        font-size: 0.85rem;
+        margin-bottom: 10px;
         padding-bottom: 10px;
-        text-align: left;
+        border-bottom: 1px solid rgba(31, 155, 217, 0.1);
       }
-      .footer-column h3::after {
-        content: '';
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        width: 36px;
-        height: 2px;
-        background: linear-gradient(90deg, #1f9bd9, transparent);
+      .address-card-header svg {
+        width: 18px;
+        height: 18px;
       }
-      .footer-column p {
-        font-size: 0.9rem;
-        line-height: 1.8;
-        margin: 5px 0;
+      .address-card-body p {
+        font-size: 0.82rem;
+        line-height: 1.7;
+        margin: 3px 0;
         color: #4f5b66;
-        text-align: left;
+      }
+      .footer-contact-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+      .contact-chip {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 8px 14px;
+        background: #ffffff;
+        border-radius: 8px;
+        border: 1px solid rgba(31, 155, 217, 0.12);
+        color: #4f5b66;
+        font-size: 0.82rem;
+        text-decoration: none;
+        transition: border-color 0.2s ease, box-shadow 0.2s ease;
+        box-shadow: 0 2px 8px rgba(26, 41, 66, 0.04);
+      }
+      .contact-chip:hover {
+        border-color: rgba(31, 155, 217, 0.3);
+        box-shadow: 0 4px 12px rgba(26, 41, 66, 0.08);
+        color: #1a2942;
+      }
+      .contact-chip svg {
+        width: 14px;
+        height: 14px;
+        color: #1F9BD9;
+      }
+
+      /* Link Columns */
+      .footer-column h3 {
+        color: #1a2942;
+        font-size: 0.95rem;
+        font-weight: 700;
+        margin: 0 0 20px;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
       }
       .footer-column ul {
         list-style: none;
         padding: 0;
+        margin: 0;
       }
       .footer-column ul li {
         margin-bottom: 12px;
-        text-align: left;
       }
       .footer-column ul li a {
-        color: #4f5b66;
+        color: #5c6773;
         text-decoration: none;
-        font-size: 0.9rem;
-        transition: color 0.3s ease;
-        text-align: left;
+        font-size: 0.88rem;
+        transition: color 0.2s ease, padding-left 0.2s ease;
+        display: inline-block;
       }
       .footer-column ul li a:hover {
-        color: #1f9bd9;
-        text-decoration: underline;
-        text-underline-offset: 4px;
+        color: #1F9BD9;
+        padding-left: 4px;
       }
-      .footer-bottom {
-        background: #ffffff;
-        padding: 16px 0 !important;
+
+      /* Social in Legal Column */
+      .footer-social {
+        margin-top: 24px;
+        padding-top: 20px;
         border-top: 1px solid rgba(26, 41, 66, 0.08);
       }
-      .footer-bottom-content {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 20px;
+      .footer-social span {
+        display: block;
+        font-size: 0.8rem;
+        font-weight: 600;
+        color: #1a2942;
+        margin-bottom: 12px;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
       }
       .social-icons {
         display: flex;
-        gap: 15px;
+        gap: 10px;
       }
       .social-icon {
         width: 36px;
@@ -256,94 +291,137 @@ import { CommonModule } from '@angular/common';
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: #ffffff;
-        border-radius: 50%;
-        color: #1f2937;
-        border: 1px solid rgba(31, 155, 217, 0.35);
-        box-shadow: 0 6px 14px rgba(10, 16, 32, 0.12);
+        background: #ffffff;
+        border-radius: 10px;
+        color: #5c6773;
+        border: 1px solid rgba(26, 41, 66, 0.1);
         text-decoration: none;
-        transition: all 0.3s ease;
+        transition: all 0.25s ease;
+        box-shadow: 0 2px 8px rgba(26, 41, 66, 0.06);
       }
       .social-icon:hover {
-        background-color: #1f9bd9;
-        border-color: #1f9bd9;
+        background: #1F9BD9;
+        border-color: #1F9BD9;
         color: #ffffff;
+        transform: translateY(-2px);
+        box-shadow: 0 6px 16px rgba(31, 155, 217, 0.25);
       }
       .social-icon svg {
         width: 16px;
         height: 16px;
       }
+
+      /* Bottom Bar */
+      .footer-bottom {
+        background: #ffffff;
+        padding: 20px 0;
+        border-top: 1px solid rgba(26, 41, 66, 0.06);
+      }
+      .footer-bottom-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        flex-wrap: wrap;
+      }
       .copyright {
-        font-size: 0.85rem;
-        color: #555;
-        text-align: center;
+        font-size: 0.82rem;
+        color: #7b8594;
+        margin: 0;
       }
-      .privacy-link {
-        color: #555;
+      .footer-bottom-links {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        flex-wrap: wrap;
+      }
+      .footer-bottom-links a {
+        color: #7b8594;
         text-decoration: none;
-        font-size: 0.85rem;
-        transition: color 0.3s ease;
+        font-size: 0.82rem;
+        transition: color 0.2s ease;
       }
-      .privacy-link:hover {
-        color: #1f9bd9;
+      .footer-bottom-links a:hover {
+        color: #1F9BD9;
       }
-      @media (max-width: 1199px) {
+      .dot-separator {
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        background: rgba(26, 41, 66, 0.2);
+      }
+      .footer-hours {
+        font-size: 0.82rem;
+        color: #7b8594;
+      }
+
+      /* Responsive */
+      @media (max-width: 1024px) {
+        .newsletter-content {
+          flex-direction: column;
+          text-align: center;
+          gap: 24px;
+        }
+        .newsletter-form {
+          width: 100%;
+          justify-content: center;
+        }
+        .newsletter-input {
+          flex: 1;
+          max-width: 300px;
+        }
         .footer-grid {
           grid-template-columns: repeat(2, 1fr);
           gap: 40px;
         }
-        .footer-logo-wrapper {
-          width: 100px;
-          height: 100px;
-          top: -35px;
+        .footer-about {
+          grid-column: 1 / -1;
+          padding-right: 0;
         }
       }
-      @media (max-width: 767px) {
+      @media (max-width: 768px) {
+        .newsletter-band {
+          padding: 36px 0;
+        }
+        .newsletter-form {
+          flex-direction: column;
+          width: 100%;
+        }
+        .newsletter-input {
+          width: 100%;
+          max-width: none;
+        }
+        .newsletter-btn {
+          width: 100%;
+        }
+        .footer-main {
+          padding: 48px 0 36px;
+        }
         .footer-grid {
           grid-template-columns: 1fr;
-          gap: 35px;
-          padding-top: 30px;
-        }
-        .footer-logo-wrapper {
-          width: 90px;
-          height: 90px;
-          top: -30px;
+          gap: 32px;
         }
         .footer-bottom-content {
           flex-direction: column;
-          gap: 15px;
           text-align: center;
+          gap: 12px;
         }
-        .social-icons {
+        .footer-bottom-links {
           justify-content: center;
         }
       }
-      @media (max-width: 575px) {
-        .footer-logo-wrapper {
-          width: 80px;
-          height: 80px;
-          top: -25px;
+      @media (max-width: 480px) {
+        .footer-inner {
+          padding: 0 24px;
         }
-        .footer-grid {
-          gap: 30px;
-        }
-        .footer-column h3 {
+        .footer-brand-name {
           font-size: 1rem;
         }
-        .footer-column p,
+        .footer-column h3 {
+          font-size: 0.9rem;
+        }
         .footer-column ul li a {
           font-size: 0.85rem;
-        }
-        .footer-bottom {
-          padding: 20px 0;
-        }
-        .copyright,
-        .privacy-link {
-          font-size: 0.8rem;
-        }
-        .social-icon {
-          width: 32px;
-          height: 32px;
         }
       }
     `,
@@ -351,7 +429,5 @@ import { CommonModule } from '@angular/common';
 })
 export class FooterComponent {
   private readonly i18n = inject(I18nService);
-  footerLogo = computed(() => {
-    return '/assets/new-logo.png';
-  });
+  footerLogo = computed(() => '/assets/new-logo.png');
 }

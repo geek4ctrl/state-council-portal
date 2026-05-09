@@ -276,21 +276,25 @@
       "address2": "Commune wa Gombe, Kinshasa",
       "address3": "République démocratique du Congo",
       "phone": "Tel: +243 813494697",
-      "email": "Email: info@conseildetatrdc.com"
+      "email": "Email: info@conseildetatrdc.com",
+      "hours": "Lundi-Vendredi: 8h30 - 16h00"
     },
     "quickLinks": {
       "title": "Malu a lukasa",
       "about": "Pa bidi bitangila Kabadi",
       "jurisprudence": "Malu a mikenji",
       "filing": "Njila ya difunda",
-      "contact": "Tubikile"
+      "contact": "Tubikile",
+      "news": "Actualités",
+      "publications": "Publications"
     },
     "resources": {
       "title": "Biuma",
       "legalDocs": "Mikanda ya mikenji",
       "decisions": "Mapangadika a ku kabadi",
       "reports": "Luapolo lua tshidimu",
-      "faqs": "Mandamuna a nkonko"
+      "faqs": "Mandamuna a nkonko",
+      "appointment": "Prendre Rendez-vous"
     },
     "connect": {
       "title": "Kutuangaja",
@@ -300,7 +304,24 @@
       "linkedin": "LinkedIn"
     },
     "privacy": "Sekele",
-    "copyright": "Tshipangu tshia ditunga tshia bukenji bua mufundi. Bukokeshi buonso budi bukubibua"
+    "copyright": "Tshipangu tshia ditunga tshia bukenji bua mufundi. Bukokeshi buonso budi bukubibua",
+    "about": {
+      "description": "Le Conseil d'État est la juridiction administrative suprême de la République démocratique du Congo, garantissant l'état de droit et la protection des droits des citoyens."
+    },
+    "newsletter": {
+      "title": "Tshikela Ne Informé",
+      "description": "Abonnez-vous pour recevoir les dernières décisions de justice, actualités et mises à jour procédurales.",
+      "placeholder": "Tshikela email wa kunu",
+      "button": "S'abonner",
+      "success": "Merci mukelengi!"
+    },
+    "legal": {
+      "title": "Légal",
+      "terms": "Conditions d'utilisation",
+      "privacy": "Politique de confidentialité",
+      "accessibility": "Accessibilité",
+      "sitemap": "Plan du site"
+    }
   },
   "home": {
     "hero": {

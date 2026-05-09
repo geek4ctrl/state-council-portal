@@ -276,21 +276,25 @@
       "address2": "Comune di Gombe, Kinshasa",
       "address3": "Repubblica Democratica del Congo",
       "phone": "Tel: +243 813494697",
-      "email": "Email: info@conseildetatrdc.com"
+      "email": "Email: info@conseildetatrdc.com",
+      "hours": "Lun-Ven: 8:30 - 16:00"
     },
     "quickLinks": {
       "title": "Link rapidi",
       "about": "Informazioni sulla Corte",
       "jurisprudence": "Giurisprudenza",
       "filing": "Procedure di deposito",
-      "contact": "Contattaci"
+      "contact": "Contattaci",
+      "news": "Notizie",
+      "publications": "Pubblicazioni"
     },
     "resources": {
       "title": "Risorse",
       "legalDocs": "Documenti legali",
       "decisions": "Decisioni del tribunale",
       "reports": "Rapporti annuali",
-      "faqs": "FAQ"
+      "faqs": "FAQ",
+      "appointment": "Prenota Appuntamento"
     },
     "connect": {
       "title": "Rimani connesso",
@@ -300,7 +304,24 @@
       "linkedin": "LinkedIn"
     },
     "privacy": "Privacy",
-    "copyright": "Copyright Consiglio di Stato. Tutti i diritti riservati"
+    "copyright": "Copyright Consiglio di Stato. Tutti i diritti riservati",
+    "about": {
+      "description": "Il Consiglio di Stato è la giurisdizione amministrativa suprema della Repubblica Democratica del Congo, garantendo lo stato di diritto e la protezione dei diritti dei cittadini."
+    },
+    "newsletter": {
+      "title": "Rimanete Informati",
+      "description": "Iscriviti per ricevere le ultime decisioni giudiziarie, notizie e aggiornamenti procedurali.",
+      "placeholder": "Inserisci il tuo indirizzo email",
+      "button": "Iscriviti",
+      "success": "Grazie per l'iscrizione!"
+    },
+    "legal": {
+      "title": "Legale",
+      "terms": "Termini di Utilizzo",
+      "privacy": "Politica sulla Privacy",
+      "accessibility": "Accessibilità",
+      "sitemap": "Mappa del Sito"
+    }
   },
   "home": {
     "hero": {
