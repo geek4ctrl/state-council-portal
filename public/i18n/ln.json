@@ -113,7 +113,9 @@
     "detail": {
       "back": "Zonga na Sango",
       "title": "Makambo ya Sango",
-      "related": "Mikanda eye ebelami"
+      "related": "Mikanda eye ebelami",
+      "share": "Kabelisa",
+      "share.copied": "Lien ekopi!"
     },
     "pagination": {
       "label": "Pagination ya sango",
