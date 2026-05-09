@@ -606,6 +606,80 @@
   }
 }
 
+/* Desktop Entrance Animations */
+@keyframes logoEntrance {
+  0% {
+    opacity: 0;
+    transform: translateY(10px) scale(0.92);
+    filter: blur(4px);
+  }
+  60% {
+    transform: translateY(-2px) scale(1.02);
+    filter: blur(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    filter: blur(0);
+  }
+}
+
+@keyframes flagEntrance {
+  0% {
+    opacity: 0;
+    transform: translateX(18px) scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+
+@keyframes flagWave {
+  0%, 100% {
+    transform: perspective(300px) rotateY(0deg) skewX(0deg);
+  }
+  25% {
+    transform: perspective(300px) rotateY(2deg) skewX(0.8deg);
+  }
+  50% {
+    transform: perspective(300px) rotateY(0deg) skewX(0deg);
+  }
+  75% {
+    transform: perspective(300px) rotateY(-2deg) skewX(-0.8deg);
+  }
+}
+
+@keyframes captionEntrance {
+  0% {
+    opacity: 0;
+    transform: translateY(12px);
+    letter-spacing: 0.8px;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    letter-spacing: 0.3px;
+  }
+}
+
+@media (min-width: 769px) {
+  .logo-image {
+    animation: logoEntrance 0.8s cubic-bezier(0.22, 1, 0.36, 1) 0.1s both;
+  }
+
+  .flag-image {
+    animation:
+      flagEntrance 0.7s cubic-bezier(0.22, 1, 0.36, 1) 0.35s both,
+      flagWave 5s ease-in-out 1.5s infinite;
+    transform-origin: left center;
+  }
+
+  .logo-caption {
+    animation: captionEntrance 0.7s cubic-bezier(0.22, 1, 0.36, 1) 0.6s both;
+  }
+}
+
 /* Hamburger Menu */
 .hamburger {
   display: none;
