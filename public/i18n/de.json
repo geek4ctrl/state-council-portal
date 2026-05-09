@@ -115,7 +115,8 @@
       "title": "Nachrichten-Details",
       "related": "Verwandte Artikel",
       "share": "Teilen",
-      "share.copied": "Link kopiert!"
+      "share.copied": "Link kopiert!",
+      "readTime": "{count} Min. Lesezeit"
     },
     "pagination": {
       "label": "News-Seitennavigation",
