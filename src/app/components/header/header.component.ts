@@ -1,6 +1,7 @@
-import { Component, inject, signal, computed, HostListener } from '@angular/core';
+import { Component, inject, signal, computed, HostListener, ViewChild, ElementRef, AfterViewInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Router, RouterLink, RouterLinkActive } from '@angular/router';
+import { Router, RouterLink, RouterLinkActive, NavigationEnd } from '@angular/router';
+import { filter } from 'rxjs/operators';
 import { IconComponent } from '../icon/icon.component';
 import { PreloadOnHoverDirective } from '../../directives/preload-on-hover.directive';
 import { I18nPipe } from '../../i18n/i18n.pipe';
@@ -15,11 +16,16 @@ import { I18nService, LanguageCode } from '../../i18n/i18n.service';
   templateUrl: './header.component.html',
   styleUrl: './header.component.css'
 })
-export class HeaderComponent {
+export class HeaderComponent implements AfterViewInit {
   isCourtDropdownOpen = signal(false);
   isStepsDropdownOpen = signal(false);
   isLangDropdownOpen = signal(false);
   isMobileMenuOpen = signal(false);
+  isScrolled = signal(false);
+  sliderLeft = signal(0);
+  sliderWidth = signal(0);
+
+  @ViewChild('navMenu') navMenu!: ElementRef<HTMLUListElement>;
 
   readonly languages: { code: LanguageCode; label: string }[] = [
     { code: 'en', label: 'Anglais' },
@@ -39,7 +45,62 @@ export class HeaderComponent {
 
   logoSrc = computed(() => 'assets/new-logo.png');
 
-  constructor() {}
+  constructor() {
+    if (typeof window !== 'undefined') {
+      this.isScrolled.set(window.scrollY > 60);
+    }
+  }
+
+  ngAfterViewInit(): void {
+    // Update slider position after route changes
+    this.router.events
+      .pipe(filter((e) => e instanceof NavigationEnd))
+      .subscribe(() => {
+        setTimeout(() => this.updateSliderToActive(), 100);
+      });
+    // Initial positioning
+    setTimeout(() => this.updateSliderToActive(), 300);
+  }
+
+  @HostListener('window:scroll')
+  onWindowScroll() {
+    if (typeof window !== 'undefined') {
+      const scrollY = window.scrollY;
+      const current = this.isScrolled();
+      if (current && scrollY < 40) {
+        this.isScrolled.set(false);
+      } else if (!current && scrollY > 60) {
+        this.isScrolled.set(true);
+      }
+    }
+  }
+
+  onNavHover(event: MouseEvent): void {
+    const target = event.currentTarget as HTMLElement;
+    if (!target || !this.navMenu?.nativeElement) return;
+    const menuRect = this.navMenu.nativeElement.getBoundingClientRect();
+    const itemRect = target.getBoundingClientRect();
+    this.sliderLeft.set(itemRect.left - menuRect.left);
+    this.sliderWidth.set(itemRect.width);
+  }
+
+  onNavLeave(): void {
+    this.updateSliderToActive();
+  }
+
+  private updateSliderToActive(): void {
+    if (!this.navMenu?.nativeElement) return;
+    const menu = this.navMenu.nativeElement;
+    const activeLink = menu.querySelector('.nav-link.active') as HTMLElement | null;
+    if (!activeLink) {
+      this.sliderWidth.set(0);
+      return;
+    }
+    const menuRect = menu.getBoundingClientRect();
+    const linkRect = activeLink.getBoundingClientRect();
+    this.sliderLeft.set(linkRect.left - menuRect.left);
+    this.sliderWidth.set(linkRect.width);
+  }
 
   @HostListener('document:click', ['$event'])
   onDocumentClick(event: MouseEvent) {
