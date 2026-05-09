@@ -44,7 +44,7 @@ function cloudSrc(url: string): string {
               </div>
               <div class="member-text">
                 <h3>{{ president.name }}</h3>
-                <p>{{ president.years }}</p>
+                <span class="role-plain">{{ president.years }}</span>
               </div>
             </article>
           }
@@ -66,7 +66,7 @@ function cloudSrc(url: string): string {
               </div>
               <div class="member-text">
                 <h3>{{ sp.name }}</h3>
-                <p>{{ sp.role }}</p>
+                <span class="role-badge">{{ sp.role }}</span>
               </div>
             </article>
           }
@@ -88,7 +88,7 @@ function cloudSrc(url: string): string {
               </div>
               <div class="member-text">
                 <h3>{{ president.name }}</h3>
-                <p>{{ 'organization.chart.roles.president' | i18n }}</p>
+                <span class="role-badge">{{ 'organization.chart.roles.president' | i18n }}</span>
               </div>
             </article>
           }
@@ -110,7 +110,7 @@ function cloudSrc(url: string): string {
               </div>
               <div class="member-text">
                 <h3>{{ advisor.name }}</h3>
-                <p>{{ advisor.name.startsWith('Mme') ? ('organization.chart.roles.advisorFemale' | i18n) : ('organization.chart.roles.advisor' | i18n) }}</p>
+                <span class="role-badge">{{ advisor.name.startsWith('Mme') ? ('organization.chart.roles.advisorFemale' | i18n) : ('organization.chart.roles.advisor' | i18n) }}</span>
               </div>
             </article>
           }
@@ -123,11 +123,11 @@ function cloudSrc(url: string): string {
   styles: [`
     :host {
       display: block;
-      background: #f8f9fb;
+      background: linear-gradient(180deg, #f8f9fb 0%, #f0f4f8 50%, #f8f9fb 100%);
       min-height: 100vh;
     }
     .page-container {
-      background: #f8f9fb;
+      background: transparent;
     }
     .hero-banner {
       position: relative;
@@ -204,12 +204,12 @@ function cloudSrc(url: string): string {
       padding: 2rem 1rem 3rem;
     }
     .section-title {
-      font-size: 1.4rem;
+      font-size: 1.35rem;
       font-weight: 700;
-      color: #1a2942;
-      margin: 2.5rem 0 1.2rem;
-      padding-bottom: 0.5rem;
-      border-bottom: 2px solid #e8ecf1;
+      color: #0f172a;
+      margin: 3rem 0 1.4rem;
+      padding: 0 0 0.6rem 0;
+      letter-spacing: 0.3px;
     }
     .members-grid {
       display: grid;
@@ -232,24 +232,27 @@ function cloudSrc(url: string): string {
       gap: 1.5rem;
       padding: 1.5rem;
       background: #fff;
-      border-radius: 18px;
-      box-shadow: 0 2px 14px rgba(0, 0, 0, 0.07);
-      border: 1px solid #f0f0f0;
-      transition: box-shadow 0.2s ease;
+      border-radius: 20px;
+      box-shadow: 0 4px 20px rgba(16, 27, 43, 0.06);
+      border: 1px solid rgba(226, 232, 240, 0.6);
+      transition: transform 0.35s cubic-bezier(0.23, 1, 0.32, 1), box-shadow 0.35s cubic-bezier(0.23, 1, 0.32, 1);
+      position: relative;
+      overflow: hidden;
     }
     .member-card:hover {
-      box-shadow: 0 8px 26px rgba(0, 0, 0, 0.11);
+      transform: translateY(-5px);
+      box-shadow: 0 16px 40px rgba(16, 27, 43, 0.12);
     }
     .member-photo {
       position: relative;
       flex-shrink: 0;
       width: 110px;
       height: 135px;
-      border-radius: 14px;
-      background: linear-gradient(90deg, #e8ecf1 25%, #f0f3f7 50%, #e8ecf1 75%);
-      background-size: 200% 100%;
-      animation: shimmer 1.4s infinite;
       overflow: hidden;
+      transition: transform 0.35s cubic-bezier(0.23, 1, 0.32, 1);
+    }
+    .member-card:hover .member-photo {
+      transform: scale(1.04);
     }
     @keyframes shimmer {
       0% { background-position: 200% 0; }
@@ -260,7 +263,6 @@ function cloudSrc(url: string): string {
       inset: 0;
       width: 100%;
       height: 100%;
-      border-radius: 12px;
       object-fit: cover;
       display: block;
     }
@@ -268,14 +270,25 @@ function cloudSrc(url: string): string {
       animation: none;
     }
     .member-text h3 {
-      margin: 0 0 6px;
-      font-size: 1.15rem;
-      color: #1a2942;
+      margin: 0 0 8px;
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: #0f172a;
+      letter-spacing: 0.2px;
+      line-height: 1.3;
     }
-    .member-text p {
+    .member-text .role-badge {
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: #1F9BD9;
+      letter-spacing: 0.3px;
+      line-height: 1.4;
+    }
+    .member-text .role-plain {
       margin: 0;
-      font-size: 1rem;
+      font-size: 0.95rem;
       color: #64748b;
+      font-weight: 500;
     }
 
     @media (max-width: 1100px) {

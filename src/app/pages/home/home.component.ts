@@ -3774,6 +3774,15 @@ type HighchartsStatic = typeof import('highcharts');
         flex: 1;
         text-align: center;
         padding: 35px 20px;
+        border: 1px solid rgba(31, 155, 217, 0.2);
+        border-radius: 16px;
+        background: #ffffff;
+        box-shadow: 0 2px 8px rgba(31, 155, 217, 0.06);
+        transition: box-shadow 0.25s ease, border-color 0.25s ease;
+      }
+      .contact-item:hover {
+        border-color: rgba(31, 155, 217, 0.35);
+        box-shadow: 0 4px 16px rgba(31, 155, 217, 0.1);
       }
 
       .contact-item h3 {
