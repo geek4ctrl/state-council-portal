@@ -1,6 +1,6 @@
 {
   "header": {
-    "siteName": "Conseil d'Etat ya RDC",
+    "siteName": "Conseil d'État ya RDC",
     "contact": {
       "phone": "+243 813494697",
       "hours": "Mokolo ya mosala - mokolo ya mitano 8:30am - 4:00pm"
@@ -26,7 +26,7 @@
       "international": "Boyokani ya mokili mobimba",
       "audiences": "Makikao",
       "steps": "Etape",
-      "publications": "Mikanda ya Conseil d'Etat",
+      "publications": "Mikanda ya Conseil d'État",
       "bookAppointment": "Bokanda rendez-vous",
       "news": "Sango"
     }
@@ -49,7 +49,7 @@
     "generic": {
       "code": "Libunga",
       "title": "Likambo moko ekomi",
-      "message": "Tozali na mpasi mpo na kosalisa yo. Me kotia lisusu to zonga na lokasa ya ebandeli ya Conseil d'Etat.",
+      "message": "Tozali na mpasi mpo na kosalisa yo. Me kotia lisusu to zonga na lokasa ya ebandeli ya Conseil d'État.",
       "primary": "Zonga na Ebandeli",
       "secondary": "Tala Sango"
     },
@@ -69,7 +69,7 @@
   },
   "judges": {
     "title": "Bajaji",
-    "body": "Kutana na bajaji ya Conseil d'Etat."
+    "body": "Kutana na bajaji ya Conseil d'État."
   },
   "memberDetail": {
     "back": "<- Zonga na Organisasion",
@@ -132,20 +132,20 @@
       "1": {
         "date": "30 Janvier",
         "category": "Administratif",
-        "title": "Rais ya liboso ya Conseil d'Etat alendisi bajaji ...",
+        "title": "Rais ya liboso ya Conseil d'État alendisi bajaji ...",
         "excerpt": "Nsima ya bokangami ya likita ya monene ya Conseil ya Administratif..."
       },
       "2": {
         "date": "30 Janvier",
         "category": "Administratif",
         "title": "Likita ya ndimbo na Conseil d'État",
-        "excerpt": "Kinshasa, 18 Oktoba 2025: Conseil d'Etat ya RDC ebimisi ..."
+        "excerpt": "Kinshasa, 18 Oktoba 2025: Conseil d'État ya RDC ebimisi ..."
       },
       "3": {
         "date": "30 Janvier",
         "category": "Administratif",
         "title": "Likita ya ndimbo na Conseil d'État",
-        "excerpt": "Kinshasa, 18 Oktoba 2025: Conseil d'Etat ya RDC ebimisi ..."
+        "excerpt": "Kinshasa, 18 Oktoba 2025: Conseil d'État ya RDC ebimisi ..."
       }
     }
   },
@@ -157,12 +157,12 @@
       },
       "appointment": {
         "title": "Bokanda<br>Rendez-vous",
-        "body": "Mpo na kosala bokutani na Conseil d'Etat, tondisa fomu oyo. Salisa ete makambo nyonso ezali malamu. Okobaka na email to telefone mpo na mokolo na ngonga."
+        "body": "Mpo na kosala bokutani na Conseil d'État, tondisa fomu oyo. Salisa ete makambo nyonso ezali malamu. Okobaka na email to telefone mpo na mokolo na ngonga."
       },
       "appeal": {
         "title": "Rufaa na<br>Conseil d'État",
-        "body1": "Rufaa na Conseil d'Etat ezali nzela ya boyokani ya administratif mpo na kobenga mokano. Conseil d'Etat etali soki mibeko ya administratif ekendaki malamu.",
-        "body2": "Conseil d'Etat ebengami na maloba ya bato to na formulaire. Rufaa esengeli kotindama na tango esengeli mpe na mikanda nyonso."
+        "body1": "Rufaa na Conseil d'État ezali nzela ya boyokani ya administratif mpo na kobenga mokano. Conseil d'État etali soki mibeko ya administratif ekendaki malamu.",
+        "body2": "Conseil d'État ebengami na maloba ya bato to na formulaire. Rufaa esengeli kotindama na tango esengeli mpe na mikanda nyonso."
       }
     },
     "tabs": {
@@ -215,7 +215,7 @@
   },
   "appealSteps": {
     "title": "Ndenge ya kotondisa rufaa",
-    "subtitle": "Landá ba etape oyo mpo na kotinda rufaa na Conseil d'Etat",
+    "subtitle": "Landá ba etape oyo mpo na kotinda rufaa na Conseil d'État",
     "steps": {
       "1": {
         "title": "Bongisa mikanda na yo",
@@ -227,7 +227,7 @@
       },
       "3": {
         "title": "Tinda na Greffe",
-        "body": "Tinda requete na yo mpe mikanda na Greffe ya Conseil d'Etat na ntango ya mibeko. Zwá reçu lokola elembo ya kotinda."
+        "body": "Tinda requete na yo mpe mikanda na Greffe ya Conseil d'État na ntango ya mibeko. Zwá reçu lokola elembo ya kotinda."
       },
       "4": {
         "title": "Futa ba frais",
@@ -253,7 +253,7 @@
       },
       "2": {
         "question": "Nakoki komimema ngai moko to esengeli avocat?",
-        "answer": "Okoki komimema liboso ya Conseil d'Etat. Kasi mpo na makambo ya mpasi, representation ya avocat ezali malamu. Greffe ekoki kopesa mayebisi na lisalisi juridique soki okoki."
+        "answer": "Okoki komimema liboso ya Conseil d'État. Kasi mpo na makambo ya mpasi, representation ya avocat ezali malamu. Greffe ekoki kopesa mayebisi na lisalisi juridique soki okoki."
       },
       "3": {
         "question": "Mikanda nini esengeli natia?",
@@ -300,7 +300,7 @@
       "linkedin": "LinkedIn"
     },
     "privacy": "Bokebi",
-    "copyright": "Droit nyonso ya Conseil d'Etat."
+    "copyright": "Droit nyonso ya Conseil d'État."
   },
   "home": {
     "hero": {
@@ -309,7 +309,7 @@
         "0": {
           "title": "Conseil d'État - Bofungoli ya mbula ya tribinal 2025-2026",
           "subtitle": "Palais du Peuple - 13 novembre 2025",
-          "body": "Conseil d'Etat esanganaki na Palais du Peuple mpo na bofungoli ya mbula ya tribinal 2025-2026.",
+          "body": "Conseil d'État esanganaki na Palais du Peuple mpo na bofungoli ya mbula ya tribinal 2025-2026.",
           "cta": "Yeba mingi"
         },
         "1": {
@@ -387,7 +387,7 @@
       "cards": {
         "1": {
           "title": "Bokonzi ya likolo ya tribinal",
-          "body": "Lokola tribinal ya likolo, Conseil d'Etat ebatelaka ndenge ya mibeko na RDC."
+          "body": "Lokola tribinal ya likolo, Conseil d'État ebatelaka ndenge ya mibeko na RDC."
         },
         "2": {
           "title": "Bosembo ya mibeko",
@@ -462,7 +462,7 @@
           "title": "Mibeko ya penal",
           "desc": "Kotalela mikano ya penal mpe bokebi ya nzela.",
           "items": {
-            "1": "Rufaa ya penal na Conseil d'Etat",
+            "1": "Rufaa ya penal na Conseil d'État",
             "2": "Bobengisi ya erreurs",
             "3": "Bosaleli ya mibeko ya penal"
           }
@@ -499,7 +499,7 @@
         "1": {
           "title": "Rais ya liboso ya Conseil d'État",
           "paragraphs": {
-            "1": "Lokola memba ya misato na Conseil Suprem ya Magistrature ya RDC, Rais ya liboso ya Conseil d'Etat, Brigitte Nsensele Wa Nsensele, apesaki makila na mokolo ya mitano, 27 Febuari, mpo na kobatela ba victimes ya aggression na este ya mboka.",
+            "1": "Lokola memba ya misato na Conseil Suprem ya Magistrature ya RDC, Rais ya liboso ya Conseil d'État, Brigitte Nsensele Wa Nsensele, apesaki makila na mokolo ya mitano, 27 Febuari, mpo na kobatela ba victimes ya aggression na este ya mboka.",
             "2": "Mpo na moboto nyonso ya RDC, kosalisa na mpasi ya ekolo ezali mosala ya citoyen. Tribinal ezangi te.",
             "3": "Sanza mingi, RDC ezali komona aggression ya Rwanda mpe bitumba ya badiabolo, oyo epesaki kufa ya bato mingi mpe ba deplaces mingi."
           }
@@ -507,7 +507,7 @@
         "2": {
           "title": "Bokonzi ya tribinal na bongwana",
           "paragraphs": {
-            "1": "Na bokonzi ya Rais ya liboso, Conseil d'Etat ebandaki bongwana mpo na kosala tribinal ya sika.",
+            "1": "Na bokonzi ya Rais ya liboso, Conseil d'État ebandaki bongwana mpo na kosala tribinal ya sika.",
             "2": "Bongwana yango esangisi digitalisation ya makambo ya tribinal, ndenge ya gestion ya makambo, mpe mateya mpo na bajaji na basali.",
             "3": "Mokano oyo elakisi molende ya tribinal mpo na polele, bokasi, mpe kopesa mokano ya bosembo."
           }
@@ -515,7 +515,7 @@
         "3": {
           "title": "Bosangani ya mokili mobimba",
           "paragraphs": {
-            "1": "Conseil d'Etat esalaka na ba institutions ya mokili mobimba mpe esangaka na ba forum.",
+            "1": "Conseil d'État esalaka na ba institutions ya mokili mobimba mpe esangaka na ba forum.",
             "2": "Na boyokani na ba tribunaux ya France, Belgique, mpe bituka mosusu ya francophone, tribinal ebongisaka boyebi.",
             "3": "Boyokani ya mokili mobimba ebakisa makasi ya RDC mpo na kopesa bosembo ya mokili mobimba."
           }
@@ -533,9 +533,9 @@
           "title": "Kokamba Rufaa: Maloba ya mibeko mpo na mobembo malamu"
         },
         "2": {
-          "alt": "Masolo ya Conseil d'Etat",
+          "alt": "Masolo ya Conseil d'État",
           "date": "22 Okt 2025 | Tolea ya Tribinal",
-          "title": "Makambo ya ntina na masolo ya Conseil d'Etat"
+          "title": "Makambo ya ntina na masolo ya Conseil d'État"
         },
         "3": {
           "alt": "Procedural",
@@ -556,14 +556,14 @@
     },
     "intro": {
       "title": "Koyeba juridiksion ya likolo ya ordre administratif na republiki demokratiki ya kongo",
-      "body": "Elimo ya likolo ya ordre administratif ezali na motuya na Konstitision ya 18 février 2006 oyo ekomami kozwa lisusu lelo, mingi na lisolo 149 oyo emonisi ete nguya ya bosambisi ezali na bakambi ya babongoli mpe babongoli, elongo na Conseil d'Etat. Lisusu, na application ya lisolo 155 ya Konstitision, Loi organique n°16/027 ya 15 octobre 2016 ebongolaka organisation, compétence mpe fonctionnement ya babongolisi ya ordre administratif, elongo na Conseil d'Etat. Na suka, ordonnance n°10/001 ya 10 janvier 2019 ya règlement intérieur ya Conseil d'État eyebisi ndenge ya kosala makambo ya bokonzi ya babongolisi oyo."
+      "body": "Elimo ya likolo ya ordre administratif ezali na motuya na Konstitision ya 18 février 2006 oyo ekomami kozwa lisusu lelo, mingi na lisolo 149 oyo emonisi ete nguya ya bosambisi ezali na bakambi ya babongoli mpe babongoli, elongo na Conseil d'État. Lisusu, na application ya lisolo 155 ya Konstitision, Loi organique n°16/027 ya 15 octobre 2016 ebongolaka organisation, compétence mpe fonctionnement ya babongolisi ya ordre administratif, elongo na Conseil d'État. Na suka, ordonnance n°10/001 ya 10 janvier 2019 ya règlement intérieur ya Conseil d'État eyebisi ndenge ya kosala makambo ya bokonzi ya babongolisi oyo."
     },
     "rubrics": {
       "legalBasis": "Moboko ya mibeko",
       "organization": "Boyangeli",
       "mission": "Mission",
       "competences": "Bokoki",
-      "procedureBeforeCouncil": "Procedure liboso ya Conseil d'Etat"
+      "procedureBeforeCouncil": "Procedure liboso ya Conseil d'État"
     },
     "legal": {
       "title": "Kokota na mikanda ya mibeko mpe reglementaire<br>Ya Conseil d'État",
@@ -583,14 +583,14 @@
           "4": "CHAPITRE IV: Mibeko, garantie, mpe limite",
           "5": "Chapitre v: disipline"
         },
-        "paragraph3": "Po na kotambwisa malamu ya tribinal, Conseil d'Etat esalaka na:\n1. Bifukama mibale ya kokabwana;\n2. Lukutakanu ya bato nyonso;\n3. Biro;\n4. Basaleli ya misala ya bokambi mpe ya technique.\n\n<strong>Bifukama ya Conseil d'Etat</strong>\n\nConseil d'Etat ezali na bifukama ya kosalisa mpe ya kolonga makambo.\nKila bifukama ezali na chambre moko to mingi.",
+        "paragraph3": "Po na kotambwisa malamu ya tribinal, Conseil d'État esalaka na:\n1. Bifukama mibale ya kokabwana;\n2. Lukutakanu ya bato nyonso;\n3. Biro;\n4. Basaleli ya misala ya bokambi mpe ya technique.\n\n<strong>Bifukama ya Conseil d'État</strong>\n\nConseil d'État ezali na bifukama ya kosalisa mpe ya kolonga makambo.\nKila bifukama ezali na chambre moko to mingi.",
         "list2": {
           "1": "CHAPITRE I: Rojime ya mibeko",
           "2": "CHAPITRE II: Installation mpe composition",
           "3": "CHAPITRE III: Formation mpe fonctionnement"
         },
-        "paragraph4": "Article 82 elobeli composition ya Conseil d'Etat mpe bato oyo basalaka.",
-        "paragraph5": "Na kolanda article 155 ya Konstitision ya 18 février 2006 oyo ebongolamaka na 2011 mpe articles 75 kino 93 ya loi organique n°16/027 ya 15 octobre 2016, Conseil d’État ezali kosala compétence consultative mpe contentieuse.\n\n<strong>Compétences consultatives</strong>\n\nNa matière consultative, Conseil d’État estatue, selon le cas, soit par voie d’avis motivés. Conseil d'Etat ekoki kosala rapports mpe kosala publications.\n\nNa kotanga dispositions ya Konstitision mpe loi organique na juridictions ya ordre administratif, Conseil d’État ezali kosala compétences consultatives oyo elandi :\nMpo na kosala avis motivés, ezali koloba :\n• Na demandes en régularités juridique ya textes législatifs mpe réglementaires oyo bazali kosala to oyo bazali na nguya, oyo bafandaki na autorités compétentes ya pouvoir central ;\n• Na difficultés d’interprétation to na questions oyo bipesaka difficulté d’interprétation ya textes juridiques oyo bazali na nguya, kozanga Konstitision, liboso juridiction to autorité administrative centrale ;\n• Na pertinence ya moyens juridiques oyo bakangaki na autorités administratives centrales mpo na kokóma, na domaines ya mikolo mingi ya bomoi national, objectifs oyo bazali kosala na bango moko, na kolanda contraintes oyo elandi na action administrative ;\n• Mpo na kosala ete, na demande ya autorités ya Pouvoir central to na propre initiative, attention ya pouvoirs publics na réformes juridiques oyo bimonaka souhaitables mpo na intérêt général.\n\nMpo na rédaction ya rapports de services, ezali kolakisa :\n• Inspection ya juridictions ya ordre administratif mpo na kozwa ete conditions matérielles ya implantation na bango, environnement matériel mpe psychologique ya mosala ya magistrats mpe respect na bango ya règles déontologiques ;\n• Surveillance ya activités ya juridictions ya ordre administratif mpo na kozela respect na bango ya textes légaux mpe règlementaires mpe respect ya unité nécessaire ya jurisprudence administrative ;\n• Collecte ya données nyonso to informations oyo ekoki kolakisa yango to kolakisa pouvoirs publics mpo na amélioration ya conditions ya fonctionnement ya juridiction administrative.\n\nMpo na publication ya résultats, ezali kolakisa, na yango moko, na services na yango to na tiers rémunérés to non, recherches na disciplines mingi oyo ezali kosala, kozanga droit en général, kozanga droit public en particulier, mpo na kolisa juridiction administrative na données scientifiques ya sika oyo ezali koya, fiables mpe pointues na disciplines na yango.\n\n<strong>Compétences contentieuses</strong>\nNa kotanga dispositions ya Konstitision ya 18 février 2006, oyo ebongolamaka na 2011, oyo ezali na nguya sik'oyo mpe loi organique n° 16/027 ya 15 octobre 2016 oyo elandi juridictions ya ordre administratif, Conseil d’Etat ezali kosala compétences contentieuses oyo elandi :\n• en premier et dernier ressort, ezali koyeba recours en annulation mpo na violation de la loi, oyo bafandaki na actes, règlements to décisions ya autorités administratives centrales, na organismes publics oyo bazali na tutelle na bango mpe na organes nationaux ya ordres professionnels oyo bazali na Pouvoir central. Ekoki mpe kozela suspension na bango, na demande ya parties, na kolanda circonstances de fait mpe de droit ya cause.\n• En appel, ezali koyeba recours oyo bafandaki na arrêts oyo bafandaki na matière oyo na Cours administratives d’appel, na domaine ya compétences na bango. Ezali koyeba mpe en appel, recours oyo bafandaki na décisions oyo bafandaki na juridictions spécialisées ya ordre administratif, na domaine ya compétences na bango, au cas où, appel n’est pas organisé à l’interne.\n• En cassation, ezali koyeba pourvois mpo na violation de la Constitution, traité dûment ratifié, loi, édit, coutume, principes généraux de droit mpe règlement oyo batindami na arrêts mpe jugements ya juridictions administratives de droit commun to na décisions ya juridictions administratives spécialisées.\nEkoki kozela cassation na ou sans renvoi. Na cas oyo, ezali kozela jugement na fond du litige ; sauf, lors d’une cassation après renvoi, mpe juge de renvoi n’a pas suivi point de droit jugé en cassation.\n\n• En matière électorale, ezali koyeba, en appel, du contentieux ya résultats ya élections ya députés provinciaux, gouverneurs mpe vice-gouverneurs de province mpe, en cassation, ya élections ya autorités urbaines, municipales mpe locales ainsi que du contentieux relatif à la désignation, par voie d’élection to de nomination, ya membres ya assemblées, corps to organismes administratifs to professionnels to ya membres ya partis to regroupements politiques oyo bapesami na article 112 ya loi organique n° 16/027 ya 15 octobre 2016.\n• Na cas oyo juridictions zingine compétentes ezali te, ezali koyeba demandes d’indemnités oyo elandi réparation ya dommage exceptionnel, matériel to moral, oyo ezali kosalema na mesure prise to ordonnée na autorités ya Pouvoir central, provinces mpe entités territoriales décentralisées ainsi que na organismes oyo bazali na tutelle na bango.",
+        "paragraph4": "Article 82 elobeli composition ya Conseil d'État mpe bato oyo basalaka.",
+        "paragraph5": "Na kolanda article 155 ya Konstitision ya 18 février 2006 oyo ebongolamaka na 2011 mpe articles 75 kino 93 ya loi organique n°16/027 ya 15 octobre 2016, Conseil d’État ezali kosala compétence consultative mpe contentieuse.\n\n<strong>Compétences consultatives</strong>\n\nNa matière consultative, Conseil d’État estatue, selon le cas, soit par voie d’avis motivés. Conseil d'État ekoki kosala rapports mpe kosala publications.\n\nNa kotanga dispositions ya Konstitision mpe loi organique na juridictions ya ordre administratif, Conseil d’État ezali kosala compétences consultatives oyo elandi :\nMpo na kosala avis motivés, ezali koloba :\n• Na demandes en régularités juridique ya textes législatifs mpe réglementaires oyo bazali kosala to oyo bazali na nguya, oyo bafandaki na autorités compétentes ya pouvoir central ;\n• Na difficultés d’interprétation to na questions oyo bipesaka difficulté d’interprétation ya textes juridiques oyo bazali na nguya, kozanga Konstitision, liboso juridiction to autorité administrative centrale ;\n• Na pertinence ya moyens juridiques oyo bakangaki na autorités administratives centrales mpo na kokóma, na domaines ya mikolo mingi ya bomoi national, objectifs oyo bazali kosala na bango moko, na kolanda contraintes oyo elandi na action administrative ;\n• Mpo na kosala ete, na demande ya autorités ya Pouvoir central to na propre initiative, attention ya pouvoirs publics na réformes juridiques oyo bimonaka souhaitables mpo na intérêt général.\n\nMpo na rédaction ya rapports de services, ezali kolakisa :\n• Inspection ya juridictions ya ordre administratif mpo na kozwa ete conditions matérielles ya implantation na bango, environnement matériel mpe psychologique ya mosala ya magistrats mpe respect na bango ya règles déontologiques ;\n• Surveillance ya activités ya juridictions ya ordre administratif mpo na kozela respect na bango ya textes légaux mpe règlementaires mpe respect ya unité nécessaire ya jurisprudence administrative ;\n• Collecte ya données nyonso to informations oyo ekoki kolakisa yango to kolakisa pouvoirs publics mpo na amélioration ya conditions ya fonctionnement ya juridiction administrative.\n\nMpo na publication ya résultats, ezali kolakisa, na yango moko, na services na yango to na tiers rémunérés to non, recherches na disciplines mingi oyo ezali kosala, kozanga droit en général, kozanga droit public en particulier, mpo na kolisa juridiction administrative na données scientifiques ya sika oyo ezali koya, fiables mpe pointues na disciplines na yango.\n\n<strong>Compétences contentieuses</strong>\nNa kotanga dispositions ya Konstitision ya 18 février 2006, oyo ebongolamaka na 2011, oyo ezali na nguya sik'oyo mpe loi organique n° 16/027 ya 15 octobre 2016 oyo elandi juridictions ya ordre administratif, Conseil d’Etat ezali kosala compétences contentieuses oyo elandi :\n• en premier et dernier ressort, ezali koyeba recours en annulation mpo na violation de la loi, oyo bafandaki na actes, règlements to décisions ya autorités administratives centrales, na organismes publics oyo bazali na tutelle na bango mpe na organes nationaux ya ordres professionnels oyo bazali na Pouvoir central. Ekoki mpe kozela suspension na bango, na demande ya parties, na kolanda circonstances de fait mpe de droit ya cause.\n• En appel, ezali koyeba recours oyo bafandaki na arrêts oyo bafandaki na matière oyo na Cours administratives d’appel, na domaine ya compétences na bango. Ezali koyeba mpe en appel, recours oyo bafandaki na décisions oyo bafandaki na juridictions spécialisées ya ordre administratif, na domaine ya compétences na bango, au cas où, appel n’est pas organisé à l’interne.\n• En cassation, ezali koyeba pourvois mpo na violation de la Constitution, traité dûment ratifié, loi, édit, coutume, principes généraux de droit mpe règlement oyo batindami na arrêts mpe jugements ya juridictions administratives de droit commun to na décisions ya juridictions administratives spécialisées.\nEkoki kozela cassation na ou sans renvoi. Na cas oyo, ezali kozela jugement na fond du litige ; sauf, lors d’une cassation après renvoi, mpe juge de renvoi n’a pas suivi point de droit jugé en cassation.\n\n• En matière électorale, ezali koyeba, en appel, du contentieux ya résultats ya élections ya députés provinciaux, gouverneurs mpe vice-gouverneurs de province mpe, en cassation, ya élections ya autorités urbaines, municipales mpe locales ainsi que du contentieux relatif à la désignation, par voie d’élection to de nomination, ya membres ya assemblées, corps to organismes administratifs to professionnels to ya membres ya partis to regroupements politiques oyo bapesami na article 112 ya loi organique n° 16/027 ya 15 octobre 2016.\n• Na cas oyo juridictions zingine compétentes ezali te, ezali koyeba demandes d’indemnités oyo elandi réparation ya dommage exceptionnel, matériel to moral, oyo ezali kosalema na mesure prise to ordonnée na autorités ya Pouvoir central, provinces mpe entités territoriales décentralisées ainsi que na organismes oyo bazali na tutelle na bango.",
         "paragraph6": "Quorum: president to vice-president ya chambre na bamagistrat mibale, conseiller juridique mpe greffier.",
         "paragraph7": "Kila chambre ekoki kosala formation soki quorum ezwami.",
         "paragraph8": "Quorum esalemaka na ndenge moko, na participation ya Attorney General na deliberation.",
@@ -693,7 +693,7 @@
     "building": {
       "tag": "Kobongisa tribinal",
       "title": "Kotonga sisteme ya sika",
-      "body": "Nsima ya Konstitision ya 2006, Conseil d'Etat ebanda bongwana mpo na kosala tribinal moko ya makasi, polele, mpe ekotambola malamu."
+      "body": "Nsima ya Konstitision ya 2006, Conseil d'État ebanda bongwana mpo na kosala tribinal moko ya makasi, polele, mpe ekotambola malamu."
     },
     "initiatives": {
       "tag": "Plan ya bongwana",
@@ -741,7 +741,7 @@
   "international": {
     "hero": {
       "title": "Boyokani ya<br>Mokili mobimba",
-      "body": "Na contexte ya internationalisation ya mibeko, Conseil d'Etat ya RDC esalaka na ba partenaires mpe ba associations ya tribunaux."
+      "body": "Na contexte ya internationalisation ya mibeko, Conseil d'État ya RDC esalaka na ba partenaires mpe ba associations ya tribunaux."
     },
     "stats": {
       "associations": "Ba associations ya tribunaux ya mokili",
@@ -837,7 +837,7 @@
     },
     "assistance": {
       "title": "Osengeli lisalisi?",
-      "body": "Benga Conseil d'Etat mpo na lisalisi ya mikanda to programme.",
+      "body": "Benga Conseil d'État mpo na lisalisi ya mikanda to programme.",
       "cta": "Benga biso"
     }
   },
@@ -847,8 +847,8 @@
     },
     "firstPresident": {
       "alt": "Rais ya liboso",
-      "title": "Bokambi ya Conseil d'Etat",
-      "body": "Rais ya liboso akambaka Conseil d'Etat mpe likita na yango.",
+      "title": "Bokambi ya Conseil d'État",
+      "body": "Rais ya liboso akambaka Conseil d'État mpe likita na yango.",
       "page": {
         "heroTitle": "Bokambi ya Conseil d'État",
         "inauguration": "Présidence ya Conseil d'État esalemi na Rais ya liboso. Azali na makoki oyo elandi: kosala projet ya règlement intérieur ya Conseil d'État; kokabola makambo kati ya ba section mibale to kati ya ba chambre; kosala gestion ya ba agents ya greffe oyo bazali na Conseil; kosala gestion ya budget ya fonctionnement oyo epesami na ba juridictions administratives. Azali ordonnateur délégué.<br><br>Kobanda 18 février 2025, Madame Brigitte Nsensele wa Nsensele azali Rais ya liboso ya Conseil d'État.",
@@ -879,9 +879,9 @@
     },
     "orgPage": {
       "hero": {
-        "title": "Organisasion ya Conseil d'Etat",
+        "title": "Organisasion ya Conseil d'État",
         "subtitle": "Organigramme",
-        "body": "Maloba ya ebandeli mpo na organisasion ya Conseil d'Etat."
+        "body": "Maloba ya ebandeli mpo na organisasion ya Conseil d'État."
       },
       "photoLabel": "Photo",
       "organigramme": {
@@ -889,15 +889,15 @@
       },
       "tiles": {
         "organigramme": "Organigramme",
-        "firstPresident": "Bokambi ya Conseil d'Etat",
+        "firstPresident": "Bokambi ya Conseil d'État",
         "consultative": "Eteni ya Consultative",
         "contentieux": "Eteni ya Contentieux",
         "registry": "Greffe",
-        "juges": "Bazuzi ya Conseil d'Etat"
+        "juges": "Bazuzi ya Conseil d'État"
       },
       "roles": {
         "firstPresident": {
-          "title": "Bokambi ya Conseil d'Etat",
+          "title": "Bokambi ya Conseil d'État",
           "body": "Rais ya liboso ya Conseil d Etat azali mokonzi ya likolo ya makambo manso ya tribunal ya administratif. Azali kotala ete Conseil d Etat mpe ba tribunal nionso ya administratif ezali kosala malamu."
         },
         "sectionPresidents": {
@@ -923,14 +923,14 @@
       "ariaLabel": "Biteni ya greffe",
       "tabs": {
         "presidents": "Marais ya liboso",
-        "judges": "Bajuge ya Conseil d'Etat"
+        "judges": "Bajuge ya Conseil d'État"
       },
       "cards": {
-        "presidentsTitle": "Marais ya liboso ya Conseil d'Etat",
-        "judgesTitle": "Bajuge ya Conseil d'Etat"
+        "presidentsTitle": "Marais ya liboso ya Conseil d'État",
+        "judgesTitle": "Bajuge ya Conseil d'État"
       },
       "firstPresidentsTitle": "Première Présidente ya Conseil d'État",
-      "presidentsTitle": "Marais ya Conseil d'Etat",
+      "presidentsTitle": "Marais ya Conseil d'État",
       "advisorsTitle": "Bapesi toli ya Conseil d'État",
       "bodyPlaceholder": "Makomi",
       "toDate": "lelo"
@@ -943,10 +943,10 @@
         "organisations": "Boyangeli",
         "fondements": "Moboko ya mibeko",
         "competences": "Bokoki",
-        "procedures": "Procedure liboso ya Conseil d'Etat",
+        "procedures": "Procedure liboso ya Conseil d'État",
         "historique": "Lisolo ya kala",
-        "presidence": "Bokambi ya Conseil d'Etat",
-        "juges": "Bazuzi ya Conseil d'Etat"
+        "presidence": "Bokambi ya Conseil d'État",
+        "juges": "Bazuzi ya Conseil d'État"
       }
     },
     "firstPresidents": {
@@ -960,13 +960,13 @@
     },
     "seniorLabel": "Bamagistrat ya likolo",
     "consultativeSectionBody": "<strong>Ba chambre</strong><br><br>Eteni ya kosalisa ezali na ba chambre misato oyo:<br>1. Chambre ya makanisi;<br>2. Chambre ya ndimbola ya mikanda ya mibeko;<br>3. Chambre ya boyekoli mpe botali ya ntango nyonso.<br><br><strong>Bokengi</strong><br><br>Eteni ya kosalisa ezali na Mokambi ya eteni, Bakambi ya ba chambre mpe Bapesi toli.<br>Eteni ya kosalisa ekambami na Mokambi KIBWE MUTER Eugène banda le 02 avril 2025.",
-    "consultativeSectionBio": "KIBWE MUTER Eugène azali Docteur na Droit ya Université ya Kinshasa. Na mosala ya bazuzi azalaki: Substitut ya procureur na Parquet ya Haut-Katanga na Kipushi (<strong>1990 – 1993</strong>); Zuzi na Tribunal ya Paix ya Kikwit (<strong>1994 – 1996</strong>); Mokambi ya Tribunal ya Paix ya Feshi (<strong>1996 – 1999</strong>); Zuzi na Tribunal ya Grande Instance ya Kinshasa/N'djili (<strong>1999 – 2002</strong>); Zuzi na Tribunal ya Grande Instance ya Kinshasa/Matete (<strong>2002 – 2013</strong>); Conseiller na Cour d'Appel ya Kinshasa/Gombe (<strong>2013 – 2018</strong>); Conseiller na Conseil d'Etat (<strong>2018 – 2023</strong>). <strong>Banda le 15 août 2023 azali</strong> Mokambi ya Conseil d'Etat.",
+    "consultativeSectionBio": "KIBWE MUTER Eugène azali Docteur na Droit ya Université ya Kinshasa. Na mosala ya bazuzi azalaki: Substitut ya procureur na Parquet ya Haut-Katanga na Kipushi (<strong>1990 – 1993</strong>); Zuzi na Tribunal ya Paix ya Kikwit (<strong>1994 – 1996</strong>); Mokambi ya Tribunal ya Paix ya Feshi (<strong>1996 – 1999</strong>); Zuzi na Tribunal ya Grande Instance ya Kinshasa/N'djili (<strong>1999 – 2002</strong>); Zuzi na Tribunal ya Grande Instance ya Kinshasa/Matete (<strong>2002 – 2013</strong>); Conseiller na Cour d'Appel ya Kinshasa/Gombe (<strong>2013 – 2018</strong>); Conseiller na Conseil d'État (<strong>2018 – 2023</strong>). <strong>Banda le 15 août 2023 azali</strong> Mokambi ya Conseil d'État.",
     "litigationSectionBody": "<strong>Ba chambre</strong><br><br>Eteni ya milandu ezali na ba chambre motoba (6) ya boyekoli mpe bosambisi ya makambo oyo:<br>1. Chambre ya administration, oyo etali milandu ya bosembo ya mibeko mpe bofuti ya mpasi ya kokamwa;<br>2. Chambre ya finances ya bato nyonso mpe mpako, oyo etali milandu ya mpako, parafiscal mpe douane mpe milandu ya finances ya bato nyonso, ba marché mpe misala ya bato nyonso ya Bokonzi ya kati;<br>3. Chambre ya makambo ya social, oyo etali milandu ya mosala ya ba agents mpe ba fonctionnaires ya Etat, ata mpe milandu etali pension, lifuti mpe matomba ya social;<br>4. Chambre ya ba élections, ba parti ya politique mpe ba organismes ya mosala, oyo etali milandu ya ba élections longola présidentielle mpe législatives mpe milandu etali organisation, fonctionnement mpe financement ya ba parti mpe ba regroupements ya politique to ba organismes ya mosala;<br>5. Chambre ya makambo ya économie, oyo etali bosembi ya milandu ya économie to technique mpe oyo etali concurrence;<br>6. Chambre ya makambo ya général, oyo etali bosembi ya makambo nyonso oyo epesami te polele na ba chambre mosusu na loi organique oyo.<br><br><strong>Bokengi</strong><br><br>Eteni ya milandu ezali na Mokambi ya eteni, Bakambi ya ba chambre mpe Bapesi toli.<br>Eteni ya milandu ekambami na Mokambi MASANI MATSHI Hippolyte.",
-    "litigationSectionBio": "MASANI MATSHI Hippolyte azali Docteur na Droit ya Université ya Kinshasa, professeur associé na faculté ya droit ya Université ya Kinshasa. Na mosala ya bazuzi azalaki: substitut ya procureur na Tribunal ya Grande Instance ya Bukavu (<strong>1991 – 1995</strong>); zuzi na Tribunal ya Grande Instance ya Uvira (<strong>1995 – 1997</strong>); Conseiller na Cour d'Appel ya Bandundu (<strong>1997 – 2007</strong>); Mokambi ya Cour d'Appel ya Kindu (<strong>2007 – 2009</strong>); Mokambi ya liboso ya Cour d'Appel ya Bandundu (<strong>2009 – 2011</strong>); Conseiller na Cour Suprême ya Justice (<strong>2011 – 2018</strong>). <strong>Lelo azali</strong> Mokambi ya Conseil d'Etat.",
-    "greffeSectionBody": "Conseil d'Etat ezali na:<br>• greffe ya eteni ya milandu; mpe<br>• greffe ya eteni ya kosalisa.<br><br><strong>Bokengi</strong><br><br>Na kolanda article 55 ya loi organique, greffe ya Conseil d'Etat ezali na Greffier en chef, ba greffiers principaux, ba greffiers divisionnaires, ba greffiers mpe ba huissiers. Bango basalaka misala na bango.",
+    "litigationSectionBio": "MASANI MATSHI Hippolyte azali Docteur na Droit ya Université ya Kinshasa, professeur associé na faculté ya droit ya Université ya Kinshasa. Na mosala ya bazuzi azalaki: substitut ya procureur na Tribunal ya Grande Instance ya Bukavu (<strong>1991 – 1995</strong>); zuzi na Tribunal ya Grande Instance ya Uvira (<strong>1995 – 1997</strong>); Conseiller na Cour d'Appel ya Bandundu (<strong>1997 – 2007</strong>); Mokambi ya Cour d'Appel ya Kindu (<strong>2007 – 2009</strong>); Mokambi ya liboso ya Cour d'Appel ya Bandundu (<strong>2009 – 2011</strong>); Conseiller na Cour Suprême ya Justice (<strong>2011 – 2018</strong>). <strong>Lelo azali</strong> Mokambi ya Conseil d'État.",
+    "greffeSectionBody": "Conseil d'État ezali na:<br>• greffe ya eteni ya milandu; mpe<br>• greffe ya eteni ya kosalisa.<br><br><strong>Bokengi</strong><br><br>Na kolanda article 55 ya loi organique, greffe ya Conseil d'État ezali na Greffier en chef, ba greffiers principaux, ba greffiers divisionnaires, ba greffiers mpe ba huissiers. Bango basalaka misala na bango.",
     "chart": {
       "title": "Chart ya organisasion",
-      "subtitle": "Lisalisi ya bosangani na biteni ya Conseil d'Etat.",
+      "subtitle": "Lisalisi ya bosangani na biteni ya Conseil d'État.",
       "interactiveTitle": "Chart ya organisasion ya interactif",
       "interactiveSubtitle": "Tala ndenge ya bosangani.",
       "aria": "Chart ya organisasion interactif",
@@ -1037,7 +1037,7 @@
         "body": "Tala makikayo, masango, mpe updates."
       },
       "title": "Misala na biso",
-      "subtitle": "Tala biteni mpe ofisi oyo esalisaka misala ya Conseil d'Etat.",
+      "subtitle": "Tala biteni mpe ofisi oyo esalisaka misala ya Conseil d'État.",
       "divisions": {
         "title": "Bitelemeli",
         "rooms": "Ba salle na chambre",
