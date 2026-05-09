@@ -276,21 +276,25 @@
       "address2": "Kata ya Gombe, Kinshasa",
       "address3": "Jamhuri ya Kidemokrasia ya Kongo",
       "phone": "Simu: +243 813494697",
-      "email": "Barua pepe: info@conseildetatrdc.com"
+      "email": "Barua pepe: info@conseildetatrdc.com",
+      "hours": "Jumatatu-Ijumaa: 8:30 - 16:00"
     },
     "quickLinks": {
       "title": "Viungo vya Haraka",
       "about": "Kuhusu Mahakama",
       "jurisprudence": "Maamuzi ya Mahakama",
       "filing": "Taratibu za Uwasilishaji",
-      "contact": "Wasiliana Nasi"
+      "contact": "Wasiliana Nasi",
+      "news": "Habari",
+      "publications": "Machapisho"
     },
     "resources": {
       "title": "Rasilimali",
       "legalDocs": "Nyaraka za Kisheria",
       "decisions": "Maamuzi ya Mahakama",
       "reports": "Ripoti za Mwaka",
-      "faqs": "Maswali ya Mara kwa Mara"
+      "faqs": "Maswali ya Mara kwa Mara",
+      "appointment": "Weka Miadi"
     },
     "connect": {
       "title": "Ungana Nasi",
@@ -300,7 +304,24 @@
       "linkedin": "LinkedIn"
     },
     "privacy": "Faragha",
-    "copyright": "Hakimiliki Baraza la Serikali. Haki zote zimehifadhiwa"
+    "copyright": "Hakimiliki Baraza la Serikali. Haki zote zimehifadhiwa",
+    "about": {
+      "description": "Baraza la Serikali ni mamlaka ya kiutawala juu zaidi ya Jamhuri ya Kidemokrasia ya Kongo, ikihakikisha utawala wa sheria na ulinzi wa haki za raia."
+    },
+    "newsletter": {
+      "title": "Kuweka Habari",
+      "description": "Jiandikishe kupokea uamuzi wa mahakama wa hivi karibuni, habari na masasisho ya taratibu.",
+      "placeholder": "Weka anwani yako ya barua pepe",
+      "button": "Jiandikishe",
+      "success": "Asante kwa kujiandikisha!"
+    },
+    "legal": {
+      "title": "Kisheria",
+      "terms": "Masharti ya Matumizi",
+      "privacy": "Sera ya Faragha",
+      "accessibility": "Ufikiaji",
+      "sitemap": "Ramani ya Tovuti"
+    }
   },
   "home": {
     "hero": {

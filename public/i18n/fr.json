@@ -276,21 +276,25 @@
       "address2": "Commune de la Gombe, Kinshasa",
       "address3": "République démocratique du Congo",
       "phone": "Tel: +243 813494697",
-      "email": "Email: info@conseildetatrdc.com"
+      "email": "Email: info@conseildetatrdc.com",
+      "hours": "Lun-Ven: 8h30 - 16h00"
     },
     "quickLinks": {
       "title": "Liens rapides",
       "about": "À propos de la Cour",
       "jurisprudence": "Jurisprudence",
       "filing": "Procédures de dépôt",
-      "contact": "Contactez-nous"
+      "contact": "Contactez-nous",
+      "news": "Actualités",
+      "publications": "Publications"
     },
     "resources": {
       "title": "Ressources",
       "legalDocs": "Documents juridiques",
       "decisions": "Décisions de justice",
       "reports": "Rapports annuels",
-      "faqs": "FAQs"
+      "faqs": "FAQs",
+      "appointment": "Prendre Rendez-vous"
     },
     "connect": {
       "title": "Restez connecté",
@@ -300,7 +304,24 @@
       "linkedin": "LinkedIn"
     },
     "privacy": "Confidentialité",
-    "copyright": "Copyright Conseil d'État. Tous droits réservés"
+    "copyright": "Copyright Conseil d'État. Tous droits réservés",
+    "about": {
+      "description": "Le Conseil d'État est la juridiction administrative suprême de la République démocratique du Congo, garantissant l'état de droit et la protection des droits des citoyens."
+    },
+    "newsletter": {
+      "title": "Restez Informé",
+      "description": "Abonnez-vous pour recevoir les dernières décisions de justice, actualités et mises à jour procédurales.",
+      "placeholder": "Entrez votre adresse email",
+      "button": "S'abonner",
+      "success": "Merci pour votre abonnement !"
+    },
+    "legal": {
+      "title": "Légal",
+      "terms": "Conditions d'utilisation",
+      "privacy": "Politique de confidentialité",
+      "accessibility": "Accessibilité",
+      "sitemap": "Plan du site"
+    }
   },
   "home": {
     "hero": {

@@ -270,27 +270,41 @@
     }
   },
   "footer": {
+    "about": {
+      "description": "The State Council is the supreme administrative jurisdiction of the Democratic Republic of Congo, ensuring the rule of law and protection of citizens' rights."
+    },
+    "newsletter": {
+      "title": "Stay Informed",
+      "description": "Subscribe to receive the latest court decisions, news, and procedural updates.",
+      "placeholder": "Enter your email address",
+      "button": "Subscribe",
+      "success": "Thank you for subscribing!"
+    },
     "mainOffice": {
       "title": "Main Office",
       "address1": "7639, intersection of Pumbu and Batonniers Avenues",
       "address2": "Commune of Gombe, Kinshasa",
       "address3": "Democratic Republic of Congo",
       "phone": "Tel: +243 813494697",
-      "email": "Email: info@conseildetatrdc.com"
+      "email": "Email: info@conseildetatrdc.com",
+      "hours": "Mon-Fri: 8:30 AM - 4:00 PM"
     },
     "quickLinks": {
       "title": "Quick Links",
       "about": "About the Court",
       "jurisprudence": "Jurisprudence",
       "filing": "Filing Procedures",
-      "contact": "Contact Us"
+      "contact": "Contact Us",
+      "news": "News",
+      "publications": "Publications"
     },
     "resources": {
       "title": "Resources",
       "legalDocs": "Legal Documents",
       "decisions": "Court Decisions",
       "reports": "Annual Reports",
-      "faqs": "FAQs"
+      "faqs": "FAQs",
+      "appointment": "Book Appointment"
     },
     "connect": {
       "title": "Connect",
@@ -298,6 +312,13 @@
       "twitter": "Twitter",
       "instagram": "Instagram",
       "linkedin": "LinkedIn"
+    },
+    "legal": {
+      "title": "Legal",
+      "terms": "Terms of Use",
+      "privacy": "Privacy Policy",
+      "accessibility": "Accessibility",
+      "sitemap": "Sitemap"
     },
     "privacy": "Privacy",
     "copyright": "Copyright State Council. All Rights Reserved"

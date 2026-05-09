@@ -276,21 +276,25 @@
       "address2": "Comuna de Gombe, Kinshasa",
       "address3": "República Democrática do Congo",
       "phone": "Tel: +243 813494697",
-      "email": "Email: info@conseildetatrdc.com"
+      "email": "Email: info@conseildetatrdc.com",
+      "hours": "Seg-Sex: 8:30 - 16:00"
     },
     "quickLinks": {
       "title": "Links rápidos",
       "about": "Sobre o Tribunal",
       "jurisprudence": "Jurisprudência",
       "filing": "Procedimentos de arquivamento",
-      "contact": "Contate-nos"
+      "contact": "Contate-nos",
+      "news": "Notícias",
+      "publications": "Publicações"
     },
     "resources": {
       "title": "Recursos",
       "legalDocs": "Documentos Legais",
       "decisions": "Decisões judiciais",
       "reports": "Relatórios Anuais",
-      "faqs": "Perguntas frequentes"
+      "faqs": "Perguntas frequentes",
+      "appointment": "Agendar Consulta"
     },
     "connect": {
       "title": "Conectar",
@@ -300,7 +304,24 @@
       "linkedin": "LinkedIn"
     },
     "privacy": "Privacidade",
-    "copyright": "Copyright Conselho de Estado. Todos os direitos reservados"
+    "copyright": "Copyright Conselho de Estado. Todos os direitos reservados",
+    "about": {
+      "description": "O Conselho de Estado é a jurisdição administrativa suprema da República Democrática do Congo, assegurando o estado de direito e a proteção dos direitos dos cidadãos."
+    },
+    "newsletter": {
+      "title": "Mantenha-se Informado",
+      "description": "Inscreva-se para receber as últimas decisões judiciais, notícias e atualizações processuais.",
+      "placeholder": "Digite seu endereço de email",
+      "button": "Inscrever-se",
+      "success": "Obrigado por se inscrever!"
+    },
+    "legal": {
+      "title": "Legal",
+      "terms": "Termos de Uso",
+      "privacy": "Política de Privacidade",
+      "accessibility": "Acessibilidade",
+      "sitemap": "Mapa do Site"
+    }
   },
   "home": {
     "hero": {

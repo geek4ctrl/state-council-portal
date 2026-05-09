@@ -276,21 +276,25 @@
       "address2": "Gemeinde Gombe, Kinshasa",
       "address3": "Demokratische Republik Kongo",
       "phone": "Tel: +243 813494697",
-      "email": "E-Mail: info@conseildetatrdc.com"
+      "email": "E-Mail: info@conseildetatrdc.com",
+      "hours": "Mo-Fr: 8:30 - 16:00 Uhr"
     },
     "quickLinks": {
       "title": "Schnellzugriff",
       "about": "Über das Gericht",
       "jurisprudence": "Rechtsprechung",
       "filing": "Einreichungsverfahren",
-      "contact": "Kontakt"
+      "contact": "Kontakt",
+      "news": "Nachrichten",
+      "publications": "Publikationen"
     },
     "resources": {
       "title": "Ressourcen",
       "legalDocs": "Rechtsdokumente",
       "decisions": "Gerichtsentscheidungen",
       "reports": "Jahresberichte",
-      "faqs": "FAQs"
+      "faqs": "FAQs",
+      "appointment": "Termin Buchen"
     },
     "connect": {
       "title": "Verbinden",
@@ -300,7 +304,24 @@
       "linkedin": "LinkedIn"
     },
     "privacy": "Datenschutz",
-    "copyright": "Copyright Staatsrat. Alle Rechte vorbehalten"
+    "copyright": "Copyright Staatsrat. Alle Rechte vorbehalten",
+    "about": {
+      "description": "Der Staatsrat ist die oberste Verwaltungsgerichtsbarkeit der Demokratischen Republik Kongo und gewährleistet die Rechtsstaatlichkeit und den Schutz der Bürgerrechte."
+    },
+    "newsletter": {
+      "title": "Bleiben Sie Informiert",
+      "description": "Abonnieren Sie, um die neuesten Gerichtsentscheidungen, Nachrichten und Verfahrensaktualisierungen zu erhalten.",
+      "placeholder": "E-Mail-Adresse eingeben",
+      "button": "Abonnieren",
+      "success": "Vielen Dank für Ihr Abonnement!"
+    },
+    "legal": {
+      "title": "Rechtliches",
+      "terms": "Nutzungsbedingungen",
+      "privacy": "Datenschutzrichtlinie",
+      "accessibility": "Barrierefreiheit",
+      "sitemap": "Sitemap"
+    }
   },
   "home": {
     "hero": {
