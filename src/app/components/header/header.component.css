@@ -307,6 +307,18 @@
   flex: 1;
   justify-content: center;
   align-items: center;
+  position: relative;
+}
+
+.nav-slider {
+  position: absolute;
+  bottom: 0;
+  height: 2.5px;
+  background: linear-gradient(90deg, #1F9BD9, #0d7ab8);
+  border-radius: 2px;
+  transition: left 0.35s cubic-bezier(0.22, 1, 0.36, 1), width 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+  pointer-events: none;
+  z-index: 1;
 }
 
 .nav-item {
@@ -798,6 +810,10 @@
   .menu-backdrop.visible {
     opacity: 1;
     pointer-events: auto;
+  }
+
+  .nav-slider {
+    display: none;
   }
 
   .hamburger {
