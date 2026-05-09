@@ -54,6 +54,28 @@ import { SeoService } from '../../services/seo.service';
         </div>
       </section>
 
+      @if (relatedPosts().length > 0) {
+        <section class="related-section">
+          <div class="container">
+            <h2 class="related-title">{{ 'news.detail.related' | i18n }}</h2>
+            <div class="related-grid">
+              @for (post of relatedPosts(); track post.id) {
+                <a class="related-card" [routerLink]="['/news', post.id]">
+                  <div class="related-media">
+                    <img [src]="post.image" [alt]="post.title" loading="lazy" />
+                  </div>
+                  <div class="related-body">
+                    <span class="related-category">{{ post.category }}</span>
+                    <h3 class="related-heading">{{ post.title }}</h3>
+                    <span class="related-date">{{ post.date }}</span>
+                  </div>
+                </a>
+              }
+            </div>
+          </div>
+        </section>
+      }
+
       <app-footer></app-footer>
     </div>
   `,
@@ -180,6 +202,93 @@ import { SeoService } from '../../services/seo.service';
         margin: 0 0 16px;
       }
 
+      .related-section {
+        padding: 0 0 80px;
+        background: #f8fafc;
+      }
+
+      .related-title {
+        font-size: 1.4rem;
+        font-weight: 700;
+        color: #1e293b;
+        margin: 0 0 28px;
+        letter-spacing: 0.5px;
+      }
+
+      .related-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+      }
+
+      .related-card {
+        background: #ffffff;
+        border-radius: 16px;
+        overflow: hidden;
+        box-shadow: 0 8px 24px rgba(26, 41, 66, 0.08);
+        text-decoration: none;
+        transition: transform 0.3s cubic-bezier(0.23, 1, 0.32, 1), box-shadow 0.3s ease;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .related-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 16px 40px rgba(26, 41, 66, 0.14);
+      }
+
+      .related-media {
+        background: #e2e8f0;
+        aspect-ratio: 16 / 10;
+        overflow: hidden;
+      }
+
+      .related-media img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        transition: transform 0.4s ease;
+      }
+
+      .related-card:hover .related-media img {
+        transform: scale(1.05);
+      }
+
+      .related-body {
+        padding: 20px 22px 24px;
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+      }
+
+      .related-category {
+        font-size: 0.75rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: #1F9BD9;
+        margin-bottom: 8px;
+      }
+
+      .related-heading {
+        font-size: 1rem;
+        font-weight: 700;
+        line-height: 1.4;
+        color: #1e293b;
+        margin: 0 0 12px;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
+
+      .related-date {
+        font-size: 0.85rem;
+        color: #64748b;
+        margin-top: auto;
+      }
+
       @media (max-width: 768px) {
         .detail-hero {
           padding: 70px 0 50px;
@@ -187,6 +296,10 @@ import { SeoService } from '../../services/seo.service';
 
         .detail-content {
           padding: 24px;
+        }
+
+        .related-grid {
+          grid-template-columns: 1fr;
         }
       }
     `,
@@ -204,6 +317,7 @@ export class NewsDetailComponent implements OnInit {
   protected readonly isLoading = signal(true);
   protected readonly notFound = signal(false);
   protected readonly article = signal<NewsDetail | null>(null);
+  protected readonly relatedPosts = signal<NewsDetail[]>([]);
   protected readonly title = computed(() => this.article()?.title || 'News');
 
   ngOnInit() {
@@ -223,7 +337,8 @@ export class NewsDetailComponent implements OnInit {
     this.notFound.set(false);
     this.http.get<PostsResponse>(this.apiUrl).subscribe({
       next: (response) => {
-        const post = (response?.posts ?? []).find((item) => item.id === id);
+        const posts = response?.posts ?? [];
+        const post = posts.find((item) => item.id === id);
         if (!post) {
           this.notFound.set(true);
           this.isLoading.set(false);
@@ -231,6 +346,7 @@ export class NewsDetailComponent implements OnInit {
         }
         const detail = this.mapPostToDetail(post);
         this.article.set(detail);
+        this.setRelatedPosts(posts, id, detail.category);
         this.seoService.updateMetadata({
           title: detail.title,
           description: detail.excerpt || detail.title,
@@ -258,6 +374,19 @@ export class NewsDetailComponent implements OnInit {
       date: this.formatDate(post.date),
       content: post.content?.trim() || '',
     };
+  }
+
+  private setRelatedPosts(posts: ApiPost[], currentId: number, currentCategory: string): void {
+    const candidates = posts
+      .filter((p) => p.id !== currentId)
+      .map((p) => this.mapPostToDetail(p));
+
+    // Prioritize same category, then most recent
+    const sameCategory = candidates.filter((p) => p.category === currentCategory);
+    const others = candidates.filter((p) => p.category !== currentCategory);
+    const combined = [...sameCategory, ...others];
+
+    this.relatedPosts.set(combined.slice(0, 3));
   }
 
   private formatDate(dateValue?: string | null): string {

@@ -112,7 +112,8 @@
     },
     "detail": {
       "back": "Back to News",
-      "title": "News Detail"
+      "title": "News Detail",
+      "related": "Mikanda ya kuvwalana"
     },
     "pagination": {
       "label": "Pagination ya bansangu",
