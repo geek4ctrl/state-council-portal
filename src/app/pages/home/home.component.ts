@@ -52,7 +52,7 @@ type HighchartsStatic = typeof import('highcharts');
         </div>
       </div>
       <div class="loader-track"><div class="loader-fill"></div></div>
-      <span class="loader-label">CONSEIL D'ETAT</span>
+      <span class="loader-label">CONSEIL D'ÉTAT</span>
     </div>
 
     <!-- CUSTOM CURSOR -->
