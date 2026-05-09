@@ -210,6 +210,7 @@
 .main-nav {
   background: #f3f6fb;
   padding: 1rem 0;
+  transition: padding 0.35s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 .nav-content {
@@ -239,6 +240,7 @@
   height: 58px;
   width: auto;
   object-fit: contain;
+  transition: height 0.35s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 .flag-image {
@@ -254,6 +256,41 @@
   letter-spacing: 0.3px;
   line-height: 1;
   white-space: nowrap;
+  transition: font-size 0.35s cubic-bezier(0.22, 1, 0.36, 1), letter-spacing 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.header {
+  transition: box-shadow 0.35s ease;
+}
+
+.header.scrolled {
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.14);
+}
+
+.header.scrolled .main-nav {
+  padding: 0.55rem 0;
+}
+
+.header.scrolled .logo-image {
+  height: 44px;
+}
+
+.header.scrolled .flag-image {
+  height: 18px;
+}
+
+.header.scrolled .logo-caption {
+  font-size: 0.62rem;
+  letter-spacing: 0.2px;
+}
+
+.header.scrolled .nav-link {
+  font-size: 0.85rem;
+}
+
+.header.scrolled .btn-appointment {
+  padding: 0.6rem 1.4rem;
+  font-size: 0.85rem;
 }
 
 .logo svg {
@@ -270,6 +307,18 @@
   flex: 1;
   justify-content: center;
   align-items: center;
+  position: relative;
+}
+
+.nav-slider {
+  position: absolute;
+  bottom: 0;
+  height: 2.5px;
+  background: linear-gradient(90deg, #1F9BD9, #0d7ab8);
+  border-radius: 2px;
+  transition: left 0.35s cubic-bezier(0.22, 1, 0.36, 1), width 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+  pointer-events: none;
+  z-index: 1;
 }
 
 .nav-item {
@@ -606,6 +655,103 @@
   }
 }
 
+/* Desktop Entrance Animations */
+@keyframes logoEntrance {
+  0% {
+    opacity: 0;
+    transform: translateY(10px) scale(0.92);
+    filter: blur(4px);
+  }
+  60% {
+    transform: translateY(-2px) scale(1.02);
+    filter: blur(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    filter: blur(0);
+  }
+}
+
+@keyframes flagEntrance {
+  0% {
+    opacity: 0;
+    transform: translateX(18px) scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+
+@keyframes flagWave {
+  0%, 100% {
+    transform: perspective(300px) rotateY(0deg) skewX(0deg);
+  }
+  25% {
+    transform: perspective(300px) rotateY(2deg) skewX(0.8deg);
+  }
+  50% {
+    transform: perspective(300px) rotateY(0deg) skewX(0deg);
+  }
+  75% {
+    transform: perspective(300px) rotateY(-2deg) skewX(-0.8deg);
+  }
+}
+
+@keyframes captionEntrance {
+  0% {
+    opacity: 0;
+    transform: translateY(12px);
+    letter-spacing: 0.8px;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    letter-spacing: 0.3px;
+  }
+}
+
+@keyframes navItemEntrance {
+  0% {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (min-width: 769px) {
+  .logo-image {
+    animation: logoEntrance 0.8s cubic-bezier(0.22, 1, 0.36, 1) 0.1s both;
+  }
+
+  .flag-image {
+    animation:
+      flagEntrance 0.7s cubic-bezier(0.22, 1, 0.36, 1) 0.35s both,
+      flagWave 5s ease-in-out 1.5s infinite;
+    transform-origin: left center;
+  }
+
+  .logo-caption {
+    animation: captionEntrance 0.7s cubic-bezier(0.22, 1, 0.36, 1) 0.6s both;
+  }
+
+  .nav-item {
+    animation: navItemEntrance 0.5s cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+
+  .nav-item:nth-child(1) { animation-delay: 0.75s; }
+  .nav-item:nth-child(2) { animation-delay: 0.85s; }
+  .nav-item:nth-child(3) { animation-delay: 0.95s; }
+  .nav-item:nth-child(4) { animation-delay: 1.05s; }
+  .nav-item:nth-child(5) { animation-delay: 1.15s; }
+  .nav-item:nth-child(6) { animation-delay: 1.25s; }
+  .nav-item:nth-child(7) { animation-delay: 1.35s; }
+}
+
 /* Hamburger Menu */
 .hamburger {
   display: none;
@@ -664,6 +810,10 @@
   .menu-backdrop.visible {
     opacity: 1;
     pointer-events: auto;
+  }
+
+  .nav-slider {
+    display: none;
   }
 
   .hamburger {
