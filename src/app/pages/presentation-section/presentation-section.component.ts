@@ -1200,23 +1200,29 @@ type GreffeFirstPresident = {
         margin-top: 0;
         width: 100%;
         max-width: 1120px;
-        background: transparent;
-        border-radius: 0;
-        padding: 18px 0 8px;
-        border: none;
-        box-shadow: none;
-        backdrop-filter: none;
-        -webkit-backdrop-filter: none;
+        background: linear-gradient(135deg, #ffffff 0%, #f8fbff 100%);
+        border-radius: 20px;
+        padding: 40px 44px 40px;
+        border: 1px solid rgba(31, 155, 217, 0.12);
+        box-shadow:
+          0 20px 50px rgba(15, 35, 70, 0.08),
+          0 4px 12px rgba(31, 155, 217, 0.06),
+          inset 0 1px 0 rgba(255, 255, 255, 0.8);
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
         position: relative;
         z-index: 2;
         overflow: hidden;
       }
 
-      .org-detail-card::before {
-        content: none;
+      .org-detail-card::after {
+        content: '';
         position: absolute;
-        inset: 0;
-        background: radial-gradient(circle at 95% 5%, rgba(143, 212, 255, 0.16), transparent 42%);
+        top: -60px;
+        right: -60px;
+        width: 200px;
+        height: 200px;
+        background: radial-gradient(circle, rgba(31, 155, 217, 0.1), transparent 70%);
         pointer-events: none;
       }
 
@@ -1232,8 +1238,8 @@ type GreffeFirstPresident = {
 
       .org-detail-card p {
         margin: 0 0 14px;
-        color: #1f2937;
-        line-height: 1.88;
+        color: #374151;
+        line-height: 1.9;
         font-size: clamp(1rem, 1.2vw, 1.14rem);
         text-wrap: pretty;
         position: relative;
@@ -1241,8 +1247,19 @@ type GreffeFirstPresident = {
       }
 
       .org-detail-card p strong {
+        display: block;
         color: #0f172a;
         font-weight: 700;
+        font-size: 1.25rem;
+        margin: 28px 0 16px;
+        padding-left: 16px;
+        border-left: 3px solid #1F9BD9;
+        letter-spacing: 0.2px;
+      }
+
+      .org-detail-card p br + br + strong,
+      .org-detail-card p br + strong {
+        margin-top: 24px;
       }
 
       .org-detail-card ul {
