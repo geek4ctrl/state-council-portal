@@ -115,7 +115,8 @@
       "title": "Maelezo ya Habari",
       "related": "Makala yanayohusiana",
       "share": "Shiriki",
-      "share.copied": "Kiungo kimefanikiwa!"
+      "share.copied": "Kiungo kimefanikiwa!",
+      "readTime": "Dakika {count} za kusoma"
     },
     "pagination": {
       "label": "Ukurasa wa habari",

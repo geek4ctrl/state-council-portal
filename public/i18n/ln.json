@@ -115,7 +115,8 @@
       "title": "Makambo ya Sango",
       "related": "Mikanda eye ebelami",
       "share": "Kabelisa",
-      "share.copied": "Lien ekopi!"
+      "share.copied": "Lien ekopi!",
+      "readTime": "{count} min ya kotanga"
     },
     "pagination": {
       "label": "Pagination ya sango",

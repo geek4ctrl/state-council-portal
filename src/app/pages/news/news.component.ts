@@ -77,6 +77,8 @@ import { FooterComponent } from '../../components/footer/footer.component';
                       <span class="news-date">{{ article.date }}</span>
                       <span class="news-divider">|</span>
                       <span class="news-category">{{ article.category }}</span>
+                      <span class="news-divider">|</span>
+                      <span class="news-readtime">{{ 'news.detail.readTime' | i18n : { count: article.readingTime } }}</span>
                     </div>
                     <h3 class="news-title">{{ article.title }}</h3>
                     <p class="news-excerpt">{{ article.excerpt }}</p>
@@ -463,6 +465,11 @@ import { FooterComponent } from '../../components/footer/footer.component';
 
       .news-divider {
         color: #ddd;
+      }
+
+      .news-readtime {
+        color: #888;
+        font-weight: 500;
       }
 
       .news-category {
@@ -1430,7 +1437,8 @@ export class NewsComponent implements OnInit, AfterViewInit {
 
   private mapPostToArticle(post: ApiPost): NewsArticle {
     const title = post.title?.trim() || 'Untitled';
-    const excerpt = post.excerpt?.trim() || post.content?.trim() || '';
+    const content = post.content?.trim() || '';
+    const excerpt = post.excerpt?.trim() || content;
     const category = post.category?.trim() || 'General';
     const image = post.image_url?.trim() || this.fallbackImage;
     return {
@@ -1441,7 +1449,15 @@ export class NewsComponent implements OnInit, AfterViewInit {
       image,
       date: this.formatDate(post.date),
       link: post.external_link?.trim() || undefined,
+      content,
+      readingTime: this.calculateReadingTime(content),
     };
+  }
+
+  private calculateReadingTime(content: string): number {
+    const text = content.replace(/<[^>]*>/g, ' ').trim();
+    const words = text.split(/\s+/).filter((w) => w.length > 0).length;
+    return Math.max(1, Math.ceil(words / 200));
   }
 
   private formatDate(dateValue?: string | null): string {
@@ -1493,4 +1509,6 @@ type NewsArticle = {
   image: string;
   date: string;
   link?: string;
+  content: string;
+  readingTime: number;
 };

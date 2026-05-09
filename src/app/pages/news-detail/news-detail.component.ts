@@ -24,6 +24,8 @@ import { SeoService } from '../../services/seo.service';
                 <span>{{ article()!.date }}</span>
                 <span class="meta-divider">|</span>
                 <span>{{ article()!.category }}</span>
+                <span class="meta-divider">|</span>
+                <span>{{ 'news.detail.readTime' | i18n : { count: article()!.readingTime } }}</span>
               </p>
             }
           </div>
@@ -510,6 +512,7 @@ export class NewsDetailComponent implements OnInit {
   private mapPostToDetail(post: ApiPost): NewsDetail {
     const title = post.title?.trim() || 'Untitled';
     const excerpt = post.excerpt?.trim() || post.content?.trim() || '';
+    const content = post.content?.trim() || '';
     return {
       id: post.id,
       title,
@@ -517,8 +520,15 @@ export class NewsDetailComponent implements OnInit {
       category: post.category?.trim() || 'General',
       image: post.image_url?.trim() || this.fallbackImage,
       date: this.formatDate(post.date),
-      content: post.content?.trim() || '',
+      content,
+      readingTime: this.calculateReadingTime(content),
     };
+  }
+
+  private calculateReadingTime(content: string): number {
+    const text = content.replace(/<[^>]*>/g, ' ').trim();
+    const words = text.split(/\s+/).filter((w) => w.length > 0).length;
+    return Math.max(1, Math.ceil(words / 200));
   }
 
   private setRelatedPosts(posts: ApiPost[], currentId: number, currentCategory: string): void {
@@ -609,4 +619,5 @@ type NewsDetail = {
   image: string;
   date: string;
   content: string;
+  readingTime: number;
 };

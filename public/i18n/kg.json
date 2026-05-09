@@ -115,7 +115,8 @@
       "title": "News Detail",
       "related": "Mikanda ya kuvwalana",
       "share": "Partager",
-      "share.copied": "Lien copié!"
+      "share.copied": "Lien copié!",
+      "readTime": "{count} min ya kuvovota"
     },
     "pagination": {
       "label": "Pagination ya bansangu",
