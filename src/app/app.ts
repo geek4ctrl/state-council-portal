@@ -13,6 +13,7 @@ import { SeoService } from './services/seo.service';
 export class App implements AfterViewInit {
   protected readonly title = signal('state-council-portal');
   showBackToTop = signal(false);
+  scrollProgress = signal(0);
   private readonly seo = inject(SeoService);
 
   @ViewChild('curDot') curDot!: ElementRef<HTMLDivElement>;
@@ -36,7 +37,10 @@ export class App implements AfterViewInit {
   private initBackToTop(): void {
     if (typeof window === 'undefined') return;
     const onScroll = () => {
-      this.showBackToTop.set(window.scrollY > 400);
+      const scrollY = window.scrollY;
+      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+      this.showBackToTop.set(scrollY > 400);
+      this.scrollProgress.set(docHeight > 0 ? Math.min((scrollY / docHeight) * 100, 100) : 0);
     };
     window.addEventListener('scroll', onScroll, { passive: true });
     onScroll();

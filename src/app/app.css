@@ -1,4 +1,16 @@
 /* Skip to content link for accessibility */
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 2.5px;
+  background: linear-gradient(90deg, #1F9BD9, #0d7ab8, #1F9BD9);
+  background-size: 200% 100%;
+  z-index: 10001;
+  border-radius: 0 2px 2px 0;
+  pointer-events: none;
+}
+
 .skip-link {
   position: absolute;
   top: -40px;
