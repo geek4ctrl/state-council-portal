@@ -1,12 +1,13 @@
 import { AfterViewInit, Component, DestroyRef, ElementRef, ViewChild, inject, signal } from '@angular/core';
 import { Router, RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './components/header/header.component';
+import { BreadcrumbComponent } from './components/breadcrumb/breadcrumb.component';
 import { I18nPipe } from './i18n/i18n.pipe';
 import { SeoService } from './services/seo.service';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, RouterLink, RouterLinkActive, HeaderComponent, I18nPipe],
+  imports: [RouterOutlet, RouterLink, RouterLinkActive, HeaderComponent, BreadcrumbComponent, I18nPipe],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
