@@ -276,21 +276,25 @@
       "address2": "Komine ya Gombe, Kinshasa",
       "address3": "RDC",
       "phone": "Tel: +243 813494697",
-      "email": "Email: info@conseildetatrdc.com"
+      "email": "Email: info@conseildetatrdc.com",
+      "hours": "Lundi-Vendredi: 8h30 - 16h00"
     },
     "quickLinks": {
       "title": "Bansinga ya nswalu",
       "about": "Na ntina ya Tribinal",
       "jurisprudence": "Jurisprudence",
       "filing": "Nzila ya kutinda",
-      "contact": "Binga beto"
+      "contact": "Binga beto",
+      "news": "Actualités",
+      "publications": "Publications"
     },
     "resources": {
       "title": "Biloko",
       "legalDocs": "Mikanda ya mibeko",
       "decisions": "Mikano ya tribunal",
       "reports": "Rapport ya mbula",
-      "faqs": "Mituna ya mbala mingi"
+      "faqs": "Mituna ya mbala mingi",
+      "appointment": "Prendre Rendez-vous"
     },
     "connect": {
       "title": "Bokutana",
@@ -300,7 +304,24 @@
       "linkedin": "LinkedIn"
     },
     "privacy": "Bokebi",
-    "copyright": "Makoki nyonso kele ya Conseil d'État."
+    "copyright": "Makoki nyonso kele ya Conseil d'État.",
+    "about": {
+      "description": "Le Conseil d'État est la juridiction administrative suprême de la République démocratique du Congo, garantissant l'état de droit et la protection des droits des citoyens."
+    },
+    "newsletter": {
+      "title": "Lenda Informé",
+      "description": "Abonnez-vous pour recevoir les dernières décisions de justice, actualités et mises à jour procédurales.",
+      "placeholder": "Lenda email ya nge",
+      "button": "S'abonner",
+      "success": "Merci!"
+    },
+    "legal": {
+      "title": "Légal",
+      "terms": "Conditions d'utilisation",
+      "privacy": "Politique de confidentialité",
+      "accessibility": "Accessibilité",
+      "sitemap": "Plan du site"
+    }
   },
   "home": {
     "hero": {

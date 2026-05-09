@@ -276,21 +276,25 @@
       "address2": "Comuna de Gombe, Kinshasa",
       "address3": "República Democrática del Congo",
       "phone": "Tel: +243 813494697",
-      "email": "Correo electrónico: info@conseildetatrdc.com"
+      "email": "Correo electrónico: info@conseildetatrdc.com",
+      "hours": "Lun-Vie: 8:30 - 16:00"
     },
     "quickLinks": {
       "title": "Enlaces rápidos",
       "about": "Acerca de la corte",
       "jurisprudence": "Jurisprudencia",
       "filing": "Procedimientos de presentación",
-      "contact": "Contáctenos"
+      "contact": "Contáctenos",
+      "news": "Noticias",
+      "publications": "Publicaciones"
     },
     "resources": {
       "title": "Recursos",
       "legalDocs": "Documentos Legales",
       "decisions": "Decisiones judiciales",
       "reports": "Informes anuales",
-      "faqs": "Preguntas frecuentes"
+      "faqs": "Preguntas frecuentes",
+      "appointment": "Reservar Cita"
     },
     "connect": {
       "title": "Síguenos",
@@ -300,7 +304,24 @@
       "linkedin": "LinkedIn"
     },
     "privacy": "Privacidad",
-    "copyright": "Copyright Consejo de Estado. Todos los derechos reservados"
+    "copyright": "Copyright Consejo de Estado. Todos los derechos reservados",
+    "about": {
+      "description": "El Consejo de Estado es la jurisdicción administrativa suprema de la República Democrática del Congo, asegurando el estado de derecho y la protección de los derechos de los ciudadanos."
+    },
+    "newsletter": {
+      "title": "Manténgase Informado",
+      "description": "Suscríbase para recibir las últimas decisiones judiciales, noticias y actualizaciones procesales.",
+      "placeholder": "Ingrese su dirección de correo",
+      "button": "Suscribirse",
+      "success": "¡Gracias por suscribirse!"
+    },
+    "legal": {
+      "title": "Legal",
+      "terms": "Términos de Uso",
+      "privacy": "Política de Privacidad",
+      "accessibility": "Accesibilidad",
+      "sitemap": "Mapa del Sitio"
+    }
   },
   "home": {
     "hero": {
