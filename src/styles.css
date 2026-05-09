@@ -93,6 +93,7 @@ html {
   overflow-x: hidden !important;
   margin: 0 !important;
   padding: 0 !important;
+  scroll-behavior: smooth;
 }
 
 html,
@@ -346,14 +347,16 @@ select:focus-visible,
 
 /* Lazy Loading Styles */
 img.lazy-loading {
-  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
-  background-size: 200% 100%;
-  animation: shimmer 1.5s infinite;
+  filter: blur(8px);
+  transform: scale(1.05);
+  transition: filter 0.5s cubic-bezier(0.23, 1, 0.32, 1), transform 0.5s cubic-bezier(0.23, 1, 0.32, 1), opacity 0.5s ease;
   min-height: 100px;
 }
 
 img.lazy-loaded {
-  animation: fadeIn 0.3s ease-in;
+  filter: blur(0);
+  transform: scale(1);
+  opacity: 1;
 }
 
 img.lazy-error {
