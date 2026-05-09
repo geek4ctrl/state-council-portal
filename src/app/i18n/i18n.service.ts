@@ -38,9 +38,10 @@ export class I18nService {
     if (!params) {
       return raw;
     }
-    return raw.replace(/\{\{\s*(\w+)\s*\}\}/g, (_, token) => {
+    return raw.replace(/\{\{\s*(\w+)\s*\}\}|\{\s*(\w+)\s*\}/g, (match, token1, token2) => {
+      const token = token1 || token2;
       const value = params[token];
-      return value === undefined ? `{{${token}}}` : String(value);
+      return value === undefined ? match : String(value);
     });
   }
 
