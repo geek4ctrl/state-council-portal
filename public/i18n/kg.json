@@ -29,6 +29,14 @@
       "publications": "Mikanda ya Conseil d'État",
       "bookAppointment": "Bongisa lukutakanu",
       "news": "Bansangu"
+    },
+    "search": {
+      "label": "Sosa",
+      "placeholder": "Sosa nkasa, bansangu, mikanda...",
+      "pages": "Nkasa",
+      "articles": "Bansangu",
+      "noResults": "Kana yina yamonika ve",
+      "searching": "Kososa..."
     }
   },
   "hero": {

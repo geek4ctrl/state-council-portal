@@ -29,6 +29,14 @@
       "publications": "Pubblicazioni del Consiglio di Stato",
       "bookAppointment": "Prenota un appuntamento",
       "news": "Notizie"
+    },
+    "search": {
+      "label": "Cerca",
+      "placeholder": "Cerca pagine, notizie, pubblicazioni...",
+      "pages": "Pagine",
+      "articles": "Articoli di notizie",
+      "noResults": "Nessun risultato trovato",
+      "searching": "Ricerca in corso..."
     }
   },
   "hero": {

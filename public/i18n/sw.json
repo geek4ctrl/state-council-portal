@@ -29,6 +29,14 @@
       "publications": "Machapisho ya Baraza la Nchi",
       "bookAppointment": "Weka Miadi",
       "news": "Habari"
+    },
+    "search": {
+      "label": "Tafuta",
+      "placeholder": "Tafuta kurasa, habari, machapisho...",
+      "pages": "Kurasa",
+      "articles": "Makala ya habari",
+      "noResults": "Hakuna matokeo yaliyopatikana",
+      "searching": "Inatafuta..."
     }
   },
   "hero": {

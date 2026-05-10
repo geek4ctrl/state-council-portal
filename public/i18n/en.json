@@ -29,6 +29,14 @@
       "publications": "State Council Publications",
       "bookAppointment": "Book Appointment",
       "news": "News"
+    },
+    "search": {
+      "label": "Search",
+      "placeholder": "Search pages, news, publications...",
+      "pages": "Pages",
+      "articles": "News Articles",
+      "noResults": "No results found",
+      "searching": "Searching..."
     }
   },
   "hero": {
