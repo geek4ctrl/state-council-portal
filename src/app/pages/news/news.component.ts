@@ -54,7 +54,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
 
           <div class="news-grid">
             @if (isLoading()) {
-              @for (item of [1, 2, 3]; track item) {
+              @for (item of [1, 2, 3, 4, 5, 6]; track item) {
                 <app-skeleton-loader type="news-card"></app-skeleton-loader>
               }
             } @else if (articles().length === 0) {

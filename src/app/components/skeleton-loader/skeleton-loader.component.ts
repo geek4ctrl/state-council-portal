@@ -21,11 +21,17 @@ import { CommonModule } from '@angular/common';
       <div class="skeleton-news-card">
         <div class="skeleton skeleton-news-image"></div>
         <div class="skeleton-news-content">
-          <div class="skeleton skeleton-meta"></div>
+          <div class="skeleton-meta-row">
+            <div class="skeleton skeleton-meta-chip"></div>
+            <div class="skeleton skeleton-meta-chip wide"></div>
+            <div class="skeleton skeleton-meta-chip"></div>
+          </div>
           <div class="skeleton skeleton-news-title"></div>
+          <div class="skeleton skeleton-news-title short"></div>
           <div class="skeleton skeleton-news-text"></div>
           <div class="skeleton skeleton-news-text"></div>
-          <div class="skeleton skeleton-link"></div>
+          <div class="skeleton skeleton-news-text short"></div>
+          <div class="skeleton skeleton-news-btn"></div>
         </div>
       </div>
     }
@@ -124,42 +130,77 @@ import { CommonModule } from '@angular/common';
     /* News Card Skeleton */
     .skeleton-news-card {
       background: white;
-      border-radius: 0;
+      border-radius: 6px;
       overflow: hidden;
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+      display: flex;
+      flex-direction: column;
     }
 
     .skeleton-news-image {
       width: 100%;
       height: 250px;
+      flex-shrink: 0;
     }
 
     .skeleton-news-content {
-      padding: 25px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      flex: 1;
     }
 
-    .skeleton-meta {
-      height: 14px;
-      width: 40%;
-      margin-bottom: 15px;
+    .skeleton-meta-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 14px;
+    }
+
+    .skeleton-meta-chip {
+      height: 12px;
+      width: 56px;
+      border-radius: 3px;
+    }
+
+    .skeleton-meta-chip.wide {
+      width: 80px;
     }
 
     .skeleton-news-title {
-      height: 20px;
-      width: 90%;
-      margin-bottom: 15px;
-    }
-
-    .skeleton-news-text {
-      height: 14px;
-      width: 100%;
+      height: 18px;
+      width: 95%;
       margin-bottom: 8px;
     }
 
-    .skeleton-link {
-      height: 14px;
-      width: 80px;
-      margin-top: 15px;
+    .skeleton-news-title.short {
+      width: 65%;
+      margin-bottom: 14px;
+    }
+
+    .skeleton-news-text {
+      height: 13px;
+      width: 100%;
+      margin-bottom: 7px;
+    }
+
+    .skeleton-news-text.short {
+      width: 80%;
+    }
+
+    .skeleton-news-btn {
+      height: 32px;
+      width: 110px;
+      border-radius: 4px;
+      margin-top: auto;
+      margin-bottom: 0;
+    }
+
+    @media (max-width: 768px) {
+      .skeleton-news-image {
+        height: 200px;
+      }
     }
 
     /* Profile Card Skeleton */
