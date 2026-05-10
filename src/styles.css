@@ -1376,3 +1376,26 @@ img,
     transform: translateY(-4px) !important;
   }
 }
+
+/* Print Styles - Global */
+@media print {
+  app-header,
+  app-breadcrumb,
+  .mobile-nav,
+  .back-to-top,
+  .scroll-progress,
+  .cur-dot,
+  .cur-ring,
+  .cur-trail {
+    display: none !important;
+  }
+
+  body {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  a[href]::after {
+    content: none !important;
+  }
+}

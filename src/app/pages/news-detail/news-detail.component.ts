@@ -451,6 +451,96 @@ import { SeoService } from '../../services/seo.service';
           grid-template-columns: 1fr;
         }
       }
+
+      /* Print Styles */
+      @media print {
+        .detail-page {
+          background: #ffffff !important;
+          min-height: auto;
+        }
+        .detail-hero {
+          background: none !important;
+          color: #000000 !important;
+          padding: 20px 0 16px !important;
+          border-bottom: 2px solid #1a2942;
+        }
+        .back-link {
+          display: none !important;
+        }
+        .hero-kicker {
+          color: #1F9BD9 !important;
+          font-size: 0.85rem !important;
+        }
+        .hero-title {
+          color: #1a2942 !important;
+          font-size: 1.8rem !important;
+          line-height: 1.3 !important;
+        }
+        .hero-meta {
+          color: #555555 !important;
+        }
+        .meta-divider {
+          color: #999999 !important;
+        }
+        .detail-body {
+          background: #ffffff !important;
+          padding: 0 !important;
+        }
+        .detail-card {
+          box-shadow: none !important;
+          border: none !important;
+          border-radius: 0 !important;
+          background: #ffffff !important;
+        }
+        .detail-media {
+          border-radius: 0 !important;
+          margin-bottom: 20px !important;
+        }
+        .detail-media img {
+          max-height: 300px;
+          object-fit: cover;
+        }
+        .detail-content {
+          padding: 0 !important;
+        }
+        .detail-excerpt {
+          border-left: 3px solid #1F9BD9 !important;
+          background: none !important;
+          padding-left: 16px !important;
+          color: #333333 !important;
+          font-style: italic;
+        }
+        .detail-text {
+          color: #000000 !important;
+          line-height: 1.7 !important;
+        }
+        .detail-text h2,
+        .detail-text h3 {
+          color: #1a2942 !important;
+          page-break-after: avoid;
+        }
+        .detail-text p {
+          orphans: 3;
+          widows: 3;
+        }
+        .detail-text img {
+          max-width: 100% !important;
+          page-break-inside: avoid;
+        }
+        .share-section {
+          display: none !important;
+        }
+        .related-section {
+          display: none !important;
+        }
+        app-footer {
+          display: none !important;
+        }
+        .container {
+          max-width: 100% !important;
+          padding: 0 !important;
+        }
+      }
     `,
   ],
 })
