@@ -29,6 +29,14 @@
       "publications": "Mikanda ya Conseil d'État",
       "bookAppointment": "Difunda dia kutuadikangana",
       "news": "Mapia mapia"
+    },
+    "search": {
+      "label": "Kukeba",
+      "placeholder": "Kukeba bipangu, mapia mapia, mikanda...",
+      "pages": "Bipangu",
+      "articles": "Malu a mapia mapia",
+      "noResults": "Kakuena bualu bumoneka",
+      "searching": "Kukeba..."
     }
   },
   "hero": {

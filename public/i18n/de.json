@@ -29,6 +29,14 @@
       "publications": "Veröffentlichungen des Staatsrates",
       "bookAppointment": "Termin buchen",
       "news": "Nachrichten"
+    },
+    "search": {
+      "label": "Suche",
+      "placeholder": "Seiten, Nachrichten, Publikationen suchen...",
+      "pages": "Seiten",
+      "articles": "Nachrichtenartikel",
+      "noResults": "Keine Ergebnisse gefunden",
+      "searching": "Suche läuft..."
     }
   },
   "hero": {

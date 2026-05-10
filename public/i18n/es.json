@@ -29,6 +29,14 @@
       "publications": "Publicaciones del Consejo de Estado",
       "bookAppointment": "Solicitar cita",
       "news": "Noticias"
+    },
+    "search": {
+      "label": "Buscar",
+      "placeholder": "Buscar páginas, noticias, publicaciones...",
+      "pages": "Páginas",
+      "articles": "Artículos de noticias",
+      "noResults": "No se encontraron resultados",
+      "searching": "Buscando..."
     }
   },
   "hero": {

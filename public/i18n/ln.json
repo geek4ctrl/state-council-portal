@@ -29,6 +29,14 @@
       "publications": "Mikanda ya Conseil d'État",
       "bookAppointment": "Bokanda rendez-vous",
       "news": "Sango"
+    },
+    "search": {
+      "label": "Luka",
+      "placeholder": "Luka nkasa, sango, mikanda...",
+      "pages": "Nkasa",
+      "articles": "Masolo ya sango",
+      "noResults": "Mbala moko te emonani",
+      "searching": "Koluka..."
     }
   },
   "hero": {

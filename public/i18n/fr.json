@@ -29,6 +29,14 @@
       "publications": "Publications du Conseil d'État",
       "bookAppointment": "Prendre rendez-vous",
       "news": "Actualités"
+    },
+    "search": {
+      "label": "Rechercher",
+      "placeholder": "Rechercher des pages, actualités, publications...",
+      "pages": "Pages",
+      "articles": "Articles d'actualité",
+      "noResults": "Aucun résultat trouvé",
+      "searching": "Recherche en cours..."
     }
   },
   "hero": {
