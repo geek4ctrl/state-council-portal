@@ -359,6 +359,21 @@ import { FooterComponent } from '../../components/footer/footer.component';
         font-size: 0.95rem;
       }
     }
+
+    /* ── Dark Mode ── */
+    :host-context([data-theme="dark"]) .page-container { background: #0d1117; }
+    :host-context([data-theme="dark"]) .content-section { background: #0d1117; }
+    :host-context([data-theme="dark"]) .section-heading { color: #e6edf3; }
+    :host-context([data-theme="dark"]) .intro-box { background: #161b22; box-shadow: 0 4px 12px rgba(0,0,0,0.4); }
+    :host-context([data-theme="dark"]) .intro-text p { color: #8b949e; }
+    :host-context([data-theme="dark"]) .legal-section { background: #161b22; box-shadow: 0 4px 12px rgba(0,0,0,0.4); }
+    :host-context([data-theme="dark"]) .doc-item { background: #1c2128; }
+    :host-context([data-theme="dark"]) .doc-item:hover { background: #21262d; box-shadow: 0 2px 8px rgba(0,0,0,0.3); }
+    :host-context([data-theme="dark"]) .doc-text h3 { color: #e6edf3; }
+    :host-context([data-theme="dark"]) .detailed-text { background: #1c2128; border-left-color: #58a6ff; }
+    :host-context([data-theme="dark"]) .text-block h4 { color: #e6edf3; }
+    :host-context([data-theme="dark"]) .text-block p { color: #8b949e; }
+    :host-context([data-theme="dark"]) .text-block li { color: #8b949e; }
   `]
 })
 export class AboutComponent implements OnInit {

@@ -1230,6 +1230,57 @@ import { FooterComponent } from '../../components/footer/footer.component';
     .mag-btn{position:relative;overflow:hidden;transition:transform .25s ease;}
     .mag-btn::before{content:'';position:absolute;inset:0;background:linear-gradient(105deg,transparent 40%,rgba(255,255,255,.2) 50%,transparent 60%);transform:translateX(-120%) skewX(-20deg);pointer-events:none;}
     .mag-btn:hover::before{animation:shimmerSweep .6s ease forwards;}
+
+    /* Dark mode overrides */
+    :host-context([data-theme="dark"]) .page-container { background: #0d1117; }
+    :host-context([data-theme="dark"]) .tabs-section { background: #161b22; border-bottom-color: #30363d; }
+    :host-context([data-theme="dark"]) .tab { color: #8b949e; }
+    :host-context([data-theme="dark"]) .tab:hover { color: #e6edf3; background: #1c2128; }
+    :host-context([data-theme="dark"]) .tab.active { color: #e6edf3; border-bottom-color: #58a6ff; }
+    :host-context([data-theme="dark"]) .tab-separator { background: #30363d; }
+    :host-context([data-theme="dark"]) .form-section { background: #0d1117; }
+    :host-context([data-theme="dark"]) .form-header h2 { color: #e6edf3; }
+    :host-context([data-theme="dark"]) .form-subtitle { color: #8b949e !important; }
+    :host-context([data-theme="dark"]) .form-group input,
+    :host-context([data-theme="dark"]) .form-group textarea { background: #161b22; border-color: #30363d; color: #e6edf3; }
+    :host-context([data-theme="dark"]) .form-group input:focus,
+    :host-context([data-theme="dark"]) .form-group textarea:focus { border-color: #58a6ff; }
+    :host-context([data-theme="dark"]) .form-group input::placeholder,
+    :host-context([data-theme="dark"]) .form-group textarea::placeholder { color: #484f58; }
+    :host-context([data-theme="dark"]) .select-trigger { background: #161b22; border-color: #30363d; }
+    :host-context([data-theme="dark"]) .select-trigger:hover { border-color: #58a6ff; }
+    :host-context([data-theme="dark"]) .select-trigger span { color: #e6edf3; }
+    :host-context([data-theme="dark"]) .select-trigger span.placeholder { color: #484f58; }
+    :host-context([data-theme="dark"]) .dropdown-arrow { stroke: #8b949e; }
+    :host-context([data-theme="dark"]) .select-dropdown { background: #1c2128; box-shadow: 0 8px 24px rgba(0,0,0,0.5); }
+    :host-context([data-theme="dark"]) .dropdown-item { color: #e6edf3; border-bottom-color: #30363d; }
+    :host-context([data-theme="dark"]) .dropdown-item:hover { background-color: #30363d; }
+    :host-context([data-theme="dark"]) .dropdown-item:active { background-color: #21262d; }
+    :host-context([data-theme="dark"]) .form-submit button { background: #161b22; color: #58a6ff; border-color: #58a6ff; }
+    :host-context([data-theme="dark"]) .form-submit button:hover { background: transparent; color: #79c0ff; }
+    :host-context([data-theme="dark"]) .appeal-step { background: #161b22; border-left-color: #58a6ff; }
+    :host-context([data-theme="dark"]) .appeal-step:hover { background: #1c2128; }
+    :host-context([data-theme="dark"]) .step-body h3 { color: #e6edf3; }
+    :host-context([data-theme="dark"]) .step-body p { color: #8b949e; }
+    :host-context([data-theme="dark"]) .have-questions { background: rgba(88,166,255,0.08); }
+    :host-context([data-theme="dark"]) .have-questions h3 { color: #e6edf3; }
+    :host-context([data-theme="dark"]) .have-questions p { color: #8b949e; }
+    :host-context([data-theme="dark"]) .email-cta { background: #161b22; color: #58a6ff; border-color: #58a6ff; }
+    :host-context([data-theme="dark"]) .email-cta:hover { background: #58a6ff; color: #0d1117; }
+    :host-context([data-theme="dark"]) .faq-item { background: #161b22; border-color: #30363d; }
+    :host-context([data-theme="dark"]) .faq-item:hover { border-color: #58a6ff; }
+    :host-context([data-theme="dark"]) .faq-item.open { border-color: #58a6ff; }
+    :host-context([data-theme="dark"]) .faq-question { color: #e6edf3; }
+    :host-context([data-theme="dark"]) .faq-question:hover { background: #1c2128; }
+    :host-context([data-theme="dark"]) .faq-item.open .faq-question { background: rgba(88,166,255,0.08); }
+    :host-context([data-theme="dark"]) .faq-answer p { color: #8b949e; border-top-color: #21262d; }
+    :host-context([data-theme="dark"]) .map-section { background: linear-gradient(180deg, #0d1117 0%, #161b22 50%, #0d1117 100%); }
+    :host-context([data-theme="dark"]) .map-header h2 { color: #e6edf3; }
+    :host-context([data-theme="dark"]) .map-subtitle { color: #8b949e; }
+    :host-context([data-theme="dark"]) .address-card { background: #161b22; border-color: #30363d; box-shadow: 0 8px 24px rgba(0,0,0,0.4); }
+    :host-context([data-theme="dark"]) .address-text p { color: #8b949e; }
+    :host-context([data-theme="dark"]) .address-line1 { color: #e6edf3 !important; }
+    :host-context([data-theme="dark"]) .map-container { box-shadow: 0 24px 60px rgba(0,0,0,0.4); border-color: #30363d; }
   `]
 })
 export class StepsComponent implements OnInit, AfterViewInit {

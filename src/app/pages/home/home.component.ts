@@ -5190,6 +5190,64 @@ type HighchartsStatic = typeof import('highcharts');
           transform: none;
         }
       }
+
+      /* ── Dark Mode ── */
+      :host-context([data-theme="dark"]) .page-wrap { background: #0d1117; }
+
+      /* Key Facts */
+      :host-context([data-theme="dark"]) .kf-section { background: linear-gradient(180deg, #161b22, #0d1117); border-color: #30363d; }
+      :host-context([data-theme="dark"]) .kf-section .sec-sub { color: #8b949e; }
+      :host-context([data-theme="dark"]) .kf-card { background: linear-gradient(135deg, rgba(22,27,34,0.85), rgba(22,27,34,0.5)); box-shadow: 0 12px 40px rgba(0,0,0,0.4); }
+      :host-context([data-theme="dark"]) .kf-meta h3 { color: #e6edf3; }
+
+      /* Section headers */
+      :host-context([data-theme="dark"]) .sec-title { color: #e6edf3; }
+      :host-context([data-theme="dark"]) .sec-sub { color: #8b949e; }
+
+      /* Quick Links */
+      :host-context([data-theme="dark"]) .ql-section { background: #161b22; border-color: #30363d; }
+      :host-context([data-theme="dark"]) .ql-info h3 { color: #e6edf3; }
+      :host-context([data-theme="dark"]) .ql-info p { color: #8b949e; }
+      :host-context([data-theme="dark"]) .ql-cta { color: #58a6ff; }
+
+      /* Offer */
+      :host-context([data-theme="dark"]) .offer-section { background: #0d1117; }
+      :host-context([data-theme="dark"]) .offer-section .sec-sub { color: #8b949e; }
+      :host-context([data-theme="dark"]) .o-card { background: #161b22; box-shadow: 0 2px 8px rgba(0,0,0,0.3); }
+      :host-context([data-theme="dark"]) .o-card:hover { box-shadow: 0 8px 20px rgba(0,0,0,0.5); }
+      :host-context([data-theme="dark"]) .o-card h3 { color: #e6edf3; }
+      :host-context([data-theme="dark"]) .o-card p { color: #8b949e; }
+
+      /* Expertise */
+      :host-context([data-theme="dark"]) .exp-section .sec-sub { color: #8b949e; }
+      :host-context([data-theme="dark"]) .exp-card { background: #161b22; box-shadow: 0 10px 30px rgba(0,0,0,0.4); }
+      :host-context([data-theme="dark"]) .exp-icon-wrap h3 { color: #e6edf3; }
+      :host-context([data-theme="dark"]) .exp-desc { color: #8b949e; }
+      :host-context([data-theme="dark"]) .exp-list li { color: #8b949e; }
+
+      /* Contact */
+      :host-context([data-theme="dark"]) .ct-section { background: #161b22; }
+      :host-context([data-theme="dark"]) .ct-text h3 { color: #e6edf3; }
+      :host-context([data-theme="dark"]) .ct-text p { color: #8b949e; }
+      :host-context([data-theme="dark"]) .ct-item:hover { background: rgba(88,166,255,0.05); }
+      :host-context([data-theme="dark"]) .ct-sep { background: linear-gradient(to bottom, transparent, rgba(88,166,255,0.4), transparent); }
+
+      /* President */
+      :host-context([data-theme="dark"]) .pres-section { background: #161b22; }
+      :host-context([data-theme="dark"]) .pres-title { color: #e6edf3; }
+      :host-context([data-theme="dark"]) .pres-para { color: #8b949e; }
+      :host-context([data-theme="dark"]) .pres-dot { background: #30363d; }
+      :host-context([data-theme="dark"]) .pres-dot.on { background: #58a6ff; }
+
+      /* Newsletter / News */
+      :host-context([data-theme="dark"]) .nl-section { background: #0d1117; }
+      :host-context([data-theme="dark"]) .nl-head h2 { color: #e6edf3; }
+      :host-context([data-theme="dark"]) .nl-card { background: #161b22; box-shadow: 0 6px 16px rgba(0,0,0,0.4); }
+      :host-context([data-theme="dark"]) .nl-card:hover { box-shadow: 0 16px 32px rgba(0,0,0,0.55); }
+      :host-context([data-theme="dark"]) .nl-body { background: #161b22; }
+      :host-context([data-theme="dark"]) .nl-body h3 { color: #e6edf3; }
+      :host-context([data-theme="dark"]) .nl-link { color: #58a6ff; }
+      :host-context([data-theme="dark"]) .nl-link:hover { color: #79c0ff; }
     `,
   ],
 })

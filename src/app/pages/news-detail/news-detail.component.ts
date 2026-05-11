@@ -541,6 +541,27 @@ import { SeoService } from '../../services/seo.service';
           padding: 0 !important;
         }
       }
+
+      /* ── Dark Mode ── */
+      :host-context([data-theme="dark"]) .detail-page { background: #0d1117; }
+      :host-context([data-theme="dark"]) .detail-card { background: #161b22; box-shadow: 0 12px 30px rgba(0,0,0,0.5); }
+      :host-context([data-theme="dark"]) .detail-card.loading { color: #8b949e; }
+      :host-context([data-theme="dark"]) .detail-media { background: #1c2128; }
+      :host-context([data-theme="dark"]) .detail-excerpt { color: #e6edf3; }
+      :host-context([data-theme="dark"]) .detail-text { color: #8b949e; }
+      :host-context([data-theme="dark"]) .detail-body { background: transparent; }
+      :host-context([data-theme="dark"]) .share-section { border-color: #30363d; }
+      :host-context([data-theme="dark"]) .share-label { color: #8b949e; }
+      :host-context([data-theme="dark"]) .share-btn.copy { background: #21262d; color: #8b949e; }
+      :host-context([data-theme="dark"]) .share-btn.copy:hover { background: #30363d; }
+      :host-context([data-theme="dark"]) .related-section { background: #0d1117; }
+      :host-context([data-theme="dark"]) .related-title { color: #e6edf3; }
+      :host-context([data-theme="dark"]) .related-card { background: #161b22; box-shadow: 0 8px 24px rgba(0,0,0,0.4); }
+      :host-context([data-theme="dark"]) .related-card:hover { box-shadow: 0 12px 32px rgba(0,0,0,0.55); }
+      :host-context([data-theme="dark"]) .related-media { background: #1c2128; }
+      :host-context([data-theme="dark"]) .related-heading { color: #e6edf3; }
+      :host-context([data-theme="dark"]) .related-date { color: #6e7681; }
+      :host-context([data-theme="dark"]) .related-category { color: #58a6ff; }
     `,
   ],
 })

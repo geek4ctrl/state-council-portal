@@ -287,6 +287,20 @@ import { FooterComponent } from '../../components/footer/footer.component';
           grid-template-columns: 1fr;
         }
       }
+
+      /* ── Dark Mode ── */
+      :host-context([data-theme="dark"]) .member-page { background: #0d1117; color: #e6edf3; }
+      :host-context([data-theme="dark"]) .member-card { background: #161b22; border-color: rgba(240,246,252,0.1); box-shadow: 0 6px 24px rgba(0,0,0,0.4); }
+      :host-context([data-theme="dark"]) .member-photo { background: #1c2128; }
+      :host-context([data-theme="dark"]) .member-details h2 { color: #e6edf3; }
+      :host-context([data-theme="dark"]) .role-pill { background: rgba(88,166,255,0.12); color: #58a6ff; }
+      :host-context([data-theme="dark"]) .member-role { color: #8b949e; }
+      :host-context([data-theme="dark"]) .member-summary { color: #8b949e; }
+      :host-context([data-theme="dark"]) .member-meta dt { color: #6e7681; }
+      :host-context([data-theme="dark"]) .member-meta dd { color: #e6edf3; }
+      :host-context([data-theme="dark"]) .member-meta a { color: #58a6ff; }
+      :host-context([data-theme="dark"]) .member-meta a:hover { color: #79c0ff; }
+      :host-context([data-theme="dark"]) .not-found { background: #161b22; border-color: rgba(240,246,252,0.1); border-left-color: #58a6ff; color: #e6edf3; }
     `
   ]
 })

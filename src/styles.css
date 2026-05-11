@@ -62,11 +62,19 @@ body {
 :root {
   --surface-0: #f6f3ee;
   --surface-1: #ffffff;
+  --surface-2: #f3f6fb;
+  --surface-3: #f0f2f7;
   --ink-strong: #000000 !important;
   --ink-muted: #55645c;
+  --ink-heading: #1a2942;
+  --ink-body: #5c6773;
+  --ink-faint: #9ca3af;
   --accent: #6f7f6d;
   --accent-strong: #3f5a4a;
   --accent-soft: rgba(111, 127, 109, 0.18);
+  --card-bg: #ffffff;
+  --card-border: rgba(26, 41, 66, 0.08);
+  --card-hover-bg: #f0f7ff;
   --space-1: 0.25rem;
   --space-2: 0.5rem;
   --space-3: 0.75rem;
@@ -80,6 +88,165 @@ body {
   --radius-lg: 22px;
   --shadow-soft: 0 12px 30px rgba(19, 27, 23, 0.08);
   --shadow-lift: 0 18px 45px rgba(19, 27, 23, 0.12);
+}
+
+/* ───── Dark Theme ───── */
+[data-theme="dark"] {
+  --surface-0: #0d1117;
+  --surface-1: #161b22;
+  --surface-2: #1c2128;
+  --surface-3: #21262d;
+  --ink-strong: #e6edf3 !important;
+  --ink-muted: #8b949e;
+  --ink-heading: #e6edf3;
+  --ink-body: #8b949e;
+  --ink-faint: #6e7681;
+  --accent: #58a6ff;
+  --accent-strong: #79c0ff;
+  --accent-soft: rgba(56, 139, 253, 0.15);
+  --card-bg: #161b22;
+  --card-border: rgba(240, 246, 252, 0.1);
+  --card-hover-bg: rgba(56, 139, 253, 0.08);
+  --shadow-soft: 0 8px 24px rgba(0, 0, 0, 0.4);
+  --shadow-lift: 0 12px 36px rgba(0, 0, 0, 0.55);
+}
+
+/* Dark mode global overrides */
+[data-theme="dark"] body {
+  color: #e6edf3;
+  background-color: #0d1117;
+}
+
+[data-theme="dark"] a {
+  color: #58a6ff;
+}
+
+[data-theme="dark"] a:hover {
+  color: #79c0ff;
+}
+
+[data-theme="dark"] ::selection {
+  background: rgba(56, 139, 253, 0.35);
+  color: #e6edf3;
+}
+
+[data-theme="dark"] ::-moz-selection {
+  background: rgba(56, 139, 253, 0.35);
+  color: #e6edf3;
+}
+
+/* Dark mode cards */
+[data-theme="dark"] :where(
+    .member-card,
+    .news-card,
+    .service-box,
+    .detail-box,
+    .service-item,
+    .offer-card,
+    .practice-card,
+    .quick-link-item,
+    .metrics-card,
+    .document-card,
+    .insight-card,
+    .network-card,
+    .domain-card,
+    .stakeholder-card,
+    .error-card,
+    .president-card-large,
+    .key-fact-card,
+    .info-card
+  ) {
+  background: var(--card-bg) !important;
+  border-color: var(--card-border) !important;
+  box-shadow: var(--shadow-soft) !important;
+}
+
+[data-theme="dark"] :where(
+    .member-card:hover,
+    .news-card:hover,
+    .service-box:hover,
+    .detail-box:hover,
+    .service-item:hover,
+    .offer-card:hover,
+    .practice-card:hover,
+    .quick-link-item:hover,
+    .metrics-card:hover,
+    .document-card:hover,
+    .insight-card:hover,
+    .network-card:hover,
+    .domain-card:hover,
+    .stakeholder-card:hover,
+    .info-card:hover
+  ) {
+  box-shadow: var(--shadow-lift) !important;
+}
+
+[data-theme="dark"] .glass-card {
+  background: linear-gradient(135deg, rgba(22, 27, 34, 0.85), rgba(22, 27, 34, 0.5)) !important;
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.05) !important;
+}
+
+[data-theme="dark"] .page-container {
+  background: #0d1117 !important;
+}
+
+/* Dark mode typography */
+[data-theme="dark"] .hero-subtitle,
+[data-theme="dark"] .key-facts-subtitle,
+[data-theme="dark"] .section-subtitle,
+[data-theme="dark"] .offer-subtitle,
+[data-theme="dark"] .expertise-subtitle,
+[data-theme="dark"] .news-date,
+[data-theme="dark"] .key-fact-note,
+[data-theme="dark"] .form-subtitle,
+[data-theme="dark"] .hero-category {
+  color: #8b949e !important;
+}
+
+/* Dark mode info cards */
+[data-theme="dark"] .info-card {
+  background: var(--card-bg) !important;
+}
+
+[data-theme="dark"] .info-card h3 {
+  color: #e6edf3 !important;
+}
+
+[data-theme="dark"] .info-card p {
+  color: #8b949e !important;
+}
+
+/* Dark mode quick links */
+[data-theme="dark"] .quick-link-item {
+  border-color: rgba(56, 139, 253, 0.15) !important;
+}
+
+[data-theme="dark"] .quick-link-item:hover {
+  border-color: rgba(56, 139, 253, 0.3) !important;
+}
+
+/* Dark mode lazy loading */
+[data-theme="dark"] img.lazy-error {
+  background: #161b22 !important;
+  border-color: #30363d !important;
+}
+
+/* Dark mode focus */
+[data-theme="dark"] a:focus-visible,
+[data-theme="dark"] button:focus-visible,
+[data-theme="dark"] input:focus-visible,
+[data-theme="dark"] textarea:focus-visible,
+[data-theme="dark"] select:focus-visible,
+[data-theme="dark"] [tabindex]:focus-visible {
+  outline-color: #58a6ff;
+}
+
+/* Dark mode custom cursor */
+[data-theme="dark"] .cur-dot {
+  background: #58a6ff;
+}
+[data-theme="dark"] .cur-ring {
+  border-color: #58a6ff;
 }
 
 /* Global Styles */

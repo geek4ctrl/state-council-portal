@@ -37,6 +37,9 @@
       "articles": "Masolo ya sango",
       "noResults": "Mbala moko te emonani",
       "searching": "Koluka..."
+    },
+    "theme": {
+      "toggle": "Kobongola molili"
     }
   },
   "hero": {
