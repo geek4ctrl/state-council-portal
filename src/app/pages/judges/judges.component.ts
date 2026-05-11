@@ -246,8 +246,8 @@ function cloudSrc(url: string): string {
     .member-photo {
       position: relative;
       flex-shrink: 0;
-      width: 110px;
-      height: 135px;
+      width: 140px;
+      height: 175px;
       overflow: hidden;
       transition: transform 0.35s cubic-bezier(0.23, 1, 0.32, 1);
     }
