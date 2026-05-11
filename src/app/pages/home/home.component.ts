@@ -1216,9 +1216,9 @@ type HighchartsStatic = typeof import('highcharts');
         inset: 0;
         background: linear-gradient(
           90deg,
-          rgba(0, 18, 45, 0.93) 0%,
-          rgba(0, 18, 45, 0.72) 55%,
-          rgba(0, 18, 45, 0.4) 100%
+          rgba(0, 0, 0, 0.7) 0%,
+          rgba(0, 0, 0, 0.45) 55%,
+          rgba(0, 0, 0, 0.2) 100%
         );
         z-index: 1;
       }
@@ -3024,9 +3024,9 @@ type HighchartsStatic = typeof import('highcharts');
         bottom: 0;
         background: linear-gradient(
           90deg,
-          rgba(0, 20, 50, 0.92) 0%,
-          rgba(0, 20, 50, 0.75) 50%,
-          rgba(0, 20, 50, 0.5) 100%
+          rgba(0, 0, 0, 0.7) 0%,
+          rgba(0, 0, 0, 0.45) 50%,
+          rgba(0, 0, 0, 0.25) 100%
         );
       }
 
