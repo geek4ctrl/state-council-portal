@@ -381,6 +381,26 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
         font-size: 0.85rem;
       }
     }
+
+    /* Dark Mode */
+    :host-context([data-theme="dark"]) .page-container { background: #0d1117; }
+    :host-context([data-theme="dark"]) .procedure-detail { background: #0d1117; }
+    :host-context([data-theme="dark"]) .procedure-detail h2 { color: #e6edf3; }
+    :host-context([data-theme="dark"]) .procedure-detail p { color: #8b949e; }
+    :host-context([data-theme="dark"]) .tabs-section { background: #161b22; border-bottom-color: #21262d; }
+    :host-context([data-theme="dark"]) .tab { color: #8b949e; }
+    :host-context([data-theme="dark"]) .tab:hover { color: #e6edf3; background: #1c2128; }
+    :host-context([data-theme="dark"]) .tab.active { color: #e6edf3; }
+    :host-context([data-theme="dark"]) .form-section { background: #0d1117; }
+    :host-context([data-theme="dark"]) .form-header h2 { color: #e6edf3; }
+    :host-context([data-theme="dark"]) .form-group input,
+    :host-context([data-theme="dark"]) .form-group select,
+    :host-context([data-theme="dark"]) .form-group textarea { background: #161b22; border-color: #30363d; color: #e6edf3; }
+    :host-context([data-theme="dark"]) .form-group input::placeholder,
+    :host-context([data-theme="dark"]) .form-group textarea::placeholder { color: #484f58; }
+    :host-context([data-theme="dark"]) .form-group select { color: #8b949e; }
+    :host-context([data-theme="dark"]) .form-submit button { background: #161b22; color: #e6edf3; border-color: #30363d; }
+    :host-context([data-theme="dark"]) .form-submit button:hover { background: #58a6ff; color: #0d1117; border-color: #58a6ff; }
   `]
 })
 export class ProceduresComponent implements OnInit {

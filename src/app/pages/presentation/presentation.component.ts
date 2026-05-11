@@ -150,6 +150,9 @@ import { OrganizationComponent } from '../organization/organization.component';
     .loader-track{width:220px;height:3px;background:rgba(255,255,255,.08);border-radius:99px;overflow:hidden;}
     .loader-fill{height:100%;background:linear-gradient(90deg,#1F9BD9,#e0b98a);border-radius:99px;animation:fillBar 2s ease-in-out infinite;}
     .loader-label{font-size:.72rem;font-weight:700;letter-spacing:2px;color:#1F9BD9;text-transform:uppercase;animation:labelPulse 2s ease-in-out infinite;}
+
+    /* ── Dark Mode ── */
+    :host-context([data-theme="dark"]) .page-container { background: #0d1117; }
   `]
 })
 export class PresentationComponent implements OnInit {

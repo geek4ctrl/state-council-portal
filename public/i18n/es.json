@@ -37,6 +37,9 @@
       "articles": "Artículos de noticias",
       "noResults": "No se encontraron resultados",
       "searching": "Buscando..."
+    },
+    "theme": {
+      "toggle": "Alternar modo oscuro"
     }
   },
   "hero": {

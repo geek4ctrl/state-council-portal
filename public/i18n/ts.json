@@ -37,6 +37,9 @@
       "articles": "Malu a mapia mapia",
       "noResults": "Kakuena bualu bumoneka",
       "searching": "Kukeba..."
+    },
+    "theme": {
+      "toggle": "Kushintulula mudima"
     }
   },
   "hero": {

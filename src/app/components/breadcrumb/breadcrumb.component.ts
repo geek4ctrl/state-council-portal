@@ -202,6 +202,13 @@ const ORG_CHILD_SECTIONS = new Set([
           padding: 3px 8px;
         }
       }
+
+      /* Dark Mode */
+      :host-context([data-theme="dark"]) .breadcrumb-nav { background: #161b22; border-bottom-color: #21262d; box-shadow: 0 1px 3px rgba(0,0,0,0.2); }
+      :host-context([data-theme="dark"]) .breadcrumb-link { color: #8b949e; }
+      :host-context([data-theme="dark"]) .breadcrumb-link:hover { color: #58a6ff; background: rgba(88,166,255,0.08); }
+      :host-context([data-theme="dark"]) .breadcrumb-separator { color: #484f58; }
+      :host-context([data-theme="dark"]) .breadcrumb-current { color: #e6edf3; background: linear-gradient(135deg, rgba(88,166,255,0.1) 0%, rgba(88,166,255,0.05) 100%); border-color: rgba(88,166,255,0.2); }
     `,
   ],
 })
@@ -236,6 +243,11 @@ export class BreadcrumbComponent {
 
       // Skip redirect routes
       if (segment === 'filing' || segment === 'appointment' || segment === 'procedures') {
+        continue;
+      }
+
+      // Skip 'member' segment when followed by member detail slug (avoids duplicate label)
+      if (segment === 'member' && i < segments.length - 1) {
         continue;
       }
 

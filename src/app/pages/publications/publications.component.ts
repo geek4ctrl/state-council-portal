@@ -286,6 +286,16 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
           justify-content: center;
         }
       }
+
+      /* ── Dark Mode ── */
+      :host-context([data-theme="dark"]) .page-container { background: #0d1117; }
+      :host-context([data-theme="dark"]) .publications-section { background: linear-gradient(180deg, #161b22, #1c2128); }
+      :host-context([data-theme="dark"]) .publication-card { background: #161b22; border-color: rgba(240,246,252,0.1); box-shadow: 0 8px 24px rgba(0,0,0,0.4); }
+      :host-context([data-theme="dark"]) .publication-title { color: #e6edf3; }
+      :host-context([data-theme="dark"]) .publication-kicker { color: #58a6ff; }
+      :host-context([data-theme="dark"]) .pub-doc-icon { background: linear-gradient(135deg, rgba(88,166,255,0.12), rgba(88,166,255,0.06)); border-color: rgba(88,166,255,0.25); color: #58a6ff; }
+      :host-context([data-theme="dark"]) .badge-pdf { background: rgba(248,81,73,0.1); color: #f85149; border-color: rgba(248,81,73,0.2); }
+      :host-context([data-theme="dark"]) .badge-official { background: rgba(88,166,255,0.08); color: #58a6ff; border-color: rgba(88,166,255,0.2); }
     `,
   ],
 })

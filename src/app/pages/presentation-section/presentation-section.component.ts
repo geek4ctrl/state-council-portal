@@ -1839,6 +1839,96 @@ type GreffeFirstPresident = {
           padding: 26px 20px;
         }
       }
+
+      /* ── Dark Mode ── */
+      :host-context([data-theme="dark"]) .section-page { background: #0d1117; }
+      :host-context([data-theme="dark"]) .back-link { color: #e6edf3; background: #161b22; border-color: #30363d; box-shadow: 0 10px 22px rgba(0,0,0,0.3); }
+      :host-context([data-theme="dark"]) .back-link:hover { border-color: #58a6ff; box-shadow: 0 14px 28px rgba(0,0,0,0.4); }
+
+      /* Generic section body */
+      :host-context([data-theme="dark"]) .section-card { background: #161b22; box-shadow: 0 14px 30px rgba(0,0,0,0.4); }
+      :host-context([data-theme="dark"]) .section-card h2 { color: #e6edf3; }
+      :host-context([data-theme="dark"]) .section-card p { color: #8b949e; }
+      :host-context([data-theme="dark"]) .section-card li { color: #8b949e; }
+      :host-context([data-theme="dark"]) .section-photo-frame img { border-color: #30363d; }
+
+      /* Org chart page */
+      :host-context([data-theme="dark"]) .chart-body { background: #0d1117; }
+      :host-context([data-theme="dark"]) .chart-card { background: #161b22; box-shadow: 0 14px 30px rgba(0,0,0,0.4); }
+      :host-context([data-theme="dark"]) .chart-card p { color: #8b949e; }
+      :host-context([data-theme="dark"]) .chart-structure { background: #161b22; box-shadow: 0 10px 26px rgba(0,0,0,0.35); }
+      :host-context([data-theme="dark"]) .org-node { background: #1c2128; border-color: #30363d; color: #e6edf3; box-shadow: 0 8px 20px rgba(0,0,0,0.3); }
+      :host-context([data-theme="dark"]) .org-node.primary { background: linear-gradient(135deg, #1ea2dd 0%, #0d7ab8 100%); color: #fff; border-color: #1ea2dd; }
+      :host-context([data-theme="dark"]) .org-node.muted { background: linear-gradient(135deg, rgba(31,155,217,0.15) 0%, rgba(31,155,217,0.1) 100%); border-color: rgba(31,155,217,0.3); color: #e6edf3; }
+      :host-context([data-theme="dark"]) .org-chart-connector { background: linear-gradient(to bottom, rgba(139,148,158,0.3), rgba(139,148,158,0.1)); }
+      :host-context([data-theme="dark"]) .chart-section-title { color: #e6edf3; }
+      :host-context([data-theme="dark"]) .chart-names h3 { color: #e6edf3; }
+      :host-context([data-theme="dark"]) .leadership-photo-card { background: #161b22; border-color: #30363d; box-shadow: 0 10px 28px rgba(0,0,0,0.35); }
+      :host-context([data-theme="dark"]) .leadership-photo-name { color: #e6edf3; }
+      :host-context([data-theme="dark"]) .leadership-photo-role { color: #e6edf3; }
+      :host-context([data-theme="dark"]) .leadership-photo-detail { color: #8b949e; }
+      :host-context([data-theme="dark"]) .role-block h3 { color: #e6edf3; }
+      :host-context([data-theme="dark"]) .role-block p { color: #8b949e; }
+      :host-context([data-theme="dark"]) .roles-descriptions { border-top-color: #21262d; }
+
+      /* First President page */
+      :host-context([data-theme="dark"]) .fp-intro { background: #0d1117; }
+      :host-context([data-theme="dark"]) .fp-intro-card { background: #161b22; }
+      :host-context([data-theme="dark"]) .fp-intro-body h2 { color: #e6edf3; }
+      :host-context([data-theme="dark"]) .fp-intro-body p { color: #8b949e; }
+      :host-context([data-theme="dark"]) .fp-biography { background: #0d1117; }
+      :host-context([data-theme="dark"]) .fp-bio-text h2 { color: #e6edf3; }
+      :host-context([data-theme="dark"]) .fp-bio-text p { color: #8b949e; }
+      :host-context([data-theme="dark"]) .fp-career { background: #161b22; }
+      :host-context([data-theme="dark"]) .fp-career h2 { color: #e6edf3; }
+      :host-context([data-theme="dark"]) .fp-career-list li { color: #8b949e; border-bottom-color: #21262d; }
+      :host-context([data-theme="dark"]) .fp-career-list li::before { background: #58a6ff; }
+      :host-context([data-theme="dark"]) .fp-honorary { background: #0d1117; }
+      :host-context([data-theme="dark"]) .fp-honorary h2 { color: #e6edf3; }
+      :host-context([data-theme="dark"]) .fp-honorary-item { background: #161b22; }
+      :host-context([data-theme="dark"]) .fp-honorary-item:hover,
+      :host-context([data-theme="dark"]) .fp-honorary-item:focus-within { box-shadow: 0 12px 28px rgba(0,0,0,0.4); border-color: rgba(88,166,255,0.3); }
+      :host-context([data-theme="dark"]) .fp-honorary-info h3 { color: #e6edf3; }
+      :host-context([data-theme="dark"]) .fp-honorary-years { color: #8b949e; }
+      :host-context([data-theme="dark"]) .fp-honorary-link::after { color: #58a6ff; }
+      :host-context([data-theme="dark"]) .fp-honorary-item:hover .fp-honorary-link { color: #58a6ff; text-decoration-color: rgba(88,166,255,0.55); }
+
+      /* Organisation tiles page */
+      :host-context([data-theme="dark"]) .org-hero-summary { background: transparent; }
+      :host-context([data-theme="dark"]) .org-detail-card { background: linear-gradient(135deg, #161b22 0%, #1c2128 100%); border-color: #30363d; box-shadow: 0 20px 50px rgba(0,0,0,0.4); }
+      :host-context([data-theme="dark"]) .org-detail-card p { color: #8b949e; }
+      :host-context([data-theme="dark"]) .org-detail-card p strong { color: #e6edf3; border-left-color: #58a6ff; }
+      :host-context([data-theme="dark"]) .org-detail-card li { color: #8b949e; }
+      :host-context([data-theme="dark"]) .org-detail-card ul { color: #8b949e; }
+      :host-context([data-theme="dark"]) .org-tiles { background: radial-gradient(circle at 15% 20%, rgba(88,166,255,0.06), transparent 45%), radial-gradient(circle at 85% 10%, rgba(250,204,84,0.06), transparent 50%), linear-gradient(180deg, #0d1117 0%, #161b22 100%); }
+      :host-context([data-theme="dark"]) .org-tile { background: linear-gradient(180deg, #161b22 0%, #1c2128 100%); border-color: #30363d; box-shadow: 0 12px 30px rgba(0,0,0,0.35); }
+      :host-context([data-theme="dark"]) .org-tile:hover { box-shadow: 0 18px 36px rgba(0,0,0,0.5); border-color: rgba(88,166,255,0.35); }
+      :host-context([data-theme="dark"]) .org-tile h3 { color: #e6edf3; }
+      :host-context([data-theme="dark"]) .org-tile-media { background: linear-gradient(140deg, rgba(88,166,255,0.1), rgba(139,148,158,0.05)); border-bottom-color: #21262d; color: #8b949e; }
+      :host-context([data-theme="dark"]) .org-tile-media.has-image { background-color: #0d1117; background-size: cover !important; }
+      :host-context([data-theme="dark"]) .org-tile-media.has-image::after { background: rgba(13,17,23,0.72); }
+
+      /* Greffe page */
+      :host-context([data-theme="dark"]) .greffe-list { background: #0d1117; }
+      :host-context([data-theme="dark"]) .greffe-coming-soon { background: #0d1117; }
+      :host-context([data-theme="dark"]) .greffe-coming-soon .coming-soon-description { color: #8b949e; }
+      :host-context([data-theme="dark"]) .greffe-section-title { color: #e6edf3; }
+      :host-context([data-theme="dark"]) .greffe-placeholder { background: #161b22; color: #8b949e; box-shadow: 0 10px 24px rgba(0,0,0,0.35); }
+      :host-context([data-theme="dark"]) .greffe-item { background: #161b22; box-shadow: 0 10px 24px rgba(0,0,0,0.35); }
+      :host-context([data-theme="dark"]) .greffe-text p { color: #8b949e; }
+      :host-context([data-theme="dark"]) .greffe-photo { background: #1c2128; }
+      :host-context([data-theme="dark"]) .greffe-card { background: #161b22; box-shadow: 0 14px 30px rgba(0,0,0,0.4); }
+      :host-context([data-theme="dark"]) .greffe-card-image { background: linear-gradient(135deg, rgba(88,166,255,0.08), rgba(139,148,158,0.05)); color: #8b949e; }
+      :host-context([data-theme="dark"]) .greffe-card-body p { color: #8b949e; }
+      :host-context([data-theme="dark"]) .greffe-tab { color: #8b949e; }
+      :host-context([data-theme="dark"]) .greffe-tab.active { color: #e6edf3; }
+      :host-context([data-theme="dark"]) .coming-soon { color: #8b949e; }
+      :host-context([data-theme="dark"]) .org-list p { color: #8b949e; }
+      :host-context([data-theme="dark"]) .chart-media { background: linear-gradient(135deg, rgba(88,166,255,0.08), rgba(139,148,158,0.05)); color: #8b949e; }
+      :host-context([data-theme="dark"]) .org-hero-body { background: #0d1117; }
+      :host-context([data-theme="dark"]) .org-hero-card { background: #161b22; box-shadow: 0 16px 34px rgba(0,0,0,0.4); }
+      :host-context([data-theme="dark"]) .org-hero-title { color: #e6edf3; }
+      :host-context([data-theme="dark"]) .org-hero-body p { color: #8b949e; }
     `,
   ],
 })

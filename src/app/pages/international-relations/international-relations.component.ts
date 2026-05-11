@@ -1078,6 +1078,25 @@ import { FooterComponent } from '../../components/footer/footer.component';
     .mag-btn{position:relative;overflow:hidden;transition:transform .25s ease;}
     .mag-btn::before{content:'';position:absolute;inset:0;background:linear-gradient(105deg,transparent 40%,rgba(255,255,255,.2) 50%,transparent 60%);transform:translateX(-120%) skewX(-20deg);pointer-events:none;}
     .mag-btn:hover::before{animation:shimmerSweep .6s ease forwards;}
+
+    /* Dark Mode */
+    :host-context([data-theme="dark"]) .page-container { background: #0d1117; }
+    :host-context([data-theme="dark"]) .stats-section { background: linear-gradient(180deg, #161b22 0%, #0d1117 100%); border-bottom-color: #21262d; }
+    :host-context([data-theme="dark"]) .stat-number { color: #e6edf3; }
+    :host-context([data-theme="dark"]) .stat-label { color: #8b949e; }
+    :host-context([data-theme="dark"]) .networks-section { background: #0d1117; }
+    :host-context([data-theme="dark"]) .section-header h2 { color: #e6edf3; }
+    :host-context([data-theme="dark"]) .section-subtitle { color: #8b949e !important; }
+    :host-context([data-theme="dark"]) .network-card { background: #161b22; border-color: #30363d; box-shadow: 0 2px 8px rgba(0,0,0,0.3); }
+    :host-context([data-theme="dark"]) .network-card:hover { box-shadow: 0 8px 20px rgba(0,0,0,0.4); }
+    :host-context([data-theme="dark"]) .network-card h3 { color: #e6edf3; }
+    :host-context([data-theme="dark"]) .network-full-name { color: #8b949e; }
+    :host-context([data-theme="dark"]) .network-description { color: #8b949e; }
+    :host-context([data-theme="dark"]) .cooperation-section { background: linear-gradient(180deg, #161b22 0%, #0d1117 100%); }
+    :host-context([data-theme="dark"]) .domain-card { background: #161b22; border-color: #30363d; box-shadow: 0 2px 8px rgba(0,0,0,0.3); }
+    :host-context([data-theme="dark"]) .domain-card:hover { box-shadow: 0 8px 20px rgba(0,0,0,0.4); border-color: #58a6ff; }
+    :host-context([data-theme="dark"]) .domain-card h3 { color: #e6edf3; }
+    :host-context([data-theme="dark"]) .domain-card p { color: #8b949e; }
   `]
 })
 export class InternationalRelationsComponent implements OnInit, AfterViewInit {

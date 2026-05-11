@@ -37,6 +37,9 @@
       "articles": "Makala ya habari",
       "noResults": "Hakuna matokeo yaliyopatikana",
       "searching": "Inatafuta..."
+    },
+    "theme": {
+      "toggle": "Badilisha hali ya giza"
     }
   },
   "hero": {
