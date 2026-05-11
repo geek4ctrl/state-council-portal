@@ -37,6 +37,9 @@
       "articles": "Nachrichtenartikel",
       "noResults": "Keine Ergebnisse gefunden",
       "searching": "Suche läuft..."
+    },
+    "theme": {
+      "toggle": "Dunkelmodus umschalten"
     }
   },
   "hero": {

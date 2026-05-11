@@ -49,6 +49,9 @@ export class HeaderComponent implements AfterViewInit {
   private newsCache: SearchNewsResult[] = [];
   private newsCacheLoaded = false;
 
+  // Dark mode
+  isDarkMode = signal(false);
+
   @ViewChild('navMenu') navMenu!: ElementRef<HTMLUListElement>;
   @ViewChild('searchInput') searchInput?: ElementRef<HTMLInputElement>;
 
@@ -88,6 +91,12 @@ export class HeaderComponent implements AfterViewInit {
   logoSrc = computed(() => 'assets/new-logo.png');
 
   constructor() {
+    // Init dark mode from DOM (already set by index.html script)
+    if (typeof document !== 'undefined') {
+      this.isDarkMode.set(
+        document.documentElement.getAttribute('data-theme') === 'dark'
+      );
+    }
     if (typeof window !== 'undefined') {
       this.isScrolled.set(window.scrollY > 60);
     }
@@ -249,6 +258,22 @@ export class HeaderComponent implements AfterViewInit {
   currentLanguageLabel(): string {
     const lang = this.i18n.activeLang();
     return this.languages.find((l) => l.code === lang)?.label ?? 'Anglais';
+  }
+
+  // --- Dark mode ---
+  toggleTheme(): void {
+    const next = !this.isDarkMode();
+    this.isDarkMode.set(next);
+    if (typeof document !== 'undefined') {
+      if (next) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      } else {
+        document.documentElement.removeAttribute('data-theme');
+      }
+    }
+    if (typeof localStorage !== 'undefined') {
+      localStorage.setItem('theme', next ? 'dark' : 'light');
+    }
   }
 
   // --- Search ---

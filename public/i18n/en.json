@@ -37,6 +37,9 @@
       "articles": "News Articles",
       "noResults": "No results found",
       "searching": "Searching..."
+    },
+    "theme": {
+      "toggle": "Toggle dark mode"
     }
   },
   "hero": {

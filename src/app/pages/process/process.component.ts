@@ -133,6 +133,12 @@ import { FooterComponent } from '../../components/footer/footer.component';
         font-size: 1.35rem;
       }
     }
+
+    /* Dark Mode */
+    :host-context([data-theme="dark"]) .page-container { background: #0d1117; }
+    :host-context([data-theme="dark"]) .content-card { background: #161b22; border-color: #30363d; box-shadow: 0 16px 40px rgba(0,0,0,0.4); color: #e6edf3; }
+    :host-context([data-theme="dark"]) .content-card h2 { color: #e6edf3; }
+    :host-context([data-theme="dark"]) .content-card p { color: #8b949e; }
   `]
 })
 export class ProcessComponent {}

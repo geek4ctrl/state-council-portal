@@ -320,6 +320,14 @@ import { FooterComponent } from '../../components/footer/footer.component';
         width: 80px;
       }
     }
+
+    /* ── Dark Mode ── */
+    :host-context([data-theme="dark"]) .page-container { background: #0d1117; }
+    :host-context([data-theme="dark"]) .coming-soon-section { background: #0d1117; }
+    :host-context([data-theme="dark"]) .coming-soon-title { color: #58a6ff; }
+    :host-context([data-theme="dark"]) .coming-soon-description { color: #8b949e; }
+    :host-context([data-theme="dark"]) .btn-home { background: #58a6ff; border-color: #58a6ff; color: #0d1117; }
+    :host-context([data-theme="dark"]) .btn-home:hover { background: #79c0ff; border-color: #79c0ff; }
   `]
 })
 export class ComingSoonComponent implements OnInit {

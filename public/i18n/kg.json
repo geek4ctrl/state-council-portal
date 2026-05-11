@@ -37,6 +37,9 @@
       "articles": "Bansangu",
       "noResults": "Kana yina yamonika ve",
       "searching": "Kososa..."
+    },
+    "theme": {
+      "toggle": "Balula tombi"
     }
   },
   "hero": {

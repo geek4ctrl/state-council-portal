@@ -1462,6 +1462,34 @@ import { FooterComponent } from '../../components/footer/footer.component';
       .mag-btn:hover::before {
         animation: shimmerSweep 0.6s ease forwards;
       }
+
+      /* Dark mode overrides */
+      :host-context([data-theme="dark"]) .page-container { background: #0d1117; }
+      :host-context([data-theme="dark"]) .content-section { background: #0d1117; }
+      :host-context([data-theme="dark"]) .schedules-section h2 { color: #e6edf3; }
+      :host-context([data-theme="dark"]) .section-subtitle { color: #8b949e !important; }
+      :host-context([data-theme="dark"]) .no-excerpts-state { background: #161b22; border-color: #30363d; }
+      :host-context([data-theme="dark"]) .no-excerpts-state svg { color: #484f58; }
+      :host-context([data-theme="dark"]) .no-excerpts-state p { color: #8b949e; }
+      :host-context([data-theme="dark"]) .metrics-section h2 { color: #e6edf3; }
+      :host-context([data-theme="dark"]) .metrics-card { background: #161b22; border-color: rgba(240,246,252,0.1); box-shadow: 0 12px 26px rgba(0,0,0,0.4); }
+      :host-context([data-theme="dark"]) .metrics-card-header h3 { color: #e6edf3; }
+      :host-context([data-theme="dark"]) .metrics-note { color: #8b949e; }
+      :host-context([data-theme="dark"]) .understanding-section h2 { color: #e6edf3; }
+      :host-context([data-theme="dark"]) .understanding-section p { color: #8b949e; }
+      :host-context([data-theme="dark"]) .document-card { background: #161b22; box-shadow: 0 2px 8px rgba(0,0,0,0.3); }
+      :host-context([data-theme="dark"]) .document-card:hover { box-shadow: 0 12px 28px rgba(0,0,0,0.5); }
+      :host-context([data-theme="dark"]) .document-preview { background: #1c2128; }
+      :host-context([data-theme="dark"]) .document-label { color: #e6edf3; }
+      :host-context([data-theme="dark"]) .document-info { background: #161b22; }
+      :host-context([data-theme="dark"]) .document-info h3 { color: #e6edf3; }
+      :host-context([data-theme="dark"]) .download-btn { border-color: #8b949e; color: #8b949e; }
+      :host-context([data-theme="dark"]) .download-btn:hover { background: #e6edf3; color: #0d1117; }
+      :host-context([data-theme="dark"]) .assistance-section { background: #161b22; box-shadow: 0 2px 12px rgba(0,0,0,0.3); }
+      :host-context([data-theme="dark"]) .assistance-content h2 { color: #e6edf3; }
+      :host-context([data-theme="dark"]) .assistance-content p { color: #8b949e; }
+      :host-context([data-theme="dark"]) .contact-btn { background: #e6edf3; color: #0d1117; }
+      :host-context([data-theme="dark"]) .contact-btn:hover { background: #fff; }
     `,
   ],
 })

@@ -37,6 +37,9 @@
       "articles": "Articles d'actualité",
       "noResults": "Aucun résultat trouvé",
       "searching": "Recherche en cours..."
+    },
+    "theme": {
+      "toggle": "Basculer le mode sombre"
     }
   },
   "hero": {

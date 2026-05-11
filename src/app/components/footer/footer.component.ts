@@ -424,6 +424,86 @@ import { CommonModule } from '@angular/common';
           font-size: 0.85rem;
         }
       }
+
+      /* Dark Mode */
+      :host-context([data-theme="dark"]) .footer-main {
+        background: linear-gradient(180deg, #161b22 0%, #0d1117 100%);
+        color: #8b949e;
+      }
+      :host-context([data-theme="dark"]) .footer-main::before {
+        background: linear-gradient(90deg, transparent, rgba(56, 139, 253, 0.15), transparent);
+      }
+      :host-context([data-theme="dark"]) .footer-brand-name {
+        color: #e6edf3;
+      }
+      :host-context([data-theme="dark"]) .footer-about-text {
+        color: #8b949e;
+      }
+      :host-context([data-theme="dark"]) .footer-address-card {
+        background: #1c2128;
+        border-color: rgba(240, 246, 252, 0.1);
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+      }
+      :host-context([data-theme="dark"]) .address-card-header {
+        border-bottom-color: rgba(56, 139, 253, 0.1);
+      }
+      :host-context([data-theme="dark"]) .address-card-body p {
+        color: #8b949e;
+      }
+      :host-context([data-theme="dark"]) .contact-chip {
+        background: #1c2128;
+        border-color: rgba(240, 246, 252, 0.1);
+        color: #8b949e;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+      }
+      :host-context([data-theme="dark"]) .contact-chip:hover {
+        border-color: rgba(56, 139, 253, 0.3);
+        color: #e6edf3;
+      }
+      :host-context([data-theme="dark"]) .footer-column h3 {
+        color: #e6edf3;
+      }
+      :host-context([data-theme="dark"]) .footer-column ul li a {
+        color: #8b949e;
+      }
+      :host-context([data-theme="dark"]) .footer-column ul li a:hover {
+        color: #58a6ff;
+      }
+      :host-context([data-theme="dark"]) .footer-social {
+        border-top-color: rgba(240, 246, 252, 0.06);
+      }
+      :host-context([data-theme="dark"]) .footer-social span {
+        color: #e6edf3;
+      }
+      :host-context([data-theme="dark"]) .social-icon {
+        background: #1c2128;
+        border-color: rgba(240, 246, 252, 0.1);
+        color: #8b949e;
+      }
+      :host-context([data-theme="dark"]) .social-icon:hover {
+        background: #58a6ff;
+        border-color: #58a6ff;
+        color: #fff;
+      }
+      :host-context([data-theme="dark"]) .footer-bottom {
+        background: #0d1117;
+        border-top-color: rgba(240, 246, 252, 0.06);
+      }
+      :host-context([data-theme="dark"]) .copyright {
+        color: #6e7681;
+      }
+      :host-context([data-theme="dark"]) .footer-bottom-links a {
+        color: #6e7681;
+      }
+      :host-context([data-theme="dark"]) .footer-bottom-links a:hover {
+        color: #58a6ff;
+      }
+      :host-context([data-theme="dark"]) .dot-separator {
+        background: rgba(240, 246, 252, 0.15);
+      }
+      :host-context([data-theme="dark"]) .footer-hours {
+        color: #6e7681;
+      }
     `,
   ],
 })

@@ -37,6 +37,9 @@
       "articles": "Articoli di notizie",
       "noResults": "Nessun risultato trovato",
       "searching": "Ricerca in corso..."
+    },
+    "theme": {
+      "toggle": "Attiva/disattiva modalità scura"
     }
   },
   "hero": {
