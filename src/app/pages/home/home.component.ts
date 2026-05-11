@@ -1246,7 +1246,7 @@ type HighchartsStatic = typeof import('highcharts');
       }
       .hero-tag {
         font-size: 0.72rem;
-        font-weight: 800;
+        font-weight: 700;
         letter-spacing: 1px;
         text-transform: none;
         color: #1F9BD9;
@@ -1255,7 +1255,7 @@ type HighchartsStatic = typeof import('highcharts');
       }
       .hero-h1 {
         font-size: 2.9rem;
-        font-weight: 900;
+        font-weight: 700;
         line-height: 1.12;
         margin-bottom: 28px;
         text-transform: none;
@@ -1614,7 +1614,7 @@ type HighchartsStatic = typeof import('highcharts');
       }
       .sec-title {
         font-size: 2.3rem;
-        font-weight: 800;
+        font-weight: 700;
         color: #1a1a1a;
         margin: 0;
       }
@@ -1761,7 +1761,7 @@ type HighchartsStatic = typeof import('highcharts');
       }
       .ql-info h3 {
         font-size: 0.72rem;
-        font-weight: 800;
+        font-weight: 700;
         text-transform: uppercase;
         letter-spacing: 0.7px;
         color: #1a1a1a;
@@ -2103,7 +2103,7 @@ type HighchartsStatic = typeof import('highcharts');
       }
       .exp-icon-wrap h3 {
         font-size: 1rem;
-        font-weight: 800;
+        font-weight: 700;
         color: #1a1a1a;
         line-height: 1.2;
       }
@@ -2138,7 +2138,7 @@ type HighchartsStatic = typeof import('highcharts');
         margin-top: auto;
         padding-top: 14px;
         font-size: 0.78rem;
-        font-weight: 800;
+        font-weight: 700;
         color: #1F9BD9;
         text-transform: uppercase;
         letter-spacing: 1px;
@@ -2355,7 +2355,7 @@ type HighchartsStatic = typeof import('highcharts');
         backdrop-filter: blur(8px);
         color: #fff;
         font-size: 0.7rem;
-        font-weight: 800;
+        font-weight: 700;
         letter-spacing: 1px;
         text-transform: uppercase;
         padding: 6px 14px;
@@ -2370,7 +2370,7 @@ type HighchartsStatic = typeof import('highcharts');
       }
       .pres-title {
         font-size: 2rem;
-        font-weight: 900;
+        font-weight: 700;
         color: #2c3e50;
         margin-bottom: 24px;
         line-height: 1.2;
@@ -2406,7 +2406,7 @@ type HighchartsStatic = typeof import('highcharts');
         color: #1F9BD9;
         border: 1.5px solid #1F9BD9;
         font-size: 0.88rem;
-        font-weight: 800;
+        font-weight: 700;
         cursor: pointer;
         margin-top: 18px;
         text-transform: capitalize;
@@ -2503,7 +2503,7 @@ type HighchartsStatic = typeof import('highcharts');
       }
       .nl-head h2 {
         font-size: 2.3rem;
-        font-weight: 900;
+        font-weight: 700;
         color: #1a1a1a;
         margin: 0;
         letter-spacing: 4px;
@@ -2712,7 +2712,7 @@ type HighchartsStatic = typeof import('highcharts');
         border: 1.5px solid #1f9bd9;
         border-radius: 6px;
         font-size: 0.92rem;
-        font-weight: 800;
+        font-weight: 700;
         cursor: pointer;
         text-transform: capitalize;
         position: relative;
@@ -3054,7 +3054,7 @@ type HighchartsStatic = typeof import('highcharts');
 
       .hero-title {
         font-size: 2.8rem;
-        font-weight: 800;
+        font-weight: 700;
         line-height: 1.15;
         margin-bottom: 22px;
         color: white;
@@ -3412,7 +3412,7 @@ type HighchartsStatic = typeof import('highcharts');
 
       .quick-link-content h3 {
         font-size: 0.72rem;
-        font-weight: 800;
+        font-weight: 700;
         color: #273243;
         margin-bottom: 8px;
         text-transform: uppercase;
@@ -3879,7 +3879,7 @@ type HighchartsStatic = typeof import('highcharts');
 
       .president-text h2 {
         font-size: 2.1rem;
-        font-weight: 800;
+        font-weight: 700;
         color: #2c3e50;
         margin-bottom: 28px;
         line-height: 1.2;
@@ -4049,7 +4049,7 @@ type HighchartsStatic = typeof import('highcharts');
 
       .newsletter-header h2 {
         font-size: 2.4rem;
-        font-weight: 800;
+        font-weight: 700;
         color: #1a1a1a;
         margin: 0;
         letter-spacing: 4px;
