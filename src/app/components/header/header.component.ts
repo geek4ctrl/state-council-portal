@@ -52,6 +52,9 @@ export class HeaderComponent implements AfterViewInit {
   // Dark mode
   isDarkMode = signal(false);
 
+  // Scroll throttle
+  private scrollRafId: number | null = null;
+
   @ViewChild('navMenu') navMenu!: ElementRef<HTMLUListElement>;
   @ViewChild('searchInput') searchInput?: ElementRef<HTMLInputElement>;
 
@@ -123,15 +126,18 @@ export class HeaderComponent implements AfterViewInit {
 
   @HostListener('window:scroll')
   onWindowScroll() {
-    if (typeof window !== 'undefined') {
+    if (this.scrollRafId !== null) return;
+    this.scrollRafId = requestAnimationFrame(() => {
+      this.scrollRafId = null;
+      if (typeof window === 'undefined') return;
       const scrollY = window.scrollY;
       const current = this.isScrolled();
-      if (current && scrollY < 40) {
+      if (current && scrollY < 20) {
         this.isScrolled.set(false);
-      } else if (!current && scrollY > 60) {
+      } else if (!current && scrollY > 80) {
         this.isScrolled.set(true);
       }
-    }
+    });
   }
 
   onNavHover(event: MouseEvent): void {
