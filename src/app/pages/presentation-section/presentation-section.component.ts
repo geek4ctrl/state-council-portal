@@ -1905,8 +1905,10 @@ type GreffeFirstPresident = {
       :host-context([data-theme="dark"]) .org-tile:hover { box-shadow: 0 18px 36px rgba(0,0,0,0.45); border-color: rgba(79,195,247,0.35); }
       :host-context([data-theme="dark"]) .org-tile h3 { color: #e4eaf0; }
       :host-context([data-theme="dark"]) .org-tile-media { background: linear-gradient(140deg, rgba(79,195,247,0.1), rgba(136,153,170,0.05)); border-bottom-color: #2d4156; color: #8899aa; }
-      :host-context([data-theme="dark"]) .org-tile-media.has-image { background-color: #1a2332; background-size: cover !important; }
-      :host-context([data-theme="dark"]) .org-tile-media.has-image::after { background: rgba(26,35,50,0.72); }
+      :host-context([data-theme="dark"]) .org-tile-media.has-image { background-color: #1a2332; background-size: contain; background-position: center; background-repeat: no-repeat; }
+      :host-context([data-theme="dark"]) .org-tile:nth-child(1) .org-tile-media.has-image,
+      :host-context([data-theme="dark"]) .org-tile:nth-child(5) .org-tile-media.has-image { background-size: 115%; }
+      :host-context([data-theme="dark"]) .org-tile-media.has-image::after { background: linear-gradient(180deg, transparent 60%, rgba(26,35,50,0.6) 100%); }
 
       /* Greffe page */
       :host-context([data-theme="dark"]) .greffe-list { background: #1a2332; }
