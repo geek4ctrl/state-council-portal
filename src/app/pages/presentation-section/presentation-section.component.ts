@@ -641,6 +641,7 @@ type GreffeFirstPresident = {
 
       .org-hero-summary {
         background: transparent;
+        margin-top: 8px;
         padding: 6px 0 22px;
         border-bottom: none;
       }
@@ -1197,7 +1198,7 @@ type GreffeFirstPresident = {
       }
 
       .org-detail-card {
-        margin-top: 0;
+        margin-top: 10px;
         width: 100%;
         max-width: 1120px;
         background: linear-gradient(135deg, #ffffff 0%, #f8fbff 100%);
