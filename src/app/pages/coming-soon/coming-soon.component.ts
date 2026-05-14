@@ -322,12 +322,12 @@ import { FooterComponent } from '../../components/footer/footer.component';
     }
 
     /* ── Dark Mode ── */
-    :host-context([data-theme="dark"]) .page-container { background: #0d1117; }
-    :host-context([data-theme="dark"]) .coming-soon-section { background: #0d1117; }
-    :host-context([data-theme="dark"]) .coming-soon-title { color: #58a6ff; }
-    :host-context([data-theme="dark"]) .coming-soon-description { color: #8b949e; }
-    :host-context([data-theme="dark"]) .btn-home { background: #58a6ff; border-color: #58a6ff; color: #0d1117; }
-    :host-context([data-theme="dark"]) .btn-home:hover { background: #79c0ff; border-color: #79c0ff; }
+    :host-context([data-theme="dark"]) .page-container { background: #1a2332; }
+    :host-context([data-theme="dark"]) .coming-soon-section { background: #1a2332; }
+    :host-context([data-theme="dark"]) .coming-soon-title { color: #4fc3f7; }
+    :host-context([data-theme="dark"]) .coming-soon-description { color: #8899aa; }
+    :host-context([data-theme="dark"]) .btn-home { background: #4fc3f7; border-color: #4fc3f7; color: #1a2332; }
+    :host-context([data-theme="dark"]) .btn-home:hover { background: #81d4fa; border-color: #81d4fa; }
   `]
 })
 export class ComingSoonComponent implements OnInit {

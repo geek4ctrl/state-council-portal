@@ -304,14 +304,14 @@ function cloudSrc(url: string): string {
     }
 
     /* ── Dark Mode ── */
-    :host-context([data-theme="dark"]) { background: #0d1117; }
+    :host-context([data-theme="dark"]) { background: #1a2332; }
     :host-context([data-theme="dark"]) .page-container { background: transparent; }
-    :host-context([data-theme="dark"]) .section-title { color: #e6edf3; }
-    :host-context([data-theme="dark"]) .member-card { background: #161b22; border-color: rgba(240,246,252,0.1); box-shadow: 0 4px 20px rgba(0,0,0,0.3); }
+    :host-context([data-theme="dark"]) .section-title { color: #e4eaf0; }
+    :host-context([data-theme="dark"]) .member-card { background: #243447; border-color: rgba(240,246,252,0.1); box-shadow: 0 4px 20px rgba(0,0,0,0.3); }
     :host-context([data-theme="dark"]) .member-card:hover { box-shadow: 0 16px 40px rgba(0,0,0,0.5); }
-    :host-context([data-theme="dark"]) .member-text h3 { color: #e6edf3; }
-    :host-context([data-theme="dark"]) .member-text .role-badge { color: #58a6ff; }
-    :host-context([data-theme="dark"]) .member-text .role-plain { color: #8b949e; }
+    :host-context([data-theme="dark"]) .member-text h3 { color: #e4eaf0; }
+    :host-context([data-theme="dark"]) .member-text .role-badge { color: #4fc3f7; }
+    :host-context([data-theme="dark"]) .member-text .role-plain { color: #8899aa; }
   `]
 })
 export class JudgesComponent {

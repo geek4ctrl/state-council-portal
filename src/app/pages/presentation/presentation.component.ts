@@ -152,7 +152,7 @@ import { OrganizationComponent } from '../organization/organization.component';
     .loader-label{font-size:.72rem;font-weight:700;letter-spacing:2px;color:#1F9BD9;text-transform:uppercase;animation:labelPulse 2s ease-in-out infinite;}
 
     /* ── Dark Mode ── */
-    :host-context([data-theme="dark"]) .page-container { background: #0d1117; }
+    :host-context([data-theme="dark"]) .page-container { background: #1a2332; }
   `]
 })
 export class PresentationComponent implements OnInit {
