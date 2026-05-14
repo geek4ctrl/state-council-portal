@@ -1464,31 +1464,31 @@ import { FooterComponent } from '../../components/footer/footer.component';
       }
 
       /* Dark mode overrides */
-      :host-context([data-theme="dark"]) .page-container { background: #0d1117; }
-      :host-context([data-theme="dark"]) .content-section { background: #0d1117; }
-      :host-context([data-theme="dark"]) .schedules-section h2 { color: #e6edf3; }
-      :host-context([data-theme="dark"]) .section-subtitle { color: #8b949e !important; }
-      :host-context([data-theme="dark"]) .no-excerpts-state { background: #161b22; border-color: #30363d; }
-      :host-context([data-theme="dark"]) .no-excerpts-state svg { color: #484f58; }
-      :host-context([data-theme="dark"]) .no-excerpts-state p { color: #8b949e; }
-      :host-context([data-theme="dark"]) .metrics-section h2 { color: #e6edf3; }
-      :host-context([data-theme="dark"]) .metrics-card { background: #161b22; border-color: rgba(240,246,252,0.1); box-shadow: 0 12px 26px rgba(0,0,0,0.4); }
-      :host-context([data-theme="dark"]) .metrics-card-header h3 { color: #e6edf3; }
-      :host-context([data-theme="dark"]) .metrics-note { color: #8b949e; }
-      :host-context([data-theme="dark"]) .understanding-section h2 { color: #e6edf3; }
-      :host-context([data-theme="dark"]) .understanding-section p { color: #8b949e; }
-      :host-context([data-theme="dark"]) .document-card { background: #161b22; box-shadow: 0 2px 8px rgba(0,0,0,0.3); }
+      :host-context([data-theme="dark"]) .page-container { background: #1a2332; }
+      :host-context([data-theme="dark"]) .content-section { background: #1a2332; }
+      :host-context([data-theme="dark"]) .schedules-section h2 { color: #e4eaf0; }
+      :host-context([data-theme="dark"]) .section-subtitle { color: #8899aa !important; }
+      :host-context([data-theme="dark"]) .no-excerpts-state { background: #243447; border-color: #2d4156; }
+      :host-context([data-theme="dark"]) .no-excerpts-state svg { color: #6b7d8e; }
+      :host-context([data-theme="dark"]) .no-excerpts-state p { color: #8899aa; }
+      :host-context([data-theme="dark"]) .metrics-section h2 { color: #e4eaf0; }
+      :host-context([data-theme="dark"]) .metrics-card { background: #243447; border-color: rgba(79,195,247,0.12); box-shadow: 0 12px 26px rgba(0,0,0,0.4); }
+      :host-context([data-theme="dark"]) .metrics-card-header h3 { color: #e4eaf0; }
+      :host-context([data-theme="dark"]) .metrics-note { color: #8899aa; }
+      :host-context([data-theme="dark"]) .understanding-section h2 { color: #e4eaf0; }
+      :host-context([data-theme="dark"]) .understanding-section p { color: #8899aa; }
+      :host-context([data-theme="dark"]) .document-card { background: #243447; box-shadow: 0 2px 8px rgba(0,0,0,0.3); }
       :host-context([data-theme="dark"]) .document-card:hover { box-shadow: 0 12px 28px rgba(0,0,0,0.5); }
-      :host-context([data-theme="dark"]) .document-preview { background: #1c2128; }
-      :host-context([data-theme="dark"]) .document-label { color: #e6edf3; }
-      :host-context([data-theme="dark"]) .document-info { background: #161b22; }
-      :host-context([data-theme="dark"]) .document-info h3 { color: #e6edf3; }
-      :host-context([data-theme="dark"]) .download-btn { border-color: #8b949e; color: #8b949e; }
-      :host-context([data-theme="dark"]) .download-btn:hover { background: #e6edf3; color: #0d1117; }
-      :host-context([data-theme="dark"]) .assistance-section { background: #161b22; box-shadow: 0 2px 12px rgba(0,0,0,0.3); }
-      :host-context([data-theme="dark"]) .assistance-content h2 { color: #e6edf3; }
-      :host-context([data-theme="dark"]) .assistance-content p { color: #8b949e; }
-      :host-context([data-theme="dark"]) .contact-btn { background: #e6edf3; color: #0d1117; }
+      :host-context([data-theme="dark"]) .document-preview { background: #2a3d52; }
+      :host-context([data-theme="dark"]) .document-label { color: #e4eaf0; }
+      :host-context([data-theme="dark"]) .document-info { background: #243447; }
+      :host-context([data-theme="dark"]) .document-info h3 { color: #e4eaf0; }
+      :host-context([data-theme="dark"]) .download-btn { border-color: #8899aa; color: #8899aa; }
+      :host-context([data-theme="dark"]) .download-btn:hover { background: #e4eaf0; color: #1a2332; }
+      :host-context([data-theme="dark"]) .assistance-section { background: #243447; box-shadow: 0 2px 12px rgba(0,0,0,0.3); }
+      :host-context([data-theme="dark"]) .assistance-content h2 { color: #e4eaf0; }
+      :host-context([data-theme="dark"]) .assistance-content p { color: #8899aa; }
+      :host-context([data-theme="dark"]) .contact-btn { background: #e4eaf0; color: #1a2332; }
       :host-context([data-theme="dark"]) .contact-btn:hover { background: #fff; }
     `,
   ],
@@ -1503,20 +1503,38 @@ export class AudiencesComponent implements OnInit, AfterViewInit {
   private readonly destroyRef = inject(DestroyRef);
   private chartInstances: Highcharts.Chart[] = [];
   private resizeObserver?: ResizeObserver;
+  private themeObserver?: MutationObserver;
   private readonly handleVisibilityChange = () => {
     if (!document.hidden) {
       this.reflowCharts();
     }
   };
 
+  private isDarkMode(): boolean {
+    return document.documentElement.getAttribute('data-theme') === 'dark';
+  }
+
   ngOnInit() {}
 
   ngAfterViewInit() {
     this.renderAudienceCharts();
     this.setupChartObservers([this.monthlyVolumeChart, this.outcomesChart]);
+
+    // Watch for theme changes to re-render charts
+    this.themeObserver = new MutationObserver(() => {
+      this.chartInstances.forEach((c) => c.destroy());
+      this.chartInstances = [];
+      this.renderAudienceCharts();
+    });
+    this.themeObserver.observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ['data-theme'],
+    });
+
     this.destroyRef.onDestroy(() => {
       this.chartInstances.forEach((chart) => chart.destroy());
       this.chartInstances = [];
+      this.themeObserver?.disconnect();
       document.removeEventListener('visibilitychange', this.handleVisibilityChange);
       this.resizeObserver?.disconnect();
       this.resizeObserver = undefined;
@@ -1594,10 +1612,14 @@ export class AudiencesComponent implements OnInit, AfterViewInit {
   }
 
   private renderAudienceCharts() {
+    const dark = this.isDarkMode();
     const axisLabelStyle = {
-      color: '#1F9BD9',
+      color: dark ? '#a0b0c0' : '#1F9BD9',
       fontSize: '11px',
     };
+    const gridLineColor = dark ? 'rgba(255,255,255,0.08)' : 'rgba(26, 41, 66, 0.08)';
+    const lineColor = dark ? 'rgba(255,255,255,0.12)' : 'rgba(26, 41, 66, 0.12)';
+    const legendColor = dark ? '#e4eaf0' : '#1a1a1a';
 
     const months = ['Sep', 'Oct', 'Nov', 'Dec', 'Jan', 'Feb'];
 
@@ -1614,18 +1636,18 @@ export class AudiencesComponent implements OnInit, AfterViewInit {
       xAxis: {
         categories: months,
         labels: { style: axisLabelStyle },
-        lineColor: 'rgba(26, 41, 66, 0.12)',
-        tickColor: 'rgba(26, 41, 66, 0.12)',
+        lineColor,
+        tickColor: lineColor,
       },
       yAxis: {
         title: { text: undefined },
         labels: { style: axisLabelStyle },
-        gridLineColor: 'rgba(26, 41, 66, 0.08)',
+        gridLineColor,
       },
       tooltip: {
-        backgroundColor: '#1a1a1a',
+        backgroundColor: dark ? '#243447' : '#1a1a1a',
         style: { color: '#ffffff' },
-        borderColor: '#1a1a1a',
+        borderColor: dark ? '#2d4156' : '#1a1a1a',
       },
       series: [
         {
@@ -1650,23 +1672,23 @@ export class AudiencesComponent implements OnInit, AfterViewInit {
       legend: {
         align: 'center',
         verticalAlign: 'bottom',
-        itemStyle: { color: '#1a1a1a', fontWeight: '600' },
+        itemStyle: { color: legendColor, fontWeight: '600' },
       },
       xAxis: {
         categories: months,
         labels: { style: axisLabelStyle },
-        lineColor: 'rgba(26, 41, 66, 0.12)',
-        tickColor: 'rgba(26, 41, 66, 0.12)',
+        lineColor,
+        tickColor: lineColor,
       },
       yAxis: {
         title: { text: undefined },
         labels: { style: axisLabelStyle },
-        gridLineColor: 'rgba(26, 41, 66, 0.08)',
+        gridLineColor,
       },
       tooltip: {
-        backgroundColor: '#1a1a1a',
+        backgroundColor: dark ? '#243447' : '#1a1a1a',
         style: { color: '#ffffff' },
-        borderColor: '#1a1a1a',
+        borderColor: dark ? '#2d4156' : '#1a1a1a',
         shared: true,
       },
       plotOptions: {
@@ -1680,7 +1702,7 @@ export class AudiencesComponent implements OnInit, AfterViewInit {
           type: 'area',
           name: 'Decisions rendered',
           data: [54, 61, 70, 66, 78, 82],
-          color: 'rgba(26, 41, 66, 0.7)',
+          color: dark ? 'rgba(79, 195, 247, 0.7)' : 'rgba(26, 41, 66, 0.7)',
         },
         {
           type: 'area',

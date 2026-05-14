@@ -5192,62 +5192,81 @@ type HighchartsStatic = typeof import('highcharts');
       }
 
       /* ── Dark Mode ── */
-      :host-context([data-theme="dark"]) .page-wrap { background: #0d1117; }
+      :host-context([data-theme="dark"]) .page-wrap { background: #1a2332; }
 
       /* Key Facts */
-      :host-context([data-theme="dark"]) .kf-section { background: linear-gradient(180deg, #161b22, #0d1117); border-color: #30363d; }
-      :host-context([data-theme="dark"]) .kf-section .sec-sub { color: #8b949e; }
-      :host-context([data-theme="dark"]) .kf-card { background: linear-gradient(135deg, rgba(22,27,34,0.85), rgba(22,27,34,0.5)); box-shadow: 0 12px 40px rgba(0,0,0,0.4); }
-      :host-context([data-theme="dark"]) .kf-meta h3 { color: #e6edf3; }
+      :host-context([data-theme="dark"]) .kf-section { background: linear-gradient(180deg, #243447, #1a2332); border-color: #2d4156; }
+      :host-context([data-theme="dark"]) .kf-section .sec-sub { color: #8899aa; }
+      :host-context([data-theme="dark"]) .kf-card { background: linear-gradient(135deg, rgba(36,52,71,0.85), rgba(36,52,71,0.5)); box-shadow: 0 12px 40px rgba(0,0,0,0.35); }
+      :host-context([data-theme="dark"]) .kf-meta h3 { color: #e4eaf0; }
 
       /* Section headers */
-      :host-context([data-theme="dark"]) .sec-title { color: #e6edf3; }
-      :host-context([data-theme="dark"]) .sec-sub { color: #8b949e; }
+      :host-context([data-theme="dark"]) .sec-title { color: #e4eaf0; }
+      :host-context([data-theme="dark"]) .sec-sub { color: #8899aa; }
 
       /* Quick Links */
-      :host-context([data-theme="dark"]) .ql-section { background: #161b22; border-color: #30363d; }
-      :host-context([data-theme="dark"]) .ql-info h3 { color: #e6edf3; }
-      :host-context([data-theme="dark"]) .ql-info p { color: #8b949e; }
-      :host-context([data-theme="dark"]) .ql-cta { color: #58a6ff; }
+      :host-context([data-theme="dark"]) .ql-section { background: #243447; border-color: #2d4156; }
+      :host-context([data-theme="dark"]) .ql-info h3 { color: #e4eaf0; }
+      :host-context([data-theme="dark"]) .ql-info p { color: #8899aa; }
+      :host-context([data-theme="dark"]) .ql-cta { color: #4fc3f7; }
+
+      /* Quick Link marquee cards */
+      :host-context([data-theme="dark"]) .quick-link-item {
+        background: linear-gradient(160deg, rgba(36, 52, 71, 0.9), rgba(36, 52, 71, 0.6));
+        border-color: #2d4156;
+        box-shadow: 0 12px 22px rgba(0, 0, 0, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.04);
+      }
+      :host-context([data-theme="dark"]) .quick-link-item::after { border-color: rgba(79, 195, 247, 0.1); }
+      :host-context([data-theme="dark"]) .quick-link-item:hover {
+        border-color: rgba(79, 195, 247, 0.3);
+        box-shadow: 0 18px 30px rgba(0, 0, 0, 0.45), inset 0 1px 0 rgba(255, 255, 255, 0.06);
+      }
+      :host-context([data-theme="dark"]) .quick-link-icon { background: #2a3d52; border-color: #2d4156; box-shadow: 0 8px 14px rgba(0, 0, 0, 0.3); }
+      :host-context([data-theme="dark"]) .quick-link-content h3 { color: #e4eaf0; }
+      :host-context([data-theme="dark"]) .quick-link-content p { color: #a0b0c0; }
+      :host-context([data-theme="dark"]) .quick-link-action { color: #4fc3f7; }
+      :host-context([data-theme="dark"]) .quick-link-item:hover .quick-link-action { color: #81d4fa; }
+      :host-context([data-theme="dark"]) .quick-links-marquee::before { background: linear-gradient(90deg, #1a2332 0%, rgba(26, 35, 50, 0) 100%); }
+      :host-context([data-theme="dark"]) .quick-links-marquee::after { background: linear-gradient(270deg, #1a2332 0%, rgba(26, 35, 50, 0) 100%); }
 
       /* Offer */
-      :host-context([data-theme="dark"]) .offer-section { background: #0d1117; }
-      :host-context([data-theme="dark"]) .offer-section .sec-sub { color: #8b949e; }
-      :host-context([data-theme="dark"]) .o-card { background: #161b22; box-shadow: 0 2px 8px rgba(0,0,0,0.3); }
+      :host-context([data-theme="dark"]) .offer-section { background: #1a2332; }
+      :host-context([data-theme="dark"]) .offer-section .sec-sub { color: #8899aa; }
+      :host-context([data-theme="dark"]) .o-card { background: #243447; box-shadow: 0 2px 8px rgba(0,0,0,0.3); }
       :host-context([data-theme="dark"]) .o-card:hover { box-shadow: 0 8px 20px rgba(0,0,0,0.5); }
-      :host-context([data-theme="dark"]) .o-card h3 { color: #e6edf3; }
-      :host-context([data-theme="dark"]) .o-card p { color: #8b949e; }
+      :host-context([data-theme="dark"]) .o-card h3 { color: #e4eaf0; }
+      :host-context([data-theme="dark"]) .o-card p { color: #8899aa; }
 
       /* Expertise */
-      :host-context([data-theme="dark"]) .exp-section .sec-sub { color: #8b949e; }
-      :host-context([data-theme="dark"]) .exp-card { background: #161b22; box-shadow: 0 10px 30px rgba(0,0,0,0.4); }
-      :host-context([data-theme="dark"]) .exp-icon-wrap h3 { color: #e6edf3; }
-      :host-context([data-theme="dark"]) .exp-desc { color: #8b949e; }
-      :host-context([data-theme="dark"]) .exp-list li { color: #8b949e; }
+      :host-context([data-theme="dark"]) .exp-section .sec-sub { color: #8899aa; }
+      :host-context([data-theme="dark"]) .exp-card { background: #243447; box-shadow: 0 10px 30px rgba(0,0,0,0.35); }
+      :host-context([data-theme="dark"]) .exp-icon-wrap h3 { color: #e4eaf0; }
+      :host-context([data-theme="dark"]) .exp-desc { color: #8899aa; }
+      :host-context([data-theme="dark"]) .exp-list li { color: #8899aa; }
 
       /* Contact */
-      :host-context([data-theme="dark"]) .ct-section { background: #161b22; }
-      :host-context([data-theme="dark"]) .ct-text h3 { color: #e6edf3; }
-      :host-context([data-theme="dark"]) .ct-text p { color: #8b949e; }
-      :host-context([data-theme="dark"]) .ct-item:hover { background: rgba(88,166,255,0.05); }
-      :host-context([data-theme="dark"]) .ct-sep { background: linear-gradient(to bottom, transparent, rgba(88,166,255,0.4), transparent); }
+      :host-context([data-theme="dark"]) .ct-section { background: #243447; }
+      :host-context([data-theme="dark"]) .ct-text h3 { color: #e4eaf0; }
+      :host-context([data-theme="dark"]) .ct-text p { color: #8899aa; }
+      :host-context([data-theme="dark"]) .ct-item:hover { background: rgba(79,195,247,0.05); }
+      :host-context([data-theme="dark"]) .ct-sep { background: linear-gradient(to bottom, transparent, rgba(79,195,247,0.4), transparent); }
 
       /* President */
-      :host-context([data-theme="dark"]) .pres-section { background: #161b22; }
-      :host-context([data-theme="dark"]) .pres-title { color: #e6edf3; }
-      :host-context([data-theme="dark"]) .pres-para { color: #8b949e; }
-      :host-context([data-theme="dark"]) .pres-dot { background: #30363d; }
-      :host-context([data-theme="dark"]) .pres-dot.on { background: #58a6ff; }
+      :host-context([data-theme="dark"]) .pres-section { background: #243447; }
+      :host-context([data-theme="dark"]) .pres-title { color: #e4eaf0; }
+      :host-context([data-theme="dark"]) .pres-para { color: #8899aa; }
+      :host-context([data-theme="dark"]) .pres-dot { background: #2d4156; }
+      :host-context([data-theme="dark"]) .pres-dot.on { background: #4fc3f7; }
 
       /* Newsletter / News */
-      :host-context([data-theme="dark"]) .nl-section { background: #0d1117; }
-      :host-context([data-theme="dark"]) .nl-head h2 { color: #e6edf3; }
-      :host-context([data-theme="dark"]) .nl-card { background: #161b22; box-shadow: 0 6px 16px rgba(0,0,0,0.4); }
-      :host-context([data-theme="dark"]) .nl-card:hover { box-shadow: 0 16px 32px rgba(0,0,0,0.55); }
-      :host-context([data-theme="dark"]) .nl-body { background: #161b22; }
-      :host-context([data-theme="dark"]) .nl-body h3 { color: #e6edf3; }
-      :host-context([data-theme="dark"]) .nl-link { color: #58a6ff; }
-      :host-context([data-theme="dark"]) .nl-link:hover { color: #79c0ff; }
+      :host-context([data-theme="dark"]) .nl-section { background: #1a2332; }
+      :host-context([data-theme="dark"]) .nl-head h2 { color: #e4eaf0; }
+      :host-context([data-theme="dark"]) .nl-card { background: #243447; box-shadow: 0 6px 16px rgba(0,0,0,0.35); }
+      :host-context([data-theme="dark"]) .nl-card:hover { box-shadow: 0 16px 32px rgba(0,0,0,0.5); }
+      :host-context([data-theme="dark"]) .nl-body { background: #243447; }
+      :host-context([data-theme="dark"]) .nl-body h3 { color: #e4eaf0; }
+      :host-context([data-theme="dark"]) .nl-link { color: #4fc3f7; }
+      :host-context([data-theme="dark"]) .nl-link:hover { color: #81d4fa; }
     `,
   ],
 })
@@ -5257,6 +5276,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
   private slideTransitionTimeoutId?: number;
   private heroTransitionToken = 0;
   private resizeObserver?: ResizeObserver;
+  private themeObserver?: MutationObserver;
   private charts: Chart[] = [];
   private highchartsRoot?: HighchartsStatic;
   private chartLoadObserver?: IntersectionObserver;
@@ -5264,6 +5284,10 @@ export class HomeComponent implements OnInit, AfterViewInit {
   private readonly onVisibility = () => {
     if (!document.hidden) this.charts.forEach((c) => c.reflow());
   };
+
+  private isDarkMode(): boolean {
+    return document.documentElement.getAttribute('data-theme') === 'dark';
+  }
 
   private readonly i18n = inject(I18nService);
   private readonly http = inject(HttpClient);
@@ -5340,9 +5364,22 @@ export class HomeComponent implements OnInit, AfterViewInit {
   ngAfterViewInit() {
     this.setupObservers();
     this.initChartsOnView();
+
+    this.themeObserver = new MutationObserver(() => {
+      this.charts.forEach((c) => c.destroy());
+      this.charts = [];
+      this.chartsInitialized = false;
+      void this.renderCharts();
+    });
+    this.themeObserver.observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ['data-theme'],
+    });
+
     this.destroyRef.onDestroy(() => {
       this.charts.forEach((c) => c.destroy());
       this.charts = [];
+      this.themeObserver?.disconnect();
       this.chartLoadObserver?.disconnect();
       this.chartLoadObserver = undefined;
       document.removeEventListener('visibilitychange', this.onVisibility);
@@ -5534,7 +5571,10 @@ export class HomeComponent implements OnInit, AfterViewInit {
       console.error('Failed to load Highcharts:', error);
       return;
     }
-    const s = { color: '#4b5563', fontSize: '12px', fontWeight: '600' };
+    const dark = this.isDarkMode();
+    const s = { color: dark ? '#a0b0c0' : '#4b5563', fontSize: '12px', fontWeight: '600' };
+    const gridLine = dark ? 'rgba(255,255,255,.08)' : 'rgba(26,41,66,.12)';
+    const axisLine = dark ? 'rgba(255,255,255,.12)' : 'rgba(26,41,66,.2)';
     this.charts = [
       Highcharts.chart(this.chartA.nativeElement, {
         chart: {
@@ -5549,13 +5589,13 @@ export class HomeComponent implements OnInit, AfterViewInit {
         xAxis: {
           categories: ['Sep', 'Oct', 'Nov', 'Dec', 'Jan', 'Feb'],
           labels: { style: s },
-          lineColor: 'rgba(26,41,66,.2)',
-          tickColor: 'rgba(26,41,66,.2)',
+          lineColor: axisLine,
+          tickColor: axisLine,
         },
         yAxis: {
           title: { text: undefined },
           labels: { style: s },
-          gridLineColor: 'rgba(26,41,66,.12)',
+          gridLineColor: gridLine,
         },
         tooltip: { backgroundColor: '#1a2942', style: { color: '#fff' }, borderColor: '#1a2942' },
         series: [
@@ -5581,13 +5621,13 @@ export class HomeComponent implements OnInit, AfterViewInit {
         xAxis: {
           categories: ['Q1', 'Q2', 'Q3', 'Q4'],
           labels: { style: s },
-          lineColor: 'rgba(26,41,66,.2)',
-          tickColor: 'rgba(26,41,66,.2)',
+          lineColor: axisLine,
+          tickColor: axisLine,
         },
         yAxis: {
           title: { text: undefined },
           labels: { style: s },
-          gridLineColor: 'rgba(26,41,66,.12)',
+          gridLineColor: gridLine,
         },
         tooltip: {
           backgroundColor: '#1a2942',
@@ -5617,7 +5657,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
         legend: {
           align: 'center',
           verticalAlign: 'bottom',
-          itemStyle: { color: '#1f2937', fontWeight: '600', fontSize: '12px' },
+          itemStyle: { color: dark ? '#e4eaf0' : '#1f2937', fontWeight: '600', fontSize: '12px' },
         },
         tooltip: {
           backgroundColor: '#1a2942',

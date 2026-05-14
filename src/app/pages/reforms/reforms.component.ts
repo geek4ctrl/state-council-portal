@@ -1262,29 +1262,29 @@ import { FooterComponent } from '../../components/footer/footer.component';
     .img-sheen{position:absolute;inset:0;background:linear-gradient(135deg,rgba(255,255,255,.3) 0%,transparent 50%);pointer-events:none;}
 
     /* ── Dark Mode ── */
-    :host-context([data-theme="dark"]) .page-container { background: #0d1117; }
-    :host-context([data-theme="dark"]) .building-section { background: #0d1117; }
-    :host-context([data-theme="dark"]) .building-section .section-title { color: #e6edf3; }
-    :host-context([data-theme="dark"]) .building-section .section-description { color: #8b949e; }
-    :host-context([data-theme="dark"]) .section-tag span { color: #58a6ff; }
-    :host-context([data-theme="dark"]) .tag-line { background: linear-gradient(90deg, transparent, #58a6ff); }
-    :host-context([data-theme="dark"]) .initiatives-section { background: linear-gradient(180deg, #0d1117, #161b22); }
-    :host-context([data-theme="dark"]) .initiatives-section .section-title { color: #e6edf3; }
-    :host-context([data-theme="dark"]) .initiatives-section .section-description { color: #8b949e; }
-    :host-context([data-theme="dark"]) .step-content { background: #161b22; box-shadow: 0 4px 20px rgba(0,0,0,0.4); }
-    :host-context([data-theme="dark"]) .step-content h3 { color: #e6edf3; }
-    :host-context([data-theme="dark"]) .step-content p { color: #8b949e; }
+    :host-context([data-theme="dark"]) .page-container { background: #1a2332; }
+    :host-context([data-theme="dark"]) .building-section { background: #1a2332; }
+    :host-context([data-theme="dark"]) .building-section .section-title { color: #e4eaf0; }
+    :host-context([data-theme="dark"]) .building-section .section-description { color: #8899aa; }
+    :host-context([data-theme="dark"]) .section-tag span { color: #4fc3f7; }
+    :host-context([data-theme="dark"]) .tag-line { background: linear-gradient(90deg, transparent, #4fc3f7); }
+    :host-context([data-theme="dark"]) .initiatives-section { background: linear-gradient(180deg, #1a2332, #243447); }
+    :host-context([data-theme="dark"]) .initiatives-section .section-title { color: #e4eaf0; }
+    :host-context([data-theme="dark"]) .initiatives-section .section-description { color: #8899aa; }
+    :host-context([data-theme="dark"]) .step-content { background: #243447; box-shadow: 0 4px 20px rgba(0,0,0,0.4); }
+    :host-context([data-theme="dark"]) .step-content h3 { color: #e4eaf0; }
+    :host-context([data-theme="dark"]) .step-content p { color: #8899aa; }
     :host-context([data-theme="dark"]) .step-badge.critical { background: rgba(196,30,58,0.15); color: #f85149; }
     :host-context([data-theme="dark"]) .step-badge.high { background: rgba(243,156,18,0.15); color: #f0c040; }
     :host-context([data-theme="dark"]) .step-badge.medium { background: rgba(76,175,80,0.15); color: #56d364; }
-    :host-context([data-theme="dark"]) .stakeholders-section { background: linear-gradient(180deg, #161b22, #1c2128); }
-    :host-context([data-theme="dark"]) .section-title-stakeholders { color: #e6edf3; }
-    :host-context([data-theme="dark"]) .section-subtitle { color: #8b949e; }
-    :host-context([data-theme="dark"]) .stakeholder-card { background: #161b22; box-shadow: 0 4px 12px rgba(0,0,0,0.4); }
+    :host-context([data-theme="dark"]) .stakeholders-section { background: linear-gradient(180deg, #243447, #2a3d52); }
+    :host-context([data-theme="dark"]) .section-title-stakeholders { color: #e4eaf0; }
+    :host-context([data-theme="dark"]) .section-subtitle { color: #8899aa; }
+    :host-context([data-theme="dark"]) .stakeholder-card { background: #243447; box-shadow: 0 4px 12px rgba(0,0,0,0.4); }
     :host-context([data-theme="dark"]) .stakeholder-card:hover { box-shadow: 0 8px 24px rgba(0,0,0,0.55); }
-    :host-context([data-theme="dark"]) .stakeholder-info { background: #161b22; }
-    :host-context([data-theme="dark"]) .stakeholder-info h3 { color: #e6edf3; }
-    :host-context([data-theme="dark"]) .stakeholder-role { color: #58a6ff; }
+    :host-context([data-theme="dark"]) .stakeholder-info { background: #243447; }
+    :host-context([data-theme="dark"]) .stakeholder-info h3 { color: #e4eaf0; }
+    :host-context([data-theme="dark"]) .stakeholder-role { color: #4fc3f7; }
   `]
 })
 export class ReformsComponent implements AfterViewInit {

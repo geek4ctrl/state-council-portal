@@ -135,10 +135,10 @@ import { FooterComponent } from '../../components/footer/footer.component';
     }
 
     /* Dark Mode */
-    :host-context([data-theme="dark"]) .page-container { background: #0d1117; }
-    :host-context([data-theme="dark"]) .content-card { background: #161b22; border-color: #30363d; box-shadow: 0 16px 40px rgba(0,0,0,0.4); color: #e6edf3; }
-    :host-context([data-theme="dark"]) .content-card h2 { color: #e6edf3; }
-    :host-context([data-theme="dark"]) .content-card p { color: #8b949e; }
+    :host-context([data-theme="dark"]) .page-container { background: #1a2332; }
+    :host-context([data-theme="dark"]) .content-card { background: #243447; border-color: #2d4156; box-shadow: 0 16px 40px rgba(0,0,0,0.4); color: #e4eaf0; }
+    :host-context([data-theme="dark"]) .content-card h2 { color: #e4eaf0; }
+    :host-context([data-theme="dark"]) .content-card p { color: #8899aa; }
   `]
 })
 export class ProcessComponent {}
