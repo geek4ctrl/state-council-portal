@@ -1150,35 +1150,35 @@ import { FooterComponent } from '../../components/footer/footer.component';
       }
 
       /* ── Dark Mode ── */
-      :host-context([data-theme="dark"]) .page-container { background: #0d1117; }
-      :host-context([data-theme="dark"]) .news-section { background: #0d1117; }
-      :host-context([data-theme="dark"]) .section-header h2 { color: #e6edf3; }
-      :host-context([data-theme="dark"]) .section-subtitle { color: #8b949e; }
-      :host-context([data-theme="dark"]) .insights-header h3 { color: #e6edf3; }
-      :host-context([data-theme="dark"]) .insights-subtitle { color: #8b949e; }
-      :host-context([data-theme="dark"]) .insight-card { background: #161b22; border-color: rgba(240,246,252,0.1); box-shadow: 0 8px 24px rgba(0,0,0,0.4); }
-      :host-context([data-theme="dark"]) .insight-card-header h4 { color: #e6edf3; }
-      :host-context([data-theme="dark"]) .insight-note { color: #8b949e; }
-      :host-context([data-theme="dark"]) .news-card { background: #161b22; box-shadow: 0 2px 8px rgba(0,0,0,0.3); }
+      :host-context([data-theme="dark"]) .page-container { background: #1a2332; }
+      :host-context([data-theme="dark"]) .news-section { background: #1a2332; }
+      :host-context([data-theme="dark"]) .section-header h2 { color: #e4eaf0; }
+      :host-context([data-theme="dark"]) .section-subtitle { color: #8899aa; }
+      :host-context([data-theme="dark"]) .insights-header h3 { color: #e4eaf0; }
+      :host-context([data-theme="dark"]) .insights-subtitle { color: #8899aa; }
+      :host-context([data-theme="dark"]) .insight-card { background: #243447; border-color: rgba(240,246,252,0.1); box-shadow: 0 8px 24px rgba(0,0,0,0.4); }
+      :host-context([data-theme="dark"]) .insight-card-header h4 { color: #e4eaf0; }
+      :host-context([data-theme="dark"]) .insight-note { color: #8899aa; }
+      :host-context([data-theme="dark"]) .news-card { background: #243447; box-shadow: 0 2px 8px rgba(0,0,0,0.3); }
       :host-context([data-theme="dark"]) .news-card:hover { box-shadow: 0 8px 20px rgba(0,0,0,0.5); }
-      :host-context([data-theme="dark"]) .news-image { background: #1c2128; }
-      :host-context([data-theme="dark"]) .news-title { color: #e6edf3; }
-      :host-context([data-theme="dark"]) .news-excerpt { color: #8b949e; }
+      :host-context([data-theme="dark"]) .news-image { background: #2a3d52; }
+      :host-context([data-theme="dark"]) .news-title { color: #e4eaf0; }
+      :host-context([data-theme="dark"]) .news-excerpt { color: #8899aa; }
       :host-context([data-theme="dark"]) .news-meta { color: #6e7681; }
-      :host-context([data-theme="dark"]) .news-date { color: #8b949e; }
-      :host-context([data-theme="dark"]) .news-divider { color: #30363d; }
+      :host-context([data-theme="dark"]) .news-date { color: #8899aa; }
+      :host-context([data-theme="dark"]) .news-divider { color: #2d4156; }
       :host-context([data-theme="dark"]) .news-readtime { color: #6e7681; }
-      :host-context([data-theme="dark"]) .news-category { color: #8b949e; }
-      :host-context([data-theme="dark"]) .news-empty { background: #161b22; border-color: rgba(240,246,252,0.1); box-shadow: 0 8px 24px rgba(0,0,0,0.4); }
-      :host-context([data-theme="dark"]) .news-empty h3 { color: #e6edf3; }
-      :host-context([data-theme="dark"]) .news-empty p { color: #8b949e; }
-      :host-context([data-theme="dark"]) .read-more { color: #58a6ff !important; }
-      :host-context([data-theme="dark"]) .read-more:hover { color: #79c0ff !important; }
+      :host-context([data-theme="dark"]) .news-category { color: #8899aa; }
+      :host-context([data-theme="dark"]) .news-empty { background: #243447; border-color: rgba(240,246,252,0.1); box-shadow: 0 8px 24px rgba(0,0,0,0.4); }
+      :host-context([data-theme="dark"]) .news-empty h3 { color: #e4eaf0; }
+      :host-context([data-theme="dark"]) .news-empty p { color: #8899aa; }
+      :host-context([data-theme="dark"]) .read-more { color: #4fc3f7 !important; }
+      :host-context([data-theme="dark"]) .read-more:hover { color: #81d4fa !important; }
       :host-context([data-theme="dark"]) .pagination-btn,
-      :host-context([data-theme="dark"]) .pagination-number { border-color: #58a6ff !important; color: #58a6ff; }
-      :host-context([data-theme="dark"]) .pagination-number.active { background: #58a6ff; color: #0d1117; }
+      :host-context([data-theme="dark"]) .pagination-number { border-color: #4fc3f7 !important; color: #4fc3f7; }
+      :host-context([data-theme="dark"]) .pagination-number.active { background: #4fc3f7; color: #1a2332; }
       :host-context([data-theme="dark"]) .header-decoration-left,
-      :host-context([data-theme="dark"]) .header-decoration-right { background: linear-gradient(90deg, transparent, #58a6ff, transparent); }
+      :host-context([data-theme="dark"]) .header-decoration-right { background: linear-gradient(90deg, transparent, #4fc3f7, transparent); }
     `,
   ],
 })
@@ -1189,6 +1189,7 @@ export class NewsComponent implements OnInit, AfterViewInit {
   private readonly destroyRef = inject(DestroyRef);
   private chartInstances: Highcharts.Chart[] = [];
   private resizeObserver?: ResizeObserver;
+  private themeObserver?: MutationObserver;
   private readonly apiUrl = 'https://patient-wonder-production.up.railway.app/api/posts';
   private readonly fallbackImage =
     'https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=800&h=600&fit=crop';
@@ -1197,6 +1198,10 @@ export class NewsComponent implements OnInit, AfterViewInit {
       this.reflowCharts();
     }
   };
+
+  private isDarkMode(): boolean {
+    return document.documentElement.getAttribute('data-theme') === 'dark';
+  }
 
   @ViewChild('newsCategoryChart', { static: true })
   newsCategoryChart!: ElementRef<HTMLDivElement>;
@@ -1231,9 +1236,21 @@ export class NewsComponent implements OnInit, AfterViewInit {
   ngAfterViewInit() {
     this.renderNewsCharts();
     this.setupChartObservers([this.newsCategoryChart, this.newsCadenceChart]);
+
+    this.themeObserver = new MutationObserver(() => {
+      this.chartInstances.forEach((c) => c.destroy());
+      this.chartInstances = [];
+      this.renderNewsCharts();
+    });
+    this.themeObserver.observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ['data-theme'],
+    });
+
     this.destroyRef.onDestroy(() => {
       this.chartInstances.forEach((chart) => chart.destroy());
       this.chartInstances = [];
+      this.themeObserver?.disconnect();
       document.removeEventListener('visibilitychange', this.handleVisibilityChange);
       this.resizeObserver?.disconnect();
       this.resizeObserver = undefined;
@@ -1311,10 +1328,14 @@ export class NewsComponent implements OnInit, AfterViewInit {
   }
 
   private renderNewsCharts() {
+    const dark = this.isDarkMode();
     const axisLabelStyle = {
-      color: '#007FFF',
+      color: dark ? '#a0b0c0' : '#007FFF',
       fontSize: '11px',
     };
+    const gridLineColor = dark ? 'rgba(255,255,255,0.08)' : 'rgba(26, 41, 66, 0.08)';
+    const lineColor = dark ? 'rgba(255,255,255,0.12)' : 'rgba(26, 41, 66, 0.12)';
+    const legendColor = dark ? '#e4eaf0' : '#1a1a1a';
 
     const months = ['Sep', 'Oct', 'Nov', 'Dec', 'Jan', 'Feb'];
 
@@ -1330,24 +1351,24 @@ export class NewsComponent implements OnInit, AfterViewInit {
       legend: {
         align: 'center',
         verticalAlign: 'bottom',
-        itemStyle: { color: '#1a1a1a', fontWeight: '600' },
+        itemStyle: { color: legendColor, fontWeight: '600' },
       },
       xAxis: {
         categories: months,
         labels: { style: axisLabelStyle },
-        lineColor: 'rgba(26, 41, 66, 0.12)',
-        tickColor: 'rgba(26, 41, 66, 0.12)',
+        lineColor,
+        tickColor: lineColor,
       },
       yAxis: {
         title: { text: undefined },
         labels: { style: axisLabelStyle },
-        gridLineColor: 'rgba(26, 41, 66, 0.08)',
+        gridLineColor,
       },
       tooltip: {
         shared: true,
-        backgroundColor: '#1a1a1a',
+        backgroundColor: dark ? '#243447' : '#1a1a1a',
         style: { color: '#ffffff' },
-        borderColor: '#1a1a1a',
+        borderColor: dark ? '#2d4156' : '#1a1a1a',
       },
       plotOptions: {
         column: {
@@ -1360,7 +1381,7 @@ export class NewsComponent implements OnInit, AfterViewInit {
           type: 'column',
           name: 'Administration',
           data: [8, 10, 12, 9, 11, 13],
-          color: 'rgba(26, 41, 66, 0.75)',
+          color: dark ? 'rgba(79, 195, 247, 0.75)' : 'rgba(26, 41, 66, 0.75)',
         },
         {
           type: 'column',
@@ -1372,7 +1393,7 @@ export class NewsComponent implements OnInit, AfterViewInit {
           type: 'column',
           name: 'Events',
           data: [3, 4, 5, 4, 5, 6],
-          color: 'rgba(90, 113, 132, 0.75)',
+          color: dark ? 'rgba(160, 176, 192, 0.75)' : 'rgba(90, 113, 132, 0.75)',
         },
       ],
     };
@@ -1390,18 +1411,18 @@ export class NewsComponent implements OnInit, AfterViewInit {
       xAxis: {
         categories: months,
         labels: { style: axisLabelStyle },
-        lineColor: 'rgba(26, 41, 66, 0.12)',
-        tickColor: 'rgba(26, 41, 66, 0.12)',
+        lineColor,
+        tickColor: lineColor,
       },
       yAxis: {
         title: { text: undefined },
         labels: { style: axisLabelStyle },
-        gridLineColor: 'rgba(26, 41, 66, 0.08)',
+        gridLineColor,
       },
       tooltip: {
-        backgroundColor: '#1a1a1a',
+        backgroundColor: dark ? '#243447' : '#1a1a1a',
         style: { color: '#ffffff' },
-        borderColor: '#1a1a1a',
+        borderColor: dark ? '#2d4156' : '#1a1a1a',
       },
       series: [
         {

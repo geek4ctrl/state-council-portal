@@ -185,13 +185,13 @@ const ARTICLE_NUMBERS = [60, 61, 62, 63, 64, 65, 66, 67, 68] as const;
     }
 
     /* Dark Mode */
-    :host-context([data-theme="dark"]) .intro-section { background: #0d1117; }
-    :host-context([data-theme="dark"]) .intro-box { background: #161b22; border-left-color: #58a6ff; box-shadow: 0 4px 12px rgba(0,0,0,0.3); }
-    :host-context([data-theme="dark"]) .intro-subtitle { color: #8b949e; }
-    :host-context([data-theme="dark"]) .articles-section { background: #0d1117; }
-    :host-context([data-theme="dark"]) .article-card { background: #161b22; box-shadow: 0 2px 8px rgba(0,0,0,0.3); }
+    :host-context([data-theme="dark"]) .intro-section { background: #1a2332; }
+    :host-context([data-theme="dark"]) .intro-box { background: #243447; border-left-color: #4fc3f7; box-shadow: 0 4px 12px rgba(0,0,0,0.3); }
+    :host-context([data-theme="dark"]) .intro-subtitle { color: #8899aa; }
+    :host-context([data-theme="dark"]) .articles-section { background: #1a2332; }
+    :host-context([data-theme="dark"]) .article-card { background: #243447; box-shadow: 0 2px 8px rgba(0,0,0,0.3); }
     :host-context([data-theme="dark"]) .article-card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.5); }
-    :host-context([data-theme="dark"]) .article-text { color: #8b949e; }
+    :host-context([data-theme="dark"]) .article-text { color: #8899aa; }
   `]
 })
 export class AdministrativeCourtsComponent {

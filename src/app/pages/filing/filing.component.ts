@@ -338,21 +338,21 @@ import { FooterComponent } from '../../components/footer/footer.component';
     }
 
     /* Dark Mode */
-    :host-context([data-theme="dark"]) .page-container { background: #0d1117; }
-    :host-context([data-theme="dark"]) .tabs-section { background: #161b22; border-bottom-color: #21262d; }
-    :host-context([data-theme="dark"]) .tab { color: #8b949e; }
-    :host-context([data-theme="dark"]) .tab:hover { color: #e6edf3; background: #1c2128; }
-    :host-context([data-theme="dark"]) .tab.active { color: #e6edf3; }
-    :host-context([data-theme="dark"]) .form-section { background: #0d1117; }
-    :host-context([data-theme="dark"]) .form-header h2 { color: #e6edf3; }
+    :host-context([data-theme="dark"]) .page-container { background: #1a2332; }
+    :host-context([data-theme="dark"]) .tabs-section { background: #243447; border-bottom-color: #2d4156; }
+    :host-context([data-theme="dark"]) .tab { color: #8899aa; }
+    :host-context([data-theme="dark"]) .tab:hover { color: #e4eaf0; background: #2a3d52; }
+    :host-context([data-theme="dark"]) .tab.active { color: #e4eaf0; }
+    :host-context([data-theme="dark"]) .form-section { background: #1a2332; }
+    :host-context([data-theme="dark"]) .form-header h2 { color: #e4eaf0; }
     :host-context([data-theme="dark"]) .form-group input,
     :host-context([data-theme="dark"]) .form-group select,
-    :host-context([data-theme="dark"]) .form-group textarea { background: #161b22; border-color: #30363d; color: #e6edf3; }
+    :host-context([data-theme="dark"]) .form-group textarea { background: #243447; border-color: #2d4156; color: #e4eaf0; }
     :host-context([data-theme="dark"]) .form-group input::placeholder,
-    :host-context([data-theme="dark"]) .form-group textarea::placeholder { color: #484f58; }
-    :host-context([data-theme="dark"]) .form-group select { color: #8b949e; }
-    :host-context([data-theme="dark"]) .form-submit button { background: #161b22; color: #e6edf3; border-color: #30363d; }
-    :host-context([data-theme="dark"]) .form-submit button:hover { background: #58a6ff; color: #0d1117; border-color: #58a6ff; }
+    :host-context([data-theme="dark"]) .form-group textarea::placeholder { color: #a0b0c0; }
+    :host-context([data-theme="dark"]) .form-group select { color: #a0b0c0; }
+    :host-context([data-theme="dark"]) .form-submit button { background: #243447; color: #e4eaf0; border-color: #2d4156; }
+    :host-context([data-theme="dark"]) .form-submit button:hover { background: #4fc3f7; color: #1a2332; border-color: #4fc3f7; }
   `]
 })
 export class FilingComponent implements OnInit {
