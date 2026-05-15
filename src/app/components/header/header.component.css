@@ -178,7 +178,9 @@
 }
 
 .lang-dropdown-item {
-  display: block;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
   width: 100%;
   padding: 0.5rem 1rem;
   border: none;
@@ -189,6 +191,11 @@
   text-align: left;
   cursor: pointer;
   transition: background-color 0.2s, color 0.2s;
+}
+
+.lang-flag {
+  font-size: 1.1rem;
+  line-height: 1;
 }
 
 .lang-dropdown-item:hover {
@@ -926,14 +933,14 @@
   }
 
   .lang-dropdown-btn {
-    padding: 0.2rem 0.45rem;
+    padding: 0.25rem 0.9rem;
     font-size: 0.7rem;
     border-color: rgba(26, 41, 66, 0.1);
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.85);
   }
 
   .lang-dropdown-label {
-    max-width: 60px;
+    max-width: 120px;
     overflow: hidden;
     text-overflow: ellipsis;
   }

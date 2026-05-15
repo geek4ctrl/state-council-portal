@@ -90,7 +90,7 @@
                       class="lang-dropdown-item"
                       [class.active]="activeLang() === lang.code"
                       (click)="setLanguage(lang.code)">
-                      {{ lang.label }}
+                      <span class="lang-flag">{{ lang.flag }}</span> {{ lang.label }}
                     </button>
                   </li>
                 }
