@@ -58,17 +58,17 @@ export class HeaderComponent implements AfterViewInit {
   @ViewChild('navMenu') navMenu!: ElementRef<HTMLUListElement>;
   @ViewChild('searchInput') searchInput?: ElementRef<HTMLInputElement>;
 
-  readonly languages: { code: LanguageCode; label: string }[] = [
-    { code: 'en', label: 'Anglais' },
-    { code: 'fr', label: 'Francais' },
-    { code: 'de', label: 'Allemand' },
-    { code: 'it', label: 'Italien' },
-    { code: 'es', label: 'Espagnol' },
-    { code: 'pt', label: 'Portugais' },
-    { code: 'sw', label: 'Swahili' },
-    { code: 'ln', label: 'Lingala' },
-    { code: 'ts', label: 'Tshiluba' },
-    { code: 'kg', label: 'Kikongo' }
+  readonly languages: { code: LanguageCode; label: string; flag: string }[] = [
+    { code: 'en', label: 'Anglais', flag: '🇬🇧' },
+    { code: 'fr', label: 'Francais', flag: '🇫🇷' },
+    { code: 'de', label: 'Allemand', flag: '🇩🇪' },
+    { code: 'it', label: 'Italien', flag: '🇮🇹' },
+    { code: 'es', label: 'Espagnol', flag: '🇪🇸' },
+    { code: 'pt', label: 'Portugais', flag: '🇵🇹' },
+    { code: 'sw', label: 'Swahili', flag: '🇹🇿' },
+    { code: 'ln', label: 'Lingala', flag: '🇨🇩' },
+    { code: 'ts', label: 'Tshiluba', flag: '🇨🇩' },
+    { code: 'kg', label: 'Kikongo', flag: '🇨🇩' }
   ];
 
   private readonly i18n = inject(I18nService);

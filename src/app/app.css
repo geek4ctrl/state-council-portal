@@ -210,3 +210,28 @@
     transition: none;
   }
 }
+
+/* Dark mode for mobile nav */
+:host-context([data-theme="dark"]) .mobile-nav {
+  background: #1a2332;
+  border-color: #2d4156;
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.4);
+}
+
+:host-context([data-theme="dark"]) .mobile-nav-item {
+  color: #8899aa;
+}
+
+:host-context([data-theme="dark"]) .mobile-nav-icon {
+  background: #243447;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+}
+
+:host-context([data-theme="dark"]) .mobile-nav-item.active {
+  color: #4fc3f7;
+}
+
+:host-context([data-theme="dark"]) .mobile-nav-item.active .mobile-nav-icon {
+  background: #2a3d52;
+  box-shadow: 0 6px 14px rgba(79, 195, 247, 0.15);
+}
