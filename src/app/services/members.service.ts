@@ -208,7 +208,7 @@ export class MemberService {
         titleKey: 'member.title.advisor',
       title: 'Advisor',
       email: 'cakwangasha@conseildetatrdc.com',
-      image: 'https://res.cloudinary.com/dhqvb8wbn/image/upload/v1775670049/vecteezy_user-profile-vector-flat-illustration-avatar-person-icon_37336395_ukit5u.jpg',
+      image: 'https://res.cloudinary.com/dhqvb8wbn/image/upload/v1779959017/CONS._CAKWANGASHA_KABWENGA.jpg_r6fvfy.jpg',
       role: 'advisor',
       slug: 'cakwangasha-kabwenga-jean-pierre',
         officeKey: 'member.office.stateCouncil',
