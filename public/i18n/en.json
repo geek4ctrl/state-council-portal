@@ -1168,7 +1168,7 @@
         "title": "Assignment to a rapporteur",
         "p1": "The rapporteur is designated by the head of the jurisdiction from among the magistrates of the advisory section.",
         "p2": "The rapporteur proceeds, within a maximum period of ten days, to carry out the duties prescribed in article 124 of the organic law, under the direct supervision of the Section President.",
-        "p3": "Upon completion of the mission, the rapporteur submits the file, consisting of the report proper and, where applicable, the draft supplementary text, to the First President of the State Council who sets the date on which the case will be examined.",
+        "p3": "Upon completion of the mission, the rapporteur submits the file, consisting of the report proper, the legal note and, where applicable, the draft supplementary text, to the First President of the State Council who sets the date on which the case will be examined.",
         "p4": "This date is notified by the clerk to the Public Prosecutor's Office and to the requesting authority."
       },
       "examination": {
@@ -1176,13 +1176,13 @@
         "p1": "The file is examined by the magistrates of the advisory section and the Prosecutor's Office attached to the court seized, meeting in joint assembly. The reasoned opinion is given by a majority of the magistrates present at the session.",
         "p2": "Debates in joint assembly proceed as follows:",
         "list1": "at the call of the case, the Section President reads the petition;",
-        "list2": "the floor is given to the rapporteur, who reads the report and the supplementary text of the draft or proposal to be examined;",
+        "list2": "the floor is given to the rapporteur, who reads the report, the legal note and the supplementary text of the draft or proposal to be examined;",
         "list3": "the floor is then given first to the requesting party and, finally, to the other members of the assembly;",
         "list4": "the clerk draws up the minutes of the session."
       },
       "opinion": {
         "title": "The opinion",
-        "p1": "The content of the reasoned opinion of the advisory section consists of the final result obtained at the conclusion of the debates and recorded in the minutes referred to in article 127, paragraph 2, point 4 of this organic law.",
+        "p1": "The content of the reasoned opinion of the advisory section consists of the final result obtained at the conclusion of the debates and recorded in the minutes referred to in article 127, paragraph 2, point 4 of the organic law.",
         "p2": "It is drafted and signed by the head of the jurisdiction, the President of the advisory section, the head of the office, and by the clerk of the session."
       }
     },
@@ -1197,7 +1197,7 @@
       },
       "preliminary": {
         "title": "Preliminary examination",
-        "p1": "Upon filing of the petition, the clerk transmits the file to the head of the jurisdiction. If the appeal is manifestly inadmissible, or if the case does not obviously fall within the jurisdiction's competence, the head of the jurisdiction refers the file to the chamber for examination before setting the date on which the case will be called. Notification of this date is made to the applicant and to the Public Prosecutor. Otherwise, the appeal follows its normal course in accordance with the provisions of this organic law."
+        "p1": "Upon filing of the petition, the clerk transmits the file to the head of the jurisdiction. If the appeal is manifestly inadmissible, or if the case does not obviously fall within the jurisdiction's competence, the head of the jurisdiction refers the file to the chamber for examination before setting the date on which the case will be called. Notification of this date is made to the applicant and to the Public Prosecutor. Otherwise, the appeal follows its normal course in accordance with the provisions of the organic law."
       },
       "instruction": {
         "title": "Investigation of the case",

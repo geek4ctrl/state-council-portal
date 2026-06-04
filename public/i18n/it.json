@@ -1172,7 +1172,7 @@
         "title": "Assegnazione a un relatore",
         "p1": "Il relatore è designato dal capo della giurisdizione tra i magistrati della sezione consultiva.",
         "p2": "Il relatore procede, entro un termine massimo di dieci giorni, agli adempimenti prescritti dall'articolo 124 della legge organica, sotto la supervisione diretta del Presidente di sezione.",
-        "p3": "Al termine della sua missione, il relatore deposita il fascicolo, composto dalla relazione vera e propria e, eventualmente, dal progetto di testo suppletivo, presso il Primo Presidente del Consiglio di Stato che fissa la data in cui la causa sarà esaminata.",
+        "p3": "Al termine della sua missione, il relatore deposita il fascicolo, composto dalla relazione vera e propria, dalla nota giuridica e, eventualmente, dal progetto di testo suppletivo, presso il Primo Presidente del Consiglio di Stato che fissa la data in cui la causa sarà esaminata.",
         "p4": "Tale data è notificata a cura del cancelliere al Ministero pubblico e all'autorità richiedente."
       },
       "examination": {
@@ -1180,13 +1180,13 @@
         "p1": "Il fascicolo è esaminato dai magistrati della sezione consultiva e della Procura presso la giurisdizione adita, riuniti in assemblea mista. Il parere motivato è dato a maggioranza dei magistrati presenti alla seduta.",
         "p2": "I dibattiti in assemblea mista si svolgono nel seguente modo:",
         "list1": "all'appello della causa, il Presidente della sezione dà lettura della richiesta;",
-        "list2": "la parola viene data al relatore che legge la relazione e il testo suppletivo del progetto o della proposta da esaminare;",
+        "list2": "la parola viene data al relatore che legge la relazione, la nota giuridica e il testo suppletivo del progetto o della proposta da esaminare;",
         "list3": "la parola viene poi data prima alla parte richiedente e infine agli altri membri dell'assemblea;",
         "list4": "il cancelliere redige il verbale della seduta."
       },
       "opinion": {
         "title": "Il parere",
-        "p1": "Il contenuto del parere motivato della sezione consultiva è costituito dal risultato finale ottenuto al termine dei dibattiti e consegnato nel verbale di cui all'articolo 127 comma 2, punto 4 della presente legge organica.",
+        "p1": "Il contenuto del parere motivato della sezione consultiva è costituito dal risultato finale ottenuto al termine dei dibattiti e consegnato nel verbale di cui all'articolo 127 comma 2, punto 4 della legge organica.",
         "p2": "È redatto e firmato dal capo della giurisdizione, dal Presidente della sezione consultiva, dal capo dell'ufficio e dal cancelliere della seduta."
       }
     },
@@ -1201,7 +1201,7 @@
       },
       "preliminary": {
         "title": "L'esame preliminare",
-        "p1": "Dal deposito della richiesta, il cancelliere trasmette il fascicolo al capo della giurisdizione. Se il ricorso è manifestamente inammissibile o se la causa non rientra evidentemente nella competenza della giurisdizione, il capo trasmette il fascicolo alla camera per esame prima di fissare la data dell'udienza. Tale data è notificata al richiedente e al Ministero pubblico. In caso contrario, il ricorso segue il suo corso normale conforme alle disposizioni della presente legge organica."
+        "p1": "Dal deposito della richiesta, il cancelliere trasmette il fascicolo al capo della giurisdizione. Se il ricorso è manifestamente inammissibile o se la causa non rientra evidentemente nella competenza della giurisdizione, il capo trasmette il fascicolo alla camera per esame prima di fissare la data dell'udienza. Tale data è notificata al richiedente e al Ministero pubblico. In caso contrario, il ricorso segue il suo corso normale conforme alle disposizioni della legge organica."
       },
       "instruction": {
         "title": "Istruzione della causa",
