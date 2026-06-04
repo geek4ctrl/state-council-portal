@@ -1157,5 +1157,92 @@
     "download": "Scarica",
     "officialGazette": "Gazzetta Ufficiale",
     "heroBody": "Consulta e scarica le pubblicazioni ufficiali del Consiglio di Stato."
+  },
+  "proceduresPage": {
+    "title": "Procedure davanti al Consiglio di Stato",
+    "intro": "Il Consiglio di Stato è composto da due grandi sezioni con missioni distinte: la sezione consultiva e la sezione contenziosa. Ciascuna segue le proprie procedure.",
+    "s1": {
+      "title": "I. Regole generali di procedura in materia consultiva",
+      "filing": {
+        "title": "Deposito della richiesta",
+        "p1": "Le richieste di pareri motivati e quelle relative a difficoltà di interpretazione dei testi giuridici sono depositate presso la cancelleria del Consiglio di Stato.",
+        "p2": "Al ricevimento, la richiesta viene registrata dal cancelliere e comunicata senza indugio al Primo Presidente del Consiglio di Stato ai fini della designazione di un relatore a cui il cancelliere consegnerà il fascicolo."
+      },
+      "rapporteur": {
+        "title": "Assegnazione a un relatore",
+        "p1": "Il relatore è designato dal capo della giurisdizione tra i magistrati della sezione consultiva.",
+        "p2": "Il relatore procede, entro un termine massimo di dieci giorni, agli adempimenti prescritti dall'articolo 124 della legge organica, sotto la supervisione diretta del Presidente di sezione.",
+        "p3": "Al termine della sua missione, il relatore deposita il fascicolo, composto dalla relazione vera e propria e, eventualmente, dal progetto di testo suppletivo, presso il Primo Presidente del Consiglio di Stato che fissa la data in cui la causa sarà esaminata.",
+        "p4": "Tale data è notificata a cura del cancelliere al Ministero pubblico e all'autorità richiedente."
+      },
+      "examination": {
+        "title": "Esame del fascicolo",
+        "p1": "Il fascicolo è esaminato dai magistrati della sezione consultiva e della Procura presso la giurisdizione adita, riuniti in assemblea mista. Il parere motivato è dato a maggioranza dei magistrati presenti alla seduta.",
+        "p2": "I dibattiti in assemblea mista si svolgono nel seguente modo:",
+        "list1": "all'appello della causa, il Presidente della sezione dà lettura della richiesta;",
+        "list2": "la parola viene data al relatore che legge la relazione e il testo suppletivo del progetto o della proposta da esaminare;",
+        "list3": "la parola viene poi data prima alla parte richiedente e infine agli altri membri dell'assemblea;",
+        "list4": "il cancelliere redige il verbale della seduta."
+      },
+      "opinion": {
+        "title": "Il parere",
+        "p1": "Il contenuto del parere motivato della sezione consultiva è costituito dal risultato finale ottenuto al termine dei dibattiti e consegnato nel verbale di cui all'articolo 127 comma 2, punto 4 della presente legge organica.",
+        "p2": "È redatto e firmato dal capo della giurisdizione, dal Presidente della sezione consultiva, dal capo dell'ufficio e dal cancelliere della seduta."
+      }
+    },
+    "s2": {
+      "title": "II. Regole generali di procedura in materia contenziosa",
+      "filing": {
+        "title": "Deposito della richiesta o della requisitoria",
+        "p1": "Le richieste delle parti o le requisitorie del pubblico ministero, sia in materia di annullamento di atti amministrativi che di ricorsi in cassazione, nonché in certi casi in materia di appello e revisione, sono depositate presso la cancelleria del Consiglio di Stato con i relativi documenti conformemente agli articoli 143-149 della legge organica del 15 ottobre 2016.",
+        "p2": "Il ricorrente è tenuto a depositare la richiesta nel rigoroso rispetto del termine fissato dalla legge per l'adizione della giurisdizione.",
+        "p3": "Tuttavia, i termini di trattamento del ricorso contenzioso decorrono solo dalla ricezione del fascicolo presso la cancelleria.",
+        "p4": "Il cancelliere procede all'iscrizione a ruolo del fascicolo e alla notificazione della richiesta conformemente agli articoli 143-149 della legge organica n° 16/027 del 15 ottobre 2016."
+      },
+      "preliminary": {
+        "title": "L'esame preliminare",
+        "p1": "Dal deposito della richiesta, il cancelliere trasmette il fascicolo al capo della giurisdizione. Se il ricorso è manifestamente inammissibile o se la causa non rientra evidentemente nella competenza della giurisdizione, il capo trasmette il fascicolo alla camera per esame prima di fissare la data dell'udienza. Tale data è notificata al richiedente e al Ministero pubblico. In caso contrario, il ricorso segue il suo corso normale conforme alle disposizioni della presente legge organica."
+      },
+      "instruction": {
+        "title": "Istruzione della causa",
+        "p1": "In procedura ordinaria, il relatore adempie con celerità ai doveri prescritti, restando salvi tutti i termini prescritti per l'istruzione della causa.",
+        "p2": "Esercita le sue prerogative sotto la direzione e l'autorità del Primo Presidente del Consiglio di Stato. Gli atti che compie e le relazioni che sviluppa con le parti o i terzi, compresa la corrispondenza, sono posti sotto la copertura del Primo Presidente del Consiglio di Stato.",
+        "p3": "In caso di procedimento d'urgenza, il Presidente della sezione contenziosa o il magistrato designato procede direttamente e senza indugio all'esame del ricorso d'urgenza conformemente agli articoli 278 e seguenti della legge organica sulle giurisdizioni amministrative.",
+        "p4": "Il Presidente della sezione contenziosa distribuisce i fascicoli affidatigli dal Primo Presidente tra le camere, e anche in materia d'urgenza al giudice. Sottopone alla firma del Primo Presidente le proposte di composizione di ciascuna camera. Predispone il turno di programmazione delle udienze.",
+        "p5": "Conformemente ai commi 2 e 3 dell'articolo 279 della legge organica del 15 ottobre 2016, può essere designato con ordinanza del Primo Presidente come giudice d'urgenza per le controversie sottoposte al Consiglio di Stato.",
+        "p6": "Può anch'egli designare giudice d'urgenza con sua ordinanza, sentito il Primo Presidente del Consiglio di Stato, i Presidenti e anche i Consiglieri della sua sezione.",
+        "p7": "Tuttavia, nessuno può essere designato per delega come giudice d'urgenza ai sensi del comma 2 dell'articolo 279 della legge organica del 15 ottobre 2016, se non ha il grado di presidente o, in caso di assenza o impedimento, di consigliere con almeno tre anni di anzianità nel grado.",
+        "p8": "Sulla base del turno, il Primo Presidente del Consiglio di Stato fissa con sua ordinanza la data e l'ora in cui il fascicolo sarà chiamato in udienza."
+      },
+      "hearing": {
+        "title": "L'udienza",
+        "p1": "Le udienze della sezione contenziosa sono pubbliche, a meno che tale pubblicità sia ritenuta pericolosa per l'ordine pubblico o il buon costume.",
+        "p2": "In tal caso, la composizione ordina il procedimento a porte chiuse con decisione motivata.",
+        "p3": "I dibattiti si svolgono nel seguente modo:",
+        "list1": "Il ricorrente espone i propri argomenti;",
+        "list2": "La parte avversa presenta le proprie osservazioni;",
+        "list3": "Il Ministero pubblico esprime il proprio parere;",
+        "list4": "La giurisdizione chiude i dibattiti e prende la causa in deliberazione;",
+        "p4": "Il cancelliere d'udienza redige il verbale dell'udienza."
+      },
+      "judgment": {
+        "title": "La sentenza o l'ordinanza",
+        "p1": "Prima della pronuncia, la composizione che ha deliberato sottopone il fascicolo al Primo Presidente del Consiglio di Stato per proposta di eventuali correzioni.",
+        "p2": "Il Primo Presidente del Consiglio di Stato può, per ragioni evidenti, invitare il Presidente di sezione e anche direttamente il presidente di camera o il giudice autore del progetto di decisione a consultazione, anche in materia d'urgenza.",
+        "p3": "In caso di disaccordo, il fascicolo può essere sottoposto dal Primo Presidente alla conferenza dei Presidenti. In caso di persistenza del disaccordo, il Primo Presidente può sottoporre il fascicolo alla plenaria.",
+        "p4": "La decisione sarà pronunciata solo dopo aver ottenuto proposta di correzioni dal Primo Presidente del Consiglio di Stato. L'originale della sentenza o dell'ordinanza è firmato da tutti i membri della composizione. L'ordinanza in materia d'urgenza è firmata dal solo giudice unico.",
+        "p5": "Dopo la pronuncia, l'originale della decisione è consegnato al cancelliere per essere inserito nel fascicolo.",
+        "p6": "Prima di qualsiasi notificazione, la sentenza o l'ordinanza è munita della formula esecutiva di cui all'articolo 250 comma 2 della legge organica.",
+        "p7": "La formula esecutiva porta il sigillo e la firma del cancelliere capo.",
+        "p8": "In certi casi e per certe materie preventivamente determinate tramite note di servizio, il Cancelliere capo ottiene preventivamente il parere di non obiezione del Primo Presidente del Consiglio di Stato prima di qualsiasi notificazione."
+      }
+    },
+    "footnotes": {
+      "f1": "Vedi legge organica n°16/027 del 15 ottobre 2016, articolo 129.",
+      "f2": "Vedi legge organica n°16/027 del 15 ottobre 2016, articolo 177.",
+      "f3": "Vedi ordinanza n°19/001 del 10 gennaio 2019, articoli 46 e 47.",
+      "f4": "Vedi legge organica n°16/027 del 15 ottobre 2016, articoli 232 e 233.",
+      "f5": "Vedi ordinanza n°19/001 del 10 gennaio 2019, articoli da 50 a 53."
+    }
   }
 }

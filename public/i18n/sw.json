@@ -1157,5 +1157,92 @@
     "download": "Pakua",
     "officialGazette": "Gazeti la Serikali",
     "heroBody": "Tazama na pakua machapisho rasmi ya Baraza la Nchi."
+  },
+  "proceduresPage": {
+    "title": "Taratibu mbele ya Baraza la Nchi",
+    "intro": "Baraza la Nchi linajumuisha sehemu mbili kuu zenye majukumu tofauti: sehemu ya ushauri na sehemu ya migogoro. Kila moja inafuata taratibu zake.",
+    "s1": {
+      "title": "I. Kanuni za jumla za utaratibu katika masuala ya ushauri",
+      "filing": {
+        "title": "Kuwasilisha ombi",
+        "p1": "Maombi ya maoni yenye sababu pamoja na yale yanayohusu ugumu wa kutafsiri maandishi ya kisheria yanawasilishwa kwa katibu wa Baraza la Nchi.",
+        "p2": "Baada ya kupokea, ombi linasajiliwa na katibu na kuwasilishwa mara moja kwa Rais wa Kwanza wa Baraza la Nchi kwa ajili ya kumteua mwandishi ambaye katibu atamkabidhi jalada."
+      },
+      "rapporteur": {
+        "title": "Kumteua mwandishi",
+        "p1": "Mwandishi anateuliwa na mkuu wa mahakama miongoni mwa majaji wa sehemu ya ushauri.",
+        "p2": "Mwandishi anatekeleza, ndani ya siku kumi za juu, majukumu yaliyoainishwa katika kifungu cha 124 cha sheria ya msingi, chini ya usimamizi wa moja kwa moja wa Rais wa sehemu.",
+        "p3": "Baada ya kukamilisha kazi yake, mwandishi anawasilisha jalada lake, linalojumuisha ripoti yenyewe na, inapofaa, rasimu ya maandishi ya ziada, kwa Rais wa Kwanza wa Baraza la Nchi ambaye anaweka tarehe ambayo shauri litachunguzwa.",
+        "p4": "Tarehe hii inatangazwa na katibu kwa Mwendesha Mashtaka na mamlaka inayoomba."
+      },
+      "examination": {
+        "title": "Uchunguzi wa jalada",
+        "p1": "Jalada linachunguzwa na majaji wa sehemu ya ushauri na wa Ofisi ya Mwendesha Mashtaka katika mahakama iliyoombwa, wakiwa wamekutana katika mkutano wa pamoja. Maoni yenye sababu yanatolewa kwa wingi wa majaji waliopo.",
+        "p2": "Mijadala katika mkutano wa pamoja inafanyika kama ifuatavyo:",
+        "list1": "kwa wito wa shauri, Rais wa sehemu anasoma ombi;",
+        "list2": "neno linatolewa kwa mwandishi ambaye anasoma ripoti na maandishi ya ziada ya rasimu au pendekezo la kuchunguzwa;",
+        "list3": "neno linatolewa kwanza kwa upande unaoomba na hatimaye kwa wanachama wengine wa mkutano;",
+        "list4": "katibu anaandika kumbukumbu za kikao."
+      },
+      "opinion": {
+        "title": "Maoni",
+        "p1": "Maudhui ya maoni yenye sababu ya sehemu ya ushauri yanajumuisha matokeo ya mwisho yaliyopatikana mwishoni mwa mijadala na kuandikwa katika kumbukumbu zilizorejelewa katika kifungu cha 127 aya ya 2, sehemu ya 4 ya sheria hii ya msingi.",
+        "p2": "Yanaandikwa na kusainiwa na mkuu wa mahakama, Rais wa sehemu ya ushauri, mkuu wa ofisi, na katibu wa kikao."
+      }
+    },
+    "s2": {
+      "title": "II. Kanuni za jumla za utaratibu katika masuala ya migogoro",
+      "filing": {
+        "title": "Kuwasilisha ombi au hati ya mashtaka",
+        "p1": "Maombi ya wahusika au maombi ya mwendesha mashtaka, katika masuala ya kubatilisha vitendo vya utawala au rufaa za ukasasi, pamoja na katika hali fulani za rufaa na marekebisho, yanawasilishwa kwa katibu wa Baraza la Nchi pamoja na nyaraka zake kwa mujibu wa vifungu 143 hadi 149 vya sheria ya msingi ya 15 Oktoba 2016.",
+        "p2": "Mwombaji anapaswa kuwasilisha ombi lake kwa kufuata kwa ukamilifu muda uliowekwa na sheria kwa mamlaka ya mahakama.",
+        "p3": "Hata hivyo, muda wa kushughulikia rufaa ya migogoro huanza tu tangu kupokea jalada katika ofisi ya katibu.",
+        "p4": "Katibu anatekeleza usajili wa jalada na utangazaji wa ombi kwa mujibu wa vifungu 143 hadi 149 vya sheria ya msingi namba 16/027 ya 15 Oktoba 2016."
+      },
+      "preliminary": {
+        "title": "Uchunguzi wa awali",
+        "p1": "Tangu kuwasilishwa kwa ombi, katibu anapeleka jalada kwa mkuu wa mahakama. Ikiwa rufaa ni dhahiri haikubaliki, au ikiwa shauri haliko wazi katika mamlaka ya mahakama, mkuu anapeleka jalada kwa chumba kwa uchunguzi kabla ya kuweka tarehe ya kusikilizwa. Tarehe hii inatangazwa kwa mwombaji na Mwendesha Mashtaka. Vinginevyo, rufaa inafuata mwendo wake wa kawaida kwa mujibu wa masharti ya sheria hii ya msingi."
+      },
+      "instruction": {
+        "title": "Uchunguzi wa shauri",
+        "p1": "Katika utaratibu wa kawaida, mwandishi anatekeleza majukumu yaliyoainishwa kwa haraka, muda wote ulioainishwa kwa uchunguzi wa shauri ukihifadhiwa.",
+        "p2": "Anatekeleza mamlaka yake chini ya uongozi na mamlaka ya Rais wa Kwanza wa Baraza la Nchi. Vitendo anavyofanya na uhusiano anaoendeleza na wahusika au watu wa tatu, ikiwa ni pamoja na barua, vinafanywa chini ya ulinzi wa Rais wa Kwanza wa Baraza la Nchi.",
+        "p3": "Katika kesi ya dharura, Rais wa sehemu ya migogoro au jaji aliyeteuliwa anatekeleza moja kwa moja na bila kuchelewa uchunguzi wa rufaa ya dharura kwa mujibu wa vifungu 278 na vinavyofuata vya sheria ya msingi ya mahakama za utawala.",
+        "p4": "Rais wa sehemu ya migogoro anagawa jalada zilizokabidhiwa na Rais wa Kwanza kati ya vyumba, na hata katika masuala ya dharura kwa jaji. Anawasilisha kwa sahihi ya Rais wa Kwanza mapendekezo ya muundo wa kila chumba. Anaandaa ratiba ya kusikilizwa.",
+        "p5": "Kwa mujibu wa aya 2 na 3 za kifungu 279 cha sheria ya msingi ya 15 Oktoba 2016, anaweza kuteuliwa kwa amri ya Rais wa Kwanza kama jaji wa dharura kwa migogoro iliyowasilishwa kwa Baraza la Nchi.",
+        "p6": "Anaweza pia mwenyewe kuteua jaji wa dharura kwa amri yake, baada ya kusikia Rais wa Kwanza wa Baraza la Nchi, Marais na hata Washauri wa sehemu yake.",
+        "p7": "Hata hivyo, hakuna mtu anayeweza kuteuliwa kwa ujumbe kama jaji wa dharura kwa mujibu wa aya 2 ya kifungu 279 cha sheria ya msingi ya 15 Oktoba 2016, ikiwa hana daraja la rais au, katika hali ya kutokuwepo au kuzuiwa, mshauri mwenye angalau miaka mitatu ya uzoefu katika daraja.",
+        "p8": "Kwa msingi wa ratiba, Rais wa Kwanza wa Baraza la Nchi anaweka kwa amri yake tarehe na saa ambayo jalada litaitwa kwa kusikilizwa."
+      },
+      "hearing": {
+        "title": "Kusikilizwa",
+        "p1": "Vikao vya sehemu ya migogoro ni vya umma, isipokuwa kama utangazaji huu unaonekana hatari kwa amani ya umma au maadili.",
+        "p2": "Katika hali hiyo, muundo unaamuru vikao vya faragha kwa uamuzi wenye sababu.",
+        "p3": "Mijadala inafanyika kama ifuatavyo:",
+        "list1": "Mwombaji anawasilisha hoja zake;",
+        "list2": "Upande wa pili unawasilisha maoni yake;",
+        "list3": "Mwendesha Mashtaka anatoa maoni yake;",
+        "list4": "Mahakama inafunga mijadala na kuchukua shauri katika mashauriano;",
+        "p4": "Katibu wa kiti anaandika kumbukumbu za kusikilizwa."
+      },
+      "judgment": {
+        "title": "Hukumu au amri",
+        "p1": "Kabla ya kutangazwa, muundo ulioshauriana unawasilisha jalada kwa Rais wa Kwanza wa Baraza la Nchi kwa mapendekezo ya marekebisho.",
+        "p2": "Rais wa Kwanza wa Baraza la Nchi anaweza, kwa sababu dhahiri, kumwalika Rais wa sehemu na hata moja kwa moja rais wa chumba au jaji mwandishi wa rasimu ya uamuzi kwa mashauriano, hata katika masuala ya dharura.",
+        "p3": "Katika hali ya kutokukubaliana, jalada linaweza kuwasilishwa na Rais wa Kwanza kwa mkutano wa Marais. Katika hali ya kutokukubaliana kuendelea, Rais wa Kwanza anaweza kuwasilisha jalada kwa mkutano mkuu.",
+        "p4": "Uamuzi utatolewa tu baada ya kupata mapendekezo ya marekebisho kutoka kwa Rais wa Kwanza wa Baraza la Nchi. Nakala ya awali ya hukumu au amri inasainiwa na wanachama wote wa muundo. Amri katika masuala ya dharura inasainiwa na jaji pekee.",
+        "p5": "Baada ya kutangazwa, nakala ya awali ya uamuzi inatolewa kwa katibu kuingizwa katika jalada.",
+        "p6": "Kabla ya taarifa yoyote, hukumu au amri inawekwa formula ya utekelezaji iliyorejelewa katika kifungu 250 aya ya 2 ya sheria ya msingi.",
+        "p7": "Formula ya utekelezaji ina muhuri na sahihi ya katibu mkuu.",
+        "p8": "Katika hali fulani na kwa masuala fulani yaliyoamuliwa mapema kwa maelezo ya huduma, Katibu Mkuu anapata kwanza maoni ya kutopinga kutoka kwa Rais wa Kwanza wa Baraza la Nchi kabla ya taarifa yoyote."
+      }
+    },
+    "footnotes": {
+      "f1": "Tazama sheria ya msingi namba 16/027 ya 15 Oktoba 2016, kifungu 129.",
+      "f2": "Tazama sheria ya msingi namba 16/027 ya 15 Oktoba 2016, kifungu 177.",
+      "f3": "Tazama amri namba 19/001 ya 10 Januari 2019, vifungu 46 na 47.",
+      "f4": "Tazama sheria ya msingi namba 16/027 ya 15 Oktoba 2016, vifungu 232 na 233.",
+      "f5": "Tazama amri namba 19/001 ya 10 Januari 2019, vifungu 50 hadi 53."
+    }
   }
 }

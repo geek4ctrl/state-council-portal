@@ -1157,5 +1157,92 @@
     "download": "Telecharger",
     "officialGazette": "Journal Officiel",
     "heroBody": "Tala ne u télécharge maboko ya Conseil d'État."
+  },
+  "proceduresPage": {
+    "title": "Mibeko ya kosala liboso ya Conseil d'Etat",
+    "intro": "Conseil d'Etat ezali na biteni mibale ya minene oyo ezali na misala ekeseni: eteni ya toli mpe eteni ya mikakatano. Moko na moko elandaka mibeko na yango.",
+    "s1": {
+      "title": "I. Mibeko ya liboso na makambo ya toli",
+      "filing": {
+        "title": "Kotia requête",
+        "p1": "Ba requêtes ya kosala demande ya ba avis motivés elongo na ba makambo ya makási ya kolandá ba textes juridiques ekotisami na greffe ya Conseil d'Etat.",
+        "p2": "Tango bakozwa yango, requête ekomisamá na greffier mpe etindamá kozanga kozelá epé na Premier Président ya Conseil d'Etat mpo na kopona rapporteur oyo greffier akopesa dossier."
+      },
+      "rapporteur": {
+        "title": "Kopona rapporteur",
+        "p1": "Rapporteur aponamá na chef ya juridiction kati na magistrats ya eteni ya toli.",
+        "p2": "Rapporteur asalaka, na mikolo zomi ya plus, misala oyo elobamá na article 124 ya loi organique, na nse ya bokonzi ya Président ya section.",
+        "p3": "Nsima ya mosala na ye, rapporteur atiaka dossier na ye, oyo ezali na rapport mpe projet ya texte supplétif, epé na Premier Président ya Conseil d'Etat oyo atie mokóló oyo affaire ekotalama.",
+        "p4": "Mokóló yango eyebisami na greffier epé na Ministère public mpe autorité oyo esengaki."
+      },
+      "examination": {
+        "title": "Kotala dossier",
+        "p1": "Dossier etalamá na magistrats ya eteni ya toli mpe ya Parquet pene ya juridiction oyo esengamá, bayanganá na assemblée mixte. Avis motivé epesami na majorité ya magistrats oyo bazali.",
+        "p2": "Masolo na assemblée mixte esalamá boye:",
+        "list1": "na appel ya cause, Président ya section atangi requête;",
+        "list2": "bapesi liloba epé na rapporteur oyo atangi rapport mpe texte supplétif ya projet to proposition ya kotala;",
+        "list3": "liloba epesami liboso epé na partie oyo esengaki mpe nsima epé na bato mosusu ya assemblée;",
+        "list4": "greffier akomi procès-verbal ya séance."
+      },
+      "opinion": {
+        "title": "Avis",
+        "p1": "Biloko ya avis motivé ya eteni ya toli ezali résultat ya suka oyo ezwami nsima ya masolo mpe ekomami na procès-verbal oyo elobami na article 127 alinéa 2, point 4 ya loi organique oyo.",
+        "p2": "Ekomami mpe esingami na chef ya juridiction, Président ya section consultative, chef ya office mpe greffier ya séance."
+      }
+    },
+    "s2": {
+      "title": "II. Mibeko ya liboso na makambo ya mikakatano",
+      "filing": {
+        "title": "Kotia requête to réquisitoire",
+        "p1": "Ba requêtes ya ba parties to ba réquisitions ya ministère public, na makambo ya koboma ba actes administratifs to pourvois en cassation, mpe na bakási mosusu ya appel mpe révision, ekotisami na greffe ya Conseil d'Etat elongo na ba pièces na bango selon ba articles 143 kino 149 ya loi organique ya 15 octobre 2016.",
+        "p2": "Moto oyo asengá asengeli kotia requête na ye na bolandá délai oyo mibeko etiá mpo na kokota na juridiction.",
+        "p3": "Kasi, ba délais ya kosala recours contentieux ebandaka kaka tángo dossier ekomi na greffe.",
+        "p4": "Greffier asalaka enrôlement ya dossier mpe signification ya requête selon ba articles 143 kino 149 ya loi organique n° 16/027 ya 15 octobre 2016."
+      },
+      "preliminary": {
+        "title": "Examen ya liboso",
+        "p1": "Tángo requête ekotisami, greffier atindaka dossier epé na chef ya juridiction. Soki recours ezali manifestement irrecevable, to soki affaire ekoti te na compétence ya juridiction, chef akabaka dossier epé na chambre mpo na examen liboso ya kotia mokóló. Mokóló yango eyebisami na demandeur mpe Ministère public. Soki te, recours elandaka nzela na yango ya normalité selon mibeko ya loi organique oyo."
+      },
+      "instruction": {
+        "title": "Instruction ya affaire",
+        "p1": "Na procédure ordinaire, rapporteur asalaka mosala na ye na vitesse, ba délais nyonso mpo na instruction ya cause ebatelami.",
+        "p2": "Asalaka na nse ya direction mpe autorité ya Premier Président ya Conseil d'Etat. Ba actes oyo asali mpe ba relations oyo akoli na ba parties to bato ya libanda, ata ba correspondances, esalami na nse ya couvert ya Premier Président ya Conseil d'Etat.",
+        "p3": "Na cas ya référé, Président ya section ya contentieux to magistrat oyo aponi akendá mbala moko mpe kozanga kozelá kotala référé selon ba articles 278 mpe oyo elandá ya loi organique ya jurisdictions administratives.",
+        "p4": "Président ya section ya contentieux akabolaka ba dossiers oyo Premier Président apesaki kati na ba chambres. Atiaka na signature ya Premier Président ba propositions ya compositions ya chambre moko na moko. Abongisaka roulement ya programmation ya audiences.",
+        "p5": "Selon alinéas 2 mpe 3 ya article 279 ya loi organique ya 15 octobre 2016, akoki koponámá na ordonnance ya Premier Président lokola juge ya référé mpo na ba litiges oyo ekotisami na Conseil d'Etat.",
+        "p6": "Ye moko mpe akoki kopona juge ya référé na ordonnance na ye, nsima ya koyoka Premier Président ya Conseil d'Etat, ba Présidents mpe ata ba Conseillers ya section na ye.",
+        "p7": "Kasi, moto moko te akoki koponámá na délégation lokola juge ya référés selon alinéa 2 ya article 279 ya loi organique ya 15 octobre 2016, soki azali na grade ya président te to, na cas ya absence to empêchement, conseiller oyo azali na mibu misato ya ancienneté na grade.",
+        "p8": "Na kolandá roulement, Premier Président ya Conseil d'Etat atiaka na ordonnance na ye mokóló mpe ngonga oyo dossier ekobengama na audience."
+      },
+      "hearing": {
+        "title": "Audience",
+        "p1": "Ba audiences ya section ya contentieux ezali ya bato nyonso, longola soki publicité yango etalami lokola likama mpo na ordre public to bonnes mœurs.",
+        "p2": "Na cas yango, composition etindi huis clos na décision motivée.",
+        "p3": "Masolo esalamá boye:",
+        "list1": "Moto oyo asengá alobaka makambo na ye;",
+        "list2": "Partie ya liboso epesaka maoni na yango;",
+        "list3": "Ministère public apesaka avis na ye;",
+        "list4": "Juridiction ekangaka masolo mpe azwaka affaire na délibération;",
+        "p4": "Greffier ya siege akomi procès-verbal ya audience."
+      },
+      "judgment": {
+        "title": "Arrêt to ordonnance",
+        "p1": "Liboso ya prononcé, composition oyo edeliberaki etindaka dossier epé na Premier Président ya Conseil d'Etat mpo na proposition ya corrections.",
+        "p2": "Premier Président ya Conseil d'Etat akoki, mpo na bantina oyo emonani, kobenga Président ya section mpe ata mbala moko président ya chambre to juge moto ya projet ya décision mpo na consultation, ata na matière ya référé.",
+        "p3": "Na cas ya désaccord, dossier ekoki kotindama na Premier Président epé na conférence ya Présidents. Soki désaccord ekoba, Premier Président akoki kotinda dossier epé na plénière.",
+        "p4": "Décision ekopesama kaka nsima ya kozwa proposition ya corrections ya Premier Président ya Conseil d'Etat. Minute ya arrêt to ordonnance esingiami na bato nyonso ya composition. Ordonnance ya référé esingiami na juge moko kaka.",
+        "p5": "Nsima ya prononcé, original ya décision epesami na greffier mpo na kokotisa na dossier.",
+        "p6": "Liboso ya notification nyonso, arrêt to ordonnance ezwaka formule exécutoire oyo elobami na article 250 alinéa 2 ya loi organique.",
+        "p7": "Formule exécutoire ezali na cachet mpe signature ya greffier en chef.",
+        "p8": "Na bakási mosusu mpe mpo na matières mosusu oyo ekatami liboso na ba notes ya service, Greffier en chef azwaka liboso avis ya non-objection ya Premier Président ya Conseil d'Etat liboso ya notification nyonso."
+      }
+    },
+    "footnotes": {
+      "f1": "Tala loi organique n°16/027 ya 15 octobre 2016, article 129.",
+      "f2": "Tala loi organique n°16/027 ya 15 octobre 2016, article 177.",
+      "f3": "Tala ordonnance n°19/001 ya 10 janvier 2019, articles 46 mpe 47.",
+      "f4": "Tala loi organique n°16/027 ya 15 octobre 2016, articles 232 mpe 233.",
+      "f5": "Tala ordonnance n°19/001 ya 10 janvier 2019, articles 50 kino 53."
+    }
   }
 }
