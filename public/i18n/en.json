@@ -1153,5 +1153,92 @@
     "download": "Download",
     "officialGazette": "Official Gazette",
     "heroBody": "Consult and download the official publications of the State Council."
+  },
+  "proceduresPage": {
+    "title": "Procedures before the State Council",
+    "intro": "The State Council is composed of two major sections with distinct missions: the advisory section and the litigation section. Each follows its own procedures.",
+    "s1": {
+      "title": "I. General rules of procedure in advisory matters",
+      "filing": {
+        "title": "Filing the petition",
+        "p1": "Petitions for reasoned opinions as well as those concerning difficulties in interpreting legal texts are filed with the registry of the State Council.",
+        "p2": "Upon receipt, the petition is registered by the clerk and communicated without delay to the First President of the State Council for the purpose of designating a rapporteur to whom the clerk will then hand over the file."
+      },
+      "rapporteur": {
+        "title": "Assignment to a rapporteur",
+        "p1": "The rapporteur is designated by the head of the jurisdiction from among the magistrates of the advisory section.",
+        "p2": "The rapporteur proceeds, within a maximum period of ten days, to carry out the duties prescribed in article 124 of the organic law, under the direct supervision of the Section President.",
+        "p3": "Upon completion of the mission, the rapporteur submits the file, consisting of the report proper and, where applicable, the draft supplementary text, to the First President of the State Council who sets the date on which the case will be examined.",
+        "p4": "This date is notified by the clerk to the Public Prosecutor's Office and to the requesting authority."
+      },
+      "examination": {
+        "title": "Examination of the file",
+        "p1": "The file is examined by the magistrates of the advisory section and the Prosecutor's Office attached to the court seized, meeting in joint assembly. The reasoned opinion is given by a majority of the magistrates present at the session.",
+        "p2": "Debates in joint assembly proceed as follows:",
+        "list1": "at the call of the case, the Section President reads the petition;",
+        "list2": "the floor is given to the rapporteur, who reads the report and the supplementary text of the draft or proposal to be examined;",
+        "list3": "the floor is then given first to the requesting party and, finally, to the other members of the assembly;",
+        "list4": "the clerk draws up the minutes of the session."
+      },
+      "opinion": {
+        "title": "The opinion",
+        "p1": "The content of the reasoned opinion of the advisory section consists of the final result obtained at the conclusion of the debates and recorded in the minutes referred to in article 127, paragraph 2, point 4 of this organic law.",
+        "p2": "It is drafted and signed by the head of the jurisdiction, the President of the advisory section, the head of the office, and by the clerk of the session."
+      }
+    },
+    "s2": {
+      "title": "II. General rules of procedure in litigation matters",
+      "filing": {
+        "title": "Filing the petition or requisition",
+        "p1": "Petitions from the parties or requisitions from the public prosecutor, whether in matters of annulment of administrative acts or cassation appeals, as well as, in certain cases, in matters of appeal and review, are filed with the registry of the State Council, accompanied by their supporting documents, in accordance with articles 143 to 149 of the organic law of 15 October 2016.",
+        "p2": "The applicant is required to file the petition in strict compliance with the time limit set by law for seizing the jurisdiction.",
+        "p3": "However, the time limits for processing contentious appeals only begin to run from the date of receipt of the file at the registry.",
+        "p4": "The clerk proceeds with the registration of the file and the service of the petition in accordance with articles 143 to 149 of organic law No. 16/027 of 15 October 2016."
+      },
+      "preliminary": {
+        "title": "Preliminary examination",
+        "p1": "Upon filing of the petition, the clerk transmits the file to the head of the jurisdiction. If the appeal is manifestly inadmissible, or if the case does not obviously fall within the jurisdiction's competence, the head of the jurisdiction refers the file to the chamber for examination before setting the date on which the case will be called. Notification of this date is made to the applicant and to the Public Prosecutor. Otherwise, the appeal follows its normal course in accordance with the provisions of this organic law."
+      },
+      "instruction": {
+        "title": "Investigation of the case",
+        "p1": "In ordinary proceedings, the rapporteur carries out the prescribed duties with diligence, all prescribed time limits for the investigation of the case being preserved.",
+        "p2": "The rapporteur exercises prerogatives under the direction and authority of the First President of the State Council. The acts performed and the relations developed with the parties or third parties, including correspondence, are conducted or addressed under the authority of the First President of the State Council.",
+        "p3": "In the case of interim proceedings, the President of the litigation section or the magistrate designated proceeds directly and without delay to examine the interim application in accordance with articles 278 and following of the organic law on administrative jurisdictions.",
+        "p4": "The President of the litigation section distributes the files entrusted by the First President among the chambers, and even, in interim matters, to the judge. The President submits to the First President for signature the proposed compositions of each chamber, the file rapporteur being obligatorily part of said composition proposal. The President prepares the rotation schedule for programming hearings.",
+        "p5": "In accordance with paragraphs 2 and 3 of article 279 of the organic law of 15 October 2016, the President may, with regard to disputes submitted to the State Council, be designated by order of the First President as interim judge.",
+        "p6": "The President may also designate an interim judge by order, with the First President of the State Council consulted, as well as Presidents and even Counselors of the section.",
+        "p7": "However, no one may be designated, by delegation, as interim judge, in application of paragraph 2 of article 279 of the organic law of 15 October 2016, unless holding the rank of president or, in case of absence or impediment, a counselor with at least three years of seniority in the rank.",
+        "p8": "Based on the rotation schedule, the First President of the State Council sets, by order, the date and time at which the file will be called for hearing."
+      },
+      "hearing": {
+        "title": "The hearing",
+        "p1": "Hearings of the litigation section are public, unless such publicity is deemed dangerous to public order or good morals.",
+        "p2": "In such cases, the panel orders proceedings in camera by a reasoned decision.",
+        "p3": "Debates proceed as follows:",
+        "list1": "The applicant presents arguments;",
+        "list2": "The opposing party presents observations;",
+        "list3": "The Public Prosecutor gives an opinion;",
+        "list4": "The court closes debates and takes the case under deliberation;",
+        "p4": "The bench clerk draws up the minutes of the hearing."
+      },
+      "judgment": {
+        "title": "The judgment or order",
+        "p1": "Before delivery, the panel having taken the case under deliberation submits the file to the First President of the State Council for proposed corrections.",
+        "p2": "The First President of the State Council may, for obvious reasons, invite the Section President and even directly the chamber president or the judge author of said draft decision for consultation, even in interim matters.",
+        "p3": "In case of disagreement, the file may be submitted by the First President to the conference of Presidents. In case of persistent disagreement, the First President may submit the file to the plenary.",
+        "p4": "The decision shall only be rendered after obtaining proposed corrections from the First President of the State Council. The original of the judgment or order is signed by all members of the panel. The order rendered in interim matters is signed by the sole single-judge bench.",
+        "p5": "After delivery, the original of the decision is handed to the clerk to be placed in the file.",
+        "p6": "Before any notification, the judgment or order rendered is vested with the enforcement formula referred to in article 250, paragraph 2 of the organic law.",
+        "p7": "The enforcement formula bears the seal and signature of the chief clerk.",
+        "p8": "In certain cases and for certain matters previously determined by service notes, the Chief Clerk first obtains the non-objection opinion of the First President of the State Council before any notification."
+      }
+    },
+    "footnotes": {
+      "f1": "See organic law No. 16/027 of 15 October 2016, article 129.",
+      "f2": "See organic law No. 16/027 of 15 October 2016, article 177.",
+      "f3": "See order No. 19/001 of 10 January 2019, articles 46 and 47.",
+      "f4": "See organic law No. 16/027 of 15 October 2016, articles 232 and 233.",
+      "f5": "See order No. 19/001 of 10 January 2019, articles 50 to 53."
+    }
   }
 }

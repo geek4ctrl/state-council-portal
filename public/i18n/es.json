@@ -1157,5 +1157,92 @@
     "download": "Descargar",
     "officialGazette": "Boletín Oficial",
     "heroBody": "Consulte y descargue las publicaciones oficiales del Consejo de Estado."
+  },
+  "proceduresPage": {
+    "title": "Procedimientos ante el Consejo de Estado",
+    "intro": "El Consejo de Estado está compuesto por dos grandes secciones con misiones distintas: la sección consultiva y la sección contenciosa. Cada una sigue sus propios procedimientos.",
+    "s1": {
+      "title": "I. Reglas generales de procedimiento en materia consultiva",
+      "filing": {
+        "title": "Presentación de la solicitud",
+        "p1": "Las solicitudes de dictámenes motivados así como las relativas a dificultades de interpretación de textos jurídicos se presentan en la secretaría del Consejo de Estado.",
+        "p2": "Una vez recibida, la solicitud es registrada por el secretario y comunicada sin demora al Primer Presidente del Consejo de Estado para la designación de un ponente a quien el secretario entregará el expediente."
+      },
+      "rapporteur": {
+        "title": "Asignación a un ponente",
+        "p1": "El ponente es designado por el jefe de la jurisdicción entre los magistrados de la sección consultiva.",
+        "p2": "El ponente procede, en un plazo máximo de diez días, a cumplir los deberes prescritos en el artículo 124 de la ley orgánica, bajo la supervisión directa del Presidente de sección.",
+        "p3": "Al finalizar su misión, el ponente presenta su expediente, compuesto por el informe propiamente dicho y, eventualmente, el proyecto de texto supletorio, al Primer Presidente del Consejo de Estado quien fija la fecha en que se examinará el asunto.",
+        "p4": "Esta fecha es notificada por el secretario al Ministerio Público y a la autoridad solicitante."
+      },
+      "examination": {
+        "title": "Examen del expediente",
+        "p1": "El expediente es examinado por los magistrados de la sección consultiva y de la Fiscalía ante la jurisdicción competente, reunidos en asamblea mixta. El dictamen motivado se emite por mayoría de los magistrados presentes en la sesión.",
+        "p2": "Los debates en asamblea mixta se desarrollan de la siguiente manera:",
+        "list1": "al llamamiento de la causa, el Presidente de la sección da lectura a la solicitud;",
+        "list2": "se da la palabra al ponente, quien lee el informe y el texto supletorio del proyecto o propuesta a examinar;",
+        "list3": "la palabra se concede primero a la parte solicitante y, finalmente, a los demás miembros de la asamblea;",
+        "list4": "el secretario levanta el acta de la sesión."
+      },
+      "opinion": {
+        "title": "El dictamen",
+        "p1": "El contenido del dictamen motivado de la sección consultiva está constituido por el resultado final obtenido al término de los debates y consignado en el acta referida en el artículo 127 párrafo 2, punto 4 de la presente ley orgánica.",
+        "p2": "Es redactado y firmado por el jefe de la jurisdicción, el Presidente de la sección consultiva, el jefe de la oficina y por el secretario de la sesión."
+      }
+    },
+    "s2": {
+      "title": "II. Reglas generales de procedimiento en materia contenciosa",
+      "filing": {
+        "title": "Presentación de la solicitud o del requerimiento",
+        "p1": "Las solicitudes de las partes o las requisitorias del ministerio público, tanto en materia de anulación de actos administrativos como de recursos de casación, así como en ciertos casos en materia de apelación y revisión, se presentan en la secretaría del Consejo de Estado con sus documentos de conformidad con los artículos 143 a 149 de la ley orgánica del 15 de octubre de 2016.",
+        "p2": "El solicitante está obligado a presentar su solicitud en estricto cumplimiento del plazo fijado por ley para la competencia de la jurisdicción.",
+        "p3": "Sin embargo, los plazos de tramitación del recurso contencioso solo comienzan a correr desde la recepción del expediente en la secretaría.",
+        "p4": "El secretario procede al registro del expediente y a la notificación de la solicitud conforme a los artículos 143 a 149 de la ley orgánica n° 16/027 del 15 de octubre de 2016."
+      },
+      "preliminary": {
+        "title": "El examen preliminar",
+        "p1": "Desde la presentación de la solicitud, el secretario transmite el expediente al jefe de la jurisdicción. Si el recurso es manifiestamente inadmisible, o si la causa no corresponde evidentemente a la competencia de la jurisdicción, el jefe comunica el expediente a la sala para examen antes de fijar la fecha de la audiencia. Esta fecha se notifica al demandante y al Ministerio Público. En caso contrario, el recurso sigue su curso normal conforme a las disposiciones de la presente ley orgánica."
+      },
+      "instruction": {
+        "title": "Instrucción del asunto",
+        "p1": "En procedimiento ordinario, el ponente cumple con celeridad los deberes que le son prescritos, respetando todos los plazos prescritos para la instrucción de la causa.",
+        "p2": "Ejerce sus prerrogativas bajo la dirección y autoridad del Primer Presidente del Consejo de Estado. Los actos que realiza y las relaciones que desarrolla con las partes o terceros, incluida la correspondencia, se realizan bajo la cobertura del Primer Presidente del Consejo de Estado.",
+        "p3": "En caso de procedimiento de urgencia, el Presidente de la sección contenciosa o el magistrado que designe procede directamente y sin demora al examen del recurso de urgencia conforme a los artículos 278 y siguientes de la ley orgánica de las jurisdicciones administrativas.",
+        "p4": "El Presidente de la sección contenciosa distribuye los expedientes que le confía el Primer Presidente entre las salas, e incluso en materia de urgencia, al juez. Somete a la firma del Primer Presidente las propuestas de composición de cada sala. Prepara el turno de programación de audiencias.",
+        "p5": "Conforme a los párrafos 2 y 3 del artículo 279 de la ley orgánica del 15 de octubre de 2016, puede ser designado por orden del Primer Presidente como juez de urgencia para los litigios sometidos al Consejo de Estado.",
+        "p6": "Puede también designar juez de urgencia por su orden, oído el Primer Presidente del Consejo de Estado, los Presidentes e incluso los Consejeros de su sección.",
+        "p7": "Sin embargo, nadie puede ser designado por delegación como juez de urgencia, en aplicación del párrafo 2 del artículo 279 de la ley orgánica del 15 de octubre de 2016, si no tiene el grado de presidente o, en caso de ausencia o impedimento, de consejero con al menos tres años de antigüedad en el grado.",
+        "p8": "Según el turno, el Primer Presidente del Consejo de Estado fija por su orden la fecha y hora en que el expediente será llamado a audiencia."
+      },
+      "hearing": {
+        "title": "La audiencia",
+        "p1": "Las audiencias de la sección contenciosa son públicas, a menos que dicha publicidad sea considerada peligrosa para el orden público o las buenas costumbres.",
+        "p2": "En tal caso, la composición ordena el juicio a puerta cerrada mediante decisión motivada.",
+        "p3": "Los debates se desarrollan de la siguiente manera:",
+        "list1": "El solicitante expone sus argumentos;",
+        "list2": "La parte contraria presenta sus observaciones;",
+        "list3": "El Ministerio Público emite su dictamen;",
+        "list4": "La jurisdicción cierra los debates y toma el asunto en deliberación;",
+        "p4": "El secretario de sala levanta el acta de la audiencia."
+      },
+      "judgment": {
+        "title": "La sentencia o la orden",
+        "p1": "Antes del pronunciamiento, la composición que ha deliberado somete el expediente al Primer Presidente del Consejo de Estado para propuesta de eventuales correcciones.",
+        "p2": "El Primer Presidente del Consejo de Estado puede, por razones evidentes, invitar al Presidente de la sección e incluso directamente al presidente de sala o al juez autor del proyecto de decisión a consulta, incluso en materia de urgencia.",
+        "p3": "En caso de desacuerdo, el expediente puede ser sometido por el Primer Presidente a la conferencia de Presidentes. En caso de persistencia del desacuerdo, el Primer Presidente puede someter el expediente al pleno.",
+        "p4": "La decisión solo se dictará tras obtener propuesta de correcciones del Primer Presidente del Consejo de Estado. El original de la sentencia u orden es firmado por todos los miembros de la composición. La orden en materia de urgencia es firmada por el único juez.",
+        "p5": "Tras el pronunciamiento, el original de la decisión se entrega al secretario para ser incorporado al expediente.",
+        "p6": "Antes de toda notificación, la sentencia u orden es revestida de la fórmula ejecutoria prevista en el artículo 250 párrafo 2 de la ley orgánica.",
+        "p7": "La fórmula ejecutoria lleva el sello y la firma del secretario en jefe.",
+        "p8": "En ciertos casos y para ciertas materias previamente determinadas por notas de servicio, el Secretario en jefe obtiene previamente el dictamen de no objeción del Primer Presidente del Consejo de Estado antes de toda notificación."
+      }
+    },
+    "footnotes": {
+      "f1": "Ver ley orgánica n°16/027 del 15 de octubre de 2016, artículo 129.",
+      "f2": "Ver ley orgánica n°16/027 del 15 de octubre de 2016, artículo 177.",
+      "f3": "Ver orden n°19/001 del 10 de enero de 2019, artículos 46 y 47.",
+      "f4": "Ver ley orgánica n°16/027 del 15 de octubre de 2016, artículos 232 y 233.",
+      "f5": "Ver orden n°19/001 del 10 de enero de 2019, artículos 50 a 53."
+    }
   }
 }

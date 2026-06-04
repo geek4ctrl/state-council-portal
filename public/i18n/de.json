@@ -1157,5 +1157,92 @@
     "download": "Herunterladen",
     "officialGazette": "Amtsblatt",
     "heroBody": "Rufen Sie die offiziellen Publikationen des Staatsrates ab und laden Sie sie herunter."
+  },
+  "proceduresPage": {
+    "title": "Verfahren vor dem Staatsrat",
+    "intro": "Der Staatsrat besteht aus zwei großen Abteilungen mit unterschiedlichen Aufgaben: der beratenden Abteilung und der Streitabteilung. Jede folgt ihren eigenen Verfahren.",
+    "s1": {
+      "title": "I. Allgemeine Verfahrensregeln in beratenden Angelegenheiten",
+      "filing": {
+        "title": "Einreichung des Antrags",
+        "p1": "Anträge auf begründete Stellungnahmen sowie solche zu Auslegungsschwierigkeiten von Rechtstexten werden bei der Geschäftsstelle des Staatsrates eingereicht.",
+        "p2": "Nach Eingang wird der Antrag vom Urkundsbeamten registriert und unverzüglich dem Ersten Präsidenten des Staatsrates zur Benennung eines Berichterstatters übermittelt, dem der Urkundsbeamte anschließend die Akte übergibt."
+      },
+      "rapporteur": {
+        "title": "Zuweisung an einen Berichterstatter",
+        "p1": "Der Berichterstatter wird vom Leiter der Gerichtsbarkeit aus den Richtern der beratenden Abteilung bestimmt.",
+        "p2": "Der Berichterstatter führt innerhalb einer Frist von höchstens zehn Tagen die in Artikel 124 des Organgesetzes vorgeschriebenen Aufgaben unter der direkten Aufsicht des Abteilungspräsidenten durch.",
+        "p3": "Nach Abschluss seiner Aufgabe legt der Berichterstatter seine Akte, bestehend aus dem eigentlichen Bericht und gegebenenfalls dem ergänzenden Textentwurf, dem Ersten Präsidenten des Staatsrates vor, der den Termin für die Prüfung der Angelegenheit festlegt.",
+        "p4": "Dieser Termin wird vom Urkundsbeamten der Staatsanwaltschaft und der antragstellenden Behörde mitgeteilt."
+      },
+      "examination": {
+        "title": "Prüfung der Akte",
+        "p1": "Die Akte wird von den Richtern der beratenden Abteilung und der Staatsanwaltschaft beim zuständigen Gericht in gemischter Versammlung geprüft. Die begründete Stellungnahme wird mit Mehrheit der anwesenden Richter abgegeben.",
+        "p2": "Die Debatten in gemischter Versammlung verlaufen wie folgt:",
+        "list1": "bei Aufruf der Sache verliest der Abteilungspräsident den Antrag;",
+        "list2": "das Wort wird dem Berichterstatter erteilt, der den Bericht und den ergänzenden Text des zu prüfenden Entwurfs oder Vorschlags vorliest;",
+        "list3": "das Wort wird dann zunächst der antragstellenden Partei und schließlich den übrigen Mitgliedern der Versammlung erteilt;",
+        "list4": "der Urkundsbeamte erstellt das Sitzungsprotokoll."
+      },
+      "opinion": {
+        "title": "Die Stellungnahme",
+        "p1": "Der Inhalt der begründeten Stellungnahme der beratenden Abteilung besteht aus dem Endergebnis der Debatten, das im Protokoll gemäß Artikel 127 Absatz 2 Punkt 4 dieses Organgesetzes festgehalten wird.",
+        "p2": "Sie wird vom Leiter der Gerichtsbarkeit, dem Präsidenten der beratenden Abteilung, dem Leiter des Amtes und dem Urkundsbeamten der Sitzung verfasst und unterzeichnet."
+      }
+    },
+    "s2": {
+      "title": "II. Allgemeine Verfahrensregeln in Streitangelegenheiten",
+      "filing": {
+        "title": "Einreichung des Antrags oder der Anklageschrift",
+        "p1": "Anträge der Parteien oder Anträge der Staatsanwaltschaft, sowohl in Sachen der Aufhebung von Verwaltungsakten als auch bei Kassationsbeschwerden sowie in bestimmten Fällen bei Berufung und Revision, werden bei der Geschäftsstelle des Staatsrates mit ihren Unterlagen gemäß den Artikeln 143 bis 149 des Organgesetzes vom 15. Oktober 2016 eingereicht.",
+        "p2": "Der Antragsteller ist verpflichtet, seinen Antrag unter strikter Einhaltung der gesetzlich festgelegten Frist für die Anrufung der Gerichtsbarkeit einzureichen.",
+        "p3": "Die Fristen für die Bearbeitung von Verwaltungsstreitverfahren beginnen jedoch erst ab dem Eingang der Akte bei der Geschäftsstelle zu laufen.",
+        "p4": "Der Urkundsbeamte nimmt die Registrierung der Akte und die Zustellung des Antrags gemäß den Artikeln 143 bis 149 des Organgesetzes Nr. 16/027 vom 15. Oktober 2016 vor."
+      },
+      "preliminary": {
+        "title": "Vorläufige Prüfung",
+        "p1": "Nach Einreichung des Antrags übermittelt der Urkundsbeamte die Akte dem Leiter der Gerichtsbarkeit. Ist die Beschwerde offensichtlich unzulässig oder fällt die Sache offenkundig nicht in die Zuständigkeit der Gerichtsbarkeit, überweist der Leiter die Akte an die Kammer zur Prüfung, bevor er den Verhandlungstermin festlegt. Dieser Termin wird dem Antragsteller und der Staatsanwaltschaft mitgeteilt. Andernfalls nimmt die Beschwerde ihren normalen Verlauf gemäß den Bestimmungen dieses Organgesetzes."
+      },
+      "instruction": {
+        "title": "Untersuchung der Angelegenheit",
+        "p1": "Im ordentlichen Verfahren erfüllt der Berichterstatter die ihm vorgeschriebenen Pflichten mit Sorgfalt, wobei alle für die Untersuchung der Sache vorgeschriebenen Fristen gewahrt bleiben.",
+        "p2": "Er übt seine Befugnisse unter der Leitung und Autorität des Ersten Präsidenten des Staatsrates aus. Die von ihm vorgenommenen Handlungen sowie die Beziehungen, die er mit den Parteien oder Dritten entwickelt, einschließlich der Korrespondenz, werden unter dem Vorbehalt des Ersten Präsidenten des Staatsrates geführt.",
+        "p3": "Im Eilverfahren geht der Präsident der Streitabteilung oder der von ihm benannte Richter unverzüglich zur Prüfung des Eilantrags gemäß den Artikeln 278 ff. des Organgesetzes über die Verwaltungsgerichtsbarkeit über.",
+        "p4": "Der Präsident der Streitabteilung verteilt die ihm vom Ersten Präsidenten anvertrauten Akten auf die Kammern und selbst im Eilverfahren an den Richter. Er legt dem Ersten Präsidenten die vorgeschlagenen Besetzungen jeder Kammer zur Unterschrift vor. Er bereitet den Geschäftsverteilungsplan für die Sitzungstermine vor.",
+        "p5": "Gemäß Absätzen 2 und 3 des Artikels 279 des Organgesetzes vom 15. Oktober 2016 kann er in Bezug auf beim Staatsrat anhängige Streitigkeiten durch Verfügung des Ersten Präsidenten als Eilrichter bestimmt werden.",
+        "p6": "Er kann selbst auch durch seine Verfügung einen Eilrichter bestimmen, nach Anhörung des Ersten Präsidenten des Staatsrates, der Präsidenten und sogar der Räte seiner Abteilung.",
+        "p7": "Niemand kann jedoch auf Delegation als Eilrichter bestimmt werden gemäß Absatz 2 des Artikels 279 des Organgesetzes vom 15. Oktober 2016, wenn er nicht den Rang eines Präsidenten innehat oder bei dessen Abwesenheit oder Verhinderung ein Rat mit mindestens drei Jahren Dienstalter im Rang ist.",
+        "p8": "Auf Grundlage des Geschäftsverteilungsplans legt der Erste Präsident des Staatsrates durch seine Verfügung Datum und Uhrzeit fest, zu denen die Akte zur Verhandlung aufgerufen wird."
+      },
+      "hearing": {
+        "title": "Die Verhandlung",
+        "p1": "Die Verhandlungen der Streitabteilung sind öffentlich, es sei denn, diese Öffentlichkeit wird als gefährlich für die öffentliche Ordnung oder die guten Sitten erachtet.",
+        "p2": "In diesem Fall ordnet die Besetzung den Ausschluss der Öffentlichkeit durch begründeten Beschluss an.",
+        "p3": "Die Debatten verlaufen wie folgt:",
+        "list1": "Der Antragsteller trägt seine Argumente vor;",
+        "list2": "Die Gegenpartei legt ihre Stellungnahmen dar;",
+        "list3": "Die Staatsanwaltschaft gibt ihre Stellungnahme ab;",
+        "list4": "Das Gericht schließt die Debatten und nimmt die Sache in Beratung;",
+        "p4": "Der Sitzungsbeamte erstellt das Verhandlungsprotokoll."
+      },
+      "judgment": {
+        "title": "Das Urteil oder die Verfügung",
+        "p1": "Vor der Verkündung legt die Besetzung, die die Sache beraten hat, die Akte dem Ersten Präsidenten des Staatsrates zur Korrekturvorschlägen vor.",
+        "p2": "Der Erste Präsident des Staatsrates kann aus offensichtlichen Gründen den Abteilungspräsidenten und sogar direkt den Kammerpräsidenten oder den Richter zur Konsultation einladen, selbst im Eilverfahren.",
+        "p3": "Bei Meinungsverschiedenheiten kann die Akte vom Ersten Präsidenten der Präsidentenkonferenz vorgelegt werden. Bei fortbestehender Meinungsverschiedenheit kann der Erste Präsident die Akte dem Plenum vorlegen.",
+        "p4": "Die Entscheidung wird erst nach Erhalt von Korrekturvorschlägen des Ersten Präsidenten des Staatsrates ergehen. Die Urschrift des Urteils oder der Verfügung wird von allen Mitgliedern der Besetzung unterzeichnet. Die im Eilverfahren ergangene Verfügung wird allein vom Einzelrichter unterzeichnet.",
+        "p5": "Nach der Verkündung wird das Original der Entscheidung dem Urkundsbeamten zur Aufnahme in die Akte übergeben.",
+        "p6": "Vor jeder Zustellung wird das Urteil oder die Verfügung mit der Vollstreckungsformel gemäß Artikel 250 Absatz 2 des Organgesetzes versehen.",
+        "p7": "Die Vollstreckungsformel trägt das Siegel und die Unterschrift des Haupturkundsbeamten.",
+        "p8": "In bestimmten Fällen und für bestimmte Angelegenheiten, die zuvor durch Dienstanweisungen festgelegt wurden, holt der Haupturkundsbeamte vorab die Unbedenklichkeitserklärung des Ersten Präsidenten des Staatsrates ein, bevor eine Zustellung erfolgt."
+      }
+    },
+    "footnotes": {
+      "f1": "Siehe Organgesetz Nr. 16/027 vom 15. Oktober 2016, Artikel 129.",
+      "f2": "Siehe Organgesetz Nr. 16/027 vom 15. Oktober 2016, Artikel 177.",
+      "f3": "Siehe Verordnung Nr. 19/001 vom 10. Januar 2019, Artikel 46 und 47.",
+      "f4": "Siehe Organgesetz Nr. 16/027 vom 15. Oktober 2016, Artikel 232 und 233.",
+      "f5": "Siehe Verordnung Nr. 19/001 vom 10. Januar 2019, Artikel 50 bis 53."
+    }
   }
 }
