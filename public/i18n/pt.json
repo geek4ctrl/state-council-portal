@@ -1157,5 +1157,92 @@
     "download": "Baixar",
     "officialGazette": "Diário Oficial",
     "heroBody": "Consulte e baixe as publicações oficiais do Conselho de Estado."
+  },
+  "proceduresPage": {
+    "title": "Procedimentos perante o Conselho de Estado",
+    "intro": "O Conselho de Estado é composto por duas grandes seções com missões distintas: a seção consultiva e a seção contenciosa. Cada uma segue seus próprios procedimentos.",
+    "s1": {
+      "title": "I. Regras gerais de procedimento em matéria consultiva",
+      "filing": {
+        "title": "Depósito do requerimento",
+        "p1": "Os requerimentos de pareceres fundamentados bem como os relativos a dificuldades de interpretação de textos jurídicos são depositados na secretaria do Conselho de Estado.",
+        "p2": "Após o recebimento, o requerimento é registrado pelo secretário e comunicado sem demora ao Primeiro Presidente do Conselho de Estado para designação de um relator a quem o secretário entregará o processo."
+      },
+      "rapporteur": {
+        "title": "Designação de um relator",
+        "p1": "O relator é designado pelo chefe da jurisdição dentre os magistrados da seção consultiva.",
+        "p2": "O relator procede, no prazo máximo de dez dias, aos deveres prescritos no artigo 124 da lei orgânica, sob a supervisão direta do Presidente de seção.",
+        "p3": "Ao final de sua missão, o relator deposita seu processo, composto pelo relatório propriamente dito e, eventualmente, pelo projeto de texto supletivo, perante o Primeiro Presidente do Conselho de Estado que fixa a data em que o caso será examinado.",
+        "p4": "Esta data é notificada pelo secretário ao Ministério Público e à autoridade requerente."
+      },
+      "examination": {
+        "title": "Exame do processo",
+        "p1": "O processo é examinado pelos magistrados da seção consultiva e do Ministério Público junto à jurisdição competente, reunidos em assembleia mista. O parecer fundamentado é dado por maioria dos magistrados presentes à sessão.",
+        "p2": "Os debates em assembleia mista decorrem da seguinte forma:",
+        "list1": "no chamamento da causa, o Presidente da seção faz a leitura do requerimento;",
+        "list2": "é dada a palavra ao relator que lê o relatório e o texto supletivo do projeto ou proposta a examinar;",
+        "list3": "a palavra é então dada primeiro à parte requerente e, por fim, aos demais membros da assembleia;",
+        "list4": "o secretário lavra a ata da sessão."
+      },
+      "opinion": {
+        "title": "O parecer",
+        "p1": "O conteúdo do parecer fundamentado da seção consultiva é constituído pelo resultado final obtido ao término dos debates e consignado na ata referida no artigo 127 parágrafo 2, ponto 4 da presente lei orgânica.",
+        "p2": "É redigido e assinado pelo chefe da jurisdição, pelo Presidente da seção consultiva, pelo chefe do gabinete e pelo secretário da sessão."
+      }
+    },
+    "s2": {
+      "title": "II. Regras gerais de procedimento em matéria contenciosa",
+      "filing": {
+        "title": "Depósito do requerimento ou da requisitória",
+        "p1": "Os requerimentos das partes ou as requisições do ministério público, tanto em matéria de anulação de atos administrativos como de recursos de cassação, bem como em certos casos em matéria de apelação e revisão, são depositados na secretaria do Conselho de Estado com seus documentos conforme os artigos 143 a 149 da lei orgânica de 15 de outubro de 2016.",
+        "p2": "O requerente é obrigado a depositar seu requerimento no estrito respeito do prazo fixado por lei para a competência da jurisdição.",
+        "p3": "Contudo, os prazos de tratamento do recurso contencioso só começam a correr a partir da recepção do processo na secretaria.",
+        "p4": "O secretário procede ao registro do processo e à notificação do requerimento conforme os artigos 143 a 149 da lei orgânica n° 16/027 de 15 de outubro de 2016."
+      },
+      "preliminary": {
+        "title": "O exame preliminar",
+        "p1": "Desde o depósito do requerimento, o secretário transmite o processo ao chefe da jurisdição. Se o recurso é manifestamente inadmissível ou se a causa não é evidentemente da competência da jurisdição, o chefe comunica o processo à câmara para exame antes de fixar a data da audiência. Esta data é notificada ao requerente e ao Ministério Público. Caso contrário, o recurso segue seu curso normal conforme as disposições da presente lei orgânica."
+      },
+      "instruction": {
+        "title": "Instrução do caso",
+        "p1": "Em procedimento ordinário, o relator cumpre com celeridade os deveres prescritos, sendo salvos todos os prazos prescritos para a instrução da causa.",
+        "p2": "Exerce suas prerrogativas sob a direção e autoridade do Primeiro Presidente do Conselho de Estado. Os atos que pratica e as relações que desenvolve com as partes ou terceiros, incluindo correspondências, são realizados sob a cobertura do Primeiro Presidente do Conselho de Estado.",
+        "p3": "Em caso de procedimento de urgência, o Presidente da seção contenciosa ou o magistrado designado procede diretamente e sem demora ao exame do recurso de urgência conforme os artigos 278 e seguintes da lei orgânica das jurisdições administrativas.",
+        "p4": "O Presidente da seção contenciosa distribui os processos confiados pelo Primeiro Presidente entre as câmaras, e mesmo em matéria de urgência ao juiz. Submete à assinatura do Primeiro Presidente as propostas de composição de cada câmara. Prepara a escala de programação de audiências.",
+        "p5": "Conforme os parágrafos 2 e 3 do artigo 279 da lei orgânica de 15 de outubro de 2016, pode ser designado por ordem do Primeiro Presidente como juiz de urgência para os litígios submetidos ao Conselho de Estado.",
+        "p6": "Pode também designar juiz de urgência por sua ordem, ouvido o Primeiro Presidente do Conselho de Estado, os Presidentes e mesmo os Conselheiros de sua seção.",
+        "p7": "Contudo, ninguém pode ser designado por delegação como juiz de urgência nos termos do parágrafo 2 do artigo 279 da lei orgânica de 15 de outubro de 2016, se não tiver o grau de presidente ou, em caso de ausência ou impedimento, de conselheiro com pelo menos três anos de antiguidade no grau.",
+        "p8": "Com base na escala, o Primeiro Presidente do Conselho de Estado fixa por sua ordem a data e hora em que o processo será chamado à audiência."
+      },
+      "hearing": {
+        "title": "A audiência",
+        "p1": "As audiências da seção contenciosa são públicas, salvo se essa publicidade for considerada perigosa para a ordem pública ou os bons costumes.",
+        "p2": "Nesse caso, a composição ordena o julgamento à porta fechada por decisão fundamentada.",
+        "p3": "Os debates decorrem da seguinte forma:",
+        "list1": "O requerente expõe seus argumentos;",
+        "list2": "A parte adversária apresenta suas observações;",
+        "list3": "O Ministério Público emite seu parecer;",
+        "list4": "A jurisdição encerra os debates e toma o caso em deliberação;",
+        "p4": "O secretário de audiência lavra a ata da audiência."
+      },
+      "judgment": {
+        "title": "O acórdão ou a ordem",
+        "p1": "Antes da pronuncia, a composição que deliberou submete o processo ao Primeiro Presidente do Conselho de Estado para proposta de eventuais correções.",
+        "p2": "O Primeiro Presidente do Conselho de Estado pode, por razões evidentes, convidar o Presidente de seção e mesmo diretamente o presidente de câmara ou o juiz autor do projeto de decisão para consulta, mesmo em matéria de urgência.",
+        "p3": "Em caso de desacordo, o processo pode ser submetido pelo Primeiro Presidente à conferência dos Presidentes. Em caso de persistência do desacordo, o Primeiro Presidente pode submeter o processo ao plenário.",
+        "p4": "A decisão só será proferida após obtenção de proposta de correções do Primeiro Presidente do Conselho de Estado. O original do acórdão ou da ordem é assinado por todos os membros da composição. A ordem em matéria de urgência é assinada apenas pelo juiz único.",
+        "p5": "Após a pronuncia, o original da decisão é entregue ao secretário para ser juntado ao processo.",
+        "p6": "Antes de qualquer notificação, o acórdão ou a ordem é revestido da fórmula executória prevista no artigo 250 parágrafo 2 da lei orgânica.",
+        "p7": "A fórmula executória contém o selo e a assinatura do secretário-chefe.",
+        "p8": "Em certos casos e para certas matérias previamente determinadas por notas de serviço, o Secretário-chefe obtém previamente o parecer de não objeção do Primeiro Presidente do Conselho de Estado antes de qualquer notificação."
+      }
+    },
+    "footnotes": {
+      "f1": "Ver lei orgânica n°16/027 de 15 de outubro de 2016, artigo 129.",
+      "f2": "Ver lei orgânica n°16/027 de 15 de outubro de 2016, artigo 177.",
+      "f3": "Ver ordem n°19/001 de 10 de janeiro de 2019, artigos 46 e 47.",
+      "f4": "Ver lei orgânica n°16/027 de 15 de outubro de 2016, artigos 232 e 233.",
+      "f5": "Ver ordem n°19/001 de 10 de janeiro de 2019, artigos 50 a 53."
+    }
   }
 }
