@@ -1172,7 +1172,7 @@
         "title": "Asignación a un ponente",
         "p1": "El ponente es designado por el jefe de la jurisdicción entre los magistrados de la sección consultiva.",
         "p2": "El ponente procede, en un plazo máximo de diez días, a cumplir los deberes prescritos en el artículo 124 de la ley orgánica, bajo la supervisión directa del Presidente de sección.",
-        "p3": "Al finalizar su misión, el ponente presenta su expediente, compuesto por el informe propiamente dicho y, eventualmente, el proyecto de texto supletorio, al Primer Presidente del Consejo de Estado quien fija la fecha en que se examinará el asunto.",
+        "p3": "Al finalizar su misión, el ponente presenta su expediente, compuesto por el informe propiamente dicho, la nota jurídica y, eventualmente, el proyecto de texto supletorio, al Primer Presidente del Consejo de Estado quien fija la fecha en que se examinará el asunto.",
         "p4": "Esta fecha es notificada por el secretario al Ministerio Público y a la autoridad solicitante."
       },
       "examination": {
@@ -1180,13 +1180,13 @@
         "p1": "El expediente es examinado por los magistrados de la sección consultiva y de la Fiscalía ante la jurisdicción competente, reunidos en asamblea mixta. El dictamen motivado se emite por mayoría de los magistrados presentes en la sesión.",
         "p2": "Los debates en asamblea mixta se desarrollan de la siguiente manera:",
         "list1": "al llamamiento de la causa, el Presidente de la sección da lectura a la solicitud;",
-        "list2": "se da la palabra al ponente, quien lee el informe y el texto supletorio del proyecto o propuesta a examinar;",
+        "list2": "se da la palabra al ponente, quien lee el informe, la nota jurídica y el texto supletorio del proyecto o propuesta a examinar;",
         "list3": "la palabra se concede primero a la parte solicitante y, finalmente, a los demás miembros de la asamblea;",
         "list4": "el secretario levanta el acta de la sesión."
       },
       "opinion": {
         "title": "El dictamen",
-        "p1": "El contenido del dictamen motivado de la sección consultiva está constituido por el resultado final obtenido al término de los debates y consignado en el acta referida en el artículo 127 párrafo 2, punto 4 de la presente ley orgánica.",
+        "p1": "El contenido del dictamen motivado de la sección consultiva está constituido por el resultado final obtenido al término de los debates y consignado en el acta referida en el artículo 127 párrafo 2, punto 4 de la ley orgánica.",
         "p2": "Es redactado y firmado por el jefe de la jurisdicción, el Presidente de la sección consultiva, el jefe de la oficina y por el secretario de la sesión."
       }
     },
@@ -1201,7 +1201,7 @@
       },
       "preliminary": {
         "title": "El examen preliminar",
-        "p1": "Desde la presentación de la solicitud, el secretario transmite el expediente al jefe de la jurisdicción. Si el recurso es manifiestamente inadmisible, o si la causa no corresponde evidentemente a la competencia de la jurisdicción, el jefe comunica el expediente a la sala para examen antes de fijar la fecha de la audiencia. Esta fecha se notifica al demandante y al Ministerio Público. En caso contrario, el recurso sigue su curso normal conforme a las disposiciones de la presente ley orgánica."
+        "p1": "Desde la presentación de la solicitud, el secretario transmite el expediente al jefe de la jurisdicción. Si el recurso es manifiestamente inadmisible, o si la causa no corresponde evidentemente a la competencia de la jurisdicción, el jefe comunica el expediente a la sala para examen antes de fijar la fecha de la audiencia. Esta fecha se notifica al demandante y al Ministerio Público. En caso contrario, el recurso sigue su curso normal conforme a las disposiciones de la ley orgánica."
       },
       "instruction": {
         "title": "Instrucción del asunto",

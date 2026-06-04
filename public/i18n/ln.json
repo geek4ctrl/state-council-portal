@@ -1172,7 +1172,7 @@
         "title": "Kopona rapporteur",
         "p1": "Rapporteur aponamá na chef ya juridiction kati na magistrats ya eteni ya toli.",
         "p2": "Rapporteur asalaka, na mikolo zomi ya plus, misala oyo elobamá na article 124 ya loi organique, na nse ya bokonzi ya Président ya section.",
-        "p3": "Nsima ya mosala na ye, rapporteur atiaka dossier na ye, oyo ezali na rapport mpe projet ya texte supplétif, epé na Premier Président ya Conseil d'Etat oyo atie mokóló oyo affaire ekotalama.",
+        "p3": "Nsima ya mosala na ye, rapporteur atiaka dossier na ye, oyo ezali na rapport, note juridique mpe projet ya texte supplétif, epé na Premier Président ya Conseil d'Etat oyo atie mokóló oyo affaire ekotalama.",
         "p4": "Mokóló yango eyebisami na greffier epé na Ministère public mpe autorité oyo esengaki."
       },
       "examination": {
@@ -1180,13 +1180,13 @@
         "p1": "Dossier etalamá na magistrats ya eteni ya toli mpe ya Parquet pene ya juridiction oyo esengamá, bayanganá na assemblée mixte. Avis motivé epesami na majorité ya magistrats oyo bazali.",
         "p2": "Masolo na assemblée mixte esalamá boye:",
         "list1": "na appel ya cause, Président ya section atangi requête;",
-        "list2": "bapesi liloba epé na rapporteur oyo atangi rapport mpe texte supplétif ya projet to proposition ya kotala;",
+        "list2": "bapesi liloba epé na rapporteur oyo atangi rapport, note juridique mpe texte supplétif ya projet to proposition ya kotala;",
         "list3": "liloba epesami liboso epé na partie oyo esengaki mpe nsima epé na bato mosusu ya assemblée;",
         "list4": "greffier akomi procès-verbal ya séance."
       },
       "opinion": {
         "title": "Avis",
-        "p1": "Biloko ya avis motivé ya eteni ya toli ezali résultat ya suka oyo ezwami nsima ya masolo mpe ekomami na procès-verbal oyo elobami na article 127 alinéa 2, point 4 ya loi organique oyo.",
+        "p1": "Biloko ya avis motivé ya eteni ya toli ezali résultat ya suka oyo ezwami nsima ya masolo mpe ekomami na procès-verbal oyo elobami na article 127 alinéa 2, point 4 ya loi organique.",
         "p2": "Ekomami mpe esingami na chef ya juridiction, Président ya section consultative, chef ya office mpe greffier ya séance."
       }
     },

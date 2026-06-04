@@ -1172,7 +1172,7 @@
         "title": "Designação de um relator",
         "p1": "O relator é designado pelo chefe da jurisdição dentre os magistrados da seção consultiva.",
         "p2": "O relator procede, no prazo máximo de dez dias, aos deveres prescritos no artigo 124 da lei orgânica, sob a supervisão direta do Presidente de seção.",
-        "p3": "Ao final de sua missão, o relator deposita seu processo, composto pelo relatório propriamente dito e, eventualmente, pelo projeto de texto supletivo, perante o Primeiro Presidente do Conselho de Estado que fixa a data em que o caso será examinado.",
+        "p3": "Ao final de sua missão, o relator deposita seu processo, composto pelo relatório propriamente dito, pela nota jurídica e, eventualmente, pelo projeto de texto supletivo, perante o Primeiro Presidente do Conselho de Estado que fixa a data em que o caso será examinado.",
         "p4": "Esta data é notificada pelo secretário ao Ministério Público e à autoridade requerente."
       },
       "examination": {
@@ -1180,13 +1180,13 @@
         "p1": "O processo é examinado pelos magistrados da seção consultiva e do Ministério Público junto à jurisdição competente, reunidos em assembleia mista. O parecer fundamentado é dado por maioria dos magistrados presentes à sessão.",
         "p2": "Os debates em assembleia mista decorrem da seguinte forma:",
         "list1": "no chamamento da causa, o Presidente da seção faz a leitura do requerimento;",
-        "list2": "é dada a palavra ao relator que lê o relatório e o texto supletivo do projeto ou proposta a examinar;",
+        "list2": "é dada a palavra ao relator que lê o relatório, a nota jurídica e o texto supletivo do projeto ou proposta a examinar;",
         "list3": "a palavra é então dada primeiro à parte requerente e, por fim, aos demais membros da assembleia;",
         "list4": "o secretário lavra a ata da sessão."
       },
       "opinion": {
         "title": "O parecer",
-        "p1": "O conteúdo do parecer fundamentado da seção consultiva é constituído pelo resultado final obtido ao término dos debates e consignado na ata referida no artigo 127 parágrafo 2, ponto 4 da presente lei orgânica.",
+        "p1": "O conteúdo do parecer fundamentado da seção consultiva é constituído pelo resultado final obtido ao término dos debates e consignado na ata referida no artigo 127 parágrafo 2, ponto 4 da lei orgânica.",
         "p2": "É redigido e assinado pelo chefe da jurisdição, pelo Presidente da seção consultiva, pelo chefe do gabinete e pelo secretário da sessão."
       }
     },
@@ -1201,7 +1201,7 @@
       },
       "preliminary": {
         "title": "O exame preliminar",
-        "p1": "Desde o depósito do requerimento, o secretário transmite o processo ao chefe da jurisdição. Se o recurso é manifestamente inadmissível ou se a causa não é evidentemente da competência da jurisdição, o chefe comunica o processo à câmara para exame antes de fixar a data da audiência. Esta data é notificada ao requerente e ao Ministério Público. Caso contrário, o recurso segue seu curso normal conforme as disposições da presente lei orgânica."
+        "p1": "Desde o depósito do requerimento, o secretário transmite o processo ao chefe da jurisdição. Se o recurso é manifestamente inadmissível ou se a causa não é evidentemente da competência da jurisdição, o chefe comunica o processo à câmara para exame antes de fixar a data da audiência. Esta data é notificada ao requerente e ao Ministério Público. Caso contrário, o recurso segue seu curso normal conforme as disposições da lei orgânica."
       },
       "instruction": {
         "title": "Instrução do caso",

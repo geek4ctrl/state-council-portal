@@ -1173,7 +1173,7 @@
         "title": "Affectation à un rapporteur",
         "p1": "Le rapporteur est désigné par le chef de la juridiction parmi les magistrats de la section consultative.",
         "p2": "Le rapporteur procède, dans un délai maximum de dix jours, aux devoirs prescrits à l'article 124 de la loi organique, sous la supervision directe du Président de section.",
-        "p3": "A l'issue de sa mission, le rapporteur dépose son dossier, composé du rapport proprement dit et, éventuellement, du projet de texte supplétif, au Premier Président du Conseil d'Etat qui fixe la date à laquelle l'affaire sera examinée.",
+        "p3": "A l'issue de sa mission, le rapporteur dépose son dossier, composé du rapport proprement dit de la note juridique et, éventuellement, du projet de texte supplétif, au Premier Président du Conseil d'Etat qui fixe la date à laquelle l'affaire sera examinée.",
         "p4": "Cette date est notifiée par les soins du greffier au Ministère public et à l'autorité requérante."
       },
       "examination": {
@@ -1181,13 +1181,13 @@
         "p1": "Le dossier est examiné par les magistrats de la section consultative et du Parquet près la juridiction saisie, réunis en assemblée mixte. L'avis motivé est donné à la majorité des magistrats présents à la séance.",
         "p2": "Les débats en assemblée mixte se déroulent de la manière suivante :",
         "list1": "à l'appel de la cause, le Président de la section donne lecture de la requête ;",
-        "list2": "il passe la parole au rapporteur. Celui-ci donne lecture du rapport et du texte supplétif du projet ou de la proposition à examiner ;",
+        "list2": "il passe la parole au rapporteur. Celui-ci donne lecture du rapport de la note juridique et du texte supplétif du projet ou de la proposition à examiner ;",
         "list3": "la parole est ensuite donnée d'abord à la partie requérante et, enfin, aux autres membres de l'assemblée ;",
         "list4": "le greffier dresse le procès-verbal de la séance."
       },
       "opinion": {
         "title": "L'avis",
-        "p1": "La teneur de l'avis motivé de la section consultative est constituée par le résultat final obtenu à l'issue des débats et consigné dans le procès-verbal visé à l'article 127 alinéa 2, point 4 de la présente loi organique.",
+        "p1": "La teneur de l'avis motivé de la section consultative est constituée par le résultat final obtenu à l'issue des débats et consigné dans le procès-verbal visé à l'article 127 alinéa 2, point 4 de la loi organique.",
         "p2": "Il est rédigé et signé par le chef de la juridiction, le Président de la section consultative, le chef de l'office et par le greffier de la séance."
       }
     },
@@ -1202,11 +1202,11 @@
       },
       "preliminary": {
         "title": "L'examen préliminaire",
-        "p1": "Dès le dépôt de la requête, le greffier transmet le dossier au chef de la juridiction. Si le recours est manifestement irrecevable, ou si la cause ne relève pas, de façon évidente, de la compétence de la juridiction, le chef de la juridiction communique le dossier à la chambre pour examen avant de fixer la date à laquelle l'affaire sera appelée. Notification de cette date est faite au demandeur et au Ministère public. Dans le cas contraire, le recours suit son cours normal conformément aux dispositions de la présente loi organique."
+        "p1": "Dès le dépôt de la requête, le greffier transmet le dossier au chef de la juridiction. Si le recours est manifestement irrecevable, ou si la cause ne relève pas, de façon évidente, de la compétence de la juridiction, le chef de la juridiction communique le dossier à la chambre pour examen avant de fixer la date à laquelle l'affaire sera appelée. Notification de cette date est faite au demandeur et au Ministère public. Dans le cas contraire, le recours suit son cours normal conformément aux dispositions de la loi organique."
       },
       "instruction": {
         "title": "Instruction de l'affaire",
-        "p1": "En procédure ordinaire, le rapporteur déféré aux devoirs lui prescrits avec célérité, tous les délais prescrits pour l'instruction de la cause étant saufs.",
+        "p1": "En procédure ordinaire, le rapporteur défère aux devoirs lui prescrits avec célérité, tous les délais prescrits pour l'instruction de la cause étant saufs.",
         "p2": "Il exerce ses prérogatives sous la direction et l'autorité du Premier Président du Conseil d'Etat. Les actes qu'il pose ainsi que les relations qu'il développe avec les parties ou les tiers, en ce compris les correspondances, sont posés, entretenues ou adressées sous couvert du Premier Président du Conseil d'Etat.",
         "p3": "En cas de référé, le Président de la section du contentieux ou le magistrat qu'il désigne procède directement et sans désemparer à l'examen du référé conformément aux articles 278 et suivants de la loi organique des juridictions de l'ordre administratif.",
         "p4": "Le Président de la section du contentieux répartit les dossiers lui confiés par le Premier Président entre les chambres, et même, en matière de référé, au juge. Il soumet à la signature du Premier Président les propositions de compositions de chaque chambre, le rapporteur du dossier faisant obligatoirement partie de ladite proposition de composition. Il apprête le roulement, portant la programmation des audiences.",

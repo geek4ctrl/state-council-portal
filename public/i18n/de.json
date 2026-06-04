@@ -1172,7 +1172,7 @@
         "title": "Zuweisung an einen Berichterstatter",
         "p1": "Der Berichterstatter wird vom Leiter der Gerichtsbarkeit aus den Richtern der beratenden Abteilung bestimmt.",
         "p2": "Der Berichterstatter führt innerhalb einer Frist von höchstens zehn Tagen die in Artikel 124 des Organgesetzes vorgeschriebenen Aufgaben unter der direkten Aufsicht des Abteilungspräsidenten durch.",
-        "p3": "Nach Abschluss seiner Aufgabe legt der Berichterstatter seine Akte, bestehend aus dem eigentlichen Bericht und gegebenenfalls dem ergänzenden Textentwurf, dem Ersten Präsidenten des Staatsrates vor, der den Termin für die Prüfung der Angelegenheit festlegt.",
+        "p3": "Nach Abschluss seiner Aufgabe legt der Berichterstatter seine Akte, bestehend aus dem eigentlichen Bericht, der juristischen Stellungnahme und gegebenenfalls dem ergänzenden Textentwurf, dem Ersten Präsidenten des Staatsrates vor, der den Termin für die Prüfung der Angelegenheit festlegt.",
         "p4": "Dieser Termin wird vom Urkundsbeamten der Staatsanwaltschaft und der antragstellenden Behörde mitgeteilt."
       },
       "examination": {
@@ -1180,13 +1180,13 @@
         "p1": "Die Akte wird von den Richtern der beratenden Abteilung und der Staatsanwaltschaft beim zuständigen Gericht in gemischter Versammlung geprüft. Die begründete Stellungnahme wird mit Mehrheit der anwesenden Richter abgegeben.",
         "p2": "Die Debatten in gemischter Versammlung verlaufen wie folgt:",
         "list1": "bei Aufruf der Sache verliest der Abteilungspräsident den Antrag;",
-        "list2": "das Wort wird dem Berichterstatter erteilt, der den Bericht und den ergänzenden Text des zu prüfenden Entwurfs oder Vorschlags vorliest;",
+        "list2": "das Wort wird dem Berichterstatter erteilt, der den Bericht, die juristische Stellungnahme und den ergänzenden Text des zu prüfenden Entwurfs oder Vorschlags vorliest;",
         "list3": "das Wort wird dann zunächst der antragstellenden Partei und schließlich den übrigen Mitgliedern der Versammlung erteilt;",
         "list4": "der Urkundsbeamte erstellt das Sitzungsprotokoll."
       },
       "opinion": {
         "title": "Die Stellungnahme",
-        "p1": "Der Inhalt der begründeten Stellungnahme der beratenden Abteilung besteht aus dem Endergebnis der Debatten, das im Protokoll gemäß Artikel 127 Absatz 2 Punkt 4 dieses Organgesetzes festgehalten wird.",
+        "p1": "Der Inhalt der begründeten Stellungnahme der beratenden Abteilung besteht aus dem Endergebnis der Debatten, das im Protokoll gemäß Artikel 127 Absatz 2 Punkt 4 des Organgesetzes festgehalten wird.",
         "p2": "Sie wird vom Leiter der Gerichtsbarkeit, dem Präsidenten der beratenden Abteilung, dem Leiter des Amtes und dem Urkundsbeamten der Sitzung verfasst und unterzeichnet."
       }
     },
@@ -1201,7 +1201,7 @@
       },
       "preliminary": {
         "title": "Vorläufige Prüfung",
-        "p1": "Nach Einreichung des Antrags übermittelt der Urkundsbeamte die Akte dem Leiter der Gerichtsbarkeit. Ist die Beschwerde offensichtlich unzulässig oder fällt die Sache offenkundig nicht in die Zuständigkeit der Gerichtsbarkeit, überweist der Leiter die Akte an die Kammer zur Prüfung, bevor er den Verhandlungstermin festlegt. Dieser Termin wird dem Antragsteller und der Staatsanwaltschaft mitgeteilt. Andernfalls nimmt die Beschwerde ihren normalen Verlauf gemäß den Bestimmungen dieses Organgesetzes."
+        "p1": "Nach Einreichung des Antrags übermittelt der Urkundsbeamte die Akte dem Leiter der Gerichtsbarkeit. Ist die Beschwerde offensichtlich unzulässig oder fällt die Sache offenkundig nicht in die Zuständigkeit der Gerichtsbarkeit, überweist der Leiter die Akte an die Kammer zur Prüfung, bevor er den Verhandlungstermin festlegt. Dieser Termin wird dem Antragsteller und der Staatsanwaltschaft mitgeteilt. Andernfalls nimmt die Beschwerde ihren normalen Verlauf gemäß den Bestimmungen des Organgesetzes."
       },
       "instruction": {
         "title": "Untersuchung der Angelegenheit",
