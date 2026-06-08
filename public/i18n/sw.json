@@ -80,7 +80,11 @@
   },
   "judges": {
     "title": "Majaji",
-    "body": "Kutana na majaji mashuhuri wa Baraza la Serikali."
+    "body": "Kutana na majaji mashuhuri wa Baraza la Serikali.",
+    "retiredTitle": "Majaji waliostaafu",
+    "retiredEmpty": "Hakuna majaji waliostaafu kwa sasa.",
+    "deceasedTitle": "Majaji waliofariki",
+    "deceasedEmpty": "Hakuna majaji waliofariki kwa sasa."
   },
   "memberDetail": {
     "back": "<- Rudi kwenye Muundo",

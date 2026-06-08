@@ -115,6 +115,16 @@ function cloudSrc(url: string): string {
             </article>
           }
         </div>
+
+        <h2 class="section-title">{{ 'judges.retiredTitle' | i18n }}</h2>
+        <div class="empty-state">
+          <p>{{ 'judges.retiredEmpty' | i18n }}</p>
+        </div>
+
+        <h2 class="section-title">{{ 'judges.deceasedTitle' | i18n }}</h2>
+        <div class="empty-state">
+          <p>{{ 'judges.deceasedEmpty' | i18n }}</p>
+        </div>
       </section>
 
       <app-footer></app-footer>
@@ -312,6 +322,21 @@ function cloudSrc(url: string): string {
     :host-context([data-theme="dark"]) .member-text h3 { color: #e4eaf0; }
     :host-context([data-theme="dark"]) .member-text .role-badge { color: #4fc3f7; }
     :host-context([data-theme="dark"]) .member-text .role-plain { color: #8899aa; }
+    .empty-state {
+      text-align: center;
+      padding: 40px 20px;
+      background: #ffffff;
+      border-radius: 12px;
+      border: 1px dashed #d1d5db;
+      margin-bottom: 32px;
+    }
+    .empty-state p {
+      color: #6b7280;
+      font-size: 1rem;
+      margin: 0;
+    }
+    :host-context([data-theme="dark"]) .empty-state { background: #243447; border-color: rgba(240,246,252,0.15); }
+    :host-context([data-theme="dark"]) .empty-state p { color: #8899aa; }
   `]
 })
 export class JudgesComponent {

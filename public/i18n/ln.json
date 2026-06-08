@@ -80,7 +80,11 @@
   },
   "judges": {
     "title": "Bajaji",
-    "body": "Kutana na bajaji ya Conseil d'État."
+    "body": "Kutana na bajaji ya Conseil d'État.",
+    "retiredTitle": "Bajaji oyo bazwi retraite",
+    "retiredEmpty": "Ezali na bajaji ya retraite te sikawa.",
+    "deceasedTitle": "Bajaji oyo bakufá",
+    "deceasedEmpty": "Ezali na bajaji oyo bakufá te sikawa."
   },
   "memberDetail": {
     "back": "<- Zonga na Organisasion",

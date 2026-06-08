@@ -80,7 +80,11 @@
   },
   "judges": {
     "title": "Los jueces",
-    "body": "Conozca a los distinguidos jueces del Consejo de Estado."
+    "body": "Conozca a los distinguidos jueces del Consejo de Estado.",
+    "retiredTitle": "Jueces jubilados",
+    "retiredEmpty": "No hay jueces jubilados en este momento.",
+    "deceasedTitle": "Jueces fallecidos",
+    "deceasedEmpty": "No hay jueces fallecidos en este momento."
   },
   "memberDetail": {
     "back": "← Volver a Presentación",

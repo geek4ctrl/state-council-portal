@@ -80,7 +80,11 @@
   },
   "judges": {
     "title": "Les juges",
-    "body": "Rencontrez les juges distingués du Conseil d'État."
+    "body": "Rencontrez les juges distingués du Conseil d'État.",
+    "retiredTitle": "Juges retraités",
+    "retiredEmpty": "Aucun juge retraité pour le moment.",
+    "deceasedTitle": "Juges décédés",
+    "deceasedEmpty": "Aucun juge décédé pour le moment."
   },
   "memberDetail": {
     "back": "← Retour à la présentation",

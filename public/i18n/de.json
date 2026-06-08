@@ -80,7 +80,11 @@
   },
   "judges": {
     "title": "Die Richter",
-    "body": "Lernen Sie die angesehenen Richter des Staatsrats kennen."
+    "body": "Lernen Sie die angesehenen Richter des Staatsrats kennen.",
+    "retiredTitle": "Richter im Ruhestand",
+    "retiredEmpty": "Derzeit keine Richter im Ruhestand.",
+    "deceasedTitle": "Verstorbene Richter",
+    "deceasedEmpty": "Derzeit keine verstorbenen Richter."
   },
   "memberDetail": {
     "back": "← Zurück zur Präsentation",
