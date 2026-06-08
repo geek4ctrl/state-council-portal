@@ -2782,7 +2782,7 @@ export class OrganizationComponent implements OnInit, AfterViewInit {
       titleKey: 'organization.about.cards.procedures',
       section: 'procedures',
       imageUrl:
-        'https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1200&q=80',
+        'https://res.cloudinary.com/dhqvb8wbn/image/upload/v1780918035/WhatsApp_Image_2026-06-06_at_22.38.35_lkggsw.jpg',
     },
     {
       titleKey: 'organization.about.cards.presidence',
