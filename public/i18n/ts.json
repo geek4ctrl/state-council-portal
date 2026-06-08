@@ -80,7 +80,11 @@
   },
   "judges": {
     "title": "Balumbuluishi",
-    "body": "Tuilanganayi ne balumbuluishi banene ba mu tshipangu tshia ditunga."
+    "body": "Tuilanganayi ne balumbuluishi banene ba mu tshipangu tshia ditunga.",
+    "retiredTitle": "Juges retraités",
+    "retiredEmpty": "Aucun juge retraité pour le moment.",
+    "deceasedTitle": "Juges décédés",
+    "deceasedEmpty": "Aucun juge décédé pour le moment."
   },
   "memberDetail": {
     "back": "← Kupingana ku bulongolodi",
