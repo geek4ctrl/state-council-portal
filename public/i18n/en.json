@@ -80,7 +80,11 @@
   },
   "judges": {
     "title": "The Judges",
-    "body": "Meet the distinguished judges of the State Council."
+    "body": "Meet the distinguished judges of the State Council.",
+    "retiredTitle": "Retired Judges",
+    "retiredEmpty": "No retired judges at this time.",
+    "deceasedTitle": "Deceased Judges",
+    "deceasedEmpty": "No deceased judges at this time."
   },
   "memberDetail": {
     "back": "← Back to Presentation",

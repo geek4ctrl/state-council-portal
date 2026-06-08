@@ -80,7 +80,11 @@
   },
   "judges": {
     "title": "Os juízes",
-    "body": "Conheça os ilustres juízes do Conselho de Estado."
+    "body": "Conheça os ilustres juízes do Conselho de Estado.",
+    "retiredTitle": "Juízes aposentados",
+    "retiredEmpty": "Nenhum juiz aposentado no momento.",
+    "deceasedTitle": "Juízes falecidos",
+    "deceasedEmpty": "Nenhum juiz falecido no momento."
   },
   "memberDetail": {
     "back": "← Voltar para Apresentação",

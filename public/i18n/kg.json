@@ -80,7 +80,11 @@
   },
   "judges": {
     "title": "Bazuzi",
-    "body": "Kutana na bazuzi ya Conseil d'État."
+    "body": "Kutana na bazuzi ya Conseil d'État.",
+    "retiredTitle": "Juges retraités",
+    "retiredEmpty": "Aucun juge retraité pour le moment.",
+    "deceasedTitle": "Juges décédés",
+    "deceasedEmpty": "Aucun juge décédé pour le moment."
   },
   "memberDetail": {
     "back": "<- Vutuka na Organisasion",

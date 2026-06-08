@@ -80,7 +80,11 @@
   },
   "judges": {
     "title": "I giudici",
-    "body": "Incontra i giudici illustri del Consiglio di Stato."
+    "body": "Incontra i giudici illustri del Consiglio di Stato.",
+    "retiredTitle": "Giudici in pensione",
+    "retiredEmpty": "Nessun giudice in pensione al momento.",
+    "deceasedTitle": "Giudici deceduti",
+    "deceasedEmpty": "Nessun giudice deceduto al momento."
   },
   "memberDetail": {
     "back": "← Torna alla presentazione",
