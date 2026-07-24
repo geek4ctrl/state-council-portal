@@ -12,7 +12,9 @@ import {
 import { CommonModule } from '@angular/common';
 import { I18nPipe } from '../../i18n/i18n.pipe';
 import Highcharts from 'highcharts';
+import { RoleExcerpt, ROLE_EXCERPTS } from './role-excerpts.data';
 import { FooterComponent } from '../../components/footer/footer.component';
+
 
 @Component({
   selector: 'app-audiences',
@@ -47,17 +49,50 @@ import { FooterComponent } from '../../components/footer/footer.component';
             </div>
             <p class="section-subtitle">{{ 'audiences.recent.subtitle' | i18n }}</p>
 
-            <div class="no-excerpts-state">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.5">
-                <rect x="12" y="8" width="40" height="48" rx="4" />
-                <line x1="20" y1="22" x2="44" y2="22" />
-                <line x1="20" y1="30" x2="44" y2="30" />
-                <line x1="20" y1="38" x2="34" y2="38" />
-                <circle cx="44" cy="44" r="10" fill="white" stroke-width="2" />
-                <line x1="40" y1="44" x2="48" y2="44" stroke-width="2" />
-              </svg>
-              <p>{{ 'audiences.recent.empty' | i18n }}</p>
+            <div class="documents-grid" *ngIf="roleExcerpts.length > 0; else noExcerpts">
+              <article class="document-card" *ngFor="let excerpt of roleExcerpts">
+                <div class="document-preview docx-preview">
+                  <svg class="docx-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M38 8H16a4 4 0 0 0-4 4v40a4 4 0 0 0 4 4h32a4 4 0 0 0 4-4V24L38 8z" />
+                    <polyline points="38 8 38 24 52 24" />
+                    <line x1="20" y1="36" x2="44" y2="36" />
+                    <line x1="20" y1="42" x2="44" y2="42" />
+                    <line x1="20" y1="48" x2="34" y2="48" />
+                  </svg>
+                  <span class="document-label">
+                    <span class="label-text">{{ excerpt.label }}</span>
+                    <span class="label-date">{{ excerpt.date }}</span>
+                  </span>
+                </div>
+                <div class="document-info">
+                  <h3>{{ excerpt.title }}</h3>
+                  <a
+                    class="download-btn"
+                    [href]="excerpt.href"
+                    [download]="excerpt.fileName"
+                  >
+                    {{ 'publications.download' | i18n }}
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                      <polyline points="7 10 12 15 17 10" />
+                      <line x1="12" y1="15" x2="12" y2="3" />
+                    </svg>
+                  </a>
+                </div>
+              </article>
             </div>
+            <ng-template #noExcerpts>
+              <div class="no-excerpts-state">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                  <polyline points="14 2 14 8 20 8" />
+                  <line x1="16" y1="13" x2="8" y2="13" />
+                  <line x1="16" y1="17" x2="8" y2="17" />
+                  <polyline points="10 9 9 9 8 9" />
+                </svg>
+                <p>{{ 'audiences.recent.empty' | i18n }}</p>
+              </div>
+            </ng-template>
           </div>
 
           <!-- Monthly Hearing Metrics Section -->
@@ -397,12 +432,28 @@ import { FooterComponent } from '../../components/footer/footer.component';
         margin-bottom: 80px;
       }
 
+      .documents-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 30px;
+      }
+
       .document-card {
         background: white;
         border-radius: 0;
         overflow: hidden;
         transition: all 0.3s ease;
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+      }
+
+      .docx-preview {
+        background: #f8fafc;
+      }
+
+      .docx-icon {
+        width: 80px;
+        height: 80px;
+        color: #1f9bd9;
       }
 
       .document-card:hover {
@@ -1499,6 +1550,8 @@ export class AudiencesComponent implements OnInit, AfterViewInit {
 
   @ViewChild('outcomesChart', { static: true })
   outcomesChart!: ElementRef<HTMLDivElement>;
+
+  readonly roleExcerpts: RoleExcerpt[] = ROLE_EXCERPTS;
 
   private readonly destroyRef = inject(DestroyRef);
   private chartInstances: Highcharts.Chart[] = [];
