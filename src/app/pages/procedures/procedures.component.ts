@@ -2,12 +2,11 @@ import { Component, inject, OnInit, ChangeDetectionStrategy } from '@angular/cor
 import { RouterLink } from '@angular/router';
 import { SeoService } from '../../services/seo.service';
 import { FooterComponent } from '../../components/footer/footer.component';
-import { I18nPipe } from '../../i18n/i18n.pipe';
 
 @Component({
   selector: 'app-procedures',
   standalone: true,
-  imports: [RouterLink, FooterComponent, I18nPipe],
+  imports: [RouterLink, FooterComponent],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <div class="page-container">
