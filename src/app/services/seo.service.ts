@@ -25,7 +25,7 @@ export class SeoService {
   private i18n = inject(I18nService);
 
   private readonly baseTitle = 'Conseil d\'État - République Démocratique du Congo';
-  private readonly baseUrl = 'https://conseildetatrdc.com';
+  private readonly baseUrl = 'https://conseildetat.cd';
   private readonly defaultDescription = 'The State Council of the Democratic Republic of the Congo is the highest court of the administrative order, with advisory and jurisdictional authority.';
 
   constructor() {
