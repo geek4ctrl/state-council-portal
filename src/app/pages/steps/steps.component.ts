@@ -111,7 +111,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
               <p class="form-subtitle anim-up a-d1">{{ 'steps.forms.report.subtitle' | i18n }}</p>
             </div>
 
-            <form class="complaint-form">
+            <form class="complaint-form" (submit)="sendReport($event)">
               <div class="form-row">
                 <div class="form-group">
                   <input type="text" [placeholder]="'steps.forms.fullName' | i18n" required>
@@ -170,7 +170,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
               <p class="form-subtitle anim-up a-d1">{{ 'steps.forms.appointment.subtitle' | i18n }}</p>
             </div>
 
-            <form class="appointment-form">
+            <form class="appointment-form" (submit)="sendAppointment($event)">
               <div class="form-row">
                 <div class="form-group">
                   <input type="text" [placeholder]="'steps.forms.fullName' | i18n" required>
@@ -1405,5 +1405,35 @@ export class StepsComponent implements OnInit, AfterViewInit {
 
   toggleFaq(id: string) {
     this.openFaqId.update(current => (current === id ? null : id));
+  }
+
+  sendReport(event: Event) {
+    event.preventDefault();
+    const form = event.target as HTMLFormElement;
+    const name = (form.querySelector('input[type="text"]') as HTMLInputElement)?.value || '';
+    const email = (form.querySelector('input[type="email"]') as HTMLInputElement)?.value || '';
+    const message = (form.querySelector('textarea') as HTMLTextAreaElement)?.value || '';
+    const department = this.selectedDepartmentReport();
+    const subject = encodeURIComponent(`Complaint from ${name}`);
+    const body = encodeURIComponent(
+      `Name: ${name}\nEmail: ${email}\nDepartment: ${department}\n\nMessage:\n${message}`
+    );
+    window.location.href = `mailto:laurent@conseildetat.cd?subject=${subject}&body=${body}`;
+  }
+
+  sendAppointment(event: Event) {
+    event.preventDefault();
+    const form = event.target as HTMLFormElement;
+    const name = (form.querySelector('input[type="text"]') as HTMLInputElement)?.value || '';
+    const email = (form.querySelector('input[type="email"]') as HTMLInputElement)?.value || '';
+    const message = (form.querySelector('textarea') as HTMLTextAreaElement)?.value || '';
+    const department = this.selectedDepartmentAppointment();
+    const meeting = this.selectedMeeting();
+    const visit = this.selectedVisit();
+    const subject = encodeURIComponent(`Appointment request from ${name}`);
+    const body = encodeURIComponent(
+      `Name: ${name}\nEmail: ${email}\nDepartment: ${department}\nMeeting with: ${meeting}\nPlanned visit: ${visit}\n\nMessage:\n${message}`
+    );
+    window.location.href = `mailto:laurent@conseildetat.cd?subject=${subject}&body=${body}`;
   }
 }
