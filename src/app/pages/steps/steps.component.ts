@@ -307,7 +307,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
                 <h3>{{ 'haveQuestions.title' | i18n }}</h3>
                 <p>{{ 'haveQuestions.body' | i18n }}</p>
                 <a
-                  href="mailto:info@conseildetatrdc.com"
+                  href="mailto:info@conseildetat.cd"
                   class="email-cta mag-btn"
                   (mousemove)="mag($event)"
                   (mouseleave)="magOut($event)"
