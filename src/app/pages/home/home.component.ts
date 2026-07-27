@@ -2535,6 +2535,23 @@ type HighchartsStatic = typeof import('highcharts');
       .nl-grid:focus-within .nl-track {
         animation-play-state: paused;
       }
+      /* Touch devices (tablets/phones): swipeable list instead of marquee */
+      @media (hover: none), (pointer: coarse) {
+        .nl-grid {
+          overflow-x: auto;
+          scroll-snap-type: x mandatory;
+          -webkit-overflow-scrolling: touch;
+        }
+        .nl-track {
+          animation: none;
+        }
+        .nl-card {
+          scroll-snap-align: start;
+        }
+        .nl-card[aria-hidden='true'] {
+          display: none;
+        }
+      }
       @keyframes nl-marquee {
         from {
           transform: translateX(0);
@@ -2912,6 +2929,9 @@ type HighchartsStatic = typeof import('highcharts');
         }
         .nl-card {
           scroll-snap-align: start;
+        }
+        .nl-card[aria-hidden='true'] {
+          display: none;
         }
         .pres-title {
           font-size: 1.7rem;
