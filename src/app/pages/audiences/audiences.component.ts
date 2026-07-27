@@ -181,12 +181,18 @@ import { FooterComponent } from '../../components/footer/footer.component';
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        background-attachment: fixed;
         display: flex;
         align-items: center;
         justify-content: center;
         padding: 80px 20px;
         overflow: hidden;
+      }
+
+      /* Fixed background only on desktop pointers; janky scroll on tablets/touch */
+      @media (hover: hover) and (pointer: fine) {
+        .hero-section {
+          background-attachment: fixed;
+        }
       }
 
       .hero-overlay {

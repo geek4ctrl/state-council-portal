@@ -266,12 +266,18 @@ import { FooterComponent } from '../../components/footer/footer.component';
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
-      background-attachment: fixed;
       background-color: #1E2E45;
       color: white;
       padding: 100px 0;
       position: relative;
       overflow: hidden;
+    }
+
+    /* Fixed background only on desktop pointers; janky scroll on tablets/touch */
+    @media (hover: hover) and (pointer: fine) {
+      .hero-section {
+        background-attachment: fixed;
+      }
     }
 
     .hero-overlay {
