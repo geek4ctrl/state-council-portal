@@ -1,12 +1,22 @@
+# SPA fallback for Angular routes (e.g. /steps, /news/123)
+# Three mechanisms, from most to least preferred — whichever the host supports wins.
+
+# 1) mod_rewrite: serve index.html for any URL that is not a real file/directory
 <IfModule mod_rewrite.c>
   RewriteEngine On
   RewriteBase /
 
-  # Serve existing files and directories as-is (JS, CSS, images, documents, i18n JSON)
   RewriteCond %{REQUEST_FILENAME} -f [OR]
   RewriteCond %{REQUEST_FILENAME} -d
   RewriteRule ^ - [L]
 
-  # Everything else falls back to the Angular app
   RewriteRule ^ index.html [L]
 </IfModule>
+
+# 2) mod_dir FallbackResource: same effect, simpler mechanism
+<IfModule mod_dir.c>
+  FallbackResource /index.html
+</IfModule>
+
+# 3) Last resort: serve the app as the 404 error page so routes still render
+ErrorDocument 404 /index.html
