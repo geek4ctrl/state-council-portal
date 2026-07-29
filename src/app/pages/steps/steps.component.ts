@@ -6,6 +6,12 @@ import { CommonModule } from '@angular/common';
 import { ActivatedRoute } from '@angular/router';
 import { I18nPipe } from '../../i18n/i18n.pipe';
 import { FooterComponent } from '../../components/footer/footer.component';
+import emailjs from '@emailjs/browser';
+
+const EMAILJS_SERVICE_ID = 'service_xw3u5js';
+const EMAILJS_COMPLAINT_TEMPLATE_ID = 'template_ugaqlq3';
+const EMAILJS_APPOINTMENT_TEMPLATE_ID = 'template_wm2tkyh';
+const EMAILJS_PUBLIC_KEY = 'XnHCmsf47ThnMSPgE';
 
 @Component({
   selector: 'app-steps',
@@ -155,8 +161,8 @@ import { FooterComponent } from '../../components/footer/footer.component';
               </div>
 
               <div class="form-submit">
-                <button type="submit" class="mag-btn" (mousemove)="mag($event)" (mouseleave)="magOut($event)" (click)="ripple($event)">
-                  <span>{{ 'steps.forms.submit' | i18n }}</span>
+                <button type="submit" class="mag-btn" [disabled]="isSendingReport()" (mousemove)="mag($event)" (mouseleave)="magOut($event)" (click)="ripple($event)">
+                  <span>{{ isSendingReport() ? 'Sending...' : ('steps.forms.submit' | i18n) }}</span>
                 </button>
               </div>
             </form>
@@ -273,8 +279,8 @@ import { FooterComponent } from '../../components/footer/footer.component';
               </div>
 
               <div class="form-submit">
-                <button type="submit" class="mag-btn" (mousemove)="mag($event)" (mouseleave)="magOut($event)" (click)="ripple($event)">
-                  <span>{{ 'steps.forms.submit' | i18n }}</span>
+                <button type="submit" class="mag-btn" [disabled]="isSendingAppointment()" (mousemove)="mag($event)" (mouseleave)="magOut($event)" (click)="ripple($event)">
+                  <span>{{ isSendingAppointment() ? 'Sending...' : ('steps.forms.submit' | i18n) }}</span>
                 </button>
               </div>
             </form>
@@ -1230,6 +1236,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
     .mag-btn{position:relative;overflow:hidden;transition:transform .25s ease;}
     .mag-btn::before{content:'';position:absolute;inset:0;background:linear-gradient(105deg,transparent 40%,rgba(255,255,255,.2) 50%,transparent 60%);transform:translateX(-120%) skewX(-20deg);pointer-events:none;}
     .mag-btn:hover::before{animation:shimmerSweep .6s ease forwards;}
+    .mag-btn:disabled{opacity:.6;cursor:not-allowed;transform:none !important;}
 
     /* Dark mode overrides */
     :host-context([data-theme="dark"]) .page-container { background: #1a2332; }
@@ -1302,6 +1309,8 @@ export class StepsComponent implements OnInit, AfterViewInit {
   selectedDepartmentAppeal = signal('');
   selectedMeeting = signal('');
   selectedVisit = signal('');
+  isSendingReport = signal(false);
+  isSendingAppointment = signal(false);
 
   constructor(private route: ActivatedRoute) {}
 
@@ -1414,11 +1423,32 @@ export class StepsComponent implements OnInit, AfterViewInit {
     const email = (form.querySelector('input[type="email"]') as HTMLInputElement)?.value || '';
     const message = (form.querySelector('textarea') as HTMLTextAreaElement)?.value || '';
     const department = this.selectedDepartmentReport();
-    const subject = encodeURIComponent(`Complaint from ${name}`);
-    const body = encodeURIComponent(
-      `Name: ${name}\nEmail: ${email}\nDepartment: ${department}\n\nMessage:\n${message}`
-    );
-    window.location.href = `mailto:laurent@conseildetat.cd?subject=${subject}&body=${body}`;
+
+    this.isSendingReport.set(true);
+    emailjs
+      .send(
+        EMAILJS_SERVICE_ID,
+        EMAILJS_COMPLAINT_TEMPLATE_ID,
+        {
+          from_name: name,
+          from_email: email,
+          department,
+          message,
+        },
+        EMAILJS_PUBLIC_KEY,
+      )
+      .then(() => {
+        alert('Your complaint has been sent successfully.');
+        form.reset();
+        this.selectedDepartmentReport.set('');
+      })
+      .catch((error) => {
+        console.error('EmailJS error:', error);
+        alert('Failed to send your complaint. Please try again later.');
+      })
+      .finally(() => {
+        this.isSendingReport.set(false);
+      });
   }
 
   sendAppointment(event: Event) {
@@ -1430,10 +1460,35 @@ export class StepsComponent implements OnInit, AfterViewInit {
     const department = this.selectedDepartmentAppointment();
     const meeting = this.selectedMeeting();
     const visit = this.selectedVisit();
-    const subject = encodeURIComponent(`Appointment request from ${name}`);
-    const body = encodeURIComponent(
-      `Name: ${name}\nEmail: ${email}\nDepartment: ${department}\nMeeting with: ${meeting}\nPlanned visit: ${visit}\n\nMessage:\n${message}`
-    );
-    window.location.href = `mailto:laurent@conseildetat.cd?subject=${subject}&body=${body}`;
+
+    this.isSendingAppointment.set(true);
+    emailjs
+      .send(
+        EMAILJS_SERVICE_ID,
+        EMAILJS_APPOINTMENT_TEMPLATE_ID,
+        {
+          from_name: name,
+          from_email: email,
+          department,
+          meeting,
+          visit,
+          message,
+        },
+        EMAILJS_PUBLIC_KEY,
+      )
+      .then(() => {
+        alert('Your appointment request has been sent successfully.');
+        form.reset();
+        this.selectedDepartmentAppointment.set('');
+        this.selectedMeeting.set('');
+        this.selectedVisit.set('');
+      })
+      .catch((error) => {
+        console.error('EmailJS error:', error);
+        alert('Failed to send your appointment request. Please try again later.');
+      })
+      .finally(() => {
+        this.isSendingAppointment.set(false);
+      });
   }
 }
