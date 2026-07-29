@@ -19,6 +19,31 @@ const EMAILJS_PUBLIC_KEY = 'XnHCmsf47ThnMSPgE';
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <div class="page-wrap page-container">
+      <!-- Toast Notification -->
+      @if (toastMessage()) {
+        <div
+          class="toast"
+          [class.toast-success]="toastType() === 'success'"
+          [class.toast-error]="toastType() === 'error'"
+          role="status"
+          aria-live="polite"
+        >
+          <span class="toast-icon">
+            @if (toastType() === 'success') { ✓ }
+            @else { ✕ }
+          </span>
+          <span class="toast-text">{{ toastMessage() }}</span>
+          <button
+            type="button"
+            class="toast-close"
+            (click)="toastMessage.set(null)"
+            aria-label="Close notification"
+          >
+            ✕
+          </button>
+        </div>
+      }
+
       <!-- Hero Section - Changes based on active tab -->
       @if (activeTab() === 'report') {
         <section class="hero-section">
@@ -405,6 +430,88 @@ const EMAILJS_PUBLIC_KEY = 'XnHCmsf47ThnMSPgE';
     .page-container {
       background: white;
       min-height: 100vh;
+    }
+
+    /* Toast Notification */
+    .toast {
+      position: fixed;
+      top: 100px;
+      right: 20px;
+      z-index: 9999;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 16px 20px;
+      border-radius: 8px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+      font-size: 0.95rem;
+      font-weight: 500;
+      max-width: 380px;
+      animation: toastSlideIn 0.3s ease-out;
+    }
+
+    .toast-success {
+      background: #10b981;
+      color: white;
+    }
+
+    .toast-error {
+      background: #ef4444;
+      color: white;
+    }
+
+    .toast-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.25);
+      font-size: 0.85rem;
+      flex-shrink: 0;
+    }
+
+    .toast-text {
+      flex: 1;
+      line-height: 1.4;
+    }
+
+    .toast-close {
+      background: transparent;
+      border: none;
+      color: inherit;
+      font-size: 1rem;
+      cursor: pointer;
+      padding: 4px;
+      line-height: 1;
+      opacity: 0.8;
+      transition: opacity 0.2s ease;
+    }
+
+    .toast-close:hover {
+      opacity: 1;
+    }
+
+    @keyframes toastSlideIn {
+      from {
+        transform: translateX(120%);
+        opacity: 0;
+      }
+      to {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+
+    @media (max-width: 767px) {
+      .toast {
+        top: auto;
+        bottom: 20px;
+        left: 20px;
+        right: 20px;
+        max-width: none;
+      }
     }
 
     .container {
@@ -1311,6 +1418,9 @@ export class StepsComponent implements OnInit, AfterViewInit {
   selectedVisit = signal('');
   isSendingReport = signal(false);
   isSendingAppointment = signal(false);
+  toastMessage = signal<string | null>(null);
+  toastType = signal<'success' | 'error'>('success');
+  private toastTimeout?: ReturnType<typeof setTimeout>;
 
   constructor(private route: ActivatedRoute) {}
 
@@ -1416,6 +1526,15 @@ export class StepsComponent implements OnInit, AfterViewInit {
     this.openFaqId.update(current => (current === id ? null : id));
   }
 
+  showToast(message: string, type: 'success' | 'error' = 'success') {
+    this.toastMessage.set(message);
+    this.toastType.set(type);
+    clearTimeout(this.toastTimeout);
+    this.toastTimeout = setTimeout(() => {
+      this.toastMessage.set(null);
+    }, 5000);
+  }
+
   sendReport(event: Event) {
     event.preventDefault();
     const form = event.target as HTMLFormElement;
@@ -1438,13 +1557,13 @@ export class StepsComponent implements OnInit, AfterViewInit {
         EMAILJS_PUBLIC_KEY,
       )
       .then(() => {
-        alert('Your complaint has been sent successfully.');
+        this.showToast('Your complaint has been sent successfully.', 'success');
         form.reset();
         this.selectedDepartmentReport.set('');
       })
       .catch((error) => {
         console.error('EmailJS error:', error);
-        alert('Failed to send your complaint. Please try again later.');
+        this.showToast('Failed to send your complaint. Please try again later.', 'error');
       })
       .finally(() => {
         this.isSendingReport.set(false);
@@ -1477,7 +1596,7 @@ export class StepsComponent implements OnInit, AfterViewInit {
         EMAILJS_PUBLIC_KEY,
       )
       .then(() => {
-        alert('Your appointment request has been sent successfully.');
+        this.showToast('Your appointment request has been sent successfully.', 'success');
         form.reset();
         this.selectedDepartmentAppointment.set('');
         this.selectedMeeting.set('');
@@ -1485,7 +1604,7 @@ export class StepsComponent implements OnInit, AfterViewInit {
       })
       .catch((error) => {
         console.error('EmailJS error:', error);
-        alert('Failed to send your appointment request. Please try again later.');
+        this.showToast('Failed to send your appointment request. Please try again later.', 'error');
       })
       .finally(() => {
         this.isSendingAppointment.set(false);
