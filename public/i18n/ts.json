@@ -122,6 +122,15 @@
         "aria": "Dipatuka dia mikanda bilondeshile ngondo"
       }
     },
+    "videos": {
+      "title": "Dividio",
+      "subtitle": "Dividio tsha muholo ne dimenatelo"
+    },
+    "tabs": {
+      "label": "Dibaka tsha lumu",
+      "articles": "Mikanda",
+      "videos": "Dividio"
+    },
     "actions": {
       "readMore": "Bala kabidi"
     },

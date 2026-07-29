@@ -122,6 +122,15 @@
         "aria": "Frequenza di pubblicazione per mese"
       }
     },
+    "videos": {
+      "title": "Video",
+      "subtitle": "Video ufficiali e trasmissioni"
+    },
+    "tabs": {
+      "label": "Categorie di notizie",
+      "articles": "Articoli",
+      "videos": "Video"
+    },
     "actions": {
       "readMore": "Leggi di piu"
     },

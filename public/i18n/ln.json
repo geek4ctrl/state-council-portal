@@ -122,6 +122,15 @@
         "aria": "Ndenge ya kobimisa na sanza"
       }
     },
+    "videos": {
+      "title": "Bavideo",
+      "subtitle": "Bavideo ya officine mpe ba émissions"
+    },
+    "tabs": {
+      "label": "Ba catégories ya sango",
+      "articles": "Mabongisi",
+      "videos": "Bavideo"
+    },
     "actions": {
       "readMore": "Tanga lisusu"
     },
