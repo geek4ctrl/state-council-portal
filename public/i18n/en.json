@@ -122,6 +122,15 @@
         "aria": "Publication cadence by month"
       }
     },
+    "videos": {
+      "title": "Videos",
+      "subtitle": "Official videos and broadcasts"
+    },
+    "tabs": {
+      "label": "News categories",
+      "articles": "Articles",
+      "videos": "Videos"
+    },
     "actions": {
       "readMore": "Read more"
     },

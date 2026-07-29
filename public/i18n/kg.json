@@ -122,6 +122,15 @@
         "aria": "Mutindu ya kubasisa na sanza"
       }
     },
+    "videos": {
+      "title": "Bavideo",
+      "subtitle": "Bavideo ya officine mpe ba emissions"
+    },
+    "tabs": {
+      "label": "Ba catégories ya bansangu",
+      "articles": "Makala",
+      "videos": "Bavideo"
+    },
     "actions": {
       "readMore": "Tanga lisusu"
     },

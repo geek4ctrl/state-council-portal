@@ -106,6 +106,15 @@
         "aria": "Cadencia de publicación por mes"
       }
     },
+    "videos": {
+      "title": "Vídeos",
+      "subtitle": "Vídeos oficiales y retransmisiones"
+    },
+    "tabs": {
+      "label": "Categorías de noticias",
+      "articles": "Artículos",
+      "videos": "Vídeos"
+    },
     "actions": {
       "readMore": "Leer más"
     },

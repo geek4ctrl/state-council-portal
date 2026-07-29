@@ -122,6 +122,15 @@
         "aria": "Kasi ya uchapishaji kwa mwezi"
       }
     },
+    "videos": {
+      "title": "Video",
+      "subtitle": "Video rasmi na matangazo"
+    },
+    "tabs": {
+      "label": "Kategoria za habari",
+      "articles": "Makala",
+      "videos": "Video"
+    },
     "actions": {
       "readMore": "Soma zaidi"
     },
