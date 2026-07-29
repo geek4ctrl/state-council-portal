@@ -122,6 +122,15 @@
         "aria": "Cadence de publication par mois"
       }
     },
+    "videos": {
+      "title": "Vidéos",
+      "subtitle": "Vidéos officielles et retransmissions"
+    },
+    "tabs": {
+      "label": "Catégories d'actualités",
+      "articles": "Articles",
+      "videos": "Vidéos"
+    },
     "actions": {
       "readMore": "Lire la suite"
     },

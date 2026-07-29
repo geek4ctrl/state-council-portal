@@ -122,6 +122,15 @@
         "aria": "Veröffentlichungsrhythmus nach Monat"
       }
     },
+    "videos": {
+      "title": "Videos",
+      "subtitle": "Offizielle Videos und Übertragungen"
+    },
+    "tabs": {
+      "label": "Nachrichtenkategorien",
+      "articles": "Artikel",
+      "videos": "Videos"
+    },
     "actions": {
       "readMore": "Weiterlesen"
     },

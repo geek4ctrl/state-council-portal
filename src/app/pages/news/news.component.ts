@@ -12,6 +12,7 @@ import {
 } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
+import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 import { RouterLink } from '@angular/router';
 import { SkeletonLoaderComponent } from '../../components/skeleton-loader/skeleton-loader.component';
 import { IconComponent } from '../../components/icon/icon.component';
@@ -20,6 +21,12 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
 import { I18nService } from '../../i18n/i18n.service';
 import Highcharts from 'highcharts';
 import { FooterComponent } from '../../components/footer/footer.component';
+
+export interface VideoItem {
+  id: string;
+  title: string;
+  youtubeId: string;
+}
 
 @Component({
   selector: 'app-news',
@@ -52,136 +59,184 @@ import { FooterComponent } from '../../components/footer/footer.component';
           </div>
           <p class="section-subtitle anim-up a-d1">{{ 'news.section.subtitle' | i18n }}</p>
 
-          <div class="news-grid">
-            @if (isLoading()) {
-              @for (item of [1, 2, 3, 4, 5, 6]; track item) {
-                <app-skeleton-loader type="news-card"></app-skeleton-loader>
-              }
-            } @else if (articles().length === 0) {
-              <div class="news-empty" role="status" aria-live="polite">
-                <h3>{{ 'news.empty.title' | i18n }}</h3>
-                <p>{{ 'news.empty.body' | i18n }}</p>
-              </div>
-            } @else {
-              @for (article of getCurrentPageArticles(); track article.id; let i = $index) {
-                <article
-                  class="news-card glass-card"
-                  [style.--i]="i"
-                >
-                  <div class="news-image img-zoom">
-                    <img [src]="article.image" [alt]="article.title" loading="lazy" />
-                    <div class="img-sheen"></div>
-                  </div>
-                  <div class="news-content">
-                    <div class="news-meta">
-                      <span class="news-date">{{ article.date }}</span>
-                      <span class="news-divider">|</span>
-                      <span class="news-category">{{ article.category }}</span>
-                      <span class="news-divider">|</span>
-                      <span class="news-readtime">{{ 'news.detail.readTime' | i18n : { count: article.readingTime } }}</span>
+          <!-- Tabs -->
+          <div class="news-tabs" role="tablist" [attr.aria-label]="'news.tabs.label' | i18n">
+            <button
+              type="button"
+              class="news-tab"
+              role="tab"
+              [class.active]="activeTab() === 'articles'"
+              [attr.aria-selected]="activeTab() === 'articles'"
+              (click)="activeTab.set('articles')"
+            >
+              {{ 'news.tabs.articles' | i18n }}
+            </button>
+            <button
+              type="button"
+              class="news-tab"
+              role="tab"
+              [class.active]="activeTab() === 'videos'"
+              [attr.aria-selected]="activeTab() === 'videos'"
+              (click)="activeTab.set('videos')"
+            >
+              {{ 'news.tabs.videos' | i18n }}
+            </button>
+          </div>
+
+          @if (activeTab() === 'articles') {
+            <div class="news-grid">
+              @if (isLoading()) {
+                @for (item of [1, 2, 3, 4, 5, 6]; track item) {
+                  <app-skeleton-loader type="news-card"></app-skeleton-loader>
+                }
+              } @else if (articles().length === 0) {
+                <div class="news-empty" role="status" aria-live="polite">
+                  <h3>{{ 'news.empty.title' | i18n }}</h3>
+                  <p>{{ 'news.empty.body' | i18n }}</p>
+                </div>
+              } @else {
+                @for (article of getCurrentPageArticles(); track article.id; let i = $index) {
+                  <article
+                    class="news-card glass-card"
+                    [style.--i]="i"
+                  >
+                    <div class="news-image img-zoom">
+                      <img [src]="article.image" [alt]="article.title" loading="lazy" />
+                      <div class="img-sheen"></div>
                     </div>
-                    <h3 class="news-title">{{ article.title }}</h3>
-                    <p class="news-excerpt">{{ article.excerpt }}</p>
-                    <a
-                      class="read-more mag-btn"
-                      [routerLink]="['/news', article.id]"
-                    >
-                      <span>{{ 'news.actions.readMore' | i18n }}</span>
-                      <app-icon name="arrow-right" [size]="16"></app-icon>
-                    </a>
+                    <div class="news-content">
+                      <div class="news-meta">
+                        <span class="news-date">{{ article.date }}</span>
+                        <span class="news-divider">|</span>
+                        <span class="news-category">{{ article.category }}</span>
+                        <span class="news-divider">|</span>
+                        <span class="news-readtime">{{ 'news.detail.readTime' | i18n : { count: article.readingTime } }}</span>
+                      </div>
+                      <h3 class="news-title">{{ article.title }}</h3>
+                      <p class="news-excerpt">{{ article.excerpt }}</p>
+                      <a
+                        class="read-more mag-btn"
+                        [routerLink]="['/news', article.id]"
+                      >
+                        <span>{{ 'news.actions.readMore' | i18n }}</span>
+                        <app-icon name="arrow-right" [size]="16"></app-icon>
+                      </a>
+                    </div>
+                  </article>
+                }
+              }
+            </div>
+
+            <!-- Pagination -->
+            <nav
+              class="pagination"
+              [attr.aria-label]="'news.pagination.label' | i18n"
+              role="navigation"
+            >
+              <button
+                class="pagination-btn prev-btn mag-btn"
+                [disabled]="currentPage() === 1"
+                (click)="goToPreviousPage()"
+                [attr.aria-label]="'news.pagination.previous' | i18n"
+              >
+                <app-icon
+                  name="chevron-down"
+                  [size]="20"
+                  [customClass]="'rotate-90'"
+                  [attr.aria-hidden]="true"
+                ></app-icon>
+                <span class="prev-btn-text">{{ 'news.pagination.previous' | i18n }}</span>
+              </button>
+              @for (page of pageNumbers(); track page) {
+                <button
+                  class="pagination-number mag-btn"
+                  [class.active]="currentPage() === page"
+                  (click)="goToPage(page)"
+                  [attr.aria-current]="currentPage() === page ? 'page' : null"
+                  [attr.aria-label]="'news.pagination.pageLabel' | i18n: { page }"
+                >
+                  {{ page }}
+                </button>
+              }
+              <button
+                class="pagination-btn next-btn mag-btn"
+                [disabled]="currentPage() === totalPages()"
+                (click)="goToNextPage()"
+                [attr.aria-label]="'news.pagination.next' | i18n"
+              >
+                <span class="next-text">{{ 'news.pagination.next' | i18n }}</span>
+                <app-icon name="chevron-right" [size]="16" [attr.aria-hidden]="true"></app-icon>
+              </button>
+            </nav>
+
+            <div class="insights-section" style="padding-top: 2rem;">
+              <div class="insights-header">
+                <div class="insights-line anim-line"></div>
+                <h3 class="anim-up">{{ 'news.insights.title' | i18n }}</h3>
+              </div>
+              <p class="insights-subtitle anim-up a-d1">{{ 'news.insights.subtitle' | i18n }}</p>
+
+              <div class="insights-grid">
+                <div
+                  class="insight-card glass-card"
+                  style="--i:0"
+                >
+                  <div class="insight-card-header">
+                    <h4>{{ 'news.insights.topics.title' | i18n }}</h4>
+                    <span class="insight-note anim-label-pulse">{{
+                      'news.insights.topics.note' | i18n
+                    }}</span>
+                  </div>
+                  <div
+                    #newsCategoryChart
+                    class="insight-chart"
+                    role="img"
+                    [attr.aria-label]="'news.insights.topics.aria' | i18n"
+                  ></div>
+                </div>
+
+                <div
+                  class="insight-card glass-card"
+                  style="--i:1"
+                >
+                  <div class="insight-card-header">
+                    <h4>{{ 'news.insights.cadence.title' | i18n }}</h4>
+                    <span class="insight-note anim-label-pulse">{{
+                      'news.insights.cadence.note' | i18n
+                    }}</span>
+                  </div>
+                  <div
+                    #newsCadenceChart
+                    class="insight-chart"
+                    role="img"
+                    [attr.aria-label]="'news.insights.cadence.aria' | i18n"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          }
+
+          @if (activeTab() === 'videos') {
+            <div class="videos-grid">
+              @for (video of videos(); track video.id; let i = $index) {
+                <article class="video-card glass-card" [style.--i]="i">
+                  <div class="video-embed">
+                    <iframe
+                      [src]="getEmbedUrl(video.youtubeId)"
+                      [title]="video.title"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen
+                      loading="lazy"
+                    ></iframe>
+                  </div>
+                  <div class="video-content">
+                    <h3 class="video-title">{{ video.title }}</h3>
                   </div>
                 </article>
               }
-            }
-          </div>
-
-          <!-- Pagination -->
-          <nav
-            class="pagination"
-            [attr.aria-label]="'news.pagination.label' | i18n"
-            role="navigation"
-          >
-            <button
-              class="pagination-btn prev-btn mag-btn"
-              [disabled]="currentPage() === 1"
-              (click)="goToPreviousPage()"
-              [attr.aria-label]="'news.pagination.previous' | i18n"
-            >
-              <app-icon
-                name="chevron-down"
-                [size]="20"
-                [customClass]="'rotate-90'"
-                [attr.aria-hidden]="true"
-              ></app-icon>
-              <span class="prev-btn-text">{{ 'news.pagination.previous' | i18n }}</span>
-            </button>
-            @for (page of pageNumbers(); track page) {
-              <button
-                class="pagination-number mag-btn"
-                [class.active]="currentPage() === page"
-                (click)="goToPage(page)"
-                [attr.aria-current]="currentPage() === page ? 'page' : null"
-                [attr.aria-label]="'news.pagination.pageLabel' | i18n: { page }"
-              >
-                {{ page }}
-              </button>
-            }
-            <button
-              class="pagination-btn next-btn mag-btn"
-              [disabled]="currentPage() === totalPages()"
-              (click)="goToNextPage()"
-              [attr.aria-label]="'news.pagination.next' | i18n"
-            >
-              <span class="next-text">{{ 'news.pagination.next' | i18n }}</span>
-              <app-icon name="chevron-right" [size]="16" [attr.aria-hidden]="true"></app-icon>
-            </button>
-          </nav>
-
-          <div class="insights-section" style="padding-top: 2rem;">
-            <div class="insights-header">
-              <div class="insights-line anim-line"></div>
-              <h3 class="anim-up">{{ 'news.insights.title' | i18n }}</h3>
             </div>
-            <p class="insights-subtitle anim-up a-d1">{{ 'news.insights.subtitle' | i18n }}</p>
-
-            <div class="insights-grid">
-              <div
-                class="insight-card glass-card"
-                style="--i:0"
-              >
-                <div class="insight-card-header">
-                  <h4>{{ 'news.insights.topics.title' | i18n }}</h4>
-                  <span class="insight-note anim-label-pulse">{{
-                    'news.insights.topics.note' | i18n
-                  }}</span>
-                </div>
-                <div
-                  #newsCategoryChart
-                  class="insight-chart"
-                  role="img"
-                  [attr.aria-label]="'news.insights.topics.aria' | i18n"
-                ></div>
-              </div>
-
-              <div
-                class="insight-card glass-card"
-                style="--i:1"
-              >
-                <div class="insight-card-header">
-                  <h4>{{ 'news.insights.cadence.title' | i18n }}</h4>
-                  <span class="insight-note anim-label-pulse">{{
-                    'news.insights.cadence.note' | i18n
-                  }}</span>
-                </div>
-                <div
-                  #newsCadenceChart
-                  class="insight-chart"
-                  role="img"
-                  [attr.aria-label]="'news.insights.cadence.aria' | i18n"
-                ></div>
-              </div>
-            </div>
-          </div>
+          }
         </div>
       </section>
 
@@ -369,6 +424,123 @@ import { FooterComponent } from '../../components/footer/footer.component';
         width: 100%;
         height: clamp(180px, 45vw, 260px);
         overflow: hidden;
+      }
+
+      /* Tabs */
+      .news-tabs {
+        display: flex;
+        justify-content: center;
+        gap: 12px;
+        margin-bottom: 40px;
+        border-bottom: 2px solid rgba(26, 41, 66, 0.1);
+        padding-bottom: 0;
+      }
+
+      .news-tab {
+        position: relative;
+        background: transparent;
+        border: none;
+        padding: 14px 28px;
+        font-size: 1rem;
+        font-weight: 600;
+        color: #6b7280;
+        cursor: pointer;
+        transition: color 0.25s ease;
+      }
+
+      .news-tab::after {
+        content: '';
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background: #1f9bd9;
+        transform: scaleX(0);
+        transition: transform 0.25s ease;
+      }
+
+      .news-tab:hover {
+        color: #1a2942;
+      }
+
+      .news-tab.active {
+        color: #1f9bd9;
+      }
+
+      .news-tab.active::after {
+        transform: scaleX(1);
+      }
+
+      /* Videos grid */
+      .videos-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+      }
+
+      .video-card {
+        background: #ffffff;
+        border: 1px solid rgba(26, 41, 66, 0.08);
+        box-shadow: 0 12px 26px rgba(26, 41, 66, 0.12);
+        border-radius: 6px;
+        overflow: hidden;
+        transition: transform 0.25s ease, box-shadow 0.25s ease;
+      }
+
+      .video-card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 20px 40px rgba(26, 41, 66, 0.16);
+      }
+
+      .video-embed {
+        position: relative;
+        width: 100%;
+        padding-bottom: 56.25%;
+        background: #1a2942;
+      }
+
+      .video-embed iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+      }
+
+      .video-content {
+        padding: 18px 20px;
+      }
+
+      .video-title {
+        font-size: 1rem;
+        font-weight: 600;
+        color: #1a1a1a;
+        margin: 0;
+        line-height: 1.4;
+      }
+
+      @media (max-width: 991px) {
+        .videos-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      @media (max-width: 767px) {
+        .news-tabs {
+          gap: 8px;
+        }
+
+        .news-tab {
+          padding: 12px 18px;
+          font-size: 0.9rem;
+        }
+
+        .videos-grid {
+          grid-template-columns: 1fr;
+          gap: 24px;
+        }
       }
 
       .news-grid {
@@ -1179,12 +1351,21 @@ import { FooterComponent } from '../../components/footer/footer.component';
       :host-context([data-theme="dark"]) .pagination-number.active { background: #4fc3f7; color: #1a2332; }
       :host-context([data-theme="dark"]) .header-decoration-left,
       :host-context([data-theme="dark"]) .header-decoration-right { background: linear-gradient(90deg, transparent, #4fc3f7, transparent); }
+      :host-context([data-theme="dark"]) .news-tab { color: #8899aa; }
+      :host-context([data-theme="dark"]) .news-tab:hover { color: #e4eaf0; }
+      :host-context([data-theme="dark"]) .news-tab.active { color: #4fc3f7; }
+      :host-context([data-theme="dark"]) .news-tabs { border-bottom-color: rgba(240,246,252,0.1); }
+      :host-context([data-theme="dark"]) .video-card { background: #243447; border-color: rgba(240,246,252,0.1); box-shadow: 0 8px 24px rgba(0,0,0,0.4); }
+      :host-context([data-theme="dark"]) .video-card:hover { box-shadow: 0 12px 32px rgba(0,0,0,0.5); }
+      :host-context([data-theme="dark"]) .video-title { color: #e4eaf0; }
+      :host-context([data-theme="dark"]) .video-embed { background: #1a2332; }
     `,
   ],
 })
 export class NewsComponent implements OnInit, AfterViewInit {
   private seoService = inject(SeoService);
   private readonly http = inject(HttpClient);
+  private readonly sanitizer = inject(DomSanitizer);
   private readonly i18n = inject(I18nService);
   private readonly destroyRef = inject(DestroyRef);
   private chartInstances: Highcharts.Chart[] = [];
@@ -1212,7 +1393,25 @@ export class NewsComponent implements OnInit, AfterViewInit {
   currentPage = signal(1);
   isLoading = signal(true);
   itemsPerPage = 6;
+  activeTab = signal<'articles' | 'videos'>('articles');
   protected readonly articles = signal<NewsArticle[]>([]);
+  readonly videos = signal<VideoItem[]>([
+    {
+      id: '1',
+      title: `DIRECT FELIX TSHISEKEDI : AUDIENCE SOLENNELLE ET PUBLIQUE RENTRE JUDICIAIRE DE CONSEIL D'ETAT`,
+      youtubeId: 'RZY6D190dHs',
+    },
+    {
+      id: '2',
+      title: 'Audience solennelle de rentrée judiciaire',
+      youtubeId: '2BAZe4GfsZ4',
+    },
+    {
+      id: '3',
+      title: `QUE DIT LA LOI : Rôle et missions du conseil d'État`,
+      youtubeId: 'U0WjTeuDeSY',
+    },
+  ]);
   readonly totalPages = computed(() =>
     Math.max(1, Math.ceil(this.articles().length / this.itemsPerPage)),
   );
@@ -1445,6 +1644,12 @@ export class NewsComponent implements OnInit, AfterViewInit {
     const startIndex = (this.currentPage() - 1) * this.itemsPerPage;
     const endIndex = startIndex + this.itemsPerPage;
     return this.articles().slice(startIndex, endIndex);
+  }
+
+  getEmbedUrl(youtubeId: string): SafeResourceUrl {
+    return this.sanitizer.bypassSecurityTrustResourceUrl(
+      `https://www.youtube-nocookie.com/embed/${youtubeId}`,
+    );
   }
 
   goToPage(page: number) {
