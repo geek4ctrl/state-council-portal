@@ -26,7 +26,7 @@
       "international": "Internationale Beziehungen",
       "audiences": "Anhörungen",
       "steps": "Schritte",
-      "publications": "Veröffentlichungen des Staatsrates",
+      "publications": "Veröffentlichungen und Entscheidungen",
       "bookAppointment": "Termin buchen",
       "news": "Nachrichten"
     },
@@ -1169,6 +1169,12 @@
   "publications": {
     "download": "Herunterladen",
     "officialGazette": "Amtsblatt",
+    "decision": "Entscheidung",
+    "tabs": {
+      "label": "Kategorien",
+      "publications": "Veröffentlichungen",
+      "decisions": "Entscheidungen"
+    },
     "heroBody": "Rufen Sie die offiziellen Publikationen des Staatsrates ab und laden Sie sie herunter."
   },
   "proceduresPage": {

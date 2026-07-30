@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { FooterComponent } from '../../components/footer/footer.component';
 import { I18nPipe } from '../../i18n/i18n.pipe';
 
@@ -25,41 +25,115 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
 
       <section class="publications-section">
         <div class="container">
-          <article class="publication-card">
-            <div class="pub-icon-col">
-              <div class="pub-doc-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
-                  <polyline points="14 2 14 8 20 8"/>
-                  <line x1="16" y1="13" x2="8" y2="13"/>
-                  <line x1="16" y1="17" x2="8" y2="17"/>
-                  <polyline points="10 9 9 9 8 9"/>
-                </svg>
-              </div>
-            </div>
-            <div class="publication-copy">
-              <p class="publication-kicker">{{ 'header.nav.publications' | i18n }}</p>
-              <h2 class="publication-title">{{ publication.title }}</h2>
-              <div class="publication-badges">
-                <span class="badge badge-pdf">PDF</span>
-                <span class="badge badge-official">{{ 'publications.officialGazette' | i18n }}</span>
-              </div>
-            </div>
-            <a
-              class="download-button"
-              [href]="publication.href"
-              [attr.download]="publication.fileName"
-              target="_blank"
-              rel="noopener noreferrer"
+          <!-- Tabs -->
+          <div class="pub-tabs" role="tablist" [attr.aria-label]="'publications.tabs.label' | i18n">
+            <button
+              type="button"
+              class="pub-tab"
+              role="tab"
+              [class.active]="activeTab() === 'publications'"
+              [attr.aria-selected]="activeTab() === 'publications'"
+              (click)="activeTab.set('publications')"
             >
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <path d="M12 3v12"></path>
-                <path d="M7 10l5 5 5-5"></path>
-                <path d="M5 21h14"></path>
-              </svg>
-              <span>{{ 'publications.download' | i18n }}</span>
-            </a>
-          </article>
+              {{ 'publications.tabs.publications' | i18n }}
+            </button>
+            <button
+              type="button"
+              class="pub-tab"
+              role="tab"
+              [class.active]="activeTab() === 'decisions'"
+              [attr.aria-selected]="activeTab() === 'decisions'"
+              (click)="activeTab.set('decisions')"
+            >
+              {{ 'publications.tabs.decisions' | i18n }}
+            </button>
+          </div>
+
+          <!-- Publications list -->
+          @if (activeTab() === 'publications') {
+            <div class="publications-list">
+              @for (item of publications; track item.title; let i = $index) {
+                <article class="publication-card" [style.--i]="i">
+                  <div class="pub-icon-col">
+                    <div class="pub-doc-icon">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                        <polyline points="14 2 14 8 20 8"/>
+                        <line x1="16" y1="13" x2="8" y2="13"/>
+                        <line x1="16" y1="17" x2="8" y2="17"/>
+                        <polyline points="10 9 9 9 8 9"/>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="publication-copy">
+                    <p class="publication-kicker">{{ 'publications.tabs.publications' | i18n }}</p>
+                    <h2 class="publication-title">{{ item.title }}</h2>
+                    <div class="publication-badges">
+                      <span class="badge badge-pdf">PDF</span>
+                      <span class="badge badge-official">{{ 'publications.officialGazette' | i18n }}</span>
+                    </div>
+                  </div>
+                  <a
+                    class="download-button"
+                    [href]="item.href"
+                    [attr.download]="item.fileName"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M12 3v12"></path>
+                      <path d="M7 10l5 5 5-5"></path>
+                      <path d="M5 21h14"></path>
+                    </svg>
+                    <span>{{ 'publications.download' | i18n }}</span>
+                  </a>
+                </article>
+              }
+            </div>
+          }
+
+          <!-- Decisions list -->
+          @if (activeTab() === 'decisions') {
+            <div class="publications-list">
+              @for (item of decisions; track item.title; let i = $index) {
+                <article class="publication-card" [style.--i]="i">
+                  <div class="pub-icon-col">
+                    <div class="pub-doc-icon">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                        <polyline points="14 2 14 8 20 8"/>
+                        <line x1="16" y1="13" x2="8" y2="13"/>
+                        <line x1="16" y1="17" x2="8" y2="17"/>
+                        <polyline points="10 9 9 9 8 9"/>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="publication-copy">
+                    <p class="publication-kicker">{{ 'publications.tabs.decisions' | i18n }}</p>
+                    <h2 class="publication-title">{{ item.title }}</h2>
+                    <div class="publication-badges">
+                      <span class="badge badge-pdf">PDF</span>
+                      <span class="badge badge-official">{{ 'publications.decision' | i18n }}</span>
+                    </div>
+                  </div>
+                  <a
+                    class="download-button"
+                    [href]="item.href"
+                    [attr.download]="item.fileName"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M12 3v12"></path>
+                      <path d="M7 10l5 5 5-5"></path>
+                      <path d="M5 21h14"></path>
+                    </svg>
+                    <span>{{ 'publications.download' | i18n }}</span>
+                  </a>
+                </article>
+              }
+            </div>
+          }
         </div>
       </section>
 
@@ -124,6 +198,66 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
         background: linear-gradient(180deg, #f0f4f8 0%, #e8eef5 100%);
       }
 
+      .pub-tabs {
+        display: flex;
+        gap: 8px;
+        margin-bottom: 40px;
+        border-bottom: 2px solid rgba(31, 155, 217, 0.15);
+      }
+
+      .pub-tab {
+        position: relative;
+        padding: 14px 24px;
+        background: transparent;
+        border: none;
+        color: #64748b;
+        font-size: 0.95rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: color 0.2s ease;
+      }
+
+      .pub-tab:hover {
+        color: #1f9bd9;
+      }
+
+      .pub-tab.active {
+        color: #1f9bd9;
+      }
+
+      .pub-tab.active::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -2px;
+        height: 3px;
+        background: linear-gradient(90deg, #1f9bd9, #1a5fa8);
+        border-radius: 3px 3px 0 0;
+      }
+
+      .publications-list {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+      }
+
+      .publication-card {
+        animation: fadeInUp 0.4s ease both;
+        animation-delay: calc(var(--i, 0) * 80ms);
+      }
+
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(16px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
       .publication-card {
         display: flex;
         align-items: center;
@@ -138,6 +272,8 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
           0 24px 48px rgba(15, 23, 42, 0.06);
         position: relative;
         overflow: hidden;
+        animation: fadeInUp 0.4s ease both;
+        animation-delay: calc(var(--i, 0) * 80ms);
       }
 
       .publication-card::before {
@@ -290,6 +426,11 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
       /* ── Dark Mode ── */
       :host-context([data-theme="dark"]) .page-container { background: #1a2332; }
       :host-context([data-theme="dark"]) .publications-section { background: linear-gradient(180deg, #243447, #2a3d52); }
+      :host-context([data-theme="dark"]) .pub-tabs { border-bottom-color: rgba(79, 195, 247, 0.15); }
+      :host-context([data-theme="dark"]) .pub-tab { color: #94a3b8; }
+      :host-context([data-theme="dark"]) .pub-tab:hover,
+      :host-context([data-theme="dark"]) .pub-tab.active { color: #4fc3f7; }
+      :host-context([data-theme="dark"]) .pub-tab.active::after { background: linear-gradient(90deg, #4fc3f7, #1a5fa8); }
       :host-context([data-theme="dark"]) .publication-card { background: #243447; border-color: rgba(79, 195, 247,0.1); box-shadow: 0 8px 24px rgba(0,0,0,0.4); }
       :host-context([data-theme="dark"]) .publication-title { color: #e4eaf0; }
       :host-context([data-theme="dark"]) .publication-kicker { color: #4fc3f7; }
@@ -300,9 +441,26 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
   ],
 })
 export class PublicationsComponent {
-  protected readonly publication = {
-    title: 'J.O. n° spécial du 26 février 2026 - RITE.097',
-    fileName: 'J.O. n° spécial du 26 février 2026_RITE.097 (1).pdf',
-    href: encodeURI('/publications/J.O. n° spécial du 26 février 2026_RITE.097 (1).pdf'),
-  };
+  activeTab = signal<'publications' | 'decisions'>('publications');
+
+  protected readonly publications = [
+    {
+      title: 'J.O. n° spécial du 26 février 2026 - RITE.097',
+      fileName: 'J.O. n° spécial du 26 février 2026_RITE.097 (1).pdf',
+      href: encodeURI('/publications/J.O. n° spécial du 26 février 2026_RITE.097 (1).pdf'),
+    },
+  ];
+
+  protected readonly decisions = [
+    {
+      title: 'Décision n° 001/CCE/2026 - Contentieux électoral',
+      fileName: 'decision-001-cce-2026.pdf',
+      href: encodeURI('/publications/decision-001-cce-2026.pdf'),
+    },
+    {
+      title: 'Décision n° 002/CCE/2026 - Recours en annulation',
+      fileName: 'decision-002-cce-2026.pdf',
+      href: encodeURI('/publications/decision-002-cce-2026.pdf'),
+    },
+  ];
 }

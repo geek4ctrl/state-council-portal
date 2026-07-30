@@ -26,7 +26,7 @@
       "international": "Mahusiano ya Kimataifa",
       "audiences": "Vikao",
       "steps": "Hatua",
-      "publications": "Machapisho ya Baraza la Nchi",
+      "publications": "Machapisho na maamuzi",
       "bookAppointment": "Weka Miadi",
       "news": "Habari"
     },
@@ -1169,6 +1169,12 @@
   "publications": {
     "download": "Pakua",
     "officialGazette": "Gazeti la Serikali",
+    "decision": "Uamuzi",
+    "tabs": {
+      "label": "Makundi",
+      "publications": "Machapisho",
+      "decisions": "Maamuzi"
+    },
     "heroBody": "Tazama na pakua machapisho rasmi ya Baraza la Nchi."
   },
   "proceduresPage": {

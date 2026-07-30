@@ -429,7 +429,7 @@ export interface VideoItem {
       /* Tabs */
       .news-tabs {
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         gap: 12px;
         margin-bottom: 40px;
         border-bottom: 2px solid rgba(26, 41, 66, 0.1);

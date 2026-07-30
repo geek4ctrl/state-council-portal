@@ -26,7 +26,7 @@
       "international": "Relaciones Internacionales",
       "audiences": "Audiencias",
       "steps": "Pasos",
-      "publications": "Publicaciones del Consejo de Estado",
+      "publications": "Publicaciones y decisiones",
       "bookAppointment": "Reservar cita",
       "news": "Noticias"
     }
@@ -1084,6 +1084,12 @@
   "publications": {
     "download": "Descargar",
     "officialGazette": "Boletín Oficial",
+    "decision": "Decisión",
+    "tabs": {
+      "label": "Categorías",
+      "publications": "Publicaciones",
+      "decisions": "Decisiones"
+    },
     "heroBody": "Consulte y descargue las publicaciones oficiales del Consejo de Estado."
   }
 }

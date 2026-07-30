@@ -26,7 +26,7 @@
       "international": "Relations internationales",
       "audiences": "Audiences",
       "steps": "Étapes",
-      "publications": "Publications du Conseil d'État",
+      "publications": "Publications et décisions",
       "bookAppointment": "Prendre rendez-vous",
       "news": "Actualités"
     },
@@ -1165,6 +1165,12 @@
   "publications": {
     "download": "Télécharger",
     "officialGazette": "Journal Officiel",
+    "decision": "Décision",
+    "tabs": {
+      "label": "Catégories",
+      "publications": "Publications",
+      "decisions": "Décisions"
+    },
     "heroBody": "Consultez et téléchargez les publications officielles du Conseil d'État."
   },
   "proceduresPage": {
