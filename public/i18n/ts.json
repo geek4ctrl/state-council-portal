@@ -26,7 +26,7 @@
       "international": "Malanda a matunga masanga",
       "audiences": "Bantu",
       "steps": "Bidimu",
-      "publications": "Mikanda ne dipentshisio",
+      "publications": "Mikanda ya Conseil d'État",
       "bookAppointment": "Difunda dia kutuadikangana",
       "news": "Mapia mapia"
     },
@@ -1170,12 +1170,6 @@
   "publications": {
     "download": "Kuangata",
     "officialGazette": "Gazete ya Mufumu",
-    "decision": "Pentshisio",
-    "tabs": {
-      "label": "Tikomba",
-      "publications": "Mikanda",
-      "decisions": "Dipentshisio"
-    },
     "heroBody": "Shetshela ne u ke kuangate mafundishe a mufumu a Conseil d'État."
   },
   "proceduresPage": {

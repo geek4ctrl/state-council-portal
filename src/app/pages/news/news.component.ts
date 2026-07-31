@@ -168,6 +168,52 @@ export interface VideoItem {
                 <app-icon name="chevron-right" [size]="16" [attr.aria-hidden]="true"></app-icon>
               </button>
             </nav>
+
+            <div class="insights-section" style="padding-top: 2rem;">
+              <div class="insights-header">
+                <div class="insights-line anim-line"></div>
+                <h3 class="anim-up">{{ 'news.insights.title' | i18n }}</h3>
+              </div>
+              <p class="insights-subtitle anim-up a-d1">{{ 'news.insights.subtitle' | i18n }}</p>
+
+              <div class="insights-grid">
+                <div
+                  class="insight-card glass-card"
+                  style="--i:0"
+                >
+                  <div class="insight-card-header">
+                    <h4>{{ 'news.insights.topics.title' | i18n }}</h4>
+                    <span class="insight-note anim-label-pulse">{{
+                      'news.insights.topics.note' | i18n
+                    }}</span>
+                  </div>
+                  <div
+                    #newsCategoryChart
+                    class="insight-chart"
+                    role="img"
+                    [attr.aria-label]="'news.insights.topics.aria' | i18n"
+                  ></div>
+                </div>
+
+                <div
+                  class="insight-card glass-card"
+                  style="--i:1"
+                >
+                  <div class="insight-card-header">
+                    <h4>{{ 'news.insights.cadence.title' | i18n }}</h4>
+                    <span class="insight-note anim-label-pulse">{{
+                      'news.insights.cadence.note' | i18n
+                    }}</span>
+                  </div>
+                  <div
+                    #newsCadenceChart
+                    class="insight-chart"
+                    role="img"
+                    [attr.aria-label]="'news.insights.cadence.aria' | i18n"
+                  ></div>
+                </div>
+              </div>
+            </div>
           }
 
           @if (activeTab() === 'videos') {
@@ -191,52 +237,6 @@ export interface VideoItem {
               }
             </div>
           }
-
-          <div class="insights-section" style="padding-top: 2rem;">
-            <div class="insights-header">
-              <div class="insights-line anim-line"></div>
-              <h3 class="anim-up">{{ 'news.insights.title' | i18n }}</h3>
-            </div>
-            <p class="insights-subtitle anim-up a-d1">{{ 'news.insights.subtitle' | i18n }}</p>
-
-            <div class="insights-grid">
-              <div
-                class="insight-card glass-card"
-                style="--i:0"
-              >
-                <div class="insight-card-header">
-                  <h4>{{ 'news.insights.topics.title' | i18n }}</h4>
-                  <span class="insight-note anim-label-pulse">{{
-                    'news.insights.topics.note' | i18n
-                  }}</span>
-                </div>
-                <div
-                  #newsCategoryChart
-                  class="insight-chart"
-                  role="img"
-                  [attr.aria-label]="'news.insights.topics.aria' | i18n"
-                ></div>
-              </div>
-
-              <div
-                class="insight-card glass-card"
-                style="--i:1"
-              >
-                <div class="insight-card-header">
-                  <h4>{{ 'news.insights.cadence.title' | i18n }}</h4>
-                  <span class="insight-note anim-label-pulse">{{
-                    'news.insights.cadence.note' | i18n
-                  }}</span>
-                </div>
-                <div
-                  #newsCadenceChart
-                  class="insight-chart"
-                  role="img"
-                  [attr.aria-label]="'news.insights.cadence.aria' | i18n"
-                ></div>
-              </div>
-            </div>
-          </div>
         </div>
       </section>
 
@@ -429,7 +429,7 @@ export interface VideoItem {
       /* Tabs */
       .news-tabs {
         display: flex;
-        justify-content: flex-start;
+        justify-content: center;
         gap: 12px;
         margin-bottom: 40px;
         border-bottom: 2px solid rgba(26, 41, 66, 0.1);
