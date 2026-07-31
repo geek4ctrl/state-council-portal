@@ -150,7 +150,11 @@
     },
     "empty": {
       "title": "Kakuena lumu nansha lumue to",
-      "body": "Biena-bualu bipiabipia nebipatuke apa padibi bimane kupatuka."
+      "body": "Biena-bualu bipiabipia nebipatuke apa padibi bimane kupatuka.",
+      "videos": {
+        "title": "Kakuena vhirios to",
+        "body": "Vhirio bya mufumu byibyapateke apa padibi byimane kupatuka."
+      }
     },
     "articles": {
       "1": {
@@ -1175,6 +1179,12 @@
       "label": "Tikomba",
       "publications": "Mikanda",
       "decisions": "Dipentshisio"
+    },
+    "empty": {
+      "decisions": {
+        "title": "Kakuena dipentshisio to",
+        "body": "Dipentshisio ya Conseil d'État dibyapateke apa padibi dimane kupatuka."
+      }
     },
     "heroBody": "Shetshela ne u ke kuangate mafundishe a mufumu a Conseil d'État."
   },

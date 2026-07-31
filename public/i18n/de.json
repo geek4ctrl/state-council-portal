@@ -150,7 +150,11 @@
     },
     "empty": {
       "title": "Noch keine News-Beiträge",
-      "body": "Neue Artikel erscheinen hier, sobald sie veröffentlicht werden."
+      "body": "Neue Artikel erscheinen hier, sobald sie veröffentlicht werden.",
+      "videos": {
+        "title": "Noch keine Videos",
+        "body": "Offizielle Videos erscheinen hier, sobald sie veröffentlicht werden."
+      }
     },
     "articles": {
       "1": {
@@ -1174,6 +1178,12 @@
       "label": "Kategorien",
       "publications": "Veröffentlichungen",
       "decisions": "Entscheidungen"
+    },
+    "empty": {
+      "decisions": {
+        "title": "Noch keine Entscheidungen",
+        "body": "Entscheidungen des Staatsrats erscheinen hier, sobald sie veröffentlicht werden."
+      }
     },
     "heroBody": "Rufen Sie die offiziellen Publikationen des Staatsrates ab und laden Sie sie herunter."
   },

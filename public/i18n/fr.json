@@ -150,7 +150,11 @@
     },
     "empty": {
       "title": "Aucune actualité pour le moment",
-      "body": "Les articles s'afficheront ici dès leur publication."
+      "body": "Les articles s'afficheront ici dès leur publication.",
+      "videos": {
+        "title": "Aucune vidéo pour le moment",
+        "body": "Les vidéos officielles s'afficheront ici dès leur publication."
+      }
     },
     "articles": {
       "1": {
@@ -1170,6 +1174,12 @@
       "label": "Catégories",
       "publications": "Publications",
       "decisions": "Décisions"
+    },
+    "empty": {
+      "decisions": {
+        "title": "Aucune décision pour le moment",
+        "body": "Les décisions du Conseil d'État s'afficheront ici dès leur publication."
+      }
     },
     "heroBody": "Consultez et téléchargez les publications officielles du Conseil d'État."
   },

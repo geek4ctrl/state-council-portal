@@ -150,7 +150,11 @@
     },
     "empty": {
       "title": "No new post yet",
-      "body": "New articles will appear here once they are published."
+      "body": "New articles will appear here once they are published.",
+      "videos": {
+        "title": "No videos yet",
+        "body": "Official videos will appear here once published."
+      }
     },
     "articles": {
       "1": {
@@ -1170,6 +1174,12 @@
       "label": "Categories",
       "publications": "Publications",
       "decisions": "Decisions"
+    },
+    "empty": {
+      "decisions": {
+        "title": "No decisions yet",
+        "body": "State Council decisions will appear here once published."
+      }
     },
     "heroBody": "Consult and download the official publications of the State Council."
   },

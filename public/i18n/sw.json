@@ -150,7 +150,11 @@
     },
     "empty": {
       "title": "Hakuna habari bado",
-      "body": "Makala mpya zitaonekana hapa zitakapochapishwa."
+      "body": "Makala mpya zitaonekana hapa zitakapochapishwa.",
+      "videos": {
+        "title": "Hakuna video bado",
+        "body": "Video rasmi zitaonekana hapa zitakapochapishwa."
+      }
     },
     "articles": {
       "1": {
@@ -1174,6 +1178,12 @@
       "label": "Makundi",
       "publications": "Machapisho",
       "decisions": "Maamuzi"
+    },
+    "empty": {
+      "decisions": {
+        "title": "Hakuna uamuzi bado",
+        "body": "Maamuzi ya Baraza la Nchi yataonekana hapa yakitangazwa."
+      }
     },
     "heroBody": "Tazama na pakua machapisho rasmi ya Baraza la Nchi."
   },

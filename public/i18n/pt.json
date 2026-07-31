@@ -150,7 +150,11 @@
     },
     "empty": {
       "title": "Ainda não há postagens de notícias",
-      "body": "Novos artigos aparecerão aqui assim que forem publicados."
+      "body": "Novos artigos aparecerão aqui assim que forem publicados.",
+      "videos": {
+        "title": "Ainda não há vídeos",
+        "body": "Os vídeos oficiais aparecerão aqui assim que forem publicados."
+      }
     },
     "articles": {
       "1": {
@@ -1174,6 +1178,12 @@
       "label": "Categorias",
       "publications": "Publicações",
       "decisions": "Decisões"
+    },
+    "empty": {
+      "decisions": {
+        "title": "Ainda não há decisões",
+        "body": "As decisões do Conselho de Estado aparecerão aqui assim que forem publicadas."
+      }
     },
     "heroBody": "Consulte e baixe as publicações oficiais do Conselho de Estado."
   },
