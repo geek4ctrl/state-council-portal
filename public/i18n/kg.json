@@ -26,7 +26,7 @@
       "international": "Boyokani ya mokili",
       "audiences": "Makikao",
       "steps": "Bitini",
-      "publications": "Mikanda ya Conseil d'État",
+      "publications": "Mikanda na Biamu",
       "bookAppointment": "Bongisa lukutakanu",
       "news": "Bansangu"
     },
@@ -1169,7 +1169,18 @@
   "publications": {
     "download": "Telecharger",
     "officialGazette": "Journal Officiel",
-    "heroBody": "Keba ne u telecharge mafundishe ya Conseil d'État."
+    "heroBody": "Keba ne u telecharge mafundishe ya Conseil d'État.",
+    "tabs": {
+      "label": "Mikanda na biamu",
+      "publications": "Mikanda",
+      "decisions": "Biamu"
+    },
+    "decisions": {
+      "empty": {
+        "title": "Biamu ve",
+        "body": "Biamu ya tribunal kianso kia buna awa vana mafutila mabi."
+      }
+    }
   },
   "proceduresPage": {
     "title": "Procédures devant le Conseil d'Etat",
