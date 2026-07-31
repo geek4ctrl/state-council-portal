@@ -26,7 +26,7 @@
       "international": "Relazioni internazionali",
       "audiences": "Udienze",
       "steps": "Fasi",
-      "publications": "Pubblicazioni del Consiglio di Stato",
+      "publications": "Pubblicazioni e decisioni",
       "bookAppointment": "Prenota un appuntamento",
       "news": "Notizie"
     },
@@ -1169,6 +1169,12 @@
   "publications": {
     "download": "Scarica",
     "officialGazette": "Gazzetta Ufficiale",
+    "decision": "Decisione",
+    "tabs": {
+      "label": "Categorie",
+      "publications": "Pubblicazioni",
+      "decisions": "Decisioni"
+    },
     "heroBody": "Consulta e scarica le pubblicazioni ufficiali del Consiglio di Stato."
   },
   "proceduresPage": {

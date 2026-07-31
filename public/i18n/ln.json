@@ -26,7 +26,7 @@
       "international": "Boyokani ya mokili mobimba",
       "audiences": "Makikao",
       "steps": "Etape",
-      "publications": "Mikanda ya Conseil d'État",
+      "publications": "Mikanda mpe misala",
       "bookAppointment": "Bokanda rendez-vous",
       "news": "Sango"
     },
@@ -1169,6 +1169,12 @@
   "publications": {
     "download": "Telecharger",
     "officialGazette": "Journal Officiel",
+    "decision": "Esala",
+    "tabs": {
+      "label": "Bakategori",
+      "publications": "Mikanda",
+      "decisions": "Misala"
+    },
     "heroBody": "Tala ne u télécharge maboko ya Conseil d'État."
   },
   "proceduresPage": {

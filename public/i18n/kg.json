@@ -26,7 +26,7 @@
       "international": "Boyokani ya mokili",
       "audiences": "Makikao",
       "steps": "Bitini",
-      "publications": "Mikanda ya Conseil d'État",
+      "publications": "Mikanda mpe bisalu",
       "bookAppointment": "Bongisa lukutakanu",
       "news": "Bansangu"
     },
@@ -1169,6 +1169,12 @@
   "publications": {
     "download": "Telecharger",
     "officialGazette": "Journal Officiel",
+    "decision": "Disalu",
+    "tabs": {
+      "label": "Bikategori",
+      "publications": "Mikanda",
+      "decisions": "Bisalu"
+    },
     "heroBody": "Keba ne u telecharge mafundishe ya Conseil d'État."
   },
   "proceduresPage": {
