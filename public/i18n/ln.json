@@ -150,7 +150,11 @@
     },
     "empty": {
       "title": "Sango ezali naino te",
-      "body": "Mabongisi ya sika ekobima awa soki ebimisi."
+      "body": "Mabongisi ya sika ekobima awa soki ebimisi.",
+      "videos": {
+        "title": "Video ezali naino te",
+        "body": "Mavideo ya officiel ekobima awa soki ebimisi."
+      }
     },
     "articles": {
       "1": {
@@ -1174,6 +1178,12 @@
       "label": "Bakategori",
       "publications": "Mikanda",
       "decisions": "Misala"
+    },
+    "empty": {
+      "decisions": {
+        "title": "Misala ezali naino te",
+        "body": "Misala ya Conseil d'État ekobima awa soki ebimisi."
+      }
     },
     "heroBody": "Tala ne u télécharge maboko ya Conseil d'État."
   },

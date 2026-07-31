@@ -150,7 +150,11 @@
     },
     "empty": {
       "title": "Nessuna notizia ancora",
-      "body": "Nuovi articoli appariranno qui non appena pubblicati."
+      "body": "Nuovi articoli appariranno qui non appena pubblicati.",
+      "videos": {
+        "title": "Nessun video ancora",
+        "body": "I video ufficiali appariranno qui non appena pubblicati."
+      }
     },
     "articles": {
       "1": {
@@ -1174,6 +1178,12 @@
       "label": "Categorie",
       "publications": "Pubblicazioni",
       "decisions": "Decisioni"
+    },
+    "empty": {
+      "decisions": {
+        "title": "Nessuna decisione ancora",
+        "body": "Le decisioni del Consiglio di Stato appariranno qui non appena pubblicate."
+      }
     },
     "heroBody": "Consulta e scarica le pubblicazioni ufficiali del Consiglio di Stato."
   },

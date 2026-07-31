@@ -150,7 +150,11 @@
     },
     "empty": {
       "title": "Bansangu me monana nanu ve",
-      "body": "Makala ya sika ta basika awa kana me kobima."
+      "body": "Makala ya sika ta basika awa kana me kobima.",
+      "videos": {
+        "title": "Mavideo me monana nanu ve",
+        "body": "Mavideo ya mufumu ta basika awa kana me kobima."
+      }
     },
     "articles": {
       "1": {
@@ -1174,6 +1178,12 @@
       "label": "Bikategori",
       "publications": "Mikanda",
       "decisions": "Bisalu"
+    },
+    "empty": {
+      "decisions": {
+        "title": "Bisalu me monana nanu ve",
+        "body": "Bisalu ya Conseil d'État ta basika awa kana me kobima."
+      }
     },
     "heroBody": "Keba ne u telecharge mafundishe ya Conseil d'État."
   },

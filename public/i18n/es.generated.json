@@ -134,7 +134,11 @@
     },
     "empty": {
       "title": "Aún no hay publicaciones de noticias",
-      "body": "Los nuevos artículos aparecerán aquí una vez que se publiquen."
+      "body": "Los nuevos artículos aparecerán aquí una vez que se publiquen.",
+      "videos": {
+        "title": "Aún no hay videos",
+        "body": "Los videos oficiales aparecerán aquí una vez publicados."
+      }
     },
     "articles": {
       "1": {
@@ -1089,6 +1093,12 @@
       "label": "Categorías",
       "publications": "Publicaciones",
       "decisions": "Decisiones"
+    },
+    "empty": {
+      "decisions": {
+        "title": "Aún no hay decisiones",
+        "body": "Las decisiones del Consejo de Estado aparecerán aquí una vez publicadas."
+      }
     },
     "heroBody": "Consulte y descargue las publicaciones oficiales del Consejo de Estado."
   }

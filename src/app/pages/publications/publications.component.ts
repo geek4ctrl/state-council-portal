@@ -131,6 +131,20 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
                     <span>{{ 'publications.download' | i18n }}</span>
                   </a>
                 </article>
+              } @empty {
+                <div class="empty-state">
+                  <div class="empty-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                      <polyline points="14 2 14 8 20 8"/>
+                      <line x1="16" y1="13" x2="8" y2="13"/>
+                      <line x1="16" y1="17" x2="8" y2="17"/>
+                      <polyline points="10 9 9 9 8 9"/>
+                    </svg>
+                  </div>
+                  <h3>{{ 'publications.empty.decisions.title' | i18n }}</h3>
+                  <p>{{ 'publications.empty.decisions.body' | i18n }}</p>
+                </div>
               }
             </div>
           }
@@ -388,6 +402,49 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
         box-shadow: 0 12px 28px rgba(31, 155, 217, 0.45);
       }
 
+      .empty-state {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 64px 24px;
+        border-radius: 20px;
+        background: rgba(255, 255, 255, 0.7);
+        border: 1px dashed rgba(31, 155, 217, 0.3);
+      }
+
+      .empty-icon {
+        width: 72px;
+        height: 72px;
+        border-radius: 50%;
+        background: linear-gradient(135deg, #e8f4fd, #d0eaf9);
+        color: #1f9bd9;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+      }
+
+      .empty-icon svg {
+        width: 32px;
+        height: 32px;
+      }
+
+      .empty-state h3 {
+        margin: 0 0 8px;
+        color: #1a2942;
+        font-size: 1.2rem;
+        font-weight: 700;
+      }
+
+      .empty-state p {
+        margin: 0;
+        color: #64748b;
+        font-size: 0.95rem;
+        line-height: 1.6;
+        max-width: 400px;
+      }
+
       @media (max-width: 900px) {
         .hero-grid {
           grid-template-columns: 1fr;
@@ -435,6 +492,10 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
       :host-context([data-theme="dark"]) .publication-title { color: #e4eaf0; }
       :host-context([data-theme="dark"]) .publication-kicker { color: #4fc3f7; }
       :host-context([data-theme="dark"]) .pub-doc-icon { background: linear-gradient(135deg, rgba(79,195,247,0.12), rgba(79,195,247,0.06)); border-color: rgba(79,195,247,0.25); color: #4fc3f7; }
+      :host-context([data-theme="dark"]) .empty-state { background: rgba(36, 52, 71, 0.6); border-color: rgba(79, 195, 247, 0.25); }
+      :host-context([data-theme="dark"]) .empty-icon { background: linear-gradient(135deg, rgba(79,195,247,0.15), rgba(79,195,247,0.08)); color: #4fc3f7; }
+      :host-context([data-theme="dark"]) .empty-state h3 { color: #e4eaf0; }
+      :host-context([data-theme="dark"]) .empty-state p { color: #94a3b8; }
       :host-context([data-theme="dark"]) .badge-pdf { background: rgba(248,81,73,0.1); color: #f85149; border-color: rgba(248,81,73,0.2); }
       :host-context([data-theme="dark"]) .badge-official { background: rgba(79,195,247,0.08); color: #4fc3f7; border-color: rgba(79,195,247,0.2); }
     `,
