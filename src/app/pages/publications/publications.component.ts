@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { FooterComponent } from '../../components/footer/footer.component';
 import { I18nPipe } from '../../i18n/i18n.pipe';
 
@@ -25,7 +25,31 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
 
       <section class="publications-section">
         <div class="container">
-          <article class="publication-card">
+          <div class="publications-tabs" role="tablist" [attr.aria-label]="'publications.tabs.label' | i18n">
+            <button
+              type="button"
+              class="publications-tab"
+              role="tab"
+              [class.active]="activeTab() === 'publications'"
+              [attr.aria-selected]="activeTab() === 'publications'"
+              (click)="activeTab.set('publications')"
+            >
+              {{ 'publications.tabs.publications' | i18n }}
+            </button>
+            <button
+              type="button"
+              class="publications-tab"
+              role="tab"
+              [class.active]="activeTab() === 'decisions'"
+              [attr.aria-selected]="activeTab() === 'decisions'"
+              (click)="activeTab.set('decisions')"
+            >
+              {{ 'publications.tabs.decisions' | i18n }}
+            </button>
+          </div>
+
+          @if (activeTab() === 'publications') {
+            <article class="publication-card">
             <div class="pub-icon-col">
               <div class="pub-doc-icon">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -60,6 +84,14 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
               <span>{{ 'publications.download' | i18n }}</span>
             </a>
           </article>
+          }
+
+          @if (activeTab() === 'decisions') {
+            <div class="decisions-empty" role="status" aria-live="polite">
+              <h3>{{ 'publications.decisions.empty.title' | i18n }}</h3>
+              <p>{{ 'publications.decisions.empty.body' | i18n }}</p>
+            </div>
+          }
         </div>
       </section>
 
@@ -122,6 +154,52 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
       .publications-section {
         padding: 72px 0 96px;
         background: linear-gradient(180deg, #f0f4f8 0%, #e8eef5 100%);
+      }
+
+      /* Tabs */
+      .publications-tabs {
+        display: flex;
+        justify-content: flex-start;
+        gap: 12px;
+        margin-bottom: 40px;
+        border-bottom: 2px solid rgba(26, 41, 66, 0.1);
+        padding-bottom: 0;
+      }
+
+      .publications-tab {
+        position: relative;
+        background: transparent;
+        border: none;
+        padding: 14px 28px;
+        font-size: 1rem;
+        font-weight: 600;
+        color: #6b7280;
+        cursor: pointer;
+        transition: color 0.25s ease;
+      }
+
+      .publications-tab::after {
+        content: '';
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background: #1f9bd9;
+        transform: scaleX(0);
+        transition: transform 0.25s ease;
+      }
+
+      .publications-tab:hover {
+        color: #1a2942;
+      }
+
+      .publications-tab.active {
+        color: #1f9bd9;
+      }
+
+      .publications-tab.active::after {
+        transform: scaleX(1);
       }
 
       .publication-card {
@@ -252,6 +330,33 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
         box-shadow: 0 12px 28px rgba(31, 155, 217, 0.45);
       }
 
+      .decisions-empty {
+        text-align: center;
+        padding: 48px 24px;
+        border: 1px solid rgba(26, 41, 66, 0.12);
+        border-radius: 20px;
+        background: #ffffff;
+        box-shadow:
+          0 1px 2px rgba(15, 23, 42, 0.04),
+          0 8px 24px rgba(15, 23, 42, 0.08),
+          0 24px 48px rgba(15, 23, 42, 0.06);
+      }
+
+      .decisions-empty h3 {
+        margin: 0 0 10px 0;
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: #1a1a1a;
+        letter-spacing: 0.5px;
+      }
+
+      .decisions-empty p {
+        margin: 0;
+        font-size: 0.9rem;
+        color: #666;
+        line-height: 1.6;
+      }
+
       @media (max-width: 900px) {
         .hero-grid {
           grid-template-columns: 1fr;
@@ -285,6 +390,15 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
           width: 100%;
           justify-content: center;
         }
+
+        .publications-tabs {
+          gap: 8px;
+        }
+
+        .publications-tab {
+          padding: 12px 18px;
+          font-size: 0.9rem;
+        }
       }
 
       /* ── Dark Mode ── */
@@ -296,10 +410,19 @@ import { I18nPipe } from '../../i18n/i18n.pipe';
       :host-context([data-theme="dark"]) .pub-doc-icon { background: linear-gradient(135deg, rgba(79,195,247,0.12), rgba(79,195,247,0.06)); border-color: rgba(79,195,247,0.25); color: #4fc3f7; }
       :host-context([data-theme="dark"]) .badge-pdf { background: rgba(248,81,73,0.1); color: #f85149; border-color: rgba(248,81,73,0.2); }
       :host-context([data-theme="dark"]) .badge-official { background: rgba(79,195,247,0.08); color: #4fc3f7; border-color: rgba(79,195,247,0.2); }
+      :host-context([data-theme="dark"]) .publications-tab { color: #8899aa; }
+      :host-context([data-theme="dark"]) .publications-tab:hover { color: #e4eaf0; }
+      :host-context([data-theme="dark"]) .publications-tab.active { color: #4fc3f7; }
+      :host-context([data-theme="dark"]) .publications-tabs { border-bottom-color: rgba(240,246,252,0.1); }
+      :host-context([data-theme="dark"]) .decisions-empty { background: #243447; border-color: rgba(240,246,252,0.1); box-shadow: 0 8px 24px rgba(0,0,0,0.4); }
+      :host-context([data-theme="dark"]) .decisions-empty h3 { color: #e4eaf0; }
+      :host-context([data-theme="dark"]) .decisions-empty p { color: #8899aa; }
     `,
   ],
 })
 export class PublicationsComponent {
+  activeTab = signal<'publications' | 'decisions'>('publications');
+
   protected readonly publication = {
     title: 'J.O. n° spécial du 26 février 2026 - RITE.097',
     fileName: 'J.O. n° spécial du 26 février 2026_RITE.097 (1).pdf',

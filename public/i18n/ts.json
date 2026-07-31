@@ -26,7 +26,7 @@
       "international": "Malanda a matunga masanga",
       "audiences": "Bantu",
       "steps": "Bidimu",
-      "publications": "Mikanda ya Conseil d'État",
+      "publications": "Mikanda na Biamu",
       "bookAppointment": "Difunda dia kutuadikangana",
       "news": "Mapia mapia"
     },
@@ -1170,7 +1170,18 @@
   "publications": {
     "download": "Kuangata",
     "officialGazette": "Gazete ya Mufumu",
-    "heroBody": "Shetshela ne u ke kuangate mafundishe a mufumu a Conseil d'État."
+    "heroBody": "Shetshela ne u ke kuangate mafundishe a mufumu a Conseil d'État.",
+    "tabs": {
+      "label": "Mikanda na biamu",
+      "publications": "Mikanda",
+      "decisions": "Biamu"
+    },
+    "decisions": {
+      "empty": {
+        "title": "Biamu kele kuvanga",
+        "body": "Biamu bia tribunal biebele bia kuvangana awa mu tshiena tshiamu."
+      }
+    }
   },
   "proceduresPage": {
     "title": "Procédures devant le Conseil d'Etat",

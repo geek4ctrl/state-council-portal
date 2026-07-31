@@ -26,7 +26,7 @@
       "international": "International Relations",
       "audiences": "Audiences",
       "steps": "Steps",
-      "publications": "State Council Publications",
+      "publications": "Publications and Decisions",
       "bookAppointment": "Book Appointment",
       "news": "News"
     },
@@ -1165,7 +1165,18 @@
   "publications": {
     "download": "Download",
     "officialGazette": "Official Gazette",
-    "heroBody": "Consult and download the official publications of the State Council."
+    "heroBody": "Consult and download the official publications of the State Council.",
+    "tabs": {
+      "label": "Publication categories",
+      "publications": "Publications",
+      "decisions": "Decisions"
+    },
+    "decisions": {
+      "empty": {
+        "title": "No decisions available",
+        "body": "Court decisions will be published here soon."
+      }
+    }
   },
   "proceduresPage": {
     "title": "Procedures before the State Council",

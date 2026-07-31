@@ -26,7 +26,7 @@
       "international": "Relaciones Internacionales",
       "audiences": "Audiencias",
       "steps": "Pasos",
-      "publications": "Publicaciones del Consejo de Estado",
+      "publications": "Publicaciones y Decisiones",
       "bookAppointment": "Solicitar cita",
       "news": "Noticias"
     },
@@ -1169,7 +1169,18 @@
   "publications": {
     "download": "Descargar",
     "officialGazette": "Boletín Oficial",
-    "heroBody": "Consulte y descargue las publicaciones oficiales del Consejo de Estado."
+    "heroBody": "Consulte y descargue las publicaciones oficiales del Consejo de Estado.",
+    "tabs": {
+      "label": "Categorías de publicaciones",
+      "publications": "Publicaciones",
+      "decisions": "Decisiones"
+    },
+    "decisions": {
+      "empty": {
+        "title": "No hay decisiones disponibles",
+        "body": "Las decisiones judiciales se publicarán aquí próximamente."
+      }
+    }
   },
   "proceduresPage": {
     "title": "Procedimientos ante el Consejo de Estado",

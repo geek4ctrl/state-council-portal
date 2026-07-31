@@ -26,7 +26,7 @@
       "international": "Mahusiano ya Kimataifa",
       "audiences": "Vikao",
       "steps": "Hatua",
-      "publications": "Machapisho ya Baraza la Nchi",
+      "publications": "Machapisho na Maamuzi",
       "bookAppointment": "Weka Miadi",
       "news": "Habari"
     },
@@ -1169,7 +1169,18 @@
   "publications": {
     "download": "Pakua",
     "officialGazette": "Gazeti la Serikali",
-    "heroBody": "Tazama na pakua machapisho rasmi ya Baraza la Nchi."
+    "heroBody": "Tazama na pakua machapisho rasmi ya Baraza la Nchi.",
+    "tabs": {
+      "label": "Makundi ya machapisho",
+      "publications": "Machapisho",
+      "decisions": "Maamuzi"
+    },
+    "decisions": {
+      "empty": {
+        "title": "Hakuna maamuzi yaliyopatikana",
+        "body": "Maamuzi ya mahakama yatachapishwa hapa hivi karibuni."
+      }
+    }
   },
   "proceduresPage": {
     "title": "Taratibu mbele ya Baraza la Nchi",

@@ -168,52 +168,6 @@ export interface VideoItem {
                 <app-icon name="chevron-right" [size]="16" [attr.aria-hidden]="true"></app-icon>
               </button>
             </nav>
-
-            <div class="insights-section" style="padding-top: 2rem;">
-              <div class="insights-header">
-                <div class="insights-line anim-line"></div>
-                <h3 class="anim-up">{{ 'news.insights.title' | i18n }}</h3>
-              </div>
-              <p class="insights-subtitle anim-up a-d1">{{ 'news.insights.subtitle' | i18n }}</p>
-
-              <div class="insights-grid">
-                <div
-                  class="insight-card glass-card"
-                  style="--i:0"
-                >
-                  <div class="insight-card-header">
-                    <h4>{{ 'news.insights.topics.title' | i18n }}</h4>
-                    <span class="insight-note anim-label-pulse">{{
-                      'news.insights.topics.note' | i18n
-                    }}</span>
-                  </div>
-                  <div
-                    #newsCategoryChart
-                    class="insight-chart"
-                    role="img"
-                    [attr.aria-label]="'news.insights.topics.aria' | i18n"
-                  ></div>
-                </div>
-
-                <div
-                  class="insight-card glass-card"
-                  style="--i:1"
-                >
-                  <div class="insight-card-header">
-                    <h4>{{ 'news.insights.cadence.title' | i18n }}</h4>
-                    <span class="insight-note anim-label-pulse">{{
-                      'news.insights.cadence.note' | i18n
-                    }}</span>
-                  </div>
-                  <div
-                    #newsCadenceChart
-                    class="insight-chart"
-                    role="img"
-                    [attr.aria-label]="'news.insights.cadence.aria' | i18n"
-                  ></div>
-                </div>
-              </div>
-            </div>
           }
 
           @if (activeTab() === 'videos') {
@@ -234,26 +188,55 @@ export interface VideoItem {
                     <h3 class="video-title">{{ video.title }}</h3>
                   </div>
                 </article>
-              } @empty {
-                <div class="empty-state">
-                  <div class="empty-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                      <rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"/>
-                      <line x1="7" y1="2" x2="7" y2="22"/>
-                      <line x1="17" y1="2" x2="17" y2="22"/>
-                      <line x1="2" y1="12" x2="22" y2="12"/>
-                      <line x1="2" y1="7" x2="7" y2="7"/>
-                      <line x1="2" y1="17" x2="7" y2="17"/>
-                      <line x1="17" y1="17" x2="22" y2="17"/>
-                      <line x1="17" y1="7" x2="22" y2="7"/>
-                    </svg>
-                  </div>
-                  <h3>{{ 'news.empty.videos.title' | i18n }}</h3>
-                  <p>{{ 'news.empty.videos.body' | i18n }}</p>
-                </div>
               }
             </div>
           }
+
+          <div class="insights-section" style="padding-top: 2rem;">
+            <div class="insights-header">
+              <div class="insights-line anim-line"></div>
+              <h3 class="anim-up">{{ 'news.insights.title' | i18n }}</h3>
+            </div>
+            <p class="insights-subtitle anim-up a-d1">{{ 'news.insights.subtitle' | i18n }}</p>
+
+            <div class="insights-grid">
+              <div
+                class="insight-card glass-card"
+                style="--i:0"
+              >
+                <div class="insight-card-header">
+                  <h4>{{ 'news.insights.topics.title' | i18n }}</h4>
+                  <span class="insight-note anim-label-pulse">{{
+                    'news.insights.topics.note' | i18n
+                  }}</span>
+                </div>
+                <div
+                  #newsCategoryChart
+                  class="insight-chart"
+                  role="img"
+                  [attr.aria-label]="'news.insights.topics.aria' | i18n"
+                ></div>
+              </div>
+
+              <div
+                class="insight-card glass-card"
+                style="--i:1"
+              >
+                <div class="insight-card-header">
+                  <h4>{{ 'news.insights.cadence.title' | i18n }}</h4>
+                  <span class="insight-note anim-label-pulse">{{
+                    'news.insights.cadence.note' | i18n
+                  }}</span>
+                </div>
+                <div
+                  #newsCadenceChart
+                  class="insight-chart"
+                  role="img"
+                  [attr.aria-label]="'news.insights.cadence.aria' | i18n"
+                ></div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -446,7 +429,7 @@ export interface VideoItem {
       /* Tabs */
       .news-tabs {
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         gap: 12px;
         margin-bottom: 40px;
         border-bottom: 2px solid rgba(26, 41, 66, 0.1);
@@ -536,50 +519,6 @@ export interface VideoItem {
         color: #1a1a1a;
         margin: 0;
         line-height: 1.4;
-      }
-
-      .empty-state {
-        grid-column: 1 / -1;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        padding: 64px 24px;
-        border-radius: 20px;
-        background: rgba(255, 255, 255, 0.7);
-        border: 1px dashed rgba(31, 155, 217, 0.3);
-      }
-
-      .empty-icon {
-        width: 72px;
-        height: 72px;
-        border-radius: 50%;
-        background: linear-gradient(135deg, #e8f4fd, #d0eaf9);
-        color: #1f9bd9;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 20px;
-      }
-
-      .empty-icon svg {
-        width: 32px;
-        height: 32px;
-      }
-
-      .empty-state h3 {
-        margin: 0 0 8px;
-        color: #1a2942;
-        font-size: 1.2rem;
-        font-weight: 700;
-      }
-
-      .empty-state p {
-        margin: 0;
-        color: #64748b;
-        font-size: 0.95rem;
-        line-height: 1.6;
-        max-width: 400px;
       }
 
       @media (max-width: 991px) {
@@ -1420,10 +1359,6 @@ export interface VideoItem {
       :host-context([data-theme="dark"]) .video-card:hover { box-shadow: 0 12px 32px rgba(0,0,0,0.5); }
       :host-context([data-theme="dark"]) .video-title { color: #e4eaf0; }
       :host-context([data-theme="dark"]) .video-embed { background: #1a2332; }
-      :host-context([data-theme="dark"]) .empty-state { background: rgba(36, 52, 71, 0.6); border-color: rgba(79, 195, 247, 0.25); }
-      :host-context([data-theme="dark"]) .empty-icon { background: linear-gradient(135deg, rgba(79,195,247,0.15), rgba(79,195,247,0.08)); color: #4fc3f7; }
-      :host-context([data-theme="dark"]) .empty-state h3 { color: #e4eaf0; }
-      :host-context([data-theme="dark"]) .empty-state p { color: #94a3b8; }
     `,
   ],
 })
