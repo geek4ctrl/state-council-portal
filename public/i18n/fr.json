@@ -26,7 +26,7 @@
       "international": "Relations internationales",
       "audiences": "Audiences",
       "steps": "Étapes",
-      "publications": "Publications du Conseil d'État",
+      "publications": "Publications et décisions",
       "bookAppointment": "Prendre rendez-vous",
       "news": "Actualités"
     },
@@ -1165,7 +1165,18 @@
   "publications": {
     "download": "Télécharger",
     "officialGazette": "Journal Officiel",
-    "heroBody": "Consultez et téléchargez les publications officielles du Conseil d'État."
+    "heroBody": "Consultez et téléchargez les publications officielles du Conseil d'État.",
+    "tabs": {
+      "label": "Catégories de publications",
+      "publications": "Publications",
+      "decisions": "Décisions"
+    },
+    "decisions": {
+      "empty": {
+        "title": "Aucune décision disponible",
+        "body": "Les décisions de justice seront publiées ici prochainement."
+      }
+    }
   },
   "proceduresPage": {
     "title": "Procédures devant le Conseil d'Etat",

@@ -26,7 +26,7 @@
       "international": "Relazioni internazionali",
       "audiences": "Udienze",
       "steps": "Fasi",
-      "publications": "Pubblicazioni del Consiglio di Stato",
+      "publications": "Pubblicazioni e Decisioni",
       "bookAppointment": "Prenota un appuntamento",
       "news": "Notizie"
     },
@@ -1169,7 +1169,18 @@
   "publications": {
     "download": "Scarica",
     "officialGazette": "Gazzetta Ufficiale",
-    "heroBody": "Consulta e scarica le pubblicazioni ufficiali del Consiglio di Stato."
+    "heroBody": "Consulta e scarica le pubblicazioni ufficiali del Consiglio di Stato.",
+    "tabs": {
+      "label": "Categorie di pubblicazioni",
+      "publications": "Pubblicazioni",
+      "decisions": "Decisioni"
+    },
+    "decisions": {
+      "empty": {
+        "title": "Nessuna decisione disponibile",
+        "body": "Le decisioni giudiziarie saranno pubblicate qui a breve."
+      }
+    }
   },
   "proceduresPage": {
     "title": "Procedure davanti al Consiglio di Stato",
