@@ -26,6 +26,7 @@ export interface VideoItem {
   id: string;
   title: string;
   youtubeId: string;
+  embedUrl?: string;
 }
 
 @Component({
@@ -176,7 +177,7 @@ export interface VideoItem {
                 <article class="video-card glass-card" [style.--i]="i">
                   <div class="video-embed">
                     <iframe
-                      [src]="getEmbedUrl(video.youtubeId)"
+                      [src]="getEmbedUrl(video)"
                       [title]="video.title"
                       frameborder="0"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -1411,6 +1412,12 @@ export class NewsComponent implements OnInit, AfterViewInit {
       title: `QUE DIT LA LOI : Rôle et missions du conseil d'État`,
       youtubeId: 'U0WjTeuDeSY',
     },
+    {
+      id: '4',
+      title: 'Rentrée judiciaire du Conseil d\'État',
+      youtubeId: '',
+      embedUrl: 'https://player.cloudinary.com/embed/?cloud_name=dhqvb8wbn&public_id=WhatsApp_Video_2026-07-31_at_16.21.25_ajij1h',
+    },
   ]);
   readonly totalPages = computed(() =>
     Math.max(1, Math.ceil(this.articles().length / this.itemsPerPage)),
@@ -1646,9 +1653,9 @@ export class NewsComponent implements OnInit, AfterViewInit {
     return this.articles().slice(startIndex, endIndex);
   }
 
-  getEmbedUrl(youtubeId: string): SafeResourceUrl {
+  getEmbedUrl(video: VideoItem): SafeResourceUrl {
     return this.sanitizer.bypassSecurityTrustResourceUrl(
-      `https://www.youtube-nocookie.com/embed/${youtubeId}`,
+      video.embedUrl || `https://www.youtube-nocookie.com/embed/${video.youtubeId}`,
     );
   }
 
