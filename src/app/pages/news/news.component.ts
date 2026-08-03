@@ -1399,22 +1399,13 @@ export class NewsComponent implements OnInit, AfterViewInit {
   readonly videos = signal<VideoItem[]>([
     {
       id: '1',
-      title: `DIRECT FELIX TSHISEKEDI : AUDIENCE SOLENNELLE ET PUBLIQUE RENTRE JUDICIAIRE DE CONSEIL D'ETAT`,
-      youtubeId: 'RZY6D190dHs',
+      title: 'RDC : Visite de la Commission Africaine des Droits de l\'Homme et des Peuples au Conseil d\'État le 27 mai 2026, échanges des cadeaux entre Brigitte NSENSELE WA NSENSELE et Marie-Louise Abomo.',
+      youtubeId: '',
+      embedUrl: 'https://player.cloudinary.com/embed/?cloud_name=dhqvb8wbn&public_id=WhatsApp_Video_2026-08-03_at_18.47.07_n33p9r',
     },
     {
       id: '2',
-      title: 'Audience solennelle de rentrée judiciaire',
-      youtubeId: '2BAZe4GfsZ4',
-    },
-    {
-      id: '3',
-      title: `QUE DIT LA LOI : Rôle et missions du conseil d'État`,
-      youtubeId: 'U0WjTeuDeSY',
-    },
-    {
-      id: '4',
-      title: 'Rentrée judiciaire du Conseil d\'État',
+      title: 'RDC : Ordonnances présidentielles de nominations et mise à la retraite des Magistrats Civils au Conseil d\'État',
       youtubeId: '',
       embedUrl: 'https://player.cloudinary.com/embed/?cloud_name=dhqvb8wbn&public_id=WhatsApp_Video_2026-07-31_at_16.21.25_ajij1h',
     },
