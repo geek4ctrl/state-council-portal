@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, computed, signal } from '@angular/core';
+import { Component, computed, effect, signal } from '@angular/core';
 import { FooterComponent } from '../../components/footer/footer.component';
 import { I18nPipe } from '../../i18n/i18n.pipe';
 import { DECISIONS } from './decisions.data';
@@ -131,6 +131,20 @@ import { DECISIONS } from './decisions.data';
                     <option value="za">{{ 'publications.decisions.sort.za' | i18n }}</option>
                   </select>
                 </div>
+
+                <div class="decisions-page-size">
+                  <label for="decisions-page-size">{{ 'publications.decisions.pageSizeLabel' | i18n }}</label>
+                  <select
+                    id="decisions-page-size"
+                    [value]="pageSize()"
+                    (change)="pageSize.set(+$any($event.target).value)"
+                    [attr.aria-label]="'publications.decisions.pageSizeLabel' | i18n"
+                  >
+                    @for (size of pageSizeOptions; track size) {
+                      <option [value]="size">{{ size }}</option>
+                    }
+                  </select>
+                </div>
               </div>
 
               <p class="decisions-count" aria-live="polite">
@@ -138,7 +152,7 @@ import { DECISIONS } from './decisions.data';
               </p>
 
               <div class="decisions-grid">
-                @for (decision of filteredDecisions(); track decision.fileName) {
+                @for (decision of paginatedDecisions(); track decision.fileName) {
                   <article class="decision-card">
                     <div class="decision-preview">
                       <svg class="docx-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2">
@@ -170,6 +184,55 @@ import { DECISIONS } from './decisions.data';
                   </article>
                 }
               </div>
+
+              @if (totalPages() > 1) {
+                <nav class="decisions-pagination" aria-label="Pagination des décisions">
+                  <button
+                    type="button"
+                    class="pagination-btn pagination-prev"
+                    [disabled]="currentPage() === 1"
+                    (click)="previousPage()"
+                    [attr.aria-label]="'publications.decisions.pagination.previous' | i18n"
+                  >
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <polyline points="15 18 9 12 15 6" />
+                    </svg>
+                    {{ 'publications.decisions.pagination.previous' | i18n }}
+                  </button>
+
+                  <div class="pagination-pages">
+                    @for (item of pageItems(); track $index) {
+                      @if (item.type === 'ellipsis') {
+                        <span class="pagination-ellipsis" aria-hidden="true">...</span>
+                      } @else {
+                        <button
+                          type="button"
+                          class="pagination-page"
+                          [class.active]="currentPage() === item.value"
+                          (click)="goToPage(item.value)"
+                          [attr.aria-label]="'publications.decisions.pagination.page' | i18n: { page: item.value }"
+                          [attr.aria-current]="currentPage() === item.value ? 'page' : null"
+                        >
+                          {{ item.value }}
+                        </button>
+                      }
+                    }
+                  </div>
+
+                  <button
+                    type="button"
+                    class="pagination-btn pagination-next"
+                    [disabled]="currentPage() === totalPages()"
+                    (click)="nextPage()"
+                    [attr.aria-label]="'publications.decisions.pagination.next' | i18n"
+                  >
+                    {{ 'publications.decisions.pagination.next' | i18n }}
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <polyline points="9 18 15 12 9 6" />
+                    </svg>
+                  </button>
+                </nav>
+              }
             } @else {
               <div class="decisions-empty" role="status" aria-live="polite">
                 <h3>{{ 'publications.decisions.empty.title' | i18n }}</h3>
@@ -553,6 +616,41 @@ import { DECISIONS } from './decisions.data';
         box-shadow: 0 0 0 3px rgba(31, 155, 217, 0.12);
       }
 
+      .decisions-page-size {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .decisions-page-size label {
+        font-size: 0.9rem;
+        font-weight: 600;
+        color: #4b5563;
+        white-space: nowrap;
+      }
+
+      .decisions-page-size select {
+        padding: 10px 36px 10px 14px;
+        border-radius: 999px;
+        border: 1px solid rgba(26, 41, 66, 0.15);
+        background: #ffffff;
+        color: #0f172a;
+        font-size: 0.9rem;
+        font-weight: 500;
+        cursor: pointer;
+        appearance: none;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%236b7280' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-position: right 12px center;
+        outline: none;
+        transition: border-color 0.2s ease, box-shadow 0.2s ease;
+      }
+
+      .decisions-page-size select:focus {
+        border-color: #1f9bd9;
+        box-shadow: 0 0 0 3px rgba(31, 155, 217, 0.12);
+      }
+
       .decisions-count {
         margin: 0 0 20px;
         font-size: 0.9rem;
@@ -666,6 +764,110 @@ import { DECISIONS } from './decisions.data';
         box-shadow: 0 10px 24px rgba(31, 155, 217, 0.4);
       }
 
+      /* Decisions Pagination */
+      .decisions-pagination {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        margin-top: 40px;
+        padding: 8px;
+        border-radius: 999px;
+        background: #ffffff;
+        border: 1px solid rgba(26, 41, 66, 0.08);
+        box-shadow:
+          0 1px 2px rgba(15, 23, 42, 0.04),
+          0 8px 24px rgba(15, 23, 42, 0.08);
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        max-width: 100%;
+      }
+
+      .pagination-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        padding: 10px 16px;
+        border-radius: 999px;
+        border: none;
+        background: transparent;
+        color: #4b5563;
+        font-size: 0.85rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+        white-space: nowrap;
+      }
+
+      .pagination-btn:hover:not(:disabled) {
+        background: #e8f4fd;
+        color: #1a5fa8;
+      }
+
+      .pagination-btn:disabled {
+        opacity: 0.4;
+        cursor: not-allowed;
+      }
+
+      .pagination-btn svg {
+        width: 16px;
+        height: 16px;
+      }
+
+      .pagination-pages {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        overflow-x: auto;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+      }
+
+      .pagination-pages::-webkit-scrollbar {
+        display: none;
+      }
+
+      .pagination-page {
+        min-width: 36px;
+        height: 36px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        border: none;
+        background: transparent;
+        color: #4b5563;
+        font-size: 0.9rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: background 0.2s ease, color 0.2s ease, transform 0.15s ease;
+      }
+
+      .pagination-page:hover:not(.active) {
+        background: #e8f4fd;
+        color: #1a5fa8;
+      }
+
+      .pagination-page.active {
+        background: linear-gradient(135deg, #1f9bd9, #1a5fa8);
+        color: #ffffff;
+        box-shadow: 0 4px 12px rgba(31, 155, 217, 0.35);
+        transform: scale(1.05);
+      }
+
+      .pagination-ellipsis {
+        width: 28px;
+        height: 36px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #9ca3af;
+        font-size: 0.95rem;
+        font-weight: 700;
+        letter-spacing: 1px;
+        user-select: none;
+      }
+
       @media (max-width: 900px) {
         .hero-grid {
           grid-template-columns: 1fr;
@@ -722,6 +924,10 @@ import { DECISIONS } from './decisions.data';
           justify-content: space-between;
         }
 
+        .decisions-page-size {
+          justify-content: space-between;
+        }
+
         .decisions-grid {
           grid-template-columns: 1fr;
           gap: 16px;
@@ -733,6 +939,27 @@ import { DECISIONS } from './decisions.data';
 
         .decision-info h3 {
           font-size: 0.88rem;
+        }
+
+        .decisions-pagination {
+          gap: 4px;
+          padding: 6px;
+        }
+
+        .pagination-btn {
+          padding: 8px 12px;
+          font-size: 0.8rem;
+        }
+
+        .pagination-page {
+          min-width: 32px;
+          height: 32px;
+          font-size: 0.85rem;
+        }
+
+        .pagination-ellipsis {
+          width: 24px;
+          height: 32px;
         }
       }
 
@@ -764,7 +991,16 @@ import { DECISIONS } from './decisions.data';
       :host-context([data-theme="dark"]) .clear-search:hover { background: rgba(240,246,252,0.08); color: #e4eaf0; }
       :host-context([data-theme="dark"]) .decisions-sort label { color: #b0c4d4; }
       :host-context([data-theme="dark"]) .decisions-sort select { background: #243447; border-color: rgba(240,246,252,0.15); color: #e4eaf0; }
+      :host-context([data-theme="dark"]) .decisions-page-size label { color: #b0c4d4; }
+      :host-context([data-theme="dark"]) .decisions-page-size select { background: #243447; border-color: rgba(240,246,252,0.15); color: #e4eaf0; }
       :host-context([data-theme="dark"]) .decisions-count { color: #8899aa; }
+      :host-context([data-theme="dark"]) .decisions-pagination { background: #243447; border-color: rgba(240,246,252,0.1); box-shadow: 0 8px 24px rgba(0,0,0,0.4); }
+      :host-context([data-theme="dark"]) .pagination-btn { background: transparent; color: #b0c4d4; }
+      :host-context([data-theme="dark"]) .pagination-btn:hover:not(:disabled) { background: rgba(79,195,247,0.12); color: #4fc3f7; }
+      :host-context([data-theme="dark"]) .pagination-page { background: transparent; color: #b0c4d4; }
+      :host-context([data-theme="dark"]) .pagination-page:hover:not(.active) { background: rgba(79,195,247,0.12); color: #4fc3f7; }
+      :host-context([data-theme="dark"]) .pagination-page.active { background: linear-gradient(135deg, #1f9bd9, #4fc3f7); color: #ffffff; box-shadow: 0 4px 12px rgba(31, 155, 217, 0.35); }
+      :host-context([data-theme="dark"]) .pagination-ellipsis { color: #8899aa; }
     `,
   ],
 })
@@ -773,6 +1009,19 @@ export class PublicationsComponent {
   protected readonly decisions = DECISIONS;
   searchQuery = signal('');
   sortOrder = signal<'newest' | 'oldest' | 'az' | 'za'>('newest');
+  currentPage = signal(1);
+  pageSize = signal(10);
+  protected readonly pageSizeOptions = [10, 20, 30, 40, 50];
+
+  constructor() {
+    effect(() => {
+      // Reset to first page when search, sort, or page size changes
+      this.searchQuery();
+      this.sortOrder();
+      this.pageSize();
+      this.currentPage.set(1);
+    });
+  }
 
   protected readonly filteredDecisions = computed(() => {
     const query = this.searchQuery().trim().toLowerCase();
@@ -798,6 +1047,73 @@ export class PublicationsComponent {
 
     return filtered;
   });
+
+  protected readonly totalPages = computed(() =>
+    Math.ceil(this.filteredDecisions().length / this.pageSize()) || 1
+  );
+
+  protected readonly paginatedDecisions = computed(() => {
+    const start = (this.currentPage() - 1) * this.pageSize();
+    return this.filteredDecisions().slice(start, start + this.pageSize());
+  });
+
+  protected readonly pageItems = computed(() => {
+    const total = this.totalPages();
+    const current = this.currentPage();
+    const siblingCount = 1;
+    const items: Array<{ type: 'page'; value: number } | { type: 'ellipsis' }> = [];
+
+    const addPage = (page: number) => items.push({ type: 'page', value: page });
+    const addEllipsis = () => {
+      if (items.length === 0 || items[items.length - 1].type !== 'ellipsis') {
+        items.push({ type: 'ellipsis' });
+      }
+    };
+
+    for (let page = 1; page <= total; page++) {
+      const isFirst = page === 1;
+      const isLast = page === total;
+      const isCurrent = page === current;
+      const isSibling = page >= current - siblingCount && page <= current + siblingCount;
+
+      if (isFirst || isLast || isCurrent || isSibling) {
+        addPage(page);
+      } else if (
+        (page === 2 && current > siblingCount + 3) ||
+        (page === total - 1 && current < total - siblingCount - 2)
+      ) {
+        // Skip pages that will be replaced by ellipsis near first/last
+      } else if (
+        page < current - siblingCount &&
+        page > 1 &&
+        (items.length === 0 || items[items.length - 1].type === 'page')
+      ) {
+        addEllipsis();
+      } else if (
+        page > current + siblingCount &&
+        page < total &&
+        (items.length === 0 || items[items.length - 1].type === 'page')
+      ) {
+        addEllipsis();
+      }
+    }
+
+    return items;
+  });
+
+  goToPage(page: number): void {
+    if (page >= 1 && page <= this.totalPages()) {
+      this.currentPage.set(page);
+    }
+  }
+
+  previousPage(): void {
+    this.goToPage(this.currentPage() - 1);
+  }
+
+  nextPage(): void {
+    this.goToPage(this.currentPage() + 1);
+  }
 
   protected readonly publication = {
     title: 'J.O. n° spécial du 26 février 2026 - RITE.097',

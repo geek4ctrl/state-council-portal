@@ -1109,6 +1109,7 @@
       "searchPlaceholder": "Buscar una decisión...",
       "searchLabel": "Buscar decisiones",
       "clearSearch": "Borrar búsqueda",
+      "pageSizeLabel": "Mostrar",
       "sortLabel": "Ordenar por",
       "sort": {
         "newest": "Más reciente",
@@ -1116,7 +1117,12 @@
         "az": "A-Z",
         "za": "Z-A"
       },
-      "results": "resultados"
+      "results": "resultados",
+      "pagination": {
+        "previous": "Anterior",
+        "next": "Siguiente",
+        "page": "Página {{page}}"
+      }
     }
   }
 }

@@ -1194,6 +1194,7 @@
       "searchPlaceholder": "Tafuta uamuzi...",
       "searchLabel": "Tafuta maamuzi",
       "clearSearch": "Futa utafutaji",
+      "pageSizeLabel": "Onyesha",
       "sortLabel": "Panga kwa",
       "sort": {
         "newest": "Mpya zaidi",
@@ -1201,7 +1202,12 @@
         "az": "A-Z",
         "za": "Z-A"
       },
-      "results": "matokeo"
+      "results": "matokeo",
+      "pagination": {
+        "previous": "Ulivyotangulia",
+        "next": "Ijayo",
+        "page": "Ukurasa {{page}}"
+      }
     }
   },
   "proceduresPage": {
