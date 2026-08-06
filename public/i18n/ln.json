@@ -1194,6 +1194,7 @@
       "searchPlaceholder": "Luka mokano...",
       "searchLabel": "Luka mikanisi",
       "clearSearch": "Longola boluki",
+      "pageSizeLabel": "Lakisa",
       "sortLabel": "Pona na",
       "sort": {
         "newest": "Ya sika",
@@ -1201,7 +1202,12 @@
         "az": "A-Z",
         "za": "Z-A"
       },
-      "results": "biso"
+      "results": "biso",
+      "pagination": {
+        "previous": "Oyo elongi",
+        "next": "Oyo ekoya",
+        "page": "Lokasa {{page}}"
+      }
     }
   },
   "proceduresPage": {
