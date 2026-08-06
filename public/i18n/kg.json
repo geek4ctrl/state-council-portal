@@ -1194,6 +1194,7 @@
       "searchPlaceholder": "Sosa mbanza...",
       "searchLabel": "Sosa mabanza",
       "clearSearch": "Lukula kusosa",
+      "pageSizeLabel": "Ndimbila",
       "sortLabel": "Panga na",
       "sort": {
         "newest": "Ya nza",
@@ -1201,7 +1202,12 @@
         "az": "A-Z",
         "za": "Z-A"
       },
-      "results": "bio"
+      "results": "bio",
+      "pagination": {
+        "previous": "Oyo yantu",
+        "next": "Oyo yinda",
+        "page": "Lutiti {{page}}"
+      }
     }
   },
   "proceduresPage": {

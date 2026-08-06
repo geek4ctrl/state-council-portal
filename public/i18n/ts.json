@@ -1195,6 +1195,7 @@
       "searchPlaceholder": "Sanga muanza...",
       "searchLabel": "Sanga mabanza",
       "clearSearch": "Sulusa kusanga",
+      "pageSizeLabel": "Komba",
       "sortLabel": "Pangila na",
       "sort": {
         "newest": "Ya kashidi",
@@ -1202,7 +1203,12 @@
         "az": "A-Z",
         "za": "Z-A"
       },
-      "results": "bionso"
+      "results": "bionso",
+      "pagination": {
+        "previous": "Oyo kumpala",
+        "next": "Oyo kuyi",
+        "page": "Lukasa {{page}}"
+      }
     }
   },
   "proceduresPage": {
