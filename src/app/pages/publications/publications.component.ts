@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, signal } from '@angular/core';
+import { Component, computed, signal } from '@angular/core';
 import { FooterComponent } from '../../components/footer/footer.component';
 import { I18nPipe } from '../../i18n/i18n.pipe';
 import { DECISIONS } from './decisions.data';
@@ -89,8 +89,56 @@ import { DECISIONS } from './decisions.data';
 
           @if (activeTab() === 'decisions') {
             @if (decisions.length > 0) {
+              <div class="decisions-controls">
+                <div class="decisions-search">
+                  <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="11" cy="11" r="8" />
+                    <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                  </svg>
+                  <input
+                    type="search"
+                    [attr.placeholder]="'publications.decisions.searchPlaceholder' | i18n"
+                    [value]="searchQuery()"
+                    (input)="searchQuery.set($any($event.target).value)"
+                    [attr.aria-label]="'publications.decisions.searchLabel' | i18n"
+                  />
+                  @if (searchQuery()) {
+                    <button
+                      type="button"
+                      class="clear-search"
+                      (click)="searchQuery.set('')"
+                      [attr.aria-label]="'publications.decisions.clearSearch' | i18n"
+                    >
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <line x1="18" y1="6" x2="6" y2="18" />
+                        <line x1="6" y1="6" x2="18" y2="18" />
+                      </svg>
+                    </button>
+                  }
+                </div>
+
+                <div class="decisions-sort">
+                  <label for="decisions-sort">{{ 'publications.decisions.sortLabel' | i18n }}</label>
+                  <select
+                    id="decisions-sort"
+                    [value]="sortOrder()"
+                    (change)="sortOrder.set($any($event.target).value)"
+                    [attr.aria-label]="'publications.decisions.sortLabel' | i18n"
+                  >
+                    <option value="newest">{{ 'publications.decisions.sort.newest' | i18n }}</option>
+                    <option value="oldest">{{ 'publications.decisions.sort.oldest' | i18n }}</option>
+                    <option value="az">{{ 'publications.decisions.sort.az' | i18n }}</option>
+                    <option value="za">{{ 'publications.decisions.sort.za' | i18n }}</option>
+                  </select>
+                </div>
+              </div>
+
+              <p class="decisions-count" aria-live="polite">
+                {{ filteredDecisions().length }} {{ 'publications.decisions.results' | i18n }}
+              </p>
+
               <div class="decisions-grid">
-                @for (decision of decisions; track decision.fileName) {
+                @for (decision of filteredDecisions(); track decision.fileName) {
                   <article class="decision-card">
                     <div class="decision-preview">
                       <svg class="docx-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2">
@@ -394,6 +442,124 @@ import { DECISIONS } from './decisions.data';
         line-height: 1.6;
       }
 
+      /* Decisions Controls */
+      .decisions-controls {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        margin-bottom: 20px;
+        flex-wrap: wrap;
+      }
+
+      .decisions-search {
+        position: relative;
+        flex: 1;
+        min-width: 260px;
+        max-width: 480px;
+      }
+
+      .decisions-search .search-icon {
+        position: absolute;
+        left: 16px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 18px;
+        height: 18px;
+        color: #6b7280;
+        pointer-events: none;
+      }
+
+      .decisions-search input {
+        width: 100%;
+        padding: 12px 42px;
+        border-radius: 999px;
+        border: 1px solid rgba(26, 41, 66, 0.15);
+        background: #ffffff;
+        color: #0f172a;
+        font-size: 0.95rem;
+        outline: none;
+        transition: border-color 0.2s ease, box-shadow 0.2s ease;
+      }
+
+      .decisions-search input:focus {
+        border-color: #1f9bd9;
+        box-shadow: 0 0 0 3px rgba(31, 155, 217, 0.12);
+      }
+
+      .decisions-search input::placeholder {
+        color: #9ca3af;
+      }
+
+      .clear-search {
+        position: absolute;
+        right: 8px;
+        top: 50%;
+        transform: translateY(-50%);
+        background: transparent;
+        border: none;
+        padding: 6px;
+        cursor: pointer;
+        color: #6b7280;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        transition: background 0.2s ease, color 0.2s ease;
+      }
+
+      .clear-search svg {
+        width: 16px;
+        height: 16px;
+      }
+
+      .clear-search:hover {
+        background: rgba(26, 41, 66, 0.08);
+        color: #1a2942;
+      }
+
+      .decisions-sort {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .decisions-sort label {
+        font-size: 0.9rem;
+        font-weight: 600;
+        color: #4b5563;
+        white-space: nowrap;
+      }
+
+      .decisions-sort select {
+        padding: 10px 36px 10px 14px;
+        border-radius: 999px;
+        border: 1px solid rgba(26, 41, 66, 0.15);
+        background: #ffffff;
+        color: #0f172a;
+        font-size: 0.9rem;
+        font-weight: 500;
+        cursor: pointer;
+        appearance: none;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%236b7280' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-position: right 12px center;
+        outline: none;
+        transition: border-color 0.2s ease, box-shadow 0.2s ease;
+      }
+
+      .decisions-sort select:focus {
+        border-color: #1f9bd9;
+        box-shadow: 0 0 0 3px rgba(31, 155, 217, 0.12);
+      }
+
+      .decisions-count {
+        margin: 0 0 20px;
+        font-size: 0.9rem;
+        color: #6b7280;
+        font-weight: 500;
+      }
+
       /* Decisions Grid */
       .decisions-grid {
         display: grid;
@@ -543,6 +709,19 @@ import { DECISIONS } from './decisions.data';
           font-size: 0.9rem;
         }
 
+        .decisions-controls {
+          flex-direction: column;
+          align-items: stretch;
+        }
+
+        .decisions-search {
+          max-width: 100%;
+        }
+
+        .decisions-sort {
+          justify-content: space-between;
+        }
+
         .decisions-grid {
           grid-template-columns: 1fr;
           gap: 16px;
@@ -578,12 +757,47 @@ import { DECISIONS } from './decisions.data';
       :host-context([data-theme="dark"]) .decision-info h3 { color: #e4eaf0; }
       :host-context([data-theme="dark"]) .decision-preview { background: linear-gradient(135deg, rgba(79,195,247,0.12), rgba(79,195,247,0.06)); border-color: rgba(79,195,247,0.25); color: #4fc3f7; }
       :host-context([data-theme="dark"]) .decision-label { color: #4fc3f7; }
+      :host-context([data-theme="dark"]) .decisions-search input { background: #243447; border-color: rgba(240,246,252,0.15); color: #e4eaf0; }
+      :host-context([data-theme="dark"]) .decisions-search input::placeholder { color: #8899aa; }
+      :host-context([data-theme="dark"]) .decisions-search .search-icon { color: #8899aa; }
+      :host-context([data-theme="dark"]) .clear-search { color: #8899aa; }
+      :host-context([data-theme="dark"]) .clear-search:hover { background: rgba(240,246,252,0.08); color: #e4eaf0; }
+      :host-context([data-theme="dark"]) .decisions-sort label { color: #b0c4d4; }
+      :host-context([data-theme="dark"]) .decisions-sort select { background: #243447; border-color: rgba(240,246,252,0.15); color: #e4eaf0; }
+      :host-context([data-theme="dark"]) .decisions-count { color: #8899aa; }
     `,
   ],
 })
 export class PublicationsComponent {
   activeTab = signal<'publications' | 'decisions'>('publications');
   protected readonly decisions = DECISIONS;
+  searchQuery = signal('');
+  sortOrder = signal<'newest' | 'oldest' | 'az' | 'za'>('newest');
+
+  protected readonly filteredDecisions = computed(() => {
+    const query = this.searchQuery().trim().toLowerCase();
+    let filtered = query
+      ? this.decisions.filter((d) => d.title.toLowerCase().includes(query) || d.fileName.toLowerCase().includes(query))
+      : [...this.decisions];
+
+    switch (this.sortOrder()) {
+      case 'az':
+        filtered.sort((a, b) => a.title.localeCompare(b.title));
+        break;
+      case 'za':
+        filtered.sort((a, b) => b.title.localeCompare(a.title));
+        break;
+      case 'oldest':
+        filtered.sort((a, b) => a.title.localeCompare(b.title));
+        break;
+      case 'newest':
+      default:
+        filtered.sort((a, b) => b.title.localeCompare(a.title));
+        break;
+    }
+
+    return filtered;
+  });
 
   protected readonly publication = {
     title: 'J.O. n° spécial du 26 février 2026 - RITE.097',
