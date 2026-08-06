@@ -1180,7 +1180,18 @@
       "empty": {
         "title": "Biamu kele kuvanga",
         "body": "Biamu bia tribunal biebele bia kuvangana awa mu tshiena tshiamu."
-      }
+      },
+      "searchPlaceholder": "Sanga muanza...",
+      "searchLabel": "Sanga mabanza",
+      "clearSearch": "Sulusa kusanga",
+      "sortLabel": "Pangila na",
+      "sort": {
+        "newest": "Ya kashidi",
+        "oldest": "Ya kale",
+        "az": "A-Z",
+        "za": "Z-A"
+      },
+      "results": "bionso"
     }
   },
   "proceduresPage": {

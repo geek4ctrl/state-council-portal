@@ -1179,7 +1179,18 @@
       "empty": {
         "title": "Nenhuma decisão disponível",
         "body": "As decisões judiciais serão publicadas aqui em breve."
-      }
+      },
+      "searchPlaceholder": "Pesquisar uma decisão...",
+      "searchLabel": "Pesquisar decisões",
+      "clearSearch": "Limpar pesquisa",
+      "sortLabel": "Ordenar por",
+      "sort": {
+        "newest": "Mais recente",
+        "oldest": "Mais antigo",
+        "az": "A-Z",
+        "za": "Z-A"
+      },
+      "results": "resultados"
     }
   },
   "proceduresPage": {
