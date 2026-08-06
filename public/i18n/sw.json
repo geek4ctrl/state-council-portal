@@ -1179,7 +1179,18 @@
       "empty": {
         "title": "Hakuna maamuzi yaliyopatikana",
         "body": "Maamuzi ya mahakama yatachapishwa hapa hivi karibuni."
-      }
+      },
+      "searchPlaceholder": "Tafuta uamuzi...",
+      "searchLabel": "Tafuta maamuzi",
+      "clearSearch": "Futa utafutaji",
+      "sortLabel": "Panga kwa",
+      "sort": {
+        "newest": "Mpya zaidi",
+        "oldest": "Zamani zaidi",
+        "az": "A-Z",
+        "za": "Z-A"
+      },
+      "results": "matokeo"
     }
   },
   "proceduresPage": {

@@ -1175,7 +1175,18 @@
       "empty": {
         "title": "No decisions available",
         "body": "Court decisions will be published here soon."
-      }
+      },
+      "searchPlaceholder": "Search for a decision...",
+      "searchLabel": "Search decisions",
+      "clearSearch": "Clear search",
+      "sortLabel": "Sort by",
+      "sort": {
+        "newest": "Newest",
+        "oldest": "Oldest",
+        "az": "A-Z",
+        "za": "Z-A"
+      },
+      "results": "results"
     }
   },
   "proceduresPage": {

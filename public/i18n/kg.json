@@ -1179,7 +1179,18 @@
       "empty": {
         "title": "Biamu ve",
         "body": "Biamu ya tribunal kianso kia buna awa vana mafutila mabi."
-      }
+      },
+      "searchPlaceholder": "Sosa mbanza...",
+      "searchLabel": "Sosa mabanza",
+      "clearSearch": "Lukula kusosa",
+      "sortLabel": "Panga na",
+      "sort": {
+        "newest": "Ya nza",
+        "oldest": "Ya kala",
+        "az": "A-Z",
+        "za": "Z-A"
+      },
+      "results": "bio"
     }
   },
   "proceduresPage": {
