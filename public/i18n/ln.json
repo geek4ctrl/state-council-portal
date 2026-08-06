@@ -857,7 +857,18 @@
     "recent": {
       "title": "Biteni ya liste ya sika",
       "subtitle": "Biteni ya koyoka ya sika",
-      "empty": "Ezali na biteni ya liste te sik'oyo."
+      "empty": "Ezali na biteni ya liste te sik'oyo.",
+      "searchPlaceholder": "Luka motuya...",
+      "searchLabel": "Luka biteni",
+      "clearSearch": "Longola boluki",
+      "sortLabel": "Pona na",
+      "sort": {
+        "newest": "Ya sika",
+        "oldest": "Ya kala",
+        "az": "A-Z",
+        "za": "Z-A"
+      },
+      "results": "biso"
     },
     "documents": {
       "civil": {

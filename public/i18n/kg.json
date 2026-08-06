@@ -857,7 +857,18 @@
     "recent": {
       "title": "Biteni ya liste ya sika",
       "subtitle": "Biteni ya koyoka ya sika",
-      "empty": "Ezali na biteni ya liste te sik'oyo."
+      "empty": "Ezali na biteni ya liste te sik'oyo.",
+      "searchPlaceholder": "Sosa motuya...",
+      "searchLabel": "Sosa biteni",
+      "clearSearch": "Lukula kusosa",
+      "sortLabel": "Panga na",
+      "sort": {
+        "newest": "Ya nza",
+        "oldest": "Ya kala",
+        "az": "A-Z",
+        "za": "Z-A"
+      },
+      "results": "bio"
     },
     "documents": {
       "civil": {

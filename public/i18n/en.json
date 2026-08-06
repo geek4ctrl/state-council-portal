@@ -853,7 +853,18 @@
     "recent": {
       "title": "Recent role excerpts",
       "subtitle": "Latest hearing excerpts",
-      "empty": "No role excerpts are available at this time."
+      "empty": "No role excerpts are available at this time.",
+      "searchPlaceholder": "Search for an excerpt...",
+      "searchLabel": "Search excerpts",
+      "clearSearch": "Clear search",
+      "sortLabel": "Sort by",
+      "sort": {
+        "newest": "Newest",
+        "oldest": "Oldest",
+        "az": "A-Z",
+        "za": "Z-A"
+      },
+      "results": "results"
     },
     "documents": {
       "civil": {

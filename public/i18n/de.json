@@ -857,7 +857,18 @@
     "recent": {
       "title": "Aktuelle rollenauszüge",
       "subtitle": "Neueste anhörungsauszüge",
-      "empty": "Derzeit sind keine Rollenauszüge verfügbar."
+      "empty": "Derzeit sind keine Rollenauszüge verfügbar.",
+      "searchPlaceholder": "Auszug suchen...",
+      "searchLabel": "Auszüge durchsuchen",
+      "clearSearch": "Suche löschen",
+      "sortLabel": "Sortieren nach",
+      "sort": {
+        "newest": "Neueste",
+        "oldest": "Älteste",
+        "az": "A-Z",
+        "za": "Z-A"
+      },
+      "results": "Ergebnisse"
     },
     "documents": {
       "civil": {

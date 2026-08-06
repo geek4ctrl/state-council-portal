@@ -857,7 +857,18 @@
     "recent": {
       "title": "Estratti recenti di ruolo",
       "subtitle": "Ultimi estratti di udienza",
-      "empty": "Nessun estratto di ruolo disponibile al momento."
+      "empty": "Nessun estratto di ruolo disponibile al momento.",
+      "searchPlaceholder": "Cerca un estratto...",
+      "searchLabel": "Cerca estratti",
+      "clearSearch": "Cancella ricerca",
+      "sortLabel": "Ordina per",
+      "sort": {
+        "newest": "Più recente",
+        "oldest": "Più vecchio",
+        "az": "A-Z",
+        "za": "Z-A"
+      },
+      "results": "risultati"
     },
     "documents": {
       "civil": {
