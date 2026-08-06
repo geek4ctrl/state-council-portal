@@ -857,7 +857,18 @@
     "recent": {
       "title": "Bitupa bia mudimu wa mudimu",
       "subtitle": "Bitupa bia diumvua dia kumpala",
-      "empty": "Kena bitupa bia mudimu ebi bienzeka tshisekedi."
+      "empty": "Kena bitupa bia mudimu ebi bienzeka tshisekedi.",
+      "searchPlaceholder": "Sanga mudimu...",
+      "searchLabel": "Sanga mabupa",
+      "clearSearch": "Sulusa kusanga",
+      "sortLabel": "Pangila na",
+      "sort": {
+        "newest": "Ya kashidi",
+        "oldest": "Ya kale",
+        "az": "A-Z",
+        "za": "Z-A"
+      },
+      "results": "bionso"
     },
     "documents": {
       "civil": {
