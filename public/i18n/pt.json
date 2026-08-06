@@ -857,7 +857,18 @@
     "recent": {
       "title": "Excertos de pauta recentes",
       "subtitle": "Últimos excertos de audiência",
-      "empty": "Nenhum excerto de pauta disponível de momento."
+      "empty": "Nenhum excerto de pauta disponível de momento.",
+      "searchPlaceholder": "Pesquisar um excerto...",
+      "searchLabel": "Pesquisar excertos",
+      "clearSearch": "Limpar pesquisa",
+      "sortLabel": "Ordenar por",
+      "sort": {
+        "newest": "Mais recente",
+        "oldest": "Mais antigo",
+        "az": "A-Z",
+        "za": "Z-A"
+      },
+      "results": "resultados"
     },
     "documents": {
       "civil": {

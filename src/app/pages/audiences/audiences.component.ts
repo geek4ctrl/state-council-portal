@@ -6,6 +6,7 @@ import {
   ElementRef,
   OnInit,
   ViewChild,
+  computed,
   inject,
   signal,
 } from '@angular/core';
@@ -49,8 +50,55 @@ import { FooterComponent } from '../../components/footer/footer.component';
             </div>
             <p class="section-subtitle">{{ 'audiences.recent.subtitle' | i18n }}</p>
 
-            <div class="documents-grid" *ngIf="roleExcerpts.length > 0; else noExcerpts">
-              <article class="document-card" *ngFor="let excerpt of roleExcerpts">
+            <div class="excerpts-controls" *ngIf="roleExcerpts.length > 0">
+              <div class="excerpts-search">
+                <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <circle cx="11" cy="11" r="8" />
+                  <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                </svg>
+                <input
+                  type="search"
+                  [attr.placeholder]="'audiences.recent.searchPlaceholder' | i18n"
+                  [value]="searchQuery()"
+                  (input)="searchQuery.set($any($event.target).value)"
+                  [attr.aria-label]="'audiences.recent.searchLabel' | i18n"
+                />
+                <button
+                  *ngIf="searchQuery()"
+                  type="button"
+                  class="clear-search"
+                  (click)="searchQuery.set('')"
+                  [attr.aria-label]="'audiences.recent.clearSearch' | i18n"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <line x1="18" y1="6" x2="6" y2="18" />
+                    <line x1="6" y1="6" x2="18" y2="18" />
+                  </svg>
+                </button>
+              </div>
+
+              <div class="excerpts-sort">
+                <label for="excerpts-sort">{{ 'audiences.recent.sortLabel' | i18n }}</label>
+                <select
+                  id="excerpts-sort"
+                  [value]="sortOrder()"
+                  (change)="sortOrder.set($any($event.target).value)"
+                  [attr.aria-label]="'audiences.recent.sortLabel' | i18n"
+                >
+                  <option value="newest">{{ 'audiences.recent.sort.newest' | i18n }}</option>
+                  <option value="oldest">{{ 'audiences.recent.sort.oldest' | i18n }}</option>
+                  <option value="az">{{ 'audiences.recent.sort.az' | i18n }}</option>
+                  <option value="za">{{ 'audiences.recent.sort.za' | i18n }}</option>
+                </select>
+              </div>
+            </div>
+
+            <p class="excerpts-count" *ngIf="roleExcerpts.length > 0" aria-live="polite">
+              {{ filteredRoleExcerpts().length }} {{ 'audiences.recent.results' | i18n }}
+            </p>
+
+            <div class="documents-grid" *ngIf="filteredRoleExcerpts().length > 0; else noExcerpts">
+              <article class="document-card" *ngFor="let excerpt of filteredRoleExcerpts()">
                 <div class="document-preview docx-preview">
                   <svg class="docx-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2">
                     <path d="M38 8H16a4 4 0 0 0-4 4v40a4 4 0 0 0 4 4h32a4 4 0 0 0 4-4V24L38 8z" />
@@ -59,10 +107,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
                     <line x1="20" y1="42" x2="44" y2="42" />
                     <line x1="20" y1="48" x2="34" y2="48" />
                   </svg>
-                  <span class="document-label">
-                    <span class="label-text">{{ excerpt.label }}</span>
-                    <span class="label-date">{{ excerpt.date }}</span>
-                  </span>
+                  <span class="document-label">{{ excerpt.label }}</span>
                 </div>
                 <div class="document-info">
                   <h3>{{ excerpt.title }}</h3>
@@ -430,130 +475,236 @@ import { FooterComponent } from '../../components/footer/footer.component';
         letter-spacing: 0.3px;
       }
 
-      /* Documents Grid */
-      .documents-grid {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 30px;
-        margin-bottom: 80px;
-      }
-
-      .documents-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-        gap: 30px;
-      }
-
-      .document-card {
-        background: white;
-        border-radius: 0;
-        overflow: hidden;
-        transition: all 0.3s ease;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-      }
-
-      .docx-preview {
-        background: #f8fafc;
-      }
-
-      .docx-icon {
-        width: 80px;
-        height: 80px;
-        color: #1f9bd9;
-      }
-
-      .document-card:hover {
-        transform: translateY(-8px);
-        box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
-      }
-
-      .document-preview {
-        width: 100%;
-        height: 320px;
-        background: #ffffff;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: relative;
-        overflow: hidden;
-      }
-
-      .document-preview img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        transition: transform 0.3s ease;
-      }
-
-      .document-card:hover .document-preview img {
-        transform: scale(1.05);
-      }
-
-      .document-label {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background: transparent !important;
-        padding: 12px 15px;
+      /* Excerpts Controls */
+      .excerpts-controls {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        color: black;
-        font-size: 0.8rem;
-        gap: 8px;
+        gap: 20px;
+        margin-bottom: 20px;
         flex-wrap: wrap;
       }
 
-      .label-text {
-        font-weight: 400;
+      .excerpts-search {
+        position: relative;
+        flex: 1;
+        min-width: 260px;
+        max-width: 480px;
       }
 
-      .label-date {
-        font-weight: 600;
-        color: #1f9bd9;
+      .excerpts-search .search-icon {
+        position: absolute;
+        left: 16px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 18px;
+        height: 18px;
+        color: #6b7280;
+        pointer-events: none;
       }
 
-      .document-info {
-        padding: 25px 20px;
-        background: white;
-      }
-
-      .document-info h3 {
-        font-size: 1.05rem;
+      .excerpts-search input {
+        width: 100%;
+        padding: 12px 42px;
+        border-radius: 999px;
+        border: 1px solid rgba(26, 41, 66, 0.15);
+        background: #ffffff;
         color: #1a1a1a;
-        margin-bottom: 20px;
-        font-weight: 600;
-        line-height: 1.5;
-        min-height: 50px;
+        font-size: 0.9rem;
+        outline: none;
+        transition: border-color 0.2s ease, box-shadow 0.2s ease;
       }
 
-      .download-btn {
+      .excerpts-search input:focus {
+        border-color: #1f9bd9;
+        box-shadow: 0 0 0 3px rgba(31, 155, 217, 0.12);
+      }
+
+      .excerpts-search input::placeholder {
+        color: #9ca3af;
+      }
+
+      .clear-search {
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 28px;
+        height: 28px;
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 10px;
+        border: none;
         background: transparent;
-        border: 1px solid #1a1a1a;
-        color: #1a1a1a;
-        font-size: 0.8rem;
-        font-weight: 600;
+        color: #6b7280;
+        border-radius: 50%;
         cursor: pointer;
-        padding: 12px 20px;
-        transition: all 0.3s ease;
-        width: 100%;
+        transition: background 0.2s ease, color 0.2s ease;
+        padding: 0;
+      }
+
+      .clear-search:hover {
+        background: rgba(26, 41, 66, 0.08);
+        color: #1a1a1a;
+      }
+
+      .clear-search svg {
+        width: 14px;
+        height: 14px;
+      }
+
+      .excerpts-sort {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .excerpts-sort label {
+        font-size: 0.85rem;
+        color: #4b5563;
+        font-weight: 500;
+      }
+
+      .excerpts-sort select {
+        padding: 10px 32px 10px 14px;
+        border-radius: 999px;
+        border: 1px solid rgba(26, 41, 66, 0.15);
+        background: #ffffff;
+        color: #1a1a1a;
+        font-size: 0.85rem;
+        font-weight: 500;
+        cursor: pointer;
+        outline: none;
+        appearance: none;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%236b7280' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-position: right 12px center;
+        transition: border-color 0.2s ease, box-shadow 0.2s ease;
+      }
+
+      .excerpts-sort select:focus {
+        border-color: #1f9bd9;
+        box-shadow: 0 0 0 3px rgba(31, 155, 217, 0.12);
+      }
+
+      .excerpts-count {
+        margin: 0 0 20px;
+        font-size: 0.85rem;
+        color: #6b7280;
+        font-weight: 500;
+      }
+
+      /* Documents Grid */
+      .documents-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+        gap: 24px;
+        margin-bottom: 80px;
+      }
+
+      .document-card {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        padding: 22px 24px;
+        border-radius: 16px;
+        border: 1px solid rgba(255, 255, 255, 0.9);
+        background: white;
+        box-shadow:
+          0 1px 2px rgba(15, 23, 42, 0.04),
+          0 8px 24px rgba(15, 23, 42, 0.08);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+      }
+
+      .document-card:hover {
+        transform: translateY(-3px);
+        box-shadow:
+          0 1px 2px rgba(15, 23, 42, 0.04),
+          0 12px 32px rgba(15, 23, 42, 0.12);
+      }
+
+      .document-preview {
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 64px;
+        height: 72px;
+        border-radius: 12px;
+        background: linear-gradient(135deg, #e8f4fd, #d0eaf9);
+        border: 1px solid rgba(31, 155, 217, 0.2);
+        color: #1f9bd9;
+        gap: 4px;
+      }
+
+      .docx-icon {
+        width: 32px;
+        height: 32px;
+        color: #1f9bd9;
+      }
+
+      .document-label {
+        font-size: 0.65rem;
+        font-weight: 700;
         letter-spacing: 0.8px;
+        text-transform: uppercase;
+        color: #1a5fa8;
+      }
+
+      .document-info {
+        flex: 1;
+        min-width: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        background: transparent;
+        padding: 0;
+      }
+
+      .document-info h3 {
+        margin: 0;
+        font-size: 0.92rem;
+        font-weight: 600;
+        color: #1a1a1a;
+        line-height: 1.45;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        min-height: auto;
+      }
+
+      .download-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        padding: 0.65rem 1.2rem;
+        border-radius: 999px;
+        background: linear-gradient(135deg, #1f9bd9, #1a5fa8);
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 0.85rem;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+        box-shadow: 0 6px 16px rgba(31, 155, 217, 0.3);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+        white-space: nowrap;
+        align-self: flex-start;
+        width: auto;
+        border: none;
       }
 
       .download-btn:hover {
-        background: #1a1a1a;
-        color: white;
+        color: #ffffff;
+        transform: translateY(-2px);
+        box-shadow: 0 10px 24px rgba(31, 155, 217, 0.4);
       }
 
       .download-btn svg {
-        width: 18px;
-        height: 18px;
-        order: 2;
+        width: 16px;
+        height: 16px;
       }
 
       /* Assistance Section */
@@ -761,8 +912,8 @@ import { FooterComponent } from '../../components/footer/footer.component';
         }
 
         .documents-grid {
-          grid-template-columns: repeat(3, 1fr);
-          gap: 25px;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 20px;
         }
 
         .metrics-grid {
@@ -774,7 +925,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
         }
 
         .document-preview {
-          height: 280px;
+          height: auto;
         }
       }
 
@@ -872,7 +1023,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
 
         .documents-grid {
           grid-template-columns: repeat(2, 1fr);
-          gap: 25px;
+          gap: 20px;
           margin-bottom: 60px;
         }
 
@@ -882,7 +1033,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
         }
 
         .document-preview {
-          height: 260px;
+          height: auto;
         }
 
         .assistance-section {
@@ -978,9 +1129,23 @@ import { FooterComponent } from '../../components/footer/footer.component';
           color: #1a1a1a !important;
         }
 
+        .excerpts-controls {
+          flex-direction: column;
+          align-items: stretch;
+          gap: 16px;
+        }
+
+        .excerpts-search {
+          max-width: 100%;
+        }
+
+        .excerpts-sort {
+          justify-content: space-between;
+        }
+
         .documents-grid {
           grid-template-columns: 1fr;
-          gap: 24px;
+          gap: 16px;
           margin-bottom: 50px;
         }
 
@@ -992,23 +1157,21 @@ import { FooterComponent } from '../../components/footer/footer.component';
           height: 220px;
         }
 
-        .document-preview {
-          height: 240px;
+        .document-card {
+          padding: 18px 20px;
         }
 
-        .document-info {
-          padding: 20px 18px;
+        .document-preview {
+          height: auto;
         }
 
         .document-info h3 {
-          min-height: auto;
-          font-size: 1rem;
-          margin-bottom: 18px;
+          font-size: 0.88rem;
         }
 
         .download-btn {
-          padding: 10px 18px;
-          font-size: 0.75rem;
+          padding: 0.55rem 1rem;
+          font-size: 0.8rem;
         }
 
         .assistance-section {
@@ -1126,7 +1289,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
         }
 
         .documents-grid {
-          gap: 20px;
+          gap: 14px;
           margin-bottom: 40px;
         }
 
@@ -1143,23 +1306,28 @@ import { FooterComponent } from '../../components/footer/footer.component';
           height: 200px;
         }
 
-        .document-preview {
-          height: 220px;
+        .document-card {
+          padding: 16px 18px;
+          gap: 16px;
         }
 
-        .document-info {
-          padding: 18px 16px;
+        .document-preview {
+          height: auto;
+          width: 56px;
+        }
+
+        .docx-icon {
+          width: 28px;
+          height: 28px;
         }
 
         .document-info h3 {
-          font-size: 0.95rem;
-          margin-bottom: 16px;
+          font-size: 0.85rem;
         }
 
         .download-btn {
-          padding: 10px 16px;
-          font-size: 0.7rem;
-          letter-spacing: 0.5px;
+          padding: 0.5rem 0.9rem;
+          font-size: 0.75rem;
         }
 
         .download-btn svg {
@@ -1246,21 +1414,28 @@ import { FooterComponent } from '../../components/footer/footer.component';
           flex: 0 0 30px;
         }
 
-        .document-preview {
-          height: 200px;
+        .document-card {
+          padding: 14px 16px;
+          gap: 14px;
         }
 
-        .document-info {
-          padding: 16px 14px;
+        .document-preview {
+          height: auto;
+          width: 52px;
+        }
+
+        .docx-icon {
+          width: 26px;
+          height: 26px;
         }
 
         .document-info h3 {
-          font-size: 0.9rem;
+          font-size: 0.82rem;
         }
 
         .download-btn {
-          padding: 8px 14px;
-          font-size: 0.65rem;
+          padding: 0.45rem 0.8rem;
+          font-size: 0.7rem;
         }
 
         .assistance-section {
@@ -1536,12 +1711,21 @@ import { FooterComponent } from '../../components/footer/footer.component';
       :host-context([data-theme="dark"]) .understanding-section p { color: #8899aa; }
       :host-context([data-theme="dark"]) .document-card { background: #243447; box-shadow: 0 2px 8px rgba(0,0,0,0.3); }
       :host-context([data-theme="dark"]) .document-card:hover { box-shadow: 0 12px 28px rgba(0,0,0,0.5); }
-      :host-context([data-theme="dark"]) .document-preview { background: #2a3d52; }
-      :host-context([data-theme="dark"]) .document-label { color: #e4eaf0; }
-      :host-context([data-theme="dark"]) .document-info { background: #243447; }
+      :host-context([data-theme="dark"]) .document-preview { background: linear-gradient(135deg, rgba(79,195,247,0.12), rgba(79,195,247,0.06)); border-color: rgba(79,195,247,0.25); color: #4fc3f7; }
+      :host-context([data-theme="dark"]) .docx-icon { color: #4fc3f7; }
+      :host-context([data-theme="dark"]) .document-label { color: #4fc3f7; }
+      :host-context([data-theme="dark"]) .document-info { background: transparent; }
       :host-context([data-theme="dark"]) .document-info h3 { color: #e4eaf0; }
-      :host-context([data-theme="dark"]) .download-btn { border-color: #8899aa; color: #8899aa; }
-      :host-context([data-theme="dark"]) .download-btn:hover { background: #e4eaf0; color: #1a2332; }
+      :host-context([data-theme="dark"]) .download-btn { background: linear-gradient(135deg, #1f9bd9, #1a5fa8); color: #ffffff; border-color: transparent; }
+      :host-context([data-theme="dark"]) .download-btn:hover { color: #ffffff; background: linear-gradient(135deg, #4fc3f7, #1f9bd9); }
+      :host-context([data-theme="dark"]) .excerpts-search input { background: #243447; border-color: rgba(240,246,252,0.15); color: #e4eaf0; }
+      :host-context([data-theme="dark"]) .excerpts-search input::placeholder { color: #8899aa; }
+      :host-context([data-theme="dark"]) .excerpts-search .search-icon { color: #8899aa; }
+      :host-context([data-theme="dark"]) .clear-search { color: #8899aa; }
+      :host-context([data-theme="dark"]) .clear-search:hover { background: rgba(240,246,252,0.08); color: #e4eaf0; }
+      :host-context([data-theme="dark"]) .excerpts-sort label { color: #b0c4d4; }
+      :host-context([data-theme="dark"]) .excerpts-sort select { background-color: #243447; border-color: rgba(240,246,252,0.15); color: #e4eaf0; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%238899aa' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E"); }
+      :host-context([data-theme="dark"]) .excerpts-count { color: #8899aa; }
       :host-context([data-theme="dark"]) .assistance-section { background: #243447; box-shadow: 0 2px 12px rgba(0,0,0,0.3); }
       :host-context([data-theme="dark"]) .assistance-content h2 { color: #e4eaf0; }
       :host-context([data-theme="dark"]) .assistance-content p { color: #8899aa; }
@@ -1558,6 +1742,37 @@ export class AudiencesComponent implements OnInit, AfterViewInit {
   outcomesChart!: ElementRef<HTMLDivElement>;
 
   readonly roleExcerpts: RoleExcerpt[] = ROLE_EXCERPTS;
+  searchQuery = signal('');
+  sortOrder = signal<'newest' | 'oldest' | 'az' | 'za'>('newest');
+
+  protected readonly filteredRoleExcerpts = computed(() => {
+    const query = this.searchQuery().trim().toLowerCase();
+    let filtered = query
+      ? this.roleExcerpts.filter((excerpt) =>
+          excerpt.title.toLowerCase().includes(query) ||
+          excerpt.fileName.toLowerCase().includes(query) ||
+          excerpt.date.toLowerCase().includes(query)
+        )
+      : [...this.roleExcerpts];
+
+    switch (this.sortOrder()) {
+      case 'az':
+        filtered.sort((a, b) => a.title.localeCompare(b.title));
+        break;
+      case 'za':
+        filtered.sort((a, b) => b.title.localeCompare(a.title));
+        break;
+      case 'oldest':
+        filtered.sort((a, b) => a.title.localeCompare(b.title));
+        break;
+      case 'newest':
+      default:
+        filtered.sort((a, b) => b.title.localeCompare(a.title));
+        break;
+    }
+
+    return filtered;
+  });
 
   private readonly destroyRef = inject(DestroyRef);
   private chartInstances: Highcharts.Chart[] = [];

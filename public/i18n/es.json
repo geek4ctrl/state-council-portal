@@ -857,7 +857,18 @@
     "recent": {
       "title": "Extractos recientes de rol",
       "subtitle": "Últimos extractos de audiencia",
-      "empty": "No hay extractos de rol disponibles en este momento."
+      "empty": "No hay extractos de rol disponibles en este momento.",
+      "searchPlaceholder": "Buscar un extracto...",
+      "searchLabel": "Buscar extractos",
+      "clearSearch": "Borrar búsqueda",
+      "sortLabel": "Ordenar por",
+      "sort": {
+        "newest": "Más reciente",
+        "oldest": "Más antiguo",
+        "az": "A-Z",
+        "za": "Z-A"
+      },
+      "results": "resultados"
     },
     "documents": {
       "civil": {

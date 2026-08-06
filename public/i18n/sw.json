@@ -857,7 +857,18 @@
     "recent": {
       "title": "Dondoo za orodha za karibuni",
       "subtitle": "Dondoo za karibuni za kusikilizwa",
-      "empty": "Hakuna dondoo za orodha zinazopatikana kwa sasa."
+      "empty": "Hakuna dondoo za orodha zinazopatikana kwa sasa.",
+      "searchPlaceholder": "Tafuta dondoo...",
+      "searchLabel": "Tafuta dondoo",
+      "clearSearch": "Futa utafutaji",
+      "sortLabel": "Panga kwa",
+      "sort": {
+        "newest": "Mpya zaidi",
+        "oldest": "Zamani zaidi",
+        "az": "A-Z",
+        "za": "Z-A"
+      },
+      "results": "matokeo"
     },
     "documents": {
       "civil": {
