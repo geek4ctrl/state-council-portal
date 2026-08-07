@@ -861,6 +861,7 @@
       "searchPlaceholder": "Auszug suchen...",
       "searchLabel": "Auszüge durchsuchen",
       "clearSearch": "Suche löschen",
+      "pageSizeLabel": "Anzeigen",
       "sortLabel": "Sortieren nach",
       "sort": {
         "newest": "Neueste",
