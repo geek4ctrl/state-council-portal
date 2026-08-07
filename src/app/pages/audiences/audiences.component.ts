@@ -7,6 +7,7 @@ import {
   OnInit,
   ViewChild,
   computed,
+  effect,
   inject,
   signal,
 } from '@angular/core';
@@ -91,14 +92,26 @@ import { FooterComponent } from '../../components/footer/footer.component';
                   <option value="za">{{ 'audiences.recent.sort.za' | i18n }}</option>
                 </select>
               </div>
+
+              <div class="excerpts-page-size">
+                <label for="excerpts-page-size">{{ 'audiences.recent.pageSizeLabel' | i18n }}</label>
+                <select
+                  id="excerpts-page-size"
+                  [value]="pageSize()"
+                  (change)="pageSize.set(+$any($event.target).value)"
+                  [attr.aria-label]="'audiences.recent.pageSizeLabel' | i18n"
+                >
+                  <option *ngFor="let size of pageSizeOptions" [value]="size">{{ size }}</option>
+                </select>
+              </div>
             </div>
 
             <p class="excerpts-count" *ngIf="roleExcerpts.length > 0" aria-live="polite">
               {{ filteredRoleExcerpts().length }} {{ 'audiences.recent.results' | i18n }}
             </p>
 
-            <div class="documents-grid" *ngIf="filteredRoleExcerpts().length > 0; else noExcerpts">
-              <article class="document-card" *ngFor="let excerpt of filteredRoleExcerpts()">
+            <div class="documents-grid" *ngIf="paginatedRoleExcerpts().length > 0; else noExcerpts">
+              <article class="document-card" *ngFor="let excerpt of paginatedRoleExcerpts()">
                 <div class="document-preview docx-preview">
                   <svg class="docx-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2">
                     <path d="M38 8H16a4 4 0 0 0-4 4v40a4 4 0 0 0 4 4h32a4 4 0 0 0 4-4V24L38 8z" />
@@ -126,6 +139,51 @@ import { FooterComponent } from '../../components/footer/footer.component';
                 </div>
               </article>
             </div>
+
+            <nav class="excerpts-pagination" *ngIf="totalPages() > 1" aria-label="Pagination des extraits">
+              <button
+                type="button"
+                class="pagination-btn pagination-prev"
+                [disabled]="currentPage() === 1"
+                (click)="previousPage()"
+                [attr.aria-label]="'publications.decisions.pagination.previous' | i18n"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polyline points="15 18 9 12 15 6" />
+                </svg>
+                {{ 'publications.decisions.pagination.previous' | i18n }}
+              </button>
+
+              <div class="pagination-pages">
+                <ng-container *ngFor="let item of pageItems(); let i = index; trackBy: trackByIndex">
+                  <span *ngIf="item.type === 'ellipsis'" class="pagination-ellipsis" aria-hidden="true">...</span>
+                  <button
+                    *ngIf="item.type === 'page'"
+                    type="button"
+                    class="pagination-page"
+                    [class.active]="currentPage() === item.value"
+                    (click)="goToPage(item.value)"
+                    [attr.aria-label]="'publications.decisions.pagination.page' | i18n: { page: item.value }"
+                    [attr.aria-current]="currentPage() === item.value ? 'page' : null"
+                  >
+                    {{ item.value }}
+                  </button>
+                </ng-container>
+              </div>
+
+              <button
+                type="button"
+                class="pagination-btn pagination-next"
+                [disabled]="currentPage() === totalPages()"
+                (click)="nextPage()"
+                [attr.aria-label]="'publications.decisions.pagination.next' | i18n"
+              >
+                {{ 'publications.decisions.pagination.next' | i18n }}
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polyline points="9 18 15 12 9 6" />
+                </svg>
+              </button>
+            </nav>
             <ng-template #noExcerpts>
               <div class="no-excerpts-state">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
@@ -587,6 +645,40 @@ import { FooterComponent } from '../../components/footer/footer.component';
         box-shadow: 0 0 0 3px rgba(31, 155, 217, 0.12);
       }
 
+      .excerpts-page-size {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .excerpts-page-size label {
+        font-size: 0.85rem;
+        color: #4b5563;
+        font-weight: 500;
+      }
+
+      .excerpts-page-size select {
+        padding: 10px 32px 10px 14px;
+        border-radius: 999px;
+        border: 1px solid rgba(26, 41, 66, 0.15);
+        background: #ffffff;
+        color: #1a1a1a;
+        font-size: 0.85rem;
+        font-weight: 500;
+        cursor: pointer;
+        outline: none;
+        appearance: none;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%236b7280' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-position: right 12px center;
+        transition: border-color 0.2s ease, box-shadow 0.2s ease;
+      }
+
+      .excerpts-page-size select:focus {
+        border-color: #1f9bd9;
+        box-shadow: 0 0 0 3px rgba(31, 155, 217, 0.12);
+      }
+
       .excerpts-count {
         margin: 0 0 20px;
         font-size: 0.85rem;
@@ -599,7 +691,112 @@ import { FooterComponent } from '../../components/footer/footer.component';
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
         gap: 24px;
+        margin-bottom: 40px;
+      }
+
+      /* Excerpts Pagination */
+      .excerpts-pagination {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        margin-top: 0;
         margin-bottom: 80px;
+        padding: 8px;
+        border-radius: 999px;
+        background: #ffffff;
+        border: 1px solid rgba(26, 41, 66, 0.08);
+        box-shadow:
+          0 1px 2px rgba(15, 23, 42, 0.04),
+          0 8px 24px rgba(15, 23, 42, 0.08);
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        max-width: 100%;
+      }
+
+      .pagination-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        padding: 10px 16px;
+        border-radius: 999px;
+        border: none;
+        background: transparent;
+        color: #4b5563;
+        font-size: 0.85rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+        white-space: nowrap;
+      }
+
+      .pagination-btn:hover:not(:disabled) {
+        background: #e8f4fd;
+        color: #1a5fa8;
+      }
+
+      .pagination-btn:disabled {
+        opacity: 0.4;
+        cursor: not-allowed;
+      }
+
+      .pagination-btn svg {
+        width: 16px;
+        height: 16px;
+      }
+
+      .pagination-pages {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        overflow-x: auto;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+      }
+
+      .pagination-pages::-webkit-scrollbar {
+        display: none;
+      }
+
+      .pagination-page {
+        min-width: 36px;
+        height: 36px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        border: none;
+        background: transparent;
+        color: #4b5563;
+        font-size: 0.9rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: background 0.2s ease, color 0.2s ease, transform 0.15s ease;
+      }
+
+      .pagination-page:hover:not(.active) {
+        background: #e8f4fd;
+        color: #1a5fa8;
+      }
+
+      .pagination-page.active {
+        background: linear-gradient(135deg, #1f9bd9, #1a5fa8);
+        color: #ffffff;
+        box-shadow: 0 4px 12px rgba(31, 155, 217, 0.35);
+        transform: scale(1.05);
+      }
+
+      .pagination-ellipsis {
+        width: 28px;
+        height: 36px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #9ca3af;
+        font-size: 0.95rem;
+        font-weight: 700;
+        letter-spacing: 1px;
+        user-select: none;
       }
 
       .document-card {
@@ -1143,10 +1340,36 @@ import { FooterComponent } from '../../components/footer/footer.component';
           justify-content: space-between;
         }
 
+        .excerpts-page-size {
+          justify-content: space-between;
+        }
+
         .documents-grid {
           grid-template-columns: 1fr;
           gap: 16px;
+          margin-bottom: 30px;
+        }
+
+        .excerpts-pagination {
+          gap: 4px;
+          padding: 6px;
           margin-bottom: 50px;
+        }
+
+        .pagination-btn {
+          padding: 8px 12px;
+          font-size: 0.8rem;
+        }
+
+        .pagination-page {
+          min-width: 32px;
+          height: 32px;
+          font-size: 0.85rem;
+        }
+
+        .pagination-ellipsis {
+          width: 24px;
+          height: 32px;
         }
 
         .metrics-card {
@@ -1725,6 +1948,15 @@ import { FooterComponent } from '../../components/footer/footer.component';
       :host-context([data-theme="dark"]) .clear-search:hover { background: rgba(240,246,252,0.08); color: #e4eaf0; }
       :host-context([data-theme="dark"]) .excerpts-sort label { color: #b0c4d4; }
       :host-context([data-theme="dark"]) .excerpts-sort select { background-color: #243447; border-color: rgba(240,246,252,0.15); color: #e4eaf0; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%238899aa' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E"); }
+      :host-context([data-theme="dark"]) .excerpts-page-size label { color: #b0c4d4; }
+      :host-context([data-theme="dark"]) .excerpts-page-size select { background-color: #243447; border-color: rgba(240,246,252,0.15); color: #e4eaf0; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%238899aa' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E"); }
+      :host-context([data-theme="dark"]) .excerpts-pagination { background: #243447; border-color: rgba(240,246,252,0.1); box-shadow: 0 8px 24px rgba(0,0,0,0.4); }
+      :host-context([data-theme="dark"]) .pagination-btn { background: transparent; color: #b0c4d4; }
+      :host-context([data-theme="dark"]) .pagination-btn:hover:not(:disabled) { background: rgba(79,195,247,0.12); color: #4fc3f7; }
+      :host-context([data-theme="dark"]) .pagination-page { background: transparent; color: #b0c4d4; }
+      :host-context([data-theme="dark"]) .pagination-page:hover:not(.active) { background: rgba(79,195,247,0.12); color: #4fc3f7; }
+      :host-context([data-theme="dark"]) .pagination-page.active { background: linear-gradient(135deg, #1f9bd9, #4fc3f7); color: #ffffff; box-shadow: 0 4px 12px rgba(31, 155, 217, 0.35); }
+      :host-context([data-theme="dark"]) .pagination-ellipsis { color: #8899aa; }
       :host-context([data-theme="dark"]) .excerpts-count { color: #8899aa; }
       :host-context([data-theme="dark"]) .assistance-section { background: #243447; box-shadow: 0 2px 12px rgba(0,0,0,0.3); }
       :host-context([data-theme="dark"]) .assistance-content h2 { color: #e4eaf0; }
@@ -1744,6 +1976,19 @@ export class AudiencesComponent implements OnInit, AfterViewInit {
   readonly roleExcerpts: RoleExcerpt[] = ROLE_EXCERPTS;
   searchQuery = signal('');
   sortOrder = signal<'newest' | 'oldest' | 'az' | 'za'>('newest');
+  currentPage = signal(1);
+  pageSize = signal(10);
+  protected readonly pageSizeOptions = [10, 20, 30, 40, 50];
+
+  constructor() {
+    effect(() => {
+      // Reset to first page when search, sort, or page size changes
+      this.searchQuery();
+      this.sortOrder();
+      this.pageSize();
+      this.currentPage.set(1);
+    });
+  }
 
   protected readonly filteredRoleExcerpts = computed(() => {
     const query = this.searchQuery().trim().toLowerCase();
@@ -1773,6 +2018,77 @@ export class AudiencesComponent implements OnInit, AfterViewInit {
 
     return filtered;
   });
+
+  protected readonly totalPages = computed(() =>
+    Math.ceil(this.filteredRoleExcerpts().length / this.pageSize()) || 1
+  );
+
+  protected readonly paginatedRoleExcerpts = computed(() => {
+    const start = (this.currentPage() - 1) * this.pageSize();
+    return this.filteredRoleExcerpts().slice(start, start + this.pageSize());
+  });
+
+  protected readonly pageItems = computed(() => {
+    const total = this.totalPages();
+    const current = this.currentPage();
+    const siblingCount = 1;
+    const items: Array<{ type: 'page'; value: number } | { type: 'ellipsis' }> = [];
+
+    const addPage = (page: number) => items.push({ type: 'page', value: page });
+    const addEllipsis = () => {
+      if (items.length === 0 || items[items.length - 1].type !== 'ellipsis') {
+        items.push({ type: 'ellipsis' });
+      }
+    };
+
+    for (let page = 1; page <= total; page++) {
+      const isFirst = page === 1;
+      const isLast = page === total;
+      const isCurrent = page === current;
+      const isSibling = page >= current - siblingCount && page <= current + siblingCount;
+
+      if (isFirst || isLast || isCurrent || isSibling) {
+        addPage(page);
+      } else if (
+        (page === 2 && current > siblingCount + 3) ||
+        (page === total - 1 && current < total - siblingCount - 2)
+      ) {
+        // Skip pages that will be replaced by ellipsis near first/last
+      } else if (
+        page < current - siblingCount &&
+        page > 1 &&
+        (items.length === 0 || items[items.length - 1].type === 'page')
+      ) {
+        addEllipsis();
+      } else if (
+        page > current + siblingCount &&
+        page < total &&
+        (items.length === 0 || items[items.length - 1].type === 'page')
+      ) {
+        addEllipsis();
+      }
+    }
+
+    return items;
+  });
+
+  goToPage(page: number): void {
+    if (page >= 1 && page <= this.totalPages()) {
+      this.currentPage.set(page);
+    }
+  }
+
+  previousPage(): void {
+    this.goToPage(this.currentPage() - 1);
+  }
+
+  nextPage(): void {
+    this.goToPage(this.currentPage() + 1);
+  }
+
+  trackByIndex(index: number): number {
+    return index;
+  }
 
   private readonly destroyRef = inject(DestroyRef);
   private chartInstances: Highcharts.Chart[] = [];

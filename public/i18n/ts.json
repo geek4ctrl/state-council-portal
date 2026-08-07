@@ -861,6 +861,7 @@
       "searchPlaceholder": "Sanga mudimu...",
       "searchLabel": "Sanga mabupa",
       "clearSearch": "Sulusa kusanga",
+      "pageSizeLabel": "Komba",
       "sortLabel": "Pangila na",
       "sort": {
         "newest": "Ya kashidi",
