@@ -857,6 +857,7 @@
       "searchPlaceholder": "Search for an excerpt...",
       "searchLabel": "Search excerpts",
       "clearSearch": "Clear search",
+      "pageSizeLabel": "Show",
       "sortLabel": "Sort by",
       "sort": {
         "newest": "Newest",

@@ -861,6 +861,7 @@
       "searchPlaceholder": "Buscar un extracto...",
       "searchLabel": "Buscar extractos",
       "clearSearch": "Borrar búsqueda",
+      "pageSizeLabel": "Mostrar",
       "sortLabel": "Ordenar por",
       "sort": {
         "newest": "Más reciente",
