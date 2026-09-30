@@ -1815,11 +1815,6 @@ type OrganisationTile = {
         background-position: center center;
       }
 
-      .org-tile:nth-child(5) .org-tile-media.has-image {
-        background-size: 115%;
-        background-position: center center;
-      }
-
       .org-tile.has-image .org-tile-media {
         position: absolute;
         inset: 0;
@@ -2069,8 +2064,7 @@ type OrganisationTile = {
       :host-context([data-theme="dark"]) .org-tile h3 { color: #e4eaf0; }
       :host-context([data-theme="dark"]) .org-tile-media { background: linear-gradient(140deg, rgba(79,195,247,0.1), rgba(136,153,170,0.05)); border-bottom-color: #2d4156; color: #8899aa; }
       :host-context([data-theme="dark"]) .org-tile-media.has-image { background-color: #1a2332; background-size: contain; background-position: center; background-repeat: no-repeat; }
-      :host-context([data-theme="dark"]) .org-tile:nth-child(1) .org-tile-media.has-image,
-      :host-context([data-theme="dark"]) .org-tile:nth-child(5) .org-tile-media.has-image { background-size: 115%; }
+      :host-context([data-theme="dark"]) .org-tile:nth-child(1) .org-tile-media.has-image { background-size: 115%; }
       :host-context([data-theme="dark"]) .org-tile-media.has-image::after { background: linear-gradient(180deg, transparent 60%, rgba(26,35,50,0.6) 100%); }
 
       /* Greffe page */
@@ -2194,7 +2188,7 @@ export class PresentationSectionComponent implements OnInit {
       titleKey: 'organization.orgPage.tiles.registry',
       section: 'greffe-secretariat-general',
       imageUrl:
-        'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1200&q=80',
+        'https://res.cloudinary.com/dhqvb8wbn/image/upload/v1790799712/WhatsApp_Image_2026-09-25_at_15.42.20_h9vyqx.jpg',
     },
     {
       titleKey: 'organization.orgPage.tiles.juges',
