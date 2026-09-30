@@ -60,6 +60,15 @@ type GreffeFirstPresident = {
   image: string;
 };
 
+type OrganisationTile = {
+  titleKey: string;
+  section: string;
+  imageUrl?: string;
+  videoUrl?: string;
+  posterUrl?: string;
+  route?: string[];
+};
+
 @Component({
   selector: 'app-presentation-section',
   standalone: true,
@@ -291,15 +300,27 @@ type GreffeFirstPresident = {
               @for (tile of organisationTiles; track tile.section) {
                 <a
                   class="org-tile"
-                  [class.has-image]="!!tile.imageUrl"
+                  [class.has-image]="!!tile.imageUrl || !!tile.videoUrl"
                   [routerLink]="tile.route || ['/presentation', tile.section]"
                 >
                   <div
                     class="org-tile-media"
-                    [class.has-image]="!!tile.imageUrl"
+                    [class.has-image]="!!tile.imageUrl || !!tile.videoUrl"
                     [style.backgroundImage]="tile.imageUrl ? 'url(' + tile.imageUrl + ')' : null"
                     aria-hidden="true"
                   >
+                    @if (tile.videoUrl) {
+                      <video
+                        class="org-tile-video"
+                        [src]="tile.videoUrl"
+                        [poster]="tile.posterUrl || null"
+                        autoplay
+                        muted
+                        loop
+                        playsinline
+                        preload="auto"
+                      ></video>
+                    }
                     <span>{{ 'organization.about.imageLabel' | i18n }}</span>
                   </div>
                   <h3>{{ tile.titleKey | i18n }}</h3>
@@ -1794,11 +1815,6 @@ type GreffeFirstPresident = {
         background-position: center center;
       }
 
-      .org-tile:nth-child(5) .org-tile-media.has-image {
-        background-size: 115%;
-        background-position: center center;
-      }
-
       .org-tile.has-image .org-tile-media {
         position: absolute;
         inset: 0;
@@ -1815,6 +1831,18 @@ type GreffeFirstPresident = {
 
       .org-tile-media.has-image span {
         opacity: 0;
+      }
+
+.org-tile-video {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        transform: translateY(-10px) scale(1.45);
+        transform-origin: center top;
+        display: block;
+        pointer-events: none;
       }
 
       .org-tile h3 {
@@ -2038,8 +2066,7 @@ type GreffeFirstPresident = {
       :host-context([data-theme="dark"]) .org-tile h3 { color: #e4eaf0; }
       :host-context([data-theme="dark"]) .org-tile-media { background: linear-gradient(140deg, rgba(79,195,247,0.1), rgba(136,153,170,0.05)); border-bottom-color: #2d4156; color: #8899aa; }
       :host-context([data-theme="dark"]) .org-tile-media.has-image { background-color: #1a2332; background-size: contain; background-position: center; background-repeat: no-repeat; }
-      :host-context([data-theme="dark"]) .org-tile:nth-child(1) .org-tile-media.has-image,
-      :host-context([data-theme="dark"]) .org-tile:nth-child(5) .org-tile-media.has-image { background-size: 115%; }
+      :host-context([data-theme="dark"]) .org-tile:nth-child(1) .org-tile-media.has-image { background-size: 115%; }
       :host-context([data-theme="dark"]) .org-tile-media.has-image::after { background: linear-gradient(180deg, transparent 60%, rgba(26,35,50,0.6) 100%); }
 
       /* Greffe page */
@@ -2132,12 +2159,14 @@ export class PresentationSectionComponent implements OnInit {
         'https://res.cloudinary.com/dhqvb8wbn/image/upload/v1772552204/F%C3%A9lix_VUNDUAWE_te_PEMAKO..jpg_1_usgopn.jpg',
     },
   ];
-  readonly organisationTiles = [
+  readonly organisationTiles: OrganisationTile[] = [
     {
       titleKey: 'organization.orgPage.tiles.organigramme',
       section: 'organigramme',
-      imageUrl:
-        'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80',
+      videoUrl:
+        'https://res.cloudinary.com/dhqvb8wbn/video/upload/WhatsApp_Video_2026-09-25_at_15.42.20_zzamss.mp4',
+      posterUrl:
+        'https://res.cloudinary.com/dhqvb8wbn/video/upload/so_0/WhatsApp_Video_2026-09-25_at_15.42.20_zzamss.jpg',
     },
     {
       titleKey: 'organization.orgPage.tiles.firstPresident',
@@ -2161,7 +2190,7 @@ export class PresentationSectionComponent implements OnInit {
       titleKey: 'organization.orgPage.tiles.registry',
       section: 'greffe-secretariat-general',
       imageUrl:
-        'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1200&q=80',
+        'https://res.cloudinary.com/dhqvb8wbn/image/upload/v1790799712/WhatsApp_Image_2026-09-25_at_15.42.20_h9vyqx.jpg',
     },
     {
       titleKey: 'organization.orgPage.tiles.juges',
