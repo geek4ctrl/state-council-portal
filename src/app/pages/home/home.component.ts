@@ -218,6 +218,19 @@ type HighchartsStatic = typeof import('highcharts');
         </div>
       </section>
 
+      <!-- ═══ FEATURE IMAGE ═══ -->
+      <section class="feature-img-section">
+        <div class="container">
+          <div class="feature-img-frame anim-up">
+            <img
+              src="https://res.cloudinary.com/dhqvb8wbn/image/upload/v1790801423/WhatsApp_Image_2026-09-25_at_15.38.01_yhvmji.jpg"
+              alt="Conseil d'État"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </section>
+
       <!-- ═══ WHAT WE OFFER ═══ -->
       <section class="offer-section">
         <div class="container">
@@ -1791,6 +1804,32 @@ type HighchartsStatic = typeof import('highcharts');
       }
 
       /* ━━━━━━━━━━━━━━ OFFER ━━━━━━━━━━━━━━ */
+      .feature-img-section {
+        padding: 80px 0;
+        background: #eef3f8;
+        position: relative;
+        overflow: hidden;
+      }
+      .feature-img-frame {
+        width: fit-content;
+        max-width: 100%;
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0 18px 42px rgba(26, 41, 66, 0.16);
+      }
+      .feature-img-frame img {
+        display: block;
+        width: auto;
+        max-width: 100%;
+        max-height: 560px;
+      }
+
+      @media (max-width: 767px) {
+        .feature-img-frame {
+          margin: 0 auto;
+        }
+      }
+
       .offer-section {
         padding: 80px 0;
         background: #f9fafb;
@@ -5280,6 +5319,7 @@ type HighchartsStatic = typeof import('highcharts');
 
       /* Newsletter / News */
       :host-context([data-theme="dark"]) .nl-section { background: #1a2332; }
+      :host-context([data-theme="dark"]) .feature-img-section { background: #1a2332; }
       :host-context([data-theme="dark"]) .nl-head h2 { color: #e4eaf0; }
       :host-context([data-theme="dark"]) .nl-card { background: #243447; box-shadow: 0 6px 16px rgba(0,0,0,0.35); }
       :host-context([data-theme="dark"]) .nl-card:hover { box-shadow: 0 16px 32px rgba(0,0,0,0.5); }
