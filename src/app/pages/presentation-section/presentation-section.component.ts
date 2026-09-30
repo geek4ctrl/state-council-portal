@@ -1838,7 +1838,9 @@ type OrganisationTile = {
         inset: 0;
         width: 100%;
         height: 100%;
-        object-fit: cover;
+        object-fit: contain;
+        transform: translateY(-10px) scale(1.45);
+        transform-origin: center top;
         display: block;
         pointer-events: none;
       }
