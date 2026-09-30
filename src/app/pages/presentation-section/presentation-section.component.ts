@@ -60,6 +60,15 @@ type GreffeFirstPresident = {
   image: string;
 };
 
+type OrganisationTile = {
+  titleKey: string;
+  section: string;
+  imageUrl?: string;
+  videoUrl?: string;
+  posterUrl?: string;
+  route?: string[];
+};
+
 @Component({
   selector: 'app-presentation-section',
   standalone: true,
@@ -291,15 +300,27 @@ type GreffeFirstPresident = {
               @for (tile of organisationTiles; track tile.section) {
                 <a
                   class="org-tile"
-                  [class.has-image]="!!tile.imageUrl"
+                  [class.has-image]="!!tile.imageUrl || !!tile.videoUrl"
                   [routerLink]="tile.route || ['/presentation', tile.section]"
                 >
                   <div
                     class="org-tile-media"
-                    [class.has-image]="!!tile.imageUrl"
+                    [class.has-image]="!!tile.imageUrl || !!tile.videoUrl"
                     [style.backgroundImage]="tile.imageUrl ? 'url(' + tile.imageUrl + ')' : null"
                     aria-hidden="true"
                   >
+                    @if (tile.videoUrl) {
+                      <video
+                        class="org-tile-video"
+                        [src]="tile.videoUrl"
+                        [poster]="tile.posterUrl || null"
+                        autoplay
+                        muted
+                        loop
+                        playsinline
+                        preload="auto"
+                      ></video>
+                    }
                     <span>{{ 'organization.about.imageLabel' | i18n }}</span>
                   </div>
                   <h3>{{ tile.titleKey | i18n }}</h3>
@@ -1817,6 +1838,16 @@ type GreffeFirstPresident = {
         opacity: 0;
       }
 
+.org-tile-video {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        pointer-events: none;
+      }
+
       .org-tile h3 {
         margin: 16px 20px 22px;
         font-size: 0.95rem;
@@ -2132,12 +2163,14 @@ export class PresentationSectionComponent implements OnInit {
         'https://res.cloudinary.com/dhqvb8wbn/image/upload/v1772552204/F%C3%A9lix_VUNDUAWE_te_PEMAKO..jpg_1_usgopn.jpg',
     },
   ];
-  readonly organisationTiles = [
+  readonly organisationTiles: OrganisationTile[] = [
     {
       titleKey: 'organization.orgPage.tiles.organigramme',
       section: 'organigramme',
-      imageUrl:
-        'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80',
+      videoUrl:
+        'https://res.cloudinary.com/dhqvb8wbn/video/upload/WhatsApp_Video_2026-09-25_at_15.42.20_zzamss.mp4',
+      posterUrl:
+        'https://res.cloudinary.com/dhqvb8wbn/video/upload/so_0/WhatsApp_Video_2026-09-25_at_15.42.20_zzamss.jpg',
     },
     {
       titleKey: 'organization.orgPage.tiles.firstPresident',
